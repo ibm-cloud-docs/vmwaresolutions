@@ -1,0 +1,92 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="vmware-solutions" audience="infrastructure" href="/docs/services/vmwaresolutions/index.html"}
+IBM Cloud for VMware Solutions
+
+    {: .navgroup id="learn"}
+    index.md
+    vmonic/prod_overview.md
+
+    {: .topicgroup}
+    Release notes
+        vmonic/relnotes_v17.md
+        vmonic/relnotes_v16.md
+        vmonic/relnotes_v15.md
+        vmonic/relnotes_v14.md
+        vmonic/relnotes_v13.md
+        vmonic/relnotes_v12.md
+        vmonic/relnotes_v11.md
+
+    {: .topicgroup}
+    Related links
+        [Resources and videos](https://www.ibm.com/devops/method/content/architecture/virtualizationArchitecture/1_0)
+        [Take a look under the hood](https://www.ibm.com/developerworks/cloud/library/cl-ibm-cloud-for-vmware-solutions-trs/)
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    {: .topicgroup}
+    First steps
+        vmonic/loginmethod.md
+        vmonic/useraccount.md
+        vmonic/slaccountrequirement.md
+        vmonic/signing_softlayer_account.md
+        vmonic/notifications.md
+
+    {: .topicgroup}
+    Cloud Foundation instances
+        sddc/sd_cloudfoundationoverview.md
+        sddc/sd_multisite.md
+        sddc/sd_planning.md
+        sddc/sd_orderinginstance.md
+        sddc/sd_viewinginstances.md
+        sddc/sd_addingremovingservers.md
+        sddc/sd_applyingupdates.md
+        sddc/sd_backingupserver.md
+        sddc/sd_restoringserver.md
+        sddc/sd_addingremovingservices.md
+        sddc/sd_deletinginstance.md
+        sddc/sd_deletinginstance_multi.md
+
+    {: .topicgroup}
+    vCenter Server instances
+        vcenter/vc_vcenterserveroverview.md
+        vcenter/vc_esg_config.md
+        vcenter/vc_planning.md
+        vcenter/vc_orderinginstance.md
+        vcenter/vc_viewinginstances.md
+        vcenter/vc_addingviewingclusters.md
+        vcenter/vc_addingremovingservers.md
+        vcenter/vc_applyingupdates.md
+        vcenter/vc_backingupserver.md
+        vcenter/vc_restoringserver.md
+        vcenter/vc_addingremovingservices.md
+        vcenter/vc_deletinginstance.md
+
+    {: .topicgroup}
+    Zerto disaster recovery
+        vmonic/addingzertodr.md
+        vmonic/managingzertodr.md
+        vmonic/removingzertodr.md
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    vmonic/trbl_support.md
+    vmonic/faq.md
+
+    {: .topicgroup}
+    Troubleshooting
+        sddc/cf_chg_impact.md
+        vcenter/vcenter_chg_impact.md
+        vmonic/trbl_timeout_vc_console.md
+        vmonic/trbl_mixed_multisite.md
+        vmonic/trbl_cfupdatesfail.md
+        vmonic/trbl_add_ha_cluster_config.md
+        vmonic/trbl_no_zerto_vra.md
+        vmonic/trbl_host_displays_warning_msg.md
+        vmonic/trbl_deploy_ovf.md
+        vmonic/trbl_vsan_alerts.md
+        vmonic/movinginstances.md
+        vmonic/trbl_limitations.md
+        vmonic/trbl_advanced.md
+    {: .navgroup-end}
