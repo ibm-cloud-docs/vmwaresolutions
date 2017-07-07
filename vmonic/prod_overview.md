@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-06"
+lastupdated: "2017-07-07"
 
 ---
 
@@ -36,4 +36,3 @@ to the IBM Cloud by using the scalable, secure, and high-performance IBM SoftLay
 * [Cloud Foundation instances](../sddc/sd_cloudfoundationoverview.html)
 * [vCenter Server instances](../vcenter/vc_vcenterserveroverview.html)
 * [Zerto disaster recovery](addingzertodr.html)
-* [PDF User Guide](https://www.ibm.com/devops/method/files/IBM_Cloud_for_VMware_Solutions.pdf){:new_window}

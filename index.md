@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-19"
+lastupdated: "2017-07-07"
 
 ---
 
@@ -66,5 +66,4 @@ To access the console from the Bluemix® catalog, complete the following steps:
 * [Cloud Foundation instances](sddc/sd_cloudfoundationoverview.html)
 * [vCenter Server instances](vcenter/vc_vcenterserveroverview.html)
 * [Zerto disaster recovery](vmonic/addingzertodr.html)
-* [PDF User Guide](https://www.ibm.com/devops/method/files/IBM_Cloud_for_VMware_Solutions.pdf){:new_window}
 * [Take a look under the hood](https://www.ibm.com/developerworks/cloud/library/cl-ibm-cloud-for-vmware-solutions-trs/){:new_window}
