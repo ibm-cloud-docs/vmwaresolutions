@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-06"
+lastupdated: "2017-07-07"
 
 ---
 
@@ -110,4 +110,3 @@ If you need assistance with {{site.data.keyword.vmwaresolutions_short}}, contact
 * [vCenter Server instances](../vcenter/vc_vcenterserveroverview.html)
 * [Accessing the console](loginmethod.html)
 * [User accounts and settings](useraccount.html)
-* [PDF User Guide](https://www.ibm.com/devops/method/files/IBM_Cloud_for_VMware_Solutions.pdf){:new_window}
