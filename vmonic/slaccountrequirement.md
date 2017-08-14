@@ -4,13 +4,13 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-05-30"
+lastupdated: "2017-08-10"
 
 ---
 
 # SoftLayer account requirements
 
-To order instances, you must have a SoftLayer® account. The cost of the components that are ordered in your instances is billed to that SoftLayer account.
+To order instances, you must have an IBM® SoftLayer® account. The cost of the components that are ordered in your instances is billed to that SoftLayer account.
 
 ## SoftLayer permissions
 
@@ -28,6 +28,7 @@ Table 1. Required permissions for the SoftLayer account
 | View Virtual Server Details | This permission is required to retrieve the server provisioning details, which are required for order validation and automated configuration. |
 | Add Storage | This permission is required to order backup storage and shared storage for the instance. |
 | Manage Storage | This permission is required to manage backup storage and shared storage for the instance. |
+| Hardware Firewall | This permission is required to edit or view firewall logs and settings for the Fortinet on IBM Cloud service of your instance. |
 | Order Compute with  Public Network Port | This permission is required to order hardware and VSIs (Virtual Server Instances) with public network ports. |
 | Add Tickets | This permission is required to open service tickets on your behalf. Tickets might be created for the following operations: to initiate restore operations and to initiate problem resolution processes automatically when issues are found. |
 | Edit Tickets | This permission is required to edit the service tickets that are created on your behalf. |

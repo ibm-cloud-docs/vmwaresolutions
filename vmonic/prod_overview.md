@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-07-07"
+lastupdated: "2017-08-01"
 
 ---
 
@@ -35,4 +35,6 @@ to the IBM Cloud by using the scalable, secure, and high-performance IBM SoftLay
 * [Getting started](../index.html)
 * [Cloud Foundation instances](../sddc/sd_cloudfoundationoverview.html)
 * [vCenter Server instances](../vcenter/vc_vcenterserveroverview.html)
-* [Zerto disaster recovery](addingzertodr.html)
+* [Fortinet on IBM Cloud](fsa_considerations.html)
+* [Veeam on IBM Cloud](veeam_considerations.html)
+* [Zerto on IBM Cloud](addingzertodr.html)

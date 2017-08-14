@@ -36,7 +36,7 @@ Starting with the V1.6 release, several enhancements are available for your vCen
 *  Up to seven NFS file shares can be added when you order instances. The management components (vCenter, PSC, NSX Manager and Controllers, CloudDriver) are now running on an NFS file share for high availability.
 *  Automatic deployment and configuration of customer-managed VMware NSX Edge Services Gateway.
 
-Because of these changes, you cannot use as is (or upgrade) your existing vCenter Server instances in the current release. vCenter Server instances from pre-V1.6 releases are still visible on the IBM® Cloud for VMware Solutions console in read-only mode. These instances are marked on the user interface as **Deprecated** with a warning symbol icon.
+Because of these changes, you cannot use as is (or upgrade) your existing vCenter Server instances in the current release. vCenter Server instances from pre-V1.6 releases are still visible on the IBM® Cloud for VMware Solutions console in view-only mode. These instances are marked on the user interface as **Deprecated** with a warning symbol icon.
 
 The following actions are available on the pre-V1.6 vCenter Server instances:
 
@@ -52,19 +52,19 @@ All other actions on pre-V1.6 instances are no longer available.
 *  A private subnet with 64 IP addresses on the private VLAN to allow your VMs to access the SoftLayer® internal network.
 *  NSX controllers are deployed with anti-affinity rules and run on separate ESXi servers in a 3-node deployment configuration.
 *  New VMware NSX Edge Services Gateway for customer usage.
-   
+
    An additional NSX Edge Services Gateway (ESG) is now deployed as part of the new vCenter Server instances that you are ordering.
-   
-   This ESG is provided to be used with your own VMs for communications between the private and public subnets that are ordered on your 
-   behalf (see above) and it includes two interfaces: one interface is connected to the virtualized VXLANs associated with your VMs and the 
+
+   This ESG is provided to be used with your own VMs for communications between the private and public subnets that are ordered on your
+   behalf (see above) and it includes two interfaces: one interface is connected to the virtualized VXLANs associated with your VMs and the
    other one is connected to the public VLAN. In addition, the following settings are configured:
    *  Firewall rule to allow all outgoing traffic from the private subnet range of IP addresses.
-   *  SNAT (Source Network Address Translation) rule (disabled by default) to translate all IP addresses from the private subnet to a 
+   *  SNAT (Source Network Address Translation) rule (disabled by default) to translate all IP addresses from the private subnet to a
    single IP address on the public subnet.
-   * VMware HA (High Availability) is configured to use a new port group that is shared between the management ESG and the customer-managed 
+   * VMware HA (High Availability) is configured to use a new port group that is shared between the management ESG and the customer-managed
    ESG.
-   
-   This ESG is deployed for all instance hardware types, and customers can modify the configuration. For more information, see the 
+
+   This ESG is deployed for all instance hardware types, and customers can modify the configuration. For more information, see the
    following topics:
    *  [Configuring your network to use the customer-managed NSX Edge Services Gateway with your VMs](../vcenter/vc_esg_config.html)
    *  [VMware NSX Documentation](https://pubs.vmware.com/NSX-6/index.jsp?topic=%2Fcom.vmware.nsx.admin.doc%2FGUID-3F96DECE-33FB-43EE-88D7-124A730830A4.html){:new_window}

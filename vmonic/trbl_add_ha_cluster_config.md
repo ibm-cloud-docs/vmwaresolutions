@@ -16,4 +16,6 @@ When adding an HA (High Availability) cluster configuration with only one file s
 `The number of heartbeat datastores for host is 1, which is less than required: 2`
 
 ## Resolution
-This issue occurs if there is no redundancy in shared storage to allow for datastore heartbeating. For more information and steps how to fix the problem, see [HA error: "The number of heartbeat datastores for host is 1, which is less than required: 2" (2004739)](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2004739)
+This issue occurs if there is no redundancy in shared storage to allow for datastore heartbeating. 
+
+For more information and steps how to fix the problem, see [HA error: "The number of heartbeat datastores for host is 1, which is less than required: 2" (2004739)](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2004739)

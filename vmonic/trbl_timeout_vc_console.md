@@ -4,16 +4,14 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-29"
+lastupdated: "2017-07-13"
 
 ---
 
 # Timeout reached while connecting to the VMware vSphere Web Client
 
 ## Problem
-When you try to connect to the vSphere Web Client, you might get a timeout error.
-
-The following error might be displayed:
+When you try to connect to the vSphere Web Client, you might get the following timeout error:
 
 `The server at <IP_address> is taking too long to respond.`
 

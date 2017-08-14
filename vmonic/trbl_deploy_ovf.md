@@ -4,11 +4,13 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-05-26"
+lastupdated: "2017-07-13"
 
 ---
 
 # Deploying an OVF file using the VMware vSphere Web Client
+
+## Resolution
 
 Review the following considerations and steps to deploy an OVF (Open Virtualization Format) file using the vSphere Web Client.
 

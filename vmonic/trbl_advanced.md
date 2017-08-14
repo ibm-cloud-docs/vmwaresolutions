@@ -4,13 +4,17 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-15"
+lastupdated: "2017-07-12"
 
 ---
 
 # Assisted troubleshooting
 
+## Problem
+
 In some situations, a more complicated issue might occur, and log files are not enough to complete the root cause analysis and provide a solution.
+
+## Resolution
 
 To troubleshoot and resolve this type of issues, the {{site.data.keyword.vmwaresolutions_full}} Support team needs access to the IBM Cloud Management virtual machine (VM). This management VM, called IBM CloudDriver, is the main interface that is used to manage the deployed VMware Cloud Foundation instances and VMware vCenter Server instances.
 

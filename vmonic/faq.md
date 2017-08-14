@@ -4,13 +4,13 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-07-07"
+lastupdated: "2017-08-10"
 
 ---
 
-# FAQ
+# FAQ about IBM® Cloud for VMware Solutions
 
-Review answers to questions that you might have about {{site.data.keyword.vmwaresolutions_full}}.
+Find answers to the questions that you might have about {{site.data.keyword.vmwaresolutions_full}}.
 
 ## What user accounts do I need for {{site.data.keyword.vmwaresolutions_short}}?
 
@@ -70,7 +70,7 @@ Although the customer-managed NSX Edge is connected to the public VLAN, security
 
 ## How do I choose the data centers for my instances?
 
-The unified Cloud Foundation deployment and the vCenter Server deployment have strict requirements on the physical infrastructure. The physical infrastructure varies among IBM Cloud data centers. Therefore, you can deploy instances only in data centers that meet the requirements. The available data centers are listed when you order instances, and you can select one from that list. 
+The unified Cloud Foundation deployment and the vCenter Server deployment have strict requirements on the physical infrastructure. The physical infrastructure varies among IBM® Cloud data centers. Therefore, you can deploy instances only in data centers that meet the requirements. The available data centers are listed when you order instances, and you can select one from that list.
 
 For more information, see the _Available data centers_ sections in:
 * [Requirements and planning for Cloud Foundation instances](../sddc/sd_planning.html).
