@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-29"
+lastupdated: "2017-07-21"
 
 ---
 
@@ -28,16 +28,8 @@ After you associate the SoftLayer account, the console automatically retrieves t
 ## Procedure
 
 1. Click **Settings** from the left navigation pane.
-2. If you want to be notified by email when the following events occur, select one or more check boxes under **Notifications**:
-   * A new instance deployment is completed successfully.
-   * An instance is deleted successfully.
-   * ESXi servers are added or removed successfully.
-   * An instance service is installed or removed successfully.
-3. If you want to be notified on the console when events occur in the following areas, select one or more check boxes under **Notifications**:
-   * Cloud Foundation instances
-   * vCenter Server instances
-   * Services
-   * System
+2. If you want to be notified by email when events occur, select the **Enable email notifications** check box.
+3. If you want to be notified on the console when events occur, select the **Enable console notifications** check box.
 4. In the **SoftLayer Credentials** area, enter the user name of your SoftLayer account, and then follow the instructions on the console 
 to enter the SoftLayer API key.
 5. Click **Save Credentials**.

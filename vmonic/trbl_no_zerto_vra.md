@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-30"
+lastupdated: "2017-07-12"
 
 ---
 
@@ -22,4 +22,4 @@ Open a service ticket and work with IBM Support to obtain available IP addresses
 
 To access the Zerto console, click the Zerto card from the **Services** tab of the instance and click **View Details** then, **View Zerto Console**.
 
-For information on contacting IBM Support, see [Contacting IBM Support](trbl_support.html).
+For information about contacting IBM Support, see [Contacting IBM Support](trbl_support.html).
