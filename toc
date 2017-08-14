@@ -10,6 +10,7 @@ IBM Cloud for VMware Solutions
 
     {: .topicgroup}
     Release notes
+        vmonic/relnotes_v18.md
         vmonic/relnotes_v17.md
         vmonic/relnotes_v16.md
         vmonic/relnotes_v15.md
@@ -42,8 +43,6 @@ IBM Cloud for VMware Solutions
         sddc/sd_viewinginstances.md
         sddc/sd_addingremovingservers.md
         sddc/sd_applyingupdates.md
-        sddc/sd_backingupserver.md
-        sddc/sd_restoringserver.md
         sddc/sd_addingremovingservices.md
         sddc/sd_deletinginstance.md
         sddc/sd_deletinginstance_multi.md
@@ -58,21 +57,32 @@ IBM Cloud for VMware Solutions
         vcenter/vc_addingviewingclusters.md
         vcenter/vc_addingremovingservers.md
         vcenter/vc_applyingupdates.md
-        vcenter/vc_backingupserver.md
-        vcenter/vc_restoringserver.md
         vcenter/vc_addingremovingservices.md
         vcenter/vc_deletinginstance.md
 
     {: .topicgroup}
-    Zerto disaster recovery
+    Fortinet on IBM Cloud
+        vmonic/fsa_considerations.md
+        vmonic/managingfsa.md
+
+    {: .topicgroup}
+    Veeam on IBM Cloud
+        vmonic/veeam_considerations.md
+        vmonic/managingveeam.md
+
+    {: .topicgroup}
+    Zerto on IBM Cloud
         vmonic/addingzertodr.md
         vmonic/managingzertodr.md
-        vmonic/removingzertodr.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
     vmonic/trbl_support.md
-    vmonic/faq.md
+
+    {: .topicgroup}
+    FAQs
+        vmonic/faq.md
+        vmonic/faq_byol.md
 
     {: .topicgroup}
     Troubleshooting
