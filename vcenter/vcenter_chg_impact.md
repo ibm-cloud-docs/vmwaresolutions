@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-14"
+lastupdated: "2017-08-10"
 
 ---
 
@@ -21,7 +21,7 @@ Table 1. Operations that are impacted by changing VMware resources
 | Attempted change  | Impacted operations  | Severity  | Recovery method  |
 |:------------- |:------------- |:--------------|:--------------|
 | Change the VMware virtual datacenter name. | Adding a VMware datacenter might fail because the new ESXi server cannot join the changed datacenter. | Important | Change the VMware virtual datacenter name back to the original name. |
-| Change any port group names.    | Adding an ESXi server might fail. | Important | Change the port group name back to the original name. | 
+| Change any port group names.    | Adding an ESXi server might fail. | Important | Change the port group name back to the original name. |
 | Change the cluster name. | Adding an ESXi server might fail. | Important | Change the cluster name back to the original name.
 | Change the public or private Distributed Virtual Switch (DVS) name. | Adding an ESXi server might fail. | Important | Change the public or private Distributed Virtual Switch (DVS) name to the original name.
 | Change any Network File System (NFS) data store names. | Adding an ESXi server might fail. | Important | Remount the NFS data store as read-only on the ESXi server. The NFS data store name must match the one provisioned when the system started.
@@ -40,7 +40,7 @@ The following information discusses the subnets that are ordered by {{site.data.
 
 **CAUTION**: Do not use these components for other purposes, or the stability of your environment is severely compromised.
 
-With each IBM Cloud bare metal server order, the following ranges of IP addresses are ordered by default:
+With each IBM® Cloud bare metal server order, the following ranges of IP addresses are ordered by default:
 *  A primary public range of 32 IP addresses
 *  A primary private range of 64 IP addresses
 

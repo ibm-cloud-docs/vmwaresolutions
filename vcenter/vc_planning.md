@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-30"
+lastupdated: "2017-08-10"
 
 ---
 
@@ -18,7 +18,7 @@ The SoftLayer® account that you are using must meet certain requirements. For m
 
 ## Data centers availability
 
-The vCenter Server deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in IBM Cloud data centers that meet the requirements. The following data centers are available for vCenter Server deployment:
+The vCenter Server deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in IBM® Cloud data centers that meet the requirements. The following data centers are available for vCenter Server deployment:
 
 Table 1. Available data centers for vCenter Server instances
 
