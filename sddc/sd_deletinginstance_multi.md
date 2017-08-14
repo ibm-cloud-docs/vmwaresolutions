@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-08"
+lastupdated: "2017-08-07"
 
 ---
 
@@ -13,11 +13,12 @@ lastupdated: "2017-06-08"
 There are special considerations to be aware of before you plan to delete Cloud Foundation instances that are part of a multi-site configuration.
 
 When you delete a Cloud Foundation instance, the following components are released sequentially:
-1. Support and Services fee
-2. VMware product licenses
-3. ESXi servers
-4. Subnets
-5. VLANs
+1. All deployed services
+2. Support and Services fee
+3. VMware product licenses
+4. ESXi servers
+5. Subnets
+6. VLANs
 
 Because of resource dependencies, the components in your instance are not released immediately when you delete the instance. For example, the subnets and VLANs cannot be deleted until the ESXi servers are fully reclaimed by SoftLayer®, which happens at the end of the SoftLayer billing cycle. At the end of the SoftLayer billing cycle, which is typically 30 days, the subnets and VLANs are deleted and the instance deletion is completed.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-30"
+lastupdated: "2017-08-10"
 
 ---
 
@@ -14,7 +14,7 @@ Review the following requirements before you order your VMware Cloud Foundation 
 
 ## SoftLayer account requirements
 
-The SoftLayer® account that you are using must meet certain requirements. For more information, see [SoftLayer account requirements](../vmonic/slaccountrequirement.html).
+The IBM® SoftLayer® account that you are using must meet certain requirements. For more information, see [SoftLayer account requirements](../vmonic/slaccountrequirement.html).
 
 ## Data centers availability
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-26"
+lastupdated: "2017-08-11"
 
 ---
 
@@ -13,15 +13,14 @@ lastupdated: "2017-06-26"
 The {{site.data.keyword.vmwaresolutions_full}} console periodically detects and lists the available software updates that you can apply to your VMware virtual environment.
 
 An available update is a record in the software updates list of the instance, which can be applied immediately or scheduled for a
-later time. The update is a bundle that contains one or more packages for updating the IBM management components, VMware components, and other services that are deployed into your Cloud Foundation instance, such as Zerto disaster recovery.
+later time. The update is a bundle that contains one or more packages for updating the IBM management components and the VMware components.
 
 ## Before you begin
 
-**Note**: Because the V1.7 release updates the VMware NSX for vSphere version from 6.2.4 to 6.2.6, it is recommended to review and complete any required steps from the VMware documentation. For more information, see [Preparing for the NSX Upgrade](https://docs.vmware.com/en/VMware-NSX-for-vSphere/6.2/com.vmware.nsx.upgrade.doc/GUID-CCA34724-2621-4A5C-B2DC-65596AC46EBB.html){:new_window}.
+<!-- **Note**: Because the V1.7 release updates the VMware NSX for vSphere version from 6.2.4 to 6.2.6, it is recommended to review and complete any required steps from the VMware documentation. For more information, see [Preparing for the NSX Upgrade](https://docs.vmware.com/en/VMware-NSX-for-vSphere/6.2/com.vmware.nsx.upgrade.doc/GUID-CCA34724-2621-4A5C-B2DC-65596AC46EBB.html){:new_window}. -->
 
 Before you attempt to apply an update, expand the update entry by clicking the down arrow and verify the following information:
-*  The version of the update. You must apply the updates in chronological sequence that is from the earliest one to the most recent one.
-Ensure that you applied all the previous updates before you apply the most recent one. For example, you must apply the V1.6 update before attempting to apply the V1.7 update.
+*  The version of the update. You must apply the updates in chronological sequence that is from the earliest one to the most recent one. Ensure that you applied all the previous updates before you apply the most recent one. For example, you must apply the V1.6 update before attempting to apply the V1.7 update.
 *  Whether downtime is required.
 *  The total estimated time of the update.
 *  The impact of the update on the VMware virtual environment. The following list shows how different levels of impact affect the
@@ -38,7 +37,9 @@ system:
     </dl>
 * The update details.
 
-Before an update operation is started, a backup of the management virtual machines is done automatically in the background. After the backup is completed, the update is applied.
+Before an update operation is started, a backup of the management virtual machines is done automatically in the background. After the backup is completed, the update is applied. During the update operation, do not attempt any provisioning or add ESXi server operations.
+
+**Note**: During updates that include VMware components updates, virtual machines (VMs) may need to be migrated from ESXi servers to go into maintenance mode. If a VM has a local datastore, or CD-ROM mounted, this might prevent the VM migration.
 
 ## Procedure
 
@@ -50,7 +51,7 @@ Before an update operation is started, a backup of the management virtual machin
    **Update Now**.
    *  To schedule a future update, click the overflow menu icon in the **Actions** column of the update entry, and then click **Schedule
    Update**. Select the date, time, and time zone when you want the update to be started. Click **OK**.
-5. If you are applying updates to Cloud Foundation instances in multi-site deployment configuration, a section titled **Steps Required to Update** is displayed. This section lists the update operations required for all instances in the multi-site deployment. You must complete the steps in sequence by clicking **Apply Update** for each step. You must wait for the previous step to complete before you start the next step. 
+5. If you are applying updates to Cloud Foundation instances in multi-site deployment configuration, a section titled **Steps Required to Update** is displayed. This section lists the update operations required for all instances in the multi-site deployment. You must complete the steps in sequence by clicking **Apply Update** for each step. You must wait for the previous step to complete before you start the next step.
 
 ## Results
 
