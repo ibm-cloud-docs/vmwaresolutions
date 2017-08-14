@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-30"
+lastupdated: "2017-08-10"
 
 ---
 
@@ -19,6 +19,7 @@ Use this procedure to view the VMware Cloud Foundation instances that you ordere
   * **Name**:The name of the instance.
   * **ESXi servers**: The number of ESXi servers.
   * **Location**: The data center where the instance is hosted.
+  * **Creation time**: The date and time that the instance was created.
   * **Status**: The status of the instance. The status can have one of the following values:
     <dl class="dl">
     <dt class="dt dlterm">Creating</dt>
@@ -40,7 +41,11 @@ Use this procedure to view the VMware Cloud Foundation instances that you ordere
     <dt class="dt dlterm">Deleted</dt>
     <dd class="dd">The instance is deleted.</dd>
     </dl>
-  * **Actions**: The actions that you can take on the instance. The available action is to delete the instance.
+  * **Actions**: Take the following actions on the instance:
+    <dl class="dl">
+    <dt class="dt dlterm">Delete</dt>
+    <dd class="dd">Delete the instance.</dd>
+    </dl>
 
 2. Click an instance to see its general details. Ensure that you are on the **Summary** tab.
 
@@ -53,7 +58,7 @@ Use this procedure to view the VMware Cloud Foundation instances that you ordere
     **Note**: There is a slight variation between the vCenter Server version displayed on the {{site.data.keyword.vmwaresolutions_short}} console and the VMware vSphere Web Client. Both are correct.
 
   * **NSX for vSphere**: The VMware NSX for vSphere product version.
-  * **NSX license edition**: The version and edition of the VMware NSX license.
+  * _**VMware component**_ **License**: If you selected to use your own VMware license for any of the VMware components on the **Licensing** page when you were ordering the instance, the VMware component name and the license key string you entered for the component are displayed.
   * **DNS**:
     <dl class="dl">
            <dt class="dt dlterm">Root Domain</dt>
@@ -98,14 +103,14 @@ Use this procedure to view the VMware Cloud Foundation instances that you ordere
   * **Date**: The date and time when the instance status is changed.
   * **Summary**: The details of the change.
 
-    If errors occur during instance deployment or instance deletion, a SoftLayer service ticket is sent automatically to IBM Support on
+    If errors occur during instance deployment or instance deletion, a SoftLayer service ticket is sent automatically to IBM® Support on
     your behalf. You can click the ticket link to check its status and progress.
 
 ## What to do next
 
 Manage your instances from the {{site.data.keyword.vmwaresolutions_short}} console or the vSphere Web Client.
 
-**Important**: Before you click **vCenter console** on the instance details page to go to the vSphere Web Client and start managing your ESXi servers, you must log in to the VPN portal of the IBM Cloud data center. Hover over the vCenter console button and follow the instructions to ensure that you meet all requirements and completed the necessary steps before you access the vSphere Web Client. 
+**Important**: Before you click **vCenter console** on the instance details page to go to the vSphere Web Client and start managing your ESXi servers, you must log in to the VPN portal of the IBM Cloud data center. Hover over the vCenter console button and follow the instructions to ensure that you meet all requirements and you completed the necessary steps before you access the vSphere Web Client.
 
 Review the following topics for information to help you complete the login instructions:
 
