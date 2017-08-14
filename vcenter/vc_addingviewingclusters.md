@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-07-03"
+lastupdated: "2017-08-11"
 
 ---
 
@@ -14,7 +14,7 @@ You can add clusters to your VMware vCenter Server instances to expand the compu
 
 ## Before you begin
 
-The ESXi servers that you configured when you ordered an instance are grouped as **cluster1** by default. You can add up to five clusters to an instance. 
+The ESXi servers that you configured when you ordered an instance are grouped as **cluster1** by default. You can add up to five clusters to an instance.
 
 When you add a cluster for a vCenter Server instance, you must specify or review the following settings:
 * **Cluster Name**: The cluster name must meet the following requirements:
@@ -26,20 +26,20 @@ When you add a cluster for a vCenter Server instance, you must specify or review
 * **Number of Bare Metal Servers**: A minimum of 2 bare metal servers is required for a cluster. You can add up to 20 bare metal servers for a cluster. All bare metal servers share the same configuration.
 * **Data Center Location**: The data center location of the cluster is same with the one of the vCenter Server instance. You cannot change it.
 * **Storage**: You can add file-level shared storage for the cluster and specify the following settings:
-  * **Number of File Shares**: Specify the number of file shares for the shared storage that you want to add. The number of file shares 
-  must be in the range 1 - 8.
+  * **Number of File Shares**: Specify the number of file shares for the shared storage that you want to add. The number of file shares
+  must be in the range 1 - 32. <!-- the range to change to 1 - 32 per github 3545 -->
   * **Size**: Select the capacity that meets your shared storage needs.
-  * **Performance**: Select the IOPS (input/output operations per second) per GB based on your workload requirements. The performance 
+  * **Performance**: Select the IOPS (Input/output Operations Per Second) per GB based on your workload requirements. The performance
   levels available to you depend on the size you selected and the data center location.
-  * **NFS Version**: Select the appropriate NFS (Network File System) version according to your needs. NFS v4.1 includes multiple paths 
-  to the shared NAS (Network Attached Storage) array, but does not support SDRS (Storage Distributed Resource Scheduler) or SIOC 
+  * **NFS Version**: Select the appropriate NFS (Network File System) version according to your needs. NFS v4.1 includes multiple paths
+  to the shared NAS (Network Attached Storage) array, but does not support SDRS (Storage Distributed Resource Scheduler) or SIOC
   (Storage I/O Control). NFS v3 supports SDRS and SIOC, but does not include NFS multipathing.
 
 ## Procedure
 
 1. Click **Deployed Instances** from the left navigation pane. Click the **vCenter Server** tab.
 2. Click the instance to view the clusters in it or to add clusters to it.
-   
+
    **Note**: If you want to add clusters to this instance, ensure that the instance is in the **Ready to Use** status. Otherwise, you cannot add clusters to the instance.
 3. Click the **Infrastructure** tab. View the summary about the clusters:
    * **Name**: The name of the cluster.
@@ -55,23 +55,23 @@ When you add a cluster for a vCenter Server instance, you must specify or review
          <dt class="dt dlterm">Ready to Use</dt>
          <dd class="dd">The cluster is ready to use.</dd>
      </dl>
-4. To add a cluster, click **ADD**, and then complete the following steps in the **Add Cluster** window:
+4. To add a cluster, click **Add**, and then complete the following steps in the **Add Cluster** area:
    1. Enter the cluster name.
-   2. Select the bare metal server specification.
+   2. Select the bare metal server specification. If selecting **User customized**, enter the CPU and RAM specifications based on your requirements.
    3. Specify the number of bare metal servers.
-   4. Review the data center location that is automatically filled in. 
+   4. Review the data center location that is automatically filled in.
    5. Under **Storage**, configure the file-level shared storage by selecting the number, size, performance, and NFS version.
-   6. Click **Calculate Price before Placing Order** under **Estimated Cost** to get the pricing of your order.
-   7. Review the estimated cost of the cluster by clicking the price link under **Estimated Cost**. To save or print your order summary, 
+   6. Click **Calculate Price** under **Estimated Cost** to get the pricing of your order.
+   7. Review the estimated cost of the cluster by clicking the price link under **Estimated Cost**. To save or print your order summary,
    click the **Print** or **Download** icon on the upper right of the PDF window.
    8. Click **Add**.
-   
+
 5. After the cluster is ready to use, you can click the cluster name to view its details:
    * The list of ESXi servers with their details:
-     * **Name**: The name of the ESXi server is in the format `hostname.vmonic.local`, where: 
-       
+     * **Name**: The name of the ESXi server is in the format `hostname.vmonic.local`, where:
+
        `hostname` is the host name in the format `instancename-esxn`, where `instancename` is the name of the instance and `n` is the sequence of the server.
-       
+
        `vmonic.local` is the domain name.
      * **Version**: The version of the ESXi server.
      * **Credentials**: The user name and password to access the ESXi server.
@@ -86,7 +86,7 @@ When you add a cluster for a vCenter Server instance, you must specify or review
    * The storage details:
      * **Name**: The data store name.
      * **Size**: The capacity of the storage.
-     * **IOPS/GB**: The performance level of the storage. 
+     * **IOPS/GB**: The performance level of the storage.
      * **NFS protocol**: The NFS version of the storage.
 
 ## Results
