@@ -42,13 +42,13 @@ For information about the enhancements that are introduced in VMware NSX for vSp
 
 NSX Edge is now included as part of the new vCenter Server instances that you are ordering. NSX Edge provides network edge security and gateway services to isolate a virtualized network.
 
-During instance deployment, a Management VMware NSX Edge Services Gateway (ESG) is deployed by IBM®. This ESG is used by the IBM management virtual machines to communicate with specific external IBM management components that are related to automation. This ESG is deployed to include two interfaces: one interface is connected to the IBM Cloud private VLAN, and the other one is connected to the IBM Cloud public VLAN. 
+During instance deployment, a Management VMware NSX Edge Services Gateway (ESG) is deployed by IBM®. This ESG is used by the IBM management virtual machines to communicate with specific external IBM management components that are related to automation. This ESG is deployed to include two interfaces: one interface is connected to the IBM Cloud private VLAN, and the other one is connected to the IBM Cloud public VLAN.
 
 To ensure security, firewall rules are in place to allow only outbound HTTPS communications that are initiated by the management virtual machines. This ESG is deployed in a Large configuration, and only IBM Support can modify the configuration. For more information, see:
 
-  * _vCenter Server components_ in [vCenter Server overview](../vcenter/vc_vcenterserveroverview.html)
-  * _Does VMware NSX Edge pose security risk?_ in [FAQ](faq.html)
-  * [VMware NSX Documentation](https://pubs.vmware.com/NSX-6/index.jsp?topic=%2Fcom.vmware.nsx.admin.doc%2FGUID-3F96DECE-33FB-43EE-88D7-124A730830A4.html){:new_window}
+* [vCenter Server instance components](../vcenter/vc_vcenterserveroverview.html#vcenter-server-instance-components)
+* [Does the management services NSX Edge pose a security risk?](../vmonic/faq.html#does-the-management-services-nsx-edge-pose-a-security-risk-)
+* [VMware NSX Documentation](https://pubs.vmware.com/NSX-6/index.jsp?topic=%2Fcom.vmware.nsx.admin.doc%2FGUID-3F96DECE-33FB-43EE-88D7-124A730830A4.html){:new_window}
 
 ### NSX license
 
@@ -110,7 +110,7 @@ New features and improvements are made to the instance management process:
 
 ## Console notifications
 
-You can now configure console notifications on the **Settings** page. By default, the setting is enabled, which means that you receive a notification in the console for all events. You can also disable notifications for the console on the **Settings** page. 
+You can now configure console notifications on the **Settings** page. By default, the setting is enabled, which means that you receive a notification in the console for all events. You can also disable notifications for the console on the **Settings** page.
 
 For more information, see:
 

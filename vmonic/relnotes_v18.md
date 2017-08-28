@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-14"
+lastupdated: "2017-08-28"
 
 ---
 
@@ -12,7 +12,7 @@ lastupdated: "2017-08-14"
 
 This release includes new features, component updates, usability enhancements, and bug fixes. For a list of fixed issues in different releases, known issues with the product, and additional tips to use {{site.data.keyword.vmwaresolutions_full}}, see [{{site.data.keyword.vmwaresolutions_full}} dW Answers](https://developer.ibm.com/answers/topics/cloudvmw/){:new_window}.
 
-## Fortinet on IBM Cloud service
+## Fortinet on IBM® Cloud service
 
 The Fortinet on IBM Cloud service is now available to both Cloud Foundation and vCenter Server instances. This service deploys a pair of FortiGate Security Appliance (FSA) 300 series devices in a highly available mode to provide firewall, routing, NAT, and VPN services to protect all the servers and virtual machines on the public VLAN of your instances. You can order instances with the Fortinet service included right from the start, or add this service to your existing instances later from the instance details page.
 
@@ -64,12 +64,19 @@ For more information, see:
 * [Ordering vCenter Server instances](../vcenter/vc_orderinginstance.html)
 * [Adding and viewing clusters for vCenter Server instances](../vcenter/vc_addingviewingclusters.html)
 
+### Updates to data centers (Updated August 28, 2017)
+
+The following new data centers are available for deployment: **DAL-09, DAL-12, DAL-13 - Dallas**; **LON-04, LON-06 - London**; **SJC-04 - San Jose**; **WDC-06, WDC-07 - Washington, DC**
+
+For more information, see:
+* [Requirements and planning for vCenter Server instances](../vcenter/vc_planning.html)
+
 ## Usability enhancements
 
 Improvements are made throughout the user interface:
-* Learn about services and order an instance on the **Getting Started** page from the left navigation pane.
+* You can learn about services and order an instance on the **Getting Started** page from the left navigation pane. For information about the IBM Cloud Secure Virtualization service architecture, see [Security and compliance - HyTrust ](https://www.ibm.com/devops/method/content/architecture/virtCloudFoundationPlatform/hytrust).
 * Use the overflow menu on the instance details page to delete an instance in **Ready to Use** state.
-* The option to upgrade your NSX license edition is now available on the **Update and Patch** tab. The license upgrade replaces all existing NSX licenses in your SoftLayer account with the new license.
+* The option to upgrade your NSX license edition is now available on the **Update and Patch** tab. The license upgrade replaces all existing NSX licenses in your IBM SoftLayer account with the new license.
 * The **Backup and Restore** tab on the instance details page is no longer available.
-* Select more than one service to deploy at the beginning of an order. In addition to being able to add the Zerto on IBM Cloud service, the options to select the Veeam on IBM Cloud service and the Fortinet on IBM Cloud service are also available.
+* You can select multiple services to deploy at the beginning of an order. In addition to the Zerto on IBM Cloud service, the options to select the Veeam on IBM Cloud service and the Fortinet on IBM Cloud service are also available.
 * The **Available Services** tab on the **Services** tab in the instance details page is renamed to **Add Services**.

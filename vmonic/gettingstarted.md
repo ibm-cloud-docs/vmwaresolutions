@@ -49,8 +49,8 @@ For optimal viewing and working on the {{site.data.keyword.vmwaresolutions_short
 
 ## Related links
 
-* [Product overview](prod_overview.html)
-* [Cloud Foundation instances](../sddc/sd_cloudfoundationoverview.html)
-* [vCenter Server instances](../vcenter/vc_vcenterserveroverview.html)
-* [Zerto disaster recovery](addingzertodr.html)
+* [About {{site.data.keyword.vmwaresolutions_short}}](vmonic/prod_overview.html)
+* [Cloud Foundation overview](../sddc/sd_cloudfoundationoverview.html)
+* [vCenter Server overview](../vcenter/vc_vcenterserveroverview.html)
+* [Zerto on IBM Cloud](addingzertodr.html)
 * [Troubleshooting](troubleshooting.html)

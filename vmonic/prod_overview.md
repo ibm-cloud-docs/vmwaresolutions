@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-01"
+lastupdated: "2017-08-15"
 
 ---
 
@@ -14,6 +14,8 @@ lastupdated: "2017-08-01"
 to the IBM Cloud by using the scalable, secure, and high-performance IBM SoftLayer® infrastructure and the industry-leading VMware hybrid virtualization technology.
 
 {{site.data.keyword.vmwaresolutions_short}} allows you to easily deploy your VMware virtual environments and manage the infrastructure resources on IBM Cloud. At the same time, you can still use your familiar native VMware product console to manage the VMware workloads.
+
+# {{site.data.keyword.vmwaresolutions_short}} benefits
 
 {{site.data.keyword.vmwaresolutions_short}} provides the following major benefits:
 
@@ -33,8 +35,8 @@ to the IBM Cloud by using the scalable, secure, and high-performance IBM SoftLay
 ## Related links
 
 * [Getting started](../index.html)
-* [Cloud Foundation instances](../sddc/sd_cloudfoundationoverview.html)
-* [vCenter Server instances](../vcenter/vc_vcenterserveroverview.html)
+* [Cloud Foundation overview](../sddc/sd_cloudfoundationoverview.html)
+* [vCenter Server overview](../vcenter/vc_vcenterserveroverview.html)
 * [Fortinet on IBM Cloud](fsa_considerations.html)
 * [Veeam on IBM Cloud](veeam_considerations.html)
 * [Zerto on IBM Cloud](addingzertodr.html)

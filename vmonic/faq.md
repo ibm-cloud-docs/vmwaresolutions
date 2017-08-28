@@ -34,16 +34,16 @@ All costs for the physical and virtual infrastructure and the resulting licenses
 Both instance types provide deployment choices for VMware virtual environments. However, the difference is standardized versus
 customized.
 
-* When you order a VMware Cloud Foundation instance, you deploy a unified software-defined data center (SDDC) platform. For more information about what is deployed on a Cloud Foundation platform, see the _Cloud Foundation components_ section in [Cloud Foundation overview](../sddc/sd_cloudfoundationoverview.html).
-* When you order a VMware vCenter Server instance, you deploy a VMware virtual environment with customized compute, storage, and network resources. For more information about what is deployed on a vCenter Server platform, see the _vCenter Server components_ section in [vCenter Server overview](../vcenter/vc_vcenterserveroverview.html).
+* When you order a VMware Cloud Foundation instance, you deploy a unified software-defined data center (SDDC) platform. For more information about what is deployed on a Cloud Foundation platform, see [Cloud Foundation instance  components](../sddc/sd_cloudfoundationoverview.html#cloud-foundation-components).
+* When you order a VMware vCenter Server instance, you deploy a VMware virtual environment with customized compute, storage, and network resources. For more information about what is deployed on a vCenter Server platform, see [vCenter Server instance components](../vcenter/vc_vcenterserveroverview.html#vcenter-server-instance-components).
 
 ## What's included in a Cloud Foundation instance?
 
-For more information, see the _Cloud Foundation components_ section in [Cloud Foundation overview](../sddc/sd_cloudfoundationoverview.html).
+For more information, see [Cloud Foundation instance  components](../sddc/sd_cloudfoundationoverview.html#cloud-foundation-components).
 
 ## What's included in a vCenter Server instance?
 
-For more information, see the _vCenter Server components_ section in [vCenter Server overview](../vcenter/vc_vcenterserveroverview.html).
+For more information, see see [vCenter Server instance components](../vcenter/vc_vcenterserveroverview.html#vcenter-server-instance-components).
 
 ## Is a two-node VMware vCenter Server instance highly available?
 
