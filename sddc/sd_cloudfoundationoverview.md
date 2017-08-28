@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-11"
+lastupdated: "2017-08-15"
 
 ---
 
@@ -33,61 +33,69 @@ On the {{site.data.keyword.vmwaresolutions_full}} console, you can expand and co
 
 For details about the architecture, see the _Reference architecture_ document in the [Architecture Center](https://www.ibm.com/devops/method/content/architecture/virtCloudFoundationPlatform){:new_window}.
 
-## Cloud Foundation components
+## Cloud Foundation instance components
 
 The following components are included in your Cloud Foundation instance.
 
 **Note**: Charges that are incurred for the hardware, networking, VMs, and storage might vary based on the data center that is selected for deployment.
 
-* **Hardware**:
+### Hardware
+
 IBM Cloud bare metal servers with the following hardware options to choose from:
-    * Standard (Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz / 256 GB RAM / 12 disks)
-    * Small (Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz / 128 GB RAM / 12 disks)
+* Standard (Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz / 256 GB RAM / 12 disks)
+* Small (Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz / 128 GB RAM / 12 disks)
 
-  In addition, the following disk and networking specifications:
-    * Two 1-TB SATA drives
-    * Eight 2-TB SATA drives
-    * Two 1.2-TB SSD drives
-    * One RAID disk controller
-    * 10 Gbps dual public and private network uplinks
-    * VMware Server Virtualization 6.0 (VMware vSphere Enterprise Plus)
+In addition, the following disk and networking specifications:
+* Two 1-TB SATA drives
+* Eight 2-TB SATA drives
+* Two 1.2-TB SSD drives
+* One RAID disk controller
+* 10 Gbps dual public and private network uplinks
+* VMware Server Virtualization 6.0 (VMware vSphere Enterprise Plus)
 
-* **Networking**:
-    * Three VLANs (Virtual LANs): one public VLAN and two private VLANs
-    * A secure management services VMware NSX Edge Services Gateway (ESG) for outbound HTTPS management traffic, which is deployed by IBM as part of the management networking typology. This ESG is used by the IBM management virtual machines to communicate with specific external IBM management components that are related to automation. For more information, see [Does the management services NSX Edge pose a security risk?](../vmonic/faq.html#does-the-management-services-nsx-edge-pose-a-security-risk-)
+### Networking
 
-      **Important**: This ESG is not accessible to you and you cannot use it. If you modify it, you might not be able to manage the Cloud Foundation instance from the {{site.data.keyword.vmwaresolutions_short}} console. In addition, note that using a firewall or disabling the ESG communications to the external IBM management components will cause {{site.data.keyword.vmwaresolutions_short}} to become unusable.
+* Three VLANs (Virtual LANs): one public VLAN and two private VLANs
+* A secure management services VMware NSX Edge Services Gateway (ESG) for outbound HTTPS management traffic, which is deployed by IBM as part of the management networking typology. This ESG is used by the IBM management virtual machines to communicate with specific external IBM management components that are related to automation. For more information, see [Does the management services NSX Edge pose a security risk?](../vmonic/faq.html#does-the-management-services-nsx-edge-pose-a-security-risk-)
 
-    * The EVC (Enhanced vMotion Compatibility) feature is automatically enabled if you also have an existing cluster with ESXi servers that are supported by the current VMware vSphere version. EVC ensures vMotion compatibility for all hosts in a cluster and that all hosts in a cluster present the same CPU feature set to virtual machines, even if the actual CPUs on the hosts differ. Using EVC prevents migrations with vMotion from failing because of incompatible CPUs.
+  **Important**: This ESG is not accessible to you and you cannot use it. If you modify it, you might not be able to manage the Cloud Foundation instance from the {{site.data.keyword.vmwaresolutions_short}} console. In addition, note that using a firewall or disabling the ESG communications to the external IBM management components will cause {{site.data.keyword.vmwaresolutions_short}} to become unusable.
 
-* **VSIs**:
+* The EVC (Enhanced vMotion Compatibility) feature is automatically enabled if you also have an existing cluster with ESXi servers that are supported by the current VMware vSphere version. EVC ensures vMotion compatibility for all hosts in a cluster and that all hosts in a cluster present the same CPU feature set to virtual machines, even if the actual CPUs on the hosts differ. Using EVC prevents migrations with vMotion from failing because of incompatible CPUs.
+
+### Virtual Server Instances
+
 Three VSIs (Virtual Server Instances):
-    * A VSI for CloudBuilder, which is shut down after the instance deployment is completed.
-    * A VSI for the Veeam backup, which keeps running after the instance deployment is completed.
-    * A VSI for Windows Active Directory (AD) and Domain Name System (DNS) services, which is required for multi-site configuration
-    support. This VSI specification is: Windows 2012 R2 (8 GB RAM / 2 CPU cores / 100 GB disk / Dual 1 Gbps private uplinks).
+* A VSI for CloudBuilder, which is shut down after the instance deployment is completed.
+* A VSI for the Veeam backup, which keeps running after the instance deployment is completed.
+* A VSI for Windows Active Directory (AD) and Domain Name System (DNS) services, which is required for multi-site configuration support. This VSI specification is: Windows 2012 R2 (8 GB RAM / 2 CPU cores / 100 GB disk / Dual 1 Gbps private uplinks).
 
-* **Storage for backups**:
+### Storage for backups
+
 One 2 TB shared file-level storage that can be scaled up to 12 TB
 
-  **Note**: With the introduction of the Veeam on IBM Cloud service, the storage for backups is no longer a standard component of Cloud 
-  Foundation instances. When you order an instance, you can choose to order the storage for backups by selecting the Veeam on IBM Cloud 
-  service, or choose not to order the storage for backups by unselecting the Veeam on IBM Cloud service.
+**Note**: With the introduction of the Veeam on IBM Cloud service, the storage for backups is no longer a standard component of Cloud Foundation instances. When you order an instance, you can choose whether you want storage for backups by selecting or deselecting the Veeam on IBM Cloud service.
 
-* **Licenses and fees**:
-    * Four VMware vSAN Standard Tier I 0 - 20 TB 6.x
-    * Four VMware NSX Enterprise 6.2
-    * Four SDDC Manager licenses
-    * Four Support and Services fees
+### Licenses and fees
+
+* Four VMware vSAN Standard Tier I 0 - 20 TB 6.x
+* Four VMware NSX Enterprise 6.2
+* Four SDDC Manager licenses
+* Four Support and Services fees
+
+## Cloud Foundation expansion node components
 
 Each Cloud Foundation expansion node will deploy and incur charges for the following components in your SoftLayer® account:
 
-* **Hardware**: One IBM Cloud bare metal server with the configuration presented in [Cloud Foundation components](../sddc/sd_cloudfoundationoverview.html#cloud-foundation-components).
-* **Licenses and fees**:
-    * One VMware vSAN Standard Tier I 0 - 20 TB 6.x
-    * One VMware NSX Enterprise 6.2
-    * One SDDC Manager license
-    * One Support and Services fee
+### Hardware
+
+One IBM Cloud bare metal server with the configuration presented in [Cloud Foundation instance components](../sddc/sd_cloudfoundationoverview.html#cloud-foundation-components).
+
+### Licenses and fees
+
+* One VMware vSAN Standard Tier I 0 - 20 TB 6.x
+* One VMware NSX Enterprise 6.2
+* One SDDC Manager license
+* One Support and Services fee
 
 For details about the components, see the _Bill of Materials_ document in the [Architecture Center](https://www.ibm.com/devops/method/content/architecture/virtCloudFoundationPlatform){:new_window}.
 

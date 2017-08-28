@@ -4,26 +4,36 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-11"
+lastupdated: "2017-08-25"
 
 ---
 
 # Ordering, viewing, and removing services for vCenter Server instances
 
-You can order additional services for your VMware vCenter Server instances, such as a disaster recovery solution. When you no longer need these services, you can remove them from your instances.
+You can order services for your VMware vCenter Server instances, such as a disaster recovery solution. When you no longer need these services, you can remove them from your instances.
 
 ## Before you begin
 
-The following services are available to vCenter Server instances:
-* **Veeam on IBM® Cloud**: this service seamlessly integrates directly with your VMware hypervisors to help your enterprise achieve high availability. It can provide recovery points and time objectives of less than 15 minutes upon configuration for your applications and data. When you order this service, you must configure the following settings for it:
-   * **Number of VMs to License**: select the number of VMs to license. A minimum of 4 VMs for licenses is required for management.
-   * **Storage Size**: select the capacity that meets your storage needs. A minimum of 2000 GB of storage is required for management.
-   For considerations when estimating storage size, see [Estimating Repository Capacity](https://bp.veeam.expert/resource_planning/repository_planning_sizing.html).
-    * **Storage Performance**: select the IOPS (Input/output Operations Per Second) per GB based on your workload requirements.
+The following services are available to vCenter Server instances.
 
-  This service is initially configured to back up the management virtual machines (VMs) immediately upon deployment for your instance. If you do not order this service, there is no backup of the management VMs. For more information, see [Managing Veeam on IBM Cloud](../vmonic/managingveeam.html).
-* **Fortinet on IBM Cloud**: this service deploys an HA-pair of FortiGate Security Appliance (FSA) 300 series devices that can provide firewall, routing, NAT, and VPN services to protect the public network connection to your environment. For more information, see [Managing Fortinet on IBM Cloud](../vmonic/managingfsa.html).
-* **Zerto on IBM Cloud**: this service provides replication and disaster recovery capabilities to help protect your workloads. For more information, see [Managing Zerto on IBM Cloud](../vmonic/managingzertodr.html).
+### Veeam on IBM® Cloud
+
+This service seamlessly integrates directly with your VMware hypervisors to help your enterprise achieve high availability. It can provide recovery points and time objectives of less than 15 minutes upon configuration for your applications and data.
+
+This service is initially configured to back up the management virtual machines (VMs) immediately upon deployment for your instance. If you do not order this service, there is no backup of the management VMs. For more information, see [Managing Veeam on IBM Cloud](../vmonic/managingveeam.html).
+
+When you order this service, you must configure the following settings for it:
+* **Number of VMs to License**: select the number of VMs to license. A minimum of 4 VMs for licenses is required for management.
+* **Storage Size**: select the capacity that meets your storage needs. A minimum of 2000 GB of storage is required for management. For considerations when estimating storage size, see [Estimating Repository Capacity](https://bp.veeam.expert/resource_planning/repository_planning_sizing.html).
+* **Storage Performance**: select the IOPS (Input/output Operations Per Second) per GB based on your workload requirements.
+
+### Fortinet on IBM Cloud
+
+This service deploys an HA-pair of FortiGate Security Appliance (FSA) 300 series devices that can provide firewall, routing, NAT, and VPN services to protect the public network connection to your environment. For more information, see [Managing Fortinet on IBM Cloud](../vmonic/managingfsa.html).
+
+### Zerto on IBM Cloud
+
+This service provides replication and disaster recovery capabilities to help protect your workloads. For more information, see [Managing Zerto on IBM Cloud](../vmonic/managingzertodr.html).
 
 ## Procedure
 

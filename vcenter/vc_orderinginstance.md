@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-11"
+lastupdated: "2017-08-18"
 
 ---
 
@@ -24,47 +24,69 @@ IBM-provided VMware licensing, you can upgrade the VMware NSX Base Edition to Ad
 IBM Cloud Professional Services and Managed Services are also available to help you accelerate your journey to the cloud with offerings
 like migration, implementation, and onboarding services.
 
-## Before you begin
+## Requirements
 
 Ensure that you completed the following tasks:
-*  You configured the SoftLayer® credentials on the Settings page. For more information, see [User accounts and settings](../vmonic
-/useraccount.html).
+*  You configured the SoftLayer® credentials on the Settings page. For more information, see [User accounts and settings](../vmonic/useraccount.html).
 *  You meet the requirements and you reviewed the considerations in [vCenter Server requirements](vc_planning.html).
+
+## System settings
 
 When you order a vCenter Server instance, you must specify the following settings under **System**:
 
 **Important: Do not modify any values that are set during ordering and instance deployment. Doing so can result in your instance becoming unusable.**
 
-* **Instance Name**: The instance name must meet the following requirements:
-  * Only alphanumeric and dash (-) characters are allowed.
-  * The instance name must start and end with an alphanumeric character.
-  * The maximum length of the instance name is 10 characters.
-* **Bare Metal Server Configuration**: You can select a bare metal server specification depending on your requirements:
-  * Small (Dual Intel Xeon E5-2620 v4 / 16 cores total, 2.10 GHz / 128 GB RAM / 2 disks)
-  * Medium (Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz / 256 GB RAM / 2 disks)
-  * Large (Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz / 512 GB RAM / 2 disks)
-  * User customized: you can specify the CPU model and RAM for the bare metal server.
+### Instance name
 
-    The following CPU Model options are available:
-       * Dual Intel Xeon E5-2620 v4 / 16 cores total, 2.10 GHz
-       * Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz
-       * Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz
+The instance name must meet the following requirements:
+* Only alphanumeric and dash (-) characters are allowed.
+* The instance name must start and end with an alphanumeric character.
+* The maximum length of the instance name is 10 characters.
 
-    The following RAM options are available:
-       * 64 GB
-       * 128 GB
-       * 256 GB
-       * 512 GB
+### Bare Metal Server configuration
 
-  For guidance on what bare metal server configuration to choose, see the _Bill of Materials_ document in the [Architecture Center](https://www.ibm.com/devops/method/content/architecture/virtVCenterServerPlatform){:new_window}.
+You can select a bare metal server specification depending on your requirements:
+* Small (Dual Intel Xeon E5-2620 v4 / 16 cores total, 2.10 GHz / 128 GB RAM / 2 disks)
+* Medium (Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz / 256 GB RAM / 2 disks)
+* Large (Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz / 512 GB RAM / 2 disks)
+* User customized: you can specify the CPU model and RAM for the bare metal server.
 
-* **Number of Bare Metal Servers**: You can configure the number of ESXi servers in the range 2 - 20. All ESXi servers share the same configuration.
-* **Data Center Location**: You must select the IBM Cloud data center where the instance is to be hosted. Only the data centers that meet the bare metal server specification you selected previously are displayed.
+  The following CPU Model options are available:
+    * Dual Intel Xeon E5-2620 v4 / 16 cores total, 2.10 GHz
+    * Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz
+    * Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz
+
+  The following RAM options are available:
+    * 64 GB
+    * 128 GB
+    * 256 GB
+    * 512 GB
+
+For guidance on what bare metal server configuration to choose, see the _Bill of Materials_ document in the [Architecture Center](https://www.ibm.com/devops/method/content/architecture/virtVCenterServerPlatform){:new_window}.
+
+### Number of Bare Metal Servers
+
+You can configure the number of ESXi servers in the range 2 - 20. All ESXi servers share the same configuration.
+
+### Data center location
+
+You must select the IBM Cloud data center where the instance is to be hosted. Only the data centers that meet the bare metal server specification you selected previously are displayed.
+
+## Storage settings
 
 You can also add file-level shared storage for your instance and specify the following settings under **Storage**:
-*  **Number of File Shares**: specify the number of file shares for the shared storage that you want to add. The number of file shares must be in the range 1 - 32.
-*  **Size**: select the capacity that meets your shared storage needs.
-*  **Performance**: select the IOPS (Input/output Operations Per Second) per GB based on your workload requirements. The performance levels available to you depend on the data center that you select.
+
+### Number of File Shares
+
+Specify the number of file shares for the shared storage that you want to add. The number of file shares must be in the range 1 - 32.
+
+### Size
+
+Select the capacity that meets your shared storage needs.
+
+### Performance
+
+Select the IOPS (Input/output Operations Per Second) per GB based on your workload requirements. The performance levels available to you depend on the data center that you select.
 
 Table 1. Performance level options
 
@@ -74,18 +96,31 @@ Table 1. Performance level options
   | 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. Example applications include: transactional databases. |
   | 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. This performance level is limited to a maximum capacity of 4 TB per file share, and it is supported only for the IBM Cloud data centers DAL10, SJC03, and WDC04. Example applications include: high-transaction databases and other performance-sensitive databases.  |
 
-*  **NFS Version**: Select the appropriate NFS (Network File System) version according to your needs. NFS v4.1 includes multiple paths to the shared NAS (Network Attached Storage) array, but does not support SDRS (Storage Distributed Resource Scheduler) or SIOC (Storage I/O Control). NFS v3 supports SDRS and SIOC, but does not include NFS multipathing.
+### NFS version
+
+Select the appropriate NFS (Network File System) version according to your needs. NFS v4.1 includes multiple paths to the shared NAS (Network Attached Storage) array, but does not support SDRS (Storage Distributed Resource Scheduler) or SIOC (Storage I/O Control). NFS v3 supports SDRS and SIOC, but does not include NFS multipathing.
+
+## Services
 
 When you order a vCenter Server instance, you can add the following services:
-* **Veeam on IBM Cloud**: this service seamlessly integrates directly with your VMware hypervisors to help your enterprise achieve high availability. It can provide recovery points and time objectives of less than 15 minutes upon configuration for your applications and data. When you order this service, you must configure the following settings for it:
-   * **Number of VMs to License**: select the number of VMs to license. A minimum of 4 VMs for licenses is required for management.
-   * **Storage Size**: select the capacity that meets your storage needs. A minimum of 2000 GB of storage is required for management.
-   For considerations when estimating storage size, see [Estimating Repository Capacity](https://bp.veeam.expert/resource_planning/repository_planning_sizing.html).
-   * **Storage Performance**: select the IOPS (Input/output Operations Per Second) per GB based on your workload requirements.
+### Veeam on IBM Cloud
 
-  This service is initially configured to back up the management virtual machines (VMs) immediately upon deployment for your instance. If you do not order this service, there is no backup of the management VMs. For more information, see [Managing Veeam on IBM Cloud](../vmonic/managingveeam.html).
-* **Fortinet on IBM Cloud**: this service deploys an HA-pair of FortiGate Security Appliance (FSA) 300 series devices that can provide firewall, routing, NAT, and VPN services to protect the public network connection to your environment. For more information, see [Managing Fortinet on IBM Cloud](../vmonic/managingfsa.html).
-* **Zerto on IBM Cloud**: this service provides replication and disaster recovery capabilities to help protect your workloads. For more information, see [Managing Zerto on IBM Cloud](../vmonic/managingzertodr.html).
+This service seamlessly integrates directly with your VMware hypervisors to help your enterprise achieve high availability. It can provide recovery points and time objectives of less than 15 minutes upon configuration for your applications and data.
+
+This service is initially configured to back up the management virtual machines (VMs) immediately upon deployment for your instance. If you do not order this service, there is no backup of the management VMs. For more information, see [Managing Veeam on IBM Cloud](../vmonic/managingveeam.html).
+
+When you order this service, you must configure the following settings for it:
+* **Number of VMs to License**: select the number of VMs to license. A minimum of 4 VMs for licenses is required for management.
+* **Storage Size**: select the capacity that meets your storage needs. A minimum of 2000 GB of storage is required for management. For considerations when estimating storage size, see [Estimating Repository Capacity](https://bp.veeam.expert/resource_planning/repository_planning_sizing.html).
+* **Storage Performance**: select the IOPS (Input/output Operations Per Second) per GB based on your workload requirements.
+
+### Fortinet on IBM Cloud
+
+This service deploys an HA-pair of FortiGate Security Appliance (FSA) 300 series devices that can provide firewall, routing, NAT, and VPN services to protect the public network connection to your environment. For more information, see [Managing Fortinet on IBM Cloud](../vmonic/managingfsa.html).
+
+### Zerto on IBM Cloud
+
+This service provides replication and disaster recovery capabilities to help protect your workloads. For more information, see [Managing Zerto on IBM Cloud](../vmonic/managingzertodr.html).
 
 ## Procedure
 
@@ -117,7 +152,7 @@ When you order a vCenter Server instance, you can add the following services:
 The deployment of the instance starts automatically. You receive confirmation that the order is being processed and you can check the
 status of the deployment by viewing the instance details.
 
-When the instance is successfully deployed, the components that are described in [vCenter Server components](../vcenter/vc_vcenterserveroverview.html#vcenter-server-components) are installed on your VMware virtual platform. The ESXi servers that you ordered are grouped as **cluster1** by default. If you ordered additional services, the deployment of the services is started after your order is completed.
+When the instance is successfully deployed, the components that are described in [vCenter Server instance components](../vcenter/vc_vcenterserveroverview.html#vcenter-server-components) are installed on your VMware virtual platform. The ESXi servers that you ordered are grouped as **cluster1** by default. If you ordered additional services, the deployment of the services is started after your order is completed.
 
 When the instance is ready to use, the status of the instance is changed to **Ready to Use** and you receive a notification by email.
 

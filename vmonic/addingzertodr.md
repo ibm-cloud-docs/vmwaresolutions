@@ -32,7 +32,7 @@ The following components are ordered and included in the Zerto on IBM Cloud serv
 
 ## Related links
 
-* [Product overview](prod_overview.html)
-* [Managing the Zerto on IBM Cloud service](managingzertodr.html)
+* [About {{site.data.keyword.vmwaresolutions_short}}](vmonic/prod_overview.html)
+* [Managing Zerto on IBM Cloud](managingzertodr.html)
 * [zerto.com website](https://www.zerto.com){:new_window}
 * [Zerto technical documentation](https://www.zerto.com/myzerto/technical-documentation/){:new_window}

@@ -20,13 +20,13 @@ This update applies the following upgrades and improvements:
 * VMware vCenter Server 6.0u3b
 * VMware Security Patch 6.0 EP7c
 * Stability improvements to the IBM CloudDriver component
-* EVC mode (based on the Intel “Haswell” 2690-V3 processor) is enabled on pre-existing VMware deployments that are on V3 servers at the time of upgrade. 
+* EVC mode (based on the Intel “Haswell” 2690-V3 processor) is enabled on pre-existing VMware deployments that are on V3 servers at the time of upgrade.
 
   **Note**: EVC mode is not enabled for any existing or new deployments on V4 servers.
-  
+
 * VMware Cloud Foundation deployments that were deployed prior to May 22 and are therefore using V3 servers will now order V4 servers when adding a new node to the instance. These servers have 256 GB of memory; if you require 512 GB of memory, after adding the servers, open a support ticket to request a server upgrade to 512 GB of memory. For information on contacting IBM Support, see [Contacting IBM Support](trbl_support.html).
 
-For more information on components, see [Cloud Foundation components](../sddc/sd_cloudfoundationoverview.html#cloud-foundation-components).
+For more information on components, see [Cloud Foundation instance components](../sddc/sd_cloudfoundationoverview.html#cloud-foundation-components).
 
 ### Update process requirements
 
@@ -52,5 +52,5 @@ Improvements are made throughout the user interface:
 * The **Properties** tab on the Cloud Foundation instance details page is renamed to **Summary**. You can now view details of the instance, the access information of the instance-related components, and the instance deployment history on this tab.
 * A new **Infrastructure** tab is introduced on the Cloud Foundation instance details page. You can view, add, or remove ESXi servers on this tab.
 * The documentation for IBM Cloud for VMware Solutions has a new format and is now completely integrated into the Bluemix catalog, together with the Bluemix set of documentation. You can access the documentation in one of the following ways:
-  * From the IBM Cloud for VMware Solutions console, click **Docs** at the left of the banner. 
+  * From the IBM Cloud for VMware Solutions console, click **Docs** at the left of the banner.
   * From the Bluemix documentation catalog, scroll down to the **Compute & Services** section and click **IBM Cloud for VMware Solutions**.

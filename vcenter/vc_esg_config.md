@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-10"
+lastupdated: "2017-08-22"
 
 ---
 
@@ -77,3 +77,7 @@ Additionally, you can find more details about the customer subnets by completing
 
    **Warning:** Do not use the IP addresses that are ordered and used during the initial setup. However, you can use other IP addresses on
    these subnets according to your requirements. To set up additional network address translation rules see [Managing NAT rules](https://pubs.vmware.com/NSX-62/topic/com.vmware.nsx.admin.doc/GUID-5896D8CF-20E0-4691-A9EB-83AFD9D36AFD.html){:new_window}.
+
+## Related links
+
+* [NSX Edge Services Gateway](https://www.ibm.com/devops/method/content/architecture/virtVCenterServerPlatform/nsx-esg){:new_window}

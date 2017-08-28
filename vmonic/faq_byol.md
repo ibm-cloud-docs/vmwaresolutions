@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-09"
+lastupdated: "2017-08-22"
 
 ---
 
@@ -87,3 +87,4 @@ No, because these VMware products are not part of the Cloud Foundation deploymen
 * [Cloud Foundation instances](../sddc/sd_cloudfoundationoverview.html)
 * [Accessing the console](loginmethod.html)
 * [Contacting IBM Support](trbl_support.html)
+* [vRealize Automation](https://www.ibm.com/devops/method/content/architecture/virtCloudFoundationPlatform/vRealizeAutomation){:new_window}

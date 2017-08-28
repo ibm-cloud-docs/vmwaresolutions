@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-10"
+lastupdated: "2017-08-22"
 
 ---
 
@@ -33,3 +33,4 @@ When you add or remove ESXi servers for your instance, Zerto Virtual Replication
 * [Zerto on IBM Cloud components](addingzertodr.html)
 * [zerto.com website](https://www.zerto.com){:new_window}
 * [Zerto technical documentation](https://www.zerto.com/myzerto/technical-documentation/){:new_window}
+* [Zerto disaster recovery](https://www.ibm.com/devops/method/content/architecture/virtCloudFoundationPlatform/zerto){:new_window}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-10"
+lastupdated: "2017-08-18"
 
 ---
 
@@ -62,10 +62,9 @@ To access the console from the Bluemix® catalog, complete the following steps:
 
 ## Related links
 
-* [Product overview](vmonic/prod_overview.html)
-* [Cloud Foundation instances](sddc/sd_cloudfoundationoverview.html)
-* [vCenter Server instances](vcenter/vc_vcenterserveroverview.html)
+* [About {{site.data.keyword.vmwaresolutions_short}}](vmonic/prod_overview.html)
+* [Cloud Foundation overview](sddc/sd_cloudfoundationoverview.html)
+* [vCenter Server overview](vcenter/vc_vcenterserveroverview.html)
 * [Fortinet on IBM Cloud](vmonic/fsa_considerations.html)
 * [Veeam on IBM Cloud](vmonic/veeam_considerations.html)
 * [Zerto on IBM Cloud](vmonic/addingzertodr.html)
-* [Take a look under the hood](https://www.ibm.com/developerworks/cloud/library/cl-ibm-cloud-for-vmware-solutions-trs/){:new_window}

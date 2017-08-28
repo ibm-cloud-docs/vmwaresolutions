@@ -23,6 +23,8 @@ IBM Cloud for VMware Solutions
     Related links
         [Resources and videos](https://www.ibm.com/devops/method/content/architecture/virtualizationArchitecture/1_0)
         [Take a look under the hood](https://www.ibm.com/developerworks/cloud/library/cl-ibm-cloud-for-vmware-solutions-trs/)
+        [Platform extension: vRealize Automation](https://www.ibm.com/devops/method/content/architecture/virtCloudFoundationPlatform/vRealizeAutomation)
+        [Security and compliance - HyTrust](https://www.ibm.com/devops/method/content/architecture/virtCloudFoundationPlatform/hytrust)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -37,8 +39,8 @@ IBM Cloud for VMware Solutions
     {: .topicgroup}
     Cloud Foundation instances
         sddc/sd_cloudfoundationoverview.md
-        sddc/sd_multisite.md
         sddc/sd_planning.md
+        sddc/sd_multisite.md
         sddc/sd_orderinginstance.md
         sddc/sd_viewinginstances.md
         sddc/sd_addingremovingservers.md
@@ -50,8 +52,8 @@ IBM Cloud for VMware Solutions
     {: .topicgroup}
     vCenter Server instances
         vcenter/vc_vcenterserveroverview.md
-        vcenter/vc_esg_config.md
         vcenter/vc_planning.md
+        vcenter/vc_esg_config.md
         vcenter/vc_orderinginstance.md
         vcenter/vc_viewinginstances.md
         vcenter/vc_addingviewingclusters.md
