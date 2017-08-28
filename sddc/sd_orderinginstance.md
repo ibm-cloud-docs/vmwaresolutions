@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-10"
+lastupdated: "2017-08-18"
 
 ---
 
@@ -14,35 +14,44 @@ If you want to deploy a unified software-defined data center (SDDC) platform wit
 
 When you order a VMware Cloud Foundation instance, an entire VMware environment is deployed automatically. The base deployment consists of four IBM® Cloud bare metal servers with the VMware Cloud Foundation stack preinstalled and configured to provide a unified software-defined data center (SDDC) platform. Cloud Foundation natively integrates VMware vSphere, VMware NSX, VMware Virtual SAN, and is architected based on VMware Validated Designs.
 
-## Before you begin
+## Requirements
 
 Ensure that you completed the following tasks:
 
 *  You configured the SoftLayer® credentials on the **Settings** page. For more information, see [User accounts and settings](../vmonic/useraccount.html).
 *  You meet the requirements and you reviewed the considerations in [Cloud Foundation requirements](sd_planning.html).
 
-When you order a Cloud Foundation instance, you must specify the following settings:
+## Settings
+
+When you order a Cloud Foundation instance, you must specify the following settings.
 
 **Important: Do not modify any values that are set during ordering and instance deployment. Doing so can result in your instance becoming unusable. In addition, do not change the instance name or the domain name after the instance is deployed.**
 
-* **Instance type**: You can deploy the instance as a primary (single) instance in your environment, or deploy the instance in a multi-site configuration by linking it with an existing primary instance for high availability. For more information, see [Multi-site configuration for Cloud Foundation instances](sd_multisite.html).
-* **Domain name**: The root domain name must meet the following requirements:
-   *  The name must consist of two or more strings that are separated by period (.)
-   *  Only alphanumeric and dash (-) characters are allowed.
-   *  Each string must start with an alphabetic character and end with an alphanumeric character, and the last string can contain only
-   alphabetic characters.
-   *  The length of the last string must be in the range 2 - 24 characters.
-   *  The length of other strings must be in the range 1 - 63 characters.
-   *  The maximum length of the domain name is 189 characters.
-* **Instance name**: The instance name must meet the following requirements:
-   *  Only alphanumeric and dash (-) characters are allowed.
-   *  The instance name must start and end with an alphanumeric character.
-   *  The maximum length of the instance name is 10 characters.
-   *  The instance name must be unique within your account.
+### Instance type
 
-  The Cloud Foundation instance name and the root domain name use the format in the following table.
+You can deploy the instance as a primary (single) instance in your environment, or deploy the instance in a multi-site configuration by linking it with an existing primary instance for high availability. For more information, see [Multi-site configuration for Cloud Foundation instances](sd_multisite.html).
 
-  Table 1. Value format for instance and domain names
+### Domain name
+
+The root domain name must meet the following requirements:
+*  The name must consist of two or more strings that are separated by period (.)
+*  Only alphanumeric and dash (-) characters are allowed.
+*  Each string must start with an alphabetic character and end with an alphanumeric character, and the last string can contain only alphabetic characters.
+*  The length of the last string must be in the range 2 - 24 characters.
+*  The length of other strings must be in the range 1 - 63 characters.
+*  The maximum length of the domain name is 189 characters.
+
+### Instance name
+
+The instance name must meet the following requirements:
+*  Only alphanumeric and dash (-) characters are allowed.
+*  The instance name must start and end with an alphanumeric character.
+*  The maximum length of the instance name is 10 characters.
+*  The instance name must be unique within your account.
+
+The Cloud Foundation instance name and the root domain name use the format in the following table.
+
+Table 1. Value format for instance and domain names
 
 | Name        | Value Format      |
   |:------------- |:------------- |
@@ -58,24 +67,40 @@ When you order a Cloud Foundation instance, you must specify the following setti
   The SDDC Manager FQDN cannot be publicly resolvable. Otherwise, the Cloud Foundation instance configuration fails and is not recoverable.
   Before you specify a domain name, review the [Considerations while choosing a root domain name](../vmonic/trbl_limitations.html#considerations-when-choosing-a-root-domain-name-for-cloud-foundation-instances).
 
-* **Bare Metal Server Configuration**: You can select a bare metal server specification depending on your requirements:
-  *  Standard (Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz / 256 GB RAM / 12 disks)
-  *  Small (Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz / 128 GB RAM / 12 disks)
+### Bare Metal Server configuration
 
-  For guidance on what option to choose, see the _Bill of Materials_ document in the [Architecture Center](https://www.ibm.com/devops/method/content/architecture/virtCloudFoundationPlatform){:new_window}.
+You can select a bare metal server specification depending on your requirements:
+*  Standard (Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz / 256 GB RAM / 12 disks)
+*  Small (Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz / 128 GB RAM / 12 disks)
 
-* **Data center location**: You must select the IBM® Cloud data center where the instance is to be hosted. Only the data centers that meet the bare metal server specification are displayed.
+For guidance on what option to choose, see the _Bill of Materials_ document in the [Architecture Center](https://www.ibm.com/devops/method/content/architecture/virtCloudFoundationPlatform){:new_window}.
 
-When you order a Cloud Foundation instance, you can add the following services:
-* **Veeam on IBM Cloud**: this service seamlessly integrates directly with your VMware hypervisors to help your enterprise achieve high availability. It can provide recovery points and time objectives of less than 15 minutes upon configuration for your applications and data. When you order this service, you must configure the following settings for it:
-   * **Number of VMs to License**: select the number of VMs to license. A minimum of 4 VMs for licenses is required for management.
-   * **Storage Size**: select the capacity that meets your storage needs. A minimum of 2000 GB of storage is required for management.
-   For considerations when estimating storage size, see [Estimating Repository Capacity](https://bp.veeam.expert/resource_planning/repository_planning_sizing.html).
-   * **Storage Performance**: select the IOPS (Input/output Operations Per Second) per GB based on your workload requirements.
+### Data center location
 
-  This service is configured to back up the management virtual machines (VMs) immediately after the deployment of your instance. If you do not order this service, there is no backup of the management VMs. For more information, see [Managing Veeam on IBM Cloud](../vmonic/managingveeam.html).
-* **Fortinet on IBM Cloud**: this service deploys an HA-pair of FortiGate Security Appliance (FSA) 300 series devices that can provide firewall, routing, NAT, and VPN services to protect the public network connection to your environment. For more information, see [Managing Fortinet on IBM Cloud](../vmonic/managingfsa.html).
-* **Zerto on IBM Cloud**: this service provides replication and disaster recovery capabilities to help protect your workloads. For more information, see [Managing Zerto on IBM Cloud](../vmonic/managingzertodr.html).
+You must select the IBM® Cloud data center where the instance is to be hosted. Only the data centers that meet the bare metal server specification are displayed.
+
+## Services
+
+When you order a Cloud Foundation instance, you can add the following services.
+
+### Veeam on IBM Cloud
+
+This service seamlessly integrates directly with your VMware hypervisors to help your enterprise achieve high availability. It can provide recovery points and time objectives of less than 15 minutes upon configuration for your applications and data.
+
+This service is configured to back up the management virtual machines (VMs) immediately after the deployment of your instance. If you do not order this service, there is no backup of the management VMs. For more information, see [Managing Veeam on IBM Cloud](../vmonic/managingveeam.html).
+
+When you order this service, you must configure the following settings for it:
+* **Number of VMs to License**: select the number of VMs to license. A minimum of 4 VMs for licenses is required for management.
+* **Storage Size**: select the capacity that meets your storage needs. A minimum of 2000 GB of storage is required for management. For considerations when estimating storage size, see [Estimating Repository Capacity](https://bp.veeam.expert/resource_planning/repository_planning_sizing.html).
+* **Storage Performance**: select the IOPS (Input/output Operations Per Second) per GB based on your workload requirements.
+
+### Fortinet on IBM Cloud
+
+This service deploys an HA-pair of FortiGate Security Appliance (FSA) 300 series devices that can provide firewall, routing, NAT, and VPN services to protect the public network connection to your environment. For more information, see [Managing Fortinet on IBM Cloud](../vmonic/managingfsa.html).
+
+### Zerto on IBM Cloud
+
+This service provides replication and disaster recovery capabilities to help protect your workloads. For more information, see [Managing Zerto on IBM Cloud](../vmonic/managingzertodr.html).
 
 ## Procedure
 
@@ -139,7 +164,7 @@ When you order a Cloud Foundation instance, you can add the following services:
 
 The deployment of the instance starts automatically. You receive confirmation that the order is being processed and you can check the status of the deployment by viewing the instance details.
 
-When the instance is successfully deployed, the components that are described in [Cloud Foundation components](../sddc/sd_cloudfoundationoverview.html#cloud-foundation-components) are installed on your VMware virtual platform. If you ordered additional services, the deployment of the services is started after your order is completed.
+When the instance is successfully deployed, the components that are described in [Cloud Foundation instance  components](../sddc/sd_cloudfoundationoverview.html#cloud-foundation-components) are installed on your VMware virtual platform. If you ordered additional services, the deployment of the services is started after your order is completed.
 
 When the instance is ready to use, the status of the instance is changed to **Ready to Use** and you receive a notification by email.
 
