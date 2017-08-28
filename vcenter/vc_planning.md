@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-10"
+lastupdated: "2017-08-25"
 
 ---
 
@@ -26,10 +26,15 @@ Table 1. Available data centers for vCenter Server instances
 |:-----|:----------------|
 | AMS03 | Amsterdam |
 | CHE01 | Chennai |
+| DAL09 | Dallas |
 | DAL10 | Dallas |
+| DAL12 | Dallas |
+| DAL13 | Dallas |
 | FRA02 | Frankfurt |
 | HKG02 | Hong Kong |
 | LON02 | London |
+| LON04 | London |
+| LON06 | London |
 | MEL01 | Melbourne |
 | MEX01 | Queretaro |
 | MIL01 | Milan |
@@ -39,12 +44,15 @@ Table 1. Available data centers for vCenter Server instances
 | SAO01 | Sao Paulo |
 | SEO01 | Seoul |
 | SJC03 | San Jose |
+| SJC04 | San Jose |
 | SNG01 | Singapore |
 | SYD01 | Sydney |
 | SYD04 | Sydney |
 | TOK02 | Tokyo |
 | TOR01 | Toronto |
 | WDC04 | Washington, DC |
+| WDC06 | Washington, DC |
+| WDC07 | Washington, DC |
 
 Depending on availability and inventory supply, IBM Cloud data centers might display an indication in the {{site.data.keyword.vmwaresolutions_full}} console to help you plan your deployments.
 

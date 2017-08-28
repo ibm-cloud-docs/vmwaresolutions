@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-11"
+lastupdated: "2017-08-22"
 
 ---
 
@@ -35,48 +35,62 @@ The {{site.data.keyword.vmwaresolutions_full}} console provides the interface to
 
 For details about the architecture, see the _Reference architecture_ document in the [Architecture Center](https://www.ibm.com/devops/method/content/architecture/virtVCenterServerPlatform){:new_window}.
 
-## vCenter Server components
+## vCenter Server instance components
 
 The following components are included in your vCenter Server instance.
 
 **Note**: The availability and pricing of standardized hardware configurations might vary based on the data center that is selected for deployment.
 
-* **Hardware**: One or more IBM Cloud bare metal servers with the following hardware options to choose from:
-  *  Small (Dual Intel Xeon E5-2620 v4 / 16 cores total, 2.10 GHz / 128 GB RAM / 2 disks)
-  *  Medium (Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz / 256 GB RAM / 2 disks)
-  *  Large (Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz / 512 GB RAM / 2 disks)
-  *  User customized (user selects CPU and RAM)
+### Hardware
 
-* **Networking**:
-  *  Three VLANs (Virtual LANs): one public VLAN and two private VLANs
-  *  One VXLAN (Virtual eXtensible LAN) with DLR (Distributed Logical Router) for potential east-west communication between local workloads that are connected to layer 2 (L2) networks. The VXLAN is deployed as a sample routing topology, which you can modify, build on it, or remove it. You can also add security zones by attaching additional VXLANs to new logical interfaces on the DLR.
-  *  Two VMware NSX Edge Services Gateways:
-     * A secure management services VMware NSX Edge Services Gateway (ESG) for outbound HTTPS management traffic, which is deployed by IBM as part of the management networking typology. This ESG is used by the IBM management virtual machines to communicate with specific external IBM management components that are related to automation. For more information, see [Configuring your network to use the customer-managed ESG](../vcenter/vc_esg_config.html#configuring-your-network-to-use-the-customer-managed-nsx-edge-services-gateway-with-your-vms).
+One or more IBM Cloud bare metal servers with the following hardware options to choose from:
+*  Small (Dual Intel Xeon E5-2620 v4 / 16 cores total, 2.10 GHz / 128 GB RAM / 2 disks)
+*  Medium (Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz / 256 GB RAM / 2 disks)
+*  Large (Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz / 512 GB RAM / 2 disks)
+*  User customized (the user selects the CPU and RAM options)
 
-       **Important**: This ESG is not accessible to you and you cannot use it. If you modify it, you might not be able to manage the vCenter Server instance from the {{site.data.keyword.vmwaresolutions_short}} console. In addition, note that using a firewall or disabling the ESG communications to the external IBM management components will cause {{site.data.keyword.vmwaresolutions_short}} to become unusable.
-     * A secure customer-managed VMware NSX Edge Services Gateway for outbound and inbound HTTPS workload traffic, which is deployed by IBM as a template that can be modified by you to provide VPN access or public access. For more information, see [Does the customer-managed NSX Edge pose a security risk?](../vmonic/faq.html#does-the-customer-managed-nsx-edge-pose-a-security-risk-)
+### Networking
 
-* **VSIs**: Two VSIs (Virtual Server Instances):
-  *  A VSI for IBM CloudBuilder, which is shut down after the instance deployment is completed.
-  *  A VSI for the snapshot-based backup of the management components, which keeps running after the instance deployment is completed.
+*  Three VLANs (Virtual LANs): one public VLAN and two private VLANs
+*  One VXLAN (Virtual eXtensible LAN) with DLR (Distributed Logical Router) for potential east-west communication between local workloads that are connected to layer 2 (L2) networks. The VXLAN is deployed as a sample routing topology, which you can modify, build on it, or remove it. You can also add security zones by attaching additional VXLANs to new logical interfaces on the DLR.
+*  Two VMware NSX Edge Services Gateways:
+  * A secure management services VMware NSX Edge Services Gateway (ESG) for outbound HTTPS management traffic, which is deployed by IBM as part of the management networking typology. This ESG is used by the IBM management virtual machines to communicate with specific external IBM management components that are related to automation. For more information, see [Configuring your network to use the customer-managed ESG](../vcenter/vc_esg_config.html#configuring-your-network-to-use-the-customer-managed-nsx-edge-services-gateway-with-your-vms).
 
-* **Storage**:
-  *  Shared file-level storage for backups: one 2 TB shared file-level storage that can be scaled up to 12 TB
-    **Note**: With the introduction of the Veeam on IBM Cloud service, the storage for backups is no longer a standard component of vCenter Server instances. When you order an instance, you can choose whether you want storage for backups by selecting or not the Veeam on IBM Cloud service.
-  *  Shared file-level storage for management components: one 2 TB, 4 IOPS/GB file share
+    **Important**: This ESG is not accessible to you and you cannot use it. If you modify it, you might not be able to manage the vCenter Server instance from the {{site.data.keyword.vmwaresolutions_short}} console. In addition, note that using a firewall or disabling the ESG communications to the external IBM management components will cause {{site.data.keyword.vmwaresolutions_short}} to become unusable.
+  * A secure customer-managed VMware NSX Edge Services Gateway for outbound and inbound HTTPS workload traffic, which is deployed by IBM as a template that can be modified by you to provide VPN access or public access. For more information, see [Does the customer-managed NSX Edge pose a security risk?](../vmonic/faq.html#does-the-customer-managed-nsx-edge-pose-a-security-risk-)
 
-* **Licenses and fees**:
-  *  VMware vSphere 6.0 Enterprise Plus Edition
-  *  VMware vCenter Server 6.0
-  *  VMware NSX Base for Service Providers Edition
-  *  Support and Services fee (one license per node)
+### Virtual Server Instances
+
+Two VSIs (Virtual Server Instances):
+*  A VSI for IBM CloudBuilder, which is shut down after the instance deployment is completed.
+*  A VSI for the snapshot-based backup of the management components, which keeps running after the instance deployment is completed.
+
+### Storage
+
+*  Shared file-level storage for backups: one 2 TB shared file-level storage that can be scaled up to 12 TB
+
+  **Note**: With the introduction of the Veeam on IBM Cloud service, the storage for backups is no longer a standard component of vCenter Server instances. When you order an instance, you can choose whether you want storage for backups by selecting or deselecting the Veeam on IBM Cloud service.
+*  Shared file-level storage for management components: one 2 TB, 4 IOPS/GB file share
+
+### Licenses and fees
+
+*  VMware vSphere 6.0 Enterprise Plus Edition
+*  VMware vCenter Server 6.0
+*  VMware NSX Base for Service Providers Edition
+*  Support and Services fee (one license per node)
+
+## vCenter Server expansion node components
 
 Each vCenter Server expansion node will deploy and incur charges for the following components in your SoftLayer® account:
 
-* **Hardware**: One IBM Cloud bare metal server, with the configuration presented in [vCenter Server components](../vcenter/vc_vcenterserveroverview.html#vcenter-server-components).
-* **Licenses and fees**:
-  *  One VMware vSphere 6.0
-  *  One Support and Services fee
+### Hardware
+
+One IBM Cloud bare metal server, with the configuration presented in [vCenter Server instance  components](../vcenter/vc_vcenterserveroverview.html#vcenter-server-components).
+
+### Licenses and fees
+
+*  One VMware vSphere 6.0
+*  One Support and Services fee
 
 For details about the components, see the _Bill of Materials_ document in
 the [Architecture Center](https://www.ibm.com/devops/method/content/architecture/virtVCenterServerPlatform){:new_window}.
@@ -93,3 +107,4 @@ the [Architecture Center](https://www.ibm.com/devops/method/content/architecture
 
 * [Planning vCenter Server instances](vc_planning.html)
 * [Ordering vCenter Server instances](vc_orderinginstance.html)
+* [Bluemix file and block storage](https://www.ibm.com/devops/method/content/architecture/virtVCenterServerPlatform/sharedStorage){:new_window}
