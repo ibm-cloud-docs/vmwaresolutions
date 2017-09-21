@@ -18,11 +18,11 @@ The new version of VMware ESXi is vSphere 6.0 u2 p03, updated from ESXi 6.0 u2 i
 
 ## IBMid and IBM Bluemix accounts association
 
-{{site.data.keyword.vmwaresolutions_full}} is provided as an infrastructure solution in the IBM Bluemix® catalog. Therefore, to use your **IBMid** account to log in to the {{site.data.keyword.vmwaresolutions_short}} console, you must associate the **IBMid** account with a Bluemix account. 
+{{site.data.keyword.vmwaresolutions_full}} is provided as an infrastructure solution in the IBM Bluemix® catalog. Therefore, to use your **IBMid** account to log in to the {{site.data.keyword.vmwaresolutions_short}} console, you must associate the **IBMid** account with a Bluemix account.
 
 For more information, see:
 * [Getting started](../index.html)
-* [Troubleshooting for accessing Bluemix](https://console.ng.bluemix.net/docs/troubleshoot/index.html){:new_window}
+* [Troubleshooting for accessing Bluemix](https://console.bluemix.net/docs/troubleshoot/ts_accessing.html){:new_window}
 
 ## Zerto disaster recovery
 
@@ -37,7 +37,7 @@ For more information, see:
 
 ## Pricing information
 
-You can now see and review the estimated cost of your ordered instance before you decide to place an order. After you select your components when you order your instance, the total cost and the detailed pricing of all components are displayed on the **Summary** page. 
+You can now see and review the estimated cost of your ordered instance before you decide to place an order. After you select your components when you order your instance, the total cost and the detailed pricing of all components are displayed on the **Summary** page.
 
 For more information, see:
 * [Ordering Cloud Foundation instances](../sddc/sd_orderinginstance.html)
@@ -55,6 +55,6 @@ For more information, see:
 
 ## Additional email notifications
 
-You now receive a notification by email when new ESXi servers are added to your instances and when existing ESXi servers are removed. In addition, you get notified by email when an instance is deleted. The notification settings are enabled by default. Based on your preferences, you can set what notifications you want to receive on the **Settings** page. 
+You now receive a notification by email when new ESXi servers are added to your instances and when existing ESXi servers are removed. In addition, you get notified by email when an instance is deleted. The notification settings are enabled by default. Based on your preferences, you can set what notifications you want to receive on the **Settings** page.
 
 For more information, see [User account and settings](useraccount.html).

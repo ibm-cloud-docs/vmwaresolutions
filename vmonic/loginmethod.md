@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-07"
+lastupdated: "2017-09-21"
 
 ---
 
@@ -40,4 +40,4 @@ To access the console from the ibm.com website, complete the following steps:
 ## Related links
 
 * [FAQ](faq.html)
-* [Troubleshooting for accessing Bluemix](https://console.ng.bluemix.net/docs/troubleshoot/index.html){:new_window}
+* [Troubleshooting for accessing Bluemix](https://console.bluemix.net/docs/troubleshoot/ts_accessing.html){:new_window}
