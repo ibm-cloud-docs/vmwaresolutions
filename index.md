@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-18"
+lastupdated: "2017-09-21"
 
 ---
 
@@ -45,7 +45,7 @@ To access the {{site.data.keyword.vmwaresolutions_short}} console, you must have
 When you log in to the console for the first time, you are guided to either associate your **IBMid** account with a Bluemix account, or
 to sign up for a new Bluemix account that is automatically associated with your **IBMid** account. You need to go through this process only once.
 
-If you have problems associating your **IBMid** account with a Bluemix account, see [Troubleshooting for accessing Bluemix](https://console.ng.bluemix.net/docs/troubleshoot/index.html){:new_window}.
+If you have problems associating your **IBMid** account with a Bluemix account, see [Troubleshooting for accessing Bluemix](https://console.bluemix.net/docs/troubleshoot/ts_accessing.html){:new_window}.
 
 ### SoftLayer account
 
@@ -65,6 +65,6 @@ To access the console from the Bluemix® catalog, complete the following steps:
 * [About {{site.data.keyword.vmwaresolutions_short}}](vmonic/prod_overview.html)
 * [Cloud Foundation overview](sddc/sd_cloudfoundationoverview.html)
 * [vCenter Server overview](vcenter/vc_vcenterserveroverview.html)
-* [Fortinet on IBM Cloud](vmonic/fsa_considerations.html)
-* [Veeam on IBM Cloud](vmonic/veeam_considerations.html)
-* [Zerto on IBM Cloud](vmonic/addingzertodr.html)
+* [Fortinet on IBM Cloud](services/fsa_considerations.html)
+* [Veeam on IBM Cloud](services/veeam_considerations.html)
+* [Zerto on IBM Cloud](services/addingzertodr.html)
