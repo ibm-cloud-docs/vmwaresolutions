@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-29"
+lastupdated: "2017-09-21"
 
 ---
 
@@ -27,7 +27,7 @@ To access the {{site.data.keyword.vmwaresolutions_short}} console, you must have
 When you log in to the console for the first time, you are guided to either associate your **IBMid** with a Bluemix account, or
 to sign up for a new Bluemix account that is automatically associated with your **IBMid**. You need to go through this process only once.
 
-If you have problems associating your **IBMid** with a Bluemix account, see [Troubleshooting for accessing Bluemix](https://console.ng.bluemix.net/docs/troubleshoot/index.html){:new_window}.
+If you have problems associating your **IBMid** with a Bluemix account, see [Troubleshooting for accessing Bluemix](https://console.bluemix.net/docs/troubleshoot/ts_accessing.html){:new_window}.
 
 ## SoftLayer account
 
