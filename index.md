@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-09-21"
+lastupdated: "2017-09-28"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-09-21"
 # Getting started with IBM® Cloud for VMware Solutions
 {: #gettingstarted}
 
-The {{site.data.keyword.vmwaresolutions_full}} console is the interface where you order and manage your deployments. Each deployment is managed as an instance in the console. The console is a stand-alone user interface that is separate from the SoftLayer® Customer Portal.
+The {{site.data.keyword.vmwaresolutions_full}} console is the interface where you order and manage your deployments. Each deployment is managed as an instance in the console. The console is a stand-alone user interface that is separate from the IBM Bluemix Infrastructure (SoftLayer) portal.
 
 **Note**: {{site.data.keyword.vmwaresolutions_short}} is an English-only release. Therefore, all features on the console, including the product documentation, are available in English only.
 
@@ -47,12 +47,11 @@ to sign up for a new Bluemix account that is automatically associated with your 
 
 If you have problems associating your **IBMid** account with a Bluemix account, see [Troubleshooting for accessing Bluemix](https://console.bluemix.net/docs/troubleshoot/ts_accessing.html){:new_window}.
 
-### SoftLayer account
+### Bluemix Infrastructure (SoftLayer) account
 
-To use the deployment offerings, you must have a SoftLayer account. The cost of the physical and virtual infrastructure and the resulting licenses are charged to your SoftLayer account. For more information about the requirements that your SoftLayer
-account must meet, see [SoftLayer account requirements](vmonic/slaccountrequirement.html).
+To use the deployment offerings, you must have a Bluemix Infrastructure (SoftLayer) account. The cost of the physical and virtual infrastructure and the resulting licenses are charged to your Bluemix Infrastructure (SoftLayer) account. For more information about the requirements that your Bluemix Infrastructure (SoftLayer) account must meet, see [Bluemix Infrastructure (SoftLayer) account requirements](vmonic/slaccountrequirement.html).
 
-You can associate only one SoftLayer account to an {{site.data.keyword.vmwaresolutions_short}} account.
+You can associate only one Bluemix Infrastructure (SoftLayer) account to an {{site.data.keyword.vmwaresolutions_short}} account.
 
 ## Accessing the {{site.data.keyword.vmwaresolutions_short}} console
 
@@ -65,6 +64,6 @@ To access the console from the Bluemix® catalog, complete the following steps:
 * [About {{site.data.keyword.vmwaresolutions_short}}](vmonic/prod_overview.html)
 * [Cloud Foundation overview](sddc/sd_cloudfoundationoverview.html)
 * [vCenter Server overview](vcenter/vc_vcenterserveroverview.html)
-* [Fortinet on IBM Cloud](vmonic/fsa_considerations.html)
-* [Veeam on IBM Cloud](vmonic/veeam_considerations.html)
-* [Zerto on IBM Cloud](vmonic/addingzertodr.html)
+* [Fortinet on IBM Cloud](services/fsa_considerations.html)
+* [Veeam on IBM Cloud](services/veeam_considerations.html)
+* [Zerto on IBM Cloud](services/addingzertodr.html)
