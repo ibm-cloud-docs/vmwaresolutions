@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-11"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -43,7 +43,7 @@ Before an update operation is started, a backup of the management virtual machin
 
 ## Procedure
 
-1. Click **Deployed Instances** from the left navigation pane. Ensure that you are on the **Cloud Foundation** tab.
+1. Click **Deployed Instances** from the left navigation pane.
 2. Click the instance to update.
 3. Click the **Update and Patch** tab.
 4. Click the down arrow to expand the update that you want to apply and then complete one of the following steps:

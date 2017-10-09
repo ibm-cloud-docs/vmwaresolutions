@@ -4,21 +4,20 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-18"
+lastupdated: "2017-10-05"
 
 ---
 
 # Ordering Cloud Foundation instances
 
-If you want to deploy a unified software-defined data center (SDDC) platform with standard compute, storage, and network configuration, order a VMware Cloud Foundation instance. You can order an instance with or without additional services, such as the [Zerto on IBM Cloud](../vmonic/addingzertodr.html) service.
+To deploy a unified software-defined data center (SDDC) platform with standard compute, storage, and network configuration, order a VMware Cloud Foundation instance. During the initial order, you can also add services, such as [Zerto on IBM Cloud](../services/addingzertodr.html).
 
 When you order a VMware Cloud Foundation instance, an entire VMware environment is deployed automatically. The base deployment consists of four IBM® Cloud bare metal servers with the VMware Cloud Foundation stack preinstalled and configured to provide a unified software-defined data center (SDDC) platform. Cloud Foundation natively integrates VMware vSphere, VMware NSX, VMware Virtual SAN, and is architected based on VMware Validated Designs.
 
 ## Requirements
 
 Ensure that you completed the following tasks:
-
-*  You configured the SoftLayer® credentials on the **Settings** page. For more information, see [User accounts and settings](../vmonic/useraccount.html).
+*  You configured the IBM Bluemix Infrastructure (SoftLayer) credentials on the **Settings** page. For more information, see [User accounts and settings](../vmonic/useraccount.html).
 *  You meet the requirements and you reviewed the considerations in [Cloud Foundation requirements](sd_planning.html).
 
 ## Settings
@@ -49,29 +48,39 @@ The instance name must meet the following requirements:
 *  The maximum length of the instance name is 10 characters.
 *  The instance name must be unique within your account.
 
+### Instance and domain name format
+
 The Cloud Foundation instance name and the root domain name use the format in the following table.
 
 Table 1. Value format for instance and domain names
 
 | Name        | Value Format      |
   |:------------- |:------------- |
-  | Single Sign-On (SSO) site name | `instancename` |
-  | vCenter Server login user name | `userid@rootdomain` (Active Directory user) or `administrator@vsphere.local` |
   | Domain name | `rootdomain` |  
-  | Platform Services Controller (PSC) host name | `PSC-instancename` or `PSC-instancename.rootdomain`. The maximum length is 50 characters. |  
+  | Fully qualified ESXi host name | `hostn.instancename.rootdomain`, where n is the sequence of the ESXi server. The maximum length is 50 characters. |   
+  | vCenter Server login user name | `userid@rootdomain` (Microsoft Active Directory user) or `administrator@vsphere.local` |
   | vCenter Server fully qualified domain name (FQDN) | `vcenter-1.instancename.rootdomain` |  
   | SDDC Manager FQDN name | `sddcmanager.instancename.rootdomain`. The maximum length is 50 characters. |
-  | Fully qualified ESXi host name | `hostn.instancename.rootdomain`, where n is the sequence of the ESXi server. The maximum length is 50 characters. |  
-  | PSC fully qualified FQDN name | `psc-instancename.instancename.rootdomain`. The maximum length is 50 characters. |   
+  | Single Sign-On (SSO) site name | `instancename`
+  | Fully qualified ESXi host name | `hostn.instancename.rootdomain`, where n is the sequence of the ESXi server. The maximum length is 50 characters. |
+  | PSC fully qualified FQDN name | `PSC-instancename.rootdomain`. The maximum length is 50 characters. |  
 
   The SDDC Manager FQDN cannot be publicly resolvable. Otherwise, the Cloud Foundation instance configuration fails and is not recoverable.
-  Before you specify a domain name, review the [Considerations while choosing a root domain name](../vmonic/trbl_limitations.html#considerations-when-choosing-a-root-domain-name-for-cloud-foundation-instances).
+  Before you specify a domain name, review [Considerations when choosing a root domain name](../vmonic/trbl_limitations.html#considerations-when-choosing-a-root-domain-name-for-cloud-foundation-instances).
 
-### Bare Metal Server configuration
+### Bare metal server configuration
 
 You can select a bare metal server specification depending on your requirements:
-*  Standard (Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz / 256 GB RAM / 12 disks)
-*  Small (Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz / 128 GB RAM / 12 disks)
+* Standard (Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz / 256 GB RAM / 12 disks)
+* Small (Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz / 128 GB RAM / 12 disks)
+* User customized: you can specify the CPU model and RAM for the bare metal server
+
+Table 2. CPU and RAM options for the user customized configuration
+
+| Item          | Options       |
+|:------------- |:------------- |
+| CPU | <ul><li>Dual Intel Xeon E5-2620 v4 / 16 cores total, 2.10 GHz</li><li>Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz</li><li>Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz</li></ul>|
+| RAM | 64 GB, 128 GB, 256 GB, 512 GB, 768 GB, 1.5 TB
 
 For guidance on what option to choose, see the _Bill of Materials_ document in the [Architecture Center](https://www.ibm.com/devops/method/content/architecture/virtCloudFoundationPlatform){:new_window}.
 
@@ -81,26 +90,7 @@ You must select the IBM® Cloud data center where the instance is to be hosted. 
 
 ## Services
 
-When you order a Cloud Foundation instance, you can add the following services.
-
-### Veeam on IBM Cloud
-
-This service seamlessly integrates directly with your VMware hypervisors to help your enterprise achieve high availability. It can provide recovery points and time objectives of less than 15 minutes upon configuration for your applications and data.
-
-This service is configured to back up the management virtual machines (VMs) immediately after the deployment of your instance. If you do not order this service, there is no backup of the management VMs. For more information, see [Managing Veeam on IBM Cloud](../vmonic/managingveeam.html).
-
-When you order this service, you must configure the following settings for it:
-* **Number of VMs to License**: select the number of VMs to license. A minimum of 4 VMs for licenses is required for management.
-* **Storage Size**: select the capacity that meets your storage needs. A minimum of 2000 GB of storage is required for management. For considerations when estimating storage size, see [Estimating Repository Capacity](https://bp.veeam.expert/resource_planning/repository_planning_sizing.html).
-* **Storage Performance**: select the IOPS (Input/output Operations Per Second) per GB based on your workload requirements.
-
-### Fortinet on IBM Cloud
-
-This service deploys an HA-pair of FortiGate Security Appliance (FSA) 300 series devices that can provide firewall, routing, NAT, and VPN services to protect the public network connection to your environment. For more information, see [Managing Fortinet on IBM Cloud](../vmonic/managingfsa.html).
-
-### Zerto on IBM Cloud
-
-This service provides replication and disaster recovery capabilities to help protect your workloads. For more information, see [Managing Zerto on IBM Cloud](../vmonic/managingzertodr.html).
+When you order a Cloud Foundation instance, you can also order additional services. For more information about the available services, see [Services for Cloud Foundation instances](sd_planning.html#services-for-cloud-foundation-instances).
 
 ## Procedure
 
@@ -115,29 +105,40 @@ This service provides replication and disaster recovery capabilities to help pro
      1. Enter the root domain name.
      2. Enter the instance name.
      3. Select the bare metal server specification.
-     4. Select the IBM Cloud data center to host the instance.
-     5. Click **Next**.
+     4. If you selected **User customized** for the bare metal server configuration, specify the **CPU Model** and the amount of **RAM**.
+     5. Select the IBM Cloud data center to host the instance.
+     6. Click **Next**.
 
    If you selected the **Secondary** instance type, provide the following information:
      1. Select the primary site that you want the instance to be connected with.
      2. Review the root domain name that is automatically filled in.
      3. Enter the instance name.
      4. Select the bare metal server specification.
-     5. Select the IBM Cloud data center to host the instance.
-     6. Click **Next**.
+     5. If you selected **User customized** for the bare metal server configuration, specify the **CPU Model** and the amount of **RAM**.
+     6. Select the IBM Cloud data center to host the instance.
+     7. Click **Next**.
+
 5. If you selected the **Secondary** instance type, review the following information on the **Primary instance authentication** page:
    1. In the **Primary Instance PSC Administrator Password** field, the Platform Services Controller (PSC) password of the selected
    primary instance is automatically filled in.
-   2. Click **Next** to validate the password.
+   2. Click **Next** to verify the password.
    3. If the password validation fails, enter the correct PSC password, and click **Next** again.
-6. On the **Add Service** page, complete one of the following steps:
-   *  To deploy additional services into your instance, click **Select Service** on the service cards. If you selected the Veeam on IBM Cloud service, specify the number of VMs to license, storage size and performance in the **Configure Veeam** area. Click
-   **Next**.
-   *  To proceed without deploying any service, including the Veeam on IBM Cloud service, click **Selected Service** on the Veeam on IBM Cloud service card, and then click **Next**.
+
+6. On the **Add Service** page, complete the following steps:
+   1. To deploy a service into your instance, click **Select Service** on the corresponding service card.
+   2. If you accepted the default selection for Veeam on IBM Cloud, specify the following settings in the **Configure Veeam** area:
+      * **Number of VMs to License**: A minimum of 4 VMs for licenses is required for management.
+      * **Storage Size**: The capacity that meets your storage needs. A minimum of 2,000 GB of storage is required for management. For considerations when estimating storage size, see [Estimating Repository Capacity](https://bp.veeam.expert/resource_planning/repository_planning_sizing.html).
+      * **Storage Performance**: The IOPS (Input/output Operations Per Second) per GB based on your workload requirements.
+  3. If you want to install F5 on IBM Cloud, specify the following settings in the **Configure F5 on IBM Cloud** area:
+     * **License Model**: Select **Good**, **Better**, or **Best** according to your requirements. For more information about what is provided for each license option, click **Learn More** on the **F5 on IBM Cloud** service card.
+     * **Maximum Bandwidth**:  The maximum data transfer rate for the network connection.
+  4. Select any other services that you want to install, or, to proceed without deploying any service, including Veeam on IBM Cloud, click **Selected Service** on the service card. Click **Next**.
+
 7. On the **Licensing** page, specify the licensing choice for each of the VMware components of the instance you are ordering, including vCenter Server, vSphere, NSX, and vSAN:
    * If you want new licenses to be purchased on your behalf, select **Include with purchase** for the components, and then click
    **Next**.
-   * If you you want to use your own VMware license for a component, select **I will provide**, enter the license key string for the component, and then click **Next**.
+   * If you want to use your own VMware license for a component, select **I will provide**, enter the license key string for the component, and then click **Next**.
 
    **Attention**:
    * Only one license choice is supported for each VMware component. Both purchasing and providing licenses for the same VMware
@@ -152,6 +153,7 @@ This service provides replication and disaster recovery capabilities to help pro
    * You can change any licenses that you have provided by using the VMware vSphere Web Client after the instance deployment is
    completed.
    * Support for the VMware components that you provide licenses for will be directly provided by VMware, not by IBM Support.
+
 8. On the **Summary** page, verify the instance configuration before you place the order.
    1. Review the settings for the instance.
    2. Click the link or links of the terms that apply to your order, and ensure that you agree with these terms before you order the
@@ -172,18 +174,20 @@ When the instance is ready to use, the status of the instance is changed to **Re
 
 View and manage the Cloud Foundation instance that you ordered.
 
-**Important**: You must manage the {{site.data.keyword.vmwaresolutions_full}} components that are created in your SoftLayer account only from the {{site.data.keyword.vmwaresolutions_short}} console, not the SoftLayer Customer Portal or any other means outside of the console. If you change these components outside of the {{site.data.keyword.vmwaresolutions_short}} console, the changes are not synchronized with the console.
+**Important**: You must manage the {{site.data.keyword.vmwaresolutions_full}} components that are created in your Bluemix Infrastructure (SoftLayer) account only from the {{site.data.keyword.vmwaresolutions_short}} console, not the Bluemix Infrastructure (SoftLayer) portal or any other means outside of the console. If you change these components outside of the {{site.data.keyword.vmwaresolutions_short}} console, the changes are not synchronized with the console.
 
-**CAUTION**: Managing any {{site.data.keyword.vmwaresolutions_short}} components (which were installed into your SoftLayer account when you ordered the instance) from outside the {{site.data.keyword.vmwaresolutions_short}} console can make your environment unstable. These management activities include:
+**CAUTION**: Managing any {{site.data.keyword.vmwaresolutions_short}} components (which were installed into your Bluemix Infrastructure (SoftLayer) account when you ordered the instance) from outside the {{site.data.keyword.vmwaresolutions_short}} console can make your environment unstable. These management activities include:
 
 *  Adding, modifying, returning, or removing components
 *  Expanding or contracting instance capacity through adding or removing ESXi servers
 *  Powering off components
 *  Restarting services
 
+   Exceptions to these activities include managing the shared storage file shares from the Bluemix Infrastructure (SoftLayer) portal. Such activities include: ordering, deleting (which might impact data stores if mounted), authorizing, and mounting shared storage file shares.
+
 ## Related links
 
-* [Signing up for a SoftLayer account](../vmonic/signing_softlayer_account.html)
+* [Signing up for an IBM Bluemix Infrastructure (SoftLayer) account](../vmonic/signing_softlayer_account.html)
 * [Viewing Cloud Foundation instances](sd_viewinginstances.html)
 * [Expanding and contracting capacity for Cloud Foundation instances](sd_addingremovingservers.html)
 * [Ordering and removing services for Cloud Foundation instances](sd_addingremovingservices.html)

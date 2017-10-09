@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-10"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -14,12 +14,12 @@ Use this procedure to view the VMware Cloud Foundation instances that you ordere
 
 ## Procedure
 
-1. Click **Deployed Instances** from the left navigation pane. Ensure that you are on the **Cloud Foundation** tab. View the summary about the ordered instances:
+1. Click **Deployed Instances** from the left navigation pane. In the **Cloud Foundation Instances** table, view the summary about the ordered instances:
 
   * **Name**:The name of the instance.
-  * **ESXi servers**: The number of ESXi servers.
+  * **ESXi Servers**: The number of ESXi servers.
   * **Location**: The data center where the instance is hosted.
-  * **Creation time**: The date and time that the instance was created.
+  * **Creation Time**: The date and time that the instance was created.
   * **Status**: The status of the instance. The status can have one of the following values:
     <dl class="dl">
     <dt class="dt dlterm">Creating</dt>
@@ -47,7 +47,7 @@ Use this procedure to view the VMware Cloud Foundation instances that you ordere
     <dd class="dd">Delete the instance.</dd>
     </dl>
 
-2. Click an instance to see its general details. Ensure that you are on the **Summary** tab.
+2. Click an instance to see the property details. Ensure that you are on the **Summary** tab.
 
   * **ID**: The ID of the instance.
   * **Name**: The name of the instance.
@@ -59,10 +59,13 @@ Use this procedure to view the VMware Cloud Foundation instances that you ordere
 
   * **NSX for vSphere**: The VMware NSX for vSphere product version.
   * _**VMware component**_ **License**: If you selected to use your own VMware license for any of the VMware components on the **Licensing** page when you were ordering the instance, the VMware component name and the license key string you entered for the component are displayed.
+
+  Examples of VMware component licenses can include **NSX License**, **vCenter Server License**, and **vSAN License**.
+
   * **DNS**:
     <dl class="dl">
            <dt class="dt dlterm">Root Domain</dt>
-    <dd class="dd">The root domain name is the DNS (Domain Name System) domain name and the Active Directory (AD) forest root name for a
+    <dd class="dd">The root domain name is the DNS (Domain Name System) domain name and the Microsoft Active Directory (AD) forest root name for a
     primary (single) or secondary set of <span class="ph">Cloud Foundation instances</span>.</dd>
     <dt class="dt dlterm">SSO Domain</dt>
     <dd class="dd">The SSO domain is the vSphere Single Sign-On domain. The SSO domain name is fixed for all deployed  <span
@@ -94,7 +97,7 @@ Use this procedure to view the VMware Cloud Foundation instances that you ordere
   * **PSC FQDN**: The PSC fully qualified domain name (FQDN).
   * **PSC (SSH)**: The user name and password that you can use to access the PSC VM via SSH connection.
   * **PSC (ADMIN)**: The VMware vCenter Single Sign-On user name and password that you can use to access the PSC web console.
-  * **AD/DNS server IP**: The IP address of the Windows Active Directory (AD) server.
+  * **AD/DNS server IP**: The IP address of the AD server.
   * **AD/DNS server FQDN**: The AD/DNS server fully qualified domain name.
   * **AD/DNS server (Remote desktop)**: The user name and password that you can use to access the AD server via a remote desktop connection.
 
@@ -103,8 +106,7 @@ Use this procedure to view the VMware Cloud Foundation instances that you ordere
   * **Date**: The date and time when the instance status is changed.
   * **Summary**: The details of the change.
 
-    If errors occur during instance deployment or instance deletion, a SoftLayer service ticket is sent automatically to IBM® Support on
-    your behalf. You can click the ticket link to check its status and progress.
+    If errors occur during instance deployment or instance deletion, a Bluemix Support ticket is created automatically on your behalf. You can click the ticket link to check its status and progress.
 
 ## What to do next
 
@@ -115,7 +117,7 @@ Manage your instances from the {{site.data.keyword.vmwaresolutions_short}} conso
 Review the following topics for information to help you complete the login instructions:
 
 * For the requirements and necessary steps before you access the vSphere Web Client, see [Timeout reached while connecting to the vSphere Web Client](../vmonic/trbl_timeout_vc_console.html).
-* For a list of access points to log in to the SoftLayer Private Network using VPN, see [VPN Access](http://www.softlayer.com/vpn-access){:new_window}.
+* For a list of access points to log in to the Bluemix Infrastructure (SoftLayer) Private Network using VPN, see [VPN Access](http://www.softlayer.com/vpn-access){:new_window}.
 * If you have problems when you deploy an OVF (Open Virtualization Format) file using the vSphere Web Client, see [Deploying an OVF file using the vSphere Web Client](../vmonic/trbl_deploy_ovf.html).
 
 ## Related links

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-05-25"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-05-25"
 A multi-site deployment consists of the following components.
 
 * **Primary instance**: The primary VMware Cloud Foundation instance has the following configuration:
-  *  AD (Active Directory) and DNS (Domain Name System) root domain
+  *  Microsoft Active Directory (AD) and DNS (Domain Name System) root domain
   *  Cloud Foundation subdomain
   *  SSO (Single Sign-On) domain
   *  SSO site name
@@ -57,3 +57,4 @@ You can have a maximum of 8 (1 primary and 7 secondary) instances that are deplo
 * [Assign Primary Role to NSX Manager](https://pubs.vmware.com/NSX-62/topic/com.vmware.nsx-cross-vcenter-install.doc/GUID-44E8AE16-BA3F-4DD9-B582-FC1E137E6CFC.html){:new_window}
 * [Configuring Secondary NSX Managers](https://pubs.vmware.com/NSX-62/topic/com.vmware.nsx-cross-vcenter-install.doc/GUID-9E48BC57-15E3-49C7-8BC5-F94ED8918BBE.html){:new_window}
 * [AD trusts supported with vCenter Single Sign-On](https://kb.vmware.com/kb/2064250){:new_window}
+* [Securely connect your private VMware workloads in the IBM Cloud](https://www.ibm.com/developerworks/library/se-securely-connect-private-vmware-workloads-ibm-cloud/index.html){:new_window}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-15"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -29,7 +29,7 @@ The architecture contains the following layers:
   *  VMware NSX is the network virtualization platform that provides logical networking components and virtual networks.
 * **Virtualization management**: This layer consists of vCenter Server, which represents the management layer for the virtualized environment. The same familiar vSphere API-compatible tools and scripts can be used to manage the IBM®-hosted VMware environment.
 
-On the {{site.data.keyword.vmwaresolutions_full}} console, you can expand and contract the capacity of your instances using the add and remove ESXi server capability. In addition, lifecycle management functions like patching and upgrading the VMware components in the hosted environment are also available. Through the console, you can also manage the automated snapshot-based backup of the management layer with up to 14 points of restoration.
+On the {{site.data.keyword.vmwaresolutions_full}} console, you can expand and contract the capacity of your instances using the add and remove ESXi server capability. In addition, lifecycle management functions like patching and upgrading the VMware components in the hosted environment are also available.
 
 For details about the architecture, see the _Reference architecture_ document in the [Architecture Center](https://www.ibm.com/devops/method/content/architecture/virtCloudFoundationPlatform){:new_window}.
 
@@ -44,6 +44,7 @@ The following components are included in your Cloud Foundation instance.
 IBM Cloud bare metal servers with the following hardware options to choose from:
 * Standard (Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz / 256 GB RAM / 12 disks)
 * Small (Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz / 128 GB RAM / 12 disks)
+* User customized (the user selects the CPU and RAM options)
 
 In addition, the following disk and networking specifications:
 * Two 1-TB SATA drives
@@ -67,11 +68,11 @@ In addition, the following disk and networking specifications:
 Three VSIs (Virtual Server Instances):
 * A VSI for CloudBuilder, which is shut down after the instance deployment is completed.
 * A VSI for the Veeam backup, which keeps running after the instance deployment is completed.
-* A VSI for Windows Active Directory (AD) and Domain Name System (DNS) services, which is required for multi-site configuration support. This VSI specification is: Windows 2012 R2 (8 GB RAM / 2 CPU cores / 100 GB disk / Dual 1 Gbps private uplinks).
+* A VSI for Microsoft Active Directory (AD) and Domain Name System (DNS) services, which is required for multi-site configuration support. This VSI specification is: Windows 2012 R2 (8 GB RAM / 2 CPU cores / 100 GB disk / Dual 1 Gbps private uplinks).
 
 ### Storage for backups
 
-One 2 TB shared file-level storage that can be scaled up to 12 TB
+One 2 TB shared file-level storage that can be scaled up to 12 TB.
 
 **Note**: With the introduction of the Veeam on IBM Cloud service, the storage for backups is no longer a standard component of Cloud Foundation instances. When you order an instance, you can choose whether you want storage for backups by selecting or deselecting the Veeam on IBM Cloud service.
 
@@ -84,7 +85,7 @@ One 2 TB shared file-level storage that can be scaled up to 12 TB
 
 ## Cloud Foundation expansion node components
 
-Each Cloud Foundation expansion node will deploy and incur charges for the following components in your SoftLayer® account:
+Each Cloud Foundation expansion node will deploy and incur charges for the following components in your IBM Bluemix Infrastructure (SoftLayer) account.
 
 ### Hardware
 
@@ -99,14 +100,16 @@ One IBM Cloud bare metal server with the configuration presented in [Cloud Found
 
 For details about the components, see the _Bill of Materials_ document in the [Architecture Center](https://www.ibm.com/devops/method/content/architecture/virtCloudFoundationPlatform){:new_window}.
 
-**Important**: You must manage the {{site.data.keyword.vmwaresolutions_short}} components that are created in your SoftLayer account only from the {{site.data.keyword.vmwaresolutions_short}} console, not the SoftLayer Customer Portal or any other means outside of the console. If you change these components outside of the {{site.data.keyword.vmwaresolutions_short}} console, the changes are not synchronized with the console.
+**Important**: You must manage the {{site.data.keyword.vmwaresolutions_short}} components that are created in your Bluemix Infrastructure (SoftLayer) account only from the {{site.data.keyword.vmwaresolutions_short}} console, not the Bluemix Infrastructure (SoftLayer) portal or any other means outside of the console. If you change these components outside of the {{site.data.keyword.vmwaresolutions_short}} console, the changes are not synchronized with the console.
 
-**CAUTION**: Managing any {{site.data.keyword.vmwaresolutions_short}} components (which were installed into your SoftLayer account when you ordered the instance) from outside the {{site.data.keyword.vmwaresolutions_short}} console can make your environment unstable. These management activities include:
+**CAUTION**: Managing any {{site.data.keyword.vmwaresolutions_short}} components (which were installed into your Bluemix Infrastructure (SoftLayer) account when you ordered the instance) from outside the {{site.data.keyword.vmwaresolutions_short}} console can make your environment unstable. These management activities include:
 
 *  Adding, modifying, returning, or removing components
 *  Expanding or contracting instance capacity through adding or removing ESXi servers
 *  Powering off components
 *  Restarting services
+
+   Exceptions to these activities include managing the shared storage file shares from the Bluemix Infrastructure (SoftLayer) portal. Such activities include: ordering, deleting (which might impact data stores if mounted), authorizing, and mounting shared storage file shares.
 
 ## Related links
 
