@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-07-05"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -20,7 +20,7 @@ You can expand or contract the capacity of your VMware vCenter Server instance a
 **Note:** Do not add or remove ESXi servers from the VMware vSphere Web Client. The changes that you make on the vSphere Web
 Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console.
 
-A vCenter Server instance must have at least two ESXi servers. You can expand the platform to contain a maximum of 20 ESXi servers.
+A vCenter Server instance must have at least two ESXi servers. You can expand the platform to contain a maximum of 20 ESXi servers. For more information about minimum of ESXi servers, see [Is a two-node vCenter Server instance highly available?](../vmonic/faq.html#is-a-two-node-vcenter-server-instance-highly-available-)
 
 ## Procedure
 
@@ -32,26 +32,17 @@ A vCenter Server instance must have at least two ESXi servers. You can expand th
    1. In the **ESXi Servers** section, click **Add**.
    2. In the **Add Server** window, enter the number of servers, review the estimated cost, and then click **Add**.
 6. To remove ESXi servers, select the servers that you want to remove in the **ESXi Servers** section, and then click **Remove**.
-  
+
 ## Results
 
 After starting the add or remove operation you might experience a slight delay in the instance status while it changes from **Ready to Use** to **Modifying**. Allow the operation to fully complete before making additional changes to the instance.
 
 You are notified by email that your request to add or remove ESXi servers is being processed. The status of the cluster associated with
-the ESXi servers is changed to **Modifying**. When you remove servers, note that the ESXi servers are fully reclaimed by SoftLayer® at
-the end of the SoftLayer billing cycle, which is typically 30 days.
+the ESXi servers is changed to **Modifying**. When you remove servers, note that the ESXi servers are fully reclaimed by IBM Bluemix Infrastructure (SoftLayer) at the end of the Bluemix Infrastructure (SoftLayer) billing cycle, which is typically 30 days.
 
-**Attention:** You are billed until the end of the SoftLayer billing cycle for the removed ESXi servers.
+**Attention:** You are billed until the end of the Bluemix Infrastructure billing cycle for the removed ESXi servers.
 
-If you do not see the new ESXi servers added to the list in the cluster, check the notifications to find more details about the failure.
-If required, open a service ticket to resolve the issue.
-
-If you need assistance with {{site.data.keyword.vmwaresolutions_short}}, contact IBM Support through one of the support channels. For
-more information, see [Contacting IBM Support](trbl_support.html).
-
-## What to do next
-
-Exit the maintenance mode.
+If you do not see the new ESXi servers added to the list in the cluster, check the email or console notifications to find more details about the failure.
 
 ## Related links
 

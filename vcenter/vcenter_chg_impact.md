@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-10"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -12,11 +12,13 @@ lastupdated: "2017-08-10"
 
 Changing resources or subnets that are reserved for {{site.data.keyword.vmwaresolutions_full}} can impact management operations.
 
-## Changing vCenter Server resources and their impact on the system
+## Changing vCenter Server resources and their impact on the system (V1.8 and earlier)
 
 The following table lists the operations that might be impacted if the SSO administrator changes VMware vCenter Server resources outside of the {{site.data.keyword.vmwaresolutions_short}} console. If a solution to recover is available, it is provided as well.
 
-Table 1. Operations that are impacted by changing VMware resources
+This table is applicable to versions V1.8 and earlier only. For V1.9 and later, if the VMware vCenter Server instance is in a **Ready to Use** state, you can modify the virtual datacenter, cluster, switches, port groups, and data store names from the VMware vSphere Web Client.
+
+Table 1. Operations that impacted by changing VMware resources
 
 | Attempted change  | Impacted operations  | Severity  | Recovery method  |
 |:------------- |:------------- |:--------------|:--------------|
@@ -50,5 +52,5 @@ In addition, the following management subnets are also reserved for {{site.data.
 *  A public portable subnet of 16 IP addresses on the public VLAN
 
 If you need more subnets to use, you can obtain IP addresses to use in one of the following ways:
-*  **Option 1 (recommended)**: Use VMware NSX virtual network overlays. A sample VXLAN template is provided upon order. This VXLAN can be used as a starting point for building SDN.
+*  **Option 1 (recommended)**: Use VMware NSX virtual network overlays. A sample VXLAN template is provided upon order. This VXLAN can be used as a starting point for building software-defined networking (SDN). For more information, see [Configuring your network to use the customer-managed NSX Edge](vc_esg_config.html).
 *  **Option 2**: Order your own portable public or private subnets to obtain IP addresses. To distinguish the subnets that you order from the management subnets, you can add notes to all the subnets that you are ordering.

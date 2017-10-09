@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-11"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -16,24 +16,58 @@ You can add clusters to your VMware vCenter Server instances to expand the compu
 
 The ESXi servers that you configured when you ordered an instance are grouped as **cluster1** by default. You can add up to five clusters to an instance.
 
-When you add a cluster for a vCenter Server instance, you must specify or review the following settings:
-* **Cluster Name**: The cluster name must meet the following requirements:
-  * Only alphanumeric and dash (-) characters are allowed.
-  * The cluster name must start and end with an alphanumeric character.
-  * The maximum length of the cluster name is 30 characters.
-  * The cluster name must be unique within the vCenter Server instance.
-* **Bare Metal Server Configuration**: The bare metal server specification options available to you depend on the data center location of the vCenter Server instance. You can select a specification that is different from the specification of the default cluster.
-* **Number of Bare Metal Servers**: A minimum of 2 bare metal servers is required for a cluster. You can add up to 20 bare metal servers for a cluster. All bare metal servers share the same configuration.
-* **Data Center Location**: The data center location of the cluster is same with the one of the vCenter Server instance. You cannot change it.
-* **Storage**: You can add file-level shared storage for the cluster and specify the following settings:
-  * **Number of File Shares**: Specify the number of file shares for the shared storage that you want to add. The number of file shares
-  must be in the range 1 - 32. <!-- the range to change to 1 - 32 per github 3545 -->
-  * **Size**: Select the capacity that meets your shared storage needs.
-  * **Performance**: Select the IOPS (Input/output Operations Per Second) per GB based on your workload requirements. The performance
-  levels available to you depend on the size you selected and the data center location.
-  * **NFS Version**: Select the appropriate NFS (Network File System) version according to your needs. NFS v4.1 includes multiple paths
-  to the shared NAS (Network Attached Storage) array, but does not support SDRS (Storage Distributed Resource Scheduler) or SIOC
-  (Storage I/O Control). NFS v3 supports SDRS and SIOC, but does not include NFS multipathing.
+When you add a cluster for a vCenter Server instance, you must specify or review the following settings.
+
+## System settings
+
+### Cluster Name
+
+The cluster name must meet the following requirements:
+* Only alphanumeric and dash (-) characters are allowed.
+* The cluster name must start and end with an alphanumeric character.
+* The maximum length of the cluster name is 30 characters.
+* The cluster name must be unique within the vCenter Server instance.
+
+### Bare Metal Server Configuration
+
+You can select a Bare Metal Server specification that is different from the specification of the default cluster. If you selected **User customized**, you must specify the CPU model and RAM for the bare metal server.
+
+Table 1. CPU and RAM options
+
+| Item        | Options       |
+|:------------- |:------------- |
+| CPU | <ul><li>Dual Intel Xeon E5-2620 v4 / 16 cores total, 2.10 GHz</li><li>Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz</li><li>Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz</li></ul>|
+| RAM | 64 GB, 128 GB, 256 GB, 384 GB, 512 GB, 768 GB, 1.5 TB|   
+
+### Number of Bare Metal Servers
+
+A minimum of 2 bare metal servers is required for a cluster. You can add up to 20 bare metal servers for a cluster. All bare metal servers share the same configuration.
+
+### Data Center Location
+
+By default, the data center location of the cluster is set to the data center of the vCenter Server instance.
+
+For V1.9 and later, you can deploy the cluster to a different data center than the deployed instance. Ensure that there is less than a 150 ms network latency between the two data centers. If deploying to a different IBM Cloud data center, or Bluemix Infrastructure (SoftLayer) pod, three additional VLANs will be ordered for use with the ordered bare metal servers.
+
+## Storage settings
+
+You can add file-level shared storage for the cluster and specify the following settings.
+
+### Number of File Shares
+
+Specify the number of file shares for the shared storage that you want to add. The number of file shares must be in the range 1 - 32.
+
+### Size
+
+Select the capacity that meets your shared storage needs.
+
+### Performance
+
+Select the IOPS (Input/output Operations Per Second) per GB based on your workload requirements. The performance levels available to you depend on the size you selected and the data center location.
+
+<!--### NFS Version
+
+NFS (Network File System) v3 is set by default and you cannot change it. NFS v3 supports SDRS (Storage Distributed Resource Scheduler) and SIOC (Storage I/O Control), but does not include NFS multipathing.-->
 
 ## Procedure
 
@@ -57,14 +91,18 @@ When you add a cluster for a vCenter Server instance, you must specify or review
      </dl>
 4. To add a cluster, click **Add**, and then complete the following steps in the **Add Cluster** area:
    1. Enter the cluster name.
-   2. Select the bare metal server specification. If selecting **User customized**, enter the CPU and RAM specifications based on your requirements.
-   3. Specify the number of bare metal servers.
-   4. Review the data center location that is automatically filled in.
-   5. Under **Storage**, configure the file-level shared storage by selecting the number, size, performance, and NFS version.
-   6. Click **Calculate Price** under **Estimated Cost** to get the pricing of your order.
-   7. Review the estimated cost of the cluster by clicking the price link under **Estimated Cost**. To save or print your order summary,
+   2. Select the bare metal server specification.
+   3. If you selected **User customized**, select the CPU and RAM specifications based on your requirements.
+   4. Specify the number of bare metal servers.
+   5. Review the data center location that is automatically filled in.
+
+   You can select a different data center other than the data center where the instance is deployed.  If you select a user-customized hardware configuration, you can deploy to a different Bluemix Infrastructure (SoftLayer) pod for data centers containing additional pods. This is useful if the default Bluemix Infrastructure (SoftLayer) pod where the initial instance is deployed has reached capacity. Pre-built, standardized **Small**, **Medium**, and **Large** bare metal server options use a default pod that cannot be changed.
+
+   6. Under **Storage**, configure the file-level shared storage by selecting the number, size, and performance.
+   7. Click **Calculate Price** under **Estimated Cost** to get the pricing of your order.
+   8. Review the estimated cost of the cluster by clicking the price link under **Estimated Cost**. To save or print your order summary,
    click the **Print** or **Download** icon on the upper right of the PDF window.
-   8. Click **Add**.
+   9. Click **Add**.
 
 5. After the cluster is ready to use, you can click the cluster name to view its details:
    * The list of ESXi servers with their details:

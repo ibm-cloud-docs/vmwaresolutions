@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-11"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -12,7 +12,7 @@ lastupdated: "2017-08-11"
 
 The {{site.data.keyword.vmwaresolutions_full}} console periodically detects and lists the available software updates and patches that you can apply to your VMware virtual environment.
 
-An available update is a record in the software updates list of the instance, which can be applied immediately or scheduled for a later time. The update is a bundle that contains one or more packages for updating the IBM management components and the VMware components.
+An available update is a record in the software updates list of the instance, which can be applied immediately or scheduled for a later time. The update is a bundle that contains one or more packages for updating the IBM management components.
 
 ## Before you begin
 
@@ -33,9 +33,7 @@ Before you attempt to apply an update, expand the update entry by clicking the d
     </dl>
 * The update details.
 
-Before an update operation is started, a backup of the management virtual machines is done automatically in the background. After the backup is completed, the update is applied.
-
-**Note**: During updates that include VMware components updates, virtual machines (VMs) may need to be migrated from ESXi servers to go into maintenance mode. If a VM has a local datastore, or CD-ROM mounted, this might prevent the VM migration.
+Before an update operation is started, a backup of the management virtual machines is done automatically, if your instance has the optional [Veeam service](vc_addingremovingservices.html#available-services-for-vcenter-server-instances) installed. After the backup is completed, the update is applied.
 
 ## Procedure
 
@@ -44,7 +42,7 @@ Before an update operation is started, a backup of the management virtual machin
 3. Click the **Update and Patch** tab.
 4. For license upgrades, click **Upgrade License** to upgrade to one of the available NSX editions.
 
-    **Note**: The license upgrade replaces all existing NSX licenses in your SoftLayer account with the new license. Additional charges may be incurred from an overlap of old and new licenses if you upgrade in the middle of a billing cycle. Upgrade the license at the end of the billing cycle to avoid additional charges.
+    **Note**: The license upgrade replaces all existing NSX licenses in your IBM Bluemix Infrastructure (SoftLayer) account with the new license. Additional charges may be incurred from an overlap of old and new licenses if you upgrade in the middle of a billing cycle. Upgrade the license at the end of the billing cycle to avoid additional charges.
 
 5. For software updates, click the down arrow to expand the update that you want to apply and then complete one of the following steps:
    *  To start the update immediately, click the overflow menu icon in the **Actions** column of the update entry, and then click
