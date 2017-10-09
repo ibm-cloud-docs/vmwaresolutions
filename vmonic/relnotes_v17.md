@@ -40,7 +40,7 @@ Starting with the V1.7 release, you can use clusters to manage ESXi servers in v
 
 ### Enhancements to the deployment of Zerto disaster recovery
 
-The deployment of Zerto disaster recovery is now automated rather than handled through a SoftLayer service ticket. All Zerto components, such as a private portable subnet, a Windows VSI (Virtual Service Instance), and the Zerto license charges are listed on the estimated cost, so you can review before you place your order. For more information, see [Deployment process of Zerto disaster recovery](../vmonic/addingzertodr.html).
+The deployment of Zerto disaster recovery is now automated rather than handled through a support ticket. All Zerto components, such as a private portable subnet, a Windows VSI (Virtual Service Instance), and the Zerto license charges are listed on the estimated cost, so you can review before you place your order. For more information, see [Deployment process of Zerto disaster recovery](../services/addingzertodr.html).
 
 ### NSX license upgrade capabilities
 

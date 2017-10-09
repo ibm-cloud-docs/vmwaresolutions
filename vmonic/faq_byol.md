@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-22"
+lastupdated: "2017-09-28"
 
 ---
 
@@ -14,13 +14,13 @@ Find answers to the questions that you might have about Bring Your Own License (
 
 ## What is BYOL for Cloud Foundation instances?
 
-Bring Your Own License, which is known as BYOL, is a new feature in the V1.8 release that allows you to use your own VMware licenses for one or more of the following VMware components when ordering Cloud Foundation instances:
+Bring Your Own License, which is known as BYOL, is a feature available in V1.8 and later releases that allows you to use your own VMware licenses for one or more of the following VMware components when ordering VMware Cloud Foundation instances:
 * vCenter Server
 * vSphere
 * vSAN
 * NSX
 
-If you select to use your own license for a VMware component and provide a valid license key for it, no license is ordered from IBM for this component and no monthly license charges are incurred to your SoftLayer account for this component.
+If you select to use your own license for a VMware component and provide a valid license key for it, no license is ordered from IBM for this component and no monthly license charges are incurred to your IBM Bluemix Infrastructure (SoftLayer) account for this component.
 
 ## What license editions and CPU quantities are required for BYOL?
 
@@ -47,7 +47,7 @@ No. Our agreement with VMware requires that we must accept a client’s actual l
 
 ## Can I BYOL for some VMware components and purchase monthly licenses for others?
 
-Yes. You can BYOL or purchase licenses for any combination of the four VMware components. Our console makes it straightforward for you to select the licensing option when you order the instance. Your licensing option at the time of initial instance order applies for the lifetime of the instance.
+Yes. You can BYOL or purchase licenses for any combination of the four VMware components. The {{site.data.keyword.vmwaresolutions_full}} console makes it straightforward for you to select the licensing option when you order the instance. Your licensing option at the time of initial instance order applies for the lifetime of the instance.
 
 ## For one VMware component, can I BYOL a partial quantity of licenses and buy the rest of licenses from IBM?
 
@@ -63,7 +63,7 @@ You can manage your BYOL licenses by using the VMware vSphere Web Client after t
 
 ## When I add more ESXi servers to my Cloud Foundation instance later, does the instance validate whether the quantity of my BYOL licenses is sufficient?
 
-Not in this release. This might be an enhancement in a future release.
+Yes. When you are adding more ESXi servers to a deployed Cloud Foundation instance, the capacity of your BYOL licenses is automatically checked for the specified number of ESXi servers. If the capacity is not sufficient, the ESXi servers are not added and you get a console notification.
 
 ## Does IBM provide support if I selected the BYOL licensing option?
 
@@ -71,7 +71,7 @@ IBM Support continues to be your point of contact for any Cloud Foundation insta
 
 ## Why do vSphere license charges show up on the price estimation list when I already BYOL for it? Am I still being charged for it?
 
-Today, bare metal servers are provisioned with vSphere already installed and with vSphere licenses already included. If you selected BYOL for vSphere, a process is automatically initiated upon instance deployment to remove the included vSphere licenses, and then the license charges are credited to your SoftLayer account. You do not have to do anything in this process.
+Today, bare metal servers are provisioned with vSphere already installed and with vSphere licenses already included. If you selected BYOL for vSphere, a process is automatically initiated upon instance deployment to remove the included vSphere licenses, and then the license charges are credited to your Bluemix Infrastructure (SoftLayer) account. You do not have to do anything in this process.
 
 ## Can I still use the existing manual process for BYOL?
 

@@ -48,7 +48,7 @@ All other actions on pre-V1.6 instances are no longer available.
 
 ### Networking enhancements for vCenter Server instances
 
-*  A public subnet with 16 IP addresses on the public VLAN to allow your VMs (virtual machines) to access the Internet.
+*  A public subnet with 16 IP addresses on the public VLAN to allow your VMs (virtual machines) to access the internet.
 *  A private subnet with 64 IP addresses on the private VLAN to allow your VMs to access the SoftLayer® internal network.
 *  NSX controllers are deployed with anti-affinity rules and run on separate ESXi servers in a 3-node deployment configuration.
 *  New VMware NSX Edge Services Gateway for customer usage.

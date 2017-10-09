@@ -4,13 +4,13 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-06-29"
+lastupdated: "2017-10-03"
 
 ---
 
-# Signing up for a SoftLayer account
+# Signing up for a Bluemix Infrastructure account
 
-To sign up for a SoftLayer® account, upgrade your Bluemix account to a Pay-As-You-Go account.
+To sign up for an IBM® Bluemix Infrastructure (SoftLayer) account, upgrade your Bluemix account to a Pay-As-You-Go account.
 
 ## Procedure
 
@@ -23,13 +23,12 @@ To sign up for a SoftLayer® account, upgrade your Bluemix account to a Pay-As-Y
 7. Click **Next**.
 8. Review the personal information, billing address, and credit card information.
 9. Click **Done**. You are notified by email that your account setup is in process.
-10. When you are notified by email that your account is ready, go to the SoftLayer Customer Portal, click **Log in with IBMid**, and then 
-you are automatically logged in.
+10. When you are notified by email that your account is ready, go to the Bluemix Infrastructure (SoftLayer) portal, click **Log in with IBMid**, and then you are automatically logged in.
 
 ## Related links
 
 * [FAQ](faq.html)
-* [SoftLayer account requirements](slaccountrequirement.html)
+* [Bluemix Infrastructure account requirements](slaccountrequirement.html)
 * [Ordering Cloud Foundation instances](../sddc/sd_orderinginstance.html)
 * [Ordering vCenter Server instances](../vcenter/vc_orderinginstance.html)
-* [Upgrading and unifying Bluemix and SoftLayer billing accounts](https://console.ng.bluemix.net/docs/admin/softlayerlink.html){:new_window}
+* [Upgrading and unifying Bluemix and Bluemix Infrastructure (SoftLayer) billing accounts](https://console.ng.bluemix.net/docs/admin/softlayerlink.html){:new_window}

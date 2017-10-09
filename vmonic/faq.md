@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-08-10"
+lastupdated: "2017-09-29"
 
 ---
 
@@ -14,16 +14,16 @@ Find answers to the questions that you might have about {{site.data.keyword.vmwa
 
 ## What user accounts do I need for {{site.data.keyword.vmwaresolutions_short}}?
 
-* **IBMid account**. This account is required to access the {{site.data.keyword.vmwaresolutions_short}} console. This console is a stand-alone user interface that is separate from the SoftLayer® Customer Portal. For more information, see [Getting started](../index.html).
-* **SoftLayer account**. This account is required to provision the VMware cloud platform. You can sign up for a SoftLayer account by upgrading your **IBMid account** to a Pay-As-You-Go account. The SoftLayer account that you are using must meet certain requirements. For more information, see [Signing up for a SoftLayer account](signing_softlayer_account.html) and [SoftLayer account requirements](slaccountrequirement.html).
+* **IBMid account**. This account is required to access the {{site.data.keyword.vmwaresolutions_short}} console. This console is a stand-alone user interface that is separate from the IBM Bluemix Infrastructure (SoftLayer) portal. For more information, see [Getting started](../index.html).
+* **Bluemix Infrastructure (SoftLayer) account**. This account is required to provision the VMware cloud platform. You can sign up for a Bluemix Infrastructure account by upgrading your **IBMid account** to a Pay-As-You-Go account. The Bluemix Infrastructure account that you are using must meet certain requirements. For more information, see [Signing up for a Bluemix Infrastructure account](signing_softlayer_account.html) and [Bluemix Infrastructure account requirements](slaccountrequirement.html).
 
-## How do I associate my SoftLayer credentials to the {{site.data.keyword.vmwaresolutions_short}} console?
+## How do I associate my Bluemix Infrastructure (SoftLayer) credentials with the {{site.data.keyword.vmwaresolutions_short}} console?
 
-When you order your instance for the first time, follow the instructions on the SoftLayer credentials page to locate and copy the SoftLayer user name and API key from the SoftLayer Customer Portal. The SoftLayer credentials are stored in the {{site.data.keyword.vmwaresolutions_short}} console after the first order. Future orders automatically inherit these credentials.
+When you order your instance for the first time, follow the instructions on the IBM Bluemix Infrastructure (SoftLayer) credentials page to locate and copy the Bluemix Infrastructure (SoftLayer) user name and API key from the Bluemix Infrastructure (SoftLayer) portal. The Bluemix Infrastructure credentials are stored in the {{site.data.keyword.vmwaresolutions_short}} console after the first order. Future orders automatically inherit these credentials.
 
 ## How are my VMware virtual platform consumptions billed?
 
-All costs for the physical and virtual infrastructure and the resulting licenses that are caused by the instance are charged to your SoftLayer account. When you order an instance, you must have a SoftLayer account and provide the SoftLayer API key that is associated with the account.
+All costs for the physical and virtual infrastructure and the resulting licenses that are caused by the instance are charged to your Bluemix Infrastructure (SoftLayer) account. When you order an instance, you must have a Bluemix Infrastructure account and provide the Bluemix Infrastructure (SoftLayer) API key that is associated with the account.
 
 ## What are the supported languages?
 
@@ -45,7 +45,7 @@ For more information, see [Cloud Foundation instance  components](../sddc/sd_clo
 
 For more information, see see [vCenter Server instance components](../vcenter/vc_vcenterserveroverview.html#vcenter-server-instance-components).
 
-## Is a two-node VMware vCenter Server instance highly available?
+## Is a two-node vCenter Server instance highly available?
 
 Although VMware vSphere DRS (Distributed Resource Scheduler) and VMware HA (High Availability) are enabled by default, best practices from VMware suggests that each of the 3 NSX Controllers is placed on an individual node. In the two-node minimum deployment, one node has one NSX Controller, and the other node has two NSX Controllers. If the node with two NSX Controllers goes down, NSX Controller operations are placed in read-only mode, and new VMs (virtual machines) or vMotion VMs can have networking issues.
 

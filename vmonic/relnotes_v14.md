@@ -20,7 +20,7 @@ The following components are new or updated:
 * VMware Tools 10.1.0
 * SDDC Manager (SP) 2.2
 * VMware ESXi 6.0 u2 p04
-* A new Windows VSI (Virtual Server Instance) is ordered for Windows Active Directory (AD) and DNS (Domain Name System) services, which are required for multi-site configuration support in this release. This VSI has the following specifications: Windows 2012 R2 (8 GB RAM / 2 CPU cores / 100 GB disk / Dual 1 Gbps private uplinks).
+* A new Windows VSI (Virtual Server Instance) is ordered for Microsoft Active Directory (AD) and DNS (Domain Name System) services, which are required for multi-site configuration support in this release. This VSI has the following specifications: Windows 2012 R2 (8 GB RAM / 2 CPU cores / 100 GB disk / Dual 1 Gbps private uplinks).
 
 For more information, see [Cloud Foundation overview](../sddc/sd_cloudfoundationoverview.html).
 
@@ -84,8 +84,8 @@ For more information, see [Multi-site configuration for Cloud Foundation instanc
 
 ## Enhancements to the deployment of Zerto disaster recovery
 
-* For Cloud Foundation instances, the deployment of Zerto disaster recovery is automated rather than handled through a SoftLayer service ticket. All Zerto components, such as a private portable subnet, a Windows VSI (Virtual Service Instance), and the Zerto license charges are listed on the estimated cost, so you can review before you place your order.
-* For vCenter Server instances, the deployment of Zerto disaster recovery is done through a SoftLayer service ticket, as in the previous release. However, NSX Edge and the public portable subnet are no longer needed, since they are now included in the base deployment. The charges for a private portable subnet, a Windows VSI (Virtual Service Instance), and the Zerto license still apply.
+* For Cloud Foundation instances, the deployment of Zerto disaster recovery is automated rather than handled through a support ticket. All Zerto components, such as a private portable subnet, a Windows VSI (Virtual Service Instance), and the Zerto license charges are listed on the estimated cost, so you can review before you place your order.
+* For vCenter Server instances, the deployment of Zerto disaster recovery is done through a support ticket, as in the previous release. However, NSX Edge and the public portable subnet are no longer needed, since they are now included in the base deployment. The charges for a private portable subnet, a Windows VSI (Virtual Service Instance), and the Zerto license still apply.
 
 For more information, see [Zerto disaster recovery](addingzertodr.html).
 

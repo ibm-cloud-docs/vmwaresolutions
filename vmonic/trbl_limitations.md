@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-05-11"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -12,9 +12,9 @@ lastupdated: "2017-05-11"
 
 Review the following considerations and limitations when you work with {{site.data.keyword.vmwaresolutions_full}}.
 
-## Disabling Windows automatic installation of updates
+## Windows automatic installation of updates
 
-You must disable Windows automatic installation of updates because the automatic updates and system restart might interrupt the ongoing Active Directory (AD) server configuration and other backup jobs. To apply Windows updates, install the updates manually.
+The Microsoft Active Directory (AD) / Domain Name Server (DNS) is automatically set up to only download updates. It does not install these updates or reboot automatically. You must install the updates manually and reboot at a scheduled time that avoids any interruptions of the ongoing AD server configuration and other backup jobs. To apply Windows updates, install the updates manually.
 
 ## Considerations when choosing a root domain name for Cloud Foundation instances
 
