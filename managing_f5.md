@@ -1,0 +1,27 @@
+---
+
+copyright:
+
+  years:  2016, 2017
+
+lastupdated: "2017-10-04"
+
+---
+
+# Managing F5 on IBM Cloud
+
+## Accessing the BIG-IP Web UI consoles
+
+To manage the F5 on IBM® Cloud service, log in to the primary or the secondary BIG-IP Web UI consoles by using the corresponding credentials that you can find on the F5 on IBM Cloud service details page.
+
+For more information, see the following topics:
+* [Ordering and removing services for Cloud Foundation instances](../sddc/sd_addingremovingservices.html)
+* [Ordering and removing services for vCenter Server instances](../vcenter/vc_addingremovingservices.html)
+
+## Related links
+
+* [Considerations for F5 on IBM Cloud](f5_considerations.html)
+* [Ordering Cloud Foundation instances](../sddc/sd_orderinginstance.html)
+* [Ordering vCenter Server instances](../vcenter/vc_orderinginstance.html)
+* [Contacting IBM Support](../vmonic/trbl_support.html)
+* [FAQ](../vmonic/faq.html)
