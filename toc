@@ -10,6 +10,7 @@ IBM Cloud for VMware Solutions
 
     {: .topicgroup}
     Release notes
+        vmonic/relnotes_v19.md
         vmonic/relnotes_v18.md
         vmonic/relnotes_v17.md
         vmonic/relnotes_v16.md
@@ -63,19 +64,44 @@ IBM Cloud for VMware Solutions
         vcenter/vc_deletinginstance.md
 
     {: .topicgroup}
+    VMware vSphere clusters
+        vsphere/vs_planning.md
+        vsphere/vs_orderinginstances.md
+        vsphere/vs_orderingbasedonexistingconfig.md
+        vsphere/vs_scalingexistingclusters.md
+        vsphere/vs_orderingforclustersoutside.md
+
+    {: .topicgroup}
+    NetApp ONTAP Select instances
+        netapp/np_netappoverview.md
+        netapp/np_planning.md
+        netapp/np_orderinginstances.md
+        netapp/np_viewinginstances.md
+        netapp/np_deletinginstance.md
+
+    {: .topicgroup}
     Fortinet on IBM Cloud
-        vmonic/fsa_considerations.md
-        vmonic/managingfsa.md
+        services/fsa_considerations.md
+        services/managingfsa.md
+
+    {: .topicgroup}
+    F5 on IBM Cloud
+        services/f5_considerations.md
+        services/managing_f5.md
+
+    {: .topicgroup}
+    Managed services from IMI
+        services/managing_imi.md
 
     {: .topicgroup}
     Veeam on IBM Cloud
-        vmonic/veeam_considerations.md
-        vmonic/managingveeam.md
+        services/veeam_considerations.md
+        services/managingveeam.md
 
     {: .topicgroup}
     Zerto on IBM Cloud
-        vmonic/addingzertodr.md
-        vmonic/managingzertodr.md
+        services/addingzertodr.md
+        services/managingzertodr.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
