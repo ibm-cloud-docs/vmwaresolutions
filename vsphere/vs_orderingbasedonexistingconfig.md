@@ -4,13 +4,13 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-05"
+lastupdated: "2017-10-10"
 
 ---
 
 # Ordering vSphere clusters based on existing configurations
 
-You can order a VMware vSphere cluster based on a configuration template that you saved. Use this procedure to define a new cluster configuration based off an existing cluster configuration as a starting point.
+You can order a VMware vSphere cluster based on a configuration template that you saved. Use this procedure to define a new cluster configuration based on an existing cluster configuration.
 
 ## Requirements
 

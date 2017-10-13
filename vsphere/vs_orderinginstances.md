@@ -4,13 +4,13 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-06"
+lastupdated: "2017-10-10"
 
 ---
 
 # Ordering new vSphere clusters
 
-To deploy a highly customizable VMware virtualized platform, order VMware vSphere on IBM Cloud. Use this procedure to define a new cluster.
+To deploy a highly customizable VMware virtualized platform, order VMware vSphere on IBM Cloud. Use this procedure to define a new VMware vSphere cluster.
 
 This workflow will guide you through VMware component, bare metal server, and networking choices, to create a new cluster. After you place the order, the cluster configuration is captured so that you can come back and continue to scale out the cluster as needed. Once the order is completed, you can manually build the VMware cluster based on your requirements.
 
