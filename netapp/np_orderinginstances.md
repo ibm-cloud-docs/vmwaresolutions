@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-05"
+lastupdated: "2017-10-12"
 
 ---
 
@@ -27,20 +27,22 @@ When you order a NetApp ONTAP Select instance, you must specify the following se
 ### Domain name
 
 The root domain name must meet the following requirements:
-*  The name must consist of two or more strings that are separated by period (.)
 *  Only alphanumeric and dash (-) characters are allowed.
+*  The name must consist of two or more strings that are separated by period (.)
+*  Only alphanumeric characters are allowed.
 *  Each string must start with an alphabetic character and end with an alphanumeric character, and the last string can contain only
 alphabetic characters.
 *  The length of the last string must be in the range 2 - 24 characters.
-*  The length of other strings must be in the range 1 - 63 characters.
-*  The maximum length of the domain name is 189 characters.
+
+**Note:** The maximum length of the FQDN (Fully Qualified Domain Name) for hosts and VMs (virtual machines) is 50 characters. Domain names must accomodate for this maximum length.
 
 ### Instance name
 
 The instance name must meet the following requirements:
-* Only alphanumeric and dash (-) characters are allowed.
+* Only alphanumeric characters are allowed.
 * The instance name must start and end with an alphanumeric character.
 * The maximum length of the instance name is 10 characters.
+* The instance name must be unique within your account.
 
 ### Bare metal server configuration
 
