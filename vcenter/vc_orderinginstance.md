@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-05"
+lastupdated: "2017-10-13"
 
 ---
 
@@ -12,18 +12,6 @@ lastupdated: "2017-10-05"
 
 To deploy a flexible and customizable VMware virtualized platform that best fits your workload needs, order a VMware vCenter Server
 instance. During the initial order, you can also add services, such as [Zerto on IBM Cloud](../services/addingzertodr.html).
-
-VMware vCenter Server on IBM® Cloud is a hosted private cloud that delivers the VMware vSphere stack as a service. The VMware environment is built on top of a minimum of three Bluemix® bare metal servers, shared file-level storage, and includes the automatic deployment and configuration of an easy-to-manage logical edge firewall that is powered by VMware NSX.
-
-The entire environment can be provisioned in a matter of hours, and the elastic bare metal infrastructure can scale out the compute
-capacity rapidly when needed.
-
-Post-deployment, you can order additional NFS (Network File System) file shares from the IBM Bluemix Infrastructure (SoftLayer) portal and manually attach them across hosts. If you require dedicated storage, [NetApp ONTAP Select on IBM Cloud](../netapp/np_netappoverview.html) is offered in both high-performance (all SSD) and high-capacity (all SATA) configurations.
-
-If you purchased IBM-provided VMware licensing, you can upgrade the VMware NSX Base edition to Advanced or to Enterprise edition, and you can purchase additional VMware components, such as VMware vRealize Operations.
-
-IBM Cloud Professional Services and Managed Services are also available to help you accelerate your journey to the cloud with offerings
-like migration, implementation, and onboarding services.
 
 ## Requirements
 
@@ -35,22 +23,22 @@ Ensure that you completed the following tasks:
 
 When you order a vCenter Server instance, you must specify the following settings under **System**:
 
-**Important: Do not modify any values that are set during ordering and instance deployment. Doing so can result in your instance becoming unusable.**
+**Important: Do not modify any values that are set during ordering and instance deployment. Doing so can result in your instance becoming unusable. For example, public networking may shut down, servers and Virtual Server Instances (VSIs) may move behind a Vyatta mid-provision, or the CloudBuilder VSI may stop or be deleted.**
 
 ### Domain name
 
 The root domain name must meet the following requirements:
-*  The name must consist of two or more strings that are separated by period (.)
 *  Only alphanumeric and dash (-) characters are allowed.
+*  The name must consist of two or more strings that are separated by period (.)
 *  Each string must start with an alphabetic character and end with an alphanumeric character, and the last string can contain only alphabetic characters.
 *  The length of the last string must be in the range 2 - 24 characters.
-*  The length of other strings must be in the range 1 - 63 characters.
-*  The maximum length of the domain name is 189 characters.
+
+**Note:** The maximum length of the FQDN (Fully Qualified Domain Name) for hosts and VMs (virtual machines) is 50 characters. Domain names must accomodate for this maximum length.
 
 ### Instance name
 
 The instance name must meet the following requirements:
-* Only alphanumeric and dash (-) characters are allowed.
+* Only alphanumeric characters are allowed.
 * The instance name must start and end with an alphanumeric character.
 * The maximum length of the instance name is 10 characters.
 * The instance name must be unique within your account.
@@ -65,10 +53,10 @@ Table 1. Value format for instance and domain names
   |:------------- |:------------- |
   | Domain name | `rootdomain` |  
   | vCenter Server login user name | `userid@rootdomain` (Microsoft Active Directory user) or `administrator@vsphere.local` |
-  | vCenter Server fully qualified domain name (FQDN) | `vcenter.instancename.rootdomain` |
+  | vCenter Server FQDN | `vcenter.instancename.rootdomain`. The maximum length is 50 characters. |
   | Single Sign-On (SSO) site name | `instancename` |
   | Fully qualified ESXi host name | `hostn.instancename.rootdomain`, where n is the sequence of the ESXi server. The maximum length is 50 characters. |  
-  | PSC fully qualified FQDN name | `psc-instancename.instancename.rootdomain`. The maximum length is 50 characters. |   
+  | PSC FQDN | `psc-instancename.instancename.rootdomain`. The maximum length is 50 characters. |   
 
 ### Bare metal server configuration
 

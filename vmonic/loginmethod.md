@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-09-21"
+lastupdated: "2017-10-11"
 
 ---
 
@@ -23,9 +23,9 @@ To access the console directly, complete the following steps:
 
 To access the console from Bluemix®, complete the following steps:
 1. Go to https://console.ng.bluemix.net/.
-2. Click **Catalog**.
-3. Under **Compute**, click **VMware Solutions**.
-4. Log in to the console with your **IBMid** account.
+2. Log in to Bluemix with your **IBMid** account.
+3. Click **Catalog**.
+4. Under **VMware**, click **VMware Solutions**.
 
 ## Accessing from the ibm.com website
 
@@ -33,9 +33,8 @@ To access the console from the ibm.com website, complete the following steps:
 1. Go to http://www.ibm.com.
 2. Click **Products > Cloud > Cloud managed services**.
 3. On the IBM Cloud page, click **Solutions > VMware solutions** at the right side of the banner.
-4. On the {{site.data.keyword.vmwaresolutions_short}} page, scroll down to the **Choose your IBM Cloud for VMware Solution** area.
-5. Click **Sign in to the IBM for VMware Solutions console**.
-6. Log in to the console with your **IBMid** account.
+4. On the {{site.data.keyword.vmwaresolutions_short}} page, click **Get started**.
+5. Log in to the console with your **IBMid** account.
 
 ## Related links
 

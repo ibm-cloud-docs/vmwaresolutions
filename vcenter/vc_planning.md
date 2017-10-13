@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-06"
+lastupdated: "2017-10-11"
 
 ---
 
@@ -22,37 +22,37 @@ The vCenter Server deployment has strict requirements on the physical infrastruc
 
 Table 1. Available data centers for vCenter Server instances
 
-| Data center | Location |
-|:-----|:----------------|
-| AMS03 | Amsterdam |
-| CHE01 | Chennai |
-| DAL09 | Dallas |
-| DAL10 | Dallas |
-| DAL12 | Dallas |
-| DAL13 | Dallas |
-| FRA02 | Frankfurt |
-| HKG02 | Hong Kong |
-| LON02 | London |
-| LON04 | London |
-| LON06 | London |
-| MEL01 | Melbourne |
-| MEX01 | Queretaro |
-| MIL01 | Milan |
-| MON01 | Montreal |
-| OSL01 | Oslo |
-| PAR01 | Paris |
-| SAO01 | Sao Paulo |
-| SEO01 | Seoul |
-| SJC03 | San Jose |
-| SJC04 | San Jose |
-| SNG01 | Singapore |
-| SYD01 | Sydney |
-| SYD04 | Sydney |
-| TOK02 | Tokyo |
-| TOR01 | Toronto |
-| WDC04 | Washington, DC |
-| WDC06 | Washington, DC |
-| WDC07 | Washington, DC |
+| Data center | Location | Standardized server options |
+|:-----|:----------------| :---------------------------|
+| AMS03 | Amsterdam | Small, Medium, Large, Custom |
+| CHE01 | Chennai | Small, Medium, Large, Custom |
+| DAL09 | Dallas | Custom |
+| DAL10 | Dallas | Small, Medium, Large, Custom |
+| DAL12 | Dallas | Custom |
+| DAL13 | Dallas | Custom |
+| FRA02 | Frankfurt | Small, Medium, Large, Custom |
+| HKG02 | Hong Kong | Small, Medium, Large, Custom |
+| LON02 | London | Small, Medium, Large, Custom |
+| LON04 | London | Custom |
+| LON06 | London | Custom |
+| MEL01 | Melbourne | Small, Medium, Large, Custom |
+| MEX01 | Queretaro | Small, Medium, Large, Custom |
+| MIL01 | Milan | Small, Medium, Large, Custom |
+| MON01 | Montreal | Small, Medium, Large, Custom |
+| OSL01 | Oslo | Small, Medium, Large, Custom |
+| PAR01 | Paris | Small, Medium, Large, Custom |
+| SAO01 | Sao Paulo | Small, Medium, Large, Custom |
+| SEO01 | Seoul | Custom |
+| SJC03 | San Jose | Small, Medium, Large, Custom |
+| SJC04 | San Jose | Custom |
+| SNG01 | Singapore | Small, Medium, Large, Custom |
+| SYD01 | Sydney | Small, Medium, Large, Custom |
+| SYD04 | Sydney | Small, Medium, Large, Custom |
+| TOK02 | Tokyo | Small, Medium, Large, Custom |
+| TOR01 | Toronto | Small, Medium, Large, Custom |
+| WDC04 | Washington, DC | Small, Medium, Large, Custom |
+| WDC06 | Washington, DC | Custom |
+| WDC07 | Washington, DC | Custom |
 
 A large subset of IBM Cloud data centers offer pre-built, standardized **Small**, **Medium**, and **Large** bare metal server options. Depending on availability and inventory supply, IBM Cloud data centers might display a status indicator in the {{site.data.keyword.vmwaresolutions_full}} console to help you plan your deployments.
 

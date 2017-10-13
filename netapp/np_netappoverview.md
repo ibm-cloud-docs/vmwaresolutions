@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-05"
+lastupdated: "2017-10-12"
 
 ---
 
@@ -15,23 +15,33 @@ Review the architecture and components of the NetApp ONTAP Select on IBM® Cloud
 ## NetApp ONTAP Select architecture
 
 The NetApp ONTAP Select on IBM Cloud offering complements the vCenter Server deployment by providing storage virtualization services.
+
 The following graphic depicts the overall architecture of the NetApp ONTAP Select on vCenter Server deployment.
 
 Figure 1. High-level architecture of NetApp ONTAP Select on IBM Cloud
 
 ![NetApp ONTAP Select architecture](np_architecture.jpg)
 
-The architecture contains the following layers:
-* **Physical infrastructure**: This layer provides the physical compute, network, and storage resources to be used by the virtual infrastructure.
-* **Virtualization infrastructure**: This layer virtualizes the physical infrastructure through different VMware products and the NetApp ONTAP Select product:
-  * VMware vSphere virtualizes the physical compute resources.
-  * VMware NSX is the network virtualization platform that provides logical networking components and virtual networks.
-  * NetApp ONTAP Select on IBM Cloud deploys an ONTAP Select cluster which consists of four VMs for the four hosts. The following graphic depicts the components of the NetApp ONTAP Select deployment.
+### Physical infrastructure
 
-  Figure 2. NetApp ONTAP Select components
+This layer provides the physical compute, network, and storage resources to be used by the virtual infrastructure.
 
-    ![NetApp ONTAP Select components](np_netappcomponents.jpg)
-* **Infrastructure management**: This layer consists of vCenter Server virtual appliance, NSX Manager, two NSX ESGs, 3 NSX Controllers, Platform Services Controller (PSC) virtual appliance, vCSA, and the IBM® CloudDriver virtual machine.
+### Virtualization infrastructure (Compute, Network, and NetApp ONTAP Select)
+
+This layer virtualizes the physical infrastructure through different VMware products and the NetApp ONTAP Select product:
+* VMware vSphere virtualizes the physical compute resources.
+* VMware NSX is the network virtualization platform that provides logical networking components and virtual networks.
+* NetApp ONTAP Select on IBM Cloud deploys an ONTAP Select cluster which consists of four VMs for the four hosts.
+
+The following graphic depicts the components of the NetApp ONTAP Select deployment.
+
+Figure 2. NetApp ONTAP Select components
+
+![NetApp ONTAP Select components](np_netappcomponents.jpg)
+
+### Virtualization management
+
+This layer consists of vCenter Server virtual appliance, NSX Manager, two NSX ESGs, 3 NSX Controllers, Platform Services Controller (PSC) virtual appliance, vCSA, and the IBM® CloudDriver virtual machine.
 
 NetApp ONTAP Select runs in a VMware cluster and virtualizes the local storage on the hosts. NetApp ONTAP Select is deployed in the dedicated model, where other workloads are not expected to share the same cluster with it. As a result, the hardware configuration of the NetApp ONTAP Select on IBM Cloud offering is sized only based on the requirements of NetApp ONTAP Select.
 

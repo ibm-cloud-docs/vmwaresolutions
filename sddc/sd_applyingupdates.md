@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-05"
+lastupdated: "2017-10-13"
 
 ---
 
@@ -37,9 +37,13 @@ system:
     </dl>
 * The update details.
 
-Before an update operation is started, a backup of the management virtual machines is done automatically in the background. After the backup is completed, the update is applied. During the update operation, do not attempt any provisioning or add ESXi server operations.
+**Notes**:
 
-**Note**: During updates that include VMware components updates, virtual machines (VMs) may need to be migrated from ESXi servers to go into maintenance mode. If a VM has a local datastore, or CD-ROM mounted, this might prevent the VM migration.
+* Before an update operation is started, a backup of the management virtual machines is done automatically in the background. After the backup is completed, the update is applied. During the update operation, do not attempt any provisioning or add ESXi server operations.
+
+* During updates that include VMware components updates, virtual machines (VMs) may need to be migrated from ESXi servers to go into maintenance mode. If a VM has a local datastore, or CD-ROM mounted, this might prevent the VM migration.
+
+* Do not change the password for the **automationuser** user ID. During the provisioning of a new environment, {{site.data.keyword.vmwaresolutions_short}} creates the **automationuser** user ID that is used for the management of an instance, including the application of updates. Changing the password for this user might cause the update to fail.
 
 ## Procedure
 

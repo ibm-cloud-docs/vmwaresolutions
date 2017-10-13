@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-05"
+lastupdated: "2017-10-10"
 
 ---
 
@@ -31,9 +31,9 @@ A multi-site deployment consists of the following components.
 
 ## Cloud Foundation multi-site deployment
 
-The multi-site configuration feature uses a hub and spoke topology with a primary site and a maximum of seven secondary sites. A single layer of sites is supported, that is, you cannot have subsequent sites that are linked to other secondary sites. As with single (stand-alone) Cloud Foundation instances, you can have a total of 31 ESXi servers in a multi-site configuration across all instances.
+The multi-site configuration feature uses a hub and spoke topology with a primary site and a maximum of seven secondary sites. A single layer of sites is supported, that is, you cannot have subsequent sites that are linked to other secondary sites. You can have a total of 128 ESXi servers in a multi-site configuration across all instances.
 
-**Note**: If your configuration requires a multi-site deployment with more than 31 nodes, contact IBM Support for assistance. For more information, see [Contacting IBM Support](../vmonic/trbl_support.html).
+**Note**: If your configuration requires a multi-site deployment with more than 128 ESXi servers, contact IBM Support for assistance. For more information, see [Contacting IBM Support](../vmonic/trbl_support.html).
 
 The following graphic depicts the overall view of the Cloud Foundation multi-site deployment.
 

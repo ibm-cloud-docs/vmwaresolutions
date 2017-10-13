@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-06"
+lastupdated: "2017-10-10"
 
 ---
 
@@ -16,17 +16,17 @@ Changing resources or subnets that are reserved for {{site.data.keyword.vmwareso
 
 The following table lists the operations that might be impacted if the SSO administrator changes VMware vCenter Server resources outside of the {{site.data.keyword.vmwaresolutions_short}} console. If a solution to recover is available, it is provided as well.
 
-This table is applicable to versions V1.8 and earlier only. For V1.9 and later, if the VMware vCenter Server instance is in a **Ready to Use** state, you can modify the virtual datacenter, cluster, switches, port groups, and data store names from the VMware vSphere Web Client.
+This table is applicable to versions V1.8 and earlier only. For V1.9 and later, if the VMware vCenter Server instance is in a **Ready to Use** state, you can modify the VMware virtual datacenter, cluster, switches, port groups, and data store names from the VMware vSphere Web Client.
 
-Table 1. Operations that impacted by changing VMware resources
+Table 1. Operations that are impacted by changing VMware resources
 
 | Attempted change  | Impacted operations  | Severity  | Recovery method  |
 |:------------- |:------------- |:--------------|:--------------|
-| Change the VMware virtual datacenter name. | Adding a VMware datacenter might fail because the new ESXi server cannot join the changed datacenter. | Important | Change the VMware virtual datacenter name back to the original name. |
+| Change the VMware virtual datacenter name. | Adding a VMware virtual datacenter might fail because the new ESXi server cannot join the changed virtual datacenter. | Important | Change the VMware virtual datacenter name back to the original name. |
 | Change any port group names.    | Adding an ESXi server might fail. | Important | Change the port group name back to the original name. |
 | Change the cluster name. | Adding an ESXi server might fail. | Important | Change the cluster name back to the original name.
 | Change the public or private Distributed Virtual Switch (DVS) name. | Adding an ESXi server might fail. | Important | Change the public or private Distributed Virtual Switch (DVS) name to the original name.
-| Change any Network File System (NFS) data store names. | Adding an ESXi server might fail. | Important | Remount the NFS data store as read-only on the ESXi server. The NFS data store name must match the one provisioned when the system started.
+| Change any Network File System (NFS) datastore names. | Adding an ESXi server might fail. | Important | Remount the NFS datastore as read-only on the ESXi server. The NFS datastore name must match the one provisioned when the system started.
 
 The following table lists the operations that might be impacted if the VC/PSC root user changes vCenter Server resources outside of the {{site.data.keyword.vmwaresolutions_short}} console.
 

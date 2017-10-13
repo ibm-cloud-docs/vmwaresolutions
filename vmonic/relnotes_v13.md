@@ -8,7 +8,7 @@ lastupdated: "2017-01-23"
 
 ---
 
-# Release notes for V1.3 (Jan 23, 2017)
+# Release notes for V1.3
 
 This release includes new features, usability enhancements, and bug fixes. For a list of fixed issues in different releases, known issues with the product, and additional tips to use {{site.data.keyword.vmwaresolutions_full}}, see [{{site.data.keyword.vmwaresolutions_full}} dW Answers](https://developer.ibm.com/answers/topics/cloudvmw/){:new_window}.
 

@@ -4,106 +4,86 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-04"
+lastupdated: "2017-10-13"
 
 ---
 
-# vSphere cluster overview
+# VMware vSphere on IBM Cloud overview
 
-Review the architecture and components of the VMware vSphere cluster deployment.
+VMware vSphere on IBM® Cloud is a streamlined and optimized ordering platform for VMware, which allows you to build your own IBM-hosted VMware environment by customizing and ordering the VMware-compatible hardware based on your selected VMware components.
 
-<!--## vSphere cluster architecture
+The {{site.data.keyword.vmwaresolutions_full}} console filters the hardware automatically, based on the VMware components that you select. For example, when creating a new all-flash VMware vSAN cluster, only the hardware that is validated against the [VMware Compatibility Guide](https://www.vmware.com/resources/compatibility/search.php) is presented and a minimum of four ESXi servers is required.
 
-The following graphic depicts the high-level architecture of a vSphere cluster.
+VMware vSphere on IBM Cloud does not automate the installation, configuration, and bring-up of the optional VMware components and it allows maximum of flexibility to design and build your hosted VMware environment while incorporating VMware-compatible hardware.
 
-Figure 1. vSphere cluster high-level architecture
+Use this offering to create a new cluster of ESXi servers or scale out an existing cluster of ESXi servers in an IBM Cloud data center. Depending on the VMware components that you select, you can start with just one ESXi server and then scale the cluster later as needed.
 
-![vSphere Cluster architecture](vs_architecture.jpg)
+## Components of VMware vSphere on IBM Cloud
 
-The architecture contains the following layers:
-* **Physical infrastructure**: This layer provides the physical compute, storage, and network resources to be used by the virtual infrastructure.
-* **Virtualization infrastructure**: This layer virtualizes the physical infrastructure through different VMware products:
-  *  VMware vSphere virtualizes the physical compute resources.
-  *  VMware NSX is the network virtualization platform that provides logical networking components and virtual networks.
-* **Virtualization management**: This layer consists of vCenter Server virtual appliance, NSX Manager, two NSX ESGs, 3 NSX Controllers, Platform Services Controller (PSC) virtual appliance, vCSA, and the IBM® CloudDriver virtual machine.
-
-The base offering is deployed with a vCenter Server appliance that is sized to support an environment with up to 100 hosts and up to 1000 VMs. The same vSphere API-compatible tools and scripts can be used to manage the IBM-hosted VMware environment.
-
-In total, the base offering requires 32 vCPU and 58 GB vRAM that are reserved for the virtualization management layer. The remaining host capacity for your VMs depends on several factors, such as oversubscription rate, VM sizing, and workload performance requirements.
-
-For details about the architecture, see the _Reference architecture_ document in the [Architecture Center](https://www.ibm.com/devops/method/content/architecture/virtVCenterServerPlatform){:new_window}.-->
-
-## vSphere cluster components
-
-The following components are included in your vSphere cluster.
+Review the components of VMware vSphere on IBM Cloud.
 
 **Note**: The availability and pricing of standardized hardware configurations might vary based on the data center that is selected for deployment.
 
+### VMware components
+
+IBM-provided licenses or user-provided licenses for the following VMware components:
+* VMware vSphere Enterprise Plus 6.0u2 or 6.5u1
+* Optional VMware components:
+   * VMware vCenter Server Standard
+   * VMware NSX (Base, Advanced, or Enterprise)
+   * VMware vSAN (Advanced or Enterprise)
+   * VMware vRealize Automation Enterprise
+   * VMware vRealize Operations Enterprise
+   * VMware vRealize Log Insight
+   * VMware Site Recovery Manager
+
 ### Hardware
 
-One or more IBM Cloud bare metal servers with the following hardware options to choose from:
-*  Small (Dual Intel Xeon E5-2620 v4 / 16 cores total, 2.10 GHz / 128 GB RAM / 2 disks)
-*  Medium (Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz / 256 GB RAM / 2 disks)
-*  Large (Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz / 512 GB RAM / 2 disks)
-*  User customized (the user selects the CPU and RAM options)
+One or more IBM Cloud bare metal servers with the following CPU and RAM options.
+* CPU options:
+   * Dual Intel Xeon E5-2620 v4 / 16 cores total, 2.10 GHz
+   * Dual Intel Xeon E5-2650 v4 / 24 cores total, 2.20 GHz
+   * Dual Intel Xeon E5-2690 v4 / 28 cores total, 2.60 GHz
+* RAM options: 64 GB, 128 GB, 256 GB, 384 GB, 512 GB, 768 GB, 1 TB, and 1.5 TB
 
-### Networking
+The options available depend on whether you selected the VMware vSAN component.
 
-*  Three VLANs (Virtual LANs): one public VLAN and two private VLANs
-*  One VXLAN (Virtual eXtensible LAN) with DLR (Distributed Logical Router) for potential east-west communication between local workloads that are connected to layer 2 (L2) networks. The VXLAN is deployed as a sample routing topology, which you can modify, build on it, or remove it. You can also add security zones by attaching additional VXLANs to new logical interfaces on the DLR.
-*  Two VMware NSX Edge Services Gateways:
-  * A secure management services VMware NSX Edge Services Gateway (ESG) for outbound HTTPS management traffic, which is deployed by IBM as part of the management networking typology. This ESG is used by the IBM management virtual machines to communicate with specific external IBM management components that are related to automation. For more information, see [Configuring your network to use the customer-managed ESG](../vcenter/vc_esg_config.html#configuring-your-network-to-use-the-customer-managed-nsx-edge-services-gateway-with-your-vms).
-
-    **Important**: This ESG is not accessible to you and you cannot use it. If you modify it, you might not be able to manage the vCenter Server instance from the {{site.data.keyword.vmwaresolutions_short}} console. In addition, note that using a firewall or disabling the ESG communications to the external IBM management components will cause {{site.data.keyword.vmwaresolutions_short}} to become unusable.
-  * A secure customer-managed VMware NSX Edge Services Gateway for outbound and inbound HTTPS workload traffic, which is deployed by IBM as a template that can be modified by you to provide VPN access or public access. For more information, see [Does the customer-managed NSX Edge pose a security risk?](../vmonic/faq.html#does-the-customer-managed-nsx-edge-pose-a-security-risk-)
-
-### Virtual Server Instances
-
-Two VSIs (Virtual Server Instances):
-*  A VSI for IBM CloudBuilder, which is shut down after the instance deployment is completed.
-*  A VSI for the snapshot-based backup of the management components, which keeps running after the instance deployment is completed.
+In addition, the following disk and networking specifications:
+* 10 Gbps dual public and private network uplinks
+* One RAID disk controller
 
 ### Storage
 
-*  Shared file-level storage for backups: one 2 TB shared file-level storage that can be scaled up to 12 TB
+User-customized storage for VMware vSAN configuration when the VMware vSAN component is selected:
+* Storage disk: 1.2 TB SSD
+* Disk quantity options: 2, 4, 6, and 8
 
-  **Note**: With the introduction of the Veeam on IBM Cloud service, the storage for backups is no longer a standard component of vCenter Server instances. When you order an instance, you can choose whether you want storage for backups by selecting or deselecting the Veeam on IBM Cloud service.
-*  Shared file-level storage for management components: one 2 TB, 4 IOPS/GB file share
+### Networking
 
-### Licenses and fees
+* Three VLANs (Virtual LANs): one public VLAN and two private VLANs
+* (Optional) An HA-pair of FortiGate Security Appliance devices
 
-*  VMware vSphere 6.0 Enterprise Plus edition
-*  VMware vCenter Server 6.0
-*  VMware NSX Base for Service Providers edition
-*  Support and Services fee (one license per node)
-
-## vSphere cluster expansion node components
+## Components of vSphere cluster expansion nodes 
 
 Each vSphere cluster expansion node will deploy and incur charges for the following components in your IBM Bluemix Infrastructure (SoftLayer) account.
 
-### Hardware
+### Hardware for expansion nodes
 
-One IBM Cloud bare metal server, with the configuration presented in [vCenter Server instance  components](../vcenter/vc_vcenterserveroverview.html#vcenter-server-components).
+One IBM Cloud bare metal server with the hardware configuration presented in [Components of VMware vSphere on IBM Cloud](../vsphere/vs_vsphereclusteroverview.html#components-of-vmware-vsphere-on-ibm-cloud).
 
-### Licenses and fees
+### Networking for expansion nodes
 
-*  One VMware vSphere 6.0
-*  One Support and Services fee
+One IBM Cloud bare metal server with the networking configuration presented in [Components of VMware vSphere on IBM Cloud](../vsphere/vs_vsphereclusteroverview.html#components-of-vmware-vsphere-on-ibm-cloud).
 
-For details about the components, see the _Bill of Materials_ document in
-the [Architecture Center](https://www.ibm.com/devops/method/content/architecture/virtVCenterServerPlatform){:new_window}.
+### VMware components for expansion nodes
 
-**Important**: You must manage the {{site.data.keyword.vmwaresolutions_short}} components that are created in your Bluemix Infrastructure (SoftLayer) account only from the {{site.data.keyword.vmwaresolutions_short}} console, not the Bluemix Infrastructure (SoftLayer) portal or any other means outside of the console. If you change these components outside of the {{site.data.keyword.vmwaresolutions_short}} console, the changes are not synchronized with the console.
+* One IBM Cloud bare metal server with VMware vSphere Enterprise Plus 6.0u2 or VMware vSphere Enterprise Plus 6.5u1  
+* Optional VMware components presented in [Components of VMware vSphere on IBM Cloud](../vsphere/vs_vsphereclusteroverview.html#components-of-vmware-vsphere-on-ibm-cloud).
 
-**CAUTION**: Managing any {{site.data.keyword.vmwaresolutions_short}} components (which were installed into your Bluemix Infrastructure (SoftLayer) account when you ordered the instance) from outside the {{site.data.keyword.vmwaresolutions_short}} console can make your environment unstable. These management activities include:
-*  Adding, modifying, returning, or removing components
-*  Expanding or contracting instance capacity through adding or removing ESXi servers
-*  Powering off components
-*  Restarting services
-
-   Exceptions to these activities include managing the shared storage file shares from the Bluemix Infrastructure (SoftLayer) portal. Such activities include: ordering, deleting (which might impact data stores if mounted), authorizing, and mounting shared storage file shares.
+**Important**: You must manage the ESXi servers, optional VMware components, and additional hardware that are ordered and delivered to your Bluemix Infrastructure (SoftLayer) account only from the Bluemix Infrastructure (SoftLayer) portal. After creating a new cluster in the {{site.data.keyword.vmwaresolutions_short}} console, you can return to the console to scale the new cluster using the saved configuration. For more information, see [Scaling existing clusters](vs_scalingexistingclusters.html).
 
 ## Related links
 
 * [Planning vSphere clusters](vs_planning.html)
-* [Ordering vSphere clusters](vs_orderinginstance.html)
+* [Ordering vSphere clusters](vs_orderinginstances.html)
+* [Scaling existing vSphere clusters](vs_scalingexistingclusters.html)

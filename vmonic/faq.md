@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-09-29"
+lastupdated: "2017-10-12"
 
 ---
 
@@ -43,7 +43,7 @@ For more information, see [Cloud Foundation instance  components](../sddc/sd_clo
 
 ## What's included in a vCenter Server instance?
 
-For more information, see see [vCenter Server instance components](../vcenter/vc_vcenterserveroverview.html#vcenter-server-instance-components).
+For more information, see [vCenter Server instance components](../vcenter/vc_vcenterserveroverview.html#vcenter-server-instance-components).
 
 ## Is a two-node vCenter Server instance highly available?
 
@@ -82,10 +82,21 @@ You can check the status of the instance deployment by viewing the deployment hi
 
 ## How many ESXi servers can I add to my instances?
 
-* For Cloud Foundation instances, the standard configuration has 4 ESXi servers. You can add a maximum of 27 servers (to a total of 31 servers). For Cloud Foundation instances in a multi-site configuration, you can have a maximum of 31 ESXi servers across all instances.
+* For Cloud Foundation instances, the standard configuration has 4 ESXi servers. You can add a maximum of 27 servers (to a total of 31 servers). For Cloud Foundation instances in a multi-site configuration, you can have a maximum of 128 ESXi servers across all instances.
 
-  **Note**: If your configuration requires a multi-site deployment with more than 31 nodes, contact IBM Support for assistance. For more information, see [Contacting IBM Support](trbl_support.html).
-* For vCenter Server instances, you can configure the number of ESXi servers in the range 2 - 20.
+* For vCenter Server instances, you can configure the number of ESXi servers in the range 2 - 20 per cluster.  Across all clusters each deployed instance can have a maximum of 128 nodes.
+
+**Note**: If your configuration requires a multi-site deployment with more than 128 nodes, contact IBM Support for assistance. For more information, see [Contacting IBM Support](trbl_support.html).
+
+## Does VMware vSphere on IBM Cloud leverage automation to install, configure, and bring up the VMware stack?
+
+No. VMware vSphere on IBM Cloud does not leverage the advanced automation found in the VMware vCenter Server or VMware Cloud Foundation on IBM Cloud platforms. Based on what you order, the platform delivers optional VMware licenses, ESXi servers, and optional HA-pair of FortiGate physical firewalls. If a new cluster is created, one new public and two new private VLANs are also provisioned.
+
+VMware ESXi is automatically installed on each bare metal server, but you are responsible for installing any additional VMware components like vCenter Server or NSX. While vSphere on IBM Cloud helps ensure that VMware-compatible hardware is ordered based on the VMware components selected, there is no automation in place to configure and bring up the VMware environment. You are responsible for designing and architecting the IBM-hosted environment.
+
+## Where do I manage the VMware licenses, ESXi servers, and other networking components that are ordered through VMware vSphere on IBM Cloud?
+
+After an order to create a new cluster for VMware vSphere on IBM Cloud is placed, the licenses, servers, and any other components are delivered and can be managed from the Bluemix Infastructure (SoftLayer) portal.  After deployment, return to the IBM Cloud for VMware Solutions console to scale the new cluster using the saved configuration. For more information on scaling, see [Scaling existing vSphere clusters](../vsphere/vs_scalingexistingclusters.html).
 
 ## How can I view the list of all notifications?
 

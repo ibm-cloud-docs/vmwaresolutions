@@ -4,13 +4,13 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-02"
+lastupdated: "2017-10-10"
 
 ---
 
 # Scaling existing vSphere clusters
 
-You can scale out an existing vSphere cluster that you ordered or saved in the {{site.data.keyword.vmwaresolutions_full}} console by adding ESXi servers or ordering an HA-pair of FortiGate 300 series Security Appliance for it.
+You can scale out an existing VMware vSphere cluster that you ordered or saved in the {{site.data.keyword.vmwaresolutions_full}} console by adding ESXi servers or ordering an HA-pair of FortiGate 300 series Security Appliance for it.
 
 ## Requirements
 

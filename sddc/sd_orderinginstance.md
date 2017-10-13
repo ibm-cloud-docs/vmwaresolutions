@@ -4,15 +4,13 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-05"
+lastupdated: "2017-10-13"
 
 ---
 
 # Ordering Cloud Foundation instances
 
 To deploy a unified software-defined data center (SDDC) platform with standard compute, storage, and network configuration, order a VMware Cloud Foundation instance. During the initial order, you can also add services, such as [Zerto on IBM Cloud](../services/addingzertodr.html).
-
-When you order a VMware Cloud Foundation instance, an entire VMware environment is deployed automatically. The base deployment consists of four IBM® Cloud bare metal servers with the VMware Cloud Foundation stack preinstalled and configured to provide a unified software-defined data center (SDDC) platform. Cloud Foundation natively integrates VMware vSphere, VMware NSX, VMware Virtual SAN, and is architected based on VMware Validated Designs.
 
 ## Requirements
 
@@ -33,12 +31,12 @@ You can deploy the instance as a primary (single) instance in your environment, 
 ### Domain name
 
 The root domain name must meet the following requirements:
-*  The name must consist of two or more strings that are separated by period (.)
 *  Only alphanumeric and dash (-) characters are allowed.
+*  The name must consist of two or more strings that are separated by period (.)
 *  Each string must start with an alphabetic character and end with an alphanumeric character, and the last string can contain only alphabetic characters.
 *  The length of the last string must be in the range 2 - 24 characters.
-*  The length of other strings must be in the range 1 - 63 characters.
-*  The maximum length of the domain name is 189 characters.
+
+**Note:** The maximum length of the FQDN (Fully Qualified Domain Name) for hosts and VMs (virtual machines) is 50 characters. Domain names must accomodate for this maximum length.
 
 ### Instance name
 
@@ -59,11 +57,11 @@ Table 1. Value format for instance and domain names
   | Domain name | `rootdomain` |  
   | Fully qualified ESXi host name | `hostn.instancename.rootdomain`, where n is the sequence of the ESXi server. The maximum length is 50 characters. |   
   | vCenter Server login user name | `userid@rootdomain` (Microsoft Active Directory user) or `administrator@vsphere.local` |
-  | vCenter Server fully qualified domain name (FQDN) | `vcenter-1.instancename.rootdomain` |  
-  | SDDC Manager FQDN name | `sddcmanager.instancename.rootdomain`. The maximum length is 50 characters. |
+  | vCenter Server FQDN | `vcenter-1.instancename.rootdomain`. The maximum length is 50 characters. |  
+  | SDDC Manager FQDN | `sddcmanager.instancename.rootdomain`. The maximum length is 50 characters. |
   | Single Sign-On (SSO) site name | `instancename`
   | Fully qualified ESXi host name | `hostn.instancename.rootdomain`, where n is the sequence of the ESXi server. The maximum length is 50 characters. |
-  | PSC fully qualified FQDN name | `PSC-instancename.rootdomain`. The maximum length is 50 characters. |  
+  | PSC FQDN | `PSC-instancename.rootdomain`. The maximum length is 50 characters. |  
 
   The SDDC Manager FQDN cannot be publicly resolvable. Otherwise, the Cloud Foundation instance configuration fails and is not recoverable.
   Before you specify a domain name, review [Considerations when choosing a root domain name](../vmonic/trbl_limitations.html#considerations-when-choosing-a-root-domain-name-for-cloud-foundation-instances).

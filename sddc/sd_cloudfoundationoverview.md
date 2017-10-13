@@ -4,30 +4,36 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-05"
+lastupdated: "2017-10-12"
 
 ---
 
 # Cloud Foundation overview
 
-Review the architecture and components of the VMware Cloud Foundation deployment.
+When you order VMware Cloud Foundation on IBM® Cloud, an entire VMware environment is deployed automatically. The base deployment consists of four IBM® Cloud bare metal servers with the VMware Cloud Foundation stack preinstalled and configured to provide a unified software-defined data center (SDDC) platform. Cloud Foundation natively integrates VMware vSphere, VMware NSX, VMware Virtual SAN, and is architected based on VMware Validated Designs.
 
 ## Cloud Foundation architecture
 
-The following graphic depicts the overall architecture of the Cloud Foundation deployment.
+The following graphic depicts the overall architecture and components of the Cloud Foundation deployment.
 
 Figure 1. Cloud Foundation architecture
 
 ![Cloud Foundation architecture](sd_architecture.jpg)
 
-The architecture contains the following layers:
+### Physical infrastructure
 
-* **Physical infrastructure**: This layer provides the physical compute, storage, and network resources to be used by the virtual infrastructure.
-* **Virtualization infrastructure**: This layer virtualizes the physical infrastructure through different VMware products:
-  *  VMware vSphere virtualizes the physical compute resources.
-  *  VMware Virtual SAN provides software-defined shared storage based on the storage in the physical servers.
-  *  VMware NSX is the network virtualization platform that provides logical networking components and virtual networks.
-* **Virtualization management**: This layer consists of vCenter Server, which represents the management layer for the virtualized environment. The same familiar vSphere API-compatible tools and scripts can be used to manage the IBM®-hosted VMware environment.
+This layer provides the physical compute, storage, and network resources to be used by the virtual infrastructure.
+
+### Virtualization infrastructure (Compute, Storage, and Network)
+
+This layer virtualizes the physical infrastructure through different VMware products:
+* VMware vSphere virtualizes the physical compute resources.
+* VMware Virtual SAN provides software-defined shared storage based on the storage in the physical servers.
+* VMware NSX is the network virtualization platform that provides logical networking components and virtual networks.
+
+### Virtualization management
+
+This layer consists of vCenter Server, which represents the management layer for the virtualized environment. The same familiar vSphere API-compatible tools and scripts can be used to manage the IBM®-hosted VMware environment.
 
 On the {{site.data.keyword.vmwaresolutions_full}} console, you can expand and contract the capacity of your instances using the add and remove ESXi server capability. In addition, lifecycle management functions like patching and upgrading the VMware components in the hosted environment are also available.
 
@@ -87,11 +93,11 @@ One 2 TB shared file-level storage that can be scaled up to 12 TB.
 
 Each Cloud Foundation expansion node will deploy and incur charges for the following components in your IBM Bluemix Infrastructure (SoftLayer) account.
 
-### Hardware
+### Hardware for expansion nodes
 
 One IBM Cloud bare metal server with the configuration presented in [Cloud Foundation instance components](../sddc/sd_cloudfoundationoverview.html#cloud-foundation-components).
 
-### Licenses and fees
+### Licenses and fees for expansion nodes
 
 * One VMware vSAN Standard Tier I 0 - 20 TB 6.x
 * One VMware NSX Enterprise 6.2

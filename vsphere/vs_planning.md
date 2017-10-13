@@ -4,13 +4,13 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-06"
+lastupdated: "2017-10-10"
 
 ---
 
-# Requirements and planning for vSphere clusters
+# Requirements and planning for VMware vSphere on IBM Cloud
 
-Review the following requirements before you order VMware vSphere clusters. Plan your clusters based on the IBM Cloud data center location and your workload capacity requirements.
+Review the following requirements before you order VMware vSphere on IBM Cloud. Plan your VMware vSphere clusters based on the IBM Cloud data center location and your workload capacity requirements.
 
 **Note**: You are responsible for setting up the environment, installing, and configuring various VMware components after the ESXi servers are deployed. Such components are: VMware vCenter Server, VMware NSX, and VMware vSAN.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-05"
+lastupdated: "2017-10-10"
 
 ---
 
@@ -47,7 +47,9 @@ A minimum of 2 bare metal servers is required for a cluster. You can add up to 2
 
 By default, the data center location of the cluster is set to the data center of the vCenter Server instance.
 
-For V1.9 and later, you can deploy the cluster to a different data center than the deployed instance. Ensure that there is less than a 150 ms network latency between the two data centers. If deploying to a different IBM Cloud data center, or Bluemix Infrastructure (SoftLayer) pod, three additional VLANs will be ordered for use with the ordered bare metal servers.
+For V1.9 and later, you can deploy the cluster to a different data center than the deployed instance. Ensure that there is less than a 150 ms network latency between the two data centers. Use a tool such as [SoftLayer IP Backbone Looking Glass](http://lg.softlayer.com/){:new_window} to check the network latency.
+
+If deploying to a different IBM Cloud data center, or Bluemix Infrastructure (SoftLayer) pod, three additional VLANs are ordered for use with the ordered bare metal servers.
 
 ## Storage settings
 
