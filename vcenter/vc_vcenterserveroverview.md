@@ -4,28 +4,45 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-04"
+lastupdated: "2017-10-12"
 
 ---
 
 # vCenter Server overview
 
-Review the architecture and components of the vCenter Server deployment.
+VMware vCenter Server on IBM® Cloud is a hosted private cloud that delivers the VMware vSphere stack as a service. The VMware environment is built on top of a minimum of three Bluemix® bare metal servers, shared file-level storage, and includes the automatic deployment and configuration of an easy-to-manage logical edge firewall that is powered by VMware NSX.
+
+The entire environment can be provisioned in a matter of hours, and the elastic bare metal infrastructure can scale out the compute
+capacity rapidly when needed.
+
+Post-deployment, you can order additional NFS (Network File System) file shares from the IBM Bluemix Infrastructure (SoftLayer) portal and manually attach them across hosts. If you require dedicated storage, [NetApp ONTAP Select on IBM Cloud](../netapp/np_netappoverview.html) is offered in both high-performance (all SSD) and high-capacity (all SATA) configurations.
+
+If you purchased IBM-provided VMware licensing, you can upgrade the VMware NSX Base edition to Advanced or to Enterprise edition, and you can purchase additional VMware components, such as VMware vRealize Operations.
+
+IBM Cloud Professional Services and Managed Services are also available to help you accelerate your journey to the cloud with offerings
+like migration, implementation, and onboarding services.
 
 ## vCenter Server architecture
 
-The following graphic depicts the high-level architecture of a three-node cluster.
+The following graphic depicts the high-level architecture and components of a three-node vCenter Server deployment.
 
 Figure 1. vCenter Server high-level architecture for a three-node cluster
 
 ![vCenter Server architecture](vc_architecture.jpg)
 
-The architecture contains the following layers:
-* **Physical infrastructure**: This layer provides the physical compute, storage, and network resources to be used by the virtual infrastructure.
-* **Virtualization infrastructure**: This layer virtualizes the physical infrastructure through different VMware products:
-  *  VMware vSphere virtualizes the physical compute resources.
-  *  VMware NSX is the network virtualization platform that provides logical networking components and virtual networks.
-* **Virtualization management**: This layer consists of vCenter Server virtual appliance, NSX Manager, two NSX ESGs, 3 NSX Controllers, Platform Services Controller (PSC) virtual appliance, vCSA, and the IBM® CloudDriver virtual machine.
+### Physical infrastructure
+
+This layer provides the physical compute, storage, and network resources to be used by the virtual infrastructure.
+
+### Virtualization infrastructure (Compute and Network)
+
+This layer virtualizes the physical infrastructure through different VMware products:
+* VMware vSphere virtualizes the physical compute resources.
+* VMware NSX is the network virtualization platform that provides logical networking components and virtual networks.
+
+### Virtualization management
+
+This layer consists of vCenter Server virtual appliance, NSX Manager, two NSX ESGs, 3 NSX Controllers, Platform Services Controller (PSC) virtual appliance, vCSA, and the IBM® CloudDriver virtual machine.
 
 The base offering is deployed with a vCenter Server appliance that is sized to support an environment with up to 100 hosts and up to 1000 VMs. The same vSphere API-compatible tools and scripts can be used to manage the IBM-hosted VMware environment.
 
@@ -85,7 +102,7 @@ Each vCenter Server expansion node will deploy and incur charges for the followi
 
 ### Hardware for expansion nodes
 
-One IBM Cloud bare metal server, with the configuration presented in [vCenter Server instance  components](../vcenter/vc_vcenterserveroverview.html#vcenter-server-components).
+One IBM Cloud bare metal server with the configuration presented in [vCenter Server instance  components](../vcenter/vc_vcenterserveroverview.html#vcenter-server-components).
 
 ### Licenses and fees for expansion nodes
 

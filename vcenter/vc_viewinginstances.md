@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-05"
+lastupdated: "2017-10-11"
 
 ---
 
@@ -72,15 +72,13 @@ Use this procedure to view the VMware vCenter Server instances that you ordered 
 
   * **vCenter IP**: The IP address of the vCenter Server.
   * **vCenter FQDN**: The vCenter Server fully qualified domain name (FQDN).
-  * **vCenter (ADMIN)**: The VMware vCenter Single Sign-On user name and password that you can use to log in to the vCenter Server by using
-  the vSphere Web Client.
+  * **vCenter (ADMIN)**: The VMware vCenter Single Sign-On user name and password that you can use to log in to the vCenter Server by using the vSphere Web Client.
   * **vCenter (SSH)**: The user name and password that you can use to access the vCenter Server VM via SSH connection.
   * **PSC IP**: The IP address of the Platform Services Controller (PSC).
   * **PSC FQDN**: The PSC fully qualified domain name (FQDN).
   * **PSC (ADMIN)**: The VMware vCenter Single Sign-On user name and password that you can use to access the PSC web console.
   * **PSC (SSH)**: The user name and password that you can use to access the PSC VM via SSH connection.
   * **NSX Manager IP**: The IP address of the NSX Manager.
-  * **NSX Manager FQDN**: The NSX Manager fully qualified domain name (FQDN).
   * **NSX Manager (HTTP)**: The user name and password that you can use to access the NSX Manager web console.
   * **AD/DNS IP**: The IP address of the AD server.
   * **AD/DNS FQDN**: The AD/DNS server fully qualified domain name.
