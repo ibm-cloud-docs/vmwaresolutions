@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-06"
+lastupdated: "2017-10-11"
 
 ---
 
@@ -22,29 +22,37 @@ The Cloud Foundation deployment has strict requirements on the physical infrastr
 
 Table 1. Available data centers for Cloud Foundation instances
 
-| Data center | Location |
-|:------|:---------------|
-| AMS03 | Amsterdam |
-| CHE01 | Chennai |
-| DAL10 | Dallas |
-| FRA02 | Frankfurt |
-| HKG02 | Hong Kong |
-| LON02 | London |
-| MEL01 | Melbourne |
-| MEX01 | Queretaro |
-| MIL01 | Milan |
-| MON01 | Montreal |
-| OSL01 | Oslo |
-| PAR01 | Paris |
-| SAO01 | Sao Paulo |
-| SEO01 | Seoul |
-| SJC03 | San Jose |
-| SNG01 | Singapore |
-| SYD01 | Sydney |
-| SYD04 | Sydney |
-| TOK02 | Tokyo |
-| TOR01 | Toronto |
-| WDC04 | Washington, DC |
+| Data center | Location | Standardized server options |
+|:-----|:----------------| :---------------------------|
+| AMS03 | Amsterdam | Small, Standard, Custom |
+| CHE01 | Chennai | Small, Standard, Custom |
+| DAL09 | Dallas | Custom |
+| DAL10 | Dallas | Small, Standard, Custom |
+| DAL12 | Dallas | Custom |
+| DAL13 | Dallas | Custom |
+| FRA02 | Frankfurt | Small, Standard, Custom |
+| HKG02 | Hong Kong | Small, Standard, Custom |
+| LON02 | London | Small, Standard, Custom |
+| LON04 | London | Custom |
+| LON06 | London | Custom |
+| MEL01 | Melbourne | Small, Standard, Custom |
+| MEX01 | Queretaro | Small, Standard, Custom |
+| MIL01 | Milan | Small, Standard, Custom |
+| MON01 | Montreal | Small, Standard, Custom |
+| OSL01 | Oslo | Small, Standard, Custom |
+| PAR01 | Paris | Small, Standard, Custom |
+| SAO01 | Sao Paulo | Small, Standard, Custom |
+| SEO01 | Seoul | Custom |
+| SJC03 | San Jose | Small, Standard, Custom |
+| SJC04 | San Jose | Custom |
+| SNG01 | Singapore | Small, Standard, Custom |
+| SYD01 | Sydney | Small, Standard, Custom |
+| SYD04 | Sydney | Small, Standard, Custom |
+| TOK02 | Tokyo | Small, Standard, Custom |
+| TOR01 | Toronto | Small, Standard, Custom |
+| WDC04 | Washington, DC | Small, Standard, Custom |
+| WDC06 | Washington, DC | Custom |
+| WDC07 | Washington, DC | Custom |
 
 Depending on availability and inventory supply, IBM Cloud data centers might display an status indicator in the {{site.data.keyword.vmwaresolutions_full}} console to help you plan your deployments.
 
