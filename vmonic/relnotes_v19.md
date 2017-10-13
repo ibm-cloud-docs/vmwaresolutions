@@ -4,11 +4,11 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-10-09"
+lastupdated: "2017-10-13"
 
 ---
 
-# Release notes for V1.9 (October 9, 2017)
+# Release notes for V1.9
 
 This release includes new features, component updates, usability enhancements, and bug fixes. For a list of fixed issues in different releases, known issues with the product, and additional tips to use {{site.data.keyword.vmwaresolutions_full}}, see [{{site.data.keyword.vmwaresolutions_full}} dW Answers](https://developer.ibm.com/answers/topics/cloudvmw/){:new_window}.
 
@@ -32,7 +32,7 @@ For more information, see:
 ## F5 on IBM Cloud service
 
 The F5 BIG-IP Virtual Edition (VE) on IBM Cloud service is now available to both VMware Cloud Foundation and VMware vCenter Server instances. This service provides intelligent L4-L7 load balancing and traffic management services at a local and global scale, robust network and web application firewall protection, secure, and federated application access.
-You can order instances with the F5 BIG-IP Virtual Edition (VE) on IBM Cloud service included right from the start, or add this service to your existing instances later from the **Services** tab on the instance property details page of the IBM Cloud for VMware Solutions console. Depending on your requirements, you can select one of three licensing options for BIG-IP VEs.
+You can order instances with the F5 BIG-IP Virtual Edition (VE) on IBM Cloud service included right from the start, or add this service to your existing instances later from the **Services** tab on the instance property details page of the {{site.data.keyword.vmwaresolutions_short}} console. Depending on your requirements, you can select one of three licensing options for BIG-IP VEs.
 
 For more information, see:
 * [Considerations for F5 on IBM Cloud](../services/f5_considerations.html#components-and-considerations-for-f5-on-ibm-cloud)
@@ -44,6 +44,14 @@ Managed services from IBM Integrated Managed Infrastructure (IMI) are now availa
 
 You can request a consultation and quote at any time from the **Getting Started** page.
 For more information, see [Requesting managed services from IMI](../services/managing_imi.html#requesting-managed-services-from-imi).
+
+## Instance name restrictions for vCenter Server and NetApp ONTAP Select instances
+
+Instance names entered on the {{site.data.keyword.vmwaresolutions_short}} when you order your instances cannot have special characters (such as the dash character) in them. Only alphanumeric characters are allowed. This restriction does not apply to Cloud Foundation instances.
+
+For more information, see:
+* [Ordering vCenter Server instances](../vcenter/vc_orderinginstance.html)
+* [Ordering NetApp ONTAP Select instances](../netapp/np_orderinginstances.html)
 
 ## Updates for VMware Cloud Foundation instances
 
@@ -57,19 +65,19 @@ For more information, see [Ordering Cloud Foundation instances](../sddc/sd_order
 
 ### Cross data center cluster support
 
-In order to enhance the scale out of your hosted VMware environment, you can now create a new cluster in a different IBM Bluemix Infrastructure (SoftLayer) pod, or a different data center than the initial cluster deployed in the instance.
+In order to enhance the scale out of your hosted VMware environment, you can now create a new cluster in a different IBM Bluemix Infrastructure (SoftLayer) pod, or a different IBM Cloud data center than the initial cluster deployed in the instance.
 
 For more information, see [Adding and viewing clusters for vCenter Server instances](../vcenter/vc_addingviewingclusters.html).
 
 ### Changing components
 
-This release eliminates the impact to operations within the IBM Cloud for VMware Solutions console when the Single Sign-On administer changes certain vCenter Server resources from a native VMware tool. For example, you can now modify the VMware virtual data center, cluster, switches, port groups, and data store names from the VMware vSphere Web Client to customize deployments to company or personal naming conventions and without any downstream impact to the operations from within the IBM Cloud console.
+This release eliminates the impact to operations within the {{site.data.keyword.vmwaresolutions_short}} console when the Single Sign-On administrator changes certain vCenter Server resources from a native VMware tool. For example, you can now modify the VMware virtual datacenter, cluster, switches, port groups, and data store names from the VMware vSphere Web Client to customize deployments to company or personal naming conventions and without any downstream impact to the operations from within the {{site.data.keyword.vmwaresolutions_short}} console.
 
 For more information, see [Impacts of changing components for vCenter Server instances](../vcenter/vcenter_chg_impact.html).
 
 ### Additional RAM sizes
 
-When ordering vCenter Server instances or adding clusters for vCenter Server instances, you now have more RAM sizes to choose from to help match the CPU-to-RAM ratio of the workload to the hardware. The following options are available in the **User customized** configuration option when ordering a server from the IBM Cloud for VMware Solutions console: 64 GB, 128 GB, 256 GB, 384 GB, 512 GB, 768 GB, 1.5 TB.
+When ordering vCenter Server instances or adding clusters for vCenter Server instances, you now have more RAM sizes to choose from to help match the CPU-to-RAM ratio of the workload to the hardware. The following options are available in the **User customized** configuration option when ordering a server from the {{site.data.keyword.vmwaresolutions_short}} console: 64 GB, 128 GB, 256 GB, 384 GB, 512 GB, 768 GB, 1.5 TB.
 
 For more information, see [Ordering vCenter Server instances](../vcenter/vc_orderinginstance.html).
 
@@ -93,5 +101,5 @@ The Microsoft Active Directory (AD) / Domain Name Server (DNS) is automatically 
 
 ## New and updated documentation
 
-* Learn how to safeguard your private multi-site VCF instances while extending your VMware applications to use public IBM Cloud services. For more information, see [Securely connect your private VMware workloads in the IBM Cloud](https://www.ibm.com/developerworks/library/se-securely-connect-private-vmware-workloads-ibm-cloud/index.html).
+* Learn how to safeguard your private multi-site VCF instances while extending your VMware applications to use public IBM Cloud services. For more information, see [Securely connect your private VMware workloads in the IBM Cloud](https://www.ibm.com/developerworks/library/se-securely-connect-private-vmware-workloads-ibm-cloud/index.html){:new_window}.
 * Additional documentation is provided for configuring firewalls that permit all protocol communication from the IBM CloudDriver and the SDDC Manager virtual machines. For more information, see [Components and considerations for Fortinet on IBM Cloud](../services/fsa_considerations.html).
