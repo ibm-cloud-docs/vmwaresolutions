@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2017
 
-lastupdated: "2017-09-28"
+lastupdated: "2017-10-11"
 
 ---
 
@@ -56,8 +56,10 @@ You can associate only one Bluemix Infrastructure (SoftLayer) account to an {{si
 ## Accessing the {{site.data.keyword.vmwaresolutions_short}} console
 
 To access the console from the Bluemix® catalog, complete the following steps:
-1. Under **Compute**, click **VMware Solutions**.
-2. Log in to the console with your **IBMid** account.
+1. Go to https://console.ng.bluemix.net/.
+2. Log in to Bluemix with your **IBMid** account.
+3. Click **Catalog**.
+4. Under **VMware**, click **VMware Solutions**.
 
 ## Related links
 

@@ -38,7 +38,7 @@ IBM Cloud for VMware Solutions
         vmonic/notifications.md
 
     {: .topicgroup}
-    Cloud Foundation instances
+    Cloud Foundation on IBM Cloud
         sddc/sd_cloudfoundationoverview.md
         sddc/sd_planning.md
         sddc/sd_multisite.md
@@ -51,7 +51,7 @@ IBM Cloud for VMware Solutions
         sddc/sd_deletinginstance_multi.md
 
     {: .topicgroup}
-    vCenter Server instances
+    vCenter Server on IBM Cloud
         vcenter/vc_vcenterserveroverview.md
         vcenter/vc_planning.md
         vcenter/vc_esg_config.md
@@ -64,7 +64,8 @@ IBM Cloud for VMware Solutions
         vcenter/vc_deletinginstance.md
 
     {: .topicgroup}
-    VMware vSphere clusters
+    VMware vSphere on IBM Cloud
+        vsphere/vs_vsphereclusteroverview.md
         vsphere/vs_planning.md
         vsphere/vs_orderinginstances.md
         vsphere/vs_orderingbasedonexistingconfig.md
@@ -72,7 +73,7 @@ IBM Cloud for VMware Solutions
         vsphere/vs_orderingforclustersoutside.md
 
     {: .topicgroup}
-    NetApp ONTAP Select instances
+    NetApp ONTAP Select
         netapp/np_netappoverview.md
         netapp/np_planning.md
         netapp/np_orderinginstances.md
