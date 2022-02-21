@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-11-09"
+lastupdated: "2022-01-31"
 
 keywords: vCenter Server add NFS storage
 
@@ -14,20 +14,20 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding NFS storage to vCenter Server single-zone instances
+# Adding NFS storage to vCenter Server instances
 {: #vc_addingnfs}
 
 You can expand the capacity of your VMware vCenter Server® instance according to your business needs by adding Network File System (NFS) storage.
 
-## Before you add NFS storage to vCenter Server single-zone instances
+## Before you add NFS storage to vCenter Server instances
 {: #vc_addingnfs-prereq}
 
 * Adding NFS storage to vCenter Server instances with VMware vSphere® 6.5 is not supported.
-* Do not add NFS storage from the VMware vSphere Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. 
+* Do not add NFS storage from the VMware vSphere Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console.
 * IBM will not manage NFS file shares that you manually add to an instance.
 * You can add or remove NFS storage shares to or from an existing NFS or vSAN cluster.
 
-## Procedure to add NFS storage to vCenter Server single-zone instances
+## Procedure to add NFS storage to vCenter Server instances
 {: #vc_addingnfs-procedure}
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
@@ -42,7 +42,7 @@ You can expand the capacity of your VMware vCenter Server® instance according t
 
    You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. This is useful if you want to estimate the price of the selected {{site.data.keyword.vmwaresolutions_short}} resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider to purchase.
 
-## Results after you add NFS storage to vCenter Server single-zone instances
+## Results after you add NFS storage to vCenter Server instances
 {: #vc_addingnfs-results}
 
 1. You might experience a slight delay on the console while the instance status changes from **Ready to use** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
@@ -52,9 +52,9 @@ You can expand the capacity of your VMware vCenter Server® instance according t
 ## Related links
 {: #vc_addingnfs-related}
 
-* [vCenter Server Bill of Materials](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
+* [vCenter Server BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
 * [Requirements and planning for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
-* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance)
+* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Adding clusters to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
 * [Place a host in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.resmgmt.doc/GUID-8F705E83-6788-42D4-93DF-63A2B892367F.html){: external}
 * [Enhanced vMotion Compatibility (EVC) processor support](https://kb.vmware.com/s/article/1003212){: external}

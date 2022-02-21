@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-01-31"
 
 subcollection: vmwaresolutions
 
@@ -72,7 +72,7 @@ Endurance is available in three IOPS performance tiers to support varying applic
 After an NFS share is ordered, it can be resized or reconfigured to allow for more or less IOPS.
 {: note}
 
-For detailed IOPS options, see the _Storage settings_ section in [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance).
+For detailed IOPS options, see the _Storage settings_ section in [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req).
 
 In addition to the tiers of storage, {{site.data.keyword.cloud_notm}} Endurance storage supports a wide selection of application needs, including snapshots and replication, and encryption at rest in the {{site.data.keyword.cloud_notm}} data center locations.
 

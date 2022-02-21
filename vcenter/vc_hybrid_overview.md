@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2021
 
-lastupdated: "2021-09-30"
+lastupdated: "2021-12-15"
 
 keywords: vCenter Server Hybridity, hybridity, tech specs vCenter Server Hybridity
 
@@ -156,6 +156,6 @@ You must manage the {{site.data.keyword.vmwaresolutions_short}} components that 
 ## Related links
 {: #vc_hybrid_overview-related}
 
-* [vCenter Server Software Bill of Materials](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
+* [vCenter Server BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
 * [HCX overview](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations#hcx_considerations)
 * [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

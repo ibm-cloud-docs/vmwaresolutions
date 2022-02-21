@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-16"
 
 keywords: disaster recovery, request DR services, DR managed service
 
@@ -15,16 +15,16 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managed Disaster Recovery Services
+# Managed Disaster Recovery Services by Kyndryl
 {: #managing_zerto_services}
 
 The Zerto service provides replication and disaster recovery capabilities. These capabilities can be integrated into the deployment offerings to protect and recover data in your VMware® virtual environment on {{site.data.keyword.cloud}}.
 
-When you request Managed Disaster Recovery Services, a fully managed disaster recovery (DR) environment can be deployed by using both Zerto DR software and IBM Resiliency Services.
+When you request Managed Disaster Recovery Services by Kyndryl, a fully managed disaster recovery (DR) environment can be deployed by using both Zerto DR software and IBM Resiliency Services.
 
-The following models for Managed Disaster Recovery Services are available.
+The following models for Managed Disaster Recovery Services by Kyndryl are available.
 
-## IBM Orchestrated Managed Disaster Recovery Services
+## IBM Orchestrated Managed Disaster Recovery Services by Kyndryl
 {: #managing_zerto_services-orchestrated}
 
 This model is suitable if you're using the Zerto offering.
@@ -35,20 +35,20 @@ All functions are managed from the {{site.data.keyword.cloud_notm}} Resiliency O
 
 For more information, see [IBM Resiliency Orchestration](https://www.ibm.com/us-en/marketplace/disaster-recovery-orchestration){: external}.
 
-## IBM-Managed Disaster Recovery Services (without Orchestration)
+## IBM-Managed Disaster Recovery Services by Kyndryl (without Orchestration)
 {: #managing_zerto_services-without-orchestrated}
 
 In this model, a fully managed DR solution is provisioned for Zerto. This model is suitable if you want a managed service for Zerto Virtual Replication only, without the {{site.data.keyword.cloud_notm}} Resiliency Orchestration service on the {{site.data.keyword.cloud_notm}}.
 
-For more information, see [IBM Resiliency Disaster Recovery as a Service](https://www.ibm.com/us-en/marketplace/disaster-recovery-as-a-service#product-header-top){: external}.
+For more information, see [DRaaS Hybrid Platform Recovery](https://www.ibm.com/us-en/marketplace/disaster-recovery-as-a-service#product-header-top){: external}.
 
-## Procedure to request Managed Disaster Recovery Services
+## Procedure to request Managed Disaster Recovery Services by Kyndryl
 {: #managing_zerto_services-procedure}
 
-1. In the {{site.data.keyword.vmwaresolutions_short}} console, scroll down to the **Add-on services** section and click **Managed Disaster Recovery Services** in the **Professional services** category.
-2. On the **Managed Disaster Recovery Services** page, click the **About** tab to review the description and technical specifications for Zerto as a managed service.
+1. In the {{site.data.keyword.vmwaresolutions_short}} console, scroll down to the **Add-on services** section and click **Managed Disaster Recovery Services by Kyndryl** in the **Professional services** category.
+2. On the **Managed Disaster Recovery Services by Kyndryl** page, click the **About** tab to review the description and technical specifications for Zerto as a managed service.
 3. Click the **Create** tab.
-4. To add the service while you order a new instance, click **Add to new instance**, and then continue with [ordering a new vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance).
+4. To add the service while you order a new instance, click **Add to new instance**, and then continue with [ordering a new vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure).
 5. To add the service to an existing instance, click **Add to existing instance**. Select the instance that you want from the list. Click **Upgrade** to confirm that you want to proceed with the order.
 
 ## Related links

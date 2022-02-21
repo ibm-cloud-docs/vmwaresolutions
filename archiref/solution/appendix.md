@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2021
 
-lastupdated: "2021-11-22"
+lastupdated: "2021-12-22"
 
 keywords: nsx editions, vsan editions, nsx edition comparison, vsan edition comparison
 
@@ -61,6 +61,7 @@ NSX-T Data Center (DC) SP license editions provide the following features.
 | Rule and group recommendation analytics | | | | ![Available](../../../icons/checkmark-icon.svg) |
 | VMware vRealize Network Insight Advanced | | | | ![Available](../../../icons/checkmark-icon.svg) |
 | VMware HCX Advanced | | | | ![Available](../../../icons/checkmark-icon.svg) |
+| vRealize Log Insight for NSX | | | | |
 {: caption="Table 2. NSX-T edition comparison chart" caption-side="top"}
 
 ## NSX-V edition comparison
@@ -101,7 +102,8 @@ NSX Base for Service Providers edition is only available for service providers t
 | Multi-site NSX optimizations                  |      |          | ![Available](../../../icons/checkmark-icon.svg) |
 | Remote Gateway                                |      |          | ![Available](../../../icons/checkmark-icon.svg) |
 | Integration with HW VTEPs                     |      |          | ![Available](../../../icons/checkmark-icon.svg) |
-{: caption="Table 4. NSX edition comparison chart" caption-side="top"}
+| vRealize Log Insight for NSX | | | | |
+{: caption="Table 4. NSX-V edition comparison chart" caption-side="top"}
 
 [^OpenStack]: L2, L3 & NSX Edge integration only. No consumption of security groups.
 

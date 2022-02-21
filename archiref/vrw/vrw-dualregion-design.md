@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-11-30"
+lastupdated: "2022-02-18"
 
 subcollection: vmwaresolutions
 
@@ -97,7 +97,7 @@ If you are using Caveonix RiskForesight to manage compliance and cyberrisk of th
 The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a HyTrust CloudControl cluster in both the protected region and the recovery region. HyTrust CloudControl clusters enable service isolation per regions so that each region is considered to be independent. This behavior does not impact licensing, as licenses are supplied on a per-host basis.
 
 CloudControl supports the following backups:
-* Appliance configuration backups by using the `asc backup` CLI command, to local storage or SCP or NFS targets
+* Appliance configuration backups by using the `asc backup` CLI command, to local storage or SCP or NFS targets.
 * Full snapshot-based backups or clones by using VMware or third-party tools.
 
 Veeam is used to provide snapshot-based image backups of the primary and secondary nodes. In addition to the Veeam backup, configure scheduled appliance backups by using SCP on the appliances and the Veeam repository SFTP share as the target directory. This extra level of protection allows a database restore to a new appliance if the image-based restore fails.

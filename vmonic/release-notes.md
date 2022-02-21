@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2021
-lastupdated: "2021-12-13"
+  years: 2019, 2022
+lastupdated: "2022-02-21"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -20,8 +20,57 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.vmwaresolutions_full}}, including new features, component updates, usability enhancements, and bug fixes.
 {: shortdesc}
 
-Various other updates are made to the [VMware Solutions API](https://cloud.ibm.com/apidocs/vmware-solutions) and the [VMware Solutions Shared API](https://cloud.ibm.com/apidocs/vmware-solutions-shared) documentation.
+Various other updates are made to the [VMware Solutions API](/apidocs/vmware-solutions) and the [VMware Solutions Shared API](/apidocs/vmware-solutions-shared) documentation.
 {: tip}
+
+## 2022
+{: #year-2022}
+
+### 21 February 2022
+{: #february-2022}
+{: release-note}
+
+VMware vCenter Server instances
+:   The 4.6 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts.
+   * VMware vCenter Server® Appliance 7.0 Update 3c (build 19234570)
+   * VMware NSX-T™ 3.1.3.5.0 (build 19068434)
+   * VMware NSX-V 6.4.12 (build 19066632)
+   * VMware vSAN™ 7.0 Update 2c (build 18426014)
+
+VMware vSAN 7.68 TB SSD disk support for 10 Gb uplink speed
+:   For the VMware vSAN component, the 7.68 TB SSD disk type is now supported for VMware vSphere® 7.0 or 6.7 instances with 10 Gb uplink speed.
+
+Non-SED disk availability for vSAN storage
+:   For Cascade Lake servers, non-SED vSAN storage disks now replace the option for SSD SED disks for newly deployed instances and when you add hosts and clusters to existing instances. If your initial cluster has vSAN storage, SSD SED disks are no longer available. Non-SED storage disks are ordered.
+
+   SSD SED disks are supported for Skylake servers.
+   {: note}
+
+Add-on services upgrades
+:   The following service versions are installed on newly deployed instances.
+
+   * FortiGate® Virtual Appliance v7.0.3
+   * vRealize Log Insight™ v8.6
+   * Zerto v9.0u2
+
+IBM Spectrum Protect Plus - deprecated
+:   New installations of the IBM Spectrum® Protect Plus service are no longer supported for new or existing deployments of vCenter Server instances. You can still use or delete existing IBM Spectrum Protect Plus installations on your existing instances. If you want to install IBM Spectrum Protect Plus yourself, see [IBM Spectrum Protect Plus documentation](https://www.ibm.com/docs/en/spp){: external}.
+{: deprecated}
+
+REST API updates
+:   The following API updates are available:
+   * The [/v2/supported_config_options](/apidocs/vmware-solutions#controllers-public-v2-proxy-list-supported-config-) REST API displays a list of supported configuration versions.
+   * The [/v2/disk_types](/apidocs/vmware-solutions#controllers-public-v2-proxy-list-disk-types) REST API is updated to show that SED disks are only for Skylake servers.
+   * A number of REST APIs, such as `/v1/vcenters/nsxt` include the parameters `disks` and `vsan_cache_disks`. For these APIs and for Cascade Lake servers only, do not specify SED disks types.
+
+New architecture documentation
+:   The following technical documents are now available:
+   * [VMware RYO architecture on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-overview)
+   * [Interconnectivity for VMware workloads on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-interconnectivity-overview)
+   * [Fortinet FortiGate solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-fortigate-overview)
+
+User interface updates and enhancements
+:   Various error messages and tooltip enhancements are available to assist you in selecting the appropriate setting on the user interface.
 
 ## 2021
 {: #year-2021}
@@ -31,7 +80,7 @@ Various other updates are made to the [VMware Solutions API](https://cloud.ibm.c
 {: release-note}
 
 NSX-T Data Center SP license availability
-:   Starting with the 4.5 release, VMware NSX-T™ Data Center SP license editions are available for new instances for the following VMware® Solutions offerings. Existing instances continue to use the previous NSX licenses for all new clusters and hosts.
+:   Starting with the 4.5 release, VMware NSX-T Data Center SP license editions are available for new instances for the following VMware Solutions offerings. Existing instances continue to use the previous NSX licenses for all new clusters and hosts.
    * VMware Solutions Dedicated instances offer Data Center SP Base, Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus.
    * Security and Compliance Readiness Bundle instances offer Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus.
    * VMware Regulated Workloads offer Data Center SP Advanced or Data Center SP Enterprise Plus.
@@ -53,8 +102,8 @@ Add-on services upgrades
 :   The following service versions are installed on newly deployed instances.
    * Caveonix RiskForesight™ v3.1.0
    * HyTrust® DataControl® v5.4
-   * IBM Spectrum® Protect Plus v10.1.8
-   * Red Hat® OpenShift® v4.7.34
+   * IBM Spectrum Protect Plus v10.1.8
+   * Red Hat OpenShift v4.7.34
    * vRealize Operations™ v8.6
 
 About pages for add-on services
@@ -525,7 +574,7 @@ Red Hat OpenShift for VMware
 :   Red Hat OpenShift for VMware is no longer supported for new deployments or for ordering post deployment for the following instances.
 
    * vCenter Server with NSX-V for vSphere 6.7 or 6.5
-   * vCenter Server with NSX-T for vSphere 6.7 
+   * vCenter Server with NSX-T for vSphere 6.7
 
    Existing installations of Red Hat OpenShift for VMware can be used or deleted.
 
@@ -821,7 +870,7 @@ VMware Solutions Shared
    * Instance region and location
    * Organization ID
    * Virtual data center name
-   * Number of additional IPs required
+   * Number of additional IP addresses required
 
 VMware Solutions Dedicated - advanced configuration settings for ESXi servers
 :   For 3.6 and later releases, new instances are ordered with a new set of advanced configuration settings for ESXi servers.
@@ -1038,11 +1087,11 @@ Add-on services
 New and updated documentation
 :   The following documentation updates are available.
 
-   * Technical documentation is available in the *Reference* section for {{site.data.keyword.cloud_notm}} for VMware Mission Critical Workloads and ordering multizone stretched clusters.
+   * Technical documentation is available in the **Reference** section for {{site.data.keyword.cloud_notm}} for VMware Mission Critical Workloads and ordering multizone stretched clusters.
    * The *Upgrading VMware NSX* section of **Upgrading vCenter Server vSphere software from VMware vSphere 6.5 to 6.7** has additional information to help you determine whether you must upgrade your current version of NSX. You might have to upgrade NSX so it’s compatible with VMware vCenter Server 6.7.
    * The *Technical specifications for IBM Spectrum Protect Plus* section is updated.
-   * The **vCenter Server and vSRX guide** is now available in the *Reference* section of the user documentation.
-   * (Updated on 20 December 2019) The **HyTrust DataControl with IBM Cloud Hyper Protect Crypto Services architecture** is now available in the *Reference* section of the user documentation.
+   * The **vCenter Server and vSRX guide** is now available in the **Reference** section of the user documentation.
+   * (Updated on 20 December 2019) The **HyTrust DataControl with IBM Cloud Hyper Protect Crypto Services architecture** is now available in the **Reference** section of the user documentation.
 
 User interface updates and enhancements
 :   The user interface is updated and provides the following enhancements.
@@ -1094,7 +1143,7 @@ New and updated documentation
    * Two new parameters `check_price` and `disk_groups` are added to the **Order a new VMware vCenter Server instance or verify the order** API.
    * A new parameter `disk_groups` is added to the **Add a cluster for a specified VMware vCenter Server instance or verify the order** API and the **Add new hosts to a specified cluster** API.
 
-   The following architecture reference documentation is available in the *Reference* section of the user documentation:
+   The following architecture reference documentation is available in the **Reference** section of the user documentation:
    * Active Directory Domain Services guide
    * vCenter Server and Red Hat OpenShift architecture
    * vCenter Server and Red Hat OpenShift guide
@@ -1243,7 +1292,7 @@ New and updated documentation
    * The Activity Tracker instance management events and events for the KMIP for VMware on {{site.data.keyword.cloud_notm}} service are updated.
    * User ID reference documentation is updated with user IDs used for installation and configuration of services by {{site.data.keyword.cloud_notm}} services automation.
    * Reference documentation is available for the new ``Retrieve the detailed network interface of a cluster`` API.
-   * The following technical documents are new in the *Reference* section of the user documentation:
+   * The following technical documents are new in the **Reference** section of the user documentation:
       * Operations management
       * Day 2 operational procedures
 
@@ -1339,7 +1388,7 @@ vSphere Enterprise Plus 6.7u1 is available for Broadwell and Skylake {{site.data
 Support for application programming interfaces
 :   Application programming interfaces (APIs) are now available for deploying instances, deleting instances, and adding and removing ESXi servers and clusters.
 
-   The REST API documentation is available in the *Reference* section of the user documentation.
+   The REST API documentation is available in the **Reference** section of the user documentation.
 
 VMware vCenter Server instances
 :   The 2.9 release applies the following upgrades and improvements:
@@ -1452,7 +1501,7 @@ KMIP for VMware on IBM Cloud
    Starting with 2.8, the service is available as a stand-alone service without being associated to a VMware instance. Each instance of the service can serve one or more Cloud Foundation instances, vCenter Server instances, or vSphere clusters.
 
 Reference architecture documentation
-:   (Updated on 8 February 2019) The following technical documents are new or updated in the *Reference* section of the user documentation.
+:   (Updated on 8 February 2019) The following technical documents are new or updated in the **Reference** section of the user documentation.
 
    * {{site.data.keyword.vmwaresolutions_short}} architecture (with NSX-V and NSX-T)
    * Caveonix RiskForesight reference architecture
@@ -1500,7 +1549,7 @@ KMIP for VMware on IBM Cloud - Deprecated
 {: deprecated}
 
 Reference architecture documentation
-:   The following technical documents are now available in the *Reference* section of the user documentation.
+:   The following technical documents are now available in the **Reference** section of the user documentation.
 
    * NSX Edge Services Gateway solution architecture
    * VMware Update Manager guide

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-11-15"
+lastupdated: "2022-01-24"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 

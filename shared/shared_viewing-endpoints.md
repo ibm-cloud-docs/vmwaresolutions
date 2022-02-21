@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-01-24"
 
 keywords: VMware Solutions Shared view private network endpoint
 
@@ -26,8 +26,8 @@ You can view the details of a private network endpoint for a virtual data center
 2. In the **VMware Solutions Shared** table, click a virtual data center name.
 3. View the **Private network endpoint** details. Expand **Allow listed IPs and subnets** to view the list of IP addresses and subnets that you added when you ordered the private network endpoint.
 
-| Item          | Description   |
-|:------------- |:------------- |
+| Item | Description |
+|:---- |:----------- |
 | Device type | The multi-tenant or dedicated device and size. |
 | Service network IP | The IP address for the service network. |
 | Private network IP | The IP address for the private network. |

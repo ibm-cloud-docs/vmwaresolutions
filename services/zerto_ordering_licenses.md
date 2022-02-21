@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-08"
 
 keywords: Zerto, Zerto license, order Zerto license
 
@@ -65,6 +65,6 @@ The email address is added by default to the **Email address** field of the orde
 * [Zerto overview](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
 * [Managing Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-managingzertodr)
 * [Managing Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
-* [Managed Disaster Recovery Services](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services)
+* [Managed Disaster Recovery Services by Kyndryl](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services)
 * [Zerto](https://www.zerto.com){: external}
 * [Zerto technical documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}

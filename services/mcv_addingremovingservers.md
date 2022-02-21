@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-11-30"
+lastupdated: "2022-01-25"
 
 keywords: add servers vmware multizone
 
@@ -17,6 +17,9 @@ subcollection: vmwaresolutions
 
 # Adding ESXi servers to vCenter Server multizone instances
 {: #mcv_addingremovingservers}
+
+New deployments of vCenter Server multizone instances are no longer supported. You can still add and delete clusters, add and remove ESXi servers, and add and delete storage for existing multizone instances.
+{: deprecated}
 
 You can expand the capacity of your VMware vCenter Server® multizone instances by adding VMware® ESXi servers to your witness, consolidated, additional workload, and edge services clusters.
 
@@ -49,4 +52,6 @@ You can expand the capacity of your VMware vCenter Server® multizone instances 
 ## Related links
 {: #mcv_addingremovingservers-related}
 
-* [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
+* [vCenter Server multizone BOM](/docs/vmwaresolutions?topic=vmwaresolutions-mcv-archi-bom)
+* [Adding clusters to vCenter Server multizone instances](/docs/vmwaresolutions?topic=vmwaresolutions-mcv_addviewdeleteclusters)
+* [Adding NFS storage to vCenter Server multizone instances](/docs/vmwaresolutions?topic=vmwaresolutions-mcv_addingnfs-storage)

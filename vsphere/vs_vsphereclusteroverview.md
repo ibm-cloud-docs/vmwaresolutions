@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-11-05"
+lastupdated: "2022-01-11"
 
 keywords: vSphere, vSphere component, tech specs vSphere
 
@@ -76,7 +76,7 @@ Additionally, the following disk and networking specifications apply:
 {: #vs_vsphereclusteroverview-specs-storage}
 
 User-customized storage for vSAN configuration when the VMware vSAN component is selected:
-* Storage disk options - 960 GB SSD SED, 1.9 TB SSD SED, 3.8 TB SSD SED, or 7.68 TB SSD SED.
+* Storage disk options - 960 GB SSD, 1.9 TB SSD, 3.8 TB SSD, or 7.68 TB SSD.
 * Disk quantity options - 2, 4, 6, 8, or 10.
 
    Additionally, two cache disks of 960 GB are also ordered per host.
@@ -113,7 +113,7 @@ You must manage the ESXi servers, optional VMware components, and extra hardware
 ## Related links
 {: #vs_vsphereclusteroverview-related}
 
-* [VMware vSphere Software Bill of Materials](/docs/vmwaresolutions?topic=vmwaresolutions-vs_bom)
+* [VMware vSphere BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vs_bom)
 * [Planning vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning)
 * [Ordering vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances)
 * [Scaling existing vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_scalingexistingclusters)

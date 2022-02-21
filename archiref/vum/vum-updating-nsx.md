@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-17"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ NSX is updated by updating NSX Manager by using a download from _my.vmware.com_.
 
 Before you begin the upgrade, check the NSX notes for upgrade issues and workarounds. Using the release notes, verify that vCenter meets the new system requirements for NSX.
 
-If you installed any additional software from VMware business partners, consult the business partner documentation for compatibility and upgrade details. If you deployed vCenter Server primary and secondary instances and have a cross-vCenter NSX environment, refer to the release notes foe the correct upgrade process.
+If you installed any additional software from VMware business partners, consult the business partner documentation for compatibility and upgrade details. If you deployed vCenter Server primary and secondary instances and have a cross-vCenter NSX environment, refer to the release notes for the correct upgrade process.
 
 In a cross-vCenter NSX environment, the primary NSX Manager appliance is updated first, followed by all the secondary NSX Manager appliances.
 **Downgrades are not supported**, so take a backup of NSX Manager before you proceed with an upgrade. All NSX Edge configurations, logical routers, and edge services gateways are backed up as part of the NSX Manager backup.

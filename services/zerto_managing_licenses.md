@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021
+  years: 2021, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-08"
 
 keywords: Zerto, Zerto license, manage Zerto license
 
@@ -63,6 +63,6 @@ The license charge is reflected on your account until the end of the billing cyc
 * [Zerto overview](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
 * [Managing Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-managingzertodr)
 * [Ordering Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering_licenses)
-* [Managed Disaster Recovery Services](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services)
+* [Managed Disaster Recovery Services by Kyndryl](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services)
 * [Zerto](https://www.zerto.com){: external}
 * [Zerto technical documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}

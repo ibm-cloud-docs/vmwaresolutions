@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-08"
+lastupdated: "2022-02-01"
 
 keywords: vCenter Server BOM, bill of materials vCenter Server, BOM
 
@@ -42,10 +42,10 @@ The following table details the BOM information for vCenter Server software comp
 | VMware       | vSphere 7.0 Update 2a           | Distributed vSwitch 7.0.0 |
 | VMware       | vSphere 6.7                     | Distributed vSwitch 6.6.0 |
 | VMware       | vSphere 6.5[^vcs-vsphere65]     | Distributed vSwitch 6.5.0 |
-| VMware       | vCenter Server Appliance        | 7.0 Update 2d (18455184) or  \n 6.7 Update 3o (18485166) |
-| VMware       | vSAN[^vsan]                     | 7.0 Update 2 (17630552) or  \n 6.7 Update03 |
-| VMware       | NSX for vSphere[^nsxv]          | 6.4.10 (17626462) |
-| VMware       | NSX-T for vSphere[^nsxt]        | 3.1.1.0.0 (17483185) |
+| VMware       | vCenter Server Appliance        | 7.0 Update 3c (19234570) or  \n 6.7 Update 3o (18485166) |
+| VMware       | vSAN[^vsan]                     | 7.0 Update 2c (18426014) or  \n 6.7 Update 03 (14320388) |
+| VMware       | NSX-T for vSphere[^nsxt]        | 3.1.3.5.0 (19068434) |
+| VMware       | NSX-V for vSphere[^nsxv]          | 6.4.12 (19066632) |
 | Microsoft®    | Windows® Server Standard edition | 2019 |
 | Microsoft    | Active Directory™ domain functional level | 2016 (WinThreshold)[^domain] |
 {: caption="Table 2. BOM for the software components in vCenter Server instances" caption-side="top"}
@@ -60,9 +60,9 @@ The following table details the BOM information for vCenter Server software comp
 
 [^vsan]: VMware vSAN is an optional component
 
-[^nsxv]: vCenter Server with NSX-V only
-
 [^nsxt]: vCenter Server with NSX-T only
+
+[^nsxv]: vCenter Server with NSX-V only
 
 [^domain]: The domain functional level is set to 2016 for compatibility with an earlier version. For more information, see [Domain controllers](/docs/vmwaresolutions?topic=vmwaresolutions-adds-infra-domain#adds-infra-domain-controllers).
 

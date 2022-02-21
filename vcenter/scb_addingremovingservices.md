@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-01-31"
 
 keywords: add services for Security and Compliance Readiness Bundle, remove services for Security and Compliance Readiness Bundle, scb add-on services
 
@@ -39,5 +39,5 @@ The procedures to order, view, and delete services for Security and Compliance R
 ## Related links
 {: #scb_addingremovingservices-related}
 
-* [Ordering Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance)
+* [Ordering Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-req)
 * [Requirements and planning for Security and Compliance Readiness Bundle](/docs/vmwaresolutions?topic=vmwaresolutions-scb-planning)

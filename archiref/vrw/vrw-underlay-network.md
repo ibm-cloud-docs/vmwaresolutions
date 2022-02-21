@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-01-18"
 
 subcollection: vmwaresolutions
 
@@ -114,7 +114,7 @@ The public and the first private VLAN created and assigned in this design are un
 The private network consists of two VLANs within this design. Three subnets are allocated to the first of these VLANs (here designated Private VLAN A):
 
 * The first subnet is a primary private IP subnet range that {{site.data.keyword.cloud_notm}} assigns to the physical hosts.
-* The second subnet is used for management virtual machines (VMs) such as vCenter Server Appliance and Platform Services Controller
+* The second subnet is used for management virtual machines (VMs) such as vCenter Server Appliance and Platform Services Controller.
 * The third subnet is used for the encapsulated overlay network Tunnel Endpoints (VTEPs) assigned to each host through the NSX Manager.
 
 In addition to Private VLAN A, a second private VLAN (here designated Private VLAN B) exists to support VMware features such as vSAN and vMotion. As such, the VLAN is divided into two or more portable subnets:
@@ -125,7 +125,7 @@ In addition to Private VLAN A, a second private VLAN (here designated Private VL
 
 The public network consists of one VLAN within this design. The following subnets are allocated to the VLAN:
 
-* The first subnet is a Primary Public IP subnet range that {{site.data.keyword.cloud_notm}} assigns to the physical hosts
+* The first subnet is a Primary Public IP subnet range that {{site.data.keyword.cloud_notm}} assigns to the physical hosts.
 * The hosts are assigned a public IP address but this IP address is not configured on the hosts, so they are not directly accessible on the public network.
 * The second subnet is used for public access of components like a virtual gateway appliance.
 * The public VLAN is intended to provide public internet access.
@@ -139,7 +139,7 @@ Review the following table for a summary.
 | Public C | Primary  | Assigned to physical hosts for public network access.  |
 | Private A | Primary  | Single subnet assigned to physical hosts assigned by {{site.data.keyword.cloud_notm}}. Used by the management interface for vSphere management traffic. |
 | Private A | Portable | Single subnet that is assigned to VMs that function as management components |
-| Private A | Portable | Single subnet that is assigned to NSX-V or NSX-T VTEP |
+| Private A | Portable | Single subnet that is assigned to NSX-T or NSX-V VTEP |
 | Private B | Portable | Single subnet that is assigned for vSAN, if in use |
 | Private B | Portable | Single subnet assigned for NAS, if in use |
 | Private B | Portable | Single subnet assigned for vMotion |

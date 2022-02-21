@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-08"
+lastupdated: "2022-01-31"
 
 subcollection: vmwaresolutions
 
@@ -30,7 +30,7 @@ During the ordering process of a vCenter Server instance, the following informat
 * Hostname prefix
 * Domain name
 
-These values are then used to generate the username and server names of the instance. For more information, see [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance).
+These values are then used to generate the username and server names of the instance. For more information, see [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req).
 
 ## Domain controllers
 {: #adds-infra-domain-controllers}

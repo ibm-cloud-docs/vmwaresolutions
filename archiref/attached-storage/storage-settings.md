@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-18"
 
 subcollection: vmwaresolutions
 
@@ -30,7 +30,7 @@ Use Storage DRS to manage the aggregated resources of a datastore cluster. When 
 The following features are available when storage DRS is turned on:
 * Space load balancing among datastores within a datastore cluster
 * I/O load balancing among datastores within a datastore cluster
-* Initial place for virtual disks based on space and I/O workload.
+* Initial place for virtual disks based on space and I/O workload
 
 In this design, Storage DRS is enabled with the automation level set to **Fully Automated**. As a result, files are migrated automatically to optimize resource usage on the data cluster. Since the cluster is fully automated, all other Storage DRS options are set to **Use cluster settings**.
 

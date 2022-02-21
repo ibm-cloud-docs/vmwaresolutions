@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-01-31"
 
 keywords: set credentials, update credentials, set notifications, IAM user, invite user
 
@@ -84,6 +84,6 @@ If email or console notifications are enabled for certain instance events, you'r
 
 * [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance)
+* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Managing system notifications](/docs/vmwaresolutions?topic=vmwaresolutions-notifications)
 * [What is {{site.data.keyword.cloud_notm}} IAM](/docs/account?topic=account-iamoverview)

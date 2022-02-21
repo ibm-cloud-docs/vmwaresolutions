@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-02-17"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -35,7 +35,7 @@ Review the following table to understand the differences in feature support for 
 | Remove ESXi servers | Supported | Supported. Automated configuration not included. |
 | Multi-cluster support | Maximum number depends on VMware® sizing guidelines | Supported. Automated configuration not included. |
 | Client-managed updating and patching of VMware stack | Client-managed updates - Native VMware tools (VMware Update Manager™)[^nsxv1] | Client-managed updates - Native VMware tools (VMware Update Manager) |
-| Backup and restore | Manually, by using IBM Spectrum® Protect Plus or Veeam®[^nsxv2] | Backup and restore solution not included |
+| Backup and restore | Manually, by using Veeam® | Backup and restore solution not included |
 | Software-defined networking[^nsxvexist] | NSX DC SP Base, Professional, Advanced, or Enterprise Plus | NSX DC SP Base, Professional, Advanced, or Enterprise Plus. Automated configuration not included. |
 | BYOL for vSphere and vSAN | Fully supported per cluster | Supported |
 | BYOL for vCenter Server and NSX | Fully supported per instance | Supported |
@@ -52,8 +52,6 @@ Review the following table to understand the differences in feature support for 
 
 [^nsxvexist]: NSX-V and existing instances use legacy NSX licensing.
 
-[^nsxv2]: NSX-V only
-
 [^nsxv3]: NSX-V only
 
 [^services]: Not all add-on services are supported for NSX-T instances
@@ -67,7 +65,7 @@ Review the following table to understand the differences in feature support for 
 |:-------- |:-------------- |:-------------- |:-------------- |
 | vSphere version | 6.7 Update 3n or 7.0 Update 2d | 7.0 Update 2d | 7.0 Update 2d |
 | NSX edition | NSX DC SP Base, Professional, Advanced, or Enterprise Plus | NSX DC SP Professional, Advanced, or Enterprise Plus | NSX DC SP Advanced or Enterprise Plus |
-| NSX networking solution [^nsxedi] | NSX-V or NSX-T™ | NSX-T | NSX-T |
+| NSX networking solution [^nsxedi] | NSX-T™ or NSX-V | NSX-T | NSX-T |
 | NFS | Optional | Optional | Not allowed |
 | vSAN | Optional | Optional | Required |
 | Consolidated cluster | Optional | Optional | Optional |

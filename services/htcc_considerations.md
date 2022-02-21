@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-16"
 
 keywords: HyTrust CloudControl, HTCC, tech specs HTCC
 
@@ -47,7 +47,7 @@ The following components are ordered and included in the HyTrust CloudControl se
 
 * CPU: 4 CPUs
 * RAM: 16 GB
-* Disk: 186 GB VMDK resident on vSAN
+* Disk: 186 GB VMDK
 * Network: Placed on VLAN-backed private portable network specified for management
 
 ### High availability

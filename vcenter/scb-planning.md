@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-11-17"
+lastupdated: "2022-02-10"
 
 keywords: planning vcs Security and Compliance Readiness Bundle, data centers for Security and Compliance Readiness Bundle, services for security and compliance bundle, vcs scb
 
@@ -29,46 +29,45 @@ The {{site.data.keyword.cloud_notm}} account that you are using must meet certai
 
 The Security and Compliance Readiness Bundle deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements. The following {{site.data.keyword.cloud_notm}} data centers are available for Security and Compliance Readiness Bundle deployment.
 
-| Region | {{site.data.keyword.cloud_notm}} data center | Pod |
+| Geography | Data center | Pod |
 |:----------|:------------|:-------|
-| South America | Sao Paulo 01 | 01 |
-| South America | Sao Paulo 04 | 01 |
-| South America | Sao Paulo 05 | 01 |
-| Asia-Pacific | Hong Kong 02 |  |
-| Asia-Pacific | Osaka 21 | 01 |
-| Asia-Pacific | Osaka 22 | 01 |
-| Asia-Pacific | Osaka 23 | 01 |
-| Asia-Pacific | Seoul 01 | 01 |
-| Asia-Pacific | Singapore 01| 02 |
-| Asia-Pacific | Sydney 01 | 01-02 |
-| Asia-Pacific | Sydney 04 | 01 |
-| Asia-Pacific | Sydney 05 | 01 |
-| Asia-Pacific | Tokyo 02 | 01-02 |
-| Asia-Pacific | Tokyo 04 | 01 |
-| Asia-Pacific | Tokyo 05 | 01 |
-| Europe | Amsterdam 03 | 01-02 |
-| Europe | Frankfurt 02 | 01-03 |
-| Europe | Frankfurt 04 | 01 |
-| Europe | Frankfurt 05 | 01 |
-| Europe | London 02 | 01-02 |
-| Europe | London 04 | 01 |
-| Europe | London 05 | 01 |
-| Europe | London 06 | 01 |
-| Europe | Milan 01 | 01 |
-| Europe | Paris 01 | 01 |
-| NA East | Montreal 01 | 01-02 |
-| NA East | Toronto 01 | 01-02 |
-| NA East | Toronto 04 | 01 |
-| NA East | Toronto 05 | 01 |
-| NA East | Washington DC 04 | 01-05 |
-| NA East | Washington DC 06 | 01 |
-| NA East | Washington DC 07 | 01 |
-| NA South | Dallas 10 | 01-04 |
-| NA South | Dallas 12 | 01-02 |
-| NA South | Dallas 13 | 01-03 |
-| NA South | Mexico 01 | 01 |
-| NA West | San Jose 03 | 01-02 |
-| NA West | San Jose 04 | 01 |
+| Asia-Pacific | OSA21 | 01 |
+| Asia-Pacific | OSA22 | 01 |
+| Asia-Pacific | OSA23 | 01 |
+| Asia-Pacific | SEO01 | 01 |
+| Asia-Pacific | SNG01| 02 |
+| Asia-Pacific | SYD01 | 01, 02 |
+| Asia-Pacific | SYD04 | 01 |
+| Asia-Pacific | SYD05 | 01 |
+| Asia-Pacific | TOK02 | 01, 02 |
+| Asia-Pacific | TOK04 | 01 |
+| Asia-Pacific | TOK05 | 01 |
+| Europe | AMS03 | 01, 02 |
+| Europe | FRA02 | 01, 02, 03 |
+| Europe | FRA04 | 01 |
+| Europe | FRA05 | 01 |
+| Europe | LON02 | 01, 02 |
+| Europe | LON04 | 01 |
+| Europe | LON05 | 01 |
+| Europe | LON06 | 01 |
+| Europe | MIL01 | 01 |
+| Europe | PAR01 | 01 |
+| NA East | MON01 | 01-02 |
+| NA East | TOR01 | 01, 02 |
+| NA East | TOR04 | 01 |
+| NA East | TOR05 | 01 |
+| NA East | WDC04 | 01-05 |
+| NA East | WDC06 | 01 |
+| NA East | WDC07 | 01 |
+| NA South | DAL10 | 01-04 |
+| NA South | DAL12 | 01-02 |
+| NA South | DAL13 | 01-03 |
+| NA South | MEX01 | 01 |
+| NA West | SJC03 | 01-02 |
+| NA West | SJC04 | 01 |
+| South America | SAO01 | 01 |
+| South America | SAO04 | 01 |
+| South America | SAO05 | 01 |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Security and Compliance Readiness Bundle" caption-side="top"}
 
 ## Services for Security and Compliance Readiness Bundle
@@ -96,5 +95,5 @@ The following services are optional for Security and Compliance Readiness Bundle
 {: #scb-planning-related}
 
 * [Security and Compliance Readiness Bundle overview](/docs/vmwaresolutions?topic=vmwaresolutions-scb-overview)
-* [Ordering Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance)
+* [Ordering Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-req)
 * [Viewing and deleting Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-view-delete-instance)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-02-18"
 
 subcollection: vmwaresolutions
 
@@ -80,7 +80,7 @@ This documentation describes the process to install Red Hat OpenShift v4.7 on to
 The deployment approach is described in the following phases:
 
 * Phase 1 - vCenter Server instance preparation:
-   * Using the {{site.data.keyword.vmwaresolutions_full}} console, [order a vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance), which can include NFS or vSAN storage. You can use an existing instance if the instance has enough capacity.
+   * Using the {{site.data.keyword.vmwaresolutions_full}} console, [order a vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), which can include NFS or vSAN storage. You can use an existing instance if the instance has enough capacity.
    * Using the {{site.data.keyword.cloud_notm}} console, [order more private and public subnets](/docs/subnets?topic=subnets-getting-started) to be used by the OpenShift cluster.
    * Download RHEL 7.6 ISO for the OS of the bastion or deployment node and the Red Hat Enterprise Linux CoreOS (RHCOS) OVA image. This step is described in [Prerequisites for installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-prereq-intro).
    * Using govc, the OVA and ISO are uploaded to a datastore on the vCenter Server instance. This step is described in [Prerequisites for installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-prereq-intro).
@@ -99,8 +99,7 @@ The deployment approach is described in the following phases:
 ## Related links
 {: #vcs-openshift-runbook-intro-related}
 
-* [An overview of the basics of Red Hat OpenShift](https://www.ibm.com/cloud/blog/new-builders/what-is-openshift){: external}
-* [OpenShift 4 User Provisioned Infrastructure with VMware vSphere](https://www.youtube.com/watch?v=TsAJEEDv-gg){: external}
+* [What is OpenShift?](https://www.ibm.com/cloud/blog/what-is-openshift){: external}
 * [OpenShift 4 Release Update](https://www.youtube.com/watch?v=YJvTu8jC6CU){: external}
 * [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}
 * [Getting started with IBM Cloud Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started)

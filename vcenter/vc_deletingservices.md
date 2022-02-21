@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-10-13"
+lastupdated: "2022-02-18"
 
 keywords: remove services vCenter Server
 
@@ -62,7 +62,7 @@ The following table shows the services that are affected. The table also shows t
 | HyTrust DataControl | `htdcnn-id` | `htcc02-GY67239` |
 | HyTrust KeyControl | `htkcnn-id` | `htcc02-GY67239` |
 | vRealize Operations | `vrli`   \n `vrops`   \n `vrlog` | `vrli-master`   \n `vrops-data1`   \n `vrlog-master` |
-{: caption="Table 6. Hostname patterns and examples for affected services" caption-side="top"}
+{: caption="Table 1. Hostname patterns and examples for affected services" caption-side="top"}
 
 To remove the DNS entires, complete the following steps:
 

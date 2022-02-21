@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-01-21"
 
 keywords: manage shared resources, view shared virtual data centers details
 
@@ -44,8 +44,8 @@ You can open an {{site.data.keyword.cloud_notm}} Support ticket to request five 
 * Virtual data center region and location
 * Organization ID
 * Virtual data center name
-* Number of additional IPs required
-* Specify whether you plan to use the additional IPs by using Network Address Translate through the virtual data center Edge Services Gateway or by directly assigning the IPs to a VM.
+* Number of additional IP addresses required
+* Specify whether you plan to use the additional IP addresses by using Network Address Translate through the virtual data center Edge Services Gateway or by directly assigning the IP address to a VM.
 
 For more information about opening a support ticket, see [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 

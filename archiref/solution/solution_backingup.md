@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-18"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ You’re responsible for the configuration, management, and monitoring of all so
 
 As part of the solution, you can optionally deploy the {{site.data.keyword.IBM}} Spectrum Protect&trade; Plus or Veeam® add-on services. Veeam and IBM Spectrum Protect Plus can help satisfy the requirement to back up your management components.
 
-These add-on services are deployed together with {{site.data.keyword.cloud_notm}} Endurance storage. The services help you back up your workloads and the management components. The [IBM Spectrum Protect Plus architecture overview](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_spplus){: external} and [Veeam architecture overview](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external} provide helpful guidance on planning and sizing your deployment.
+These add-on services are deployed together with {{site.data.keyword.cloud}} Endurance storage. The services help you back up your workloads and the management components. The [IBM Spectrum Protect Plus architecture overview](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_spplus){: external} and [Veeam architecture overview](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external} provide helpful guidance on planning and sizing your deployment.
 
 Different solution components require different strategies for backup. Some components are protected by using image-level backup, and other components are protected by using file-based backup for their configuration and data.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-01-31"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 The recommendation for a production environment is to use a minimum of four hosts for the desktop cluster with VMware® vSAN™ and three hosts for the management cluster.
 
 To deploy VMware Horizon 7, complete the following steps:
-1. Create a vCenter Server® instance with three hosts and two NFS datastores for the Horizon management components. For more information, see [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance).
+1. Create a vCenter Server® instance with three hosts and two NFS datastores for the Horizon management components. For more information, see [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req).
 2. Configure supporting infrastructure for Horizon in {{site.data.keyword.cloud_notm}}, that is, an Active Directory Domain and Microsoft® SQL Server.
 3. Deploy Horizon 7.8 or later in the management cluster. For more information, see the [VMware Horizon 7 documentation](https://docs.vmware.com/en/VMware-Horizon-7/index.html){: external}.
 4. Deploy App Volumes 2.17 or later in the management cluster. For more information, see the [VMware App Volumes documentation](https://docs.vmware.com/en/VMware-App-Volumes/index.html){: external}.

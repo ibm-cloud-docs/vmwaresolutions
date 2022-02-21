@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-01-17"
 
 subcollection: vmwaresolutions
 
@@ -21,10 +21,12 @@ subcollection: vmwaresolutions
 {:note: .note}
 {:important: .important}
 
-The default deployment of a vSRX HA Chassis Cluster places a pair of KVM-based hosts with each supporting a single vSRX node. The two vSRX nodes are tied together in a highly available chassis cluster. The vSRX cluster delivers a reliable gateway solution that provides for continuous network traffic flows through the loss of a host that supports a node or a vSRX node.
+There are two options for deploying a vSRX HA cluster:
 
-While the current vSRX offering uses KVM as the underlying host operating system, vSRX is also available in a configuration that runs natively on the VMware vSphere® ESXi™ hypervisor.
-{: note}
+* Deploy gateway on bare metal servers - deploys vSRX on a KVM-based host.
+* Deploy gateway as part of the IBM Cloud® for VMware® Solutions offering (edge cluster) - deploys vSRX on a VMware vSphere® ESXi™ hypervisor.
+  
+The two vSRX nodes are tied together in a highly available chassis cluster and deliver a reliable gateway solution that provides for continuous network traffic flows through the loss of a host that supports a node or a vSRX node.
 
 These features are common to both deployment types.
 - Provides high availability pair within a single data center.
@@ -39,7 +41,7 @@ The following features are unique to a deployment with the ESXi as the host OS.
 
 The basic vSRX offering architecture places a vSRX in front of all the VLANs deployed into a customer account. The vSRX is a powerful Vyatta replacement for situations in which a customer-controlled gateway appliance is desirable.
 
-The following figure represents the typical vSRX deployment on KVM and a basic vSRX deployment in which the hypervisor is ESXi.
+The following figure represents the typical vSRX deployment.
 
 ![Figure 1 - vSRX overview](../../images/vcsvsrx-logical-overview.svg){: caption="Figure 1. vSRX overview" caption-side="bottom"}
 

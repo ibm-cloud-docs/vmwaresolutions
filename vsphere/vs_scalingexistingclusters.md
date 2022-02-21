@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-01-31"
 
 keywords: vSphere scale cluster, scale vSphere, scale vSphere cluster
 
@@ -35,7 +35,7 @@ Ensure that you complete the following tasks:
 1. In the {{site.data.keyword.vmwaresolutions_short}} console, click the **VMware Solutions Dedicated** card in the **IaaS platforms** section.
 2. On the **VMware Solutions Dedicated** page, click the **VMware vSphere** card.
 3. Click the **Scale existing** tab and select the cluster that you want to scale from the **Cluster configurations** list.
-4. Review the cluster settings that are automatically completed, update the settings according to your needs, and complete any required fields. For more information about the settings, see [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances).
+4. Review the cluster settings that are automatically completed, update the settings according to your needs, and complete any required fields. For more information about the settings, see [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req).
 5. If the cluster does not include the FortiGate 300 Series Security Appliance HA Pair on its public VLAN, you can order the appliance. To do so, select the **Include with purchase** checkbox under **FortiGate Physical Appliance 300 Series HA Pair**.
 6. In the **Summary** pane, verify the instance configuration and the estimated price.
    * To save the configuration as a template without placing an order, click **Save configuration**.
@@ -52,6 +52,6 @@ The vSphere clusters, unlike the VMware vCenter Server® instances, are not disp
 ## Related links
 {: #vs_scalingexistingclusters-related}
 
-* [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances)
+* [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
 * [Ordering vSphere clusters based on existing configurations](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderingbasedonexistingconfig)
 * [Scaling clusters created outside of the console](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderingforclustersoutside)

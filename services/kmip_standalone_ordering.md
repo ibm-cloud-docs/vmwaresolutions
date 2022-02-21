@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-02-19"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -89,7 +89,7 @@ When you enable the inactive KMIP for VMware instance, provide the following set
 | **API key for service ID**| The API key for the {{site.data.keyword.cloud_notm}} Service ID that is used to access the service instance of Key Protect |
 | **Key Manager instance**| The list of available Key Protect instances that you can select to use for key management |
 | **Customer root key**| The list of customer root keys that are stored in your selected key manager instance |
-{: caption="Table 2. Configurations for the Key Protect service" caption-side="top"}
+{: caption="Table 1. Configurations for the Key Protect service" caption-side="top"}
 {: #simpletabtable2}
 {: tab-title="Key Protect"}
 {: tab-group="Settings when selecting different key management service"}
@@ -161,7 +161,7 @@ If your KMIP instance is connected to Key Protect, you must use the two regional
 | Tokyo | `kmip-1.private.ap-north.vmware-solutions.cloud.ibm.com:5696`  \n `kmip-2.private.ap-north.vmware-solutions.cloud.ibm.com:5696` |
 | Toronto | `kmip-1.private.ca-tor.vmware-solutions.cloud.ibm.com:5696`  \n `kmip-2.private.ca-tor.vmware-solutions.cloud.ibm.com:5696` |
 | Washington DC | `kmip-1.private.us-east.vmware-solutions.cloud.ibm.com:5696`  \n `kmip-2.private.us-east.vmware-solutions.cloud.ibm.com:5696` |
-{: caption="Table 3. KMIP for VMware network service endpoint locations" caption-side="top"}
+{: caption="Table 2. KMIP for VMware network service endpoint locations" caption-side="top"}
 
 ## Related links
 {: #kmip_standalone_ordering-related}

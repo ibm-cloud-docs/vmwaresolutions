@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-11-30"
+lastupdated: "2022-01-25"
 
 keywords: vmware multizone, vcenter server multizone instances, add clusters for multizone
 
@@ -16,6 +16,9 @@ subcollection: vmwaresolutions
 
 # Adding clusters to vCenter Server multizone instances
 {: #mcv_addviewdeleteclusters}
+
+New deployments of vCenter Server multizone instances are no longer supported. You can still add and delete clusters, add and remove ESXi servers, and add and delete storage for existing multizone instances.
+{: deprecated}
 
 You can add workload and edge services clusters to VMware® vCenter Server® multizone instances. When no longer needed, delete the clusters from your instance.
 
@@ -55,4 +58,6 @@ You cannot add more than one cluster in the same data center pod.
 ## Related links
 {: #mcv_addviewdeleteclusters-related}
 
+* [vCenter Server multizone BOM](/docs/vmwaresolutions?topic=vmwaresolutions-mcv-archi-bom)
 * [Adding ESXi servers to vCenter Server multizone instances](/docs/vmwaresolutions?topic=vmwaresolutions-mcv_addingremovingservers)
+* [Adding NFS storage to vCenter Server multizone instances](/docs/vmwaresolutions?topic=vmwaresolutions-mcv_addingnfs-storage)

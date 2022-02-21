@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-02-16"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -66,7 +66,7 @@ For more information about how Veeam Availability Suite stores backups, see [How
 
 Veeam Cloud Connect Replication provides seamless replication of your workloads from on-premises to {{site.data.keyword.cloud_notm}}. Use Veeam Cloud Connect as disaster recovery for failover during on-premises outages or to permanently move workloads directly to {{site.data.keyword.cloud_notm}}.
 
-Starting with the 4.2 release, VMware Solutions Shared virtual data centers provide Veeam Backup and Replication V11 for the Veeam Cloud Connect Replication ready-to-use service. For more informaiton about compatibility requirements between Veeam service providers and tenants, see [Product Versions in Veeam Cloud Connect Infrastructure](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_versions.html?ver=110).
+Starting with the 4.2 release, VMware Solutions Shared virtual data centers provide Veeam Backup and Replication V11 for the Veeam Cloud Connect Replication ready-to-use service. For more information about compatibility requirements between Veeam service providers and tenants, see [Product versions in Veeam Cloud Connect infrastructure](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_versions.html?ver=110){: external}.
 {: note}
 
 When you access Veeam Cloud Connect, **DNS name** and **Port** details are specific to the region where your virtual data center exists.
@@ -83,8 +83,7 @@ When you access Veeam Cloud Connect, **DNS name** and **Port** details are speci
 1. Add your service provider to your Veeam Backup and Replication Server: [Connecting to Service Providers](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_sp.html?ver=100){: external}
    * For **Step 2: Specify Cloud Gateway Settings**, use the **DNS name** and **Port** details that are specific to your virtual data center region. You can locate your **DNS name** and **Port** details on the virtual data center details page. Scroll down to the **Recommended services** pane and locate **Connection Details** for Veeam Cloud Connect.  
    * For **Step 3: Verify TLS Certificate and Specify User Account Settings**, use the following credentials:  
-    *Organization\Username* or *Username@Organization*  
-    For example: `OrganizationName\admin` Or `admin@OrganizationName`  
+    *Organization\Username* or *Username@Organization*, for example `OrganizationName\admin` Or `admin@OrganizationName`  
     An on-premises Veeam Backup and Replication Server connecting to {{site.data.keyword.cloud_notm}} must validate the revocation status of the {{site.data.keyword.vmwaresolutions_short}} SSL certificate that is provided by DigiCert. You must have **admin** privileges.  
 2. From your on-premises Veeam Backup and Replication Server, view Veeam Cloud Connect failover plans, perform failovers, or undo failovers from {{site.data.keyword.cloud_notm}}.
 

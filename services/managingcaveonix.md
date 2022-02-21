@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-02-08"
 
 keywords: Caveonix console, Caveonix RiskForesight license, login Caveonix console
 
@@ -37,6 +37,10 @@ To manage the Caveonix RiskForesight™ service, you must access the Caveonix Ri
 {: #managingcaveonix-update}
 
 You are responsible for maintaining Caveonix RiskForesight to keep it updated to the most recent version. You can download the required updates from the [Caveonix Service Provider Portal](https://support.caveonix.com/login){: external}.
+
+To obtain a login ID for the Caveonix Service Provider Portal for product release notes and downloads, open a support case with the [IBM Cloud Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}.
+
+Provide the instance name that Caveonix is installed on, your company name, and an email address for your administrator for the support case. IBM Cloud Support will acquire the credentials for your login and email your administrator.
 
 ## Updating Caveonix RiskForesight licenses
 {: #managingcaveonix-updating-lic}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-07"
 
 subcollection: vmwaresolutions
 
@@ -19,9 +19,6 @@ subcollection: vmwaresolutions
 {{site.data.keyword.vmwaresolutions_full}} offerings are not managed services. You are responsible for the configuration, security, management, and monitoring of all software components. With complete administrative access to the solution, you have great power and flexibility that requires significant technical, administrative, and operational expertise across various domains. Managing a VMware® instance in the {{site.data.keyword.cloud_notm}} requires the same planning and expertise as planning for an on-premises instance. Software-defined technologies such as VMware NSX® and VMware vSAN™ greatly simplify some aspects of instance management, but might require new skills and tools to be properly managed and operated. Combining the power, speed, and reliability of {{site.data.keyword.cloud_notm}} automated VMware deployment with the appropriate operational planning and testing ensures quick and successful navigation to hybrid cloud.
 
 Review the following considerations to understand your responsibilities for managing and operating the instance before and after it is deployed.
-
-The following list is not exhaustive. For more information, see [IBM-managed services](/docs/vmwaresolutions?topic=vmwaresolutions-managing_imi).
-{: note}
 
 ## IBM Cloud account access
 {: #solution_considerations-acct-access}

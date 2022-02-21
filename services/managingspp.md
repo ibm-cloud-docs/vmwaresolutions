@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2021
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-01-27"
 
 keywords: SPP management console, apply SPP updates, login SPP console
 
@@ -18,10 +18,13 @@ subcollection: vmwaresolutions
 # Managing IBM Spectrum Protect Plus
 {: #managingspp}
 
+New installations of the IBM Spectrum® Protect Plus service are no longer supported for new or existing deployments of vCenter Server instances. You can still use or delete existing IBM Spectrum Protect Plus installations on your existing instances. If you want to install IBM Spectrum Protect Plus yourself, see [IBM Spectrum Protect Plus documentation](https://www.ibm.com/docs/en/spp){: external}.
+{: deprecated}
+
 ## Accessing the IBM Spectrum Protect Plus management console
 {: #managingspp-console}
 
-To manage the IBM Spectrum® Protect Plus service, you must access the IBM Spectrum Protect Plus management console by completing the following steps:
+To manage the IBM Spectrum Protect Plus service, you must access the IBM Spectrum Protect Plus management console by completing the following steps:
 1. Use the {{site.data.keyword.cloud}} infrastructure VPN or a jump server to allow access to the IP address of the IBM Spectrum Protect Plus virtual machine (VM). You can find the IP address on the service details page for IBM Spectrum Protect Plus in the {{site.data.keyword.vmwaresolutions_short}} console.
 2. To access the IBM Spectrum Protect Plus management console, click **View IBM Spectrum Protect Plus console** on the service details page for IBM Spectrum Protect Plus. Then, log in by using the credentials that are listed on the same service details page.
 
@@ -29,8 +32,6 @@ To manage the IBM Spectrum® Protect Plus service, you must access the IBM Spect
 {: #managingspp-updates}
 
 You are responsible for maintaining IBM Spectrum Protect Plus to keep it updated to the most recent version. Download the required updates from [IBM Spectrum Protect Plus Support](https://www.ibm.com/mysupport/s/topic/0TO50000000IQWtGAO/spectrum-protect-plus){: external}.
-
-For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 
 ## Updating the operating system of the IBM Spectrum Protect Plus VM
 {: #managingspp-update-os}

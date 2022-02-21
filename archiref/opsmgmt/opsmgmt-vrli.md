@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-01-21"
 
 subcollection: vmwaresolutions
 
@@ -89,7 +89,7 @@ Each vRLI virtual appliance has three default virtual disks and can use more vir
 Deployment of the vRLI appliance requires three IP addresses from the tooling private portable subnet. vRLI requires access to the following items.
 * vCenter Appliance
 * vRealize Log Insight Appliance
-* NSX-V/T Appliances
+* NSX-T or NSX-V Appliances
 * Tooling Expansion VXLAN
 * Customer Networks
 * NTP server (`time.services.softlayer.com`)

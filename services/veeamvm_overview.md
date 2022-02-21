@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2021-02-02"
 
 keywords: Veeam, Veeam 11, Veeam install, tech specs Veeam, Veeam overview
 
@@ -151,7 +151,7 @@ Deleting the Veeam service stops all backups and deletes all the previous backup
 {: important}
 
 Review the following considerations before you delete the service:
-* Deleting the Veeam v11 service does not cancel the Veeam license. You must delete the Veeam license from the Veeam licenses table on the Resources page in the {{site.data.keyword.vmwaresolutions_short}} console.
+* Deleting the Veeam v11 service does not cancel the Veeam license. You must delete the Veeam license from the **Veeam licenses** table on the **Resources** page in the {{site.data.keyword.vmwaresolutions_short}} console.
 * When you delete the Veeam v11 service, the {{site.data.keyword.vmwaresolutions_short}} automation deletes only the single Veeam VM, VSI, or bare metal server that was deployed and the dedicated private subnet that was ordered for it. Therefore, if you scaled out the Veeam VM or VSI into multiple ones, those additional VMs or VSIs are not deleted.
 * If you order iSCSI storage, that storage is deleted when you delete the Veeam v11 service. Therefore, any data within that storage is lost.
 

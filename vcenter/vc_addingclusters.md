@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-12-09"
+lastupdated: "2022-02-10"
 
 keywords: vCenter Server add clusters, add cluster, vCenter Server cluster
 
@@ -14,12 +14,12 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding clusters to vCenter Server single-zone instances
+# Adding clusters to vCenter Server instances
 {: #vc_addingclusters}
 
 You can add clusters to VMware vCenter Server® instances to expand the compute and storage capacity. Within a cluster, you can manage VMware ESXi™ servers for better resource allocation and high availability.
 
-## Before you add clusters to vCenter Server single-zone instances
+## Before you add clusters to vCenter Server instances
 {: #vc_addingclusters-before}
 
 * Adding clusters to vCenter Server instances with VMware vSphere® 6.5 is not supported.
@@ -67,106 +67,39 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 ### Skylake
 {: #vc_addingclusters-skylake}
 
-For **Skylake** servers, you can choose the following CPU models and a supported RAM size, which depends on the NSX networking solution. Available options might differ depending on the version that your instance was initially deployed in.
+{{site.data.content.skylake-para-intro}}
+Available options might differ depending on the version that your instance was initially deployed in.
 
-Skylake servers are not supported for vSphere Enterprise Plus 7.0u1 instances.
-{: note}
+{{site.data.content.skylake-note}}
 
-| CPU model     | RAM sizes   |
-|:------------- |:----------- |
-| Dual Intel® Xeon® Silver 4110 processor / 16 cores, 2.1 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5120 processor / 28 cores, 2.2 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6140 processor / 36 cores, 2.3 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-{: caption="Table 1. Options for Skylake bare metal servers" caption-side="top"}
-{: class="simple-tab-table"}
-{: #simpletabtable5}
-{: tab-title="NSX-V"}
-{: tab-group="SkyLake Intel servers"}
+{{site.data.content.simpletabtable-skylake-nsxt}}
 
-| CPU model     | RAM sizes   |
-|:------------- |:----------- |
-| Dual Intel® Xeon® Silver 4110 processor / 16 cores, 2.1 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5120 processor / 28 cores, 2.2 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6140 processor / 36 cores, 2.3 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-{: caption="Table 1. Options for Skylake bare metal servers" caption-side="top"}
-{: class="simple-tab-table"}
-{: #simpletabtable6}
-{: tab-title="NSX-T"}
-{: tab-group="SkyLake Intel servers"}
+{{site.data.content.simpletabtable-skylake-nsxv}}
 
 ### Cascade Lake
 {: #vc_addingclusters-cascade}
 
-For **Cascade Lake** servers, you can choose the following CPU models and a supported RAM size, which depends on the NSX networking solution.
+{{site.data.content.cascade-para-intro}}
 
-| CPU model     | RAM sizes   |
-|:------------- |:----------- |
-| Dual Intel Xeon Silver 4210 processor / 20 cores, 2.2 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5218 processor / 32 cores, 2.3 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6248 processor / 40 cores, 2.5 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6250 processor / 16 cores, 3.9 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Platinum 8260 processor / 48 cores, 2.4 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Quad Intel Xeon Gold 6248 processor / 80 cores, 2.5 GHz | 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Quad Intel Xeon Platinum 8260 processor / 96 cores, 2.4 GHz | 384 GB, 768 GB, 1.5 TB, 3 TB |
-{: caption="Table 2. Options for Cascade Lake bare metal servers" caption-side="top"}
-{: class="simple-tab-table"}
-{: #simpletabtable3}
-{: tab-title="NSX-V"}
-{: tab-group="Cascade Lake Intel servers"}
+{{site.data.content.simpletabtable-cascade-nsxt}}
 
-| CPU model     | RAM sizes   |
-|:------------- |:----------- |
-| Dual Intel Xeon Silver 4210 processor / 20 cores, 2.2 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5218 processor / 32 cores, 2.3 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6248 processor / 40 cores, 2.5 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6250 processor / 16 cores, 3.9 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Platinum 8260 processor / 48 cores, 2.4 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Quad Intel Xeon Gold 6248 processor / 80 cores, 2.5 GHz | 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Quad Intel Xeon Platinum 8260 processor / 96 cores, 2.4 GHz | 384 GB, 768 GB, 1.5 TB, 3 TB |
-{: caption="Table 2. Options for Cascade Lake bare metal servers" caption-side="top"}
-{: class="simple-tab-table"}
-{: #simpletabtable4}
-{: tab-title="NSX-T"}
-{: tab-group="Cascade Lake Intel servers"}
+{{site.data.content.simpletabtable-cascade-nsxv}}
 
 ### SAP-certified
 {: #vc_addingclusters-sap}
 
-For **SAP-certified** servers, you have the following options:
-* **NetWeaver**, for which the CPU and RAM size are preset.
-* **HANA**, for which you can choose the CPU model and a supported RAM size, which depends on the NSX networking solution.
+{{site.data.content.sap-para-intro}}
 
-| CPU model     | RAM sizes   |
-|:------------- |:----------- |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW192) / 32 cores, 2.3 GHz | 192 GB |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW384) / 32 cores, 2.3 GHz | 384 GB |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768) / 40 cores, 2.5 GHz | 768 GB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW1500) / 56 cores, 2.7 GHz | 1.5 TB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW3000) / 56 cores, 2.7 GHz | 3 TB |
-{: caption="Table 3. Options for SAP-certified bare metal servers - NetWeaver" caption-side="top"}
-{: class="simple-tab-table"}
-{: #simpletabtable1}
-{: tab-title="NetWeaver"}
-{: tab-group="SAP-certified Intel servers"}
+{{site.data.content.simpletabtable-sap-netweaver}}
 
-| CPU model     | RAM sizes |
-|:------------- |:--------- |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake) / 32 cores, 2.3 GHz | 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake) / 40 cores, 2.5 GHz| 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake) / 56 cores, 2.7 GHz | 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Quad Intel Xeon Platinum 8280M processor (Cascade Lake) / 112 cores, 2.7 GHz | 3 TB, 6 TB |
-{: caption="Table 3. Options for SAP-certified bare metal servers - HANA" caption-side="top"}
-{: #simpletabtable2}
-{: tab-title="HANA"}
-{: tab-group="SAP-certified Intel servers"}
-{: class="simple-tab-table"}
+{{site.data.content.simpletabtable-sap-hana}}
 
 ### Number of bare metal servers
 {: #vc_addingclusters-bare-metal-number}
 
 * All servers that you order have the same configuration.
 * For vSAN™ storage, you can order in the range 4 - 59 servers.
-* For NFS storage, you can order between 1 (for NSX-V) or 2 (for NSX-T™) and 59 servers. However, for production workloads, a minimum of two servers is recommended. For more information, see [Is a two-node vCenter Server instance highly available?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#is-a-two-node-vcenter-server-instance-highly-available)
+* For NFS storage, you can order between 2-59 servers (for NSX-T™) or 1-59 servers (for NSX-V). However, for production workloads, a minimum of two servers is recommended. For more information, see [Is a two-node vCenter Server instance highly available?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#is-a-two-node-vcenter-server-instance-highly-available)
 
 ## Storage settings
 {: #vc_addingclusters-storage-settings}
@@ -282,17 +215,30 @@ For NSX-V, the following add-on services require public NICs and are not availab
 The **Uplink speed** option is not available to edge services clusters.
 {: note}
 
-The uplink speed provides two options:
-* 10 Gb, which is selected by default.
-* 25 Gb, which is available only for **Cascade Lake** and **SAP-certified** bare metal servers and for specific locations. The following table shows the available {{site.data.keyword.cloud_notm}} data centers for 25 Gb uplink speed.
+{{site.data.content.uplink-speed-options-list}}
 
-| {{site.data.keyword.cloud_notm}} data center | Region |
-|:-------------------------------------------- |:------ |
-| Dallas 10 \n Dallas 12 \n Dallas 13 | NA South |
-| Frankfurt 02 \n Frankfurt 05 \n London 06 | Europe |
-| Sydney 04 \n Sydney 05 \n Tokyo 02 \n Tokyo 04 \n Tokyo 05 | Asia-Pacific |
-| Toronto 04 \n Washington DC 04 \n Washington DC 06 \n Washington DC 07 | NA East |
-{: caption="Table 5. Available {{site.data.keyword.cloud_notm}} data centers for 25 Gb uplink speed" caption-side="top"}
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
+| Asia-Pacific | SYD04 | 01 |
+| Asia-Pacific | SYD05 | 01 |
+| Asia-Pacific | TOK02 | 02 |
+| Asia-Pacific | TOK04 | 01 |
+| Asia-Pacific | TOK05 | 01 |
+| Europe | FRA02 | 02 |
+| Europe | FRA05 | 01 |
+| Europe | LON04 | 01 |
+| Europe | LON06 | 01 |
+| Europe | PAR04 | 01 |
+| Europe | PAR05 | 01 |
+| Europe | PAR06 | 01 |
+| NA East | TOR04 | 01 |
+| NA East | WDC04 | 05 |
+| NA East | WDC06 | 01 |
+| NA East | WDC07 | 01 |
+| NA South | DAL10 | 03 |
+| NA South | DAL12 | 01 |
+| NA South | DAL13 | 02 |
+{: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="top"}
 
 ### VLANs
 {: #vc_addingclusters-vlans}
@@ -339,7 +285,7 @@ Based on your selected configuration for the cluster, the estimated price is ins
 
 You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. The estimate tool is useful if you want to get an approximate price of the selected {{site.data.keyword.vmwaresolutions_short}} resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider to purchase.
 
-## Procedure to add clusters to vCenter Server single-zone instances
+## Procedure to add clusters to vCenter Server instances
 {: #vc_addingclusters-procedure}
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
@@ -382,7 +328,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
     3. Click the link or links of the terms that apply to your order, and confirm that you agree with these terms before you add the cluster.
     4. Click **Create**.
 
-## Results after you add clusters to vCenter Server single-zone instances
+## Results after you add clusters to vCenter Server instances
 {: #vc_addingclusters-results}
 
 1. The deployment of the cluster starts automatically and the status of the cluster is changed to **Initializing**. You can check the status of the deployment by viewing the deployment history from the **Summary** page of the instance.

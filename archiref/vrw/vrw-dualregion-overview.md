@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-02-18"
 
 subcollection: vmwaresolutions
 
@@ -51,7 +51,7 @@ Hyper Protect Crypto Services is not available in the London multizone region.
 
 This paring of {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads instances enables management and workload virtual machines (VM) to fail over between regions. As each region is a separate {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads instance, the regions have a similar physical layer and virtual infrastructure designs. The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads disaster recovery design requires two {{site.data.keyword.cloud_notm}} locations:
 * Protected region - This region contains the protected VMs that require DR.
-* Recovery region - This region provides an environment to host VMs from the protected region if a disaster occurs
+* Recovery region - This region provides an environment to host VMs from the protected region if a disaster occurs.
 
 ![IBM Cloud for VMware Regulated Workloads MZR DR concept](../../images/vrw-mzr-dr.svg "MZR DR topology"){: caption="Figure 1. MZR DR topology" caption-side="bottom"}
 **Notes**
@@ -81,11 +81,11 @@ The VMware Regulated Workloads dual region design uses the following specificati
 * NSX Manager - One cluster per region.
 * RiskForesight - An "all-in-on" VM hosted in the recovery region that has Asset Repositories and scheduled jobs that are configured for both the protected and recovery regions.
 * HyTrust CloudControl - One cluster per region.
-* vRealize Log Insight (vRLI) - One cluster per region and the use log forwarding/filtering between regions
+* vRealize Log Insight (vRLI) - One cluster per region and the use log forwarding/filtering between regions.
 * vRealize Operations Manager (vROps) - An analytic cluster on a cross-region network in the protected region and remote collectors in both regions. Recovery of the analytics cluster is done through replicas.
 * vRealize Network Insight (vRNI) – An optional manual installation in each region.
 * AD/DNS/NTP - HA VMs in both regions. Each region is a separate forest.
-* Veeam - A single Veeam Backup & Replication instance with a bare metal server in each region. The management components are located in the recovery region. Backup and file copies are used to provide off-site copies. Veeam replication is used to provide replicas of the vROps analytic cluster
+* Veeam - A single Veeam Backup & Replication instance with a bare metal server in each region. The management components are located in the recovery region. Backup and file copies are used to provide off-site copies. Veeam replication is used to provide replicas of the vROps analytic cluster.
 * Key Management Interoperability Protocol for VMware Service (KMIP) - An HA KMIP instance in each region.
 * Hyper Protect Crypto Services (HPCS) - A HA HPCS instance in each region.
 

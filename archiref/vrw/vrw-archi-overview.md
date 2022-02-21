@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-18"
 
 subcollection: vmwaresolutions
 
@@ -23,11 +23,11 @@ The design extends and enhances the basic vCenter Server architecture to deliver
 
 ![IBM Cloud for VMware Regulated Workloads infrastructure overview](../../images/vrw-architecture.svg "IBM Cloud for VMware Regulated Workloads infrastructure overview"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads infrastructure overview" caption-side="bottom"}
 
-\* The perimeter gateway cluster that is shown in the workload region is the same gateway that runs on the dedicated edge services cluster.
+The perimeter gateway cluster that is shown in the workload region is the same gateway that runs on the dedicated edge services cluster.
 
 The minimum viable product consists of the following components:
-* At least one workload cluster that includes four or more ESXi hosts
-* vSAN and NSX-T™
+* At least one workload cluster that includes four or more ESXi™ hosts
+* vSAN™ and NSX-T™
 * A management cluster of four ESXi hosts
 * An edge services cluster of two ESXi hosts or a physical FortiGate appliance
 
@@ -88,7 +88,7 @@ The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads is available
 
 For more information, see:
 * [VMware Regulated Workloads overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview)
-* [Ordering VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance)
+* [Ordering VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
 
 **Next topic**: [System context](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-context)
 

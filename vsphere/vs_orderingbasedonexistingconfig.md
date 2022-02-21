@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-01-31"
 
 keywords: vSphere order cluster, vSphere configuration, order vSphere cluster
 
@@ -34,7 +34,7 @@ Ensure that you complete the following tasks:
 2. On the **VMware Solutions Dedicated** page, click the **VMware vSphere** card.
 3. Ensure that you are on the **Create new** tab. Select a configuration template from the **Cluster configurations** list.
 4. Enter a new cluster name.
-5. Review the cluster settings that are automatically completed and update the settings according to your needs. For more information about the settings, see [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances).
+5. Review the cluster settings that are automatically completed and update the settings according to your needs. For more information about the settings, see [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req).
 6. In the **Summary** pane, verify the instance configuration and the estimated price.
    * To save the configuration as a template without placing an order, click **Save configuration**.
    * To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
@@ -55,6 +55,6 @@ The vSphere clusters, unlike the VMware vCenter Server® instances, are not disp
 ## Related links
 {: #vs_orderingbasedonexistingconfig-related}
 
-* [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances)
+* [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
 * [Scaling existing vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_scalingexistingclusters)
 * [Scaling clusters created outside of the console](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderingforclustersoutside)

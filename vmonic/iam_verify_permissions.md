@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-02-04"
 
 keywords: IAM user, user role, user permission, IAM account administrator
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Locating an IAM account administrator
 {: #iam_verify_permissions}
 
-Use {{site.data.keyword.cloud}} Identity and Access Management (IAM) to define users for platform services and to control user access to resources across {{site.data.keyword.cloud_notm}}. For more information about user roles (Viewer, Editor, Operator, and Administrator), see the table that shows roles and actions in [Platform management roles and permissions](/docs/vmwaresolutions?topic=vmwaresolutions-iam#iam-roles).
+Use {{site.data.keyword.cloud}} Identity and Access Management (IAM) to define users for platform services and to control user access to resources across {{site.data.keyword.cloud_notm}}. For more information about user roles (Viewer, Editor, Operator, and Administrator), see the [Platform management roles and permissions table](/docs/vmwaresolutions?topic=vmwaresolutions-iam#iam-roles-table).
 
 You must have an IAM account administrator role to complete various tasks. For example, setting account credentials and granting platform access to users.
 

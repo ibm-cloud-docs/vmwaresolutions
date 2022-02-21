@@ -42,7 +42,13 @@ toc:
           - vmonic/completing_checklist.md
           - vmonic/notifications.md
           - vmonic/useraccount.md
-          - vmonic/vmwaresol_ports.md
+          - topicgroup:
+              label: Ports used by VMware Solutions
+              topics:
+              - vmonic/vmwaresol_ports-vlans-subnets.md
+              - vmonic/vmwaresol_ports-deploy-day2ops.md
+              - vmonic/vmwaresol_ports-vmwareuses.md
+              - vmonic/vmwaresol_ports-services.md
       - topicgroup:
           label: VMware Solutions Shared
           topics:
@@ -99,7 +105,20 @@ toc:
               - vcenter/vc_vsphere_70_upgrade.md
               - vcenter/vc_vsphere_upgrade.md
               - vcenter/vc_upgrade-lic.md
-          - vcenter/vc_orderinginstance.md
+          - topicgroup:
+              label: Ordering vCenter Server instances
+              topics:
+              - vcenter/vc_orderinginstance-req.md
+              - vcenter/vc_orderinginstance-sys.md
+              - vcenter/vc_orderinginstance-licensing.md
+              - vcenter/vc_orderinginstance-cluster.md
+              - vcenter/vc_orderinginstance-bare-metal.md
+              - vcenter/vc_orderinginstance-storage.md
+              - vcenter/vc_orderinginstance-edge.md
+              - vcenter/vc_orderinginstance-network.md
+              - vcenter/vc_orderinginstance-services.md
+              - vcenter/vc_orderinginstance-summary.md
+              - vcenter/vc_orderinginstance-procedure.md
           - topicgroup:
               label: Adding, viewing, and deleting clusters
               topics:
@@ -131,7 +150,17 @@ toc:
           - vsphere/vs_vsphereclusteroverview.md
           - vsphere/vs_bom.md
           - vsphere/vs_planning.md
-          - vsphere/vs_orderinginstances.md
+          - topicgroup:
+              label: Ordering new vSphere clusters
+              topics:
+              - vsphere/vs_orderinginstances-req.md
+              - vsphere/vs_orderinginstances-sys.md
+              - vsphere/vs_orderinginstances-licensing.md
+              - vsphere/vs_orderinginstances-bare-metal.md
+              - vsphere/vs_orderinginstances-storage.md
+              - vsphere/vs_orderinginstances-network.md
+              - vsphere/vs_orderinginstances-summary.md
+              - vsphere/vs_orderinginstances-procedure.md
           - vsphere/vs_orderingbasedonexistingconfig.md
           - vsphere/vs_scalingexistingclusters.md
           - vsphere/vs_orderingforclustersoutside.md
@@ -140,7 +169,25 @@ toc:
           topics:
           - vcenter/vrw-overview.md
           - vcenter/vrw-planning.md
-          - vcenter/vrw-orderinginstance.md
+          - topicgroup:
+              label: Ordering VMware Regulated Workloads
+              topics:
+              - vcenter/vrw-orderinginstance-reqs.md
+              - vcenter/vrw-orderinginstance-topology.md
+              - vcenter/vrw-orderinginstance-serv-prereq.md
+              - vcenter/vrw-orderinginstance-config.md
+              - vcenter/vrw-orderinginstance-licensing.md
+              - vcenter/vrw-orderinginstance-location.md
+              - vcenter/vrw-orderinginstance-primary.md
+              - vcenter/vrw-orderinginstance-witness.md
+              - vcenter/vrw-orderinginstance-mgmt.md
+              - vcenter/vrw-orderinginstance-wkld.md
+              - vcenter/vrw-orderinginstance-firewall-app.md
+              - vcenter/vrw-orderinginstance-edge.md
+              - vcenter/vrw-orderinginstance-network.md
+              - vcenter/vrw-orderinginstance-resource.md
+              - vcenter/vrw-orderinginstance-services.md
+              - vcenter/vrw-orderinginstance-procedure.md
           - vcenter/vrw-addingremovingservers.md
           - vcenter/vrw-addingviewingclusters.md
           - vcenter/vrw-view-delete-instance.md
@@ -149,7 +196,19 @@ toc:
           topics:
           - vcenter/scb-overview.md
           - vcenter/scb-planning.md
-          - vcenter/scb-orderinginstance.md
+          - topicgroup:
+              label: Ordering Security and Compliance Readiness Bundle instances
+              topics:
+              - vcenter/scb-orderinginstance-req.md
+              - vcenter/scb-orderinginstance-res-details.md
+              - vcenter/scb-orderinginstance-licensing.md
+              - vcenter/scb-orderinginstance-location.md
+              - vcenter/scb-orderinginstance-cons-work-cluster.md
+              - vcenter/scb-orderinginstance-firewall.md
+              - vcenter/scb-orderinginstance-edge.md
+              - vcenter/scb-orderinginstance-network.md
+              - vcenter/scb-orderinginstance-services.md
+              - vcenter/scb-orderinginstance-procedure.md
           - vcenter/scb-view-delete-instance.md
           - vcenter/scb_addingviewingclusters.md
           - vcenter/scb_addingremovingservers.md
@@ -202,12 +261,6 @@ toc:
               - services/managinghtdc.md
           - services/managing-ss-sap.md
           - topicgroup:
-              label: IBM Spectrum Protect Plus
-              topics:
-              - services/spp_considerations.md
-              - services/spp_ordering.md
-              - services/managingspp.md
-          - topicgroup:
               label: Juniper vSRX
               topics:
               - services/juniper_overview.md
@@ -257,13 +310,7 @@ toc:
               - services/managingzertodr.md
               - services/zerto_ordering_licenses.md
               - services/zerto_managing_licenses.md
-          - topicgroup:
-              label: Professional services
-              topics:
-              - services/managing_imi.md
-              - services/managing_zerto_services.md
-              - services/managing_mcms.md
-              - services/netapp_overview.md
+          - services/managing_zerto_services.md
       - topicgroup:
           label: Enhancing security
           topics:
@@ -278,7 +325,7 @@ toc:
           - topicgroup:
               label: vCenter Server multizone
               topics:
-              - archiref/mission-critical/mcv-archi-bom.md
+              - services/mcv-archi-bom.md
               - services/mcv_addviewdeleteclusters.md
               - services/mcv_addingremovingservers.md
               - services/mcv_addingnfs.md
@@ -304,6 +351,11 @@ toc:
               - services/htkc_considerations.md
               - services/managinghtkc.md
           - services/icp_overview.md
+          - topicgroup:
+              label: IBM Spectrum Protect Plus
+              topics:
+              - services/spp_considerations.md
+              - services/managingspp.md
 
 # links to your REST API docs should be included in the Reference navigation group. For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs.
 # links to your command line reference docs should be included in the Reference navigation group.
@@ -326,7 +378,7 @@ toc:
           - vmonic/audit_user_ids.md
           - vmonic/audit_messages.md
       - topicgroup:
-          label: Solution architectures
+          label: Solution architectures on Classic
           topics:
           - topicgroup:
               label: VMware Solutions architecture
@@ -377,12 +429,6 @@ toc:
               - archiref/nsx/networking_services.md
               - archiref/nsx/multi_site.md
           - topicgroup:
-              label: VMware multizone architecture
-              topics:
-              - archiref/mission-critical/mcv-archi-overview.md
-              - archiref/mission-critical/mcv-archi-design.md
-              - archiref/mission-critical/mcv-archi-comps.md
-          - topicgroup:
               label: Attached storage for vCenter Server architecture
               topics:
               - archiref/attached-storage/storage-benefits.md
@@ -415,6 +461,12 @@ toc:
               - archiref/caveonix/caveonix-step3.md
               - archiref/caveonix/caveonix-step4.md
               - archiref/caveonix/caveonix-terminology.md
+          - topicgroup:
+              label: Fortinet FortiGate solution architecture
+              topics:
+              - archiref/fortigate/overview.md
+              - archiref/fortigate/design.md
+              - archiref/fortigate/implementation.md
           - topicgroup:
               label: VMware HCX solution architecture
               topics:
@@ -449,6 +501,38 @@ toc:
               - archiref/htdc-hpcs/htdc-hpcs-reference-architecture.md
               - archiref/htdc-hpcs/htdc-hpcs-detail.md
               - archiref/htdc-hpcs/htdc-hpcs-deployment.md
+
+      - topicgroup:
+          label: Solution architectures on VPC
+          topics:
+          - topicgroup:
+              label: VMware RYO architecture on VPC
+              topics:
+              - archiref/vpc-ryo/vpc-ryo-overview.md
+              - archiref/vpc-ryo/vpc-ryo-vpc.md
+              - archiref/vpc-ryo/vpc-ryo-infrastructure-physical.md
+              - archiref/vpc-ryo/vpc-ryo-infrastructure-virtual.md
+              - archiref/vpc-ryo/vpc-ryo-commonservice.md
+              - archiref/vpc-ryo/vpc-ryo-infrastructure-mgmt.md
+              - archiref/vpc-ryo/vpc-ryo-considerations.md
+              - archiref/vpc-ryo/vpc-ryo-arch-overview.md
+              - archiref/vpc-ryo/vpc-ryo-vpc-vmw.md
+              - archiref/vpc-ryo/vpc-ryo-subnet-design.md
+              - archiref/vpc-ryo/vpc-ryo-nsx-t.md
+              - archiref/vpc-ryo/vpc-ryo-nsx-t-logical-routers.md
+              - archiref/vpc-ryo/vpc-ryo-nsx-t-vpc-routing.md
+              - archiref/vpc-ryo/vpc-ryo-nsx-t-vpc-edge-services.md
+              - archiref/vpc-ryo/vpc-ryo-scaling.md
+              - archiref/vpc-ryo/vpc-ryo-backingup.md
+
+          - topicgroup:
+              label: Interconnectivity for VMware workloads on VPC
+              topics:
+              - archiref/vpc-interconnectivity/overview.md
+              - archiref/vpc-interconnectivity/vpe.md
+              - archiref/vpc-interconnectivity/transit-gateway.md
+              - archiref/vpc-interconnectivity/direct-link.md
+              - archiref/vpc-interconnectivity/vpn.md
 
       - topicgroup:
           label: Solution guides

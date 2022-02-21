@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2021
+  years: 2016, 2022
 
-lastupdated: "2021-10-13"
+lastupdated: "2022-02-08"
 
 keywords: user IDs vCenter, PSC user, user ID service
 
@@ -86,8 +86,9 @@ HTTP is used for vCenter setup, configuration, and VMware operations such as add
 | `prod-HCX-dynamicID-@domainName` | Used for installation and configuration of the VMware HCX™ service. |
 | `prod-Zerto-dynamicID-@domainName` | Used for installation and configuration of the Zerto service. |
 {: caption="Table 5. Service user IDs" caption-side="top"}
+{: #audit_user_ids-services-table}
 
-In the previous table, the following notations are used:
+In the [previous table](#audit_user_ids-services-table), the following notations are used:
 * `dynamicID` The 8 - 10 characters that generated dynamically during the service installation.
 * `shortID` The 5 characters that generated dynamically during the service installation.
 * `domainName` The domain name of your instance.

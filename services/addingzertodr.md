@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-02-08"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -20,13 +20,13 @@ subcollection: vmwaresolutions
 
 The Zerto service integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware® virtual environment on {{site.data.keyword.cloud}}. Zerto is supported on VMware vCenter Server® instances with:
 
-* VMware NSX-V
 * VMware NSX-T™ 3.1 or later with VMware vSphere® 7.0
+* VMware NSX-V
 {: shortdesc}
 
 {{site.data.keyword.vmwaresolutions_short}} offers promotions for some add-on services. Promotional pricing offers a number of months free of charge for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
 
-The current Zerto version that is installed is 9.0u1.
+The current Zerto version that is installed is 9.0u2.
 {: note}
 
 ## Before you begin
@@ -70,7 +70,7 @@ Zerto Virtual Replication Appliance (VRA) components are deployed only into the 
 ### Licenses and fees
 {: #addingzertodr-specs-licenses}
 
-Zerto Replication version 9.0u1 license
+Zerto Replication version 9.0u2 license
 
 ## Related links
 {: #addingzertodr-related}
@@ -79,6 +79,6 @@ Zerto Replication version 9.0u1 license
 * [Managing Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-managingzertodr)
 * [Ordering Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering_licenses)
 * [Managing Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
-* [Managed Disaster Recovery Services](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services)
+* [Managed Disaster Recovery Services by Kyndryl](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services)
 * [Zerto](https://www.zerto.com){: external}
 * [Zerto product documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}

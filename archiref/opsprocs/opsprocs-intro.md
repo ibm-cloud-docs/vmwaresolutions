@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-17"
 
 subcollection: vmwaresolutions
 
@@ -67,7 +67,7 @@ The following list contains the most common procedures, guides, and tasks:
    * vSphere ESXi™ host procedures
    * Storage procedures
    * Network procedures
-* Alarms - Vmware vSphere® includes an events and alarms subsystem, which tracks events that occur in the vSphere environment and makes this information available in vCenter. This section describes this subsystem and how to enable and use the alarms in your enterprise.
+* Alarms - VMware vSphere® includes an events and alarms subsystem, which tracks events that occur in the vSphere environment and makes this information available in vCenter. This section describes this subsystem and how to enable and use the alarms in your enterprise.
 * Proactive daily checks - These checks enable system administrators to keep the environment healthy. When carried out daily, it prevents many common issues that are related to capacity and performance from impacting your workloads.
 * Troubleshooting - Even when you carry out proactive daily checks, issues occur that impact your workloads. Therefore, you need to fix the underlying issue as quickly as possible. These troubleshooting guides and some common troubleshooting scenarios assist system administrators with identifying and fixing these issues quickly.
 * Compliance - The compliance guide provides some insights on maintaining compliance of the environment against a regulatory compliance regime or industry best practice. The focus of this guide is on the VMware hardening guide, which is a number of documented lists of best practice for a VMware environment.

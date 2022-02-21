@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-12-02"
+lastupdated: "2022-01-27"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -133,7 +133,7 @@ Encryption enabled storage policies are available to all organization virtual da
 * 0.25 IOPS/GB - Encrypted. Storage tier with a maximum throughput of 0.25 IOPS/GB.
 * VSAN - Encrypted. No IOPS limitation.
 
-For more information about the VM encryption limitations for VMware Cloud Director 10.1, see [Enabling VM encryption on storage policies of an organization virtual data center](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-80F58C1D-A97E-43FE-8E41-E9242A1D2332.html){: external}.
+For more information about the VM encryption limitations for VMware Cloud Director 10.1, see [Enabling VM encryption on storage policies of an organization virtual data center]https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-80F58C1D-A97E-43FE-8E41-E9242A1D2332.html){: external}.
 
 The encryption storage policies do not currently work with VM customizations. IBM is working closely with VMware to resolve this issue in a future release. In the meantime, you can use encryption storage policies after a VM is deployed and customized by using the unencrypted storage policies. For more information, see [Changing the general properties of a virtual machine](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-change-properties).
 {: note}

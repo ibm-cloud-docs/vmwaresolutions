@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-01-31"
 
 keywords: view Security and Compliance Readiness Bundle, view Security and Compliance Readiness Bundle details, delete Security and Compliance Readiness Bundle, view scb, delete scb
 
@@ -25,4 +25,4 @@ If you want to release the components that you ordered in a Security and Complia
 {: #scb-view-delete-instance-related}
 
 * [Security and Compliance Readiness Bundle overview](/docs/vmwaresolutions?topic=vmwaresolutions-scb-overview)
-* [Ordering Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance)
+* [Ordering Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-req)

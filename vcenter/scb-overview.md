@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-12-06"
+lastupdated: "2022-01-31"
 
 keywords: security and compliance readiness bundle introduction, scb introduction, scb technical specifications
 
@@ -40,5 +40,5 @@ The following options or settings are not available for Security and Compliance 
 {: #scb-overview-related}
 
 * [Requirements and planning for Security and Compliance Readiness Bundle](/docs/vmwaresolutions?topic=vmwaresolutions-scb-planning)
-* [Ordering Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance)
+* [Ordering Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-req)
 * [Viewing and deleting Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-view-delete-instance)

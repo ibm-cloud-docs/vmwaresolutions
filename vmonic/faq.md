@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-02-18"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -24,7 +24,7 @@ Find answers to frequently asked questions about the VMware® Solutions Dedicate
 {: faq}
 {: support}
 
-* **IBMid account**. This account is required to access the {{site.data.keyword.vmwaresolutions_full}}  console. The console is a stand-alone user interface that is separate from the {{site.data.keyword.slportal}}. For more information, see [Getting started](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started).
+* **IBMid account**. This account is required to access the {{site.data.keyword.vmwaresolutions_full}} console. The console is a stand-alone user interface that is separate from the {{site.data.keyword.slportal}}. For more information, see [Getting started](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started).
 * **{{site.data.keyword.cloud}} account**. This account is required for provisioning. You can sign up for an {{site.data.keyword.cloud_notm}} account by using an existing **IBMid** or by creating a new **IBMid**.
 * **{{site.data.keyword.cloud_notm}} infrastructure account**. This account is used to log in to the {{site.data.keyword.cloud_notm}} infrastructure customer portal that provides some additional function to manage infrastructure products and services. You can get an {{site.data.keyword.cloud_notm}} infrastructure account by upgrading your **{{site.data.keyword.cloud_notm}} account** to a billable account, or by linking your existing {{site.data.keyword.cloud_notm}} infrastructure account with your {{site.data.keyword.cloud_notm}} account. The {{site.data.keyword.cloud_notm}} infrastructure account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts) and [{{site.data.keyword.cloud_notm}} infrastructure account requirements](/docs/vmwaresolutions?topic=vmwaresolutions-cloud-infra-acct-req).
 
@@ -92,7 +92,13 @@ For a new vCenter Server instance, you can set the name of the initial cluster t
 {: #faq-patches}
 {: faq}
 
-IBM provides ongoing updates to the IBM code by deploying the IBM CloudDriver virtual server instance (VSI) on demand. Updates and patches for the IBM management components are applied automatically, as needed. IBM does not provide ongoing updates to add-on services such as Zerto or Veeam®. Obtaining and installing these updates is your responsibility.
+IBM provides ongoing updates to the IBM code by deploying the IBM CloudDriver virtual server instance (VSI) on demand. Updates and patches for the IBM management components are applied automatically, as needed.
+
+When you review the summary details for each instance, the **Properties** section displays the **Current version**. The current version is the IBM code version that is set when the instance is initially ordered. Day 2 operations such as adding or removing hosts, storage, services, or clusters are automatically updated with the latest IBM code. Customer upgrade to the latest IBM code version is never required. \
+The IBM code version is separate from the VMware and service software versions. When the IBM code version is updated, the VMware software and service versions already installed for the instance remain unchanged.
+{: note}
+
+IBM does not provide ongoing updates to add-on services such as Zerto or Veeam®. Obtaining and installing these updates is your responsibility.
 
 Newly deployed VMware ESXi™ servers and clusters are patched with recent, but not necessarily the most recent, VMware ESXi updates.
 

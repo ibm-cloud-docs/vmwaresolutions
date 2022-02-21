@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-17"
 
 subcollection: vmwaresolutions
 
@@ -52,4 +52,4 @@ The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads Active Direc
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
 * [HyTrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
 * [HyTrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
-* [IBM Cloud Hyper Protect Crypto Services API](https://cloud.ibm.com/apidocs/hs-crypto)
+* [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)

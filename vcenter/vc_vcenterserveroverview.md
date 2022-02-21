@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-23"
+lastupdated: "2022-02-17"
 
 keywords: vCenter Server, vCenter Server architecture, tech specs vCenter Server
 
@@ -23,8 +23,6 @@ VMware vCenter Server® is a hosted private cloud that delivers the VMware vSphe
 In many cases, the entire environment can be provisioned in less than a day and the bare metal infrastructure can rapidly and elastically scale the compute capacity up and down as needed.
 
 After initial instance deployment, you can increase shared storage by ordering more Network File System (NFS) file shares from the {{site.data.keyword.slportal}} and by manually attaching them to all VMware ESXi™ servers in a cluster. You can also take advantage of VMware vSAN™ as a storage option. To increase the vSAN-based storage capacity of a vSAN cluster, you can add more ESXi servers post-deployment.
-
-For dedicated storage, see [NetApp® ONTAP® Select](/docs/vmwaresolutions?topic=vmwaresolutions-netapp).
 
 ## vCenter Server with NSX-T architecture
 {: #vc_vcenterserveroverview-nsx-t-archi}
@@ -140,7 +138,7 @@ After deployment, you can add NFS storage shares to an existing NFS or vSAN clus
 
 The vSAN option offers customized configurations, with various options for disk type, size, and quantity:
 * Disk quantity - 2, 4, 6, 8, or 10
-* Storage disk - 960 GB SSD SED, 1.9 TB SSD SED, 3.8 TB SSD SED, or 7.68 TB SSD SED
+* Storage disk - 960 GB SSD, 1.9 TB SSD, 3.8 TB SSD, or 7.68 TB SSD (SSD SED disks are supported for Skylake servers.)
 
    In addition, two cache disks of 960 GB are also ordered per host.
 
@@ -271,8 +269,8 @@ The network architecture has the following specifications:
 ## Related links
 {: #vc_vcenterserveroverview-related}
 
-* [vCenter Server Software Bill of Materials](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
+* [vCenter Server BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
 * [Planning vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
-* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance)
+* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Attached storage for vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-storage-benefits#storage-benefits)
 * [Expanding File Share capacity](/docs/FileStorage?topic=FileStorage-expandCapacity#expandCapacity)

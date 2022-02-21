@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-01-21"
 
 subcollection: vmwaresolutions
 
@@ -98,7 +98,7 @@ For more information, see [vRealize Automation Load Balancing](https://docs.vmwa
 Deployment of the vROps appliance requires six IP addresses from the Tooling private portable subnet. Network connectivity vROps requires access to the following items.
 * vCenter Appliance
 * vRealize Log Insight Appliance
-* NSX-V/T Appliances
+* NSX-T or NSX-V Appliances
 * Tools Expansion VXLAN
 * Customer Networks
 * NTP server (`time.services.softlayer.com`)

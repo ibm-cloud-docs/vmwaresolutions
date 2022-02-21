@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-11-09"
+lastupdated: "2022-02-19"
 
 keywords: VMware HCX standalone, HCX on-premises, tech specs HCX
 
@@ -59,8 +59,8 @@ You must complete the following tasks for a successful installation of the on-pr
 4. After the HCX Manager deployment is completed, use the **HCX Manager Admin Console** to activate the on-premises HCX Manager. To obtain an activation key for the on-premises HCX Manager, order an on-premises HCX instance in the {{site.data.keyword.vmwaresolutions_short}} console. For more information, see [Ordering on-premises HCX instances](/docs/vmwaresolutions?topic=vmwaresolutions-standalone_orderingserviceinstances).
 5. If you used a self-signed SSL certificate when you order the HCX service, you must import the certificate into the on-premises HCX Manager by completing the following steps.
     1. In the on-premises **HCX Manager Admin Console**, click the **Administration** tab.
-    2. From the left navigation pane, click **Trusted CA Certificate** and then click **IMPORT** on the right.
-    3. Click **URL** and then enter the URL of the certificate you want to apply. The URL is the **HCX Cloud IP** (``https://<cloud-side public IP>``), which you can find on the HCX service details page in the {{site.data.keyword.vmwaresolutions_short}} console.
+    2. From the left navigation pane, click **Trusted CA Certificate**, and then click **IMPORT** on the right.
+    3. Click **URL**, and then enter the URL of the certificate you want to apply. The URL is the **HCX Cloud IP** (``https://<cloud-side public IP>``), which you can find on the HCX service details page in the {{site.data.keyword.vmwaresolutions_short}} console.
     4. Click **APPLY**.
 
 You now completed the basic setup of the on-premises HCX Manager. You can proceed to pair the on-premises HCX site with the cloud-side HCX site.

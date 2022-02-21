@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-04"
+lastupdated: "2022-01-31"
 
 keywords: vSphere scale cluster, scale vSphere, external vSphere cluster
 
@@ -54,6 +54,6 @@ The vSphere clusters are not displayed on the **Resources** page, together with 
 ## Related links
 {: #vs_orderingforclustersoutside-related}
 
-* [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances)
+* [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
 * [Ordering vSphere clusters based on existing configurations](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderingbasedonexistingconfig)
 * [Scaling existing vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_scalingexistingclusters)

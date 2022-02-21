@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-18"
 
 subcollection: vmwaresolutions
 
@@ -38,7 +38,7 @@ The following terminology is used to define the account types:
 * User IDs - These IDs are assigned to people who require access to the system.
 * Service IDs - These IDs are used by the IC4V automation or used by software components.
 * Local IDs - These IDs are local to the application.
-* SSH IDs - These IDs are used to access the Linux® VMs that host the applications
+* SSH IDs - These IDs are used to access the Linux® VMs that host the applications.
 
 ## VMware Solutions infrastructure AD domain
 {: #vrw-iam-vrealize-ad}
@@ -130,4 +130,4 @@ vRLI authentication configuration is configured to use Active Directory to conne
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
 * [HyTrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
 * [HyTrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
-* [IBM Cloud Hyper Protect Crypto Services API](https://cloud.ibm.com/apidocs/hs-crypto)
+* [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)

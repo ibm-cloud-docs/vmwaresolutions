@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2021
 
-lastupdated: "2021-10-21"
+lastupdated: "2021-12-15"
 
 subcollection: vmwaresolutions
 
@@ -47,7 +47,7 @@ The VMware Solutions offerings bring the following benefits:
 * Enabling consistent management and governance of the deployed hybrid cloud by providing full administrative access to virtualization management, thus preserving your existing VMware tools, scripts, and investments in training.
 * Using VMware expertise at global scale with IBM Professional and Managed Services spanning 40+ {{site.data.keyword.cloud_notm}} data centers worldwide.
 
-**Next topic:** [IBM Cloud for VMware Solutions components](/docs/vmwaresolutions?topic=vmwaresolutions-design_overview)
+**Next topic:** [VMware Solutions components](/docs/vmwaresolutions?topic=vmwaresolutions-design_overview)
 
 ## Related links
 {: #solution_overview-related}

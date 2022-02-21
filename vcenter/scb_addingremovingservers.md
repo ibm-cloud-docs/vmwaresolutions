@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-01-31"
 
 keywords: add hosts for Security and Compliance Readiness Bundle, add servers for Security and Compliance Readiness Bundle, remove hosts from  Security and Compliance Readiness Bundle
 
@@ -27,5 +27,5 @@ The process to add and delete servers for Security and Compliance Readiness Bund
 {: #scb_addingremovingservers-related}
 
 * [Requirements and planning for Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
-* [Ordering Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance)
+* [Ordering Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-req)
 * [Adding, viewing, and deleting clusters for Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb_addingviewingclusters)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-11-22"
+lastupdated: "2022-02-10"
 
 keywords: planning vCenter Server, data center, vCenter Server data centers
 
@@ -21,7 +21,7 @@ Plan your instance based on the {{site.data.keyword.cloud}} data center location
 
 * New deployments of vCenter Server instances with VMware vSphere® 6.5 are not supported.
 * New deployments of vCenter Server multizone instances are not supported.
-* Add-on services support varies between vCenter Server with NSX-V and vCenter Server with NSX-T™ instances.
+* Add-on services support varies between vCenter Server with NSX-T™ and vCenter Server with NSX-V instances.
 
 ## IBM Cloud account requirements
 {: #vc_planning-account-req}
@@ -33,48 +33,48 @@ The {{site.data.keyword.cloud_notm}} account that you are using must meet certai
 
 The vCenter Server deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements. The following {{site.data.keyword.cloud_notm}} data centers are available for vCenter Server deployment.
 
-| Region | {{site.data.keyword.cloud_notm}} data center | Pod | Server options for NSX-V | Server options for NSX-T[^nsx-t-7] |
+| Geography | Data center | Pod | Server options for NSX-T[^nsx-t-7] | Server options for NSX-V |
 |:----------------------|:-------|:---------------|:-----------|:------|
-| South America | Sao Paulo 01 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| South America | Sao Paulo 04 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
-| South America | Sao Paulo 05 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
-| NA South | Dallas 09 | 01-06 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| NA South | Dallas 10 | 01-04 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| NA South | Dallas 12 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| NA South | Dallas 13 | 01-03 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| NA South | Mexico 01 | 01 | Skylake, Cascade Lake, SAP-certified[^sap-mex01] | Skylake, Cascade Lake, SAP-certified |
-| Asia-Pacific| Chennai 01 | 01 | Skylake, Cascade Lake, SAP-certified[^sap-che01] | Skylake, Cascade Lake |
-| Asia-Pacific | Hong Kong 02 | 02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Asia-Pacific | Osaka 21 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
-| Asia-Pacific | Osaka 22 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
-| Asia-Pacific | Osaka 23 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
-| Asia-Pacific | Seoul 01 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Asia-Pacific | Singapore 01| 02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Asia-Pacific | Sydney 01 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Asia-Pacific | Sydney 04 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Asia-Pacific | Sydney 05 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Asia-Pacific | Tokyo 02 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Asia-Pacific | Tokyo 04 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Asia-Pacific | Tokyo 05 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Europe | Amsterdam 03 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Europe | Frankfurt 02 | 01-03 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Europe | Frankfurt 04 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Europe | Frankfurt 05 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Europe | London 02 | 01-02 | Skylake, Cascade Lake | Skylake, Cascade Lake, SAP-certified |
-| Europe | London 04 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Europe | London 05 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Europe | London 06 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| Europe | Milan 01 | 01 | Skylake, Cascade Lake, SAP-certified[^sap-mil01] | Skylake, Cascade Lake, SAP-certified |
-| Europe | Paris 01 | 01 | Skylake, Cascade Lake, SAP-certified[^sap-par01] | Skylake, Cascade Lake, SAP-certified |
-| NA East | Montreal 01 | 01-02 | Skylake, Cascade Lake, SAP-certified[^sap-mon01] | Skylake, Cascade Lake, SAP-certified |
-| NA East | Toronto 01 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| NA East | Toronto 04 | 01 | Cascade Lake | Cascade Lake |
-| NA East | Toronto 05 | 01 | Cascade Lake | Cascade Lake |
-| NA East | Washington DC 04 | 01-05 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| NA East | Washington DC 06 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| NA East | Washington DC 07 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| NA West | San Jose 03 | 01-02 | Skylake, Cascade Lake | Skylake, Cascade Lake, SAP-certified |
-| NA West | San Jose 04 | 01 | Skylake, Cascade Lake | Skylake, Cascade Lake, SAP-certified |
+| Asia-Pacific| CHE01 | 01 | Skylake, Cascade Lake | Skylake, Cascade Lake, SAP-certified[^sap-che01] |
+| Asia-Pacific | HKG02 | 02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Asia-Pacific | OSA21 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
+| Asia-Pacific | OSA22 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
+| Asia-Pacific | OSA23 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
+| Asia-Pacific | SEO01 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Asia-Pacific | SNG01| 02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Asia-Pacific | SYD01 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Asia-Pacific | SYD04 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Asia-Pacific | SYD05 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Asia-Pacific | TOK02 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Asia-Pacific | TOK04 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Asia-Pacific | TOK05 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Europe | AMS03 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Europe | FRA02 | 01-03 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Europe | FRA04 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Europe | FRA05 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Europe | LON02 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake |
+| Europe | LON04 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Europe | LON05 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Europe | LON06 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Europe | MIL01 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified[^sap-mil01] |
+| Europe | PAR01 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified[^sap-par01] |
+| NA East | MON01 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified[^sap-mon01] |
+| NA East | TOR01 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| NA East | TOR04 | 01 | Cascade Lake | Cascade Lake |
+| NA East | TOR05 | 01 | Cascade Lake | Cascade Lake |
+| NA East | WDC04 | 01-05 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| NA East | WDC06 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| NA East | WDC07 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| NA South | DAL09 | 01-06 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| NA South | DAL10 | 01-04 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| NA South | DAL12 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| NA South | DAL13 | 01-03 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| NA South | MEX01 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified[^sap-mex01] |
+| NA West | SJC 03 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake |
+| NA West | SJC 04 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake |
+| South America | SAO 01 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| South America | SAO 04 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
+| South America | SAO 05 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for vCenter Server instances" caption-side="top"}
 
 [^nsx-t-7]: Skylake is not supported for vSphere 7 instances
@@ -99,7 +99,7 @@ You are responsible for maintaining and ensuring the availability of all instanc
 
 You can order services for your instance based on your needs, for example, disaster recovery. For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 
-Services support varies between vCenter Server with NSX-V and vCenter Server with NSX-T instances.
+Services support varies between vCenter Server with NSX-T and vCenter Server with NSX-V instances.
 {: important}
 
 ### Planning for VMware HCX
@@ -127,6 +127,6 @@ For more information about capacity considerations, see [Scaling capacity](/docs
 {: #vc_planning-related}
 
 * [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
-* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance)
+* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Expanding and contracting capacity for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
 * [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)

@@ -1,0 +1,79 @@
+---
+
+copyright:
+
+  years:  2016, 2022
+
+lastupdated: "2022-02-01"
+
+keywords: vSphere order cluster, order vSphere, order vSphere cluster
+
+subcollection: vmwaresolutions
+
+---
+
+{{site.data.keyword.attribute-definition-list}}
+
+# Licensing settings
+{: #vs_orderinginstances-licensing-settings}
+
+Select the VMware® components to be ordered with your cluster and specify the licensing option for the components.
+
+## Component bundles for IBM Business Partner users
+{: #vs_orderinginstances-component-bundles-for-bp-users}
+
+If you are an IBM® Business Partner user, you can select a component license bundle when you order a new VMware vSphere® cluster. The following bundles are available:
+
+| Bundle | Components |
+|:------ |:---------- |
+| Standard with Management | vSphere Enterprise Plus, VMware vCenter Server® Standard, vRealize® Log Insight™, vRealize Operations™ Enterprise |
+| Advanced                 | vSphere Enterprise Plus, vCenter Server Standard, vRealize Log Insight, vCloud Director, NSX® Base |
+| Advanced with Networking | vSphere Enterprise Plus, vCenter Server Standard, vRealize Log Insight, NSX Advanced |
+| Advanced with Networking and Management | vSphere Enterprise Plus, vCenter Server Standard, vRealize Log Insight, vRealize Operations Enterprise, vCloud Director, NSX Enterprise |
+{: caption="Table 1. IBM Business Partner component bundles for vSphere clusters" caption-side="top"}
+
+You can also include the following VMware components in your order:
+* VMware vSAN™
+* VMware Site Recovery Manager
+* VMware vRealize Automation Enterprise
+
+For IBM Business Partner users, the Bring Your Own License (BYOL) option is not available.
+{: note}
+
+## Individual components for non-Business Partner users
+{: #vs_orderinginstances-individual-components-for-non-bp-users}
+
+If you're a non-Business Partner, you can select the following components for your vSphere cluster:
+* VMware vSphere Enterprise Plus 7.0u2 or 6.7u3
+* VMware vCenter Server
+* VMware NSX
+   * For vSphere 7.0u2 instances - Data Center SP Base, Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus
+   * For vSphere 6.7u3 instances - Base, Advanced, or Enterprise edition
+* VMware vSAN
+* VMware Site Recovery Manager
+* VMware vRealize Automation Enterprise
+* VMware vRealize Operation Enterprise
+* VMware vRealize Log Insight
+
+Small differences exist between NSX-T Data Center and Data Center SP editions. For more information, see [Product offerings for VMware NSX-T Data Center 3.1.x (80866)](https://kb.vmware.com/s/article/80866){: external}.
+
+The VMware vSAN component is not available when you order VMware vSphere Enterprise Plus 6. If you plan to use your own license for VMware vSphere Enterprise Plus 6, an {{site.data.keyword.cloud_notm}} infrastructure ticket is opened on your behalf. The ticket requests that the vSphere licenses of the ordered {{site.data.keyword.cloud_notm}} bare metal servers are replaced with your provided licenses.
+
+## Licensing options
+{: #vs_orderinginstances-licensing-options}
+
+Using individual license keys together with the combined license keys does not meet the payment requirements for the licenses you need.
+{: important}
+
+You have the following options for licensing the selected VMware components:
+* **Include license with purchase**: In this case, a new license for the VMware component is purchased on your behalf. A combined VMware license is generated to match the cluster size of the order.
+
+   If you choose to purchase any license, except for vSphere Enterprise Plus and vCenter Server, and you order multiple VMware ESXi™ servers, an {{site.data.keyword.cloud_notm}} ticket is opened automatically on your behalf to combine license keys. You are responsible to follow up with the ticket to ensure that you use only the license keys that the VMware Solutions Support team generates.
+
+* **I will provide the license**: In this case, you use your own license (BYOL) for the VMware component. You do not enter your BYOL licenses when you create your order for the first time, but you do it later when the vSphere cluster is created.
+
+## Related links
+{: #vs_orderinginstances-licensing-related}
+
+* [Bare metal server settings](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-bare-metal-settings)
+* [Procedure to order vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure#vs_orderinginstances-procedure-related)

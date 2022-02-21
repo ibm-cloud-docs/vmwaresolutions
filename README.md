@@ -2,16 +2,16 @@
 
 copyright:
 
-  years: 2016, 2020
+  years: 2016, 2022
 
-lastupdated: "2020-03-30"
+lastupdated: "2022-01-07"
 
 subcollection: vmwaresolutions
 
 ---
 
-# Customer-facing documentation for IBM Cloud for VMware Solutions
+# User documentation set for IBM Cloud for VMware Solutions
 
-Internal-only documentation: https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-getting-started
+Internal-only documentation: https://test.cloud.ibm.com/docs/vmwaresolutions
 
-Customer-facing documentation: https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-getting-started
+Customer-facing documentation: https://cloud.ibm.com/docs/vmwaresolutions

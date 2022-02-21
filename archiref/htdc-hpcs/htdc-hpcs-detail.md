@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-18"
 
 subcollection: vmwaresolutions
 
@@ -55,16 +55,16 @@ The following figure shows the following communication flows that are required b
 In the vCenter Server instance deployment these flows are allowed, but would need to be explicitly allowed if the default firewalls were changed.
 
 * The HTKC servers need to communicate to the following infrastructure services:
-   * DNS - Outbound UDP/53.
-   * SMTP - Outbound mail server, typically TCP/25 (optional).
-   * SYSLOG - An outbound UDP in the range 25 - 65535 if you want to use a remote syslog server (optional). KeyControl™ does not currently support TCP for syslog.
-   * Backup and Restore through NFS (optional) - Inbound TCP and UDP/111 (`portmapper`), 2046 (`lockd`), 2047 (`rpc statd`), 2048 (`rcpmountd`), and 2049 (default NFS port).
-   * NTP - Outbound NTP servers, typically UDP/123 or TCP/123.
-   * {{site.data.keyword.cloud_notm}} IAM - Outbound TCP/443. Required for HPCS.
+   * DNS - Outbound UDP/53
+   * SMTP - Outbound mail server, typically TCP/25 (optional)
+   * SYSLOG - An outbound UDP in the range 25 - 65535 if you want to use a remote syslog server (optional). KeyControl™ does not currently support TCP for syslog
+   * Backup and Restore through NFS (optional) - Inbound TCP and UDP/111 (`portmapper`), 2046 (`lockd`), 2047 (`rpc statd`), 2048 (`rcpmountd`), and 2049 (default NFS port)
+   * NTP - Outbound NTP servers, typically UDP/123 or TCP/123
+   * {{site.data.keyword.cloud_notm}} IAM - Outbound TCP/443. Required for HPCS
 
 * The HTKC servers need to communicate to each other:
-   * TCP/443 (HTTPS).
-   * TCP/8443 and 2525.
+   * TCP/443 (HTTPS)
+   * TCP/8443 and 2525
 
    HTKC uses the IP address 169.254.119.1 for internal communication. This IP address must be reserved for HTKC.{ :note}
 

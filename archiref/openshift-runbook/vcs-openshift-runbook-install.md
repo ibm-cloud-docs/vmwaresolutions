@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-10"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 Red Hat OpenShift 4 introduced the following concepts:
 
 * Installer Provisioned Infrastructure (IPI) - For use on supported platforms, only AWS currently. The installer provisions the underlying infrastructure for the cluster and it configures the cluster.
-* User Provisioned Infrastructure (UPI)  -  For use on bare metal, vSphere, and other clouds that do not support IPI. The user is required to provision the infrastructure; compute, network, storage that the OpenShift cluster is hosted on. The installer configures only the cluster.
+* User Provisioned Infrastructure (UPI) - For use on bare metal, vSphere, and other clouds that do not support IPI. The user is required to provision the infrastructure; compute, network, storage that the OpenShift cluster is hosted on. The installer configures only the cluster.
 
 These instructions use the OpenShift installer in the UPI mode. Terraform is used to provision the seven VMs for the bootstrap, control-plane, and compute nodes. The following process is completed:
 
@@ -30,30 +30,31 @@ These instructions use the OpenShift installer in the UPI mode. Terraform is use
 5. The `terraform.tfvars` file is created to hold the variables for the Terraform installation.
 6. Terraform is run, which provisions the VMs. The VMs are started, configured, and the OpenShift cluster is created.
 
-For more information about installing the OpenShift user provider infrastructure, see [Internet and Telemetry access for OpenShift Container Platform](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}.
+For more information about installing the OpenShift user provider infrastructure, see [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}.
 
 ## Creating the OpenShift Installer yaml file
 {: #openshift-runbook-runbook-install-yaml}
 
-Use the following table to document the parameters you need for your deployment, examples are shown that match the deployment described in this document.
+Use the following table to document the parameters you need for your deployment. Examples are shown that match the deployment described in this document.
 
 * The SSH key can be copied after it is displayed by using the command: `cat /root/.ssh/id_rsa.pub`.
-* The pull secret collected from Red Hat. For more information, see [OpenShift Infrastructure Providers](https://cloud.redhat.com/openshift/install/vsphere/user-provisioned){: external}.
+* The pull secret collected from Red Hat. For more information, see [OpenShift infrastructure providers](https://cloud.redhat.com/openshift/install/vsphere/user-provisioned){: external}(requires logging in to your Red Hat account).
 
 | Parameters | Example | Your deployment |
 |:---------- |:------- |:--------------- |
 | Base domain | `dallas.ibm.local` | |
 | Metadata name | `ocp` | |
 | vCenter Server IP address | 10.208.17.2 | |
-| UserName | `administrator@vsphere.local` | |
+| Username | `administrator@vsphere.local` | |
 | Password | `s3cretPassw0rd` | |
 | vCenter Server instance data center | `datacenter1` | |
 | vCenter Server instance datastore | `vsanDatastore` | |
 | Pull Secret | | |
 | Public SSH Key| | |
 {: caption="Table 1. File parameters for install-config.yaml" caption-side="top"}
+{: #openshift-runbook-runbook-install-yaml-table}
 
-Using the following install-config.yaml file shown in the figure, update it using your deployment details from the previous table:
+Using the following install-config.yaml file shown in the figure, update it using your deployment details from the [previous table](#openshift-runbook-runbook-install-yaml-table):
 
 1. Update the base domain name.
 2. Update the metadata name with the OpenShift cluster name.
@@ -61,7 +62,7 @@ Using the following install-config.yaml file shown in the figure, update it usin
    * vCenter IP address.
    * vCenter username and password.
    * Datacenter name.
-   * DataStore name.
+   * Datastore name.
 4. Paste the Pull Secret.
 5. Paste the SSH key.
 6. The following figure shows the install-config.yaml file. Copy the file to the clipboard.
@@ -261,26 +262,27 @@ You can copy the ignition files after you use the following commands to display 
 | Parameter | Example | Your deployment |
 |:--------- |:------- |:--------------- |
 | bootstrap_ip | 192.168.133.9| |
-| control_plane_ips | 192.168.133.10  \n 192.168.133.11  \n 192.168.133.12| |
-| compute_ips | 192.168.133.13  \n 192.168.133.14  \n 192.168.133.15| |
+| control_plane_ips | 192.168.133.10 \n 192.168.133.11 \n 192.168.133.12| |
+| compute_ips | 192.168.133.13 \n 192.168.133.14 \n 192.168.133.15| |
 | machine_cidr | 192.168.133.0/24| |
-| cluster_id | ocp| |
+| cluster_id | `ocp`| |
 | cluster_domain | ocp.dallas.ibm.local| |
 | base_domain | dallas.ibm.local| |
 | vsphere_server| 10.208.17.2| |
 | vsphere_user | administrator@vsphere.local|
 | vsphere_password | s3cretPassw0rd | |
-| vsphere_cluster | cluster1 | |  
+| vsphere_cluster | cluster1 | |
 | vsphere_datacenter | datacenter1 | |
 | vsphere_datastore | vsanDatastore| |
-| vm_template | rhcos-latest | |
+| vm_template | `rhcos-latest` | |
 | vm_network | vxw-dvs-22-virtualwire-24-sid-6011-OpenShift-LS | |
 | bootstrap_ignition_url | `http://192.168.133.08/bootstrap.ign` | |
 | control_plane_ignition | |
 | compute_ignition | |
 {: caption="Table 3. ignition.tf file parameters" caption-side="top"}
+{: #openshift-runbook-runbook-install-terraform-tfars-table}
 
-After you use the following terraform-tvars example file, use your deployment details from the previous table to update the file. Copy the file to the clipboard.
+After you use the following terraform-tvars example file, use your deployment details from the [previous table](#openshift-runbook-runbook-install-terraform-tfars-table) to update the file. Copy the file to the clipboard.
 
 ```bash
 bootstrap_ip = "192.168.133.9"
@@ -311,7 +313,7 @@ END_OF_WORKER_IGNITION
 ```
 {: caption="Figure 2. terraform.tfvars example file" caption-side="bottom"}
 
-The terraform.tfvars file is created as follows:
+The terraform.tfvars file is created.
 1. In the SSH session to the bastion node, with root privileges, use the following command to open the file; `vi /opt/ocpinstall/installer/upi/vsphere/terraform.tfvars`.
 2. Type `i` to enter insert mode, paste the file contents.
 3. Press Esc, then type `:wq` to save the file and exit the vi editor.
@@ -319,7 +321,7 @@ The terraform.tfvars file is created as follows:
 ### main.tf - Remove the DNS section
 {: #openshift-runbook-runbook-install-terraform-main}
 
-Remove the dns module section as the file expects to use AWS route 53 for DNS. The main.tf file is updated as follows:
+Remove the dns module section as the file expects to use AWS route 53 for DNS. The main.tf file is updated.
 1. In the SSH session to the bastion node, with root privileges, use the following command to open the file:
    `vi /opt/ocpinstall/installer/upi/vsphere/main.tf`
 2. Type `i` to enter insert mode.
@@ -346,13 +348,13 @@ module "dns" {
 ## Run Terraform
 {: #openshift-runbook-runbook-install-terraform-run}
 
-Terraform is used to deploy the VMs for bootstrap, control-plane nodes, and compute nodes. Terraform operates as follows:
+Terraform is used to deploy the VMs for bootstrap, control-plane nodes, and compute nodes. Terraform operates in the following way:
 
 * `terraform init` - initializes the Terraform plug-ins and modules.
 * `terraform plan` - completes a dry run on the templates, ensuring it can connect to the vCenter.
 * `terraform apply` - runs the templates. The auto-approve switch can be added so that confirmation of each deployment is not required.
 
-After Terraform provisions the VMs, the OpenShift cluster bootstraps itself:
+After Terraform provisions the VMs, the OpenShift cluster bootstraps itself.
 
 1. The bootstrap node starts and begins hosting the remote resources that are required for the control-plane to start.
 2. The control-plane nodes fetch the remote resources from the bootstrap node and finish starting.
@@ -417,7 +419,7 @@ terraform apply -auto-approve
 
 The password for the user that was created during installation can also be found in the auth subdirectory in the install-dir. You can log in through oc login and have access to the web console. The URL for the console is `https://console-openshift-console.<cluster>.<base_domain>`.
 
-1. Run the following command from the */opt/ocpinstall* directory:
+1. Run the following command from the `/opt/ocpinstall` directory:
 
     ```bash
     watch -n5 oc get clusteroperators

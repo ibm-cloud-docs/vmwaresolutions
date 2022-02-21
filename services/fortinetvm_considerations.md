@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2021
 
-lastupdated: "2021-11-15"
+lastupdated: "2022-01-21"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -27,7 +27,7 @@ The FortiGate® Virtual Appliance service deploys a pair of FortiGate Virtual Ap
 
 {{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months free of charge for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
 
-The current FortiGate Virtual Appliance version that is installed is 7.0.1.
+The current FortiGate Virtual Appliance version that is installed is 7.0.3.
 {: note}
 
 ## Technical specifications for FortiGate Virtual Appliance

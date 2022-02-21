@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-10-13"
+lastupdated: "2022-01-31"
 
 keywords: vCenter Server add host, add server vCenter Server
 
@@ -14,24 +14,25 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding ESXi servers to vCenter Server single-zone instances
+# Adding ESXi servers to vCenter Server instances
 {: #vc_addingservers}
 
 You can expand the capacity of your VMware® vCenter Server® instance according to your business needs by adding VMware ESXi™ servers.
 
-## Before you add ESXi servers to vCenter Server single-zone instances
+## Before you add ESXi servers to vCenter Server instances
 {: #vc_addingservers-prereq}
 
 * Adding ESXi servers to vCenter Server instances with VMware vSphere® 6.5 is not supported.
 * For the edge services cluster, you cannot add or remove ESXi servers.
 * For existing instances with vSphere 6.7u1, you can add ESXi servers with either vSphere 6.7u1 or vSphere 6.7u3.
 * Whenever possible, add ESXi servers by using the {{site.data.keyword.vmwaresolutions_full}} console because changes that you make on the VMware vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, add ESXi servers to vCenter Server only for on-premises ESXi servers or ESXi servers that you won't manage in the {{site.data.keyword.vmwaresolutions_short}} console.
-* A vCenter Server instance with NFS storage must have at least two (for NSX-V) or three (for NSX-T™) ESXi servers. Each of the non-default clusters can be expanded to have up to 59 ESXi servers.
-* A vCenter Server instance with vSAN storage must have at least four ESXi servers.
-* If your initial cluster has vSAN® storage, adding one or more ESXi servers after deployment can increase the cluster storage capacity.
+* A vCenter Server instance with NFS storage must have at least three ESXi servers (for NSX-T™) or two ESXi servers (for NSX-V™). Each of the non-default clusters can be expanded to have up to 59 ESXi servers.
+* A vCenter Server instance with vSAN™ storage must have at least four ESXi servers.
+* If your initial cluster has vSAN storage, adding one or more ESXi servers after deployment can increase the cluster storage capacity.
+* If your initial cluster has vSAN storage, SED SSD disks are no longer available. Non-SED SSD disks are ordered.
 * You can add 1 - 20 ESXi servers at a time. For more information about the minimum of ESXi servers, see [Is a two-node vCenter Server instance highly available?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#is-a-two-node-vcenter-server-instance-highly-available)
 
-## Procedure to add ESXi servers to vCenter Server single-zone instances
+## Procedure to add ESXi servers to vCenter Server instances
 {: #vc_addingservers-procedure}
 {: help}
 {: support}
@@ -64,7 +65,7 @@ You can expand the capacity of your VMware® vCenter Server® instance according
 
    You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. This is useful if you want to estimate the price of the selected {{site.data.keyword.vmwaresolutions_short}} resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider to purchase.
 
-## Results after you add ESXi servers to vCenter Server single-zone instances
+## Results after you add ESXi servers to vCenter Server instances
 {: #vc_addingservers-results}
 
 1. You might experience a slight delay on the console while the instance status changes from **Ready to use** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
@@ -81,7 +82,7 @@ If you are adding ESXi servers during maintenance mode, VMs are not migrated to 
 {: #vc_addingservers-related}
 
 * [Deleting vCenter Server instances in a multi-site configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi)
-* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance)
+* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
 * [Managing virtual servers](/docs/virtual-servers?topic=virtual-servers-managing-virtual-servers)
 * [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

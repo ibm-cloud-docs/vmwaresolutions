@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-12-02"
+lastupdated: "2022-02-07"
 
 keywords: planning VMware Solutions Shared, data center, VMware Solutions Shared data centers
 
@@ -39,19 +39,16 @@ The virtual data center name must meet the following requirements:
 
 The VMware Solutions Shared deployment has strict requirements on the physical infrastructure. Therefore, you can deploy your virtual data centers only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements.
 
-### Regions available for deployment
-{: #shared-planning-dc-singlezone}
-
 The following {{site.data.keyword.cloud_notm}} data centers are available for VMware Solutions Shared deployment.
 
-| {{site.data.keyword.cloud_notm}} data centers | Region | vSAN support | Multizone support |
+| Geography | Data centers | vSAN support | Multizone support |
 |:----------|----------|:-------|:-------|
-| Dallas 10 | NA South | None | Yes |
-| Dallas 12 | NA South | None | Yes |
-| Dallas 13 | NA South | vSAN | No |
-| Frankfurt 02 | Europe | None | No |
-| Frankfurt 04 | Europe | None | No |
-| Frankfurt 05 | Europe | None | No |
+| Europe | Frankfurt 02 | None | No |
+| Europe | Frankfurt 04 | None | No |
+| Europe | Frankfurt 05 | None | No |
+| NA South | Dallas 10 |  None | Yes |
+| NA South | Dallas 12 |  None | Yes |
+| NA South | Dallas 13 | vSAN | No |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="top"}
 
 ## Services for VMware Solutions Shared

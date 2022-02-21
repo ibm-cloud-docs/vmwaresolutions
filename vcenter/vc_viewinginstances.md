@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-11-29"
+lastupdated: "2022-01-31"
 
 keywords: view vCenter Server, view instance, view instance details, vmware multizone, vcenter server multizone, view vCenter Server multizone, view multizone, view multizone instance details
 
@@ -31,11 +31,11 @@ To view a summary of all the vCenter Server instances that are provisioned for a
 | Item        | Description |
 |:----------- |:----------- |
 | Name | The name of the instance. |
-| Type | The type of vCenter Server instance. Instance type is **Multizone** or **Single-zone**. |
-| Version | The release version that the instance was deployed in, or upgraded to. |  
-| Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. |  
+| Type | The type of vCenter Server instance. Instance type is **Single-zone** or **VMware Security and Compliance Readiness Bundle**. |
+| Version | The release version that the instance was deployed in, or upgraded to. |
+| Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. |
 | Creation time | The date and time when the instance was created. |
-| Status | The status of the instance. |   
+| Status | The status of the instance. |
 {: caption="Table 1. vCenter Server instance items" caption-side="top"}
 
 The instance can have different statuses.
@@ -60,15 +60,15 @@ To view the property details of an instance:
 1. In the **vCenter Server instances** table, click an instance name.
 2. Under **Properties**, view the details for the instance.
 
-| Property        | Description       |
-|:------------- |:------------- |
+| Property | Description |
+|:-------- |:----------- |
 | Name | The name of the instance. |
 | ID | The ID of the instance. |
 | Multizone region[^multizone] | The {{site.data.keyword.cloud_notm}} data center region where the instance is hosted. |
 | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted.  \n   \n **Note:** For multizone instances, locations are listed for each cluster type. Types include witness, consolidated, workload, and edge services. |
 | Current version | The current version of {{site.data.keyword.vmwaresolutions_short}}. |
 | vCenter version | The VMware vCenter Server version.  \n   \n **Note:** There is a slight variation between the vCenter Server version that is displayed on the {{site.data.keyword.vmwaresolutions_short}} console and the VMware vSphere® Web Client. Both are correct. |
-| VMware NSX® networking solution[^NSX] | Either NSX-V or NSX-T. |
+| VMware NSX® networking solution[^NSX] | Either NSX-T or NSX-V. |
 | VMware vSphere version[^vsphere] | The version of VMware vSphere. |
 | NSX for vSphere | The VMware NSX for vSphere product version. |
 | _VMware component_ license | If you selected to use your own VMware license for any of the VMware components on the **Licensing** page when you ordered the instance, the VMware component name and the license key that you entered for the component are displayed.  \n   \n Examples of VMware component licenses can include: **NSX license**, **vCenter Server license**, and **vSAN license**. |
@@ -123,9 +123,9 @@ Under **Access information**, view the access information for the instance-relat
 
 [^nsxt6]: NSX-T only.
 
-[^ips]: For NSX-V, one IP address for one server. For NSX-T, two IP addresses for the two AD servers.
+[^ips]: For NSX-T, two IP addresses for the two AD servers. For NSX-V, one IP address for one server.
 
-[^fqdn]: For NSX-V, one FQDN for one server. For NSX-T, two FQDNs for the two AD servers.
+[^fqdn]: For NSX-T, two FQDNs for the two AD servers. For NSX-V, one FQDN for one server.
 
 [^nsxv]: NSX-V only.
 
@@ -161,7 +161,7 @@ Review the following topics for information to help you complete the login instr
 ## Related links
 {: #vc_viewinginstances-related}
 
-* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance)
+* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Adding clusters for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
 * [Adding ESXi servers to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
 * [Deleting vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance)

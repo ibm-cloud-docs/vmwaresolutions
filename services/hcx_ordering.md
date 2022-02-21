@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-09"
+lastupdated: "2022-01-21"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -76,7 +76,8 @@ The deployment of HCX is automated. Whether you order a vCenter Server instance 
 
 2. If **Private Network** was selected for **HCX Network Connection**, a port group that is named **SDDC-DPortGroup-HCX-Private** is created on the private Distributed Virtual Switch (DVS).
 3. An HCX activation key is ordered from VMware.
-4. **For vCenter Server with NSX-V instances**, a pair of VMware NSX Edge Services Gateways (ESGs) for the HCX management traffic is deployed and configured:
+4. For vCenter Server with NSX-T instances, the firewall rules and network address translation (NAT) rules are configured to allow inbound and outbound HTTPS traffic to and from the HCX Manager.
+5. For vCenter Server with NSX-V instances, a pair of VMware NSX Edge Services Gateways (ESGs) for the HCX management traffic is deployed and configured:
    * Public and private uplink interfaces are configured by using the ordered subnets.
    * The ESGs are configured as a pair of extra large edge appliances with High Availability (HA) enabled.
    * The firewall rules and network address translation (NAT) rules are configured to allow inbound and outbound HTTPS traffic to and from the HCX Manager.
@@ -85,8 +86,6 @@ The deployment of HCX is automated. Whether you order a vCenter Server instance 
 
    The HCX management edge is dedicated to the HCX management traffic between the on-premises HCX components and the cloud-side HCX components. Do not modify the HCX management edge or use it for HCX network extensions. Instead, create separate edges for network extensions. In addition, if you use a firewall or you disable the HCX management edge communications to the private IBM management components or the internet, the HCX functions might be impacted.
    {: important}
-
-5. **For vCenter Server with NSX-T instances**, the firewall rules and network address translation (NAT) rules are configured to allow inbound and outbound HTTPS traffic to and from the HCX Manager.
 
 6. The HCX Manager is deployed, activated, and configured:
    * The HCX Manager is registered with vCenter Server.

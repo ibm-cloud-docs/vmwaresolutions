@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-13"
+lastupdated: "2022-02-18"
 
 keywords: change vCenter Server artifacts, automation ID, VMware resource
 
@@ -54,7 +54,7 @@ If the vCenter Server instance is in a **Ready to use** state, you can modify th
 
 Review the following restrictions:
 * Do not change the vCenter Server instance name and the vCenter Server virtual machine name.
-* Do not change the name of the management datastore from its default value. The default valueis **vsanDatastore** for VMware vSAN™ instances and **management-share** for NFS instances.
+* Do not change the name of the management datastore from its default value. The default value is **vsanDatastore** for VMware vSAN™ instances and **management-share** for NFS instances.
 * Do not change the names and do not delete any of the management subnets that are created for the vCenter Server instances.
 * Do not change the name of the network uplinks that are created during provisioning.
 * Do not change the VMware ESXi™ server names and the IP addresses because they are registered for Windows® DNS resolution. Changes might result in failure during deployment or failure of vCenter Server functions.

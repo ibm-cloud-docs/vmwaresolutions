@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-03"
+lastupdated: "2022-02-15"
 
 keywords: VMware HCX, HCX, tech specs HCX
 
@@ -20,6 +20,9 @@ subcollection: vmwaresolutions
 
 The VMware HCX™ service extends the networks of on-premises data centers into {{site.data.keyword.cloud}}, and it helps you migrate virtual machines (VMs) to and from the {{site.data.keyword.cloud_notm}} without any conversion or change. HCX creates an abstraction layer that enables application mobility and infrastructure hybridity through securely stretched networks. You can modernize your VMware® environment from VMware vSphere® 5.1 to the most recent vSphere version without needing to refactor or modify your existing application, as HCX enables this seamless transformation. With HCX, you can bring your IP subnet ranges into {{site.data.keyword.cloud_notm}} ensuring the IP consistency through a hybrid deployment and by providing high-level security with end-to-end Suite B encryptions.
 {: shortdesc}
+
+The current VMware HCX version that is installed is periodically updated to the most recent version of HCX.
+{: note}
 
 For VMware NSX-T™ instances, VMware HCX requires you to use one of the following licenses from IBM Cloud:
 

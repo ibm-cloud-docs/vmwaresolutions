@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2021
+  years: 2016, 2022
 
-lastupdated: "2021-10-12"
+lastupdated: "2022-02-08"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -113,7 +113,6 @@ The following table describes the business continuity and migration services tha
 | Service name | Description |
 |:------------ |:----------- |
 | [HCX™](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations#hcx_considerations) | This service can extend the networks of on-premises data centers into {{site.data.keyword.cloud_notm}}, which allows VMs to be migrated to and from the {{site.data.keyword.cloud_notm}} without any conversion or change. |
-| [IBM Spectrum® Protect Plus](/docs/vmwaresolutions?topic=vmwaresolutions-spp_considerations) | This service provides a solution for data protection, data reuse, and data recovery for virtual environments. You can implement the service as a stand-alone solution or you can integrate it with your IBM Spectrum Protect environment to offload copies for long-term storage and data governance. |
 | [PrimaryIO HDM](/docs/vmwaresolutions?topic=vmwaresolutions-managing_pio) | This service decouples VMs and storage (VMDKs) to seamlessly move workloads to and from {{site.data.keyword.cloud_notm}} faster and efficiently. |
 | [Veeam®](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | This service integrates directly with your VMware hypervisors to help your enterprise achieve high availability. You can control both the backup and restore of all VMs for your infrastructure from the Veeam console. |
 | [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | This service provides replication and disaster recovery capabilities, which can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}. |
@@ -133,15 +132,7 @@ The following table describes a number of workload solutions that are available.
 #### Professional services
 {: #getting-started-serv-prof}
 
-The following table describes the professional services that are available.
-
-| Service name | Description |
-|:------------ |:----------- |
-| [Managed Services for VMware Workload Transformation](/docs/vmwaresolutions?topic=vmwaresolutions-managing_mcms) | This service takes away the responsibility of the day to day management of the virtual infrastructure so that you are free to focus on critical items. |
-| [Managed VMware Services](/docs/vmwaresolutions?topic=vmwaresolutions-managing_imi) | This service can simplify VMware virtual infrastructure management with modular services. It uses advanced automation and analytics to manage critical infrastructure components worldwide and to deliver dynamic remote management services for a broad range of traditional and cloud virtual infrastructures. |
-| [Managed Disaster Recovery Services](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services) | This service provides replication and disaster recovery capabilities. These capabilities can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}. |
-| [NetApp® ONTAP® Select](/docs/vmwaresolutions?topic=vmwaresolutions-netapp) | This service extends existing data management capabilities by implementing NetApp ONTAP software as a service on the dedicated {{site.data.keyword.cloud_notm}} bare metal servers. |
-{: caption="Table 7. Professional services" caption-side="top"}
+The [Managed Disaster Recovery Services by Kyndryl](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services) service provides replication and disaster recovery capabilities. These capabilities can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on IBM Cloud.
 
 #### Other services
 {: #getting-started-serv-other}
@@ -152,7 +143,7 @@ The following table describes other services that are available.
 |:---------------- |:------------ |:----------- |
 | Transformation and modernization of VMware applications | [Red Hat® OpenShift® for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | This service brings together the power of the Red Hat OpenShift Container Platform and the VMware software-defined data center stack. |
 | Management tools | [vRealize® Operations™ and Log Insight™](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the VMware vRealize Operations (vROps) and VMware vRealize Log Insight (vRLI) tools, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
-{: caption="Table 8. Other services" caption-side="top"}
+{: caption="Table 7. Other services" caption-side="top"}
 
 ## Accessing the VMware Solutions console
 {: #getting-started-step1}
@@ -180,10 +171,10 @@ After you set up your environment properly, begin the ordering process.
 
 For more information about how to order an instance, see the following topics based on your selected deployment:
 * [Ordering virtual data center instances](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
-* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance)
-* [Ordering vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances)
-* [Ordering VMware Regulated Workloads instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance)
-* [Ordering Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance)
+* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
+* [Ordering vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
+* [Ordering VMware Regulated Workloads instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
+* [Ordering Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-req)
 
 ## Viewing the instance
 {: #getting-started-step4}

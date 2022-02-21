@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2021
+  years: 2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-01-11"
 
 subcollection: vmwaresolutions
 
@@ -84,7 +84,7 @@ For assistance with sizing the cluster environment, use the [vSAN ReadyNode™ S
 ## Network configuration for Horizon 7 deployment on IBM Cloud
 {: #horizon-deploy-arch-net-config}
 
-When you configure a new {{site.data.keyword.cloud_notm}} SDDC, multiple networking options are presented. You can choose VMware NSX-V or NSX-T™ when you select the type of SDDC that they would like to deploy. You can also select the type of networks during deployment, such as public and private VLANs or private VLANs only. They can provision new VLANs or use existing VLANs created in their cloud.
+When you configure a new {{site.data.keyword.cloud_notm}} SDDC, multiple networking options are presented. You can choose VMware NSX-T™ or NSX-V when you select the type of SDDC that they would like to deploy. You can also select the type of networks during deployment, such as public and private VLANs or private VLANs only. They can provision new VLANs or use existing VLANs created in their cloud.
 
 VMware recommends the usage of the public and private network option. If the private network only option is selected, the NSX Edge Services Gateways is not configured, and access to some {{site.data.keyword.cloud_notm}} networking services will not be available.
 

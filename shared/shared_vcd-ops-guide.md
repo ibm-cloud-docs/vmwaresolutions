@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-11-11"
+lastupdated: "2022-01-21"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -390,7 +390,7 @@ From the virtual data center for that edge gateway, create the destination NAT d
 **Notes**  
 Under the **NAT44 Rules**, click **DNAT Rule** and create the configuration by using the following selection.
 * For **Applied On**, select the ``<datacenter>-w<idx>-tenant-external`` interface, for example, ``dal13-w02-tenant-external``.
-* For **Original Source IP/Range**, select one of the IPs from the Suballocated Public IP address range. Click **SELECT**, and select an IP from the **IP Address** menu. This value is the `tenant-external IP address` referenced in future steps. Click **KEEP**.
+* For **Original Source IP/Range**, select one of the IP addresses from the Suballocated Public IP address range. Click **SELECT**, and select an IP from the **IP Address** menu. This value is the `tenant-external IP address` referenced in future steps. Click **KEEP**.
 * Optionally, select port forwarding. Click the **Protocol** menu arrow and select **TCP**.
 * Select a port that is not previously used with the original IP address or range. The **Original Port** in this example is ``8000``. Ports that are lower than 1024 are reserved.
 * If ICMP is selected in the **Protocol** menu, select the **ICMP Type**.
