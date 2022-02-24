@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-23"
 
 subcollection: vmwaresolutions
 
@@ -47,7 +47,7 @@ Use the following table to record your deployment details:
 | Logical Switch | `OpenShift-LS` | |
 | vCenter Server instance data store | `vsanDatastore` | |
 | VM name | `bastion` | | |
-| ISO file name | `rhel-server-7.6-x86_64-dvd.iso` | |
+| ISO file name | `rhel-8.x-x86_64-dvd.iso` | |
 | IP address | 192.168.133.8 | |
 | Netmask |255.255.255.0  | |
 | Default gateway | 192.168.133.1 | |
@@ -62,10 +62,10 @@ connect-VIserver –server <IP_Address> -User <UserName> -Password '<Password>'
 # Create VM
 $ls = get-nsxtransportzone | get-nsxlogicalswitch OpenShift-LS | Get-NsxBackingPortGroup | Select-Object Name
 $ds = get-datastore -Name vsanDatastore
-$vm = New-VM -Name bastion -Datastore $ds -DiskGB 50 -DiskStorageFormat Thin -MemoryGB 2 -NumCpu 1 -Notes "OpenShift Bastion node" -NetworkName $ls.name -GuestId rhel7_64Guest
+$vm = New-VM -Name bastion -Datastore $ds -DiskGB 50 -DiskStorageFormat Thin -MemoryGB 2 -NumCpu 1 -Notes "OpenShift Bastion node" -NetworkName $ls.name -GuestId rhel8_64Guest
 
 # Connect a CD Drive loaded with the RHEL ISO
-New-CDDrive -VM $vm -IsoPath "[vsanDatastore] ISO\rhel-server-7.6-x86_64-dvd.iso" -StartConnected
+New-CDDrive -VM $vm -IsoPath "[vsanDatastore] ISO\rhel-8.x-x86_64-dvd.iso" -StartConnected
 
 #Start the VM
 Start-VM -VM $vm
@@ -74,7 +74,7 @@ Start-VM -VM $vm
 Disconnect-NsxServer
 ```
 
-After the VM starts, connect to the VM by using the web console or remote console and complete the following installation steps, by using the [Graphical install](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/chap-getting-started#sect-graphical-installation){: external} if needed.
+After the VM starts, connect to the VM by using the web console or remote console and complete the following installation steps, by using the [Graphical install](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/installation_guide/chap-getting-started#sect-graphical-installation){: external} if needed.
 * Select the required language.
 * Set the date and time.
 * Configure the network and hostname.
@@ -99,9 +99,9 @@ sudo subscription-manager register --username=${rhel_subscription_username} --pa
 subscription-manager refresh
 subscription-manager attach --pool=<pool>
 subscription-manager repos --disable="*"
-subscription-manager repos --enable  rhel-7-server-rpms
-subscription-manager repos --enable  rhel-7-server-extras-rpms
-subscription-manager repos --enable  rhel-server-rhscl-7-rpms
+subscription-manager repos --enable  rhel-8-server-rpms
+subscription-manager repos --enable  rhel-8-server-extras-rpms
+subscription-manager repos --enable  rhel-server-rhscl-8-rpms
 ```
 
 ## Installing NGINX (HTTP Server)
@@ -115,7 +115,7 @@ The deployment of the OpenShift nodes uses Ignition, and this process requires a
    ```bash
    [nginx]
    name=nginx repo
-   baseurl=http://nginx.org/packages/mainline/rhel/7/$basearch/
+   baseurl=http://nginx.org/packages/mainline/rhel/8/$basearch/
    gpgcheck=0
    enabled=1
    ```
@@ -211,7 +211,7 @@ Before you install the OpenShift Container Platform, you need to download a numb
 * Clone the installer repository to the bastion node.
 * Download and extract Terraform to the `/usr/local/bin` directory for ease of use.
 
-These commands are used in the SSH session to the bastion node that has root privileges. Replace the x in 4.x with the current Red Hat OpenShift version, for example, 4.7.
+These commands are used in the SSH session to the bastion node that has root privileges. Replace 4.x with the current Red Hat OpenShift version, for example, 4.7.
 
 ```bash
 # Download unzip

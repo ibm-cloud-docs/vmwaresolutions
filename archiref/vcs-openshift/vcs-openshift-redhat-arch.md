@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-22"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ The {{site.data.keyword.vmwaresolutions_full}} offerings provide automation to d
 ## Bastion hosts
 {: #vcs-openshift-redhat-arch-bastion-host}
 
-The Management host is a Red Hat® Enterprise Linux® 7.6 virtual machine (VM). This VM hosts services to install and configure the OpenShift® instance and provides utilities to manage the Red Hat OpenShift environment. This host is normally deployed in the VXLAN Subnet.
+The Management host is a Red Hat® Enterprise Linux® 8.0 virtual machine (VM). This VM hosts services to install and configure the OpenShift® instance and provides utilities to manage the Red Hat OpenShift environment. This host is normally deployed in the VXLAN Subnet.
 
 ## Bootstrap hosts
 {: #vcs-openshift-redhat-arch-bootstrap-host}

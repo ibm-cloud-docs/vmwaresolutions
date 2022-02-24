@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-02-22"
 
 subcollection: vmwaresolutions
 
@@ -82,7 +82,7 @@ The deployment approach is described in the following phases:
 * Phase 1 - vCenter Server instance preparation:
    * Using the {{site.data.keyword.vmwaresolutions_full}} console, [order a vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), which can include NFS or vSAN storage. You can use an existing instance if the instance has enough capacity.
    * Using the {{site.data.keyword.cloud_notm}} console, [order more private and public subnets](/docs/subnets?topic=subnets-getting-started) to be used by the OpenShift cluster.
-   * Download RHEL 7.6 ISO for the OS of the bastion or deployment node and the Red Hat Enterprise Linux CoreOS (RHCOS) OVA image. This step is described in [Prerequisites for installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-prereq-intro).
+   * Download RHEL 8.0 ISO for the OS of the bastion or deployment node and the Red Hat Enterprise Linux CoreOS (RHCOS) OVA image. This step is described in [Prerequisites for installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-prereq-intro).
    * Using govc, the OVA and ISO are uploaded to a datastore on the vCenter Server instance. This step is described in [Prerequisites for installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-prereq-intro).
    * Add logical switches - Two logical switches are created; OpenShift-LS the network the OpenShift VMs are deployed onto and OpenShift-DLR-Transit, the uplink between the DLR and the Edge.
    * Add an ESG - An external services gateway (ESG) is a virtual appliance that provides North-South routing, and other network functions. In this architecture, the ESG is used for; routing, NAT, firewall, and load-balancing. As the ESGs are configured as active - passive pair, DRS anti-affinity rules are used to ensure that NSX Edges do not run on the same host. Static routes are used to direct traffic to either the internet or the IBM private Network. This step is described in [OpenShift NSX Edge configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxedge-intro).

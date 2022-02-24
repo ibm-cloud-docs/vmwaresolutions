@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2021
+  years: 2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-22"
 
 subcollection: vmwaresolutions
 
@@ -86,7 +86,7 @@ The following tables show the specifications of the management node, control pla
 
 | Host description | vCPU  | Memory (GB) | Disk (GB) | OS |
 |:---------------- |:----- |:----------- |:--------- |:-- |
-| Management0 | 2 | 8 | 50 | Red Hat Enterprise Linux® 7.6 |
+| Management0 | 2 | 8 | 50 | Red Hat Enterprise Linux® 8.0 |
 {: class="simple-tab-table"}
 {: caption="Table 5. Management node specifications" caption-side="top"}
 {: #table1}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-02-17"
+lastupdated: "2022-02-24"
 
 keywords: vCenter Server add service
 
@@ -48,6 +48,7 @@ The following table shows the services available for vCenter Server with NSX-T i
 |--------------|-----------------|
 | [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 3.1.0 |
 | [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 16.1 |
+| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.0.3 |
 | [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version |
 | [HyTrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations) | 6.4.1 |
 | [HyTrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)  | 5.4[^htdc] |

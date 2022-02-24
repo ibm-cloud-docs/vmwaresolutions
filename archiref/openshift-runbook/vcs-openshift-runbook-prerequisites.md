@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-02-23"
 
 subcollection: vmwaresolutions
 
@@ -22,7 +22,7 @@ Before you can start the build process to install the Red Hat® OpenShift® clus
    * A private portable subnet for the Red Hat OpenShift cluster NSX ESG.
    * A public portable subnet for the Red Hat OpenShift cluster NSX ESG.
 * Download Red Hat OpenShift 4.7 - Access to a Red Hat subscription to download the installer, pull secret and Red Hat Enterprise CoreOS OVA.
-* Download RHEL 7.6 ISO - Access to a Red Hat subscription to download the Red Hat Enterprise Linux® 7.x ISO for the bastion host.
+* Download RHEL 8.0 ISO - Access to a Red Hat subscription to download the Red Hat Enterprise Linux® 8.x ISO for the bastion host.
 * {{site.data.keyword.cloud}} environment details - Collect the following details for {{site.data.keyword.cloud_notm}} for VMware® Solutions environment.
    * VMware vCenter Server® instance details and passwords
    * The additional private portable subnet information
@@ -47,19 +47,19 @@ Access the [OpenShift Infrastructure Providers page](https://cloud.redhat.com/op
 
 1. Download the installer.
 2. Download the Pull Secret.
-3. Download the Red Hat Enterprise Linux CoreOS (RHEL CoreOS) OVA image or download the OVA by using the following code. Replace the x in 4.x and in 4.x.3 with the current Red Hat OpenShift version, for example, 4.7.
+3. Download the Red Hat Enterprise Linux CoreOS (RHEL CoreOS) OVA image or download the OVA by using the following code. Replace 4.x and 4.x.3 with the current Red Hat OpenShift version, for example, 4.7.
    `curl -O https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.x/latest/rhcos-4.x.3-x86_64-vmware.x86_64.ova`
 4. Download the command-line tools if you want to run the commands from a desktop or outside Bastion host.
 
-## Downloading RHEL 7.6 ISO
+## Downloading RHEL 8.0 ISO
 {: #openshift-runbook-runbook-prereq-downloadiso}
 
 Download the ISO image for the bastion host.
 
-1. Go to the Red Hat [Product Downloads](https://access.redhat.com/downloads){: external} page.
-2. Click **RHEL 7.x Release** and select the 7.6 version.
+1. Go to the Red Hat [Product downloads](https://access.redhat.com/downloads){: external} page.
+2. Click **RHEL 8.x Release** and select the 8.x version.
 3. Download the source ISO images.
-4. The ISO file name is `rhel-server-7.6-x86_64-dvd.iso`.
+4. The ISO file name is `rhel-8.x-x86_64-dvd.iso`.
 
 ## vCenter Server instance details
 {: #openshift-runbook-runbook-prereq-cloud}
@@ -148,7 +148,7 @@ export GOVC_PASSWORD='xxx'
 export GOVC_INSECURE=1
 export GOVC_DATASTORE='vsanDatastore'
 govc datastore.mkdir isos
-govc datastore.upload rhel-server-7.6-x86_64-dvd.iso isos/rhel-server-7.6-x86_64-dvd.iso
+govc datastore.upload rhel-8.x-x86_64-dvd.iso isos/rhel-8.x-x86_64-dvd.iso
 ```
 
 **Next topic:** [OpenShift NSX logical switches configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxls-intro)

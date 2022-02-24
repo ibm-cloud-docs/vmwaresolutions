@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-02-10"
+lastupdated: "2022-02-23"
 
 subcollection: vmwaresolutions
 
@@ -425,7 +425,7 @@ The password for the user that was created during installation can also be found
     watch -n5 oc get clusteroperators
     ```
 
-2. Monitor for cluster completion. An output is provided in the following example. Replace the x in 4.x.5 with the current Red Hat OpenShift version, for example, 4.7.5.
+2. Monitor for cluster completion. An output is provided in the following example. Replace 4.x.5 with the current Red Hat OpenShift version, for example, 4.7.5.
 
     ```bash
     Every 5.0s: oc get clusteroperators
