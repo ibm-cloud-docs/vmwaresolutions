@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-03-01"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # vCenter Single Sign On
 {: #adds-sso}
 
-vCenter Single Sign-On (SSO) is an authentication broker and security token exchange infrastructure, which allows vSphere components to communicate with each other through a secure token mechanism and uses the following services.
+VMware vCenter Single Sign-On (SSO) is an authentication broker and security token exchange infrastructure, which allows vSphere components to communicate with each other through a secure token mechanism and uses the following services.
 
 * Security Token Service (STS)
 * SSL for secure traffic
@@ -97,7 +97,7 @@ As the customer, you have full access to tailor these settings as needed to appl
 ## vSphere ESXi hosts
 {: #adds-sso-esxi}
 
-Each vSphere ESXi host has its own `root` account and password. To identify this password, go to the VMware Solutions console and then go to **Resources**, click the instance name, go to **Infrastructure**, and click the cluster name. It's also possible to have the vSphere ESXi hosts join AD so that each system administrator can log in with their own account.
+Each vSphere ESXi host has its own `root` account and password. To identify this password, go to the VMware Solutions console and then go to **Resources**, click the instance name, go to **Infrastructure**, and click the cluster name. The vSphere ESXi hosts also join AD so that each system administrator can log in with their own account.
 
 **Next topic:** [VMware Solutions workload domain](/docs/vmwaresolutions?topic=vmwaresolutions-adds-wkld-domain)
 
