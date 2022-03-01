@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-19"
+lastupdated: "2022-03-01"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -59,7 +59,7 @@ You can also specify a name for your KMIP for VMware instance.
 {: #kmip_standalone_ordering-step1-results}
 
 * The deployment of the instance starts automatically and you receive console notification that your order request is being processed. The instance is displayed in the **KMIP for VMware instances** table on the **Resources** page. The status of the instance is **Installing**.
-* When the instance is successfully deployed, the status of it is changed to **Inactive**.
+* When the instance is successfully deployed, its status is changed to **Inactive**.
 
 ## Step 2 - Activating the KMIP for VMware instance
 {: #kmip_standalone_ordering-step2}
@@ -72,10 +72,10 @@ If you are using Hyper Protect Crypto Services (HPCS), you must first create a s
 ### Settings
 {: #kmip_standalone_ordering-step2-settings}
 
-When you enable the inactive KMIP for VMware instance, provide the following settings according to which key management service you selected:
+When you enable the inactive KMIP for VMware instance, provide the following settings according to the key management service that you selected.
 
-| Configuration    | Description   |  
-|:------------- |:------------- |
+| Configuration | Description |
+|:------------- |:----------- |
 | **HPCS instances** | The list of available HPCS instances that you can select to use for key management |
 | **Customer root key** | The list of customer root keys that are stored in your selected HPCS instance |
 {: caption="Table 1. Configurations for the HPCS service" caption-side="top"}
@@ -84,8 +84,8 @@ When you enable the inactive KMIP for VMware instance, provide the following set
 {: tab-title="Hyper Protect Crypto Services"}
 {: tab-group="Settings when selecting different key management service"}
 
-| Configuration   | Description |  
-|:------------- |:------------- |
+| Configuration | Description |
+|:------------- |:----------- |
 | **API key for service ID**| The API key for the {{site.data.keyword.cloud_notm}} Service ID that is used to access the service instance of Key Protect |
 | **Key Manager instance**| The list of available Key Protect instances that you can select to use for key management |
 | **Customer root key**| The list of customer root keys that are stored in your selected key manager instance |
@@ -102,7 +102,11 @@ When you enable the inactive KMIP for VMware instance, provide the following set
 2. Select a key management service:
    * If you selected **Hyper Protect Crypto Services**, click **Retrieve** to get the list of available HPCS instances and select the one to use for key management.
    * If you selected **Key Protect**, enter your service ID API key, then click **Retrieve** to get the list of available key manager instances and select the one to use for key management.
-3. Click **Retrieve** to get the list of available customer root key that is stored in your selected HPCS or Key Protect instance and select the one to use.
+3. Click **Retrieve** to get the list of available customer root keys that are stored in your selected HPCS instance or Key Protect instance. Select the root key that you want to use. 
+
+    KMIP for VMware supports root keys only on the default key ring.
+    {: note}
+
 4. Click **Next**.
 5. (Optional) Add client SSL certificates.
     1. Click **Add**.
