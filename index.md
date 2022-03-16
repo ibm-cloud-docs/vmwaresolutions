@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2022
 
-lastupdated: "2022-02-08"
+lastupdated: "2022-03-10"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -121,13 +121,7 @@ The following table describes the business continuity and migration services tha
 #### Featured workload solutions
 {: #getting-started-serv-feat-sol}
 
-The following table describes a number of workload solutions that are available.
-
-| Service name | Description |
-|:------------ |:----------- |
-| [Horizon® 7](/docs/vmwaresolutions?topic=vmwaresolutions-horizon-arch-ovw) | This service delivers a seamlessly integrated hybrid cloud for virtual desktops and applications. |
-| [IBM Security Services for SAP®](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | This service offers a cybersecurity solution to automate the monitoring and protection of SAP applications on {{site.data.keyword.cloud_notm}}, and to keep workloads compliant and secure from inside and outside threats. |
-{: caption="Table 6. Featured workload solutions" caption-side="top"}
+[IBM Security Services for SAP®](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) offers a cybersecurity solution to automate the monitoring and protection of SAP applications on {{site.data.keyword.cloud_notm}}, and to keep workloads compliant and secure from inside and outside threats.
 
 #### Professional services
 {: #getting-started-serv-prof}
@@ -143,7 +137,7 @@ The following table describes other services that are available.
 |:---------------- |:------------ |:----------- |
 | Transformation and modernization of VMware applications | [Red Hat® OpenShift® for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | This service brings together the power of the Red Hat OpenShift Container Platform and the VMware software-defined data center stack. |
 | Management tools | [vRealize® Operations™ and Log Insight™](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the VMware vRealize Operations (vROps) and VMware vRealize Log Insight (vRLI) tools, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
-{: caption="Table 7. Other services" caption-side="top"}
+{: caption="Table 6. Other services" caption-side="top"}
 
 ## Accessing the VMware Solutions console
 {: #getting-started-step1}

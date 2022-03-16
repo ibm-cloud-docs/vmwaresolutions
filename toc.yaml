@@ -378,6 +378,19 @@ toc:
           - vmonic/audit_user_ids.md
           - vmonic/audit_messages.md
       - topicgroup:
+          label: VMware NSX-V to NSX-T migration
+          topics:
+          - archiref/v2t-patterns/v2t-migration-overview.md
+          - archiref/v2t-patterns/v2t-migration-planning.md
+          - archiref/v2t-patterns/v2t-migration-complexities.md
+          - archiref/v2t-patterns/v2t-migration-target-platforms.md
+          - archiref/v2t-patterns/v2t-migration-example-overlays.md
+          - archiref/v2t-patterns/v2t-migration-config-migration.md
+          - archiref/v2t-patterns/v2t-migration-lift-and-shift.md
+          - archiref/v2t-patterns/v2t-migration-hcx.md
+          - archiref/v2t-patterns/v2t-migration-l2-nsx-t.md
+          - archiref/v2t-patterns/v2t-migration-optional-services.md
+      - topicgroup:
           label: Solution architectures on Classic
           topics:
           - topicgroup:
@@ -600,13 +613,6 @@ toc:
               - archiref/openshift-runbook/vcs-openshift-runbook-config.md
               - archiref/openshift-runbook/vcs-openshift-runbook-trbl.md
           - topicgroup:
-              label: vCenter Server and VMware Horizon 7 architecture
-              topics:
-              - archiref/horizon/horizon-arch-ovw.md
-              - archiref/horizon/horizon-deploy-arch.md
-              - archiref/horizon/horizon-deploy-config.md
-              - archiref/horizon/horizon-use-cases.md
-          - topicgroup:
               label: vCenter Server and vSRX guide
               topics:
               - archiref/vcsvsrx/vcsvsrx-intro.md
@@ -638,6 +644,7 @@ toc:
       - topicgroup:
           label: FAQs
           topics:
+          - vmonic/faq-v2t-migration.md
           - vmonic/faq_shared.md
           - vmonic/faq.md
           - vmonic/faq_esxi.md
