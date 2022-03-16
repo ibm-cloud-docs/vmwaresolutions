@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-02-21"
+lastupdated: "2022-03-15"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -29,6 +29,9 @@ Various other updates are made to the [VMware Solutions API](/apidocs/vmware-sol
 ### 21 February 2022
 {: #february-2022}
 {: release-note}
+
+VMware vCloud Director upgrade for VMware Solutions Shared
+:   (Updated on 15 March 2022) VMware Solutions provides an upgrade to the Shared infrastructure to the latest version of VMware vCloud Director (vCD) v10.3.2.
 
 VMware vCenter Server instances
 :   The 4.6 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts.
@@ -68,6 +71,7 @@ New architecture documentation
    * [VMware RYO architecture on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-overview)
    * [Interconnectivity for VMware workloads on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-interconnectivity-overview)
    * [Fortinet FortiGate solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-fortigate-overview)
+   * [VMware NSX-V to NSX-T migration](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-overview)
 
 User interface updates and enhancements
 :   Various error messages and tooltip enhancements are available to assist you in selecting the appropriate setting on the user interface.
@@ -562,11 +566,11 @@ Juniper vSRX
    * vSRX logging to vRealize Log Insight if the vRealize Operations add-on service is already installed
 
 KMIP for VMware
-:   Previously, KMIP for VMware provided a multi-tenant service that enables VMware vCenter Server to use IBM Key Protect for {{site.data.keyword.cloud_notm}} (Key Protect) and {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services (HPCS) as its key manager.
+:   Previously, KMIP for VMware provided a multitenant service that enables VMware vCenter Server to use IBM Key Protect for {{site.data.keyword.cloud_notm}} (Key Protect) and {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services (HPCS) as its key manager.
 
    Newly created KMIP for VMware instances that are connected to HPCS now operate as single-tenant services. These services run within the HPCS service and benefit from the features of IBM Secure Service Containers on IBM LinuxONE servers. You can connect only a single KMIP for VMware instance to each HPCS instance.
 
-   KMIP for VMware continues to provide a multi-tenant service when you connect to Key Protect.
+   KMIP for VMware continues to provide a multitenant service when you connect to Key Protect.
 
    In addition, two new endpoints are now available in the **Osaka** location for KMIP for VMware.
 
@@ -1476,7 +1480,7 @@ Embedded Platform Services Controller
 
    For instances that are upgraded from an earlier release to 2.8, the PSC is not embedded in vCenter Server. If you want to use embedded PSC, you must convert from external to embedded PSC yourself.
 
-   In a multi-site configuration where the primary instance is an upgraded instance for which the PSC was manually converted from external to embed, any newly deployed 2.8 secondary instances have embedded PSC.
+   In a multisite configuration where the primary instance is an upgraded instance for which the PSC was manually converted from external to embed, any newly deployed 2.8 secondary instances have embedded PSC.
 
 Updates for VMware vCenter Server instances
 :   The 2.8 release applies the following upgrades and improvements:
