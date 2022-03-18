@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-03-18"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 VMware NSX-V 6.4 is end of general support on 16 January 2022 and end of technical guidance on 16 January 2023 according to the [VMware Official Product Lifecycle Matrix](https://lifecycle.vmware.com/#/){: external}. 
 
-An exclusive support agreement between VMware® and {{site.data.keyword.IBM}} to support NSX-V until 4 November 2022 provides additional time for customers to migrate.
+An exclusive support agreement between VMware® and {{site.data.keyword.IBM}} to support NSX-V until 15 October 2022 provides additional time for customers to migrate.
 {: note}
 
 This documentation provides a validated approach and guidance for existing {{site.data.keyword.vmwaresolutions_full}} customers with VMware vCenter Server with NSX-V instances. In that way, they can move and migrate their workloads to new vCenter Server with NSX-T instances (also referred as V2T migration). This documentation is not primarily aimed at customers that want to migrate on-premises workloads to {{site.data.keyword.cloud_notm}}, although some of the approach and guidance is applicable.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-11"
+lastupdated: "2022-03-18"
 
 subcollection: vmwaresolutions
 
@@ -79,7 +79,7 @@ IBM Cloud recommends an upgrade to vSphere 7.x. If you ordered your servers from
 
 The End of General Support for vSphere 6.5 and 6.7 is 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5/6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://lifecycle.vmware.com/#/){: external}.
 
-In addition, the vCenter Server instances with vSphere 6.5 or 6.7 typically run NSX-V 6.4. NSX-V 6.4 is End of General Support on 16 January 2022 and end of technical guidance on 16 January 2023. See more on VMware Official Product Lifecycle Matrix. An exclusive support agreement between VMware and IBM to support NSX-V until 4 November 2022.
+In addition, the vCenter Server instances with vSphere 6.5 or 6.7 typically run NSX-V 6.4. NSX-V 6.4 is End of General Support on 16 January 2022 and end of technical guidance on 16 January 2023. See more on VMware Official Product Lifecycle Matrix. An exclusive support agreement between VMware and IBM to support NSX-V until 15 October 2022.
 
 IBM Cloud recommends an upgrade to vSphere 7.x and NSX-T 3.x.
 
