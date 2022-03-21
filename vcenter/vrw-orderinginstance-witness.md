@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-02-10"
+lastupdated: "2022-03-21"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -98,9 +98,6 @@ The networking type is set to **Private network only**.
 | Europe | FRA05 | 01 |
 | Europe | LON04 | 01 |
 | Europe | LON06 | 01 |
-| Europe | PAR04 | 01 |
-| Europe | PAR05 | 01 |
-| Europe | PAR06 | 01 |
 | NA East | TOR04 | 01 |
 | NA East | WDC04 | 05 |
 | NA East | WDC06 | 01 |

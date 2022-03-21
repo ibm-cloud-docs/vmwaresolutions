@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-02-10"
+lastupdated: "2022-03-21"
 
 keywords: vCenter Server add clusters, add cluster, vCenter Server cluster
 
@@ -25,7 +25,7 @@ You can add clusters to VMware vCenter Server® instances to expand the compute 
 * Adding clusters to vCenter Server instances with VMware vSphere® 6.5 is not supported.
 * Whenever possible, add clusters by using the VMware Solutions console. Changes that you make on the VMware® vSphere Web Client are not synchronized with the VMware Solutions console. Therefore, add clusters to vCenter Server only for on-premises clusters or clusters that you cannot or do not plan to manage in the VMware Solutions console.
 * The number of clusters, hosts, and virtual machines (VMs) determines the maximum limit for the number of clusters you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information about maximum limits, see [VMware configuration maximums](https://configmax.vmware.com/home){: external}.
-* You cannot add multiple edge services clusters in the same data center pod. If you add more than one edge services clusters in the same pod, the clusters share a transit VLAN, which might cause subsequent issues with the Juniper® vSRX installation. For more information, see [Edge services cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance#vc_orderinginstance-edge-services-cluster).
+* You cannot add multiple edge services clusters in the same data center pod. If you add more than one edge services clusters in the same pod, the clusters share a transit VLAN, which might cause subsequent issues with the Juniper® vSRX installation. For more information, see [Edge services cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-edge-services-cluster).
 * You can add or delete a cluster while another cluster is being created or deleted.
 
 ## System settings
@@ -228,9 +228,6 @@ The **Uplink speed** option is not available to edge services clusters.
 | Europe | FRA05 | 01 |
 | Europe | LON04 | 01 |
 | Europe | LON06 | 01 |
-| Europe | PAR04 | 01 |
-| Europe | PAR05 | 01 |
-| Europe | PAR06 | 01 |
 | NA East | TOR04 | 01 |
 | NA East | WDC04 | 05 |
 | NA East | WDC06 | 01 |
