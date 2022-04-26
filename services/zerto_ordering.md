@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-08"
+lastupdated: "2022-04-17"
 
 keywords: Zerto, Zerto replication billing, order Zerto
 
@@ -62,12 +62,14 @@ When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_ord
 If you add Zerto to a vCenter Server instance that has a VMware® ESXi™ server that is in maintenance mode, you must use the Zerto Virtual Manager (ZVM) console. Use the pre-populated Zerto Virtual Replication Appliance (VRA) IP address to manually deploy the VRA virtual machine (VM).
 {: note}
 
-## Ordering Zerto for private-only instances
+## Considerations for ordering Zerto
 {: #zerto_ordering-private-only}
 
-If you want to add Zerto to a private-only instance, certain requirements must be met.
-* You are responsible for setting up your own proxy server to connect to the internet.
-* You must also configure the Call Home feature for Zerto. For more information about Zerto Call Home, see [How to configure Zerto Reporting for Enterprise environments (Call Home)](https://www.zerto.com/myzerto/knowledge-base/zerto-reporting-for-enterprise-environments-call-home/){: external}.
+When you deploy Zerto, you must configure your own proxy or NAT connection to the public network.
+
+Within 15 days, you must configure the Call Home feature for Zerto. If you do not complete the configuration in this timeframe, Zerto blocks certain management activities.
+
+For more information about Zerto Call Home, see [How to configure Zerto Reporting for Enterprise environments (Call Home)](https://www.zerto.com/myzerto/knowledge-base/zerto-reporting-for-enterprise-environments-call-home/){: external}.
 
 ## Related links
 {: #zerto_ordering-related}

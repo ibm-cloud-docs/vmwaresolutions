@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-03-24"
 
 subcollection: vmwaresolutions
 
@@ -41,11 +41,11 @@ subcollection: vmwaresolutions
 {: #openshift-runbook-runbook-dns-records-notes}
 
 * The `Add-DnsServerPrimaryZone-networkid` cmdlet creates only classful reverse lookup zones. Therefore, if you specify a prefix longer than `/24`, then the cmdlet creates a `/32` reverse lookup zone. Therefore, as a workaround in the script use `/24` instead of a `/26`. You also need to modify the private portable subnet to match classful `/24` network in the commands.
-* Do not create CNAME entries because the OpenShift certificates are keyed to the DNS returning the IP address only and not a referral to the base hostname.
+* Do not create CNAME entries because the {{site.data.keyword.redhat_openshift_full}} certificates are keyed to the DNS returning the IP address only and not a referral to the base hostname.
    Use the following format for DNS naming standards:
    `HostName.ClusterName.SubDomain.DomainName`
    - **HostName** - Name of the virtual machine or host, for example, `control-plane-0`
-   - **ClusterName** - OpenShift cluster name, for example, `ocp`
+   - **ClusterName** - {{site.data.keyword.redhat_openshift_notm}} cluster name, for example, `ocp`
    - **SubDomain** - Subdomain of the {{site.data.keyword.vmwaresolutions_short}} deployment, for example, `dallas`
    - **DomainName** - Domain name of the {{site.data.keyword.vmwaresolutions_short}} Deployment, for example, `ibm.local`
 
@@ -55,8 +55,8 @@ The following table is for an example deployment. Use your own values.
 
 | DNS Description | DNS Example Name | DNS Example IP address |
 | --- | --- | --- |
-| DNS Reverse Lookup for OpenShift VXLAN  | `192.168.133.0/24` | |
-| DNS Reverse Lookup for OpenShift {{site.data.keyword.cloud_notm}} Subnet  | `10.208.242.128/26` | |
+| DNS Reverse Lookup for {{site.data.keyword.redhat_openshift_notm}} VXLAN  | `192.168.133.0/24` | |
+| DNS Reverse Lookup for {{site.data.keyword.redhat_openshift_notm}} {{site.data.keyword.cloud_notm}} Subnet  | `10.208.242.128/26` | |
 | Bastion Host | bastion.ocp.dallas.ibm.local | 192.168.133.8 |
 | bootstrap-0 Host | bootstrap-0.ocp.dallas.ibm.local | 192.168.133.9 |
 | control-plane-0 Host | control-plane-0.ocp.dallas.ibm.local | 192.168.133.10 |
@@ -106,13 +106,13 @@ Add-DnsServerResourceRecord -Srv -ZoneName "ibm.local" -Name "_etcd-server-ssl._
 Add-DnsServerResourceRecord -Srv -ZoneName "ibm.local" -Name "_etcd-server-ssl._tcp.ocp.dallas" -DomainName "etcd-2.ocp.dallas.ibm.local"  -Priority 10 -Weight 0 -Port 2380
 ```
 
-**Next topic:** [OpenShift Bastion node setup](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-bastion-intro)
+**Next topic:** [{{site.data.keyword.redhat_openshift_notm}} Bastion node setup](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-bastion-intro)
 
 ## Related links
 {: #vcs-openshift-runbook-dns-related}
 
-* [IBM Cloud for VMware Solutions and Red Hat OpenShift overview](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-intro)
+* [IBM Cloud for VMware Solutions and {{site.data.keyword.redhat_openshift_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-intro)
 * [Prerequisites for installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-prereq-intro)
-* [OpenShift NSX configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxedge-intro)
-* [Red Hat OpenShift 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro)
-* [Red Hat OpenShift 4.7 additional configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-config-intro)
+* [{{site.data.keyword.redhat_openshift_notm}} NSX configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxedge-intro)
+* [{{site.data.keyword.redhat_openshift_notm}} 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro)
+* [{{site.data.keyword.redhat_openshift_notm}} 4.7 additional configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-config-intro)

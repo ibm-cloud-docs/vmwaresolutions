@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-21"
 
 subcollection: vmwaresolutions
 
@@ -38,7 +38,7 @@ By default, the only users who can log in directly are the _root_ and _ibmvmadmi
 
 | Attribute              | Configuration parameter |
 |:---------------------- |:----------------------- |
-| ESXi boot location     | Uses local disks that are configured in RAID 1 |
+| ESXi boot location     | In some cases, uses local disks that are configured in RAID 1; in other cases, uses single M.2 boot drive |
 | Time synchronization   | Uses {{site.data.keyword.cloud}} NTP server |
 | Host access            | Supports DCUI. SSH and ESXi Shell are supported but not enabled by default |
 | User access            | Local authentication and MSAD |

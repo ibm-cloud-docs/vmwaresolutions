@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-02-14"
+lastupdated: "2022-04-13"
 
 subcollection: vmwaresolutions
 
@@ -29,11 +29,11 @@ NSX-T consists of the following key components:
 
 * **NSX Manager** provides a graphical user interface (GUI) and REST APIs for creating, configuring, and monitoring NSX-T Data Center components such as segments, logical routers, and firewalls. NSX Manager provides a system view and it is the management component of NSX-T Data Center.
 * **NSX Host Transport Nodes** participate in an NSX-T Data Center overlay or NSX-T Data Center VLAN networking. Each provisioned ESXi host in the VPC must be enabled to be a Transport Node.
-* **NSX Edge Transport Nodes** are service appliances, which are dedicated to running centralized network services that cannot be distributed to the hypervisors. Edge Nodes are grouped in one or several Edge Clusters, representing a pool of capacity.
+* **NSX Edge Transport Nodes** are service appliances, which are dedicated to running centralized network services that cannot be distributed to the hypervisors. Edge Nodes are grouped in one or several edge services clusters, representing a pool of capacity.
 
 When deployed on {{site.data.keyword.vpc_short}}, the VMware virtual machines (VMs) hosted on {{site.data.keyword.cloud_notm}} bare metal server for {{site.data.keyword.vpc_short}} can be connected to NSX-T overlay segments. NSX-T segments are logically abstracted network segments in a defined Transport Zone. A Transport Zone is a container that defines the potential reach of Transport Nodes, Hosts, or Edges. The NSX-T segments support line-rate switching and distributed routing in the ESXi hosts. Also, it uses Geneve encapsulation for this overlay traffic to identify and isolate L2 segments over a common L3 infrastructure. In this design, Geneve traffic traverses between the defined Transport Nodes that use {{site.data.keyword.vpc_short}} as the underlying transport network.
 
-In addition to basic software defined overlay networks, NSX-T brings many embedded advanced features such as Network Address translation, site to site IPsec VPNs, firewall policies, inclusion of guest introspection within firewall policies, and advanced netflow tracking. Describing these features in detail is beyond the scope of this document. For more information about NSX-T, see [VMware NSX-T Data Center Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/index.html){: external}.
+In addition to basic software defined overlay networks, NSX-T brings many embedded advanced features. They are Network Address translation, site to site IPsec VPNs, firewall policies, inclusion of guest introspection within firewall policies, and advanced netflow tracking. Describing these features in detail is beyond the scope of this document. For more information about NSX-T, see [VMware NSX-T Data Center Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/index.html){: external}.
 
 ## NSX-T data center deployment architecture
 {: #vpc-ryo-nsx-t-dplarch-managers}
@@ -45,7 +45,7 @@ In this architecture for {{site.data.keyword.vpc_short}}, each {{site.data.keywo
 
 ![Bare Metal Server network interfaces and Distributed PortGroups with NSX-T](../../images/vpc-ryo-diagrams-vpc-hosts-vmk-tep.svg "{{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX-T"){: caption="Figure 2. {{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX-T" caption-side="bottom"}
 
-When creating {{site.data.keyword.cloud_notm}} bare metal server VLAN interfaces for NSX-T components that are attached to a VPC subnet, your Distributed Switch must contain a port group that matches the used VLAN ID.
+When you create {{site.data.keyword.cloud_notm}} bare metal server VLAN interfaces for NSX-T components that are attached to a VPC subnet, your Distributed Switch must contain a port group that matches the used VLAN ID.
 {: note}
 
 Each physical host has redundant 100 Gb network connection for network access to {{site.data.keyword.vpc_short}}. The high availability for physical network connectivity is handled by {{site.data.keyword.cloud_notm}}, which manages the aggregation. In that way, you must not create multiple PCI interfaces for redundancy. The 100 Gb bandwidth is shared by the network interfaces that are on the bare metal server.
@@ -59,9 +59,9 @@ NSX Manager Node hosts the API services, the management plane, and the agent ser
 For a proof-of-concept environment, you can deploy a single NSX Manager VM. It does not provide high availability for the management and control planes. This action is not suitable for any solution that requires high availability.
 {: note}
 
-If you deploy the NSX Managers on the same VPC subnet in a zone, they can use the internal network load balancer. This architecture assumes a deployment in a single zone, and uses single VPC subnet for all management appliances. In other cases, you must use other load balancers, which is beyond the scope of this document.
+If you deploy the NSX Managers on the same VPC subnet in a zone, they can use the internal network load balancer. This architecture assumes a deployment in a single zone, and uses single VPC subnet for all management appliances. In other cases, you must use other load balancers, which are beyond the scope of this document.
 
-In this architecture, you deploy three NSX-T Manager VMs on the initial hosts, in the cluster you created of the {{site.data.keyword.cloud_notm}} bare metal server. Architecturally, this is a converged Management and Edge Cluster. The following figure shows the logical network placement of the NSX managers in relation to the other components in this architecture.
+In this architecture, you deploy three NSX-T Manager VMs on the initial hosts, in the cluster you created of the {{site.data.keyword.cloud_notm}} bare metal server. Architecturally, this is a converged Management and edge services cluster. The following figure shows the logical network placement of the NSX managers in relation to the other components in this architecture.
 
 ![NSX-T Manager network overview](../../images/vpc-ryo-diagrams-nsx-t-managers.svg "NSX-T Manager network overview"){: caption="Figure 3. NSX-T Manager network overview" caption-side="bottom"}
 
@@ -106,12 +106,12 @@ vlan-nic-tep-vmk10    | vlan           | 400     | vpc-tep-subnet      | false  
 Host TEP VLAN ID is defined in the host transport profile. The `dpg-tep` creation is optional, and for consistency only. It might help you to identify the VLAN ID used when operating the environment later.
 {: note}
 
-### Edge transport nodes and edge cluster
+### Edge transport nodes and edge services cluster
 {: #vpc-ryo-nsx-t--dplarch-edges}
 
-In addition to NSX Managers, NSX-T Edge Cluster and NSX Edge Nodes are required in a NSX-T deployment. The Edge Nodes are specific service appliances that are dedicated to running centralized network services that cannot be distributed to the ESXi hypervisors, such as Network Address Translation or north-south traffic between NSX-T Geneve Segments and VPC subnets. NSX Edge Nodes are transport nodes that run local control plane daemons and forwarding engines that implement the NSX-T data plane.
+In addition to NSX Managers, NSX-T edge services cluster and NSX Edge Nodes are required in an NSX-T deployment. The Edge Nodes are specific service appliances that are dedicated to running centralized network services. They cannot be distributed to the ESXi hypervisors, such as Network Address Translation or north-south traffic between NSX-T Geneve Segments and VPC subnets. NSX Edge Nodes are transport nodes that run local control plane daemons and forwarding engines that implement the NSX-T data plane.
 
-VM form factor Edge Nodes are used in this architecture. Edge Nodes can be grouped in one or several clusters, representing a pool of capacity. NSX-T Logical Routers, Tier-0 (also referred as T0) and Tier-1 (also referred as T1) can be hosted in the same or different Edge Clusters. Also, in this architecture, a single Edge Cluster is created for all T0 and T1 Logical Routers. A T0 Logical Router provides north-south connectivity and connects to a VPC subnet. A T1 logical router connects to one T0 logical router, and it provides northbound connectivity to the NSX-T segments attached to it.
+VM form factor Edge Nodes are used in this architecture. Edge Nodes can be grouped in one or several clusters, representing a pool of capacity. NSX-T Logical Routers, Tier-0 (also referred as T0) and Tier-1 (also referred as T1) can be hosted in the same or different edge services clusters. Also, in this architecture, a single edge services cluster is created for all T0 and T1 Logical Routers. A T0 Logical Router provides north-south connectivity and connects to a VPC subnet. A T1 logical router connects to one T0 logical router, and it provides northbound connectivity to the NSX-T segments attached to it.
 
 The following table summarizes the requirements for a Medium Form Factor Edge environment, which is the recommended starting size for production workloads.
 
@@ -175,7 +175,7 @@ Transport nodes define the physical server objects or VMs that participate in th
 | Transport node type   | Uplink profile | IP assignment |
 |:---------------------|:-----------------|:-----------------|
 | ESXi | `vpc-esxi-vpc-profile`  | `Static IP list` |
-| Edge Cluster | Overlay : `vpc-edge-vpc-profile`  \n VLANs : `vpc-edge-vpc-profile` | `Static IP list` |
+| Edge services cluster | Overlay : `vpc-edge-vpc-profile`  \n VLANs : `vpc-edge-vpc-profile` | `Static IP list` |
 {: caption="Table 8. NSX-T transport nodes" caption-side="top"}
 
 The IP addresses for each NSX-T transport node must be defined manually, which maps to provisioned {{site.data.keyword.cloud_notm}} bare metal server VLAN interface IPs.
@@ -225,7 +225,7 @@ An NSX-T segment reproduces switching functions, broadcast, unknown unicast, mul
 
 * [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
 * [{{site.data.keyword.vpc_short}} Bare Metal Servers](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
-* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vpc-ryo-overview)
+* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
 * [{{site.data.keyword.dl_full_notm}} overview](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)

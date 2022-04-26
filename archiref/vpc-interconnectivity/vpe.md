@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-03-15"
 
 subcollection: vmwaresolutions
 
@@ -44,7 +44,7 @@ Therefore, the first architectural decision you must make is how your VMware Wor
 
 The custom resolver feature offers fine-grained control of name resolution and forwarding of DNS Queries to and from on-premises DNS resolvers. You can create a custom resolver to run inside your VPC address space, and in a subnet you define. You can then use this custom resolver for your VMware Workloads on NSX-T overlays. For more information, see [Working with custom resolvers](/docs/dns-svcs?topic=dns-svcs-custom-resolver&interface=ui).
 
-VPE for VPC IP addresses uses a multi-zone-region, logical endpoint gateway to connect to a service endpoint on the {{site.data.keyword.cloud_notm}} private backbone. The endpoint gateway is designed to support the best practice of binding a single IP from each zone of the VPC. 
+VPE for VPC IP addresses uses a multizone region, logical endpoint gateway to connect to a service endpoint on the {{site.data.keyword.cloud_notm}} private backbone. The endpoint gateway is designed to support the best practice of binding a single IP from each zone of the VPC. 
 
 You can create an endpoint gateway with zero IP addresses and bind IP addresses as each zone is brought online. When you create an endpoint gateway, a DNS zone and records are created. The VPE service automatically upgrades your virtual server instances to use the private DNS as the default DNS resolver. For more information about creating VPEs, see [Creating an endpoint gateway](/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface=ui).
 

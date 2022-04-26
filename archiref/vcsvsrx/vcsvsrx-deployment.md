@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -16,12 +16,12 @@ subcollection: vmwaresolutions
 # vSRX deployment
 {: #vcsvsrx-deployment}
 
-Deploy the vCenter Server instance before the vSRX edge gateway appliance order is placed.
+Deploy the VMware vCenter Server® instance before the vSRX edge gateway appliance order is placed.
 
 ## Ordering Juniper gateway devices
 {: #vcsvsrx-deployment-order-gateway}
 
-The following procedure assumes that you are deploying the IaaS KVM-based Juniper vSRX HA cluster. If you want to build your own gateway by using ESXi, then order the No-OS gateway option instead. For more information, see [Ordering a Bring Your Own Gateway Appliance](/docs/gateway-appliance?topic=gateway-appliance-order-byoa).
+The following procedure assumes that you are deploying the IaaS KVM-based Juniper® vSRX HA cluster. If you want to build your own gateway by using VMware ESXi™, then order the No-OS gateway option instead. For more information, see [Ordering a Bring Your Own Gateway Appliance](/docs/gateway-appliance?topic=gateway-appliance-order-byoa).
 
 Open the [IBM Cloud infrastructure customer portal](https://control.softlayer.com), then select **Infrastructure > Network > Gateway Appliances > Create Gateway**.
 * Gateway vendor - Juniper

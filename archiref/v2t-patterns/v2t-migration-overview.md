@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-18"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ VMware NSX-V 6.4 is end of general support on 16 January 2022 and end of technic
 An exclusive support agreement between VMware® and {{site.data.keyword.IBM}} to support NSX-V until 15 October 2022 provides additional time for customers to migrate.
 {: note}
 
-This documentation provides a validated approach and guidance for existing {{site.data.keyword.vmwaresolutions_full}} customers with VMware vCenter Server with NSX-V instances. In that way, they can move and migrate their workloads to new vCenter Server with NSX-T instances (also referred as V2T migration). This documentation is not primarily aimed at customers that want to migrate on-premises workloads to {{site.data.keyword.cloud_notm}}, although some of the approach and guidance is applicable.
+This documentation provides a validated approach and guidance for existing {{site.data.keyword.vmwaresolutions_full}} customers with VMware vCenter Server® with NSX-V instances. In that way, they can move and migrate their workloads to new vCenter Server with NSX-T™ instances (also referred as V2T migration). This documentation is not primarily aimed at customers that want to migrate on-premises workloads to {{site.data.keyword.cloud_notm}}, although some of the approach and guidance is applicable.
 
 While VMware documentation describes a number of migration approaches, only the coexist or lift-and-shift approaches are validated by {{site.data.keyword.cloud_notm}}. In the co-exist approach, NSX-V, and NSX-T are run side by side and new workloads are placed on the new NSX-T environment and old workloads are decommissioned on the NSX-V environment. When the NSX-V environment is empty, it can be de-provisioned. This approach is not discussed further in the documentation, but it can be a validated option if you want to follow this path.
 {: note}
@@ -56,7 +56,7 @@ An example of high-level migration workflow that uses the lift-and-shift migrati
 * Use NSX-T Edge bridge and vSphere vMotion to migrate workload VMs to the overlay segment in NSX-T.
 * Migrate the Security Tags to the workload VMs in NSX-T.
 * Continue with all NSX-V logical switches until all VMs be evacuated from the NSX-V environment.
-* Decommission the vCenter Server with NSX-T environment.
+* Decommission the old vCenter Server with NSX-V environment.
 
 Depending on the source environment complexity and the skills, experience and time commitments of your team you might want to engage professional services. This action can develop a migration plan and also run the migration for you.
 {: note}

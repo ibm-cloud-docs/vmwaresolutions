@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2021
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-03-23"
 
 subcollection: vmwaresolutions
 
@@ -79,7 +79,7 @@ After the service, virtual appliance configuration, and deployment are done, log
 
 The HCX-IX Interconnect Appliance establishes and maintains a secure channel between vSphere and the {{site.data.keyword.cloud_notm}}.
 
-HCX uses strong encryption to bootstrap a site-to-site connection to {{site.data.keyword.cloud_notm}}. The secure channel between vSphere and {{site.data.keyword.cloud_notm}} achieves multi-tenancy for vSphere protocols that are not tenant aware, and to prevent networking "middle mile" security problems.
+HCX uses strong encryption to bootstrap a site-to-site connection to {{site.data.keyword.cloud_notm}}. The secure channel between vSphere and {{site.data.keyword.cloud_notm}} achieves multitenancy for vSphere protocols that are not tenant aware, and to prevent networking "middle mile" security problems.
 
 The HCX-IX Interconnect Appliance also incorporates vSphere replication technology to perform bidirectional migration.
 

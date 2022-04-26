@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-03-15"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 With {{site.data.keyword.tg_full}} (TGW), you can create a single or multiple transit gateways to connect VPCs together. You can also connect your {{site.data.keyword.cloud_notm}} classic infrastructure to a {{site.data.keyword.tg_short}} to provide seamless communication with Classic Infrastructure resources. Any new network that you connect to a {{site.data.keyword.tg_short}} is then automatically made available to every other network connected to it.
 
-{{site.data.keyword.tg_full_notm}} supports local and global routing between VPCs and the {{site.data.keyword.cloud_notm}} classic infrastructure. Connections to and from an {{site.data.keyword.tg_full_notm}} on the IBM private network are not shown to the public internet. This arrangement reduces public egress and VPN costs and reduces security threats. {{site.data.keyword.tg_full_notm}} is a fully redundant, fault-tolerant service with no single point of failure within {{site.data.keyword.cloud_notm}} Multi-Zone Regions.
+{{site.data.keyword.tg_full_notm}} supports local and global routing between VPCs and the {{site.data.keyword.cloud_notm}} classic infrastructure. Connections to and from an {{site.data.keyword.tg_full_notm}} on the IBM private network are not shown to the public internet. This arrangement reduces public egress and VPN costs and reduces security threats. {{site.data.keyword.tg_full_notm}} is a fully redundant, fault-tolerant service with no single point of failure within {{site.data.keyword.cloud_notm}} multizone regions.
 
 {{site.data.keyword.tg_full_notm}} provisions and defines connections between resources on the {{site.data.keyword.cloud_notm}} network, providing private interconnectivity between {{site.data.keyword.cloud_notm}} data centers worldwide. It also provides a central hub for connectivity, making it easier to provision and manage your networks. With {{site.data.keyword.tg_full_notm}}, you can create a single {{site.data.keyword.tg_short}} or multiple transit gateways to connect {{site.data.keyword.vpc_short}}s. You can also connect your {{site.data.keyword.cloud_notm}} classic infrastructure to a {{site.data.keyword.tg_short}} to provide seamless communication with classic infrastructure resources. Any new resource that you connect to a {{site.data.keyword.tg_short}} is automatically made available to every other resource connected to it. All data remains within the private {{site.data.keyword.cloud_notm}} backbone and is optimized for performance.
 

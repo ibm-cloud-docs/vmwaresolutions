@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-28"
+lastupdated: "2022-03-22"
 
 keywords: about vmware solutions, product overview, benefits
 
@@ -103,9 +103,9 @@ The {{site.data.keyword.vmwaresolutions_short}} console provides a detailed view
 ## VMware Solutions components
 {: #under_the_hood-comp}
 
-A number of different components work together to provision and manage your environment. Most of these components are deployed into your {{site.data.keyword.cloud_notm}} account. Because the solution depends on all of these components working together, do not modify or cancel any of these components from your {{site.data.keyword.cloud_notm}} account. The correct way to delete a running instance is by using the console rather than canceling the individual components.
+A number of different components work together to provision and manage your environment. Most of these components are deployed into your {{site.data.keyword.cloud_notm}} account. Because the solution depends on ensuring that all of these components work together, do not modify or cancel any of these components from your {{site.data.keyword.cloud_notm}} account. The correct way to delete a running instance is by using the console rather than canceling the individual components.
 
-While the environment is an integrated virtualization environment, the price of various virtualization components (such as VMware licenses), infrastructure components (bare metal servers, VLANs, subnets, and storage), and management components is itemized in the bill that you receive from {{site.data.keyword.cloud_notm}}.
+While the environment is an integrated virtualization environment, the price of various components is itemized in the bill that you receive from {{site.data.keyword.cloud_notm}}. These items include virtualization components (such as VMware licenses), infrastructure components (bare metal servers, VLANs, subnets, and storage), and management components.
 
 ### The VMware Solutions console
 {: #under_the_hood-console}

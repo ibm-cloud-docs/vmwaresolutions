@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-04"
+lastupdated: "2022-04-01"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 

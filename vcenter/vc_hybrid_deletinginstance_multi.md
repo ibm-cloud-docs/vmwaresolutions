@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-03-15"
 
-keywords: vCenter Server Hybridity delete instance, delete vCenter Server Hybridity, delete multi-site
+keywords: vCenter Server Hybridity delete instance, delete vCenter Server Hybridity, delete multisite
 
 subcollection: vmwaresolutions
 
@@ -15,10 +15,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Deleting vCenter Server with Hybridity Bundle instances in a multi-site configuration
+# Deleting vCenter Server with Hybridity Bundle instances in a multisite configuration
 {: #vc_hybrid_deletinginstance_multi}
 
-There are special considerations to be aware of before you plan to delete VMware vCenter Server® with Hybridity Bundle instances that are part of a multi-site configuration.
+There are special considerations to be aware of before you plan to delete VMware vCenter Server® with Hybridity Bundle instances that are part of a multisite configuration.
 
 When you delete a vCenter Server with Hybridity Bundle instance, the following components are released sequentially:
 1. All deployed services
@@ -36,7 +36,7 @@ Because of resource dependencies, the components in your instance are not releas
 You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle for the deleted instance.
 {: important}
 
-## Procedure to delete vCenter Server with Hybridity Bundle instances in a multi-site configuration
+## Procedure to delete vCenter Server with Hybridity Bundle instances in a multisite configuration
 {: #vc_hybrid_deletinginstance_multi-procedure}
 
 1. Delete all services from the secondary vCenter Server with Hybridity Bundle instance.
@@ -44,7 +44,7 @@ You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastruct
 3. Delete the secondary vCenter Server from the primary SSO (Single Sign-On) domain. For more information, see [Unregister vCenter Server from Single Sign-On](https://kb.vmware.com/s/article/2106736){: external}.
 4. Demote the local domain controller Virtual Service Instance (VSI). For more information, see [Demoting domain controllers and domains](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/demoting-domain-controllers-and-domains--level-200-){: external}.
 5. Delete the secondary vCenter Server with Hybridity Bundle instance from the {{site.data.keyword.vmwaresolutions_short}} console.
-6. Repeat steps 1 - 5 for all secondary vCenter Server with Hybridity Bundle instances in your multi-site configuration.
+6. Repeat steps 1 - 5 for all secondary vCenter Server with Hybridity Bundle instances in your multisite configuration.
 7. After you delete all secondary instances, you can also delete the primary instance from the {{site.data.keyword.vmwaresolutions_short}} console.
 
 ## Related links

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-03-31"
 
 keywords: add services for Security and Compliance Readiness Bundle, remove services for Security and Compliance Readiness Bundle, scb add-on services
 
@@ -26,7 +26,7 @@ The following services are available for Security and Compliance Readiness Bundl
 * [Veeam 11](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)
 * [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations)
-* [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_ordering)
+* [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_ordering)
 
 ## Procedures to order, view, or delete services for Security and Compliance Readiness Bundle instances
 {: #scb_addingremovingservices-procedure}

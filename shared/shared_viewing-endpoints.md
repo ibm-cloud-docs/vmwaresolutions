@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-01-24"
+lastupdated: "2022-03-15"
 
 keywords: VMware Solutions Shared view private network endpoint
 
@@ -28,7 +28,7 @@ You can view the details of a private network endpoint for a virtual data center
 
 | Item | Description |
 |:---- |:----------- |
-| Device type | The multi-tenant or dedicated device and size. |
+| Device type | The multitenant or dedicated device and size. |
 | Service network IP | The IP address for the service network. |
 | Private network IP | The IP address for the private network. |
 | Service address | The IP address that your virtual data center is allocated for {{site.data.keyword.cloud_notm}} access. |

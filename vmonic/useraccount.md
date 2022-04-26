@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-04-22"
 
 keywords: set credentials, update credentials, set notifications, IAM user, invite user
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Managing user accounts and settings
 {: #useraccount}
 
-Use the following procedures to invite users, to update user account credentials, and to specify whether you want to receive email and console notifications for various events.
+Use the following procedures to invite users to update user account credentials, and to specify whether you want to receive email and console notifications for various events.
 
 ## Inviting users to access services and resources
 {: #useraccount-iamuserinv}

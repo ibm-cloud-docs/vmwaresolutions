@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-02-23"
+lastupdated: "2022-03-24"
 
 subcollection: vmwaresolutions
 
@@ -16,20 +16,20 @@ subcollection: vmwaresolutions
 # Prerequisites for installation
 {: #openshift-runbook-runbook-prereq-intro}
 
-Before you can start the build process to install the Red Hat® OpenShift® cluster the following steps are required.
+Before you can start the build process to install the {{site.data.keyword.redhat_openshift_full}} cluster the following steps are required.
 
-* Order new subnets for the OpenShift environment.
-   * A private portable subnet for the Red Hat OpenShift cluster NSX ESG.
-   * A public portable subnet for the Red Hat OpenShift cluster NSX ESG.
-* Download Red Hat OpenShift 4.7 - Access to a Red Hat subscription to download the installer, pull secret and Red Hat Enterprise CoreOS OVA.
-* Download RHEL 8.0 ISO - Access to a Red Hat subscription to download the Red Hat Enterprise Linux® 8.x ISO for the bastion host.
+* Order new subnets for the {{site.data.keyword.redhat_openshift_notm}} environment.
+   * A private portable subnet for the {{site.data.keyword.redhat_openshift_notm}} cluster NSX ESG.
+   * A public portable subnet for the {{site.data.keyword.redhat_openshift_notm}} cluster NSX ESG.
+* Download {{site.data.keyword.redhat_openshift_notm}} 4.7 - Access to a {{site.data.keyword.redhat_full}} subscription to download the installer, pull secret and {{site.data.keyword.redhat_notm}} Enterprise CoreOS OVA.
+* Download RHEL 8.0 ISO - Access to a {{site.data.keyword.redhat_notm}} subscription to download the {{site.data.keyword.redhat_notm}} Enterprise Linux® 8.x ISO for the bastion host.
 * {{site.data.keyword.cloud}} environment details - Collect the following details for {{site.data.keyword.cloud_notm}} for VMware® Solutions environment.
    * VMware vCenter Server® instance details and passwords
    * The additional private portable subnet information
    * The additional public portable subnet information
 * Download and install govc - govc is a VMware vSphere® CLI, an alternative to the GUI, and suited for automation tasks.
 
-## Ordering new subnets for the OpenShift environment
+## Ordering new subnets for the Red Hat OpenShift environment
 {: #openshift-runbook-runbook-prereq-cloud-subnets}
 
 1. Log in to the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.com/infrastructure/vmware-solutions/console).
@@ -43,11 +43,11 @@ Review the following requirements.
 ## Downloading Red Hat OpenShift 4.7
 {: #openshift-runbook-runbook-prereq-download41}
 
-Access the [OpenShift Infrastructure Providers page](https://cloud.redhat.com/openshift/install/vsphere/user-provisioned){: external}.
+Access the [{{site.data.keyword.redhat_openshift_notm}} Infrastructure Providers page](https://cloud.redhat.com/openshift/install/vsphere/user-provisioned){: external}.
 
 1. Download the installer.
 2. Download the Pull Secret.
-3. Download the Red Hat Enterprise Linux CoreOS (RHEL CoreOS) OVA image or download the OVA by using the following code. Replace 4.x and 4.x.3 with the current Red Hat OpenShift version, for example, 4.7.
+3. Download the {{site.data.keyword.redhat_notm}} Enterprise Linux CoreOS (RHEL CoreOS) OVA image or download the OVA by using the following code. Replace 4.x and 4.x.3 with the current {{site.data.keyword.redhat_openshift_notm}} version, for example, 4.7.
    `curl -O https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.x/latest/rhcos-4.x.3-x86_64-vmware.x86_64.ova`
 4. Download the command-line tools if you want to run the commands from a desktop or outside Bastion host.
 
@@ -56,7 +56,7 @@ Access the [OpenShift Infrastructure Providers page](https://cloud.redhat.com/op
 
 Download the ISO image for the bastion host.
 
-1. Go to the Red Hat [Product downloads](https://access.redhat.com/downloads){: external} page.
+1. Go to the {{site.data.keyword.redhat_notm}} [Product downloads](https://access.redhat.com/downloads){: external} page.
 2. Click **RHEL 8.x Release** and select the 8.x version.
 3. Download the source ISO images.
 4. The ISO file name is `rhel-8.x-x86_64-dvd.iso`.
@@ -116,7 +116,7 @@ Pick your deployment-specific values and use them throughout the runbook.
 
 You must upload and import the RHEL ISO and RHEL CoreOS OVA downloads from the previous steps into the vCenter Server instance datastore. You must rename the OVA image to *rhcos-latest* in order for the image to work with the Terraform templates used later in the build process.
 
-On the jump-server or remote device, by using an editor of your choice, such as Visual Studio Code, copy the following and change for your values. Replace the x in 4.x.3 with the current Red Hat OpenShift version, for example, 4.7.
+On the jump-server or remote device, by using an editor of your choice, such as Visual Studio Code, copy the following and change for your values. Replace the x in 4.x.3 with the current {{site.data.keyword.redhat_openshift_notm}} version, for example, 4.7.
 
 ```bash
 export GOVC_URL='10.208.17.2'
@@ -151,11 +151,11 @@ govc datastore.mkdir isos
 govc datastore.upload rhel-8.x-x86_64-dvd.iso isos/rhel-8.x-x86_64-dvd.iso
 ```
 
-**Next topic:** [OpenShift NSX logical switches configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxls-intro)
+**Next topic:** [{{site.data.keyword.redhat_openshift_notm}} NSX logical switches configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxls-intro)
 
 ## Related links
 {: #vcs-openshift-runbook-prerequisites-related}
 
-* [OpenShift NSX DLR configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxdlr-intro)
-* [OpenShift Bastion node setup](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-bastion-intro)
+* [{{site.data.keyword.redhat_openshift_notm}} NSX DLR configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxdlr-intro)
+* [{{site.data.keyword.redhat_openshift_notm}} Bastion node setup](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-bastion-intro)
 * [Visual Studio Code](https://code.visualstudio.com/){: external}

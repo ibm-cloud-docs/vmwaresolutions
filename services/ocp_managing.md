@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-11-28"
+lastupdated: "2022-03-21"
 
 keywords: Red Hat OpenShift for VMware, manage OpenShift, OpenShift operations
 
@@ -18,25 +18,25 @@ subcollection: vmwaresolutions
 # Managing Red Hat OpenShift for VMware
 {: #ocp_managing}
 
-Review the following information to manage your Red Hat® OpenShift® for VMware® service after deployment.
+Review the following information to manage your {{site.data.keyword.redhat_openshift_full}} for VMware® service after deployment.
 
-## Rotating the OpenShift certificates (required)
+## Rotating the Red Hat OpenShift certificates (required)
 {: #ocp_managing-cert-rotation}
 
-Red Hat OpenShift for VMware uses kubelet client certificates that must be rotated periodically for security purposes. OpenShift mainly automates the rotation process, but requires manual approval of certificate signing requests (CSRs). Therefore, it is important that you understand the OpenShift certificate rotation schedule to avoid expired certificates.  
+{{site.data.keyword.redhat_openshift_notm}} for VMware uses kubelet client certificates that must be rotated periodically for security purposes. {{site.data.keyword.redhat_openshift_notm}} mainly automates the rotation process, but requires manual approval of certificate signing requests (CSRs). Therefore, it is important that you understand the {{site.data.keyword.redhat_openshift_notm}} certificate rotation schedule to avoid expired certificates.  
 
-The initial certificates that are created during installation expire 24 hours after they are created. IBM's automation process, which installs OpenShift, handles the approval of the CSRs for this initial rotation, which is done by running a script on the bastion for the first 30 hours. The script is named `/root/approve-csr.sh` and its log file is named `/root/approve-csr.log`. 
+The initial certificates that are created during installation expire 24 hours after they are created. IBM's automation process, which installs {{site.data.keyword.redhat_openshift_notm}}, handles the approval of the CSRs for this initial rotation, which is done by running a script on the bastion for the first 30 hours. The script is named `/root/approve-csr.sh` and its log file is named `/root/approve-csr.log`. 
 
 For the script to run successfully, the initial `kubeadmin` credentials must be the same until the initial certificate rotation is complete. Do not change the kubeadmin credentials for the first 24 hours. If the credentials are changed, you must monitor and approve the CSRs for the initial certificate rotation. For more information, see [Approving the CSRs for your machines](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html#installation-approve-csrs_installing-vsphere){: external}.
 
-Do not restart any of the OpenShift cluster virtual machines (VMs) or the bastion VM until the first certificate rotation is done.
+Do not restart any of the {{site.data.keyword.redhat_openshift_notm}} cluster virtual machines (VMs) or the bastion VM until the first certificate rotation is done.
 {: important}
 
-After the initial certificate rotation, certificates are renewed every 30 days. You must establish a process to approve the CSRs for every certificate rotation. According to Red Hat, you can approve CSRs when they reach 80% of their expiration period, which is approximately 25 days into the lifespan of the CSRs.
+After the initial certificate rotation, certificates are renewed every 30 days. You must establish a process to approve the CSRs for every certificate rotation. According to {{site.data.keyword.redhat_full}}, you can approve CSRs when they reach 80% of their expiration period, which is approximately 25 days into the lifespan of the CSRs.
 
-If you do not approve CSRs in time and the certificates expire, you can recover from expired control plane certificates and get the OpenShift cluster operational again. For more information, see [Recovering from expired control plane certificates](https://docs.openshift.com/container-platform/4.7//backup_and_restore/control_plane_backup_and_restore/disaster_recovery/scenario-3-expired-certs.html){: external}.
+If you do not approve CSRs in time and the certificates expire, you can recover from expired control plane certificates and get the {{site.data.keyword.redhat_openshift_notm}} cluster operational again. For more information, see [Recovering from expired control plane certificates](https://docs.openshift.com/container-platform/4.7//backup_and_restore/control_plane_backup_and_restore/disaster_recovery/scenario-3-expired-certs.html){: external}.
 
-## Resizing your OpenShift VMs post-deployment
+## Resizing your Red Hat OpenShift VMs post-deployment
 {: #ocp_managing-resize}
 
 1. Log in to the bastion VM by using SSH.
@@ -44,24 +44,24 @@ If you do not approve CSRs in time and the certificates expire, you can recover 
 3. Shut down the target VM: `ssh core@<vm-ip> sudo shutdown -h 0`
 4. After the VM is powered off, resize the VM in vCenter Server.
 5. Power on the VM.
-6. In the OpenShift console, go to **Compute > Nodes** and wait for the VM that was restarted to be back in a **Ready** state.
+6. In the {{site.data.keyword.redhat_openshift_notm}} console, go to **Compute > Nodes** and wait for the VM that was restarted to be back in a **Ready** state.
 7. Complete the previous steps for all VMs.
 
-## Changing the SSH key on the OpenShift bastion VM
+## Changing the SSH key on the Red Hat OpenShift bastion VM
 {: #ocp_managing-change-ssh-key}
 
-The SSH key pair that is generated during installation is on the OpenShift bastion VM. The location of the SSH key pair is displayed on the OpenShift service details page. This SSH key was installed on all cluster VMs to allow SSH logins from the bastion without requiring a password.
+The SSH key pair that is generated during installation is on the {{site.data.keyword.redhat_openshift_notm}} bastion VM. The location of the SSH key pair is displayed on the {{site.data.keyword.redhat_openshift_notm}} service details page. This SSH key was installed on all cluster VMs to allow SSH logins from the bastion without requiring a password.
 
 It is recommended that a new SSH key pair is generated and used to replace the existing key. To generate a new
-SSH key pair, use the instructions in the Red Hat article about [updating an SSH key](https://access.redhat.com/solutions/4510281){: external}. You must run the commands from the bastion VM. For more information about logging in to the bastion, see [Bastion details](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview#ocp_overview-bastion).
+SSH key pair, use the instructions in the {{site.data.keyword.redhat_notm}} article about [updating an SSH key](https://access.redhat.com/solutions/4510281){: external}. You must run the commands from the bastion VM. For more information about logging in to the bastion, see [Bastion details](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview#ocp_overview-bastion).
 
-## Expanding an OpenShift cluster with more workers
+## Expanding Red Hat OpenShift cluster with more workers
 {: #ocp_managing-expand-cluster}
 
-To expand your OpenShift cluster by adding more worker VMs, complete the following steps:
+To expand your {{site.data.keyword.redhat_openshift_notm}} cluster by adding more worker VMs, complete the following steps:
 
 1. Create a worker VM from the RHCOREOS template.
-   1. Ensure that the VM is connected to the same network as the other OpenShift worker VMs.
+   1. Ensure that the VM is connected to the same network as the other {{site.data.keyword.redhat_openshift_notm}} worker VMs.
    2. Do not power on this VM yet. You complete more configuration steps ahead.
 
 2. Prepare a worker ignition file on the bastion.
@@ -102,11 +102,11 @@ To expand your OpenShift cluster by adding more worker VMs, complete the followi
 
 7. Approve any certificate signing requests (CSRs) from the bastion. During the provisioning of the new worker, you might have to [approve CSRs](https://docs.openshift.com/container-platform/4.4/installing/installing_vsphere/installing-vsphere.html#installation-approve-csrs_installing-vsphere){: external} from the bastion.
    1. Log in to the bastion as the `root` user and change to the bastion installation directory, as described in [Bastion details](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview#ocp_overview-bastion).
-   2. Before you can run any commands, you must authenticate to OpenShift.
+   2. Before you can run any commands, you must authenticate to {{site.data.keyword.redhat_openshift_notm}}.
       * If authentication is not configured and you are using the default `kubeadmin` account and password, run the command `export KUBECONFIG=auth/kubeconfig` and verify that you are authenticated by running the command `./oc whoami`.
-      * If other backends or users are authenticated, log in by using one of those accounts as explained in the Red Hat OpenShift documentation, for example, by running the command `./oc login`.
+      * If other backends or users are authenticated, log in by using one of those accounts as explained in the {{site.data.keyword.redhat_openshift_notm}} documentation, for example, by running the command `./oc login`.
    3. Run `./oc get nodes` to see the new worker. If it is not yet in the **Ready** state, you must repeatedly check for pending CSRs by using the command `./oc get csr`, and then approve the CSRs by using the command `./oc adm certificate approve <csr_name>`. Continue to check until the configuration is complete and the new worked is in the **Ready** state.
-   4. After the new worker is in **Ready** state, it can be used by OpenShift.
+   4. After the new worker is in **Ready** state, it can be used by {{site.data.keyword.redhat_openshift_notm}}.
 
 8. Power on the VM.
    * After the VM is powered on, you can monitor the VM to see whether a problem exists. The VM gets an IP address, then processes the ignition file, and then opens a login prompt. 

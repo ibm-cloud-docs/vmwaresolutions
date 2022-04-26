@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-15"
 
 subcollection: vmwaresolutions
 
@@ -86,16 +86,16 @@ vRLI collects log events from the following virtual infrastructure and cloud man
 
 For more information, see [vRealize Log Insight design](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrli).
 
-### HyTrust CloudControl
+### Entrust CloudControl
 {: #vrw-vsphere-platform-management-htcc}
 
-HyTrust Solutions, HyTrust CloudControl (HTCC), and the optional HyTrust DataControl (HTDC), are used to unify security policies and the access to the vSphere vCenter and NSX-T management.
+Entrust Solutions, Entrust CloudControl, and the optional Entrust DataControl are used to unify security policies and the access to the vSphere vCenter and NSX-T management.
 
-HyTrust CloudControl provides unified visibility to security configuration and context, and continuous compliance by using templates to enforce segregation of duties. It also provides a robust audit trail that includes a full record of all actions that are taken by security, network, and compute platform administrators. HTCC simplifies compliance with administrative controls requirements in HIPAA, PCI, FedRAMP, CJIS, and other regulations.
+Entrust CloudControl provides unified visibility to security configuration and context, and continuous compliance by using templates to enforce segregation of duties. It also provides a robust audit trail that includes a full record of all actions that are taken by security, network, and compute platform administrators. Entrust CloudControl simplifies compliance with administrative controls requirements in HIPAA, PCI, FedRAMP, CJIS, and other regulations.
 
-The HTCC appliances are deployed in an active-active configuration, with integrations with Active Directory for authentication services and both the vCenter Server and NSX-T admin user interfaces.
+The Entrust CloudControl appliances are deployed in an active-active configuration, with integrations with Active Directory for authentication services and both the vCenter Server and NSX-T admin user interfaces.
 
-For more information, see [HyTrust CloudControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations).
+For more information, see [Entrust CloudControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations).
 
 ### Backup server
 {: #vrw-vsphere-platform-management-backupserver}

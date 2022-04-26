@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-12-02"
+lastupdated: "2022-03-16"
 
 keywords: shared order resource, order on demand shared, order on demand resources
 
@@ -108,9 +108,9 @@ If you selected **Preconfigured**, you have the following options for allocated 
 
 | Size    | vCPU      | RAM      |
 |:------- |:-------- |:------ |
-| Small | 64 cores | 512 GB |
-| Medium | 128 cores | 1024 GB |
-| Large | 256 cores | 2048 GB |
+| Small | 64-cores | 512 GB |
+| Medium | 128-cores | 1024 GB |
+| Large | 256-cores | 2048 GB |
 {: caption="Table 1. Preconfigured vCPU and RAM options" caption-side="top"}
 
 If you selected **Customizable**, you can customize your reserved vCPU and RAM limits.
@@ -121,7 +121,7 @@ The vCPU maximum number is limited to the 40 cores with hyperthreading on each h
 ## Recommended services
 {: #shared_ordering-services}
 
-The following services are preinstalled and ready-to-use in all virtual data centers. Service charges are incurred only if you choose to use the service.
+The following services are preinstalled and ready to use in all virtual data centers. Service charges are incurred only if you choose to use the service.
 
 * Veeam® Availability Suite and Veeam Cloud Connect Replication
 * Zerto
@@ -135,7 +135,7 @@ Based on your selected configuration for the virtual data center, the estimated 
 
 You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. The tool is useful if you want to estimate the price of the selected VMware Solutions Shared resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider purchasing.
 
-## Procedure to order VMware Solutions Shared On-demand
+## Procedure to order VMware Solutions Shared on-demand
 {: #shared_ordering-procedure-ondemand}
 {: help}
 {: support}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-01-27"
+lastupdated: "2022-03-23"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -22,8 +22,8 @@ subcollection: vmwaresolutions
 
 VMware Solutions Shared has the following IaaS subscription service types:
 
-* Multi-tenant on-demand virtual data centers
-* Multi-tenant reserved virtual data centers
+* Multitenant on-demand virtual data centers
+* Multitenant reserved virtual data centers
 
 You can manage the lifecycle of virtual data centers by using the VMware Solutions Shared offering. The following functions are supported when you use the vCloud Director Management console or public API:
 
@@ -72,7 +72,7 @@ Organizations use catalogs to store vApp templates and media files. The members 
 #### Virtual data centers
 {: #shared_overview-vc}
 
-An organization virtual data center provides resources to an organization. Virtual data centers provide an environment where virtual systems can be stored, deployed, and operated. They also provide storage for virtual CD and DVD media. An organization can have multiple virtual data centers.
+An Organization virtual data center provides resources to an organization. Virtual data centers provide an environment where virtual systems can be stored, deployed, and operated. They also provide storage for virtual CD and DVD media. An organization can have multiple virtual data centers.
 
 ![VMware Solutions Shared virtual data center architecture](../images/virtual-datacenter-architecture-public.svg "{{site.data.keyword.cloud_notm}} for virtual data center architecture"){: caption="Figure 2. VMware Solutions Shared virtual data center architecture" caption-side="bottom"}
 
@@ -97,7 +97,7 @@ The service address can be used for access to {{site.data.keyword.cloud_notm}} i
 
 * NTP
 * Windows® operating system licensing and updates
-* Red Hat® Enterprise Linux® operating system licensing and updates
+* Red Hat Enterprise Linux® operating system licensing and updates
 * Cloud Object Storage
 
 ### Storage
@@ -105,7 +105,7 @@ The service address can be used for access to {{site.data.keyword.cloud_notm}} i
 
 When you create or deploy vApps or VMs, you can select either an unencrypted or encrypted storage policy. Each option has six different tiers of storage available, depending on the storage performance required.
 
-Storage policy availability may vary by region and deployment topology. On the VMware Solutions Shared order page, select the **About** tab to view available storage policy offerings.
+Storage policy availability can vary by region and deployment topology. On the VMware Solutions Shared order page, select the **About** tab to view available storage policy offerings.
 {: note}
 
 #### Unencrypted storage policy options
@@ -124,7 +124,7 @@ Standard is the default policy for virtual data centers.
 #### Encrypted storage policy options
 {: #shared_overview-specs-storage-encrypted}
 
-Encryption enabled storage policies are available to all organization virtual data centers. Encryption protects not only the VMs but also VM disks and other files. Administrators can encrypt VMs and disks by associating the VM or disk with a storage policy that has the VM encryption capability.
+Encryption-enabled storage policies are available to all Organization virtual data centers. Encryption protects not only the VMs but also VM disks and other files. Administrators can encrypt VMs and disks by associating the VM or disk with a storage policy that has the VM encryption capability.
 
 * Standard - Encrypted. The storage tier with no maximum throughput. The number of IOPS/GB is not guaranteed.
 * 10 IOPS/GB - Encrypted. The storage tier with a maximum throughput of 10 IOPS/GB, the highest guaranteed performance.
@@ -133,7 +133,7 @@ Encryption enabled storage policies are available to all organization virtual da
 * 0.25 IOPS/GB - Encrypted. Storage tier with a maximum throughput of 0.25 IOPS/GB.
 * VSAN - Encrypted. No IOPS limitation.
 
-For more information about the VM encryption limitations for VMware Cloud Director 10.1, see [Enabling VM encryption on storage policies of an organization virtual data center]https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-80F58C1D-A97E-43FE-8E41-E9242A1D2332.html){: external}.
+For more information about the VM encryption limitations for VMware Cloud Director 10.3, see [Enabling VM encryption on storage policies of an Organization virtual data center](https://docs.vmware.com/en/VMware-Cloud-Director/10.3/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-80F58C1D-A97E-43FE-8E41-E9242A1D2332.html){: external}.
 
 The encryption storage policies do not currently work with VM customizations. IBM is working closely with VMware to resolve this issue in a future release. In the meantime, you can use encryption storage policies after a VM is deployed and customized by using the unencrypted storage policies. For more information, see [Changing the general properties of a virtual machine](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-change-properties).
 {: note}

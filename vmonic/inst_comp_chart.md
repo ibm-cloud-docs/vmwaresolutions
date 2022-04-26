@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-17"
+lastupdated: "2022-04-11"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -28,12 +28,12 @@ Review the following table to understand the differences in feature support for 
 |:-------- |:-------------- |:-------------- |
 | Powered by {{site.data.keyword.IBM}} advanced automation[^automation] | Yes | No. Self-built and configured. |
 | Storage options | NFS or vSAN™ available with automation. </br>iSCSI available with manual configuration. | NFS, vSAN, or iSCSI available with manual configuration |
-| Number of ESXi™ servers in the initial cluster | For vSAN, four servers. </br></br>For NSX-T instances with an NFS cluster:</br>(1) Consolidated NFS clusters require at least three ESXi servers.</br>(2) Management NFS clusters require three ESXi servers for production use, or at least two servers for non-production use.</br>(3) All other NFS clusters require at least two ESXi servers.| No limitation. One or more ESXi servers as allowed on the console. For example, you can deploy a three-node vSAN cluster with FTT=1. |
+| Number of ESXi™ servers in the initial cluster | For vSAN, four servers. </br></br>For NSX-T instances with an NFS cluster:</br>(1) Consolidated NFS clusters require at least three ESXi servers.</br>(2) Management NFS clusters require three ESXi servers for production use, or at least two servers for nonproduction use.</br>(3) All other NFS clusters require at least two ESXi servers.| No limitation. One or more ESXi servers as allowed on the console. For example, you can deploy a three node vSAN cluster with FTT=1. |
 | Maximum number of ESXi servers[^servers] | 59 per cluster | 96 per cluster |
-| Cloud automated multi-site deployment | Supported for new instances | Supported. Automated configuration not included. |
+| Cloud automated multisite deployment | Supported for new instances | Supported. Automated configuration not included. |
 | Add ESXi servers | Supported | Supported. Automated configuration not included. |
 | Remove ESXi servers | Supported | Supported. Automated configuration not included. |
-| Multi-cluster support | Maximum number depends on VMware® sizing guidelines | Supported. Automated configuration not included. |
+| Multicluster support | Maximum number depends on VMware® sizing guidelines | Supported. Automated configuration not included. |
 | Client-managed updating and patching of VMware stack | Client-managed updates - Native VMware tools (VMware Update Manager™)[^nsxv1] | Client-managed updates - Native VMware tools (VMware Update Manager) |
 | Backup and restore | Manually, by using Veeam® | Backup and restore solution not included |
 | Software-defined networking[^nsxvexist] | NSX DC SP Base, Professional, Advanced, or Enterprise Plus | NSX DC SP Base, Professional, Advanced, or Enterprise Plus. Automated configuration not included. |
@@ -70,16 +70,16 @@ Review the following table to understand the differences in feature support for 
 | vSAN | Optional | Optional | Required |
 | Consolidated cluster | Optional | Optional | Optional |
 | Separate management cluster | Supported | Supported | Supported |
-| Minimum number of ESXi servers | For vSAN, 4 servers. </br>For NFS, 3 servers for production use and 2 servers for non-production use. | For vSAN, 6 servers. </br>For NFS, 5 servers. | 6 servers - 4 for the consolidated cluster and 2 for the edge services cluster. |
+| Minimum number of ESXi servers | For vSAN, 4 servers. </br>For NFS, 3 servers for production use and 2 servers for nonproduction use. | For vSAN, 6 servers. </br>For NFS, 5 servers. | 6 servers - 4 for the consolidated cluster and 2 for the edge services cluster. |
 | Edge services cluster | Optional | Required. Juniper vSRX, FortiGate® Virtual Appliance, Bring your own gateway. | Required. Juniper vSRX, FortiGate Virtual Appliance, Bring your own gateway, or FortiGate Security Appliance. |
 | Logging and monitoring with VMware vRealize® Operations and Log Insight | Optional | Required | Required |
-| Role-based access with HyTrust® CloudControl™ | Optional | Required | Required |
+| Role-based access with Entrust CloudControl™ | Optional | Required | Required |
 | Compliance with Caveonix | Optional | Required | Required |
 | Caveonix pricing | Per VM | Per host | Per host |
 | Key encryption | Key Protect or Hyper Protect Crypto Services | Hyper Protect Crypto Services required | Hyper Protect Crypto Services required |
 | Direct Link | Optional | Optional | Required for private only instances |
-| Backup | Veeam (opt out) or IBM Spectrum Protect Plus | Veeam 11 (opt out) | Veeam 11 required with option to remove on day 2 |
-| Veeam backup server | Optional (opt out) | Optional (opt out) | Required with option to remove on day 2 |
+| Backup | Veeam (opt out) or IBM Spectrum Protect Plus | Veeam 11 (opt out) | Veeam 11 required with option to remove on Day 2 |
+| Veeam backup server | Optional (opt out) | Optional (opt out) | Required with option to remove on Day 2 |
 | Disaster recovery | Veeam or Zerto | Veeam 11 | Veeam 11|
 | Migration | HCX, Zerto, or PrimaryIO | HCX (optional) | HCX (optional) |
 | Stretched cluster - High Availability | Not supported | Not supported | Optional |

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-03-25"
 
 keywords: IBM Cloud Expert Services, request IBM Cloud Expert, tech specs Cloud Expert
 
@@ -33,7 +33,7 @@ Expert Services OnDemand Consulting (ODC) is for customers with technical staff 
 
 The Hybridity Bundle Jumpstart simplifies moving VMware workloads from on-premises or other cloud providers to {{site.data.keyword.cloud_notm}}. The Expert Services team leads you through an initial assessment, overview of {{site.data.keyword.vmwaresolutions_short}} with HCX™, and design and planning. This engagement includes side-by-side guidance about ordering of the infrastructure, its configuration, and migration of your first 20 VMs.
 
-This offering speeds adoption of VMware on {{site.data.keyword.cloud_notm}} by taking the client through an assessment of their virtualization needs. The offering then provides an overview of {{site.data.keyword.vmwaresolutions_short}}, followed by design and planning of their VMWare solution. IBM then provides side-by-side guidance of how to order the infrastructure and the initial configuration. Optionally, it can be followed by OnDemand Consulting to provide on-going assistance to the client.
+This offering speeds adoption of VMware on {{site.data.keyword.cloud_notm}} by taking the client through an assessment of their virtualization needs. The offering then provides an overview of {{site.data.keyword.vmwaresolutions_short}}, followed by design and planning of their VMware solution. IBM then provides side-by-side guidance of how to order the infrastructure and the initial configuration. Optionally, it can be followed by OnDemand Consulting to provide on-going assistance to the client.
 
 ### Standard features
 {: #managing_ices-standard-feat}

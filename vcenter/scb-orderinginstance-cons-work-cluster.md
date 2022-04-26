@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-03-21"
+lastupdated: "2022-04-01"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -137,8 +137,6 @@ Select **Public and private network** or **Private network only** for the consol
 
 | Geography | Data center | Pod |
 |:--------- |:----------- |:--- |
-| Asia-Pacific | SYD04 | 01 |
-| Asia-Pacific | SYD05 | 01 |
 | Asia-Pacific | TOK02 | 02 |
 | Asia-Pacific | TOK04 | 01 |
 | Asia-Pacific | TOK05 | 01 |

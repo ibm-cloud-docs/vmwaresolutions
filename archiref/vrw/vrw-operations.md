@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-03-23"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ All operational tools are deployed into the management cluster. The {{site.data.
 ### vRealize Operations
 {: #vrw-operations-management-vrops}
 
-[VMware vRealize Operations](https://www.vmware.com/products/vrealize-operations.html){: external} delivers self-driving IT operations management from apps to infrastructure to optimize, plan, and scale hybrid cloud and HCI deployments while unifying multi-cloud monitoring. Powered by AI/ML, vRealize Operations helps IT run production operations hands-off and hassle-free with a unified operations platform. This platform delivers continuous performance optimization, efficient capacity management, proactive planning, intelligent remediation, and integrated compliance.
+[VMware vRealize Operations](https://www.vmware.com/products/vrealize-operations.html){: external} delivers self-driving IT operations management from apps to infrastructure to optimize, plan, and scale hybrid cloud and HCI deployments while unifying multicloud monitoring. Powered by AI/ML, vRealize Operations helps IT run production operations hands-off and hassle-free with a unified operations platform. This platform delivers continuous performance optimization, efficient capacity management, proactive planning, intelligent remediation, and integrated compliance.
 
 ### vRealize Log Insight
 {: #vrw-operations-management-vrli}
@@ -48,7 +48,7 @@ All systems that generate logs are configured to send their logs to vRealize Log
 ### vRealize Network Insight
 {: #vrw-operations-management-vrni}
 
-[VMware vRealize Network Insight](https://www.vmware.com/products/vrealize-network-insight.html){: external} helps you build an optimized, highly available, and secure network infrastructure across hybrid and multi-cloud environments. It provides network visibility and analytics to accelerate micro-segmentation security, minimize risk during application migration, optimize network performance and confidently manage and scale NSX deployments.
+[VMware vRealize Network Insight](https://www.vmware.com/products/vrealize-network-insight.html){: external} helps you build an optimized, highly available, and secure network infrastructure across hybrid and multicloud environments. It provides network visibility and analytics to accelerate micro-segmentation security, minimize risk during application migration, optimize network performance and confidently manage and scale NSX deployments.
 
 vRealize Network Insight monitors network components and management traffic throughout the entire {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance. The monitoring scope includes insight into the operation of the NSX-T™ overlay network. Network Insight is also used to help optimizing performance by eliminating network bottlenecks. vRealize Network Insight is an optional component that requires manual installation.
 

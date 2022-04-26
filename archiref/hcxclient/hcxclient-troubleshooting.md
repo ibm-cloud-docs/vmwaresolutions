@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # HCX troubleshooting
 {: #hcxclient-troubleshooting}
 
-Review the following information for common HCX issues and fixes.
+Review the following information for common HCX™ issues and fixes.
 
 ## HCX Client user interface issues
 {: #hcxclient-troubleshooting-hcx-client-issues}

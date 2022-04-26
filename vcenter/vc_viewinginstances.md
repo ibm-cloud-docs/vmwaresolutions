@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-04-08"
 
 keywords: view vCenter Server, view instance, view instance details, vmware multizone, vcenter server multizone, view vCenter Server multizone, view multizone, view multizone instance details
 
@@ -65,13 +65,13 @@ To view the property details of an instance:
 | Name | The name of the instance. |
 | ID | The ID of the instance. |
 | Multizone region[^multizone] | The {{site.data.keyword.cloud_notm}} data center region where the instance is hosted. |
-| Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted.  \n   \n **Note:** For multizone instances, locations are listed for each cluster type. Types include witness, consolidated, workload, and edge services. |
+| Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. \n \n **Note:** For multizone instances, locations are listed for each cluster type. Types include witness, consolidated, workload, and edge services. |
 | Current version | The current version of {{site.data.keyword.vmwaresolutions_short}}. |
-| vCenter version | The VMware vCenter Server version.  \n   \n **Note:** There is a slight variation between the vCenter Server version that is displayed on the {{site.data.keyword.vmwaresolutions_short}} console and the VMware vSphere® Web Client. Both are correct. |
+| vCenter version | The VMware vCenter Server version. \n \n **Note:** There is a slight variation between the vCenter Server version that is displayed on the {{site.data.keyword.vmwaresolutions_short}} console and the VMware vSphere® Web Client. Both are correct. |
 | VMware NSX® networking solution[^NSX] | Either NSX-T or NSX-V. |
 | VMware vSphere version[^vsphere] | The version of VMware vSphere. |
 | NSX for vSphere | The VMware NSX for vSphere product version. |
-| _VMware component_ license | If you selected to use your own VMware license for any of the VMware components on the **Licensing** page when you ordered the instance, the VMware component name and the license key that you entered for the component are displayed.  \n   \n Examples of VMware component licenses can include: **NSX license**, **vCenter Server license**, and **vSAN license**. |
+| _VMware component_ license | If you selected to use your own VMware license for any of the VMware components on the **Licensing** page when you ordered the instance, the VMware component name and the license key that you entered for the component are displayed. \n \n Examples of VMware component licenses can include: **NSX license**, **vCenter Server license**, and **vSAN license**. |
 | NSX license edition | The version and edition of the VMware NSX license. |
 | Root domain | The root domain name is the DNS domain name and the Microsoft® Active Directory™ (AD) forest root name. |
 | SSO domain | The SSO domain is the vSphere single sign-on domain. The SSO domain name is fixed for all deployed vCenter Server instances with a value of **`vsphere.local`**. |
@@ -94,8 +94,8 @@ Under **Access information**, view the access information for the instance-relat
 | Component | Description |
 |:--------- |:----------- |
 | AD/DNS IP or IPs[^ips] | The IP address or addresses of the AD server or servers. |
-| AD/DNS FQDN[^fqdn] | The AD/DNS server fully qualified domain names (FQDN).  \n   \n **Note:** The same administrator password can be used to connect to all the AD/DNS servers by using a remote desktop connection. |
-| AD/DNS Remote Desktop[^nsxv] | For primary instances, it displays the username and password to access the AD server through a remote desktop connection.  \n   \n For secondary instances, click the **View on primary instance** link to be directed to the username and password information on the primary instance.  \n   \n **Note:** After the secondary instance is added to the primary DNS domain and replication occurs, the local administrator password on the primary instance might overwrite the local administrator password on the secondary instance. By clicking the **View on primary instance** link, you receive access to the correct administrator password. |
+| AD/DNS FQDN[^fqdn] | The AD/DNS server fully qualified domain names (FQDN). \n \n **Note:** The same administrator password can be used to connect to all the AD/DNS servers by using a remote desktop connection. |
+| AD/DNS Remote Desktop[^nsxv] | For primary instances, it displays the username and password to access the AD server through a remote desktop connection. \n \n For secondary instances, click the **View on primary instance** link to be directed to the username and password information on the primary instance. \n \n **Note:** After the secondary instance is added to the primary DNS domain and replication occurs, the local administrator password on the primary instance might overwrite the local administrator password on the secondary instance. By clicking the **View on primary instance** link, you receive access to the correct administrator password. |
 | vCenter/PSC IP | The IP address of the vCenter Server. |
 | vCenter/PSC FQDN | The vCenter Server fully qualified domain name (FQDN). |
 | vCenter/PSC ADMIN | The VMware vCenter SSO username and password that you can use to log in to the vCenter Server by using the vSphere Web Client. |
@@ -103,7 +103,7 @@ Under **Access information**, view the access information for the instance-relat
 | NSX Manager IP | The IP address of the NSX Manager. |
 | NSX Manager FQDN | The NSX Manager fully qualified domain name (FQDN). |
 | NSX Manager HTTP | The username and password that is used to access the NSX Manager web console. |
-| NSX Controllers IPs[^nsxt3] | The IP address or addresses for the NSX node VM.  |
+| NSX Controllers IPs[^nsxt3] | The IP address or addresses for the NSX node VM. |
 | NSX Controllers SSH[^nsxt4] | The username and password that you can use to access the NSX node VM through KVM or SSH connection. |
 | Customer Edge VM IPs[^nsxt1] | The IP address or addresses for the Customer Edge VM. |
 | Customer Edge VM SSH[^nsxt2] | The username and password that you can use to access the Customer Edge VM through KVM or SSH connection. |
@@ -150,7 +150,7 @@ If errors occur during instance deployment or instance deletion, the {{site.data
 
 Manage your instances from the {{site.data.keyword.vmwaresolutions_short}} console or the VMware vSphere Web Client.
 
-Before you click **vCenter console** on the instance summary page to go to the vSphere Web Client and start managing your VMware ESXi™ servers, you must log in to the VPN portal of the {{site.data.keyword.cloud_notm}} data center. Hover over **vCenter console** and follow the instructions to ensure that you meet all requirements and you completed the necessary steps before you access the vSphere Web Client.
+Before you click **vCenter console** on the instance summary page to go to the vSphere Web Client and start managing your VMware ESXi™ servers. You must log in to the VPN portal of the {{site.data.keyword.cloud_notm}} data center. Hover over **vCenter console** and follow the instructions to ensure that you meet all requirements and you completed the necessary steps before you access the vSphere Web Client.
 {: important}
 
 Review the following topics for information to help you complete the login instructions:

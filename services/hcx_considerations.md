@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-15"
+lastupdated: "2022-04-20"
 
 keywords: VMware HCX, HCX, tech specs HCX
 
@@ -39,7 +39,7 @@ For NSX-V instances, HCX requires you to use one of the following licenses from 
 
 For more information, see [Comparison chart for VMware NSX and VMware vSAN editions](/docs/vmwaresolutions?topic=vmwaresolutions-solution-appendix).
 
-{{site.data.keyword.vmwaresolutions_short}} offers promotions for some services. Promotional pricing offers a number of months free of charge for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
+{{site.data.content.para-promotion-services}}
 
 VMware requires you to be on one of their supported versions in order for you to open a support request for HCX. For more information, see the list of [VMware HCX release notes](https://docs.vmware.com/en/search/#/VMware%20HCX%204.0.1%20Release%20Notes){: external}.
 

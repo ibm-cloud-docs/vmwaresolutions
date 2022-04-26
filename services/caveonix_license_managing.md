@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-11-09"
+lastupdated: "2022-04-19"
 
 keywords: Caveonix view license, Caveonix manage license, delete Caveonix license
 
@@ -35,7 +35,7 @@ Review the following Caveonix RiskForesight license details.
 |:-----|:------------|
 | Name | The name of the license. |
 | Creation time | The date and time when the license was created. |
-| Status | The status of the license:  \n Modifying - The license is being created.  \n Installed - The license is ready to use.  \n Removing - The license is being deleted. |
+| Status | The status of the license: \n Modifying - The license is being created. \n Installed - The license is ready to use. \n Removing - The license is being deleted. |
 {: caption="Table 1. Description of Caveonix RiskForesight license items" caption-side="top"}
 
 ## Procedure to edit notes for Caveonix RiskForesight licenses

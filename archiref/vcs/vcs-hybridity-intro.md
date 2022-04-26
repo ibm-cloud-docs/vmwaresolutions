@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-19"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ Many options are available to enhance and extend the vCenter Server Hybridity Bu
 * Traffic load balancing to back up
 * Disaster recovery
 
-Platform security services include HyTrust® CloudControl, which provides automated security and compliance support, enabling better visibility and control over your cloud environment and administrators. HyTrust DataControl® delivers data protection with powerful encryption and scalable key management to secure your workloads throughout their lifecycles. {{site.data.keyword.cloud_notm}} Secure Virtualization simplifies compliance and protects your data with encryption, geo-fencing policies, and role-based access controls. KMIP™ for VMware is an encryption key lifecycle management offering that manages the encryption keys that IBM Cloud® services or customer built-in applications use.
+Platform security services include Entrust CloudControl™, which provides automated security and compliance support, enabling better visibility and control over your cloud environment and administrators. Entrust DataControl® delivers data protection with powerful encryption and scalable key management to secure your workloads throughout their lifecycles. {{site.data.keyword.cloud_notm}} Secure Virtualization simplifies compliance and protects your data with encryption, geo-fencing policies, and role-based access controls. KMIP™ for VMware is an encryption key lifecycle management offering that manages the encryption keys that IBM Cloud® services or customer built-in applications use.
 
 Network security options are the FortiGate® Security Appliance that provisions a highly available pair of FortiGate Security Appliance devices to analyze network traffic and protect your virtual infrastructure and the FortiGate Virtual Appliance, which deploys a high availability pair of FortiGate virtual machines on {{site.data.keyword.cloud_notm}} to reduce risk by implementing critical security controls within your virtual infrastructure. More network security offerings are in development.
 

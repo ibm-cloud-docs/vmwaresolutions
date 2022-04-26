@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-03-15"
 
 keywords: vCenter Server Hybridity delete instance, delete vCenter Server Hybridity, remove vCenter Server Hybridity
 
@@ -61,7 +61,7 @@ You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastruct
 ## Related links
 {: #vc_hybrid_deletinginstance-related}
 
-* [Deleting vCenter Server with Hybridity Bundle instances in a multi-site configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_deletinginstance_multi)
+* [Deleting vCenter Server with Hybridity Bundle instances in a multisite configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_deletinginstance_multi)
 * [Viewing vCenter Server with Hybridity Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_viewinginstances)
 * [Expanding and contracting capacity for vCenter Server with Hybridity Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_addingremovingservers)
 * [Managing virtual servers](/docs/virtual-servers?topic=virtual-servers-managing-virtual-servers)

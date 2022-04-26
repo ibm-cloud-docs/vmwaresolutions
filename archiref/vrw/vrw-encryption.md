@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-02-04"
+lastupdated: "2022-03-15"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ As vSphere encryption operates at the VM disk level, it can prevent regulated da
 * Crypto unit - a singular unit that represents a piece of hardware, the HSM, and the corresponding software stack, both are dedicated to a single tenant.
 * Service instance - a cluster of crypto units, which operates as a single logical entity to provide redundancy and scalability. It is recommended to have at least two crypto units per instance of HPCS to provide high availability.
 
-HPCS is a highly available solution owing to the Multi Zone Region (MZR) architecture. Cross-regional high availability is available in some geographies with an expanding footprint.
+HPCS is a highly available solution owing to the multizone Region (MZR) architecture. Cross-regional high availability is available in some geographies with an expanding footprint.
 
 The KMIP for VMware instance is authorized to Hyper Protect Crypto Services instance by using an {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) service ID that has access to the instance. The service ID must have a minimum of platform Viewer access and service Manager access to the key manager instance. KMIP for VMware uses the customer root key (CRK) in the key manager instance, and stores all KEKs generated on behalf of VMware, in wrapped form, in the key manager instance.
 

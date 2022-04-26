@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-09"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -82,7 +82,7 @@ This multitier design allows the network to scale across racks, rows, and pods w
 
 All {{site.data.keyword.cloud_notm}} data centers and PoPs are connected by the private network backbone. This private network is separate from the public network, and it enables connectivity to services in {{site.data.keyword.cloud_notm}} data centers around the world. Moving data between {{site.data.keyword.cloud_notm}} data centers is done through multiple 10 Gbps or 40 Gbps connections to the private network.
 
-Similar to the public network, the private network is multi-tiered in that servers and other infrastructure components are connected to aggregated back-end customer switches (BCS). These aggregated switches are attached to a pair of separate back-end customer routers (BCR) for L3 networking. The private network also supports the ability to use jumbo frames (MTU 9000) for physical host connections.
+Similar to the public network, the private network is multitiered in that servers and other infrastructure components are connected to aggregated back-end customer switches (BCS). These aggregated switches are attached to a pair of separate back-end customer routers (BCR) for L3 networking. The private network also supports the ability to use jumbo frames (MTU 9000) for physical host connections.
 
 #### Host management
 {: #design_physicalinfrastructure-mgmt-net}
@@ -127,7 +127,7 @@ The private network consists of two VLANs within this design. Four subnets are a
 * The third subnet is used for the encapsulated overlay network Tunnel Endpoints (VTEPs) assigned to each host and edge through the NSX Manager.
 * The fourth subnet is used for egress from the encapsulated overlay network.
 
-In addition to Private VLAN A, a second private VLAN (here designated Private VLAN B) exists to support VMware features such as vSAN, vMotion, and NFS. As such, the VLAN is divided into two or more portable subnets:
+In addition to Private VLAN A, a second private VLAN (here designated Private VLAN B) exists to support VMware features such as vSAN™, vMotion, and NFS. As such, the VLAN is divided into two or more portable subnets:
 * The first subnet is assigned to a kernel port group for vMotion traffic.
 * The remaining subnet or subnets are used for storage traffic:
    * If you use vSAN, a subnet is assigned to kernel port groups that are used for vSAN traffic.

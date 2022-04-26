@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-24"
+lastupdated: "2022-04-08"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -37,7 +37,7 @@ For vCenter Server with NSX-V instances:
 
 For Business Partner users, the vCenter Server license (Standard edition), the vSphere license (Enterprise Plus edition), and the NSX license are included and purchased on your behalf. However, you must specify the edition for the NSX license.
 
-For users who are not Business Partners, you can use the IBM-provided VMware licenses for these components by selecting **Include with purchase**, or you can Bring Your Own License (BYOL) by selecting **I will provide** and entering your own license keys.
+For users who are not Business Partners, you can use the IBM-provided VMware licenses for these components by selecting **Include with purchase**. Or you can Bring Your Own License (BYOL) by selecting **I will provide** and entering your own license keys.
 
 ## Licensing notes
 {: #vc_orderinginstance-licensing-notes}

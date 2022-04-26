@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -52,6 +52,6 @@ Caveonix RiskForesight has the concept of zones.
    * Private – VMware on {{site.data.keyword.cloud}}, and on-premises, VMware infrastructure platforms. These platforms are integrated into RiskForesight through: vCenter, NSX Manager, VMware Cloud Director (vCD), or vRealize Automation (vRA).
    * Public – Currently the only public cloud provider that is supported is AWS. {{site.data.keyword.cloud_notm}} is available soon.
    * Containers - Currently only AWS Elastic Kubernetes Service (EKS) is supported. {{site.data.keyword.cloud_notm}} Private and {{site.data.keyword.cloud_notm}} Kubernetes Services coming later.
-* Tenant or Customer Environment Zone – Used to separate tenants, customer, or business units. A remote collector is required because workloads exist in these zones. For a minimum deployment, you need one remote collector, but for a general deployment, you need one Remote Collector per tenant/customer/business unit.
+* Tenant or Customer Environment Zone – Used to separate tenants, customer, or business units. A remote collector is required because workloads exist in these zones. For a minimum deployment, you need one remote collector, but for a general deployment, you need one Remote Collector per tenant or customer or business unit.
 
 **Next topic**: [Detailed design](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-detailed)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-18"
 
 subcollection: vmwaresolutions
 
@@ -30,7 +30,7 @@ The management cluster relies upon native vSphere DRS capabilities to keep manag
 |**NSX-T™ Controllers** | Backup server file | Daily|
 |**vRealize Operations Manager** | VMDK through Veeam | Daily |
 |**vRealize Log Insight** | VMDK through Veeam | Daily |
-|**HyTrust CloudControl** | Backup server file | |
+|**Entrust CloudControl** | Backup server file | |
 |**Virtual Machine Backup Server** | VMDK through Veeam| |
 |**Juniper vSRX** | Backup server file through SCP from vSRX | Commit change |
 {: caption="Table 1. Backup options" caption-side="top"}
@@ -83,7 +83,7 @@ Business continuity at the workload layers is the responsibility of the SaaS pro
 Veeam backup server is the recommended solution.
 
 
-**Next topic**: [HyTrust integration](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-hytrust)
+**Next topic**: [Entrust integration](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-hytrust)
 
 ## Related links
 {: #vrw-budr-related}

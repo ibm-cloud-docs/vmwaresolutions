@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-04-22"
 
 keywords: troubleshooting, OVF deploy, how to deploy OVF file
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 {: troubleshoot}
 {: support}
 
-I want to use the VMware® vSphere® Web Client to deploy an Open Virtualization Format (OVF).
+I want to use the VMware vSphere® Web Client to deploy an Open Virtualization Format (OVF).
 {: tsSymptoms}
 
 Use the following steps to use the vSphere Web Client to deploy an OVF file:

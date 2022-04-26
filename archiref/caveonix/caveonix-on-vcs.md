@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-03-23"
 
 subcollection: vmwaresolutions
 
@@ -40,14 +40,14 @@ The following examples are typical use cases:
 - Customer wants to identify specific actions to eliminate risks due to cyberthreats, vulnerabilities, or non-compliant configurations.
 - Customer wants to achieve faster time to detection with machine learning by analyzing volumes of data to understand good behavior and identify anomalies.
 - Customer wants to reduce overall compliance costs due to automated controls and assessments.
-- Customer wants to eliminate blind spots by viewing multi-dimensional grouping of assets across each location, organization, and application group in hybrid cloud.
+- Customer wants to eliminate blind spots by viewing multidimensional grouping of assets across each location, organization, and application group in hybrid cloud.
 -	Customer wants to build and enforce security and compliance policies based on predictive analytics engine that uses network traffic flows across all applications.
 
 ## Key benefits to customers
 {: #caveonix-on-vcs-benefits}
 
 The key benefits that are provided by Caveonix RiskForesight include:
-- Eliminating blind spots, by viewing multi-dimensional grouping of assets across each location, organization, and application group in hybrid cloud.
+- Eliminating blind spots, by viewing multidimensional grouping of assets across each location, organization, and application group in hybrid cloud.
 - Building and enforcing security and compliance policies based on predictive analytics engine that uses network traffic flows across all applications.
 - Quickly identifying required actions to eliminate risks due to cyberthreats, vulnerabilities, or non-compliant configurations.
 - Proactively managing the overall risks within hybrid cloud before they can be used.

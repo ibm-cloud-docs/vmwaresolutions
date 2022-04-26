@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-26"
+lastupdated: "2022-04-12"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -26,7 +26,7 @@ subcollection: vmwaresolutions
 5. Select the VMware vSphere® version. Depending on the vSphere version, the VMware NSX networking solution defaults to either **NSX-T** or **NSX-V**.
 6. (NSX-V only) Accept the default value for the initial cluster name or specify your own name.
 7. Select the instance type:
-   * Click **Primary instance** to deploy a single instance in the environment or to deploy the first instance in a multi-site topology.
+   * Click **Primary instance** to deploy a single instance in the environment or to deploy the first instance in a multisite topology.
    * Click **Secondary instance** to connect the instance with an existing (primary) instance in the environment for high availability. Select the primary instance that you want the secondary instance to be connected with, then enter the vCenter Server Administrator password for the primary instance.
 8. Complete the license settings for the instance components.
     * To use IBM-provided licenses, ensure that **Include with purchase** is selected. For NSX, specify the license edition.
@@ -110,11 +110,7 @@ You must manage the {{site.data.keyword.vmwaresolutions_short}} components that 
 If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.
 {: important}
 
-**CAUTION** Managing any {{site.data.keyword.vmwaresolutions_short}} components (which were installed into your {{site.data.keyword.cloud_notm}} account when you ordered the instance) from outside the VMware Solutions console can make your environment unstable. The following activities are considered management activities:
-*  Adding, modifying, returning, or removing components
-*  Expanding or contracting instance capacity through adding or removing ESXi servers
-*  Powering off components
-*  Restarting services
+{{site.data.content.caution-component-management}}
 
    Exceptions to these activities include managing the shared storage file shares from the {{site.data.keyword.slportal}}. Such activities include ordering, deleting (which might impact data stores if mounted), authorizing, and mounting shared storage file shares.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -53,7 +53,7 @@ When you assess the complexity, you must focus on skills and resource availabili
 
 If it is deemed that in-house skills need to be supplemented, then it is advised to engage a migration services provider as soon as possible. 
 
-In addition, to ensure successful Day 2 operations, improve the core NSX-T skills by using the available [VMware Learning for NSX-T education](https://www.vmware.com/learning.html){: external}.
+In addition, to ensure successful Day 2 operations, improve the core VMware NSX-T™ skills by using the available [VMware Learning for NSX-T education](https://www.vmware.com/learning.html){: external}.
 
 ## Engage a migration services provider
 {: #v2t-planning-serviceprovider}
@@ -81,7 +81,7 @@ You are not able to neatly classify every source environment due to the multiple
 
 Based on the source environment complexity, you must consider the following target platform:
 
-* Single site VMware Solutions dedicated instance - A vCenter Server instance is an automated provisioning offering that deploys hardware and software in a defined pattern. After initial deployment, you must add capacity and additional services to a number of automated workflows as needed. For more information, see [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview). The types of vCenter Server instances include:
+* Single site VMware Solutions dedicated instance - A vCenter Server® instance is an automated provisioning offering that deploys hardware and software in a defined pattern. After initial deployment, you must add capacity and additional services to a number of automated workflows as needed. For more information, see [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview). The types of vCenter Server instances include:
    * Regulated Workloads. For more information, see [VMware Regulated Workloads overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview).
    * VMware Security and Compliance Readiness Bundle. For more information, see [Security and Compliance Readiness Bundle overview](/docs/vmwaresolutions?topic=vmwaresolutions-scb-overview).
 * Multisite or location VMware Solutions dedicated instance - The vCenter Server offering can be deployed in multiple locations to create a multisite or location VMware Solutions dedicated instance:
@@ -124,7 +124,7 @@ Considerations include the following questions:
 
 The following migration patterns for workload migration must be considered:
 
-* HCX - VMware HCX application migration enables the scheduling and migration of thousands of VMs. For more information, see [VMware HCX Migration Types](https://docs.vmware.com/en/VMware-HCX/4.3/hcx-user-guide/GUID-8A31731C-AA28-4714-9C23-D9E924DBB666.html){: external}.
+* HCX™ - VMware HCX application migration enables the scheduling and migration of thousands of VMs. For more information, see [VMware HCX Migration Types](https://docs.vmware.com/en/VMware-HCX/4.3/hcx-user-guide/GUID-8A31731C-AA28-4714-9C23-D9E924DBB666.html){: external}.
 * Advanced vCenter vMotion - From vSphere 7.0 Update 1c (Patch 02), vCenter supports the import of VMs from another vCenter Server that is not part of the same SSO Domain. The source vCenter Server must be version 6.5 or later. For more information, see [Introducing the Advanced Cross vCenter Server vMotion Capability](https://core.vmware.com/resource/introducing-advanced-cross-vcenter-server-vmotion-capability#){: external}.
 * Zerto or Veeam® - You might have Zerto or Veeam installed on your NAX-V environment and be competent in their usage. These products can be used to replicate VMs from the source data store to the target data store and then initiate a fail-over. And also to replicate a backup from the source cluster to a recovery on the target cluster.
 

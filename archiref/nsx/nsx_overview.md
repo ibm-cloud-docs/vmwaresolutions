@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-03-15"
 
 subcollection: vmwaresolutions
 
@@ -31,7 +31,7 @@ The VMware NSX® Edge Services Gateway connects isolated, stub networks to share
 * Dynamic routing
 * Load balancing
 
-Common deployments of NSX Edge include demilitarized zone (DMZ), VPN Extranets, and multi-tenant Cloud environments where the NSX Edge creates virtual boundaries for each tenant, workload, or management component. The following features are available within the NSX Edge Service Gateway.
+Common deployments of NSX Edge include demilitarized zone (DMZ), VPN Extranets, and multitenant cloud environments where the NSX Edge creates virtual boundaries for each tenant, workload, or management component. The following features are available within the NSX Edge Service Gateway.
 
 | Feature | Description |
 |:------- |:----------- |

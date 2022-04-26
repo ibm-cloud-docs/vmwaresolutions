@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-04-18"
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 
 The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads architecture is an extension of the VMware vCenter Server® offering.
 
-The design extends and enhances the basic vCenter Server architecture to deliver a secure, high-performance platform. Clients are able to run both classic virtualized workloads and containerized applications with the addition of OpenShift.
+The design extends and enhances the basic vCenter Server architecture to deliver a secure, high-performance platform. Clients are able to run both classic virtualized workloads and containerized applications with the addition of {{site.data.keyword.redhat_openshift_full}}.
 
 {{site.data.keyword.vmwaresolutions_full}} automation is used to deploy all layers of the platform thus consistently delivering a secure and compliant-ready build for every {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance ordered.
 
@@ -42,9 +42,9 @@ The management software stack includes the following components:
 * vCenter Server, which manages all hosts in the entire {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance.
 * Microsoft® AD/DNS servers, which provide DNS and authentication services.
 * NSX-T management components to fully isolate the SDN control plane from the workload cluster.
-* HTCC (HyTrust CloudControl) is used to unify security policies for access to the management stack. In addition, HTCC is used for unified visibility into security configuration and context and continuous compliance by using templates to enforce separation of duties. HTCC also provides a robust audit trail that includes a full record of all actions that are taken by security, network, and compute platform administrators. HTCC also simplifies compliance with administrative controls requirements in HIPAA, PCI, FedRAMP, CJIS, and other regulations.
+* Entrust CloudControl™ is used to unify security policies for access to the management stack. In addition, Entrust CloudControl is used for unified visibility into security configuration and context and continuous compliance by using templates to enforce separation of duties. Entrust CloudControl also provides a robust audit trail that includes a full record of all actions that are taken by security, network, and compute platform administrators. Entrust CloudControl also simplifies compliance with administrative controls requirements in HIPAA, PCI, FedRAMP, CJIS, and other regulations.
 
-![IBM Cloud for VMware Regulated Workloads HyTrust overview](../../images/vrw-htcc.svg "IBM Cloud for VMware Regulated Workloads HyTrust overview"){: caption="Figure 2. IBM Cloud for VMware Regulated Workloads HyTrust overview" caption-side="bottom"}
+![IBM Cloud for VMware Regulated Workloads Entrust overview](../../images/vrw-htcc.svg "IBM Cloud for VMware Regulated Workloads Entrust overview"){: caption="Figure 2. IBM Cloud for VMware Regulated Workloads Entrust overview" caption-side="bottom"}
 
 * Security is further enhanced by IBM Hyper Protect Crypto Services (HPCS). HPCS uses a FIPS 140-2 Level 4 hardware security module (HSM) that gives access to the highest level of security for regulated data and digital assets. HPCS helps meet regulatory compliance requirements by providing complete control of data encryption keys, including the HSM primary key.
 * Caveonix RiskForesight provides a common Risk Management Control Plane (RMCP) for continuous and proactive protection of management and edge workloads. It provides a comprehensive cloud workload protection platform for {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads architecture is designed to enable compliance with NIST and other necessary certifications, as required for the SaaS provider and SaaS consumer.
@@ -97,5 +97,5 @@ For more information, see:
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance){: external}
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
-* [HyTrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
+* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
 * [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-04-19"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ The design uses the following structure:
 * vCenter
 * NSX Manager
 * Caveonix RiskForesight
-* HyTrust CloudControl
+* Entrust CloudControl
 * vRealize Log Insight
 * vRealize Network Insight
 * vRealize Operations Manager
@@ -35,7 +35,7 @@ The design uses the following structure:
 
 As the design uses two VMware Regulated Workloads instances, the network design is at each region and is documented at [Underlay networking](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-underlay-network) and [Overlay networking](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overlay-network).
 
-The key design element at the network level, is the adoption of cross-region network for the use of the vRealize Operations Manager analytic cluster. The cross-region network is a layer 3 construct that allows the use of the same IP subnet space at either the protected region or the recovery region. In normal operations, the cross-region network is tethered to the vSRX or FortiGate in the protected region that is, the default gateway for this network is the vSRX or FortiGate. The protected region vSRX or FortiGate then advertises this network so that it is reachable from other networks. In recovery operations, the cross-region network is tethered to the vSRX or FortiGate in the recovery region. The recovery region vSRX or FortiGate then advertises this network so that it is reachable from other networks. The use of the cross-region network allows the vRealize Operations Manager Analytic cluster to retain the same IP addresses when they are recovered to the recovery region.
+The key design element at the network level is the adoption of cross-region network for the use of the vRealize Operations Manager analytic cluster. The cross-region network is a layer 3 construct that allows the use of the same IP subnet space at either the protected region or the recovery region. In normal operations, the cross-region network is tethered to the vSRX or FortiGate in the protected region that is, the default gateway for this network is the vSRX or FortiGate. The protected region vSRX or FortiGate then advertises this network so that it is reachable from other networks. In recovery operations, the cross-region network is tethered to the vSRX or FortiGate in the recovery region. The recovery region vSRX or FortiGate then advertises this network so that it is reachable from other networks. The use of the cross-region network allows the vRealize Operations Manager Analytic cluster to retain the same IP addresses when they are recovered to the recovery region.
 
 Review the following network design decisions:
 * The {{site.data.keyword.cloud_notm}} classic network environment does not allow the stretching of VLANs across data centers. Therefore, this design does not use stretched VLANs at the physical network infrastructure level.
@@ -85,18 +85,18 @@ It is recommended to use automation to create overlay network components so that
 ## Caveonix RiskForesight
 {: #vrw-dualregion-design-caveonix}
 
-The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a Caveonix RiskForesight all-in-one appliance in both the protected region and the recovery region. In the dual region design only the recovery region appliance is used, and is reconfigured so that the protected region vCenter, NSX-T manager, and HyTrust CloudControl are configured as Asset Repositories. The use of a single instance of Caveonix RiskForesight to manage compliance and cyberrisk across both the protected and recovery regions allows a single view of all environments. By placing the single instance of Caveonix RiskForesight in the recovery region, that instance is available when in DR invocation without any DR activities.
+The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a Caveonix RiskForesight all-in-one appliance in both the protected region and the recovery region. In the dual region design only the recovery region appliance is used, and is reconfigured so that the protected region vCenter, NSX-T manager, and Entrust CloudControl are configured as Asset Repositories. The use of a single instance of Caveonix RiskForesight to manage compliance and cyberrisk across both the protected and recovery regions allows a single view of all environments. By placing the single instance of Caveonix RiskForesight in the recovery region, that instance is available when in DR invocation without any DR activities.
 
 vSphere HA provides availability of the RiskForesight instance and for business resiliency. For image-level backups of the VM, configure and store them in the recovery region of the Veeam Repository server. Configure a Veeam backup copy job to copy the backup to the protected site so you can provide an off-site copy of the backup.
 
 If you are using Caveonix RiskForesight to manage compliance and cyberrisk of the workload VMs, review the scaling of the RiskForesight instance. Replace the all-in-one deployment with the appropriate deployment to match the availability and retention requirements. For more information, see [Deployment models for Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-deploy).
 
-## HyTrust CloudControl
+## Entrust CloudControl
 {: #vrw-dualregion-design-htcc}
 
-The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a HyTrust CloudControl cluster in both the protected region and the recovery region. HyTrust CloudControl clusters enable service isolation per regions so that each region is considered to be independent. This behavior does not impact licensing, as licenses are supplied on a per-host basis.
+The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a Entrust CloudControl cluster in both the protected region and the recovery region. Entrust CloudControl clusters enable service isolation per regions so that each region is considered to be independent. This behavior does not impact licensing, as licenses are supplied on a per-host basis.
 
-CloudControl supports the following backups:
+Entrust CloudControl supports the following backups:
 * Appliance configuration backups by using the `asc backup` CLI command, to local storage or SCP or NFS targets.
 * Full snapshot-based backups or clones by using VMware or third-party tools.
 
@@ -138,7 +138,7 @@ The dual region design uses this deployed architecture and requires some post-pr
 
 Review the following design decisions:
 * The reuse of the automated deployment of vROps at the protected region reduces post deployment tasks.
-* By using the VMware multi-region design for vROps that has the concept of region specific and cross-region components, allows the recovery of the vROps analytic appliances to an identical network configuration. Re-IPing the appliances is possible but adds complexity. For more information, see [Change the IP address of a vRealize Operations Manager multinode deployment](https://kb.vmware.com/s/article/2127442){: external}.
+* By using the VMware multiregion design for vROps that has the concept of region specific and cross-region components, allows the recovery of the vROps analytic appliances to an identical network configuration. Re-IPing the appliances is possible but adds complexity. For more information, see [Change the IP address of a vRealize Operations Manager multinode deployment](https://kb.vmware.com/s/article/2127442){: external}.
 * By deploying two remote collector nodes per region, the load is removed from the analytics cluster from collecting metrics from applications that do not fail over between regions.
 * The use of Veeam Replication provides a replica of the vROps analytics cluster to allow recovery at the recovery region.
 * Only the Analytics cluster needs to be backed up with Veeam, as remote collectors do not store data, however, for ease of redeployment a backup is taken.
@@ -159,8 +159,6 @@ The following use cases are expected for Veeam Backup & Replication in {{site.da
 * Case 3. Backup and replication of management components and backup and replication of workloads.
 
 The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads dual region design focuses on use case 1. However, guidelines are provided so that use cases 2 and 3 can be solved for the individual needs of workload backup and replication.
-
-When initially deployed, the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads instances have an all-in-one VM Veeam instance deployment in each region as documented in [Veeam v10a overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview). Remove the all-in-one VM Veeam instance deployment in each region and replace it with a single Veeam instance that uses bare metal servers in each region.
 
 Configure Veeam encryption for data at rest and data in transit so that VM data is not stored or transmitted unencrypted (which is the default setting). Veeam encryption requires the use of a password or passphrase and does not use the HPCS instance for the management of keys. When the VM is restored, select the encrypted storage policy to ensure that the VM is encrypted in the vSphere datastore.
 

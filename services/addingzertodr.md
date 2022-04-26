@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-08"
+lastupdated: "2022-04-20"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -24,9 +24,9 @@ The Zerto service integrates replication and disaster recovery capabilities into
 * VMware NSX-V
 {: shortdesc}
 
-{{site.data.keyword.vmwaresolutions_short}} offers promotions for some add-on services. Promotional pricing offers a number of months free of charge for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
+{{site.data.content.para-promotion-add-on-services}}
 
-The current Zerto version that is installed is 9.0u2.
+The current Zerto version that is installed is 9.0u3.
 {: note}
 
 ## Before you begin
@@ -58,7 +58,7 @@ Zerto Virtual Replication Appliance (VRA) components are deployed only into the 
 
 100 GB (SAN) disk
 
-### Networking
+### Zerto Networking
 {: #addingzertodr-specs-network}
 
 * VSI
@@ -66,6 +66,10 @@ Zerto Virtual Replication Appliance (VRA) components are deployed only into the 
    * 1 Gbps private network uplink
 * Virtual replication appliances (VRAs)
    * One private portable subnet for VRA deployment
+
+The Zerto service is not configured with an IBM Cloud Infrastructure portable IP address or with a NAT connection to the public network, even if you have public interfaces in your instance. This implementation helps to avoid the possibility of asymmetric routing when using a network gateway appliance.
+
+When you deploy Zerto, you must configure your own proxy or NAT connection to the public network. If you do not complete the configuration, Zerto blocks management activities in 15 days. For more information about the Call Home feature for Zerto, see [Considerations for ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering#zerto_ordering-private-only). 
 
 ### Licenses and fees
 {: #addingzertodr-specs-licenses}

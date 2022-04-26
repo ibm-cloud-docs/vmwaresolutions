@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -16,19 +16,16 @@ subcollection: vmwaresolutions
 # VMware Solutions infrastructure domain
 {: #adds-infra-domain}
 
-The {{site.data.keyword.vmwaresolutions_full}} infrastructure domain holds the resource objects and user accounts for the administration of the vCenter Server instance only. Using this domain to hold resource objects and user accounts for your workload VMs is not recommended.
+The {{site.data.keyword.vmwaresolutions_full}} infrastructure domain holds the resource objects and user accounts for the administration of the VMware vCenter Server® instance only. Using this domain to hold resource objects and user accounts for your workload VMs is not recommended.
 
-Within the vCenter Server design, the {{site.data.keyword.vmwaresolutions_short}} infrastructure AD domain is used for:
+Within the vCenter Server design, the {{site.data.keyword.vmwaresolutions_short}} infrastructure Active Directory™ (AD) domain is used for:
 
 * DNS - The appliances provisioned as part of the services have DNS entries in the AD. These entries enable the functions of the vCenter Server instance to use FQDN and do name lookups.
 * Authentication services - An AD security group is added, and a number of accounts are added to enable the automation.
 
 In {{site.data.keyword.vmwaresolutions_short}}, every primary instance deploys a forest root domain and configures the site topology. The {{site.data.keyword.vmwaresolutions_short}} AD/DNS is always going to be its own forest and domain, you cannot remove this forest or domain because it might break the {{site.data.keyword.vmwaresolutions_short}} automation. You can't migrate the users and resources to one of your existing domains or create a new domain, as you can't create the credentials for the IBM user named `automation`.
 
-During the ordering process of a vCenter Server instance, the following information is collected from the user that is pertinent to the Active Directory Domain Services (AD DS) and DNS configuration:
-
-* Hostname prefix
-* Domain name
+During the ordering process of a vCenter Server instance, the hostname prefix and the domain name are collected from the user that is pertinent to the Active Directory Domain Services (AD DS) and DNS configuration.
 
 These values are then used to generate the username and server names of the instance. For more information, see [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req).
 
@@ -46,9 +43,9 @@ During the ordering process, you can deploy:
 * A single Microsoft® Windows® Server VSI for AD DS
 * Two highly available Microsoft Windows VMs in the cluster
 
-Currently, Microsoft Windows Server 2019 Standard is deployed for the operating system. The domain functional level 2008 is set to allow for compatibility with an earlier version with any potential secondary instances. If compatibility with earlier (2008) secondary instances is not a consideration in your environment, you can upgrade the domain functional level to a higher version.
+Currently, Microsoft Windows Server 2019 Standard is deployed for the operating system. The domain-functional level 2008 is set to allow for compatibility with an earlier version with any potential secondary instances. If compatibility with earlier (2008) secondary instances is not a consideration in your environment, you can upgrade the domain-functional level to a higher version.
 
-For more information, see [Forest and domain functional levels](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-functional-levels){: external}.
+For more information, see [Forest and domain-functional levels](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-functional-levels){: external}.
 
 ### Single VSI domain controller
 {: #adds-infra-domain-controllers-vsi}
@@ -68,7 +65,7 @@ The following table describes the VSI configuration.
 | RAM                | 8 GB                                          |
 | Disk               | 100 GB (SAN)                                  |
 | Uplink Port Speeds | 1 Gbps Private Network Uplink                 |
-{: caption="Table 1. VSI specifications" caption-side="top"}
+{: caption="Table 1. VSI specifications" caption-side="bottom"}
 
 The domain controller is provisioned with a name of `ADNS<instance_name>.<root_domain>`, for example, `ADNSoncloud.cloud-east.myroot.local`. This server is the global catalog (GC) instance for the domain.
 
@@ -88,7 +85,7 @@ After the provisioning of the vCenter Server instance, you have 30 days to activ
 | CPU              | 2                                             |
 | RAM              | 8 GB                                          |
 | Disk             | 100 GB                                        |
-{: caption="Table 2. HA VM specifications" caption-side="top"}
+{: caption="Table 2. HA VM specifications" caption-side="bottom"}
 
 ## Domain configuration
 {: #adds-infra-domain-config}
@@ -112,12 +109,12 @@ The {{site.data.keyword.cloud_notm}} automation initially configures some custom
 
 For more information, see [IBM user IDs](/docs/vmwaresolutions?topic=vmwaresolutions-audit_user_ids).
 
-## Multi-site topology
+## Multisite topology
 {: #adds-infra-domain-multisite}
 
-As an option in {{site.data.keyword.vmwaresolutions_short}}, you can provision vCenter Server instances in a multi-site topology. Your first instance is the primary instance, but subsequent orders can be either primary or secondary depending on the topology you want to create. By using a primary instance and then selecting secondary instances, you create a multi-site topology.
+As an option in {{site.data.keyword.vmwaresolutions_short}}, you can provision vCenter Server instances in a multisite topology. Your first instance is the primary instance, but subsequent orders can be either primary or secondary depending on the topology you want to create. By using a primary instance and then selecting secondary instances, you create a multisite topology.
 
-You can have a maximum of 15 instances (one primary and 14 secondary) in a multi-site configuration:
+You can have a maximum of 15 instances (one primary and 14 secondary) in a multisite configuration:
 
 * Primary instance - To deploy the first instance, you define that instance as primary during the instance order process.
 * Secondary instances - The instances that are attached to the primary instance are defined as secondary instances during the order process.
@@ -127,14 +124,14 @@ AD and DNS replication is automatically set up between the domain controllers on
 * Primary instance components - use the secondary instance DNS as the secondary DNS server.
 * Secondary instance components - use the primary instance DNS as the secondary DNS server.
 
-A multi-site configuration has the following key aspects:
+A multisite configuration has the following key aspects:
 
 * Enhanced Linked Mode
 * Cross vCenter NSX
 
-Enhanced Linked Mode and Cross-vCenter NSX are complementary but separate from each other. For more information, see [Multi-site configuration for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite).
+Enhanced Linked Mode and Cross-vCenter NSX are complementary but separate from each other. For more information, see [Multisite configuration for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite).
 
-### Enhanced linked mode
+### Enhanced-linked mode
 {: #adds-infra-domain-multisite-elm}
 
 With Enhanced Linked Mode (ELM), you can view and search across all linked vCenter Server systems and replicate roles, permissions, licenses, policies, and tags.
@@ -165,7 +162,7 @@ When cross-vCenter NSX is combined with ELM, you can view and manage any of the 
 
 Cross vCenter NSX is not automatically deployed. You must deploy it manually by following the tasks in [Configuring the primary NSX manager](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.cross-vcenter-install.doc/GUID-0B74FB40-1D90-4A6A-B7CE-B4EF3B923452.html){: external}.
 
-### Active Directory, SSO, and DNS in a multi-site topology
+### Active Directory, SSO, and DNS in a multisite topology
 {: #adds-infra-domain-multisite-ad}
 
 AD, DNS, and SSO are configured slightly differently in a primary and secondary instance.
@@ -215,7 +212,7 @@ Reverse lookup zones with the start of authority (SOA), name server (NS), and th
 
 * Management subnet
 * `Internal-mgmt` subnet
-* Add-on services subnets. For example: HCX subnet, risk foresight subnet.
+* Add-on services subnets. For example, HCX subnet, risk foresight subnet.
 
 The forwarder section is configured with:
 
@@ -224,7 +221,7 @@ The forwarder section is configured with:
 
 Forwarders are DNS servers that the AD DNS server can use to resolve DNS queries for records that the AD server cannot resolve. 10.0.80.12 and 10.0.80.11 are the two addresses for {{site.data.keyword.cloud_notm}} Resolving Name Servers. Resolving name servers are located on the private network and act as DNS resolvers. The private resolvers query the Internet root name servers for domain lookups and resolve this information over the private network to keep your bandwidth usage down, reduce the load on the authoritative servers, and offer quick resolution. Private network resolvers are a convenience service for our customers.
 
-All deployed appliances: vCenter Server Appliance, NSX Manager and Controllers, and vSphere ESXi hosts have their DNS settings configured to point to the AD DNS server as their default DNS. You can customize the DNS zone configuration if it does not interfere with the configuration of the deployed components.
+All deployed appliances (vCenter Server Appliance, NSX Manager and Controllers, and vSphere ESXi hosts) have their DNS settings configured to point to the AD DNS server as their default DNS. You can customize the DNS zone configuration if it does not interfere with the configuration of the deployed components.
 
 **Next topic:** [vCenter Single Sign On](/docs/vmwaresolutions?topic=vmwaresolutions-adds-sso)
 
@@ -233,4 +230,4 @@ All deployed appliances: vCenter Server Appliance, NSX Manager and Controllers, 
 
 * [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview)
 * [Getting started with VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started)
-* [VMware Solutions: Take a look under the hood](/docs/vmwaresolutions?topic=vmwaresolutions-under_the_hood)
+* [VMware Solutions - Under the hood](/docs/vmwaresolutions?topic=vmwaresolutions-under_the_hood)

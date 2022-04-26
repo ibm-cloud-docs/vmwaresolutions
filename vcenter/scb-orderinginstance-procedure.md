@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-01-20"
+lastupdated: "2022-04-12"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -89,11 +89,7 @@ You must manage the {{site.data.keyword.vmwaresolutions_short}} components that 
 If you change these components outside of the {{site.data.keyword.vmwaresolutions_short}} console, the changes are not synchronized with the console.
 {: important}
 
-**CAUTION:** Managing any {{site.data.keyword.vmwaresolutions_short}} components (which were installed into your {{site.data.keyword.cloud_notm}} account when you ordered the instance) from outside the {{site.data.keyword.vmwaresolutions_short}} console can make your environment unstable. These management activities include:
-*  Adding, modifying, returning, or removing components
-*  Expanding or contracting instance capacity through adding or removing VMware ESXi™ servers
-*  Powering off components
-*  Restarting services
+{{site.data.content.caution-component-management}}
 
 ## Related links
 {: #scb-orderinginstance-related}

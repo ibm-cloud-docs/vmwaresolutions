@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-01-21"
+lastupdated: "2022-03-17"
 
 keywords: manage shared resources, view shared virtual data centers details
 
@@ -14,10 +14,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Viewing virtual data center details
+# Viewing your virtual data center details
 {: #shared_viewing-vdc-details}
 
-You can view the details of an {{site.data.keyword.cloud}} for VMware® Solutions Shared virtual data center, including property, operating system, resource reservation, private network endpoint, and recommended services that are enabled or available for the virtual data center.
+You can view the details of an {{site.data.keyword.cloud}} for VMware® Solutions Shared virtual data center. Details include property, operating system, resource reservation, private network endpoint, and recommended services that are enabled or available for the virtual data center.
 
 ## Procedure to view virtual data center details
 {: #shared_viewing-vdc-details-procedure}
@@ -79,7 +79,7 @@ For more information about recommended services details, see [Managing Veeam for
 ## Related links
 {: #shared_viewing-vdc-details-related}
 
-* [Resizing virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_resize)
+* [Resizing your virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_resize)
 * [Operating VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
 * [Deleting VMware Solutions Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
 * [Viewing the virtual data center summary](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary)

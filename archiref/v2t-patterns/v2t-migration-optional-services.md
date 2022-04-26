@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -26,17 +26,17 @@ The following list provides the services that you might currently use:
 * [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
 * [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
 * [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)
-* [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
+* [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
 * [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 * [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
 
-You need to plan to migrate these services to new services on the NSX-T environment.
+You need to plan to migrate these services to new services on the VMware NSX-T™ environment.
 
 ## Understanding metadata
 {: #v2t-optionalservices-metadata}
 
-Optional services can be decoupled from the vCenter Server with NSX-V instance and reused with vCenter Server with NSX-V instance. However, it is important to understand the metadata that the service is using from vCenter Server. 
+Optional services can be decoupled from the vCenter Server® with NSX-V instance and reused with vCenter Server with NSX-V instance. However, it is important to understand the metadata that the service is using from vCenter Server. 
 
 Review the following information for Advanced Cross vCenter Server vMotion.
 
@@ -47,7 +47,7 @@ Review the following information for Advanced Cross vCenter Server vMotion.
 ## Veeam
 {: #v2t-optionalservices-veeam}
 
-It is possible to decouple your Veeam instance from your vCenter Server with NSX-V instance for reuse with your vCenter Server with NSX-T instance. Configure Veeam to point to the vCenter Server associated with the NSX-T environment. 
+It is possible to decouple your Veeam® instance from your vCenter Server with NSX-V instance for reuse with your vCenter Server with NSX-T instance. Configure Veeam to point to the vCenter Server associated with the NSX-T environment. 
 
 You must open a ticket to ask IBM Support to decouple the Veeam server, management subnet, and any associated iSCSI storage from the vCenter Server with NSX-V instance so that these components are not deleted when the NSX-V instance is cancelled.
 {: important}
@@ -61,14 +61,14 @@ If you deploy a new Veeam instance, you must consider backup data and backup con
 ## Caveonix RiskForesight
 {: #v2t-optionalservices-caveonix}
 
-The primary use case for Caveonix RiskForesight is the compliance reporting of the VMware® environment. Therefore, data migration from the NSX-V Caveonix RiskForesight instance to the NSX-T Caveonix RiskForesight instance is not needed.
+The primary use case for Caveonix RiskForesight™ is the compliance reporting of the VMware® environment. Therefore, data migration from the NSX-V Caveonix RiskForesight instance to the NSX-T Caveonix RiskForesight instance is not needed.
 
 A secondary use case for Caveonix RiskForesight is the compliance reporting of the workload VMs hosted on the VMware environment. In this case, compliance data for the workload VMs must be migrated to the NSX-T Caveonix RiskForesight instance. You must engage with IBM and Caveonix to plan this migration.
 
 ## VMware HCX
 {: #v2t-optionalservices-hcx}
 
-HCX is not being used for DR services, and so no HCX migration to the NSX-T instance is expected. HCX can be used as a migration tool. In this case, the NSX-T instance must be ordered with HCX.
+HCX™ is not being used for DR services, and so no HCX migration to the NSX-T instance is expected. HCX can be used as a migration tool. In this case, the NSX-T instance must be ordered with HCX.
 
 ## Zerto
 {: #v2t-optionalservices-zerto}
@@ -78,12 +78,12 @@ It is recommended that Zerto is deployed with the vCenter Server with NSX-T inst
 ## IBM Spectrum Protect Plus
 {: #v2t-optionalservices-spp}
 
-IBM Spectrum Protect Plus is not currently available for vCenter Server with NSX-T instances. Consider the usage of Veeam instead.
+IBM Spectrum® Protect Plus is not currently available for vCenter Server with NSX-T instances. Consider the usage of Veeam instead.
 
 ## FortiGate Virtual Appliance
 {: #v2t-optionalservices-fortigate}
 
-FortiGate Virtual Appliance is available for vCenter Server with NSX-T instances.
+FortiGate® Virtual Appliance is available for vCenter Server with NSX-T instances.
 
 * No migration is required for FortiGate Virtual Appliance.
 * Capture existing NSX-V FortiGate Virtual Appliance configuration.
@@ -94,7 +94,7 @@ FortiGate Virtual Appliance is available for vCenter Server with NSX-T instances
 ## Entrust CloudControl
 {: #v2t-optionalservices-cc}
 
-Entrust CloudControl is available for vCenter Server with NSX-T instances.
+Entrust CloudControl™ is available for vCenter Server with NSX-T instances.
 
 If a migration is required, review the following information.
 
@@ -104,7 +104,7 @@ If a migration is required, review the following information.
 ## Entrust DataControl
 {: #v2t-optionalservices-dc}
 
-Entrust DataControl is not currently available for vCenter Server with NSX-T instances.
+Entrust DataControl® is not currently available for vCenter Server with NSX-T instances.
 
 ## Entrust KeyControl
 {: #v2t-optionalservices-kc}
@@ -114,12 +114,12 @@ Entrust KeyControl is no longer available in IBM Cloud. Investigate alternative 
 ## F5 BIG-IP
 {: #v2t-optionalservices-f5}
 
-F5 BIG-IP is available for vCenter Server with NSX-T instances. The migration approach is to configure F5 BIG-IP in the NSX-T environment in parallel to the existing NSX-V configuration to allow testing. After verification, cut-over to NSX-T F5 BIG-IP appliances.
+F5® BIG-IP® is available for vCenter Server with NSX-T instances. The migration approach is to configure F5 BIG-IP in the NSX-T environment in parallel to the existing NSX-V configuration to allow testing. After verification, cut-over to NSX-T F5 BIG-IP appliances.
 
 ## Juniper vSRX
 {: #v2t-optionalservices-vsrx}
 
-Juniper vSRX is available for vCenter Server with NSX-T instances. In the vCenter Server NSX-V instance, the Juniper vSRX virtual appliance might be deployed:
+Juniper® vSRX is available for vCenter Server with NSX-T instances. In the vCenter Server NSX-V instance, the Juniper vSRX virtual appliance might be deployed:
 
 * On the consolidated or management cluster - The Juniper vSRX protects the traffic to your workload VMs.
 * On the edge services cluster - The Juniper vSRX appliances protects the vSphere hosts and the workload VMs in the same data center PoD.
@@ -134,17 +134,17 @@ The migration approach would be to:
 ## Red Hat OpenShift for VMware
 {: #v2t-optionalservices-ocp}
 
-Red Hat OpenShift for VMware for NSX-T is available for vCenter Server with NSX-T instances. The migration approach summary is as follows:
+{{site.data.keyword.redhat_openshift_notm}} for VMware for NSX-T is available for vCenter Server with NSX-T instances. The migration approach summary is as follows:
 
-* Provision the vCenter Server with NSX-T instance with Red Hat OpenShift for VMware.
-* Configure the new Red Hat OpenShift for VMware cluster as required.
+* Provision the vCenter Server with NSX-T instance with {{site.data.keyword.redhat_openshift_notm}} for VMware.
+* Configure the new {{site.data.keyword.redhat_openshift_notm}} for VMware cluster as required.
 * Create a migration plan, which includes how to handle data from the applications that are being migrated.
 * Consider the use of Migration Toolkit for Containers. 
 
 ## vRealize Operations and Log Insight
 {: #v2t-optionalservices-vropsvli}
 
-vRealize Operations and Log Insight is available for vCenter Server with NSX-T instances.
+vRealize® Operations and Log Insight™ is available for vCenter Server with NSX-T instances.
 
 The primary use case for vRealize Operations and Log Insight is to capture performance, capacity, and logging messages for the vCenter Server instance. A secondary use case is to capture performance, capacity, and logging messages for the workload VMs hosted on the vCenter Server instance.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-02-04"
+lastupdated: "2022-04-06"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -29,11 +29,11 @@ You can start with a smaller footprint by deploying a consolidated management an
 
 * **Management-optimized cluster** supports separate management and workload clusters.
 
-   If you don't want workloads to run on the primary cluster, select this option to order a 2-CPU Intel Cascade Lake processor with 20 cores, 2.2 GHz, and 192 GB RAM per bare metal server. You must include a separate cluster for workloads. Under **Additional cluster for workloads**, complete the settings to customize the bare metal hardware based on your workload capacity requirements.
+   If you don't want workloads to run on the primary cluster, select this option. With this option, you get a 2-CPU Intel® Cascade Lake processor with 20 cores, 2.2 GHz, and 192 GB RAM per bare metal server. You must include a separate cluster for workloads. Under **Additional cluster for workloads**, complete the settings to customize the bare metal hardware based on your workload capacity requirements.
 
 * **Customizable consolidated cluster** supports a range of CPU and RAM options to optimize capacity for both management and workload clusters.
 
-   You can choose the Cascade Lake server and RAM size according to your needs. This option is available in single-zone deployments (nonstretched) and brings down the entry price point by enabling workloads to run alongside VMware management components in the same cluster. You can start with only 6 hosts instead of 10. This option is helpful for proof of concepts (POCs) or if you want to start small and grow over time.
+   You can choose the Cascade Lake server and RAM size according to your needs. This option is available in single-zone deployments (nonstretched) and brings down the entry price point by enabling workloads to run alongside VMware® management components in the same cluster. You can start with only 6 hosts instead of 10. This option is helpful for proof of concepts (POCs) or if you want to start small and grow over time.
 
 ## Number of bare metal servers
 {: #vrw-orderinginstance-consldt-bare-metal}

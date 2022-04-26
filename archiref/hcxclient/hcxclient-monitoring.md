@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 ## Using the WAN Optimizer for monitoring
 {: #hcxclient-monitoring-using-wan}
 
-The Silver Peak WAN optimization appliance that is deployed as part of HCX does not get its management interface configured. The web user interface (UI) is a valuable tool to use when you base line traffic throughput and throttling network migration bandwidth use.
+The Silver Peak WAN optimization appliance that is deployed as part of HCX™ does not get its management interface configured. The web user interface (UI) is a valuable tool to use when you base line traffic throughput and throttling network migration bandwidth use.
 
 Only the HCX CGW Gateway WAN tunnel traffic flows through the WAN Optimizer appliance. Therefore, it cannot monitor stretched L2 traffic.
 {: note}

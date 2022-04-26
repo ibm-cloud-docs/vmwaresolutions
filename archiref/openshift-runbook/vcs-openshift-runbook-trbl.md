@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-12-09"
+lastupdated: "2022-03-24"
 
 subcollection: vmwaresolutions
 
@@ -13,10 +13,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Troubleshooting OpenShift problems
+# Troubleshooting Red Hat OpenShift problems
 {: #openshift-runbook-runbook-trbl-intro}
 
-Use the troubleshooting information to diagnose and fix problems with OpenShift.
+Use the troubleshooting information to diagnose and fix problems with {{site.data.keyword.redhat_openshift_full}}.
 
 ## RHEL subscription
 {: #openshift-runbook-runbook-trbl-intro-sub}
@@ -65,7 +65,7 @@ This example shows how to download the log to the bastion node and then on to th
 scp -i /root/.ssh/id_rsa core@192.168.133.10:/var/log/pods/b2810e842791d83d48a4684295b7cd01/etcd-member/0.log 0.log
 ```
 
-## OpenShift
+## Red Hat OpenShift
 {: #openshift-runbook-runbook-trbl-intro-openshift}
 
 Gets a list of nodes and their status:
@@ -80,7 +80,7 @@ When you use kubectl, a preference takes effect while it determines which kubeco
 * use the KUBECONFIG environment variable, if specified.
 * use the `$HOME/.kube/config` file.
 
-To export the kubeconfig that is created by the OpenShift Installer to an environment variable, use the following command:
+To export the kubeconfig that is created by the {{site.data.keyword.redhat_openshift_notm}} Installer to an environment variable, use the following command:
 
 ```bash
 export KUBECONFIG=/opt/ocpinstall/auth/kubeconfig
@@ -101,7 +101,7 @@ In some cases, you might have issues with Terraform to finish the automation. In
 2. Remove the `ocp` resource group.
 3. Remove the `rm /opt/ocpinstall/installer/upi/vsphere/terraform.tfstate` Terraform state file.
 
-After these steps, you can fix your deployment issue and redeploy the OpenShift platform.
+After these steps, you can fix your deployment issue and redeploy the {{site.data.keyword.redhat_openshift_notm}} platform.
 
 ## Generating new ignition files
 {: #openshift-runbook-runbook-trbl-intro-newign}
@@ -114,7 +114,7 @@ Your ignition files are valid for 24 hours. You can generate the `.ign` files by
     rm -R .openshift_install.log .openshift_install_state.json auth *.ign metadata.json
     ```
 
-2. Copy OpenShift the `install-config` backup to yaml:
+2. Copy {{site.data.keyword.redhat_openshift_notm}} the `install-config` backup to yaml:
     ```bash
     cp install-config.bak install-config.yaml
     openshift-install create ignition-configs --dir=/opt/ocpinstall/
@@ -140,14 +140,14 @@ Your ignition files are valid for 24 hours. You can generate the `.ign` files by
     END_OF_WORKER_IGNITION
     ```
 
-## Taking a snapshot of OpenShift
+## Taking a snapshot of Red Hat OpenShift
 {: #openshift-runbook-runbook-trbl-snapshot}
 
-You might want to stop and resume OpenShift Cluster VMs during development or testing. You must consider the following before you take a snapshot.
+You might want to stop and resume {{site.data.keyword.redhat_openshift_notm}} Cluster VMs during development or testing. You must consider the following before you take a snapshot.
 
-During the installation of OpenShift 4.x clusters, a bootstrap certificate is created that is used on the control-plane nodes to create certificate signing requests (CSRs) for kubelet client certificates (one for each node or kubelet). This certificate is used to identify each kubelet on any node. Because these certificates cannot be revoked, they are made with a short expiration time of 24 hours after cluster installation. All nodes other than the control-plane nodes have a service account token that is revocable. The bootstrap certificate is valid only for 24 hours after cluster installation. After the initial 24 hours, the certificate expires every 30 days.
+During the installation of {{site.data.keyword.redhat_openshift_notm}} 4.x clusters, a bootstrap certificate is created that is used on the control-plane nodes to create certificate signing requests (CSRs) for kubelet client certificates (one for each node or kubelet). This certificate is used to identify each kubelet on any node. Because these certificates cannot be revoked, they are made with a short expiration time of 24 hours after cluster installation. All nodes other than the control-plane nodes have a service account token that is revocable. The bootstrap certificate is valid only for 24 hours after cluster installation. After the initial 24 hours, the certificate expires every 30 days.
 
-The first control-plane kubelet lasts for 24 hours before it is re-created. If you are taking a snapshot immediately after deployment, the control-plane kubelet does not yet have a 30-day client certificate. Then, the missing kubelet client certificate refresh window renders the cluster unusable, because the bootstrap credential cannot be used when the cluster is back up. Practically, this process requires an OpenShift 4 cluster to be running for at least 25 hours after installation before it can be shut down.
+The first control-plane kubelet lasts for 24 hours before it is re-created. If you are taking a snapshot immediately after deployment, the control-plane kubelet does not yet have a 30-day client certificate. Then, the missing kubelet client certificate refresh window renders the cluster unusable, because the bootstrap credential cannot be used when the cluster is back up. Practically, this process requires an {{site.data.keyword.redhat_openshift_notm}} 4 cluster to be running for at least 25 hours after installation before it can be shut down.
 
 You can check the validity of the certificate by running the following command in the bastion host after deployment:
 
@@ -171,7 +171,7 @@ Certificate:
             Not After : Dec  6 04:57:43 2019 GMT
 ```
 
-For more information about shutting down the cluster after installation, see [Enabling OpenShift 4 Clusters to Stop and Resume Cluster VMs](https://blog.openshift.com/enabling-openshift-4-clusters-to-stop-and-resume-cluster-vms/){: external}.
+For more information about shutting down the cluster after installation, see [Enabling {{site.data.keyword.redhat_openshift_notm}} 4 Clusters to Stop and Resume Cluster VMs](https://blog.openshift.com/enabling-openshift-4-clusters-to-stop-and-resume-cluster-vms/){: external}.
 
 After the initial 24 hours certificate renewal, cluster snapshot is enabled to resume at any time in the next 30 days. After the 30 days, the certificate validity will make the cluster snapshot unusable.
 
@@ -180,7 +180,7 @@ After the initial 24 hours certificate renewal, cluster snapshot is enabled to r
 
 * [Install on vSphere: User-Provisioned Infrastructure](https://cloud.redhat.com/openshift/install/vsphere/user-provisioned){: external}
 * [Install a cluster on vSphere](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}
-* [Index of public OpenShift v4 clients](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/?extIdCarryOver=true&sc_cid=701f2000001Css5AAC){: external}
+* [Index of public {{site.data.keyword.redhat_openshift_notm}} v4 clients](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/?extIdCarryOver=true&sc_cid=701f2000001Css5AAC){: external}
 * [Understanding persistent storage](https://docs.openshift.com/container-platform/4.7/storage/understanding-persistent-storage.html#understanding-persistent-storage){: external}
 * [ssh-keygen - Generate a New SSH Key](https://www.ssh.com/ssh/keygen/){: external}
 * [Configure PowerCLI and PowerNSX on macOS](https://readysetvirtual.wordpress.com/2018/04/06/configure-powercli-and-powernsx-on-macos/){: external}

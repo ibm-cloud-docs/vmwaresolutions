@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Backing up components
 {: #solution_backingup}
 
-You’re responsible for the configuration, management, and monitoring of all software components, including the backup and availability of your management infrastructure and workloads.
+You are responsible for the configuration, management, and monitoring of all software components, including the backup and availability of your management infrastructure and workloads.
 
 As part of the solution, you can optionally deploy the {{site.data.keyword.IBM}} Spectrum Protect&trade; Plus or Veeam® add-on services. Veeam and IBM Spectrum Protect Plus can help satisfy the requirement to back up your management components.
 
@@ -31,7 +31,7 @@ Some components, such as VMware vCenter Server® with an embedded Platform Servi
 
 To host these backups, deploy a Linux® file server into your cluster by using the following steps:
 
-1. Order a private portable subnet from the {{site.data.keyword.cloud_notm}} infrastructure and locate it on the same VLAN as your system components. This is the private VLAN on which the management IP addresses for your hosts reside.
+1. Order a private portable subnet from the {{site.data.keyword.cloud_notm}} infrastructure and locate it on the same VLAN as your system components. It is the private VLAN on which the management IP addresses for your hosts exist.
 2. Upload an operating system image to your VMware management datastore, such as Ubuntu Server 18.04 LTS, from the {{site.data.keyword.cloud_notm}} private mirror.
 3. Deploy this virtual machine (VM) into your cluster on the management port group by using a private portable IP address ordered previously. Ensure that the VM is configured to point to your AD/DNS servers and optionally add the VM to your DNS domain.
 4. Create a non-root backup user ID on this server and ensure that all the necessary services are configured and started for file transfers. For example, FTP or SSH.
@@ -73,7 +73,7 @@ If you deploy add-on solution components into your instance, plan for the backup
 * Zerto Virtual Replication - The Zerto Virtual Manager (ZVM) system is deployed as an {{site.data.keyword.cloud_notm}} virtual server instance (VSI) and its backup is not supported by Veeam or IBM Spectrum Protect Plus. If your disaster recovery strategy requires you to recover the ZVM without you perform a site failover, use your preferred Windows® backup solution to back up and restore the ZVM.
 * F5® BIG-IP - F5 recommends [file-based backup of the F5 configuration](https://support.f5.com/csp/article/K13132){: external}, which you can direct to your file server.
 * FortiGate® Security Appliance or VM - Fortinet recommends [file-based backup of the FortiGate configuration](https://help.fortinet.com/fos50hlp/54/Content/FortiOS/fortigate-best-practices-54/Firmware/Performing_Config_Backup.htm){: external}, which you can direct to your file server.
-* HyTrust® CloudControl™ and DataControl® - HyTrust supports both image and file-based backup of the HyTrust server appliances. For more information, see the HyTrust administration guides.
+* Entrust CloudControl™ and Entrust DataControl® - Entrust supports both image and file-based backup of the Entrust server appliances. For more information, see the Entrust administration guides.
 * VMware HCX™ - Use the HCX appliance management interface to create and download a file-based backup of the HCX Manager configuration similar to the vCenter Server Appliance.
 
 ## More considerations

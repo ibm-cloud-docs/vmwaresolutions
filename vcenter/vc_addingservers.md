@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-04-08"
 
 keywords: vCenter Server add host, add server vCenter Server
 
@@ -25,7 +25,7 @@ You can expand the capacity of your VMware® vCenter Server® instance according
 * Adding ESXi servers to vCenter Server instances with VMware vSphere® 6.5 is not supported.
 * For the edge services cluster, you cannot add or remove ESXi servers.
 * For existing instances with vSphere 6.7u1, you can add ESXi servers with either vSphere 6.7u1 or vSphere 6.7u3.
-* Whenever possible, add ESXi servers by using the {{site.data.keyword.vmwaresolutions_full}} console because changes that you make on the VMware vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, add ESXi servers to vCenter Server only for on-premises ESXi servers or ESXi servers that you won't manage in the {{site.data.keyword.vmwaresolutions_short}} console.
+* Whenever possible, add ESXi servers by using the {{site.data.keyword.vmwaresolutions_full}} console because changes that you make on the VMware vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, add ESXi servers to vCenter Server only for on-premises ESXi servers or ESXi servers that you don't manage in the {{site.data.keyword.vmwaresolutions_short}} console.
 * A vCenter Server instance with NFS storage must have at least three ESXi servers (for NSX-T™) or two ESXi servers (for NSX-V™). Each of the non-default clusters can be expanded to have up to 59 ESXi servers.
 * A vCenter Server instance with vSAN™ storage must have at least four ESXi servers.
 * If your initial cluster has vSAN storage, adding one or more ESXi servers after deployment can increase the cluster storage capacity.
@@ -51,7 +51,7 @@ You can expand the capacity of your VMware® vCenter Server® instance according
 
 9. Complete the bare metal server configuration.
    * Select an existing bare metal server configuration that is being used by the existing ESXi servers in the cluster. This option is not available under the following conditions:
-      * The bare metal configuration used by the existing ESXi servers in the cluster is **Broadwell**.
+      * The bare metal configuration that is used by the existing ESXi servers in the cluster is **Broadwell**.
       * The storage type of the cluster is **Local disks**.
    * Select a new bare metal server configuration:
       * (NSX-V only) For instances with vSphere Enterprise Plus 6.7u1, specify the VMware vSphere version for the new ESXi server.
@@ -60,7 +60,7 @@ You can expand the capacity of your VMware® vCenter Server® instance according
 10. Complete the subnet settings.
     * Select to continue to use the previously selected primary subnets.
     * Select to specify primary subnets. Then, use the lists to select the **Public primary subnet** and **Private primary subnet**.
-11. Complete the storage configuration. Specify the disk types for the capacity and cache disks, the number of disks, and the vSAN license edition. If you want more storage, select the **High performance Intel Optane** checkbox.
+11. Complete the storage configuration. Specify the disk types for the capacity and cache disks, the number of disks, and the vSAN license edition. If you want more storage, select the **High performance Intel® Optane** checkbox.
 12. On the **Summary** pane, review the estimated pricing and click **Create**.
 
    You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. This is useful if you want to estimate the price of the selected {{site.data.keyword.vmwaresolutions_short}} resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider to purchase.
@@ -81,7 +81,7 @@ If you are adding ESXi servers during maintenance mode, VMs are not migrated to 
 ## Related links
 {: #vc_addingservers-related}
 
-* [Deleting vCenter Server instances in a multi-site configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi)
+* [Deleting vCenter Server instances in a multisite configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi)
 * [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
 * [Managing virtual servers](/docs/virtual-servers?topic=virtual-servers-managing-virtual-servers)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-13"
+lastupdated: "2022-04-15"
 
 keywords: vCenter Server network config, network configuration, manage NSX ESG
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 Configure the network for your virtual machines (VMs) so you can take advantage of the VMware NSX Edge™ Services Gateway (ESG) that is deployed in your VMware vCenter Server® instances. For more information about the security measures that are in place to help minimize security risk, see [Does the management services NSX Edge pose a security risk?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#faq-mgmt-nsx)
 
-VMware NSX® is a network virtualization platform that allows the virtualization of isolated networks and provides several networking services such as switches, routing, and firewalls. For more information about NSX, see [Overview of NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.3/com.vmware.nsx.install.doc/GUID-10944155-28FF-46AA-AF56-7357E2F20AF4.html){: external}.
+VMware NSX® is a network virtualization platform that allows the virtualization of isolated networks and provides several networking services such as switches, routing, and firewalls. For more information about NSX, see [Overview of NSX for vSphere](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.3/com.vmware.nsx.install.doc/GUID-10944155-28FF-46AA-AF56-7357E2F20AF4.html){: external}.
 
 As part of the ordering process for your vCenter Server instance, the following actions are completed on your behalf:
 * A private customer subnet is ordered to be used by your VMs to access the {{site.data.keyword.cloud}} infrastructure private network.
@@ -29,8 +29,7 @@ As part of the ordering process for your vCenter Server instance, the following 
 * A sample NSX Logical Switch is deployed to be used by the customer workload VMs.
 * A sample router is deployed for potential east-west communication between local workloads that are connected to layer 2 (L2) networks. This router is a NSX-T™ Tier 1 Router for NSX-T and an NSX Distributed Logical Router for NSX-V.
 * An NSX Edge appliance is deployed and configured to perform network address translation (NAT). NAT is done from the range of IP addresses of the workload logical switch to a public IP address on the NAT rules.
-
-**(NSX-V only)** If you installed the Veeam® service, the NSX Manager is configured to do a daily backup of the NSX configurations. For more information, see [Veeam overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations).
+* **(NSX-V only)** If you installed the Veeam® service, the NSX Manager is configured to do a daily backup of the NSX configurations. For more information, see [Veeam 9.5](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations).
 
 ## Configuring the networking settings for your VMs
 {: #vc_esg_config-procedure-config-networking}
@@ -59,7 +58,7 @@ To take advantage of NSX for your workload VMs, you must configure a number of s
 ## Enabling the SNAT rule for NSX-T
 {: #vc_nsx-t_esg_config-procedure-enable-snat-rule}
 
-NSX-T enables the SNAT rule by default. For more information about modifying the existing rules, see [Configure Source and Destination NAT on a Tier-0 Logical Router](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/2.4/administration/GUID-45949ACD-9029-4674-B29C-C2EABEB39E1D.html){: external}.
+NSX-T enables the SNAT rule by default. For more information about modifying the existing rules, see [Configure source and destination NAT on a Tier-0 logical router](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/2.4/administration/GUID-45949ACD-9029-4674-B29C-C2EABEB39E1D.html){: external}.
 
 ## Enabling the SNAT rule for NSX-V
 {: #vc_esg_config-procedure-enable-snat-rule}
@@ -114,9 +113,18 @@ Additionally, you can find more details about the customer subnets by completing
    Do not use the IP addresses that are ordered and used during the initial setup. However, you can use other IP addresses on these subnets according to your requirements. To set up more network address translation rules, see [Managing NAT rules](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-5896D8CF-20E0-4691-A9EB-83AFD9D36AFD.html){: external}.
    {: important}
 
+## Ordering additional subnets
+{: #vc_esg_config-procedure-additional-subnets}
+
+You can order additional subnets if the provided subnets do not fulfill your requirements for IP addresses.
+
+For NSX-V, you can order additional public or private portable subnets.
+
+For NSX-T, order public static subnets and configure them with the Tier-0 VIP for the subnet's endpoint. For NSX-T private subnets, you must order a gateway appliance as a peer for the NSX edge and manage additional subnets in the appliance.
+
 ## Related links
 {: #vc_esg_config-related}
 
-* [Troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact#vcenter_chg_impact)
-* [FAQs](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [NSX Edge Services Gateway](https://www.ibm.com/cloud/garage/architectures/implementation/virtualization_nsx){: external}
+* [Considerations about changing vCenter Server artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact#vcenter_chg_impact)
+* [General FAQ about VMware Solutions Dedicated](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [NSX Edge Services Gateway design](/docs/vmwaresolutions?topic=vmwaresolutions-nsx_design)

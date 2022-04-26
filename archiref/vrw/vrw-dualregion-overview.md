@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-04-19"
 
 subcollection: vmwaresolutions
 
@@ -80,7 +80,7 @@ The VMware Regulated Workloads dual region design uses the following specificati
 * vCenter - One appliance per region.
 * NSX Manager - One cluster per region.
 * RiskForesight - An "all-in-on" VM hosted in the recovery region that has Asset Repositories and scheduled jobs that are configured for both the protected and recovery regions.
-* HyTrust CloudControl - One cluster per region.
+* Entrust CloudControl™ - One cluster per region.
 * vRealize Log Insight (vRLI) - One cluster per region and the use log forwarding/filtering between regions.
 * vRealize Operations Manager (vROps) - An analytic cluster on a cross-region network in the protected region and remote collectors in both regions. Recovery of the analytics cluster is done through replicas.
 * vRealize Network Insight (vRNI) – An optional manual installation in each region.

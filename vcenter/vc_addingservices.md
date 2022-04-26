@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-02-24"
+lastupdated: "2022-04-20"
 
 keywords: vCenter Server add service
 
@@ -37,52 +37,25 @@ For more information about the service itself and to order, see the individual t
 ## Available services for vCenter Server instances
 {: #vc_addingservices-available-services}
 
-The following tables show the services that are available to vCenter Server instances, together with the installed service versions.
+The following table shows the services that are available to vCenter Server instances. The table also shows the installed service versions.
 
-### Available services for vCenter Server with NSX-T instances
-{: #vc_addingservices-available-services-nsx-t}
-
-The following table shows the services available for vCenter Server with NSX-T instances:
-
-| Service name | Current version |
-|--------------|-----------------|
-| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 3.1.0 |
-| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 16.1 |
-| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.0.3 |
-| [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version |
-| [HyTrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations) | 6.4.1 |
-| [HyTrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)  | 5.4[^htdc] |
-| [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (20.4R2) |
-| [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.7[^nsxtver] |
-| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations) | 11 |
-| [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.6 and vRLI 8.6 |
-| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.0u2 |
-{: caption="Table 1. Available services for vCenter Server with NSX-T instances" caption-side="top"}
-
-[^htdc]: VMware vSphere 6.7 only
-
-[^nsxtver]: If you add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade NSX-T to 3.1 or later.
-
-### Available services for vCenter Server with NSX-V instances
-{: #vc_addingservices-available-services-nsx-v}
-
-The following table shows the services available for vCenter Server with NSX-V instances:
-
-| Service name | Current version |
-|--------------|-----------------|
-| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 3.1.0 |
-| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 16.1 |
-| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.0.3 |
-| [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version |
-| [HyTrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)  | 5.4 |
-| [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | N/A |
-| [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (20.4R2) |
-| [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 |
-| [PrimaryIO HDM](/docs/vmwaresolutions?topic=vmwaresolutions-managing_pio) | N/A |
-| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations) | 11 |
-| [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.6 and vRLI 8.6 |
-| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.0u2 |
-{: caption="Table 2. Available services for vCenter Server with NSX-V instances" caption-side="top"}
+| Service name | Current version | Notes           |
+|--------------|-----------------|-----------------|
+| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 3.1.0 | |
+| [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)  | 6.4.1 | NSX-T only |
+| [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations) | 5.5 | VMware vSphere 6.7 only |
+| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 16.1 | |
+| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.0.4 | |
+| [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version | |
+| [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | N/A | |
+| [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (20.4R2) | |
+| [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 | |
+| [PrimaryIO HDM](/docs/vmwaresolutions?topic=vmwaresolutions-managing_pio) | N/A | |
+| [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.9 | NSX-T only \n If you add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade NSX-T to 3.1 or later. |
+| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations) | 11 | |
+| [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.6 and vRLI 8.6 | |
+| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.0u3 | |
+{: caption="Table 1. Available services for vCenter Server instances" caption-side="top"}
 
 ## Promotions for services
 {: #vc_addingservices-service-promotions}
@@ -94,7 +67,7 @@ You can use one promotion (promo) code for one or more services for:
 * Adding a service to a vCenter Server instance
 * Ordering a stand-alone service license, such as Caveonix or Veeam®
 
-For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX™, HyTrust CloudControl™, HyTrust DataControl®, and vRealize Operations™ and Log Insight™.
+For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX™, Entrust CloudControl™, Entrust DataControl®, and vRealize Operations™ and Log Insight™.
 
 You can use one promo code per order. Multiple promo codes are not allowed. However, you can use a promo code multiple times per account. A promo code might apply to multiple services, for example, Veeam and Caveonix RiskForesight™.
 
@@ -122,14 +95,14 @@ The following table provides the resource requirements for the services for whic
 | Caveonix RiskForesight | CPU - 8 CPUs \n RAM - 32 GB \n Storage - 100 GB |
 | F5 BIG-IP[^f5bigip] | CPU - 4, 8, or 16 CPUs, depending on license and bandwidth chosen \n RAM - 8, 16, or 32 GB, depending on license and bandwidth chosen |
 | FortiGate Virtual Appliance | CPU - 2, 4, 8, 16, or 32 CPUs, depending on deployment size chosen \n RAM - 4, 6, or 12 GB, depending on deployment size chosen |
-| HyTrust CloudControl | CPU - 4 CPUs \n RAM - 16 GB \n Storage - 186 GB VMDK |
+| Entrust CloudControl | CPU - 4 CPUs \n RAM - 16 GB \n Storage - 186 GB VMDK |
 | Juniper vSRX | You must have enough available capacity to accommodate two VMs with the following requirements, on different hosts: \n CPU - 6 CPUs \n RAM - 16 GB \n Storage - 18 GB \n If you install Juniper vSRX on clusters with 25 Gb uplink speed, the following capacity requirements apply. \n CPU - 10 CPUs \n RAM - 16 GB \n Storage - 18 GB |
-| Red Hat OpenShift | If you install Red Hat OpenShift with vSAN™ storage, the following capacity requirements apply. \n CPU - 9 CPUs \n RAM - 120 GB \n Storage - 1,170 GB \n If you install Red Hat OpenShift with NFS storage, a new 2-TB NFS datastore, which is dedicated to Red Hat OpenShift, is ordered. |
+| {{site.data.keyword.redhat_openshift_notm}} | If you install {{site.data.keyword.redhat_openshift_notm}} with vSAN™ storage, the following capacity requirements apply. \n CPU - 9 CPUs \n RAM - 120 GB \n Storage - 1,170 GB \n If you install {{site.data.keyword.redhat_openshift_notm}} with NFS storage, a new 2-TB NFS datastore, which is dedicated to {{site.data.keyword.redhat_openshift_notm}}, is ordered. |
 | Veeam | If you select Veeam as a VSI option, there is no capacity requirement. \n If you select Veeam as a VM option, the following capacity requirements apply. \n CPU - 8 CPUs \n RAM - 32 GB \n Storage - 100 GB \n  If you select Veeam as a bare metal server option, there is no capacity requirement. |
 | VMware HCX | For each gateway in the active-passive pair of VMware NSX-V edge services gateways: \n CPU - 6 CPUs \n RAM - 8 GB \n Storage - 3 GB VMDK \n For the HCX Management Appliance VM: \n CPU - 4 CPUs \n RAM - 12 GB \n Storage - 60 GB VMDK |
 | vRealize Operations and Log Insight | CPU - 18 CPUs \n RAM - 208 GB \n If you install vRealize Operations with vSAN storage, you must have an estimated 750 GB of vSAN storage. \n If you install vRealize Operations with NFS storage, there's no storage requirement because NFS storage is ordered as part of the instance order. |
 | Zerto | CPU - 2 CPUs \n RAM - 4 GB |
-{: caption="Table 3. Resources required for the services that the system checks for capacity requirements" caption-side="top"}
+{: caption="Table 2. Resources required for the services that the system checks for capacity requirements" caption-side="top"}
 
 [^f5bigip]: See the table in [Considerations when you install F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations#f5_considerations-install-table).
 
@@ -154,7 +127,7 @@ The following table lists the variables that are used in the previous formula.
 | MgmtOverheadCores[^mgmtcores] | The number of cores reserved by the vCenter Server management components (vCenter Server, PSC, AD/DNS, Edges) | Cores | 5 | 5 |
 | vSphereHAHostTolerance[^vspherehacores] | The number of hosts to tolerate in the vSphere HA configuration | Hosts | 1 | 1 |
 | HostVsanOverheadCorePercentage | The percentage of a host's cores used by vSAN | % | 10 | 0 |
-{: caption="Table 4. Description of variables in formula 1" caption-side="top"}
+{: caption="Table 3. Description of variables in formula 1" caption-side="top"}
 
 [^mgmtcores]: Management cluster only. No core reservation for the workload cluster, the edge services cluster, and the single-node management cluster.
 
@@ -178,7 +151,7 @@ The following table lists the variables that are used in the previous formula.
 | vSphereHAHostTolerance[^vspherehamem] | The number of hosts to tolerate in the vSphere HA configuration | Hosts | 1 | 1 |
 | HostVsanOverheadMemoryDiskPercentage | The number of GB of memory reserved by vSAN management (represented as percentage of one of the capacity vSAN disks) | % | 2.75% | 2.75% |
 | HostVsanOverheadMemory | The number of GB of memory reserved by vSAN management regardless of disk size | GB | 7 | 0 |
-{: caption="Table 5. Description of variables in formula 2" caption-side="top"}
+{: caption="Table 4. Description of variables in formula 2" caption-side="top"}
 
 [^mgmtmem]: Management cluster only. No memory reservation for the workload cluster, the edge services cluster, and the single-node management cluster.
 

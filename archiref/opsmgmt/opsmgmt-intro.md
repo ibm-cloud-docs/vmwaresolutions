@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-04-19"
 
 subcollection: vmwaresolutions
 
@@ -47,7 +47,7 @@ The design allows the client to complete the following tasks:
 
 * **Business Continuity Layer** - This layer contains elements to support business continuity by providing data backup, restoration, and disaster recovery. For more information, see the {{site.data.keyword.vmwaresolutions_short}} backup and restoration architecture, Veeam, IBM Spectrum Protect Plus, and Zerto disaster recovery reference architectures.
 
-* **Security Layer** - This layer contains the elements to reduce risk and increase compliance. For more information, see the Fortinet®, F5®, NSX, HyTrust®, and Caveonix reference architectures.
+* **Security Layer** - This layer contains the elements to reduce risk and increase compliance. For more information, see the Fortinet®, F5®, NSX, Entrust, and Caveonix reference architectures.
 
 This document is adding the following layer into the {{site.data.keyword.vmwaresolutions_short}} architecture:
 

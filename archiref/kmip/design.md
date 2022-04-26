@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-03-15"
 
 subcollection: vmwaresolutions
 
@@ -110,7 +110,7 @@ The architecture and topology differs depending on whether KMIP for VMware is us
 #### KMIP for VMware and Key Protect
 {: #kmip-design-topology-kp}
 
-When your KMIP for VMware instance is connected to Key Protect, your VMware vCenter Server® is connecting to a multi-tenant KMIP service that is deployed on two private network endpoints in the same {{site.data.keyword.cloud_notm}} MZR as your Key Protect instance. The two endpoints are distributed across separate availability zones for high availability, and you must configure both endpoints as a key provider cluster in your vCenter configuration. For more information about the endpoints in each MZR and the KMIP server certificate signatures, see [Ordering KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_ordering).
+When your KMIP for VMware instance is connected to Key Protect, your VMware vCenter Server® is connecting to a multitenant KMIP service that is deployed on two private network endpoints in the same {{site.data.keyword.cloud_notm}} MZR as your Key Protect instance. The two endpoints are distributed across separate availability zones for high availability, and you must configure both endpoints as a key provider cluster in your vCenter configuration. For more information about the endpoints in each MZR and the KMIP server certificate signatures, see [Ordering KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_ordering).
 
 KMIP for VMware also connects to {{site.data.keyword.cloud_notm}} Key Protect by using the {{site.data.keyword.cloud_notm}} private network rather than the public internet, and is additionally protected by TLS encryption and authentication.
 

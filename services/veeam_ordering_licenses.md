@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-22"
 
 keywords: Veeam, Veeam license, order Veeam license, Veeam 10
 
@@ -36,16 +36,16 @@ Ensure that you configured the {{site.data.keyword.cloud}} infrastructure creden
 
 4. Specify a new license name or use the default name **veeam-_xx_** where _xx_ represents two randomly generated alphabetic characters.
 5. In the **License note** field, enter a note. For example, you can enter a note to help you identify associated instances.
-6. Specify the number of virtual machines (VMs) you want to license.
+6. Specify the number of virtual machines (VMs) you want to license. You can order licenses only in multiples of 10.
 7. Click the link or links of the terms that apply to your order. Ensure that you agree with these terms before you order the license.
 8. Click **Add to estimate** or **Create**.
 
 ## Results
 {: #veeam_ordering_licenses-results}
 
-The ordering of the Veeam license starts automatically. You receive confirmation that the order is being processed and you can check the status of the order by viewing the license details.
+The ordering process does not automatically start. 
 
-When the license is ready to use, the status of the license is changed to **Installed** and you receive a notification by email.
+After you complete the order, you must take a screen capture of your purchase order and email it to veeamvpc@us.ibm.com. A license key is generated to you, the requester.
 
 ## Related links
 {: #veeam_ordering_licenses-related}

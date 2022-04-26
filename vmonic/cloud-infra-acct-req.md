@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-04-22"
 
 keywords: user account, user permissions, VRF account
 
@@ -22,13 +22,13 @@ To use {{site.data.keyword.cloud}} for VMware® Solutions to order instances, yo
 ## Permissions for the IBM Cloud infrastructure account
 {: #cloud-infra-acct-req-permissions}
 
-The {{site.data.keyword.cloud_notm}} infrastructure account that you are using must have certain permissions to be able to order the components in your instances and perform operations on your behalf. The permission requirements are applicable to all types of instances and services you are ordering from the {{site.data.keyword.vmwaresolutions_short}} console.
+The {{site.data.keyword.cloud_notm}} infrastructure account that you are using must have certain permissions to be able to order the components in your instances and perform operations on your behalf. The permission requirements are applicable to all types of instances and services that you are ordering from the {{site.data.keyword.vmwaresolutions_short}} console.
 
 You can verify or update permissions for classic infrastructure users at any time. For more information, see [Classic infrastructure permissions](/docs/account?topic=account-infrapermission).
 
 | Permission         | Details                                 |
 |:------------------ |:--------------------------------------- |
-| Add Server | This permission is required for the following operations: to order {{site.data.keyword.cloud_notm}} bare metal servers on which VMware ESXi™ runs and to provision hourly virtual servers that are used for instance configuration, maintenance, and support operations. |
+| Add Server | This permission is required for the following operations: to order {{site.data.keyword.cloud_notm}} bare metal servers on which VMware ESXi™ runs and to provision hourly virtual servers that are used, for instance, configuration, maintenance, and support operations. |
 | Cancel Server | This permission is required to release and reclaim bare metal servers on which VMware ESXi runs. If you delete your instance, the ordered components are automatically released in the correct dependency sequence. |
 | View Virtual Server Details | This permission is required to retrieve the server provisioning details, which are required for order validation and automated configuration. |
 | Add Storage | This permission is required to order backup storage and shared storage for the instance. |

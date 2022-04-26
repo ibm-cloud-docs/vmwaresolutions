@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-10"
 
 keywords: Veeam console, Veeam backup restore, update Veeam license
 
@@ -104,25 +104,25 @@ When failures occur on the management components, you can restore the management
 
 You are responsible for maintaining the Veeam software to keep it updated to the most recent version.
 
-### Applying updates to instances deployed with public and private network
+### Applying updates to instances deployed as a VM with public and private network
 {: #managingveeam-updates-public-private}
 
-If the Veeam service is installed on an instance with public and private network, you can check for and download the updates by using the Veeam software itself.
+If the Veeam service is installed on an instance as a VM with public and private network, you can check for and download the updates by using the Veeam software itself.
 
-### Applying updates to instances deployed with private network only
+### Applying updates to instances deployed as a bare metal server or VSI, or deployed as a VM with private network only
 {: #managingveeam-updates-private}
 
-If the Veeam service is installed on an instance with private network only, you cannot check for or download updates by using the Veeam software. The reason is because the Veeam VSI or VM is configured with no public network access. Instead, you must download updates from the Veeam website, transfer them to the Veeam VM, and then install them.
+If the Veeam service is installed on an instance as a bare metal server or VSI, or deployed as a VM with private network only, you cannot check for or download updates by using the Veeam software. The reason is because the Veeam VSI or VM is configured with no public network access. Instead, you must download updates from the Veeam website, transfer them to the Veeam VM, and then install them.
 
 ### Updating Veeam licenses for instances that are deployed with public and private network
 {: #managingveeam-update-license-public-private}
 
 If the Veeam service is installed on an instance with public and private network, you can update your Veeam v9.5u4b license either automatically or manually. For Veeam v11, you must update your Veeam license automatically. You cannot update it manually. Follow the Veeam instructions at [Updating license](https://helpcenter.veeam.com/docs/backup/vsphere/license_update.html){: external}.
 
-### Updating Veeam licenses for instances that are deployed with private network only
+### Updating Veeam licenses for instances that are deployed as a bare metal server or VSI, or deployed as a VM with private network only
 {: #managingveeam-update-license-private}
 
-If the Veeam service is installed on an instance with private network only, take note of the expiration date for your license. When renewal is needed, [contact {{site.data.keyword.IBM}} Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to get assistance with updating the license key.
+If the Veeam service is deployed on an instance as a bare metal server or VSI, or is deployed as a VM with private network only, take note of the expiration date for your license. When renewal is needed, [contact {{site.data.keyword.IBM}} Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to get assistance with updating the license key.
 
 ### Known issue about license key message for automatic updating
 {: #managingveeam-known-issue-message}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2022
 
-lastupdated: "2022-02-08"
+lastupdated: "2022-04-18"
 
 keywords: user IDs vCenter, PSC user, user ID service
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # IBM user IDs
 {: #audit_user_ids}
 
-{{site.data.keyword.cloud}} for VMware® Solutions maintains a set of users in your account for use by {{site.data.keyword.cloud_notm}} automation when you run operations such as adding hosts, clusters, or storage to your VMware instance. Users in your account can also be used for installation and configuration of services by {{site.data.keyword.cloud_notm}} services automation. Review the following sections for {{site.data.keyword.cloud_notm}} automation user IDs.
+{{site.data.keyword.vmwaresolutions_full}} maintains a set of users in your account for use by {{site.data.keyword.cloud_notm}} automation when you run operations such as adding hosts, clusters, or storage to your VMware® instance. Users in your account can also be used for installation and configuration of services by {{site.data.keyword.cloud_notm}} services automation. Review the following sections for {{site.data.keyword.cloud_notm}} automation user IDs.
 
 VMware instance operations fail if IBM user IDs are deleted, disabled, or if their passwords are changed.
 {: important}
@@ -76,9 +76,9 @@ HTTP is used for vCenter setup, configuration, and VMware operations such as add
 | `prod-Caveonix-dynamicID-@domainName` | Used for installation and configuration of the Caveonix RiskForesight™ service. |
 | `prod-Fortigate-dynamicID-@domainName` | Used for installation and configuration of the FortiGate® Security Appliance service. This service is deprecated. |
 | `prod-FortigateVM-dynamicID-@domainName` | Used for installation and configuration of the FortiGate Virtual Appliance service. |
-| `prod-HyTrustCC-shortID-@domainName` | Used for installation and configuration of the HyTrust® CloudControl™ service. |
-| `prod-HyTrustDC-shortID-@domainName` | Used for installation and configuration of the HyTrust DataControl™ service. |
-| `prod-HyTrustKC-shortID-@domainName` | Used for installation and configuration of the HyTrust KeyControl™ service. |
+| `prod-HyTrustCC-shortID-@domainName` | Used for installation and configuration of the Entrust CloudControl™ service. |
+| `prod-HyTrustDC-shortID-@domainName` | Used for installation and configuration of the Entrust DataControl® service. |
+| `prod-HyTrustKC-shortID-@domainName` | Used for installation and configuration of the Entrust KeyControl™ service. |
 | `prod-KMIPAdapter-dynamicID-@domainName` | Used for installation and configuration of the KMIP™ for VMware service. |
 | `prod-ICP-dynamicID-@domainName` | Used for installation and configuration of the {{site.data.keyword.cloud_notm}} Private Hosted service. |
 | `prod-SPPlus-dynamicID-@domainName` | Used for installation and configuration of the IBM Spectrum® Protect Plus service. |

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-07"
+lastupdated: "2022-04-19"
 
 subcollection: vmwaresolutions
 
@@ -57,7 +57,7 @@ You are responsible for securing, encrypting, and monitoring your VMware instanc
 - Plan and implement appropriate application load balancing and security solutions, such as [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations).
 - Plan and implement appropriate security information and event management (SIEM) solutions, such as [IBM QRadar](https://www.ibm.com/us-en/marketplace/hosted-security-intelligence).
 - Plan and implement appropriate vulnerability scanning.
-- Use solutions such as [HyTrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations) to plan and implement appropriate change management, approval, auditing, and access control for your instance.
+- Use solutions such as [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations) to plan and implement appropriate change management, approval, auditing, and access control for your instance.
 
 ## Customization
 {: #solution_considerations-custom}
@@ -65,7 +65,7 @@ You are responsible for securing, encrypting, and monitoring your VMware instanc
 Complete the following steps to customize the base VMware instance installation to fit your requirements.
 - Use your own certificate authority (CA) to generate certificates for components such as vCenter (with embedded PSC) and NSX Manager.
 - Configure deployed services. For example,
-   - For HyTrust® CloudControl™, configure AD integration, access control, Simple Mail Transfer Protocol (SMTP) settings, and compliance policies.
+   - For Entrust CloudControl™, configure AD integration, access control, Simple Mail Transfer Protocol (SMTP) settings, and compliance policies.
    - For Zerto, plan for IP addressing and routing of Zerto Virtual Replication Appliance (VRA) communications since network address translator (NAT) traversal is not supported. Consider either tunneling or redeployment of your VRAs for appropriate addressing and routing.
    - For backup services such as Veeam® and IBM Spectrum® Protect Plus, configure your backup job, optionally configure additional storage, and configure monitoring alerts.
    - For networking and security services such as F5® BIG-IP and FortiGate Virtual Appliance, configure network interfaces, certificates, high availability (HA) configuration, and rules according to your network topology and other requirements.

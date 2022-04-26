@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-04-20"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -26,7 +26,7 @@ The VMware HCX service is not available for Data Center SP Enterprise Plus.
 Small differences exist between NSX-T® Data Center and Data Center SP editions. For more information, see [Product offerings for VMware NSX-T Data Center 3.1.x (80866)](https://kb.vmware.com/s/article/80866){: external}.
 {: note}
 
-For Business Partner users, all licenses are included and purchased on your behalf. For users who are not Business Partners, you can use the IBM-provided VMware licenses for these components by selecting **Include with purchase**, or you can Bring Your Own License (BYOL) by selecting **I will provide** and entering your own license keys.
+For Business Partner users, all licenses are included and purchased on your behalf. For users who are not Business Partners, you can use the IBM-provided VMware licenses for these components by selecting **Include with purchase**. Or you can Bring Your Own License (BYOL) by selecting **I will provide** and entering your own license keys.
 
 ## Licensing notes
 {: #scb-orderinginstance-licensing-notes}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-15"
 
 subcollection: vmwaresolutions
 
@@ -69,16 +69,16 @@ vRealize Operations is deployed by using the continuous availability mode.
 
 Each site has a stand-alone instance of vRealize Operations, which is deployed in the management clusters.
 
-### HyTrust CloudControl
+### Entrust CloudControl
 {: #vrw-mzr-considerations-htcc}
 
-A HyTrust CloudControl cluster is deployed with an instance in the primary and secondary site. The HyTrust CloudControl cluster is configured with the Multi-Site-HA option. This option creates a VIP address (which is a different IP from the one assigned to the node) for each node. Since the nodes have different subnets, a PIP is configured to point at these VIPs.
+An Entrust CloudControl cluster is deployed with an instance in the primary and secondary site. The Entrust CloudControl cluster is configured with the Multisite HA option. This option creates a VIP address (which is a different IP from the one assigned to the node) for each node. Since the nodes have different subnets, a PIP is configured to point at these VIPs.
 
 The {{site.data.keyword.cloud_notm}} Load Balancer is configured to point to the previous VIP addresses. The {{site.data.keyword.cloud_notm}} Load Balancer creates an instance in two of the three data centers and must be resolvable through DNS. In the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads environment, a new CNAME is defined that resolves to the friendly name of the Cloud Load Balancer FQDN.
 
-Between the HyTrust CloudControl cluster and the {{site.data.keyword.cloud_notm}} Load Balancer, the capability to fail over between data centers is established.
+Between the Entrust CloudControl cluster and the {{site.data.keyword.cloud_notm}} Load Balancer, the capability to fail over between data centers is established.
 
-![HyTrust with IBM Cloud Load Balancer](../../images/vrw-htcc-glb.svg "HyTrust with IBM Cloud Load Balancer"){: caption="Figure 2. HyTrust with IBM Cloud Load Balancer" caption-side="bottom"}
+![Entrust with IBM Cloud Load Balancer](../../images/vrw-htcc-glb.svg "Entrust with IBM Cloud Load Balancer"){: caption="Figure 2. Entrust with IBM Cloud Load Balancer" caption-side="bottom"}
 
 ### Backup server
 {: #vrw-mzr-considerations-buserver}
@@ -89,7 +89,7 @@ The primary configuration backup server instance is backed up using `rsync` acro
 |--- |--- |--- | --- |
 |**vCenter Server** | Backup Server File | Daily | Update needed in DR to point at new backup IP address |
 |**NSX-T Controllers** |Backup Server File | Daily | Update needed in DR to point at new backup IP address |
-|**HyTrust CloudControl** | Backup Server File | Update needed in DR to point at new backup IP address |
+|**Entrust CloudControl** | Backup Server File | Update needed in DR to point at new backup IP address |
 |**Juniper vSRX** | Backup Server File through SCP from vSRX | Commit Change | Site specific |
 {: caption="Table 1. Backup source and frequency" caption-side="top"}
 

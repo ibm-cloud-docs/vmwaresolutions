@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-24"
+lastupdated: "2022-03-17"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -18,12 +18,11 @@ subcollection: vmwaresolutions
 {: #vc_orderinginstance-edge-services-cluster}
 
 Select the **Edge services cluster** checkbox to order a dedicated cluster for the network edge and the firewall components that are required for the Juniper® vSRX service. The edge services cluster is deployed in:
-* For VMware NSX-T® - the consolidated cluster
+* For VMware NSX-T® - the same data center as the consolidated cluster
 * For VMware NSX-V - the same data center as the instance
 
-Review the following restrictions for edge services clusters:
-* The data center of the consolidated cluster (for NSX-T) or the instance (for NSX-V) must be available for edge services cluster deployment. Edge services cluster deployment is not supported for **Dallas 09** and **Hong Kong 02**.
-* You cannot add more than one edge services cluster in the same data center pod. If you add multiple edge services clusters in the same pod, the clusters would share a transit VLAN, which might cause subsequent issues with the Juniper vSRX installation.
+The data center of the consolidated cluster (for NSX-T) or the instance (for NSX-V) must be available for edge services cluster deployment. Edge services cluster deployment is not supported for **Dallas 09** and **Hong Kong 02**.
+{: note}
 
 ## Cluster name
 {: #vc_orderinginstance-edge-cluster-name}

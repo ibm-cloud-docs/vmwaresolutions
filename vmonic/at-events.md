@@ -47,7 +47,7 @@ The following table provides the actions that generate and send management event
 |:-----------------------------------------|:------------|
 | `vmware-solutions.account-apikey.update` | The infrastructure API key for an account is updated. |
 | `vmware-solutions.account-notification.update` | The notification setting for an account is updated. |
-| `vmware-solutions.instance-secure-data.wipe` | The instance secure data is wiped. |
+| `vmware-solutions.instance-secure-data.wipe` | The instance-secure data is wiped. |
 | `vmware-solutions.instance-bss-account.migrate` |	An instance is migrated to a BSS account. |
 | `vmware-solutions.vcs.create` | A VMware vCenter Server® instance is created. |
 | `vmware-solutions.vcs.delete` | A vCenter Server instance is deleted. |

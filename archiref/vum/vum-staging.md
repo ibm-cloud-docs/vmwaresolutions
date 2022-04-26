@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-14"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -40,7 +40,7 @@ If the update requires it, hosts are put into maintenance mode before remediatio
 ## For hosts in a vSAN cluster
 {: #vum-staging-hosts-vsan}
 
-Be aware of the following behavior for hosts that are part of a vSAN cluster:
+Be aware of the following behavior for hosts that are part of a vSAN™ cluster:
 * The host remediation process might take an extensive amount of time to complete.
 * By design, only one host from a vSAN cluster can be in a maintenance mode at any time.
 * VUM remediates hosts that are part of a vSAN cluster sequentially even if you set the option to remediate the hosts in parallel.

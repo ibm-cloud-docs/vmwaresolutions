@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-03-15"
 
 subcollection: vmwaresolutions
 
@@ -186,7 +186,7 @@ The following subnets are used for the purposes of the Workload ESG:
 
 NAT is employed on the Workload ESG for the means of allowing network traffic to traverse between one IP address space and another. For the workload ESG, NAT is required not only to allow for communication to internet destinations, but also to communicate to any {{site.data.keyword.cloud_notm}} sourced IP ranges. For this design, workload traffic is allowed to exit to the internet, but not to the management or any {{site.data.keyword.cloud_notm}} networks. As such, only a SNAT need be defined on the Workload ESG. The entire workload portable subnet is configured to traverse through the SNAT.
 
-While it is possible to use NAT to allow for workload communication across multiple instances of vCenter Server, doing this becomes impractical when many workloads need to be connected across instances. For examples of using advanced NSX capabilities to create an L2 overly transit network across vCeter Server instances, see [Multi-site architecture](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-multi_site).
+While it is possible to use NAT to allow for workload communication across multiple instances of vCenter Server, doing this becomes impractical when many workloads need to be connected across instances. For examples of using advanced NSX capabilities to create an L2 overly transit network across vCeter Server instances, see [Multisite architecture](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-multi_site).
 
 | Applied on interface | Source IP range | Translated source IP | NAT Enabled or Disabled |
 |:-------------------- |:--------------- |:-------------------- |:----------------------- |
@@ -237,7 +237,7 @@ The Workload topology ESG and DLR HA pairs require L2 segments (VXLAN) for the c
 
 By default, logging is enabled on all new NSX Edge appliances. The default logging level is NOTICE.
 
-**Next topic:** [Multi-site architecture](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-multi_site)
+**Next topic:** [Multisite architecture](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-multi_site)
 
 ## Related links
 {: #nsx-networking_services-related}

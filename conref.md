@@ -3,7 +3,7 @@
 copyright:
   years: 2022
 
-lastupdated: "2022-03-21"
+lastupdated: "2022-04-20"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -155,26 +155,79 @@ The uplink speed provides two options:
 
 | Geography | Data center | Pod |
 |:--------- |:----------- |:--- |
-| Asia-Pacific | SYD04 | pod 01 |
-| Asia-Pacific | SYD05 | pod 01 |
-| Asia-Pacific | TOK02 | pod 02 |
-| Asia-Pacific | TOK04 | pod 01 |
-| Asia-Pacific | TOK05 | pod 01 |
-| Europe | FRA02 | pod 02 |
-| Europe | FRA05 | pod 01 |
-| Europe | LON04 | pod 01 |
-| Europe | LON06 | pod 01 |
-| NA East | TOR04 | pod 01 |
-| NA East | WDC04 | pod 05 |
-| NA East | WDC06 | pod 01 |
-| NA East | WDC07 | pod 01 |
-| NA South | DAL10 | pod 03 |
-| NA South | DAL12 | pod 01 |
-| NA South | DAL13 | pod 02 |
+| Asia-Pacific | TOK02 | 02 |
+| Asia-Pacific | TOK04 | 01 |
+| Asia-Pacific | TOK05 | 01 |
+| Europe | FRA02 | 02 |
+| Europe | FRA05 | 01 |
+| Europe | LON04 | 01 |
+| Europe | LON06 | 01 |
+| NA East | TOR04 | 01 |
+| NA East | WDC04 | 05 |
+| NA East | WDC06 | 01 |
+| NA East | WDC07 | 01 |
+| NA South | DAL10 | 03 |
+| NA South | DAL12 | 01 |
+| NA South | DAL13 | 02 |
 {: caption="Table 1. Available locations for 25 Gb uplink speed" caption-side="top"}
 {: #simpletable-uplink-speed-locations}
 
 
 Conref section END.
 
-For details about the conref.md file template, refer [Using conrefs to reuse chunks of content within your subcollection](https://test.cloud.ibm.com/docs/writing?topic=writing-conrefs).
+Conref section START.
+
+INFORMATION:
+The section is referenced by the following files:
+- vcenter\scb-orderinginstance-procedure.md
+- vcenter\vc_orderinginstance-procedure.md
+- vcenter\vrw-orderinginstance-procedure.md
+
+CONTENT:
+
+**CAUTION** Managing any {{site.data.keyword.vmwaresolutions_short}} components (which were installed into your {{site.data.keyword.cloud_notm}} account when you ordered the instance) from outside the VMware Solutions console can make your environment unstable. The following activities are considered management activities:
+*  Adding, modifying, returning, or removing components
+*  Expanding or contracting instance capacity through adding or removing ESXi servers
+*  Powering off components
+*  Restarting services
+{: #caution-component-management}
+
+Conref section END.
+
+Conref section START.
+
+INFORMATION:
+The section is referenced by the following files:
+- services\vrops_overview.md
+- services\veeamvm_overview.md
+- services\managing-ss-sap.md
+- services\htcc_considerations.md
+- services\hcx_considerations.md
+- services\f5_considerations.md
+- services\caveonix_considerations.md
+
+CONTENT:
+
+{{site.data.keyword.vmwaresolutions_full}} offers promotions for some services. Promotional pricing offers a number of months free of charge for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
+{: #para-promotion-services}
+
+
+Conref section END.
+
+Conref section START.
+
+INFORMATION:
+The section is referenced by the following files:
+- services\juniper_overview.md
+- services\addingzertodr.md
+
+CONTENT:
+
+{{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months free of charge for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
+{: #para-promotion-add-on-services}
+
+
+Conref section END.
+
+
+For details about the conref.md file template, see [Using conrefs to reuse chunks of content within your subcollection](https://test.cloud.ibm.com/docs/writing?topic=writing-conrefs).

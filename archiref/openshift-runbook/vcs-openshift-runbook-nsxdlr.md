@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-03-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # OpenShift NSX DLR configuration
 {: #openshift-runbook-runbook-nsxdlr-intro}
 
-The NSX distributed logical router is used to support the OpenShift 4.7 environment. To use this information, you must understand how to create these components and add the configuration.
+The NSX distributed logical router is used to support the {{site.data.keyword.redhat_openshift_full}} 4.7 environment. To use this information, you must understand how to create these components and add the configuration.
 
 Review [Add a Distributed Logical Router](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-A20103B0-ABA1-4884-8EC3-287874E23181.html){: external}. PowerNSX commands are provided if you would want to use this method.
 
@@ -25,7 +25,7 @@ Review [Add a Distributed Logical Router](https://docs.vmware.com/en/VMware-NSX-
 
 The NSX distributed logical router runs as a kernel module in the hypervisor of each host and is optimized for East-West routing. Optionally, a DLR Control VM can be installed. The DLR Control VM is needed to peer with NSX Edges and NSX controllers for dynamic routing (OSPF or BGP) updates. In this deployment, static routing is used. However, DLR Control VMs are deployed, in case you require to use a routing protocol.
 
-The NSX DLR Control VMs are configured as an active and passive pair of appliances. During the configuration process, the DLR control VM is deployed in the compact size and the NSX DLR is connected to the OpenShift Edge.
+The NSX DLR Control VMs are configured as an active and passive pair of appliances. During the configuration process, the DLR control VM is deployed in the compact size and the NSX DLR is connected to the {{site.data.keyword.redhat_openshift_notm}} Edge.
 
 | Component | Configuration |
 |-----------|---------------|
@@ -46,7 +46,7 @@ Since the NSX DLR Control VMs are configured as active/passive, you must create 
 ## NSX DLR interfaces
 {: #openshift-runbook-runbook-nsxdlr-interfaces}
 
-The NSX DLR is deployed with a transit network between the OpenShift NSX Edge and the OpenShift Logical switch. The Edge is defined as an uplink interface and the Logical switch is defined as an internal interface.
+The NSX DLR is deployed with a transit network between the {{site.data.keyword.redhat_openshift_notm}} NSX Edge and the {{site.data.keyword.redhat_openshift_notm}} Logical switch. The Edge is defined as an uplink interface and the Logical switch is defined as an internal interface.
 
 | Interface name| Interface type | IP addresses | Port group/Logical switch |
 | --- | ---| --- | --- |
@@ -67,7 +67,7 @@ The DLR firewall is configured open.
 ## NSX DLR routes
 {: #openshift-runbook-runbook-nsxdlr-routes}
 
-On the Edge, the default route is configured to be to the transit network connection to the OpenShift Edge.
+On the Edge, the default route is configured to be to the transit network connection to the {{site.data.keyword.redhat_openshift_notm}} Edge.
 
 ### Global configuration
 {: #openshift-runbook-runbook-nsxdlr-global-config}
@@ -80,7 +80,7 @@ On the Edge, the default route is configured to be to the transit network connec
 ## NSX DHCP relay
 {: #openshift-runbook-runbook-nsxdlr-dhcprelay}
 
-For the OpenShift 4.7 environment, the connection to the DHCP Service runs on the OpenShift Edge.
+For the {{site.data.keyword.redhat_openshift_notm}} 4.7 environment, the connection to the DHCP Service runs on the {{site.data.keyword.redhat_openshift_notm}} Edge.
 
 | DCHP relay | Value |
 | :--- | --- |
@@ -163,5 +163,5 @@ Disconnect-NsxServer
 ## Related links
 {: #vcs-openshift-runbook-nsxdlr-related}
 
-* [OpenShift Bastion node setup](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-bastion-intro)
-* [Red Hat OpenShift 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro)
+* [{{site.data.keyword.redhat_openshift_notm}} Bastion node setup](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-bastion-intro)
+* [{{site.data.keyword.redhat_openshift_notm}} 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro)

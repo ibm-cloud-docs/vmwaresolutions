@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-04-22"
 
 keywords: FAQ vmware solutions shared, vmware solutions shared questions
 
@@ -17,13 +17,13 @@ subcollection: vmwaresolutions
 # General FAQ about VMware Solutions Shared
 {: #faq-vmwaresolutions-shared}
 
-Find answers to frequently asked questions about the VMware® Solutions Shared offering.
+Find answers to frequently asked questions about the {{site.data.keyword.vmwaresolutions_full}} Shared offering.
 
 ## What is VMware Solutions Shared?
 {: #faq-shared}
 {: faq}
 
-{{site.data.keyword.vmwaresolutions_short}} Shared is a multi-tenant VMware infrastructure solution based on a robust VMware product called vCloud Director. You can use this solution to rapidly create, migrate, and use your VMs in the cloud.
+VMware Solutions Shared is a multitenant VMware® infrastructure solution based on a robust VMware product called vCloud Director. You can use this solution to rapidly create, migrate, and use your virtual machines (VMs) in the Cloud.
 
 ## What are my options to use resources with VMware Solutions Shared?
 {: #faq-shared-options}
@@ -38,7 +38,7 @@ You are provided with the following two consumption models:
 {: #faq-shared-subscribe}
 {: faq}
 
-With {{site.data.keyword.vmwaresolutions_short}} Shared, you can extend your VMs to the cloud with ultimate capacity flexibility and scalability. Whether you are looking to begin your cloud journey with a Development or Test environment, a disaster recovery site, or a full enterprise-grade hybrid cloud transformation, {{site.data.keyword.vmwaresolutions_short}} Shared provides a cost-effective and self-service way to start moving your VMs to the cloud within minutes.
+With VMware Solutions Shared, you can extend your VMs to the Cloud with ultimate capacity flexibility and scalability. Whether you are looking to begin your cloud journey with a Development or Test environment, a disaster recovery site, or a full enterprise-grade hybrid cloud transformation, VMware Solutions Shared provides a cost-effective and self-service way to start moving your VMs to the Cloud within minutes.
 
 With IBM managing the infrastructure up to the hypervisor, you do not need to worry about managing patches, upgrades, and monitoring, which gives you more time and resources to focus on innovation. In addition, with a native like VMware experience, you can use your existing VMware resources and skill sets.
 

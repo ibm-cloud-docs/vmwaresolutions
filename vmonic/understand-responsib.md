@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2021
+  years: 2019, 2022
 
-lastupdated: "2021-10-28"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ keywords: vmware solutions responsibilities, customer responsibilities, manageme
 Learn about the management responsibilities and terms and conditions that you have when you use {{site.data.keyword.vmwaresolutions_full}}. For a high-level view of the service types in {{site.data.keyword.cloud_notm}} and the breakdown of responsibilities between the customer and {{site.data.keyword.IBM_notm}} for each type, see [Shared responsibilities for {{site.data.keyword.cloud_notm}} offerings](/docs/overview?topic=overview-shared-responsibilities).
 {: shortdesc}
 
-Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use VMware® Solutions. For the overall terms of use, see [{{site.data.keyword.cloud_notm}} terms and notices](/docs/overview/terms-of-use?topic=overview-terms).
+Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use VMware Solutions. For the overall terms of use, see [{{site.data.keyword.cloud_notm}} terms and notices](/docs/overview/terms-of-use?topic=overview-terms).
 
 ## Incident and operations management
 {: #understand-responsib-incident-and-ops}
@@ -95,12 +95,11 @@ The following table describes the responsibilities that are related to change ma
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Scaling | Scale your VMware infrastructure as requested. | Choose the capacity for your VMware Solutions instances. |
-| Upgrading |  | Keep your VMware environment updated. |
+| Upgrading |  | Keep your VMware environment updated. For more information, see [Preventing problems with Active Directory](/docs/vmwaresolutions?topic=vmwaresolutions-adds-intro#adds-intro-prevent-probs) and [VMware Update Manager](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vum). |
 {: row-headers}
 {: caption="Table 4. Responsibilities for change management for VMware Solutions Dedicated" caption-side="top"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-change-management-dedicated-table}
-
 
 ## Identity and access management
 {: #understand-responsib-iam-responsibilities}
@@ -203,9 +202,13 @@ You must manage the VMware Solutions components that are created in your {{site.
 
 If you change your credentials, for example passwords, IBM Support might no longer be able to help you recover lost or forgotten credentials, or to troubleshoot any problems in your environment. For more information, see [Client responsibilities](/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info#vc_compl_info-client-responsibilities).
 
-Changes to ESXi server names or configurations might have a negative impact on managing your instance. For more information, see:
+Changes to VMware ESXi™ server names or configurations might have a negative impact on managing your instance. For more information, see:
 * [Can I change the ESXi server names and IP addresses?](/docs/vmwaresolutions?topic=vmwaresolutions-faq_esxi#faq_esxi-change-name-ip)
 * [Considerations about changing vCenter Server artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact)
+
+In {{site.data.keyword.vmwaresolutions_short}}, every primary instance deploys an Active Directory™ domain controller. Review the following to understand limitations on changes that you can make and recommendations on integration in your environment.
+* [VMware Solutions infrastructure domain](/docs/vmwaresolutions?topic=vmwaresolutions-adds-infra-domain)
+* [VMware Solutions workload domain](/docs/vmwaresolutions?topic=vmwaresolutions-adds-wkld-domain)
 
 ## Related links
 {: #understand-responsib-related}

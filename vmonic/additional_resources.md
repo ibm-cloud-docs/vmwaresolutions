@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-03-22"
 
 keywords: vmware solutions data sheet, vmware solutions developer, vmware solutions video
 
@@ -57,7 +57,6 @@ Review the architecture of all the [Virtualization Platform Extensions](https://
 
 * [Resources and videos](https://www.ibm.com/cloud/architecture/architectures/virtualizationArchitecture/resources){: external}
 * [Featured resources and case studies](https://www.ibm.com/cloud/vmware){: external}
-* [VMware Solutions Shared videos](https://www.youtube.com/playlist?list=PLIsX_jY0PwvU4fJ28go4QOau2xdHLXvmE){: external}
 
 ## VMware documentation
 {: #additional_resources-vmware-doc}

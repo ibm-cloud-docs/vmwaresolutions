@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 
 As the system administrator of the {{site.data.keyword.vmwaresolutions_full}} vCenter Server® 6.7 instance, review the instructions on how to configure VMware® Update Manager (VUM) to maintain the currency of your vCenter Server environment.
 
-If you have a vCenter Server instance that is deployed with vSphere 7, then VMware added new functions and rebranded it as vSphere Lifecycle Manager (vLCM). For more information, read this blog entry [vSphere 7 – lifecycle management](https://blogs.vmware.com/vsphere/2020/04/vsphere-7-patching-lifecycle-management.html){: external}
+If you have a vCenter Server instance that is deployed with vSphere 7, then VMware® added new functions and rebranded it as vSphere Lifecycle Manager (vLCM). For more information, read this blog entry [vSphere 7 – lifecycle management](https://blogs.vmware.com/vsphere/2020/04/vsphere-7-patching-lifecycle-management.html){: external}
 
 VUM enables centralized, automated patch and version management for VMware vSphere® and it allows you to complete the following tasks in your VMware vCenter Server environment:
 * Upgrade and patch the vSphere ESXi hosts.

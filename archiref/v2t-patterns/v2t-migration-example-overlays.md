@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Target NSX-T environment example topologies 
 {: #v2t-example-overlays}
 
-{{site.data.keyword.cloud}} for VMware® Solutions Dedicated instances offer a standard NSX-T topology with a single NSX-T edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) gateways. You have several options to build and customize the overlay topology. Also, you can provision new NSX-T edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) gateways. 
+{{site.data.keyword.vmwaresolutions_full}} Dedicated instances offer a standard VMware NSX-T™ topology with a single NSX-T edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) gateways. You have several options to build and customize the overlay topology. Also, you can provision new NSX-T edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) gateways. 
 
 The following examples show how these topologies can be customized for your needs.
 
@@ -26,7 +26,7 @@ The automated deployment provides you a single NSX-T workload edge cluster with 
 ## Single-site – single tenant
 {: #v2t-example-overlays-single-site-st}
 
-Single-site – single tenant is the most common use case and network deployment pattern. The vCenter Server automation deploys an example topology by following this model, which includes single Tier-0 and Tier-1 gateways and a few NSX-T overlay segments as a starting point. This topology is highly scalable and can be automated.
+Single-site – single tenant is the most common use case and network deployment pattern. The vCenter Server® automation deploys an example topology by following this model, which includes single Tier-0 and Tier-1 gateways and a few NSX-T overlay segments as a starting point. This topology is highly scalable and can be automated.
 
 These options are suitable for customers with workload that run on a single data center, single tenant, and do not have overlapping IP addresses inside their own workloads.
 
@@ -82,7 +82,7 @@ The following diagram shows an example of a multitenant deployment by using the 
 You can deploy edge nodes on the initial cluster for scalability manually, if needed. You can also deploy new edge clusters to host new Tier-1 gateways manually. 
 {: note}
 
-Tier-0 gateways support VRF Lite, which can be used if needed to support more complex topologies for isolating routing tables at Tier-0 level as well. Refer to VMware documentation for more details on capabilities and limitations.
+Tier-0 gateways support VRF Lite, which can be used if needed to support more complex topologies for isolating routing tables at Tier-0 level as well. Refer to VMware® documentation for more details on capabilities and limitations.
 {: note}
 
 ## Multisite – single tenant
@@ -151,7 +151,7 @@ The main reason that you need two layers is for physical north-south connectivit
 ## Considerations for selecting an overlay network topology
 {: #v2t-example-overlays-considerations}
 
-VMware NSX-T™ provides many ways to build the network topologies, and the default network topology is useful for many use cases. You can typically start with this, and expand it as your needs grow. When the initial deployment is done, {{site.data.keyword.cloud_notm}} automation doesn't use the workload overlay topology and you can change the example topology based on your needs. When you change the configuration, the default uplinks provide you the basic-routed connectivity to {{site.data.keyword.cloud_notm}} private and public networks. If you change the IP addresses or routing, your overlay workloads might lose connectivity to them.  
+VMware NSX-T provides many ways to build the network topologies, and the default network topology is useful for many use cases. You can typically start with this, and expand it as your needs grow. When the initial deployment is done, {{site.data.keyword.cloud_notm}} automation doesn't use the workload overlay topology and you can change the example topology based on your needs. When you change the configuration, the default uplinks provide you the basic-routed connectivity to {{site.data.keyword.cloud_notm}} private and public networks. If you change the IP addresses or routing, your overlay workloads might lose connectivity to them.  
 
 {{site.data.keyword.cloud_notm}} offers a flexible way to build the NSX-T topology that you need. When you design your own overlay network solution, it is important to know that you might deploy new NSX-T edge nodes and new NSX-T edge clusters manually. Or using Ansible and Terraform to attend your needs. You can do this by following VMware documentation and design guidelines post the initial deployment.
 
@@ -161,6 +161,6 @@ Most of the content in the VMware NSX-T Design Guides and documentation can be a
 ## Related links
 {: #v2t-example-overlays-links}
 
-* [VMware NSX-T Data Center Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/index.html){: external}
-* [NSX-T Reference Design Guide 3-0](https://nsx.techzone.vmware.com/resource/nsx-t-reference-design-guide-3-0){: external}
-* [NSX-T Multi-Location Design Guide (Federation + Multisite)](https://communities.vmware.com/t5/VMware-NSX-Documents/NSX-T-Multi-Location-Design-Guide-Federation-Multisite/ta-p/2810327){: external}
+* [VMware NSX-T Data Center documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/index.html){: external}
+* [NSX-T reference design guide 3-0](https://nsx.techzone.vmware.com/resource/nsx-t-reference-design-guide-3-0){: external}
+* [NSX-T multi-location design guide (federation + multisite)](https://communities.vmware.com/t5/VMware-NSX-Documents/NSX-T-Multi-Location-Design-Guide-Federation-Multisite/ta-p/2810327){: external}

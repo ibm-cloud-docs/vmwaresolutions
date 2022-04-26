@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Active Directory overview
 {: #adds-overview}
 
-Active Directory (AD) Domain Services use DNS name resolution services to locate domain controllers and for the domain controllers that host the directory service to communicate with each other. AD has a logical hierarchical containment structure, where the top-level container is the forest. Within forests are domains, and within domains are organizational units (OUs). This logical model is independent of the physical aspects of the deployment.
+Active Directory™ (AD) Domain Services use DNS name resolution services to locate domain controllers and for the domain controllers that host the directory service to communicate with each other. AD has a logical hierarchical containment structure, where the top-level container is the forest. Within forests are domains, and within domains are organizational units (OUs). This logical model is independent of the physical aspects of the deployment.
 
 ## Active Directory terminology
 {: #adds-overview-ad}

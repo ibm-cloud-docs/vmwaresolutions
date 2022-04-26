@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-04-08"
 
 keywords: vCenter Server Hybridity delete instance, delete vCenter Server Hybridity, remove vCenter Server Hybridity
 
@@ -23,16 +23,16 @@ To remove the Hybridity Bundle license from your VMware vCenter Server® instanc
 Reverting your license to an earlier version might cause your vCenter Server instance to fail. You can choose to revert a license to an earlier version at your own risk, but first consider the functions that are not available when you are reverting. For more information, see [Comparison chart for VMware component editions](/docs/vmwaresolutions?topic=vmwaresolutions-solution-appendix).
 {: important}
 
-## Important considerations before you remove the Hybridity Bundle from a multi-site environment
+## Important considerations before you remove the Hybridity Bundle from a multisite environment
 {: #vc_hybrid_deletingbundle-considerations}
 
-Review the following considerations before you remove the Hybridity Bundle from a multi-site environment:
+Review the following considerations before you remove the Hybridity Bundle from a multisite environment:
 
-* You must apply BYOL licenses to all multi-site deployments before you remove rental licenses.
-* You must combine VMware NSX licenses and have enough capacity to use across all multi-site deployments.
-* You must create a single support ticket to remove the Hybridity Bundle from all multi-site deployments.
+* You must apply BYOL licenses to all multisite deployments before you remove rental licenses.
+* You must combine VMware NSX licenses and have enough capacity to use across all multisite deployments.
+* You must create a single support ticket to remove the Hybridity Bundle from all multisite deployments.
 
-When you remove the Hybridity Bundle from a multi-site environment, BYOL licenses are applied. It is your responsibility to ensure that the license editions are consistent across all sites in the multi-site configuration.
+When you remove the Hybridity Bundle from a multisite environment, BYOL licenses are applied. It is your responsibility to ensure that the license editions are consistent across all sites in the multisite configuration.
 {: note}
 
 ## Before you remove the Hybridity Bundle
@@ -94,7 +94,7 @@ Verify the following requirements before you remove the Hybridity Bundle:
       3. Type the name for the license and click **Next**. Click **Finish** to add the license.
       4. Select the new license key.
       5. Write down the cluster name and full license keys of both the license that is applied and the license that is replaced.
-         You must have the license details available to use later in this procedure. If license keys are not same across all clusters, ensure to write down the cluster name associated to each license key.
+         You must have the license details available to use later in this procedure. If license keys are not same across all clusters, ensure to write down the cluster name that is associated to each license key.
          {: important}
 
       6. Click **OK** to assign the license.
@@ -108,7 +108,7 @@ Verify the following requirements before you remove the Hybridity Bundle:
    * A list of the BYOL license keys that you installed in this procedure. Where applicable, provide the instance and cluster name with license keys for vSphere and the vSAN clusters.
    * A list of the rental license keys that you removed in this procedure. Where applicable, provide the instance and cluster name with license keys for vSphere and vSAN clusters.
 
-   The IBM Support and Operations teams access the vCenter management layer of your {{site.data.keyword.cloud_notm}} infrastructure account to verify that the rental licenses are removed before canceling the Hybridity Bundle rental license charges.
+   The IBM Support and Operations teams access the vCenter management layer of your {{site.data.keyword.cloud_notm}} infrastructure account to verify that the rental licenses are removed before you cancel the Hybridity Bundle rental license charges.
    {: note}
 
 ## Related links

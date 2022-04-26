@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -16,15 +16,15 @@ subcollection: vmwaresolutions
 # Preparing the installation environment
 {: #hcxclient-planning-prep-install}
 
-The installation of VMware® HCX™ has the following software requirements:
-* vSphere 5.5 U3, or vSphere 6.0u2 or higher.
-* If NSX is used, version 6.2.2 or higher. NSX is required for policy migration.
+The installation of VMware HCX™ has the following software requirements:
+* VMware vSphere® 5.5 U3, or vSphere 6.0u2 or higher.
+* If VMware NSX® is used, version 6.2.2 or higher. NSX is required for policy migration.
 * To use cross-cloud vMotion, the same affinity restrictions apply across clouds as they do on-premises. For more information, see the [VMware EVC and CPU compatibility FAQ](https://kb.vmware.com/s/article/1005764){: external}.
 
 ## Configuring network connectivity
 {: #hcxclient-planning-config-net}
 
-HCX must traverse the public internet and private lines, and connect to data center components, such as networks, switches, and port groups.
+HCX™ must traverse the public internet and private lines, and connect to data center components, such as networks, switches, and port groups.
 * For more information about the ports that must be opened so that HCX virtual appliances can install successfully, see [Port access requirements](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-port-req).
 * Both the on-premises vSphere environment and the vCenter Server HCX Cloud environment must allow Network Time Protocol (NTP) clock synchronization among vSphere on-premises devices and the vCenter Server HCX devices. UDP port 123 must be accessible to HCX virtual appliances and networks.
 

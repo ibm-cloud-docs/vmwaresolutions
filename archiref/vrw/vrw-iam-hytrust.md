@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-04-13"
 
 subcollection: vmwaresolutions
 
@@ -13,18 +13,18 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# HyTrust identity and access management
+# Entrust identity and access management
 {: #vrw-iam-hytrust}
 
-## HyTrust trust manifests
+## Entrust trust manifests
 {: #vrw-iam-hytrust-trust}
 
 The trust manifests provide access and control to the following resources:
 - VMware vCenter Server®
 - NSX-T™ administration interface
-- HyTrust CloudControl
+- Entrust CloudControl
 
-### HyTrust CloudControl trust manifest
+### Entrust CloudControl trust manifest
 {: #vrw-iam-hytrust-trust-manifest}
 
 - **Default ASC_SuperAdmin rule** - Super admin role. This user has full access to all three products that are protected.
@@ -32,10 +32,10 @@ The trust manifests provide access and control to the following resources:
 - **Cloud Read Only** - Grants read-only access to the vCenter.
 - **Cloud NSX-T UI** - Grants access to manage the NSX-T objects.
 
-### HyTrust CloudControl roles
+### Entrust CloudControl roles
 {: #vrw-iam-hytrust-trust-roles}
 
-| HyTrust CloudControl Role Function                       | Super Admin | Cloud Admin | NSX-T Admin | Read-only vCenter |
+| Entrust CloudControl Role Function                       | Super Admin | Cloud Admin | NSX-T Admin | Read-only vCenter |
 | ---                                                       | ---         | ---         | ---         | ---               |
 | CloudControl.Asc.Login                                 | X           |             |             |                   |
 | Management.CloudPlatform.Login                         | X           |             | X           |                   |
@@ -465,6 +465,6 @@ The trust manifests provide access and control to the following resources:
 {: #vrw-iam-hytrust-related}
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [HyTrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
-* [HyTrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
+* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
+* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
 * [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)

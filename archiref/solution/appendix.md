@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-22"
+lastupdated: "2022-03-15"
 
 keywords: nsx editions, vsan editions, nsx edition comparison, vsan edition comparison
 
@@ -99,7 +99,7 @@ NSX Base for Service Providers edition is only available for service providers t
 | Service insertion (third-party integration)     |      | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | Distributed load balancing                    |      |          | ![Available](../../../icons/checkmark-icon.svg) |
 | Cross vCenter NSX                             |      |          | ![Available](../../../icons/checkmark-icon.svg) |
-| Multi-site NSX optimizations                  |      |          | ![Available](../../../icons/checkmark-icon.svg) |
+| Multisite NSX optimizations                  |      |          | ![Available](../../../icons/checkmark-icon.svg) |
 | Remote Gateway                                |      |          | ![Available](../../../icons/checkmark-icon.svg) |
 | Integration with HW VTEPs                     |      |          | ![Available](../../../icons/checkmark-icon.svg) |
 | vRealize Log Insight for NSX | | | | |

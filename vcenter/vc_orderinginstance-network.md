@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-04"
+lastupdated: "2022-04-01"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -39,7 +39,7 @@ The subdomain label must meet the following requirements:
 * The subdomain label must start with a lowercase alphabetic character.
 * The subdomain label must end with a lowercase alphabetic or numeric character.
 * The maximum length of the subdomain label is 10 characters.
-* The subdomain label must be unique within all instances in your multi-site configuration.
+* The subdomain label must be unique within all instances in your multisite configuration.
 
 The subdomain label is not used for VMware vSphere® 7.0 instances.
 {: note}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -38,17 +38,17 @@ Depending on the source environment complexity and the skills, experience and ti
 ## Zone deployment
 {: #v2t-complexity-zone}
 
-Your source vCenter Server instance with NSX-V environment is in one of the following deployment patterns:
+Your source vCenter Server® instance with NSX-V environment is in one of the following deployment patterns:
 
-* Simple - one single zone, with all ESXi hosts deployed in one data center.
+* Simple - one single zone, with all VMware ESXi™ hosts deployed in one data center.
 * Medium - two or more single zones, often used as production in one zone and development or DR in another zone.
 * Medium - two or more single zones in a site deployment with no cross vCenter NSX-V.
 * High - two or more single zones in a multisite deployment with cross vCenter NSX-V.
 * High - multizone, with ESXi hosts deployed in multiple data centers.
 
-{{site.data.keyword.cloud}} for VMware® Solutions offers standard deployment models, and multisite deployments require manual customization to build the want network topology. 
+{{site.data.keyword.vmwaresolutions_full}} offers standard deployment models, and multisite deployments require manual customization to build the want network topology. 
 
-This is a key parameter and defines the classification of the migration project and the required NSX-T skills.
+This is a key parameter and defines the classification of the migration project and the required VMware NSX-T™ skills.
 
 ## Size
 {: #v2t-complexity-size}

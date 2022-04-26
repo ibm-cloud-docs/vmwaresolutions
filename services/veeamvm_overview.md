@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2021-02-02"
+lastupdated: "2022-04-20"
 
 keywords: Veeam, Veeam 11, Veeam install, tech specs Veeam, Veeam overview
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 The Veeam® service seamlessly integrates directly with your VMware® hypervisors to help your enterprise achieve high availability. This service provides recovery points and time objectives for your applications and data. The recovery points and time objectives can be provided in less than 15 minutes after configuration is completed. By using this service, you control both the backup and restore of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
 {: shortdesc}
 
-{{site.data.keyword.vmwaresolutions_full}} offers promotions for some services. Promotional pricing offers a number of months free of charge for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
+{{site.data.content.para-promotion-services}}
 
 The current Veeam service that is installed is the new Veeam Availability Suite™ v11 known as Veeam v11.
 {: note}
@@ -128,6 +128,14 @@ As part of the Veeam service installation and configuration, the following repos
 {: #veeamvm_overview-specs-networking}
 
 One primary private IP address.
+
+Bare metal and VSI options use one primary private IP address. However, the VM option uses one primary portable IP address.
+
+The Veeam® VSI and Veeam bare metal services are not configured with an IBM Cloud Infrastructure portable IP address or with a NAT connection to the public network, even if you have public interfaces in your instance. This implementation helps to avoid the possibility of asymmetric routing when using a network gateway appliance.
+
+When you deploy Veeam as a bare metal server or VSI, you can optionally configure your own proxy or NAT connection to the public network if you want to be able to connect to Veeam support for updates.
+
+When you deploy Veeam as a VM, if your instance has public interfaces, IBM Cloud for VMware Solutions still creates a NAT connection for Veeam to the public network through the NSX-T services edge.
 
 ### Licenses and fees for Veeam v11
 {: #veeamvm_overview-specs-licenses}

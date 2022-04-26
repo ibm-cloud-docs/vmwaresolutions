@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-04-10"
 
 keywords: remove services vCenter Server
 
@@ -58,9 +58,9 @@ The following table shows the services that are affected. The table also shows t
 | Caveonix RiskForesight | `riskforesight` | `riskforesight`   \n `inst01-riskforesight` |
 | F5 BIG-IP | `nickname-bigip1`   \n `nickname-bigip2` | `edgefw-bigip1` |
 | FortigateVM | `nickname-fortigate` | `edgefw-fortigate01` |
-| HyTrust CloudControl | `htccnn-id` | `htcc02-GY67239` |
-| HyTrust DataControl | `htdcnn-id` | `htcc02-GY67239` |
-| HyTrust KeyControl | `htkcnn-id` | `htcc02-GY67239` |
+| Entrust CloudControl | `htccnn-id` | `htcc02-GY67239` |
+| Entrust DataControl | `htdcnn-id` | `htcc02-GY67239` |
+| Entrust KeyControl | `htkcnn-id` | `htcc02-GY67239` |
 | vRealize Operations | `vrli`   \n `vrops`   \n `vrlog` | `vrli-master`   \n `vrops-data1`   \n `vrlog-master` |
 {: caption="Table 1. Hostname patterns and examples for affected services" caption-side="top"}
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-11-22"
+lastupdated: "2022-04-20"
 
 keywords: Caveonix, Caveonix RiskForesight, tech specs Caveonix
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 The Caveonix RiskForesight™ service can help to manage cyberrisk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations.
 {: shortdesc}
 
-{{site.data.keyword.vmwaresolutions_full}} offers promotions for some services. Promotional pricing offers a number of months free of charge for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
+{{site.data.content.para-promotion-services}}
 
 The current Caveonix RiskForesight version that is installed is 3.1.0.
 {: note}
@@ -70,12 +70,12 @@ You can still order Caveonix RiskForesight licenses for other types of instances
 
 Review the following considerations before you delete the service:
 
-* Deleting Caveonix RiskForesight automatically deletes the initial Caveonix RiskForesight license originally associated with the service. However, you need to manually delete any other unwanted licenses from the **Caveonix RiskForesight Licenses** table on the Resources page in the VMware Solutions console.
+* Deleting Caveonix RiskForesight automatically deletes the initial Caveonix RiskForesight license originally that is associated with the service. However, you need to manually delete any other unwanted licenses from the **Caveonix RiskForesight Licenses** table on the Resources page in the VMware Solutions console.
 * When you delete the service, the {{site.data.keyword.vmwaresolutions_short}} automation deletes only the single all-in-one Caveonix virtual machine (VM) that was deployed and the dedicated private subnet that was ordered for it. Therefore,
    * If you scaled out the Caveonix VM into multiple VMs, those additional VMs are not deleted.
    * If you used the IP addresses of the dedicated private subnet on more VMs, those VMs must be assigned new IP addresses to continue to function.
    * If you delete the **vCenter Server instance A** with Caveonix RiskForesight installed, and you used the IP addresses of the dedicated private subnet that was ordered for the service in the **vCenter Server instance B**, the dedicated private subnet is canceled upon deletion of the **vCenter Server instance A**.
-* If you installed the Caveonix RiskForesight service before VMware Solutions v4.0 and you then delete that service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).
+* If you installed the Caveonix RiskForesight service before VMware Solutions v4.0, and you then delete that service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).
 
 ## Related links
 {: #caveonix_considerations-related}

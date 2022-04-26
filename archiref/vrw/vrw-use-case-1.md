@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-19"
 
 subcollection: vmwaresolutions
 
@@ -22,7 +22,7 @@ Typical hyper-converged virtual infrastructure designs include management, edge 
 
 The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads architecture restores the strict separation of duties that are usually enforced in an on-premises environment.
 
-HyTrust CloudControl (HTCC) is specified in the design to ensure that all activities taken, or attempted, by an administrator or other privileged user are fully logged and auditable. HTCC also improves the capability to control account privileges through fine grained role-based access control (RBAC).
+Entrust CloudControl™ is specified in the design to ensure that all activities taken, or attempted, by an administrator or other privileged user are fully logged and auditable. Entrust CloudControl also improves the capability to control account privileges through fine grained role-based access control (RBAC).
 
 The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads architecture spreads the delivery of necessary services across purpose-built regions.
 

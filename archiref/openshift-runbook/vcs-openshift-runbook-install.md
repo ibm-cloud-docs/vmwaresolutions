@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-02-23"
+lastupdated: "2022-03-24"
 
 subcollection: vmwaresolutions
 
@@ -16,29 +16,29 @@ subcollection: vmwaresolutions
 # Red Hat OpenShift 4.7 user provider infrastructure installation
 {: #openshift-runbook-runbook-install-intro}
 
-Red Hat OpenShift 4 introduced the following concepts:
+{{site.data.keyword.redhat_openshift_full}} 4 introduced the following concepts:
 
 * Installer Provisioned Infrastructure (IPI) - For use on supported platforms, only AWS currently. The installer provisions the underlying infrastructure for the cluster and it configures the cluster.
-* User Provisioned Infrastructure (UPI) - For use on bare metal, vSphere, and other clouds that do not support IPI. The user is required to provision the infrastructure; compute, network, storage that the OpenShift cluster is hosted on. The installer configures only the cluster.
+* User Provisioned Infrastructure (UPI) - For use on bare metal, vSphere, and other clouds that do not support IPI. The user is required to provision the infrastructure; compute, network, storage that the {{site.data.keyword.redhat_openshift_notm}} cluster is hosted on. The installer configures only the cluster.
 
-These instructions use the OpenShift installer in the UPI mode. Terraform is used to provision the seven VMs for the bootstrap, control-plane, and compute nodes. The following process is completed:
+These instructions use the {{site.data.keyword.redhat_openshift_notm}} installer in the UPI mode. Terraform is used to provision the seven VMs for the bootstrap, control-plane, and compute nodes. The following process is completed:
 
-1. A `yaml` file is created that is processed by the OpenShift installer.
+1. A `yaml` file is created that is processed by the {{site.data.keyword.redhat_openshift_notm}} installer.
 2. The installer is run and creates a number of files, including the Ignition files. The Ignition files are used to configure the bootstrap, control-plane, and compute nodes at the first start.
 3. The Ignition file for the bootstrap node is copied to the NGINX default directory on the bastion node so that the bootstrap node can fetch it on the first start.
 4. The Ignition Terraform file is updated with the DNS server.
 5. The `terraform.tfvars` file is created to hold the variables for the Terraform installation.
-6. Terraform is run, which provisions the VMs. The VMs are started, configured, and the OpenShift cluster is created.
+6. Terraform is run, which provisions the VMs. The VMs are started, configured, and the {{site.data.keyword.redhat_openshift_notm}} cluster is created.
 
-For more information about installing the OpenShift user provider infrastructure, see [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}.
+For more information about installing the {{site.data.keyword.redhat_openshift_notm}} user provider infrastructure, see [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}.
 
-## Creating the OpenShift Installer yaml file
+## Creating the Red Hat OpenShift Installer yaml file
 {: #openshift-runbook-runbook-install-yaml}
 
 Use the following table to document the parameters you need for your deployment. Examples are shown that match the deployment described in this document.
 
 * The SSH key can be copied after it is displayed by using the command: `cat /root/.ssh/id_rsa.pub`.
-* The pull secret collected from Red Hat. For more information, see [OpenShift infrastructure providers](https://cloud.redhat.com/openshift/install/vsphere/user-provisioned){: external}(requires logging in to your Red Hat account).
+* The pull secret collected from {{site.data.keyword.redhat_full}}. For more information, see [{{site.data.keyword.redhat_openshift_notm}} infrastructure providers](https://cloud.redhat.com/openshift/install/vsphere/user-provisioned){: external}(requires logging in to your {{site.data.keyword.redhat_notm}} account).
 
 | Parameters | Example | Your deployment |
 |:---------- |:------- |:--------------- |
@@ -57,7 +57,7 @@ Use the following table to document the parameters you need for your deployment.
 Using the following install-config.yaml file shown in the figure, update it using your deployment details from the [previous table](#openshift-runbook-runbook-install-yaml-table):
 
 1. Update the base domain name.
-2. Update the metadata name with the OpenShift cluster name.
+2. Update the metadata name with the {{site.data.keyword.redhat_openshift_notm}} cluster name.
 3. Provide the following vCenter information:
    * vCenter IP address.
    * vCenter username and password.
@@ -101,25 +101,25 @@ vi install-config.yaml
 
 Type `i` to enter insert mode, paste the file contents. Press Esc, then type `:wq` to save the file and exit the vi editor.
 
-The OpenShift Installer deletes this file so to keep a copy use the following command:
+The {{site.data.keyword.redhat_openshift_notm}} Installer deletes this file so to keep a copy use the following command:
 
 ```bash
 cp install-config.yaml install-config.bak
 ```
 
-## Running the OpenShift Ignition command
+## Running the Red Hat OpenShift Ignition command
 {: #openshift-runbook-runbook-install-ignition-cmd}
 
-Now that the install-config.yaml is created and populated run the OpenShift Installer to create the ignition files.
+Now that the install-config.yaml is created and populated run the {{site.data.keyword.redhat_openshift_notm}} Installer to create the ignition files.
 
 ```bash
 cd /opt/ocpinstall/
 openshift-install create ignition-configs --dir=/opt/ocpinstall/
 ```
-The Ignition files are valid for 24 hours and your OpenShift deployment must be completed within this time. Otherwise, you must regenerate the Ignition files. For more information, see [Troubleshooting OpenShift problems](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-trbl-intro).
+The Ignition files are valid for 24 hours and your {{site.data.keyword.redhat_openshift_notm}} deployment must be completed within this time. Otherwise, you must regenerate the Ignition files. For more information, see [Troubleshooting {{site.data.keyword.redhat_openshift_notm}} problems](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-trbl-intro).
 {: note}
 
-The following files are produced by the OpenShift Installer:
+The following files are produced by the {{site.data.keyword.redhat_openshift_notm}} Installer:
 
 ```bash
 .
@@ -354,7 +354,7 @@ Terraform is used to deploy the VMs for bootstrap, control-plane nodes, and comp
 * `terraform plan` - completes a dry run on the templates, ensuring it can connect to the vCenter.
 * `terraform apply` - runs the templates. The auto-approve switch can be added so that confirmation of each deployment is not required.
 
-After Terraform provisions the VMs, the OpenShift cluster bootstraps itself.
+After Terraform provisions the VMs, the {{site.data.keyword.redhat_openshift_notm}} cluster bootstraps itself.
 
 1. The bootstrap node starts and begins hosting the remote resources that are required for the control-plane to start.
 2. The control-plane nodes fetch the remote resources from the bootstrap node and finish starting.
@@ -362,10 +362,10 @@ After Terraform provisions the VMs, the OpenShift cluster bootstraps itself.
 4. The bootstrap node starts a temporary Kubernetes control plane by using the new etcd cluster.
 5. The temporary control plane schedules the production control plane to the control-plane nodes.
 6. The temporary control plane shuts down and passes control to the production control plane.
-7. The bootstrap node injects OpenShift Container Platform components into the production control plane.
+7. The bootstrap node injects {{site.data.keyword.redhat_openshift_notm}} Container Platform components into the production control plane.
 8. The control plane sets up the compute nodes.
 9. The control plane installs more services in the form of a set of Operators.
-10. The result of this bootstrapping process is a fully running OpenShift cluster. The cluster then downloads and configures remaining components that are needed for the day-to-day operation.
+10. The result of this bootstrapping process is a fully running {{site.data.keyword.redhat_openshift_notm}} cluster. The cluster then downloads and configures remaining components that are needed for the day-to-day operation.
 
 In the SSH session to the bastion node, with root privileges, run the following commands, ensuring that each one completes with no errors before you enter the next command.
 
@@ -408,7 +408,7 @@ terraform apply -auto-approve
     openshift-install --dir=. wait-for install-complete
     ```
 
-5. Wait until you see the following message. The system provides the URL and credentials to log in to the OpenShift Console after the installation is complete. Your URL and password is different:
+5. Wait until you see the following message. The system provides the URL and credentials to log in to the {{site.data.keyword.redhat_openshift_notm}} Console after the installation is complete. Your URL and password is different:
 
     ```bash
     INFO Install complete!
@@ -425,7 +425,7 @@ The password for the user that was created during installation can also be found
     watch -n5 oc get clusteroperators
     ```
 
-2. Monitor for cluster completion. An output is provided in the following example. Replace 4.x.5 with the current Red Hat OpenShift version, for example, 4.7.5.
+2. Monitor for cluster completion. An output is provided in the following example. Replace 4.x.5 with the current {{site.data.keyword.redhat_openshift_notm}} version, for example, 4.7.5.
 
     ```bash
     Every 5.0s: oc get clusteroperators
@@ -458,9 +458,9 @@ The password for the user that was created during installation can also be found
     storage                              4.x.5    True        False         False      30m
     ```
 
-**Next topic:** [Red Hat OpenShift 4.7 additional configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-config-intro)
+**Next topic:** [{{site.data.keyword.redhat_openshift_notm}} 4.7 additional configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-config-intro)
 
 ## Related links
 {: #vcs-openshift-runbook-install-related}
 
-* [VMware Solutions and Red Hat OpenShift overview](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-intro)
+* [VMware Solutions and {{site.data.keyword.redhat_openshift_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-intro)

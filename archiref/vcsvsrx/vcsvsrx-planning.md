@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-01-17"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ subcollection: vmwaresolutions
 There are two options for deploying a vSRX HA cluster:
 
 * Deploy gateway on bare metal servers - deploys vSRX on a KVM-based host.
-* Deploy gateway as part of the IBM Cloud® for VMware® Solutions offering (edge cluster) - deploys vSRX on a VMware vSphere® ESXi™ hypervisor.
+* Deploy gateway as part of the {{site.data.keyword.vmwaresolutions_full}} offering (edge services cluster) - deploys vSRX on a VMware vSphere® ESXi™ hypervisor.
   
 The two vSRX nodes are tied together in a highly available chassis cluster and deliver a reliable gateway solution that provides for continuous network traffic flows through the loss of a host that supports a node or a vSRX node.
 
@@ -35,7 +35,7 @@ These features are common to both deployment types.
 - Full vSRX firewall and routing capability implemented.
 
 The following features are unique to a deployment with the ESXi as the host OS.
-- VXLAN connectivity into a vCenter Server instance.
+- VXLAN connectivity into a VMware vCenter Server® instance.
 - Ability to host extra VMs on the edge services cluster.
 - NSX edges, load balancers.
 

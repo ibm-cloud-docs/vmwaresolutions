@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -116,7 +116,7 @@ The following steps deploy a VM to host CentOS and Squid from the Content Librar
 ### Downloading the CentOS-Minimal ISO file
 {: #vum-init-config-downloading-centos}
 
-Using a browser on your jump-server to download the CentOS-Minimal ISO file from [CentOS](https://www.centos.org/download/). {{site.data.keyword.cloud_notm}} maintains a mirror of many popular Linux® distributions. This mirror is only available on the private network, and the CentOS ISOs are available at http://mirrors.service.softlayer.com/centos/7/isos/x86_64/.
+Using a browser on your jump-server to download the CentOS-Minimal ISO file from [CentOS](https://www.centos.org/download/). {{site.data.keyword.cloud_notm}} maintains a mirror of many popular Linux® distributions. This mirror is only available on the private network, and the CentOS ISOs are available at `http://mirrors.service.softlayer.com/centos/7/isos/x86_64/`.
 
 ### Configuring a content library and populating it with the CentOS ISO file
 {: #vum-init-config-config-conent-library}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-01-25"
+lastupdated: "2022-04-20"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ The following components are available for vCenter Server multizone instances:
    * vROps 8.2
    * vRLI 8.4
    * vRNI 4.8
-* VMware NSX-T™ 3.1.3.5. NSX-V is not supported.
+* VMware NSX-T™ 3.2.0.1. NSX-V is not supported.
 * Skylake and Cascade Lake when available. Skylake 4110 is supported for the witness and management clusters only.
 * Optane drives are the only supported option for VMware vSAN™ cache disks.
 * vSAN with the options of RAID 1, RAID 5, and RAID 6.
@@ -69,7 +69,7 @@ Your choice of effective RAID level determines the minimum number of hosts that 
 | RAID 6 | PFTT=1  SFTT=2 | Yes | 6+6+2+2+2 |
 {: caption="Table 2. RAID and FTM levels" caption-side="top"}
 
-If you choose to use an IBM Global Technology Services (GTS) large style design with separate edge services clusters, you must deploy those clusters after their instance was provisioned, which is not an automated operation.
+If you choose to use an IBM Global Technology Services (GTS) large style design with separate edge services clusters, you must deploy those clusters after their instance was provisioned. This is not an automated operation.
 
 ## Day 2 operations
 {: #mcv-archi-bom-ordering-daytwo}

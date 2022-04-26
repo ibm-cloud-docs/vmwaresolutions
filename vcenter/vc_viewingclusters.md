@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-11-18"
+lastupdated: "2022-04-08"
 
 keywords: vCenter Server view clusters, vmware multizone, vCenter Server multizone view clusters, view vCenter Server cluster
 
@@ -48,7 +48,7 @@ You can view the summary and detailed information of the clusters that are provi
 | Hardware | The hardware specification. |
 | Credentials | The user name and password to access the ESXi server. |
 | Private IP | The private IP address of the ESXi server. |
-| Status | The status of the ESXi server, which can be one of the following values:  \n  **Added** The ESXi server is added and is ready for use.  \n  **Adding** The ESXi server is being added.  \n  **Deleting** The ESXi server is being deleted. |
+| Status | The status of the ESXi server, which can be one of the following values: \n **Added** The ESXi server is added and is ready for use. \n **Adding** The ESXi server is being added. \n **Deleting** The ESXi server is being deleted. |
 {: caption="Table 1. ESXi server details" caption-side="top"}
 {: class="simple-tab-table"}
 {: #table1}
@@ -74,7 +74,7 @@ You can view the summary and detailed information of the clusters that are provi
 | Size | The capacity of the storage. |
 | IOPS/GB | The performance level of the storage. |
 | NFS protocol | The NFS version of the storage. |
-| Status | The storage status, which can be one of the following values:  \n  **Added** The storage is added and is ready for use.  \n  **Adding** The storage is being added.  \n  **Deleting** The storage is being deleted. |
+| Status | The storage status, which can be one of the following values: \n **Added** The storage is added and is ready for use. \n **Adding** The storage is being added. \n **Deleting** The storage is being deleted. |
 {: caption="Table 1. Storage details" caption-side="top"}
 {: class="simple-tab-table"}
 {: #table3}

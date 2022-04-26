@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-02-16"
+lastupdated: "2022-03-16"
 
 keywords: manage shared resources, view shared virtual data centers summary
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 You can view a summary of all the {{site.data.keyword.cloud}} for VMware® Solutions Shared virtual data centers that are provisioned for a user account.
 
-Optionally,validate that you are in the correct account for your instance. From the console banner, click the **Avatar** icon ![Avatar icon](../../icons/i-avatar-icon.svg "Avatar"), and then click the **Account** field to select the user account where you want to view virtual data centers.
+Optionally, validate that you are in the correct account for your instance. From the console banner, click the **Avatar** icon ![Avatar icon](../../icons/i-avatar-icon.svg "Avatar"), and then click the **Account** field to select the user account where you want to view virtual data centers.
 {: note}
 
 ## Procedure to view the virtual data center summary

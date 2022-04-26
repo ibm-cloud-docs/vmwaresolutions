@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-21"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # vRealize Operations Manager design
 {: #opsmgmt-vrops}
 
-The vRealize® Operations Manager™ (vROps) Analytics Cluster contains the nodes that analyze and store data from the monitored components and in this deployment, four nodes are deployed and two NSX Load Balancers. This size allows monitoring of up to 30,000 VMs and 9,000,000 metrics to be collected.
+The vRealize® Operations Manager™ (vROps) Analytics Cluster contains the nodes that analyze and store data from the monitored components and in this deployment, four nodes are deployed and two VMware NSX® Load Balancers. This size allows monitoring of up to 30,000 VMs and 9,000,000 metrics to be collected.
 
 The 4-node analytics cluster consists of the following components:
 * Primary node – The primary node is the initial node in a vROps cluster. In a large environment, this node manages all the other nodes.
@@ -27,14 +27,14 @@ Additionally, the design uses Remote Collector nodes, which act as a proxy or re
 
 ![Operations Manager network diagram](../../images/opsmgmt-vropsnw.svg "Operations Manager network diagram"){: caption="Figure 1. Operations Manager networking" caption-side="bottom"}
 
-* Primary node, primary node replica, and data nodes are deployed on the tools subnet by using {{site.data.keyword.cloud}} Portable IP addresses. This deployment facilitate communication to all components that are addressed out of the {{site.data.keyword.cloud_notm}} RFC1918 address space. These components include vSphere hosts, vCenter, Platform Services Controller (PSC), NSX Manager, and NSX Controllers. An NSX Load Balancer is used along with a VIP for HA.
+* Primary node, primary node replica, and data nodes are deployed on the tools subnet by using {{site.data.keyword.cloud}} Portable IP addresses. This deployment facilitate communication to all components that are addressed out of the {{site.data.keyword.cloud_notm}} RFC1918 address space. These components include vSphere hosts, vCenter, Platform Services Controller (PSC), NSX Manager, and NSX Controllers™. An NSX Load Balancer is used along with a VIP for HA.
 * Customer workloads use IP addressing from the BYOIP address space so this design uses Remote Collectors that are hosted in a VXLAN. These remote collectors are not configured as part of the {{site.data.keyword.vmwaresolutions_full}} automation and must be manually implemented by the client.
 
 ![Operations Manager components diagram](../../images/opsmgmt-vropscomponent.svg "Operations Manager components diagram"){: caption="Figure 2. Operations Manager components" caption-side="bottom"}
 
 The vROps Analytics Cluster is accessed by using a management user interface or by using an API and it integrates with the following components:
 * vCenter
-* vRealize Log Insight
+* vRealize Log Insight™
 
 The client can manually integrate into the following products if they are deployed.
 * vRealize Automation
@@ -98,7 +98,7 @@ For more information, see [vRealize Automation Load Balancing](https://docs.vmwa
 Deployment of the vROps appliance requires six IP addresses from the Tooling private portable subnet. Network connectivity vROps requires access to the following items.
 * vCenter Appliance
 * vRealize Log Insight Appliance
-* NSX-T or NSX-V Appliances
+* VMware NSX-T™ or NSX-V Appliances
 * Tools Expansion VXLAN
 * Customer Networks
 * NTP server (`time.services.softlayer.com`)
@@ -122,11 +122,11 @@ Deployment of the vROps appliance requires six IP addresses from the Tooling pri
 ### Authentication
 {: #opsmgmt-vrops-auth}
 
-User Management for vROps requires VMware Identity Manager (vIDM), which integrates with Active Directory. Service accounts are used for application-to-application communication from vRealize Operations Manager to the following adapters with the minimum set of permissions that are required for metric collection and topology mapping:
+User Management for vROps requires VMware Identity Manager (vIDM), which integrates with Active Directory. Service accounts are used for application-to-application communication from vRealize Operations™ Manager to the following adapters with the minimum set of permissions that are required for metric collection and topology mapping:
 
 * NSX Manager
 * vCenter
-* vSAN
+* vSAN™
 
 ## Management Packs
 {: #opsmgmt-vrops-management}
@@ -144,7 +144,7 @@ The following components are installed by {{site.data.keyword.vmwaresolutions_sh
 * VMware SDDC Health Management Pack
 * Management Pack for NSX for vSphere
 * vRealize Operations Federation Management pack
-* Management Pack for Hybrid Cloud Extension (HCX)
+* Management Pack for Hybrid Cloud Extension (HCX™)
 
 Other management packs can be installed by the client. For more information, see [VMware Solution Exchange](https://marketplace.vmware.com/vsx/?contentType=1&listingStyle=table){: external}.
 
@@ -168,7 +168,7 @@ vRealize Operations Management Pack for vSAN enables vSAN specific dashboards to
 
 The VMware SDDC Health Management Pack for vROps monitors the SDDC management stack. Color coded metrics are provided for health and efficiency of different components present as part of the SDDC management stack. With the dashboards in the VMware SDDC Health Management Pack, you can monitor the following components of the vCenter Server instance and management tools:
 * vRealize Operations Manager
-* NSX for vSphere and VMware NSX-T™
+* NSX for vSphere and VMware NSX-T
 * VMware vSAN
 * vRealize Log Insight
 * vCenter Server
@@ -218,7 +218,7 @@ The NSX for vSphere management pack is tightly integrated with vROps and vSphere
 ### vRealize Operations Federation Management Pack
 {: #opsmgmt-vrops-management-federation}
 
-vRealize Operations Federation Management Pack enables a multi-site vROps deployment into a single pane of glass. It allows a deployment of vROps with the capability of receiving key metrics for specified objects from vROps deployments.
+vRealize Operations Federation Management Pack enables a multisite vROps deployment into a single pane of glass. It allows a deployment of vROps with the capability of receiving key metrics for specified objects from vROps deployments.
 
 ### Management Pack for Hybrid Cloud Extension (HCX)
 {: #opsmgmt-vrops-management-hcx}

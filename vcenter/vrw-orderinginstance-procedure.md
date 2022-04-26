@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-02-01"
+lastupdated: "2022-04-12"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -90,11 +90,7 @@ You must manage the {{site.data.keyword.vmwaresolutions_short}} components that 
 If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.
 {: important}
 
-**CAUTION** Managing any {{site.data.keyword.vmwaresolutions_short}} components (which were installed into your {{site.data.keyword.cloud_notm}} account when you ordered the instance) from outside the VMware Solutions console can make your environment unstable. The following activities are considered management activities:
-*  Adding, modifying, returning, or removing components
-*  Expanding or contracting instance capacity through adding or removing ESXi servers
-*  Powering off components
-*  Restarting services
+{{site.data.content.caution-component-management}}
 
 ### Known issue for multizone deployment
 {: #vrw-orderinginstance-results-order-issue}

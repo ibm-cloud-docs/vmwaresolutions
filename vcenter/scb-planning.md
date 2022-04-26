@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-02-10"
+lastupdated: "2022-04-11"
 
 keywords: planning vcs Security and Compliance Readiness Bundle, data centers for Security and Compliance Readiness Bundle, services for security and compliance bundle, vcs scb
 
@@ -79,7 +79,7 @@ The following services are required for Security and Compliance Readiness Bundle
 
 The following services are included with Security and Compliance Readiness Bundle instances.
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
-* [HyTrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
+* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
 * [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 
 The following services are recommended for Security and Compliance Readiness Bundle instances.
@@ -89,7 +89,7 @@ The following services are recommended for Security and Compliance Readiness Bun
 The following services are optional for Security and Compliance Readiness Bundle instances.
 * [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations)
 * [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
-* [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_ordering)
+* [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_ordering)
 
 ## Related links
 {: #scb-planning-related}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-11-16"
+lastupdated: "2022-04-08"
 
 keywords: vCenter Server networking, networking components, networking vCenter
 
@@ -32,7 +32,7 @@ To review the networking components that are included in your vCenter Server ins
 
 If you're using firewalls, you must configure rules for all communications from the {{site.data.keyword.IBM}} CloudDriver virtual server instance (VSI) and the SDDC Manager virtual machines (VMs). These rules must allow all protocols to communicate on the IP addresses `10.0.0.0/8` and `161.26.0.0/16`. Examples of such firewalls are NSX Distributed Firewalls (DFW) or vSRX edge services cluster firewalls.
 
-Some components may attempt to connect to the public network, although they are deployed to your private network. In some cases, such as Zerto Virtual Replication or FortiGate-VM, this connection is required for licensing or to report usage, and these components are configured to connect either using the instance NAT or a proxy you provide. You may need to permit these connections in your firewall. In other cases, these connection attempts are only for diagnostic and usage data, and the connections will fail since no public connectivity is available or configured.
+Some components might attempt to connect to the public network, although they are deployed to your private network. In some cases, such as Zerto Virtual Replication or FortiGate-VM, this connection is required for licensing or to report usage. These components are configured to connect either by using the instance NAT or a proxy you provide. You might need to permit these connections in your firewall. In other cases, these connection attempts are only for diagnostic and usage data, and the connections fail since no public connectivity is available or configured.
 
 ## Using NSX with your virtual machines
 {: #vc_networkingonvcenterserver-using-nsx-with-vm}
@@ -54,7 +54,7 @@ Review the following considerations before you attempt to change the passwords f
 * Do not change the NSX Manager admin password for NSX-T.
 * You can change the NSX Manager root password. This password is not displayed in the VMware Solutions console. However, the password is the same as the one for the root user for NSX Controllers, which is displayed in the console.
 * You can change the passwords for the root user for NSX Controllers. The root credentials are displayed in the VMware Solutions console.
-* You can change the passwords for the admin user and the root user for the customer-managed VMware NSX Edge Services Gateway (ESG). The admin credentials are displayed in the VMware Solutions console, but the root credentials are not displayed. The passwords for the root user and the  admin user are the same.
+* You can change the passwords for the admin user and the root user for the customer-managed VMware NSX Edge Services Gateway (ESG). The admin credentials are displayed in the VMware Solutions console, but the root credentials are not displayed. The passwords for the root user and the admin user are the same.
 * You can change the passwords for admin user and root user for management services NSX ESG. The admin credentials are displayed in the VMware Solutions console, but the root credentials are not displayed. The passwords for the root user and the admin user are the same.
 
 ### Considerations when changing passwords for NSX-V components

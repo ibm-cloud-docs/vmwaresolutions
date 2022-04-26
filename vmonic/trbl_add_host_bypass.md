@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-04-22"
 
 keywords: troubleshooting, bypassing signing and acceptance, bypassing verification issue
 
@@ -24,7 +24,7 @@ When you add a host, you see the following event in VMware vCenter Server®:
 
 `Attempting to install an image profile bypassing signing and acceptance level verification.`
 
-This event occurs because VMWare is installing the High Availability agent by intended bypassing acceptance level verification.
+This event occurs because VMware® is installing the High Availability agent by intended bypassing acceptance level verification.
 {: tsCauses}
 
 This message does not indicate a problem and it can be ignored.

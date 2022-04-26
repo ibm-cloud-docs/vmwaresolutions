@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Workload migration by using vMotion or third-party tools and NSX-T L2 bridge
 {: #v2t-l2-nsx-t}
 
-NSX-V to NSX-T migration in IBM Cloud is done by following the principles of the VMware® Lift-and-Shift Migration model, which consists of migrating the network configurations and workloads. Migrating workloads during this process can be done in many ways. For example, you can use Advanced Cross vCenter vMotion between the environments, or you can use other optional or existing third-party tools like Veeam or Zerto.
+VMware NSX-V to VMware NSX-T™ migration in {{site.data.keyword.cloud}} is done by following the principles of the VMware® Lift-and-Shift Migration model, which consists of migrating the network configurations and workloads. Migrating workloads during this process can be done in many ways. For example, you can use Advanced Cross vCenter vMotion between the environments, or you can use other optional or existing third-party tools like Veeam® or Zerto.
 
 ## Using NSX-T L2 bridge in migration
 {: #v2t-l2-nsx-t-bridge}
@@ -26,7 +26,7 @@ Regardless of the tool you choose to migrate the workloads, you typically need t
 ![Migration by using vMotion or third-party tools and NSX-T L2 bridge](../../images/v2t-diagrams-l2-nsx-t.svg "No matter which migration method you choose, you typically need to extend L2 between the existing NSX-V and the new NSX-T instance. This shows how to extend the networks with NSX-T L2 bridging capability."){: caption="Figure 1. Migration by using vMotion or third-party tools and NSX-T L2 bridge" caption-side="bottom"}
 
 1. Your existing NSX-V based instance was deployed previously and it hosts the current workloads and NSX-V network configurations. Before you start the migration, you must have a thorough understanding of the environment, the workloads that are deployed on it, and the NSX-V and underlay network configurations.
-2. You can deploy the new vCenter Server with NSX-T instance with new VLANs and a new POD, or you can use existing VLANs.
+2. You can deploy the new vCenter Server® with NSX-T instance with new VLANs and a new POD, or you can use existing VLANs.
 3. Capture the existing network configuration and create a new network topology manually, by using scripting or Terraform, migration coordinator, or third-party tools.
 4. Prepare configurations for failover in NSX-T. Configure NSX-T segments and configure Tier-1 and Tier-0 Gateways.
 5. Deploy an NSX-T L2 bridge on a vCenter Server instance's NSX-V enabled host. Deploy one bridge per each extended overlay network to extend NSX-V logical switch to NSX-T overlay segment. You can deploy multiple bridges and you can also reuse existing bridges easily.
@@ -39,9 +39,9 @@ Regardless of the tool you choose to migrate the workloads, you typically need t
 
 To migrate virtual machines across vCenter Server instances in different vCenter Single Sign-On domains, you can use Advanced Cross vCenter vMotion. Тhe vCenter Server instance from which you initiate the import or export of virtual machines must be version 7.0 Update 1c or later.
 
-In this method, the existing instance and the new target instance have different data stores. When you migrate, you must take this issue into account, which also applies when you are using IBM Cloud File Storage. Plan the storage migration as part of the migration process.
+In this method, the existing instance and the new target instance have different data stores. When you migrate, you must take this issue into account, which also applies when you are using {{site.data.keyword.cloud_notm}} File Storage. Plan the storage migration as part of the migration process.
 
-It is possible to manually add and allow the existing IBM Cloud File Storage volumes to be accessible to the new vCenter Server with NSX-T instance. However, it is not generally advised leaving the volumes accessible for a longer period. The vCenter Server with NSX-T instance's automation is not aware of the old and manually added storage, and when you add new hosts and clusters to the new instance you might see unwanted behavior and the new hosts might not have access to this data store.
+It is possible to manually add and allow the existing {{site.data.keyword.cloud_notm}} File Storage volumes to be accessible to the new vCenter Server with NSX-T instance. However, it is not generally advised leaving the volumes accessible for a longer period. The vCenter Server with NSX-T instance's automation is not aware of the old and manually added storage, and when you add new hosts and clusters to the new instance you might see unwanted behavior and the new hosts might not have access to this data store.
 {: important}
 
 ## Migrating workloads with Veeam
@@ -56,16 +56,16 @@ For more information, see [Ordering services for VMware Solutions Dedicated vCen
 ## Migrating workloads with Zerto
 {: #v2t-l2-nsx-t-zerto}
 
-IBM Cloud for VMware Solutions Dedicated offers an optional service for Zerto. The Zerto service integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware® virtual environment on IBM Cloud®.
+{{site.data.keyword.vmwaresolutions_short}} Dedicated offers an optional service for Zerto. The Zerto service integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}.
 
-You can use Zerto's replication capabilities during the migration.  
+You can use Zerto's replication capabilities during the migration.
 
 For more information, see [Ordering services for VMware Solutions Dedicated vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices) and [Zerto Product Documentation](https://help.zerto.com){: external}.
 
 ## Considerations for using NSX-T L2 bridge in migration
 {: #v2t-l2-nsx-t-considerations}
 
-A recommended practice is to use one NSX-T Edge node to extend one NSX-V Logical Switch. This Edge node must be a virtual appliance because the NSX-T Edge must be deployed on a IBM Cloud Bare Metal Server that is prepared for NSX-V.
+A recommended practice is to use one NSX-T Edge node to extend one NSX-V Logical Switch. This Edge node must be a virtual appliance because the NSX-T Edge must be deployed on a {{site.data.keyword.cloud_notm}} bare metal server that is prepared for NSX-V.
 
 The Edge node extends the VXLAN Logical Switch to the NSX-T GENEVE overlay segment. The Edge Services Gateways in the NSX-V environment serve as the default gateway for all north-south traffic from the workload VMs on the Logical Switch until disconnect the NSX-V Logical Switch from the Distributed Logical Router (DLR), and connect the NSX-T overlay segment to the Tier-0 or Tier-1 gateway. This switches the default gateway to the NSX-T Tier-0 or Tier-1 gateway, depending on the chosen NSX-T topology. 
 

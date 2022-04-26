@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Configuration migration
 {: #v2t-config-migration}
 
-Configuration migration covers all the NSX-V settings and parameters that must be transferred to the NSX-T environment to provide similar functions of the NSX-V environment. 
+Configuration migration covers all the NSX-V settings and parameters that must be transferred to the VMware NSX-T™ environment to provide similar functions of the NSX-V environment. 
 
 Depending on the complexity of your network, this can include as follows:
 
@@ -48,7 +48,7 @@ It is important to understand the complexity of your distributed firewall config
 
 * If you are not using distributed firewall, then you must not migrate the configuration.
 * If in your distributed firewall configuration "Applied To" is set to "DFW" and all the rules are IP-based, then by migrating workload virtual machines is a single stage process.
-* If in your DFW configuration has the following, then a multi-stage approach for workload VMs is needed:
+* If in your DFW configuration has the following, then a multistage approach for workload VMs is needed:
    * If "Applied To" is set to "DFW" in all the rules, and there are rules with Security Groups with dynamic memberships based on Security Tags or with static memberships.
    * If "Applied To" is set to a universal security group or a universal logical switch in any rule. Also, if there are rules with Security Groups with dynamic memberships based on Security Tags or with static memberships.
    * If "Applied To" is set to a universal security group or a universal logical switch in any rule, and all the rules are IP-based.
@@ -95,7 +95,7 @@ When you plan and design configuration migration, consider the following aspects
 * Are you using the NSX-V IPFIX feature to capture traffic flows that are sourced from and destined to the VMs running on NSX-V logical switches? You must analyze the ability of NSX-T to replace the packet flow forwarding feature.
 * Are you using OSPF as dynamic routing protocol? You must assess the use of BGP to replace OSPF.
 * Are you using DLR native L2 bridging to bridge L2 traffic between VMs and bare metal servers through a distributed virtual switch? Search for alternative solutions of bridging in NSX-T.
-* Do you need gradual migration of VMs from NSX-V to NSX-T, and not a full subnet migration? By using an NSX-V to NSX-T bridge, allows VMs in the same L2 domain to be migrated from an NSX-V logical switch to NSX-T segment. Alternatively, L2VPN or VMware HCX can be used to provide L2 connectivity.
+* Do you need gradual migration of VMs from NSX-V to NSX-T, and not a full subnet migration? By using an NSX-V to NSX-T bridge, allows VMs in the same L2 domain to be migrated from an NSX-V logical switch to NSX-T segment. Alternatively, L2VPN or VMware HCX™ can be used to provide L2 connectivity.
 
 ## Related links
 {: #v2t-config-migration-links}

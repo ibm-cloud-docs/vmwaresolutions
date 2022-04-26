@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -13,10 +13,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Target platforms in {{site.data.keyword.cloud_notm}}
+# Target platforms in IBM Cloud
 {: #v2t-targets}
 
-{{site.data.keyword.cloud}} for VMware® Solutions has a number of offerings, deployment patterns, and options that can be used to create your target NSX-T environment. For this documentation, they are defined as follows:
+{{site.data.keyword.vmwaresolutions_full}} has a number of offerings, deployment patterns, and options that can be used to create your target VMware NSX-T™ environment. For this documentation, they are defined as follows:
 
 * Automated offerings - These offerings are available from the [{{site.data.keyword.vmwaresolutions_full_notm}}](https://cloud.ibm.com/infrastructure/vmware-solutions/console) console and VMware Solutions Dedicated tiles.
 * Regulated workload offerings - These offerings are available from the [{{site.data.keyword.vmwaresolutions_full_notm}}](https://cloud.ibm.com/infrastructure/vmware-solutions/console) console and Regulated Workloads tile. They are suitable for clients that require a prescriptive reference architecture that matches the {{site.data.keyword.framework-fs_full}}.
@@ -34,7 +34,7 @@ A summary and key capabilities of the target VMware Solutions offerings in {{sit
 
 The offerings are described in detail in the following documents:
 
-* [VMware Solutions Dedicated - vCenter Server as a single site deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) - This offering deploys a VMware based platform in a single {{site.data.keyword.cloud_notm}} data center automatically.
+* [VMware Solutions Dedicated - vCenter Server as a single site deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) - This offering deploys a VMware® based platform in a single {{site.data.keyword.cloud_notm}} data center automatically.
 * [VMware Solutions Dedicated - vCenter Server as a multisite deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) - This offering deploys a secondary vCenter Server instance in a single {{site.data.keyword.cloud_notm}} data center automatically. It is linked to a primary [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) previously deployed. Multiple secondary instances can be created. 
 * vCenter Server dual-site - This deployment pattern is based on two [VMware Solutions Dedicated - vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) deployments but not in a primary-secondary relationship as in the [vCenter Server multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) pattern. This is typically used in a production-disaster recovery pattern by using Zerto or Veeam® replication between the two sites. 
 
@@ -59,7 +59,7 @@ In the previous diagram, the following terms require some additional comments:
 * Single edge gateway - Each virtual data center uses an active-standby edge gateway for external access to the public network or the services network. This gateway includes features such as NAT, IPSec VPN, and load balancing.
 * Single edge cluster Tier-0 gateway for workloads - The automation deploys a single NSX-T edge cluster, consisting of a pair of edge appliances, hosting an active/standby Tier-0 gateway for use by the workload VMs. These VMs provide connection between the overlay and underlay networks. For more information, see [Single-site - single-tenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and [Single-site - multitenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-mt ).
 * Single-zone NFS storage - vSphere data stores that use {{site.data.keyword.cloud_notm}} file storage of different IOPs ratings are available and deployed automatically. {{site.data.keyword.cloud_notm}} file storage can be accessed only from hosts in the same site as the vSphere hosts. For more information, see [Shared File-level storage across hosts](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-shared-storage).
-* Single-zone vSAN - The vCenter Server instance can be ordered with VMware vSAN and it uses disks in the vSphere hosts as a consolidated data store.
+* Single-zone vSAN™ - The vCenter Server instance can be ordered with VMware vSAN and it uses disks in the vSphere hosts as a consolidated data store.
 
 The vCenter dual site topology is a candidate for [NSX-T Federation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-D5B6DC79-6733-44A7-8072-50221CF2122A.html){: external}. NSX-T Federation is a relatively new NSX-T feature and architecture. Before you plan to use it, you must know what [features are supported](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-29998FC5-C1AB-40BC-B669-6E8E9937F345.html){: external}, and how NSX Federation works for your use case. NSX-T Federation is not validated by {{site.data.keyword.cloud_notm}} fully, but it is a solution and architecture that is supported by VMware.
 {: note}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-03-23"
 
 subcollection: vmwaresolutions
 
@@ -46,7 +46,7 @@ Review the following information for a description of the services network that 
 ### Private services network
 {: #storage-infra-design-private-net}
 
-{{site.data.keyword.cloud_notm}} has a private services network that provides common services such as block storage, file storage, Object Storage, DNS resolvers, and NTP servers. This private network is separate from the customer private network and it enables environments to seamlessly connect to services located in the {{site.data.keyword.cloud_notm}}. The private network is multi-tiered in that servers and other infrastructure are connected to aggregated back-end customer switches (BCS). These aggregated switches are attached to a pair of separate routers such as back-end customer routers or BCR, for L3 networking. The private network also supports the ability to use jumbo frames, such as, MTU 9000, for physical host connections.
+{{site.data.keyword.cloud_notm}} has a private services network that provides common services such as block storage, file storage, Object Storage, DNS resolvers, and NTP servers. This private network is separate from the customer private network and it enables environments to seamlessly connect to services located in the {{site.data.keyword.cloud_notm}}. The private network is multitiered in that servers and other infrastructure are connected to aggregated back-end customer switches (BCS). These aggregated switches are attached to a pair of separate routers such as back-end customer routers or BCR, for L3 networking. The private network also supports the ability to use jumbo frames, such as, MTU 9000, for physical host connections.
 
 ### VLANs
 {: #storage-infra-design-vlans}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-20"
 
 keywords: security services, request security sap, tech specs sap
 
@@ -24,7 +24,7 @@ These services, developed between IBM Security and Onapsis (an IBM Business Part
 
 Through continuous monitoring, the Onapsis Security Platform delivers a near real-time, preventive, detective, and corrective solution for securing SAP systems and applications. The Onapsis Security Platform provides unmatched coverage and protection with context-aware insight across SAP NetWeaver ABAP, Java® Platform, Enterprise Edition, and HANA platforms. The platform integrates with network security, security management, and associated workflows.
 
-{{site.data.keyword.vmwaresolutions_short}} offers promotions for some services. Promotional pricing offers a number of months free of charge for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware® Solutions services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
+{{site.data.content.para-promotion-services}}
 
 ## Technical specifications for IBM Security Services for SAP
 {: #managing-ss-sap-specs}

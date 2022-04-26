@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-04-22"
 
 keywords: troubleshooting, Zerto VRA, Zerto uninstall
 
@@ -22,7 +22,7 @@ subcollection: vmwaresolutions
 Zerto Virtual Replication Appliances (VRAs) are not removed after you use the {{site.data.keyword.slportal_full}} to successfully uninstall the Zerto service.
 {: tsSymptoms}
 
-Manually remove the VRAs from the vCenter console.
+Manually remove the VRAs from the vCenter® console.
 {: tsResolve}
 
 1. Log in to the vCenter console.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-02-23"
+lastupdated: "2022-03-25"
 
 subcollection: vmwaresolutions
 
@@ -13,24 +13,24 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# OpenShift Bastion node setup
+# Red Hat OpenShift Bastion node setup
 {: #openshift-runbook-runbook-bastion-intro}
 
-To enable the deployment, a virtual machine is provisioned to run the OpenShift installation steps and host an HTTP Server. This virtual machine is known as the bastion node. The bastion node is connected to the OpenShift logical switch and the ESG firewall and NAT rules are configured to allow SSH access from the jump-server or remote device.
+To enable the deployment, a virtual machine is provisioned to run the {{site.data.keyword.redhat_openshift_full}} installation steps and host an HTTP Server. This virtual machine is known as the bastion node. The bastion node is connected to the {{site.data.keyword.redhat_openshift_notm}} logical switch and the ESG firewall and NAT rules are configured to allow SSH access from the jump-server or remote device.
 
-The bastion node runs Red Hat Enterprise Linux®, and it is used to host the scripts, files, and tools to provision the bootstrap, control-plane, and compute nodes. After the deployment, it is recommended to keep the bastion node as an administrative node for the cluster.
+The bastion node runs {{site.data.keyword.redhat_full}} Enterprise Linux®, and it is used to host the scripts, files, and tools to provision the bootstrap, control-plane, and compute nodes. After the deployment, it is recommended to keep the bastion node as an administrative node for the cluster.
 
 The bastion node setup consists of the following steps:
 
-1. Provision a Red Hat virtual machine.
-2. Register the Red Hat virtual machine.
+1. Provision a {{site.data.keyword.redhat_notm}} virtual machine.
+2. Register the {{site.data.keyword.redhat_notm}} virtual machine.
 3. Install NGINX (HTTP Server).
 4. Generate an SSH private key and add it to the agent.
 
 ## Provisioning a Red Hat virtual machine
 {: #openshift-runbook-runbook-bastion-prov-red-hat}
 
-Provision a Red Hat virtual machine based on the following specifications. Use the vCenter Server user interface or by using the PowerCLI script that is documented later in this document to provision the virtual machine. Record you NAT address, which is configured in the NSX ESG.
+Provision a {{site.data.keyword.redhat_notm}} virtual machine based on the following specifications. Use the vCenter Server user interface or by using the PowerCLI script that is documented later in this document to provision the virtual machine. Record you NAT address, which is configured in the NSX ESG.
 
 | Virtual machine | IP address | Gateway | Disk (GB) | Memory (GB) | vCPU | NAT address |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -74,23 +74,23 @@ Start-VM -VM $vm
 Disconnect-NsxServer
 ```
 
-After the VM starts, connect to the VM by using the web console or remote console and complete the following installation steps, by using the [Graphical install](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/installation_guide/chap-getting-started#sect-graphical-installation){: external} if needed.
-* Select the required language.
-* Set the date and time.
-* Configure the network and hostname.
-* Select the installation destination.
-* Set the root password.
-* Create a user.
+After the VM starts, connect to the VM by using the web console or remote console and complete the following installation steps. If needed, see the {{site.data.keyword.redhat_notm}} Enterprise Linux documentation.
+1. Select the required language.
+2. Set the date and time.
+3. Configure the network and hostname.
+4. Select the installation destination.
+5. Set the root password.
+6. Create a user.
 
 ## Registering the Red Hat virtual machine
 {: #openshift-runbook-runbook-bastion-register}
 
-For this step, you require your Red Hat subscription details:
+For this step, you require your {{site.data.keyword.redhat_notm}} subscription details:
 * Username
 * Password
 * Subscription Pool
 
-After the bastion node is deployed, you are required to register and subscribe it with the Red Hat public repositories. From the jump-host or remote device, SSH to connect to the bastion node. Use the `su`  command to get root privileges and run the following commands after you replace the username, password, and pool with your variables.
+After the bastion node is deployed, you are required to register and subscribe it with the {{site.data.keyword.redhat_notm}} public repositories. From the jump-host or remote device, SSH to connect to the bastion node. Use the `su`  command to get root privileges and run the following commands after you replace the username, password, and pool with your variables.
 
 ```bash
 export rhel_subscription_username=<email address>
@@ -107,7 +107,7 @@ subscription-manager repos --enable  rhel-server-rhscl-8-rpms
 ## Installing NGINX (HTTP Server)
 {: #openshift-runbook-runbook-bastion-http}
 
-The deployment of the OpenShift nodes uses Ignition, and this process requires an HTTP Server to be available to download the required configuration. This deployment uses an NGINX instance that runs on the bastion node. To install NGNIX, complete the following steps after you are connected to the bastion node and have root privileges:
+The deployment of the {{site.data.keyword.redhat_openshift_notm}} nodes uses Ignition, and this process requires an HTTP Server to be available to download the required configuration. This deployment uses an NGINX instance that runs on the bastion node. To install NGNIX, complete the following steps after you are connected to the bastion node and have root privileges:
 
 1. Use a text editor such as vi to create the following file vi /etc/yum.repos.d/nginx.repo`.
 2. Type `i` to insert and paste the following information into the file:
@@ -164,7 +164,7 @@ The deployment of the OpenShift nodes uses Ignition, and this process requires a
 ## Generating an SSH private key and add it to the agent
 {: #openshift-runbook-runbook-bastion-sshkey}
 
-For the OpenShift container platform clusters on which you want to perform installation debugging or disaster recovery, you must provide an SSH key that your ssh-agent process uses to the installer.
+For the {{site.data.keyword.redhat_openshift_notm}} container platform clusters on which you want to perform installation debugging or disaster recovery, you must provide an SSH key that your ssh-agent process uses to the installer.
 
 You can use this key to SSH into the nodes as the user core. When you deploy the cluster, the key is added to the core user’s `~/.ssh/authorized_keys` list.
 
@@ -173,13 +173,13 @@ You must use a local key.
 ### Creating the SSH key
 {: #openshift-runbook-runbook-sshkey-create}
 
-1. In the SSH session on the bastion node, run the following command, which generates a public/private rsa key pair in the directory '/root/.ssh'.
+1. In the SSH session on the bastion node, run the following command, which generates a public or private `rsa` key pair in the directory `/root/.ssh`.
 
    ```bash
    ssh-keygen -f ~/.ssh/id_rsa -t rsa -b 4096 -N ''
    ```
 
-   The private key is: /root/.ssh/id_rsa. The public key is: /root/.ssh/id_rsa.pub.
+   The private key is `/root/.ssh/id_rsa` and the public key is `/root/.ssh/id_rsa.pub`.
 
 2. Start the ssh-agent process as a background task:
 
@@ -197,21 +197,21 @@ You must use a local key.
 ## Downloading the installation tools
 {: #openshift-runbook-runbook-bastion-install-red-hat}
 
-For more information about installing Red Hat OpenShift 4.7, see [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}.
+For more information about installing {{site.data.keyword.redhat_openshift_notm}} 4.7, see [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}.
 
-For more information about how to access the OpenShift user provider infrastructure, see [Internet and Telemetry access for OpenShift Container Platform](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html#cluster-entitlements_installing-vsphere){: external}.
+For more information about how to access the {{site.data.keyword.redhat_openshift_notm}} user provider infrastructure, see [Internet and Telemetry access for {{site.data.keyword.redhat_openshift_notm}} Container Platform](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html#cluster-entitlements_installing-vsphere){: external}.
 
-Before you install the OpenShift Container Platform, you need to download a number of files onto the bastion node and then extract them. The following actions are completed:
+Before you install the {{site.data.keyword.redhat_openshift_notm}} Container Platform, you need to download a number of files onto the bastion node and then extract them. The following actions are completed:
 * Download `unzip` to extract the downloaded files.
 * Create an installation directory and make it the working directory.
-* Download the OpenShift installation and client tools.
+* Download the {{site.data.keyword.redhat_openshift_notm}} installation and client tools.
 * Extract the downloaded bundles.
 * Move commands to `/usr/local/bin` for ease of use.
-* Install Git to download the OpenShift installer.
+* Install Git to download the {{site.data.keyword.redhat_openshift_notm}} installer.
 * Clone the installer repository to the bastion node.
 * Download and extract Terraform to the `/usr/local/bin` directory for ease of use.
 
-These commands are used in the SSH session to the bastion node that has root privileges. Replace 4.x with the current Red Hat OpenShift version, for example, 4.7.
+These commands are used in the SSH session to the bastion node that has root privileges. Replace 4.x with the current {{site.data.keyword.redhat_openshift_notm}} version, for example, 4.7.
 
 ```bash
 # Download unzip
@@ -243,9 +243,9 @@ unzip terraform_0.11.13_linux_amd64.zip
 mv terraform /usr/local/bin
 ```
 
-The Bastion node is now ready for the steps to install OpenShift 4.7, which are described in [Red Hat OpenShift 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro).
+The Bastion node is now ready for the steps to install {{site.data.keyword.redhat_openshift_notm}} 4.7, which are described in [{{site.data.keyword.redhat_openshift_notm}} 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro).
 
-**Next topic:** [Red Hat OpenShift 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro)
+**Next topic:** [{{site.data.keyword.redhat_openshift_notm}} 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro)
 
 ## Related links
 {: #vcs-openshift-runbook-bastion-related}

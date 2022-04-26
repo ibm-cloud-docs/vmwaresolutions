@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-03-25"
 
 subcollection: vmwaresolutions
 
@@ -16,16 +16,16 @@ subcollection: vmwaresolutions
 # Red Hat OpenShift NSX Edge configuration
 {: #openshift-runbook-runbook-nsxedge-intro}
 
-Review the NSX components that are used to support the OpenShift 4.7 environment. To use this information, you must understand how to create these components and add the configuration. Review [Add an Edge Services Gateway](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.install.doc/GUID-B9A97F20-4996-4E16-822C-0B98DDE70571.html){: external}. PowerNSX commands are provided if you would want to use this method.
+Review the NSX components that are used to support the {{site.data.keyword.redhat_openshift_full}} 4.7 environment. To use this information, you must understand how to create these components and add the configuration. Review [Add an Edge Services Gateway](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.install.doc/GUID-B9A97F20-4996-4E16-822C-0B98DDE70571.html){: external}. PowerNSX commands are provided if you would want to use this method.
 
-![OpenShift 4.7 networking](../../images/openshift-networking41.svg "OpenShift 4.7 networking"){: caption="Figure 1. OpenShift 4.7 networking" caption-side="bottom"}
+![{{site.data.keyword.redhat_openshift_notm}} 4.7 networking](../../images/openshift-networking41.svg "{{site.data.keyword.redhat_openshift_notm}} 4.7 networking"){: caption="Figure 1. OpenShift 4.7 networking" caption-side="bottom"}
 
 ## NSX ESG
 {: #openshift-runbook-runbook-nsxedge-config}
 
-The first component that is configured within the {{site.data.keyword.vmwaresolutions_full}} with Red Hat OpenShift is a pair of NSX Edge appliances. The NSX Edge appliances are configured as an Active/Passive pair of X-Large NSX Edge devices.
+The first component that is configured within the {{site.data.keyword.vmwaresolutions_full}} with {{site.data.keyword.redhat_openshift_notm}} is a pair of NSX Edge appliances. The NSX Edge appliances are configured as an Active/Passive pair of X-Large NSX Edge devices.
 
-As part of the configuration process, the NSX Edge is connected to the {{site.data.keyword.cloud_notm}} Public and Private subnets that are ordered for the Red Hat OpenShift cluster.
+As part of the configuration process, the NSX Edge is connected to the {{site.data.keyword.cloud_notm}} Public and Private subnets that are ordered for the {{site.data.keyword.redhat_openshift_notm}} cluster.
 
 | Component | Configuration |
 |-----------|---------------|
@@ -71,7 +71,7 @@ Configure rules to allow communication to the internet, to the {{site.data.keywo
 ## NSX ESG DHCP
 {: #openshift-runbook-runbook-nsxedge-dhcp}
 
-For the OpenShift 4.7 environment, the bootstrap, control-plane, and compute nodes require access to a DHCP server to obtain an initial address on the network. The network provides access to download the bootstrap ignition file. After the initial setup, static IP addresses will be configured on the nodes by using Terraform.
+For the {{site.data.keyword.redhat_openshift_notm}} 4.7 environment, the bootstrap, control-plane, and compute nodes require access to a DHCP server to obtain an initial address on the network. The network provides access to download the bootstrap ignition file. After the initial setup, static IP addresses will be configured on the nodes by using Terraform.
 
 | DCHP pool | Value |
 | --- | --- |
@@ -90,7 +90,7 @@ For the OpenShift 4.7 environment, the bootstrap, control-plane, and compute nod
 ## NSX ESG NAT
 {: #openshift-runbook-runbook-nsxedge-nat}
 
-Define NAT to provide a mechanism to allow the OpenShift network access to the public and private networks.
+Define NAT to provide a mechanism to allow the {{site.data.keyword.redhat_openshift_notm}} network access to the public and private networks.
 
 | Property | NSX NAT rule 1 | NSX NAT rule 2 | NSX NAT rule 3 |
 | --- | ---- | --- | --- |
@@ -133,7 +133,7 @@ On the edge, configure the default route to be to the public internet, then add 
 ## NSX load balancers
 {: #openshift-runbook-runbook-nsxedge-loadbalancers}
 
-Within the OpenShift environment, two load balancers are required, one for accessing the control-plane nodes and the other for accessing the compute nodes. The NSX Edge is enabled to use load balancing and is configured with application profiles that use a certificate for inbound connection from the source. The NSX Edge is also configured with load-balancing pools to point to the OpenShift control-plane nodes and the OpenShift compute nodes. Additionally, a virtual server is created with a virtual IP address (VIP) on the private interface with rules that connect the pools with the VIP.
+Within the {{site.data.keyword.redhat_openshift_notm}} environment, two load balancers are required, one for accessing the control-plane nodes and the other for accessing the compute nodes. The NSX Edge is enabled to use load balancing and is configured with application profiles that use a certificate for inbound connection from the source. The NSX Edge is also configured with load-balancing pools to point to the {{site.data.keyword.redhat_openshift_notm}} control-plane nodes and the {{site.data.keyword.redhat_openshift_notm}} compute nodes. Additionally, a virtual server is created with a virtual IP address (VIP) on the private interface with rules that connect the pools with the VIP.
 
 ### Application profile
 {: #openshift-runbook-runbook-nsxedge-loadbalancers-profile}
@@ -295,10 +295,10 @@ Disconnect-NsxServer
 ```
 
 
-**Next topic:** [OpenShift NSX DLR configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxdlr-intro)
+**Next topic:** [{{site.data.keyword.redhat_openshift_notm}} NSX DLR configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxdlr-intro)
 
 ## Related links
 {: #vcs-openshift-runbook-nsxedge-related}
 
-* [OpenShift Bastion node setup](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-bastion-intro)
-* [Red Hat OpenShift 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro)
+* [{{site.data.keyword.redhat_openshift_notm}} Bastion node setup](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-bastion-intro)
+* [{{site.data.keyword.redhat_openshift_notm}} 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro)

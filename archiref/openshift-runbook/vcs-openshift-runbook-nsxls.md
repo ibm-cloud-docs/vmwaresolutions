@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-03-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # OpenShift NSX logical switches configuration
 {: #openshift-runbook-runbook-nsxls-intro}
 
-Review the NSX logical switches that are used to support the OpenShift 4.7 environment. To use this information, you must understand how to create these components and add the configuration.
+Review the NSX logical switches that are used to support the {{site.data.keyword.redhat_openshift_full}} 4.7 environment. To use this information, you must understand how to create these components and add the configuration.
 
 Review [Add a logical switch](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-295720D5-DD75-4523-9095-1D694D99717A.html){: external}. PowerNSX commands are provided if you would want to use this method.
 
@@ -26,7 +26,7 @@ Review [Add a logical switch](https://docs.vmware.com/en/VMware-NSX-Data-Center-
 The design requires two NSX Logical Switches:
 
 * Transit - This logical switch is used to connect the DLR and the ESGs. The DLR Control VMs have an interface on this network.
-* OpenShift - This logical switch is used for the OpenShift VM network. The DLR has a connection to this logical switch.
+* OpenShift - This logical switch is used for the {{site.data.keyword.redhat_openshift_notm}} VM network. The DLR has a connection to this logical switch.
 * HA - This logical switch is used for the DLR Control VMs. You do not need to assign an IP range to this network as NSX assigns internal IP range to it.
 
 ## PowerNSX commands
@@ -60,10 +60,10 @@ Get-NsxTransportZone transport-1 | new-nsxlogicalswitch -Name OpenShift-HA -Desc
 Disconnect-NsxServer
 ```
 
-**Next topic:** [Red Hat OpenShift NSX Edge configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxedge-intro)
+**Next topic:** [{{site.data.keyword.redhat_openshift_notm}} NSX Edge configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxedge-intro)
 
 ## Related links
 {: #vcs-openshift-runbook-nsxdls-related}
 
-* [OpenShift Bastion node setup](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-bastion-intro)
-* [Red Hat OpenShift 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro)
+* [{{site.data.keyword.redhat_openshift_notm}} Bastion node setup](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-bastion-intro)
+* [{{site.data.keyword.redhat_openshift_notm}} 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro)

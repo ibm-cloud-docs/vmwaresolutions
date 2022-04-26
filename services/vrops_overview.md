@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-02-14"
+lastupdated: "2022-04-20"
 
 keywords: vRealize, vRealize info, tech specs vRealize
 
@@ -25,7 +25,7 @@ These tools are deployed by using the IBM advanced automation and are based on a
 
 Like the other VMware components in the stack, you can bring your enterprise licenses to the cloud (per CPU or OSI) or to rent VMware licenses from {{site.data.keyword.cloud}}.
 
-{{site.data.keyword.vmwaresolutions_short}} offers promotions for some services. Promotional pricing offers a number of months free of charge for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
+{{site.data.content.para-promotion-services}}
 
 The current versions that are installed are vROps 8.6 and vRLI 8.6.
 {: note}

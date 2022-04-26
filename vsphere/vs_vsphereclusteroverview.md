@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-11"
+lastupdated: "2022-03-18"
 
 keywords: vSphere, vSphere component, tech specs vSphere
 
@@ -84,7 +84,7 @@ User-customized storage for vSAN configuration when the VMware vSAN component is
    3.8 TB SSD (Solid-State Disk) drives are supported when they are made generally available in a data center.
    {: note}
 
-* High Performance with Intel Optane - this option provides two extra capacity disk bays for a total of ten capacity disks. It's available only for vSphere 6 instances, and for Skylake and dual-processor Cascade Lake CPU models.
+* High Performance with Intel Optane - this option provides two extra capacity disk bays for a total of 10 capacity disks. It's available only for vSphere 6 instances, and for Skylake and dual-processor Cascade Lake CPU models.
 
 ## Technical specifications for vSphere cluster expansion nodes
 {: #vs_vsphereclusteroverview-expansion-node-specs}

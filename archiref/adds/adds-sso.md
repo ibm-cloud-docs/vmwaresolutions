@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-03-01"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ VMware vCenter Single Sign-On (SSO) is an authentication broker and security tok
 
 * Security Token Service (STS)
 * SSL for secure traffic
-* Authentication of users by using an identity source such as Active Directory or OpenLDAP
+* Authentication of users by using an identity source such as Active Directory™ or OpenLDAP
 
 Review the following vSphere SSO flow.
 
@@ -43,7 +43,7 @@ The vSphere SSO domain is used as the initial authentication mechanism it is als
    * `<root_domain>\ic4v-vCenter`
    * `vsphere.local\Administrators`
 
-After deployment, the `administrator@vsphere.local` user has administrator access to both SSO and vCenter Server. This user can manage identity sources and default domains, specify password policies, and perform other administrative tasks in the `vsphere.local` domain. However, this user is integral to the VMware vSphere® and NSX infrastructure authentication they are not part of AD but created automatically when vSphere is deployed. As this account is not part of AD, they can be used in situations when AD is not working correctly.
+After deployment, the `administrator@vsphere.local` user has administrator access to both SSO and vCenter Server. This user can manage identity sources and default domains, specify password policies, and perform other administrative tasks in the `vsphere.local` domain. However, this user is integral to the VMware vSphere® and VMware NSX® infrastructure authentication they are not part of AD but created automatically when vSphere is deployed. As this account is not part of AD, they can be used in situations when AD is not working correctly.
 
 As the customer, you have full access to manage the vSphere SSO users and groups as needed. For more information about changing these policies, see [Managing vCenter Single Sign-On users and groups](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.psc.doc/GUID-31F302A6-D622-4FEC-9007-EE3BA1205AEA.html){: external}.
 
@@ -73,7 +73,7 @@ The following sections provide the settings that are configured in vSphere SSO.
 | Maximum token delegation count       | 10                  |
 | Maximum bearer token lifetime        | 300 seconds         |
 | Maximum holder-of-key token lifetime | 2592000 seconds     |
-{: caption="Table 1. Token trustworthiness" caption-side="top"}
+{: caption="Table 1. Token trustworthiness" caption-side="bottom"}
 
 ### Lockout policy
 {: #adds-sso-config-lockout}
@@ -90,7 +90,7 @@ For more information about the lockout policy, see [Policy configurations](/docs
 | Maximum length | 20 characters |
 | Minimum length | 15 characters |
 | Character requirements | * At least two alphabetic characters \n * At least one special character \n * At least one uppercase character \n * At least one lowercase character \n * At least one numeric character \n * Identical adjacent characters - 3 |
-{: caption="Table 2. Password policy" caption-side="top"}
+{: caption="Table 2. Password policy" caption-side="bottom"}
 
 As the customer, you have full access to tailor these settings as needed to apply your enterprise security policies. For changing these policies, see [Managing vCenter single sign-on policies](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.psc.doc/GUID-43527B09-63BB-44A6-91D3-E3A470904698.html){: external}.
 

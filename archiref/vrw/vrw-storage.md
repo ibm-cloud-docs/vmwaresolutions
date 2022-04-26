@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 ## Management cluster
 {: #vrw-storage-management}
 
-The management cluster storage is vSAN. Security requirements mandate that multi-tenant shared storage is not permissible and in such cases the use of vSAN is necessary. vSAN requires deploying a minimum of four ESXi hosts to the management cluster.
+The management cluster storage is vSAN™. Security requirements mandate that multitenant shared storage is not permissible and in such cases the use of vSAN is necessary. vSAN requires deploying a minimum of four ESXi hosts to the management cluster.
 
 ## Edge services cluster
 {: #vrw-storage-edge}
@@ -43,7 +43,7 @@ Physical storage design consists of the configuration of the physical disks that
 ### Operating system disks
 {: #vrw-storage-os-disks}
 
-The vSphere ESXi hypervisor is installed in a persistent location. As a result, the physical hosts boot drive consists of two disks in a RAID 1 configuration to support redundancy for the vSphere ESXi hypervisor.
+The vSphere ESXi hypervisor is installed in a persistent location. The physical hosts' boot drive consists of a single M.2 solid-state drive.
 
 ### vSAN disks
 {: #vrw-storage-vsan-disks}

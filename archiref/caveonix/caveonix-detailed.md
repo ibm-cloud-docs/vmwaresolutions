@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-03-15"
 
 subcollection: vmwaresolutions
 
@@ -42,7 +42,7 @@ The following diagram and descriptions provide information about the RiskForesig
     - Software
     - Daily or weekly aggregated data set
 - Messaging Datastore - RiskForesight uses persistent messaging queue to provide zero data loss and offload back pressure to the components.
-- Index Datastore - It indexes and stores the incoming raw data for each tenant for further analysis to support the multi-tenant capability.
+- Index Datastore - It indexes and stores the incoming raw data for each tenant for further analysis to support the multitenant capability.
 - Plug-ins – Located in the Application Routing server. Plug-ins include the setup and integration with VMware components to synchronize all VMs along with their tenant information.
 
 The following table shows the ports and protocols that are required for each component.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-02-17"
+lastupdated: "2022-04-19"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ HTTPS is used for vCenter setup and configuration, and for VMware operations suc
 ### vCenter access
 {: #vrw-iam-vsphere-vcenter-access}
 
-Privileged users are granted `cloudadmin` access to vCenter Server through the HyTrust CloudControl role. No direct access to vCenter Server is provided.
+Privileged users are granted `cloudadmin` access to vCenter Server through the Entrust CloudControl role. No direct access to vCenter Server is provided.
 
 ## NSX Manager user IDs
 {: #vrw-iam-vsphere-nsx}
@@ -84,7 +84,7 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the H
 | `prod-Caveonix-dynamicID-@domainName` | Used for installation and configuration of the Caveonix RiskForesight service. |
 | `prod-Fortigate-dynamicID-@domainName` | Used for installation and configuration of the FortiGate Security Appliance service. |
 | `prod-FortigateVM-dynamicID-@domainName` | Used for installation and configuration of the FortiGate Virtual Appliance service. |
-| `prod-HyTrustCC- shortID-@domainName` | Used for installation and configuration of the HyTrust CloudControl on {{site.data.keyword.cloud_notm}} service. |
+| `prod-HyTrustCC-shortID-@domainName` | Used for installation and configuration of the Entrust CloudControl on {{site.data.keyword.cloud_notm}} service. |
 | `prod-KMIPAdapter-dynamicID-@domainName` | Used for installation and configuration of the KMIP for VMware service. |
 | `prod-SPPlus-dynamicID-@domainName` | Used for installation and configuration of the IBM Spectrum Protect Plus service. |
 | `prod-Veeam-dynamicID-@domainName` | Used for installation and configuration of the Veeam service. |
@@ -102,6 +102,6 @@ where:
 {: #vrw-iam-vsphere-related}
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [HyTrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
-* [HyTrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
+* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
+* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
 * [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)

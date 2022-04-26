@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-01"
+lastupdated: "2022-03-18"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -37,7 +37,7 @@ You can also include the following VMware components in your order:
 * VMware Site Recovery Manager
 * VMware vRealize Automation Enterprise
 
-For IBM Business Partner users, the Bring Your Own License (BYOL) option is not available.
+For IBM Business Partner users, bring your own license (BYOL) is not available.
 {: note}
 
 ## Individual components for non-Business Partner users
@@ -68,7 +68,7 @@ Using individual license keys together with the combined license keys does not m
 You have the following options for licensing the selected VMware components:
 * **Include license with purchase**: In this case, a new license for the VMware component is purchased on your behalf. A combined VMware license is generated to match the cluster size of the order.
 
-   If you choose to purchase any license, except for vSphere Enterprise Plus and vCenter Server, and you order multiple VMware ESXi™ servers, an {{site.data.keyword.cloud_notm}} ticket is opened automatically on your behalf to combine license keys. You are responsible to follow up with the ticket to ensure that you use only the license keys that the VMware Solutions Support team generates.
+   When you purchase any license, except for vSphere Enterprise Plus and vCenter Server, and you order multiple VMware ESXi™ servers, an {{site.data.keyword.cloud_notm}} ticket is opened automatically to combine license keys. You are responsible to follow up with the ticket to ensure that you use only the license keys that the VMware Solutions Support team generates.
 
 * **I will provide the license**: In this case, you use your own license (BYOL) for the VMware component. You do not enter your BYOL licenses when you create your order for the first time, but you do it later when the vSphere cluster is created.
 

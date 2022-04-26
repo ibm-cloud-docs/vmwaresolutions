@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-04-22"
 
 keywords: FAQ, license, BYOL
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # FAQ about licensing and Bring Your Own License
 {: #faq_byol}
 
-Find answers to frequently asked questions about licensing, including the Bring Your Own License (BYOL) feature of {{site.data.keyword.cloud}} for VMware® Solutions.
+Find answers to frequently asked questions about licensing, including the Bring Your Own License (BYOL) feature of {{site.data.keyword.vmwaresolutions_full}}.
 
 ## Where to manage the licenses and components that are ordered through VMware vSphere?
 {: #faq_byol-license-mgmt}
@@ -47,9 +47,9 @@ Yes. For each VMware component, one license per CPU is required. Currently, all 
 {: #faq_byol-service-charges}
 {: faq}
 
-* For Caveonix RiskForesight on VMware Regulated Workloads or Security and Compliance Readiness Bundle, each server requires a service license.
+* For Caveonix RiskForesight™ on VMware Regulated Workloads or Security and Compliance Readiness Bundle, each server requires a service license.
 * For VMware HCX™, service licenses are charged per two CPUs. Dual servers require a single license each. Quad servers require two licenses each. For servers with more than 16 cores per CPU, an increase in the license charge occurs.
-* For HyTrust CloudControl™ and HyTrust DataControl®, service licenses are charged per two CPUs. Dual servers require a single license each. Quad servers require two licenses each.
+* For Entrust CloudControl™ and Entrust DataControl®, service licenses are charged per two CPUs. Dual servers require a single license each. Quad servers require two licenses each.
 * For vRealize Operations™ (vROps), license charges depend on the CPU type. Dual servers have different charges than Quad servers. For servers with more than 16 cores per CPU, an increase in the license charge occurs.
 * All other services have static service license charges that do not change based on the number of servers in the instance.
 

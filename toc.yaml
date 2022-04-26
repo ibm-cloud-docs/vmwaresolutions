@@ -5,9 +5,10 @@
 toc:
   properties:
     subcollection: vmwaresolutions
+    service-name: vmware-solutions
     category: compute_baremetal
     audience: service
-    href: /docs/vmwaresolutions?topic=vmwaresolutions-getting-started
+    href: /docs/vmwaresolutions
     console-page: /infrastructure/vmware-solutions/console
     product-page: https://www.ibm.com/cloud/vmware
     path: vmwaresolutions
@@ -224,6 +225,19 @@ toc:
               - services/managingcaveonix.md
               - services/caveonix_license_ordering.md
               - services/caveonix_license_managing.md
+          - services/dizzion_overview.md
+          - topicgroup:
+              label: Entrust CloudControl
+              topics:
+              - services/htcc_considerations.md
+              - services/htcc_ordering.md
+              - services/managinghtcc.md
+          - topicgroup:
+              label: Entrust DataControl
+              topics:
+              - services/htdc_considerations.md
+              - services/htdc_ordering.md
+              - services/managinghtdc.md
           - topicgroup:
               label: F5 BIG-IP
               topics:
@@ -248,19 +262,6 @@ toc:
               - services/standalone_deletingserviceinstances.md
               - services/hcx_glossary.md
           - topicgroup:
-              label: HyTrust CloudControl
-              topics:
-              - services/htcc_considerations.md
-              - services/htcc_ordering.md
-              - services/managinghtcc.md
-          - topicgroup:
-              label: HyTrust DataControl
-              topics:
-              - services/htdc_considerations.md
-              - services/htdc_ordering.md
-              - services/managinghtdc.md
-          - services/managing-ss-sap.md
-          - topicgroup:
               label: Juniper vSRX
               topics:
               - services/juniper_overview.md
@@ -274,6 +275,7 @@ toc:
               - services/kmip_standalone_viewing.md
               - services/kmip_standalone_addingdeletingcert.md
               - services/kmip_standalone_deleting.md
+          - services/managing_zerto_services.md
           - topicgroup:
               label: PrimaryIO HDM
               topics:
@@ -310,7 +312,6 @@ toc:
               - services/managingzertodr.md
               - services/zerto_ordering_licenses.md
               - services/zerto_managing_licenses.md
-          - services/managing_zerto_services.md
       - topicgroup:
           label: Enhancing security
           topics:
@@ -322,6 +323,9 @@ toc:
       - topicgroup:
           label: Deprecated offerings
           topics:
+          - vmonic/eos-vsphere65.md
+          - vmonic/eos-vsphere67.md
+          - vmonic/eos-nsx-v.md
           - topicgroup:
               label: vCenter Server multizone
               topics:
@@ -346,7 +350,7 @@ toc:
           - vcenter/vc_addinstancetousraccount.md
           - services/fsa_considerations.md
           - topicgroup:
-              label: HyTrust KeyControl
+              label: Entrust KeyControl
               topics:
               - services/htkc_considerations.md
               - services/managinghtkc.md
@@ -407,6 +411,21 @@ toc:
               - archiref/solution/solution_backingup.md
               - archiref/solution/solution_considerations.md
               - archiref/solution/appendix.md
+          - topicgroup:
+              label: VMware Solutions architecture patterns
+              topics:
+              - archiref/arch-pattern/arch-pattern-nsx-t-topology-overview.md
+              - archiref/arch-pattern/arch-pattern-deployment-single-site.md
+              - archiref/arch-pattern/arch-pattern-deployment-multi-site.md
+              - archiref/arch-pattern/arch-pattern-overlays-single-site.md
+              - archiref/arch-pattern/arch-pattern-overlays-multi-site.md
+              - archiref/arch-pattern/arch-pattern-edge-services-cluster.md
+              - archiref/arch-pattern/arch-pattern-bastion-vpc.md
+              - archiref/arch-pattern/arch-pattern-nsx-t-transit-gw.md
+              - archiref/arch-pattern/arch-pattern-3rd-party-router.md
+              - archiref/arch-pattern/arch-pattern-nsx-t-direct-link-ipsec.md
+              - archiref/arch-pattern/arch-pattern-direct-link-edge.md
+              - archiref/arch-pattern/arch-pattern-direct-link-evpn.md
           - topicgroup:
               label: VMware Regulated Workloads architecture
               topics:
@@ -505,7 +524,7 @@ toc:
               - archiref/kmip/design.md
               - archiref/kmip/implementation.md
           - topicgroup:
-              label: HyTrust DataControl with IBM Cloud Hyper Protect Crypto Services architecture
+              label: Entrust DataControl with IBM Cloud Hyper Protect Crypto Services architecture
               topics:
               - archiref/htdc-hpcs/htdc-hpcs-encryption-overview.md
               - archiref/htdc-hpcs/htdc-hpcs-encryption-options.md

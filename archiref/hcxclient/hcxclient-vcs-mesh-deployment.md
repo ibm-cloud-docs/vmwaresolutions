@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # HCX on-premises Service Mesh
 {: #hcxclient-vcs-mesh-deployment}
 
-Review the following steps to configure the VMware® HCX™ Client instance.
+Review the following steps to configure the VMware HCX™ Client instance.
 
 ## Site pairing the VMware Solutions environment
 {: #hcxclient-vcs-mesh-deployment-sitepair}
@@ -131,7 +131,7 @@ Network progress is monitored in the vCenter client tasks pane.
 ## Concepts and best practices for network stretching
 {: #hcxclient-vcs-mesh-deployment-stretching-best-practices-network}
 
-The glue that bridges the client-side network to the cloud side VXLAN is a sophisticated multi-tunnel VPN that consists of proprietary HCX technology. It is not based on NSX, but does work with NSX and extend its capability. This process is controlled by the client-side vCenter web user interface and automates the deployment and starting of both endpoints on the client and cloud side. Selecting the network to stretched is done individually or in batch.
+The glue that bridges the client-side network to the cloud side VXLAN is a sophisticated multitunnel VPN that consists of proprietary HCX technology. It is not based on NSX, but does work with NSX and extend its capability. This process is controlled by the client-side vCenter web user interface and automates the deployment and starting of both endpoints on the client and cloud side. Selecting the network to stretched is done individually or in batch.
 
 Additionally, as part of the network stretching workflow, NSX on the cloud side is authorized to build a VXLAN. The VXLAN is then connected to an interface created on the specified cloud side L3 device (DLR or ESG left in an unconnected state) and the cloud side Network Extension appliance.
 

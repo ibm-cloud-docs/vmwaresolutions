@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # HCX client deployment
 {: #hcxclient-vcs-client-deployment}
 
-A minimal VMware® HCX™ installation consists of a single cloud and client-side deployment.
+A minimal VMware HCX™ installation consists of a single cloud and client-side deployment.
 
 The HCX client side can install on any version of vSphere supported by HCX on the assumption that network connectivity between the client and cloud sides exists.
 
@@ -34,7 +34,7 @@ The HCX client side can install on any version of vSphere supported by HCX on th
 ## Client licensing
 {: #hcxclient-vcs-client-deployment-licensing}
 
-HCX is a service. HCX is licensed per site and per virtual machine (VM) managed through licensing servers that are maintained by VMware. The HCX cloud and client-side instances require communication with the VMware registration site throughout their lifecycle.
+HCX is a service. HCX is licensed per site and per virtual machine (VM) managed through licensing servers that are maintained by VMware®. The HCX cloud and client-side instances require communication with the VMware registration site throughout their lifecycle.
 * Traffic on 80 and 443 must be allowed to `https://connect.hybridity.vmware.com`
 * A one-time use registration key is provided by the {{site.data.keyword.vmwaresolutions_full}} console for the client-side installation. A key is required for each client-side HCX installation.
 

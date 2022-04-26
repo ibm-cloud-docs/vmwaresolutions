@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-01-24"
+lastupdated: "2022-04-06"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -24,7 +24,7 @@ It is not recommended to put a firewall on a secondary private VLAN that has sto
 
 | Public VLAN | Private VLAN | Secondary private VLAN |
 |:------------|:-------------|:-----------------------|
-| Primary subnet \n   \n Portable subnets:  \n - Management edge gateway public  \n - Customer edge gateway public | Primary subnet  \n   \n Portable subnets:  \n - Infrastructure VMs (CD/vCenter/AD)  \n - NSX host tunnel endpoint (TEP) traffic (NSX-T™)[^hosttep-v7]  \n - VMware NSX® Host TEP (NSX-V)  \n - Customer edge gateway private | Portable subnets:  \n - vSAN™ traffic  \n - Shared storage traffic  \n - vMotion traffic  \n - NSX host TEP traffic (NSX-T)[^hosttep-v67]  \n - NSX edge TEP traffic (NSX-T)  \n - Customer edge TEP traffic (NSX-T) |
+| Primary subnet \n \n Portable subnets \n - Management edge gateway public \n - Customer edge gateway public | Primary subnet \n \n Portable subnets \n - Infrastructure VMs (CD/vCenter/AD) \n - NSX host tunnel endpoint (TEP) traffic (NSX-T™)[^hosttep-v7] \n - VMware NSX® Host TEP (NSX-V) \n - Customer edge gateway private | Portable subnets \n - vSAN™ traffic \n - Shared storage traffic \n - vMotion traffic  \n - NSX host TEP traffic (NSX-T)[^hosttep-v67] \n - NSX edge TEP traffic (NSX-T) \n - Customer edge TEP traffic (NSX-T) |
 {: caption="Table 1. Subnets for public, private, and secondary private VLANs" caption-side="top"}
 
 [^hosttep-v7]: For NSX-T on vSphere 7 only
@@ -34,5 +34,5 @@ It is not recommended to put a firewall on a secondary private VLAN that has sto
 ## Related links
 {: #vmwaresol_ports--vlans-subnets-related}
 
-* [Ports used for deployment and Day 2 operations](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-deploy-day2ops)
+* [Ports that are used for deployment and Day 2 operations](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-deploy-day2ops)
 * [VMware Solutions network architecture](/docs/vmwaresolutions?topic=vmwaresolutions-under_the_hood#under_the_hood-network)

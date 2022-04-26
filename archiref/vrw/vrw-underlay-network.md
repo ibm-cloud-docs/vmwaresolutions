@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-01-18"
+lastupdated: "2022-03-23"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ The management cluster requires two VLANs to support the management functions.
 
 One VLAN includes subnets for ESXi management (vmk0) and management services such as the vCenter Server. The gateway appliance establishes security zones and policies to control the flow of traffic within the VLAN between the subnets. Unsolicited traffic from the ESXi or bare metal hosts is prevented from reaching the management systems. The perimeter gateway controls the traffic flow from these two subnets to any other area outside of the management region.
 
-The second VLAN includes subnets that are dedicated to vMotion and vSAN. No routing between these subnets is allowed and the VLAN is isolated by the perimeter gateway from all other security zones and networks in a single zone deployment.
+The second VLAN includes subnets that are dedicated to vMotion and vSAN. No routing between these subnets is allowed and the VLAN is isolated by the perimeter gateway from all other security zones and networks in a single-zone deployment.
 
 ## Edge services cluster
 {: #vrw-underlay-network-edge}
@@ -68,7 +68,7 @@ This multitier design allows the network to scale across racks, rows, and pods w
 
 All {{site.data.keyword.cloud_notm}} data centers and PoPs are connected by the private network backbone. This private network is separate from the public network, and it enables connectivity to services in {{site.data.keyword.cloud_notm}} data centers around the world. Moving data between {{site.data.keyword.cloud_notm}} data centers is done through multiple 10 Gbps or 40 Gbps connections to the private network.
 
-Similar to the public network, the private network is multi-tiered in that servers and other infrastructure components are connected to aggregated back-end customer switches (BCS). These aggregated switches are attached to a pair of separate back-end customer routers (BCR) for L3 networking. The private network also supports the ability to use jumbo frames (MTU 9000) for physical host connections.
+Similar to the public network, the private network is multitiered in that servers and other infrastructure components are connected to aggregated back-end customer switches (BCS). These aggregated switches are attached to a pair of separate back-end customer routers (BCR) for L3 networking. The private network also supports the ability to use jumbo frames (MTU 9000) for physical host connections.
 
 ### Management network
 {: #vrw-underlay-network-cloud-management}

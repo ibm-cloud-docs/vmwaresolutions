@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2020, 2021
+  years: 2020, 2022
 
-lastupdated: "2021-12-02"
+lastupdated: "2022-03-16"
 
 keywords: vmware solutions shared, price for shared, pricing plan
 
@@ -28,8 +28,8 @@ subcollection: vmwaresolutions
 
 | Plans | Description |
 |:----- |:----------- |
-| VMware Solutions Shared On-demand | - The vCPU and RAM virtual data center are allocated based on the demand. Resources are not preallocated. If there's a large regional demand, delays in availability can occur.   \n  - The limits that are established for the amount of vCPU and RAM are maximums.   \n  - vCPU and RAM resource limits can be increased and decreased later as required.   \n  - The price is calculated hourly and it is based on the resource usage in the virtual data center.   \n  - The amount of storage that can be allocated and used in the virtual data center is unlimited. Charges are hourly based on GB of allocated storage.   \n  - The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB. |
-| VMware Solutions Shared Reserved | - The vCPU and RAM virtual data center reservations are pre-allocated and their availability is guaranteed.   \n  - vCPU and RAM resources can be increased and decreased later as required.   \n  - The amount of storage that can be allocated and used in the virtual data center is unlimited. Charges are hourly based on GB of allocated storage.   \n  - The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB. |
+| VMware Solutions Shared on-demand | - The vCPU and RAM virtual data center are allocated based on the demand. Resources are not preallocated. If you have a large regional demand, delays in availability can occur.  \n  - The limits that are established for the amount of vCPU and RAM are maximums.  \n  - vCPU and RAM resource limits can be increased and decreased later as required.  \n  - The price is calculated hourly and it is based on the resource usage in the virtual data center.  \n  - The amount of storage that can be allocated and used in the virtual data center is unlimited. Charges are hourly based on GB of allocated storage.  \n  - The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB. |
+| VMware Solutions Shared Reserved | - The vCPU and RAM virtual data center reservations are pre-allocated and their availability is guaranteed.  \n  - vCPU and RAM resources can be increased and decreased later as required.  \n  - The amount of storage that can be allocated and used in the virtual data center is unlimited. Charges are hourly based on GB of allocated storage.  \n  - The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB. |
 {: caption="Table 1. Pricing plans" caption-side="top"}
 
 ## Price breakdown
@@ -38,23 +38,23 @@ subcollection: vmwaresolutions
 ### Usage
 {: #shared_pricing-term-usage}
 
-Metering is for the full potential size of the resource for the time period the resource is used.
+Metering is for the full potential size of the resource for the time period that the resource is used.
 
-For example, a single-zone on-demand virtual data center is created with a resource limit of 100 vCPU and 800 GB RAM. The data center has no VMs running on it, so there's no charge for the vCPU and RAM. If an 8 vCPU with 8 GB virtual machine (VM) is started, metering is calculated for the size of that VM. If the VM uses fewer resources than the ones assigned to it, metering is applicable to the full size of the VM.
+For example, a single-zone on-demand virtual data center is created with a resource limit of 100 vCPU and 800 GB RAM. The data center has no VMs running on it, so you do not receive a charge for the vCPU and RAM. If an 8 vCPU with 8 GB virtual machine (VM) is started, metering is calculated for the size of that VM. If the VM uses fewer resources than the ones assigned to it, metering is applicable to the full size of the VM.
 
 ### Allocation
 {: #shared_pricing-term-alloc}
 
 Metering is applicable to the full potential size of the resource for the life of the resource.
 
-For example, a single-zone reserved virtual data center is created with a resource allocation of 100 vCPU and 800 GB RAM and no VMs are created or running on it. Metering is applicable to 100 vCPU and 800 GB RAM.
+For example, a single zone reserved virtual data center is created with a resource allocation of 100 vCPU and 800 GB RAM and no VMs are created or running on it. Metering is applicable to 100 vCPU and 800 GB RAM.
 
 ### Monthly peak metric usage
 {: #shared_pricing-term-mon-peak}
 
 The maximum value of the metric used over a full month.
 
-For example, a single-zone reserved virtual data center is created with 100 vCPU and 800 GB RAM. Later in the month, the data center is reduced to 50 vCPU and 400 GB RAM. The monthly peak usage is 100 vCPU and 800 GB RAM.
+For example, a single zone reserved virtual data center is created with 100 vCPU and 800 GB RAM. Later in the month, the data center is reduced to 50 vCPU and 400 GB RAM. The monthly peak usage is 100 vCPU and 800 GB RAM.
 
 ### Hourly peak metric usage
 {: #shared_pricing-term-hour-peak}
@@ -62,14 +62,14 @@ For example, a single-zone reserved virtual data center is created with 100 vCPU
 The maximum value of the metric used over an hour. For example, if 100 vCPU is used for a minute of the hour with 0 vCPU used for the other 59 mins, the hourly peak metric usage is 100 vCPU.
 
 
-## VMware Shared Solutions On-demand billing plan
+## VMware Shared Solutions on-demand billing plan
 {: #shared_pricing-cost-ondemand}
 
-VMware Solutions Shared On-demand virtual data center resources are allocated as needed. Pricing is hourly based on the resource usage in the virtual data center. The following metrics are part of this plan.
+VMware Solutions Shared on-demand virtual data center resources are allocated as needed. Pricing is hourly based on the resource usage in the virtual data center. The following metrics are part of this plan.
 
-The standard storage policy pricing is the same as the 4 IOPS/GB storage policy. The number of IOPS/GB for the standard storage policy is not guaranteed.
+The standard storage policy pricing is the same as the 4-IOPS/GB storage policy. The number of IOPS/GB for the standard storage policy is not guaranteed.
 
-Storage policy availability may vary by region and deployment topology. On the VMware Solutions Shared order page, select the **About** tab to view available storage policy offerings.
+Storage policy availability can vary by region and deployment topology. On the VMware Solutions Shared order page, select the **About** tab to view available storage policy offerings.
 {: note}
 
 | Metric                                   | Frequency | Description |
@@ -87,8 +87,8 @@ Storage policy availability may vary by region and deployment topology. On the V
 | Metric                                   | Frequency | Description |
 |:-----------------------------------------|:----------|:------------|
 | TOTAL_STORAGE_POINT_TWO_FIVE_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 0.25 IOPS/GB tier over the period of an hour. |
-| TOTAL_STORAGE_TWO_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 2 IOPS/GB tier over the period of an hour. |
-| TOTAL_STORAGE_FOUR_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 4 IOPS/GB tier over the period of an hour. |
+| TOTAL_STORAGE_TWO_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 2-IOPS/GB tier over the period of an hour. |
+| TOTAL_STORAGE_FOUR_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 4-IOPS/GB tier over the period of an hour. |
 | TOTAL_STORAGE_TEN_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 10 IOPS/GB tier over the period of an hour. |
 | TOTAL_STORAGE_VSAN_GB_HOURS | Hourly | The peak storage **allocation** over the period of an hour. |
 {: caption="Table 2. VMware Shared Solutions On-demand billing plan - Storage metrics" caption-side="top"}
@@ -113,9 +113,9 @@ Storage policy availability may vary by region and deployment topology. On the V
 
 VMware Shared Solutions Reserved virtual data center resources are preallocated and guaranteed. Pricing is monthly based on the allocation size of the virtual data center.
 
-The standard storage policy pricing is the same as the 4 IOPS/GB storage policy. The number of IOPS/GB for the standard storage policy is not guaranteed.
+The standard storage policy pricing is the same as the 4-IOPS/GB storage policy. The number of IOPS/GB for the standard storage policy is not guaranteed.
 
-Storage policy availability may vary by region and deployment topology. On the VMware Solutions Shared order page, select the **About** tab to view available storage policy offerings.
+Storage policy availability can vary by region and deployment topology. On the VMware Solutions Shared order page, select the **About** tab to view available storage policy offerings.
 {: note}
 
 | Metric                                   | Frequency | Description |
@@ -132,8 +132,8 @@ Storage policy availability may vary by region and deployment topology. On the V
 | Metric                                   | Frequency | Description |
 |:-----------------------------------------|:----------|:------------|
 | TOTAL_STORAGE_POINT_TWO_FIVE_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 0.25 IOPS/GB tier over the period of an hour. |
-| TOTAL_STORAGE_TWO_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 2 IOPS/GB tier over the period of an hour. |
-| TOTAL_STORAGE_FOUR_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 4 IOPS/GB tier over the period of an hour. |
+| TOTAL_STORAGE_TWO_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 2-IOPS/GB tier over the period of an hour. |
+| TOTAL_STORAGE_FOUR_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 4-IOPS/GB tier over the period of an hour. |
 | TOTAL_STORAGE_TEN_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 10 IOPS/GB tier over the period of an hour. |
 | TOTAL_STORAGE_VSAN_GB_HOURS | Hourly | The peak storage **allocation** over the period of an hour. |
 {: caption="Table 3. VMware Shared Solutions Reserved billing plan - Storage metrics" caption-side="top"}
@@ -169,7 +169,7 @@ Private network endpoint usage incurs charges as part of the on-demand or reserv
 
 Veeam® and Zerto usage incurs the following on-demand charges. You can view the charges on the **{{site.data.keyword.cloud_notm}} billing and usage** view along with the usage and charges from all other {{site.data.keyword.cloud_notm}} services.
 
-In the **{{site.data.keyword.cloud_notm}} Usage** view, locate the **VMware Solutions** service type. Locate the **Organization** plan to find the Veeam and Zerto usage across all virtual data centers in that organization. The virtual data center usage is located in a separate plan for either VMware Solutions Shared On-demand or VMware Solutions Shared Reserved.
+In the **{{site.data.keyword.cloud_notm}} Usage** view, locate the **VMware Solutions** service type. Locate the **Organization** plan to find the Veeam and Zerto usage across all virtual data centers in that organization. The virtual data center usage is located in a separate plan for either VMware Solutions Shared on-demand or VMware Solutions Shared Reserved.
 
 | Metric                                   | Frequency   | Description |
 |:-----------------------------------------|:------------|:------------|
@@ -197,7 +197,7 @@ No additional Veeam or Zerto usage charges for VMware Solutions Shared are incur
 
 For the Veeam service, initially, all backups go to the block storage that is closest to their VM workloads. Backups that are a part of an inactive backup chain are immediately moved to Cloud Object Storage. The restore speed for these inactive backups might be impacted.
 
-You can change how fast inactive backup chains are moved to Cloud Object Storage by opening a {{site.data.keyword.vmwaresolutions_short}} service ticket.
+You can change how fast the inactive backup chains are moved to Cloud Object Storage by opening a {{site.data.keyword.vmwaresolutions_short}} service ticket.
 
 ## Related links
 {: #shared_pricing-related}

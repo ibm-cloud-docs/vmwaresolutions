@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-02-17"
+lastupdated: "2022-04-18"
 
 subcollection: vmwaresolutions
 
@@ -50,6 +50,6 @@ The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads Active Direc
 {: #vrw-iam-active-directory-related}
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [HyTrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
-* [HyTrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
+* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
+* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
 * [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)

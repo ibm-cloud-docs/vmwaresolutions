@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-02-14"
+lastupdated: "2022-04-13"
 
 subcollection: vmwaresolutions
 
@@ -16,11 +16,11 @@ subcollection: vmwaresolutions
 # VMware NSX-T logical routers on VPC deployments
 {: #vpc-ryo-nsx-t-logical-routers}
 
-As defined earlier, a single NSX-T™ Edge Cluster with two virtual edge nodes is used in this architecture. It is required to create a Tier-0 (T0) logical router or a Tier-1 (T1) router to provide stateful services such as NAT or load balancer.
+As defined earlier, a single NSX-T™ edge services cluster with two virtual edge nodes is used in this architecture. It is required to create a Tier-0 (T0) logical router or a Tier-1 (T1) router to provide stateful services such as NAT or load balancer.
 
 When you deploy an NSX Edge, you can consider it as an empty container. The edge nodes do not change until you create logical routers. The NSX Edge Node provides the compute capacity that is backing the T0 and T1 logical routers. Each logical router contains a services router (SR) and a distributed router (DR). A DR is essentially a router with logical interfaces that are connected to multiple subnets (NSX-T segments). It runs as a kernel module and is distributed in ESXi hypervisors across all transport nodes, including edge nodes.
 
-A services router is instantiated on an Edge Cluster as a virtual routing and forwarding (VRF) when a service that cannot be distributed is enabled, such as:
+A services router is instantiated on an edge services cluster as a virtual routing and forwarding (VRF) when a service that cannot be distributed is enabled, such as:
 
 * Physical infrastructure connectivity
 * NAT
@@ -28,18 +28,18 @@ A services router is instantiated on an Edge Cluster as a virtual routing and fo
 * VPN
 * Gateway Firewall
 
-In this architecture, the single Edge Cluster hosts both T0 and T1s as shown in the following diagram. You can deploy multiple edge services clusters to scale the solution up, if needed.
+In this architecture, the single edge services cluster hosts both T0 and T1s as shown in the following diagram. You can deploy multiple edge services clusters to scale the solution up, if needed.
 
-![VPC Edge Cluster](../../images/vpc-ryo-diagrams-nsx-t-edges.svg "VPC Edge Cluster"){: caption="Figure 1. VPC Edge Cluster" caption-side="bottom"}
+![VPC edge services cluster](../../images/vpc-ryo-diagrams-nsx-t-edges.svg "VPC edge services cluster"){: caption="Figure 1. VPC edge services cluster" caption-side="bottom"}
 
 For more information about NSX-T Designs, see [NSX-T Reference Design Guide 3-0](https://nsx.techzone.vmware.com/resource/nsx-t-reference-design-guide-3-0){: external}.
 
 ## Tier-0 logical router
 {: #vpc-ryo-nsx-t-logical-routers-edge-tier-0}
 
-An NSX-T Tier-0 logical gateway provides a gateway service between the logical NSX-T overlay segments and VPC subnets, for example, for north-south traffic. In this architecture, a highly available T0 gateway is deployed in the NSX-T Edge Cluster. Because of a VMware® NSX-T limitation, this Edge Cluster can host only a single T0 Logical Router, which runs in Active-Standby mode. Active-Standby mode is required, for example, to have High Availability VIPs in the T0.
+An NSX-T Tier-0 logical gateway provides a gateway service between the logical NSX-T overlay segments and VPC subnets, for example, for north-south traffic. In this architecture, a highly available T0 gateway is deployed in the NSX-T edge services cluster. Because of a VMware® NSX-T limitation, this edge services cluster can host only a single T0 Logical Router, which runs in Active-Standby mode. Active-Standby mode is required, for example, to have High Availability VIPs in the T0.
 
-![T0 Logical Router in VPC Edge Cluster](../../images/vpc-ryo-diagrams-nsx-t-edges-routing.svg "T0 Logical Router in VPC Edge Cluster"){: caption="Figure 2. T0 Logical Router in VPC Edge Cluster" caption-side="bottom"}
+![T0 Logical Router in VPC edge services cluster](../../images/vpc-ryo-diagrams-nsx-t-edges-routing.svg "T0 Logical Router in VPC edge services cluster"){: caption="Figure 2. T0 Logical Router in VPC edge services cluster" caption-side="bottom"}
 
 Currently, Active-Active mode with T0 is not supported in {{site.data.keyword.vpc_full}}.
 {: note}
@@ -76,17 +76,17 @@ If you do not need inbound traffic from internet, you might not need either publ
 Routing in T0 needs to take the previous note into consideration. If you have public uplinks, your default route `0.0.0.0/0` must be routed through the public uplinks and any private routes must be routed through private uplinks. Configure your static routes to the gateway of your VPC subnet.
 {: note}
 
-You can provision only one pair of uplinks from the T0 Logical Router from the same Edge Cluster in the same VPC subnet. This limitation also includes T0 VRFs. Each T0 uplink pair must have its own VPC subnet.
+You can provision only one pair of uplinks from the T0 Logical Router from the same edge services cluster in the same VPC subnet. This limitation also includes T0 VRFs. Each T0 uplink pair must have its own VPC subnet.
 {: note}
 
 ## Tier-1 logical router
 {: #vpc-ryo-nsx-t-logical-routers-edge-tier-1}
 
-An NSX-T T1 logical router has downlink connections to the attached NSX-T segments and uplink connections to a single T0 logical router. The NSX Edge Nodes provide the compute capacity for the T1 logical routers. Each T1 logical router contains a service router (SR) and a distributed router (DR), same as with T0s. A DR runs as a kernel module distributed in hypervisors and SR is instantiated as a VRF on an Edge Cluster when a service is enabled and cannot be distributed.
+An NSX-T T1 logical router has downlink connections to the attached NSX-T segments and uplink connections to a single T0 logical router. The NSX Edge Nodes provide the compute capacity for the T1 logical routers. Each T1 logical router contains a service router (SR) and a distributed router (DR), same as with T0s. A DR runs as a kernel module distributed in hypervisors and SR is instantiated as a VRF on an edge services cluster when a service is enabled and cannot be distributed.
 
 In this design, one or more T1 logical routers can be created for the needs of your chosen topologies.
 
-You can deploy multiple T1s in the same Edge Cluster, but that Edge Cluster can have only one T0.
+You can deploy multiple T1s in the same edge services cluster, but that edge services cluster can have only one T0.
 {: note}
 
 ## VPC routing with Tier-0 logical routers
@@ -119,7 +119,7 @@ Interface name              | Interface type | VLAN ID | Subnet                 
 vlan-nic-t0-pub-uplink-vip  | vlan           | 700     | vpc-t0-public-uplink-subnet  | true         | false             | false             | T0 Public Uplink VIP       | vpc-zone-t0-public-*vlanid*
 {: caption="Table 3. Public uplink HA VIP to be used for Public floating IPs" caption-side="top"}
 
-VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `false` allow public floating IP address to traverse non-NATted to the public uplinks of the T0 logical router. For high availability with NSX-T T0 logical router, HA VIPs can be used. When ordering floating IP address for public uplinks, always use the VIP VLAN interface instead of the uplinks that are reserved for the actual Edge Nodes.
+VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `false` allow public floating IP address to traverse non-NATted to the public uplinks of the T0 logical router. For high availability with NSX-T T0 logical router, HA VIPs can be used. When you order floating IP address for public uplinks, always use the VIP VLAN interface instead of the uplinks that are reserved for the actual Edge Nodes.
 {: note}
 
 You can currently use the public IPs, for example:
@@ -198,7 +198,7 @@ This topic gives a brief introduction to these capabilities and how they can be 
 
 IPSec Virtual Private Network (IPSec VPN) and Layer 2 VPN (L2 VPN) run on an NSX Edge node. IPSec VPN offers site-to-site connectivity between an NSX Edge node and remote sites. With L2 VPN, you can extend your data center by enabling virtual machines (VMs) to keep their network connectivity across geographical boundaries while using the same IP address.
 
-When configuring NSX-T VPN service in {{site.data.keyword.vpc_short}}, you can use the public `/32` floating IP addresses as the VPN Endpoints both Tier-0 and Tier-1 Logical Routers. You can have multiple VPN endpoints, if needed. When VPN service is configured on Tier-1 Logical Router, ensure that the floating IP is correctly advertised between Tier-0 and Tier-1 Logical Routers.
+When you configure NSX-T VPN service in {{site.data.keyword.vpc_short}}, you can use the public `/32` floating IP addresses as the VPN Endpoints both Tier-0 and Tier-1 Logical Routers. You can have multiple VPN endpoints, if needed. When VPN service is configured on Tier-1 Logical Router, ensure that the floating IP is correctly advertised between Tier-0 and Tier-1 Logical Routers.
 
 For more information on VPN service, see [VMware Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}.
 
@@ -236,7 +236,7 @@ For more information on Firewalls in NSX-T, see [VMware Documentation](https://d
 
 * [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
 * [{{site.data.keyword.vpc_short}} Bare Metal Servers](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
-* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vpc-ryo-overview)
+* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
 * [{{site.data.keyword.dl_full_notm}} overview](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)

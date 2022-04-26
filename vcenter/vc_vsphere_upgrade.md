@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-04-08"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade
 
@@ -22,7 +22,7 @@ The VMware vCenter Server® offering is a fully automated deployment solution fo
 
 vCenter Server has a policy of supporting the automation of VMware SDDC software versions within the range of N-1. If you want to continue to benefit from the {{site.data.keyword.vmwaresolutions_full}} automation, you must upgrade existing instances of vCenter Server.
 
-If your vCenter Server instance is at a version that's earlier than the version level that is needed for automation support, it continues to be supported as required by the VMware support policy. However, your instance might not function with the current {{site.data.keyword.vmwaresolutions_short}} automation.
+If your vCenter Server instance is at an earlier version than the version level that is needed for automation support, it continues to be supported as required by the VMware support policy. However, your instance might not function with the current {{site.data.keyword.vmwaresolutions_short}} automation.
 
 You must apply patches and upgrade the VMware software periodically, over the lifecycle of a vCenter Server instance. This maintenance includes upgrading the VMware SDDC software to a version that is supported by the {{site.data.keyword.vmwaresolutions_short}} automation.
 
@@ -88,9 +88,9 @@ Use your Windows VSI jump box and log in to your https://my.vmware.com account t
 * vCenter 6.7u1b appliance ISO. Not the update bundle
 * NSX for vSphere 6.4.4 Upgrade Bundle
 
-For Intel Optane drives, download the following file to use as part of the post-upgrade process that uses VMware Update Manager to apply patches.
+For Intel® Optane drives, download the following file to use as part of the post-upgrade process that uses VMware Update Manager to apply patches.
 
-Locate the ``VMW-ESX-6.7.0-intel-nvme-vmd-1.4.0.1016-8733247.zip`` file for Intel® NVMe driver for Intel Optane™ SSD DC P4800X Series SSDPED1K750GA (750 GB, HHHL) on `https://my.vmware.com/group/vmware/details?downloadGroup=DT-ESX67-INTEL-INTEL-NVME-VMD-1401016&productId=742`.
+Locate the ``VMW-ESX-6.7.0-intel-nvme-vmd-1.4.0.1016-8733247.zip`` file for Intel NVMe driver for Intel Optane™ SSD DC P4800X Series SSDPED1K750GA (750 GB, HHHL) on `https://my.vmware.com/group/vmware/details?downloadGroup=DT-ESX67-INTEL-INTEL-NVME-VMD-1401016&productId=742`.
 
 #### Backing up components
 {: #vc_vsphere_upgrade-backup}
@@ -160,7 +160,7 @@ If you have instances that are linked, you must upgrade all PSC instances in the
 
 * Have your vCenter Server and PSC root passwords available for the following procedure. Use the {{site.data.keyword.vmwaresolutions_short}} console to note whether your vCenter Server instance version was upgraded from V2.4 or earlier to V2.7 or later.
 * On the {{site.data.keyword.vmwaresolutions_short}} console, a single password for root for both the PSC and vCenter Server is displayed. However, this password is only for vCenter Server. You must [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) for the root PSC password.
-* To avoid conflicts, use one of the IP addresses near the end of the same subnet that vCenter Server and the PSC are currently using. For example, if your IP addresses range between 10.93.60.135 and 10.93.60.187, you can select 10.93.60.184, 10.93.60.185, etc. You must use a temporary IP address for the new appliance deployment.
+* To avoid conflicts, use one of the IP addresses near the end of the same subnet that vCenter Server and the PSC are currently using. For example, if your IP addresses range between 10.93.60.135 and 10.93.60.187, you can select 10.93.60.184, 10.93.60.185, and so on. You must use a temporary IP address for the new appliance deployment.
 
 #### Procedure to upgrade the Platform Services Controller
 {: #vc_vsphere_upgrade-procedure-psc-procedure}
@@ -186,7 +186,7 @@ For vCenter Server linked instances, it is recommended to upgrade all vCenter Se
 {: #vc_vsphere_upgrade-procedure-vcenter-before}
 
 * Have your vCenter Server and PSC root passwords available for the following procedure. Use the {{site.data.keyword.vmwaresolutions_short}} console to note whether your vCenter Server instance version was upgraded from V2.4 or earlier to V2.7 or later.
-* To avoid conflicts, use one of the IP addresses near the end of the same subnet that vCenter Server and the PSC are currently using. For example, if your IP addresses range between 10.93.60.135 and 10.93.60.187, you can select 10.93.60.184, 10.93.60.185, etc. You must use a temporary IP address for the new appliance deployment.
+* To avoid conflicts, use one of the IP addresses near the end of the same subnet that vCenter Server and the PSC are currently using. For example, if your IP addresses range between 10.93.60.135 and 10.93.60.187, you can select 10.93.60.184, 10.93.60.185, and so on. You must use a temporary IP address for the new appliance deployment.
 
 #### Procedure to upgrade vCenter Server
 {: #vc_vsphere_upgrade-procedure-vcenter-procedure}
@@ -205,7 +205,7 @@ For vCenter Server linked instances, it is recommended to upgrade all vCenter Se
 #### Consolidating the PSC function into vCenter Server
 {: #vc_vsphere_upgrade-procedure-vcenter-consolidate}
 
-1. After successfully completing the PSC and vCenter Server upgrade, log in to the vCenter FLEX-based user interface. Then check the health of all services that are related to vCenter Server and the PSC in the **System Configuration** section.  
+1. After successfully completing the PSC and vCenter Server upgrade, log in to the vCenter FLEX-based user interface. Then, check the health of all services that are related to vCenter Server and the PSC in the **System Configuration** section.  
 2. Back up your PSC. It is recommended that you use file-based backup. For more information, see [File-based backup in vSphere 6.7](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vcenter.install.doc/GUID-8A16C037-F1E0-40C9-B106-05C30625B9CB.html){: external}.
 3. Go to the ``<VCSA 6.7 iso mount>:\vcsa-converge-cli\templates\converge`` directory.
 4. Copy the ``converge.json`` file to a local drive on your jump VM.
@@ -216,7 +216,7 @@ For vCenter Server linked instances, it is recommended to upgrade all vCenter Se
 7. Edit the ``converge.json`` and ``decommission_psc.json`` files. Instructions for the fields to edit are within the ``json`` files. It is recommended that the ESXi host that contains the PSC is used rather than vCenter in the **managing_esxi_or_vc** section.
 8. Go to the ``<VCSA 6.7 iso mount>:\vcsa-converge-cli\win32`` directory in a command window.
 9. Run the ``vcsa-util.exe`` with the **converge** switch and the path to the previously edited ``converge.json`` file. For example, ``vcsa-util converge --no-ssl-certificate-verification c:\temp\converge.json -v``.
-   1. Type **Y** to confirm that the PSC has been backed up to proceed.
+   1. Type **Y** to confirm that the PSC is backed up to proceed.
    2. When the process completes, type **Y** to confirm the restart of vCenter.
 
    For steps to resolve the converge process fails ``ERROR converge Failed to get vecs users and permissions`` error message, see [vCenter 6.7 Update 1 – Converge to embedded failed!](https://virtualtassie.com/2018/vcenter-6-7-update-1-converge-to-embedded-failed/#comment-3713){: external}.
@@ -225,7 +225,7 @@ For vCenter Server linked instances, it is recommended to upgrade all vCenter Se
 10. After vCenter Server is rebooted, verify normal operation by logging in to the vCenter Server user interface.
 11. Go to the ``<VCSA 6.7 iso mount>:\vcsa-converge-cli\win32`` directory in a command window.
 12. Run the ``vcsa-util.exe`` with the **decommission** switch and the path to the previously edited ``decommission_psc.json`` file. For example, ``vcsa-util decommission --no-ssl-certificate-verification c:\temp\decommission_psc.json -v``.
-13.	When the command completes successfully, log in to the vCenter flex user interface. Verify that the vCenter appliance is the only one listed in non-linked environments and that all services are healthy.
+13.	When the command completes successfully, log in to the vCenter flex user interface. Verify that the vCenter appliance is the only one listed in nonlinked environments and that all services are working correctly.
 14. Delete the old PSC, vCenter, and the unused consolidated PSC VMs.
 15. Rename the vCenter Server within the vCenter Server user interface to ``<instancename>_vc_separate``. For example, if your vCenter Server instance name is **production** then the vCenter Server user interface name is **production_vc_separate**. The renaming is necessary so the automation can resume its function for this vCenter Server instance.  
 
@@ -264,7 +264,7 @@ If the upgrade process fails immediately and displays the **host cannot enter ma
 #### Adding the Intel NVME driver patch to the VUM repository
 {: #vc_vsphere_upgrade-procedure-esxi-nvme}
 
-As described in the binary downloads section, you must import the contents of the ``VMW-ESX-6.7.0-intel-nvme-vmd-1.4.0.1016-8733247.zip`` file into the repository. It is then be applied in the follow-on section as a non-critical ESXi host extension.
+As described in the binary downloads section, you must import the contents of the ``VMW-ESX-6.7.0-intel-nvme-vmd-1.4.0.1016-8733247.zip`` file into the repository. It is then be applied in the follow-on section as a noncritical ESXi host extension.
 
 1. Extract the ``VMW-ESX-6.7.0-intel-nvme-vmd-1.4.0.1016-8733247.zip`` file to a local drive on your jump VM.
 2. Use Flex or HTML to open up the vCenter Server user interface and go to the **VUM Admin View**.
@@ -289,7 +289,7 @@ You might need to shut down the Zerto zVRA VMs again as part of this process.
 ### Upgrading more items
 {: #vc_vsphere_upgrade-procedure-addtl}
 
-Review the following information for more items you might need to upgrade.
+Review the following information for more items that you might need to upgrade.
 
 #### Upgrading the vSAN On Disk Format version
 {: #vc_vsphere_upgrade-procedure-addtl-vsan}

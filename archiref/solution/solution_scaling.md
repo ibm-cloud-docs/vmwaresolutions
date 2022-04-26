@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-03-15"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ After initial deployment, you can scale out the compute capacity from the {{site
 
 {{site.data.keyword.vmwaresolutions_short}} can use the {{site.data.keyword.cloud_notm}} worldwide data center presence and integrated network backbone to allow for various cross-geographies use cases to be deployed and functioning within a fraction of the time that it would take to build such an infrastructure from scratch.
 
-In this design, the definition of a multi-site deployment consists of the following items.
+In this design, the definition of a multisite deployment consists of the following items.
 * An initial or primary VMware deployment that contains a new DNS/AD root domain, SSO domain, and SSO site name to be provided.
 * Single or multiple secondary sites that are provisioned into the primary sites SSO domain that requires the following configuration:
    * New SSO site name

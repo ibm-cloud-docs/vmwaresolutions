@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-15"
 
 subcollection: vmwaresolutions
 
@@ -20,23 +20,23 @@ subcollection: vmwaresolutions
 
 ![IBM Cloud for VMware Regulated Workloads roles](../../images/vrw-boundary.svg "IBM Cloud for VMware Regulated Workloads roles"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads roles" caption-side="bottom"}
 
-The vSphere administrator, SDN administrator and compliance administrator all access the platform via HyTrust CloudControl.
+The vSphere administrator, SDN administrator and compliance administrator all access the platform via Entrust CloudControl.
 
-## HyTrust RBAC
+## Entrust RBAC
 {: #vrw-separation-of-duties-hytrust-rbac}
 
-HyTrust CloudControl is used to implement granular role-based access control (RBAC). HyTrust CloudControl is configurable to require confirmation by another administrator before execution of any destructive action, such as a deletion request.
+Entrust CloudControl is used to implement granular role-based access control (RBAC). Entrust CloudControl is configurable to require confirmation by another administrator before execution of any destructive action, such as a deletion request.
 
 The following key roles are implemented at the time of deployment:
-* HyTrust super administrator - responsible for establishing the security and compliance controls that are necessary to protect the regulated data in the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. The scope of responsibility is strictly limited to defining the necessary rules and policies along with appropriate audit and logging requirements. Secure and fully auditable access by any privileged user is guaranteed. The HyTrust super administrator is also responsible for defining the appropriate perform their assigned duties.
-* vSphere platform administrator - responsible for the initial configuration of the virtual compute and storage resources within the entire {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. The vSphere platform administrator role is defined such that it has no visibility into workloads that are successfully deployed to the workload cluster. The vSphere platform administrator can define more scope-limited administrators that are assigned responsibility for management of resource pools or clusters that are assigned to a specific purpose or business group. These limited privileged user roles are defined in concert with the HyTrust super administrator to ensure they are fully auditable and the appropriate privileges are applied to the role.
+* Entrust super administrator - responsible for establishing the security and compliance controls that are necessary to protect the regulated data in the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. The scope of responsibility is strictly limited to defining the necessary rules and policies along with appropriate audit and logging requirements. Secure and fully auditable access by any privileged user is guaranteed. The Entrust super administrator is also responsible for defining the appropriate perform their assigned duties.
+* vSphere platform administrator - responsible for the initial configuration of the virtual compute and storage resources within the entire {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. The vSphere platform administrator role is defined such that it has no visibility into workloads that are successfully deployed to the workload cluster. The vSphere platform administrator can define more scope-limited administrators that are assigned responsibility for management of resource pools or clusters that are assigned to a specific purpose or business group. These limited privileged user roles are defined in concert with the Entrust super administrator to ensure they are fully auditable and the appropriate privileges are applied to the role.
 
 ### Network and security administrator roles
 {: #vrw-separation-of-duties-network}
 
 The vCenter Server model employs a single network administrator role responsible for management across all network components (such as the underlay network, vSRX, and NSX-T™).
 
-The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads network administrator role must break out to multiple discrete administrator roles to prevent such a situation. These limited scope administrator roles are defined in concert with the HyTrust super administrator to ensure they are fully auditable and the appropriate privileges are applied to the role.
+The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads network administrator role must break out to multiple discrete administrator roles to prevent such a situation. These limited scope administrator roles are defined in concert with the Entrust super administrator to ensure they are fully auditable and the appropriate privileges are applied to the role.
 
 The following roles are suggested network and security admin roles:
 * IaaS security administrator - The IaaS security administrator role is focused on protection of all platform infrastructure components from threats that can originate on the network. The scope of responsibility includes the security objects necessary to secure and control access to the management and edge layers of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. These objects include the ESXi hosts that deliver compute and storage resources to the user workloads. The IaaS security administrator is also afforded necessary access to the {{site.data.keyword.cloud_notm}} console to deploy and manage network gateway devices. The IaaS security administrator might play a role in managing NSX-T security objects if those objects impact the security of the management and edge layers of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. It is recommended that consideration is given to whether enabling the IaaS security administrator access to the NSX-T platform introduces unacceptable risk.
@@ -48,17 +48,17 @@ The NSX-T administrator role can be separated into the following roles:
 * NSX-T network security admin - dedicated security admin that has responsibility that is limited to the firewall and security aspects of NSX-T.
 * Tenant NSX-T admin - where wanted - scope that is limited to a function/application/business unit as applicable to manage resources with such limited scope. Would include deployment of T1 routers for example.
 
-The following diagram shows an example of HyTrust CloudControl transparent proxy workflow.
+The following diagram shows an example of Entrust CloudControl transparent proxy workflow.
 
 ![Network change workflow](../../images/vrw-hytrust-nsxt-flow.svg "Network change workflow"){: caption="Figure 2. Network change workflow" caption-side="bottom"}
 
 The following steps describe the network change workflow:
-1. The administrator opens the NSX-T portal through HyTrust.
-2. HyTrust requests authentication of the account through an LDAPS request.
-3. The AD LDAPS response authenticates the account, then HyTrust verifies the applicable role for access to NSX-T Manager.
+1. The administrator opens the NSX-T portal through Entrust.
+2. Entrust requests authentication of the account through an LDAPS request.
+3. The AD LDAPS response authenticates the account, then Entrust verifies the applicable role for access to NSX-T Manager.
 4. The administrator is logged in to NSX-T Manager and requests a new virtual router.
-5. NSX-T Manager makes an API call to vCenter Server through HyTrust. HyTrust authenticates and authorizes the NSX-T Manager service account.
-6. HyTrust permits access to vCenter Server API.
+5. NSX-T Manager makes an API call to vCenter Server through Entrust. Entrust authenticates and authorizes the NSX-T Manager service account.
+6. Entrust permits access to vCenter Server API.
 7. vCenter Server creates the virtual router.
 
 ## Management cluster

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-17"
+lastupdated: "2022-04-08"
 
 keywords: vCenter Server, vCenter Server architecture, tech specs vCenter Server
 
@@ -22,7 +22,7 @@ VMware vCenter Server® is a hosted private cloud that delivers the VMware vSphe
 
 In many cases, the entire environment can be provisioned in less than a day and the bare metal infrastructure can rapidly and elastically scale the compute capacity up and down as needed.
 
-After initial instance deployment, you can increase shared storage by ordering more Network File System (NFS) file shares from the {{site.data.keyword.slportal}} and by manually attaching them to all VMware ESXi™ servers in a cluster. You can also take advantage of VMware vSAN™ as a storage option. To increase the vSAN-based storage capacity of a vSAN cluster, you can add more ESXi servers post-deployment.
+After initial instance deployment, you can increase shared storage by ordering more Network File System (NFS) file shares from the {{site.data.keyword.slportal}}. You can attach them manually to all VMware ESXi™ servers in a cluster. You can also take advantage of VMware vSAN™ as a storage option. To increase the vSAN-based storage capacity of a vSAN cluster, you can add more ESXi servers post-deployment.
 
 ## vCenter Server with NSX-T architecture
 {: #vc_vcenterserveroverview-nsx-t-archi}
@@ -41,7 +41,7 @@ The following graphic depicts the high-level architecture and components of a th
 
 ![vCenter Server with NSX-V architecture](../images/vc_architecture.svg "vCenter Server with NSX-V architecture"){: caption="Figure 2. vCenter Server with NSX-V high-level architecture for a three-node cluster" caption-side="bottom"}
 
-For vCenter Server with NSX-V instances, if you purchased IBM-provided VMware licensing, you can upgrade the VMware NSX Base edition to Advanced or to Enterprise edition, and you can purchase more VMware components, such as VMware vRealize® Operations™. You can also add IBM-Managed Services if you want to offload the day-to-day operations and maintenance of the virtualization, guest OS, or application layers. The {{site.data.keyword.cloud_notm}} Professional Services team is available to help you accelerate your journey to the cloud with migration, implementation, planning, and onboarding services.
+For vCenter Server with NSX-V instances, if you purchased IBM-provided VMware licensing, you can upgrade the VMware NSX Base edition to Advanced or to Enterprise edition. Also, you can purchase more VMware components, such as VMware vRealize® Operations™. You can also add IBM-Managed Services if you want to offload the day-to-day operations and maintenance of the virtualization, guest OS, or application layers. The {{site.data.keyword.cloud_notm}} Professional Services team is available to help you accelerate your journey to the cloud with migration, implementation, planning, and onboarding services.
 
 ## Physical infrastructure
 {: #vc_vcenterserveroverview-physical-infras}
@@ -73,7 +73,7 @@ In total, the base offering has the following requirements, which are reserved f
 
 The remaining host capacity for your virtual machines (VMs) depends on several factors, such as oversubscription rate, VM sizing, and workload performance requirements.
 
-For more information about the architecture, see [Overview of {{site.data.keyword.vmwaresolutions_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).
+For more information about the architecture, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).
 
 ## Technical specifications for vCenter Server instances
 {: #vc_vcenterserveroverview-specs}
@@ -202,7 +202,7 @@ Managing any {{site.data.keyword.vmwaresolutions_short}} components, which were 
 ## Support and Services fee
 {: #vc_vcenterserveroverview-support-services-fee}
 
-VMware vCenter Server instances include a Support and Services fee that is charged per {{site.data.keyword.cloud_notm}} bare metal server. This fee covers support from the {{site.data.keyword.vmwaresolutions_short}} Support and Level 2 Support teams for any issues that pertain to automation in the platform and VMware products included in the solution.
+VMware vCenter Server instances include a Support and Services fee that is charged per {{site.data.keyword.cloud_notm}} bare metal server. This fee covers support from the {{site.data.keyword.vmwaresolutions_short}} Support and Level 2 Support teams for any issues that pertain to automation in the platform and VMware products that are included in the solution.
 
 ## Technical specifications for vCenter Server multizone instances
 {: #vc_vcenterserveroverview-mcv-specs}
@@ -210,7 +210,7 @@ VMware vCenter Server instances include a Support and Services fee that is charg
 This information is provided as reference for existing vCenter Server multizone instances. New deployments of vCenter Server multizone instances are not supported.
 {: deprecated}
 
-The vCenter Server multizone architecture is an end to end reference architecture that provides automated failover for customer workloads. It uses an {{site.data.keyword.cloud_notm}} [multizone region](#x9774820){: term} with an IBM-managed service that covers the following components:
+The vCenter Server multizone architecture is an end-to-end reference architecture that provides automated failover for customer workloads. It uses an {{site.data.keyword.cloud_notm}} [multizone region](#x9774820){: term} with an IBM-managed service that covers the following components:
 * Compute architecture (VMware vSphere®)
 * Network architecture (NSX-T™)
 * Storage architecture (VMware vSAN or NFS)
@@ -251,7 +251,7 @@ The tools and technology architecture has the following specifications:
 
 The vSphere + vSAN stretched cluster architecture has the following specifications:
 * Provides storage and compute capabilities, which span two sites for enhanced availability.
-* Write requests from VMs are synchronously written to both sites, which incur site to site network latency.
+* Write requests from VMs are synchronously written to both sites, which incur site-to-site network latency.
 * Read requests from VMs are fulfilled locally to the physical location of where the VM is located, thus avoiding extra latency.
 * The witness site and witness host act as the split brain or quorum.
 * vSAN native encryption (for at rest encryption) can be used in combination with this architecture.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-04-22"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -17,15 +17,15 @@ subcollection: vmwaresolutions
 # General FAQ about VMware Solutions Dedicated
 {: #faq-vmwaresolutions}
 
-Find answers to frequently asked questions about the VMware® Solutions Dedicated offering.
+Find answers to frequently asked questions about the {{site.data.keyword.vmwaresolutions_full}} Dedicated offering.
 
 ## What user accounts do I need for VMware Solutions?
 {: #faq-user-accts}
 {: faq}
 {: support}
 
-* **IBMid account**. This account is required to access the {{site.data.keyword.vmwaresolutions_full}} console. The console is a stand-alone user interface that is separate from the {{site.data.keyword.slportal}}. For more information, see [Getting started](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started).
-* **{{site.data.keyword.cloud}} account**. This account is required for provisioning. You can sign up for an {{site.data.keyword.cloud_notm}} account by using an existing **IBMid** or by creating a new **IBMid**.
+* **IBMid account**. This account is required to access the {{site.data.keyword.vmwaresolutions_short}} console. The console is a stand-alone user interface that is separate from the {{site.data.keyword.slportal}}. For more information, see [Getting started](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started).
+* **{{site.data.keyword.cloud_notm}} account**. This account is required for provisioning. You can sign up for an {{site.data.keyword.cloud_notm}} account by using an existing **IBMid** or by creating a new **IBMid**.
 * **{{site.data.keyword.cloud_notm}} infrastructure account**. This account is used to log in to the {{site.data.keyword.cloud_notm}} infrastructure customer portal that provides some additional function to manage infrastructure products and services. You can get an {{site.data.keyword.cloud_notm}} infrastructure account by upgrading your **{{site.data.keyword.cloud_notm}} account** to a billable account, or by linking your existing {{site.data.keyword.cloud_notm}} infrastructure account with your {{site.data.keyword.cloud_notm}} account. The {{site.data.keyword.cloud_notm}} infrastructure account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts) and [{{site.data.keyword.cloud_notm}} infrastructure account requirements](/docs/vmwaresolutions?topic=vmwaresolutions-cloud-infra-acct-req).
 
 ## How do I associate my IBM Cloud infrastructure credentials with the VMware Solutions console?
@@ -46,7 +46,7 @@ All costs for the physical and virtual infrastructure and the licenses that resu
 {: faq}
 {: support}
 
-All instance types provide deployment choices for VMware virtual environments. However, the difference is the extent of customizability and automation.
+All instance types provide deployment choices for VMware® virtual environments. However, the difference is the extent of customizability and automation.
 
 * When you order a VMware vCenter Server® instance, you deploy a VMware virtual environment with customized compute, storage, and network resources. For more information about the deployed components, see [Technical specifications for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs).
 * When you order a VMware vSphere® cluster, you obtain the maximum of flexibility to design and build your hosted VMware environment while you incorporate VMware-compatible hardware. However, {{site.data.keyword.cloud_notm}} does not automate the installation, configuration, and bring-up of the optional VMware components for the VMware vSphere cluster.
@@ -64,13 +64,13 @@ For more information, see [Technical specifications for vCenter Server instances
 
 For more information, see [Technical specifications for VMware vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview#vs_vsphereclusteroverview-specs).
 
-## Is a two-node vCenter Server instance highly available?
+## Is a two node vCenter Server instance highly available?
 {: #is-a-two-node-vcenter-server-instance-highly-available}
 {: faq}
 
-It is recommended to deploy production workloads into environments that have at least three nodes.
+Deploy production workloads into environments that have at least three nodes.
 
-The VMware vSphere DRS (Distributed Resource Scheduler) and VMware HA (High Availability) are enabled by default. However, best practices from VMware suggest that you place each of the three NSX Controllers on an individual node.
+The VMware vSphere DRS (Distributed Resource Scheduler) and VMware HA (High Availability) are enabled by default. However, VMware suggests that you place each of the three NSX Controllers on an individual node.
 
 In the two-node minimum deployment, one node has one NSX Controller, and the other node has two NSX Controllers. If the node with two NSX Controllers goes down, NSX Controller operations are placed in read-only mode, and new VMs (virtual machines) or vMotion VMs might experience networking issues.
 
@@ -94,8 +94,8 @@ For a new vCenter Server instance, you can set the name of the initial cluster t
 
 IBM provides ongoing updates to the IBM code by deploying the IBM CloudDriver virtual server instance (VSI) on demand. Updates and patches for the IBM management components are applied automatically, as needed.
 
-When you review the summary details for each instance, the **Properties** section displays the **Current version**. The current version is the IBM code version that is set when the instance is initially ordered. Day 2 operations such as adding or removing hosts, storage, services, or clusters are automatically updated with the latest IBM code. Customer upgrade to the latest IBM code version is never required. \
-The IBM code version is separate from the VMware and service software versions. When the IBM code version is updated, the VMware software and service versions already installed for the instance remain unchanged.
+When you review the summary details for each instance, the **Properties** section displays the **Current version**. The current version is the IBM code version that is set when the instance is initially ordered. Day 2 operations such as adding or removing hosts, storage, services, or clusters are automatically updated with the current IBM code. Customer upgrade to the current IBM code version is never required.
+The IBM code version is separate from the VMware and service software versions. When the IBM code version is updated, the VMware software and service versions that are already installed for the instance remain unchanged.
 {: note}
 
 IBM does not provide ongoing updates to add-on services such as Zerto or Veeam®. Obtaining and installing these updates is your responsibility.
@@ -123,7 +123,7 @@ Although the VMware NSX Edge™ for management services is on a public subnet, t
 
 Although the customer-managed NSX Edge is connected to the public VLAN, security measures are in place to ensure that it does not pose a security risk. The following security measures are in place:
 *  A firewall rule is in place to allow only outgoing traffic from the private subnet range of IP addresses.
-*  A SNAT rule (disabled by default) is in place to translate all IP addresses from the private subnet to a single IP address on the public subnet.
+*  A SNAT rule (disabled by default) is in place to convert all IP addresses from the private subnet to a single IP address on the public subnet.
 *  Remote access for the customer-managed NSX Edge appliance is disabled.
 *  Passwords for accessing the customer-managed NSX Edge from the private network are randomized and encrypted.
 
@@ -157,7 +157,7 @@ The account owner can increase the RAM on ESXi servers by following these steps:
 1. Log in to the {{site.data.keyword.cloud_notm}} console and go to the device list.
 2. Select the ESXi server to be modified.
 3. From the details page, click **Modify** next to RAM or memory.
-4. Specify the higher limit, then confirm the change to place your order.
+4. Specify the higher limit. Then, confirm the change to place your order.
 5. Repeat these steps, as needed, for each additional ESXi server.
 
 An {{site.data.keyword.cloud_notm}} representative confirms the billing change and contacts you to schedule a maintenance window for adding the memory.
@@ -165,19 +165,19 @@ An {{site.data.keyword.cloud_notm}} representative confirms the billing change a
 You must manage the VMware Solutions components that are created in your {{site.data.keyword.cloud_notm}} account only from the VMware Solutions console, not any other means outside of the console. If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.
 {: note}
 
-## Does VMware vSphere use automation to install, configure, and bring up the VMware stack?
+## Does VMware vSphere use automation to install, configure, and start the VMware stack?
 {: #faq-vss-automation}
 {: faq}
 
 No. VMware vSphere does not use the advanced automation from the vCenter Server platform. Based on what you order, the platform delivers optional VMware licenses, ESXi servers, and, optionally, an HA-pair of FortiGate® physical firewalls. If a new cluster is created, three new VLANs are also provisioned: a public VLAN and two private VLANs.
 
-VMware ESXi is automatically installed on each {{site.data.keyword.cloud_notm}} bare metal server, but you are responsible for installing any additional VMware components like vCenter Server or NSX. While VMware vSphere ensures that VMware-compatible hardware is ordered based on the VMware components selected, no automation exists to configure and bring up the VMware environment. You are responsible for designing and architecting the IBM-hosted environment.
+VMware ESXi is automatically installed on each {{site.data.keyword.cloud_notm}} bare metal server, but you are responsible for installing any additional VMware components like vCenter Server or NSX. While VMware vSphere ensures that VMware-compatible hardware is ordered based on the VMware components selected, no automation exists to configure and start the VMware environment. You are responsible for designing and architecting the IBM-hosted environment.
 
 ## How can I view a list of all notifications?
 {: #faq-notification}
 {: faq}
 
-To view the complete notification history, click **Notifications** from the left navigation pane.
+To view the complete notification history, click **Notifications** from the left navigation.
 
 ## What if I have issues with VMware Solutions Dedicated?
 {: #faq-support}

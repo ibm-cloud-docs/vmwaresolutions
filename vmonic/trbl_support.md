@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-04-01"
 
 keywords: troubleshooting, contact support, support ticket
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Contacting IBM Support
 {: #trbl_support}
 
-If you need help with {{site.data.keyword.cloud}} for VMware® Solutions, create a case from the {{site.data.keyword.cloud_notm}} Support Center to get assistance.
+If you need help with {{site.data.keyword.vmwaresolutions_full}}, create a case from the {{site.data.keyword.cloud_notm}} Support Center to get assistance.
 
 ## Procedure to create a case for VMware Solutions
 {: #trbl_support-procedure}

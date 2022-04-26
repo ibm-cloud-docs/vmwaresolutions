@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-03-23"
 
 keywords: F5 license activation, F5 configuration, order F5
 
@@ -84,7 +84,7 @@ The license model for F5 BIG-IP offers the following options:
    * Open Web Application Security Project (OWASP) top 10 threats
    * Common application vulnerabilities
 
-BIG-IP Access Policy Manager™ (APM) offers users secure, simplified access to applications located anywhere within a multi-cloud environment, incorporating features such as SSO (Single Sign-On) and MFA (Multi-Factor Authentication).
+BIG-IP Access Policy Manager™ (APM) offers users secure, simplified access to applications located anywhere within a multicloud environment, incorporating features such as SSO (Single Sign-On) and MFA (Multifactor Authentication).
 
 You cannot change the license model after service installation. To change the license model, you must delete the existing service and reinstall the service by choosing a different license model.
 {: important}

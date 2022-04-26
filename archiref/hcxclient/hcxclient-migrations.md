@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-22"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware Hybrid Cloud migrations
 {: #hcxclient-migrations}
 
-After the VMware® HCX™ Service Mesh and Network Extensions are provisioned and extended, the next step is the migration of VMs.
+After the VMware HCX™ Service Mesh and Network Extensions are provisioned and extended, the next step is the migration of VMs.
 
 The following migration types exist:
 * vMotion
@@ -82,7 +82,7 @@ The following are disadvantages of bulk migration over vMotion:
 ### Shared disk clusters
 {: #hcxclient-migrations-shared-disk-clusters}
 
-Oracle RAC, MS Exchange, and MS-SQL clusters are examples of applications where two or more VMs participate in a cluster that requires shared disk across all VMs or cluster nodes. The VMware multi-writer flag needs to be enabled on all of the VM nodes for disks that are part of the application cluster (non-OS virtual disks). VMs with the multi-writer flag enabled for any virtual disk are not supported.
+Oracle RAC, MS Exchange, and MS-SQL clusters are examples of applications where two or more VMs participate in a cluster that requires shared disk across all VMs or cluster nodes. The VMware® multi-writer flag needs to be enabled on all of the VM nodes for disks that are part of the application cluster (non-OS virtual disks). VMs with the multi-writer flag enabled for any virtual disk are not supported.
 
 Review the following information about migrating a multi-writer virtual disk enabled cluster:
 * vMotion is used, as the original VM disk and UUID mappings are maintained.
