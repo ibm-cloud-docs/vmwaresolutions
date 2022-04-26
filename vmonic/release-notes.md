@@ -35,6 +35,9 @@ Various other updates are made to the [VMware Solutions API](/apidocs/vmware-sol
 Compute policy support for VMware Solutions Shared virtual data centers
 :   You can now choose to enable a compute policy for a VMware Solutions Shared virtual data center. This feature provides a convenient option to choose a compute policy for your virtual machine (VM) from the list of policies that are available for that virtual data center. For more information, see [Enabling a compute policy](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-compute-policy).
 
+vSAN support for VMware Solutions Shared virtual data centers
+:   vSAN™ support is now available for Dallas 10 and Dallas 12 VMware Solutions Shared virtual data centers.
+
 VMware vCenter Server instances
 :   The 4.7 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts.
    * VMware vSphere ESXi™ 7.0 Update 2e (build 19290878)
@@ -110,7 +113,7 @@ VMware vCenter Server instances
    * VMware vCenter Server Appliance 7.0 Update 3c (build 19234570)
    * VMware NSX-T 3.1.3.5.0 (build 19068434)
    * VMware NSX-V 6.4.12 (build 19066632)
-   * VMware vSAN™ 7.0 Update 2c (build 18426014)
+   * VMware vSAN 7.0 Update 2c (build 18426014)
 
 VMware vSAN 7.68 TB SSD disk support for 10 Gb uplink speed
 :   For the VMware vSAN component, the 7.68 TB SSD disk type is now supported for VMware vSphere 7.0 or 6.7 instances with 10 Gb uplink speed.
