@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-06"
+lastupdated: "2022-04-26"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -57,7 +57,7 @@ For more information about IBM CloudBuilder and IBM CloudDriver, see [IBM CloudD
 | IBM CloudBuilder \n IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | |
 | IBM CloudBuilder \n IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure endurance storage | {{site.data.keyword.cloud_notm}} infrastructure services network | Any | ICMP and TCP | Set up endurance storage for ESXi host | |
 | IBM CloudBuilder \n IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} Activity Tracker service | {{site.data.keyword.cloud_notm}} endpoint service network | 443 | TCP | Use {{site.data.keyword.cloud_notm}} Activity Tracker service | HTPPS |
-| Windows Active Directory | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service | {{site.data.keyword.cloud_notm}} infrastructure services network | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | |
+| Windows Active Directory | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n 10.0.80.11 \n 10.0.80.12 | {{site.data.keyword.cloud_notm}} infrastructure services network \n For more information, see [DNS FAQs](/docs/dns?topic=dns-dns-faq). | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | |
 | Windows Active Directory | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | |
 | Windows Active Directory | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure WSUS service | {{site.data.keyword.cloud_notm}} infrastructure services network | 80 | TCP | Use {{site.data.keyword.cloud_notm}} infrastructure WSUS service | HTTP |
 | Windows Active Directory | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure Windows KMS service | {{site.data.keyword.cloud_notm}} infrastructure services network | 1688 | TCP | Use {{site.data.keyword.cloud_notm}} infrastructure Windows KMS service | |
