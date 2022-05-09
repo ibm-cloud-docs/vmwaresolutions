@@ -261,6 +261,7 @@ toc:
               - services/standalone_viewingserviceinstances.md
               - services/standalone_deletingserviceinstances.md
               - services/hcx_glossary.md
+          - services/managing-ss-sap.md
           - topicgroup:
               label: Juniper vSRX
               topics:
