@@ -27,7 +27,7 @@ The following recommendations apply:
 * If you need any existing assets, note and list all assets carefully.
 * Open the support ticket before you delete the instance. List all assets that you want to maintain to ensure that these assets are decoupled from the original instance. If this process is not followed, the assets cannot be recovered after deletion.
 
-## Can I attach my existing IBM Cloud File Storage to the new vCenter Server instance?
+## Can I attach my existing {{site.data.keyword.cloud_notm}} File Storage to the new vCenter Server instance?
 {: #faq-v2t-migration-storage}
 
 If you are using NFS storage, you can manually attach the NFS storage to the new instance and perform a cross–vCenter vMotion without also requiring a storage vMotion. You must authorize the NFS subnet from their new instance to the NFS storage.
@@ -60,12 +60,12 @@ With vSphere® encryption, it is possible to perform an advanced cross vCenter v
 
 If you added deployed assets to the instance manually, after initial deployment, the automation does not know about them. Therefore, you must migrate the assets to the new instance manually.
 
-## I have VMware workloads on IBM Cloud bare metal servers with vSphere 6.5 and 6.7 and the support is ending. I am not using NSX for my workloads. What do I need to do keep the environment supported, and what options do I have?
+## I have VMware workloads on {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 6.5 and 6.7 and the support is ending. I am not using NSX for my workloads. What do I need to do keep the environment supported, and what options do I have?
 {: #faq-v2t-migration-6x-classic}
 
 The End of General Support for VMware vSphere® 6.5 and 6.7 is 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://lifecycle.vmware.com/#/){: external}.
 
-Instances with {{site.data.keyword.cloud_notm}} bare metal servers vSphere 6.7 servers are not orderable after 21 June 2022. IBM Cloud support for ordering all update levels of vSphere 6.5 ended on 10 October 2021, and vSphere 6.5 will not be orderable after 21 June 2022. 
+Instances with {{site.data.keyword.cloud_notm}} bare metal servers vSphere 6.7 servers are not orderable after 21 June 2022. {{site.data.keyword.cloud_notm}} support for ordering all update levels of vSphere 6.5 ended on 10 October 2021, and vSphere 6.5 will not be orderable after 21 June 2022. 
 
 {{site.data.keyword.cloud_notm}} recommends an upgrade to vSphere 7.x. If you ordered your servers from the Bare metal catalog for {{site.data.keyword.cloud_notm}} Classic Infrastructure, you have the following options.
 
@@ -95,14 +95,14 @@ In addition, the vCenter Server instances with vSphere 6.5 or 6.7 typically run 
 
 To migrate from NSX-V to NSX-T (also called a V2T migration), {{site.data.keyword.cloud_notm}} uses a migration approach that is called _lift-and-shift_. In the lift-and-shift approach, the {{site.data.keyword.cloud_notm}} automation is used to deploy a new vCenter Server instance. You need to migrate network configurations from NSX-V to NSX-T and migrate workloads between instances. {{site.data.keyword.cloud_notm}} provides extensive documentation for a validated approach and guidance for existing {{site.data.keyword.vmwaresolutions_short}} customers with vCenter Server instances. 
 
-## How do I know whether my IBM Cloud bare metal server hardware is suitable for in-place vSphere 7.x upgrade?
+## How do I know whether my {{site.data.keyword.cloud_notm}} bare metal server hardware is suitable for in-place vSphere 7.x upgrade?
 {: #faq-v2t-migration-7x-hw-support}
 
 You can check whether your server and its hardware options are compatible with vSphere 7.x. For more information, see [VMware compatibility guide](https://www.vmware.com/resources/compatibility/search.php){: external}.
 
 Alternatively, you can upgrade your vCenter, set up vSphere Update Manager (VUM) or vSphere Lifecycle Manager, and run Hardware Compatibility Checks for the upgrade.
 
-## What are the different ways that I can use IBM Cloud bare metal servers for VMware workloads in IBM Cloud?
+## What are the different ways that I can use {{site.data.keyword.cloud_notm}} bare metal servers for VMware workloads in {{site.data.keyword.cloud_notm}}?
 {: #faq-v2t-migration-vmware-platforms}
 
 You can use a VMware® platform on {{site.data.keyword.cloud_notm}} in the following ways.
@@ -114,19 +114,19 @@ You can use a VMware® platform on {{site.data.keyword.cloud_notm}} in the follo
 Upgrade and migration processes vary depending on the consumption model.
 {: note}
 
-## What is the impact if I don't upgrade vSphere 6.x on my IBM Cloud bare metal hosts?
+## What is the impact if I don't upgrade vSphere 6.x on my {{site.data.keyword.cloud_notm}} bare metal hosts?
 {: #faq-v2t-migration-6x-impact}
 
 Upgrading your vSphere software is a customer responsibility and the decision to upgrade to a supported version is yours. However, your business might be at risk because VMware is under no obligation to provide product patches and updates, such as security updates and bug fixes. If {{site.data.keyword.cloud_notm}} provides your vSphere licenses, then IBM Support cannot assist you with vSphere issues until you upgrade. {{site.data.keyword.cloud_notm}} continues to support your bare metal servers infrastructure on our cloud and the vSphere 6.5 software until the VMware announced end of support date of 15 October 2022.
 
-See also [different ways to run VMware workloads in IBM Cloud](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
+See also [different ways to run VMware workloads in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
 
 ## What is the impact if I don't upgrade vSphere 6.x on my VMware Solutions Dedicated - VMware vSphere (vSS) hosts?
 {: #faq-v2t-migration-6x-impact-vss}
 
 Upgrading your vSphere software is a customer responsibility and the decision to upgrade to a supported version is yours. However, your business might be at risk because VMware is under no obligation to provide product patches and updates, such as security updates and bug fixes. If {{site.data.keyword.cloud_notm}} provides your vSphere licenses, then IBM Support cannot assist you with vSphere issues until you upgrade. {{site.data.keyword.cloud_notm}} continues to support your bare metal servers infrastructure on our cloud and the vSphere 6.5 software until the VMware announced end of support date of 15 October 2022.
 
-See also [different ways to run VMware workloads in IBM Cloud](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
+See also [different ways to run VMware workloads in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
 
 ## What is the impact if I don't upgrade vSphere 6.x on my VMware Solutions Dedicated - vCenter Server hosts?
 {: #faq-v2t-migration-6x-impact-vcs}
@@ -135,23 +135,23 @@ Upgrading your vSphere software is a customer responsibility and the decision to
 
 To regain the ability to add or remove clusters, hosts, storage, or services you must upgrade to vSphere 6.7 or later. {{site.data.keyword.cloud_notm}} recommends upgrading to 7.x until the VMware announced end of support date of 15 October 2022. If your vCenter Server instance is running NSX-V, consider moving to vCenter Server with NSX-T. This lift and shift upgrade approach can be more beneficial due to the end of support of NSX-V. You might benefit from a target platform with updated hardware, upgraded VMware software, NSX-T, and less of an impact lift and shift migration rather than an in-place upgrade.
 
-See also [different ways to run VMware workloads in IBM Cloud](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
+See also [different ways to run VMware workloads in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
 
-## If I'm using BYOL on my IBM Cloud bare metal hosts, how does it impact the upgrade?
+## If I'm using BYOL on my {{site.data.keyword.cloud_notm}} bare metal hosts, how does it impact the upgrade?
 {: #faq-v2t-migration-6x-upgrade-impact-byol}
 
 Upgrading vSphere software is your responsibility. However, with Bring Your Own License (BYOL) you can access VMware Support directly by using your license agreement. {{site.data.keyword.cloud_notm}} provides support for your bare metal servers infrastructure on {{site.data.keyword.cloud_notm}}.
 
 For more information about upgrading, see [VMware ESXi upgrade VMware vSphere 6.7](https://docs.vmware.com/en/VMware-vSphere/6.7/vsphere-esxi-671-upgrade-guide.pdf){: external} and [vSphere upgrade VMware vSphere 6.5](https://docs.vmware.com/en/VMware-vSphere/6.5/vsphere-esxi-vcenter-server-651-upgrade-guide.pdf){: external}. As part of the upgrade planning, consider moving to the {{site.data.keyword.cloud_notm}} vCenter Server with NSX-T offering, this lift and shift upgrade approach might be more beneficial.
 
-See also [different ways to run VMware workloads in IBM Cloud](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
+See also [different ways to run VMware workloads in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
 
 ## If I am using BYOL on my VMware Solutions Dedicated - vCenter Server hosts how does this impact the upgrade?
 {: #faq-v2t-migration-6x-upgrade-impact-byol-vcs}
 
-Upgrading vSphere software is your responsibility. However, with Bring Your Own License (BYOL) you access VMware Support directly by using your license agreement. {{site.data.keyword.cloud_notm}} provides support for your bare metal servers infrastructure on the IBM Cloud. For more information, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade). If your vCenter Server instance is running NSX-V, consider moving to vCenter Server with NSX-T. This lift and shift upgrade approach might be more beneficial due to the end of support of NSX-V.
+Upgrading vSphere software is your responsibility. However, with Bring Your Own License (BYOL) you access VMware Support directly by using your license agreement. {{site.data.keyword.cloud_notm}} provides support for your bare metal servers infrastructure on the {{site.data.keyword.cloud_notm}}. For more information, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade). If your vCenter Server instance is running NSX-V, consider moving to vCenter Server with NSX-T. This lift and shift upgrade approach might be more beneficial due to the end of support of NSX-V.
 
-See also [different ways to run VMware workloads in IBM Cloud](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
+See also [different ways to run VMware workloads in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
 
 ## What product is it running in the VMware Solutions Dedicated - vCenter Server instance? 
 {: #faq-v2t-migration-what-products}
@@ -175,7 +175,7 @@ Also, review the following key considerations:
 
 * At the end of the documented process, your vCenter Server instance is running vSphere 7.0 Update 1c with N-VDS distributed switches. This configuration is different than the currently supported [Software BOM for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom#vc_bom-software), which is vSphere 7.0 Update 2a with Distributed vSwitch 7.0.0.
 * For more information about the migration of N-VDS to VDS switches for vSphere 7.0 or later and NSX-T Data Center 3.0 and later, see [Migrate host switch to vSphere Distributed Switch](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-1039A36F-F55E-4A0A-B6C6-2C383F4A716D.html){: external}. Currently, this procedure is not verified on a VMware Solutions Dedicated vCenter Server instance.
-* IBM Cloud is undertaking an assessment of the N-VDS to VDS conversion and the required changes to the automation database to allow this in-place upgrade.
+* {{site.data.keyword.cloud_notm}} is undertaking an assessment of the N-VDS to VDS conversion and the required changes to the automation database to allow this in-place upgrade.
 * Currently, Day 2 automation workflows such as add host or add cluster, have not been tested against VMware Solutions Dedicated vCenter Server instances that have been upgraded from vSphere 6.7 to 7 and still using N-VDS distributed switches. Customers should assume that this automation might fail and that if this automation is required then the lift and shift migration approach used. If this automation is not needed, you can use the upgrade process that is documented.
 * A workaround for the add nodes and add cluster features is to use the VMware vSphere offering. For more information, see [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview). You must complete a number of manual tasks after the automated deployment.
 * A workaround for add-on services is to deploy them manually using the documented reference architectures, see the Solution architectures on Classic and Solution Guides sections at [Getting started with VMware Solutions](/docs/vmwaresolutions).
@@ -183,7 +183,7 @@ Also, review the following key considerations:
 ## Can I reuse the portable subnets that are deployed for my existing NSX-V vCenter Server instance? 
 {: #faq-v2t-migration-nsx-v-instance-portable-subnets}
 
-When you delete a VMware vCenter Server® instance, the networking (VLANs with private and public subnets) is cancelled together with the IBM Cloud bare metal Servers. If you have networking assets in your migration, open a support ticket to ensure that IBM Support decouples the VLANs and related subnets from the original instance. This way, these assets are not cancelled when the vCenter Server instance is deleted.
+When you delete a VMware vCenter Server® instance, the networking (VLANs with private and public subnets) is cancelled together with the {{site.data.keyword.cloud_notm}} bare metal servers. If you have networking assets in your migration, open a support ticket to ensure that IBM Support decouples the VLANs and related subnets from the original instance. This way, these assets are not cancelled when the vCenter Server instance is deleted.
 
 The following recommendations apply:
 
