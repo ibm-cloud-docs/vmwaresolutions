@@ -393,7 +393,9 @@ toc:
           - archiref/v2t-patterns/v2t-migration-config-migration.md
           - archiref/v2t-patterns/v2t-migration-lift-and-shift.md
           - archiref/v2t-patterns/v2t-migration-hcx.md
+          - archiref/v2t-patterns/v2t-migration-hcx-guide.md
           - archiref/v2t-patterns/v2t-migration-l2-nsx-t.md
+          - archiref/v2t-patterns/v2t-migration-l2-nsx-t-guide.md
           - archiref/v2t-patterns/v2t-migration-optional-services.md
       - topicgroup:
           label: Solution architectures on Classic
@@ -422,6 +424,7 @@ toc:
               - archiref/arch-pattern/arch-pattern-overlays-multi-site.md
               - archiref/arch-pattern/arch-pattern-edge-services-cluster.md
               - archiref/arch-pattern/arch-pattern-bastion-vpc.md
+              - archiref/arch-pattern/arch-pattern-nsx-t-private-connectivity.md
               - archiref/arch-pattern/arch-pattern-nsx-t-transit-gw.md
               - archiref/arch-pattern/arch-pattern-3rd-party-router.md
               - archiref/arch-pattern/arch-pattern-nsx-t-direct-link-ipsec.md
