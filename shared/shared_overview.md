@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-03-23"
+lastupdated: "2022-06-08"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -75,6 +75,68 @@ Organizations use catalogs to store vApp templates and media files. The members 
 An Organization virtual data center provides resources to an organization. Virtual data centers provide an environment where virtual systems can be stored, deployed, and operated. They also provide storage for virtual CD and DVD media. An organization can have multiple virtual data centers.
 
 ![VMware Solutions Shared virtual data center architecture](../images/virtual-datacenter-architecture-public.svg "{{site.data.keyword.cloud_notm}} for virtual data center architecture"){: caption="Figure 2. VMware Solutions Shared virtual data center architecture" caption-side="bottom"}
+
+### Sites
+{: #shared_overview-sites}
+
+A site is a Cloud Director instance that is set up over a set of zones in a multizone region. An account can have only one organization in one Cloud Director instance that provides a one-to-one relationship between a site and a Cloud Director organization.
+
+For example, the following graphic depicts two Cloud Director instances, *VCD1* and *VCD2*. The clusters span across the dal10 and dal12 locations. Two organizations, *Org A* and *Org B* belong to the same customer and one organization, *Org C* belongs to a different customer.
+
+![VMware Solutions Shared site architecture](../images/shared-site-policy.svg "VMware Solutions Shared site architecture"){: caption="Figure 3. VMware Solutions Shared site architecture" caption-side="bottom"}
+
+## Role-based access policies
+{: #shared_overview-access-policies}
+
+Before V4.8, role-based access control is achieved by using a virtual data center IAM policy for VMWare Solutions Shared resources. 
+
+| Access policy level| Access |
+|:----------------- |:--------- |
+| Site/Org IAM Policy | Hidden |
+| VDC IAM Policy | Exposed and active |
+| Global Resource List | Virtual data center only |
+| VMware Console Resource List | Virtual data center only|
+{: caption="Table 1. Virtual data center IAM policy control for VMware Solutions Shared" caption-side="bottom"}
+
+Beginning with V4.8, role-based access control is achieved by using a site and organization IAM policy for VMware Solutions Shared resources.
+
+| Access policy level | Access |
+|:----------------- |:---------- |
+| Site/Org IAM Policy | Exposed and active |
+| VDC IAM Policy | View and delete only |
+| Global Resource List | Organizations only |
+| VMware Console Resource List | Organizations and associated virtual data centers only|
+{: caption="Table 2. Site and Orginization IAM policy control for VMware Solutions Shared" caption-side="bottom"}
+
+### Required access policy updates
+{: #shared_overview-access-policies-reqs}
+
+Beginning with V4.8, you have access to your sites only to assign access policies. The access policy at the site level applies to every resource within it. You no longer assign access control directly to a virtual data center.
+
+For more information about assigning resource access and roles, see [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam).
+
+You must ensure that you complete the following updates to your access policies before 22 June 2022.
+{: important}
+
+#### Required Resource Group based access policy updates
+{: #shared_overview-access-policies-reqs-rg}
+
+Beginning with V4.8, if you have two different resource groups with different virtual data centers from one specific location, only the resource group that contains the first virtual data center of that location (based on creation date) applies to all of the virtual data centers in that location.
+
+You must ensure that you have the policies that you intend to apply to those virtual data centers in the resource groups that contain the first virtual data center or set a policy at the VMWare Solutions service before 22 June 2022.
+
+V4.8 updates do not impact you if all of your virtual data centers are in a single location and belong to only one resource group access policy. Your site automatically belongs to the same resource group as the virtual data center.
+
+Beginning with V4.8, your existing group membership now has sites that are listed instead of virtual data centers. The site for a virtual data center now belongs to a resource group only if the virtual data center was the first virtual data center of the site.
+{: note}
+
+#### Required virtual data center based access policy updates
+{: #shared_overview-access-policies-reqs-vdc}
+
+If you currently have a virtual data center based access policy, you must create a new access policy at the VMware Solutions service level for all your resources before 22 June 2022.
+
+Beginning with V4.8, virtual data center based policies are now named after the site. If you did not make the required policy updates before the V4.8 release, your virtual data center based policy is ineffective.
+{: note}
 
 ## Technical specifications for VMware Solutions Shared
 {: #shared_overview-specs}

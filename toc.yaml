@@ -679,6 +679,7 @@ toc:
           label: Troubleshooting
           topics:
           - vmonic/trbl_timeout_vc_console.md
+          - vmonic/trbl_esxi_firewall_config_nfs.md
           - vmonic/trbl_sec_inst_not_visible.md
           - vmonic/trbl_add_ha_cluster_config.md
           - vmonic/trbl_no_zerto_vra.md

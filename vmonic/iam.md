@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-04"
+lastupdated: "2022-06-08"
 
 keywords: IAM user, user role, user permission
 
@@ -38,15 +38,18 @@ Review the following information, which outlines the actions that each role allo
 
 Platform management roles enable users to complete tasks on service resources at the platform level. For example, assign user access to the service, create or delete service IDs, create instances, and bind instances to applications.
 
+### Platform management roles for VMware Solutions
+{: #iam-roles-solution}
+
 The following table provides information about the actions that are mapped to platform management roles for VMware Solutions.
 
-| Platform management role | Actions | Example actions |
-|:----------------- |:----------------- |:----------------- |
-| Viewer | Read-only actions | View the summary of instances \n View the details of an instance |
-| Editor | Update a specific instance | Add or remove VMware ESXi™ servers \n Add or remove clusters \n Add or remove services \n Upgrade an instance to a higher version |
-| Operator | Read-only actions | List instances \n View the details of an instance |
-| Administrator | Full management access | Create new instances \n Delete instances \n Grant platform access to other users|
-{: caption="Table 1. Platform management roles and allowed actions for VMware Solutions" caption-side="top"}
+| Platform management role | Actions |
+|:----------------- |:----------------- |
+| Viewer | Read-only actions to view the summary and details of instances. |
+| Operator | Read-only actions. For example, list instances and view instance details. |
+| Editor | Update a specific instance. For example, add or remove VMware ESXi™ servers, clusters, and services; upgrade an instance to a higher version. |
+| Administrator | Full management access. For example, create new instances, delete instances, and grant platform access to other users.|
+{: caption="Table 1. Platform management roles and allowed actions for VMware Solutions" caption-side="bottom"}
 {: #iam-roles-table}
 
 For VMware Solutions, the following actions exist:
@@ -58,87 +61,31 @@ For VMware Solutions, the following actions exist:
 | `vmware-solutions.instances.view` | List instances \n View the detail of an instance | Viewer, Operator, Editor, and Administrator |
 | `vmware-solutions.instances.update` | Add or remove ESXi servers \n Add or remove clusters \n Add or remove services \n Upgrade an instance to a higher version | Editor and Administrator |
 | `vmware-solutions.account.update` | Update account settings | Administrator |
-{: caption="Table 2. Action descriptions and required roles" caption-side="top"}
+{: caption="Table 2. Action descriptions and required roles" caption-side="bottom"}
 
-## Platform management roles and permissions for VMware Solutions Shared
-{: #iam-roles-shared}
+## Assigning resource access
+{: #iam-roles-user-access}
 
-Review the following procedures for details on assigning access roles and scope for VMware Solutions Shared users.
+You can choose from the following options when you assign resource access.
+* Assign all resources access to grant users access to all service resource created in all resource groups within the account.
+* Specific resources access to grant users access to a specific resource group or VMware instance.
 
-### Assigning All Resources access
-{: #iam-roles-shared-user-access-all-}
+### Procedure to grant user access
+{: #iam-roles-user-access-all-procedure}
 
-All resources access would grant users access to all service resource created in all resource groups within the account.
+1. In the console, go to **Manage > Access(IAM)**.
+2. Click **Users** from the left navigation pane. 
+3. From the row for the user that you want to assign access, select the **Actions** menu, and click **Assign access**.
+4. Click **Access policies** and select **VMware Solutions** from the **Service** table. Then, click **Next**.
+5. Select the resource to receive access and click **Next**.
+   * Click **All resources** to grant access to all service resources.
+   * Click **Specific resources** and select the attribute type, operator, and value.
+6. Select any combination of roles and click **Review** to review all of your selections.
+7. Optionally, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") to make any changes to your selections.
+8. Click **Add**, and then, **Assign**.
 
-#### Procedure to grant user access with all resources scope for VMware Solutions Shared
-{: #iam-roles-shared-user-access-all-procedure}
-
-1. In the console, go to **Manage > Access(IAM) > Users**.
-2. From the row for the user that you want to assign access, select the **Actions** menu, and click **Assign access**.
-3. Select **VMware Solutions**.
-4. Click **All resources**.
-5. Using the following table, select any combination of roles or permissions to define the scope of access and click **Add**.
-6. Click **Assign**.
-
-| Platform management role | Actions | Example actions |
-|:----------------- |:----------------- |:----------------- |
-| Viewer | Read-only actions | View instances \n View instance services |
-| Operator | Read-only actions | View instances \n View instance services |
-| Editor | Update a specific instance | View instances \n Update an instance \n View instance service \n Update instance services |
-| Administrator | Full management access | View instances \n Update an instance \n Delete an instance \n Create new instances \n Update VDC organization password \n Create instance services \n Update instance services \n Delete instance services \n View instance services |
-{: caption="Table 3. Platform management roles with all resources scope and allowed actions for VMware Solutions Shared" caption-side="top"}
-
-To grant user permission to create new instances, you must also assign Resource Group access policies. For more information, see [Giving access to resources in resource groups](/docs/account?topic=account-rgs_manage_access) and [Ordering virtual data center instances](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering).
+To grant user permission to create new instances for VMware Solutions Shared, you must also assign Resource Group access policies. For more information, see [Giving access to resources in resource groups](/docs/account?topic=account-rgs_manage_access) and [Ordering virtual data center instances](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering).
 {: note}
-
-### Assigning Resource Group access
-{: #iam-roles-shared-resource-group}
-
-You can organize your account resources in customizable groupings so that you can quickly assign individual or groups of users access to more than one resource at a time. For more information, see [Managing resource groups](/docs/account?topic=account-rgs).
-
-#### Procedure grant user access with Resource Groups scope
-{: #iam-roles-shared-resource-group-procedure}
-
-1. In the console, go to **Manage > Access(IAM) > Users**.
-2. From the row for the user that you want to assign access, select the **Actions** menu, and click **Assign access**.
-3. Select **VMware Solutions**.
-4. Click **Resources based on selected attributes**.
-5. Check **Resource Group** and select a resource group.
-6. For Resource Group access, select any combination of roles or permissions to define the scope of access based on your needs. **Viewer** is selected by default. 
-7. For Platform access, use the following table to select any combination of roles or permissions to define the scope of access and click **Add**.
-8. Click **Assign**.
-
-| Platform management role | Actions | Example actions |
-|:----------------- |:----------------- |:----------------- |
-| Viewer | Read-only actions | View instances in resource group \n View instance services in resource group |
-| Operator | Read-only actions | View instances in resource group \n View instance services in resource group |
-| Editor | Update a specific instance | View instances in resource group \n Update an instance in resource group \n View instance's services in resource group \n Update instance's services in resource group |
-| Administrator | Partial management access | View instances in resource group \n Update an instance in resource group \n Delete an instance in resource group \n Create instance services in resource group \n Update instance services in resource group \n Delete instance services in resource group \n View instance services in resource group |
-{: caption="Table 4. Platform management roles with resource group scope and allowed actions for VMware Solutions Shared" caption-side="top"}
-
-### Assigning Resource Instance access
-{: #iam-roles-shared-resource-instance}
-
-Each {{site.data.keyword.cloud_notm}} service in your account is a resource that has instances. By default, resources belong to the default resource group in your account. You can assign users an access role to a resource instance to grant permissions.
-
-#### Procedure grant user access with VMware Instance scope
-{: #iam-roles-shared-resource-instance-procedure}
-
-1. In the console, go to **Manage > Access(IAM) > Users**.
-2. From the row for the user that you want to assign access, select the **Actions** menu, and click **Assign access**.
-3. Select **VMware Solutions**.
-4. Click **Resources based on selected attributes**.
-5. Check **VMware Instance** and select the instance. 
-6. Use the following table to select any combination of roles or permissions to define the scope of access and click **Add**.
-7. Click **Assign**.
-
-| Platform management role | Actions | Example actions |
-|:----------------- |:----------------- |:----------------- |
-| Viewer | Read-only actions | View instances \n View instance services |
-| Operator | Read-only actions | View instance \n View instance services |
-| Editor | Update a specific instance | View instances \n Update an instance \n View instance service \n Update instance services |
-| Administrator | Partial management access | View instances \n Update an instance \n Delete an instance \n Create instance services \n Update instance services \n Delete instance services \n View instance services |
-{: caption="Table 5. Platform management roles with instance scope and allowed actions for VMware Solutions Shared" caption-side="top"}
 
 ## Managing access for users
 {: #iam-users}

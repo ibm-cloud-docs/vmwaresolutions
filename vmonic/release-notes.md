@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-04-25"
+lastupdated: "2022-06-08"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -40,14 +40,19 @@ vSAN support for VMware Solutions Shared virtual data centers
 
 VMware vCenter Server instances
 :   The 4.7 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts.
-   * VMware vSphere ESXi™ 7.0 Update 2e (build 19290878)
+   * VMware vSphere ESXi 7.0 Update 2e (build 19290878)
    * VMware vSphere ESXi 6.7 P06 (build 18828794)
-   * VMware vCenter Server® Appliance 6.7.0 Update 3q (build 19300125)
+   * VMware vCenter Server Appliance 6.7.0 Update 3q (build 19300125)
    * VMware NSX-T™ 3.2.0.1.0 (build 19232400)
    * VMware NSX-V 6.4.13 (build 19307994)
 
-VMware ESXi firewall configuration for NFS
-:   VMware ESXi attempts to manage the outbound firewall for NFS traffic for you automatically. Under some circumstances, VMware ESXi might not discover all of the IP addresses for an NFS data store, sometimes resulting in loss of connectivity if the {{site.data.keyword.cloud_notm}} Endurance servers are undergoing maintenance. Beginning in this release, {{site.data.keyword.vmwaresolutions_short}} corrects the ESXi firewall configuration whenever adding hosts, clusters, or storage to your VMware vCenter Server instance. For more information about VMware ESXi firewall rules, see [NFS client firewall behavior](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-70686ADB-961A-46BD-B814-48DCF6C5E34B.html){: external}.
+VMware ESXi firewall configuration for NFS {: #april-2022-esxi-firewall}
+:   (Updated on 8 June 2022) {{site.data.keyword.cloud}} identified a problem with the following feature, which might cause some firewall rules to be lost during the update. This problem is now fixed.
+
+   VMware ESXi attempts to manage the outbound firewall for NFS traffic for you automatically. Under some circumstances, VMware ESXi might not discover all IP addresses for an NFS data store, sometimes resulting in loss of connectivity if the {{site.data.keyword.cloud_notm}} Endurance servers are undergoing maintenance. VMware Solutions corrects the ESXi firewall configuration whenever adding hosts, clusters, or storage to your vCenter Server instance. For more information about ESXi firewall rules, see [NFS client firewall behavior](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-70686ADB-961A-46BD-B814-48DCF6C5E34B.html){: external}.
+
+Loss of connectivity to NFS storage {: #april-2022-connect-lost}
+:   (Updated on 8 June 2022) See [Why did my host lose connection to my NFS datastore?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_esxi_firewall_config_nfs)
 
 Edge services cluster updates
 :   You can now add more than one edge services cluster in the same data center pod. For more information, see [Adding clusters to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters).
@@ -898,7 +903,7 @@ Known issues with Red Hat OpenShift for VMware
    * [Red Hat Bugzilla – Bug 1838781 - EtcdMembersDegraded false alarms](https://bugzilla.redhat.com/show_bug.cgi?id=1838781){: external}
 
 REST APIs
-:   Application programming interfaces (APIs) are now available for the following services: Caveonix RiskForesight, HyTrust DataControl (HTDC), and Veeam.
+:   Application programming interfaces (APIs) are now available for the following services: Caveonix RiskForesight, HyTrust DataControl, and Veeam.
 
 New and updated documentation
 :   The following documentation updates are available.
@@ -974,7 +979,7 @@ vRealize Operations and Log Insight
 :   You can now install the vRealize Operations and Log Insight service on vCenter Server with NSX-T instances.
 
 REST APIs
-:   Application programming interfaces (APIs) are now available for the following services: HyTrust CloudControl (HTCC), Juniper vSRX, and vRealize Operations and Log Insight.
+:   Application programming interfaces (APIs) are now available for the following services: HyTrust CloudControl, Juniper vSRX, and vRealize Operations and Log Insight.
 
 New and updated documentation
 :   The following documentation updates are available.
@@ -1133,18 +1138,15 @@ Add-on services
 {{site.data.keyword.cloud_notm}} for VMware Mission Critical Workloads
 :   Enterprises can now migrate VMware-based Mission Critical Workloads to the {{site.data.keyword.cloud_notm}}, capable of delivering maximum uptime in six multizone regions (MZRs) around the world.
 
-   You can deploy VMware vSAN stretched clusters in an automated and self-managed infrastructure allowing you the flexibility to control and manage all aspects of your solution set. This option is available in on-demand ordering from the **vCenter Server** page on the {{site.data.keyword.vmwaresolutions_short}} console.
+   You can deploy VMware vSAN stretched clusters in an automated and self-managed infrastructure allowing you the flexibility to control and manage all aspects of your solution set. This option is available in on-demand ordering from the **VMware Solutions Dedicated** page on the VMware Solutions console.
 
    You can deploy a fully managed solution delivered by IBM Services. {{site.data.keyword.cloud_notm}} for VMware Mission Critical Workloads delivers greater availability, resiliency, and support than many enterprises currently maintain on premises.  This option is available as a fully and coordinated engagement with IBM Services teams.
 
 New and updated documentation
 :   The following documentation updates are available.
 
-   * Technical documentation is available in the **Reference** section for {{site.data.keyword.cloud_notm}} for VMware Mission Critical Workloads and ordering multizone stretched clusters.
    * The *Upgrading VMware NSX* section of **Upgrading vCenter Server vSphere software from VMware vSphere 6.5 to 6.7** has additional information to help you determine whether you must upgrade your current version of NSX. You might have to upgrade NSX so it’s compatible with VMware vCenter Server 6.7.
-   * The *Technical specifications for IBM Spectrum Protect Plus* section is updated.
    * The **vCenter Server and vSRX guide** is now available in the **Reference** section of the user documentation.
-   * (Updated on 20 December 2019) The **HyTrust DataControl with IBM Cloud Hyper Protect Crypto Services architecture** is now available in the **Reference** section of the user documentation.
 
 User interface updates and enhancements
 :   The user interface is updated and provides the following enhancements.
