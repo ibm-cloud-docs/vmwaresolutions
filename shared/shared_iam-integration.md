@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-06-09"
+lastupdated: "2022-06-22"
 
 keywords: manage shared resources, set IAM integration the vCloud Director Management console, shared iam roles, iam roles
 
@@ -22,7 +22,7 @@ You can optionally enable {{site.data.keyword.cloud}} Identity and Access Manage
 ## Before you begin
 {: #shared_set-iam-prereq}
 
-Review roles and assign resource access for {{site.data.keyword.vmwaresolutions_short}} Shared service instances. For more information, see [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam).
+Review roles and assign resource access for {{site.data.keyword.vmwaresolutions_short}} Shared service instances. For more information, see [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam) and [Roles and permissions for vCloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui).
 
 ## Procedure to enable IAM
 {: #shared_set-iam-procedure}
@@ -41,7 +41,6 @@ The IAM integration status can have the following results.
 
 | Status        | Description       |
 |:------------- |:------------- |
-| Integration enabled | The IAM is enabled for the organization. |
 | Integration pending | The IAM integration is in progress. |
 | Integration incomplete | The integration is not successful. Contact IBM Support. |
 | Integration enabled | The IAM integration was previously enabled for the organization. You can reset the integration, if needed. |
