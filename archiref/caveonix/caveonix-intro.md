@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -48,7 +48,7 @@ The three key services available through the RiskForesight GUI are Risk Manageme
 - Automated compliance monitoring
 - Compliance risk score dashboard
 - Automated IA controls assessment
-- It supports the following global configuration benchmarking standards: PCI, FISMA, FEDRAMP, HIPAA, GLBA, GDPR, NERC CIP Reports Against SCAP, OVAL, and XCCDF. 
+- It supports the following global configuration benchmarking standards: PCI, FISMA, FEDRAMP, HIPAA, GLBA, GDPR, NERC CIP Reports Against SCAP, OVAL, and XCCDF.
 - Continuously updated and mapped IA controls and standards libraries
 
 ## Forensic management
@@ -62,8 +62,6 @@ The three key services available through the RiskForesight GUI are Risk Manageme
 - Event-based analytics
 - Full drill-down capability for events and log-based analysis
 - Alerts and notifications
-
-**Next topic:** [Caveonix RiskForesight use cases and benefits](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-on-vcs)
 
 ## Related links
 {: #caveonix-intro-related}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-21"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -25,7 +25,7 @@ completion-time: 2h
 {: toc-services="vmwaresolutions"}
 {: toc-completion-time="2h"}
 
-In this {{site.data.keyword.cloud}} for VMware® Solutions getting started tutorial, we take you through the process of ordering an instance and some services for it.
+In this {{site.data.keyword.vmwaresolutions_full}} getting started tutorial, we take you through the process of ordering an instance and some services for it.
 {: shortdesc}
 
 ## Before you begin
@@ -53,10 +53,10 @@ You need an {{site.data.keyword.cloud_notm}} account and an {{site.data.keyword.
 
 | Account | Description |
 |:------- |:---------- |
-| IBMid | By using the **IBMid**, you can have a single login username for all IBM products and services that you use, including {{site.data.keyword.cloud_notm}}. {{site.data.keyword.vmwaresolutions_short}} is provided as an infrastructure solution in the {{site.data.keyword.cloud_notm}} catalog. To access the {{site.data.keyword.vmwaresolutions_short}} console, you must have an **IBMid**. \n \n To use your **IBMid** to log in to the {{site.data.keyword.vmwaresolutions_short}} console, you must associate the **IBMid** with an {{site.data.keyword.cloud_notm}} account. When you log in to the console for the first time, you are guided to either associate your existing **IBMid** with an {{site.data.keyword.cloud_notm}} account, or to sign up for a new {{site.data.keyword.cloud_notm}} account. The new {{site.data.keyword.cloud_notm}} account is automatically associated with your **IBMid**. You need to go through this process only once. \n \n If you have problems when you associate your **IBMid** with an {{site.data.keyword.cloud_notm}} account, see [Why is my password incorrect?](/docs/account?topic=account-ts_logintoibm) |
+| IBMid | By using the **IBMid**, you can have a single login username for all IBM products and services that you use, including {{site.data.keyword.cloud_notm}}. {{site.data.keyword.vmwaresolutions_short}} is provided as an infrastructure solution in the {{site.data.keyword.cloud_notm}} catalog. To access the {{site.data.keyword.vmwaresolutions_short}} console, you must have an **IBMid**. \n \n To use your **IBMid** to log in to the {{site.data.keyword.vmwaresolutions_short}} console, you must associate the **IBMid** with an {{site.data.keyword.cloud_notm}} account. When you log in to the console for the first time, you are asked to associate your existing **IBMid** with an {{site.data.keyword.cloud_notm}} account, or to sign up for a new {{site.data.keyword.cloud_notm}} account. The new {{site.data.keyword.cloud_notm}} account is automatically associated with your **IBMid**. You go through this process only one time. \n \n If you have problems when you associate your **IBMid** with an {{site.data.keyword.cloud_notm}} account, see [Why is my password incorrect?](/docs/account?topic=account-ts_logintoibm) |
 | {{site.data.keyword.cloud_notm}} account | To order and use {{site.data.keyword.cloud_notm}} services, an {{site.data.keyword.cloud_notm}} account is required. Billing information is associated with the {{site.data.keyword.cloud_notm}} account. The price of the physical and virtual infrastructure and the resulting licenses are charged to your {{site.data.keyword.cloud_notm}} account. |
-| {{site.data.keyword.cloud_notm}} infrastructure account | For more information about the requirements for an {{site.data.keyword.cloud_notm}} infrastructure account, see [Requirements for the {{site.data.keyword.cloud_notm}} infrastructure account](/docs/vmwaresolutions?topic=vmwaresolutions-cloud-infra-acct-req). \n \n You can link {{site.data.keyword.cloud_notm}} infrastructure accounts with {{site.data.keyword.cloud_notm}} accounts to use combined infrastructure as a service (IaaS) and platform as a service (PaaS) resources. Then, you can access IaaS resources and PaaS resources from a single login. Linking your accounts also provides you with a single invoice for all the PaaS and IaaS resources that you use: \n \n If you do not have an {{site.data.keyword.cloud_notm}} infrastructure account, request one by following the procedure in [Signing up for an {{site.data.keyword.cloud_notm}} infrastructure account](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts#signing_required_accounts-infra), and then link your {{site.data.keyword.cloud_notm}} infrastructure account with your {{site.data.keyword.cloud_notm}} account by following the procedure in [Upgrading your account](/docs/account?topic=account-upgrading-account). \n \n If you have an {{site.data.keyword.cloud_notm}} infrastructure account, you can link it with your {{site.data.keyword.cloud_notm}} account by following the procedure in [Upgrading your account](/docs/account?topic=account-upgrading-account).
-{: caption="Table 1. Required user accounts" caption-side="top"}
+| {{site.data.keyword.cloud_notm}} infrastructure account | For more information about the requirements for an {{site.data.keyword.cloud_notm}} infrastructure account, see [Requirements for the {{site.data.keyword.cloud_notm}} infrastructure account](/docs/vmwaresolutions?topic=vmwaresolutions-cloud-infra-acct-req). \n \n You can link {{site.data.keyword.cloud_notm}} infrastructure accounts with {{site.data.keyword.cloud_notm}} accounts to use combined infrastructure as a service (IaaS) and platform as a service (PaaS) resources. Then, you can access IaaS resources and PaaS resources from a single login. Linking your accounts also provides you with a single invoice for all the PaaS and IaaS resources that you use. \n \n If you do not have an {{site.data.keyword.cloud_notm}} infrastructure account, request one by following the procedure in [Signing up for an {{site.data.keyword.cloud_notm}} infrastructure account](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts#signing_required_accounts-infra), and then link your {{site.data.keyword.cloud_notm}} infrastructure account with your {{site.data.keyword.cloud_notm}} account by following the procedure in [Upgrading your account](/docs/account?topic=account-upgrading-account). \n \n If you have an {{site.data.keyword.cloud_notm}} infrastructure account, you can link it with your {{site.data.keyword.cloud_notm}} account by following the procedure in [Upgrading your account](/docs/account?topic=account-upgrading-account).
+{: caption="Table 1. Required user accounts" caption-side="bottom"}
 
 ### Deployment offerings
 {: #getting-started-depl-offerings}
@@ -65,12 +65,11 @@ Review and choose your deployment offering.
 
 | Deployment offering | Description |
 |:------------------- |:----------- |
-| [VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview) | This offering provides standardized and customizable deployment choices of VMware virtual data center environments. |
+| [VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview) | This offering provides standardized and customizable deployment choices of VMware® virtual data center environments. |
 | [VMware Solutions Dedicated - vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) | This offering allows you to deploy a VMware virtual environment by using custom compute, storage, and network resources to best fit your business needs. |
 | [VMware Solutions Dedicated - VMware vSphere®](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview) | This offering provides a customizable virtualization service that combines VMware-compatible bare metal servers, hardware components, and licenses, to build your own IBM-hosted VMware environment. |
 | [VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview) | This offering includes a secure-by-default architecture that follows IBM's unique policy controls framework, it provides continuous compliance monitoring, and the highest level of data encryption (FIPS 140-2 Level 4). |
-| [VMware Solutions Dedicated - Security & Compliance Readiness Bundle](/docs/vmwaresolutions?topic=vmwaresolutions-scb-overview) | This offering provides many of the security and compliance features of {{site.data.keyword.cloud_notm}} for Financial Services™ at a lower entry price. It has security and compliance tools and templates that you can use with your preferred regulation standard. |
-{: caption="Table 2. Deployment offerings" caption-side="top"}
+{: caption="Table 2. Deployment offerings" caption-side="bottom"}
 
 ### Add-on services
 {: #getting-started-add-on-services}
@@ -91,8 +90,7 @@ The following table describes the security and compliance services that are avai
 | [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations) | This service offers strong encryption with integrated key management to secure workloads throughout their lifecycle. The service can provide encryption at both the operating system level and at the data level, which means that any directory, folder, or file within a workload can be encrypted and decrypted. |
 | [KMIP™ for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | This service provides a highly available service to manage encryption keys that are used by VMware in {{site.data.keyword.cloud_notm}}. By using the runtime capability, you can manage encryption keys and to maintain the associations between the client credentials and the encryption keys. |
 | [Juniper® vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | This service provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware infrastructure, vSRX runs as a VM within the VMware vSphere environment. The vSRX provides a complete Next-Generation Firewall (NGFW) solution. |
-| [VMware Solutions Dedicated - Security & Compliance Readiness Bundle](/docs/vmwaresolutions?topic=vmwaresolutions-scb-overview) | This offering provides many of the security and compliance features of {{site.data.keyword.cloud_notm}} for Financial Services™ at a lower entry price. It has security and compliance tools and templates that you can use with your preferred regulation standard. |
-{: caption="Table 3. Security and compliance services" caption-side="top"}
+{: caption="Table 3. Security and compliance services" caption-side="bottom"}
 
 #### Related security services
 {: #getting-started-serv-related-sec}
@@ -103,7 +101,7 @@ The following table describes related security services available from {{site.da
 |:------------ |:----------- |
 | [FortiGate Security Appliance](/docs/fortigate-10g) | This service deploys the FortiGate Security Appliance 10 Gbps {{site.data.keyword.cloud_notm}} service. |
 | [Gateway Appliance](/docs/gateway-appliance) | These devices give you enhanced control over network traffic, helps accelerate network performance, and give your network a security boost. |
-{: caption="Table 4. Related security services" caption-side="top"}
+{: caption="Table 4. Related security services" caption-side="bottom"}
 
 #### Business continuity and migration services
 {: #getting-started-serv-buss-cont}
@@ -116,7 +114,7 @@ The following table describes the business continuity and migration services tha
 | [PrimaryIO HDM](/docs/vmwaresolutions?topic=vmwaresolutions-managing_pio) | This service decouples VMs and storage (VMDKs) to seamlessly move workloads to and from {{site.data.keyword.cloud_notm}} faster and efficiently. |
 | [Veeam®](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | This service integrates directly with your VMware hypervisors to help your enterprise achieve high availability. You can control both the backup and restore of all VMs for your infrastructure from the Veeam console. |
 | [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | This service provides replication and disaster recovery capabilities, which can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}. |
-{: caption="Table 5. Business continuity and migration services" caption-side="top"}
+{: caption="Table 5. Business continuity and migration services" caption-side="bottom"}
 
 #### Featured workload solutions
 {: #getting-started-serv-feat-sol}
@@ -127,12 +125,7 @@ The following table describes the featured workload solutions services that are 
 |:------------ |:----------- |
 | [Dizzion](/docs/vmwaresolutions?topic=vmwaresolutions-dizzion-overview) | This service provides more service-level choices, multicloud integration, compliance, protection, and simplified management for the teams that are in charge with environment optimization. |
 | [IBM Security Services for SAP®](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | This service offers a cybersecurity solution to automate the monitoring and protection of SAP applications on {{site.data.keyword.cloud_notm}}, and to keep workloads compliant and secure from inside and outside threats. |
-{: caption="Table 6. Featured workload solutions" caption-side="top"}
-
-#### Professional services
-{: #getting-started-serv-prof}
-
-The [Managed Disaster Recovery Services by Kyndryl](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services) service provides replication and disaster recovery capabilities. These capabilities can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on IBM Cloud.
+{: caption="Table 6. Featured workload solutions" caption-side="bottom"}
 
 #### Other services
 {: #getting-started-serv-other}
@@ -141,9 +134,10 @@ The following table describes other services that are available.
 
 | Service category | Service name | Description |
 |:---------------- |:------------ |:----------- |
+| Professional services | [Managed Disaster Recovery Services by Kyndryl](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services) | This service provides replication and disaster recovery capabilities. These capabilities can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}. |
 | Transformation and modernization of VMware applications | [Red Hat® OpenShift® for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | This service brings together the power of the Red Hat OpenShift Container Platform and the VMware software-defined data center stack. |
 | Management tools | [vRealize® Operations™ and Log Insight™](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the VMware vRealize Operations (vROps) and VMware vRealize Log Insight (vRLI) tools, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
-{: caption="Table 7. Other services" caption-side="top"}
+{: caption="Table 7. Other services" caption-side="bottom"}
 
 ## Accessing the VMware Solutions console
 {: #getting-started-step1}
@@ -174,7 +168,6 @@ For more information about how to order an instance, see the following topics ba
 * [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Ordering vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
 * [Ordering VMware Regulated Workloads instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
-* [Ordering Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-req)
 
 ## Viewing the instance
 {: #getting-started-step4}
@@ -187,4 +180,3 @@ For more information about how to view the instance you ordered, see the followi
 * [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
 * [Viewing vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
 * [Viewing VMware Regulated Workloads instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-view-delete-instance)
-* [Viewing Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-view-delete-instance)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-03"
+lastupdated: "2022-05-09"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -89,7 +89,7 @@ The monthly subscription license model for FortiGate Virtual Appliance offers th
    * Stateful packet inspection
    * VLAN protection and advanced logging
    * Ingress/egress FW rules
-   * SSL/IPSec VPN termination
+   * SSL/IPsec VPN termination
    * Continuous support
 * **Standard FW + UTM** - This bundle includes all standard firewall services in addition to the Advanced Malware Protection (AMP) service.
    * Advanced malware protection

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-15"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -116,8 +116,6 @@ No vSphere management components are deployed to the edge services cluster. The 
 {: #vrw-vsphere-platform-workload}
 
 THe NSX-T edge services cluster VMs that house the Tier-0 and Tier-1 routers are on the workload clusters. No vSphere management components are deployed to the workload cluster. The tooling in the management cluster is used to manage the workload cluster ESXi hosts.
-
-**Next topic**: [Encryption](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-encryption)
 
 ## Related links
 {: #vrw-vsphere-platform-related}

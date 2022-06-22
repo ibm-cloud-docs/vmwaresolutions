@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-17"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -57,8 +57,6 @@ The system context diagram identifies the following systems:
 * {{site.data.keyword.cloud_notm}} public network - Provides communication between the Entrust DataControl virtual machines and the {{site.data.keyword.cloud_notm}} Identity and Access Management service to validate the API key.
 * Service ID - A service ID identifies a service or application similar to how a user ID identifies a user. Service IDs are created to enable access to {{site.data.keyword.cloud_notm}} services by applications hosted both inside and outside of {{site.data.keyword.cloud_notm}}. The API Key is configured in the Service ID and used in the configuration of the Cloud VM Set.
 * {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) - The {{site.data.keyword.cloud_notm}} service that validates access to {{site.data.keyword.cloud_notm}} services, including IBM HPCS.
-
-**Next topic:** [Reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-htdc-hpcs-reference-architecture)
 
 ## Related links
 {: #htdc-hpcs-system-context-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-05-10"
+lastupdated: "2022-06-09"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ These architecture patterns give an overview for a few private connectivity opti
 
 When you deploy a vCenter Server instance in your {{site.data.keyword.cloud_notm}} classic infrastructure, you obtain the default private network topology as presented in the following diagram.
 
-![Access to {{site.data.keyword.cloud_notm}} Private network](../../images/arch-pattern-nsx-t-private-access.svg "Access to {{site.data.keyword.cloud_notm}} Private network"){: caption="Figure 1. Access to {{site.data.keyword.cloud_notm}} Private network" caption-side="bottom"}
+![Access to {{site.data.keyword.cloud_notm}} Private network](../../images/arch-pattern-nsx-t-private-access.svg "Access to {{site.data.keyword.cloud_notm}} Private network"){: caption="Figure 1. Access to {{site.data.keyword.cloud_notm}} private network" caption-side="bottom"}
 
 The following list summarizes the private connectivity pattern.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -151,8 +151,6 @@ The following are considerations and implications:
 * Applications that share subnet, vLAN, and VXLAN need to move together.
 * Applications behind a load balancer that uses an internal routable IP can require routing changes if they cannot be moved together or it is not desirable to do so. For example, involving too many applications in one swing can be perceived too much of a risk.
 * VMware admins, network admins (including customers and WAN vendors), and application owners need to be involved, even if there's no planned impact on a particular system or network equipment.
-
-**Next topic:** [Monitoring parameters and components](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-monitoring)
 
 ## Related links
 {: #hcxclient-migrations-related}

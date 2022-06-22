@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -55,8 +55,6 @@ All configurations use two vSAN disk groups of solid-state disks (SSD):
 * Two or more SSDs for capacity tier (one or more per disk group, drive counts must match in each disk group)
 
 All drives that are allocated for vSAN consumption are configured in single-disk RAID 0.
-
-**Next topic**: [Underlay networking](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-underlay-network)
 
 ## Related links
 {: #vrw-storage-related}

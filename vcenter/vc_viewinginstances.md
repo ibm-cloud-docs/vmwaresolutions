@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-08"
+lastupdated: "2022-06-15"
 
 keywords: view vCenter Server, view instance, view instance details, vmware multizone, vcenter server multizone, view vCenter Server multizone, view multizone, view multizone instance details
 
@@ -28,20 +28,20 @@ To view a summary of all the vCenter Server instances that are provisioned for a
 2. From the console banner, click the **Avatar** icon ![Avatar icon](../../icons/i-avatar-icon.svg "Avatar"), and then click the **Account** field. Select the user account that you want to check instances for.
 3. In the **vCenter Server instances** table, view the list of instances that are provisioned in the selected user account.
 
-| Item        | Description |
-|:----------- |:----------- |
+| Item | Description |
+|:---- |:----------- |
 | Name | The name of the instance. |
 | Type | The type of vCenter Server instance. Instance type is **Single-zone** or **VMware Security and Compliance Readiness Bundle**. |
 | Version | The release version that the instance was deployed in, or upgraded to. |
 | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. |
 | Creation time | The date and time when the instance was created. |
 | Status | The status of the instance. |
-{: caption="Table 1. vCenter Server instance items" caption-side="top"}
+{: caption="Table 1. vCenter Server instance items" caption-side="bottom"}
 
 The instance can have different statuses.
 
-| Status        | Description |
-|:------------- |:----------- |
+| Status | Description |
+|:------ |:----------- |
 | Creating | The instance is being created. |
 | Building | The instance is being configured. |
 | Ready to use | The instance is ready to use. |
@@ -50,12 +50,12 @@ The instance can have different statuses.
 | Deleting | The instance is being deleted. |
 | Deletion error | An error occurred when the instance was being deleted. |
 | Deleted | The instance is deleted. |
-{: caption="Table 2. vCenter Server instances status descriptions" caption-side="top"}
+{: caption="Table 2. vCenter Server instances status descriptions" caption-side="bottom"}
 
 ## Procedure to view the property details for vCenter Server instances
 {: #vc_viewinginstances-procedure-view-inst-property}
 
-To view the property details of an instance:
+To view the property details of an instance, complete the following steps.
 
 1. In the **vCenter Server instances** table, click an instance name.
 2. Under **Properties**, view the details for the instance.
@@ -67,16 +67,16 @@ To view the property details of an instance:
 | Multizone region[^multizone] | The {{site.data.keyword.cloud_notm}} data center region where the instance is hosted. |
 | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. \n \n **Note:** For multizone instances, locations are listed for each cluster type. Types include witness, consolidated, workload, and edge services. |
 | Current version | The current version of {{site.data.keyword.vmwaresolutions_short}}. |
-| vCenter version | The VMware vCenter Server version. \n \n **Note:** There is a slight variation between the vCenter Server version that is displayed on the {{site.data.keyword.vmwaresolutions_short}} console and the VMware vSphere® Web Client. Both are correct. |
+| vCenter version | The vCenter Server version. \n \n **Note:** The vCenter Server versions that are displayed on the {{site.data.keyword.vmwaresolutions_short}} console and the VMware vSphere® Web Client are slightly different. Both are correct. |
 | VMware NSX® networking solution[^NSX] | Either NSX-T or NSX-V. |
 | VMware vSphere version[^vsphere] | The version of VMware vSphere. |
 | NSX for vSphere | The VMware NSX for vSphere product version. |
-| _VMware component_ license | If you selected to use your own VMware license for any of the VMware components on the **Licensing** page when you ordered the instance, the VMware component name and the license key that you entered for the component are displayed. \n \n Examples of VMware component licenses can include: **NSX license**, **vCenter Server license**, and **vSAN license**. |
+| _VMware component_ license | If you selected to use your own VMware® license for any of the VMware components on the **Licensing** page when you ordered the instance, the VMware component name and the license key that you entered for the component are displayed. \n \n Examples of VMware component licenses can include **NSX license**, **vCenter Server license**, and **vSAN license**. |
 | NSX license edition | The version and edition of the VMware NSX license. |
 | Root domain | The root domain name is the DNS domain name and the Microsoft® Active Directory™ (AD) forest root name. |
 | SSO domain | The SSO domain is the vSphere single sign-on domain. The SSO domain name is fixed for all deployed vCenter Server instances with a value of **`vsphere.local`**. |
-| Subdomain[^subdomain] | The subdomain is the DNS subdomain name of the root domain name where the local vCenter Server instance hostnames reside. The subdomain name is in the format **`vcenter_server_instance_name.root.domain_name`**. |
-{: caption="Table 3. vCenter Server instance properties" caption-side="top"}
+| Subdomain[^subdomain] | The subdomain is the DNS subdomain name of the root domain name where the local vCenter Server instance hostnames are located. The subdomain name is in the format `vcenter_server_instance_name.root.domain_name`. |
+{: caption="Table 3. vCenter Server instance properties" caption-side="bottom"}
 
 [^multizone]: Multizone instances only.
 
@@ -109,7 +109,7 @@ Under **Access information**, view the access information for the instance-relat
 | Customer Edge VM SSH[^nsxt2] | The username and password that you can use to access the Customer Edge VM through KVM or SSH connection. |
 | NSX Service Edge VM IPs[^nsxt5] | The IP address or addresses for the Service Edge VM. |
 | NSX Service Edge VM SSH[^nsxt6] | The username and password that you can use to access the Service Edge VM through KVM or SSH connection. |
-{: caption="Table 4. vCenter Server access information for instance-related components" caption-side="top"}
+{: caption="Table 4. vCenter Server access information for instance-related components" caption-side="bottom"}
 
 [^nsxt1]: Single-zone instance, NSX-T only.
 
@@ -138,7 +138,7 @@ Click **Deployment history** from the left navigation pane to view the deploymen
 |:------------- |:------------- |
 | Date | The date and time when the instance status is changed. |
 | Summary | The details of the change. |
-{: caption="Table 5. vCenter Server instance deployment history" caption-side="top"}
+{: caption="Table 5. vCenter Server instance deployment history" caption-side="bottom"}
 
 ## What to do if errors occur
 {: #vc_viewinginstances-if-errors-occur}

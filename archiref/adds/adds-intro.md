@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -34,8 +34,6 @@ This document uses the following terms.
 {: #adds-intro-prevent-probs}
 
 To prevent problems with your system in the future, you must keep your Active Directory (AD) up to date. A current AD is required for various functions, such as managing DNS records.
-
-**Next topic:** [Active Directory overview](/docs/vmwaresolutions?topic=vmwaresolutions-adds-overview)
 
 ## Related links
 {: #adds-intro-related}

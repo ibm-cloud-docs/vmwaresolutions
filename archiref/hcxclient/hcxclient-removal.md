@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-29"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -81,8 +81,6 @@ The Hybrid Cloud Services deployment can be administered from the management por
 1. In a web browser, enter the IP address that is assigned to the Hybrid Cloud Services, and specify the port number 9443. For example, `https://HCXip:9443`.
 2. The Hybrid Cloud Services user interface opens in a web browser window by using SSL. If necessary, accept the security certificate. The VMware® Hybridity and Networking log in screen opens.
 3. Enter the username and password. By default, the username is Admin. The password is the value that was supplied when the Hybrid Cloud Services virtual appliance was installed.
-
-**Next topic:** [Glossary of HCX components and terms](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-components)
 
 ## Related links
 {: #hcxclient-removal-related}

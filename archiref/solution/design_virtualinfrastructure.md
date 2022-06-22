@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -44,7 +44,7 @@ By default, the only users who can log in directly are the _root_ and _ibmvmadmi
 | User access            | Local authentication and MSAD |
 | Domain name resolution | Uses DNS as described in [Common services design](/docs/vmwaresolutions?topic=vmwaresolutions-design_commonservice). |
 | EVC Mode | Highest available level supported by vSphere version. However, for a management cluster with Cascade Lake processors, no EVC is set where Cascade Lake EVC is not supported by the vSphere version. |
-{: caption="Table 1. vSphere ESXi configuration" caption-side="top"}
+{: caption="Table 1. vSphere ESXi configuration" caption-side="bottom"}
 
 The vSphere cluster houses the virtual machines (VMs) that manage the vCenter Server instance and the compute resources for user workloads.
 
@@ -119,8 +119,6 @@ One 2-TB NFS data store is attached to a cluster for use by management component
 Additionally, this architecture requires that all hosts have a subnet route that is created for the subnet where the NFS storage resides. The purpose of this subnet route is to direct all NFS traffic to use the port group, subnet, and VLAN designated for NFS traffic by this design. If multiple NFS data stores are attached, multiple routes might be required to be configured since those data stores might be located in different remote subnets.
 
 Management virtual machines can be located on an NFS data store. This approach creates a bootstrapping problem since some of the management machines might be responsible for DNS services, which are used to resolve the NFS hostname. Therefore, this architecture specifies that at least one of the IP addresses for the management data store to be hardcoded in `/etc/hosts` on each of the hosts.
-
-**Next topic:** [VMware NSX-T design](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design)
 
 ## Related links
 {: #design_virtualinfrastructure-related}

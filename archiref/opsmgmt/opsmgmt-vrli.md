@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-21"
+lastupdated: "2022-06-16"
 
 subcollection: vmwaresolutions
 
@@ -50,7 +50,7 @@ vRLI collects log events from the following virtual infrastructure and cloud man
 * NSX Controllers
 * NSX Edge services gateways
 * NSX distributed logical router instances
-* NSX universal distributed logical routers
+* NSX universal-distributed logical routers
 * NSX distributed firewall ESXi kernel module
 * vRealize Operations Manager Analytics cluster nodes and Remote collectors
 * vRLI instance in the other instances as a result of event forwarding
@@ -86,7 +86,7 @@ Each vRLI virtual appliance has three default virtual disks and can use more vir
 ## Networking
 {: #opsmgmt-vrli-network}
 
-Deployment of the vRLI appliance requires three IP addresses from the tooling private portable subnet. vRLI requires access to the following items.
+Deployment of the vRLI appliance requires three IP addresses from the tooling-private portable subnet. vRLI requires access to the following items.
 * vCenter Appliance
 * vRealize Log Insight Appliance
 * NSX-T or NSX-V Appliances
@@ -142,8 +142,6 @@ This design also installs:
 Other content packs can be obtained from [VMware Solution Exchange](https://marketplace.vmware.com/vsx/?contentType=2&listingStyle=table){: external}.
 
 The vRealize Log Insight content pack for NSX-T™ provides more dashboards for viewing log information. For installation instructions, see the [VMware documentation](https://docs.vmware.com/en/VMware-Validated-Design/4.3/com.vmware.vvd.sddc-nsxt-domain-deploy.doc/GUID-EB5EDB4D-C4A1-4906-A6A9-379F898BA372.html){: external} about installing the content pack for NSX-T.
-
-**Next topic**: [vRealize Network Insight](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrni)
 
 ## Related links
 {: #opsmgmt-vrli-related}

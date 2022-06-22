@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-05-24"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -15,6 +15,9 @@ subcollection: vmwaresolutions
 
 # Network interface settings
 {: #scb-orderinginstance-network-interface}
+
+New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or remove VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
+{: deprecated}
 
 You must specify the following network interface settings.
 
@@ -47,9 +50,3 @@ The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and VMs i
 {: #scb-orderinginstance-network-interface-deploy-type}
 
 Two highly available dedicated Windows® server VMs are deployed on the management cluster.
-
-## Related links
-{: #scb-orderinginstance-network-related}
-
-* [Services](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-services)
-* [Procedure to order VMware Security and Compliance Readiness Bundle](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-procedure)

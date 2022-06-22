@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-07"
+lastupdated: "2022-06-09"
 
 subcollection: vmwaresolutions
 
@@ -41,9 +41,7 @@ If you use any IP address range out of the Class A block 10.0.0.0/8 as the VPC p
 ## Considerations
 {: #arch-pattern-bastion-vpc-considerations}
 
-When you design or deploy this architecture pattern, consider the following steps: 
-
-* You might alternatively use Classic Virtual Server Instances for Jump or bastion hosts. Configure the server DNS to point toward vCenter Server Instance Active Directory™ or DNS server, or create entries in the hosts file.
+When you design or deploy this architecture pattern, consider that you might alternatively use classic Virtual Server Instances for Jump or bastion hosts. Configure the server DNS to point toward vCenter Server Instance Active Directory™ or DNS server, or create entries in the hosts file.
 
 ## Related links
 {: #arch-pattern-bastion-vpc-links}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-18"
+lastupdated: "2022-05-23"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 {: #vs_orderinginstances-procedure}
 
 1. In the {{site.data.keyword.vmwaresolutions_full}} console, click the **VMware Solutions Dedicated** card in the **IaaS platforms** section.
-2. On the **VMware Solutions Dedicated** page, click the **VMware vSphere** card. Ensure that you are on the **Create new** tab and that **New cluster** is displayed in the **Cluster configurations** list.
+2. On the **VMware Solutions Dedicated** page, click the **VMware vSphere offering** card. Ensure that you are on the **Create new** tab and that **New cluster** is displayed in the **Cluster configurations** list.
 3. Enter the cluster name.
 4. Select the VMware® components:
    * If you are an IBM Business Partner, select a license bundle and any additional available VMware components.
@@ -32,7 +32,7 @@ subcollection: vmwaresolutions
 5. Complete the bare metal server settings:
    1. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod where the cluster is to be hosted.
    2. Select the bare metal server CPU generation.
-      * For **Skylake**, **Cascade Lake**, or **SAP-certified** - **HANA** servers, specify the CPU model and the RAM size.
+      * For **Skylake**, **Cascade Lake**, or **SAP-certified** - **HANA** servers, select the CPU model and the RAM size.
       * For **SAP-certified** - **NetWeaver** server, choose one of the preset configurations.
    3. Specify the number of bare metal servers.
 6. If you selected the **VMware vSAN** component, complete the vSAN™ storage configuration.
@@ -40,7 +40,7 @@ subcollection: vmwaresolutions
    * Specify the disk types for the capacity and cache disks, and the number of disks.
    * By default, the **Enable vSAN deduplication and compression** checkbox is selected. If you do not want to enable vSAN deduplication and compression, clear the checkbox.
 7. Complete the network interface settings:
-   1. Enter the host name prefix, subdomain label (vSphere 6.7u3 instances only), and domain name.
+   1. Enter the host name prefix and domain name.
    2. Select the network setting of either **Public and private network** or **Private network only**.
    3. Select the uplink speed. The 25 Gb option is available for Cascade Lake servers and for specific data center locations only.
    4. Select the network interface that you want to use.

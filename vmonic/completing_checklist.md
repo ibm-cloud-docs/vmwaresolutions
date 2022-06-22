@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-06-21"
 
 keywords: ordering prerequisites, before you order, pre-order checklist, before first order
 
@@ -35,7 +35,7 @@ When you order your instance for the first time, ensure that your environment is
 ## Results
 {: #completing_checklist-results}
 
-* The {{site.data.keyword.cloud_notm}} infrastructure credentials are stored in the {{site.data.keyword.cloud_notm}} for VMware® Solutions console after the first order. Future orders use the stored credentials by default.
+* The {{site.data.keyword.cloud_notm}} infrastructure credentials are stored in the {{site.data.keyword.vmwaresolutions_short}} console after the first order. Future orders use the stored credentials by default.
 * After you complete the checklist instructions, the checklist disappears next time when you are on the ordering page. You can update the credentials on the **Settings** page later on.
 * If the API key for your {{site.data.keyword.cloud_notm}} infrastructure account changes, you must update the key on the **Settings** page in the {{site.data.keyword.vmwaresolutions_short}} console.
 

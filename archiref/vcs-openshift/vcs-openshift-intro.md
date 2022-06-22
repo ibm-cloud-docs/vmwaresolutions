@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-03-25"
+lastupdated: "2022-05-10"
 
 subcollection: vmwaresolutions
 
@@ -19,9 +19,9 @@ The {{site.data.keyword.vmwaresolutions_full}} offering includes fully automated
 
 {{site.data.keyword.redhat_openshift_full}} on {{site.data.keyword.vmwaresolutions_short}} provides the capability to deploy a {{site.data.keyword.redhat_openshift_notm}} Cluster by using an automated deployment of the VMware Software Defined Data Center (SDDC) architecture. The {{site.data.keyword.redhat_openshift_notm}} Cluster on {{site.data.keyword.cloud_notm}} components are deployed as virtual machines (VM) or appliances by using VMware NSX® software-defined networking.
 
-This reference architecture is for {{site.data.keyword.redhat_openshift_notm}} Clusters deployed on a vCenter Server instance. It provides the foundation for customers who are starting their application modernization journey to the {{site.data.keyword.cloud_notm}}.
-- **vCenter Server** - an offering from {{site.data.keyword.vmwaresolutions_short}} and is a VMware-based platform that is automatically provisioned on {{site.data.keyword.cloud_notm}}.
-- **Red Hat OpenShift** - an application platform for developing and managing containerized applications, which are deployed onto virtualized infrastructure platforms, such as VMware.
+This reference architecture is for {{site.data.keyword.redhat_openshift_notm}} clusters deployed on a vCenter Server instance. It provides the foundation for customers who are starting their application modernization journey to the {{site.data.keyword.cloud_notm}}.
+- **vCenter Server** is an offering from {{site.data.keyword.vmwaresolutions_short}} and is a VMware-based platform that is automatically provisioned on {{site.data.keyword.cloud_notm}}.
+- **Red Hat OpenShift** is an application platform for developing and managing containerized applications, which are deployed onto virtualized infrastructure platforms, such as VMware.
 
 ![IBM Cloud for VMware Solutions and {{site.data.keyword.redhat_openshift_notm}}](../../images/openshift-sddc.svg "IBM Cloud for VMware Solutions and {{site.data.keyword.redhat_openshift_notm}}"){: caption="Figure 1. IBM Cloud for VMware Solutions and OpenShift" caption-side="bottom"}
 
@@ -48,8 +48,6 @@ IBM understands that 70% of private cloud adoption is driven by the need to mode
 For example, a common pattern is to have front-end SOE applications that are deployed as containers with databases and legacy middleware that are deployed on VMs on a private cloud.
 
 Because your IT infrastructure and business needs are unique, you need an approach to modernization that helps accelerate business value delivery, reduces your risks, and preserves your existing investments. IBM provides such an approach that is customized to address your unique business and technology needs related to application modernization.
-
-**Next topic:** [System context for vCenter Server and {{site.data.keyword.redhat_openshift_notm}} architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-syscontext)
 
 ## Related links
 {: #vcs-openshift-intro-related}

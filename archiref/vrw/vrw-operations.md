@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-03-23"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -61,8 +61,6 @@ No operational tools are deployed to the edge services cluster. The edge service
 {: #vrw-operations-workload}
 
 No operational tools are deployed to the workload cluster. The workload cluster is monitored and managed by using the tools that are deployed on the management cluster. All platform components that are deployed in the workload cluster are configured to deliver their log files to vRLI.
-
-**Next topic**: [Caveonix integration](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-caveonix)
 
 ## Related links
 {: #vrw-operations-related}

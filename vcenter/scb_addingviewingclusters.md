@@ -2,11 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-09-10"
-
-keywords: add clusters for Security and Compliance Readiness Bundle, view details of clusters in Security and Compliance Readiness Bundle, delete clusters for Security and Compliance Readiness Bundle, add and delete clusters for scb
+lastupdated: "2022-05-16"
 
 subcollection: vmwaresolutions
 
@@ -17,15 +15,12 @@ subcollection: vmwaresolutions
 # Adding, viewing, and deleting clusters for Security and Compliance Readiness Bundle instances
 {: #scb_addingviewingclusters}
 
-You can add your own clusters to Security and Compliance Readiness Bundle instances to expand the compute and storage capacity. Within a cluster, you can manage VMware ESXi™ servers for better resource allocation and high availability. When no longer needed, delete the added clusters from your instances.
+New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or remove VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
+{: deprecated}
 
-The procedures to add, view, and delete clusters for Security and Compliance Readiness Bundle instances are similar to those of VMware vCenter Server® instances. For more information, see the following topics:
+You can add your own clusters to Security and Compliance Readiness Bundle instances to expand the compute and storage capacity. Within a cluster, you can manage VMware ESXi servers for better resource allocation and high availability. When no longer needed, delete the added clusters from your instances.
+
+The procedures to add, view, and delete clusters for Security and Compliance Readiness Bundle instances are similar to the procedures for VMware vCenter Server® instances. For more information, see the following topics:
 * [Adding clusters to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
 * [Viewing clusters in vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewingclusters)
 * [Deleting clusters from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingclusters)
-
-## Related links
-{: #scb_addingviewingclusters-related}
-
-* [Viewing and deleting Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb-view-delete-instance)
-* [Expanding and contracting capacity for Security and Compliance Readiness Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-scb_addingremovingservers)

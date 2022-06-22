@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-20"
+lastupdated: "2022-06-20"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX virtual security appliance, Juniper virtual security appliance, Juniper vSRX console
 
@@ -78,7 +78,7 @@ Two license types are offered:
 * Standard
 * Content Security Bundle
 
-Each license type includes a different set of features and options. The Content Security Bundle license includes all the features and options in the Standard license and additional features, such as:
+Each license type includes a different set of features and options. The Content Security Bundle license includes all the features and options in the Standard license and extra features, such as:
 * AppSecure
 * UTM
 * SSL Proxy

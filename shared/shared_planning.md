@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-25"
+lastupdated: "2022-06-21"
 
 keywords: planning VMware Solutions Shared, data center, VMware Solutions Shared data centers
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Requirements and planning for VMware Solutions Shared
 {: #shared_planning}
 
-Review the following requirements before you order your {{site.data.keyword.cloud}} for VMware® Solutions Shared virtual data centers. Plan for your order by considering the {{site.data.keyword.cloud_notm}} data center location, your workload capacity requirements, and services requirements.
+Review the following requirements before you order your {{site.data.keyword.vmwaresolutions_full}} Shared virtual data centers. Plan for your order by considering the {{site.data.keyword.cloud_notm}} data center location, your workload capacity requirements, and services requirements.
 
 ## IBM Cloud account requirements
 {: #shared_ordering-account-req}
@@ -41,15 +41,15 @@ The VMware Solutions Shared deployment has strict requirements on the physical i
 
 The following {{site.data.keyword.cloud_notm}} data centers are available for VMware Solutions Shared deployment.
 
-| Geography | Data centers | vSAN support | Multizone support |
-|:----------|----------|:-------|:-------|
-| Europe | Frankfurt 02 | None | No |
-| Europe | Frankfurt 04 | None | No |
-| Europe | Frankfurt 05 | None | No |
-| NA South | Dallas 10 | vSAN | Yes |
-| NA South | Dallas 12 | vSAN | Yes |
-| NA South | Dallas 13 | vSAN | No |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="top"}
+| Geography | Site | Location | vSAN support | Multizone support |
+|:----------|:----------|:----------|:-------|:-------|
+| Europe | Frankfurt Director 01 | Frankfurt 02 | None | No |
+| Europe | Frankfurt Director 01 | Frankfurt 04 | None | No |
+| Europe | Frankfurt Director 01 | Frankfurt 05 | None | No |
+| North America | Dallas Director 01 | Dallas 10 | vSAN | Yes |
+| North America | Dallas Director 01 | Dallas 12 | vSAN | Yes |
+| North America | Dallas Director 01 | Dallas 13 | vSAN | No |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
 
 ## Services for VMware Solutions Shared
 {: #shared_planning-addon-services}

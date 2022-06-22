@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -40,8 +40,6 @@ The following image shows an overview of the all-in-one server. The all-in-one s
 You can use other {{site.data.keyword.cloud_notm}} Storage options as a capacity tier storage for redundancy or long-term retention with Veeam scale-out backup repository functions, if your compliance requirements allow the usage of shared storage resources. For example, Object Storage can be used to provide a highly durable place for low-cost and long-term backup storage when these backups do not require high levels of restore performance.
 
 The backup solution is self-managed and you can customize it post deployment. For more information, see [Post deployment customization options with self-managed vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-bms-archi-post-deployment).
-
-**Next topic:** [Veeam solution components](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-bms-archi-components)
 
 ## Related links
 {: #veeam-bms-archi-overview-related}

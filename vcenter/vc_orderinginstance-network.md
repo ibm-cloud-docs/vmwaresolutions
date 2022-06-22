@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-01"
+lastupdated: "2022-05-18"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -48,8 +48,7 @@ The subdomain label is not used for VMware vSphere® 7.0 instances.
 {: #vc_orderinginstance-domain-name}
 
 The root domain name must meet the following requirements:
-* For vSphere 7.0 instances, the domain name must consist of three or more strings that are separated by a period (.) with a maximum of 50 characters.
-* For vSphere 6.7 instances, the domain name must consist of two or more strings that are separated by a period (.)
+* The domain name must consist of three or more strings that are separated by a period (.) with a maximum of 50 characters.
 * The first string must start with a lowercase alphabetic character.
 * The first string must end with a lowercase alphabetic or numeric character.
 * All strings, except for the last one, can contain only lowercase alphabetic, numeric, and dash (-) characters.
@@ -63,12 +62,6 @@ The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and VMs i
 {: #vc_orderinginstance-public-private-network}
 
 Select **Public and private network** or **Private network only**.
-
-For NSX-V, if you select the **Private network only** option:
-* The VMware NSX Edge™ Services Gateways (the management services ESG and the customer-managed ESG) are not provisioned.
-* The following add-on services, which require public NICs, are not available:
-   * F5® BIG-IP®
-   * FortiGate® Virtual Appliance
 
 ## Uplink speed
 {: #vc_orderinginstance-uplink}

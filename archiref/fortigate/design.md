@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-31"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -52,8 +52,6 @@ You can also deploy FortiGate VM as a virtual firewall appliance directly within
 Additionally, FortiGate VM can use service chaining to integrate directly with NSX–T.
 
 In Figure 2, these topologies are illustrated by the "FortiGate-VM Internal" component.
-
-**Next topic:** [Fortinet FortiGate VM implementation and management](/docs/vmwaresolutions?topic=vmwaresolutions-fortigate-implementation)
 
 ## Related links
 {: #fortigate-design-related}

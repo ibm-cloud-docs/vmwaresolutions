@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-21"
 
 keywords: vCenter Server Hybridity add service, view service vCenter Server Hybridity, remove service vCenter Server Hybridity
 
@@ -28,13 +28,13 @@ The following services are available to VMware vCenter Server with Hybridity Bun
 |--------------|-----------------|
 | [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 3.1.0 |
 | [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 16.1 |
-| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.0.4 |
+| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.0.5 |
 | [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations) | 5.5 |
 | [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (20.4R2) |
-| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations) | 11 |
+| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 11 |
 | [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.6 and vRLI 8.6 |
-| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.0u3 |
-{: caption="Table 1. Available services for vCenter Server with Hybridity Bundle instances" caption-side="top"}
+| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.0u4 |
+{: caption="Table 1. Available services for vCenter Server with Hybridity Bundle instances" caption-side="bottom"}
 
 ## Procedure to add services to vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingremovingservices-adding-procedure}
@@ -53,7 +53,7 @@ When the installation of the service is completed successfully, you are notified
 2. In the **vCenter Server instances** table, click the instance for which you want to view services.
 3. Click **Services** on the left navigation pane.
 4. On the **Services** page, click a service to review information about it, such as the service status and other details.
-5. Depending on the viewed service, you can access the service consoles using the credentials provided on the service details and you can manage the service from here.
+5. Depending on the viewed service, you can access the service consoles by using the credentials that are provided on the service details and you can manage the service from here.
 
 ## Procedure to delete services for vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingremovingservices-removing-procedure}

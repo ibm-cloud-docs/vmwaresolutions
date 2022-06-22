@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-02-01"
+lastupdated: "2022-05-06"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -19,6 +19,8 @@ subcollection: vmwaresolutions
 
 The VMware® Regulated Workloads offering includes a secure-by-default architecture that follows the {{site.data.keyword.IBM}} unique policy controls framework. It provides continuous compliance monitoring and the highest level of data encryption (FIPS 140-2 Level 4).
 
+Price calculations are automatically generated when you access the VMware Regulated Workloads instance order page. Default selections include the Data Center SP Professional license for NSX-T™, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, 768 GB RAM, the vSAN™ Advanced license for both workload and consolidated clusters, and four 3.8 TB SSD vSAN capacity disks for workload clusters.
+
 Ensure that you complete the following tasks:
 * If you are ordering an instance for the first time, complete the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
 * Review the information in [Requirements for the IBM Cloud account](/docs/vmwaresolutions?topic=vmwaresolutions-cloud-infra-acct-req).
@@ -32,7 +34,7 @@ Ensure that you complete the following tasks:
 | vCenter Server (with embedded PSC) FQDN | `<instance_name>-vc.<root_domain>`. The maximum length is 50 characters. |
 | Single Sign-On (SSO) site name | `<root_domain>` |
 | Fully qualified ESXi server name | `<host_prefix><n>.<root_domain>`, where `n` is the sequence of the VMware vSphere® ESXi™ server. The maximum length is 50 characters. |
-{: caption="Table 1. Value format for instance and domain names" caption-side="top"}
+{: caption="Table 1. Value format for instance and domain names" caption-side="bottom"}
 
 After the instance is provisioned, do not modify any value that is set during instance order. Otherwise, the instance might become unusable.
 {: important}

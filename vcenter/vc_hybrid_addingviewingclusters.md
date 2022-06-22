@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-11-12"
+lastupdated: "2022-06-21"
 
 keywords: vCenter Server Hybridity add cluster, view cluster vCenter Server Hybridity, delete cluster vCenter Server Hybridity
 
@@ -28,7 +28,7 @@ You can add clusters to your VMware vCenter Server® with Hybridity Bundle insta
 {: #vc_hybrid_addingviewingclusters-before-add}
 
 * Adding clusters to instances with VMware vSphere® 6.5 is not supported.
-* Whenever possible, add clusters by using the {{site.data.keyword.vmwaresolutions_full}} console because changes that you make on the VMware vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, add clusters to vCenter Server only for on-premises clusters or clusters that you cannot or do not plan to manage in the {{site.data.keyword.vmwaresolutions_short}} console.
+* {{site.data.content.para-vcenteraddclusters}}
 * For instances that were deployed in (or upgraded to) V2.5 and later, the number of clusters, hosts, and VMs determines the maximum limit for the number of clusters you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information about maximum limits, see [VMware Configuration Maximums](https://configmax.vmware.com/home){: external}.
 * For instances that were deployed in (or upgraded to) V2.3 and V2.4, you can add up to 10 clusters.
 
@@ -49,7 +49,7 @@ The cluster name must meet the following requirements:
 #### Data center location
 {: #vc_hybrid_addingviewingclusters-adding-dc-location}
 
-The {{site.data.keyword.cloud_notm}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the vCenter Server instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance, but you must ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms. To check the network latency, use a tool such as [Looking Glass](http://lg.softlayer.com/){: external}.
+The {{site.data.keyword.cloud_notm}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the vCenter Server instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance. However, you must ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms. To check the network latency, use a tool such as [Looking Glass](http://lg.softlayer.com/){: external}.
 
 If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center or {{site.data.keyword.cloud_notm}} infrastructure pod, three more VLANs are ordered for use with the ordered {{site.data.keyword.cloud_notm}} bare metal servers.
 
@@ -63,12 +63,12 @@ You can choose **Skylake** or **Cascade Lake**. Options might differ depending o
 
 When you select **Skylake**, you have options for the **CPU model** and **RAM**.
 
-| CPU model options        | RAM options       |
-|:------------- |:------------- |
-| Dual Intel® Xeon® Silver 4110 processor / 16 cores, 2.1 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5120 processor / 28 cores, 2.2 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6140 processor / 36 cores, 2.3 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-{: caption="Table 1. Options for Skylake bare metal servers" caption-side="top"}
+| CPU model options        | Cores     | GHz     | RAM options       |
+|:------------------------ |:----------|:--------|:------------- |
+| Dual Intel® Xeon® Silver 4110 processor | 16 | 2.1 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 5120 processor | 28 | 2.2 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6140 processor | 36 | 2.3 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+{: caption="Table 1. Options for Skylake bare metal servers" caption-side="bottom"}
 
 #### Cascade Lake
 {: #vc_hybrid_addingviewingclusters-adding-cascade}
@@ -78,16 +78,16 @@ For the **Cascade Lake** setting, you have options for the **CPU model** and **R
 Cascade Lake bare metal servers are available only for VMware vSphere Enterprise Plus 6.7u3 instances.
 {: note}
 
-| CPU model options | RAM options |
-|:----------------- |:----------- |
-| Dual Intel Xeon Silver 4210 processor / 20 cores, 2.2 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5218 processor / 32 cores, 2.3 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6248 processor / 40 cores, 2.5 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6250 processor / 16 cores, 3.9 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Platinum 8260 processor / 48 cores, 2.4 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Quad Intel Xeon Gold 6248 processor / 80 cores, 2.5 GHz | 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Quad Intel Xeon Platinum 8260 processor / 96 cores, 2.4 GHz | 384 GB, 768 GB, 1.5 TB, 3 TB |
-{: caption="Table 2. Options for Cascade Lake bare metal servers" caption-side="top"}
+| CPU model options | Cores     | GHz     | RAM options |
+|:----------------- |:----------|:--------|:----------- |
+| Dual Intel Xeon Silver 4210 processor | 20 | 2.2 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 5218 processor | 32 | 2.3 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6248 processor | 40 | 2.5 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6250 processor | 16 | 3.9 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Platinum 8260 processor | 48 | 2.4 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Quad Intel Xeon Gold 6248 processor | 80 | 2.5 | 384 GB, 768 GB, 1.5 TB, 3 TB |
+| Quad Intel Xeon Platinum 8260 processor | 96 | 2.4 | 384 GB, 768 GB, 1.5 TB, 3 TB |
+{: caption="Table 2. Options for Cascade Lake bare metal servers" caption-side="bottom"}
 
 The Quad Intel Xeon Gold 6248 processor is available if you add new clusters or new ESXi servers for existing hybridity instances.
 {: note}
@@ -232,7 +232,7 @@ You might want to delete a cluster from an instance when it's no longer needed.
 {: #vc_hybrid_addingviewingclusters-deleting-prereq}
 
 * Deleting clusters from instances with vSphere 6.5 is not supported.
-* Whenever possible, delete clusters by using the {{site.data.keyword.vmwaresolutions_short}} console because changes that you make on the VMware vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, delete clusters from vCenter Server only for on-premises clusters or clusters that you can't or don't plan to manage in the {{site.data.keyword.vmwaresolutions_short}} console.
+* {{site.data.content.para-vcenterremoveclusters}}
 * You can delete a single cluster at a time. To delete multiple clusters, you must do it in sequence; waiting for the previous cluster to be deleted before you delete the next cluster.
 * Ensure that all nodes in a cluster are powered on and operational before you delete the cluster.
 * When you delete a cluster, all VMs (virtual machines) from the cluster are also deleted and they can't be recovered. If you want to keep the VMs, migrate them to other clusters.

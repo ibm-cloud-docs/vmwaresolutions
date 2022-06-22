@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-20"
+lastupdated: "2022-06-20"
 
 subcollection: vmwaresolutions
 
@@ -113,7 +113,7 @@ With Entrust DataControl, a VM must be part of a Cloud VM Set before it can be e
 
 A KEK provides an extra layer of security by encrypting the individual DEKs on the VMs associated with the Cloud VM Set. It also controls the expiration and revocation of the DEKs. To protect the KEK, Entrust KeyControl requires that the KEK is stored in the IBM HPCS instance. The following KEK flows are described:
 
-1. Cloud VM Set KEK setup - this process is used when a new Cloud VM Set is configured.
+1. Cloud VM Set KEK setup - This process is used when a new Cloud VM Set is configured.
 2. Wrapping DEK with KEK request flow - Entrust DataControl PA requests the Entrust KeyControl server to create a new DEK when it encrypts a disk or rekeying a disk.
 3. Unwrapping DEK with KEK request flow - Entrust DataControl PA requests the Entrust KeyControl server for a DEK when it attaches an encrypted disk.
 
@@ -155,8 +155,6 @@ Entrust DataControl PA requests the Entrust KeyControl server for a DEK when it 
 5. Entrust DataControl retrieves the wrapped DEK from the Object Store and unwraps it with the KEK.
 6. Entrust DataControl securely erases the KEK from memory.
 7. Entrust DataControl returns the unwrapped DEK to the Entrust DataControl PA.
-
-**Next topic:** [Deployment](/docs/vmwaresolutions?topic=vmwaresolutions-htdc-hpcs-deployment)
 
 ## Related links
 {: #htdc-hpcs-detail-related}

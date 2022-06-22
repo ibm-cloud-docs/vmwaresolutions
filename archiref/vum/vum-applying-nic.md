@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-06-21"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Applying native NIC drivers
 {: #vum-applying-nic}
 
-ixgben is a native driver that replaces the vmklinux net-ixgbe driver but does not support SR-IOV and SW FcOE. The ICVS automation would not enable this driver when your vSphere® ESXi host was provisioned. It is advisable to enable this driver for the performance benefits it brings. The following procedure described in this appendix, shows you how to enable and disable the native drivers by using the vSphere Command-Line (vCLI).
+`ixgben` is a native driver that replaces the `vmklinux net-ixgbe` driver but does not support SR-IOV and SW FcOE. The ICVS automation would not enable this driver when your vSphere® ESXi host was provisioned. It is advisable to enable this driver for the performance benefits it brings. The following procedure described in this appendix, shows you how to enable and disable the native drivers by using the vSphere Command-Line (vCLI).
 
 Before you start this task, retrieve all the physical hosts IPMI IP addresses, login IDs, and passwords from the [{{site.data.keyword.cloud}} infrastructure customer portal](https://control.softlayer.com/devices). This is required in a back out or to check on the progress of an upgrade, where no direct network access to the host exists.
 
@@ -47,8 +47,6 @@ Use the ID and password that are listed in the {{site.data.keyword.cloud_notm}} 
 6. Press **CMD + R** keys simultaneously to enter recovery mode.
 7. Type **Y** to enter recovery mode and boot the ESXi server with the previous version.
 8. Monitor its progress via the console. The boot can take 10 - 20 minutes.
-
-**Next topic:** [Types of VMware software updates](/docs/vmwaresolutions?topic=vmwaresolutions-vum-type-updates)
 
 ## Related links
 {: #vum-applying-nic-related}

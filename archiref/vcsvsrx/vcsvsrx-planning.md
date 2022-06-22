@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ There are two options for deploying a vSRX HA cluster:
 
 * Deploy gateway on bare metal servers - deploys vSRX on a KVM-based host.
 * Deploy gateway as part of the {{site.data.keyword.vmwaresolutions_full}} offering (edge services cluster) - deploys vSRX on a VMware vSphere® ESXi™ hypervisor.
-  
+
 The two vSRX nodes are tied together in a highly available chassis cluster and deliver a reliable gateway solution that provides for continuous network traffic flows through the loss of a host that supports a node or a vSRX node.
 
 These features are common to both deployment types.
@@ -115,7 +115,7 @@ Network adapter | Interface name in Junos OS
 6| `ge-0/0/4`
 7| `ge-0/0/5`
 8| `ge-0/0/6`
-{: caption="Table 1. Interface names and mappings for a standalone vSRX VM" caption-side="top"}
+{: caption="Table 1. Interface names and mappings for a standalone vSRX VM" caption-side="bottom"}
 
 The following table shows information for a pair of vSRX VMs in a cluster (node 0 and node 1).
 
@@ -129,7 +129,7 @@ Network adapter | Interface name in Junos OS
 6| `ge-0/0/3` (node 0) and `ge-7/0/3` (node 1)
 7| `ge-0/0/4` (node 0) and `ge-7/0/4` (node 1)
 8| `ge-0/0/5` (node 0) and `ge-7/0/5` (node 1)
-{: caption="Table 2. Interface names and mappings for a pair of vSRX VMs in a cluster (node 0 and node 1)" caption-side="top"}
+{: caption="Table 2. Interface names and mappings for a pair of vSRX VMs in a cluster (node 0 and node 1)" caption-side="bottom"}
 
 #### Default security zone configuration
 {: #vcsvsrx-planning-default-sec-zone}
@@ -141,7 +141,7 @@ Source zone|Destination zone|Policy action
 trust|untrust|permit
 trust|trust|permit
 untrust|trust|deny
-{: caption="Table 3. Factory default settings for security policies" caption-side="top"}
+{: caption="Table 3. Factory default settings for security policies" caption-side="bottom"}
 
 As noted previously, the default configuration merely represents a point from which to build the required configuration to meet your requirements. The creation of extra security zones is often necessary to support the various traffic flow patterns present in the account.
 
@@ -159,8 +159,6 @@ If the client is using Direct Link, BGP by using private ASNs is possible.
 The diagram illustrates one of many potential implementations of BGP from the on-premises data center to the {{site.data.keyword.cloud_notm}}.
 
 The traffic that originates from the client facility flows through AT&T NetBond or other provider into the GNPP router. The GNPP router is peered through BGP to the vSRX gateway deployed into the client's {{site.data.keyword.cloud_notm}} account and all traffic is encapsulated in a GRE tunnel over BGP. The packets that exit the tunnel into the vSRX are then routed to the NSX overlay network through an edge services gateway.
-
-**Next topic:** [vSRX example configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vcsvsrx-default-config)
 
 ## Related links
 {: #vcsvsrx-planning-related}

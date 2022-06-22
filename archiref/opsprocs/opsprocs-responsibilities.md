@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-15"
 
 subcollection: vmwaresolutions
 
@@ -30,17 +30,15 @@ Day 2 responsibilities include the following items:
 * IBM Management component updates - For instances deployed in (or upgraded to) V2.5 or later, updates and patches for the IBM management components are applied automatically, as needed.
 * Incident and Problem Management - You are responsible for incident and problem management of your vCenter Server instances after deployment. You must have tools and processes to detect incidents, record the issues, classify their severity, escalate, and return the failing component to service.
 * Capacity Management - You are responsible for capacity management of your vCenter Server instances, adding or removing additional capacity to match business demands. For more information, see [Adding ESXi servers to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers) and [Adding clusters for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters).
-* Data Recovery - You are responsible for all backup and restoration of the components in the vCenter Server instance, including vCenter Server Appliance, NSX Manager, virtual appliances, virtual machines, and content libraries. Use optional services, such as [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations) or [IBM Spectrum Protect Plus](/docs/vmwaresolutions?topic=vmwaresolutions-spp_considerations) or implement their own enterprise systems.
+* Data Recovery - You are responsible for all backup and restoration of the components in the vCenter Server instance, including vCenter Server Appliance, NSX Manager, virtual appliances, virtual machines, and content libraries. Use optional services, such as [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) or implement your own enterprise systems.
 * Bare metal server firmware - You are responsible for updating out-of-date firmware. For more information, see [FAQs: Bare metal servers](/docs/bare-metal?topic=bare-metal-bm-faq#what-if-my-bare-metal-server-has-out-of-date-firmware-).
 * VMware software updates - Updates to the VMware software, such as fixes and service packs, are necessary to maintain the health and availability of your vCenter Server instance. Review these updates and apply them periodically. For more information, see [VMware update manager introduction](/docs/vmwaresolutions?topic=vmwaresolutions-vum-intro).
-* VMware software upgrades - You must upgrade existing vCenter Server instances to continue to benefit from the automation. For more information, see [Upgrading vCenter Server vSphere software from vSphere 6.5 to 6.7](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_upgrade).
+* VMware software upgrades - You must upgrade existing vCenter Server instances to continue to benefit from the automation. For more information, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade).
 * IBM provides notification of scheduled maintenance at [Planned maintenance](https://cloud.ibm.com/status?selected=maintenance).
 * Security - You are responsible for ensuring adequate protection of your deployed content including, but not limited to the following items. VM operating system patching, application security fixes, data encryption, access controls, roles and permissions granted to users, security of the virtual network components including distributive or gateway firewall rules. You are responsible for the detection, classification, and remediation of all security events within your deployed vCenter Server instances and the associated VMs, operating systems, applications, data, or content. In addition, you are responsible for any compliance or certification program in which you are required to participate. For more information about the automated deployment of services to assist with security responsibilities, see [Add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started#getting-started-add-on-services).
 * Encryption - You are responsible for determining encryption requirements and implementing these requirements. Use encryption options such as [Entrust DataControl™](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations), and vSphere or vSAN encryption with [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
 * High availability - You are responsible to design and deploy your workload in a way that achieves your high availability requirements including anti-affinity rules and load balancing.
 * The [Cloud status page](/docs/get-support?topic=get-support-viewing-cloud-status) is the central place to find unplanned incidents, planned maintenance, announcements, and security bulletin notifications about key events that affect the {{site.data.keyword.cloud_notm}} platform, infrastructure, and major services.
-
-**Next topic**: [Configuration tasks](/docs/vmwaresolutions?topic=vmwaresolutions-opsprocs-configure)
 
 ## Related links
 {: #opsprocs-responsibilities-links}

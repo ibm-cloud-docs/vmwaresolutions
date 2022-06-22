@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-19"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -39,8 +39,6 @@ vCenter Server Hybridity Bundle isn't a managed service, though you can add IBM-
 Platform integration options of the vCenter Server Hybridity Bundle aren't limited to options available from VMware® such as vRealize® Suite or vSphere with Operations Management. Options also span multiple {{site.data.keyword.cloud_notm}} service offerings such as the {{site.data.keyword.containerlong_notm}} and {{site.data.keyword.cloud_notm}} Private, which use open source Terraform to manage and deliver infrastructure as code.
 
 The extensive portfolio of services and multi-offering integration options available for the vCenter Server Hybridity Bundle deliver a truly hybrid platform that makes Hybridity as a service possible.
-
-**Next topic:** [VMware Update Manager introduction](/docs/vmwaresolutions?topic=vmwaresolutions-vum-intro)
 
 ## Related links
 {: #vcs-hybridity-intro-related}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-05-10"
 
 keywords: troubleshooting, Zerto Virtual Replication, Zerto ESXi server
 
@@ -28,6 +28,6 @@ The Zerto disaster recovery service is installed only on the ESXi server from th
 Open an {{site.data.keyword.cloud}} Support ticket and work with IBM Support to obtain available IP addresses for you to install the VRAs from the Zerto console, instead of the {{site.data.keyword.vmwaresolutions_short}} console.
 {: tsResolve}
 
-To access the Zerto console, click the Zerto card from the **Services** tab of the instance and click **View details** then, **View Zerto console**.
+To access the Zerto console, click the **Zerto** card from the **Services** tab of the instance and click **View details**. After that, click **View Zerto console**.
 
 For more information about contacting IBM Support, see [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support#trbl_support).

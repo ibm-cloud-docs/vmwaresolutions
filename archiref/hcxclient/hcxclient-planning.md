@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ The installation of VMware HCX™ has the following software requirements:
 
 HCX™ must traverse the public internet and private lines, and connect to data center components, such as networks, switches, and port groups.
 * For more information about the ports that must be opened so that HCX virtual appliances can install successfully, see [Port access requirements](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-port-req).
-* Both the on-premises vSphere environment and the vCenter Server HCX Cloud environment must allow Network Time Protocol (NTP) clock synchronization among vSphere on-premises devices and the vCenter Server HCX devices. UDP port 123 must be accessible to HCX virtual appliances and networks.
+* Both the on premises vSphere environment and the vCenter Server HCX Cloud environment must allow Network Time Protocol (NTP) clock synchronization among vSphere on-premises devices and the vCenter Server HCX devices. UDP port 123 must be accessible to HCX virtual appliances and networks.
 
 ## On-premises environment
 {: #hcxclient-planning-on-prem-env}
@@ -34,12 +34,12 @@ HCX™ must traverse the public internet and private lines, and connect to data 
 Before you install HCX, verify that your environment can support the tasks that you want to accomplish. The on-premises environment must support the following tasks before HCX can be installed.
 * Virtual Center with vSphere 5.5 Update 3 or 6.0 Update 2.
 * vMotion and policy migration features require NSX version 6.2.2 or higher.
-* A vSphere service account with the Administrator vCenter Server system role assigned to it.
+* A vSphere service account with the Administrator vCenter Server system role that is assigned to it.
 * In the vCenter, enough disk space for the HCX appliances to be installed.
 * Sufficient IP addresses for the on-premises VMs provisioned during the installation.
 * Ports and firewalls opened as required as documented in Port Access Requirements.
 * If the single sign-on (SSO) server is remote, the URL of the vCenter, external SSO Server, or Platform Services Controller (PSC) that runs the external lookup service must be identified. When the HCX Manager is registered with the vCenter, this URL must be supplied.
-* If a vCenter Server does not have its own internal instance of the lookup service, it might be for one of the following reasons:
+* If a vCenter Server does not have its own internal instance of the lookup service, it might be for one of the following reasons.
    * vCenter 6.0u2 is running an external Platform Services Controller.
    * vCenter Server is in linked mode (where the secondary vCenter uses the SSO service from the primary vCenter or an external SSO service).
 
@@ -67,14 +67,14 @@ Since the deployment of HCX for an enterprise-level customer typically involves 
 
 Many of the hurdles and time that migration of a virtual machine (VM) or group of VMs takes are because parts of the application environment need to be modified. Also, the design of those changes and the scheduling of the downtime that is needed to make those changes can be complicated. After these changes are made, the migration becomes difficult to revert, further adding to analysis paralysis. Trying to capture all aspects of the migration, coordinating across teams, and changing key stake holders can delay the project.
 
-HCX allows for cross vSphere instance migration of a VM or group of VMs that represent a partial or complete composite application, without any modifications to the application. Therefore, backing out of a migration means moving the VMs back or restretching the networks. As a result, there's no need for a large part of migration planning and some parallelism in the planning process might occur. After selecting the applications to move and creating a high-level network design, the applications can begin migration with minimal configuration on the cloud instance while the final network connectivity and design is worked out.
+HCX allows for cross vSphere instance migration of a VM or group of VMs that represent a partial or complete composite application, without any modifications to the application. Therefore, backing out of a migration means moving the VMs back or restretching the networks. As a result, you do not need a large part of migration planning and some parallelism in the planning process might occur. After you select the applications to move and create a high-level network design, the applications can begin migration with minimal configuration on the cloud instance while the final network connectivity and design is worked out.
 
 ## Stretched networks
 {: #hcxclient-planning-stretched-net}
 
-The network stretch components of the HCX fleet are very stable. At one particular customer with greater than 20 VLANs that are stretched into the {{site.data.keyword.cloud}} across 1 Gbps WAN shared with other traffic and HCX migration tunnels, there are no application issues attributed to the network. The network links are up for greater than 6 months in this way.
+The network stretch components of the HCX fleet are stable. One customer has greater than 20 VLANs that are stretched into the {{site.data.keyword.cloud}} across 1 Gbps WAN shared with other traffic and HCX migration tunnels. This configuration does not have any application issues that are attributed to the network. The network links are up for greater than 6 months in this way.
 
-More stretched networks were added and removed without issue. Picking an {{site.data.keyword.cloud_notm}} data center that is close (<6 ms latency for this particular customer) also plays into network stability of stretched networking. Leaving the stretched networks up long term, should not be a negative factor in your design given you have enough bandwidth and low enough latency for your applications.
+More stretched networks were added and removed without issue. Picking an {{site.data.keyword.cloud_notm}} data center that is close (<6 ms latency for this particular customer) also plays into network stability of stretched networking. Leaving the stretched networks up long term, is not a negative factor in your design given you have enough bandwidth and low enough latency for your applications.
 
 ## Migration lifecycle
 {: #hcxclient-planning-mig-lifecycle}
@@ -92,7 +92,7 @@ This means that the initial group of related L2 stretched networks can be unstre
 ## Baseline network configuration
 {: #hcxclient-planning-baseline-net-config}
 
-Create a secured perimeter network within the cloud side vSphere instance. This usually consists of an NSX DLR or Edge appliance. If you use HCX Proximity Routing, there is no need to create any firewall rules or uplink topology as it can be completed later or concurrently without effecting the stretched L2 traffic.
+Create a secured perimeter network within the cloud side vSphere instance. This usually consists of an NSX DLR or Edge appliance. If you use HCX Proximity Routing, you do not need to create any firewall rules or uplink topology as it can be completed later or concurrently without effecting the stretched L2 traffic.
 
 ## Network extension
 {: #hcxclient-planning-net-extension}
@@ -104,7 +104,7 @@ Extending the network merely means to take the existing VLAN or VXLAN from the s
 
 Pre-flight tests involve performing an HCX migration with both the vMotion and bulk migration function to establish a baseline transfer rate.
 
-## Migration of non-production apps
+## Migration of nonproduction apps
 {: #hcxclient-planning-mig-non-prod-apps}
 
 Migration of VMs begins with the planned stages of less critical VMs. Development and Test teams use internet connectivity for migration and stretched L2 traffic.
@@ -123,7 +123,7 @@ While migrations continue, private WAN network connectivity is ordered as it typ
 {: #hcxclient-planning-physical-servers}
 
 When the goal is data center migration into the cloud, any physical servers that interact with the VMs being migrated can be assessed for
-migration into the {{site.data.keyword.cloud_notm}} as either a VM (P2V), bare metal or remain at the source. If the physical server is to remain at the source, and HCX will be used only during migration, until a dedicated network is established, it is important to understand if it resides on any network that is stretched into the cloud with HCX. In this scenario, HCX is allowing not only the VMs, but the entire subnet to be migrated into the cloud.
+migration into the {{site.data.keyword.cloud_notm}} as either a VM (P2V), bare metal or remain at the source. If the physical server is to remain at the source, and HCX is used only during migration until a dedicated network is established, it is important to understand if it resides on any network that is stretched into the cloud with HCX. In this scenario, HCX is allowing not only the VMs, but the entire subnet to be migrated into the cloud.
 
 To remove HCX at the end of the migration, the subnet cannot exist in the source and destination if connection between physical devices and the migrated VMs is to be maintained. This implies that any physical devices left behind at the source site that exist on stretched L2 networks, must be migrated to another network subnet that can be routed to the cloud side. The exception to this is if some other stretched L2 technology is employed, such as NSX L2 VPN, to replace HCX stretched L2 endpoints.
 
@@ -157,9 +157,7 @@ HCX Cloud side is provisioned by {{site.data.keyword.cloud_notm}} automation.
 ### Standard HCX connectivity
 {: #hcxclient-planning-standard-connect}
 
-As deployed by the {{site.data.keyword.vmwaresolutions_short}} automation, HCX cloud side installation is configured to connect to across the Internet by default.
-
-**Next topic:** [HCX Client deployment](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-vcs-client-deployment)
+As deployed by the {{site.data.keyword.vmwaresolutions_short}} automation, HCX cloud side installation is configured to connect to across the internet by default.
 
 ## Related links
 {: #hcxclient-planning-related}

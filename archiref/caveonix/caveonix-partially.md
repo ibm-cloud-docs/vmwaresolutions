@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -33,7 +33,7 @@ Find the details of the base VM, scale-out VM, and Remote collector VM in the fo
 | OS | CentOS 7 |
 | Installed application components | UI, App, Plugins, Central collector, Index datastore, Messaging datastore, Relational datastore, Remote collector |
 {: class="simple-tab-table"}
-{: caption="Table 1. Base VM parameters" caption-side="top"}
+{: caption="Table 1. Base VM parameters" caption-side="bottom"}
 {: #table1}
 {: tab-title="Base VM"}
 {: tab-group="partially-caveonix"}
@@ -47,7 +47,7 @@ Find the details of the base VM, scale-out VM, and Remote collector VM in the fo
 | Disk | 4 TB |
 | OS | CentOS 7 |
 | Installed application components | Data nodes (scale-out) |
-{: caption="Table 1. Scale-out VM parameters" caption-side="top"}
+{: caption="Table 1. Scale-out VM parameters" caption-side="bottom"}
 {: #table2}
 {: tab-title="Scale-out VM"}
 {: tab-group="partially-caveonix"}
@@ -61,10 +61,8 @@ Find the details of the base VM, scale-out VM, and Remote collector VM in the fo
 | Disk | 1 TB |
 | OS | CentOS 7 |
 | Installed application components | Remote collector |
-{: caption="Table 1. Remote collector VM parameters" caption-side="top"}
+{: caption="Table 1. Remote collector VM parameters" caption-side="bottom"}
 {: #table3}
 {: tab-title="Remote collector VM"}
 {: tab-group="partially-caveonix"}
 {: class="simple-tab-table"}
-
-**Next topic:** [Fully distributed](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-fully)

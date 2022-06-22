@@ -37,7 +37,7 @@ The following table shows the ports that are used by VMware®. The ports in VMwa
 | vCenter Server | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 88 | TCP and UDP |
 | NSX Manager | Infrastructure VMs | ESXi host | Private primary subnet | 443 | TCP |
 | NSX Manager | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP |
-{: caption="Table 1. Ports used by VMware" caption-side="top"}
+{: caption="Table 1. Ports used by VMware" caption-side="bottom"}
 
 For more information, see [TCP and UDP ports required to access VMware components](https://kb.vmware.com/s/article/1012382){: external}.
 

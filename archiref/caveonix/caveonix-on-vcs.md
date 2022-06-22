@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-23"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -53,5 +53,3 @@ The key benefits that are provided by Caveonix RiskForesight include:
 - Proactively managing the overall risks within hybrid cloud before they can be used.
 - Maintaining a “full-stack” understanding of the workload vulnerabilities and configuration issues at the infrastructure, platform, and application level in the context of threats and compliance requirements.
 - Enabling the enterprise to implement the National Institute of Standards and Technology (NIST) proactive Risk Management Framework.
-
-**Next topic:** [Architecture overview for Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-arch)

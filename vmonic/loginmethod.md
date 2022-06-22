@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-06-21"
 
 keywords: vmware solutions console, vmware portal, vmware solutions catalog
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Accessing the VMware Solutions console
 {: #loginmethod}
 
-Review the entry points into the {{site.data.keyword.cloud}} for VMware® Solutions console.
+Review the entry points into the {{site.data.keyword.vmwaresolutions_full}} console.
 
 ## Accessing the console directly
 {: #loginmethod-direct}

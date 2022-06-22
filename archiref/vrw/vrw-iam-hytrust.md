@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-06-08"
 
 subcollection: vmwaresolutions
 
@@ -457,9 +457,7 @@ The trust manifests provide access and control to the following resources:
 | Network.VPN.Create                                     | X           |             |             |                   |
 | Network.VPN.Delete                                     | X           |             |             |                   |
 | Network.VPN.Edit                                       | X           |             |             |                   |
-{: caption="Table 1. HTCC roles" caption-side="top"}
-
-**Next topic**: [Operational tooling identity and access management](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-iam-vrealize)
+{: caption="Table 1. Entrust CloudControl roles" caption-side="bottom"}
 
 ## Related links
 {: #vrw-iam-hytrust-related}

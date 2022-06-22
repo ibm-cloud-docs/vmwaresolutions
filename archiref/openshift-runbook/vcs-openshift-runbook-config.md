@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-03-31"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -102,8 +102,6 @@ Complete the following steps to create a new volume.
     ```
 
     The persistent volume claim can now be mapped to the container application.  
-
-**Next topic:** [Troubleshooting {{site.data.keyword.redhat_openshift_notm}} problems](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-trbl-intro)
 
 ## Related links
 {: #vcs-openshift-runbook-config-related }

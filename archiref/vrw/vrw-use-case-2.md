@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -29,8 +29,6 @@ The use of shared resources, such as VSIs or shared storage options, is prohibit
 Data and VM encryption options are included in the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. The preferred option is `keep your own key (KYOK)` by using IBM Hyper Protect Crypto Services (HPCS). Connecting HPCS to the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads is either accomplished by through the {{site.data.keyword.cloud_notm}} KMIP adapter that is required to integrate with the vCenter directly.
 
 {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads is designed with high security throughout the platform, which makes it an option for user workloads that demand the highest level of protection.
-
-**Next topic**: [Dual region Disaster Recovery overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-dualregion-overview)
 
 ## Related links
 {: #vrw-use-case-2-related}

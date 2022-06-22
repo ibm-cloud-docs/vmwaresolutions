@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-04-19"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -88,8 +88,6 @@ The VMware Regulated Workloads dual region design uses the following specificati
 * Veeam - A single Veeam Backup & Replication instance with a bare metal server in each region. The management components are located in the recovery region. Backup and file copies are used to provide off-site copies. Veeam replication is used to provide replicas of the vROps analytic cluster.
 * Key Management Interoperability Protocol for VMware Service (KMIP) - An HA KMIP instance in each region.
 * Hyper Protect Crypto Services (HPCS) - A HA HPCS instance in each region.
-
-**Next topic**: [Dual region Disaster Recovery design](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-dualregion-design)
 
 ## Related links
 {: #vrw-dualregion-overview-related}

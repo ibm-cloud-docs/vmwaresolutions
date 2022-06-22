@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -22,5 +22,3 @@ Therefore, the Caveonix RiskForesight components can complete the following oper
 * Connect to vCenter and NSX Manager through the BCR.
 * Connect to Remote Collectors, either on VXLANs or hosted off-premise.
 * Allow the client to manage the IP address space when you scale up.
-
-**Next topic:** [Step 3 - Application configuration](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-step3)

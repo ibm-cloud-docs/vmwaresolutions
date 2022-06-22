@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-02-01"
+lastupdated: "2022-06-21"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 You have the following options for your firewall appliance:
 * **Edge services cluster with Juniper vSRX** - Order a dedicated cluster for the network edge and firewall components and install Juniper® vSRX on it.
-* **Edge services cluster with FortiGate Virtual Appliance** (single-zone VMware instance only) - Order a dedicated cluster for the network edge and firewall components and install FortiGate Virtual Appliance on it.
+* **Edge services cluster with FortiGate Virtual Appliance** (single-zone VMware® instance only) - Order a dedicated cluster for the network edge and firewall components and install FortiGate® Virtual Appliance on it.
 * **Bring your own gateway appliance** - Order a dedicated cluster for the network edge and firewall components.
 * **FortiGate Security Appliance** - Use an {{site.data.keyword.cloud_notm}} service, which is an enterprise-class hardware firewall for enhanced and granular control over your network.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -49,7 +49,7 @@ vlan-nic-vm001        | vlan           | 1000    | vpc-vm-subnet-192-168-100.0-2
 vlan-nic-vm002        | vlan           | 1000    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-subnet-192-168-100-0-24
 vlan-nic-vm003        | vlan           | 1001    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-3-vlan-1001
 vlan-nic-vm004        | vlan           | 1002    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-3-vlan-1002
-{: caption="Table 1. VLAN interfaces for VMware VMs on VPC subnet example" caption-side="top"}
+{: caption="Table 1. VLAN interfaces for VMware VMs on VPC subnet example" caption-side="bottom"}
 
 You can create VLAN interfaces with the same VLAN ID, or you can use different VLAN IDs mapped to the same VPC subnet. The DPG used for the VM's vNIC must match the provisioned VLAN interface's VLAN ID. For more information, see [Security groups with VMware workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-subnet#vpc-ryo-subnet-net-security-sg).
 {: note}
@@ -112,8 +112,6 @@ The following diagram depicts how VMware workloads that are attached to VPC subn
 VLAN interfaces that are attached to a VPC subnet with a Public Gateway can initiate connections to the internet, but they cannot receive connections from the internet. Public Gateway provides connectivity for an entire subnet, and public traffic that originates from the VMs on this subnet considers the Public Gateway IP address as the source. If the subnet is not attached to a Public Gateway, the traffic is fully private. In this design, vSAN, vMotion, or TEP subnets can be examples.
 
 A VLAN interface with a floating IP can initiate or receive connections to or from the internet. Floating IP provides connectivity for a single instance. This action overrides the Public Gateway of that specific VLAN interface in VPC subnet, if that is provisioned to a subnet with attached Public Gateway.
-
-**Next topic:** [VMware NSX-T design on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-nsx-t)
 
 ## Related links
 {: #vpc-ryo-subnet-links}

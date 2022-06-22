@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-15"
+lastupdated: "2022-06-20"
 
 subcollection: vmwaresolutions
 
@@ -46,7 +46,7 @@ The following roles are suggested network and security admin roles:
 The NSX-T administrator role can be separated into the following roles:
 * NSX-T network super admin - responsible for deployment and operation of necessary shared network objects, such as T0 routers or edge gateways for the workloads.
 * NSX-T network security admin - dedicated security admin that has responsibility that is limited to the firewall and security aspects of NSX-T.
-* Tenant NSX-T admin - where wanted - scope that is limited to a function/application/business unit as applicable to manage resources with such limited scope. Would include deployment of T1 routers for example.
+* Tenant NSX-T admin - where wanted, scope that is limited to a function/application/business unit as applicable to manage resources with such limited scope. Would include deployment of T1 routers for example.
 
 The following diagram shows an example of Entrust CloudControl transparent proxy workflow.
 
@@ -87,8 +87,6 @@ The vSphere administrator is responsible only for the proper operation of the wo
 The security administrator responsible for the management layer does not retain any responsibility for the security of the SaaS applications beyond the requirement that appropriate policies are in place. These policies protect the infrastructure upon which the SaaS consumer deploys their applications and protect the network perimeter to which NSX-T passes north-south traffic.
 
 The SaaS provider might designate one or more NSX-T tenant network administrators to provision and manage network services that are delivered through NSX-T to support the requirements of the applications deployed into the workload clusters. Limited access and scope are assigned to the tenant network administrator by the platform network administrator. The scope that is assigned might include the ability to deploy and modify security policies that impact the workload scope but that do not extend beyond the workload context.
-
-**Next topic**: [Bare metal hosts](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-baremetal)
 
 ## Related links
 {: #vrw-separation-of-duties-related}

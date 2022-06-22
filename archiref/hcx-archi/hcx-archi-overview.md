@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -129,8 +129,6 @@ The base deployment must follow the minimum requirements:
 * Enough disk space for installing Hybrid Cloud Services and the associated service appliances.
 * Sufficient IP addresses for the on-premises VMs provisioned during the installation.
 * If the SSO server is remote, the URL of the vCenter, external SSO Server, or Platform Services Controller (PSC) that runs the external lookup service must be identified. When the HCX service is registered with the vCenter, this URL must be supplied.
-
-**Next topic:** [VMware HCX source-side architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-source)
 
 ## Related links
 {: #hcx-archi-overview-related}

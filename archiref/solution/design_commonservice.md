@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -95,8 +95,6 @@ This design uses the {{site.data.keyword.cloud_notm}} infrastructure NTP servers
 By default, VMware vSphere® uses TLS certificates that are signed by the VMware certificate authority (VMCA), located on the VMware Platform Services Controller (PSC) appliance. These certificates are not trusted by the user devices or browsers. It is a security best practice to replace user-facing certificates with certificates that are signed by a third-party or enterprise certificate authority (CA). Certificates for machine-to-machine communication can remain as VMCA–signed certificates. However, it is recommended that you follow best practices for your organization, which typically involve the use of an identified enterprise CA.
 
 You can use the Windows AD servers within this design to create certificates that are signed by the local instance. However, you can also choose to configure CA services if needed.
-
-**Next topic:** [Infrastructure management design](/docs/vmwaresolutions?topic=vmwaresolutions-design_infrastructuremgmt)
 
 ## Related links
 {: #design_commonservice-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-01"
 
 subcollection: vmwaresolutions
 
@@ -140,7 +140,7 @@ Consider the following details for Layer 3 network migration:
 
 Consider the following details for Layer 2 network extension during migration:
 * NSX-T L2 bridge - In this approach an NSX-T Edge VM or preferably a pair of NSX-T Edge VMs, are deployed on the NSX-V prepared hosts. These Edge VMs are registered with NSX-T Manager and a L2Bridge configured to connect the required NSX-V VXLAN (virtual wire) to an NSX-T segment. For more information, see [Migration that uses vMotion or third-party tools and NSX-T L2 bridge](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-l2-nsx-t).
-* VMware HCX - VMware HCX is a solution that is primarily used for migrating workloads between environments, and consists of a number of services to achieve workload mobility. HCX integrates into both NSX-V and NSX-T. HCX Network Extension (NCX-NE) allows simultaneous bridging of multiple networks. It is useful in cases whether the applications are spread across multiple segments and need inter-app connectivity for extended periods of time during the migration. Using HCX allows bridging of eight segments at a time per HCX-NE pair. This action is especially useful if a workload spans multiple segments. For more information, see [Workload migration with HCX](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-hcx).
+* VMware HCX - VMware HCX is a solution that is primarily used for migrating workloads between environments, and consists of a number of services to achieve workload mobility. HCX integrates into both NSX-V and NSX-T. HCX Network Extension (NCX-NE) allows simultaneous bridging of multiple networks. The solution is useful in cases where the applications are spread across multiple segments and need inter-app connectivity for extended periods of time during the migration. Using HCX allows bridging of eight segments at a time per HCX-NE pair. This action is especially useful if a workload spans multiple segments. For more information, see [Workload migration with HCX](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-hcx).
 
 A third possible Layer 2 approach is to use NSX-T L2VPN. In this approach, the NSX-V environment acts as the L2VPN client and the NSX-T environment acts as the L2VPN server. The L2 VPN connection is secured with a route-based IPsec tunnel between the L2 VPN server and the L2 VPN client. This approach is not recommended in {{site.data.keyword.cloud_notm}} between two VMware Solutions Dedicated instances for V2T migration as NSX-T L2 Bridge offers better performance. And also because {{site.data.keyword.cloud_notm}} private network supports large MTU (jumbo frames).
 {: note}

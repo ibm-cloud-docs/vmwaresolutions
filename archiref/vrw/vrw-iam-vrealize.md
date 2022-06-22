@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-19"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -57,7 +57,7 @@ By default, the following local users are configured during service instantiatio
 | `admin` | LocalID |
 | `maintenanceAdmin` | LocalID |
 | `migrationAdmin` | LocalID |
-{: caption="Table 1. vROps user IDs" caption-side="top"}
+{: caption="Table 1. vROps user IDs" caption-side="bottom"}
 
 The following groups are configured during service instantiation:
 
@@ -88,7 +88,7 @@ vROps authentication sources are configured to use active directory to connect t
 | `icv4-vCenter` | Administrator |
 | `ic4v-infra`  | To be determined |
 | `ic4v-auditor` | Read only |
-{: caption="Table 2. vROps groups" caption-side="top"}
+{: caption="Table 2. vROps groups" caption-side="bottom"}
 
 ## vRealize Log Insight
 {: #vrw-iam-vrealize-vrli}
@@ -98,7 +98,7 @@ By default, the following local users are configured during service instantiatio
 | ID | Type | Role |
 |---|---|---|
 | `admin` | Local ID | Super Admin |
-{: caption="Table 3. vROps default user IDs" caption-side="top"}
+{: caption="Table 3. vROps default user IDs" caption-side="bottom"}
 
 This account is not used on a day-to-day basis or for configuration tasks.
 
@@ -120,9 +120,7 @@ vRLI authentication configuration is configured to use Active Directory to conne
 | `icv4-vCenter` | Super admin |
 | `ic4v-infra`  | View only admin |
 | `ic4v-auditor` | User |
-{: caption="Table 4. vRLI user IDs" caption-side="top"}
-
-**Next topic**: [Use case 1](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-use-case-1)
+{: caption="Table 4. vRLI user IDs" caption-side="bottom"}
 
 ## Related links
 {: #vrw-iam-vrealize-related}

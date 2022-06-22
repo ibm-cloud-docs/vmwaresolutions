@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-06-21"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Network services provided by Tier-0 and Tier-1 logical routers
 {: #vpc-ryo-nsx-t-vpc-edge-services}
 
-NSX-T™ Data Center supports network services such as IPSec Virtual Private Network (IPSec VPN), Network Address Translation (NAT) and Firewalls as shown in the following diagram.
+NSX-T™ Data Center supports network services such as IPsec Virtual Private Network (IPsec VPN), Network Address Translation (NAT) and Firewalls as shown in the following diagram.
 
 ![Network Services provided by Tier-0 and Tier-1 Logical Routers](../../images/vpc-ryo-diagrams-nsx-t-edge-services.svg "Network Services provided by Tier-0 and Tier-1 Logical Routers"){: caption="Figure 1. Network Services provided by Tier-0 and Tier-1 Logical Routers" caption-side="bottom"}
 
@@ -25,7 +25,7 @@ The topic provides a brief introduction to these capabilities and how they can b
 ## VPN services
 {: #vpc-ryo-nsx-t-vpc-edge-services-vpn}
 
-IPSec Virtual Private Network (IPSec VPN) and Layer 2 VPN (L2 VPN) run on an NSX Edge node. IPSec VPN offers site-to-site connectivity between an NSX Edge node and remote sites. With L2 VPN, you can extend your data center by enabling virtual machines (VMs) to keep their network connectivity across geographical boundaries while using the same IP address.
+IPsec Virtual Private Network (IPsec VPN) and Layer 2 VPN (L2 VPN) run on an NSX Edge node. IPsec VPN offers site-to-site connectivity between an NSX Edge node and remote sites. With L2 VPN, you can extend your data center by enabling virtual machines (VMs) to keep their network connectivity across geographical boundaries while using the same IP address.
 
 When configuring NSX-T VPN service in {{site.data.keyword.vpc_short}}, you can use the public `/32` floating IP addresses as the VPN Endpoints both Tier-0 and Tier-1 Logical Routers. You can have multiple VPN endpoints, if needed. When VPN service is configured on Tier-1 Logical Router, ensure that the floating IP is correctly advertised between Tier-0 and Tier-1 Logical Routers.
 
@@ -36,10 +36,10 @@ For more information about VPN service, see [VMware Documentation](https://docs.
 
 Network Address Translation (NAT) is supported on Tier-0 and Tier-1 Logical Routers.
 
-The following types of NAT are supported, for example:
+The following types of NAT are supported.
 
-* Source NAT (SNAT): translates a source IP address of outbound packets so that packets are shown as originating from a different network.
-* Destination NAT (DNAT): translates the destination IP address of inbound packets so that packets are delivered to a target address into another network.
+* **Source NAT (SNAT)** translates a source IP address of outbound packets so that packets are shown as originating from a different network.
+* **Destination NAT (DNAT)** translates the destination IP address of inbound packets so that packets are delivered to a target address into another network.
 
 You can also disable SNAT or DNAT for an IP address or a range of addresses. If an address has multiple NAT rules, the rule with the highest priority is applied.
 
@@ -57,8 +57,6 @@ Gateway firewall represents rules that are applied to the perimeter firewall for
 Distributed firewall monitors all the East-West traffic on your VMs. Grouping of objects simplifies rule management. Groups include different objects that are added both statically and dynamically, and can be used as the source and destination of a firewall rule. They can be configured to contain a combination of virtual machines, IP sets, MAC sets, segment ports, segments, AD user groups, and other groups. Dynamic inclusion of groups can be based on tag, machine name, OS name, or computer name.
 
 For more information about Firewalls in NSX-T, see [VMware Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-F206A4B8-0F33-482D-8727-E71FE253BBCD.html){: external}.
-
-**Next topic:** [Scaling capacity](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-scaling)
 
 ## Related links
 {: #vpc-ryo-nsx-t-vpc-edge-services-links}

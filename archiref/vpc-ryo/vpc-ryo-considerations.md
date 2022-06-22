@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-06-21"
 
 subcollection: vmwaresolutions
 
@@ -16,11 +16,24 @@ subcollection: vmwaresolutions
 # Deployment considerations for the roll-your-own VMware solution on VPC
 {: #vpc-ryo-considerations}
 
-Roll-your-own VMware® Solution in VPC is not a managed service. You can use {{site.data.keyword.cloud}} services to build your own VMware solution in {{site.data.keyword.vpc_short}}.
+Roll-your-own VMware® solution in VPC is not a managed service. You can use {{site.data.keyword.cloud}} services to build your own VMware solution in {{site.data.keyword.vpc_short}}.
 
-You are responsible for the VPC deployment and related networking resources, {{site.data.keyword.cloud_notm}} bare metal server in VPCs and for the deployment, configuration, security, management, and monitoring of all VMware software components. With complete administrative access to the solution, you have great power and flexibility that requires significant technical, administrative, and operational expertise across various domains. 
+You are responsible for the VPC deployment and related networking resources, {{site.data.keyword.cloud_notm}} bare metal server in VPCs and for the deployment, configuration, security, management, and monitoring of all VMware software components. With complete administrative access to the solution, you have great power and flexibility that requires significant technical, administrative, and operational expertise across various domains.
 
 Managing a VMware in the {{site.data.keyword.cloud_notm}} requires the same planning and expertise as planning for an on-premises instance. Software-defined technologies such as VMware NSX-T™ and VMware vSAN™ greatly simplify some aspects of instance management. However, management in {{site.data.keyword.vpc_short}} might require new skills and tools for proper operation. For example, a proper understanding of {{site.data.keyword.cloud_notm}} concepts and {{site.data.keyword.vpc_short}} solutions and services are required.
+
+## Sizing your VMware vSphere clusters
+{: #vpc-ryo-considerations-sizing}
+
+A vSphere cluster is typically the boundary of shareable resources for VMware workloads. By definition, a vSphere High Availability (HA) cluster consists of two or more hosts. VMware vSphere® HA protects your virtual machines (VMs) if an ESXi host failure occurs by restarting VMs on other hosts in the cluster when an ESXi host fails. When you are planning the sizing for your VMware vSphere clusters in {{site.data.keyword.cloud_notm}} VPC, consider the VMware best practices that are documented in [VMware validated designs](https://docs.vmware.com/en/VMware-Validated-Design/5.1/sddc-architecture-and-design/){: external} to meet your capacity and high availability targets.
+
+Theoretically, as each {{site.data.keyword.vpc_short}} Bare Metal Server is deployed individually, you can build a solution as small as one ESXi host per {{site.data.keyword.vpc_short}} zone. However, you need to take the high availability aspects into account. To protect your VMware workloads from host failures, for example in case one host stops functioning, you need to have a cluster with at least two hosts. To keep the workloads running, you need to size enough reserve capacity in each cluster even if a host would fail. In most use cases, a three node cluster is far more appropriate because you have the option of running maintenance tasks on ESXi hosts (such as host updates) without having to disable HA.
+
+As the central point of SDDC management (vCenter Server and NSX-T Managers) runs on the same {{site.data.keyword.vpc_short}} Bare Metal Servers, protecting them is key. You can use vSphere HA and anti-affinity rules (to prevent specific VMs from running on a same host) for these in the vSphere HA cluster. As your initial cluster is typically a management cluster, VMware best practice is to build a management cluster of four hosts or more allowing the cluster to tolerate host failures better and you to perform maintenance tasks much easier, especially with NSX-T and vSAN deployments. Typically, it's not suitable to have three or fewer hosts for a management or a converged management and workload cluster in production.
+
+In general, when you are deploying vSphere HA clusters, it is also important to consider the overall size of the cluster. Smaller sized clusters require a larger relative percentage of all the available cluster resources to be reserved to handle failures. For example, a cluster of three nodes requires at least 33% of the cluster resources to be held on reserve for failover where a cluster of eight nodes requires 12.5% of cluster resources that are reserved for failover. In a production environment, always consider at least one host as a failover minimum per 8 to 10 ESXi hosts to achieve N+1 redundancy.
+
+It is also considered the best practice to build the cluster out of identical server hardware. In {{site.data.keyword.vpc_short}}, use the same Bare Metal Server profiles for hosts in the same cluster. This practice greatly simplifies the management and configuration of servers. It also reduces resource fragmentation and increases the ability to handle server failures. The use of different hardware in a cluster leads to an unbalanced cluster and makes the cluster less productive.
 
 ## {{site.data.keyword.cloud_notm}} account access
 {: #vpc-ryo-considerations-acct-access}
@@ -35,7 +48,7 @@ To manage access to your {{site.data.keyword.cloud_notm}} account, ensure that y
 
 For more information, see [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/account?topic=account-iamoverview).
 
-## VMware Licensing
+## VMware licensing
 {: #vpc-ryo-considerations-licensing}
 
 For licensing, you have two options:
@@ -43,11 +56,11 @@ For licensing, you have two options:
 * Use VMware licenses provided by {{site.data.keyword.cloud_notm}}.
 * Bring your own VMware license.
 
-When you order it, you can specify how a bare metal server is licensed by selecting from different ESXi image options: ESXi™ 7.x BYOL or ESXi 7.x. The ESXi 7.x BYOL option provides ESXi in evaluation mode. The evaluation period is 60 days and begins at the time of provisioning. At any time during the 60-day evaluation period, you can convert from evaluation mode to licensed mode with your appropriate customer provided license. The ESXi 7.x option provides ESXi in licensed mode and it is activated during the provisioning process.
+When you order it, you can specify how a bare metal server is licensed by selecting from different ESXi image options: ESXi™ 7.x BYOL or ESXi 7.x. The ESXi 7.x BYOL option provides ESXi in evaluation mode. The evaluation period is 60 days and begins at the time of provisioning. At any time during the 60-day evaluation period, you can convert from evaluation mode to licensed mode with your appropriate customer-provided license. The ESXi 7.x option provides ESXi in licensed mode and it is activated during the provisioning process.
 
-For more information about how to license ESXi, see [Licensing ESXi Hosts](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.esxi.install.doc/GUID-28D25806-748B-49C0-97A1-E7DE5CB335A9.html){: external}.
+For more information about how to license ESXi, see [Licensing ESXi hosts](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.esxi.install.doc/GUID-28D25806-748B-49C0-97A1-E7DE5CB335A9.html){: external}.
 
-For other VMware licenses, for example, vCenter Server and NSX-T, see [VMware Licenses](/docs/vmwaresolutions?topic=vmwaresolutions-faq_byol).
+For other VMware licenses, for example, vCenter Server and NSX-T, see [FAQ about licensing and BYOL](/docs/vmwaresolutions?topic=vmwaresolutions-faq_byol).
 
 Billing applies for all IBM rented licenses.
 {: note}
@@ -133,8 +146,6 @@ In addition to capacity planning, complete the following to ensure that your sto
    * RAID 6 provides protection against dual failures, but requires a minimum of six hosts compared to four hosts for RAID 5.
 * To add more storage to your vSAN cluster, you must add new hosts to the cluster or add {{site.data.keyword.vpc_short}} file storage instead. Adding disks to the existing hosts is not currently supported.
 
-**Next topic:** [Architecture overview of roll-your-own VMware solution on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview )
-
 ## Related links
 {: #vpc-ryo-considerations-links}
 
@@ -146,3 +157,4 @@ In addition to capacity planning, complete the following to ensure that your sto
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)
 * [VPC IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints)
 * [VMware on Bare Metal VPC tutorial](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)
+* [VMware validated designs](https://docs.vmware.com/en/VMware-Validated-Design/5.1/sddc-architecture-and-design/){: external}.

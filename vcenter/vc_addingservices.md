@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-04-20"
+lastupdated: "2022-06-21"
 
 keywords: vCenter Server add service
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ordering services for vCenter Server instances
 {: #vc_addingservices}
 
-You can order services for your VMware® vCenter Server® instances, such as a disaster recovery solution. Add-on services support varies between vCenter Server with NSX-T™ and vCenter Server with NSX-V instances.
+You can order services for your VMware vCenter Server® instances, such as a disaster recovery solution. Add-on services support varies between vCenter Server with NSX-T™ and existing vCenter Server with NSX-V instances V4.7 and earlier.
 
 ## Before you add services to vCenter Server instances
 {: #vc_addingservices-prereq}
@@ -30,7 +30,7 @@ You can order services for your VMware® vCenter Server® instances, such as a d
 
 The About page for a service provides a high-level description of the service and its features. You can also install the service from its overview on a new instance or add the service to an existing instance.
 
-By default, the service assumes that NSX-T is installed. However, if the service does not support NSX-T, it then uses NSX-V.
+By default, the service assumes that NSX-T is installed. However, if the service does not support NSX-T, it then uses NSX-V for existing instances V4.7 and earlier.
 
 For more information about the service itself and to order, see the individual topics for the service in the documentation.
 
@@ -42,20 +42,20 @@ The following table shows the services that are available to vCenter Server inst
 | Service name | Current version | Notes           |
 |--------------|-----------------|-----------------|
 | [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 3.1.0 | |
-| [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)  | 6.4.1 | NSX-T only |
+| [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations) | 6.5 | NSX-T only |
 | [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations) | 5.5 | VMware vSphere 6.7 only |
 | [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 16.1 | |
-| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.0.4 | |
+| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.0.5 | |
 | [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version | |
 | [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | N/A | |
 | [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (20.4R2) | |
 | [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 | |
 | [PrimaryIO HDM](/docs/vmwaresolutions?topic=vmwaresolutions-managing_pio) | N/A | |
-| [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.9 | NSX-T only \n If you add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade NSX-T to 3.1 or later. |
-| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations) | 11 | |
+| [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.10 | NSX-T only \n If you add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade NSX-T to 3.1 or later. |
+| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 11 | |
 | [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.6 and vRLI 8.6 | |
-| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.0u3 | |
-{: caption="Table 1. Available services for vCenter Server instances" caption-side="top"}
+| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.0u4 | |
+{: caption="Table 1. Available services for vCenter Server instances" caption-side="bottom"}
 
 ## Promotions for services
 {: #vc_addingservices-service-promotions}
@@ -102,7 +102,7 @@ The following table provides the resource requirements for the services for whic
 | VMware HCX | For each gateway in the active-passive pair of VMware NSX-V edge services gateways: \n CPU - 6 CPUs \n RAM - 8 GB \n Storage - 3 GB VMDK \n For the HCX Management Appliance VM: \n CPU - 4 CPUs \n RAM - 12 GB \n Storage - 60 GB VMDK |
 | vRealize Operations and Log Insight | CPU - 18 CPUs \n RAM - 208 GB \n If you install vRealize Operations with vSAN storage, you must have an estimated 750 GB of vSAN storage. \n If you install vRealize Operations with NFS storage, there's no storage requirement because NFS storage is ordered as part of the instance order. |
 | Zerto | CPU - 2 CPUs \n RAM - 4 GB |
-{: caption="Table 2. Resources required for the services that the system checks for capacity requirements" caption-side="top"}
+{: caption="Table 2. Resources required for the services that the system checks for capacity requirements" caption-side="bottom"}
 
 [^f5bigip]: See the table in [Considerations when you install F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations#f5_considerations-install-table).
 
@@ -127,7 +127,7 @@ The following table lists the variables that are used in the previous formula.
 | MgmtOverheadCores[^mgmtcores] | The number of cores reserved by the vCenter Server management components (vCenter Server, PSC, AD/DNS, Edges) | Cores | 5 | 5 |
 | vSphereHAHostTolerance[^vspherehacores] | The number of hosts to tolerate in the vSphere HA configuration | Hosts | 1 | 1 |
 | HostVsanOverheadCorePercentage | The percentage of a host's cores used by vSAN | % | 10 | 0 |
-{: caption="Table 3. Description of variables in formula 1" caption-side="top"}
+{: caption="Table 3. Description of variables in formula 1" caption-side="bottom"}
 
 [^mgmtcores]: Management cluster only. No core reservation for the workload cluster, the edge services cluster, and the single-node management cluster.
 
@@ -151,7 +151,7 @@ The following table lists the variables that are used in the previous formula.
 | vSphereHAHostTolerance[^vspherehamem] | The number of hosts to tolerate in the vSphere HA configuration | Hosts | 1 | 1 |
 | HostVsanOverheadMemoryDiskPercentage | The number of GB of memory reserved by vSAN management (represented as percentage of one of the capacity vSAN disks) | % | 2.75% | 2.75% |
 | HostVsanOverheadMemory | The number of GB of memory reserved by vSAN management regardless of disk size | GB | 7 | 0 |
-{: caption="Table 4. Description of variables in formula 2" caption-side="top"}
+{: caption="Table 4. Description of variables in formula 2" caption-side="bottom"}
 
 [^mgmtmem]: Management cluster only. No memory reservation for the workload cluster, the edge services cluster, and the single-node management cluster.
 

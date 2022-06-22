@@ -4,9 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-01-25"
-
-keywords: vmware multizone, vcenter server multizone instances, add clusters for multizone
+lastupdated: "2022-06-16"
 
 subcollection: vmwaresolutions
 
@@ -54,10 +52,3 @@ You cannot add more than one cluster in the same data center pod.
    2. Review the estimated price of the cluster. Click **Pricing details** to generate a PDF summary. To save or print your order summary, click the **Print** or the **Download** icon ![Download icon](../../icons/download.svg "Download") on the upper right of the PDF window.
    3. Click the link or links of the terms that apply to your order, and confirm that you agree with these terms before you add the cluster.
    4. Click **Create**.
-
-## Related links
-{: #mcv_addviewdeleteclusters-related}
-
-* [vCenter Server multizone BOM](/docs/vmwaresolutions?topic=vmwaresolutions-mcv-archi-bom)
-* [Adding ESXi servers to vCenter Server multizone instances](/docs/vmwaresolutions?topic=vmwaresolutions-mcv_addingremovingservers)
-* [Adding NFS storage to vCenter Server multizone instances](/docs/vmwaresolutions?topic=vmwaresolutions-mcv_addingnfs-storage)

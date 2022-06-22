@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-13"
+lastupdated: "2022-06-21"
 
 keywords: notifications console, filter notifications, system notification
 
@@ -22,7 +22,7 @@ You can check notifications for the status of system or user operations. You can
 ## Viewing notifications
 {: #notifications-view}
 
-From the {{site.data.keyword.cloud}} for VMware® Solutions console, click **Notifications** from the left navigation pane to view a summary about all notifications. To view the details of a notification, click the notification row.
+From the {{site.data.keyword.vmwaresolutions_full}} console, click **Notifications** from the left navigation pane to view a summary about all notifications. To view the details of a notification, click the notification row.
 
 | Column | Description |
 |:------ |:----------- |
@@ -31,7 +31,7 @@ From the {{site.data.keyword.cloud}} for VMware® Solutions console, click **Not
 | Resource | The name of the instance or service that sends the notification. |
 | Title | The subject of the notification. |
 | Creation time | The date and time when the notification is sent. |
-{: caption="Table 1. Notification history" caption-side="top"}
+{: caption="Table 1. Notification history" caption-side="bottom"}
 
 ## Filtering notifications
 {: #notifications-filter}

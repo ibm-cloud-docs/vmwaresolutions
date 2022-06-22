@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Zerto
 {: #vum-zerto}
 
-If you find that a vSphere® ESXi™ host can't enter maintenance mode during remediation, it might be that Zerto is stopping it. 
+If you find that a vSphere® ESXi™ host can't enter maintenance mode during remediation, it might be that Zerto is stopping it.
 
 If you updated Zerto after the initial deployment, complete the following steps to resolve the issue:
 1. Log in to the Zerto web user interface.
@@ -24,8 +24,6 @@ If you updated Zerto after the initial deployment, complete the following steps 
 4. Log out of Zerto.
 
 If you do not update Zerto after the initial deployment, complete the instructions at [How to place a host with an associated VRA into maintenance mode](https://www.zerto.com/myzerto/knowledge-base/how-to-place-a-host-with-an-associated-vra-into-maintenance-mode/){: external} to resolve the issue.
-
-**Next topic:** [Host Profiles](/docs/vmwaresolutions?topic=vmwaresolutions-vum-host-profiles)
 
 ## Related links
 {: #vum-zerto-related}

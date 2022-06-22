@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -69,8 +69,6 @@ Review order and click **Create**. Provisioning takes three to four hours.
 If you deployed the IaaS KVM-based Juniper vSRX HA Cluster, you can continue with configuration of the vSRX cluster as described in [IBM Cloud performing vSRX basics](/docs/vsrx?topic=vsrx-performing-ibm-cloud-juniper-vsrx-basics).
 
 If you opted to deploy the No-OS gateway offering, then follow the guidance in [Installing an operating system on the gateway](/docs/gateway-appliance?topic=gateway-appliance-order-byoa#installing-an-operating-system-on-the-gateway) to prepare the hosts for your appliance.
-
-**Next topic:** [vSRX base and advanced licensing](/docs/vmwaresolutions?topic=vmwaresolutions-vcsvsrx-licensing)
 
 ## Related links
 {: #vcsvsrx-deployment-related}

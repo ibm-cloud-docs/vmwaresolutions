@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-21"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ This approach means that you don't have to reconfigure the VCSA or the Managemen
 
 When VUM requests a resource from the update server at VMware, the request is sent to the proxy server first and the proxy server then sends the request to the update server. After the resource is obtained by the proxy server, it sends the resource to VUM. A proxy server can be used to facilitate security, administrative controls, and caching services.
 
-You can use a proxy server based on CentOS and Squid. Squid Proxy is an open source caching proxy for the web and supports many protocols that include HTTP and HTTPS. A number of VM and appliance-based proxies are available, and you must select the appropriate one based on your enterprise’s requirements and install and configure following the vendor’s guidance. If you select to use a CentOS/Squid implementation, continue with the following process.
+You can use a proxy server based on CentOS and Squid. Squid Proxy is an open source caching proxy for the web and supports many protocols that include HTTP and HTTPS. A number of VM and appliance-based proxies are available, and you must select the appropriate one based on your enterprise’s requirements and install and configure following the vendor’s guidance. If you select to use a CentOS-Squid implementation, continue with the following process.
 
 * Download the CentOS ISO to a jump server.
 * Create a vCenter Library.
@@ -53,7 +53,8 @@ To find the customer's private portable subnet, complete the following steps:
 | DNS Server | AD/DNS IP | This IP address can be found on the instance page in the {{site.data.keyword.vmwaresolutions_short}} console, the **Resources** page. |
 | BCR IP | BCR IP| On the same page where you selected the proxy IP, note the address that is labeled **Gateway**. This address is the IP address of the {{site.data.keyword.cloud_notm}} Backend Customer Router and is the gateway for 10.0.0.0/8 and 161.26.0.0/16. You use this address later in a static route in the proxy server so that it can reach the VCSA and the AD/DNS server. |
 | NAT IP | customer-nsx-edge public uplink IP | The public address of the customer NSX ESG serves as the public NAT address for the proxy. This IP address can be found by reviewing the **Settings** tab for **customer-nsx-edge**. |
-{: caption="Table 1. Deployment values" caption-side="top"}
+{: caption="Table 1. Deployment values" caption-side="bottom"}
+{: #vum-init-config-subnet-table-deployvalues}
 
 ## Configuring NSX
 {: #vum-init-config-config-nsx}
@@ -76,7 +77,7 @@ NSX Customer ESG firewall and NAT settings are required to enable proxy server t
 | Destination | Any |
 | Service | HTTP/HTTPS/ICMP Echo |
 | Action | Accept |
-{: caption="Table 2. Firewall rule" caption-side="top"}
+{: caption="Table 2. Firewall rule" caption-side="bottom"}
 
 After parameters are supplied, click **Publish Changes**.
 
@@ -102,7 +103,7 @@ After parameters are supplied, click **Publish Changes**.
 | Status | Enable |
 | Logging | Enable |
 | Description | Proxy01 SNAT |
-{: caption="Table 3. NAT rule" caption-side="top"}
+{: caption="Table 3. NAT rule" caption-side="bottom"}
 
 ### Installing and configuring a proxy server
 {: #vum-init-config-inst-cfg-proxy}
@@ -163,9 +164,9 @@ This task installs and configures the newly created VM ready for the Squid insta
 7.	At the **LOCALIZATION** screen, click **INSTALLATION DESTINATION**, click the **VMware virtual disk** icon, and then click **Done**.
 8.	At the **LOCALIZATION** screen, click **NETWORK & HOSTNAME**, change the host name to your chosen hostname for example, Proxy01.
 9.	Click **Configure**, then **IPv4 Settings**. In the **Method** box, select **Manual**.
-10.	Click **Add** to insert _Address Netmask_ and _Gateway_ from _Table 1 – Deployment Values_.
-11.	Enter the _DNS server IP address_ from _Table 1 – Deployment Values_.
-12.	Click **Routes** and add the following static routes; _10.0.0.0/8 and 161.26.0.0/16_ with a gateway IP address of the _BCR IP address_ from _Table 1 – Deployment Values_, as the gateway. This static route allows the proxy server to reach the DNS server.
+10.	Click **Add** to insert _Address Netmask_ and _Gateway_ from [Table 1 – Deployment Values](#vum-init-config-subnet-table-deployvalues).
+11.	Enter the _DNS server IP address_ from [Table 1 – Deployment Values](#vum-init-config-subnet-table-deployvalues).
+12.	Click **Routes** and add the following static routes; _10.0.0.0/8 and 161.26.0.0/16_ with a gateway IP address of the _BCR IP address_ from [Table 1 – Deployment Values](#vum-init-config-subnet-table-deployvalues), as the gateway. This static route allows the proxy server to reach the DNS server.
 13.	Click **Save** and then ensure that the Ethernet interface is On and showing as connected. Click **Done** and **Begin Installation**.
 14.	As the installation continues, set a root password and set up a user.
 15.	When the installation is complete, log in as the user and then enter the command _ping vmware.com_. The name is resolved to an IP address and you receive a response. If you do not get responses check; IP addresses, firewall rules and NAT settings.
@@ -211,8 +212,6 @@ Configure VUM to use the proxy server to access the repositories on the internet
    1. Log in to the VCSA management interface at `https://vcsaFQDN:5480` as **root**.
    2. Click **Summary** and click **Reboot**.
    3. In the confirmation box, click **Yes** to confirm the operation.
-
-**Next topic:** [Collecting the metadata](/docs/vmwaresolutions?topic=vmwaresolutions-vum-metadata)
 
 ## Related links
 {: #vum-init-config-related}

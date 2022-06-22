@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -65,8 +65,6 @@ You are responsible to adjust the admission control policy when the cluster is l
 
 To simplify vMotion compatibility across cluster nodes with potentially differing CPU capabilities, Enhanced vMotion Compatibility (EVC) mode can be enabled at the highest available level that is supported by the vSphere version. This setting ensures vMotion compatibility across cluster nodes when newer processors arrive within {{site.data.keyword.vpc_short}} inventory. The setting allows for cluster expansion in the future if the original processor is no longer in inventory.
 
-**Next topic:** [Deployment considerations for the roll-your-own VMware solution on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-considerations)
-
 ## Related links
 {: #vpc-ryo-infrastructuremgmt-links}
 
@@ -77,4 +75,4 @@ To simplify vMotion compatibility across cluster nodes with potentially differin
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)
 * [VPC IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints)
-* [VMware on Bare Metal VPC tutorial](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware) 
+* [VMware on Bare Metal VPC tutorial](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)

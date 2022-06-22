@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-15"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -46,8 +46,6 @@ The VMware Solutions offerings bring the following benefits:
 * Enhancing security with dedicated {{site.data.keyword.cloud_notm}} bare metal servers in a hosted private cloud, including the encryption of data at rest. For vSAN storage, encryption of data at rest is optional by using either vSAN or vSphere encryption. For shared file–level or block storage, service–provider–managed encryption at rest is available by default in select data centers or it is optional by using vSphere encryption. You must manage the necessary encryption keys.
 * Enabling consistent management and governance of the deployed hybrid cloud by providing full administrative access to virtualization management, thus preserving your existing VMware tools, scripts, and investments in training.
 * Using VMware expertise at global scale with IBM Professional and Managed Services spanning 40+ {{site.data.keyword.cloud_notm}} data centers worldwide.
-
-**Next topic:** [VMware Solutions components](/docs/vmwaresolutions?topic=vmwaresolutions-design_overview)
 
 ## Related links
 {: #solution_overview-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-05-27"
 
 keywords: troubleshooting, OVF deploy, how to deploy OVF file
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# How do I deploy an OVF file by using the VMware vSphere Web Client?
+# How do I deploy an OVF file by using the vSphere Web Client?
 {: #trbl_deploy_ovf}
 {: troubleshoot}
 {: support}

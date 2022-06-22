@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-06"
+lastupdated: "2022-06-21"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Workload cluster
 {: #vrw-orderinginstance-wkld-cluster}
 
-For single-zone VMware® instances with a customizable consolidated cluster, you can optionally select the **Include a separate cluster for workloads** checkbox to deploy a workload cluster. An additional cluster for workloads is required for a management-optimized cluster.
+For single-zone VMware® instances with a customizable consolidated cluster, you can optionally select the **Include a separate cluster for workloads** checkbox to deploy a workload cluster. An extra cluster for workloads is required for a management-optimized cluster.
 
 ## Cluster name
 {: #vrw-orderinginstance-wkld-cluster-name}
@@ -39,7 +39,7 @@ You can order 4 - 20 servers. All servers have the same configuration.
 ## Hosts per site (Multizone VMware instance only)
 {: #vrw-orderinginstance-wkld-hosts}
 
-Choose the number of vSAN stretched cluster resource hosts to be deployed in two availability zones. The hosts must be deployed and scaled in pairs (one per site).
+Choose the number of vSAN™ stretched cluster resource hosts to be deployed in two availability zones. The hosts must be deployed and scaled in pairs (one per site).
 
 ## vSAN configuration
 {: #vrw-orderinginstance-wkld-vsan}

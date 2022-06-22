@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-06-21"
 
 keywords: manage shared resources, access the vCloud Director Management console
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Accessing the vCloud Director Management console
 {: #shared_accessing-vcd-console}
 
-You can use the vCloud Director Management console to manage the {{site.data.keyword.cloud}} for VMware® Solutions Shared virtual data centers. You can access the vCloud Director console from the virtual data center details page.
+You can use the vCloud Director Management console to manage the {{site.data.keyword.vmwaresolutions_full}} Shared virtual data centers. You can access the vCloud Director console from the virtual data center details page.
 
 ## Before you begin
 {: #shared_accessing-vcd-console-prereq}
@@ -31,8 +31,8 @@ You can use the vCloud Director Management console to manage the {{site.data.key
 ## Procedure to access the vCloud Director Management console
 {: #shared_accessing-vcd-console-procedure}
 
-1. From the **Properties** pane on the virtual data center details page, click **Set Organization Admin Password** to generate a random password.
-2. On the upper right of the virtual data center details page, click **vCloud Director console** to access the console.
+1. From the **Properties** pane on the site details page, click **Set Site Admin Password** to generate a random password.
+2. On the upper right of the site details page, click **vCloud Director console** to access the console.
 3. Use the **admin** username and password to log in to the vCloud Director console.
 
    After the **admin** is logged in to the vCloud Director console, you can create additional users who have roles that allow them to access the vCloud Director console.

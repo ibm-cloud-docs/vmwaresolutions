@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -36,8 +36,6 @@ When you use VMware virtual machines (VMs) on VPC subnets architecture, your VMs
 When you use NSX-T™ on your VMware solution on VPC, the VMs are attached on the NSX-T overlay segments. They use an IP address range or prefix, which is reachable through VPC route that points to the NSX-T Tier-0 private uplink VIP as described in [VMware NSX-T logical routing on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-nsx-t-vpc-routing). When you attach the VPC to a {{site.data.keyword.tg_short}}, you must create a VPC prefix that matches the VPC route, which points to the NSX-T overlay. You must not define any subnets on the prefix. However, the prefix must exist so that the {{site.data.keyword.tg_short}} can advertise the NSX-T overlay routes to other connections (VPCs, Classic, or Direct Link) that are attached to it.
 
 ![{{site.data.keyword.tg_short}} with VMware on VPC with NSX-T](../../images/vpc-ryo-diagrams-tgw-nsx-t-arch.svg "{{site.data.keyword.tg_short}} with VMware on VPC with NSX-T"){: caption="Figure 2. {{site.data.keyword.tg_full_notm}} with VMware on VPC with NSX-T" caption-side="bottom"}
-
-**Next topic:** [{{site.data.keyword.dl_full_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-interconnectivity-dl)
 
 ## Related links
 {: #interconnectivity-tgw-ryo-links}

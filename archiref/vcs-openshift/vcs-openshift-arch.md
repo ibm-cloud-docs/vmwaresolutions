@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-03-25"
+lastupdated: "2022-05-19"
 
 subcollection: vmwaresolutions
 
@@ -36,22 +36,6 @@ The vCenter Server deployment uses the deployed AD VSIs as DNS servers for the i
 {: #vcs-openshift-arch-ntp}
 
 The vCenter Server deployment uses the {{site.data.keyword.cloud}} infrastructure NTP servers. All deployed components are configured to use these NTP servers. Having all components within the design that uses the same NTP servers is critical for certificates and AD authentication to function correctly.
-
-## Networking
-{: #vcs-openshift-arch-networking}
-
-### NSX-V networking
-{: #vcs-openshift-arch-nsx-v}
-
-NSX-V is designed so that a single NSX-V manager platform is tied to a single vCenter Server instance. It provides networking services to applications that run within a vSphere environment.
-
-The NSX-V networking that is included in the vCenter Server deployment is used to deploy {{site.data.keyword.redhat_openshift_notm}} into a VXLAN overlay network. The deployment uses NSX functions to provide load balancing, Network Address Translation, and DHCP services.
-
-{{site.data.keyword.redhat_openshift_notm}} is deployed with the default Calico networking stack for Kubernetes, which provides network isolation within your cluster.
-
-![{{site.data.keyword.redhat_openshift_notm}} with NSX networking](../../images/openshift-nsxv-networking.svg){: caption="Figure 2. OpenShift with NSX networking" caption-side="bottom"}
-
-**Next topic:** [{{site.data.keyword.cloud_notm}} networking and infrastructure](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-sddc-infra)
 
 ## Related links
 {: #vcs-openshift-arch-related}

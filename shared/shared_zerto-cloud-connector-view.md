@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-06-17"
 
 keywords: zerto, view zerto cloud connector
 
@@ -25,7 +25,7 @@ View the Zerto Cloud Connector (ZCC) details in the **Zerto Cloud Connector (ZCC
 | IP address | The IP address of the VM deployed into the organization network. |
 | Network (CIDR) | The organization network. |
 | Status | The status of the ZCC. |
-{: caption="Table 1. Zerto Cloud Connector details" caption-side="top"}
+{: caption="Table 1. Zerto Cloud Connector details" caption-side="bottom"}
 
 The ZCC can have different statuses.
 
@@ -35,7 +35,7 @@ The ZCC can have different statuses.
 | Ready to use | The ZCC is ready to use. |
 | Deleting | The ZCC is being deleted. |
 | Deleted | The ZCC is deleted. |
-{: caption="Table 2. Status descriptions for Zerto Cloud Connector" caption-side="top"}
+{: caption="Table 2. Status descriptions for Zerto Cloud Connector" caption-side="bottom"}
 
 ## Related links
 {: #shared_zerto-cc-view-related}
@@ -46,4 +46,4 @@ The ZCC can have different statuses.
 * [Ordering a Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-order)
 * [Deleting Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-delete)
 * [Zerto Installation Guide for VMware vSphere Environments & Microsoft Hyper-V Environments](https://s3.amazonaws.com/zertodownload_docs/Latest/Zerto%20Virtual%20Replication%20Installation%20Guide%20for%20vSphere%20and%20Hyper-V.pdf){: external}
-* [Zerto Support and Service](https://www.zerto.com/company/support-and-service/){: external}
+* [Zerto Support and Services](https://www.zerto.com/support-and-services/){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-04-11"
+lastupdated: "2022-05-06"
 
 keywords: planning vmware regulated workloads, data center vmware regulated workloads, vmware regulated workloads data centers
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Requirements and planning for VMware Regulated Workloads
+# Planning for VMware Regulated Workloads
 {: #vrw-planning}
 
 Review the following requirements before you order your VMware® Regulated Workloads instance. Plan your instance based on the {{site.data.keyword.cloud}} data center location, your capacity requirements, and services requirements.
@@ -76,7 +76,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for VM
 | South America | SAO01 | 01 |
 | South America | SAO04 | 01 |
 | South America | SAO05 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware Regulated Workloads single-zone deployment" caption-side="top"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware Regulated Workloads single-zone deployment" caption-side="bottom"}
 
 ### Regions available for multizone deployment
 {: #vrw-planning-reg-multizone}
@@ -88,7 +88,7 @@ The following regions are available for VMware Regulated Workloads multizone dep
 | Dallas, Sao Paulo, Toronto, and Washington DC | Americas |
 | Frankfurt and London | Europe |
 | Sydney, Tokyo, and Osaka | Asia Pacific |
-{: caption="Table 2. Available regions for VMware Regulated Workloads multizone deployment" caption-side="top"}
+{: caption="Table 2. Available regions for VMware Regulated Workloads multizone deployment" caption-side="bottom"}
 
 ## Services for VMware Regulated Workloads
 {: #vrw-planning-addon-services}

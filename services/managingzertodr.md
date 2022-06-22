@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-08"
+lastupdated: "2022-06-16"
 
 keywords: Zerto certificate, Zerto config, update Zerto replication
 
@@ -23,7 +23,7 @@ After the Zerto service is deployed into your instance, you can configure or upd
 ## Using your own certificate for Zerto
 {: #managingzertodr-ssl-cert}
 
-As a best practice, use your own SSL certificate for Zerto Virtual Manager (ZVM). After you deploy Zerto, replace the SSL certificate for ZVM with your own certificate. To change the default security certificate for your ZVM, follow these steps:
+Always use your own SSL certificate for Zerto Virtual Manager (ZVM). After you deploy Zerto, replace the SSL certificate for ZVM with your own certificate. To change the default security certificate for your ZVM, follow these steps:
 
 1. Open the Zerto Diagnostics utility on the Windows® virtual machine that is running the ZVM.
 2. Choose **Reconfigure Zerto Virtual Manager**.

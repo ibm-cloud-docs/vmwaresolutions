@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-25"
+lastupdated: "2022-06-16"
 
 keywords: IBM Cloud Expert Services, request IBM Cloud Expert, tech specs Cloud Expert
 
@@ -22,7 +22,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.cloud_notm}} Expert Services are a suite of service offerings. The offerings are designed to guide you to deploy, migrate, and maintain your own {{site.data.keyword.cloud_notm}} solution from planning to modernization, or any stage in between. The Expert Services team reviews your infrastructure needs in five phases: Discover, Learn, Plan, Build, and Operate.
 
-You can choose from a selection of offerings that incorporate this methodology to design your VMware environment and transform your business.
+You can choose from a selection of offerings that incorporate this method to design your VMware environment and transform your business.
 
 ## Technical specifications for IBM Cloud Expert Services
 {: #managing_ices-specs}
@@ -40,7 +40,7 @@ This offering speeds adoption of VMware on {{site.data.keyword.cloud_notm}} by t
 
 * Ask an expert
 * Technical skills enablement
-* Subject Matter Expert (SME) mentoring time - One hour of remote SME time per month
+* Subject Matter Expert (SME) mentoring time - 1 hour of remote SME time per month
 * Dedicated point of contact
 
 ### Premium features
@@ -52,9 +52,9 @@ This offering speeds adoption of VMware on {{site.data.keyword.cloud_notm}} by t
 ## Key benefits of IBM Cloud Expert Services
 {: #managing_ices-benefits}
 
-* Consultative engagement methodology centered on your business objectives
+* Consultative engagement methods centered on your business objectives
 * Experienced architectural expertise that is part of the {{site.data.keyword.cloud_notm}} Platform team
-* Accelerated cloud adoption through proven paths for successful implementation
+* Accelerated cloud adoption through verified paths for successful implementation
 * Prescriptive best practices for solution implementation by using {{site.data.keyword.cloud_notm}} products and features
 * Rapid learning and risk mitigation through access to {{site.data.keyword.cloud_notm}} experts
 

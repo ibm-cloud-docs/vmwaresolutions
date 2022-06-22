@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-05-27"
 
 keywords: vCenter Server delete instance, delete vCenter Server, remove vCenter Server, vmware multizone, vcenter server multizone, delete vCenter Server multizone
 
@@ -19,18 +19,13 @@ subcollection: vmwaresolutions
 
 To release the components that you ordered in a VMware vCenter Server® instance, delete the instance.
 
-When you delete a vCenter Server instance, the following components are released sequentially:
-1. All deployed services
-2. The Support and Services fee for NSX-V instances or the Support fee for NSX-V instances.
-3. VMware® product licenses
-4. VMware ESXi™ servers
-5. Subnets
-6. VLANs
+{{site.data.content.deletinginstance-components-list}}
 
-Any VLANs that have your own resources added to them, such as gateways, Veeam® servers, and so on, will not be deleted. In addition, any existing VLANs that you own, outside of {{site.data.keyword.vmwaresolutions_full}}, will not be deleted.
-{: note}
+{{site.data.content.deletinginstance-delete-vlans}}
 
-Because of resource dependencies, the components in your instance are not released immediately when you delete the instance. For example, the subnets and VLANs cannot be deleted until the ESXi servers are fully reclaimed by the {{site.data.keyword.cloud_notm}} infrastructure at the end of the billing cycle. You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle for the deleted instance.
+{{site.data.content.deletinginstance-delete-info}}
+
+{{site.data.content.deletinginstance-important-note}}
 
 The instance remains in **Deleting** status and the monthly ESXi servers are available for the remainder of the account monthly billing cycle. After the billing cycle ends, the status of the device changes from **ACTIVE** to **RECLAIM** until the reclaim process completes which can take days or weeks into the following month.
 

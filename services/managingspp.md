@@ -4,9 +4,7 @@ copyright:
 
   years:  2016, 2021
 
-lastupdated: "2022-01-27"
-
-keywords: SPP management console, apply SPP updates, login SPP console
+lastupdated: "2022-05-30"
 
 subcollection: vmwaresolutions
 

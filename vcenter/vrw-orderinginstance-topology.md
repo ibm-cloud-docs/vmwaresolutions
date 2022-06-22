@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-06"
+lastupdated: "2022-06-21"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 {: #vrw-orderinginstance-topology}
 
 The following topology options are provided:
-* **Single-zone VMware virtual data center** - this option deploys your VMware® vCenter Server® in a single-zone data center.
+* **Single-zone VMware virtual data center** - this option deploys your VMware vCenter Server® in a single-zone data center.
 * **Multizone VMware virtual data center** - this option deploys your vCenter Server across three availability zones in an {{site.data.keyword.cloud}} multizone region if a single-zone data center failure occurs.
 
 ## Related links

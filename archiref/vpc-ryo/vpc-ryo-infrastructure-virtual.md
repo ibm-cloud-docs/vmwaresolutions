@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -119,9 +119,6 @@ For more information about the shared storage, see [File Storage for VPC](/docs/
 
 Additionally, this architecture currently uses management `vmk` that hosts have for all NFS traffic for simplicity.
 
-**Next topic:** [Common Services design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-commonservice)
-
-
 ## Related links
 {: #vpc-ryo-infrastructure-virtual-links}
 
@@ -132,4 +129,4 @@ Additionally, this architecture currently uses management `vmk` that hosts have 
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)
 * [VPC IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints)
-* [VMware on Bare Metal VPC tutorial](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware) 
+* [VMware on Bare Metal VPC tutorial](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)

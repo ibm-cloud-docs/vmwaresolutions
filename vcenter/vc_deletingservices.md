@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-04-10"
+lastupdated: "2022-06-21"
 
 keywords: remove services vCenter Server
 
@@ -23,7 +23,7 @@ You can delete the services that were provisioned for your VMware vCenter Server
 {: #vc_deletingservices-prereq}
 
 * Deleting services from vCenter Server instances with VMware vSphere® 6.5 is not supported.
-* You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle for the deleted services.
+* You are billed until the end of the {{site.data.keyword.cloud}} infrastructure billing cycle for the deleted services.
 
 ## Procedure to delete services from vCenter Server instances
 {: #vc_deletingservices-procedure}
@@ -62,7 +62,7 @@ The following table shows the services that are affected. The table also shows t
 | Entrust DataControl | `htdcnn-id` | `htcc02-GY67239` |
 | Entrust KeyControl | `htkcnn-id` | `htcc02-GY67239` |
 | vRealize Operations | `vrli`   \n `vrops`   \n `vrlog` | `vrli-master`   \n `vrops-data1`   \n `vrlog-master` |
-{: caption="Table 1. Hostname patterns and examples for affected services" caption-side="top"}
+{: caption="Table 1. Hostname patterns and examples for affected services" caption-side="bottom"}
 
 To remove the DNS entires, complete the following steps:
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-03-24"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -51,7 +51,7 @@ Use the following table to document the parameters you need for your deployment.
 | vCenter Server instance datastore | `vsanDatastore` | |
 | Pull Secret | | |
 | Public SSH Key| | |
-{: caption="Table 1. File parameters for install-config.yaml" caption-side="top"}
+{: caption="Table 1. File parameters for install-config.yaml" caption-side="bottom"}
 {: #openshift-runbook-runbook-install-yaml-table}
 
 Using the following install-config.yaml file shown in the figure, update it using your deployment details from the [previous table](#openshift-runbook-runbook-install-yaml-table):
@@ -159,7 +159,7 @@ The DNS IP details are hardcoded within the Terraform template. You must change 
 | Parameter | Example | Your deployment |
 |:--------- |:------- |:--------------- |
 | DNS1 | 10.187.214.66 | |
-{: caption="Table 2. File parameters for ignition.tf" caption-side="top"}
+{: caption="Table 2. File parameters for ignition.tf" caption-side="bottom"}
 
 1. In the SSH session to the bastion node, with root privileges, use the following command to open the file:
    `vi /opt/ocpinstall/installer/upi/vsphere/machine/ignition.tf`
@@ -279,7 +279,7 @@ You can copy the ignition files after you use the following commands to display 
 | bootstrap_ignition_url | `http://192.168.133.08/bootstrap.ign` | |
 | control_plane_ignition | |
 | compute_ignition | |
-{: caption="Table 3. ignition.tf file parameters" caption-side="top"}
+{: caption="Table 3. ignition.tf file parameters" caption-side="bottom"}
 {: #openshift-runbook-runbook-install-terraform-tfars-table}
 
 After you use the following terraform-tvars example file, use your deployment details from the [previous table](#openshift-runbook-runbook-install-terraform-tfars-table) to update the file. Copy the file to the clipboard.
@@ -457,8 +457,6 @@ The password for the user that was created during installation can also be found
     service-catalog-controller-manager   4.x.5    True        False         False      32m
     storage                              4.x.5    True        False         False      30m
     ```
-
-**Next topic:** [{{site.data.keyword.redhat_openshift_notm}} 4.7 additional configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-config-intro)
 
 ## Related links
 {: #vcs-openshift-runbook-install-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-21"
+lastupdated: "2022-06-16"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -18,13 +18,12 @@ subcollection: vmwaresolutions
 # Ordering VMware HCX
 {: #hcx_ordering}
 
-Automated deployment of the VMware HCX™ service is not supported for VMware® vCenter Server instances with the VMware NSX-T™ Data Center SP Enterprise Plus license edition. However, you can manually deploy HCX outside of the VMware® Solutions console. For more information, see [HCX Connector and HCX Cloud installations](https://docs.vmware.com/en/VMware-HCX/4.2/hcx-getting-started/GUID-B1023D31-0458-433B-9ABB-62E8BDD3FEC2.html){: external}.
-{: note}
+You can include the VMware HCX™ service with a new VMware vCenter Server® instance or add the service to your existing vCenter Server instance.
 
 ## Ordering VMware HCX for a new instance
 {: #hcx_ordering-new}
 
-To order a new vCenter Server instance with VMware HCX from the {{site.data.keyword.vmwaresolutions_short}} console, scroll down to the services section and select **HCX** in the **Business continuity and migration** category.
+To order a new vCenter Server instance with VMware HCX from the VMware Solutions console, scroll down to the services section and select **HCX** in the **Business continuity and migration** category.
 
 ## Ordering VMware HCX for an existing instance
 {: #hcx_ordering-existing}
@@ -33,6 +32,35 @@ To order a new vCenter Server instance with VMware HCX from the {{site.data.keyw
 2. Click **Add** to add the service.
 3. On the **Services** page, locate the **VMware HCX** service and toggle its switch on.
 4. Follow the steps to configure and add the service to your instance.
+
+## BYOL HCX Enterprise edition for HCX and NSX Data Center SP Enterprise Plus
+{: #hcx_ordering-byol-hcx-enterprise}
+
+When you install VMware HCX as part of a vCenter Server instance order, the HCX Advanced license is installed. As an alternative, you can install the HCX Enterprise license for extra functions.
+
+HCX Enterprise is a separate license that you must get directly from VMware. You install HCX Enterprise as a Bring Your Own License (BYOL). You can install the HCX Enterprise license after the HCX provisioning is complete.
+
+The following scenarios are cases for installing HCX with NSX.
+
+* Rent an NSX Data Center SP Base license, Professional license, or Advanced license from IBM. You can include one of these licenses when you order a vCenter Server instance.
+   * You pay the normal VMware HCX license costs.
+   * The normal infrastructure costs apply, such as storage and subnets.
+* Rent an NSX Data Center SP Enterprise Plus (E+) license from IBM. You can include this license when you order a vCenter Server instance.
+   * You don't pay any additional VMware HCX license costs. These costs are included with the NSX Data Center SP Enterprise Plus (E+) license.
+   * The normal infrastructure costs apply, such as storage and subnets.
+* Bring Your Own License (BYOL) for NSX Data Center edition (except Enterprise Plus).
+   * You pay the normal VMware HCX license costs.
+   * The normal infrastructure costs apply, such as storage and subnets.
+* Bring Your Own License (BYOL) for NSX Data Center Enterprise Plus edition.
+   * You pay the normal VMware HCX license costs.
+   * The normal infrastructure costs apply, such as storage and subnets.
+   * If you want to license HCX with your BYOL NSX Data Center Enterprise Plus edition, you must deploy HCX manually.
+
+If you use a BYOL license for NSX-T, including the NSX Data Center Enterprise Plus edition, and you also want to install HCX, you are still required to pay for the HCX licensing costs. To use the BYOL NSX Data Center Enterprise Plus edition for HCX, you must provision HCX manually.
+
+If you rent the NSX Data Center SP Enterprise Plus (E+) license from IBM and install HCX, HCX is licensed with the NSX Data Center SP Enterprise Plus (E+) license. The license entitlement is equivalent to an HCX Advanced license.
+
+For more information about VMware HCX and installing it, see [VMware HCX user guide](https://docs.vmware.com/en/VMware-HCX/4.3/hcx-user-guide/GUID-BFD7E194-CFE5-4259-B74B-991B26A51758.html){: external}. 
 
 ## VMware HCX configuration
 {: #hcx_ordering-config}
@@ -91,7 +119,7 @@ The deployment of HCX is automated. Whether you order a vCenter Server instance 
    * The HCX Manager is registered with vCenter Server.
    * The HCX Manager, vCenter Server (with embedded Platform Services Controller), and NSX Manager are configured.
    * The HCX Compute and Network profiles are created.
-7. The hostname and IP address of the HCX Manager is registered with the DNS server of VMware vCenter Server.
+7. The hostname and IP address of the HCX Manager is registered with the DNS server of vCenter Server.
 
 ## Related links
 {: #hcx_ordering-related}

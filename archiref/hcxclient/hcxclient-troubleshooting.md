@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -68,8 +68,6 @@ vMotion migration can be an issue when the client source side is of newer hardwa
 {: #hcxclient-troubleshooting-stretched-l2}
 
 If the L2C loses connectivity it reconnects automatically after the network connectivity is restored. Use the ccli shell to check health and operation. After SSH is enabled and the L2C is connected, run the `ip tunnel` and `ip link |grep t_` commands to view the status of the tunnels.
-
-**Next topic:** [Modifying or uninstalling HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-removal-uninstall)
 
 ## Related links
 {: #hcxclient-troubleshooting-related}

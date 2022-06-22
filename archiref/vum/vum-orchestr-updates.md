@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ The following workflow describes the process to perform an orchestrated upgrade:
 {: #vum-orchestr-updates-step1}
 
 1. Use the vSphere Web Client to log in to the VCSA.
-2. Click **Home > Update Manager**. 
+2. Click **Home > Update Manager**.
 3. On the **Objects** tab, select an **Update Manager instance**.
 4. Click the **Manage** tab, click the **Host Baselines** tab, and then click **New Baseline Group**.
 5. Enter a unique name for the baseline group and click **Next**.
@@ -65,8 +65,6 @@ The following workflow describes the process to perform an orchestrated upgrade:
 * During a virtual machine hardware upgrade, the virtual machines must be shut down. After the remediation is completed, VUM restores the original power state of the virtual machines. If a virtual machine is powered on, VUM powers it off, upgrades its hardware, and then powers it on.
 
 You can now use these baseline groups in the scan, review, staging, and remediation processes.
-
-**Next topic:** [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-vum-zerto)
 
 ## Related links
 {: #vum-orchestr-updates-related}

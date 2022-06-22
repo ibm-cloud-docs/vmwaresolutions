@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-04-08"
+lastupdated: "2022-06-21"
 
 keywords: vCenter Server view clusters, vmware multizone, vCenter Server multizone view clusters, view vCenter Server cluster
 
@@ -27,7 +27,7 @@ You can view the summary and detailed information of the clusters that are provi
 3. Click **Infrastructure** on the left navigation pane. In the **Clusters** table, view the summary about the clusters:
    * **Cluster name**: The name and type of the cluster.
    * **Cluster type**: The type of cluster. Types include witness, consolidated, workload, and edge services.
-   * **ESXi servers**: The number of ESXi servers in the cluster.
+   * **ESXi servers**: The number of VMware ESXi™ servers in the cluster.
    * **Storage**: The type of storage that the cluster uses.
    * **Data center location**: The {{site.data.keyword.cloud_notm}} data center where the cluster is hosted.
    * **Pod**: The pod where the cluster is deployed.
@@ -49,7 +49,7 @@ You can view the summary and detailed information of the clusters that are provi
 | Credentials | The user name and password to access the ESXi server. |
 | Private IP | The private IP address of the ESXi server. |
 | Status | The status of the ESXi server, which can be one of the following values: \n **Added** The ESXi server is added and is ready for use. \n **Adding** The ESXi server is being added. \n **Deleting** The ESXi server is being deleted. |
-{: caption="Table 1. ESXi server details" caption-side="top"}
+{: caption="Table 1. ESXi server details" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #table1}
 {: tab-title="ESXi server details"}
@@ -62,7 +62,7 @@ You can view the summary and detailed information of the clusters that are provi
 | Customized vSAN disks | The number of vSAN disks in the cluster, including the disk type and capacity. |
 | vSAN cache disks | The type and number of vSAN cache disks. |
 | Networking |The network interface card (NIC) enablement settings of either Public and Private Network or Private Network Only. |
-{: caption="Table 1. Additional ESXi server details" caption-side="top"}
+{: caption="Table 1. Additional ESXi server details" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #table2}
 {: tab-title="Additional ESXi server details"}
@@ -75,7 +75,7 @@ You can view the summary and detailed information of the clusters that are provi
 | IOPS/GB | The performance level of the storage. |
 | NFS protocol | The NFS version of the storage. |
 | Status | The storage status, which can be one of the following values: \n **Added** The storage is added and is ready for use. \n **Adding** The storage is being added. \n **Deleting** The storage is being deleted. |
-{: caption="Table 1. Storage details" caption-side="top"}
+{: caption="Table 1. Storage details" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #table3}
 {: tab-title="Storage details"}
@@ -87,7 +87,7 @@ You can view the summary and detailed information of the clusters that are provi
 | Description | The description of the VLAN.  |
 | Location | The data center location. |
 | Primary route | The primary route of the VLAN. |
-{: caption="Table 1. Network interface - VLAN details" caption-side="top"}
+{: caption="Table 1. Network interface - VLAN details" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #table4}
 {: tab-title="Network interface details"}
@@ -100,7 +100,7 @@ Click **View resource** to access the VLAN details, including the subnet details
 | Name | The subnet name. Click the name to access the subnet details. |
 | Type | The type of subnet: primary or portable. |
 | Description | The description of the subnet. |
-{: caption="Table 2. Network interface - Subnet details" caption-side="top"}
+{: caption="Table 2. Network interface - Subnet details" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #vlan-table1}
 {: tab-title="Subnet details"}
@@ -111,7 +111,7 @@ Click **View resource** to access the VLAN details, including the subnet details
 | IP | The IP address. |
 | Status | The status of the IP address. |
 | Description |The description of the IP address.  |
-{: caption="Table 2. Network interface - IP details" caption-side="top"}
+{: caption="Table 2. Network interface - IP details" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #vlan-table2}
 {: tab-title="IP details"}

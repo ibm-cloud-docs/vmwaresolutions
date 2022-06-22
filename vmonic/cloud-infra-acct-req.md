@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-21"
 
 keywords: user account, user permissions, VRF account
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Requirements for the IBM Cloud infrastructure account
 {: #cloud-infra-acct-req}
 
-To use {{site.data.keyword.cloud}} for VMware® Solutions to order instances, you must have an {{site.data.keyword.cloud_notm}} infrastructure account. The price of the components that are ordered in your instances is billed to that {{site.data.keyword.cloud_notm}} account.
+To use {{site.data.keyword.vmwaresolutions_full}} to order instances, you must have an {{site.data.keyword.cloud_notm}} infrastructure account. The price of the components that are ordered in your instances is billed to that {{site.data.keyword.cloud_notm}} account.
 
 ## Permissions for the IBM Cloud infrastructure account
 {: #cloud-infra-acct-req-permissions}
@@ -26,8 +26,8 @@ The {{site.data.keyword.cloud_notm}} infrastructure account that you are using m
 
 You can verify or update permissions for classic infrastructure users at any time. For more information, see [Classic infrastructure permissions](/docs/account?topic=account-infrapermission).
 
-| Permission         | Details                                 |
-|:------------------ |:--------------------------------------- |
+| Permission | Details |
+|:---------- |:------- |
 | Add Server | This permission is required for the following operations: to order {{site.data.keyword.cloud_notm}} bare metal servers on which VMware ESXi™ runs and to provision hourly virtual servers that are used, for instance, configuration, maintenance, and support operations. |
 | Cancel Server | This permission is required to release and reclaim bare metal servers on which VMware ESXi runs. If you delete your instance, the ordered components are automatically released in the correct dependency sequence. |
 | View Virtual Server Details | This permission is required to retrieve the server provisioning details, which are required for order validation and automated configuration. |
@@ -44,7 +44,7 @@ You can verify or update permissions for classic infrastructure users at any tim
 | View Licenses | This permission is required to retrieve and validate the licenses that are used by your instance. |
 | View Passwords | This permission is required to be able to administer the ordered VSIs. |
 | Manage Server Monitoring | This permission is not required to place an order. However, it is required to retrieve and validate the monitoring status of the {{site.data.keyword.cloud_notm}} bare metal servers on which the VMware ESXi servers are running in your instance. |
-{: caption="Table 1. Required permissions for the {{site.data.keyword.cloud_notm}} infrastructure account" caption-side="top"}
+{: caption="Table 1. Required permissions for the {{site.data.keyword.cloud_notm}} infrastructure account" caption-side="bottom"}
 
 ## Virtual routing and forwarding with service endpoints enabled
 {: #cloud-infra-acct-req-vrf-se}

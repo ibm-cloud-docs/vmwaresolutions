@@ -4,9 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-02"
-
-keywords: IBM Spectrum Protect Plus, SPP, tech specs SPP
+lastupdated: "2022-05-30"
 
 subcollection: vmwaresolutions
 

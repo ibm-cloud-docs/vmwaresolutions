@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-05-10"
 
 keywords: vSphere scale cluster, scale vSphere, scale vSphere cluster
 
@@ -24,7 +24,7 @@ You can scale out a VMware vSphere® cluster that you ordered or saved in the {{
 
 Ensure that you complete the following tasks:
 * If you are ordering an instance for the first time, complete the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
-*  Review the requirements and considerations in [Requirements and planning for vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning).
+*  Review the requirements and considerations in [Planning for vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning).
 *  Verify that you received an email with the confirmation that the cluster you want to scale is ready to use.
 
 ## Procedure to scale existing clusters
@@ -33,7 +33,7 @@ Ensure that you complete the following tasks:
 {: support}
 
 1. In the {{site.data.keyword.vmwaresolutions_short}} console, click the **VMware Solutions Dedicated** card in the **IaaS platforms** section.
-2. On the **VMware Solutions Dedicated** page, click the **VMware vSphere** card.
+2. On the **VMware Solutions Dedicated** page, click the **VMware vSphere offering** card.
 3. Click the **Scale existing** tab and select the cluster that you want to scale from the **Cluster configurations** list.
 4. Review the cluster settings that are automatically completed, update the settings according to your needs, and complete any required fields. For more information about the settings, see [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req).
 5. If the cluster does not include the FortiGate 300 Series Security Appliance HA Pair on its public VLAN, you can order the appliance. To do so, select the **Include with purchase** checkbox under **FortiGate Physical Appliance 300 Series HA Pair**.

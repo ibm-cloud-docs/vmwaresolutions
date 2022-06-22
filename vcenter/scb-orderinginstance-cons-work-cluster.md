@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-04-01"
+lastupdated: "2022-06-20"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -16,9 +16,12 @@ subcollection: vmwaresolutions
 # Consolidated and workload cluster
 {: #scb-orderinginstance-consoli}
 
-Specify the following settings for the consildated cluster.
+New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or remove VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
+{: deprecated}
 
-You can select to include a separate, additional workload cluster in the same way as you order the consolidated cluster.
+Specify the following settings for the consolidated cluster.
+
+You can select to include a separate, extra workload cluster in the same way as you order the consolidated cluster.
 
 ## Cluster name
 {: #scb-orderinginstance-consoli-cluster}
@@ -27,7 +30,7 @@ By default, the consolidated cluster name is set to **vcs-_xx_-management**. You
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * The cluster name must start with a lowercase alphabetic character.
 * The cluster name must end with a lowercase alphabetic or numeric character.
-* The maximum length of the cluster name is 30 characters.
+* The maximum length of the cluster name is 10 characters.
 * The cluster name must be unique within the regulated workload instance.
 
 ## CPU model
@@ -101,7 +104,7 @@ The amount of storage reduction from deduplication and compression depends on ma
 
 Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**, or Bring Your Own License (BYOL) by selecting **I will provide** and entering your own license key.
 
-If your initial cluster was a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This is also true if any cluster (initial or additional) in the instance has vSAN selected to be deployed on it. The first time you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
+If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This is also true if any cluster (initial or additional) in the instance has vSAN selected to be deployed on it. The first time you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
 
 ### NFS storage
 {: #scb-orderinginstance-consoli-nfs}
@@ -123,7 +126,7 @@ Choose performance level options according to your needs.
 | 2 IOPS/GB | This option is designed for most general-purpose workloads. Example applications include hosting small databases, backing up web applications, or virtual machine disk images for a hypervisor. |
 | 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. Example applications include transactional databases. |
 | 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. Example applications include high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
-{: caption="Table 1. NFS performance level options" caption-side="top"}
+{: caption="Table 1. NFS performance level options" caption-side="bottom"}
 
 ## Networking type
 {: #scb-orderinginstance-consoli-private-nics}
@@ -151,7 +154,7 @@ Select **Public and private network** or **Private network only** for the consol
 | NA South | DAL10 | 03 |
 | NA South | DAL12 | 01 |
 | NA South | DAL13 | 02 |
-{: caption="Table 2. Available locations for 25 Gb uplink speed" caption-side="top"}
+{: caption="Table 2. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 
 ## VLANs
 {: #scb-orderinginstance-consoli-vlans}
@@ -193,9 +196,3 @@ Use the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** tabs to
 
 {{site.data.keyword.vmwaresolutions_short}} takes control of the entire subnet and you can't use any IP addresses in the subnet.
 {: important}
-
-## Related links
-{: #scb-orderinginstance-cons-cluster-related}
-
-* [Firewall appliance](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-firewall-appl)
-* [Procedure to order VMware Security and Compliance Readiness Bundle](/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-procedure)

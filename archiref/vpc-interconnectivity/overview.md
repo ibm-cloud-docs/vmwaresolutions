@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -31,9 +31,9 @@ The following diagram shows an overview of the interconnectivity solutions.
 
 Interconnecting VMware workloads on VPC with on-premises networks provides the capability to know how to interconnect workloads with on-premises network.
 
-The solution consists of the following key offerings: 
+The solution consists of the following key offerings:
 
-- {{site.data.keyword.dl_full_notm}} offerings provide low-latency, high-throughput connections between {{site.data.keyword.vpc_short}} networks directly to a service provider-managed WAN, or a client-managed cloud backbone, or through a supported service provider. 
+- {{site.data.keyword.dl_full_notm}} offerings provide low-latency, high-throughput connections between {{site.data.keyword.vpc_short}} networks directly to a service provider-managed WAN, or a client-managed cloud backbone, or through a supported service provider.
 - {{site.data.keyword.cloud_notm}} {{site.data.keyword.vpn_vpc_short}} can securely connect your virtual private cloud to another private network. This service offers two types of VPNs, such as Site-to-site gateways that connect your on-premises network to the {{site.data.keyword.vpc_short}} network and Client-to-site servers that allows clients to connect to VPN servers on internet.
 
 See the following sections for more detailed overview for these offerings for on-premises connectivity, and architectural considerations when used with VMware workloads on VPC.
@@ -49,8 +49,6 @@ The solution consists of the following key offerings:
 - With {{site.data.keyword.vpe_full}}, you can connect to supported {{site.data.keyword.cloud_notm}} services from your VPC network. To connect, you must use the IP addresses that you choose and that are allocated from a subnet within your VPC. You can use VPEs with your VMware workloads that run on VPC.
 
 When you use the services that were mentioned previously, the data remains within the private {{site.data.keyword.cloud_notm}} backbone and is optimized for performance.
-
-**Next topic:** [{{site.data.keyword.cloud_notm}} VPE overview](/docs/vmwaresolutions?topic=vmwaresolutions-interconnectivity-vpe)
 
 ## Related links
 {: #interconnectivity-links}

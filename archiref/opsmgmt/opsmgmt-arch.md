@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -157,7 +157,7 @@ The design uses the following quantity and size of appliances:
 | vCPU | 8 | 8 | 4 + 8 | 4 |
 | RAM (GB) | 32 | 16 | 12 + 32 | 0.5 |
 | Disk (GB) | 254 | 1,042 | 158 + 1000 | 80 |
-{: caption="Table 1. Operation tooling summary system requirements" caption-side="top"}
+{: caption="Table 1. Operation tooling summary system requirements" caption-side="bottom"}
 
 ## Software versions
 {: #opsmgmt-arch-versions}
@@ -170,7 +170,4 @@ The design uses the following quantity and size of appliances:
 | vRealize Operations Management Pack for Site Recovery Manager | 8.1.1 |
 | VMware vRealize Log Insight | 4.7 |
 | vRealize Log Insight Content Pack for NSX for vSphere | 3.8 |
-{: caption="Table 2. Operational tooling software versions" caption-side="top"}
-
-
-**Next topic**: [vRealize Operations Manager design](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrops)
+{: caption="Table 2. Operational tooling software versions" caption-side="bottom"}

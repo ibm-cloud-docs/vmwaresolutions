@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-21"
 
 subcollection: vmwaresolutions
 
@@ -36,8 +36,8 @@ Review the following vSphere SSO flow.
 The vSphere SSO domain is used as the initial authentication mechanism it is also serves to connect an instance or multiple linked instances to the AD servers in the {{site.data.keyword.vmwaresolutions_full}} infrastructure domain. In the {{site.data.keyword.vmwaresolutions_short}} vCenter Server design, the following SSO configuration is applied:
 
 * The SSO domain of `vsphere.local` is always used.
-* The SSO site name equals the <root_domain> captured during the ordering process.
-* An identity source, the {{site.data.keyword.vmwaresolutions_short}} infrastructure domain, <root_domain>, is configured.
+* The SSO site name equals the `<root_domain>` captured during the ordering process.
+* An identity source, the {{site.data.keyword.vmwaresolutions_short}} infrastructure domain, `<root_domain>`, is configured.
 * The `VSPHERE.LOCAL\Administrator` user is configured as an Administrator role.
 * The following groups are configured with Administrator roles:
    * `<root_domain>\ic4v-vCenter`
@@ -98,8 +98,6 @@ As the customer, you have full access to tailor these settings as needed to appl
 {: #adds-sso-esxi}
 
 Each vSphere ESXi host has its own `root` account and password. To identify this password, go to the VMware Solutions console and then go to **Resources**, click the instance name, go to **Infrastructure**, and click the cluster name. The vSphere ESXi hosts also join AD so that each system administrator can log in with their own account.
-
-**Next topic:** [VMware Solutions workload domain](/docs/vmwaresolutions?topic=vmwaresolutions-adds-wkld-domain)
 
 ## Related links
 {: #adds-sso-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-05-20"
 
 keywords: Veeam, Veeam license, order Veeam license, Veeam 10
 
@@ -50,8 +50,8 @@ After you complete the order, you must take a screen capture of your purchase or
 ## Related links
 {: #veeam_ordering_licenses-related}
 
-* [Veeam v9.5 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations)
-* [Veeam v11 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam 9.5 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations)
+* [Veeam 11 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Ordering Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering)
 * [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
 * [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)

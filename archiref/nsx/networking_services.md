@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -32,7 +32,7 @@ Misconfiguration or disabling of the management ESG doesn't keep the vCenter Ser
 
 The IBM management ESG is a dedicated NSX edge services cluster for {{site.data.keyword.cloud_notm}} management network traffic only. It isn't intended for traffic traversal of any component that is not deployed and managed by vCenter Server automation.
 
-The management ESG provides a communication path between services virtual machines (VMs) residing within vCenter Server instances and the IBM Automation infrastructure in the {{site.data.keyword.cloud_notm}}. The graphic illustrates this for vCenter Server.
+The management ESG provides a communication path between services virtual machines (VMs) residing within vCenter Server instances and the IBM Automation infrastructure in the {{site.data.keyword.cloud_notm}}. The graphic illustrates the communication for vCenter Server.
 
 ![Management edge communications on vCenter Server](../../images/mgmtvmcommunication.svg "Management edge communications on vCenter Server"){: caption="Figure 2. Management edge communications on vCenter Server" caption-side="bottom"}
 
@@ -42,7 +42,7 @@ As a result of the light communication between certain services VMs and their co
 |:----------------------- |:---- |:------ |:--------- |:---------------- |
 | IBM Management NSX ESG 1 | 2 | 1 GB | 1 GB | vSAN data store or shared attached storage for management |
 | IBM Management NSX ESG 2 | 2 | 1 GB | 1 GB | vSAN data store or shared attached storage for management |
-{: caption="Table 1. IBM management NSX ESG specifications" caption-side="top"}
+{: caption="Table 1. IBM management NSX ESG specifications" caption-side="bottom"}
 
 ### Management services
 {: #nsx-networking_services-mgmt-services}
@@ -57,14 +57,14 @@ Outbound access is required to the following services:
 ### Edge interfaces
 {: #nsx-networking_services-edge-interfaces}
 
-The configuration of ESG interfaces defines what L2 networks the ESG has access to. For vCenter Server lifecycle management, it's required that specific VMs placed on the management VLAN are allowed to traverse to the public VLAN. The following interfaces are defined on deployment:
+The configuration of ESG interfaces defines what L2 networks the ESG has access to. For vCenter Server lifecycle management, it is required for specific VMs placed on the management VLAN are allowed to traverse to the public VLAN. The following interfaces are defined on deployment:
 
 | Interface | Interface type | Connected to | Description |
 |:--------- |:-------------- |:------------ |:----------- |
 | Public Uplink | Uplink | **SDDC-DportGroup-External** | Public internet-facing interface |
-| Private Uplink | Uplink | **SDDC-DportGroup-Mgmt** | Internal private network facing interface |
+| Private Uplink | Uplink | **SDDC-DportGroup-Mgmt** | Internal private network-facing interface |
 | Internal | Internal | Workload HA VXLAN | Internal interface used for ESG HA pair heartbeat; portgroup on **SDDC-Dswitch-Private** |
-{: caption="Table 2. NSX ESG interface configuration" caption-side="top"}
+{: caption="Table 2. NSX ESG interface configuration" caption-side="bottom"}
 
 ### Subnets
 {: #nsx-networking_services-subnets}
@@ -73,10 +73,10 @@ The following subnets are used for the purposes of the Management ESG:
 
 | Interface | Interface type | IPv4 subnet type | Range | Description |
 |:--------- |:-------------- |:---------------- |:----- |:----------- |
-| Public Uplink | Uplink | {{site.data.keyword.cloud_notm}} portable public | /28 – renders 13 assignable IP addresses | Public internet facing interface |
-| Private Uplink | Uplink | {{site.data.keyword.cloud_notm}} portable private (existing management) | /26 – renders 61 assignable IP addresses | Internal private network facing interface |
+| Public Uplink | Uplink | {{site.data.keyword.cloud_notm}} portable public | /28 – renders 13 assignable IP addresses | Public internet-facing interface |
+| Private Uplink | Uplink | {{site.data.keyword.cloud_notm}} portable private (existing management) | /26 – renders 61 assignable IP addresses | Internal private network-facing interface |
 | Internal | Internal | Link local | 169.254.0.0/16 | Internal interface used for ESG HA pair communication |
-{: caption="Table 3. NSX ESX IP configuration" caption-side="top"}
+{: caption="Table 3. NSX ESX IP configuration" caption-side="bottom"}
 
 ### Network Address Translation definitions
 {: #nsx-networking_services-nat-definitions}
@@ -86,20 +86,20 @@ Network Address Translation (NAT) is employed on the Management ESG for the mean
 | Applied on interface | Source IP range | Translated source IP |
 |:-------------------- |:--------------- |:-------------------- |
 | Public uplink | Individual IP addresses on the management portable /26 | {{site.data.keyword.cloud_notm}} portable public |
-{: caption="Table 4. NSX ESG NAT configuration" caption-side="top"}
+{: caption="Table 4. NSX ESG NAT configuration" caption-side="bottom"}
 
 ### Routing
 {: #nsx-networking_services-routing}
 
 Since services within VMs required to traverse through the Management ESG might also need to get to {{site.data.keyword.cloud_notm}} services within the customer {{site.data.keyword.cloud_notm}} private network, the following configuration is required to achieve this communication.
 
-While it's difficult to predict which destination IP range is needed as a destination for internet facing connections, any service that is deployed by and managed by {{site.data.keyword.cloud_notm}} points to the Management ESG as its default gateway. A static route is required to force traffic across the {{site.data.keyword.cloud_notm}} BCR for the services that require external network connections.
+While it's difficult to predict which destination IP range is needed as a destination for internet-facing connections, any service that is deployed by and managed by {{site.data.keyword.cloud_notm}} points to the Management ESG as its default gateway. A static route is required to force traffic across the {{site.data.keyword.cloud_notm}} BCR for the services that require external network connections.
 
 The following configurations are recommended for any service that is using the management ESG to traverse out of a vCenter Server instance:
 * The default gateway is a management ESG.
 * A static route is required for internal {{site.data.keyword.cloud_notm}} destinations.
 
-If there's a need for the service or VM to access the customer ESG, static routes must be maintained within the individual service or VM and pointed to the customer ESG.
+If there is a need for the service or VM to access the customer ESG, static routes must be maintained within the individual service or VM and pointed to the customer ESG.
 
 No automatic routing protocols are configured for the Management ESG currently.
 
@@ -111,7 +111,7 @@ The Management HA pair requires a network for the connection of the internal int
 | NSX ESG VXLAN definitions | Transport zone | Type |
 |:------------------------- |:-------------- |:---- |
 | Mgmt HA | transport-1 | global |
-{: caption="Table 5. NSX ESG VXLAN definitions" caption-side="top"}
+{: caption="Table 5. NSX ESG VXLAN definitions" caption-side="bottom"}
 
 ### Firewall rules
 {: #nsx-networking_services-firewall-rules}
@@ -129,14 +129,14 @@ The following firewall rules are set, in addition to the automatically generated
 | FortiGate Virtual Appliance | Service VMs | Any | Port 443 | Allow |
 | F5 BIG-IP | Service VMs | Any | Port 443 | Allow |
 | Any | Any | Any | Any | Deny |
-{: caption="Table 6. NSX ESG firewall configuration" caption-side="top"}
+{: caption="Table 6. NSX ESG firewall configuration" caption-side="bottom"}
 
 ## IBM workload NSX edge
 {: #nsx-networking_services-wkld-nsx-edge}
 
 The IBM workload ESG is part of a simple topology that is intended for workload network communication. The following section describes the design intent of where to attach workloads to a network within a vCenter Server instance. This is a starting point for attaching on-premises networks and IP spaces to a particular vCenter Center instance and is the basis for a true Hybrid Cloud architecture.
 
-A customer network that is attached to both the public and private {{site.data.keyword.cloud_notm}} networks allows for workload access to and from internet facing traffic. The network also allows for a site-to-site VPN to be created from either public or private {{site.data.keyword.cloud_notm}} networks. This allows for drastically decreased time to value regarding connecting to on-premises networks since it can take months to bring up a dedicated wide area network (WAN) due to customer security requirements. However, after a dedicated link is in place, you can flip the VPN over to traverse that link. This action doesn't affect the overlay network inside the VPN tunnel or within the vCenter Server instance. After this is done, the public interface for the workload ESG can be removed if needed from a security perspective.
+A customer network that is attached to both the public and private {{site.data.keyword.cloud_notm}} networks allows for workload access to and from internet-facing traffic. The network also allows for a site-to-site VPN to be created from either public or private {{site.data.keyword.cloud_notm}} networks. This allows for drastically decreased time to value regarding connecting to on-premises networks since it can take months to bring up a dedicated wide area network (WAN) due to customer security requirements. However, after a dedicated link is in place, you can flip the VPN over to traverse that link. This action doesn't affect the overlay network inside the VPN tunnel or within the vCenter Server instance. After this is done, the public interface for the workload ESG can be removed if needed from a security perspective.
 
 The topology in the following figure consists of the following NSX components:
 * NSX Edge appliance (ESG)
@@ -156,7 +156,7 @@ As with the management ESG, the configuration of ESG interfaces defines what L2 
 | Private uplink | Uplink | SDDC-DportGroup-Mgmt | Internal private network-facing interface |
 | Transit uplink | Uplink | Workload-Trasit | Transit VXLAN between the workload ESG and the workload DLR |
 | Internal | Internal | Workload HA VXLAN | Internal interface used for ESG HA pair heartbeat |
-{: caption="Table 7. Workload Edge interface configuration" caption-side="top"}
+{: caption="Table 7. Workload Edge interface configuration" caption-side="bottom"}
 
 In this design, a DLR is employed to allow for potential East-West routing between local workload connected L2 networks. As this topology is intended to be a simple example, only one L2 network that is intended for workloads is described. Adding more security zones can be achieved by adding more VXLANs attached to new interfaces on the DLR. The following table shows the DLR interfaces to configure:
 
@@ -165,7 +165,7 @@ In this design, a DLR is employed to allow for potential East-West routing betwe
 | Transit uplink | Uplink | Workload-Transit | Transit VXLAN between the workload ESG and the workload DLR |
 | Workload uplink | Uplink | Workload | VXLAN for Workload connections |
 | Internal | Internal | Workload HA VXLAN | Internal interface used for ESG HA pair heartbeat |
-{: caption="Table 8. DLR interfaces" caption-side="top"}
+{: caption="Table 8. DLR interfaces" caption-side="bottom"}
 
 ### Subnets for the IBM workload NSX edge
 {: #nsx-networking_services-subnets-workload}
@@ -179,7 +179,7 @@ The following subnets are used for the purposes of the Workload ESG:
 | Internal (ESG and DLR) | Internal | Link local | 169.254.0.0/16 | Internal interface used for ESG HA pair communication |
 | Transit uplink (ESG and DLR) | Uplink | Assigned by customer | TBD | Transit network connection for ESG to DLR |
 | Workload (DLR) | Uplink | Assigned by customer | TBD | Workload subnet |
-{: caption="Table 9. DLR and Workload ESG IP configuration" caption-side="top"}
+{: caption="Table 9. DLR and Workload ESG IP configuration" caption-side="bottom"}
 
 ### NAT definitions for the IBM workload NSX edge
 {: #nsx-networking_services-nat-definitions-nsx-edge}
@@ -191,7 +191,7 @@ While it is possible to use NAT to allow for workload communication across multi
 | Applied on interface | Source IP range | Translated source IP | NAT Enabled or Disabled |
 |:-------------------- |:--------------- |:-------------------- |:----------------------- |
 | Public uplink (Workload ESG) | Customer defined | {{site.data.keyword.cloud_notm}} portable public IP | Customer defined (default disabled) |
-{: caption="Table 10. Workload ESG NAT rules" caption-side="top"}
+{: caption="Table 10. Workload ESG NAT rules" caption-side="bottom"}
 
 ### Routing for the IBM workload NSX edge
 {: #nsx-networking_services-routing-wkld}
@@ -203,7 +203,7 @@ For more information about the configuration, see [Configure OSPF Protocol](http
 | Area | OSPF type | OSPF interface IP | OSPF authentication |
 |:---- |:--------- |:----------------- |:------------------- |
 | 51 | stub | Assign an IP for each the DLR and ESG on the transit RFC1918 network | None |
-{: caption="Table 11. Dynamic routing" caption-side="top"}
+{: caption="Table 11. Dynamic routing" caption-side="bottom"}
 
 ### Firewall rules for the IBM workload NSX edge
 {: #nsx-networking_services-firewall-wkld}
@@ -218,7 +218,7 @@ The following firewall rules are set, in addition to the automatically generated
 |:------- |:------ |:----------- |:-------- |:------ |
 | Workloads | Workload subnet | Any | Any | Allow |
 | Any | Any | Any | Any | Deny |
-{: caption="Table 12. Workload ESG firewall rules" caption-side="top"}
+{: caption="Table 12. Workload ESG firewall rules" caption-side="bottom"}
 
 ### VXLAN definitions for the IBM workload NSX edge
 {: #nsx-networking_services-vxlan-definitions}
@@ -230,14 +230,12 @@ The Workload topology ESG and DLR HA pairs require L2 segments (VXLAN) for the c
 | Workload HA | transit-1 | Global |
 | Workload transit | transit-1 | Global |
 | Workload | transit-1 | Global |
-{: caption="Table 13. Workload ESG internal interfaces" caption-side="top"}
+{: caption="Table 13. Workload ESG internal interfaces" caption-side="bottom"}
 
 ### ESG DLR settings for the IBM workload NSX edge
 {: #nsx-networking_services-esg-dlr-sett}
 
 By default, logging is enabled on all new NSX Edge appliances. The default logging level is NOTICE.
-
-**Next topic:** [Multisite architecture](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-multi_site)
 
 ## Related links
 {: #nsx-networking_services-related}

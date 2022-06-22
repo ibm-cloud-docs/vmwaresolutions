@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -61,8 +61,6 @@ You can configure the vSphere Web Client to scan VMs, virtual appliances, and vS
 5.	On the Edit Settings page, select the types of updates to scan the inventory object for. You must select at least one scan type. On the Scheduling options page, describe and schedule the scan task.
 6.	Enter a unique name, and optionally, a description for the scan task. Click **Change** to set the frequency and the start time for the scan task. Click **OK**.
 7.	The scan task is listed in the Scheduled Tasks view of the vSphere Web Client.
-
-**Next topic:** [Staging and remediation](/docs/vmwaresolutions?topic=vmwaresolutions-vum-staging)
 
 ## Related links
 {: #vum-scanning-related}

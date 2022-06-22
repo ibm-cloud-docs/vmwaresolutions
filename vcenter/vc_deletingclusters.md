@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2022
 
-lastupdated: "2021-11-09"
+lastupdated: "2022-06-03"
 
 keywords: vCenter Server delete clusters, delete clusters, delete vCenter Server cluster, vmware multizone, vCenter Server multizone delete clusters, delete vCenter Server cluster
 
@@ -23,7 +23,7 @@ You can delete clusters from VMware vCenter Server® instances when you do not n
 {: #vc_deletingclusters-before}
 
 * Deleting clusters from vCenter Server instances with VMware vSphere® 6.5 is not supported.
-* Whenever possible, delete clusters by using the VMware Solutions console because changes that you make on the VMware vSphere Web Client are not synchronized with the VMware Solutions console. Therefore, delete clusters from vCenter Server only for on-premises clusters or clusters that you can't or don't plan to manage in the VMware Solutions console.
+* {{site.data.content.para-vcenterremoveclusters}}
 * You can delete only clusters that are added as part of day 2 operations. Clusters that are created during initial deployment can't be deleted.
 * You can delete a single cluster at a time. To delete more than one cluster, you must do it in sequence. Wait for the previous cluster to be deleted before you delete the next cluster.
 * Ensure that all nodes in a cluster are powered on and operational before you delete the cluster.

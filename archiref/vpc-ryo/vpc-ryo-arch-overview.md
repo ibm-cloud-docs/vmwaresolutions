@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -28,8 +28,6 @@ These two architectures serve as the baseline designs for deploying VMware on {{
 
 You can alter and customize the architecture to meet your design goals within the limits of {{site.data.keyword.vpc_short}}, {{site.data.keyword.cloud_notm}} bare metal server for {{site.data.keyword.vpc_short}} and VMware capabilities.
 {: note}
-
-**Next topic:** [VPC design for VMware deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-vpc-vmw)
 
 ## Related links
 {: #vpc-ryo-arch-overview-links}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -71,8 +71,6 @@ The keys that are provided by the SaaS consumer are used to protect any regulate
 Review the following information for the step-by-step process to order and initialize KMIP:
 * [VMware Solutions KMIP considerations](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations)
 * [Documentation to provision HPCS](/docs/hs-crypto?topic=hs-crypto-initialize-hsm#initialize-hsm)
-
-**Next topic**: [Operations management](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-operations)
 
 ## Related links
 {: #vrw-encryption-related}

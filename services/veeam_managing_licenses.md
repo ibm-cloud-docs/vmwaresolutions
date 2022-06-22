@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-05-20"
 
 keywords: Veeam, Veeam license, manage Veeam license, Veeam 10
 
@@ -72,8 +72,7 @@ To delete a Veeam license:
 ## Related links
 {: #veeam_managing_licenses-related}
 
-* [Veeam v9.5 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations)
-* [Veeam v11 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam 11 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Ordering Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering)
 * [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
 * [Ordering Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -54,7 +54,7 @@ The following information is collected from the user at time of order and is use
 |Cloud Provider |Type|
 |Cloud Provider |POC Name |
 |Cloud Provider |POC Phone |
-{: caption="Table 1. Information collected from the user" caption-side="top"}
+{: caption="Table 1. Information collected from the user" caption-side="bottom"}
 
 The following default information is used in the application setup.
 
@@ -69,6 +69,4 @@ The following default information is used in the application setup.
 | Task | Four tasks are set up; Asset Scan, NSX Flows, VMware® Infrastructure Scan, and VMware Vulnerability. ScanName is set to DC1AssetScan, NSXFlows, VMWInfraScan, VMWVulnScan |
 | Task | Four tasks are set up; Asset Scan, NSX Flows, VMware Infrastructure Scan, and VMware Vulnerability. Type is set to vCenter, NSX, VMWareInfrastructureScan, VMWareVulnerabilityScan |
 | Task | Schedule is set to hourly for `DC1AssetScan` and daily for the others |
-{: caption="Table 2. Default information used in application setup" caption-side="top"}
-
-**Next topic:** [Glossary of Caveonix terms](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-terminology)
+{: caption="Table 2. Default information used in application setup" caption-side="bottom"}

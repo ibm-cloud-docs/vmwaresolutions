@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-06-20"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ Deployment patterns are based on both availability requirements and sizing for d
 * Scale-out VMs – The scale-out VMs (the database and the data index) scale according to the number of assets and the required data retention. These requirements might create demand for more scale-out hard disk space and more scale-out VMs.
 
 Review the three Caveonix RiskForesight deployment models:
-* “All-in-one” – An automated deployment and configuration of 1 VM that hosts all the application components:
+* “All-in-one” – An automated deployment and configuration of one VM that hosts all the application components:
    * All application components installed on one VM.
    * Remote Collectors can be installed on separate VMs.
    *  Small deployments – up to 100 assets with 7 - 30 days of indexing.
@@ -45,5 +45,3 @@ Review the three Caveonix RiskForesight deployment models:
    * More data nodes that are used for scaling out as number of assets increases.
 
 All components must have an FQDN and registered in DNS before any VM deployment. This step is completed by the {{site.data.keyword.vmwaresolutions_full}} automation for the initial all-in-one deployment, but is your responsibility when you scale the deployment.
-
-**Next topic:** [Step 2 - Virtual machine deployment](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-step2)

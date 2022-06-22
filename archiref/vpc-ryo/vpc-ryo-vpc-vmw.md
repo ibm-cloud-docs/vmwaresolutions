@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -45,7 +45,7 @@ vpc-host-subnet       | Host management traffic      | Number of Hosts
 vpc-vmot-subnet       | vMotion traffic              | Number of Hosts
 vpc-vsan-subnet       | vSAN traffic                 | Number of Hosts
 vpc-tep-subnet        | TEP traffic                  | Number of Hosts + \n 2 x Edge Nodes
-{: caption="Table 1. VPC subnets for System Traffic Types" caption-side="top"}
+{: caption="Table 1. VPC subnets for System Traffic Types" caption-side="bottom"}
 
 To be able to create subnets in VPC, you must create a VPC prefix. VPC prefixes are defined per zone. To simplify routing, it is recommended to allocate the recommended subnets from a single prefix. Which means that to be able to accommodate 5 subnets, you need one `/21` prefix to cater addresses for about 120 hosts per zone. If you want to use a prefix with `/22`, you can add about 60 hosts per zone. By selecting a large enough prefix, it will leave you growth for scalability and future needs, such as dedicated VMKs for NFS, replication and for NSX-T Tier-0 uplinks.
 
@@ -91,7 +91,7 @@ pci-nic-vmnic0-vmk0   | pci            | 0       | vpc-host-subnet     | false  
 vlan-nic-vmotion-vmk2 | vlan           | 200     | vpc-vmot-subnet     | false        | vmk2             | dpg-vmotion
 vlan-nic-vsan-vmk3    | vlan           | 300     | vpc-vsan-subnet     | false        | vmk3             | dpg-vsan
 vlan-nic-tep-vmk10    | vlan           | 400     | vpc-tep-subnet      | false        | vmk10            | dpg-tep
-{: caption="Table 2. Host management networks and VMkernel adapters" caption-side="top"}
+{: caption="Table 2. Host management networks and VMkernel adapters" caption-side="bottom"}
 
 If you are not using NSX-T, you do not need `vlan-nic-tep-vmk10` interface.
 {: note}
@@ -112,9 +112,6 @@ When provisioning a host, make sure you provision the required VLAN interfaces f
 
 As VMkernel adapters do not need to move between hosts, they are provisioned with `Allow Float` set to `false`.
 {: note}
-
-
-**Next topic:** [VMware virtual machines on VPC subnets](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-subnet)
 
 ## Related links
 {: #vpc-ryo-vpc-vmw-links}

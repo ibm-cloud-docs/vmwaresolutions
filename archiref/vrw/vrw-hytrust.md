@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-14"
+lastupdated: "2022-06-20"
 
 subcollection: vmwaresolutions
 
@@ -39,7 +39,7 @@ Entrust CloudControl is composed of many internal functional components:
 * Authentication engine – uniform authentication policy, which integrates with Active Directory or LDAP, and it applies multifactor authentication policy.
 * Inventory engine – keeps a synchronized inventory of vCenter objects and determines the trust level for ESXi hosts.
 * Compliance engine – performs configuration assessments and remediation.
-* Logging – Logs every action, regardless of whether it was performed or denied by policy, and, if configured, forwards to syslog server or SIEM tool. Forwarding of logging to vRealize Log Insight is required.
+* Logging – logs every action, regardless of whether it was performed or denied by policy, and, if configured, forwards to syslog server or SIEM tool. Forwarding of logging to vRealize Log Insight is required.
 
 ![IBM Cloud for VMware Regulated Workloads Entrust integration](../../images/vrw-htcc.svg "IBM Cloud for VMware Regulated Workloads Entrust integration"){: caption="Figure 2. IBM Cloud for VMware Regulated Workloads Entrust integration" caption-side="bottom"}
 
@@ -54,8 +54,6 @@ Access to the ESXi hosts is strictly limited. No direct access to an ESXi host i
 {: #vrw-hytrust-workload}
 
 The ESXi host access is strictly limited. No direct access to an ESXi host is permissible. Entrust CloudControl provides the same level of access control and auditing for administrators who are assigned to manage the dedicated workload infrastructure, such as the SDN (NSX-T™). The fine-grained RBAC capability of Entrust CloudControl limits their scope of action to the workload region. Allow listing of IP addresses permitted network access to the ESXi hosts is required in the integrated host firewall.
-
-**Next topic**: [Active Directory](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-iam-active-directory)
 
 ## Related links
 {: #vrw-hytrust-related}

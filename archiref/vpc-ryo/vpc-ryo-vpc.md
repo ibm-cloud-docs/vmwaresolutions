@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -17,11 +17,11 @@ subcollection: vmwaresolutions
 
 The {{site.data.keyword.vpc_full}} is a virtual network that is linked to your customer account. It gives you cloud security, with the ability to scale dynamically, by providing fine-grained control over your virtual infrastructure and your network traffic segmentation.
 
-Each VPC is deployed to a single region. Within that region, the VPC can span multiple zones. 
+Each VPC is deployed to a single region. Within that region, the VPC can span multiple zones.
 
-{{site.data.keyword.cloud_notm}} virtual or {{site.data.keyword.cloud_notm}} bare metal server presented in your VPC is attached to subnets. Subnets within the VPC offer private connectivity, thus your servers can communicate within and between the subnets by using an implicit router. Subnets in your VPC can connect to the public internet through an optional public gateway, or you can assign floating IP addresses to any network interface of the servers. 
+{{site.data.keyword.cloud_notm}} virtual or {{site.data.keyword.cloud_notm}} bare metal server presented in your VPC is attached to subnets. Subnets within the VPC offer private connectivity, thus your servers can communicate within and between the subnets by using an implicit router. Subnets in your VPC can connect to the public internet through an optional public gateway, or you can assign floating IP addresses to any network interface of the servers.
 
-The following diagram shows an overview of {{site.data.keyword.vpc_short}}. 
+The following diagram shows an overview of {{site.data.keyword.vpc_short}}.
 
 ![IBM VPC connectivity and security](../../images/vpc-ryo-diagrams-overview-virtual.svg "IBM VPC connectivity and security"){: caption="Figure 1. {{site.data.keyword.vpc_short}} connectivity and security" caption-side="bottom"}
 
@@ -44,9 +44,6 @@ A security group operates as a virtual firewall that controls the traffic for on
 Interconnectivity between VPCs can be established by using {{site.data.keyword.tg_full_notm}}. When a VPC is attached to a Transit Gateway as a connection, the VPC prefixes (not the subnets) are advertised to the Transit Gateway instance. The connectivity to on-premises networks can be established through {{site.data.keyword.dl_full_notm}}, where you can bring your WAN or MPLS connection to one of {{site.data.keyword.cloud_notm}} PoPs and connect to your resources.
 
 For more information, see [{{site.data.keyword.cloud_notm}} Documentation](/docs/vpc?topic=vpc-about-networking-for-vpc).
-
-
-**Next topic:** [Physical infrastructure design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-infrastructure-physical)
 
 ## Related links
 {: #vpc-ryo-vpc-links}

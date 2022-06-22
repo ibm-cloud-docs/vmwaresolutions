@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-26"
+lastupdated: "2022-06-15"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -52,8 +52,8 @@ For more information about IBM CloudBuilder and IBM CloudDriver, see [IBM CloudD
 | IBM CloudBuilder | Private primary subnet \n Infrastructure VMs | NSX Manager | Infrastructure VMs | | ICMP | Install and set up NSX Manager | |
 | IBM CloudBuilder | Private primary subnet \n Infrastructure VMs | NSX Manager | Infrastructure VMs | 443 | TCP | Set up and configure NSX Manager | HTTPS |
 | IBM CloudBuilder | Private primary subnet \n Infrastructure VMs | NSX Manager | Infrastructure VMs | 80 | TCP | Set up and configure NSX Manager | HTTP |
-| IBM CloudBuilder \n IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure provisioning API | {{site.data.keyword.cloud_notm}} infrastructure services network | 443 | TCP | Order and provision {{site.data.keyword.cloud_notm}} infrastructure resources | HTTPS |
-| IBM CloudBuilder \n IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service | {{site.data.keyword.cloud_notm}} infrastructure services network | 53 | UDP™ | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | |
+| IBM CloudBuilder \n IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure provisioning API \n `10.0.80.0/25` | {{site.data.keyword.cloud_notm}} infrastructure services network | 443 | TCP | Order and provision {{site.data.keyword.cloud_notm}} infrastructure resources | HTTPS |
+| IBM CloudBuilder \n IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network | 53 | UDP™ | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | |
 | IBM CloudBuilder \n IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | |
 | IBM CloudBuilder \n IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure endurance storage | {{site.data.keyword.cloud_notm}} infrastructure services network | Any | ICMP and TCP | Set up endurance storage for ESXi host | |
 | IBM CloudBuilder \n IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} Activity Tracker service | {{site.data.keyword.cloud_notm}} endpoint service network | 443 | TCP | Use {{site.data.keyword.cloud_notm}} Activity Tracker service | HTPPS |
@@ -70,7 +70,7 @@ For more information about IBM CloudBuilder and IBM CloudDriver, see [IBM CloudD
 | IBM CloudBuilder \n IBM CloudDriver \n Windows Active Directory (VSI) | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure engine | {{site.data.keyword.cloud_notm}} infrastructure services network | 80 | TCP | Provision IBM CloudBuilder, IBM CloudDriver, and Windows Active Directory (VSI) | |
 | {{site.data.keyword.cloud_notm}} infrastructure engine | {{site.data.keyword.cloud_notm}} infrastructure services network | IBM CloudBuilder \n IBM CloudDriver \n Windows Active Directory (VSI) | Private primary subnet | Any | TCP and UDP | Provision IBM CloudBuilder, IBM CloudDriver, and Windows Active Directory (VSI) |   |
 | {{site.data.keyword.cloud_notm}} infrastructure engine | {{site.data.keyword.cloud_notm}} infrastructure services network | ESXi host management0 | Private primary subnet | 623 | TCP and UDP | {{site.data.keyword.cloud_notm}} infrastructure IPMI |   |
-{: caption="Table 1. Ports for deployment and Day 2 operations" caption-side="top"}
+{: caption="Table 1. Ports for deployment and Day 2 operations" caption-side="bottom"}
 {: #vmwaresol_ports-deploy-day2ops-table}
 
 [^vssreqa]: VMware vSphere clusters require access to both Cloud Object Storage and RabbitMQ.

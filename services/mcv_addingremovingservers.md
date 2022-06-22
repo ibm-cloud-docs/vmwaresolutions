@@ -4,9 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-01-25"
-
-keywords: add servers vmware multizone
+lastupdated: "2022-06-20"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +19,7 @@ subcollection: vmwaresolutions
 New deployments of vCenter Server multizone instances are no longer supported. You can still add and delete clusters, add and remove ESXi servers, and add and delete storage for existing multizone instances.
 {: deprecated}
 
-You can expand the capacity of your VMware vCenter Server® multizone instances by adding VMware® ESXi servers to your witness, consolidated, additional workload, and edge services clusters.
+You can expand the capacity of your VMware vCenter Server® multizone instances by adding VMware® ESXi servers to your witness, consolidated, extra workload, and edge services clusters.
 
 ## Procedure to add ESXi servers to vCenter Server multizone instances
 {: #mcv_addingremovingservers-adding-procedure}
@@ -31,7 +29,7 @@ You can expand the capacity of your VMware vCenter Server® multizone instances 
 3. Click **Infrastructure** on the left navigation pane.
 4. In the applicable cluster table, click the cluster to which you want to add ESXi servers.
 5. In the **ESXi servers** section, click **Add**.
-6. In the **ESXi server** window, select the number of servers that you want to add.
+6. In the **ESXi server** window, enter the number of servers that you want to add.
 7. Optionally, select the checkbox to add servers during maintenance mode. The checkbox is selected by default.
 
    When you provision the new ESXi server, virtual machines (VMs) are immediately migrated to the new servers if you do not select the **Maintenance Mode** checkbox. You do not receive a confirmation message before the migration begins.
@@ -48,10 +46,3 @@ You can expand the capacity of your VMware vCenter Server® multizone instances 
 
    If you are adding ESXi servers during maintenance mode, VMs are not migrated to the new servers until you remove maintenance mode.
    {: important}
-
-## Related links
-{: #mcv_addingremovingservers-related}
-
-* [vCenter Server multizone BOM](/docs/vmwaresolutions?topic=vmwaresolutions-mcv-archi-bom)
-* [Adding clusters to vCenter Server multizone instances](/docs/vmwaresolutions?topic=vmwaresolutions-mcv_addviewdeleteclusters)
-* [Adding NFS storage to vCenter Server multizone instances](/docs/vmwaresolutions?topic=vmwaresolutions-mcv_addingnfs-storage)

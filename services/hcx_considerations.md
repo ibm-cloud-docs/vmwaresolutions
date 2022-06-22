@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-20"
+lastupdated: "2022-06-20"
 
 keywords: VMware HCX, HCX, tech specs HCX
 
@@ -31,13 +31,13 @@ For VMware NSX-T™ instances, VMware HCX requires you to use one of the followi
 * NSX Data Center SP Advanced
 * An equivalent BYOL (Bring Your Own License) license
 
-For NSX-V instances, HCX requires you to use one of the following licenses from IBM Cloud: 
+For NSX-V instances, HCX requires you to use one of the following licenses from IBM Cloud:
 
 * NSX Advanced
 * NSX Enterprise
-* An equivalent BYOL license. The BYOL license must have all the capabilities needed to support HCX. 
+* An equivalent BYOL license. The BYOL license must have all the capabilities that are needed to support HCX.
 
-For more information, see [Comparison chart for VMware NSX and VMware vSAN editions](/docs/vmwaresolutions?topic=vmwaresolutions-solution-appendix).
+For more information, see [Comparison chart for VMware NSX-T, NSX-V, and vSAN](/docs/vmwaresolutions?topic=vmwaresolutions-solution-appendix).
 
 {{site.data.content.para-promotion-services}}
 
@@ -46,7 +46,7 @@ VMware requires you to be on one of their supported versions in order for you to
 A VMware vCenter Server® instance with HCX is limited to three simultaneous connections from on-premises sites.
 
 * For vCenter Server with NSX-T™ instances, HCX is supported for NSX-T 3.1 or later and for VMware vSphere 7.0.
-* For vCenter Server with NSX-V instances, HCX is supported for vSphere 6.7.
+* For V4.7 and earlier vCenter Server with NSX-V instances, HCX is supported for vSphere 6.7.
 
 ## Technical specifications for HCX
 {: #hcx_considerations-specs}

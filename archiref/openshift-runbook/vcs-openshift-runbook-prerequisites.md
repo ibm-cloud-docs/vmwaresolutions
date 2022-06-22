@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-03-24"
+lastupdated: "2022-04-28"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Prerequisites for installation
 {: #openshift-runbook-runbook-prereq-intro}
 
-Before you can start the build process to install the {{site.data.keyword.redhat_openshift_full}} cluster the following steps are required.
+Before you can start the build process to install the {{site.data.keyword.redhat_openshift_full}} cluster, the following steps are required.
 
 * Order new subnets for the {{site.data.keyword.redhat_openshift_notm}} environment.
    * A private portable subnet for the {{site.data.keyword.redhat_openshift_notm}} cluster NSX ESG.
@@ -150,8 +150,6 @@ export GOVC_DATASTORE='vsanDatastore'
 govc datastore.mkdir isos
 govc datastore.upload rhel-8.x-x86_64-dvd.iso isos/rhel-8.x-x86_64-dvd.iso
 ```
-
-**Next topic:** [{{site.data.keyword.redhat_openshift_notm}} NSX logical switches configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxls-intro)
 
 ## Related links
 {: #vcs-openshift-runbook-prerequisites-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-01"
+lastupdated: "2022-06-01"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -28,7 +28,7 @@ You can also specify a cluster name that meets the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * The cluster name must start with a lowercase alphabetic character.
 * The cluster name must end with a lowercase alphabetic or numeric character.
-* The maximum length of the cluster name is 30 characters.
+* The maximum length of the cluster name is 10 characters.
 * The cluster name must be unique within your account.
 
 ## Related links

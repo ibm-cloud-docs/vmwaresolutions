@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-19"
+lastupdated: "2022-06-16"
 
 keywords: Caveonix view license, Caveonix manage license, delete Caveonix license
 
@@ -26,7 +26,7 @@ You can view, edit notes, or delete the Caveonix RiskForesight™ licenses that 
 ## Procedure to view Caveonix RiskForesight licenses
 {: #caveonix_license_managing_procedure-view}
 
-1. Click **Resources** from the left navigation pane and scroll down to the **Caveonix RiskForesight Licenses** table.
+1. Click **Resources** from the left navigation and scroll down to the **Caveonix RiskForesight Licenses** table.
 2. To view the details of a specific license, click the license.
 
 Review the following Caveonix RiskForesight license details.
@@ -36,12 +36,12 @@ Review the following Caveonix RiskForesight license details.
 | Name | The name of the license. |
 | Creation time | The date and time when the license was created. |
 | Status | The status of the license: \n Modifying - The license is being created. \n Installed - The license is ready to use. \n Removing - The license is being deleted. |
-{: caption="Table 1. Description of Caveonix RiskForesight license items" caption-side="top"}
+{: caption="Table 1. Description of Caveonix RiskForesight license items" caption-side="bottom"}
 
 ## Procedure to edit notes for Caveonix RiskForesight licenses
 {: #caveonix_license_managing_procedure-edit}
 
-1. Click **Resources** from the left navigation pane.
+1. Click **Resources** from the left navigation.
 2. Scroll down to the **Caveonix RiskForesight licenses** table and click the license that you want to edit the notes for.
 3. On the license details page, edit the license notes, and then click **Confirm**.
 
@@ -56,12 +56,12 @@ If you are experiencing this problem and the only browser you can use is Firefox
 ## Procedure to delete Caveonix RiskForesight licenses
 {: #caveonix_license_managing_procedure-delete}
 
-Deleting Caveonix RiskForesight automatically deletes the initial Caveonix RiskForesight license that is originally associated with the service. However, you need to manually delete any other unwanted licenses from the Caveonix RiskForesight Licenses table on the Resources page in the VMware Solutions console.
+Deleting Caveonix RiskForesight automatically deletes the initial Caveonix RiskForesight license that is originally associated with the service. However, you need to manually delete any other unwanted licenses from the Caveonix RiskForesight licenses table on the Resources page in the VMware Solutions console.
 
 To delete the Caveonix RiskForesight service, you must do so in the {{site.data.keyword.vmwaresolutions_full}} console. For more information, see [Deleting services from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices).
 {: note}
 
-1. Click **Resources** from the left navigation pane.
+1. Click **Resources** from the left navigation.
 2. Scroll down to the **Caveonix RiskForesight Licenses** table and find the license to delete.
 3. In the **Actions** column, click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete").
 4. In the **Delete License** window, click **OK**.

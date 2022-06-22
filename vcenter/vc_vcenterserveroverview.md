@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-08"
+lastupdated: "2022-06-16"
 
 keywords: vCenter Server, vCenter Server architecture, tech specs vCenter Server
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # vCenter Server overview
 {: #vc_vcenterserveroverview}
 
-VMware vCenter Server® is a hosted private cloud that delivers the VMware vSphere® stack as a service. The VMware® environment is built on top of a minimum of three {{site.data.keyword.cloud}} bare metal servers and it offers shared network-attached storage and dedicated software-defined storage options. It also includes the automatic deployment and configuration of an easy-to-manage logical edge firewall, which VMware NSX® powers.
+VMware vCenter Server® is a hosted private cloud that delivers the VMware vSphere® stack as a service. The VMware® environment is built in addition to a minimum of three {{site.data.keyword.cloud}} bare metal servers and it offers shared network-attached storage and dedicated software-defined storage options. It also includes the automatic deployment and configuration of an easy to manage logical edge firewall, which VMware NSX® powers.
 {: shortdesc}
 
 In many cases, the entire environment can be provisioned in less than a day and the bare metal infrastructure can rapidly and elastically scale the compute capacity up and down as needed.
@@ -27,7 +27,7 @@ After initial instance deployment, you can increase shared storage by ordering m
 ## vCenter Server with NSX-T architecture
 {: #vc_vcenterserveroverview-nsx-t-archi}
 
-The following graphic depicts the high-level architecture and components of a three-node vCenter Server with NSX-T deployment.
+The following graphic depicts the high-level architecture and components of a three node vCenter Server with NSX-T deployment.
 
 ![vCenter Server with NSX-T architecture](../images/vc_nsx-t_architecture.svg "vCenter Server with NSX-T architecture"){: caption="Figure 1. vCenter Server with NSX-T high-level architecture for a three-node cluster" caption-side="bottom"}
 
@@ -37,7 +37,10 @@ For vCenter Server with NSX-T™ instances, applying license updates is not supp
 ## vCenter Server with NSX-V architecture
 {: #vc_vcenterserveroverview-archi}
 
-The following graphic depicts the high-level architecture and components of a three-node vCenter Server with NSX-V deployment.
+The following graphic depicts the high-level architecture and components of a three node vCenter Server with NSX-V deployment.
+
+vCenter Server with NSX-V instances is available for V4.7 and earlier.
+{: note}
 
 ![vCenter Server with NSX-V architecture](../images/vc_architecture.svg "vCenter Server with NSX-V architecture"){: caption="Figure 2. vCenter Server with NSX-V high-level architecture for a three-node cluster" caption-side="bottom"}
 
@@ -93,9 +96,9 @@ Skylake servers are not supported for vSphere Enterprise Plus 7.0 instances.
 {: note}
 
 The following configurations are available:
-* **Skylake** - 2-CPU Intel® Skylake generation servers (Intel Xeon® 4100/5100/6100 series) with your selected CPU model and RAM size.
+* **Skylake** - 2-CPU Intel® Skylake generation servers (Intel® Xeon® 4100/5100/6100 series) with your selected CPU model and RAM size.
 * **Cascade Lake** - 4-CPU Intel Cascade Lake generation server (Quad Intel Xeon Gold 6248 and Quad Intel Xeon Platinum 8260) and 2-CPU Intel Cascade Lake generation servers (Intel Xeon 4200/5200/6200/8200 series) with your selected CPU model and RAM size.
-* **SAP-certified** - Intel Skylake generation servers (Intel Xeon 6140 series) and Intel Cascade Lake generation servers (Intel Xeon 5218, 6248, and 8280M series) with your selected CPU model.
+* **SAP-certified** - Intel Skylake generation servers (Intel Xeon 6140 series) and Intel Cascade Lake generation servers (Intel Xeon 5218, 6248, and 8280 M series) with your selected CPU model.
 
 If you plan to use vSAN storage, the configuration requires a minimum of four bare metal servers.
 {: note}
@@ -145,7 +148,7 @@ The vSAN option offers customized configurations, with various options for disk 
    3.8 TB SSD (solid-state disk) drives are supported when they are made generally available in a data center.
    {: note}
 
-* High Performance with Intel Optane - this option provides two extra capacity disk bays for a total of ten capacity disks. It's available only for vSphere 6 instances.
+* High Performance with Intel Optane - this option provides two extra capacity disk bays for a total of 10 capacity disks. It's available only for vSphere 6 instance.
 
 #### NFS storage
 {: #vc_vcenterserveroverview-nfs-storage}
@@ -155,21 +158,21 @@ The NFS option offers customized shared file-level storage for workloads with va
 * Performance - 0.25, 2, 4, or 10 IOPS/GB. The 10 IOPS/GB performance level is limited to a maximum capacity of 4 TB per file share.
 * Individual configuration of file shares
 
-   (NSX-V only) If you choose the NFS option, one 2 TB and 4 IOPS/GB file share for management components are ordered.
+   (NSX-V only) If you choose the NFS option, one 2 TB and four IOPS/GB file share for management components are ordered.
    {: note}
 
 #### Local disk storage (NSX-V only)
 {: #vc_vcenterserveroverview-local-disk-storage}
 
-The local disks option, available to the **SAP-certified** Quad Intel Xeon E7-8890 v4 processor bare metal configuration only, offers customized configurations with various options for disk count and disk type.
+The local disks option, available to the **SAP-certified** Quad Intel Xeon E7-8890 v4 processor (bare metal configuration only) offers customized configurations with various options for disk count and disk type.
 
 ### Licenses (IBM-provided or BYOL) and fees
 {: #vc_vcenterserveroverview-license-and-fee}
 
-* VMware vSphere Enterprise Plus 7.0 (NSX-T only) or 6.7 (NSX-V only)
-* VMware vCenter Server 7.0 or 6.7
+* VMware vSphere Enterprise Plus 7.0 (NSX-T only)
+* VMware vCenter Server 7.0
 * VMware NSX Service Providers Edition (Base, Advanced, or Enterprise) 6.4
-* (For vSAN clusters) VMware vSAN Advanced or Enterprise 7.0 or 6.7
+* (For vSAN clusters) VMware vSAN Advanced or Enterprise 7.0
 * Support and Services fee (one license per node)
 
 ## Technical specifications for vCenter Server expansion nodes
@@ -185,7 +188,7 @@ One bare metal server with the configuration presented in [Technical specificati
 ### Licenses and fees for expansion nodes
 {: #vc_vcenterserveroverview-expansion-node-license-and-fee}
 
-* One vSphere Enterprise Plus 7.0 (NSX-T only) or 6.7
+* One vSphere Enterprise Plus 7.0 (NSX-T only)
 * One NSX Service Providers Edition (Base, Advanced, or Enterprise) 6.4
 * (For vSAN clusters) vSAN Advanced or Enterprise 6.6
 * One Support and Services fee

@@ -3,7 +3,7 @@
 copyright:
   years: 2022
 
-lastupdated: "2022-04-20"
+lastupdated: "2022-06-03"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -34,24 +34,24 @@ Skylake servers are not supported for VMware vSphere® Enterprise Plus 7.0u1 ins
 {: note}
 {: #skylake-note}
 
-| CPU model     | RAM sizes   |
-|:------------- |:----------- |
-| Dual Intel® Xeon® Silver 4110 processor / 16 cores, 2.1 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5120 processor / 28 cores, 2.2 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6140 processor / 36 cores, 2.3 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-{: caption="Table 1. Options for Skylake bare metal servers - NSX-T instances" caption-side="top"}
+| CPU model     | Cores     | GHz     | RAM sizes   |
+|:------------- |:----------|:--------|:----------- |
+| Dual Intel® Xeon® Silver 4110 processor | 16 | 2.1 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 5120 processor | 28 | 2.2 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6140 processor | 36 | 2.3 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+{: caption="Table 1. Options for Skylake bare metal servers - NSX-T instances" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: tab-title="NSX-T instances"}
 {: tab-group="SkyLake Intel servers"}
 {: #simpletabtable-skylake-nsxt}
 
 
-| CPU model     | RAM sizes   |
-|:------------- |:----------- |
-| Dual Intel® Xeon® Silver 4110 processor / 16 cores, 2.1 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5120 processor / 28 cores, 2.2 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6140 processor / 36 cores, 2.3 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-{: caption="Table 1. Options for Skylake bare metal servers - NSX-V instances" caption-side="top"}
+| CPU model     | Cores     | GHz     | RAM sizes   |
+|:------------- |:----------|:--------|:----------- |
+| Dual Intel® Xeon® Silver 4110 processor | 16 | 2.1 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 5120 processor | 28 | 2.2 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6140 processor | 36 | 2.3 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+{: caption="Table 1. Options for Skylake bare metal servers - NSX-V instances" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: tab-title="NSX-V instances"}
 {: tab-group="SkyLake Intel servers"}
@@ -61,32 +61,32 @@ Skylake servers are not supported for VMware vSphere® Enterprise Plus 7.0u1 ins
 For **Cascade Lake** servers, you can choose the following CPU models and a supported RAM size, which depends on the NSX networking solution.
 {: #cascade-para-intro}
 
-| CPU model     | RAM sizes   |
-|:------------- |:----------- |
-| Dual Intel Xeon Silver 4210 processor / 20 cores, 2.2 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5218 processor / 32 cores, 2.3 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6248 processor / 40 cores, 2.5 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6250 processor / 16 cores, 3.9 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Platinum 8260 processor / 48 cores, 2.4 GHz | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Quad Intel Xeon Gold 6248 processor / 80 cores, 2.5 GHz | 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Quad Intel Xeon Platinum 8260 processor / 96 cores, 2.4 GHz | 384 GB, 768 GB, 1.5 TB, 3 TB |
-{: caption="Table 2. Options for Cascade Lake bare metal servers - NSX-T instances" caption-side="top"}
+| CPU model     | Cores     | GHz     | RAM sizes   |
+|:------------- |:----------|:--------|:----------- |
+| Dual Intel Xeon Silver 4210 processor | 20 | 2.2 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 5218 processor | 32 | 2.3 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6248 processor | 40 | 2.5 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6250 processor | 16 | 3.9 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Platinum 8260 processor | 48 | 2.4 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Quad Intel Xeon Gold 6248 processor | 80 | 2.5 | 384 GB, 768 GB, 1.5 TB, 3 TB |
+| Quad Intel Xeon Platinum 8260 processor | 96 | 2.4 | 384 GB, 768 GB, 1.5 TB, 3 TB |
+{: caption="Table 2. Options for Cascade Lake bare metal servers - NSX-T instances" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: tab-title="NSX-T instances"}
 {: tab-group="Cascade Lake Intel servers"}
 {: #simpletabtable-cascade-nsxt}
 
 
-| CPU model     | RAM sizes   |
-|:------------- |:----------- |
-| Dual Intel Xeon Silver 4210 processor / 20 cores, 2.2 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5218 processor / 32 cores, 2.3 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6248 processor / 40 cores, 2.5 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6250 processor / 16 cores, 3.9 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Platinum 8260 processor / 48 cores, 2.4 GHz | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Quad Intel Xeon Gold 6248 processor / 80 cores, 2.5 GHz | 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Quad Intel Xeon Platinum 8260 processor / 96 cores, 2.4 GHz | 384 GB, 768 GB, 1.5 TB, 3 TB |
-{: caption="Table 2. Options for Cascade Lake bare metal servers - NSX-V instances" caption-side="top"}
+| CPU model     | Cores     | GHz     | RAM sizes   |
+|:------------- |:----------|:--------|:----------- |
+| Dual Intel Xeon Silver 4210 processor | 20 | 2.2 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 5218 processor | 32 | 2.3 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6248 processor | 40 | 2.5 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6250 processor | 16 | 3.9 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Platinum 8260 processor | 48 | 2.4 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Quad Intel Xeon Gold 6248 processor | 80 | 2.5 | 384 GB, 768 GB, 1.5 TB, 3 TB |
+| Quad Intel Xeon Platinum 8260 processor | 96 | 2.4 | 384 GB, 768 GB, 1.5 TB, 3 TB |
+{: caption="Table 2. Options for Cascade Lake bare metal servers - NSX-V instances" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: tab-title="NSX-V instances"}
 {: tab-group="Cascade Lake Intel servers"}
@@ -98,27 +98,27 @@ For **SAP-certified** servers, you have the following options:
 * **HANA**, for which you can choose the CPU model and a supported RAM size, which depends on the NSX networking solution.
 {: #sap-para-intro}
 
-| CPU model     | RAM sizes   |
-|:------------- |:----------- |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW192) / 32 cores, 2.3 GHz | 192 GB |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW384) / 32 cores, 2.3 GHz | 384 GB |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768) / 40 cores, 2.5 GHz | 768 GB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW1500) / 56 cores, 2.7 GHz | 1.5 TB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW3000) / 56 cores, 2.7 GHz | 3 TB |
-{: caption="Table 3. Options for SAP-certified bare metal servers - NetWeaver" caption-side="top"}
+| CPU model     | Cores     | GHz     | RAM sizes   |
+|:------------- |:----------|:--------|:----------- |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW192) | 32 | 2.3 | 192 GB |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW384) | 32 | 2.3 | 384 GB |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768) | 40 | 2.5 | 768 GB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW1500) | 56 | 2.7 | 1.5 TB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW3000) | 56 | 2.7 | 3 TB |
+{: caption="Table 3. Options for SAP-certified bare metal servers - NetWeaver" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: tab-title="NetWeaver"}
 {: tab-group="SAP-certified Intel servers"}
 {: #simpletabtable-sap-netweaver}
 
 
-| CPU model     | RAM sizes |
-|:------------- |:--------- |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake) / 32 cores, 2.3 GHz | 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake) / 40 cores, 2.5 GHz| 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake) / 56 cores, 2.7 GHz | 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Quad Intel Xeon Platinum 8280M processor (Cascade Lake) / 112 cores, 2.7 GHz | 3 TB, 6 TB |
-{: caption="Table 3. Options for SAP-certified bare metal servers - HANA" caption-side="top"}
+| CPU model     | Cores     | GHz     | RAM sizes |
+|:------------- |:----------|:--------|:--------- |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake) | 32 | 2.3 | 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake) | 40 | 2.5 | 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake) | 56 | 2.7 | 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB |
+| Quad Intel Xeon Platinum 8280M processor (Cascade Lake) | 112 | 2.7 | 3 TB, 6 TB |
+{: caption="Table 3. Options for SAP-certified bare metal servers - HANA" caption-side="bottom"}
 {: tab-title="HANA"}
 {: tab-group="SAP-certified Intel servers"}
 {: class="simple-tab-table"}
@@ -133,7 +133,6 @@ INFORMATION:
 The section is referenced by the following files:
 - vcenter\vc_addingclusters.md
 - vcenter\vc_orderinginstance-network.md
-- vcenter\scb-orderinginstance-cons-work-cluster.md
 - vcenter\vrw-orderinginstance-edge.md
 - vcenter\vrw-orderinginstance-mgmt.md
 - vcenter\vrw-orderinginstance-primary.md
@@ -169,7 +168,7 @@ The uplink speed provides two options:
 | NA South | DAL10 | 03 |
 | NA South | DAL12 | 01 |
 | NA South | DAL13 | 02 |
-{: caption="Table 1. Available locations for 25 Gb uplink speed" caption-side="top"}
+{: caption="Table 1. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 {: #simpletable-uplink-speed-locations}
 
 
@@ -179,7 +178,6 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- vcenter\scb-orderinginstance-procedure.md
 - vcenter\vc_orderinginstance-procedure.md
 - vcenter\vrw-orderinginstance-procedure.md
 
@@ -225,6 +223,116 @@ CONTENT:
 
 {{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months free of charge for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
 {: #para-promotion-add-on-services}
+
+
+Conref section END.
+
+Conref section START.
+
+INFORMATION:
+The section is referenced by the following files:
+- vcenter\vc_deletinginstance.md
+- vcenter\vc_deletinginstance_multi.md
+
+CONTENT:
+
+When you delete a vCenter Server instance, the following components are released sequentially:
+1. All deployed services
+2. The Support fee for NSX-T instances or the Support and Services fee for NSX-V instances
+3. VMware® product licenses
+4. VMware ESXi™ servers
+5. Subnets
+6. VLANs
+{: #deletinginstance-components-list}
+
+Review the following information before you proceed.
+* Any existing VLANs that you own, outside of {{site.data.keyword.vmwaresolutions_full}}, will not be deleted.
+* Any VLANs that have your own resources added to them, such as gateways or Veeam® servers will not be deleted.
+* Any VLANs or subnets without attached gateways or servers will be deleted even though you might have IP addresses assigned from the subnets to your VMs.
+{: #deletinginstance-delete-vlans}
+
+Because of resource dependencies, the components in your instance are not released immediately when you delete the instance. For example, the subnets and VLANs cannot be deleted until the ESXi servers are fully reclaimed by the {{site.data.keyword.cloud_notm}} infrastructure, which happens at the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle. At the end of the billing cycle, which is typically 30 days, the subnets and VLANs are deleted and the instance deletion is completed.
+{: #deletinginstance-delete-info}
+
+You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle for the deleted instance.
+{: important}
+{: #deletinginstance-important-note}
+
+
+Conref section END.
+
+Conref section START.
+
+INFORMATION:
+The section is referenced by the following files:
+- vcenter\vc_addingservers.md
+- vcenter\vc_hybrid_addingremovingservers.md
+- vcenter\vc_removingservers.md
+
+CONTENT:
+
+Whenever possible, add ESXi servers by using the {{site.data.keyword.vmwaresolutions_full}} console because changes that you make on the VMware vSphere® Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, add ESXi servers to vCenter Server only for on-premises ESXi servers or ESXi servers that you don't manage in the {{site.data.keyword.vmwaresolutions_short}} console.
+{: #para-vcenteraddESXiservers}
+
+Whenever possible, remove ESXi servers by using the {{site.data.keyword.vmwaresolutions_full}} console because changes that you make on the VMware vSphere® Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, remove ESXi servers from vCenter Server only for on-premises ESXi servers or ESXi servers that you don't manage in the {{site.data.keyword.vmwaresolutions_short}} console.
+{: #para-vcenterremoveESXiservers}
+
+Conref section END.
+
+Conref section START.
+
+INFORMATION:
+The section is referenced by the following files:
+- vcenter\vc_addingclusters.md
+- vcenter\vc_hybrid_addingviewingclusters.md
+- vcenter\vc_deletingclusters.md
+
+CONTENT:
+
+Whenever possible, add clusters by using the {{site.data.keyword.vmwaresolutions_full}} console because changes that you make on the VMware vSphere® Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, add clusters to vCenter Server only for on-premises clusters or clusters that you don't plan to manage in the {{site.data.keyword.vmwaresolutions_short}} console.
+{: #para-vcenteraddclusters}
+
+Whenever possible, delete clusters by using the {{site.data.keyword.vmwaresolutions_full}} console because changes that you make on the VMware vSphere® Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, delete clusters from vCenter Server only for on-premises clusters or clusters that you don't plan to manage in the {{site.data.keyword.vmwaresolutions_short}} console.
+{: #para-vcenterremoveclusters}
+
+Conref section END.
+
+Conref section START.
+
+INFORMATION:
+The section is referenced by the following files:
+- vcenter\vc_orderinginstance-sys.md
+- vcenter\vrw-orderinginstance-resource.md
+
+CONTENT:
+
+You can also specify an instance name that meets the following requirements:
+* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* The instance name must start with a lowercase alphabetic character.
+* The instance name must end with a lowercase alphabetic or numeric character.
+* The maximum length of the instance name is 10 characters.
+* The instance name must be unique within your account.
+{: #orderinginstance-inst-name-list}
+
+
+Conref section END.
+
+Conref section START.
+
+INFORMATION:
+The section is referenced by the following files:
+- vcenter\vc_addingclusters.md
+- vcenter\vc_orderinginstance-cluster.md
+
+CONTENT:
+
+You can also specify a new cluster name that meets the following requirements:
+* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* The cluster name must start with a lowercase alphabetic character.
+* The cluster name must end with a lowercase alphabetic or numeric character.
+* The maximum length of the cluster name is 10 characters.
+* The cluster name must be unique within the vCenter Server instance.
+{: #cluster-name-requirements-list}
 
 
 Conref section END.

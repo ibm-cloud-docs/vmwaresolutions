@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-06-21"
 
 keywords: VMware Solutions Shared view private network endpoint
 
@@ -22,8 +22,8 @@ You can view the details of a private network endpoint for a virtual data center
 ## Procedure to view a private network endpoint for a virtual data center
 {: #shared_viewing-endpoints-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
-2. In the **VMware Solutions Shared** table, click a virtual data center name.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** from the left navigation pane.
+2. In the **VMware Solutions Shared** table, expand the site and click a virtual data center name.
 3. View the **Private network endpoint** details. Expand **Allow listed IPs and subnets** to view the list of IP addresses and subnets that you added when you ordered the private network endpoint.
 
 | Item | Description |
@@ -33,7 +33,7 @@ You can view the details of a private network endpoint for a virtual data center
 | Private network IP | The IP address for the private network. |
 | Service address | The IP address that your virtual data center is allocated for {{site.data.keyword.cloud_notm}} access. |
 | Allow listed IPs and subnets | The list of all allow listed IP addresses and subnets for the virtual data center. |
-{: caption="Table 1. Private network endpoint items" caption-side="top"}
+{: caption="Table 1. Private network endpoint items" caption-side="bottom"}
 
 The **Service address** is available only when you select the *Dedicated 1 Gbps uplinks* or *Dedicated 10 Gbps uplinks* **Device type** when you order the private network endpoint.
 {: note}
@@ -46,7 +46,7 @@ The private network endpoint can have different statuses.
 | Ready to use | The private network endpoint is operating. |
 | Deleting | The private network endpoint is being deleted. |
 | Deleted | The private network endpoint is deleted. |
-{: caption="Table 2. Status descriptions for a private network endpoint" caption-side="top"}
+{: caption="Table 2. Status descriptions for a private network endpoint" caption-side="bottom"}
 
 ## Related links
 {: #shared_viewing-endpoints-related}

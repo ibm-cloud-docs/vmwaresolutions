@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-06-21"
 
 keywords: vCenter Server add NFS storage
 
@@ -23,7 +23,7 @@ You can expand the capacity of your VMware vCenter Server® instance according t
 {: #vc_addingnfs-prereq}
 
 * Adding NFS storage to vCenter Server instances with VMware vSphere® 6.5 is not supported.
-* Do not add NFS storage from the VMware vSphere Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console.
+* Do not add NFS storage from the VMware vSphere Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_full}} console.
 * IBM will not manage NFS file shares that you manually add to an instance.
 * You can add or remove NFS storage shares to or from an existing NFS or vSAN cluster.
 
@@ -53,7 +53,7 @@ You can expand the capacity of your VMware vCenter Server® instance according t
 {: #vc_addingnfs-related}
 
 * [vCenter Server BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
-* [Requirements and planning for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
+* [Planning for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
 * [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Adding clusters to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
 * [Place a host in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.resmgmt.doc/GUID-8F705E83-6788-42D4-93DF-63A2B892367F.html){: external}

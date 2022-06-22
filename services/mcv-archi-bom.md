@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-20"
+lastupdated: "2022-06-20"
 
 subcollection: vmwaresolutions
 
@@ -47,7 +47,7 @@ The following components are available for vCenter Server multizone instances:
 | Hostname| `<host_prefix><host_number>` | host01.subdomain.domain |
 | Stretched cluster name | `<instance>-mgmt-<datacenter-region>` | mcv1-dal |
 | Cluster and management component | `<instance>-<cluster>-<datacenter>-<component>` | mcv1-mgmt-dal10-private \n DAL10-DVS |
-{: caption="Table 1. Component naming conventions" caption-side="top"}
+{: caption="Table 1. Component naming conventions" caption-side="bottom"}
 
 ## Instance sizing considerations
 {: #mcv-archi-bom-sizing}
@@ -67,14 +67,14 @@ Your choice of effective RAID level determines the minimum number of hosts that 
 | RAID 1 | PFTT=1 SFTT=1 | No | 3+3+2+2+2 |
 | RAID 5 | PFTT=1 SFTT=1 | Yes | 4+4+2+2+2 |
 | RAID 6 | PFTT=1  SFTT=2 | Yes | 6+6+2+2+2 |
-{: caption="Table 2. RAID and FTM levels" caption-side="top"}
+{: caption="Table 2. RAID and FTM levels" caption-side="bottom"}
 
-If you choose to use an IBM Global Technology Services (GTS) large style design with separate edge services clusters, you must deploy those clusters after their instance was provisioned. This is not an automated operation.
+If you choose to use an IBM Global Technology Services (GTS) large style design with separate edge services clusters, you must deploy those clusters after their instance was provisioned. This operation is not automated.
 
 ## Day 2 operations
 {: #mcv-archi-bom-ordering-daytwo}
 
-Multizone instance automation provides provisioning, installation, and configuration of hardware and VMware components only. Automation is not available for day 2 operations other than scale-up and scale-down.
+Multizone instance automation provides provisioning, installation, and configuration of hardware and VMware components only. Automation is not available for Day 2 operations other than scale-up and scale-down.
 
 ### Witness site
 {: #mcv-archi-bom-ordering-daytwo-witness}
@@ -89,10 +89,3 @@ Scale-up and scale-down are done in tandem across the two sites with a single us
 The management clusters can be scaled up and down with a maximum of 51 hosts. The stretch cluster can be scaled up and down with a maximum of 32 hosts.
 
 For example, you can add capacity by adding pairs of hosts, one in Site A and one in Site B to maintain uniformity in the configuration across the two sites. The status reflects that capacity is being added or removed to both sites simultaneously.
-
-## Related links
-{: #mcv-archi-bom-related}
-
-* [Adding clusters to vCenter Server multizone instances](/docs/vmwaresolutions?topic=vmwaresolutions-mcv_addviewdeleteclusters)
-* [Adding ESXi servers to vCenter Server multizone instances](/docs/vmwaresolutions?topic=vmwaresolutions-mcv_addingremovingservers)
-* [Adding NFS storage to vCenter Server multizone instances](/docs/vmwaresolutions?topic=vmwaresolutions-mcv_addingnfs-storage)

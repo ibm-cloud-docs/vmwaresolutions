@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-24"
+lastupdated: "2022-06-21"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 {{site.data.keyword.redhat_openshift_full}} for VMware Solutions is a reference architecture and a manual build process to deploy a {{site.data.keyword.redhat_openshift_notm}} cluster 4.7 on to an existing vCenter Server instance. The components of {{site.data.keyword.redhat_openshift_notm}} cluster are deployed as virtual machines (VMs) and appliances by using NSX software-defined networking.
 
 * Reference architecture - [vCenter Server and {{site.data.keyword.redhat_openshift_notm}} architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-intro)
-* Build process - This document. The process and steps that are needed to install {{site.data.keyword.redhat_openshift_notm}} 4.7 on to an existing vCenter Server instance.
+* Build process - The current document. The process and steps that are needed to install {{site.data.keyword.redhat_openshift_notm}} 4.7 on to an existing vCenter Server instance.
 
 ![VMware Solutions and {{site.data.keyword.redhat_openshift_notm}}](../../images/openshift-sddc.svg "VMware Solutions and {{site.data.keyword.redhat_openshift_notm}}"){: caption="Figure 1. VMware Solutions and OpenShift" caption-side="bottom"}
 
@@ -32,7 +32,7 @@ The {{site.data.keyword.redhat_openshift_notm}} platform is a platform that is d
 
 The operating system of the nodes is {{site.data.keyword.redhat_full}} Enterprise Linux® CoreOS, which is the container host version of {{site.data.keyword.redhat_notm}} Enterprise Linux (RHEL) and features an RHEL kernel with SELinux enabled by default. RHEL CoreOS includes kubelet, which is the Kubernetes node agent, and the CRI-O container runtime, which is optimized for Kubernetes. In {{site.data.keyword.redhat_openshift_notm}} 4.7, you must use RHEL CoreOS for all control plane machines, but you can use {{site.data.keyword.redhat_notm}} Enterprise Linux (RHEL) as the operating system for compute, or worker machines. If you choose to use RHEL workers, you must perform more system maintenance than if you use RHEL CoreOS for all of the cluster machines.
 
-The reference architecture and this build process use RHEL CoreOS. The nodes must have direct Internet access to:
+The reference architecture and this build process use RHEL CoreOS. The nodes must have direct Internet access to complete the following tasks.
 * Access the {{site.data.keyword.redhat_openshift_notm}} Infrastructure Providers page to download the installation program.
 * Access quay.io to obtain the packages that are required to install the cluster.
 * Obtain the packages that are required to perform cluster updates.
@@ -57,7 +57,7 @@ Access to the environment for this build process is done through a "jump-server"
 
 This build process uses the following scripting tools and scripts:
 
-* `govc` -  `govc` is a vSphere CLI and pre-compiled for Linux, OSX, and Windows. It is useful to complete various vCenter Server and vSphere operations from the CLI. It is used in this process to complete the following tasks:
+* `govc` is a vSphere CLI pre-compiled for Linux, OSX, and Windows. The CLI is useful to complete various vCenter Server and vSphere operations and it's used in this process to complete the following tasks:
    * Upload the ISO and OVA files to a vSphere datastore.
    * Create a persistent volume for the {{site.data.keyword.redhat_openshift_notm}} cluster to use.
 * {{site.data.keyword.redhat_notm}} Installer - The installer creates the Ignition files that are used by Terraform. Ignition is a first boot installer and configuration tool that is designed specifically for CoreOS Container Linux to partition disks, format partitions, writing files and configuring users. On first boot, Ignition reads its configuration from a remote URL and applies the configuration to the VM.
@@ -79,7 +79,7 @@ This documentation describes the process to install {{site.data.keyword.redhat_o
 
 The deployment approach is described in the following phases:
 
-* Phase 1 - vCenter Server instance preparation:
+* **Phase 1 - vCenter Server instance preparation.**
    * Using the {{site.data.keyword.vmwaresolutions_full}} console, [order a vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), which can include NFS or vSAN storage. You can use an existing instance if the instance has enough capacity.
    * Using the {{site.data.keyword.cloud_notm}} console, [order more private and public subnets](/docs/subnets?topic=subnets-getting-started) to be used by the {{site.data.keyword.redhat_openshift_notm}} cluster.
    * Download RHEL 8.0 ISO for the OS of the bastion or deployment node and the {{site.data.keyword.redhat_notm}} Enterprise Linux CoreOS (RHCOS) OVA image. This step is described in [Prerequisites for installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-prereq-intro).
@@ -88,13 +88,11 @@ The deployment approach is described in the following phases:
    * Add an ESG - An external services gateway (ESG) is a virtual appliance that provides North-South routing, and other network functions. In this architecture, the ESG is used for; routing, NAT, firewall, and load-balancing. As the ESGs are configured as active - passive pair, DRS anti-affinity rules are used to ensure that NSX Edges do not run on the same host. Static routes are used to direct traffic to either the internet or the IBM private Network. This step is described in [{{site.data.keyword.redhat_openshift_notm}} NSX Edge configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxedge-intro).
    * Add a DLR - A distributed logical router (DLR) is a virtual appliance that contains the routing control plane and it distributes the data plane in kernel modules to each hypervisor host. The DLR provides East-West distributed routing and is the default gateway for the {{site.data.keyword.redhat_openshift_notm}} VMs that will be installed on the {{site.data.keyword.redhat_openshift_notm}} logical switch. The NSX DLR virtual machines are configured as an active - passive pair, and vSphere Distributed Resource Scheduler (DRS) anti-affinity rules are created to ensure that the DLR VMs do not run on the same host. This step is described in [{{site.data.keyword.redhat_openshift_notm}} NSX DLR configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxdlr-intro).
    * Update DNS - The infrastructure DNS, provisioned with the vCenter Server instance is updated with the names and IP addresses for the {{site.data.keyword.redhat_openshift_notm}} components by using a PowerShell script. This step is described in [VMware Solutions DNS configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-dns-intro).
-* Phase 2 - {{site.data.keyword.redhat_openshift_notm}} installation. These steps are described in [{{site.data.keyword.redhat_openshift_notm}} 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro).
+* **Phase 2 - {{site.data.keyword.redhat_openshift_notm}} installation.** These steps are described in [{{site.data.keyword.redhat_openshift_notm}} 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro).
     * A {{site.data.keyword.redhat_notm}} virtual machine, the bastion node, is provisioned to run the {{site.data.keyword.redhat_openshift_notm}} installer and to host an HTTP Server. It is registered with {{site.data.keyword.redhat_notm}} by using your subscription, and the {{site.data.keyword.redhat_openshift_notm}} installer is downloaded.
     * On the bastion node, the `install-config.yaml` file is populated with the required {{site.data.keyword.redhat_openshift_notm}} parameters and {{site.data.keyword.redhat_openshift_notm}} ignition is used to generate a number of files used for the installation of the bootstrap, control plane, and worker machines.
     * Terraform, on the bastion node, uses the files that are created by Ignition to create the {{site.data.keyword.redhat_openshift_notm}} VMs.
-* Phase 3 - Post deployment activities - Configure a persistent volume for use by the {{site.data.keyword.redhat_openshift_notm}} cluster. This step is described in [{{site.data.keyword.redhat_openshift_notm}} 4.7 additional configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-config-intro).
-
-**Next topic:** [Prerequisites for installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-prereq-intro)
+* **Phase 3 - Post deployment activities.** Configure a persistent volume for use by the {{site.data.keyword.redhat_openshift_notm}} cluster. This step is described in [{{site.data.keyword.redhat_openshift_notm}} 4.7 additional configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-config-intro).
 
 ## Related links
 {: #vcs-openshift-runbook-intro-related}

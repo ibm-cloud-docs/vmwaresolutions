@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-05-10"
 
 keywords: vSphere order cluster, vSphere configuration, order vSphere cluster
 
@@ -17,21 +17,21 @@ subcollection: vmwaresolutions
 # Ordering vSphere clusters based on existing configurations
 {: #vs_orderingbasedonexistingconfig}
 
-You can order a VMware vSphere® cluster based on a configuration template that you saved. Use this procedure to define a new cluster configuration based on an existing cluster configuration.
+You can order a VMware vSphere® cluster based on a configuration template that you saved. Use this procedure to define a new cluster based on an existing cluster configuration.
 
 ## Requirements for vSphere clusters
 {: #vs_orderingbasedonexistingconfig-req}
 
 Ensure that you complete the following tasks:
 * If you are ordering an instance for the first time, complete the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
-*  Review the requirements and considerations in [Requirements and planning for vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning).
+*  Review the requirements and considerations in [Planning for vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning).
 *  Create a configuration template to be reused.
 
 ## Procedure to order vSphere clusters based on existing configurations
 {: #vs_orderingbasedonexistingconfig-procedure}
 
 1. In the {{site.data.keyword.vmwaresolutions_full}} console, click the **VMware Solutions Dedicated** card in the **IaaS platforms** section.
-2. On the **VMware Solutions Dedicated** page, click the **VMware vSphere** card.
+2. On the **VMware Solutions Dedicated** page, click the **VMware vSphere offering** card.
 3. Ensure that you are on the **Create new** tab. Select a configuration template from the **Cluster configurations** list.
 4. Enter a new cluster name.
 5. Review the cluster settings that are automatically completed and update the settings according to your needs. For more information about the settings, see [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req).

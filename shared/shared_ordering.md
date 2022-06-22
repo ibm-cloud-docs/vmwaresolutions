@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-03-16"
+lastupdated: "2022-06-21"
 
 keywords: shared order resource, order on demand shared, order on demand resources
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ordering virtual data centers
 {: #shared_ordering}
 
-{{site.data.keyword.cloud}} for VMware® Solutions Shared offers either a standardized or customizable deployment option of VMware virtual data center environments. Choose the **On-demand** or **Reserved** option.
+{{site.data.keyword.vmwaresolutions_full}} Shared offers either a standardized or customizable deployment option of VMware® virtual data center environments. Choose the **On-demand** or **Reserved** option.
 
 ## Requirements for virtual data centers
 {: #shared_ordering-reqs}
@@ -83,7 +83,22 @@ If **No resource group available** is displayed in this field, you currently do 
 ## Data center location
 {: #shared_ordering-dc}
 
-Select the {{site.data.keyword.cloud_notm}} data center where the virtual data center is to be hosted.
+Select the {{site.data.keyword.cloud}} data center settings. For more information, see [IBM Cloud data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning#shared_planning-dc-availability).
+
+### Geography
+{: #shared_orderinginstance-dc-region}
+
+Select the region where your virtual data center instance is hosted.
+
+### Site
+{: #shared_orderinginstance-dc-site}
+
+Select the {{site.data.keyword.cloud_notm}} data center site where the virtual data center is hosted.
+
+### Location
+{: #shared_orderinginstance-dc-location}
+
+Select the {{site.data.keyword.cloud_notm}} data center where the virtual data center is hosted.
 
 ## Networking
 {: #shared_ordering-networking}
@@ -111,7 +126,7 @@ If you selected **Preconfigured**, you have the following options for allocated 
 | Small | 64-cores | 512 GB |
 | Medium | 128-cores | 1024 GB |
 | Large | 256-cores | 2048 GB |
-{: caption="Table 1. Preconfigured vCPU and RAM options" caption-side="top"}
+{: caption="Table 1. Preconfigured vCPU and RAM options" caption-side="bottom"}
 
 If you selected **Customizable**, you can customize your reserved vCPU and RAM limits.
 
@@ -144,7 +159,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 2. On the **Create** tab of the **VMware Solutions Shared** page, select **On-demand**.
 3. Enter the virtual data center name and select a resource group.
 4. Select a deployment topology according to your needs.
-5. Select the data center location to host the virtual data center.
+5. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, site, and location to host the instance.
 6. Select the network type.
 7. Select the vCPU and RAM limits according to your requirements.
 8. On the **Summary** pane, verify the configuration and estimated price before you place the order.
@@ -157,7 +172,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 2. On the **Create** tab of the **VMware Solutions Shared** page, select **Reserved**.
 3. Enter the virtual data center name and select a resource group.
 4. Select a deployment topology according to your needs.
-5. Select the data center location to host the virtual data center.
+5. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, site, and location to host the instance.
 6. Select the network type.
 7. Complete the resource reservation.
    * If you select **Preconfigured**, select the preconfigured vCPU model and RAM size.

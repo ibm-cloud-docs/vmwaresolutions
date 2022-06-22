@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-03-25"
+lastupdated: "2022-06-21"
 
 keywords: personal data, data deletion, PHI, data, data security, high availability, ha, disaster recovery, vmware solutions shared, compliance
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing your data in VMware Solutions Shared
 {: #shared_data}
 
-Review the following data storage, high availability, and disaster recovery considerations before you order {{site.data.keyword.cloud}} for VMware® Solutions Shared.
+Review the following data storage, high availability, and disaster recovery considerations before you order {{site.data.keyword.vmwaresolutions_full}} Shared.
 
 ## Data security
 {: #shared_data-security}

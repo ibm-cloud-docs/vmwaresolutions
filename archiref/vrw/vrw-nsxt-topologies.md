@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -39,8 +39,6 @@ The second level Tier-0 (active-passive) instances and Tier-1 (active-passive) a
 From the Tier-1 instances, the overlay network segments are connected, which are available in both data centers as a stretched network. The previous Tier-0 failover and redundancy provide the same SLA availability as NSX-V, with a seamless active-active topology and failover.
 
 ![IBM Cloud for VMware Regulated Workloads active-active MZR topology](../../images/vrw-nsxt-topology-dual-dc-aa-simple.svg "Active-active MZR topology"){: caption="Figure 2. Active-active MZR topology" caption-side="bottom"}
-
-**Next topic**: [vSphere components](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-vsphere-platform)
 
 ## Related links
 {: #vrw-nsxt-topologies-related}

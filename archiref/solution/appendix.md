@@ -29,7 +29,7 @@ The design has multiple components that require licenses. This information captu
 | VMware vCenter Server® | Infrastructure management | vCenter Server 7.0 Standard |
 | VMware NSX® | Network virtualization | NSX DC Standard Edition |
 | VMware vSAN™ | Storage virtualization | vSAN 7.0 Advanced |
-{: caption="Table 1. NSX-T license requirements" caption-side="top"}
+{: caption="Table 1. NSX-T license requirements" caption-side="bottom"}
 
 NSX-T Data Center (DC) SP license editions provide the following features.
 
@@ -62,7 +62,7 @@ NSX-T Data Center (DC) SP license editions provide the following features.
 | VMware vRealize Network Insight Advanced | | | | ![Available](../../../icons/checkmark-icon.svg) |
 | VMware HCX Advanced | | | | ![Available](../../../icons/checkmark-icon.svg) |
 | vRealize Log Insight for NSX | | | | |
-{: caption="Table 2. NSX-T edition comparison chart" caption-side="top"}
+{: caption="Table 2. NSX-T edition comparison chart" caption-side="bottom"}
 
 ## NSX-V edition comparison
 {: #solution-appendix-nsxv-editions}
@@ -75,7 +75,7 @@ The design has multiple components that require licenses. This information captu
 | VMware vCenter Server | Infrastructure management | vCenter Server 6.7 Standard |
 | VMware NSX | Network virtualization | NSX Base for Service Providers 6.4 |
 | VMware vSAN | Storage virtualization | vSAN 6.6 Advanced |
-{: caption="Table 3. NSX-V license requirements" caption-side="top"}
+{: caption="Table 3. NSX-V license requirements" caption-side="bottom"}
 
 NSX Base for Service Providers edition is only available for service providers through the VMware vCloud Air Network (vCAN). The features in this edition can be found in the following table.
 {: note}
@@ -103,7 +103,7 @@ NSX Base for Service Providers edition is only available for service providers t
 | Remote Gateway                                |      |          | ![Available](../../../icons/checkmark-icon.svg) |
 | Integration with HW VTEPs                     |      |          | ![Available](../../../icons/checkmark-icon.svg) |
 | vRealize Log Insight for NSX | | | | |
-{: caption="Table 4. NSX-V edition comparison chart" caption-side="top"}
+{: caption="Table 4. NSX-V edition comparison chart" caption-side="bottom"}
 
 [^OpenStack]: L2, L3 & NSX Edge integration only. No consumption of security groups.
 
@@ -128,7 +128,7 @@ The following table lists the available features for the vSAN Advanced and Enter
 | RAID-5/6 erasure coding                         | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | Data at rest encryption                         |          | ![Available](../../../icons/checkmark-icon.svg) |
 | Stretched cluster with local failure protection |          | ![Available](../../../icons/checkmark-icon.svg) |
-{: caption="Table 5. vSAN edition comparison chart" caption-side="top"}
+{: caption="Table 5. vSAN edition comparison chart" caption-side="bottom"}
 
 ## Related links
 {: #solution-appendix-related}

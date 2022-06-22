@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-07"
+lastupdated: "2022-06-16"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ On [VMware vCenter Server®](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcen
 
 This architecture pattern presents private connectivity for vCenter Server that uses [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and deploying an NSX-T edge transport node at the colocation. This solution is applicable for [NSX-T based vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. 
 
-This solution relies on the principle that you can advertise NSX-T TEP traffic through {{site.data.keyword.dl_short}} to the colocation. With this, you can extend your NSX-T overlays over {{site.data.keyword.dl_short}}. You are responsible for deploying the edge transport nodes in colocation on your own x86 hardware and for creating the NSX-T edge cluster and configuring Tier-0 (T0) Gateway on the edge cluster.
+This solution relies on the principle that you can advertise NSX-T TEP traffic through {{site.data.keyword.dl_short}} to the colocation. Therefore, you can extend your NSX-T overlays over {{site.data.keyword.dl_short}}. You are responsible for deploying the edge transport nodes in colocation on your own x86 hardware and for creating the NSX-T edge cluster and configuring Tier-0 (T0) Gateway on the edge cluster.
 
 You can use Gateway Appliance or vCenter Server edge services cluster with Juniper vSRX or other device as part of the solution. This is optional.
 
@@ -48,7 +48,7 @@ When you design or deploy this architecture pattern, consider the following step
 
 * This pattern requires BYOL for the colocation solution VMware licensing. Contact VMware or your business partner for licensing details.
 * This pattern requires you to bring your own x86 hardware at colocation to host the NSX-T edge transport nodes.
- 
+
 ## Related links
 {: #arch-pattern-direct-link-edge-links}
 

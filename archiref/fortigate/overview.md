@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-31"
+lastupdated: "2022-05-09"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ Several licensing option bundles are available for FortiGate VM on {{site.data.k
    * Stateful packet inspection
    * VLAN protection and advanced logging
    * Ingress or egress FW rules
-   * SSL or IPSec VPN termination
+   * SSL or IPsec VPN termination
    * Continuous support
 * **Standard FW + UTM** - This bundle includes all standard firewall services in addition to the Advanced Malware Protection (AMP) service.
    * Advanced malware protection
@@ -52,8 +52,6 @@ Several licensing option bundles are available for FortiGate VM on {{site.data.k
     * CASB (Cloud Access Security Broker) - This service provides visibility, compliance, data security, and threat protection for cloud-based services.
     * Industrial security - This service provides signatures for common ICS/SCADA protocols.
     * Security rating - This service provides audit capabilities to identify critical vulnerabilities and configuration weaknesses and implement best practice recommendations.
-
-**Next topic:** [Fortinet FortiGate VM design](/docs/vmwaresolutions?topic=vmwaresolutions-fortigate-design)
 
 ## Related links
 {: #fortigate-overview-related}

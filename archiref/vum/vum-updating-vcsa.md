@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ To update the PSC or VCSA, follow these steps:
 8. After the update is complete, you must go back to the appliance management console and select to restart the console.
 9. Log back into the vSphere Web Client and check for any errors. Complete the following steps to scan VUM manually:
    1. Go to **Home > Hosts and Cluster**.
-   2. Select a data center or cluster, click the **Update Manager** tab, and then click **Scan for Updates**. 
+   2. Select a data center or cluster, click the **Update Manager** tab, and then click **Scan for Updates**.
 
 10. After testing, if you need to back out, revert to snapshot or restore the vCenter with a previous backup.
 
@@ -51,8 +51,6 @@ To update the PSC or VCSA, follow these steps:
 If you have primary and secondary vCenter Server instances, then your VCSAs are configured to be in a single vCenter Single Sign-On (SSO) domain. Each VCSA has a deployed VUM instance. The configuration properties that you modify are applied only to the VUM instance that you specify and are not propagated to the other instances in the group.
 
 You can specify a VUM instance by selecting the name of the VCSA with which the VUM instance is registered from the navigation bar. You can also manage baselines, baseline groups, scan, and remediate only the inventory objects that are managed by the VCSA with which the VUM instance is registered.
-
-**Next topic:** [Applying native NIC drivers](/docs/vmwaresolutions?topic=vmwaresolutions-vum-applying-nic)
 
 ## Related links
 {: #vum-updating-vcsa-related}

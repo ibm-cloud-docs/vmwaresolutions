@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-05-10"
 
 subcollection: vmwaresolutions
 
@@ -19,8 +19,8 @@ subcollection: vmwaresolutions
 {{site.data.keyword.vmwaresolutions_full}} has a number of offerings, deployment patterns, and options that can be used to create your target VMware NSX-T™ environment. For this documentation, they are defined as follows:
 
 * Automated offerings - These offerings are available from the [{{site.data.keyword.vmwaresolutions_full_notm}}](https://cloud.ibm.com/infrastructure/vmware-solutions/console) console and VMware Solutions Dedicated tiles.
-* Regulated workload offerings - These offerings are available from the [{{site.data.keyword.vmwaresolutions_full_notm}}](https://cloud.ibm.com/infrastructure/vmware-solutions/console) console and Regulated Workloads tile. They are suitable for clients that require a prescriptive reference architecture that matches the {{site.data.keyword.framework-fs_full}}.
-* Automated offerings with manual customization tasks - These offerings are based on the offering available from the [{{site.data.keyword.vmwaresolutions_full_notm}}](https://cloud.ibm.com/infrastructure/vmware-solutions/console) console and VMware Solutions Dedicated tile. They require a number of post-deployment manual tasks to achieve the architectural pattern needed.
+* Regulated workload offerings - These offerings are available from the [{{site.data.keyword.vmwaresolutions_full_notm}}](https://cloud.ibm.com/infrastructure/vmware-solutions/console) console, the **VMware Regulated Workloads** card. They are suitable for clients that require a prescriptive reference architecture that matches the {{site.data.keyword.framework-fs_full}}.
+* Automated offerings with manual customization tasks - These offerings are based on the offering available from the [{{site.data.keyword.vmwaresolutions_full_notm}}](https://cloud.ibm.com/infrastructure/vmware-solutions/console) console, the **VMware Solutions Dedicated** card. They require a number of post-deployment manual tasks to achieve the architectural pattern needed.
 
 Based on the assessment of your source NSX-V environment, you can identify the requirements for your target platform. After the analysis, do the following steps:
 
@@ -56,7 +56,7 @@ In the previous diagram, the following terms require some additional comments:
 * Dual NSX-T Manager clusters - Each site has its own NSX-T Manager cluster that is deployed automatically, which is independent of each other. In NSX-T, it doesn't exist a concept equivalent to Cross-vCenter NSX-V.
 * Active NSX-T data plane - All site ingress and egress traffic traverses through the single edge cluster that is deployed in that site automatically.
 * No stretched L2 capability - The stretching of layer 2 NSX-T overlay segments across sites cannot be done.
-* Single edge gateway - Each virtual data center uses an active-standby edge gateway for external access to the public network or the services network. This gateway includes features such as NAT, IPSec VPN, and load balancing.
+* Single edge gateway - Each virtual data center uses an active-standby edge gateway for external access to the public network or the services network. This gateway includes features such as NAT, IPsec VPN, and load balancing.
 * Single edge cluster Tier-0 gateway for workloads - The automation deploys a single NSX-T edge cluster, consisting of a pair of edge appliances, hosting an active/standby Tier-0 gateway for use by the workload VMs. These VMs provide connection between the overlay and underlay networks. For more information, see [Single-site - single-tenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and [Single-site - multitenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-mt ).
 * Single-zone NFS storage - vSphere data stores that use {{site.data.keyword.cloud_notm}} file storage of different IOPs ratings are available and deployed automatically. {{site.data.keyword.cloud_notm}} file storage can be accessed only from hosts in the same site as the vSphere hosts. For more information, see [Shared File-level storage across hosts](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-shared-storage).
 * Single-zone vSAN™ - The vCenter Server instance can be ordered with VMware vSAN and it uses disks in the vSphere hosts as a consolidated data store.

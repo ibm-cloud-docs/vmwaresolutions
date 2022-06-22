@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-11-15"
+lastupdated: "2022-06-21"
 
 keywords: vCenter Server compliance, compliance info, vCenter Server policy
 
@@ -18,10 +18,7 @@ subcollection: vmwaresolutions
 # Compliance information for vCenter Server instances
 {: #vc_compl_info}
 
-Review the following information for details about compliance for VMware® vCenter Server® instances.
-
-The vCenter Server with NSX-T™ offering is not supported for HIPAA customers.
-{: important}
+Review the following information for details about compliance for VMware vCenter Server® instances.
 
 ## Customer versus IBM responsibility for vCenter Server
 {: #vc_compl_info-responsibility}
@@ -42,7 +39,7 @@ Notwithstanding information in the data sheet for this Cloud Service regarding t
 
 VMware Solutions Dedicated
 
-Only the offerings that are previously listed can be provisioned to implement the HIPAA Privacy and Security Rule controls for use with Health Data if Client notifies IBM in advance that Client will use Health Data with the Cloud Service and IBM confirms in writing that the Cloud Service will be provisioned for Health Data usage. The Cloud Service cannot be used for the transmission, storage, or other usage of any Health Data protected under HIPAA unless (i) Client provides IBM such notification; (ii) IBM and Client have entered into an applicable Business Associate Agreement; and (iii) IBM provides Client with express written confirmation that the Cloud Service can be used with Health Data. In no event shall the Cloud Service be used for processing PHI as a healthcare clearinghouse within the meaning of HIPAA.
+Only the offerings that are previously listed can be provisioned to implement the HIPAA Privacy and Security Rule controls for use with Health Data if Client notifies IBM in advance that Client will use Health Data with the Cloud Service and IBM confirms in writing that the Cloud Service will be provisioned for Health Data usage. The Cloud Service cannot be used for the transmission, storage, or other usage of any Health Data protected under HIPAA unless (i) Client provides IBM such notification; (ii) IBM and Client have entered into an applicable Business Associate Agreement; and (iii) IBM provides Client with express- written confirmation that the Cloud Service can be used with Health Data. In no event, shall the Cloud Service be used for processing PHI as a healthcare clearinghouse within the meaning of HIPAA.
 
 If a system failure occurs, a third-party service provider might request debugging artifacts from the client (logs, core memory dumps). It is the client’s sole responsibility to gather and transmit these artifacts to the third-party provider. The IBM support team might assist by providing links to documentation or providing direction through screen sharing sessions. However, the client is responsible for cleansing the data of any PHI and ensuring that it is properly encrypted before it is transmitted. It is also the client’s responsibility to evaluate whether they require a BAA to be executed with the third-party provider before data is sent.
 
@@ -63,7 +60,7 @@ The following table details vCenter Server policy configurations for a new prima
 | vCenter password policy | Minimum length of 15 characters | Minimum length of 8 characters (vCenter default) |
 | vCenter lockout policy | Maximum of three failed login attempts | Maximum of five failed login attempts (vCenter default) |
 | vCenter lockout policy | 900 seconds between login failures | 180 seconds between login failures (vCenter default) |
-{: caption="Table 1. vCenter policy configurations" caption-side="top"}
+{: caption="Table 1. vCenter policy configurations" caption-side="bottom"}
 
 The generated NSX Manager password for vCenter Server primary instances is now 15 characters in length. Previously, the generated password was 8 characters in length.
 
@@ -80,7 +77,7 @@ vCenter Server environments, which are delivered as {{site.data.keyword.vmwareso
 
 * During the initial ordering and provisioning of an instance or service, IBM Support might access client instances and information without prior notification of the client to ensure that orders are properly fulfilled.
 * IBM Support actively monitors instance lifecycle operations such as adding new hosts, in addition to the ordering, provisioning, and installation processes.
-* To fix issues that have arisen or might arise in the future, IBM Support might take a number of actions. These actions include, but are not limited to, reviewing client order details, restarting automation jobs, performing operating system reload operations, or opening {{site.data.keyword.cloud_notm}} tickets by using the provided client {{site.data.keyword.cloud_notm}} user ID and API key.
+* To fix issues that arise or might arise in the future, IBM Support might take a number of actions. These actions include, but are not limited to, reviewing client order details, restarting automation jobs, performing operating system reload operations, or opening {{site.data.keyword.cloud_notm}} tickets by using the provided client {{site.data.keyword.cloud_notm}} user ID and API key.
 
 ### Proactive support for steady-state operations
 {: #vc_compl_info-proactive-support-for-steady-state-operations}
@@ -92,18 +89,18 @@ vCenter Server environments, which are delivered as {{site.data.keyword.vmwareso
 ### Support tickets
 {: #vc_compl_info-support-tickets}
 
-* vCenter Server environments are not actively monitored by IBM, and IBM Support will not enter the VMware management layer under normal operations without a client–written support ticket.
-* When a client opens a support ticket for an instance, service, or provisioning issue, the ticket is quickly assigned to the appropriate IBM Support team, who will be the primary party responsible for resolving the issue.
+* vCenter Server environments are not actively monitored by IBM, and IBM Support does not enter the VMware management layer under normal operations without a client–written support ticket.
+* When a client opens a support ticket for an instance, service, or provisioning issue, the ticket is quickly assigned to the appropriate IBM Support team, who is the primary party responsible for resolving the issue.
 * Due to the level of specialization that is required to maintain superior technical expertise at the team level, it is sometimes necessary to involve more than one support team in resolving a particular software problem. This is easily handled, as our support teams are all networked together and work as one to resolve whatever problems or issues arise.
-* In order to investigate the issue, IBM might need to access information on your system relative to the failure or might need to re-create the failure to get additional information.
-* A client–generated support ticket serves as acknowledgment that IBM Support can access the VMware management layer for investigation, debugging, and triage. If maintenance outage or changes to the environment are required, IBM Support will request additional documented confirmation from the client through tickets as part of our change management process.
+* To investigate the issue, IBM might need to access information on your system relative to the failure or might need to re-create the failure to get more information.
+* A client–generated support ticket serves as acknowledgment that IBM Support can access the VMware management layer for investigation, debugging, and triage. If maintenance outage or changes to the environment are required, IBM Support requests extra-documented confirmation from the client through tickets as part of our change management process.
 * For more information about support tickets, see [IBM Support Guide](https://www-01.ibm.com/support/docview.wss?uid=ibm10733923){: external} and [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 ## Client responsibilities
 {: #vc_compl_info-client-responsibilities}
 
-* While we commend clients taking steps to make their environments more secure, it should be noted that some practices might have adverse effects on the effectiveness of VMware Solutions.
-* Clients are accountable for the firewalls they create and the resulting limitations that are imposed on communications between the VMware Solutions components. These firewalls might also hinder the ability of IBM Support to access client instances and resolve issues. For more information about minimum recommended firewall configuration, see [Ports that are used by VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports).
+* While we commend clients that take steps to make their environments more secure, it must be noted that some practices might have adverse effects on the effectiveness of VMware Solutions.
+* Clients are accountable for the firewalls that they create and the resulting limitations that are imposed on communications between the VMware Solutions components. These firewalls might also hinder the ability of IBM Support to access client instances and resolve issues. For more information about minimum recommended firewall configuration, see [Ports that are used by VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports).
 * Clients are fully responsible for encrypting the data in their system.
 * Upon initial deployment, the offering’s automation and client’s account are separate. The client is allowed and encouraged to change all passwords that IBM provides in the console.
 * vCenter access and credentials are created during initial deployments and provided to the client. As part of the requirement of our offering, IBM Support must retain full access to the management layer to provide life–cycle management and support to our clients.
@@ -119,13 +116,13 @@ vCenter Server environments, which are delivered as {{site.data.keyword.vmwareso
 * The client is responsible for providing in–depth documentation at the time of a failure and responding timely to IBM Support when further clarification is needed.
 * Clients are also responsible for following the guidelines in this document to grant consent to proactive support.
 * By declining consent or failing to abide by the guidelines provided, the client assumes the responsibility of possible lag in problem resolution that is caused by communication delays between the client and support team.
-* The client should be prepared to perform more technical troubleshooting that would otherwise be done by IBM Support. IBM will provide appropriate documentation and assistance where necessary.
+* The client must be prepared to perform more technical troubleshooting that would otherwise be done by IBM Support. IBM provides appropriate documentation and assistance where necessary.
 
 ### Security measures
 {: #vc_compl_info-security-measures}
 
 * Management of Cloud Service - Client is responsible for managing administration, operation, maintenance, and security of the applications, including underlying middleware.
-* Service Integrity and Availability - IBM will forward to the Client all network intrusion notifications detected for this Cloud Service. It is the Client’s responsibility to ascertain the impact of each notification that is reported. Client will be notified of hardware failures. Monitoring and responding to OS or software failures is the responsibility of the Client, engaging IBM support as required.
+* Service Integrity and Availability - IBM forwards to the Client all network intrusion notifications detected for this Cloud Service. It is the Client’s responsibility to ascertain the impact of each notification that is reported. Client is notified of hardware failures. Monitoring and responding to OS or software failures is the responsibility of the Client, engaging IBM support as required.
 * Activity Logging - Client is responsible for activity logging of OS/System and Database/Applications, as needed.
 * Encryption - Client is responsible for configuring and managing all encryption (for both data at rest and in transit), as needed.
 * Business Continuity and Disaster Recovery - Client is responsible for configuring and managing all business continuity and disaster recovery processes, as needed.
@@ -136,8 +133,8 @@ vCenter Server environments, which are delivered as {{site.data.keyword.vmwareso
 * Third-Party software or code is included or bundled with some of our IBM offerings. This code is included for your convenience but is not considered part of the IBM program.
 * These non–IBM programs are licensed directly by their providers. Client agrees to use the non–IBM programs under the provider’s terms and conditions. These terms are provided in the IBM licensing agreement that accompanies the IBM offering at time of purchase.
 * IBM does testing to ensure that the third-party products work with IBM programs and that they function correctly.
-* IBM Support will diagnose client problems by using the knowledge of how our IBM offerings work with the Third-Party software. After it has been concluded that the IBM program is working correctly, but the issue still exists, IBM must refer the client to the Third-Party vendor for further diagnosis.
-* Further information on client responsibilities regarding Third-Party software or code can be found in the [IBM Support Guide](https://www-01.ibm.com/support/docview.wss?uid=ibm10733923){: external}.
+* IBM Support diagnoses client problems by using the knowledge of how our IBM offerings work with the Third-Party software. After it is concluded that the IBM program is working correctly, but the issue still exists, IBM must refer the client to the Third-Party vendor for further diagnosis.
+* Further information on client responsibilities by regarding Third-Party software or code can be found in the [IBM Support Guide](https://www-01.ibm.com/support/docview.wss?uid=ibm10733923){: external}.
 
 ## Consent to accessing client environments
 {: #vc_compl_info-consent-to-access-client-environment}
@@ -149,14 +146,14 @@ vCenter Server environments, which are delivered as {{site.data.keyword.vmwareso
 ## Initial provisioning
 {: #vc_compl_info-initial-provision}
 
-* At the time of initial provisioning and ordering, the client will be presented with this document.
-* By submitting the order, the client agrees to these terms and thus grants consent to IBM Support to access their instances at any time without prior notification to swiftly resolve issues pertaining to the environment or to prevent future failures.
-* This consent applies to all instances currently being ordered throughout their lifecycle. Instances and instance components that are provisioned in the future might require additional consent.
+* At the time of initial provisioning and ordering, the client is presented with this document.
+* By submitting the order, the client agrees to these terms and thus grants consent to IBM Support to access their instances at any time without prior notification to swiftly resolve issues that pertain to the environment or to prevent future failures.
+* This consent applies to all instances currently being ordered throughout their lifecycle. Instances and instance components that are provisioned in the future might require extra consent.
 
 ## Steady-state operations
 {: #vc_compl_info-steady-state-operations}
 
-If the client has not granted consent to proactive support for an instance in the initial provisioning and ordering, they must include explicit consent in any future service tickets, if wanted. Statements of consent must follow the set guidelines or will be considered void.
+If the client does not grant consent to proactive support for an instance in the initial provisioning and ordering, they must include explicit consent in any future service tickets, if wanted. Statements of consent must follow the set guidelines or are considered void.
 
 ## Related links
 {: #vc_compl_info-related}

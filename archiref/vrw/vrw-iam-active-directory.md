@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-18"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads Active Direc
 | Privileged user | `Administrator` | Default Windows® user |
 | Privileged user | `cloudadmin`    | Default user for the customer to access vCenter Server |
 | Non-privileged | `cloudreadonly` | Read-only account for the customer |
-{: caption="Table 1. Active Directory user IDs" caption-side="top"}
+{: caption="Table 1. Active Directory user IDs" caption-side="bottom"}
 
 ### Microsoft Active Directory groups
 {: #vrw-iam-active-directory-account-groups}
@@ -42,9 +42,7 @@ The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads Active Direc
 | User     | User ID       | Description |
 |:---------|:------------- |:------------|
 | IBM automation or privileged users | `IC4v-vCenter` | vCenter Administration Group |
-{: caption="Table 2. Active Directory groups" caption-side="top"}
-
-**Next topic**: [vCenter identity and access management](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-iam-vsphere)
+{: caption="Table 2. Active Directory groups" caption-side="bottom"}
 
 ## Related links
 {: #vrw-iam-active-directory-related}

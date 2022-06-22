@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ The second architectural decision to be made for your solution is public traffic
 Interface name              | Interface type | VLAN ID | Subnet                       | Allow float  | Allow IP spoofing | Enable Infra NAT  | NSX-T Interface            | Segment Name
 ----------------------------|----------------|---------|------------------------------|--------------|-------------------|-------------------|----------------------------|------------------------------
 vlan-nic-t0-pub-uplink-vip  | vlan           | 700     | vpc-t0-public-uplink-subnet  | true         | false             | false             | T0 Public Uplink VIP       | vpc-zone-t0-public-*vlanid*
-{: caption="Table 1. Public uplink HA VIP to be used for Public floating IPs" caption-side="top"}
+{: caption="Table 1. Public uplink HA VIP to be used for Public floating IPs" caption-side="bottom"}
 
 VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `false` allow public floating IP address to traverse non-NATted to the public uplinks of the T0 logical router. For high availability with NSX-T T0 logical router, HA VIPs can be used. When ordering floating IP address for public uplinks, always use the VIP VLAN interface instead of the uplinks that are reserved for the actual Edge Nodes.
 {: note}
@@ -62,14 +62,14 @@ In this case, your default route `0.0.0.0/0` in NSX-T T0 Logical Router must be 
 Route description           | Device             | CIDR             | Next-hop
 ----------------------------|--------------------|------------------|----------------------------------------------
 Default route               | T0 Logical Router  | 0.0.0.0/0        | Default GW of `vpc-t0-public-uplink-subnet`
-{: caption="Table 2. Default route in T0 Logical Router with Public Uplinks" caption-side="top"}
+{: caption="Table 2. Default route in T0 Logical Router with Public Uplinks" caption-side="bottom"}
 
 If you do not need inbound traffic from internet, you do not need public uplinks on T0 nor the public VLAN interfaces. Alternatively, you can use Public Gateway in {{site.data.keyword.vpc_short}}, which provides you the outbound internet access from NSX-T overlay segments, and use the T0s private uplinks for this traffic. In this case, your default route `0.0.0.0/0` in NSX-T T0 Logical Router must be pointed to the default gateway of the `vpc-t0-private-uplink-subnet`.
 
 Route description           | Device             | CIDR             | Next-hop
 ----------------------------|--------------------|------------------|----------------------------------------------
 Default route               | T0 Logical Router  | 0.0.0.0/0        | Default GW of `vpc-t0-private-uplink-subnet`
-{: caption="Table 3. Default route in T0 Logical Router with Private Uplinks Only" caption-side="top"}
+{: caption="Table 3. Default route in T0 Logical Router with Private Uplinks Only" caption-side="bottom"}
 
 ## Private traffic between Tier-0 and VPC
 {: #vpc-ryo-nsx-t-vpc-routing-edge-tier-0-routing-private}
@@ -81,7 +81,7 @@ If you have both Public and Private Uplinks, first thing is to create a route in
 Route description           | Device             | CIDR             | Next-hop
 ----------------------------|--------------------|------------------|----------------------------------------------
 Private networks            | T0 Logical Router  | 172.16.0.0/16    | Default GW of `vpc-t0-private-uplink-subnet`
-{: caption="Table 4. Private routes in T0 Logical Router with Public Uplinks" caption-side="top"}
+{: caption="Table 4. Private routes in T0 Logical Router with Public Uplinks" caption-side="bottom"}
 
 If you use only private route, then your default route `0.0.0.0/0` in NSX-T T0 Logical Router routes all traffic to the VPC.
 {: note}
@@ -91,7 +91,7 @@ You must define inbound traffic from VPC. Then, you must create a VPC route in t
 Interface name              | Interface type | VLAN ID | Subnet                       | Allow float  | Allow IP spoofing | Enable Infra NAT  | NSX-T Interface            | Segment Name
 ----------------------------|----------------|---------|------------------------------|--------------|-------------------|-------------------|----------------------------|------------------------------
 vlan-nic-t0-priv-uplink-vip | vlan           | 710     | vpc-t0-private-uplink-subnet | true         | true              | true              | T0 Private Uplink VIP      | vpc-zone-t0-private-*vlanid*
-{: caption="Table 5. VLAN interfaces for T0 uplinks" caption-side="top"}
+{: caption="Table 5. VLAN interfaces for T0 uplinks" caption-side="bottom"}
 
 VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `true` allow VMware workloads on NSX-T overlay with private IP addresses to be routed to {{site.data.keyword.vpc_short}}. To enable this, a VPC route is created with IP address of private uplink HA VIP/vlan-nic-t0-priv-uplink-vip as the next-hop configured in the {{site.data.keyword.vpc_short}} Zone.
 {: note}
@@ -101,14 +101,12 @@ When planning routing, summarize the NSX-T overlay subnets/prefixes to keep the 
 Route description           | Zone           | Traffic type   | CIDR             | Action    | Type   | Next-hop
 ----------------------------|----------------|----------------|------------------|-----------|--------|-------------------
 NSX-T overlay networks      | us-south-2     | Egress         | 192.168.4.0/22   | Deliver   | IP     | 192.168.0.10
-{: caption="Table 6. VPC routes" caption-side="top"}
+{: caption="Table 6. VPC routes" caption-side="bottom"}
 
 VPC routes are Zone specific.
 {: note}
 
 Creating a VPC route enables traffic within the Zone or VPC depending on how the VPC route is created. If you use any of the interconnectivity options, such as {{site.data.keyword.dl_short}} or {{site.data.keyword.tg_short}}, and you need connectivity from another VPC attached to a TGW, in addition to the VPC route, you can create a VPC prefix matching the NSX-T overlay subnet or prefix. This action allows both DL and TGW to advertise your NSX-T overlay subnet or prefix to the attached TGW connections or DL. Using the previous example, you can create a VPC prefix matching the route `192.168.4.0/22`, which enables TGW to advertise this prefix to the other attached VPCs, or Classic. For more information about VPC prefixes and about creating prefixes, see [Bring your own subnet](/docs/vpc?topic=vpc-configuring-address-prefixes).
-
-**Next topic:** [Network services provided by Tier-0 and Tier-1 logical routers](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-nsx-t-vpc-edge-services)
 
 ## Related links
 {: #vpc-ryo-nsx-t-vpc-routing-links}

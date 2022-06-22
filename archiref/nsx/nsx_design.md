@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -31,7 +31,7 @@ VMware vSAN™ is optional in the following figure.
 ## Dedicated architecture design
 {: #nsx_design-dedicated-archi}
 
-The dedicated architecture deploys the necessary NSX Edge components in a separate two-node vSphere cluster. This cluster is dedicated for the use of the NSX Edge and provides critical interaction with the physical network infrastructure. The dedicated architecture has the following characteristics and functions:
+The dedicated architecture deploys the necessary NSX Edge components in a separate two node vSphere cluster. This cluster is dedicated for the use of the NSX Edge and provides critical interaction with the physical network infrastructure. The dedicated architecture has the following characteristics and functions:
 
 * Provides on-ramp and off-ramp connectivity to physical networks. For example, North-South L3 routing on NSX Edge virtual appliances.
 * Allows for communication with physical devices that are connected to VLANs in the physical networks through NSX L2 bridging and hosts the control virtual machine (VM) for Distributed Logical Router (DLR) routing.
@@ -42,11 +42,9 @@ The dedicated architecture deploys the necessary NSX Edge components in a separa
 ## IBM Cloud Private IP address ranges and Bring Your Own IP address ranges
 {: #nsx_design-ip-addr-ranges}
 
-The RFC1918 private IP address range specifically reserves the use of network ranges for organization internal use, never for the internet. The {{site.data.keyword.cloud_notm}} physical network infrastructure uses a specific RFC1918 private address space, 10.x.x.x/8, across all worldwide locations. These IP address ranges don't overlap across customer accounts or within an {{site.data.keyword.cloud_notm}} customer account. Within a customer account, any {{site.data.keyword.cloud_notm}} allocated private IP address space can, with Virtual Routing and Forwarding (VRF) enabled, route to any other {{site.data.keyword.cloud_notm}} private IP address range in any {{site.data.keyword.cloud_notm}} data center.
+The RFC1918 private IP address range specifically reserves the use of network ranges for organization internal use, never for the internet. The {{site.data.keyword.cloud_notm}} physical network infrastructure uses a specific RFC1918 private address space, 10.x.x.x/8, across all worldwide locations. These IP address ranges don't overlap across customer accounts or within an {{site.data.keyword.cloud_notm}} customer account. Within your account, any {{site.data.keyword.cloud_notm}} allocated private IP address space, with Virtual Routing and Forwarding (VRF) enabled, route to any other {{site.data.keyword.cloud_notm}} private IP address range in any {{site.data.keyword.cloud_notm}} data center.
 
-While this makes it simple to set up a worldwide connected infrastructure within your account, the fixed IP address space can be problematic when you want to extend your data center into {{site.data.keyword.cloud_notm}} through routing when you are using the same private address space as {{site.data.keyword.cloud_notm}}. The solution is to use NSX to create an overlay topology on the vCenter Server infrastructure, isolating your Bring Your Own IP (BYOIP) address space from interacting with {{site.data.keyword.cloud_notm}} assigned private IP address space. NSX can provide an L2 VPN to span internal BYOIP address space within the tunnel across external, possibly overlapping, IP address spaces.
-
-**Next topic:** [Networking services on IBM Cloud](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-networking_services)
+While this makes it simple to set up a worldwide connected infrastructure within your account, the fixed IP address space can be problematic when you want to extend your data center into {{site.data.keyword.cloud_notm}} through routing when you are using the same private address space as {{site.data.keyword.cloud_notm}}. The solution is to use NSX to create an overlay topology on the vCenter Server infrastructure. The overlay isolates your Bring Your Own IP (BYOIP) address space from interacting with {{site.data.keyword.cloud_notm}} assigned private IP address space. NSX can provide an L2 VPN to span internal BYOIP address space within the tunnel across external, possibly overlapping, IP address spaces.
 
 ## Related links
 {: #nsx_design-related}

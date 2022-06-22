@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-17"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -85,11 +85,9 @@ You can have enterprise tools in place that you can use to monitor and manage yo
 | vSphere Hosts | vSphere hosts provide the virtualized CPU, RAM, and network to the compute VMs. | vROps via vCenter. vRLI collects the log data. |
 | vSAN | vSAN provides a datastore by consolidating storage in the hosts for use by the VMs. Issues that affect capacity and performance effect the applications that run on these VMs. | vROps and the Management Pack for vSAN provides additional dashboards to aid with the monitoring of vSAN. vCenter vSAN Health Checks are collected via vROps. vRLI collects the log data from vCenter. |
 | NSX® | NSX provides the virtualized network components that are used by the compute VMs, any failures of the network can impact the applications that run on these VMs. | vROps and the vROps Management Pack for VMware NSX provides visibility into the network topology. vRLI collects the log data from the NSX components such as Controllers, ESG, and logical switches. vRealize Network Insight (vRNI) provides in-depth troubleshooting of network issues. |
-{: caption="Table 1. vCenter Server environment core components" caption-side="top"}
+{: caption="Table 1. vCenter Server environment core components" caption-side="bottom"}
 
 In addition to monitoring, Operations Management on {{site.data.keyword.cloud_notm}}, helps with configuration, compliance, and many of the proactive tasks detailed in this documentation.
-
-**Next topic**: [Responsibilities for day 2 operations](/docs/vmwaresolutions?topic=vmwaresolutions-opsprocs-responsibilities)
 
 ## Related links
 {: #opsprocs-intro-links}

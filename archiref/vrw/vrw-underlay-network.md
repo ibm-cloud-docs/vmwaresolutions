@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-03-23"
+lastupdated: "2022-06-10"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ The optional edge services cluster adds two transit network VLANs to the solutio
 
 The network design is done in this manner to enable the vSRX to control traffic flows within the management zone and between the management zone and the {{site.data.keyword.cloud}} private and public networks. The FortiGate appliance transit and VLAN network design are the same as the ones used with the edge services cluster.
 
-The vSRX running on the edge services cluster connects the management network to the private and public transit networks. The vSRX is configured to allow only traffic in or out of the management region that is necessary for proper operation and monitoring of the environment. The vSRX also isolates all traffic between the clusters' ESXi hosts and the vCenter Server. ESXi hosts within a cluster can communicate with each other and the vCenter Server but ESXi hosts in one cluster (workload or management, for example) can't communicate with the hosts of any other clusters. The limitation of cross cluster traffic is enforced by the vSRX and the configuration of the ESXi hosts' own firewalls.
+The vSRX running on the edge services cluster connects the management network to the private and public transit networks. The vSRX is configured to allow only traffic in or out of the management region that is necessary for proper operation and monitoring of the environment. The vSRX also isolates all traffic between the ESXi hosts in the clusters and vCenter Server. ESXi hosts within a cluster can communicate with each other and vCenter Server. ESXi hosts in one cluster (workload or management for example) are unable to communicate with the hosts of any other clusters. The limitation of cross-cluster traffic is enforced by vSRX and the configuration of the firewalls of the ESXi hosts.
 
 The edge services cluster is the peering point for traffic between the SaaS provider on-premises and the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. It also serves as the demarcation for traffic from the SaaS consumer. The SaaS provider uses the vSRX as the secure tunnel endpoint for its VPN.
 
@@ -139,17 +139,15 @@ Review the following table for a summary.
 | Public C | Primary  | Assigned to physical hosts for public network access.  |
 | Private A | Primary  | Single subnet assigned to physical hosts assigned by {{site.data.keyword.cloud_notm}}. Used by the management interface for vSphere management traffic. |
 | Private A | Portable | Single subnet that is assigned to VMs that function as management components |
-| Private A | Portable | Single subnet that is assigned to NSX-T or NSX-V VTEP |
+| Private A | Portable | Single subnet that is assigned to NSX-T VTEP |
 | Private B | Portable | Single subnet that is assigned for vSAN, if in use |
 | Private B | Portable | Single subnet assigned for NAS, if in use |
 | Private B | Portable | Single subnet assigned for vMotion |
-{: caption="Table 1. VLAN and subnet summary" caption-side="top"}
+{: caption="Table 1. VLAN and subnet summary" caption-side="bottom"}
 
 In this design, all VLAN-backed hosts and VMs are configured to point to the perimeter gateway as the default route. While the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instances enable the use of SDN, network overlays created within a VMware instance that include routing to internal subnets are not known by the perimeter gateway unless dynamic routing protocols or static routes are configured.
 
 The private network connections are configured to use a jumbo frame MTU size of 9000 to improve performance for large data transfers, such as storage and vMotion. This value is the maximum MTU that is allowed within VMware and by {{site.data.keyword.cloud_notm}}. The public network connections use a standard ethernet MTU of 1500, which must be maintained as any changes might cause packet fragmentation over the internet.
-
-**Next topic**: [Overlay networking](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overlay-network)
 
 ## Related links
 {: #vrw-underlay-network-related}

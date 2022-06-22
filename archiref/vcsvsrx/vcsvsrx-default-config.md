@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -283,8 +283,6 @@ set routing-options static route 10.0.0.0/8 next-hop 10.135.70.1
 
 set routing-options static route 0.0.0.0/0 next-hop 169.50.51.89
 ```
-
-**Next topic:** [The IBM Cloud IaaS vSRX default configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vcsvsrx-iaas-def-config)
 
 ## Related links
 {: #vcsvsrx-default-config-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-15"
 
 subcollection: vmwaresolutions
 
@@ -18,9 +18,9 @@ subcollection: vmwaresolutions
 
 You are responsible for the configuration, management, and monitoring of all software components, including the backup and availability of your management infrastructure and workloads.
 
-As part of the solution, you can optionally deploy the {{site.data.keyword.IBM}} Spectrum Protect&trade; Plus or Veeam® add-on services. Veeam and IBM Spectrum Protect Plus can help satisfy the requirement to back up your management components.
+As part of the solution, you can optionally deploy the Veeam® add-on service to satisfy the requirement for backing up your management components.
 
-These add-on services are deployed together with {{site.data.keyword.cloud}} Endurance storage. The services help you back up your workloads and the management components. The [IBM Spectrum Protect Plus architecture overview](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_spplus){: external} and [Veeam architecture overview](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external} provide helpful guidance on planning and sizing your deployment.
+These add-on services are deployed together with {{site.data.keyword.cloud}} Endurance storage. The services help you back up your workloads and the management components. The [Veeam architecture overview](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external} provides helpful guidance on planning and sizing your deployment.
 
 Different solution components require different strategies for backup. Some components are protected by using image-level backup, and other components are protected by using file-based backup for their configuration and data.
 
@@ -32,15 +32,15 @@ Some components, such as VMware vCenter Server® with an embedded Platform Servi
 To host these backups, deploy a Linux® file server into your cluster by using the following steps:
 
 1. Order a private portable subnet from the {{site.data.keyword.cloud_notm}} infrastructure and locate it on the same VLAN as your system components. It is the private VLAN on which the management IP addresses for your hosts exist.
-2. Upload an operating system image to your VMware management datastore, such as Ubuntu Server 18.04 LTS, from the {{site.data.keyword.cloud_notm}} private mirror.
+2. Upload an operating system image to your VMware® management datastore, such as Ubuntu Server 18.04 LTS, from the {{site.data.keyword.cloud_notm}} private mirror.
 3. Deploy this virtual machine (VM) into your cluster on the management port group by using a private portable IP address ordered previously. Ensure that the VM is configured to point to your AD/DNS servers and optionally add the VM to your DNS domain.
-4. Create a non-root backup user ID on this server and ensure that all the necessary services are configured and started for file transfers. For example, FTP or SSH.
-5. Ensure that this VM is included in your Veeam or IBM Spectrum Protect Plus management backup job.
+4. Create a nonroot backup user ID on this server and ensure that all the necessary services are configured and started for file transfers. For example, FTP or SSH.
+5. Ensure that this VM is included in your Veeam management backup job.
 
 ## vCenter file-based backup
 {: #solution_backingup-vcenter}
 
-VMware vCenter Server with embedded PSC provides an appliance management user interface and API to export the database and configuration to a file server that uses various protocols. For more information, see [File-Based Backup and Restore of vCenter Server Appliance](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-3EAED005-B0A3-40CF-B40D-85AD247D7EA4.html){: external}. 
+VMware vCenter Server with embedded PSC provides an appliance management user interface and API to export the database and configuration to a file server that uses various protocols. For more information, see [File-Based Backup and Restore of vCenter Server Appliance](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-3EAED005-B0A3-40CF-B40D-85AD247D7EA4.html){: external}.
 
 VMware documents an example of how you can configure the API to run periodically as a cron job directly on the vCenter Server Appliance and PSC.
 
@@ -54,23 +54,23 @@ VMware requires the backup location to be an empty folder, so plan for your back
 
 Proper backup of all NSX components is crucial to restoring the system to its working state if a failure occurs. The design requires you to configure NSX backup through the NSX Manager backup function. For this purpose, you can configure NSX Manager to regularly perform backups to your file server. Ensure that your file server or its data is backed up correctly, and ensure the rotation of old NSX backups.
 
-## Image-based backup of management virtual machines
+## Image-based backup of management VMs
 {: #solution_backingup-image}
 
-After you deployed your instance and deployed either the IBM Spectrum Protect Plus service or the Veeam backup service, configure a backup job for your management virtual machines. Plan to back up the following VMs with at least seven days of daily backups.
+After you deployed your instance and deployed the Veeam backup service, configure a backup job for your management VMs. Plan to back up the following VMs with at least seven days of daily backups.
 
 * If present, VMware SDDC Manager
 * If present, Active Directory servers
 * File backup server
 
-Plan to allocate enough Veeam or IBM Spectrum Protect Plus licenses to back up these virtual machines, and plan for at least 2 TB of backup storage for the VMs.
+Plan to allocate enough Veeam licenses to back up these VMs, and plan for at least 2 TB of backup storage for the VMs.
 
 ## Add-on services
 {: #solution_backingup-addons}
 
 If you deploy add-on solution components into your instance, plan for the backup of these components as part of your management backup strategy.
 
-* Zerto Virtual Replication - The Zerto Virtual Manager (ZVM) system is deployed as an {{site.data.keyword.cloud_notm}} virtual server instance (VSI) and its backup is not supported by Veeam or IBM Spectrum Protect Plus. If your disaster recovery strategy requires you to recover the ZVM without you perform a site failover, use your preferred Windows® backup solution to back up and restore the ZVM.
+* Zerto Virtual Replication - The Zerto Virtual Manager (ZVM) system is deployed as an {{site.data.keyword.cloud_notm}} virtual server instance (VSI) and its backup is not supported by Veeam. If your disaster recovery strategy requires you to recover the ZVM without you perform a site failover, use your preferred Windows® backup solution to back up and restore the ZVM.
 * F5® BIG-IP - F5 recommends [file-based backup of the F5 configuration](https://support.f5.com/csp/article/K13132){: external}, which you can direct to your file server.
 * FortiGate® Security Appliance or VM - Fortinet recommends [file-based backup of the FortiGate configuration](https://help.fortinet.com/fos50hlp/54/Content/FortiOS/fortigate-best-practices-54/Firmware/Performing_Config_Backup.htm){: external}, which you can direct to your file server.
 * Entrust CloudControl™ and Entrust DataControl® - Entrust supports both image and file-based backup of the Entrust server appliances. For more information, see the Entrust administration guides.
@@ -79,9 +79,9 @@ If you deploy add-on solution components into your instance, plan for the backup
 ## More considerations
 {: #solution_backingup-considerations}
 
-If you choose to deploy your AD/DNS server as an {{site.data.keyword.cloud_notm}} virtual server instance (VSI), you cannot back it up by using Veeam or IBM Spectrum Protect Plus. In this case, use your preferred Windows backup solution for backup and restore operations. Or, plan to deploy your instance by using AD/DNS VMs within your VMware cluster, which can be backed up by Veeam or IBM Spectrum Protect Plus.
+If you choose to deploy your AD/DNS server as an {{site.data.keyword.cloud_notm}} virtual server instance (VSI), you cannot back it up by using Veeam. In this case, use your preferred Microsoft Windows® backup solution for backup and restore operations. Or, plan to deploy your instance by using AD/DNS VMs within your VMware cluster, which can be backed up by Veeam.
 
-Beginning with VMware vCenter 6.5u2, VMware supports the backup of the vCenter Postgres database by using image-based backups. These backups use integrated suspend and resume scripts for the database during the backup window to ensure database integrity. If you upgrade your VMware instance to vCenter 6.5u2 or any newer release, choose to use Veeam or IBM Spectrum Protect Plus to back up your vCenter Server and PSC. Use this service instead of using file-based backups. If you do so, you must use the Veeam or IBM Spectrum Protect Plus quiesce feature to ensure database integrity.
+Beginning with VMware vCenter 6.5u2, VMware supports the backup of the vCenter Postgres database by using image-based backups. These backups use integrated suspend and resume scripts for the database during the backup window to ensure database integrity. If you want to use this method, choose to use Veeam to back up your vCenter Server and PSC. Use this service instead of using file-based backups. If you do so, you must use the Veeam quiesce feature to ensure database integrity.
 
 ## Restoring from backup
 {: #solution_backingup-restore}
@@ -98,8 +98,6 @@ Review the following special considerations when you restore your management bac
 {: #solution_backingup-summary}
 
 With proper planning, you can ensure that your VMware instance can suffer the loss of its management components and recover successfully. Ensure to regularly monitor the success of your backup jobs and availability of your backup data. Ensure to test your backup and restore plan regularly, for both your management infrastructure and your workloads.
-
-**Next topic:** [Post-deployment considerations for your VMware instance](/docs/vmwaresolutions?topic=vmwaresolutions-solution_considerations)
 
 ## Related links
 {: #solution_backingup-related}

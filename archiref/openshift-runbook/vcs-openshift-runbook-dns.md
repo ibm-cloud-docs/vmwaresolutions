@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-03-24"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -74,7 +74,7 @@ The following table is for an example deployment. Use your own values.
 | etcd Service Record Node 0 | _etcd-server-ssl._tcp.ocp.dallas.ibm.local | 192.168.133.10 |
 | etcd Service Record Node 1 | _etcd-server-ssl._tcp.ocp.dallas.ibm.local | 192.168.133.11 |
 | etcd Service Record Node 2 | _etcd-server-ssl._tcp.ocp.dallas.ibm.local | 192.168.133.12 |
-{: caption="Table 1. DNS records for OpenShift implementation" caption-side="top"}
+{: caption="Table 1. DNS records for OpenShift implementation" caption-side="bottom"}
 
 ## DNS commands
 {: #openshift-runbook-runbook-dns-commands}
@@ -105,8 +105,6 @@ Add-DnsServerResourceRecord -Srv -ZoneName "ibm.local" -Name "_etcd-server-ssl._
 Add-DnsServerResourceRecord -Srv -ZoneName "ibm.local" -Name "_etcd-server-ssl._tcp.ocp.dallas" -DomainName "etcd-1.ocp.dallas.ibm.local"  -Priority 10 -Weight 0 -Port 2380
 Add-DnsServerResourceRecord -Srv -ZoneName "ibm.local" -Name "_etcd-server-ssl._tcp.ocp.dallas" -DomainName "etcd-2.ocp.dallas.ibm.local"  -Priority 10 -Weight 0 -Port 2380
 ```
-
-**Next topic:** [{{site.data.keyword.redhat_openshift_notm}} Bastion node setup](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-bastion-intro)
 
 ## Related links
 {: #vcs-openshift-runbook-dns-related}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-12-10"
+lastupdated: "2022-06-21"
 
 subcollection: vmwaresolutions
 
@@ -123,8 +123,7 @@ Many basic administrative tasks can be done much more efficiently than clicking 
 2. At the prompt, type:
    `rvc Administrator@vsphere.local@localhost` and press **Enter**.
 3. Enter the Administrator’s password provided on the ICVS Console. You will now be at the root of the virtual file system, type ls and then press **Enter**, you see:
-   `0 /
-   1 localhost/``
+   `0 / 1 localhost/`
 
 4. Type `cd 1`, enter and then `ls` and press **Enter**. You see:
    `0 / datacenter1 (datacenter)`
@@ -147,8 +146,6 @@ Many basic administrative tasks can be done much more efficiently than clicking 
 9. Depending on your vSAN size, this task might take a lot of time. When completed, type `vsan.objstatusreport 0` and then press **Enter** to verify that the object versions are upgraded to the new on-disk format.
 
 10. The vSAN cluster upgrade is now completed. Type `exit` and press **Enter** to leave RVC.
-
-**Next topic:** [VCSA update and SSO-linked vCenters](/docs/vmwaresolutions?topic=vmwaresolutions-vum-updating-vcsa)
 
 ## Related links
 {: #vum-updating-vsan-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-21"
+lastupdated: "2022-05-17"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -23,11 +23,11 @@ The FortiGate® Virtual Appliance service deploys a pair of FortiGate Virtual Ap
 
 * You can install multiple instances of this service as needed. You can manage this service by using the FortiOS web Client or the CLI through SSH.
 * For VMware vCenter Server® with NSX-T™ instances, FortiGate Virtual Appliance is supported for NSX-T 3.1 or later and for VMware vSphere® 7.0.
-* For vCenter Server with NSX-V instances, FortiGate Virtual Appliance is supported for vSphere 6.7.
+* For existing vCenter Server with NSX-V instances V4.7 and earlier, FortiGate Virtual Appliance is supported for vSphere 6.7.
 
 {{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months at no cost for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
 
-The current FortiGate Virtual Appliance version that is installed is 7.0.4.
+The current FortiGate Virtual Appliance version that is installed is 7.0.5.
 {: note}
 
 ## Technical specifications for FortiGate Virtual Appliance
@@ -74,7 +74,7 @@ On vCenter Server 7 with NSX-T, you can install FortiGate Virtual Appliance on t
 
 On the consolidated cluster, note the following.
 
-* You can choose a 10 Gb or 25 Gb uplink speed for the cluster.  
+* You can choose a 10 Gb or 25 Gb uplink speed for the cluster.
 
    * If you select a 10 Gb uplink speed, you can select a deployment size from FortiGate-VM02 up to FortiGate-VM32.
    * If you select a 25 Gb uplink speed, you can select a FortiGate-VM16 or FortiGate-VM32 deployment size.
@@ -89,7 +89,7 @@ On the edge services cluster, note the following.
 ### FortiGate Virtual Appliance on vCenter Server 6.7 with NSX-V
 {: #fortinetvm_considerations-installvalues-vcs6-7}
 
-On vCenter Server 6.7 with NSX-V, you can install FortiGate Virtual Appliance on the management cluster.
+On existing vCenter Server 6.7 with NSX-V instances V4.7 and earlier, you can install FortiGate Virtual Appliance on the management cluster.
 
 * You can select a deployment size from FortiGate-VM02 up to FortiGate-VM16.
 * You can install FortiGate Virtual Appliance on clusters with a 10 Gb or 25 Gb uplink speed.
@@ -137,7 +137,7 @@ The following table shows the configuration of network and storage for your Fort
 |-----------------|-----------------|-----------------|
 | Management IP | Existing management subnet | {{site.data.keyword.cloud}} primary subnet |
 | Storage | Management data store (vSAN or NFS) | Local data store |
-{: caption="Table 1. Network and storage configuration" caption-side="top"}
+{: caption="Table 1. Network and storage configuration" caption-side="bottom"}
 
 ## FortiGate Virtual Appliance order example
 {: #fortinetvm_considerations-example}

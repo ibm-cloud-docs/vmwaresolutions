@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -54,8 +54,6 @@ When the initial cluster is converted into a management-only cluster, you must c
 {: #solution_scaling-hosts}
 
 You can scale out an existing cluster by ordering hosts from the {{site.data.keyword.vmwaresolutions_short}} console. The new hosts are automatically added to the cluster. You might need to adjust the HA reservation policy for the cluster based on your reservation requirements.
-
-**Next topic:** [Backing up components](/docs/vmwaresolutions?topic=vmwaresolutions-solution_backingup)
 
 ## Related links
 {: #solution_scaling-related}

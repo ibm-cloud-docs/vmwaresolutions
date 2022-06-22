@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-12-22"
+lastupdated: "2022-06-17"
 
 keywords: zerto, zerto self-service portal, zerto portal access procedure
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Accessing the Zerto Self-Service Portal
 {: #shared_zerto-portal}
 
-The Zerto service is available and ready-to-use in all virtual data centers. Use Zerto as a service to replicate your VMs between your {{site.data.keyword.cloud}} data centers to {{site.data.keyword.cloud_notm}}. The Zerto service is enabled by default.
+The Zerto service is available and ready to use in all virtual data centers. Use Zerto as a service to replicate your VMs between your {{site.data.keyword.cloud}} data centers to {{site.data.keyword.cloud_notm}}. The Zerto service is enabled by default.
 
 You can access the Zerto portal on the virtual data center details page when the virtual data center is in the **Ready to use** state. For more information, see [Procedure to view the virtual data center summary](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary#shared_viewing-vdc-summary-procedure) or [Procedure to view virtual data center details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-details#shared_viewing-vdc-details-procedure).
 
@@ -58,4 +58,4 @@ Zerto usage incurs charges on demand. For more information, see [VMware Solution
 * [Viewing Zerto Cloud Connector details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-view)
 * [Deleting Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-delete)
 * [Zerto Installation Guide for VMware vSphere Environments & Microsoft Hyper-V Environments](https://s3.amazonaws.com/zertodownload_docs/Latest/Zerto%20Virtual%20Replication%20Installation%20Guide%20for%20vSphere%20and%20Hyper-V.pdf){: external}
-* [Zerto Support and Service](https://www.zerto.com/company/support-and-service/){: external}
+* [Zerto Support and Services](https://www.zerto.com/support-and-services/){: external}

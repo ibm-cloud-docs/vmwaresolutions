@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-15"
 
 keywords: Entrust DataControl, tech specs Entrust DataControl
 
@@ -18,7 +18,10 @@ subcollection: vmwaresolutions
 # Entrust DataControl overview
 {: #htdc_considerations}
 
-The Entrust DataControl® service offers strong encryption with integrated key management to secure workloads throughout their lifecycle. The service provides encryption at both the operating system level and at the data level. This encryption enables any directory, folder, or file within a workload to be encrypted and decrypted.
+New installations of Entrust DataControl® (formerly known as HyTrust DataControl) are no longer supported for new or existing deployments of vCenter Server® instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
+{: deprecated}
+
+The Entrust DataControl service offers strong encryption with integrated key management to secure workloads throughout their lifecycle. The service provides encryption at both the operating system level and at the data level. This encryption enables any directory, folder, or file within a workload to be encrypted and decrypted.
 {: shortdesc}
 
 {{site.data.keyword.vmwaresolutions_full}} offers promotions for some services. Promotional pricing offers a number of months free of charge for a service's licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).

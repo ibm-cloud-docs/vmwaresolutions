@@ -44,6 +44,11 @@ toc:
           - vmonic/notifications.md
           - vmonic/useraccount.md
           - topicgroup:
+              label: IAM access for VMware Solutions
+              topics:
+              - vmonic/iam.md
+              - vmonic/iam_vcd.md
+          - topicgroup:
               label: Ports used by VMware Solutions
               topics:
               - vmonic/vmwaresol_ports-vlans-subnets.md
@@ -77,6 +82,7 @@ toc:
               topics:
               - shared/shared_viewing-vdc-summary.md
               - shared/shared_viewing-vdc-details.md
+              - shared/shared_iam-integration.md
               - shared/shared_accessing-vcd-console.md
           - shared/shared_vcd-ops-guide.md
           - shared/shared-monitor.md
@@ -88,7 +94,7 @@ toc:
           label: VMware Solutions Dedicated - vCenter Server
           topics:
           - topicgroup:
-              label: vCenter Server overview
+              label: Overview
               topics:
               - vcenter/vc_vcenterserveroverview.md
               - vcenter/vc_bom.md
@@ -104,7 +110,6 @@ toc:
               label: Upgrading and migrating
               topics:
               - vcenter/vc_vsphere_70_upgrade.md
-              - vcenter/vc_vsphere_upgrade.md
               - vcenter/vc_upgrade-lic.md
           - topicgroup:
               label: Ordering vCenter Server instances
@@ -148,9 +153,13 @@ toc:
       - topicgroup:
           label: VMware Solutions Dedicated - VMware vSphere
           topics:
-          - vsphere/vs_vsphereclusteroverview.md
-          - vsphere/vs_bom.md
+          - topicgroup:
+              label: Overview
+              topics:
+              - vsphere/vs_vsphereclusteroverview.md
+              - vsphere/vs_bom.md
           - vsphere/vs_planning.md
+          - vsphere/vs_vsphere_70_upgrade.md
           - topicgroup:
               label: Ordering new vSphere clusters
               topics:
@@ -193,28 +202,6 @@ toc:
           - vcenter/vrw-addingviewingclusters.md
           - vcenter/vrw-view-delete-instance.md
       - topicgroup:
-          label: Security and Compliance Readiness Bundle
-          topics:
-          - vcenter/scb-overview.md
-          - vcenter/scb-planning.md
-          - topicgroup:
-              label: Ordering Security and Compliance Readiness Bundle instances
-              topics:
-              - vcenter/scb-orderinginstance-req.md
-              - vcenter/scb-orderinginstance-res-details.md
-              - vcenter/scb-orderinginstance-licensing.md
-              - vcenter/scb-orderinginstance-location.md
-              - vcenter/scb-orderinginstance-cons-work-cluster.md
-              - vcenter/scb-orderinginstance-firewall.md
-              - vcenter/scb-orderinginstance-edge.md
-              - vcenter/scb-orderinginstance-network.md
-              - vcenter/scb-orderinginstance-services.md
-              - vcenter/scb-orderinginstance-procedure.md
-          - vcenter/scb-view-delete-instance.md
-          - vcenter/scb_addingviewingclusters.md
-          - vcenter/scb_addingremovingservers.md
-          - vcenter/scb_addingremovingservices.md
-      - topicgroup:
           label: Add-on services
           topics:
           - topicgroup:
@@ -232,12 +219,6 @@ toc:
               - services/htcc_considerations.md
               - services/htcc_ordering.md
               - services/managinghtcc.md
-          - topicgroup:
-              label: Entrust DataControl
-              topics:
-              - services/htdc_considerations.md
-              - services/htdc_ordering.md
-              - services/managinghtdc.md
           - topicgroup:
               label: F5 BIG-IP
               topics:
@@ -298,7 +279,6 @@ toc:
               - services/veeam_ordering_licenses.md
               - services/veeam_managing_licenses.md
               - services/icos_ordering.md
-              - services/veeam_considerations.md
           - topicgroup:
               label: vRealize Operations and Log Insight
               topics:
@@ -316,7 +296,6 @@ toc:
       - topicgroup:
           label: Enhancing security
           topics:
-          - vmonic/iam.md
           - vmonic/data-security.md
           - vmonic/at-events.md
           - vmonic/manage-scc.md
@@ -349,18 +328,38 @@ toc:
               - vcenter/vc_hybrid_deletinginstance.md
               - vcenter/vc_hybrid_deletinginstance_multi.md
           - vcenter/vc_addinstancetousraccount.md
-          - services/fsa_considerations.md
+          - topicgroup:
+              label: Entrust DataControl
+              topics:
+              - services/htdc_considerations.md
+              - services/managinghtdc.md
           - topicgroup:
               label: Entrust KeyControl
               topics:
               - services/htkc_considerations.md
               - services/managinghtkc.md
+          - services/fsa_considerations.md
           - services/icp_overview.md
           - topicgroup:
               label: IBM Spectrum Protect Plus
               topics:
               - services/spp_considerations.md
               - services/managingspp.md
+          - services/veeam_considerations.md
+          - topicgroup:
+              label: Security and Compliance Readiness Bundle
+              topics:
+              - vcenter/scb-overview.md
+              - vcenter/scb-orderinginstance-cons-work-cluster.md
+              - vcenter/scb-orderinginstance-network.md
+              - topic: vcenter/scb_addingviewingclusters.md
+                navtitle: Adding, viewing, and deleting clusters
+              - topic: vcenter/scb_addingremovingservers.md
+                navtitle: Adding or removing servers and storage
+              - topic: vcenter/scb_addingremovingservices.md
+                navtitle: Adding, viewing, and deleting services
+              - topic: vcenter/scb-view-delete-instance.md
+                navtitle: Viewing and deleting instances
 
 # links to your REST API docs should be included in the Reference navigation group. For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs.
 # links to your command line reference docs should be included in the Reference navigation group.
@@ -425,6 +424,7 @@ toc:
               - archiref/arch-pattern/arch-pattern-edge-services-cluster.md
               - archiref/arch-pattern/arch-pattern-bastion-vpc.md
               - archiref/arch-pattern/arch-pattern-nsx-t-private-connectivity.md
+              - archiref/arch-pattern/arch-pattern-bridging.md
               - archiref/arch-pattern/arch-pattern-nsx-t-transit-gw.md
               - archiref/arch-pattern/arch-pattern-3rd-party-router.md
               - archiref/arch-pattern/arch-pattern-nsx-t-direct-link-ipsec.md
@@ -481,6 +481,18 @@ toc:
               - archiref/veeam-bms/veeam-bms-archi-physical.md
               - archiref/veeam-bms/veeam-bms-archi-post-deployment.md
               - archiref/veeam-bms/veeam-bms-archi-app-support.md
+          - topicgroup:
+              label: Cyber recovery with Veeam architecture
+              topics:
+              - archiref/veeam-cr-sa/veeam-cr-sa-overview.md
+              - archiref/veeam-cr-sa/veeam-cr-sa-components.md
+              - archiref/veeam-cr-sa/veeam-cr-sa-ib.md
+              - archiref/veeam-cr-sa/veeam-cr-sa-ib-nw.md
+              - archiref/veeam-cr-sa/veeam-cr-sa-ire.md
+              - archiref/veeam-cr-sa/veeam-cr-sa-ire-nw.md
+              - archiref/veeam-cr-sa/veeam-cr-sa-lhr.md
+              - archiref/veeam-cr-sa/veeam-cr-sa-vp.md
+              - archiref/veeam-cr-sa/veeam-cr-sa-sandboxveeam.md
           - topicgroup:
               label: Caveonix RiskForesight architecture
               topics:
@@ -574,6 +586,25 @@ toc:
           label: Solution guides
           topics:
           - topicgroup:
+              label: Cyber recovery with Veeam guide
+              topics:
+              - archiref/veeam-cr-sag/veeam-cr-sag-overview.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-planning.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-jmp.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-jmpcfg.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-as.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-ascfg.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-lhbr.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-vbrcfg.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-ansible.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-lhbrcfg.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-lhbrmng.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-lhbrsecure.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-vsrx.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-ireprod.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-instantrestore.md
+              - archiref/veeam-cr-sag/veeam-cr-sag-lnxmgdsvr.md
+          - topicgroup:
               label: VMware Update Manager guide
               topics:
               - archiref/vcs/vcs-hybridity-intro.md
@@ -645,7 +676,6 @@ toc:
               - archiref/vcsvsrx/vcsvsrx-deployment.md
               - archiref/vcsvsrx/vcsvsrx-licensing.md
               - archiref/vcsvsrx/vcsvsrx-components.md
-
           - topicgroup:
               label: HCX for VMware Solutions guide
               topics:

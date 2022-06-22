@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-18"
+lastupdated: "2022-05-20"
 
 subcollection: vmwaresolutions
 
@@ -33,7 +33,7 @@ The management cluster relies upon native vSphere DRS capabilities to keep manag
 |**Entrust CloudControl** | Backup server file | |
 |**Virtual Machine Backup Server** | VMDK through Veeam| |
 |**Juniper vSRX** | Backup server file through SCP from vSRX | Commit change |
-{: caption="Table 1. Backup options" caption-side="top"}
+{: caption="Table 1. Backup options" caption-side="bottom"}
 
 ### Veeam backup server
 {: #vrw-budr-management-veeam}
@@ -82,12 +82,9 @@ Business continuity at the workload layers is the responsibility of the SaaS pro
 
 Veeam backup server is the recommended solution.
 
-
-**Next topic**: [Entrust integration](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-hytrust)
-
 ## Related links
 {: #vrw-budr-related}
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations)
+* [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [vSRX archival configuration](https://www.juniper.net/documentation/en_US/junos/topics/task/configuration/junos-software-system-management-router-configuration-archiving.html#id-10944516){: external}

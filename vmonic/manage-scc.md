@@ -1,6 +1,9 @@
 ---
+
 copyright:
-  years: 2020, 2021
+
+  years:  2020, 2021
+
 lastupdated: "2021-09-10"
 
 keywords: security and compliance for VMware Solutions, security for VMware Solutions, compliance for VMware Solutions

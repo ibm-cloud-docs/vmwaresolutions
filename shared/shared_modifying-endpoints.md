@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-06-21"
 
 keywords: VMware Solutions Shared modify private network endpoint
 
@@ -22,7 +22,7 @@ You can modify a private network endpoint for a virtual data center.
 ## Procedure to modify a private network endpoint for a virtual data center
 {: #shared_modifying-endpoints-procedure}
 
-You must open an IBM Support ticket to modify or adjust allow listed IP addresses or subnets. Provide the following details when you contact IBM Support:
+You must open an {{site.data.keyword.IBM}} Support ticket to modify or adjust allow listed IP addresses or subnets. Provide the following details when you contact IBM Support:
 * The IP addresses and subnets that you want to add or delete
 * The virtual data center ID
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -36,8 +36,6 @@ To use baselines and baseline groups, you must attach them to selected inventory
 1. Using the vSphere® web Client, go to **Home** > **Hosts and Clusters**.
 2. Click the cluster object that you want to scan.
 3. Go to VUM, click **Attach Baseline**, and then select the two pre-defined Patch Baselines. Click **OK**.
-
-**Next topic:** [Scanning and review](/docs/vmwaresolutions?topic=vmwaresolutions-vum-scanning)
 
 ## Related links
 {: #vum-baselines-related}

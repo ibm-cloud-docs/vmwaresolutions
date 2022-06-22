@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -49,8 +49,6 @@ This method allows achieving as follows:
 * Creating an additional, geographically separated deployment for Disaster Recovery use cases.
 * Creating an additional, geographically separated deployment for closer proximity to users.
 * Creating an additional, geographically separated deployment for Regulatory or Compliance reasons of your business and workloads.
-
-**Next topic:** [Backing up components](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-backingup)
 
 ## Related links
 {: #vpc-ryo-scaling-links}

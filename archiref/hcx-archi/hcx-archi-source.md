@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2022-03-23"
+lastupdated: "2022-05-19"
 
 subcollection: vmwaresolutions
 
@@ -121,6 +121,9 @@ To deploy the HCX, the proper number of IP addresses must be available both on-p
 
 Proximity routing is a networking feature that can be enabled when the HCX-IX is configured. Proximity routing is only available with NSX-V target.
 
+On 21 June 2022, you will no longer be able to provision new VCS instances using NSX–V but, you will be able to add hosts and clusters to your existing NSX–V deployments. IBM strongly recommends that clients immediately assess their NSX–V networks and plan a much earlier migration to NSX–T.
+{: note}
+
 Proximity routing ensures forwarding between VMs that are connected to stretched and routed networks, both on-premises and in the cloud, is symmetrical. This feature requires Dynamic Routing to be configured between the customer premises and the cloud.
 
 When users extend their networks to the cloud, Layer 2 connectivity is stretched onto {{site.data.keyword.cloud_notm}}. However, without route optimization, Layer 3 communication requests must return to the on-premises network origin to be routed. This return trip is called `tromboning` or `hairpinning`.
@@ -133,8 +136,6 @@ To prevent tromboning, HCX uses intelligent route management to choose routes ap
 * Created in the cloud (on a stretched network).
 
 For more information about HCX on-premises deployments, see the [VMware HCX documentation](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-BFD7E194-CFE5-4259-B74B-991B26A51758.html){: external}.
-
-**Next topic:** [VMware HCX component-level target architecture with NSX-V deployments](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-target-v)
 
 ## Related links
 {: #hcx-archi-source-related}

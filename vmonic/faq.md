@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-14"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -33,7 +33,7 @@ Find answers to frequently asked questions about the {{site.data.keyword.vmwares
 {: faq}
 {: support}
 
-When you order your instance for the first time, follow the instructions on the **Settings** page in the console to locate and copy the {{site.data.keyword.cloud_notm}} infrastructure username and API key from the {{site.data.keyword.slportal}}. The {{site.data.keyword.cloud_notm}} infrastructure credentials are stored in the {{site.data.keyword.vmwaresolutions_short}} console after the first order. Future orders automatically use the stored credentials.
+When you order your instance for the first time, follow the instructions on the **Settings** page in the console. These instructions help you locate and copy the {{site.data.keyword.cloud_notm}} infrastructure username and API key from the {{site.data.keyword.slportal}}. The {{site.data.keyword.cloud_notm}} infrastructure credentials are stored in the {{site.data.keyword.vmwaresolutions_short}} console after the first order. Future orders automatically use the stored credentials.
 
 ## How are my VMware virtual platform consumptions billed?
 {: #faq-billing}
@@ -48,8 +48,8 @@ All costs for the physical and virtual infrastructure and the licenses that resu
 
 All instance types provide deployment choices for VMware® virtual environments. However, the difference is the extent of customizability and automation.
 
-* When you order a VMware vCenter Server® instance, you deploy a VMware virtual environment with customized compute, storage, and network resources. For more information about the deployed components, see [Technical specifications for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs).
-* When you order a VMware vSphere® cluster, you obtain the maximum of flexibility to design and build your hosted VMware environment while you incorporate VMware-compatible hardware. However, {{site.data.keyword.cloud_notm}} does not automate the installation, configuration, and bring-up of the optional VMware components for the VMware vSphere cluster.
+* When you order a VMware vCenter Server® instance, you deploy a VMware® virtual environment with customized compute, storage, and network resources. For more information about the deployed components, see [Technical specifications for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs).
+* When you order a VMware vSphere® cluster, you obtain the maximum of flexibility to design and build your hosted VMware environment while you incorporate VMware-compatible hardware. However, {{site.data.keyword.cloud_notm}} does not automate the installation, configuration, and bring-up of the optional VMware components for the VMware vSphere® cluster.
 * The functions that are supported by vCenter Server instances and vSphere clusters are different. For more information, see [Offering comparison chart](/docs/vmwaresolutions?topic=vmwaresolutions-inst_comp_chart).
 
 ## What is included in a vCenter Server instance?

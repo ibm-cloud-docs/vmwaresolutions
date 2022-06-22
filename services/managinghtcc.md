@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-20"
 
 keywords: Entrust CloudControl WebGUI, Entrust CloudControl console, enable internet Entrust CloudControl
 
@@ -23,7 +23,7 @@ To manage the Entrust CloudControl™ service, access the Entrust CloudControl W
 ## Accessing the Entrust CloudControl WebGUI from the VMware Solutions console
 {: #managinghtcc-accessing-webgui}
 
-To log in to the WebGUI of the primary or secondary HTCC appliance, use the WebGUI credentials found on the Entrust CloudControl service details page.
+To log in to the WebGUI of the primary or secondary Entrust CloudControl appliance, use the WebGUI credentials that are found on the Entrust CloudControl service details page.
 
 ## Accessing the Entrust CloudControl console from the vSphere Web Client
 {: #managinghtcc-accessing-console}
@@ -38,7 +38,7 @@ For more information, see [Ordering services for vCenter Server instances](/docs
 ## Considerations when you add and remove hosts and clusters
 {: #managinghtcc-consider-addremove-hostsclusters}
 
-When you add and remove hosts and clusters to your instance, VMware Solutions does not manage your Entrust CloudControl inventory and credentials for you. IBM Cloud assumes that you will take steps to lock IBM Cloud automation from having access to your Entrust CloudControl deployment.
+When you add and remove hosts and clusters to your instance, VMware Solutions do not manage your Entrust CloudControl inventory and credentials for you. IBM Cloud assumes that you take steps to lock IBM Cloud automation from having access to your Entrust CloudControl deployment.
 
 ## Known issue about Network Time (Entrust CloudControl 5.x only)
 {: #managinghtcc-known-issue-ntp}
@@ -50,7 +50,7 @@ On the Entrust CloudControl 5.x web console, if you go to **General > Health**, 
 
 {{site.data.keyword.vmwaresolutions_short}} provides automatic renewal support for Entrust licenses with the Call Home feature enabled. For VMware vCenter Server® instances that are not private-only, Entrust CloudControl is deployed with firewall and SNAT (Source Network Address Translation) rules that are defined on the management services ESG **mgmt-nsx-edge**.
 
-These rules allow you to enable internet access for the Entrust VMs. If internet access is not enabled, the license that is applied to your Entrust CloudControl installation will expire after a year.
+These rules enable internet access for the Entrust VMs. If internet access is not enabled, the license that is applied to your Entrust CloudControl installation will expire after a year.
 
 For private-only vCenter Server environments, the VMware NSX® Edge Services Gateway (ESG) **mgmt-nsx-edge** is not added. Therefore, the firewall and SNAT rules are not defined. As a result, internet connectivity cannot be enabled for private-only instances and Entrust licenses expire annually.
 {: note}
@@ -72,7 +72,7 @@ The following steps apply for updating the Entrust CloudControl network settings
 
 1. Complete steps 1-3 in the previous procedure.
 2. Click **Settings** and then click **Interfaces**. Note the IP address for the private uplink, which becomes the new default gateway. 
-3. Go to the Entrust CloudControl service details page, click **View HTCC Web UI** and log in with the credentials from the service details page.
+3. Go to the Entrust CloudControl service details page, click **View Entrust CloudControl Web UI** and log in with the credentials from the service details page.
 4. Note the existing default gateway. Click **Configuration > Network**. Note the gateway IP address that is listed, which becomes the gateway for the static route.
 5. Add a static route. Click **Configuration > Static Routes**. Click **Add**, enter the following information, and click **OK**.
 

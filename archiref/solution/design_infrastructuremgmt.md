@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -40,7 +40,7 @@ The vCenter Server with an embedded PSC is installed on a portable subnet on the
 | Memory                       | 28 GB                               |
 | Disk                         | 700 GB on local datastore (Large disk deployment) |
 | Disk type                    | Thin provisioned                    |
-{: caption="Table 1. vCenter Server Appliance specifications" caption-side="top"}
+{: caption="Table 1. vCenter Server Appliance specifications" caption-side="bottom"}
 
 ### vCenter Server database
 {: #design_infrastructuremgmt-vcenter-db}
@@ -112,8 +112,6 @@ The following flow describes the order of events when you use the {{site.data.ke
 {{site.data.keyword.vmwaresolutions_short}} automation retains a set of user IDs and passwords encrypted within the {{site.data.keyword.cloud_notm}} management plane. Automation user IDs are separate from the user IDs displayed in the {{site.data.keyword.vmwaresolutions_short}} console and which are reserved for your use.
 
 Change these passwords and use your own password information management (PIM) system to store and manage these passwords. You cannot change or disable the passwords that are used by automation without disrupting the automation. For more information, see [IBM user IDs](/docs/vmwaresolutions?topic=vmwaresolutions-audit_user_ids).
-
-**Next topic:** [Scaling capacity](/docs/vmwaresolutions?topic=vmwaresolutions-solution_scaling)
 
 ## Related links
 {: #design_infrastructuremgmt-related}

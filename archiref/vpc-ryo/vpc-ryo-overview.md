@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -55,8 +55,6 @@ VMware Solutions in {{site.data.keyword.vpc_short}} have the following key benef
 With this single-tenant {{site.data.keyword.cloud_notm}} bare metal server infrastructure that is provided in {{site.data.keyword.vpc_short}}, you can quickly deploy network, compute, and storage capacity for your VMware environment to the {{site.data.keyword.cloud_notm}} in minutes.
 
 Unlike the managed service offerings, this architecture gives you flexibility to design a solution for your needs, and provides you full and complete access to all components.
-
-**Next topic:** [Virtual Private Cloud overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-vpc)
 
 ## Related links
 {: #vpc-ryo-overview-links}

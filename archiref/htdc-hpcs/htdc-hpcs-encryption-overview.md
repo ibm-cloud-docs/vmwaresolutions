@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-19"
+lastupdated: "2022-06-20"
 
 subcollection: vmwaresolutions
 
@@ -22,8 +22,8 @@ subcollection: vmwaresolutions
 The following terms are used in this documentation:
 * Symmetric key cryptography - This method of encryption uses the same encryption key is used to both encrypt and decrypt the data and is used primarily to protect data at rest.
 * Asymmetric key cryptography - This method of encryption uses a pair of keys, public and private, for the encryption and decryption of the data. Asymmetric keys are primarily used to secure data-in-motion. Both keys are related to each other and created at the same time.
-   * Public Key - this key is used to encrypt the data and can be freely given as it is used to encrypt data, not to decrypt it.
-   * Private Key - this key is used to decrypt the data that the public key encrypted. This key must be safeguarded as it is the only key that can decrypt the encrypted data.
+   * Public Key - This key is used to encrypt the data and can be freely given as it is used to encrypt data, not to decrypt it.
+   * Private Key - This key is used to decrypt the data that the public key encrypted. This key must be safeguarded as it is the only key that can decrypt the encrypted data.
 * Data encryption key (DEK) - An encryption key whose function is to encrypt and decrypt data.
 * Key encryption key (KEK) - An encryption key, which is used to encrypt and decrypt the DEK.
 * Key management application programming interface (KM API) - An application interface that is designed to securely retrieve and communicate encryption keys from a key management server to the client that requests the keys.
@@ -65,8 +65,6 @@ The following are considered to be best practices in key management:
 * Separation of duties - The implementation of separation of duties is critical for encryption key management, and to prevent unwanted access to protected data. The person who manages the encryption keys must not have access to the protected data, and vice versa.
 * Dual control - Dual Control requires that at least two or more individuals control a single process, so no single person is able to access or use the cryptographic keys.
 * Split Knowledge - This concept ensures that no one person knows the complete value of an encryption key. If passphrases are used to create encryption keys, then no single person would know the entire passphrase. Therefore, two or more people would need to be available to create or re-create an encryption key.
-
-**Next topic:** [vCenter Server encryption options](/docs/vmwaresolutions?topic=vmwaresolutions-htdc-hpcs-encryption-options)
 
 ## Related links
 {: #htdc-hpcs-encryption-overview-related}

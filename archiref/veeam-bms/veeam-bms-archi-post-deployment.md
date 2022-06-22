@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -18,8 +18,6 @@ subcollection: vmwaresolutions
 In a self-managed vCenter Server® solution, you can reconfigure provisioned backup servers, configure Veeam® configuration backups, add more proxy servers, add more {{site.data.keyword.cloud}} File, Block, or Object storage, or add OS agents on virtual machines.
 
 These tasks are manual, not automated. For more information, see [Veeam Help Center technical documentation](https://www.veeam.com/documentation-guides-datasheets.html?ad=menu-resources){: external}.
-
-**Next topic**: [Overview of application support with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-bms-archi-app-support)
 
 ## Related links
 {: #veeam-bms-archi-post-deployment-related}

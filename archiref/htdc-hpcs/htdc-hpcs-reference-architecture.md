@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-17"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -51,8 +51,6 @@ IBM Hyper Protect Crypto Services (HPCS) consists of the following components.
 * Enterprise PKCS #11 over gRPC - IBM HPCS provides a set of Enterprise PKCS #11 (EP11) APIs over gRPC calls, also referred to as GREP11, with which all the crypto functions are run in a cloud HSM. EP11 over gRPC is a stateless interface for cryptographic operations on cloud.
 
 Crypto units that are initially assigned are in a cleared state, which is known as imprint mode, which is not yet secure. When it exits imprint mode, the command must be signed by one of the administrators by using the signature key.
-
-**Next topic:** [Entrust DataControl on {{site.data.keyword.cloud_notm}} with IBM Hyper Protect Crypto Services](/docs/vmwaresolutions?topic=vmwaresolutions-htdc-hpcs-detail)
 
 ## Related links
 {: #htdc-hpcs-reference-architecture-related}

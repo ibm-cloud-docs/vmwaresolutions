@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-06-21"
 
 keywords: vCenter Server remove NFS storage
 
@@ -23,7 +23,7 @@ You can contract the capacity of your VMware vCenter Server® instance according
 {: #vc_removingnfs-prereq}
 
 * Removing NFS storage from vCenter Server instances with VMware vSphere® 6.5 is not supported.
-* Do not remove NFS storage from the VMware vSphere Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console.
+* Do not remove NFS storage from the VMware vSphere Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_full}} console.
 * Before you remove the NFS storage, ensure that you removed all the VMs that reside on the storage.
 * Ensure that the shares that you plan to remove are associated with the correct vCenter Server instance.
 * The cluster must be in **Ready to use** status.
@@ -53,7 +53,7 @@ You can contract the capacity of your VMware vCenter Server® instance according
 {: #vc_removingnfs-related}
 
 * [vCenter Server BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
-* [Requirements and planning for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
+* [Planning for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
 * [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Deleting clusters from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingclusters)
 * [Place a host in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.resmgmt.doc/GUID-8F705E83-6788-42D4-93DF-63A2B892367F.html){: external}

@@ -4,9 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-01-25"
-
-keywords: multizone add storage
+lastupdated: "2022-06-16"
 
 subcollection: vmwaresolutions
 
@@ -48,10 +46,3 @@ You can expand the capacity of your VMware vCenter Server® multizone instances 
 1. You might experience a slight delay on the console while the instance status changes from **Ready to use** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
 2. You are notified by email that your request to add NFS storage is being processed. On the console, the status of the cluster that is associated with the NFS storage is changed to **Modifying**.
 3. If you do not see that the new NFS storage is added to the list in the cluster, check the email or console notifications to find more details about the failure.
-
-## Related links
-{: #mcv_addingnfs-related}
-
-* [vCenter Server multizone BOM](/docs/vmwaresolutions?topic=vmwaresolutions-mcv-archi-bom)
-* [Adding clusters to vCenter Server multizone instances](/docs/vmwaresolutions?topic=vmwaresolutions-mcv_addviewdeleteclusters)
-* [Adding ESXi servers to vCenter Server multizone instances](/docs/vmwaresolutions?topic=vmwaresolutions-mcv_addingremovingservers)

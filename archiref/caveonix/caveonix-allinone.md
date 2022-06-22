@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -28,7 +28,7 @@ An automated deployment and configuration of a single virtual machine (VM) that 
 | OS | CentOS 7 |
 | Installed application components | UI, App, Plug-ins, Central collector, Index datastore, Messaging datastore, Relational datastore, Index datastore, Remote collector |
 {: class="simple-tab-table"}
-{: caption="Table 1. All-in-one VM parameters" caption-side="top"}
+{: caption="Table 1. All-in-one VM parameters" caption-side="bottom"}
 {: #table1}
 {: tab-title="All-in-one VM"}
 {: tab-group="all-in-one-vm"}
@@ -41,10 +41,8 @@ An automated deployment and configuration of a single virtual machine (VM) that 
 | Disk | 1 TB |
 | OS | CentOS 7 |
 | Installed application components | Remote collector |
-{: caption="Table 1. Remote collector VM parameters" caption-side="top"}
+{: caption="Table 1. Remote collector VM parameters" caption-side="bottom"}
 {: #table2}
 {: tab-title="Remote collector VM"}
 {: tab-group="all-in-one-vm"}
 {: class="simple-tab-table"}
-
-**Next topic:** [Partially distributed](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-partially)

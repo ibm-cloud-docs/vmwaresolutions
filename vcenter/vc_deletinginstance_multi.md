@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-05-27"
 
 keywords: vCenter Server delete instance, delete vCenter Server, delete multisite
 
@@ -18,23 +18,15 @@ subcollection: vmwaresolutions
 # Deleting vCenter Server instances in a multisite configuration
 {: #vc_deletinginstance_multi}
 
-Be aware of the following special considerations before you plan to delete VMware vCenter Server® instances that are part of a multisite configuration.
+Be aware of the following considerations before you delete VMware vCenter Server® instances that are part of a multisite configuration.
 
-When you delete a vCenter Server instance, the following components are released sequentially:
-1. All deployed services
-2. Support and Services fee
-3. VMware® product licenses
-4. VMware ESXi™ servers
-5. Subnets
-6. VLANs
+{{site.data.content.deletinginstance-components-list}}
 
-Any VLANs that have your own resources that are added to them, such as gateways, Veeam® servers, and other resources, are not deleted. In addition, any existing VLANs that you own, outside of {{site.data.keyword.vmwaresolutions_full}}, are not deleted.
-{: note}
+{{site.data.content.deletinginstance-delete-vlans}}
 
-Because of resource dependencies, the components in your instance are not released immediately when you delete the instance. For example, the subnets and VLANs cannot be deleted until the ESXi servers are fully reclaimed by the {{site.data.keyword.cloud_notm}} infrastructure, which happens at the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle. At the end of the billing cycle, which is typically 30 days, the subnets and VLANs are deleted and the instance deletion is completed.
+{{site.data.content.deletinginstance-delete-info}}
 
-You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle for the deleted instance.
-{: important}
+{{site.data.content.deletinginstance-important-note}}
 
 ## Procedure to delete vCenter Server instances in a multisite configuration
 {: #vc_deletinginstance_multi-procedure}

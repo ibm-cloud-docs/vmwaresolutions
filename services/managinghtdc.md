@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-20"
 
 keywords: Entrust DataControl WebGUI, Entrust DataControl console, enable internet Entrust DataControl
 
@@ -18,12 +18,15 @@ subcollection: vmwaresolutions
 # Managing Entrust DataControl
 {: #managinghtdc}
 
-To manage the Entrust DataControl® service, access the Entrust DataControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust DataControl console from the vSphere® Web Client.
+New installations of Entrust DataControl® are no longer supported for new or existing deployments of vCenter Server® instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
+{: deprecated}
+
+To manage the Entrust DataControl service, access the Entrust DataControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust DataControl console from the vSphere® Web Client.
 
 ## Accessing the Entrust DataControl WebGUI from the VMware Solutions console
 {: #managinghtdc-accessing-webgui}
 
-To log in to the WebGUI of the primary or secondary Entrust DataControl appliance, use the WebGUI credentials found on the Entrust DataControl service details page.
+To log in to the WebGUI of the primary or secondary Entrust DataControl appliance, use the WebGUI credentials that are found on the Entrust DataControl service details page.
 
 ## Accessing the Entrust DataControl console from the vSphere Web Client
 {: #managinghtdc-accessing-console}
@@ -40,7 +43,7 @@ For more information, see [Ordering services for vCenter Server instances](/docs
 
 For Entrust DataControl v4.3.2 and later, {{site.data.keyword.vmwaresolutions_short}} provides automatic renewal support for Entrust licenses with the Call Home feature enabled. For VMware vCenter Server® instances that are not private-only, Entrust DataControl is deployed with firewall and SNAT (Source Network Address Translation) rules that are defined on the management services ESG **mgmt-nsx-edge**.
 
-These rules allow you to enable internet access for the Entrust virtual machines (VMs). If internet access is not enabled, the license that is applied to your Entrust DataControl installation will expire after a year.
+These rules enable internet access for the Entrust virtual machines (VMs). If internet access is not enabled, the license that is applied to your Entrust DataControl installation will expire after a year.
 
 For private-only vCenter Server environments, the VMware® NSX Edge Services Gateway (ESG) **mgmt-nsx-edge** is not added. Therefore, the firewall and SNAT rules are not defined. As a result, internet connectivity cannot be enabled for private-only instances and Entrust licenses expire annually.
 {: note}
@@ -65,7 +68,7 @@ For private-only vCenter Server environments, the VMware® NSX Edge Services Gat
 6. To set a static route for the VM, click **Manage Network Settings > Manage Static Routes > Add Static Route**. Set **Network address** to `10.0.0.0/8` and **Gateway** to the IP address noted in the previous step.
 7. To set the default gateway IP for the VM, click **Manage Network Settings > Change Current Network Configuration**. If you get a warning message, click **OK**, then click **Custom Configuration**. Set the **Gateway** field to the private uplink IP address noted in step 2 and click **OK**. Wait until the new network configuration is installed and the network services are restarted.
 8. If you see a message that requests Entrust SecureOS reauthentication, click **OK** and enter the IP address of the other Entrust VM for this installation. If you are asked for a 16-character passphrase, press Enter to return to the main menu. Verify the current network configuration to ensure that your changes are applied.
-9. To confirm that the VM has access to the internet, ping a public IP address or website. Click **Manage Network Settings > Network Diagnostic Tools > Test Inbound Ports of Another Server**. Type a public website address. For example, `www.ibm.com`, click **OK**, type `80 443` for the ports (or any other ports you want to test). You should get an immediate response that shows the inbound ports with a message similar to `80 (OK) 443 (OK)`.
+9. To confirm that the VM has access to the internet, ping a public IP address or website. Click **Manage Network Settings > Network Diagnostic Tools > Test Inbound Ports of Another Server**. Type a public website address. For example, `www.ibm.com`, click **OK**, type `80 443` for the ports (or any other ports you want to test). You must get an immediate response that shows the inbound ports with a message similar to `80 (OK) 443 (OK)`.
 10. Repeat steps 3 - 9 for the other Entrust VM.
 
 

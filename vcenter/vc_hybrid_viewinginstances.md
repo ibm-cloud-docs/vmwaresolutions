@@ -36,7 +36,7 @@ To view a summary of all the vCenter Server with Hybridity Bundle instances that
 | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. |  
 | Creation time | The date and time when the instance was created. |  
 | Status | The status of the instance. |
-{: caption="Table 1. vCenter Server with Hybridity Bundle instance items" caption-side="top"}
+{: caption="Table 1. vCenter Server with Hybridity Bundle instance items" caption-side="bottom"}
 
 The instance can have different statuses.
 
@@ -50,7 +50,7 @@ The instance can have different statuses.
 | Deleting | The instance is being deleted. |
 | Deletion Error | An error occurred when the instance was being deleted. |
 | Deleted | The instance is deleted. |
-{: caption="Table 2. vCenter Server with Hybridity Bundle instances status descriptions" caption-side="top"}
+{: caption="Table 2. vCenter Server with Hybridity Bundle instances status descriptions" caption-side="bottom"}
 
 ## Procedure to view vCenter Server with Hybridity Bundle instances property details
 {: #vc_hybrid_viewinginstances-procedure-view-inst-property}
@@ -73,7 +73,7 @@ To view the property details of a vCenter Server with Hybridity Bundle instance:
 | DNS, Subdomain | The subdomain is the DNS subdomain name of the root domain name where the local vCenter Server with Hybridity Bundle instance host names reside. The subdomain name is in the format **`vcenter_server_instance_name`**.**`root.domain_name`**. |
 | Hybridity Bundle | Indicates if the vCenter Server with Hybridity Bundle is installed. |
 | Status  | The status of the instance. \n \n The information that is displayed provides an update on the progress of the deployment or the action that is taken on the instance. If there are issues, a message might be displayed to help you investigate and resolve the problem. |
-{: caption="Table 3. vCenter Server with Hybridity Bundle instances properties" caption-side="top"}
+{: caption="Table 3. vCenter Server with Hybridity Bundle instances properties" caption-side="bottom"}
 
 ## Procedure to view access information for vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_viewinginstances-procedure-view-access-info}
@@ -92,7 +92,7 @@ Under **Access information**, view the access information for the instance-relat
 | vCenter FQDN | The vCenter Server fully qualified domain name (FQDN). |
 | vCenter ADMIN | The VMware vCenter Single Sign-On user name and password that you can use to log in to the vCenter Server by using the vSphere Web Client. |
 | vCenter SSH | The user name and password that you can use to access the vCenter Server VM through SSH connection. |
-{: caption="Table 4. vCenter Server with Hybridity Bundle access information for instance-related components" caption-side="top"}
+{: caption="Table 4. vCenter Server with Hybridity Bundle access information for instance-related components" caption-side="bottom"}
 
 ## Procedure to view the deployment history for vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_viewinginstances-procedure-view-deploy-history}
@@ -103,7 +103,7 @@ Click **Deployment History** from the left navigation pane to view the deploymen
 |:------------- |:------------- |
 | Date | The date and time when the instance status is changed. |
 | Summary | The details of the change. |
-{: caption="Table 5. vCenter Server with Hybridity Bundle instance deployment history" caption-side="top"}
+{: caption="Table 5. vCenter Server with Hybridity Bundle instance deployment history" caption-side="bottom"}
 
 ## What to do if errors occur
 {: #vc_hybrid_viewinginstances-if-errors-occur}

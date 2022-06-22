@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-06-20"
 
 subcollection: vmwaresolutions
 
@@ -74,9 +74,7 @@ The customer backup data that is stored in the scale-out repository is encrypted
 
 For long-term storage needs, the scale-out repository helps to offload data from the performance tier (local DAS on the {{site.data.keyword.cloud_notm}} bare metal servers), to a capacity tier by using buckets in {{site.data.keyword.cloud_notm}} Object Storage. The offload traffic is encrypted and it flows over the internal {{site.data.keyword.cloud_notm}} private network. Each {{site.data.keyword.cloud_notm}} Object Storage bucket is encrypted with customer-specific keys and passwords based on customer's preference. Ordering {{site.data.keyword.cloud_notm}} Object Storage, or configuring {{site.data.keyword.cloud_notm}} Object Storage with Veeam is not part of the automation.
 
-Fr more information about ordering and configuration, see the {{site.data.keyword.cloud_notm}} documentation and the Veeam documentation.
-
-**Next topic:** [Physical infrastructure for the Veeam server with {{site.data.keyword.cloud_notm}} bare metal servers](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-bms-archi-physical)
+For more information about ordering and configuration, see the {{site.data.keyword.cloud_notm}} documentation and the Veeam documentation.
 
 ## Related links
 {: #veeam-bms-archi-components-related}

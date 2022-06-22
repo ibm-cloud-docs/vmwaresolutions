@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -36,8 +36,6 @@ When you use NSX-T™ on your VMware® solution on VPC, the VMs are attached on 
 
 ![Direct Link with VMware on VPC with NSX-T](../../images/vpc-ryo-diagrams-dl-nsx-t-arch.svg "Direct Link with VMware on VPC with NSX-T"){: caption="Figure 2. {{site.data.keyword.dl_short}} with VMware on VPC with NSX-T" caption-side="bottom"}
 
-**Next topic:** [{{site.data.keyword.cloud_notm}} VPN overview](/docs/vmwaresolutions?topic=vmwaresolutions-interconnectivity-vpn)
-
 ## Related links
 {: #interconnectivity-dl-ryo-links}
 
@@ -49,4 +47,3 @@ When you use NSX-T™ on your VMware® solution on VPC, the VMs are attached on 
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)
 * [VPC IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints)
 * [VMware on Bare Metal VPC tutorial](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)
-

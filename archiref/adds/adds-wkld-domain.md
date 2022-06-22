@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -112,8 +112,6 @@ Review the following guidance for AD in a vCenter Server instance.
 | NSX Auditors | Subset of “NSX Enterprise Administrator” group. For users that require NSX READ-ONLY permissions. | Assign to “Auditor” role in NSX Manager. Initially use Global scope. |
 | ESX Admins | This group is used when the ESXi hosts are added to Active Directory. It allows for system administrators to connect to ESXi directly that use the vSphere client and uses SSH to the ESXi console that uses named accounts instead of ‘root’. In the advanced settings of an ESXi host, the default group is named “ESX Admins”. This group name can be changed. If you change its name, ensure that an identically named AD security group is also created. | This group must be defined in each ESXi host’s advanced settings (ConfigurationSoftwareAdvanced SettingsConfig.HostAgent.plugins.hostsvc.esxAdministratorGroup), but does not require special vCenter application level role or permissions. |
 {: caption="Table 1. Active Directory security groups" caption-side="bottom"}
-
-**Next topic:** [Integrating the infrastructure domain with the workload domain](/docs/vmwaresolutions?topic=vmwaresolutions-adds-integration)
 
 ## Related links
 {: #adds-wkld-domain-related}

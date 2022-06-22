@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-03-25"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -44,8 +44,6 @@ The system context diagram identifies the following systems:
    * **Block** - {{site.data.keyword.cloud_notm}} provider and storage class configured in {{site.data.keyword.redhat_openshift_notm}} environment that allows ReadWriteOnce persistent volumes.
 * **Public internet** - Provide access to the VMware and {{site.data.keyword.redhat_openshift_notm}} environment to communicate with the public internet.
 * **{{site.data.keyword.cloud_notm}} private network** - Provide access to the VMware and {{site.data.keyword.redhat_openshift_notm}} environment to communicate with the {{site.data.keyword.cloud_notm}} private network and services.
-
-**Next topic:** [{{site.data.keyword.redhat_openshift_notm}} architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-redhat-arch)
 
 ## Related links
 {: #vcs-openshift-syscontext-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-04-08"
+lastupdated: "2022-05-06"
 
 keywords: vmware regulated workloads, add hosts vmware regulated workloads, add servers vmware regulated workloads, remove hosts vmware regulated workloads
 
@@ -34,6 +34,6 @@ The process to add and delete servers for VMware Regulated Workloads instances i
 ## Related links
 {: #vrw-addingremovingservers-related}
 
-* [Requirements and planning for VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-planning)
+* [Planning for VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-planning)
 * [Ordering VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
 * [Adding, viewing, and deleting clusters for VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-addingviewingclusters#vrw-addingviewingclusters)

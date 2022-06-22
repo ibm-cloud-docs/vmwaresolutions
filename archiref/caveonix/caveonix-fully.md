@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ The following table shows the user interface parameters.
 | Disk | 60 GB |
 | OS |CentOS 7|
 | Installed application components | UI |
-{: caption="Table 1. Base - user interface" caption-side="top"}
+{: caption="Table 1. Base - user interface" caption-side="bottom"}
 
 The following table shows the applications and plug-ins parameters.
 
@@ -42,7 +42,7 @@ The following table shows the applications and plug-ins parameters.
 | Disk | 500 GB |
 | OS | CentOS 7 |
 | Installed application components | App, Plugins|
-{: caption="Table 2. Base - applications and plug-ins" caption-side="top"}
+{: caption="Table 2. Base - applications and plug-ins" caption-side="bottom"}
 
 The following table shows the central collector parameters.
 
@@ -55,7 +55,7 @@ The following table shows the central collector parameters.
 | Disk | 500 GB |
 | OS | CentOS 7 |
 | Installed application components | Central collector (cluster) |
-{: caption="Table 3. Base - Central collector" caption-side="top"}
+{: caption="Table 3. Base - Central collector" caption-side="bottom"}
 
 The following table shows the relational database parameters.
 
@@ -68,7 +68,7 @@ The following table shows the relational database parameters.
 | Disk | 1 TB |
 | OS | CentOS 7 |
 |Installed application components | Relational datastore (primary or secondary) |
-{: caption="Table 4. Base - relational database" caption-side="top"}
+{: caption="Table 4. Base - relational database" caption-side="bottom"}
 
 The following table shows the messaging datastore parameters.
 
@@ -81,7 +81,7 @@ The following table shows the messaging datastore parameters.
 | Disk |1 TB |
 | OS | CentOS 7 |
 | Installed application components | Messaging datastore (cluster) |
-{: caption="Table 5. Base - messaging datastore" caption-side="top"}
+{: caption="Table 5. Base - messaging datastore" caption-side="bottom"}
 
 The following table shows the index datastore parameters for the primary nodes.
 
@@ -94,7 +94,7 @@ The following table shows the index datastore parameters for the primary nodes.
 | Disk | 1 TB |
 | OS | CentOS 7 |
 | Installed application component	|Index Datastore (Primary Nodes) |
-{: caption="Table 6. Base - index datastore (primary nodes)" caption-side="top"}
+{: caption="Table 6. Base - index datastore (primary nodes)" caption-side="bottom"}
 
 The following table shows the index datastore parameters for the data nodes.
 
@@ -107,7 +107,7 @@ The following table shows the index datastore parameters for the data nodes.
 | Disk | 4 TB |
 | OS | CentOS 7 |
 | Installed application components | Index datastore (data nodes) |
-{: caption="Table 7. Database - index datastore (data nodes)" caption-side="top"}
+{: caption="Table 7. Database - index datastore (data nodes)" caption-side="bottom"}
 
 The following table shows the scale-out VM data nodes parameters.
 
@@ -120,7 +120,7 @@ The following table shows the scale-out VM data nodes parameters.
 | Disk | 4 TB |
 | OS | CentOS 7 |
 | Installed application components | Data nodes (scale-out) |
-{: caption="Table 8. Scale-out - data nodes" caption-side="top"}
+{: caption="Table 8. Scale-out - data nodes" caption-side="bottom"}
 
 The following table shows the remote collector VM parameters.
 
@@ -132,6 +132,4 @@ The following table shows the remote collector VM parameters.
 | Disk | 1 TB |
 | OS | CentOS 7 |
 | Installed application components | Remote collector |
-{: caption="Table 9. Remote collector" caption-side="top"}
-
-**Next topic:** [Step 1 - Initial planning and prerequisites](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-step1)
+{: caption="Table 9. Remote collector" caption-side="bottom"}

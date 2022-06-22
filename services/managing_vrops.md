@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-06-20"
 
 keywords: vRealize console, vRealize license, login vRealize console
 
@@ -50,9 +50,9 @@ To access the vRealize Log Insight console, complete the following steps:
 
 You might encounter a situation where the file systems become filled to approximately 98% capacity. This scenario can result in inconsistencies with a Cassandra database or with the vRealize suite of products that are deployed with IBM automation.
 
-If vRealize Operations and Log Insight was deployed with IBM automation, you can remove the service or product. Use the VMware Solutions console to remove the service or product. Then, use the VMware Solutions console to redeploy it.
+If vRealize Operations and Log Insight are deployed with IBM automation, you can remove the service or product. Use the VMware Solutions console to remove the service or product. Then, use the VMware Solutions console to redeploy it.
 
-If you deployed the service or product in another way, you must redeploy it using the process you originally used for deployment.
+If you deployed the service or product in another way, you must redeploy it using the process that you originally used for deployment.
 
 ## Known issues
 {: #managing_vrops-issues}

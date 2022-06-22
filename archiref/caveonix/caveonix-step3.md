@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 This step uses the Caveonix RiskForesight configuration script. For the “all-in-one” deployment, this script is started through the {{site.data.keyword.vmwaresolutions_full}} automation.
 
-For scaling, the client needs to call the script to provision the partially distributed topology or the fully distributed topology. 
+For scaling, the client needs to call the script to provision the partially distributed topology or the fully distributed topology.
 
 The script configures the following RiskForesight services:
 - Caveonix Apps (API, Central Collector)
@@ -31,5 +31,3 @@ The script configures the following RiskForesight services:
 - Certificates for all services
 
 At the end of this step, the application components are installed on the required virtual machines.
-
-**Next topic:** [Step 4 - Application setup](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-step4)

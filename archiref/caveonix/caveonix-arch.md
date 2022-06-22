@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-16"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ The Caveonix RiskForesight architecture is shown in the following diagram.
 ![Architecture diagram](../../images/caveonix-architecture.svg "Architecture diagram"){: caption="Figure 1. Architecture for Caveonix RiskForesight" caption-side="bottom"}
 
 Caveonix RiskForesight architecture has four layers:
-* Detect - The Detect module is fully integrated into the VMware® stack and many public clouds. By using plug-ins, RiskForesight uses vCenter and NSX Manager as Asset Repositories, collecting details on virtual machines (VMs), networks, and network flows. Remote Collectors scan workloads, operating systems, and applications to allow a “full-stack” view of compliance and vulnerabilities.
+* Detect - The Detect module is fully integrated into the VMware® stack and many public clouds. By using plug-ins, RiskForesight uses vCenter and NSX Manager as Asset Repositories, collecting details on virtual machines (VMs), networks, and network flows. Remote Collectors scan workloads, operating systems, and applications to allow a "full-stack" view of compliance and vulnerabilities.
 * Predict - The Predict module uses analytics to identify risky assets and mitigation steps with risk reduction models to improve the risk posture.
 * Act - The Act module implements the mitigation steps based on prioritization and automated protective actions to provide proactive workload protection from risks due to cyberthreats.
    * RMCP – The Risk Management Control Plane (RMCP) provides continuous and proactive protection of the workloads, by monitoring the full-stack within private, public, and managed cloud data centers.
@@ -34,7 +34,7 @@ These dashboards provide the following functions.
 * A prioritized view of cyberrisk and compliance risks across hybrid cloud with Detect, Predict, Act dashboard views.
 * The ability for a user to visually interact with data to quickly identify assets at risk, based on risk priorities.
 * Easy-to-use graphs, metrics, and filters to develop insight into the identified risks.
-* Interactive drill-downs for greater depth of information on application data flows, vulnerabilities or configuration issues across locations, organizations, applications, and assets.
+* Interactive drill downs for greater depth of information on application data flows, vulnerabilities or configuration issues across locations, organizations, applications, and assets.
 * Allow the user to develop complete knowledge of the operational stack that includes, infrastructure, platform, application, and data.
 * The ability to visualize and enforce policies for segmentation of networks, VMs, or applications across the hybrid cloud.
 
@@ -53,5 +53,3 @@ Caveonix RiskForesight has the concept of zones.
    * Public – Currently the only public cloud provider that is supported is AWS. {{site.data.keyword.cloud_notm}} is available soon.
    * Containers - Currently only AWS Elastic Kubernetes Service (EKS) is supported. {{site.data.keyword.cloud_notm}} Private and {{site.data.keyword.cloud_notm}} Kubernetes Services coming later.
 * Tenant or Customer Environment Zone – Used to separate tenants, customer, or business units. A remote collector is required because workloads exist in these zones. For a minimum deployment, you need one remote collector, but for a general deployment, you need one Remote Collector per tenant or customer or business unit.
-
-**Next topic**: [Detailed design](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-detailed)

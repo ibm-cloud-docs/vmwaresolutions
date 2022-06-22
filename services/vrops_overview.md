@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-20"
+lastupdated: "2022-06-16"
 
 keywords: vRealize, vRealize info, tech specs vRealize
 
@@ -47,7 +47,7 @@ For more information about the design, requirements, and preconfigured managemen
 Review the following considerations before you delete the service:
 
 * Only the virtual machines (VMs) that were deployed during the initial installation of vRealize Operations and Log Insight are deleted. Any node that is deployed after the installation is not cleaned up.
-* Before you delete the service, you must remove any personal VMs from storage that are deployed with this service. vRealize Operations and Log Insight orders only personal VMs if it’s not vSAN.
+* Before you delete the service, you must remove any personal VM from storage that is deployed with this service. vRealize Operations and Log Insight orders only personal VMs if it’s not vSAN.
 * The VXLAN, DLR, and the Edge Gateway that were created during the initial deployment of vRealize Operations and Log Insight is deleted. The VMs that you deployed on VXLAN lose connectivity after the deletion of vRealize Operations and Log Insight begins.
 * If you delete vRealize Operations and Log Insight, you need to remove the Syslog Server from the NSX Manager and the NSX Controller manually.
 * If you installed the vRealize Operations and Log Insight service before VMware Solutions v4.0, and you then delete that service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).

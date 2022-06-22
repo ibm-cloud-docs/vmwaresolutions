@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-17"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -65,8 +65,6 @@ The workflow is as follows:
    1. During the upgrade process, a new Edge virtual appliance is deployed alongside the existing one. When the new Edge is ready, the old Edge's vNICs are disconnected and the new Edge's vNICs are connected. The new Edge then sends gratuitous ARP (GARP) packets to update the ARP cache of connected switches. When HA is deployed, the upgrade process is performed twice. This process can temporarily affect packet forwarding.
    2. In the vSphere Web Client, select **Networking & Security** > **NSX Edges**. For each NSX Edge instance, select **Upgrade Version** from the **Actions** menu.
    3. After the NSX Edge is upgraded successfully, the Status is Deployed, and the Version column displays the new NSX version. If an Edge fails to upgrade and does not roll back to the old version, click the **Redeploy NSX Edge** icon and then retry the upgrade.
-
-**Next topic:** [Updating vSAN clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vum-updating-vsan)
 
 ## Related links
 {: #vum-updating-nsx-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-04-14"
+lastupdated: "2022-06-03"
 
 keywords: vCenter Server add clusters, add cluster, vCenter Server cluster
 
@@ -23,7 +23,7 @@ You can add clusters to VMware vCenter Server® instances to expand the compute 
 {: #vc_addingclusters-before}
 
 * Adding clusters to vCenter Server instances with VMware vSphere® 6.5 is not supported.
-* Whenever possible, add clusters by using the VMware Solutions console. Changes that you make on the VMware® vSphere Web Client are not synchronized with the VMware Solutions console. Therefore, add clusters to vCenter Server only for on-premises clusters or clusters that you cannot or do not plan to manage in the VMware Solutions console.
+* {{site.data.content.para-vcenteraddclusters}}
 * The number of clusters, hosts, and virtual machines (VMs) determines the maximum limit for the number of clusters you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information about maximum limits, see [VMware configuration maximums](https://configmax.vmware.com/home){: external}.
 * You can add or delete a cluster while another cluster is being created or deleted.
 
@@ -42,12 +42,7 @@ When you add a workload cluster to a vCenter Server instance, you must specify t
 
 The cluster name is set to **vcs-_xx_** by default, where _xx_ represents two randomly generated alphabetic characters.
 
-You can also specify a new cluster name that meets the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
-* The cluster name must start with a lowercase alphabetic character.
-* The cluster name must end with a lowercase alphabetic or numeric character.
-* The maximum length of the cluster name is 30 characters.
-* The cluster name must be unique within the vCenter Server instance.
+{{site.data.content.cluster-name-requirements-list}}
 
 ### Licensing settings
 {: #vc_addingclusters-licensing-settings}
@@ -103,7 +98,7 @@ Available options might differ depending on the version that your instance was i
 
 * All servers that you order have the same configuration.
 * For vSAN™ storage, you can order in the range 4 - 59 servers.
-* For NFS storage, you can order 2 - 59 servers (for NSX-T™) or 1 - 59 servers (for NSX-V). However, for production workloads, a minimum of two servers is recommended. For more information, see [Is a two-node vCenter Server instance highly available?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#is-a-two-node-vcenter-server-instance-highly-available)
+* For NFS storage, you can order 2 - 59 servers. However, for production workloads, a minimum of two servers is recommended. For more information, see [Is a two-node vCenter Server instance highly available?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#is-a-two-node-vcenter-server-instance-highly-available)
 
 ### Storage settings
 {: #vc_addingclusters-storage-settings}
@@ -130,7 +125,7 @@ Specify the number of capacity disks that you want to add.
 
 If you want to add more capacity disks, select the **High performance with Intel Optane** checkbox. This option provides two extra capacity disk bays, which are useful for workloads that require less latency and higher IOPS throughput.
 
-The **High performance with Intel Optane** option is available only for vSphere 6 instances.
+The **High performance with Intel Optane** option is available only for vSphere 6 instance.
 {: note}
 
 ##### Size for vSAN cache disks
@@ -178,17 +173,7 @@ The following table indicates the performance level details.
 | 2 IOPS/GB | This option is designed for most general-purpose workloads. Example applications include hosting small databases, backing up web applications, or VM disk images for a hypervisor. |
 | 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. Example applications include transactional databases. |
 | 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. Example applications include high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
-{: caption="Table 4. NFS performance level options" caption-side="top"}
-
-#### Local disks (NSX-V SAP-certified HANA only)
-{: #vc_addingclusters-local-disks}
-
-The **Local disks** option is enabled for the **SAP-certified** - **HANA** CPU generation only.
-{: note}
-
-Specify the following settings.
-* **Local disk count** - Select the number of disks that you want to add. The first two disks are reserved, so a minimum of four disks is required.
-* **Local disk type** - Select an option for the disk type that you need.
+{: caption="Table 4. NFS performance level options" caption-side="bottom"}
 
 ### Network interface settings
 {: #vc_addingclusters-network-interface-settings}
@@ -208,10 +193,6 @@ You can use the default hostname prefix or specify a new one. When you specify a
 {: #vc_addingclusters-network}
 
 Network interface card (NIC) enablement settings are based on your selection of either **Public and private network** or **Private network only**.
-
-For NSX-V, the following add-on services require public NICs and are not available if you select the private option:
-* F5® BIG-IP®
-* FortiGate® Virtual Appliance
 
 #### Uplink speed
 {: #vc_addingclusters-uplink}
@@ -237,7 +218,7 @@ The **Uplink speed** option is not available to edge services clusters.
 | NA South | DAL10 | 03 |
 | NA South | DAL12 | 01 |
 | NA South | DAL13 | 02 |
-{: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="top"}
+{: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 
 #### VLANs
 {: #vc_addingclusters-vlans}
@@ -295,20 +276,19 @@ Select the region where your consolidated cluster or instance is hosted.
 #### Data center
 {: #vc_orderinginstance-dc-location-edge}
 
-* For VMware NSX-T®, select the {{site.data.keyword.cloud_notm}} data center where the consolidated cluster is hosted.
-* For VMware NSX-V, select the {{site.data.keyword.cloud_notm}} data center where the instance is hosted.
+Select the {{site.data.keyword.cloud_notm}} data center where the consolidated cluster is hosted.
 
 #### Pod
 {: #vc_orderinginstance-dc-pod-edge}
 
-Select the {{site.data.keyword.cloud_notm}} data center pod where you want to deploy your resources. Keep the default pod selection if you do not have reasons to prefer a different pod.\
+Select the {{site.data.keyword.cloud_notm}} data center pod where you want to deploy your resources. Keep the default pod selection if you do not have reasons to prefer a different pod.
 
 ### Cluster name
 {: #vc_addingclusters-cluster-name-edge}
 
 By default, the cluster names are set to **_instance name_-edge**.
 
-You can also specify a new name for your clusters. The names must meet the requirements that are listed in [Initial cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance#vc_orderinginstance-cluster-name).
+You can also specify a new name for your clusters. The names must meet the requirements that are listed in [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-mngt-workload-cluster-settings).
 
 ### CPU model
 {: #vc_addingclusters-edge-cluster-cpu}
@@ -370,8 +350,8 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 5. For workload clusters, select a billing option, enter the cluster name and complete the following configuration.
    1. If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, under **Bare metal server**, select the **Select a different location** checkbox and choose the {{site.data.keyword.cloud_notm}} data center to host the instance.
    2. Complete the bare metal configuration.
-      * If you selected **Skylake** or **Cascade Lake**, specify the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers**.
-      * If you selected **SAP-certified** NetWeaver, select one of the preset configurations. If you selected **SAP-certified** HANA, specify the **CPU model** and **RAM**.
+      * For **Skylake** or **Cascade Lake**, select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers**.
+      * For **SAP-certified** NetWeaver, select one of the preset configurations. For **SAP-certified** HANA, select the **CPU model** and **RAM**.
    3. Complete the storage configuration.
       * If you select **vSAN storage**, specify the following values:
          * Size for the vSAN capacity disks
@@ -386,9 +366,8 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 
       * If you select **NFS storage** and want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
       * If you select **NFS storage** and want to add and configure file shares individually, select **Configure shares individually**. Then, click the **Add** icon ![Add icon](../../icons/add.svg "Add") next to the **Add shared storage** label and select the **Size (GB)** and **Performance** for each file share. You must select at least one file share.
-      * (NSX-V only) If you select **Local disks**, specify the local disk count and local disk type.
    4. Complete the network interface settings.
-     
+
       * For Business Partner users, the vSphere license (Enterprise Plus edition) is included and purchased on your behalf.
       * For users who are not Business Partners, you can select one of the following options:
          * If you want new licenses to be purchased on your behalf, select **Include with purchase** for the component.
@@ -396,7 +375,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 6. For edge services clusters, complete the following configuration.
    1. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the instance or cluster.
    2. Specify the cluster name.
-   3. Specify the CPU model, RAM size, and the number of bare metal servers.
+   3. Select the CPU model, RAM size, and the number of bare metal servers.
    4. For network interface settings, enter the hostname prefix, and then select the uplink speed and network type.
 7. On the **Summary** pane, verify the cluster configuration before you add the cluster.
     1. Review the settings for the cluster.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-15"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -91,9 +91,7 @@ The primary configuration backup server instance is backed up using `rsync` acro
 |**NSX-T Controllers** |Backup Server File | Daily | Update needed in DR to point at new backup IP address |
 |**Entrust CloudControl** | Backup Server File | Update needed in DR to point at new backup IP address |
 |**Juniper vSRX** | Backup Server File through SCP from vSRX | Commit Change | Site specific |
-{: caption="Table 1. Backup source and frequency" caption-side="top"}
-
-**Next topic**: [Supported topologies](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-nsxt-topologies)
+{: caption="Table 1. Backup source and frequency" caption-side="bottom"}
 
 ## Related links
 {: #vrw-mzr-related}

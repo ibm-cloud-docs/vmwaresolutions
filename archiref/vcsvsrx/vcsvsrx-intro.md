@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -23,8 +23,6 @@ Currently, the vSRX is only available as an {{site.data.keyword.cloud}} infrastr
 Initial deployment consists of two bare metal hosts with KVM as the hypervisor and a single vSRX node as the only workload on each host. These items form the high-availability vSRX cluster.
 
 The vSRX cluster must be ordered as noted previously, so the gateway role is assigned to the cluster.
-
-**Next topic:** [vSRX single data center edge](/docs/vmwaresolutions?topic=vmwaresolutions-vcsvsrx-planning)
 
 ## Related links
 {: #vcsvsrx-intro-related}

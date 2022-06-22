@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-11"
+lastupdated: "2022-06-13"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -38,10 +38,10 @@ The following table provides information about the Caveonix RiskForesight™ por
 
 The following table provides information about the F5 BIG-IP® ports.
 
-| Source | Subnet, IP range | Target | Subnet, IP range |  Port | Protocol | Purpose | Service |
+| Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:-------|:----------------|:-------|:----------------|:------|:---------|:--------|:--------|
 | BigIP | New subnet ordered in private VLAN | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
-| Management-nsx-edge public IP | Public subnet for management edge | BigIP license server | 104.219.111.132/32 | 443 | TCP | License registration | HTTPS |
+| Management-nsx-edge public IP | Public subnet for management edge | BigIP license server | `104.219.111.132/32` | 443 | TCP | License registration | HTTPS |
 {: caption="Table 2. F5 BIG-IP ports" caption-side="bottom"}
 
 ## Ports for FortiGate Virtual Appliance
@@ -51,9 +51,9 @@ The following table provides information about the FortiGate® virtual appliance
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:-------|:----------------|:-------|:----------------|:------|:---------|:--------|:--------|
-| Management-nsx-edge public IP | Public subnet for management edge | Fortinet® servers | 208.91.112.0/22 | 443 | TCP | FortiGate installation | HTTPS |
-| Management-nsx-edge public IP | Public subnet for management edge | Fortinet servers | 96.45.33.0/24 | 443 | TCP | FortiGate installation | HTTPS |
-| Management-nsx-edge public IP | Public subnet for management edge | Fortinet servers | 66.35.17.248 | 443 | TCP | FortiGate installation | HTTPS |
+| Management-nsx-edge public IP | Public subnet for management edge | Fortinet® servers | `208.91.112.0/22` | 443 | TCP | FortiGate installation | HTTPS |
+| Management-nsx-edge public IP | Public subnet for management edge | Fortinet servers | `96.45.33.0/24` | 443 | TCP | FortiGate installation | HTTPS |
+| Management-nsx-edge public IP | Public subnet for management edge | Fortinet servers | `66.35.17.248` | 443 | TCP | FortiGate installation | HTTPS |
 {: caption="Table 3. FortiGate Virtual Appliance ports" caption-side="bottom"}
 
 ## Ports for VMware HCX
@@ -61,7 +61,7 @@ The following table provides information about the FortiGate® virtual appliance
 
 The following table provides information about the VMware HCX™ ports.
 
-| Source | Subnet, IP range | Target | Subnet, IP range |  Port | Protocol | Purpose | Service |
+| Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:-------|:----------------|:-------|:----------------|:------|:---------|:--------|:--------|
 | HCX | New subnet ordered in private VLAN | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
 | HCX | New subnet ordered in private VLAN | vCenter Server | Infrastructure VMs | 443 | TCP | Use vCenter Server REST service | HTTPS |
@@ -89,7 +89,7 @@ The following table provides information about the Entrust CloudControl™, Entr
 | Entrust KeyControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
 {: caption="Table 5. Entrust CloudControl, Entrust DataControl, and Entrust KeyControl ports" caption-side="bottom"}
 
-## Ports for IBM Spectrum Protect Plus
+## Ports for IBM Spectrum Protect Plus (deprecated)
 {: #vmwaresol_ports-vmware-optional-services-spp}
 
 The following table provides information about the IBM Spectrum® Protect Plus ports.
@@ -121,7 +121,7 @@ The following table provides information about the {{site.data.keyword.redhat_op
 | OCP | New subnet ordered in private VLAN | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
 | OCP | New subnet ordered in private VLAN | vCenter Server | Infrastructure VMs | 443 | TCP | Use vCenter Server REST service | HTTPS |
 | OCP | New subnet ordered in private VLAN | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
-| OCP | New subnet ordered in private VLAN | OCP cluster network | OCP internal IP range 10.128.0.0/14 | 5443/8443 | TCP | OCP cluster management | WEBREST API |
+| OCP | New subnet ordered in private VLAN | OCP cluster network | OCP internal IP range `10.128.0.0/14` | 5443/8443 | TCP | OCP cluster management | WEBREST API |
 | OCP edge public IP addresses| New subnet ordered in public VLAN | Public websites required for {{site.data.keyword.redhat_openshift_notm}} installation[^osinst] | | 80/123/443 | TCP and UDP | Time service, {{site.data.keyword.redhat_openshift_notm}} installation content, and images | NTP/HTTP/HTTPS |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | OCP | New subnet ordered in private VLAN | 22 | TCP | Set up and configure OCP | SSH |
 {: caption="Table 8. Red Hat OpenShift for VMware ports" caption-side="bottom"}
@@ -147,8 +147,8 @@ The following table provides information about the Veeam® ports.
 | Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} service - Cloud Object Storage | {{site.data.keyword.cloud_notm}} endpoint service network | 443 | TCP | Use {{site.data.keyword.cloud_notm}} Object Storage service | HTTPS |
 | Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure WSUS service | {{site.data.keyword.cloud_notm}} infrastructure services network | 80 | TCP | Use {{site.data.keyword.cloud_notm}} infrastructure WSUS service | HTPP |
 | Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure endurance storage | {{site.data.keyword.cloud_notm}} infrastructure services network | 3260 | TCP | Use {{site.data.keyword.cloud_notm}} infrastructure endurance storage | ISCSI |
-| {{site.data.keyword.cloud_notm}} infrastructure Service - Provision Windows VSI | {{site.data.keyword.cloud_notm}} infrastructure services network 10.0.0.0/14 | Veeam | Private primary subnet | 8051 | TCP | EMC2 (Legato) Networker or Sun Solstice Backup | |
-| {{site.data.keyword.cloud_notm}} infrastructure Service - Provision Windows VSI | {{site.data.keyword.cloud_notm}} infrastructure services network 10.200.0.0/14 | Veeam | Private primary subnet | | ICMP | ICMP | Ping |
+| {{site.data.keyword.cloud_notm}} infrastructure Service - Provision Windows VSI | {{site.data.keyword.cloud_notm}} infrastructure services network `10.0.0.0/14` | Veeam | Private primary subnet | 8051 | TCP | EMC2 (Legato) Networker or Sun Solstice Backup | |
+| {{site.data.keyword.cloud_notm}} infrastructure Service - Provision Windows VSI | {{site.data.keyword.cloud_notm}} infrastructure services network `10.200.0.0/14` | Veeam | Private primary subnet | | ICMP | ICMP | Ping |
 {: caption="Table 9. Veeam ports" caption-side="bottom"}
 
 ## Ports for vRealize Operations and Log Insight

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-19"
+lastupdated: "2022-05-30"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ The following user IDs are used to add an identity source, which is embedded by 
 | Privileged user | `customerroot` | SSH | Created for customer use only. |
 | IBM automation | `automation`@``root_domain``  \n (Active Directory user) | HTTPS | Used post deployment to add and remove hosts and clusters and to deploy and configure virtual machines (VMs) for add-on services. |
 | Privileged user | `cloudadmin`@`root_domain`  \n (Active Directory user) | HTTPS | Created for customer use only. |
-{: caption="Table 1. vCenter and Platform Services Controller user IDs" caption-side="top"}
+{: caption="Table 1. vCenter and Platform Services Controller user IDs" caption-side="bottom"}
 
 HTTPS is used for vCenter setup and configuration, and for VMware operations such as adding hosts, clusters, or storage for vCenter management of resources.
 
@@ -45,7 +45,7 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the E
 |:---------|:-------------|:------------|
 | IBM automation | `ibm_automation`  \n (NSX-T™ principal identity user) | Used post deployment to manage NSX VTEP IP addresses and to manage host and cluster configuration when hosts and clusters are added or removed. Also used to manage ESG configuration for add-on services that require public network access for licensing, activation, or usage reporting. |
 | Privileged user | `admin` | Created for customer use only. |
-{: caption="Table 2. NSX Manager user IDs" caption-side="top"}
+{: caption="Table 2. NSX Manager user IDs" caption-side="bottom"}
 
 ## ESXi host user IDs
 {: #vrw-iam-vsphere-esx}
@@ -54,7 +54,7 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the E
 |:---------|:-------------|:------------|
 | Privileged user | `ic4vroot` | Used post deployment to add more NFS storage, configure routes for that storage, and to run all server validation code. |
 | Privileged user | `root` | Created for customer use only. |
-{: caption="Table 3. ESXi host user IDs" caption-side="top"}
+{: caption="Table 3. ESXi host user IDs" caption-side="bottom"}
 
 ## Active Directory user IDs
 {: #vrw-iam-vsphere-aduser}
@@ -65,7 +65,7 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the E
 | Privileged user | `Administrator` | Default Windows® user |
 | Privileged user | `cloudadmin` | Default user for customer to access vCenter Server |
 | Privileged user | `cloudreadonly` | Read-only account for customer |
-{: caption="Table 4. Active Directory user IDs" caption-side="top"}
+{: caption="Table 4. Active Directory user IDs" caption-side="bottom"}
 
 ## Microsoft Active Directory groups
 {: #vrw-iam-vsphere-adgroup}
@@ -73,7 +73,7 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the E
 | User     | User ID       | Description |
 |:---------|:------------- |:------------|
 | Privileged user | `IC4v-vCenter` | vCenter Administration Group |
-{: caption="Table 5. Microsoft Active Directory groups" caption-side="top"}
+{: caption="Table 5. Microsoft Active Directory groups" caption-side="bottom"}
 
 ## Service user IDs
 {: #vrw-iam-vsphere-serviceid}
@@ -86,17 +86,15 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the E
 | `prod-FortigateVM-dynamicID-@domainName` | Used for installation and configuration of the FortiGate Virtual Appliance service. |
 | `prod-HyTrustCC-shortID-@domainName` | Used for installation and configuration of the Entrust CloudControl on {{site.data.keyword.cloud_notm}} service. |
 | `prod-KMIPAdapter-dynamicID-@domainName` | Used for installation and configuration of the KMIP for VMware service. |
-| `prod-SPPlus-dynamicID-@domainName` | Used for installation and configuration of the IBM Spectrum Protect Plus service. |
+| `prod-SPPlus-dynamicID-@domainName` | Deprecated - Used for installation and configuration of the IBM Spectrum Protect Plus service. |
 | `prod-Veeam-dynamicID-@domainName` | Used for installation and configuration of the Veeam service. |
 | `prod-HCX-dynamicID-@domainName` | Used for installation and configuration of the VMware HCX service. |
-{: caption="Table 6. Service user IDs" caption-side="top"}
+{: caption="Table 6. Service user IDs" caption-side="bottom"}
 
 where:
 * `dynamicID` is the 8 - 10 characters that are generated dynamically during the service installation.
 * `shortID` is the 5 characters that are generated dynamically during the service installation.
 * `domainName` is the domain name of your instance.
-
-**Next topic**: [NSX-T administration interface identity and access management](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-iam-nsxt)
 
 ## Related links
 {: #vrw-iam-vsphere-related}

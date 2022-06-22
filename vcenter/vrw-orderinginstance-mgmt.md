@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-01"
+lastupdated: "2022-06-01"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -28,7 +28,7 @@ The primary (management) cluster name is set to **mcv-_xx_-management** by defau
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * The management cluster name must start with a lowercase alphabetic character.
 * The management cluster name must end with a lowercase alphabetic or numeric character.
-* The maximum length of the management cluster name is 30 characters.
+* The maximum length of the management cluster name is 10 characters.
 * The management cluster name must be unique within the regulated workload instance.
 
 ## Management capacity

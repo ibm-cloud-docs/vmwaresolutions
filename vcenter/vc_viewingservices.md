@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-06-21"
 
 keywords: view services vCenter Server
 
@@ -22,7 +22,7 @@ You can view the summary and detailed information of the services that were orde
 ## Procedure to view services for vCenter Server instances
 {: #vc_viewingservices-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** on the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** on the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance for which you want to view services.
 3. Click **Services** on the left navigation pane.
 4. On the **Services** page, click a service to review information about it, such as the service status and other details.

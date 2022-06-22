@@ -75,7 +75,7 @@ When you access Veeam Cloud Connect, **DNS name** and **Port** details are speci
 |:-------------------------------|:----------|:------|
 | Dallas | ``dalvccgw.vmware-solutions.cloud.ibm.com`` | ``6180``|
 | Frankfurt | ``fravccgw.vmware-solutions.cloud.ibm.com`` | ``6180`` |
-{: caption="Table 1. Virtual data center region details" caption-side="top"}
+{: caption="Table 1. Virtual data center region details" caption-side="bottom"}
 
 ### Procedure to connect to Veeam Cloud Connect for replication
 {: #shared_veeam-cloud-connect-proc-access}

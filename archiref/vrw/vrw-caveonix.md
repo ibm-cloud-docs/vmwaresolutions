@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -42,8 +42,6 @@ Caveonix RiskForesight is used to continuously monitor compliance of the edge se
 Caveonix RiskForesight is used to continuously monitor compliance of all workload cluster hosts.
 
 Caveonix RiskForesight can optionally monitor compliance of SaaS consumer workloads. Enabling the use of RiskForesight for workload compliance monitoring requires appropriate rules and policies on the perimeter security appliance that isolates the workload regions.
-
-**Next topic**: [Business continuity](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-budr)
 
 ## Related links
 {: #vrw-caveonix-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-18"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -89,8 +89,6 @@ The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads is available
 For more information, see:
 * [VMware Regulated Workloads overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview)
 * [Ordering VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
-
-**Next topic**: [System context](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-context)
 
 ## Related links
 {: #vrw-archi-overview-related}

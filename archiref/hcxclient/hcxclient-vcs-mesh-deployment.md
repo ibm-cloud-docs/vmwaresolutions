@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -61,7 +61,7 @@ The Site Pairing is registered and displayed on the UI.
 | External | 1500 |
 | Management | 9000 |
 | vMotion | 9000 |
-{: caption="Table 1. Results" caption-side="top"}
+{: caption="Table 1. Results" caption-side="bottom"}
 
 ### Creating on-premises Service Mesh compute profiles
 {: #hcxclient-vcs-mesh-deployment-profiles-compute}
@@ -147,8 +147,6 @@ Bandwidth of a single network extension is theoretically 4 Gbps. However, this v
 {: #hcxclient-vcs-mesh-deployment-stretching-prox-routing}
 
 Without any type of route optimization, extended networks route back to the client side for any L3 access. This trombone-ing introduces an inefficient traffic pattern as packets need to travel back and forth between client (source) and cloud. This situation exists even for cases where both the source and destination VMs are in the cloud. The Proximity Routing feature of HCX was designed to address this issue and local egress of traffic.
-
-**Next topic:** [VMware Hybrid Cloud migrations](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-migrations)
 
 ## Related links
 {: #hcxclient-vcs-mesh-deployment-deployment-related}

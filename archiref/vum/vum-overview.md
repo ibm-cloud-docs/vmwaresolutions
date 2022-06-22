@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -69,8 +69,6 @@ The compliance view of a selected inventory object is accessed by navigating to 
 *	Scan a selected inventory object
 *	Stage patches or extensions to hosts
 *	Remediate a selected inventory object
-
-**Next topic:** [Initial configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vum-init-config)
 
 ## Related links
 {: #vum-overview-related}

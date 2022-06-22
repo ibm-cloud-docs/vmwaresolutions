@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-03-25"
+lastupdated: "2022-06-21"
 
 subcollection: vmwaresolutions
 
@@ -35,7 +35,7 @@ Provision a {{site.data.keyword.redhat_notm}} virtual machine based on the follo
 | Virtual machine | IP address | Gateway | Disk (GB) | Memory (GB) | vCPU | NAT address |
 | --- | --- | --- | --- | --- | --- | --- |
 | bastion | 192.168.133.8 | 192.168.133.1 | 50 | 2 | 1 | 10.208.59.197 |
-{: caption="Table 1. Red Hat VM - provision" caption-side="top"}
+{: caption="Table 1. Red Hat VM - provision" caption-side="bottom"}
 
 Use the following table to record your deployment details:
 
@@ -51,7 +51,7 @@ Use the following table to record your deployment details:
 | IP address | 192.168.133.8 | |
 | Netmask |255.255.255.0  | |
 | Default gateway | 192.168.133.1 | |
-{: caption="Table 2. Red Hat VM deployment" caption-side="top"}
+{: caption="Table 2. Red Hat VM deployment" caption-side="bottom"}
 
 Before you begin, create the VM by using the vCenter CLI or the following PowerCLI script.
 
@@ -109,7 +109,7 @@ subscription-manager repos --enable  rhel-server-rhscl-8-rpms
 
 The deployment of the {{site.data.keyword.redhat_openshift_notm}} nodes uses Ignition, and this process requires an HTTP Server to be available to download the required configuration. This deployment uses an NGINX instance that runs on the bastion node. To install NGNIX, complete the following steps after you are connected to the bastion node and have root privileges:
 
-1. Use a text editor such as vi to create the following file vi /etc/yum.repos.d/nginx.repo`.
+1. Use a text editor such as vi to create the following file `vi /etc/yum.repos.d/nginx.repo`.
 2. Type `i` to insert and paste the following information into the file:
 
    ```bash
@@ -135,10 +135,10 @@ The deployment of the {{site.data.keyword.redhat_openshift_notm}} nodes uses Ign
    server {
        listen       80;
        server_name  localhost;
- 
+
        #charset koi8-r;
        #access_log  /var/log/nginx/host.access.log  main;
- 
+
        location / {
            root   /usr/share/nginx/html;
            index  index.html index.htm;
@@ -244,8 +244,6 @@ mv terraform /usr/local/bin
 ```
 
 The Bastion node is now ready for the steps to install {{site.data.keyword.redhat_openshift_notm}} 4.7, which are described in [{{site.data.keyword.redhat_openshift_notm}} 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro).
-
-**Next topic:** [{{site.data.keyword.redhat_openshift_notm}} 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro)
 
 ## Related links
 {: #vcs-openshift-runbook-bastion-related}

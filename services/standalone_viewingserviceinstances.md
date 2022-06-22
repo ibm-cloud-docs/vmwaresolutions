@@ -32,7 +32,7 @@ Click **Resources** from the left navigation pane and scroll down to the **On-pr
 | Creation time | The date and time when the instance was created. |
 | Status | The status of the instance. |
 | Actions | Click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete") to delete the instance. |
-{: caption="Table 1. On-premises HCX activation keys" caption-side="top"}
+{: caption="Table 1. On-premises HCX activation keys" caption-side="bottom"}
 
 The instance can have different statuses.
 
@@ -41,7 +41,7 @@ The instance can have different statuses.
 | Modifying | The instance is being created. |
 | Installed | The instance is ready to use. |
 | Removing | The instance is being deleted. |
-{: caption="Table 2. On-premises HCX instances status descriptions" caption-side="top"}
+{: caption="Table 2. On-premises HCX instances status descriptions" caption-side="bottom"}
 
 ## Related links
 {: #standalone_viewingserviceinstances-related}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-06-20"
 
 keywords: FortiGate console, FortiGate VA, login FortiGate console
 
@@ -23,7 +23,7 @@ subcollection: vmwaresolutions
 
 To manage the FortiGate® Virtual Appliance service, you must access the FortiGate console in one of the following ways:
 * Log in to the FortiOS Web Client by using the credentials that you can find on the FortiGate Virtual Appliance service details page.
-* Access the console via SSH connection by using the credentials that you can find on the FortiGate Virtual Appliance service details page.
+* Access the console through SSH connection by using the credentials that you can find on the FortiGate Virtual Appliance service details page.
 
 For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 

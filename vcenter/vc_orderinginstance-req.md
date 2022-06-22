@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-24"
+lastupdated: "2022-05-09"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -19,7 +19,9 @@ subcollection: vmwaresolutions
 
 To deploy a flexible and customizable VMware® virtualized platform that best fits your workload needs, order a VMware vCenter Server® instance.
 
-You can also add services, such as [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) for disaster recovery. For more information about the available services, see [Available services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services). Add-on services support varies between vCenter Server with NSX-T™ and vCenter Server with NSX-V instances.
+You can also add services, such as [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) for disaster recovery. For more information about the available services, see [Available services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services).
+
+Price calculations are automatically generated when you access the VMware vCenter Server® instance order page. Default selections include the Data Center SP Professional license for NSX-T, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, and 768 GB RAM.
 
 New deployments of vCenter Server multizone instances are not supported.
 {: deprecated}
@@ -39,7 +41,7 @@ The subdomain label is not used for VMware vSphere® 7.0 instances.
 | vCenter Server (with embedded PSC) FQDN | `<instance_name>-vc.<root_domain>`. The maximum length is 50 characters. |
 | Single sign-on (SSO) site name | `<root_domain>` |
 | Fully qualified VMware ESXi™ server name | `<host_prefix><n>.<root_domain>`, where `n` is the sequence of the ESXi server. The maximum length is 50 characters. |
-{: caption="Table 1. Value format for instance and domain names" caption-side="top"}
+{: caption="Table 1. Value format for instance and domain names" caption-side="bottom"}
 
 Do not modify any values that are set during instance order or deployment. Doing so can make your instance unusable. For example, if public networking shuts down, if servers and Virtual Server Instances (VSIs) move behind a Vyatta mid-provision, or if the IBM CloudBuilder VSI stops or is deleted.
 {: important}

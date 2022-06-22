@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-16"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,13 @@ subcollection: vmwaresolutions
 
 VMware NSX-V 6.4 is end of general support on 16 January 2022 and end of technical guidance on 16 January 2023 according to the [VMware Official Product Lifecycle Matrix](https://lifecycle.vmware.com/#/){: external}. 
 
-An exclusive support agreement between VMware® and {{site.data.keyword.IBM}} to support NSX-V until 15 October 2022 provides additional time for customers to migrate.
+An exclusive support agreement between VMware® and {{site.data.keyword.IBM}} to support NSX-V until 31 December 2023 provides additional time for customers to migrate.
+{: note}
+
+On 21 June 2022, you will no longer be able to provision new VCS instances using NSX–V but, you will be able to add hosts and clusters to your existing NSX–V deployments. IBM strongly recommends that clients immediately assess their NSX–V networks and plan a much earlier migration to NSX–T.
+{: note}
+
+Beginning on 21 June 2022, you can no longer order new VMware vCenter Server instance with vSphere 6.7. However, you will be able to add or remove existing hosts/ clusters until 15 Oct 2022. After 15 Oct 2022, the vCenter Server instances with vSphere 6.7 will become read–only in the IBM Cloud - VMware Solutions console. When this happens, you will no longer be able to add or remove hosts / clusters until you upgrade to vSphere 7.0.
 {: note}
 
 This documentation provides a validated approach and guidance for existing {{site.data.keyword.vmwaresolutions_full}} customers with VMware vCenter Server® with NSX-V instances. In that way, they can move and migrate their workloads to new vCenter Server with NSX-T™ instances (also referred as V2T migration). This documentation is not primarily aimed at customers that want to migrate on-premises workloads to {{site.data.keyword.cloud_notm}}, although some of the approach and guidance is applicable.

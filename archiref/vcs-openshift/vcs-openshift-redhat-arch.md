@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-03-31"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -52,8 +52,6 @@ The {{site.data.keyword.redhat_openshift_notm}} deployment uses the following co
 - NSX software defined networking
 
 For more information, see [{{site.data.keyword.vmwaresolutions_short}} SDDC architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-arch).
-
-**Next topic:** [VMware Solutions SDDC architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-arch)
 
 ## Related links
 {: #vcs-openshift-redhat-arch-related}

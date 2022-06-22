@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-18"
+lastupdated: "2022-06-14"
 
 keywords: vSphere, vSphere component, tech specs vSphere
 
@@ -38,7 +38,11 @@ The availability and pricing of standardized hardware configurations might vary 
 {: #vs_vsphereclusteroverview-specs-vmware-components}
 
 Select licenses (IBM-provided or BYOL) for the following VMware components:
-* VMware vSphere Enterprise Plus 7.0u2 or 6.7u3
+* VMware vSphere Enterprise Plus 7.0u3
+
+   New instances are provisioned with VMware vSphere 7.0u3 or later. To add capacity to an existing vSphere 6.7 cluster, click the Scale Existing tab.
+   {: note}
+
 * The following VMware components are optional:
    * VMware vCenter Server® Standard
    * VMware NSX® ((Data Center SP Base, Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus))
@@ -52,7 +56,7 @@ Select licenses (IBM-provided or BYOL) for the following VMware components:
 {: #vs_vsphereclusteroverview-specs-bare-metal}
 
 You can order one or more {{site.data.keyword.cloud_notm}} bare metal servers with one of the following configurations:
-* **Cascade Lake** - 2-CPU Intel® Cascade Lake generation servers (Intel Xeon® 4200/5200/6200/8200 series) and 4-CPU Intel Cascade Lake generation servers (Quad Intel Xeon Gold 6248 and Quad Intel Xeon Platinum 8260). Each with your selected CPU model and RAM size.
+* **Cascade Lake** - 2-CPU Intel® Cascade Lake generation servers (Intel Xeon® 4200/5200/6200/8200 series) and 4-CPU Intel® Cascade Lake generation servers (Quad Intel Xeon Gold 6248 and Quad Intel Xeon Platinum 8260). Each with your selected CPU model and RAM size.
 * **Skylake** - 2-CPU Intel Skylake generation servers (Intel Xeon 4100/5100/6100 series) with your selected CPU model and RAM size.
 * **SAP-certified** - 2-CPU Intel Skylake generation servers Intel Cascade Lake generation servers (Intel Xeon Gold 5200/6200 series and Intel Xeon Platinum 8200 series) with your selected CPU model.
 
@@ -84,7 +88,7 @@ User-customized storage for vSAN configuration when the VMware vSAN component is
    3.8 TB SSD (Solid-State Disk) drives are supported when they are made generally available in a data center.
    {: note}
 
-* High Performance with Intel Optane - this option provides two extra capacity disk bays for a total of 10 capacity disks. It's available only for vSphere 6 instances, and for Skylake and dual-processor Cascade Lake CPU models.
+* High Performance with Intel Optane - this option provides two extra capacity disk bays for a total of 10 capacity disks. It's available only for vSphere 6 instance, and for Skylake and dual-processor Cascade Lake CPU models.
 
 ## Technical specifications for vSphere cluster expansion nodes
 {: #vs_vsphereclusteroverview-expansion-node-specs}
@@ -104,7 +108,7 @@ One {{site.data.keyword.cloud_notm}} bare metal server with the networking confi
 ### VMware components for expansion nodes
 {: #vs_vsphereclusteroverview-expansion-node-specs-vmware-components}
 
-* One {{site.data.keyword.cloud_notm}} bare metal server with VMware vSphere Enterprise Plus 7.0 or 6.7u3.  
+* One {{site.data.keyword.cloud_notm}} bare metal server with VMware vSphere Enterprise Plus 7.0 or 6.7u3 for V4.7 and earlier.  
 * Optional VMware components presented in [Technical specifications for VMware vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview#vs_vsphereclusteroverview-specs).
 
 You must manage the ESXi servers, optional VMware components, and extra hardware that is ordered and delivered to your {{site.data.keyword.cloud_notm}} account only from the {{site.data.keyword.slportal}}. After you create a new cluster in the {{site.data.keyword.vmwaresolutions_short}} console, you can return to the console and use the saved information to scale the new cluster. For more information, see [Scaling existing vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_scalingexistingclusters).

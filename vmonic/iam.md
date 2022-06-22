@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-08"
+lastupdated: "2022-06-21"
 
-keywords: IAM user, user role, user permission
+keywords: IAM user, user role, user permission, IAM access for vmwaresolutions, permissions for vmwaresolutions, identity and access management for vmwaresolutions, roles for vmwaresolutions, actions for vmwaresolutions, assigning access for vmwaresolutions
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing IAM access for VMware Solutions
 {: #iam}
 
-Access to {{site.data.keyword.cloud}} for VMware® Solutions service instances for the users in your account is controlled by {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). Every user that accesses the {{site.data.keyword.vmwaresolutions_short}} services in your account must be assigned an access policy with an IAM user role defined.
+Access to {{site.data.keyword.vmwaresolutions_full}} service instances for the users in your account is controlled by {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). Every user that accesses the {{site.data.keyword.vmwaresolutions_short}} services in your account must be assigned an access policy with an IAM user role defined.
 
 The access policy determines the actions that the user can take within the context of the service or the instance that you select. The allowable actions are customized and defined by the {{site.data.keyword.cloud_notm}} service as operations that can be applied to the service. The actions are then mapped to IAM user roles.
 
@@ -38,6 +38,12 @@ Review the following information, which outlines the actions that each role allo
 
 Platform management roles enable users to complete tasks on service resources at the platform level. For example, assign user access to the service, create or delete service IDs, create instances, and bind instances to applications.
 
+For the option to use a smaller set of permissions, use the following roles.
+
+* Reader in place of Viewer or Operator
+* Writer in place of Editor
+* Manager in place of Administrator
+
 ### Platform management roles for VMware Solutions
 {: #iam-roles-solution}
 
@@ -45,6 +51,9 @@ The following table provides information about the actions that are mapped to pl
 
 | Platform management role | Actions |
 |:----------------- |:----------------- |
+| Reader | Read-only actions to view service-specific resources. |
+| Writer | Create and edit service-specific resources. |
+| Manager | Privileged actions as defined by the service in addition to create and edit service-specific resources. |
 | Viewer | Read-only actions to view the summary and details of instances. |
 | Operator | Read-only actions. For example, list instances and view instance details. |
 | Editor | Update a specific instance. For example, add or remove VMware ESXi™ servers, clusters, and services; upgrade an instance to a higher version. |
@@ -68,7 +77,7 @@ For VMware Solutions, the following actions exist:
 
 You can choose from the following options when you assign resource access.
 * Assign all resources access to grant users access to all service resource created in all resource groups within the account.
-* Specific resources access to grant users access to a specific resource group or VMware instance.
+* Specific resources access to grant users access to a specific resource group or VMware® instance.
 
 ### Procedure to grant user access
 {: #iam-roles-user-access-all-procedure}
@@ -94,6 +103,75 @@ You can add new users to the {{site.data.keyword.cloud_notm}} account so that th
 
 You can also manage the access for existing users, including modifying existing access, assigning new access, and reviewing assigned access. To manage access for users, you must be the account owner or you must have the **Administrator** platform management role. For more information, see [Managing access to resources](/docs/account?topic=account-assign-access-resources).
 
+## Assigning access to VMware Solutions in the console
+{: #iam-assign-access-console}
+{: ui}
+
+There are two common ways to assign access in the console:
+
+* Access policies per user. You can manage access policies per user from the **Manage** > **Access (IAM)** > **Users** page in the console. For information about the steps to assign IAM access, see [Managing access to resources](https://cloud.ibm.com/docs/account?topic=account-assign-access-resources&interface=ui#access-resources-console).
+* Access groups. Access groups are used to streamline access management by assigning access to a group once, then you can add or remove users as needed from the group to control their access. You manage access groups and their access from the **Manage** > **Access (IAM)** > **Access groups** page in the console. For more information, see [Assigning access to a group in the console](/docs/account?topic=account-groups&interface=ui#access_ag).
+
+## Assigning access to VMware Solutions by using the API
+{: #iam-assign-access-api}
+{: api}
+
+For step-by-step instructions for assigning, removing, and reviewing access, see [Assigning access to resources by using the API](/docs/account?topic=account-assign-access-resources&interface=api) or the [Create a policy API docs](/apidocs/iam-policy-management#create-policy). Role cloud resource names (CRN) in the following table are used to assign access with the API.
+
+
+| Role name | Role description | Role CRN | 
+|---------------|-----------------|-----------------|
+| Viewer                 | As a viewer, you can view service instances, but you can't modify them.    | `crn:v1:bluemix:public:iam::::role:Viewer`        |
+| Administrator               | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users.    | `crn:v1:bluemix:public:iam::::role:Administrator`      | 
+| Operator                 | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard.    | `crn:v1:bluemix:public:iam::::role:Operator`        | 
+| Editor          | As an editor, you can perform all platform actions except for managing the account and assigning access policies.    | `crn:v1:bluemix:public:iam::::role:Editor` | 
+{: caption="Table 3. Role ID values and description for API use" caption-side="bottom"}
+{: #iam-rolescrn-table}
+
+The following example is for assigning the `<Viewer>` role for `<vmware-solutions>`:
+
+Use `<programmatic_service_name>` for the service name, and refer to the Role ID values table to ensure that you're using the correct value for the CRN.
+{: tip}
+
+```curl
+curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' 
+-d '{
+  "type": "access",
+  "description": "Viewer role for vmware solutions service instance",
+  "subjects": [
+    {
+      "attributes": [
+        {
+          "name": "iam_id",
+          "value": "IBMid-123453user"
+        }
+      ]
+    }'
+  ],
+  "roles":[
+    {
+      "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+    }
+  ],
+  "resources":[
+    {
+      "attributes": [
+        {
+          "name": "accountId",
+          "value": "$ACCOUNT_ID"
+        },
+        {
+          "name": "serviceName",
+          "value": "vmware-solutions"
+        }
+      ]
+    }
+  ]
+}
+```
+{: curl}
+{: codeblock}
+
 ## Migrating existing instances to IBM Cloud accounts
 {: #iam-migrate}
 
@@ -108,3 +186,4 @@ For your existing instances that were deployed in V2.4 and earlier releases, you
 * [Inviting users to an account](/docs/account?topic=account-iamuserinv)
 * [What is {{site.data.keyword.cloud_notm}} IAM](/docs/account?topic=account-iamoverview)
 * [Locating an IAM account administrator](/docs/vmwaresolutions?topic=vmwaresolutions-iam_verify_permissions)
+* [Roles and permissions for vCloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui)

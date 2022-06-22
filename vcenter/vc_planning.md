@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-10"
+lastupdated: "2022-05-18"
 
 keywords: planning vCenter Server, data center, vCenter Server data centers
 
@@ -14,14 +14,13 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Requirements and planning for vCenter Server instances
+# Planning for vCenter Server instances
 {: #vc_planning}
 
 Plan your instance based on the {{site.data.keyword.cloud}} data center location, your workload capacity requirements, and add-on services requirements. Review the following requirements before you order your VMware vCenter Server® instance.
 
-* New deployments of vCenter Server instances with VMware vSphere® 6.5 are not supported.
+* New deployments of vCenter Server instances with VMware vSphere® 6.5 or 6.7 are not supported.
 * New deployments of vCenter Server multizone instances are not supported.
-* Add-on services support varies between vCenter Server with NSX-T™ and vCenter Server with NSX-V instances.
 
 ## IBM Cloud account requirements
 {: #vc_planning-account-req}
@@ -33,7 +32,7 @@ The {{site.data.keyword.cloud_notm}} account that you are using must meet certai
 
 The vCenter Server deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements. The following {{site.data.keyword.cloud_notm}} data centers are available for vCenter Server deployment.
 
-| Geography | Data center | Pod | Server options for NSX-T[^nsx-t-7] | Server options for NSX-V |
+| Geography | Data center | Pod | Server options for NSX-T[^nsx-t-7] | Server options for NSX-V[^nsx-v] |
 |:----------------------|:-------|:---------------|:-----------|:------|
 | Asia-Pacific| CHE01 | 01 | Skylake, Cascade Lake | Skylake, Cascade Lake, SAP-certified[^sap-che01] |
 | Asia-Pacific | HKG02 | 02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
@@ -75,9 +74,11 @@ The vCenter Server deployment has strict requirements on the physical infrastruc
 | South America | SAO 01 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
 | South America | SAO 04 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
 | South America | SAO 05 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for vCenter Server instances" caption-side="top"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for vCenter Server instances" caption-side="bottom"}
 
 [^nsx-t-7]: Skylake is not supported for vSphere 7 instances
+
+[^nsx-v]: Existing NSX-V instances only
 
 [^sap-che01]: Existing vSphere 6.5 clusters only
 

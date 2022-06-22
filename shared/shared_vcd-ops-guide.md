@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-15"
+lastupdated: "2022-06-03"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -80,7 +80,7 @@ The public catalog contains vApp templates for the following components:
 | Microsoft Windows | 2016 Standard |
 | Red Hat Enterprise Linux® | 8.1 |
 | Red Hat Enterprise Linux | 7.7 |
-{: caption="Table 1. vApp templates" caption-side="top"}
+{: caption="Table 1. vApp templates" caption-side="bottom"}
 
 #### CentOS templates
 {: #shared_vcd-ops-guide-public-cat-centos}
@@ -439,7 +439,7 @@ The following services are available:
 | RHEL and CentOS YUM repo | 161.26.0.6 (mirrors.adn.networklayer.com) |
 | NTP | 161.26.0.6 (time.adn.networklayer.com) |
 | [{{site.data.keyword.cloud_notm}} Object Storage](/docs/vpc?topic=vpc-connecting-vpc-cos) | `s3.direct.xxx.cloud-object-storage.appdomain.cloud` |
-{: caption="Table 2. Available services" caption-side="top"}
+{: caption="Table 2. Available services" caption-side="bottom"}
 
 Enabling access to the service network is done in two edge configuration steps.
 
@@ -610,6 +610,35 @@ Add a stretched network to use the cross-virtual data center networking.
 3. For **New Stretched Network** enter a name, the gateway CIDR, and click **CREATE**. The new network is now available for BGP across the virtual data centers of the data center group.
 
 You are now ready to put VMs on the cross-virtual data center network and build out your use case.
+
+## Enabling the VMware vRealize Operations Tenant App
+{: #shared_vcd-ops-guide-vrops-app}
+
+Open an IBM ServiceNow ticket and submit a request to enable the VMware vRealize Operations Tenant App feature in your organization. When the VMware vRealize Operations Tenant App is enabled, confirm that **Operations Manager** is set in the **More** menu for the {{site.data.keyword.vmwaresolutions_short}} tenant portal.
+
+After the VMware vRealize Operations Tenant App is enabled for an organization, the users who are defined in the organization have access to the tenant app.
+
+For more information, see [Using vRealize Operations Tenant App for vCloud Director as a Tenant](https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations/8.6/using-vrealize-operations-tenant-app-for-vcloud-director-as-a-tenant-guide.pdf){: external}
+
+The billing link in the tenant app is disabled. All billing for {{site.data.keyword.vmwaresolutions_short}} Shared is processed through the {{site.data.keyword.vmwaresolutions_short}} portal.
+{: note}
+
+## Deleting the OpenID Connect configuration in your vCloud Director Organization
+{: #shared_vcd-ops-guide-delete-oidc}
+
+You must delete all OpenID Connect (OIDC) users and imported groups with the OIDC type, then the OIDC provider before you can reset the IAM integration for a VMware Solutions Shared instance site.
+
+Single sign-on is available only when your site vCloud Director Organization is integrated with IAM.
+{: note}
+
+1. From the vCloud Director Console, click **SIGN IN WITH SINGLE SIGN-ON** to log in to the portal.
+2. Click **Administration** on the top menu bar.
+3. Under **Access Control** on the left navigation pane, click **Users**.
+4. In the **Users** panel, select all OIDC type users and click **DELETE**.
+5. Under **Access Control** on the left navigation pane, click **Groups**.
+6. In the **Groups** panel, select all groups with the **OIDC** type and click **DELETE**.
+7. Under **Identity Providers** on the left navigation pane, click **OIDC**.
+8. In the **OpenID Connect** panel, click **DELETE**.
 
 ## Related links
 {: #shared_vcd-ops-guide-related}

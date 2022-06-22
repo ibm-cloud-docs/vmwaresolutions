@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-14"
 
 keywords: FAQ vmware solutions shared, vmware solutions shared questions
 
@@ -23,7 +23,7 @@ Find answers to frequently asked questions about the {{site.data.keyword.vmwares
 {: #faq-shared}
 {: faq}
 
-VMware Solutions Shared is a multitenant VMware® infrastructure solution based on a robust VMware product called vCloud Director. You can use this solution to rapidly create, migrate, and use your virtual machines (VMs) in the Cloud.
+VMware Solutions Shared is a multitenant VMware® infrastructure solution based on a robust VMware® product called vCloud Director. You can use this solution to rapidly create, migrate, and use your virtual machines (VMs) in the Cloud.
 
 ## What are my options to use resources with VMware Solutions Shared?
 {: #faq-shared-options}
@@ -38,7 +38,7 @@ You are provided with the following two consumption models:
 {: #faq-shared-subscribe}
 {: faq}
 
-With VMware Solutions Shared, you can extend your VMs to the Cloud with ultimate capacity flexibility and scalability. Whether you are looking to begin your cloud journey with a Development or Test environment, a disaster recovery site, or a full enterprise-grade hybrid cloud transformation, VMware Solutions Shared provides a cost-effective and self-service way to start moving your VMs to the Cloud within minutes.
+With VMware Solutions Shared, you can extend your VMs to the Cloud with ultimate capacity flexibility and scalability. Whether you are looking to begin your cloud journey with a Development or Test environment, a disaster recovery site, or a full enterprise-grade hybrid cloud transformation, VMware Solutions Shared provides a cost-effective and self-service way to start moving your VMs to the cloud within minutes.
 
 With IBM managing the infrastructure up to the hypervisor, you do not need to worry about managing patches, upgrades, and monitoring, which gives you more time and resources to focus on innovation. In addition, with a native like VMware experience, you can use your existing VMware resources and skill sets.
 
@@ -56,7 +56,7 @@ With IBM managing the infrastructure up to the hypervisor, you do not need to wo
 {: faq}
 {: support}
 
-When you order your instance for the first time, follow the instructions on the **Settings** page in the console to locate and copy the {{site.data.keyword.cloud_notm}} infrastructure username and API key from the {{site.data.keyword.slportal}}. The {{site.data.keyword.cloud_notm}} infrastructure credentials are stored in the {{site.data.keyword.vmwaresolutions_short}} console after the first order. Future orders automatically use the stored credentials.
+When you order your instance for the first time, follow the instructions on the **Settings** page in the console. These instructions help you locate and copy the {{site.data.keyword.cloud_notm}} infrastructure username and API key from the {{site.data.keyword.slportal}}. The {{site.data.keyword.cloud_notm}} infrastructure credentials are stored in the {{site.data.keyword.vmwaresolutions_short}} console after the first order. Future orders automatically use the stored credentials.
 
 ## How do I connect my on-premises environment to VMware Solutions Shared?
 {: #faq-shared-connect}
@@ -109,7 +109,7 @@ If you need assistance with {{site.data.keyword.vmwaresolutions_short}}, contact
 
 Yes. Each customer virtual data center comes with an edge firewall in the ESG and a distributed firewall that protects the internal virtual data center environment. If you want to bring your own firewall such as Fortinet or Cisco CSR, you can do so and run it between the ESG and your internal virtual machines.
 
-## Can I bring my own IPs?
+## Can I bring my own IP addresses?
 {: #faq-byip}
 {: faq}
 

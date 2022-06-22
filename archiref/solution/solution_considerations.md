@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-19"
+lastupdated: "2022-05-20"
 
 subcollection: vmwaresolutions
 
@@ -113,7 +113,7 @@ Complete the following steps to ensure that you make adequate plans for high ava
 - Configure resource pools, as needed, for management and workload.
 - Plan, implement, and monitor a backup solution for both [instance management components](/docs/vmwaresolutions?topic=vmwaresolutions-solution_backingup) and workload.
 - Plan for high availability of instance management, including the possibility of multiple instances, multiple clusters, vCenter HA, and PSC HA.
-- Use solutions such as [Zerto Disaster Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr), [Veeam backup and replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations), and [IBM Spectrum Protect Plus](/docs/vmwaresolutions?topic=vmwaresolutions-spp_considerations) to plan for business continuity for your workloads.
+- Use solutions such as [Zerto Disaster Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) or [Veeam backup and replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) to plan for business continuity for your workloads.
 
 ## Storage planning
 {: #solution_considerations-storage}
@@ -126,8 +126,6 @@ In addition to capacity planning, complete the following to ensure that your sto
    - RAID 6 provides protection against dual failures, but requires a minimum of six hosts compared to four hosts for RAID 5.
 - To add more storage to your vSAN cluster, you must add new hosts to the cluster or add {{site.data.keyword.cloud_notm}} Endurance NFS storage instead. Adding disks to the existing hosts is not currently supported.
 - If you mount additional {{site.data.keyword.cloud_notm}} Endurance NFS storage to your cluster, ensure that you follow the architecture guidance and configure host routes to the storage that uses the `SDDC-DPortGroup-NFS` port group addresses. You must authorize these addresses, rather than the hosts themselves, to the storage. For more information, see [Attached storage infrastructure management](/docs/vmwaresolutions?topic=vmwaresolutions-storage-infra-mgmt#storage-infra-mgmt-vsphere-routing).
-
-**Next topic:** [Comparison chart for VMware NSX and VMware vSAN editions](/docs/vmwaresolutions?topic=vmwaresolutions-solution-appendix)
 
 ## Related links
 {: #solution_considerations-related}

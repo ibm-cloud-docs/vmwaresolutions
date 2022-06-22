@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-20"
+lastupdated: "2022-06-20"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -21,12 +21,12 @@ subcollection: vmwaresolutions
 The Zerto service integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware® virtual environment on {{site.data.keyword.cloud}}. Zerto is supported on VMware vCenter Server® instances with:
 
 * VMware NSX-T™ 3.1 or later with VMware vSphere® 7.0
-* VMware NSX-V
+* VMware NSX-V instances V4.7 and earlier
 {: shortdesc}
 
 {{site.data.content.para-promotion-add-on-services}}
 
-The current Zerto version that is installed is 9.0u3.
+The current Zerto version that is installed is 9.0u4.
 {: note}
 
 ## Before you begin
@@ -67,9 +67,9 @@ Zerto Virtual Replication Appliance (VRA) components are deployed only into the 
 * Virtual replication appliances (VRAs)
    * One private portable subnet for VRA deployment
 
-The Zerto service is not configured with an IBM Cloud Infrastructure portable IP address or with a NAT connection to the public network, even if you have public interfaces in your instance. This implementation helps to avoid the possibility of asymmetric routing when using a network gateway appliance.
+The Zerto service is not configured with an IBM Cloud Infrastructure portable IP address or with a NAT connection to the public network, even if you have public interfaces in your instance. This implementation helps to avoid the possibility of asymmetric routing when it uses a network gateway appliance.
 
-When you deploy Zerto, you must configure your own proxy or NAT connection to the public network. If you do not complete the configuration, Zerto blocks management activities in 15 days. For more information about the Call Home feature for Zerto, see [Considerations for ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering#zerto_ordering-private-only). 
+When you deploy Zerto, you must configure your own proxy or NAT connection to the public network. If you do not complete the configuration, Zerto blocks management activities in 15 days. For more information about the Call Home feature for Zerto, see [Considerations for ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering#zerto_ordering-private-only).
 
 ### Licenses and fees
 {: #addingzertodr-specs-licenses}

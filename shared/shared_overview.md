@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-08"
+lastupdated: "2022-06-21"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # VMware Solutions Shared overview
 {: #shared_overview}
 
-{{site.data.keyword.cloud}} for VMware® Solutions Shared provides standardized and customizable deployment choices of VMware virtual data center environments. With VMware Solutions Shared virtual data centers, you can quickly and seamlessly migrate or deploy VMware workloads to the cloud, on IBM-hosted VMware infrastructure. IBM provides a self-service on-demand VMware cloud computing platform with VMware vCloud Director running on {{site.data.keyword.cloud_notm}}. This Infrastructure as a Service (IaaS) on-demand offering provides the option to use specific virtual CPU (vCPU), storage, vRAM, Network, and IP, as needed.
+{{site.data.keyword.vmwaresolutions_full}} Shared provides standardized and customizable deployment choices of VMware® virtual data center environments. With VMware Solutions Shared virtual data centers, you can quickly and seamlessly migrate or deploy VMware workloads to the cloud, on IBM-hosted VMware infrastructure. IBM provides a self-service on-demand VMware cloud computing platform with VMware vCloud Director running on {{site.data.keyword.cloud_notm}}. This Infrastructure as a Service (IaaS) on-demand offering provides the option to use specific virtual CPU (vCPU), storage, vRAM, Network, and IP, as needed.
 
 VMware Solutions Shared has the following IaaS subscription service types:
 
@@ -108,34 +108,29 @@ Beginning with V4.8, role-based access control is achieved by using a site and o
 | VMware Console Resource List | Organizations and associated virtual data centers only|
 {: caption="Table 2. Site and Orginization IAM policy control for VMware Solutions Shared" caption-side="bottom"}
 
-### Required access policy updates
+### Access policy updates
 {: #shared_overview-access-policies-reqs}
 
 Beginning with V4.8, you have access to your sites only to assign access policies. The access policy at the site level applies to every resource within it. You no longer assign access control directly to a virtual data center.
 
-For more information about assigning resource access and roles, see [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam).
+For more information about assigning resource access and roles, see [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam) and [Roles and permissions for vCloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui).
 
-You must ensure that you complete the following updates to your access policies before 22 June 2022.
-{: important}
-
-#### Required Resource Group based access policy updates
+#### Resource Group based access policy updates
 {: #shared_overview-access-policies-reqs-rg}
 
-Beginning with V4.8, if you have two different resource groups with different virtual data centers from one specific location, only the resource group that contains the first virtual data center of that location (based on creation date) applies to all of the virtual data centers in that location.
+Beginning with V4.8, if you have multiple resource groups with different virtual data centers from one specific location, only the resource group that contains the first virtual data center of that location (based on creation date) applies to all of the virtual data centers in that location. Policies apply to the resource group that contains the first virtual data center or you can set a policy at the VMWare Solutions service.
 
-You must ensure that you have the policies that you intend to apply to those virtual data centers in the resource groups that contain the first virtual data center or set a policy at the VMWare Solutions service before 22 June 2022.
+If all of your virtual data centers are in a single location and belong to only one resource group access policy, your site automatically belongs to the same resource group as the virtual data center.
 
-V4.8 updates do not impact you if all of your virtual data centers are in a single location and belong to only one resource group access policy. Your site automatically belongs to the same resource group as the virtual data center.
-
-Beginning with V4.8, your existing group membership now has sites that are listed instead of virtual data centers. The site for a virtual data center now belongs to a resource group only if the virtual data center was the first virtual data center of the site.
+Your existing group membership now has sites that are listed instead of virtual data centers. The site for a virtual data center now belongs to a resource group only if the virtual data center was the first virtual data center of the site.
 {: note}
 
-#### Required virtual data center based access policy updates
+#### Virtual data center based access policy updates
 {: #shared_overview-access-policies-reqs-vdc}
 
-If you currently have a virtual data center based access policy, you must create a new access policy at the VMware Solutions service level for all your resources before 22 June 2022.
+Beginning with V4.8, a new access policy is required at the VMware Solutions service level for all of your resources.
 
-Beginning with V4.8, virtual data center based policies are now named after the site. If you did not make the required policy updates before the V4.8 release, your virtual data center based policy is ineffective.
+Virtual data center based access policies are now named after the site. If you did not make the required policy updates before the V4.8 release, your virtual data center based policy is ineffective.
 {: note}
 
 ## Technical specifications for VMware Solutions Shared

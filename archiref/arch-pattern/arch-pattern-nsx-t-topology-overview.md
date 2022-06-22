@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-07"
+lastupdated: "2022-06-20"
 
 subcollection: vmwaresolutions
 
@@ -37,7 +37,7 @@ The following steps summarize a standard deployment.
 6. The automation deploys an Active Directory for authentication and name resolution. You can select between a single Windows virtual server instance in {{site.data.keyword.cloud_notm}} IaaS hypervisor or two highly available dedicated Windows Server VMs (with bring your own license) on the VMware management cluster.
 7. The automation deploys four edge nodes in your deployment and forms two NSX-T edge clusters - Services edge cluster and Workload edge cluster.
 8. Services edge cluster will be used to host a services Tier 0 Gateway, which provides network connectivity services for your management components.
-9. Workload edge cluster hosts workload Tier 0 and Tier 1 Gateways for your workloads. A predefined example overlay network topology with one Tier 1 Gateway has been provided by automation which you can customize for your own needs. By changing or deleting example segments or by adding new segments.
+9. Workload edge cluster hosts workload Tier 0 and Tier 1 Gateways for your workloads. A predefined example overlay network topology with one Tier 1 Gateway has been provided by automation which you can customize for your own needs by changing or deleting example segments or by adding new segments.
 
 ## VMware vCenter Server clusters
 {: #arch-pattern-nsx-t-topology-overview-vcs-clusters}

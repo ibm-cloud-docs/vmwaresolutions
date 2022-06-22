@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -25,8 +25,6 @@ This section creates a new VM storage policy that allows the **ensure accessibil
 1. Create a new vSAN profile with the settings of RAID 5/6 and FTT =2 (RAID 6), and then apply this policy against the required VMs or appliances.
 
 2. Wait until vSAN has completed syncing before you initiate any remediation actions. The completion status can be checked by navigating to the **vSAN Virtual Objects monitoring page** for the cluster and reviewing the **Completion Status**.
-
-**Next topic:** [Orchestrated upgrades](/docs/vmwaresolutions?topic=vmwaresolutions-vum-orchestr-updates)
 
 ## Related links
 {: #vum-vsan-redundancy-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-21"
 
 subcollection: vmwaresolutions
 
@@ -75,7 +75,7 @@ The domain controller is provisioned with a name of `ADNS<instance_name>.<root_d
 The following diagram shows the deployment pattern of the two highly available VM domain controllers.
 ![Two highly available VM domain controllers diagram](../../images/adds-adha.svg "Two highly available VM domain controllers"){: caption="Figure 2. Two highly available VM domain controllers" caption-side="bottom"}
 
-If you order the two high availability Microsoft Windows VMs, you must provide two Microsoft Windows Server 2019 licenses. For more information, see [Domain Name System configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance#vc_orderinginstance-dns-config).
+If you order the two high availability Microsoft Windows VMs, you must provide two Microsoft Windows Server 2019 licenses. For more information, see [Domain Name System configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings#vc_orderinginstance-dns-config).
 
 After the provisioning of the vCenter Server instance, you have 30 days to activate the VMs. The cluster is configured with a VM-VM anti-affinity rule. Therefore, Distributed Resource Scheduler (DRS) tries to keep the VMs apart by placing them on different physical vSphere ESXi hosts. The following table describes the VM configuration.
 
@@ -96,7 +96,7 @@ After the domain controllers are provisioned, AD DS is configured as follows:
 2. The `ic4V-vCenter` AD security group is added to the domain.
 3. The following AD users are created in the domain:
 
-   * `automation` - Member of Administrators, Domain Admins, Domain Users, Enterprise Admins, `ic4V-vCenter`, Schema Admins, and Users AD groups.
+   * `automation` - member of Administrators, Domain Admins, Domain Users, Enterprise Admins, `ic4V-vCenter`, Schema Admins, and Users AD groups.
    * `cloudbase-init` - member of the Administrators and Domain Users AD groups (this user is created by the VSI automation for use during initial provisioning of the VSI).
    * Add-on service accounts, for example, `prod-Caveonix-19765` or `prod-Zerto-5c9cb035` - member of `ic4V-vCenter` and `Domain Users` AD groups.
 
@@ -222,8 +222,6 @@ The forwarder section is configured with:
 Forwarders are DNS servers that the AD DNS server can use to resolve DNS queries for records that the AD server cannot resolve. 10.0.80.12 and 10.0.80.11 are the two addresses for {{site.data.keyword.cloud_notm}} Resolving Name Servers. Resolving name servers are located on the private network and act as DNS resolvers. The private resolvers query the Internet root name servers for domain lookups and resolve this information over the private network to keep your bandwidth usage down, reduce the load on the authoritative servers, and offer quick resolution. Private network resolvers are a convenience service for our customers.
 
 All deployed appliances (vCenter Server Appliance, NSX Manager and Controllers, and vSphere ESXi hosts) have their DNS settings configured to point to the AD DNS server as their default DNS. You can customize the DNS zone configuration if it does not interfere with the configuration of the deployed components.
-
-**Next topic:** [vCenter Single Sign On](/docs/vmwaresolutions?topic=vmwaresolutions-adds-sso)
 
 ## Related links
 {: #adds-infra-domain-related}

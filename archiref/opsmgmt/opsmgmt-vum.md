@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -24,8 +24,6 @@ VMware® Update Manager (VUM) enables centralized, automated patch and version m
 For the detailed design of VMware Update Manager, see [VMware Update Manager introduction](/docs/vmwaresolutions?topic=vmwaresolutions-vum-intro).
 
 ![Network diagram](../../images/opsmgmt-vumnw.svg "Network diagram"){: caption="Figure 1. VUM network" caption-side="bottom"}
-
-**Next topic**: [Integration](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-integration)
 
 ## Related links
 {: #opsmgmt-vum-links}

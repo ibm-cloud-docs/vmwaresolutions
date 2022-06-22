@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-04-28"
 
 subcollection: vmwaresolutions
 
@@ -55,7 +55,7 @@ The following table shows the settings in the VMware vSphere® Web Client.
 | Enable I/O metric for SDRS recommendations | Selected |
 | Utilized space | Selected, set to 80% |
 | I/O latency threshold | 15 ms |
-{: caption="Table 1. Storage DRS runtime settings" caption-side="top"}
+{: caption="Table 1. Storage DRS runtime settings" caption-side="bottom"}
 
 For more information about configuring these settings in the vSphere Web Client, see [Set storage DRS runtime rules in the vSphere Web Client](https://docs.vmware.com/en/VMware-vSphere/5.5/com.vmware.vsphere.resmgmt.doc/GUID-AD2D13CE-539B-48C3-BBC9-E55A834874F0.html){: external}.
 
@@ -89,9 +89,7 @@ This design adds advanced configuration parameters that are recommended by {{sit
 | NFS.HeartbeatFrequency  | 12 |
 | NFS.HeartbeatTimeout | 5 |
 | NFS.MaxQueueDepth | 64 |
-{: caption="Table 2. NFS advanced configuration parameters" caption-side="top"}
-
-**Next topic:** [Cluster settings](/docs/vmwaresolutions?topic=vmwaresolutions-cluster-settings)
+{: caption="Table 2. NFS advanced configuration parameters" caption-side="bottom"}
 
 ## Related links
 {: #storage-settings-related}

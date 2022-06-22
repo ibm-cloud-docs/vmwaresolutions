@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-03-22"
+lastupdated: "2022-06-21"
 
 keywords: about vmware solutions, product overview, benefits
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 ## Deploy and manage VMware virtualized environments
 {: #under_the_hood-deploy}
 
-Take an in-depth look at the architecture of {{site.data.keyword.cloud}} for VMware® Solutions, an {{site.data.keyword.cloud_notm}} offering that provides deployment and management of VMware virtualized environments. In this tutorial, we show you the components of the offering so you can see how they work together to provision and maintain the environment in the public cloud.
+Take an in-depth look at the architecture of {{site.data.keyword.vmwaresolutions_full}}, an {{site.data.keyword.cloud_notm}} offering that provides deployment and management of VMware® virtualized environments. In this tutorial, we show you the components of the offering so you can see how they work together to provision and maintain the environment in the public cloud.
 
 ## Two companies, one streamlined solution
 {: #under_the_hood-two-companies}
@@ -94,7 +94,7 @@ Your instance components are typically accessed by their hostnames rather than t
 After your instance is deployed, you can manage it from the console. The management capabilities include the ability to do each of the following tasks.
 
 * Deploy and remove nodes from your cluster
-* Deploy and delete additional clusters in the same data center and pod, or in alternative data centers and pods
+* Deploy and delete more clusters in the same data center and pod, or in alternative data centers and pods
 * Deploy and delete services for your instance
 * Upgrade certain license editions for your instance
 
@@ -132,7 +132,7 @@ For all instances, vSphere Hypervisor is installed on the bare metal servers. {{
 
 Depending on your choice, either one VSI or two VMs are deployed alongside or into your cluster as Active Directory servers for management components. You can optionally add your own Active Directory servers as additional identity sources for management access.
 
-Regardless of how you choose to provide business continuity for your own workloads, {{site.data.keyword.cloud_notm}} strongly recommends that you back up the management components of your instance. From the {{site.data.keyword.vmwaresolutions_short}} console, you can deploy an integrated IBM Spectrum Protect Plus backup server or a Veeam Backup & Replication backup server together with your instance. These backup services can be used as part of a [complete backup solution](/docs/vmwaresolutions?topic=vmwaresolutions-solution_backingup) for your instance.
+Regardless of how you choose to provide business continuity for your own workloads, {{site.data.keyword.cloud_notm}} strongly recommends that you back up the management components of your instance. From the {{site.data.keyword.vmwaresolutions_short}} console, you can deploy an integrated Veeam Backup & Replication backup server together with your instance. These backup services can be used as part of a [complete backup solution](/docs/vmwaresolutions?topic=vmwaresolutions-solution_backingup) for your instance.
 
 ### Licenses
 {: #under_the_hood-licenses}

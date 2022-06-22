@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021
+  years:  2021, 2022
 
-lastupdated: "2021-11-09"
+lastupdated: "2022-06-21"
 
 keywords: zerto, order zerto cloud connector
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ordering a Zerto Cloud Connector
 {: #shared_zerto-cc-order}
 
-Optionally order Zerto Cloud Connector (ZCC) as an enhanced Zerto option to link on-premises workloads to {{site.data.keyword.cloud_notm}} and replicate on-premises virtual machines (VMs) to {{site.data.keyword.cloud_notm}}. The Zerto and ZCC services seamlessly integrate as a managed solution to help your enterprise achieve virtual machine (VM) replication and disaster recovery. You can order one ZCC per virtual data center.
+Optionally order Zerto Cloud Connector (ZCC) as an enhanced Zerto option to link on-premises workloads to {{site.data.keyword.cloud}} and replicate on-premises virtual machines (VMs) to {{site.data.keyword.cloud_notm}}. The Zerto and ZCC services seamlessly integrate as a managed solution to help your enterprise achieve VM replication and disaster recovery. You can order one ZCC per virtual data center.
 
 ## Before you begin
 {: #shared_zerto-cc-order-prereq}
@@ -48,4 +48,4 @@ Optionally order Zerto Cloud Connector (ZCC) as an enhanced Zerto option to link
 * [Viewing Zerto Cloud Connector details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-view)
 * [Deleting Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-delete)
 * [Zerto Installation Guide for VMware vSphere Environments & Microsoft Hyper-V Environments](https://s3.amazonaws.com/zertodownload_docs/Latest/Zerto%20Virtual%20Replication%20Installation%20Guide%20for%20vSphere%20and%20Hyper-V.pdf){: external}
-* [Zerto Support and Service](https://www.zerto.com/company/support-and-service/){: external}
+* [Zerto Support and Services](https://www.zerto.com/support-and-services/){: external}

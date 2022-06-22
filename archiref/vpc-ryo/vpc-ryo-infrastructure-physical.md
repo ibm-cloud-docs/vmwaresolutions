@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -65,7 +65,7 @@ A network interface in a bare metal server is an abstract representation of a ne
 
 In {{site.data.keyword.vpc_short}}, you can create two types of network interfaces on a bare metal server.
 
-* **PCI (Peripheral Component Interconnect) interface** represents a physical network interface. It is possible to include up to 8 PCI interfaces on a bare metal server. 
+* **PCI (Peripheral Component Interconnect) interface** represents a physical network interface. It is possible to include up to 8 PCI interfaces on a bare metal server.
 * **VLAN (Virtual LAN) interface** represents an interface that is associated with a PCI interface through the VLAN ID. The VLAN interface automatically tags traffic that is routed through it with the VLAN ID. Inbound traffic that is tagged with a VLAN ID is directed to the appropriate VLAN interface. You can have as many VLAN interfaces as you want.
 
 In a VMware solution, PCI interface is used as the vSwitch uplink and as a management VMkernel adapter. An important difference between PCI interfaces and VLAN interfaces is that a VLAN interface can be set to `floatable`. The key function of the VMware workloads requires vMotion between the {{site.data.keyword.cloud_notm}} bare metal server. This capability is used with VMware management workloads such as vCenter® or NSX® managers to allow them to be moved between hosts for high availability (HA) or distributed resource scheduler (DRS).
@@ -134,8 +134,6 @@ With custom IOPS profiles, you can choose the performance that you want, by sele
 The storage is attached by using the NFS v4.1 protocol to your hosts. To create an NFS mount path, you need to create mount targets. A mount target for a file share is a network endpoint or path. When you create a mount target, an NFS mount path is created for the file share. You can create a mount target by providing a VPC or subnet information. If you want to connect a file share to instances that are running in multiple VPCs in the same zone, you can create multiple mount targets for different VPCs.
 
 For more information about the shared storage, see [File Storage for VPC](/docs/vpc?topic=vpc-file-storage-vpc-about&interface=ui).
-
-**Next topic:** [Virtual infrastructure design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-infrastructure-virtual)
 
 ## Related links
 {: #vpc-ryo-infrastructure-physical-links}

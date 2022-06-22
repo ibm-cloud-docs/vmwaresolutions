@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-16"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # vRealize Operations Manager design
 {: #opsmgmt-vrops}
 
-The vRealize® Operations Manager™ (vROps) Analytics Cluster contains the nodes that analyze and store data from the monitored components and in this deployment, four nodes are deployed and two VMware NSX® Load Balancers. This size allows monitoring of up to 30,000 VMs and 9,000,000 metrics to be collected.
+The vRealize® Operations Manager™ (vROps) Analytics Cluster contains the nodes that analyze and store data from the monitored components. In this deployment, four nodes are deployed and two VMware NSX® Load Balancers. This size allows monitoring of up to 30,000 VMs and 9,000,000 metrics to be collected.
 
 The 4-node analytics cluster consists of the following components:
 * Primary node – The primary node is the initial node in a vROps cluster. In a large environment, this node manages all the other nodes.
@@ -58,7 +58,7 @@ The analytics cluster consists of one primary node, one primary replica node, an
 | Memory | 32 GB |
 | Disk (thick provisioned) | 254 GB |
 {: class="simple-tab-table"}
-{: caption="Table 1. Operations Manager primary/replica node system settings" caption-side="top"}
+{: caption="Table 1. Operations Manager primary/replica node system settings" caption-side="bottom"}
 {: #table1}
 {: tab-title="Primary/replica node system settings"}
 {: tab-group="sys-settings"}
@@ -68,7 +68,7 @@ The analytics cluster consists of one primary node, one primary replica node, an
 | vCPU | 8 |
 | Memory | 32 GB |
 | Disk (thick provisioned) | 254 GB |
-{: caption="Table 1. Operations Manager data node system settings" caption-side="top"}
+{: caption="Table 1. Operations Manager data node system settings" caption-side="bottom"}
 {: #table2}
 {: tab-title="Data node system settings"}
 {: tab-group="sys-settings"}
@@ -88,7 +88,7 @@ When the compute VM monitoring is required, the client installs two remote colle
 | Receive | Online |   |
 | Algorithm | ROUND-ROBIN | LEASTCONN |
 | Pool | Four nodes of vROPs | Four nodes of vROPs |
-{: caption="Table 2. Operations Manager Load Balancer settings" caption-side="top"}
+{: caption="Table 2. Operations Manager Load Balancer settings" caption-side="bottom"}
 
 For more information, see [vRealize Automation Load Balancing](https://docs.vmware.com/en/vRealize-Automation/7.5/vrealize-automation-load-balancing.pdf){: external}.
 
@@ -117,7 +117,7 @@ Deployment of the vROps appliance requires six IP addresses from the Tooling pri
 | NTP | UDP | 123 |
 | SMTP | TCP | 25 |
 | SNMP | UDP | 161 |
-{: caption="Table 3. Operation Manager ports" caption-side="top"}
+{: caption="Table 3. Operation Manager ports" caption-side="bottom"}
 
 ### Authentication
 {: #opsmgmt-vrops-auth}
@@ -166,7 +166,7 @@ vRealize Operations Management Pack for vSAN enables vSAN specific dashboards to
 ### VMware SDDC Health Management Pack
 {: #opsmgmt-vrops-management-sddc}
 
-The VMware SDDC Health Management Pack for vROps monitors the SDDC management stack. Color coded metrics are provided for health and efficiency of different components present as part of the SDDC management stack. With the dashboards in the VMware SDDC Health Management Pack, you can monitor the following components of the vCenter Server instance and management tools:
+The VMware SDDC Health Management Pack for vROps monitors the SDDC management stack. Color-coded metrics are provided for health and efficiency of different components present as part of the SDDC management stack. With the dashboards in the VMware SDDC Health Management Pack, you can monitor the following components of the vCenter Server instance and management tools:
 * vRealize Operations Manager
 * NSX for vSphere and VMware NSX-T
 * VMware vSAN
@@ -224,8 +224,6 @@ vRealize Operations Federation Management Pack enables a multisite vROps deploym
 {: #opsmgmt-vrops-management-hcx}
 
 vRealize Operations Management Pack for HCX extends the Operations Management capabilities of vROps to hybrid capabilities presented by HCX. With the management pack, you can collect metrics, change events, and resource topology information from HCX. It enables the monitoring, isolation, and resolution of performance bottlenecks in the HCX Interconnects, Migrations, or Protected workloads.
-
-**Next topic**: [vRealize Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrli)
 
 ## Related links
 {: #opsmgmt-vrops-links}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-21"
+lastupdated: "2022-06-16"
 
 subcollection: vmwaresolutions
 
@@ -35,7 +35,7 @@ This architecture supports 3000 VMs by using a Medium brick size.
 | Memory | 32 GB |
 | Disk (thin provisioned) | 1 TB |
 {: class="simple-tab-table"}
-{: caption="Table 1. Network Insight Platform system requirements" caption-side="top"}
+{: caption="Table 1. Network Insight Platform system requirements" caption-side="bottom"}
 {: #table1}
 {: tab-title="Platform system requirements"}
 {: tab-group="sys-req"}
@@ -45,7 +45,7 @@ This architecture supports 3000 VMs by using a Medium brick size.
 | vCPU | 4 |
 | Memory | 12 GB |
 | Disk (thin provisioned) | 200 GB |
-{: caption="Table 1. Network Insight Collector system requirements" caption-side="top"}
+{: caption="Table 1. Network Insight Collector system requirements" caption-side="bottom"}
 {: #table2}
 {: tab-title="Collector system requirements"}
 {: tab-group="sys-req"}
@@ -69,7 +69,7 @@ Deployment of the vRNI appliance requires two IP addresses from the Tooling priv
 | Description | Port | Protocol |
 |-------------|------|----------|
 | Communication between the VMs of vRealize Network Insight | 443 | HTTPS |
-| Services that require internet access  \n `svc.ni.vmware.com`  \n `support2.ni.vmware.com`  \n `reg.ni.vmware.com` | 443 | HTTPS |
+| Services that require internet access \n `svc.ni.vmware.com` \n `support2.ni.vmware.com` \n `reg.ni.vmware.com` | 443 | HTTPS |
 | Log Insight Ingestion API | 9000 | TCP |
 | Log Insight Ingestion API over SSL | 9543 | TCP |
 | User Interface | 80,443 | TCP |
@@ -85,5 +85,3 @@ Deployment of the vRNI appliance requires two IP addresses from the Tooling priv
 {: #opsmgmt-vrni-auth}
 
 vRNI user authentication is directly with an Active Directory Server.
-
-**Next topic:** [VMware Update Manager](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vum)

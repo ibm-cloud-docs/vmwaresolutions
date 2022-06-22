@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-06-20"
 
 subcollection: vmwaresolutions
 
@@ -123,7 +123,7 @@ The public and the first private VLAN created and assigned in this design are un
 
 The private network consists of two VLANs within this design. Four subnets are allocated to the first of these VLANs (here designated Private VLAN A):
 * The first subnet is a primary private IP subnet range that {{site.data.keyword.cloud_notm}} assigns to the physical hosts.
-* The second subnet is used for management virtual machines (VMs) such as vCenter Server Appliance and Platform Services Controller
+* The second subnet is used for management virtual machines (VMs), such as vCenter Server Appliance and Platform Services Controller.
 * The third subnet is used for the encapsulated overlay network Tunnel Endpoints (VTEPs) assigned to each host and edge through the NSX Manager.
 * The fourth subnet is used for egress from the encapsulated overlay network.
 
@@ -147,7 +147,7 @@ Review the following table for a summary.
 | Private B | Portable | Single subnet that is assigned for vSAN, if in use |
 | Private B | Portable | Single subnet assigned for NAS, if in use |
 | Private B | Portable | Single subnet assigned for vMotion |
-{: caption="Table 1. VLAN and subnet summary" caption-side="top"}
+{: caption="Table 1. VLAN and subnet summary" caption-side="bottom"}
 
 In this design, all VLAN-backed hosts and VMs are configured to point to the {{site.data.keyword.cloud_notm}} back-end “private network” customer router (BCR) as the default route. While the vCenter Server instances enable the use of Software-Defined Networking (SDN), network overlays created within a VMware instance that include routing to internal subnets are not known by the {{site.data.keyword.cloud_notm}} managed routers.
 
@@ -186,8 +186,6 @@ You can allocate and mount more file shares across all hosts for your workloads 
 The 10 IOPS/GB performance tier is limited to a maximum capacity of 4 TB.
 
 For more information about the shared NAS used in this solution, see [Shared storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-storage-benefits#storage-benefits).
-
-**Next topic:** [Virtual infrastructure design](/docs/vmwaresolutions?topic=vmwaresolutions-design_virtualinfrastructure)
 
 ## Related links
 {: #design_physicalinfrastructure-related}

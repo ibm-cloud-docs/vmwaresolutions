@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-26"
+lastupdated: "2022-06-21"
 
 keywords: monitor, default dashboard, custom dashboard, virtual data center, platform metrics, monitoring
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Visualizing your virtual data center environment with IBM Cloud Monitoring
 {: #shared-monitor}
 
-{{site.data.keyword.cloud}} for VMware® Solutions Shared provides an integration with {{site.data.keyword.mon_full}}, which allows you to use a VMware Solutions Shared provided default dashboard to view metrics for your virtual data centers. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
+{{site.data.keyword.vmwaresolutions_full}} Shared provides an integration with {{site.data.keyword.mon_full}}, which allows you to use a VMware Solutions Shared provided default dashboard to view metrics for your virtual data centers. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
 
 Use {{site.data.keyword.mon_short}} dashboards to complete the following tasks.
 

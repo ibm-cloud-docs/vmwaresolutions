@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-05-18"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Multisite architecture
 {: #nsx-multi_site}
 
-One key differentiator between {{site.data.keyword.cloud}} and other cloud offerings is the ability to provision dedicated compute capability across the globe and automatically to connect on-demand infrastructure with the network within your private {{site.data.keyword.cloud_notm}} account. The software defined network capabilities of VMware vCenter Server® together with {{site.data.keyword.cloud_notm}} provide a granular global infrastructure that can be built within days. The following sections describe a multisite architecture example of what can be achieved with the out of the box capability of vCenter Server.
+One key differentiator between {{site.data.keyword.cloud}} and other cloud offerings is the ability to provision dedicated compute capability across the globe and automatically to connect on-demand infrastructure with the network within your private {{site.data.keyword.cloud_notm}} account. The software-defined network capabilities of VMware vCenter Server® together with {{site.data.keyword.cloud_notm}} provide a granular global infrastructure that can be built within days. The following sections describe a multisite architecture example of what can be achieved with the out of the box capability of vCenter Server.
 
 ## Cross-vCenter NSX environment
 {: #nsx-multi_site-cross-env}
@@ -35,7 +35,7 @@ The following example adds an NSX universal transport zone to the basic manageme
 * The universal transport zone spans two {{site.data.keyword.cloud_notm}} data centers or PODs within an {{site.data.keyword.cloud_notm}} data center.
 * After the transport zone is added, multiple VXLANs are added along with a Universal Distributed Router that spans the new VXLANs.
 * You must configure uplinks to the workload ESGs in both sites. This configuration allows virtual machines (VMs) in the local site to traverse to its local ESG.
-* For inbound traffic, a global load balancer is required. See the {{site.data.keyword.cloud_notm}} global load balancing offerings to meet this requirement.
+* For inbound traffic, a global load balancer is required. See the {{site.data.keyword.cloud_notm}} global load-balancing offerings to meet this requirement.
 * This example requires VMware NSX Enterprise edition.
 
 ![Multisite topology](../../images/multisite_topology.svg "Multisite topology"){: caption="Figure 1. Multisite topology" caption-side="bottom"}

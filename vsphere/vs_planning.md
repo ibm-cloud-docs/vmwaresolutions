@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-10"
+lastupdated: "2022-05-06"
 
 keywords: planning vSphere, data center, vSphere data centers
 
@@ -14,12 +14,12 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Requirements and planning for VMware vSphere
+# Planning for VMware vSphere
 {: #vs_planning}
 
 Review the following requirements before you order a VMware vSphere® cluster. Plan your VMware vSphere clusters based on the {{site.data.keyword.cloud}} data center location and your workload capacity requirements.
 
-You are responsible for setting up the environment, installing, and configuring various VMware components after the VMware ESXi™ servers are deployed. The following examples are VMware components: VMware vCenter Server®, VMware NSX®, and VMware vSAN™.
+You are responsible for setting up the environment, installing, and configuring various VMware® components after the VMware ESXi™ servers are deployed. The following examples are VMware components: VMware vCenter Server®, VMware NSX®, and VMware vSAN™.
 {: note}
 
 ## IBM Cloud account requirements
@@ -80,7 +80,7 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | South America | SAO01 | 01 | Skylake, Cascade Lake, SAP-certified |
 | South America | SAO04 | 01 | Cascade Lake, SAP-certified |
 | South America | SAO05 | 01 | Cascade Lake, SAP-certified |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for vSphere clusters" caption-side="top"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for vSphere clusters" caption-side="bottom"}
 
 [^vsphere-7]: Skylake is not supported for vSphere 7 instances
 
@@ -98,5 +98,5 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 {: #vs_planning-related}
 
 * [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
-* [Scaling existing clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_scalingexistingclusters)
-* [Scaling existing clusters created outside of the console](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderingforclustersoutside)
+* [Scaling-existing clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_scalingexistingclusters)
+* [Scaling-existing clusters created outside of the console](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderingforclustersoutside)

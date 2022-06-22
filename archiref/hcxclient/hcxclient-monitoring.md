@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -100,8 +100,6 @@ The HCX fleet component Layer 2 Concentrator has a bandwidth limitation of appro
 Deploying multiple L2Cs can also be advantageous where multiple paths exist between the customer site and {{site.data.keyword.cloud}}, such as direct link and internet. A single network cannot be made redundant or given increased bandwidth across multiple L2C pairs.
 
 Monitor the traffic across all interfaces that use the Monitoring tab of the L2C VM. If the total data rate is approaching 8 Gbps (4 Gbps in / out) consider adding another L2 pair and redistribute stretched networks to rebalance.
-
-**Next topic:** [Upgrading HCX components](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-vcs-upgrade)
 
 ## Related links
 {: #hcxclient-monitoring-related}

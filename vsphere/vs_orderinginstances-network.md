@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-01"
+lastupdated: "2022-05-18"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -47,7 +47,6 @@ The subdomain label is not used for vSphere 7.0 instances.
 
 The domain name is used for all {{site.data.keyword.cloud_notm}} bare metal servers and must meet the following requirements:
 * For vSphere 7.0 instances, the domain name must consist of three or more strings that are separated by a period (.)
-* For vSphere 6.7 instances, the domain name must consist of two or more strings that are separated by a period (.)
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * Each string must start with a lowercase alphabetic character and end with a lowercase alphabetic or numeric character.
 * The last string can contain only lowercase alphabetic characters.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-24"
+lastupdated: "2022-05-09"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -89,17 +89,7 @@ Choose performance level options according to your needs.
 | 2 IOPS/GB | This option is designed for most general-purpose workloads. For example, hosting small databases, backing up web applications, or virtual machine disk images for a hypervisor. |
 | 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. For example, transactional databases. |
 | 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. For example, high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
-{: caption="Table 1. NFS performance level options" caption-side="top"}
-
-## Local disks (NSX-V SAP-certified HANA only)
-{: #vc_orderinginstance-local-disks}
-
-The **Local disks** option is enabled for the **SAP-certified** - **HANA** CPU generation only.
-{: note}
-
-Specify the following settings:
-* **Local disk count** - Select the number of disks that you want to add. The first two disks are reserved, so a minimum of four disks is required.
-* **Local disk type** - Select an option for the disk type that you need.
+{: caption="Table 1. NFS performance level options" caption-side="bottom"}
 
 ## Related links
 {: #vc_orderinginstance-storage-related}

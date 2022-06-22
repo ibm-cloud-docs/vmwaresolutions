@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-05-06"
+lastupdated: "2022-06-16"
 
 subcollection: vmwaresolutions
 
@@ -47,7 +47,7 @@ You can preserve the existing Active Directory™ (AD) controllers for ongoing u
 
 * The new instance deploys new domain controllers that it must use for DNS and authenticating the IBM automation users.
 * If you are using virtual machines (VMs), the domain controllers from the old instance can be migrated to the new instance. If you are using VSIs, the domain controllers from the old instance can be used by the new instance. If the new instance is deployed with a different root domain than the original instance, the domain controllers can be added as an identity source to vCenter Server and NSX Manager. So, if the old instance domain is `example.cloud.local`, the new instance can be named `example.cloud2.local`. The original AD can be configured to delegate DNS for this domain to the new AD, and users can log in using their existing `user@example.cloud.local` identities to access resource hostnames like `instance1-vc.example.cloud2.local`.
-* If the original AD is deployed as a VSI, open a support ticket to ensure that IBM Support decouples the VSI from the original instance to ensure that the VSI is not cancelled when the original instance is deleted.
+* If the original AD is deployed as a VSI, open a support ticket to ensure that IBM Support decouples the VSI from the original instance. This action ensures that the VSI is not cancelled when the original instance is deleted.
 * In all cases, it is advised to back up the original controllers before you remove the original vCenter Server instance.
 
 ## Can I use vMotion with vSphere Encryption between the two vCenter Server instances?
@@ -89,7 +89,7 @@ Instances with {{site.data.keyword.cloud_notm}} bare metal servers vSphere 6.7 s
 
 The End of General Support for vSphere 6.5 and 6.7 is 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://lifecycle.vmware.com/#/){: external}.
 
-In addition, the vCenter Server instances with vSphere 6.5 or 6.7 typically run NSX-V 6.4. NSX-V 6.4 is End of General Support on 16 January 2022 and end of technical guidance on 16 January 2023. See more on VMware Official Product Lifecycle Matrix. An exclusive support agreement between VMware and IBM to support NSX-V until 15 October 2022.
+In addition, the vCenter Server instances with vSphere 6.5 or 6.7 typically run NSX-V 6.4. NSX-V 6.4 is End of General Support on 16 January 2022 and end of technical guidance on 16 January 2023. See more on VMware Official Product Lifecycle Matrix. An exclusive support agreement between VMware and IBM to support NSX-V until 31 December 2023 exists.
 
 {{site.data.keyword.cloud_notm}} recommends an upgrade to vSphere 7.x and NSX-T™ 3.x.
 
@@ -173,10 +173,10 @@ Yes, but we strongly advise deploying a new VMware Solutions Dedicated vCenter S
 
 Also, review the following key considerations:
 
-* At the end of the documented process, your vCenter Server instance is running vSphere 7.0 Update 1c with N-VDS distributed switches. This configuration is different than the currently supported [Software BOM for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom#vc_bom-software), which is vSphere 7.0 Update 2a with Distributed vSwitch 7.0.0.
+* At the end of the documented process, your vCenter Server instance is running vSphere 7.0 Update 1c with N-VDS distributed switches. This configuration is different than the currently supported [Software BOM for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom#vc_bom-software), which is vSphere 7.0 Update 3c with Distributed vSwitch 7.0.0.
 * For more information about the migration of N-VDS to VDS switches for vSphere 7.0 or later and NSX-T Data Center 3.0 and later, see [Migrate host switch to vSphere Distributed Switch](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-1039A36F-F55E-4A0A-B6C6-2C383F4A716D.html){: external}. Currently, this procedure is not verified on a VMware Solutions Dedicated vCenter Server instance.
 * {{site.data.keyword.cloud_notm}} is undertaking an assessment of the N-VDS to VDS conversion and the required changes to the automation database to allow this in-place upgrade.
-* Currently, Day 2 automation workflows such as add host or add cluster, have not been tested against VMware Solutions Dedicated vCenter Server instances that have been upgraded from vSphere 6.7 to 7 and still using N-VDS distributed switches. Customers should assume that this automation might fail and that if this automation is required then the lift and shift migration approach used. If this automation is not needed, you can use the upgrade process that is documented.
+* Currently, Day 2 automation workflows such as add host or add cluster, are not tested against VMware Solutions Dedicated vCenter Server instances that are upgraded from vSphere 6.7 to 7 and still using N-VDS distributed switches. Customers must assume that this automation might fail and that if this automation is required then the lift and shift migration approach used. If this automation is not needed, you can use the upgrade process that is documented.
 * A workaround for the add nodes and add cluster features is to use the VMware vSphere offering. For more information, see [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview). You must complete a number of manual tasks after the automated deployment.
 * A workaround for add-on services is to deploy them manually using the documented reference architectures, see the Solution architectures on Classic and Solution Guides sections at [Getting started with VMware Solutions](/docs/vmwaresolutions).
 
@@ -193,7 +193,7 @@ The following recommendations apply:
 
 However, if you have overlapping IP addressing challenges, the note the following guidance:
 
-* You can reuse your existing instance management subnet, if it has IP addresses available and you have not used any IP addresses for your own use. The new instance uses new IP addresses for the vCenter server, NSX-T managers, and Active Directory servers (if AD servers are running on the VMware VMs) from the instance management subnet. Reusing existing IP addresses is not possible for these components.
+* You can reuse your existing instance management subnet, if it has IP addresses available and you don't use any IP addresses for your own use. The new instance uses new IP addresses for the vCenter server, NSX-T managers, and Active Directory servers (if AD servers are running on the VMware VMs) from the instance management subnet. Reusing existing IP addresses is not possible for these components.
 * In addition, the NSX-T T0 gateways are provisioned with new IP addresses from the portable private and portable public subnets for customer workload edge. NSX-T T0 gateways do not support secondary IP addresses on their uplinks. 
 * You can manually configure an existing subnet for the NSX-T T0 gateway uplinks, but only one subnet can be configured in T0. 
 * If you are using secondary IP subnets on the uplinks, you need to redesign the topology. For example, you can order [new public static subnets](/docs/subnets?topic=subnets-about-subnets-and-ips#static-subnets) and route these subnets to NSX-T T0 HA VIP. These IP subnets and addresses can be used with NSX-T NAT rules, load balancing or on overlay attached VMs.
@@ -201,7 +201,7 @@ However, if you have overlapping IP addressing challenges, the note the followin
 ## Can I reuse existing portable subnets that are ordered outside the VMware Solutions console?
 {: #faq-v2t-migration-customer-portable-subnets}
 
-If you ordered private or public portable subnets outside the VMware Solutions console, and you use these subnets with your workloads running on VMware clusters, you can reuse these IP addresses if your new instance was deployed on the same VLANs as the existing NSX-V based solution was.
+If you ordered private or public portable subnets outside the VMware Solutions console, and you use these subnets with your workloads by running on VMware clusters, you can reuse these IP addresses if your new instance was deployed on the same VLANs as the existing NSX-V based solution was.
 
 If you are using these IP addresses on ESGs for NAT rules or other services, be aware that the NSX-T T0 gateways do not support secondary IP addresses on their uplinks. The NSX-T T0 gateway in the new instance is provisioned with new IP addresses from the portable private and portable public subnets for customer workload edge. You can manually configure an existing subnet for the NSX-T T0 gateway uplinks, but only one subnet can be configured in T0. If you are using secondary IP subnets on the uplinks, you need to redesign the topology. For example, you can order [new public static subnets](/docs/subnets?topic=subnets-about-subnets-and-ips#static-subnets) and route these subnets to NSX-T T0 HA VIP. These IP subnets and addresses can be used with NSX-T NAT rules, load balancing, or on overlay attached VMs.
 

@@ -30,7 +30,7 @@ Click **Resources** from the left navigation pane and scroll down to the **KMIP 
 | Region | The {{site.data.keyword.cloud}} region where the instance is hosted. |
 | Creation time | The date and time when the instance was created. |  
 | Status | The status of the instance. |
-{: caption="Table 1. KMIP for VMware instances items" caption-side="top"}
+{: caption="Table 1. KMIP for VMware instances items" caption-side="bottom"}
 
 The instance can have different statuses.
 
@@ -41,7 +41,7 @@ The instance can have different statuses.
 | Configuring | The instance is being activated. |
 | Installed | The instance is ready to use. |
 | Removing | The instance is being deleted. |
-{: caption="Table 2. KMIP for VMware instances status descriptions" caption-side="top"}
+{: caption="Table 2. KMIP for VMware instances status descriptions" caption-side="bottom"}
 
 ## Related links
 {: #kmip_standalone_viewing-related}

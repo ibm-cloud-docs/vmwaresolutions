@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-12"
+lastupdated: "2022-06-21"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Procedure to order VMware Regulated Workloads
 {: #vrw-orderinginstance-procedure}
 
-1. In the {{site.data.keyword.vmwaresolutions_short}} console, click the **VMware Regulated Workloads** card.
+1. In the {{site.data.keyword.vmwaresolutions_full}} console, click the **VMware Regulated Workloads** card.
 2. On the **VMware Regulated Workloads** page, select a deployment topology according to your needs.
 3. Review the service prerequisites and confirm that you ordered the mandatory services listed.
 4. Specify the instance configuration:
@@ -27,11 +27,11 @@ subcollection: vmwaresolutions
    * To use IBM-provided licenses, ensure that the option **Include with purchase** is selected.
    * To use your own licenses, click **I will provide** and enter the license key.
 6. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the clusters.
-7. (Single-zone VMware instance only) Specify the primary cluster settings.
+7. (Single-zone VMware® instance only) Specify the primary cluster settings.
    1. Specify the cluster name.
    2. Select the primary cluster capacity. For the **Customizable consolidated cluster** capacity, select the CPU model and RAM size.
    3. Select the number of bare metal servers.
-   4. Under **vSAN configuration**, select the disk type and size for the vSAN capacity disks, the number of vSAN capacity disks, and the vSAN licensing option.
+   4. Under **vSAN configuration**, select the disk type and size for the vSAN™ capacity disks, the number of vSAN capacity disks, and the vSAN licensing option.
    5. Review the estimated resources available per cluster.
    6. Review the networking type and select the uplink speed.
 
@@ -95,12 +95,12 @@ If you change these components outside of the VMware Solutions console, the chan
 ### Known issue for multizone deployment
 {: #vrw-orderinginstance-results-order-issue}
 
-Some public networking components might be displayed as inactive in vCenter Server. These components do not indicate a problem and you can either ignore the issue or delete the components.
+Some public networking components might be displayed as inactive in VMWare vCenter Server®. These components do not indicate a problem and you can either ignore the issue or delete the components.
 
 ## Related links
 {: #vrw-orderinginstance-procedure-related}
 
 * [Signing up for an {{site.data.keyword.cloud_notm}} account](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts#signing_required_accounts-cloud)
-* [Requirements and planning for VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-planning)
+* [Planning for VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-planning)
 * [Viewing and deleting VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-view-delete-instance)
 * [VMware Regulated Workloads reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)

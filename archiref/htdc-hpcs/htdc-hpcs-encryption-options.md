@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-15"
+lastupdated: "2022-06-20"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 Enterprises that require encrypted data at rest on their vCenter Server instance have the following options:
 
-* {{site.data.keyword.cloud}} Endurance native encryption - this option uses IBM-managed keys, so is not suitable for clients that require either Bring Your Own Key (BYOK) or Keep Your Own Key (KYOK). The encryption scope is the complete NFS volume.
+* {{site.data.keyword.cloud}} Endurance native encryption - This option uses IBM-managed keys, so is not suitable for clients that require either Bring Your Own Key (BYOK) or Keep Your Own Key (KYOK). The encryption scope is the complete NFS volume.
 * vSAN encryption - This option requires the use of a key management server such as the following, the encryption scope are the vSAN™ disks:
    * IBM KeyProtect™ (IBM KP) service for customers who require BYOK, along with the KMIP™ for VMware® service.
    * IBM Hyper Protect Crypto Services (IBM HPCS), for customers who require KYOK, with the KMIP for VMware service.
@@ -47,12 +47,10 @@ This reference architecture is based on the Entrust DataControl and IBM HPCS opt
 | Transparency | Fully transparent | Limited | Limited | vSphere and vSAN provide limited visibility into clones and snapshots. |
 | Geo-Fencing (GDPR) | Yes | No | No | Entrust KeyControl BoundaryControl integration |
 | NIST/PCI compliant live rekey | Yes | No | No | Allows NIST-compliant rekeying without downtime. |
-{: caption="Table 1. Encryption features comparison" caption-side="top"}
-
-**Next topic:** [IBM Hyper Protect Crypto Services overview](/docs/vmwaresolutions?topic=vmwaresolutions-htdc-hpcs-hpcs-overview)
+{: caption="Table 1. Encryption features comparison" caption-side="bottom"}
 
 ## Related links
 {: #htdc-hpcs-encryption-options-related}
 
-* [Entrust DataControl](https://www.hytrust.com/products/datacontrol-workload-encryption/){: external}
+* [Multicloud encryption - Entrust](https://www.entrust.com/digital-security/multi-cloud-encryption){: external}
 * [{{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services](https://www.ibm.com/cloud/hyper-protect-crypto){: external}

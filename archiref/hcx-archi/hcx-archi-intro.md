@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 The VMware® HCX™ service enables creating a seamless connection between {{site.data.keyword.vmwaresolutions_short}} instances and an on-premises VMware virtualized data center.
 
-The {{site.data.keyword.vmwaresolutions_short}} includes fully automated, rapid deployments of VMware vCenter Server® in the {{site.data.keyword.cloud_notm}}. These offerings complement the on-premises infrastructure and allow existing and future workloads to run in the {{site.data.keyword.cloud_notm}} without conversion by using the same tools, skills, and processes they use on-premises. 
+The {{site.data.keyword.vmwaresolutions_short}} includes fully automated, rapid deployments of VMware vCenter Server® in the {{site.data.keyword.cloud_notm}}. These offerings complement the on-premises infrastructure and allow existing and future workloads to run in the {{site.data.keyword.cloud_notm}} without conversion by using the same tools, skills, and processes they use on-premises.
 
 The VMware HCX service takes this hybridity to the next step, blending instances of vCenter Server with existing on-premises virtualized data centers. It enables the creation of seamless network extensions and bidirectional migration of workloads.
 
@@ -36,8 +36,6 @@ This connection creates a loosely coupled interconnectivity between on-premises 
 * Bulk migration - multiple systems can be moved in parallel using VMware vSphere® Replication protocol between HCX enabled sites.
 * Scheduled migration – any number of VMs can be replicated to the destination site and then activated on that site at a designated time. The replication replaces the systems that are running on the originating site.
 * Migration of security policies – if NSX is used on-premises, any security policies or firewalls are moved along with the workload.
-
-**Next topic:** [VMware HCX overview](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-overview)
 
 ## Related links
 {: #hcx-archi-intro-related}

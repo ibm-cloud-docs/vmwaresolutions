@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-06"
+lastupdated: "2022-06-20"
 
 keywords: openshift for vmware, request openshift for vmware, tech specs openshift vmware
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 The {{site.data.keyword.redhat_openshift_full}} for VMware® service deploys an {{site.data.keyword.redhat_openshift_notm}} cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The {{site.data.keyword.redhat_openshift_notm}} components are deployed as virtual machines (VMs) or appliances by using VMware NSX® software-defined networking.
 
-The current {{site.data.keyword.redhat_openshift_notm}} version that is installed is 4.9.
+The current {{site.data.keyword.redhat_openshift_notm}} version that is installed is 4.10.
 {: note}
 
 Review the following information before you install the {{site.data.keyword.redhat_openshift_notm}} for VMware service:
@@ -71,7 +71,7 @@ In addition, most commands for {{site.data.keyword.redhat_openshift_notm}} manag
 
 Any commands that require the `openshift-install`, `oc`, or `kubeadmin` tools must reference the files that are located in the installation directory by prefixing the command name with `./`. For example, `./oc whoami` instead of `oc whoami`.
 
-The {{site.data.keyword.redhat_openshift_notm}}-related files from the bastion include an SSH key, an installation configuration file, command line tools, and a `kubeconfig` file. The exact location of the installation configuration directory on the bastion is shown on the service details page.
+The {{site.data.keyword.redhat_openshift_notm}}-related files from the bastion include an SSH key, an installation configuration file, command-line tools, and a `kubeconfig` file. The exact location of the installation configuration directory on the bastion is shown on the service details page.
 
 ### SSH key
 {: #ocp_overview-bastion-ssh-key}
@@ -90,7 +90,7 @@ The {{site.data.keyword.redhat_openshift_notm}} VMs are deployed with DRS rules 
 
 The installation configuration file `install-config.yaml.bak` is located in the installation directory on the bastion. The file is a copy of the original `install-config.yaml` file that was used by the `openshift-install` program to generate the ignition files. The generated ignition files can also be found in the installation directory on the bastion.
 
-The `oc` and `kubectl` command line tools from the {{site.data.keyword.redhat_openshift_notm}} client software are on the bastion. The installer program, named `openshift-install`, is used to install {{site.data.keyword.redhat_openshift_notm}} and can also be used to generate fresh ignition files.  
+The `oc` and `kubectl` command-line tools from the {{site.data.keyword.redhat_openshift_notm}} client software are on the bastion. The installer program, named `openshift-install`, is used to install {{site.data.keyword.redhat_openshift_notm}} and can also be used to generate fresh ignition files.  
 
 The bastion also holds a file that is named `auth/kubeconfig`, needed for authentication. This file holds the initial kubeadmin credentials that are created during installation. Before you initially use the `oc` or `kubectl` tools, you must set the KUBECONFIG environment variable with the path to this file. For example, `export KUBECONFIG=auth/kubeconfig`.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-03-24"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -42,7 +42,7 @@ Use the following table to document the parameters you need for your deployment,
 | vCenter Server user | | |
 | vCenter Server password | | |
 | NSX Transport Zone| transport-1 | |
-{: caption="Table 1. PowerNSX LS Parameters" caption-side="top"}
+{: caption="Table 1. PowerNSX LS Parameters" caption-side="bottom"}
 
 ```powernsx
 # Allow self-signed certificates on PowerCLI
@@ -59,8 +59,6 @@ Get-NsxTransportZone transport-1 | new-nsxlogicalswitch -Name OpenShift-HA -Desc
 # Disconnect
 Disconnect-NsxServer
 ```
-
-**Next topic:** [{{site.data.keyword.redhat_openshift_notm}} NSX Edge configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxedge-intro)
 
 ## Related links
 {: #vcs-openshift-runbook-nsxdls-related}

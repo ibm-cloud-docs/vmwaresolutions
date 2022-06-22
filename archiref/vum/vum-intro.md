@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-05-19"
 
 subcollection: vmwaresolutions
 
@@ -16,6 +16,12 @@ subcollection: vmwaresolutions
 {: #vum-intro}
 
 As the system administrator of the {{site.data.keyword.vmwaresolutions_full}} vCenter Server® 6.7 instance, review the instructions on how to configure VMware® Update Manager (VUM) to maintain the currency of your vCenter Server environment.
+
+On 21 June 2022, you will no longer be able to provision new VCS instances using NSX–V but, you will be able to add hosts and clusters to your existing NSX–V deployments. IBM strongly recommends that clients immediately assess their NSX–V networks and plan a much earlier migration to NSX–T.
+{: note}
+
+Beginning on 21 June 2022, you can no longer order new VMware vCenter Server instance with vSphere 6.7. However, you will be able to add or remove existing hosts/ clusters until 15 Oct 2022. After 15 Oct 2022, the vCenter Server instances with vSphere 6.7 will become read–only in the IBM Cloud - VMware Solutions console. When this happens, you will no longer be able to add or remove hosts / clusters until you upgrade to vSphere 7.0.
+{: note}
 
 If you have a vCenter Server instance that is deployed with vSphere 7, then VMware® added new functions and rebranded it as vSphere Lifecycle Manager (vLCM). For more information, read this blog entry [vSphere 7 – lifecycle management](https://blogs.vmware.com/vsphere/2020/04/vsphere-7-patching-lifecycle-management.html){: external}
 
@@ -68,8 +74,6 @@ On the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.c
 *	View the installed updates.
 
 This facility enables the automated updating for the management components of the vCenter Server instances only. VMware product updates must be applied by using the procedures that are detailed in this document.
-
-**Next topic:** [VMware Update Manager overview](/docs/vmwaresolutions?topic=vmwaresolutions-vum-overview)
 
 ## Related links
 {: #vum-intro-related}

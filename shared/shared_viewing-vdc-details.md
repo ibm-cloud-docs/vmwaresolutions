@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-03-17"
+lastupdated: "2022-06-21"
 
 keywords: manage shared resources, view shared virtual data centers details
 
@@ -14,28 +14,45 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Viewing your virtual data center details
+# Viewing site and virtual data center details
 {: #shared_viewing-vdc-details}
 
-You can view the details of an {{site.data.keyword.cloud}} for VMware® Solutions Shared virtual data center. Details include property, operating system, resource reservation, private network endpoint, and recommended services that are enabled or available for the virtual data center.
+You can view property details for {{site.data.keyword.vmwaresolutions_full}} Shared sites and virtual data centers. You can also review recommended services that are enabled or available for virtual data centers.
+
+## Procedure to view site details
+{: #shared_viewing-site-details-procedure}
+
+1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+2. In the **VMware Solutions Shared** table, click the site.
+3. Click **Summary** from the left navigation pane to view the property details for site.
+
+| Property        | Description       |
+|:------------- |:------------- |
+| Region | The {{site.data.keyword.cloud_notm}} data center region where your organization is created and the organization password is maintained. |
+| ID | The ID of the virtual data center. |
+| Instances | The current number of virtual data center instances provisioned for the site. |
+| Red Hat activation key | The activation key that you use to register the Red Hat virtual machine (VM). |
+| Access controls | Options for IAM integration and setting the administrator password for the organization. |
+{: caption="Table 1. Virtual data center site details" caption-side="bottom"}
+
 
 ## Procedure to view virtual data center details
 {: #shared_viewing-vdc-details-procedure}
 
-1. In the **VMware Solutions Shared** table, click a virtual data center name.
-2. Under **Properties**, view the details for the virtual data center.
+1. Click **Virtual data centers** from the left navigation pane to view the summary of each virtual data center 
+2. Click the virtual data center name to view the properties.
 
 | Property        | Description       |
 |:------------- |:------------- |
 | Name | The name of the virtual data center. |
 | Type | The virtual data center type. |
+| Deployment topology | A single-zone or multizone virtual data center. |
 | Region | The {{site.data.keyword.cloud_notm}} data center region where your organization is created and the organization password is maintained. |
 | Location | The {{site.data.keyword.cloud_notm}} data center where the virtual data center is hosted. |
 | ID | The ID of the virtual data center. |
 | Creation time | The date and time when the virtual data center was created, which is also when billing starts. |
 | Red Hat activation key | The activation key that you use to register the Red Hat virtual machine (VM). |
-| Public IP | Every virtual data center comes with five public IP addresses that can be used to connect virtual applications (vApps) and VMs to the internet. |
-{: caption="Table 1. Virtual data center property details" caption-side="top"}
+{: caption="Table 2. Virtual data center property details" caption-side="bottom"}
 
 ### Opening a support ticket for additional IP addresses or subnet
 {: #shared_viewing-vdc-details-support}
@@ -52,36 +69,26 @@ For more information about opening a support ticket, see [Contacting IBM Support
 ### Viewing virtual data center resource reservation details
 {: #shared_viewing-vdc-details-resource}
 
-Review the following information for viewing virtual data center resource reservation details.
-
-Under **Resource Reservation**, view the total reserved virtual CPU (vCPU) and RAM for the virtual data center.
+Under **Resource reservation**, view the total reserved virtual CPU (vCPU) and RAM for the virtual data center.
 
 | Resource        | Description       |
 |:------------- |:------------- |
 | vCPU limit | The limit or reserved amount of vCPU that can be used at any time by the virtual data center.  |
 | RAM limit | The limit or reserved amount of memory that can be used at any time by the virtual data center.  |
-{: caption="Table 2. Virtual data center resource reservation details" caption-side="top"}
+{: caption="Table 3. Virtual data center resource reservation details" caption-side="bottom"}
 
-### Viewing virtual data center private network endpoint details
-{: #shared_viewing-vdc-details-network}
-
-Review the following information for viewing virtual data center private network endpoint details.
-
-For information about private network endpoint details, see [Procedure to view a private network endpoint for a virtual data center](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints#shared_viewing-endpoints-procedure).
-
-### Viewing virtual data center recommended services details
+## Viewing virtual data center recommended services details
 {: #shared_viewing-vdc-details-services}
 
-Review the following information for viewing virtual data center recommended services details.
+Click **Services** from the left navigation pane to view the virtual data center recommended services details.
 
 For more information about recommended services details, see [Managing Veeam for VMware Solutions Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam) and [Managing Zerto for VMware Solutions Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal).
 
 ## Related links
 {: #shared_viewing-vdc-details-related}
 
+* [Creating a private network endpoint](https://test.cloud.ibm.com)/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints)
 * [Resizing your virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_resize)
-* [Operating VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
 * [Deleting VMware Solutions Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
-* [Viewing the virtual data center summary](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary)
 * [Accessing the vCloud Director Management console](/docs/vmwaresolutions?topic=vmwaresolutions-shared_accessing-vcd-console)
 * [VMware vCloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}

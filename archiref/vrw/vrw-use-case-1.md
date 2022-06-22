@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-19"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -34,8 +34,6 @@ The edge services region is strictly limited to the protection of the management
 The workload region is managed by one or more administrators that are only responsible for the management of the application VMs deployed upon the workload clusters. One approach where multiple administrators are useful is the case where a user wants to isolate administrative tasks on a per business unit basis or other compliance requirements.
 
 Three distinct regions: the management region, the edge services region, and the workload region, design the zero-trust security model into the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. Taking advantage of this design through audited and enforced separation of duties at every possible opportunity, assists users to comply with industry standards or government regulations, making the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads that are uniquely suited to host applications for clients in highly regulated industries.
-
-**Next topic**: [Use case 2](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-use-case-2)
 
 ## Related links
 {: #vrw-use-case-1-related}

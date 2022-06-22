@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-05-09"
+lastupdated: "2022-06-16"
 
 keywords: security services, request security sap, tech specs sap
 
@@ -31,7 +31,7 @@ IBM Security Services for SAP offer the following features:
 * Comprehensive understanding of vulnerabilities and potential attack vectors
 * Methods to implement and avoid defects in ABAP code or SAP Transports
 * Identifying configuration vulnerabilities for ABAP, Java®, and HANA environments
-* Identifying missing or outdated SAP notes and patches 
+* Identifying missing or outdated SAP notes and patches
 * Identifying, monitoring and review of highly privileged SAP accounts
 * Enabling continuous monitoring of vulnerabilities with integration to existing SIEM solution
 

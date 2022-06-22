@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-18"
+lastupdated: "2022-06-14"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -27,12 +27,12 @@ If you are an IBM® Business Partner user, you can select a component license bu
 | Bundle | Components |
 |:------ |:---------- |
 | Standard with Management | vSphere Enterprise Plus, VMware vCenter Server® Standard, vRealize® Log Insight™, vRealize Operations™ Enterprise |
-| Advanced                 | vSphere Enterprise Plus, vCenter Server Standard, vRealize Log Insight, vCloud Director, NSX® Base |
+| Advanced | vSphere Enterprise Plus, vCenter Server Standard, vRealize Log Insight, vCloud Director, NSX® Base |
 | Advanced with Networking | vSphere Enterprise Plus, vCenter Server Standard, vRealize Log Insight, NSX Advanced |
 | Advanced with Networking and Management | vSphere Enterprise Plus, vCenter Server Standard, vRealize Log Insight, vRealize Operations Enterprise, vCloud Director, NSX Enterprise |
-{: caption="Table 1. IBM Business Partner component bundles for vSphere clusters" caption-side="top"}
+{: caption="Table 1. IBM Business Partner component bundles for vSphere clusters" caption-side="bottom"}
 
-You can also include the following VMware components in your order:
+You can also include the following VMware® components in your order:
 * VMware vSAN™
 * VMware Site Recovery Manager
 * VMware vRealize Automation Enterprise
@@ -44,11 +44,9 @@ For IBM Business Partner users, bring your own license (BYOL) is not available.
 {: #vs_orderinginstances-individual-components-for-non-bp-users}
 
 If you're a non-Business Partner, you can select the following components for your vSphere cluster:
-* VMware vSphere Enterprise Plus 7.0u2 or 6.7u3
+* VMware vSphere Enterprise Plus 7.0u3
 * VMware vCenter Server
-* VMware NSX
-   * For vSphere 7.0u2 instances - Data Center SP Base, Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus
-   * For vSphere 6.7u3 instances - Base, Advanced, or Enterprise edition
+* VMware NSX - Data Center SP Base, Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus
 * VMware vSAN
 * VMware Site Recovery Manager
 * VMware vRealize Automation Enterprise

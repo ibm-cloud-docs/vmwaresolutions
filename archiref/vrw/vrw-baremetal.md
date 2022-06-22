@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2021
+  years:  2020, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-04-27"
 
 subcollection: vmwaresolutions
 
@@ -47,8 +47,6 @@ Removing physical network connectivity to the public or private network for the 
 ![Physical host connections](../../images/vrw-nics-physical.svg "Physical host connections"){: caption="Figure 2. Physical host connections" caption-side="bottom"}
 
 To prevent undesired access, the SaaS provider must change the IPMI password and not update it in the VMware Solutions console. The insertion of filters to prevent network access to the IPMI from non-SaaS provider-controlled subnets is recommended.
-
-**Next topic**: [Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-storage)
 
 ## Related links
 {: #vrw-baremetal-related}
