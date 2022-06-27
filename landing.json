@@ -1,6 +1,6 @@
 {
     "title": "VMware Solutions docs",
-    "lastupdated": "2022-04-21",
+    "lastupdated": "2022-06-27",
     "introduction": "VMware Solutions is an IBM Cloud offering that provides deployment and management of VMware virtualized environments. Learn how to make the most of your VMware Solutions experience by using the docs, API doc reference, solution architectures, and solution guides.",
     "section_devtools": {
       "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
@@ -63,6 +63,11 @@
     "section_updates": {
       "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes",
       "tiles": [
+        {
+          "date": "22 June 2022",
+          "title": "IBM Cloud Identity and Access Management enablement for VMware Solutions Shared",
+          "description": "You can optionally enable IAM for existing sites. After you integrate your site with IAM, you can use single-sign on to log in to the vCloud Director console from the VMware Solutions console."
+        },
         {
           "date": "25 April 2022",
           "title": "Price calculation updates",
