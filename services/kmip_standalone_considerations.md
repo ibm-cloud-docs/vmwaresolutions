@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-17"
+lastupdated: "2022-07-05"
 
 keywords: KMIP for VMware, KMIP stand-alone, tech specs KMIP
 
@@ -17,10 +17,12 @@ subcollection: vmwaresolutions
 # KMIP for VMware overview
 {: #kmip_standalone_considerations}
 
-The Key Management Interoperability Protocol (KMIP™) for VMware® service provides a 24x7 highly available service to manage encryption keys that are used by VMware in the {{site.data.keyword.cloud}}. This service offers runtime capability to allow customers to create, retrieve, activate, revoke, and destroy the encryption keys. It also provides management capability to maintain the associations between the client credentials and the encryption keys.
+The Key Management Interoperability Protocol (KMIP™) for VMware® service provides a highly available service to manage encryption keys that are used by VMware in {{site.data.keyword.cloud}}. This service offers runtime capability to allow customers to create, retrieve, activate, revoke, and destroy the encryption keys. It also provides management capability to maintain the associations between the client credentials and the encryption keys.
 {: shortdesc}
 
 The KMIP for VMware service is available as a stand-alone service without being associated to a VMware instance. Each instance of the service can serve one or more VMware vCenter Server® instances or VMware vSphere® clusters.
+
+The supported client applications are vCenter Server 6.7 and 7.0 and vSphere 6.7 and 7.0.
 
 ## Technical specifications for KMIP for VMware
 {: #technical-specifications-for-kmip-for-vmware-on-ibm-cloud}
@@ -57,7 +59,7 @@ Review the following considerations before you install a KMIP for VMware instanc
 * Ensure that your {{site.data.keyword.cloud_notm}} infrastructure account is enabled for Virtual Routing and Forwarding (VRF) and for connectivity to service endpoints. For more information, see the following topics.
    * [Virtual Routing and Forwarding on {{site.data.keyword.cloud_notm}}](/docs/direct-link?topic=direct-link-overview-of-virtual-routing-and-forwarding-vrf-on-ibm-cloud)
    * [Enabling service endpoints](/docs/account?topic=account-vrf-service-endpoint#service-endpoint)
-* Only private connection is supported. As a result, you don't need to configure firewall or SNAT rules in vCenter Server for the network connectivity from the vCenter Server to the endpoint of the KMIP for VMware instance.
+* Only private connection is supported. As a result, you don't need to configure firewall or SNAT rules in vCenter Server for the network connectivity from vCenter Server to the endpoint of the KMIP for VMware instance.
 
 For more information, see [KMIP for VMware solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-overview).
 
