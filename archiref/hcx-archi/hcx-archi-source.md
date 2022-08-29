@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-19"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,11 +16,11 @@ subcollection: vmwaresolutions
 # VMware HCX source-side architecture
 {: #hcx-archi-source}
 
-Review the source architecture for the VMware® HCX components that are typically deployed in the customer data center. The tasks that can be accomplished and the features that support and enhance migration and network extension are also presented.
+Review the source architecture for the VMware® HCX™ components that are typically deployed in the customer data center. The tasks that can be accomplished and the features that support and enhance migration and network extension are also presented.
 
 * HCX owns the source and destination encryption and decryption processes, ensuring consistent security and providing admission for hybrid workflows such as virtual machine (VM) migration and network extension.
 * HCX creates an optimized, software-defined WAN to increase stretched network performance, enabling performance that approaches LAN speed.
-* HCX also enables bidirectional workload migration to {{site.data.keyword.cloud_notm}} Networking services.
+* HCX also enables bidirectional workload migration to {{site.data.keyword.cloud}} Networking services.
 * HCX integrates with vSphere vCenter and is managed from the vSphere Web Client.
 
 ## Understanding HCX

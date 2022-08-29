@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-17"
 
 subcollection: vmwaresolutions
 
@@ -43,12 +43,12 @@ The following diagram presents an overview of the solution for hosting VMware VM
 
 When you create a VLAN interface for either to a VMkernel adapter or to a VM, you must specify a VLAN ID for the VLAN interface. This VLAN ID maps to the VLAN ID that is used in a standard or a distributed port group in vSphere. VLAN ID `0` cannot currently be used for a VLAN interface. The following table provides an example mapping of VLAN interfaces and distributed port groups.
 
-Interface name        | Interface type | VLAN ID | Subnet                         | Allow float  | VM network interface | Distributed Port Group Name
-----------------------|----------------|---------|--------------------------------|--------------|----------------------|----------------------------------
-vlan-nic-vm001        | vlan           | 1000    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-subnet-192-168-100-0-24
-vlan-nic-vm002        | vlan           | 1000    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-subnet-192-168-100-0-24
-vlan-nic-vm003        | vlan           | 1001    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-3-vlan-1001
-vlan-nic-vm004        | vlan           | 1002    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-3-vlan-1002
+| Interface name        | Interface type | VLAN ID | Subnet                         | Allow float  | VM network interface | Distributed Port Group Name |
+| ---------------------- |---------------- | --------- | -------------------------------- | -------------- | ---------------------- | ---------------------------------- |
+| vlan-nic-vm001        | vlan           | 1000    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-subnet-192-168-100-0-24 |
+| vlan-nic-vm002        | vlan           | 1000    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-subnet-192-168-100-0-24 |
+| vlan-nic-vm003        | vlan           | 1001    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-3-vlan-1001 |
+| vlan-nic-vm004        | vlan           | 1002    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-3-vlan-1002 |
 {: caption="Table 1. VLAN interfaces for VMware VMs on VPC subnet example" caption-side="bottom"}
 
 You can create VLAN interfaces with the same VLAN ID, or you can use different VLAN IDs mapped to the same VPC subnet. The DPG used for the VM's vNIC must match the provisioned VLAN interface's VLAN ID. For more information, see [Security groups with VMware workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-subnet#vpc-ryo-subnet-net-security-sg).

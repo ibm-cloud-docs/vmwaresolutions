@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -24,12 +24,12 @@ Review the following information for common HCX™ issues and fixes.
 ### HCX user interface token timeout
 {: #hcxclient-troubleshooting-hcx-ui-issues}
 
-Typically, if the vCenter Server UI has been opened for some time you might encounter a timeout in the HCX UI, because the login token to the HCX Manager server timed out. Log out of the vSphere web UI and back in to refresh the token.
+Typically, if the VMware vCenter Server® user interface has been opened for some time you might encounter a timeout in the HCX™ user interface, because the login token to the HCX Manager server timed out. Log out of the vSphere web user interface and back in to refresh the token.
 
-### HCX Client UI displaying “NaN” for all metrics on the dashboard screen
+### HCX Client user interface displaying “NaN” for all metrics on the dashboard screen
 {: #hcxclient-troubleshooting-nan-display}
 
-This issue is related to the permissions of the currently logged in vCenter account. Ensure that the Enterprise Administrator group is set in the HCX cloud side appliance manager UI.
+This issue is related to the permissions of the currently logged in vCenter account. Ensure that the Enterprise Administrator group is set in the HCX cloud side appliance manager user interface.
 
 ## Migration issues
 {: #hcxclient-troubleshooting-mig-issues}
@@ -39,12 +39,12 @@ Migration issues in the current versions of HCX are usually in three categories:
 ### Licensing
 {: #hcxclient-troubleshooting-licensing}
 
-If a migration fails because of a licensing issue, current versions of HCX clearly display this issue in the error message with the client web UI within the vCenter UI.
+If a migration fails because of a licensing issue, current versions of HCX clearly display this issue in the error message with the client web user interface within the vCenter user interface.
 
 ### Network (WAN) connectivity
 {: #hcxclient-troubleshooting-wan-connect}
 
-If you have any WAN connectivity issues, always check the **Interconnect -> HCX Components** screen within the HCX UI for tunnel status. The fleet components typically do not need to be reset or rebooted. If WAN connectivity is restored, they reconnect automatically.
+If you have any WAN connectivity issues, always check the **Interconnect -> HCX Components** screen within the HCX user interface for tunnel status. The fleet components typically do not need to be reset or rebooted. If WAN connectivity is restored, they reconnect automatically.
 
 If any fixes and updates were applied to the HCX managers (Client and Cloud) and those updates also patch issues with the fleet components, you must redeploy the Cloud Gateway and any L2Cs deployed. It is possible to do further tunnel status debugging, by connecting to HCX Manager through an SSH client such as `ccli`
 

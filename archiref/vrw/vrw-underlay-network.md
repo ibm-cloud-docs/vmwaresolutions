@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Underlay networking
 {: #vrw-underlay-network}
 
-{{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads requires isolated networking between the workload clusters and the management and edge services clusters.
+{{site.data.keyword.cloud}} for VMware® Regulated Workloads requires isolated networking between the workload clusters and the management and edge services clusters.
 
 ## Management cluster
 {: #vrw-underlay-network-management}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-07-07"
 
 keywords: nsx editions, vsan editions, nsx edition comparison, vsan edition comparison
 
@@ -52,7 +52,7 @@ NSX-T Data Center (DC) SP license editions provide the following features.
 | Multi-vCenter networking and security | | | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | IPv6 with Dynamic Routing, Dynamic IPv6 Allocation and Services | | | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | Context-aware Micro-Segmentation (L7 Application Identification, RDSH, Protocol Analyzer) | | | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
-| Distributed FQDN whitelisting | | | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
+| Distributed FQDN allowlisting | | | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | VRF |  | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | Federation | | | | ![Available](../../../icons/checkmark-icon.svg) |
 | VM-to-VM traffic flow analysis | | | | ![Available](../../../icons/checkmark-icon.svg) |

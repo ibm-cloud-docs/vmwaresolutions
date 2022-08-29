@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-06-23"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,9 @@ subcollection: vmwaresolutions
 
 # Entrust DataControl on IBM Cloud with IBM Hyper Protect Crypto Services
 {: #htdc-hpcs-detail}
+
+New installations of Entrust DataControl® (formerly known as HyTrust DataControl) are no longer supported for new or existing deployments of vCenter Server® instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
+{: deprecated}
 
 The DataControl® virtual machine (VM) is an Entrust-hardened version of FreeBSD, a light-weight, locked-down operating system that has no runtime login or SSH access to the system. This system prevents tampering or attempts to access clear-text data and encryption keys. Two VMs are deployed onto the internal management subnet.
 

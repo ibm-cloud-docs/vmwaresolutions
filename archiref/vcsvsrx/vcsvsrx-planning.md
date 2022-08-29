@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ These features are common to both deployment types.
 
 The following features are unique to a deployment with the ESXi as the host OS.
 - VXLAN connectivity into a VMware vCenter Server® instance.
-- Ability to host extra VMs on the edge services cluster.
+- Ability to host extra virtual machines (VMs) on the edge services cluster.
 - NSX edges, load balancers.
 
 The basic vSRX offering architecture places a vSRX in front of all the VLANs deployed into a customer account. The vSRX is a powerful Vyatta replacement for situations in which a customer-controlled gateway appliance is desirable.
@@ -105,30 +105,30 @@ Note the following information for the cluster mode.
 
 The following table shows information for a stand-alone vSRX VM.
 
-Network adapter | Interface name in Junos OS
----|---
-1| `fxp0`
-2| `ge-0/0/0`
-3| `ge-0/0/1`
-4| `ge-0/0/2`
-5| `ge-0/0/3`
-6| `ge-0/0/4`
-7| `ge-0/0/5`
-8| `ge-0/0/6`
+| Network adapter | Interface name in Junos OS |
+|-----------------| -------------------------- |
+| 1 | `fxp0` |
+| 2 | `ge-0/0/0` |
+| 3 | `ge-0/0/1` |
+| 4 | `ge-0/0/2` |
+| 5 | `ge-0/0/3` |
+| 6 | `ge-0/0/4` |
+| 7 | `ge-0/0/5` |
+| 8 | `ge-0/0/6` |
 {: caption="Table 1. Interface names and mappings for a standalone vSRX VM" caption-side="bottom"}
 
 The following table shows information for a pair of vSRX VMs in a cluster (node 0 and node 1).
 
-Network adapter | Interface name in Junos OS
----|---
-1| `fxp0` (node 0 and 1)
-2| `em0` (node 0 and 1)
-3| `ge-0/0/0` (node 0) and `ge-7/0/0` (node 1)
-4| `ge-0/0/1` (node 0) and `ge-7/0/1` (node 1)
-5| `ge-0/0/2` (node 0) and `ge-7/0/2` (node 1)
-6| `ge-0/0/3` (node 0) and `ge-7/0/3` (node 1)
-7| `ge-0/0/4` (node 0) and `ge-7/0/4` (node 1)
-8| `ge-0/0/5` (node 0) and `ge-7/0/5` (node 1)
+| Network adapter | Interface name in Junos OS |
+|-----------------| -------------------------- |
+| 1 | `fxp0` (node 0 and 1) |
+| 2 | `em0` (node 0 and 1) |
+| 3 | `ge-0/0/0` (node 0) and `ge-7/0/0` (node 1) |
+| 4 | `ge-0/0/1` (node 0) and `ge-7/0/1` (node 1) |
+| 5 | `ge-0/0/2` (node 0) and `ge-7/0/2` (node 1) |
+| 6 | `ge-0/0/3` (node 0) and `ge-7/0/3` (node 1) |
+| 7 | `ge-0/0/4` (node 0) and `ge-7/0/4` (node 1) |
+| 8 | `ge-0/0/5` (node 0) and `ge-7/0/5` (node 1) |
 {: caption="Table 2. Interface names and mappings for a pair of vSRX VMs in a cluster (node 0 and node 1)" caption-side="bottom"}
 
 #### Default security zone configuration
@@ -136,11 +136,11 @@ Network adapter | Interface name in Junos OS
 
 The following table shows the factory default settings for security policies.
 
-Source zone|Destination zone|Policy action
----|---|---
-trust|untrust|permit
-trust|trust|permit
-untrust|trust|deny
+| Source zone | Destination zone | Policy action |
+| ----------- |------------------| ------------- |
+| trust | untrust | permit |
+| trust | trust | permit |
+| untrust | trust | deny |
 {: caption="Table 3. Factory default settings for security policies" caption-side="bottom"}
 
 As noted previously, the default configuration merely represents a point from which to build the required configuration to meet your requirements. The creation of extra security zones is often necessary to support the various traffic flow patterns present in the account.

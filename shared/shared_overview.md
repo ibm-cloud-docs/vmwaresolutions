@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-08-22"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -18,14 +18,14 @@ subcollection: vmwaresolutions
 # VMware Solutions Shared overview
 {: #shared_overview}
 
-{{site.data.keyword.vmwaresolutions_full}} Shared provides standardized and customizable deployment choices of VMware® virtual data center environments. With VMware Solutions Shared virtual data centers, you can quickly and seamlessly migrate or deploy VMware workloads to the cloud, on IBM-hosted VMware infrastructure. IBM provides a self-service on-demand VMware cloud computing platform with VMware vCloud Director running on {{site.data.keyword.cloud_notm}}. This Infrastructure as a Service (IaaS) on-demand offering provides the option to use specific virtual CPU (vCPU), storage, vRAM, Network, and IP, as needed.
+{{site.data.keyword.vmwaresolutions_full}} Shared provides standardized and customizable deployment choices of VMware® virtual data center environments. With VMware Solutions Shared virtual data centers, you can quickly and seamlessly migrate or deploy VMware workloads to the cloud, on IBM-hosted VMware infrastructure. IBM provides a self-service on-demand VMware cloud computing platform with VMware Cloud Director running on {{site.data.keyword.cloud_notm}}. This Infrastructure as a Service (IaaS) on-demand offering provides the option to use specific virtual CPU (vCPU), storage, vRAM, Network, and IP, as needed.
 
 VMware Solutions Shared has the following IaaS subscription service types:
 
 * Multitenant on-demand virtual data centers
 * Multitenant reserved virtual data centers
 
-You can manage the lifecycle of virtual data centers by using the VMware Solutions Shared offering. The following functions are supported when you use the vCloud Director Management console or public API:
+You can manage the lifecycle of virtual data centers by using the VMware Solutions Shared offering. The following functions are supported when you use the VMware Cloud Director Management console or public API:
 
 * Virtual data center creation
 * Virtual data center elasticity
@@ -49,10 +49,10 @@ The following graphic depicts the high-level architecture and components of VMwa
 
 ![VMware Solutions Shared architecture](../images/vclouddirector-architecture-public.svg "VMware Solutions Shared architecture"){: caption="Figure 1. VMware Solutions Shared architecture" caption-side="bottom"}
 
-### VMware vCloud Director
+### VMware Cloud Director
 {: #shared_overview-vcloud-dir}
 
-This layer represents the management interface. VMware vCloud Director provides role-based access to a web-based tenant portal. The portal allows the members of an organization to interact with the organization's resources to create and work with vApps and virtual machines (VMs).
+This layer represents the management interface. VMware Cloud Director provides role-based access to a web-based tenant portal. The portal allows the members of an organization to interact with the organization's resources to create and work with vApps and virtual machines (VMs).
 
 ### Organization
 {: #shared_overview-org}
@@ -88,7 +88,7 @@ For example, the following graphic depicts two Cloud Director instances, *VCD1* 
 ## Role-based access policies
 {: #shared_overview-access-policies}
 
-Before V4.8, role-based access control is achieved by using a virtual data center IAM policy for VMWare Solutions Shared resources. 
+Before V4.8, role-based access control is achieved by using a virtual data center IAM policy for VMWare Solutions Shared resources.
 
 | Access policy level| Access |
 |:----------------- |:--------- |
@@ -113,7 +113,7 @@ Beginning with V4.8, role-based access control is achieved by using a site and o
 
 Beginning with V4.8, you have access to your sites only to assign access policies. The access policy at the site level applies to every resource within it. You no longer assign access control directly to a virtual data center.
 
-For more information about assigning resource access and roles, see [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam) and [Roles and permissions for vCloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui).
+For more information about assigning resource access and roles, see [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam) and [Roles and permissions for Cloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui).
 
 #### Resource Group based access policy updates
 {: #shared_overview-access-policies-reqs-rg}
@@ -173,7 +173,7 @@ Storage policy availability can vary by region and deployment topology. On the V
 * 4 IOPS/GB - Storage tier with a maximum throughput of 4 IOPS/GB.
 * 2 IOPS/GB - Storage tier with a maximum throughput of 2 IOPS/GB.
 * 0.25 IOPS/GB - Storage tier with a maximum throughput of 0.25 IOPS/GB.
-* VSAN - No IOPS limitation.
+* vSAN™ - No IOPS limitation.
 
 Standard is the default policy for virtual data centers.
 {: note}  
@@ -188,18 +188,25 @@ Encryption-enabled storage policies are available to all Organization virtual da
 * 4 IOPS/GB - Encrypted. Storage tier with a maximum throughput of 4 IOPS/GB.
 * 2 IOPS/GB - Encrypted. Storage tier with a maximum throughput of 2 IOPS/GB.
 * 0.25 IOPS/GB - Encrypted. Storage tier with a maximum throughput of 0.25 IOPS/GB.
-* VSAN - Encrypted. No IOPS limitation.
+* vSAN - Encrypted. No IOPS limitation.
 
 For more information about the VM encryption limitations for VMware Cloud Director 10.3, see [Enabling VM encryption on storage policies of an Organization virtual data center](https://docs.vmware.com/en/VMware-Cloud-Director/10.3/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-80F58C1D-A97E-43FE-8E41-E9242A1D2332.html){: external}.
 
 The encryption storage policies do not currently work with VM customizations. IBM is working closely with VMware to resolve this issue in a future release. In the meantime, you can use encryption storage policies after a VM is deployed and customized by using the unencrypted storage policies. For more information, see [Changing the general properties of a virtual machine](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-change-properties).
 {: note}
 
+#### Standard-Catalog storage policy
+{: #shared_overview-specs-storage-standard-catalog}
+
+Select the Standard-Catalog storage policy to upload vApp templates and any media to your catalog. The Standard-Catalog storage policy does not deploy vApps and VMs, is unencrypted, and has no IOPS restrictions.
+
+The Standard-Catalog storage policy always spans all virtual data centers in the region so you can access media files from any virtual data center regardless of the data center zone.
+
 ### Maximum disk size
 {: #shared_overview-specs-disk-size}
 
-* The maximum disk size is 16 TBs per disk for 0.25 IOPS / GB, 2 IOPS/GB, 4 IOPS/GB, Standard, and VSAN storage policies.
-* The maximum disk size is 4 TBs per disk for the 10 IOPs / GB storage policy.
+* The maximum disk size is 16 TBs per disk for the 0.25 IOPS / GB, 2 IOPS/GB, 4 IOPS/GB, 10 IOPs / GB, and Standard storage policies.
+* The maximum disk size is 62 TBs per disk for the vSAN storage policy.
 
 ### Maximum host capacity
 {: #shared_overview-specs-capacity}
@@ -222,5 +229,5 @@ to {{site.data.keyword.vmwaresolutions_short}} service instances. For more infor
 * [Requirements and planning for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
 * [Operating VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware vCloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
+* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
 * [Troubleshooting NSX Edge](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.troubleshooting.doc/GUID-E6CD6FAA-3DA7-4AD7-9577-EE121AA7E1E6.html){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-08"
 
 subcollection: vmwaresolutions
 
@@ -32,11 +32,11 @@ You can scale out an existing cluster by ordering hosts. You must add manually t
 
 You can also scale out the compute capacity by ordering new hosts and creating a new cluster. You must add manually the hosts to create the cluster and provision the required VLAN interfaces to the hosts for VMkernel adapters.
 
-This method allows achieving as follows:
+This method allows achieving the following tasks:
 
 * Creating an additional, separate cluster in the environment.
-* Segregating management workloads from application workloads physically and logically.
-* Segregating workloads based on other characteristics, for example, Microsoft® SQL database cluster.
+* Separating management workloads from application workloads physically and logically.
+* Separating workloads based on other characteristics, for example, Microsoft® SQL database cluster.
 * Deploying applications in highly available topologies.
 
 ## Adding more sites
@@ -44,7 +44,7 @@ This method allows achieving as follows:
 
 You can use other multizone regions and {{site.data.keyword.cloud}} worldwide data center presence to allow for various cross-geographies use cases to be deployed.
 
-This method allows achieving as follows:
+This method allows achieving the following tasks:
 
 * Creating an additional, geographically separated deployment for Disaster Recovery use cases.
 * Creating an additional, geographically separated deployment for closer proximity to users.

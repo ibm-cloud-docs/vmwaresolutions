@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-08-26"
 
 keywords: planning VMware Solutions Shared, data center, VMware Solutions Shared data centers
 
@@ -19,6 +19,8 @@ subcollection: vmwaresolutions
 {: #shared_planning}
 
 Review the following requirements before you order your {{site.data.keyword.vmwaresolutions_full}} Shared virtual data centers. Plan for your order by considering the {{site.data.keyword.cloud_notm}} data center location, your workload capacity requirements, and services requirements.
+
+Price calculations are automatically generated when you access the VMware Solutions Shared instance order page. Default selections for on-demand virtual data centers include public and private networking, 2000 vCPU, and 40960 RAM. Default selections for reserved virtual data centers include public and private networking, and customizable vCPU and RAM limits.
 
 ## IBM Cloud account requirements
 {: #shared_ordering-account-req}
@@ -67,4 +69,4 @@ Service charges are incurred only if you choose to use the service.
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
 * [Viewing and managing virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary)
 * [Operating VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware vCloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}
+* [VMware Cloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}

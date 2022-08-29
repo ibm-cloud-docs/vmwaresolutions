@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-08-16"
 
 keywords: vCenter Server add NFS storage
 
@@ -26,6 +26,10 @@ You can expand the capacity of your VMware vCenter Server® instance according t
 * Do not add NFS storage from the VMware vSphere Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_full}} console.
 * IBM will not manage NFS file shares that you manually add to an instance.
 * You can add or remove NFS storage shares to or from an existing NFS or vSAN cluster.
+* If you mount {{site.data.keyword.cloud_notm}} Endurance NFS storage to your cluster, consider the following steps:
+   * Ping the NFS server for the storage and note the subnet for the server IP address.
+   * Review the VMKernel adapters for the hosts that will use the storage and make note of the subnet for vmk3. Use the [file storage list](https://cloud.ibm.com/cloud-storage/file){: external} to authorize the vmk3 subnet to access the NFS datastore.
+   * Review the static routes defined on the hosts with the `esxcli network ip route ipv4 list` command. A static route must be displayed for the NFS server IP subnet to the gateway for the vmk3 subnet listed in the previous step.
 
 ## Procedure to add NFS storage to vCenter Server instances
 {: #vc_addingnfs-procedure}
@@ -37,7 +41,7 @@ You can expand the capacity of your VMware vCenter Server® instance according t
 5. In the **Storage** section, click **Add**.
 6. In the **Storage** window, complete the storage configuration.
    * If you want to add and configure the same settings to all file shares, specify the **Number of shares**, **Performance**, and **Size (GB)**.
-   * If you want to add and configure file shares individually, select **Configure shares individually**, then click the **Add** icon ![Add icon](../../icons/add.svg "Add") next to the **Add shared storage** label and select the **Performance** and **Size (GB)** for each individual file share. You must select at least one file share. For information about the available options, see [NFS storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance#vc_orderinginstance-nfs-storage).
+   * If you want to add and configure file shares individually, select **Configure shares individually**, then click the **Add** icon ![Add icon](../../icons/add.svg "Add") next to the **Add shared storage** label and select the **Performance** and **Size (GB)** for each individual file share. You must select at least one file share. For information about the available options, see [NFS storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consoldworkldcluster-settings#vc_orderinginstance-nfs-storage).
 7. Review the estimated price and click **Add NFS storage**.
 
    You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. This is useful if you want to estimate the price of the selected {{site.data.keyword.vmwaresolutions_short}} resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider to purchase.

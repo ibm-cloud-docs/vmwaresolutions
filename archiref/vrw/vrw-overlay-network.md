@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-10"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Overlay networking
 {: #vrw-overlay-network}
 
-{{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads uses NSX-T™ as the software defined network overlay provider.
+{{site.data.keyword.cloud}} for VMware® Regulated Workloads uses NSX-T™ as the software defined network overlay provider.
 
 ## Management cluster
 {: #vrw-overlay-network-management}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-24"
+lastupdated: "2022-07-26"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -14,10 +14,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Bare metal server settings
+# Bare metal server
 {: #vs_orderinginstances-bare-metal-settings}
 
-When you size the capacity of your servers, consider your current requirements and include extra capacity to accommodate anticipated growth. For more information about sizing properly, see [Exporting VMware inventory](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
+When you size the capacity of your servers, consider your current requirements, and include extra capacity to accommodate anticipated growth. For more information about sizing properly, see [Exporting VMware inventory](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
 
 ## Data center location
 {: #vs_orderinginstances-dc}
@@ -39,7 +39,10 @@ Select the {{site.data.keyword.cloud_notm}} data center where the cluster is to 
 
 Select the {{site.data.keyword.cloud_notm}} data center pod where you want to deploy your resources. Keep the default pod selection if you do not have reasons to prefer a different pod.
 
-## Skylake
+## CPU model and RAM size
+{: #vs_orderinginstances-cpumodelram}
+
+### Skylake
 {: #vs_orderinginstances-skylake}
 
 For **Skylake** servers, you can choose the following CPU models and a supported RAM size. Options available depend on whether you selected the vSAN component.
@@ -54,7 +57,7 @@ Skylake servers are not supported for VMware vSphere® Enterprise Plus 7.0 insta
 | Dual Intel Xeon Gold 6140 processor | 36 | 2.3 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 {: caption="Table 1. Options for Skylake bare metal servers" caption-side="bottom"}
 
-## Cascade Lake
+### Cascade Lake
 {: #vs_orderinginstance-cascade}
 
 For **Cascade Lake** servers, you can choose the following CPU models and a supported RAM size.
@@ -70,7 +73,7 @@ For **Cascade Lake** servers, you can choose the following CPU models and a supp
 | Quad Intel Xeon Platinum 8260 processor | 96 | 2.4 | 384 GB, 768 GB, 1.5 TB, 3 TB |
 {: caption="Table 2. Options for Cascade Lake bare metal servers" caption-side="bottom"}
 
-## SAP-certified
+### SAP-certified
 {: #vs_orderinginstances-sap}
 
 The **SAP-certified** servers are not available if you selected VMware vSAN previously.
@@ -113,5 +116,5 @@ The number of VMware ESXi™ servers that you want add to the vSphere cluster. A
 ## Related links
 {: #vs_orderinginstances-bare-metal-related}
 
-* [Storage settings](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-storage-settings)
+* [Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-storage-settings)
 * [Procedure to order vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure#vs_orderinginstances-procedure-related)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-17"
 
 subcollection: vmwaresolutions
 
@@ -38,13 +38,13 @@ For this architecture, a new VPC is created for VMware workloads for simplicity.
 
 The following table lists the recommended subnets in VPC. It is based on the recommendation to separate System Traffic Types logically and a dedicated VPC subnet for each user used. As each VMK host needs its own IP, it is recommended to keep the PCI interfaces (management) hosts on their own subnet. Also, place other management instances (such as vCenter®, NSX-T managers, NSX-Edge management interfaces) on their own subnet. It allows easier segmentation, sizing, and provides better scalability.
 
-Subnet name           | System Traffic Type          | Subnet Sizing Guidance  
-----------------------|------------------------------|-----------------------------------
-vpc-mgmt-subnet       | Management appliance traffic | Number of Management Appliances
-vpc-host-subnet       | Host management traffic      | Number of Hosts
-vpc-vmot-subnet       | vMotion traffic              | Number of Hosts
-vpc-vsan-subnet       | vSAN traffic                 | Number of Hosts
-vpc-tep-subnet        | TEP traffic                  | Number of Hosts + \n 2 x Edge Nodes
+| Subnet name         | System Traffic Type          | Subnet Sizing Guidance |
+| --------------------| ---------------------------- |----------------------- |
+| vpc-mgmt-subnet       | Management appliance traffic | Number of Management Appliances |
+| vpc-host-subnet       | Host management traffic      | Number of Hosts |
+| vpc-vmot-subnet       | vMotion traffic              | Number of Hosts |
+| vpc-vsan-subnet       | vSAN traffic                 | Number of Hosts |
+| vpc-tep-subnet        | TEP traffic                  | Number of Hosts + \n 2 x Edge Nodes |
 {: caption="Table 1. VPC subnets for System Traffic Types" caption-side="bottom"}
 
 To be able to create subnets in VPC, you must create a VPC prefix. VPC prefixes are defined per zone. To simplify routing, it is recommended to allocate the recommended subnets from a single prefix. Which means that to be able to accommodate 5 subnets, you need one `/21` prefix to cater addresses for about 120 hosts per zone. If you want to use a prefix with `/22`, you can add about 60 hosts per zone. By selecting a large enough prefix, it will leave you growth for scalability and future needs, such as dedicated VMKs for NFS, replication and for NSX-T Tier-0 uplinks.
@@ -85,12 +85,12 @@ In {{site.data.keyword.vpc_short}}, each {{site.data.keyword.cloud_notm}} bare m
 
 The following table lists the VMK key that is required in this architecture for each ESXi host. Depending on your design and planned capabilities, you might not need all VMKs listed here. However, when you plan the deployment and VPC infrastructure automation with, for example Terraform, it is recommended to take a note of these requirements.
 
-Interface name        | Interface type | VLAN ID | Subnet              | Allow float  | VMkernel Adapter | Distributed Port Group Name
-----------------------|----------------|---------|---------------------|--------------|------------------|------------------------------
-pci-nic-vmnic0-vmk0   | pci            | 0       | vpc-host-subnet     | false        | vmk0             | dpg-hosts
-vlan-nic-vmotion-vmk2 | vlan           | 200     | vpc-vmot-subnet     | false        | vmk2             | dpg-vmotion
-vlan-nic-vsan-vmk3    | vlan           | 300     | vpc-vsan-subnet     | false        | vmk3             | dpg-vsan
-vlan-nic-tep-vmk10    | vlan           | 400     | vpc-tep-subnet      | false        | vmk10            | dpg-tep
+| Interface name        | Interface type | VLAN ID | Subnet              | Allow float  | VMkernel Adapter | Distributed Port Group Name |
+| ---------------------- | ---------------- | --------- | --------------------- | -------------- | ------------------ | ------------------------------ |
+| pci-nic-vmnic0-vmk0   | pci            | 0       | vpc-host-subnet     | false        | vmk0             | dpg-hosts |
+| vlan-nic-vmotion-vmk2 | vlan           | 200     | vpc-vmot-subnet     | false        | vmk2             | dpg-vmotion |
+| vlan-nic-vsan-vmk3    | vlan           | 300     | vpc-vsan-subnet     | false        | vmk3             | dpg-vsan |
+| vlan-nic-tep-vmk10    | vlan           | 400     | vpc-tep-subnet      | false        | vmk10            | dpg-tep |
 {: caption="Table 2. Host management networks and VMkernel adapters" caption-side="bottom"}
 
 If you are not using NSX-T, you do not need `vlan-nic-tep-vmk10` interface.

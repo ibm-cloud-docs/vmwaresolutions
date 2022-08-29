@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-09"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -18,9 +18,9 @@ subcollection: vmwaresolutions
 
 VMware® NSX-T™ is designed to address application frameworks and architectures that have heterogeneous endpoints and technology stacks. In addition to VMware vSphere®, these environments can include other hypervisors, KVM, containers, and bare metal servers. NSX-T is designed to span a software defined network and security infrastructure across platforms other than just vSphere alone. While it is possible to deploy NSX-T components without needing vSphere, this design focuses on NSX-T and its integration primarily within a vCenter Server vSphere automated deployment.
 
-As of version 3, NSX-T can run on the vSphere VDS switch version 7.0. All new deployments of VMware NSX and vSphere use NSX-T on VDS and N-VDS is no longer used. Beginning with NSX-T 2.4, the manager VM and the controller VM functions are combined. As a result, three controller or manager VMs are deployed. If on the same subnet, they use an internal network load balancer. If across different subnets, an external load balancer is required.
+As of version 3, NSX-T can run on the vSphere virtual distributed switch (VDS) version 7.0. All new deployments of VMware NSX and vSphere use NSX-T on VDS and N-VDS is no longer used. Beginning with NSX-T 2.4, the manager VM and the controller VM functions are combined. As a result, three controller or manager VMs are deployed. If on the same subnet, they use an internal network load balancer. If across different subnets, an external load balancer is required.
 
-NSX-T brings many advanced features such as firewall policies, inclusion of guest introspection within firewall policies, and advanced netflow tracking. Describing these features is beyond the scope of this document. In this design, the NSX-T Management Infrastructure is deployed during the initial vCenter Server® cluster deployment. For  more information about NSX-T, see the VMware documentation.
+NSX-T brings many advanced features such as firewall policies, inclusion of guest introspection within firewall policies, and advanced netflow tracking. Describing these features is beyond the scope of this document. In this design, the NSX-T Management Infrastructure is deployed during the initial vCenter Server® cluster deployment. For more information about NSX-T, see the VMware documentation.
 
 ## NSX-T vs NSX-V
 {: #nsx-t-design-nsx-t-nsx-v}
@@ -32,7 +32,7 @@ The following table shows the typically corresponding functions between NSX-T an
 | NSX-V or vSphere native | NSX-T |
 |:----------------------- |:----- |
 | **NSX Transport zone** | Transport zone (overlay or VLAN-backed) |
-| **Port groups (vDS)** | Segments or Logical Switch |
+| **Port groups (VDS)** | Segments or Logical Switch |
 | **VXLAN (L2 encapsulation)** | GENEVE (L2 encapsulation) |
 | **Edge Gateway** | Tier-0 (T0) Gateway[^gateway1] |
 | **Distributed Logical Router** | Tier-1 (T1) Gateway[^gateway2] |
@@ -86,7 +86,7 @@ With NSX-T v3.x on vSphere VDS switch version 7.0, N-VDS are no longer required 
 
 After initial deployment, the {{site.data.keyword.cloud}} automation deploys three NSX-T Manager virtual appliances within the management cluster. The controllers are assigned a VLAN–backed IP address from the Private A portable subnet that is designated for management components. Additionally, VM–VM anti–affinity rules are created such that controllers are separated among the hosts in the cluster.
 
-You must deploy the management cluster with a minimum of three nodes to ensure high availability for the managers or controllers. In addition to the managers, the {{site.data.keyword.cloud_notm}} automation prepares the deployed workload cluster as NSX-T transport nodes. The ESXi transport nodes are assigned a VLAN–backed IP address from the **Private A** portable IP address range that is specified by an NSX IP pool ranged derived from the VLAN and subnet summary. Transport node traffic resides on the untagged VLAN and is assigned to the private NSX-T virtual distributed switch (VDS).
+You must deploy the management cluster with a minimum of three nodes to ensure high availability for the managers or controllers. In addition to the managers, the {{site.data.keyword.cloud_notm}} automation prepares the deployed workload cluster as NSX-T transport nodes. The ESXi transport nodes are assigned a VLAN–backed IP address from the **Private A** portable IP address range that is specified by an NSX IP pool ranged derived from the VLAN and subnet summary. Transport node traffic resides on the untagged VLAN and is assigned to the private NSX-T VDS.
 
 Depending on the NSX-T topology that you choose to deploy, this design allows you to deploy an NSX-T edge services cluster either as a pair of VMs or as software deployed on bare metal cluster nodes. Bare metal edges are not supported by the {{site.data.keyword.cloud_notm}} automation and must be manually deployed and configured. Regardless of whether the cluster pair is virtual or physical, uplinks are configured to VDS switches for both {{site.data.keyword.cloud_notm}} private and (if present) public networks.
 
@@ -105,13 +105,13 @@ The following table summarizes the requirements for a medium size environment, w
 ## Distributed switch design
 {: #nsx-t-design-distr-switch}
 
-The design uses a minimum number of vDS Switches. The hosts in the management cluster are connected to the private and (optionally) public networks. The hosts are configured with two distributed virtual switches. The use of two switches follows the practice of {{site.data.keyword.cloud_notm}} network that separates the public and private networks. All new deployments of NSX and vSphere take advantage of running the vSphere VDS switch version 7.0., which allows for a converged NSX-T architecture.
+The design uses a minimum number of VDS switches. The hosts in the management cluster are connected to the private and (optionally) public networks. The hosts are configured with two distributed virtual switches. The use of two switches follows the practice of {{site.data.keyword.cloud_notm}} network that separates the public and private networks. All new deployments of NSX and vSphere take advantage of running the vSphere VDS switch version 7.0., which allows for a converged NSX-T architecture.
 
 ![Distributed switch design Private ](../../images/nsx-t-3-ra-diagrams-v7-vds-private.svg "Distributed switch design Private"){: caption="Figure 2. NSX-T Distributed switch design Private" caption-side="bottom"}
 
 ![Distributed switch design Public](../../images/nsx-t-3-ra-diagrams-v7-vds-public.svg "Distributed switch design Public"){: caption="Figure 3. NSX-T Distributed switch design Public" caption-side="bottom"}
 
-As shown in the previous diagrams, the public vDS `*instancename*-*clustername*-public` is configured for public network connectivity and the public vDS `*instancename*-*clustername*-private` is configured for private network connectivity. Separating different types of traffic is required to reduce contention and latency and increase security.
+As shown in the previous diagrams, the public VDS `*instancename*-*clustername*-public` is configured for public network connectivity and the public VDS `*instancename*-*clustername*-private` is configured for private network connectivity. Separating different types of traffic is required to reduce contention and latency and increase security.
 
 VLANs are used to segment physical network functions. This design uses three VLANs: two for private network traffic and one for public network traffic. The following table shows the traffic separation.
 

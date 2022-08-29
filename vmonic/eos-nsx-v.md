@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-06-16"
+lastupdated: "2022-08-17"
 
 keywords: end of marketing notice, nsx-v deployment, end of support nsx-v, nsx-v deprecated, nsx-v support
 
@@ -22,9 +22,9 @@ VMware® support for all new VMware NSX-V deployments ended on 16 January 2022.
 
 Beginning on 21 June 2022, you can no longer order new VMware vCenter Server® with NSX-V instances.
 
-However, VMware and IBM worked closely to extend the existing NSX–V support until 31 December 2023. This support is exclusive only for IBM Cloud on NSX–V. No other on–premises or hyper–scaler company has this support benefit. With this support, you have more time to migrate, but IBM advises you to start migration as soon as possible.
+However, VMware and IBM worked closely to extend the existing NSX–V support until 31 December 2023. This support is exclusive only for {{site.data.keyword.cloud}} on NSX–V. No other on–premises or hyper–scaler company has this support benefit. With this support, you have more time to migrate, but IBM advises you to start migration as soon as possible.
 
-This support is only for VMware NSX–V that was purchased through the VMware Solutions console and for Kyndryl bring your own license (BYOL) clients. This support does not cover your own BYOL.
+This support is only for VMware NSX–V that was purchased through the {{site.data.keyword.vmwaresolutions_short}} console and for Kyndryl bring your own license (BYOL) clients. This support does not cover your own BYOL.
 
 On 21 June 2022, you can no longer provision new vCenter Server with NSX-V instances, but you can add hosts and clusters to your existing NSX–V deployments. IBM strongly recommends that you immediately assess your NSX–V networks and plan a much earlier migration to NSX–T.
 

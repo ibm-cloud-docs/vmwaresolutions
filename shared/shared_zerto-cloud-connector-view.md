@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-06-17"
+lastupdated: "2022-08-25"
 
 keywords: zerto, view zerto cloud connector
 
@@ -45,5 +45,5 @@ The ZCC can have different statuses.
 * [Accessing the Zerto Self-Service Portal](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal)
 * [Ordering a Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-order)
 * [Deleting Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-delete)
-* [Zerto Installation Guide for VMware vSphere Environments & Microsoft Hyper-V Environments](https://s3.amazonaws.com/zertodownload_docs/Latest/Zerto%20Virtual%20Replication%20Installation%20Guide%20for%20vSphere%20and%20Hyper-V.pdf){: external}
+* [Zerto for VMware vSphere](https://www.zerto.com/solutions/workloads-and-applications/vmware-vsphere/){: external}
 * [Zerto Support and Services](https://www.zerto.com/support-and-services/){: external}

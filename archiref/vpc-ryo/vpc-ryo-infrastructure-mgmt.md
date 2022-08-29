@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ Beginning in vSphere 7.0, vCenter Server contains all PSC services, preserving t
 
 When you deploy vCenter Server, you can select the size of the appliance.
 
-Public Gateway attached to the management subnet can be used to download updates for vCenter Server and ESXi hosts.
+Public Gateway attached to the management subnet can be used to download updates for vCenter Server and VMware ESXi™ hosts.
 
 ### vCenter Server cluster specification
 {: #vpc-ryo-infrastructuremgmt-vcenter-cluster}

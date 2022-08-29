@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,9 +16,9 @@ subcollection: vmwaresolutions
 # Architecture patterns for the vCenter Server deployment default connectivity options
 {: #arch-pattern-nsx-t-topology-overview}
 
-When you deploy a [VMware vCenter Server® instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) in your {{site.data.keyword.cloud}} classic infrastructure, the deployment consists of a number of network constructs and VMware® management components.
+When you deploy a [VMware vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) in your {{site.data.keyword.cloud}} classic infrastructure, the deployment consists of a number of network constructs and VMware® management components.
 
-This architecture pattern gives an overview for standard private and public connectivity options for a standard deployment. This pattern also includes an overview for the standard vCenter Server components, basic cluster types, and customer topologies deployed as part of the {{site.data.keyword.cloud_notm}} automation. 
+This architecture pattern gives an overview for standard private and public connectivity options for a standard deployment. This pattern also includes an overview for the standard VMware vCenter Server® components, basic cluster types, and customer topologies deployed as part of the {{site.data.keyword.cloud_notm}} automation. 
 
 ## VMware vCenter Server components overview
 {: #arch-pattern-nsx-t-topology-overview-vcs-comp}
@@ -30,10 +30,10 @@ When you deploy a vCenter Server instance in your {{site.data.keyword.cloud_notm
 The following steps summarize a standard deployment.
 
 1. Depending on the network preference selection, your instance is deployed with both public and private connectivity or private connectivity only.
-2. Upon your selection, a vCenter Server instance can be deployed with various bare metal server hardware options. You can select an initial deployment to include one consolidated cluster or separate management and workload clusters. You can optionally deploy an edge services cluster to host Juniper vSRX or your own routing or firewall device. The solution can be expanded after the initial deployment by adding more hosts to existing clusters, or by adding new clusters.
-3. Your clusters can have multiple datastores. You can use VMware vSAN with local SSDs or {{site.data.keyword.filestorage_full_notm}} (NFS), where you can have one or more LUNs with different performance and size characteristics. You can expand the volumes as your needs grow.
+2. Upon your selection, a vCenter Server instance can be deployed with various bare metal server hardware options. You can select an initial deployment to include one consolidated cluster or separate management and workload clusters. You can optionally deploy an edge services cluster to host Juniper® vSRX or your own routing or firewall device. The solution can be expanded after the initial deployment by adding more hosts to existing clusters, or by adding new clusters.
+3. Your clusters can have multiple datastores. You can use VMware vSAN™ with local SSDs or {{site.data.keyword.filestorage_full_notm}} (NFS), where you can have one or more LUNs with different performance and size characteristics. You can expand the volumes as your needs grow.
 4. The automation deploys a vCenter Server appliance on the management or consolidated cluster. Your vCenter Server will have an IP address from the {{site.data.keyword.cloud_notm}} classic infrastructure provided 10/8 address space.
-5. The automation deploys three NSX-T managers and a cluster is formed which uses NSX-T virtual IP for High Availability. Your NSX-T managers will have an IP address from the {{site.data.keyword.cloud_notm}} classic infrastructure provided 10/8 address space.
+5. The automation deploys three VMware NSX-T™ managers and a cluster is formed which uses NSX-T virtual IP for High Availability. Your NSX-T managers will have an IP address from the {{site.data.keyword.cloud_notm}} classic infrastructure provided 10/8 address space.
 6. The automation deploys an Active Directory for authentication and name resolution. You can select between a single Windows virtual server instance in {{site.data.keyword.cloud_notm}} IaaS hypervisor or two highly available dedicated Windows Server VMs (with bring your own license) on the VMware management cluster.
 7. The automation deploys four edge nodes in your deployment and forms two NSX-T edge clusters - Services edge cluster and Workload edge cluster.
 8. Services edge cluster will be used to host a services Tier 0 Gateway, which provides network connectivity services for your management components.

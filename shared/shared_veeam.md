@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-03-16"
+lastupdated: "2022-08-26"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -25,24 +25,23 @@ Service charges are incurred only if you choose to use the service.
 ## Veeam Availability Suite
 {: #shared_veeam-portal}
 
-The Veeam Availability Suite has visibility to back up VMs from any virtual data center in the organization. It is available at the VMware® vCloud Director organization level for any vCloud Director user with the **Organization Administrator** role.
+The Veeam Availability Suite has visibility to back up VMs from any virtual data center in the organization. It is available at the VMware® Cloud Director organization level for any VMware Cloud Director user with the **Organization Administrator** role.
 
 When you use the Veeam self-service portal to create backup jobs, you can choose vApp and VM instances from any virtual data center in the organization.
 
 You can access the Veeam portal on the virtual data center details page when the virtual data center is in the **Ready to use** state. For more information, see [Procedure to view the virtual data center summary](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary#shared_viewing-vdc-summary-procedure) or [Procedure to view virtual data center details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-details#shared_viewing-vdc-details-procedure).
 
-You must contact {{site.data.keyword.IBM}} Support to restore a backup of your data. For more information, see [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
-{: note}
-
 ### Procedure to access the Veeam self-service portal from the virtual data center
 {: #shared_veeam-portal-proc-access}
 
-1. Under **Recommended services** on the virtual data center details page, click **Veeam Backups**.
+1. Under **Recommended services** on the virtual data center details page, click **Veeam backups**.
 2. Use a user with the Organization Administrator role to log in to the Veeam self-service portal. A newly provisioned virtual data center's **admin** user has the role by default.
 
-For more information about generating the vCloud Director console credentials, see [Procedure to access the vCloud Director Management console](/docs/vmwaresolutions?topic=vmwaresolutions-shared_accessing-vcd-console#shared_accessing-vcd-console-procedure).
+For more information about generating the VMware Cloud Director console credentials, see [Procedure to access the VMware Cloud Director Management console](/docs/vmwaresolutions?topic=vmwaresolutions-shared_accessing-vcd-console#shared_accessing-vcd-console-procedure).
 
-Alternatively, click the menu under the user in the upper right of the vCloud Director tenant portal and select **Veeam Backup**.
+Alternatively, click **Menu** in the VMware Cloud Director tenant portal and select **Data Protection with Veeam**.
+
+Contact IBM Support if you do not see the **Data Protection with Veeam** option. In the subject for your issue, include **Request Veeam Self Service Portal for my Organization** and include your Organization ID and virtual data center name in your issue description. For more information, see [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
 
 ### Limitations for Veeam Availability Suite
@@ -105,7 +104,7 @@ For more information about using Veeam Cloud Connect, see the [Veeam Cloud Conne
 
 Restore points are automatically removed from the Veeam self-service portal when you delete a virtual data center. For more information, see [Deleting virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance).
 
-If you remove a vCloud Director virtual data center from your account, all backups and restore points that are associated with the virtual data center are deleted and cannot be recovered. If you remove all vCloud Director virtual data centers in your account, all backup operations are stopped.
+If you remove a VMware Cloud Director virtual data center from your account, all backups and restore points that are associated with the virtual data center are deleted and cannot be recovered. If you remove all VMware Cloud Director virtual data centers in your account, all backup operations are stopped.
 {: important}
 
 ## Related links

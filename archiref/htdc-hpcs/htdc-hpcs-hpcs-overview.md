@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-06-23"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,9 @@ subcollection: vmwaresolutions
 
 # IBM Hyper Protect Crypto Services overview
 {: #htdc-hpcs-hpcs-overview}
+
+New installations of Entrust DataControl® (formerly known as HyTrust DataControl) are no longer supported for new or existing deployments of vCenter Server® instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
+{: deprecated}
 
 IBM Hyper Protect Crypto Services (IBM HPCS) is a single-tenant key management service, backed by a FIPS140-2 level 4 certified Hardware Security Module (HSM), that supports Keep Your Own Key (KYOK). With IBM HPCS, you can move your most mission critical workloads to the {{site.data.keyword.cloud_notm}} while using the highest level of security to prevent unauthorized access to their sensitive data. You maintain complete control over their keys and data in the cloud and no one, including {{site.data.keyword.cloud_notm}} admins, has access to the customer data.
 

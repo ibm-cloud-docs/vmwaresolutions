@@ -118,8 +118,6 @@ toc:
               - vcenter/vc_orderinginstance-sys.md
               - vcenter/vc_orderinginstance-licensing.md
               - vcenter/vc_orderinginstance-cluster.md
-              - vcenter/vc_orderinginstance-bare-metal.md
-              - vcenter/vc_orderinginstance-storage.md
               - vcenter/vc_orderinginstance-edge.md
               - vcenter/vc_orderinginstance-network.md
               - vcenter/vc_orderinginstance-services.md
@@ -174,6 +172,7 @@ toc:
           - vsphere/vs_orderingbasedonexistingconfig.md
           - vsphere/vs_scalingexistingclusters.md
           - vsphere/vs_orderingforclustersoutside.md
+          - vsphere/vs_deletingclusters.md
       - topicgroup:
           label: VMware Regulated Workloads
           topics:
@@ -197,10 +196,16 @@ toc:
               - vcenter/vrw-orderinginstance-network.md
               - vcenter/vrw-orderinginstance-resource.md
               - vcenter/vrw-orderinginstance-services.md
+              - vcenter/vrw-orderinginstance-summary.md
               - vcenter/vrw-orderinginstance-procedure.md
           - vcenter/vrw-addingremovingservers.md
           - vcenter/vrw-addingviewingclusters.md
           - vcenter/vrw-view-delete-instance.md
+      - topicgroup:
+          label: IBM Cloud for VMware Cloud Foundation
+          topics:
+          - vpc-vcf/vpc-vcf-ovw.md
+          - vpc-vcf/vpc-vcf-deployment.md
       - topicgroup:
           label: Add-on services
           topics:
@@ -216,9 +221,9 @@ toc:
           - topicgroup:
               label: Entrust CloudControl
               topics:
-              - services/htcc_considerations.md
-              - services/htcc_ordering.md
-              - services/managinghtcc.md
+              - services/entrust-cc_considerations.md
+              - services/entrust-cc_ordering.md
+              - services/managing-entrust-cc.md
           - topicgroup:
               label: F5 BIG-IP
               topics:
@@ -331,13 +336,13 @@ toc:
           - topicgroup:
               label: Entrust DataControl
               topics:
-              - services/htdc_considerations.md
-              - services/managinghtdc.md
+              - services/entrust-dc_considerations.md
+              - services/managing-entrust-dc.md
           - topicgroup:
               label: Entrust KeyControl
               topics:
-              - services/htkc_considerations.md
-              - services/managinghtkc.md
+              - services/entrust-kc_considerations.md
+              - services/managing-entrust-kc.md
           - services/fsa_considerations.md
           - services/icp_overview.md
           - topicgroup:
@@ -371,10 +376,10 @@ toc:
           topics:
           - link:
               label: VMware Solutions API
-              href: https://cloud.ibm.com/apidocs/vmware-solutions
+              href: https://{DomainName}/apidocs/vmware-solutions
           - link:
               label: VMware Solutions Shared API
-              href: https://cloud.ibm.com/apidocs/vmware-solutions-shared
+              href: https://{DomainName}/apidocs/vmware-solutions-shared
       - vmonic/understand-responsib.md
       - topicgroup:
           label: Auditing
@@ -574,6 +579,20 @@ toc:
               - archiref/vpc-ryo/vpc-ryo-backingup.md
 
           - topicgroup:
+              label: VMware Cloud Foundation on VPC
+              topics:
+              - archiref/vpc-vcf/vpc-vcf-overview.md
+              - archiref/vpc-vcf/vpc-vcf-arch-overview.md
+              - archiref/vpc-vcf/vpc-vcf-architectures.md
+              - archiref/vpc-vcf/vpc-vcf-vpc-vmw.md
+              - archiref/vpc-vcf/vpc-vcf-hosts.md
+              - archiref/vpc-vcf/vpc-vcf-mgmt-appliances.md
+              - archiref/vpc-vcf/vpc-vcf-nsx-t.md
+              - archiref/vpc-vcf/vpc-vcf-nsx-t-logical-routers.md
+              - archiref/vpc-vcf/vpc-vcf-nsx-t-vpc-routing.md
+              - archiref/vpc-vcf/vpc-vcf-scaling.md
+
+          - topicgroup:
               label: Interconnectivity for VMware workloads on VPC
               topics:
               - archiref/vpc-interconnectivity/overview.md
@@ -712,6 +731,7 @@ toc:
           - vmonic/trbl_esxi_firewall_config_nfs.md
           - vmonic/trbl_sec_inst_not_visible.md
           - vmonic/trbl_add_ha_cluster_config.md
+          - vmonic/trbl_hcx_install_fail.md
           - vmonic/trbl_no_zerto_vra.md
           - vmonic/trbl_zerto_vra.md
           - vmonic/trbl_host_displays_warning_msg.md

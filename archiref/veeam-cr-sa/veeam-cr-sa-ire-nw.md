@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-06-01"
+lastupdated: "2022-08-24"
 
 subcollection: vmwaresolutions
 
@@ -51,16 +51,16 @@ When the IaaS is provisioned, the customer:
 
 The vSRX security policies enable the objectives that are listed in the following table:
 
-Rule Name | Sources | Destinations | Services | Action
-----------|---------|--------------|----------|-------
-Allow access to DMZ | Cyber Admins IPs | DMZ subnets | SSH, RDP | Allow
-Allow access to Instance Management | DMZ | Instance Management | SSH, HTTPS, TCP-9392, DNS | Allow
-Allow Veeam access to production environment | Veeam backup server IP | Production vSphere management networks | HTTPS | Allow
-Allow Veeam access to proxies | Veeam backup server IP | Production proxy network | SSH, TCP-6162, TCP-2500 - 3300 | Allow
-Allow proxy access to Linux hardened repository | Production proxy network | Linux Hardened repository IP | TCP-2500 - 3300 | Allow
-Allow ADDNS access to {{site.data.keyword.cloud_notm}} services | ADDNS IPs | DNS and NTP IPs | TCP/UDP-53, UDP-123 | Allow
-Allow access between vCenter Server subnets | vCenter Server subnets | vCenter Server subnets | Any | Allow
-Allow vCenter to KMIP | vCenter IP | {{site.data.keyword.cloud_notm}} endpoint service network | TCP 5696 | Allow
+| Rule Name | Sources | Destinations | Services | Action |
+|----------|---------|--------------|----------|-------|
+| Allow access to DMZ | Cyber Admins IPs | DMZ subnets | SSH, RDP | Allow |
+| Allow access to Instance Management | DMZ | Instance Management | SSH, HTTPS, TCP-9392, DNS | Allow |
+| Allow Veeam access to production environment | Veeam backup server IP | Production vSphere management networks | HTTPS | Allow |
+| Allow Veeam access to proxies | Veeam backup server IP | Production proxy network | SSH, TCP-6162, TCP-2500 - 3300 | Allow |
+| Allow proxy access to Linux hardened repository | Production proxy network | Linux Hardened repository IP | TCP-2500 - 3300 | Allow |
+| Allow ADDNS access to {{site.data.keyword.cloud_notm}} services | ADDNS IPs | DNS and NTP IPs | TCP/UDP-53, UDP-123 | Allow |
+| Allow access between vCenter Server subnets | vCenter Server subnets | vCenter Server subnets | Any | Allow |
+| Allow vCenter to KMIP | vCenter IP | {{site.data.keyword.cloud_notm}} endpoint service network | TCP 5696 | Allow |
 {: caption="Table 1. vSRX security policies objectives" caption-side="bottom"}
 
 * TCP-9392 - TCP port number used by Veeam remote console to access the Veeam server.
@@ -100,12 +100,12 @@ To enable cyber-related tasks on the cyberbackups, such as scanning backup files
    * Name: Cyber-Isolated-Segments, Criteria: Segment Tag Equals Isolated-Segments, Scope: Cyber
 * Creates a distributed firewall policy that is named Cyber-Isolated, which contains the following rules to satisfy their isolation requirements:
 
-Rule Name | Sources | Destinations | Services | Action
-----------|---------|--------------|----------|-------
-Allow access to Isolated | Cyber-Tools-Segments | Cyber-Isolated-Segments | All | Allow
-Allow access between Isolated | Cyber-Isolated-Segments | Cyber-Isolated-Segments | All | Allow
-Deny access to Isolated | Any | Cyber-Isolated-Segments | All | Deny
-Deny access from Isolated | Any | Cyber-Isolated-Segments | All | Deny
+| Rule Name | Sources | Destinations | Services | Action |
+| ----------|---------|--------------|----------|------- |
+| Allow access to Isolated | Cyber-Tools-Segments | Cyber-Isolated-Segments | All | Allow |
+| Allow access between Isolated | Cyber-Isolated-Segments | Cyber-Isolated-Segments | All | Allow |
+| Deny access to Isolated | Any | Cyber-Isolated-Segments | All | Deny |
+| Deny access from Isolated | Any | Cyber-Isolated-Segments | All | Deny |
 {: caption="Table 2. NSX-T distributed firewall rules" caption-side="bottom"}
 
 When a sandbox is required, the customer uses their preferred scripting tool to automatically:

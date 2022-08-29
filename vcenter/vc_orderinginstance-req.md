@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-09"
+lastupdated: "2022-06-30"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -29,7 +29,7 @@ New deployments of vCenter Server multizone instances are not supported.
 Ensure that you complete the following tasks:
 * If you are ordering an instance for the first time, complete the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
 * Review the information in [Requirements and planning for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning).
-* Review the instance and domain name format. The domain name is used to generate the username and server names of the instance.
+* Review the domain name format. The domain name is used to generate the username and server names of the instance.
 
 The subdomain label is not used for VMware vSphere® 7.0 instances.
 {: note}

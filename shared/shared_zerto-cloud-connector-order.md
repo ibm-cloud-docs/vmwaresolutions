@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-08-25"
 
 keywords: zerto, order zerto cloud connector
 
@@ -37,7 +37,7 @@ Optionally order Zerto Cloud Connector (ZCC) as an enhanced Zerto option to link
    1. In the **Zerto Cloud Connector (ZCC)** table, expand **Pairing token**.
    2. Click **Generate token**. The generated token link expires in 48 hours and a new token is generated.
    3. Click the **Copy** icon ![Copy icon](../../icons/copy.svg "Copy") to copy the pairing token key.
-   4. From the on-premises site, use the pairing token key to link the on-premises virtual data centers to {{site.data.keyword.cloud_notm}}. For more information, see [Pairing Sites to Enable Replicating From One Site to Another Site](https://s3.amazonaws.com/zertodownload_docs/Latest/Zerto%20Virtual%20Replication%20Zerto%20Cloud%20Manager%20%28ZCM%29%20Online%20Help/content/zvr_quick_start_vc/pairing_sites_to_enable_replicating_from.htm){: external}.
+   4. From the on-premises site, use the pairing token key to link the on-premises virtual data centers to {{site.data.keyword.cloud_notm}}. For more information, see [Zerto technical documentation](https://help.zerto.com/category/WmWare_9.5){: external}.
 
 ## Related links
 {: #shared_zerto-cc-order-related}
@@ -47,5 +47,5 @@ Optionally order Zerto Cloud Connector (ZCC) as an enhanced Zerto option to link
 * [Accessing the Zerto Self-Service Portal](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal)
 * [Viewing Zerto Cloud Connector details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-view)
 * [Deleting Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-delete)
-* [Zerto Installation Guide for VMware vSphere Environments & Microsoft Hyper-V Environments](https://s3.amazonaws.com/zertodownload_docs/Latest/Zerto%20Virtual%20Replication%20Installation%20Guide%20for%20vSphere%20and%20Hyper-V.pdf){: external}
+* [Zerto for VMware vSphere](https://www.zerto.com/solutions/workloads-and-applications/vmware-vsphere/){: external}
 * [Zerto Support and Services](https://www.zerto.com/support-and-services/){: external}

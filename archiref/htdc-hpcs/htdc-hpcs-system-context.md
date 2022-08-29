@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-07-13"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,9 @@ subcollection: vmwaresolutions
 
 # System context
 {: #htdc-hpcs-system-context}
+
+New installations of Entrust DataControl® (formerly known as HyTrust DataControl) are no longer supported for new or existing deployments of vCenter Server® instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
+{: deprecated}
 
 The following diagram shows the system context for vCenter Server instance with Entrust DataControl® and IBM Hyper Protect Crypto Services. A system context diagram is a high-level diagram that provides an initial view of the system. It defines the key elements of a system, the boundary of the system, and the entities that interact with it, along with the interaction.
 
@@ -62,4 +65,4 @@ The system context diagram identifies the following systems:
 {: #htdc-hpcs-system-context-related}
 
 *  [Getting started with {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started)
-*  [Entrust DataControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
+*  [Entrust DataControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations)

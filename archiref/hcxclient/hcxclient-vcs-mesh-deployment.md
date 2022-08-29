@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ Review the following steps to configure the VMware HCX™ Client instance.
 ### Results
 {: #hcxclient-vcs-mesh-deployment-sitepair-results}
 
-The Site Pairing is registered and displayed on the UI.
+The Site Pairing is registered and displayed on the user interface.
 
 ## Creating HCX on-premises profiles
 {: #hcxclient-vcs-mesh-deployment-profiles}
@@ -117,7 +117,7 @@ Adding a Service Mesh initiates the deployment of HCX Interconnect virtual appli
 ## Network stretching
 {: #hcxclient-vcs-mesh-deployment-network-stretching}
 
-To stretch a network (VLAN or VXLAN) with HCX, complete the following steps from the client-side vCenter web UI.
+To stretch a network (VLAN or VXLAN) with HCX, complete the following steps from the client-side vCenter web user interface.
 1. Log in to the vSphere Web Client.
 2. From the **Home** menu, select the **HCX** option.
 3. In the left menu, under **Services**, click **Network Extension**.

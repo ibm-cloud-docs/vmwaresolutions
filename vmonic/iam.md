@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-08-26"
 
 keywords: IAM user, user role, user permission, IAM access for vmwaresolutions, permissions for vmwaresolutions, identity and access management for vmwaresolutions, roles for vmwaresolutions, actions for vmwaresolutions, assigning access for vmwaresolutions
 
@@ -83,7 +83,7 @@ You can choose from the following options when you assign resource access.
 {: #iam-roles-user-access-all-procedure}
 
 1. In the console, go to **Manage > Access(IAM)**.
-2. Click **Users** from the left navigation pane. 
+2. Click **Users** from the left navigation pane.
 3. From the row for the user that you want to assign access, select the **Actions** menu, and click **Assign access**.
 4. Click **Access policies** and select **VMware Solutions** from the **Service** table. Then, click **Next**.
 5. Select the resource to receive access and click **Next**.
@@ -119,12 +119,12 @@ There are two common ways to assign access in the console:
 For step-by-step instructions for assigning, removing, and reviewing access, see [Assigning access to resources by using the API](/docs/account?topic=account-assign-access-resources&interface=api) or the [Create a policy API docs](/apidocs/iam-policy-management#create-policy). Role cloud resource names (CRN) in the following table are used to assign access with the API.
 
 
-| Role name | Role description | Role CRN | 
+| Role name | Role description | Role CRN |
 |---------------|-----------------|-----------------|
 | Viewer                 | As a viewer, you can view service instances, but you can't modify them.    | `crn:v1:bluemix:public:iam::::role:Viewer`        |
-| Administrator               | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users.    | `crn:v1:bluemix:public:iam::::role:Administrator`      | 
-| Operator                 | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard.    | `crn:v1:bluemix:public:iam::::role:Operator`        | 
-| Editor          | As an editor, you can perform all platform actions except for managing the account and assigning access policies.    | `crn:v1:bluemix:public:iam::::role:Editor` | 
+| Administrator               | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users.    | `crn:v1:bluemix:public:iam::::role:Administrator`      |
+| Operator                 | As an operator, you can perform platform actions that are required to configure and operate service instances, such as viewing a service's dashboard.    | `crn:v1:bluemix:public:iam::::role:Operator`        |
+| Editor          | As an editor, you can perform all platform actions except for managing the account and assigning access policies.    | `crn:v1:bluemix:public:iam::::role:Editor` |
 {: caption="Table 3. Role ID values and description for API use" caption-side="bottom"}
 {: #iam-rolescrn-table}
 
@@ -134,7 +134,7 @@ Use `<programmatic_service_name>` for the service name, and refer to the Role ID
 {: tip}
 
 ```curl
-curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' 
+curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
 -d '{
   "type": "access",
   "description": "Viewer role for vmware solutions service instance",
@@ -186,4 +186,4 @@ For your existing instances that were deployed in V2.4 and earlier releases, you
 * [Inviting users to an account](/docs/account?topic=account-iamuserinv)
 * [What is {{site.data.keyword.cloud_notm}} IAM](/docs/account?topic=account-iamoverview)
 * [Locating an IAM account administrator](/docs/vmwaresolutions?topic=vmwaresolutions-iam_verify_permissions)
-* [Roles and permissions for vCloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui)
+* [Roles and permissions for VMware Cloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui)

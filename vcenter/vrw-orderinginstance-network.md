@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-02-01"
+lastupdated: "2022-07-19"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -17,6 +17,11 @@ subcollection: vmwaresolutions
 # Network interface
 {: #vrw-orderinginstance-network-interface}
 
+You must specify the following network interface settings when you order a VMware vCenter Server® instance.
+
+## Hostname prefix
+{: #vrw-orderinginstance-hostname-prefix}
+
 The hostname prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
@@ -25,6 +30,9 @@ The hostname prefix must meet the following requirements:
 
 The hostname prefix applies to all hosts in the instance.
 {: note}
+
+## Domain name
+{: #vrw-orderinginstance-domain-name}
 
 The domain name must meet the following requirements:
 * The domain name must consist of three or more strings that are separated by a period (.) with a maximum of 50 characters.

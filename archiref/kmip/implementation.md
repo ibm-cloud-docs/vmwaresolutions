@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-08-10"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ If you are using vSAN™ encryption, plan to use one root key in Key Protect or 
 
 If you are using vSphere encryption, plan to use one root key, one standard key per vSphere cluster, and one standard key per encrypted virtual machine (VM).
 
-Key Protect and Hyper Protect Crypto Services are available in multizone regions (MZRs) only. Hyper Protect Crypto Services (HPCS) is available in selected MZRs only. KMIP for VMware® is automatically deployed in the same region as your Key Protect or HPCS instance. vCenter Server can tolerate high latency to the KMIP service, so distance is usually not be a cause for concern.
+Key Protect and Hyper Protect Crypto Services are available in multizone regions (MZRs) only. Hyper Protect Crypto Services (HPCS) is available in selected MZRs only. KMIP for VMware® is automatically deployed in the same region as your Key Protect or HPCS instance. VMware vCenter Server can tolerate high latency to the KMIP service, so distance is usually not be a cause for concern.
 
 ## Connecting the key management server
 {: #kmip-implementation-connecting-kms}
@@ -39,16 +39,16 @@ To enable vSphere encryption or vSAN encryption by using KMIP for VMware, you ne
 5. [Create a KMIP for VMware instance](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_ordering) from the {{site.data.keyword.vmwaresolutions_short}} console.
 6. If you are using HPCS, create an IAM service authorization for your KMIP for VMware instance to your HPCS instance. Grant your KMIP for VMware instance both Platform **Viewer** access and Service **VMware KMIP Manager** access to your HPCS instance.
 7. Configure your KMIP for VMware instance to connect to your Key Protect or HPCS instance and select which CRK to use with KMIP.
-8. Within VMware vCenter, create a key provider cluster.
+8. Within vCenter Server, create a key provider cluster.
    1. If you are using Key Protect, configure this cluster with two servers, one for each KMIP for VMware endpoint in your chosen region.
    2. If you are using HPCS, configure this cluster to connect to the hostname and port that is uniquely assigned to your KMIP for VMware instance.
-9. Select one of VMware&rsquo;s methods to generate or install a KMS client certificate in vCenter.
-10. Export the public version of the certificate and configure it as an allowed client certificate in your KMIP for VMware instance.
+9. Select one of VMware methods to generate or install a KMS client certificate in vCenter Server.
+10. Export the public version of the certificate and configure it as an allowed client certificate in your KMIP for VMware instance. The key manager instance has a maximum interval of 5 minutes to get the configured client certificates. Therefore, if you are unable to build KMS trust to vCenter Server, wait for 5 minutes and try again.
 
 ## Enabling encryption
 {: #kmip-implementation-enable-encrypt}
 
-To use vSAN encryption, edit the vSAN general settings in your vCenter cluster and select the encryption checkbox.
+To use vSAN encryption, edit the vSAN general settings in your vCenter Server cluster and select the encryption checkbox.
 
 The vSAN health check might send periodic warnings that it is unable to connect to the KMS cluster from one or more of your vSphere hosts. These warnings occur because the vSAN health check connection times out too quickly. You can ignore these warnings. For more information, see [vSAN KMS Health Check intermittently fails with SSL handshake timeout error](https://kb.vmware.com/s/article/67115){: external}.
 {: note}
@@ -60,9 +60,8 @@ To use vSphere encryption, edit your VM storage policies to require disk encrypt
 
 Rotate your [Key Protect](/docs/key-protect?topic=key-protect-rotate-keys#rotate-keys) or [Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-rotate-keys) customer root key (CRK) by using the {{site.data.keyword.cloud_notm}} console or API.
 
-For VMware vSAN encryption, rotate your VMware key&ndash;encrypting keys (KEKs) and optionally data&ndash;encrypting keys (DEKs) from the vSAN general settings in your vCenter cluster.
-
-For VMware vSphere encryption, rotate your VMware KEKs and DEKs (optionally) by using the **Set-VMEncryptionKey** PowerShell command.
+* For VMware vSAN encryption, rotate your VMware key encryption keys (KEKs) and optionally data encryption keys (DEKs) from the vSAN general settings in your vCenter Server cluster.
+* For VMware vSphere encryption, rotate your VMware KEKs and DEKs (optionally) by using the **Set-VMEncryptionKey** PowerShell command.
 
 ## Key revocation
 {: #kmip-implementation-key-revocation}

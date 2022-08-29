@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-20"
+lastupdated: "2022-07-26"
 
 subcollection: vmwaresolutions
 
@@ -57,7 +57,7 @@ You are responsible for securing, encrypting, and monitoring your VMware instanc
 - Plan and implement appropriate application load balancing and security solutions, such as [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations).
 - Plan and implement appropriate security information and event management (SIEM) solutions, such as [IBM QRadar](https://www.ibm.com/us-en/marketplace/hosted-security-intelligence).
 - Plan and implement appropriate vulnerability scanning.
-- Use solutions such as [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations) to plan and implement appropriate change management, approval, auditing, and access control for your instance.
+- Use solutions such as [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations) to plan and implement appropriate change management, approval, auditing, and access control for your instance.
 
 ## Customization
 {: #solution_considerations-custom}
@@ -125,7 +125,7 @@ In addition to capacity planning, complete the following to ensure that your sto
    - RAID 1 provides better performance and smaller windows of susceptibility to sequential failure, such as shorter rebuild time, than RAID 5. However, RAID 5 has less storage overhead.
    - RAID 6 provides protection against dual failures, but requires a minimum of six hosts compared to four hosts for RAID 5.
 - To add more storage to your vSAN cluster, you must add new hosts to the cluster or add {{site.data.keyword.cloud_notm}} Endurance NFS storage instead. Adding disks to the existing hosts is not currently supported.
-- If you mount additional {{site.data.keyword.cloud_notm}} Endurance NFS storage to your cluster, ensure that you follow the architecture guidance and configure host routes to the storage that uses the `SDDC-DPortGroup-NFS` port group addresses. You must authorize these addresses, rather than the hosts themselves, to the storage. For more information, see [Attached storage infrastructure management](/docs/vmwaresolutions?topic=vmwaresolutions-storage-infra-mgmt#storage-infra-mgmt-vsphere-routing).
+- If you mount additional {{site.data.keyword.cloud_notm}} Endurance NFS storage to your cluster, ensure that you follow the architecture guidance and configure host routes to the storage that uses the cluster's NFS port group addresses. You must authorize these addresses, rather than the hosts themselves, to the storage. For more information, see [Attached storage infrastructure management](/docs/vmwaresolutions?topic=vmwaresolutions-storage-infra-mgmt#storage-infra-mgmt-vsphere-routing).
 
 ## Related links
 {: #solution_considerations-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -23,19 +23,19 @@ The following main principles or requirements apply:
 ## NSX-T role mapping
 {: #vrw-iam-nsxt-rolemapping}
 
-NSX-T component | Auditor | Infrastructure admin |
---------------- |-------- |--------------------- |
-Controllers     | Read | Full |
-Transport Nodes | Read | Full |
-Edge Nodes      | Read | Full |
-Segments - VLAN | Read | Full |
-Segments - Overlay | Read | Full |
-T0 - Tenant     | Read | Full |
-T0 - Transit    | Read| Full |
-T0 - Management | Read | Full |
-T1s - Tenant    | Read | Full |
-T1s - Services | Read | Full |
-T1s - Management | Read | Full |
+| VMware NSX-T™ component | Auditor | Infrastructure admin |
+| --------------- |-------- |--------------------- |
+| Controllers     | Read | Full |
+| Transport Nodes | Read | Full |
+| Edge Nodes      | Read | Full |
+| Segments - VLAN | Read | Full |
+| Segments - Overlay | Read | Full |
+| T0 - Tenant     | Read | Full |
+| T0 - Transit    | Read| Full |
+| T0 - Management | Read | Full |
+| T1s - Tenant    | Read | Full |
+| T1s - Services | Read | Full |
+| T1s - Management | Read | Full |
 {: caption="Table 1. NSX-T role mapping" caption-side="bottom"}
 
 The roles and privileges for load balancing, firewall rules, and VPN services follow the T0/T1 roles and privileges.
@@ -43,7 +43,7 @@ The roles and privileges for load balancing, firewall rules, and VPN services fo
 ## NSX-T roles
 {: #vrw-iam-nsxt-roles}
 
-NSX-T™ Data Center has the following built-in roles. You cannot add any new roles.
+NSX-T Data Center has the following built-in roles. You cannot add any new roles.
 * Enterprise administrator
 * Auditor
 * Network engineer
@@ -72,6 +72,6 @@ For more information, see the [VMware documentation - RBAC for NSX-T](https://do
 {: #vrw-iam-nsxt-related}
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
-* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
+* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
+* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations)
 * [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)

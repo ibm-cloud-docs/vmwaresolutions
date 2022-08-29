@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for single site vCenter Server deployment topologies 
 {: #arch-pattern-deployment-single-site}
 
-{{site.data.keyword.cloud}} for VMware® Solutions Dedicated instances offer a standard initial topology with a single management or converged cluster. It includes a vCenter, three NSX-T managers, and an Active Directory™ deployment. They run either on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or on two VMware virtual machines (VMs) in a high availability deployment. The initial deployment also includes a standard NSX-T topology. 
+{{site.data.keyword.vmwaresolutions_full}} Dedicated instances offer a standard initial topology with a single management or converged cluster. It includes a vCenter, three VMware NSX-T™ managers, and an Active Directory™ deployment. They run either on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or on two VMware virtual machines (VMs) in a high availability deployment. The initial deployment also includes a standard NSX-T topology. 
 
 You have several options to expand the capacity for the deployment by provisioning new hosts on the initial cluster or by adding new clusters. This pattern provides a few examples on how to expand and customize the initial deployment for a few use cases to fit your needs.
 
@@ -36,7 +36,7 @@ The following diagram shows an example of a customer deployment by using the sta
 2. If you select an optional edge services cluster, the vCenter Server automates two ESXi hosts by using {{site.data.keyword.cloud_notm}} bare metal server and forms a new vSphere cluster in your deployment. These ESXi hosts can be used to host, for example, Juniper vSRX virtual router and firewall appliances. This cluster hosts also behave such as [{{site.data.keyword.cloud_notm}} gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about), which allows you to assign and route VLANs through the router or firewall that is hosted on the cluster.
 3. You can add new vSphere clusters to increase the compute capacity for your workloads. You can add vSphere clusters with different host specifications, and define how to functionally position these clusters and what workloads are run on each cluster.
 4. You can add NFS based {{site.data.keyword.filestorage_full_notm}} to your clusters. You can add one or more file shares and configure them individually by selecting the performance (IOPS) and size (GB) for each.
-5. You can also use vSAN with your vSphere clusters. When using vSAN, due to the nature of dedicated local storage, you must select vSAN option when ordering the cluster.
+5. You can also use vSAN™ with your vSphere clusters. When using vSAN, due to the nature of dedicated local storage, you must select vSAN option when ordering the cluster.
 6. The hosts in the specific data center or POD are attached to VLANs and subnets that are local to that {{site.data.keyword.cloud_notm}} data center or POD. These VLANs and subnets cannot be extended or moved to other {{site.data.keyword.cloud_notm}} data centers. However, these subnets can communicate with subnets that are provisioned to another {{site.data.keyword.cloud_notm}} center over {{site.data.keyword.cloud_notm}} private network. 
 
 ## Extending a single-site vCenter Server deployment to another data center

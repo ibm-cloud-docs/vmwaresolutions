@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ Common Services provide the services that are used by other services in the Clou
 ### vCenter Single Sign-On
 {: #vpc-ryo-commonservice-vcenter}
 
-The vCenter® Server includes a built-in identity provider, which is a service that manages identity sources and authenticates principals. Identity Source (Directory Service) stores and manages principals. Principals consist of a collection of attributes about a user or service account such as name, address, email, and group membership. The internal (local) LDAP repository in vCenter Server contains user identities, groups, and configuration data.
+The VMware vCenter Server® includes a built-in identity provider, which is a service that manages identity sources and authenticates principals. Identity Source (Directory Service) stores and manages principals. Principals consist of a collection of attributes about a user or service account such as name, address, email, and group membership. The internal (local) LDAP repository in vCenter Server contains user identities, groups, and configuration data.
 
 ### Microsoft Active Directory
 {: #vpc-ryo-commonservice-msad}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-08-16"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -22,7 +22,9 @@ For single-zone VMware® instances with a customizable consolidated cluster, you
 ## Cluster name
 {: #vrw-orderinginstance-wkld-cluster-name}
 
-By default, the workload cluster name is set to **vrw-_xx_-workload** for single-zone VMware virtual data centers and is set to **mcv-_xx_-workload** for multizone VMware virtual data centers. You can also specify a new name for the workload cluster. The cluster name must meet the requirements that are listed in [Cluster name requirements](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance#vrw-orderinginstance-cluster-name-req).
+By default, the workload cluster name is set to **vrw-_xx_-workload** for single-zone VMware virtual data centers and is set to **mcv-_xx_-workload** for multizone VMware virtual data centers.
+
+{{site.data.content.orderinginstance-cluster-name-list}}
 
 ## Workload capacity
 {: #vrw-orderinginstance-wkld-capacity}

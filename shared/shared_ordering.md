@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-08-22"
 
 keywords: shared order resource, order on demand shared, order on demand resources
 
@@ -40,7 +40,7 @@ The pricing plan is based on your selection of **On-demand** or **Reserved**.
 For the on-demand offering, virtual data center virtual CPU (vCPU) and RAM are allocated as needed. The amount of time that the allocation takes depends on global usage of the virtual data center vCPU and RAM.
 
 * The limits that are established for the amount of vCPU and RAM are maximum values that can be used at any time.
-* vCPU and RAM resources can be increased and decreased later as required.
+* You can increase and decrease the vCPU and RAM resources on a virtual data center later as required.
 * The price is calculated hourly and it is based on the resource usage in the virtual data center.
 * The amount of storage that can be allocated and used in the virtual data center is limited to 200 TB for each storage policy. Charges are hourly based on GB of allocated storage.
 * The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB.
@@ -190,10 +190,10 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ## What to do next
 {: #shared_ordering-next}
 
-View the virtual data center that you ordered and then set the **admin** password for the vCloud Director Management console. For more information, see [Viewing and managing virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary).
+View the virtual data center that you ordered and then set the **admin** password for the VMware Cloud Director Management console. For more information, see [Viewing and managing virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary).
 
 ## Related links
 {: #shared_ordering-related}
 
 * [Operating VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware vCloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}
+* [VMware Cloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}

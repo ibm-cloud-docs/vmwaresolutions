@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2021
+  years:  2019, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-08-24"
 
 keywords: primary io hdm, hdm intro, tech specs hdm
 
@@ -83,7 +83,7 @@ The following components belong to HDM on-premises.
 {: #managing_pio-onprem-netw}
 
 * **Connectivity**
-   * \>1 Gbps internet of cloud Interconnect
+   * More than 1 Gbps Internet of Cloud Interconnect
    * Network Latencies < 30 msec
    * One private subnet for HDM components with access to cloud Interconnect or WAN link, vCenter Management Network, and vMotion network.
 
@@ -128,4 +128,4 @@ The following components belong to HDM on {{site.data.keyword.cloud_notm}}.
 {: #managing_pio-related}
 
 * [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [PrimaryIO Hybrid Cloud Data Management](https://www.primaryio.com/){: external}
+* [PrimaryIO Hybrid Cloud Data Management](https://www.primaryio.com/hybrid-cloud-data-management/){: external}

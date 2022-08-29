@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-08-16"
 
 subcollection: vmwaresolutions
 
@@ -54,7 +54,7 @@ Your existing vCenter server environment might differ from the previous due to a
 * You have extra optional services, such as Caveonix, vRealize Operations™ Manager, and vRealize Log Insights™.
 * You select a different option for the Veeam service as three options are available. This solution architecture does not dictate the VM option for the Veeam service. VSI or bare metal are also available. For more information, see [Veeam v11 overview](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
 * You expand your Veeam services from a simple deployment "all-in-one" to an advanced deployment by deploying extra Veeam components on different servers.
-* You select a different ADDNS option. This solution architecture does not dictate the type of option, either two VMs or single VSI are available. For more information, see [Domain Name System Configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance#vc_orderinginstance-dns-config).
+* You select a different ADDNS option. This solution architecture does not dictate the type of option, either two VMs or single VSI are available. For more information, see [Domain Name System Configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings#vc_orderinginstance-dns-config).
 
 If you have a vCenter Server instance that is deployed with the Veeam service added and Veeam is version 11, then this is a suitable base topology for the immutable backup solution architecture. The immutable backup solution architecture consists of:
 

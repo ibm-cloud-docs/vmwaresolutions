@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-13"
+lastupdated: "2022-08-25"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -73,7 +73,7 @@ The following table provides information about the VMware HCX™ ports.
 {: caption="Table 4. VMware HCX ports" caption-side="bottom"}
 
 ## Ports for Entrust CloudControl, Entrust DataControl, and Entrust KeyControl
-{: #vmwaresol_ports-vmware-optional-services-hytrust}
+{: #vmwaresol_ports-vmware-optional-services-entrust}
 
 The following table provides information about the Entrust CloudControl™, Entrust DataControl®, and Entrust KeyControl™ ports.
 
@@ -201,7 +201,7 @@ The following table provides information about the vRealize Operations™ and vR
 For more information about port requirements for vROPs, see [TCP and UDP ports required to access VMware vRealize Operations Manager](https://kb.vmware.com/s/article/52964){: external}.
 
 ## Ports for Zerto
-{: #vmwaresol_ports-vmware-optional-services-zert0}
+{: #vmwaresol_ports-vmware-optional-services-zerto}
 
 The following table provides information about Zerto ports.
 
@@ -212,7 +212,7 @@ The following table provides information about Zerto ports.
 | ZVM VSI | Private primary subnet \n Infrastructure VMs | Zerto VRA agents | New subnet ordered in private VLAN | | ICMP | Check network connectivity from ZVM to the VRAs | Ping |
 {: caption="Table 12. Zerto ports" caption-side="bottom"}
 
-For more information about Zerto networking, see [Zerto - prerequisites and requirements for vSphere environments](http://s3.amazonaws.com/zertodownload_docs/Latest/Zerto%20Virtual%20Replication%20vSphere%20Enterprise%20Guidelines.pdf){: external}.
+For more information about Zerto networking, see [Zerto - prerequisites and requirements for vSphere environments](https://help.zerto.com/bundle/Prereq.VC.HTML/page/Content/Ent_Guide_VC/Prerequisites_Requirements_vSphere_Environments.htm ){: external}.
 
 ## Related links
 {: #vmwaresol_ports-related}

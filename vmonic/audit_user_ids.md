@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2022
 
-lastupdated: "2022-04-18"
+lastupdated: "2022-07-12"
 
 keywords: user IDs vCenter, PSC user, user ID service
 
@@ -65,7 +65,6 @@ HTTP is used for vCenter setup, configuration, and VMware operations such as add
 | IBM      | `automation`  | Used to add a host, add a VM for service, and set up Active Directory™ and DNS entries. |
 | Customer | `administrator` | Created for customer use only. |
 {: caption="Table 4. Microsoft® Active Directory user IDs" caption-side="bottom"}
-
 
 ## Service user IDs
 {: #audit_user_ids-services}

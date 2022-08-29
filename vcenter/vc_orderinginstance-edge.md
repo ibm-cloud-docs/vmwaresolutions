@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-09"
+lastupdated: "2022-08-16"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -25,7 +25,7 @@ The data center of the consolidated cluster must be available for edge services 
 ## Cluster name
 {: #vc_orderinginstance-edge-cluster-name}
 
-The cluster name must meet the requirements that are listed in [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance#vc_orderinginstance-cluster-name).
+The cluster name must meet the requirements that are listed in [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consoldworkldcluster-settings#vc_orderinginstance-consoldworkldcluster-cluster-name).
 
 ## CPU model
 {: #vc_orderinginstance-edge-cluster-cpu}
@@ -44,6 +44,13 @@ You can select different values between 64 GB and 1.5 TB.
 
 The number of servers is set to two and cannot be changed. Both servers have the same configuration.
 
+## Uplink speed
+{: #vc_orderinginstance-edge-cluster-uplink}
+
+{{site.data.content.uplink-speed-options-cascadelake-list}}
+
+{{site.data.content.simpletable-uplink-speed-locations}}
+
 ## Networking type
 {: #vc_orderinginstance-edge-cluster-private-nics}
 
@@ -52,5 +59,5 @@ Select either **Public and private network** or **Private network only** for the
 ## Related links
 {: #vc_orderinginstance-edge-related}
 
-* [Network interface settings](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings)
+* [Network interface](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings)
 * [Procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)

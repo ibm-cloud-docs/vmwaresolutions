@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-14"
+lastupdated: "2022-08-26"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Licensing settings
+# Licensing
 {: #vs_orderinginstances-licensing-settings}
 
 Select the VMware® components to be ordered with your cluster and specify the licensing option for the components.
@@ -27,9 +27,9 @@ If you are an IBM® Business Partner user, you can select a component license bu
 | Bundle | Components |
 |:------ |:---------- |
 | Standard with Management | vSphere Enterprise Plus, VMware vCenter Server® Standard, vRealize® Log Insight™, vRealize Operations™ Enterprise |
-| Advanced | vSphere Enterprise Plus, vCenter Server Standard, vRealize Log Insight, vCloud Director, NSX® Base |
+| Advanced | vSphere Enterprise Plus, vCenter Server Standard, vRealize Log Insight, VMware Cloud Director, NSX® Base |
 | Advanced with Networking | vSphere Enterprise Plus, vCenter Server Standard, vRealize Log Insight, NSX Advanced |
-| Advanced with Networking and Management | vSphere Enterprise Plus, vCenter Server Standard, vRealize Log Insight, vRealize Operations Enterprise, vCloud Director, NSX Enterprise |
+| Advanced with Networking and Management | vSphere Enterprise Plus, vCenter Server Standard, vRealize Log Insight, vRealize Operations Enterprise, VMware Cloud Director, NSX Enterprise |
 {: caption="Table 1. IBM Business Partner component bundles for vSphere clusters" caption-side="bottom"}
 
 You can also include the following VMware® components in your order:
@@ -53,7 +53,7 @@ If you're a non-Business Partner, you can select the following components for yo
 * VMware vRealize Operation Enterprise
 * VMware vRealize Log Insight
 
-Small differences exist between NSX-T Data Center and Data Center SP editions. For more information, see [Product offerings for VMware NSX-T Data Center 3.1.x (80866)](https://kb.vmware.com/s/article/80866){: external}.
+Small differences exist between NSX-T Data Center and Data Center SP editions. For more information, see [Product offerings for VMware NSX-T Data Center 3.2.x](https://kb.vmware.com/s/article/86095){: external}.
 
 The VMware vSAN component is not available when you order VMware vSphere Enterprise Plus 6. If you plan to use your own license for VMware vSphere Enterprise Plus 6, an {{site.data.keyword.cloud_notm}} infrastructure ticket is opened on your behalf. The ticket requests that the vSphere licenses of the ordered {{site.data.keyword.cloud_notm}} bare metal servers are replaced with your provided licenses.
 
@@ -73,5 +73,5 @@ You have the following options for licensing the selected VMware components:
 ## Related links
 {: #vs_orderinginstances-licensing-related}
 
-* [Bare metal server settings](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-bare-metal-settings)
+* [Bare metal server](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-bare-metal-settings)
 * [Procedure to order vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure#vs_orderinginstances-procedure-related)

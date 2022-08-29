@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-05-20"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,16 +16,16 @@ subcollection: vmwaresolutions
 # Business continuity
 {: #vrw-budr}
 
-{{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads provides business continuity only at the management and edge layers.
+{{site.data.keyword.cloud}} for VMware® Regulated Workloads provides business continuity only at the management and edge layers.
 
 ## Management cluster
 {: #vrw-budr-management}
 
-The management cluster relies upon native vSphere DRS capabilities to keep management services available to the platform administrators. Even with the configuration of the vSphere DRS features, manual intervention is sometimes necessary to restore access to management services. The use of shared storage minimizes the necessity of manual restoration activities if an ESXi host is lost.
+The management cluster relies upon native vSphere® DRS capabilities to keep management services available to the platform administrators. Even with the configuration of the vSphere DRS features, manual intervention is sometimes necessary to restore access to management services. The use of shared storage minimizes the necessity of manual restoration activities if an VMware ESXi™ host is lost.
 
 | System | Backup option | Frequency |
 |---|---|---
-|**Active Directory / DNS** | Image through the Veeam agent | Daily |
+|**Active Directory / DNS** | Image through the Veeam® agent | Daily |
 |**vCenter** | Backup server file| Daily |
 |**NSX-T™ Controllers** | Backup server file | Daily|
 |**vRealize Operations Manager** | VMDK through Veeam | Daily |
@@ -38,7 +38,7 @@ The management cluster relies upon native vSphere DRS capabilities to keep manag
 ### Veeam backup server
 {: #vrw-budr-management-veeam}
 
-Veeam on IBM Cloud™ delivers reliable backup for virtual machines (VMs) within the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads environment.
+Veeam on {{site.data.keyword.cloud_notm}} delivers reliable backup for virtual machines (VMs) within the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads environment.
 
 Veeam provides continuous backup of the management stack for protection against disasters. If corruption of any management stack component occurs, Veeam also provides rapid restoration to known good states. Veeam can also provide backup services for the workload cluster. The single site deployment must use the Veeam bare metal option to provide an acceptable backup repository.
 

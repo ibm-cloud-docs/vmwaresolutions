@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-08"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Networking services on IBM Cloud
 {: #nsx-networking_services}
 
-Networking services on {{site.data.keyword.cloud}} consists of two pairs of VMware NSX® Edge Services Gateways (ESGs) for communication between the {{site.data.keyword.cloud_notm}} and either the public internet or customer on-premises network through a Virtual Private Network (VPN). These ESGs are segregated to support internal {{site.data.keyword.cloud_notm}} management function and egress traffic, ingress of customer-related network traffic.
+Networking services on {{site.data.keyword.cloud}} consists of two pairs of VMware NSX® Edge Services Gateways (ESGs) for communication between the {{site.data.keyword.cloud_notm}} and either the public internet or customer on-premises network through a Virtual Private Network (VPN). These ESGs are separated to support internal {{site.data.keyword.cloud_notm}} management function and egress traffic, ingress of customer-related network traffic.
 
 The following graphic is a simplified network diagram, which depicts the pair of management and the pair of workload ESGs. It also shows an NSX Distributed Logical Router (DLR) and workload VXLAN. These components are intended to be an initial landing point for customer workloads without requiring the specific knowledge to set them up within NSX. A DLR is typically employed to route traffic between VMware vCenter Server® and East-West traffic, between separate layer 2 networks within the instance. This behavior is in contrast to an ESG, which functions to facilitate North-South network traffic that traverses in and out of the vCenter Server instance.
 
@@ -57,13 +57,13 @@ Outbound access is required to the following services:
 ### Edge interfaces
 {: #nsx-networking_services-edge-interfaces}
 
-The configuration of ESG interfaces defines what L2 networks the ESG has access to. For vCenter Server lifecycle management, it is required for specific VMs placed on the management VLAN are allowed to traverse to the public VLAN. The following interfaces are defined on deployment:
+The configuration of ESG interfaces defines what L2 networks the ESG has access to. For vCenter Server lifecycle management, specific VMs placed on the management VLAN must be allowed to traverse to the public VLAN. The following interfaces are defined on deployment:
 
 | Interface | Interface type | Connected to | Description |
 |:--------- |:-------------- |:------------ |:----------- |
-| Public Uplink | Uplink | **SDDC-DportGroup-External** | Public internet-facing interface |
-| Private Uplink | Uplink | **SDDC-DportGroup-Mgmt** | Internal private network-facing interface |
-| Internal | Internal | Workload HA VXLAN | Internal interface used for ESG HA pair heartbeat; portgroup on **SDDC-Dswitch-Private** |
+| Public Uplink | Uplink | `SDDC-DportGroup-External` | Public internet-facing interface |
+| Private Uplink | Uplink | `SDDC-DportGroup-Mgmt` | Internal private network-facing interface |
+| Internal | Internal | Workload HA VXLAN | Internal interface used for ESG HA pair heartbeat; `portgroup` on `SDDC-Dswitch-Private` |
 {: caption="Table 2. NSX ESG interface configuration" caption-side="bottom"}
 
 ### Subnets
@@ -99,7 +99,7 @@ The following configurations are recommended for any service that is using the m
 * The default gateway is a management ESG.
 * A static route is required for internal {{site.data.keyword.cloud_notm}} destinations.
 
-If there is a need for the service or VM to access the customer ESG, static routes must be maintained within the individual service or VM and pointed to the customer ESG.
+If you need for the service or VM to access the customer ESG, you must maintain static routes (within the service or VM) and point them to the customer ESG.
 
 No automatic routing protocols are configured for the Management ESG currently.
 
@@ -116,9 +116,7 @@ The Management HA pair requires a network for the connection of the internal int
 ### Firewall rules
 {: #nsx-networking_services-firewall-rules}
 
-By default, the Management ESG is configured to deny all traffic.
-
-**Deny:** To drop all traffic with no response when that traffic isn't allowed to traverse the firewall by any previous (higher in the order) rule or rule set. Automatic rule generation is selected to allow for control traffic to the ESG pair.
+By default, the Management ESG is configured to deny all traffic that is to drop all traffic with no response when that traffic isn't allowed to traverse the firewall by any previous (higher in the order) rule or rule set. Automatic rule generation is selected to allow for control traffic to the ESG pair.
 
 The following firewall rules are set, in addition to the automatically generated rules:
 
@@ -136,7 +134,7 @@ The following firewall rules are set, in addition to the automatically generated
 
 The IBM workload ESG is part of a simple topology that is intended for workload network communication. The following section describes the design intent of where to attach workloads to a network within a vCenter Server instance. This is a starting point for attaching on-premises networks and IP spaces to a particular vCenter Center instance and is the basis for a true Hybrid Cloud architecture.
 
-A customer network that is attached to both the public and private {{site.data.keyword.cloud_notm}} networks allows for workload access to and from internet-facing traffic. The network also allows for a site-to-site VPN to be created from either public or private {{site.data.keyword.cloud_notm}} networks. This allows for drastically decreased time to value regarding connecting to on-premises networks since it can take months to bring up a dedicated wide area network (WAN) due to customer security requirements. However, after a dedicated link is in place, you can flip the VPN over to traverse that link. This action doesn't affect the overlay network inside the VPN tunnel or within the vCenter Server instance. After this is done, the public interface for the workload ESG can be removed if needed from a security perspective.
+A customer network that is attached to both the public and private {{site.data.keyword.cloud_notm}} networks allows for workload access to and from internet-facing traffic. The network also allows for a site-to-site VPN to be created from either public or private {{site.data.keyword.cloud_notm}} networks. This allows for drastically decreased time to value regarding connecting to on-premises networks since it can take months to start a dedicated wide area network (WAN) due to customer security requirements. However, after a dedicated link is in place, you can flip the VPN over to traverse that link. This action doesn't affect the overlay network inside the VPN tunnel or within the vCenter Server instance. After this is done, the public interface for the workload ESG can be removed if needed from a security perspective.
 
 The topology in the following figure consists of the following NSX components:
 * NSX Edge appliance (ESG)
@@ -158,7 +156,9 @@ As with the management ESG, the configuration of ESG interfaces defines what L2 
 | Internal | Internal | Workload HA VXLAN | Internal interface used for ESG HA pair heartbeat |
 {: caption="Table 7. Workload Edge interface configuration" caption-side="bottom"}
 
-In this design, a DLR is employed to allow for potential East-West routing between local workload connected L2 networks. As this topology is intended to be a simple example, only one L2 network that is intended for workloads is described. Adding more security zones can be achieved by adding more VXLANs attached to new interfaces on the DLR. The following table shows the DLR interfaces to configure:
+In this design, a DLR is employed to allow for potential East-West routing between local workload connected L2 networks. As this topology is intended to be a simple example, only one L2 network that is intended for workloads is described. Adding more security zones can be achieved by adding more VXLANs attached to new interfaces on the DLR. 
+
+The following table shows the DLR interfaces to configure.
 
 | Interface | Interface type | Connected to | Description |
 |:--------- |:-------------- |:------------ |:----------- |
@@ -208,9 +208,7 @@ For more information about the configuration, see [Configure OSPF Protocol](http
 ### Firewall rules for the IBM workload NSX edge
 {: #nsx-networking_services-firewall-wkld}
 
-By default, the Workload ESG is configured to deny all traffic.
-
-**Deny:** To drop all traffic with no response when that traffic isn't allowed to traverse the firewall by any previous (higher in the order) rule or rule set. Automatic rule generation is selected to allow for control traffic to the ESG pair.
+By default, the Workload ESG is configured to deny all traffic, that is to drop all traffic with no response when that traffic isn't allowed to traverse the firewall by any previous (higher in the order) rule or rule set. Automatic rule generation is selected to allow for control traffic to the ESG pair.
 
 The following firewall rules are set, in addition to the automatically generated rules.
 

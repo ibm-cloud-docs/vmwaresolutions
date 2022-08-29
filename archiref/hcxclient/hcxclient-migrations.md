@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware Hybrid Cloud migrations
 {: #hcxclient-migrations}
 
-After the VMware HCX™ Service Mesh and Network Extensions are provisioned and extended, the next step is the migration of VMs.
+After the VMware HCX™ Service Mesh and Network Extensions are provisioned and extended, the next step is the migration of virtual machines (VMs).
 
 The following migration types exist:
 * vMotion
@@ -38,7 +38,7 @@ The vMotion capability within HCX extends the vSphere vMotion capability to work
 ### Concepts and best practices for vMotion
 {: #hcxclient-migrations-best-practices-vmotion}
 
-HCX is essentially a vMotion two-way proxy. Each instance of HCX emulates a single ESXi host within the vSphere data center, outside any clusters. The HCX instance is a “front” for the cloud gateway fleet component (CGW). A proxy host appears for each HCX site that is linked to the currently viewed site. When a vMotion is initiated to a remote host, the local ESXi host migrates that VM to the local proxy ESXi host.
+HCX is essentially a vMotion two-way proxy. Each instance of HCX emulates a single VMware ESXi™ host within the vSphere data center, outside any clusters. The HCX instance is a “front” for the cloud gateway fleet component (CGW). A proxy host appears for each HCX site that is linked to the currently viewed site. When a vMotion is initiated to a remote host, the local ESXi host migrates that VM to the local proxy ESXi host.
 
 A vMotion migration is initiated from the remote ESXi proxy host to the destination vSphere physical ESXi host, while it receives data from the source CGW across the tunnel. When vMotion is employed, unlike the bulk migration option, only a single VM migration operation runs at a time. As a result, for many VMs to be migrated, it is recommended to use vMotion only when downtime is not an option or if a risk in rebooting the VM exists. However, like standard vMotion, the VM can be live during the process.
 
@@ -129,7 +129,7 @@ After the migration lifecycle, test Development or staging applications before y
 ## Network swing
 {: #hcxclient-migrations-network-swing}
 
-If the goal is data center evacuation into the {{site.data.keyword.cloud_notm}}, then the next to last step before HCX removal is the network swing. Network swing achieves a migration of the network subnet that houses the migrated VMs from the source data center to an NSX overlay network within the {{site.data.keyword.cloud_notm}}.
+If the goal is data center evacuation into the {{site.data.keyword.cloud_notm}}, then the next to last step before HCX removal is the network swing. Network swing achieves a migration of the network subnet that houses the migrated VMs from the source data center to a VMware NSX® overlay network within the {{site.data.keyword.cloud_notm}}.
 
 Swinging the network involves the following steps:
 * Verify that the network is evacuated of all workloads and any non-VM networked devices are either moved to another network, functionally migrated to cloud, or deprecated.

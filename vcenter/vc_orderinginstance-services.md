@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-24"
+lastupdated: "2022-07-12"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -14,10 +14,32 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Services settings
+# Services
 {: #vc_orderinginstance-addon-services}
 
-When you order a VMware vCenter Server® instance, you can also order add-on services. For more information about the services, see [Available services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services).
+When you order a VMware vCenter Server® instance, you can also order add-on services. Review services that are recommended and optional with your vCenter Server instance.
+
+## Recommended services
+{: #vc_orderinginstance-addon-services-recomm}
+
+The following services are recommended with your vCenter Server instance. The recommended add-on services require configuration setup.
+* [Veeam 11](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
+
+## Optional services
+{: #vc_orderinginstance-addon-services-optional}
+
+Optionally, you can choose to install the following services:
+* [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations)
+* [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
+* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
+* [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
+* [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations)
+* [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)
+* [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
+* [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
+
+For more information about the services, see [Available services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services).
 
 ## Related links
 {: #vc_orderinginstance-services-related}

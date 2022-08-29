@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-24"
+lastupdated: "2022-07-26"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -28,7 +28,7 @@ subcollection: vmwaresolutions
    * Click **Secondary instance** to connect the instance with an existing (primary) instance in the environment for high availability. Select the primary instance that you want the secondary instance to be connected with, then enter the vCenter Server Administrator password for the primary instance.
 6. Complete the license settings for the instance components.
     * To use IBM-provided licenses, ensure that **Include with purchase** is selected. For NSX, specify the license edition.
-    * To use your own licenses, for each license, click **I will provide** and enter the license key.
+    * To use your own licenses, for each license, click **I will provide**, and enter the license key.
 7.  Specify the settings for the consolidated cluster and the optional workload cluster.
     1. Specify the cluster name.
     2. Complete the bare metal server settings.
@@ -36,7 +36,7 @@ subcollection: vmwaresolutions
        2. Select the bare metal server CPU generation.
           * For **Cascade Lake** or **SAP-certified** - **HANA** servers, specify the CPU model and the RAM size.
           * For **SAP-certified** - **NetWeaver** server, choose one of the preset configurations.
-       3. Specify the number of bare metal servers. For more information about selecting bare metal servers, see [Number of bare metal servers](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance#vc_orderinginstance-bare-metal-number).
+       3. Specify the number of bare metal servers. For more information about selecting bare metal servers, see [Number of bare metal servers](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consoldcluster-settings#vc_orderinginstance-bare-metal-number).
     3. If you want to use NFS storage, select the corresponding option.
        * To add and configure file shares individually, select **Configure shares individually**. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each file share. You must select at least one file share.
        * To add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
@@ -59,7 +59,7 @@ subcollection: vmwaresolutions
 9. Complete the network interface settings.
     1. Enter the hostname prefix and the root domain name for the instance that you are provisioning. For a secondary instance, the domain name is automatically completed.
     2. Specify the DNS configuration.
-10. Under **Recommended services** and **Optional services**, review the service options. If you want to deploy an add-on service, toggle the switch on and review the service settings. If configuration is required, click **Edit**, then complete the edits and click **Save**. For more information about specific settings for a service, see the corresponding topic for ordering the service.
+10. Under **Recommended services** and **Optional services**, review the service options. If you want to deploy an add-on service, toggle the switch to on and review the service settings. If configuration is required, click **Edit**, then complete the edits and click **Save**. For more information about specific settings for a service, see the corresponding topic for ordering the service.
 11. On the **Summary** pane, review the instance settings and the estimated price.
 
     * To save the settings as a new configuration template without placing an order, click **Save configuration**, enter a name for the configuration, and click **Continue**.
@@ -77,7 +77,7 @@ You get a console notification that the configuration is saved successfully, and
 
 * The deployment of the instance starts automatically and you receive confirmation that the order is being processed. You can check the deployment status, including any issues that might require your attention, by viewing the **Deployment history** section of the instance details.
 * When the instance is successfully deployed, the components that are described in [Technical specifications for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs) are installed on your VMware virtual platform. If you ordered add-on services, the deployment of the services starts after your order is completed.
-* When the instance is ready to use, the status of the instance is changed to **Ready to use** and you receive a notification by email.
+* When the instance is ready to use, the status of the instance is changed to **Ready to use**, and then you receive a notification by email.
 * When you order a secondary instance, the VMware vSphere Web Client for the primary instance (linked to the secondary one) might be restarted after your secondary instance order is completed.
 
 Next, you can view and manage the vCenter Server instance that you ordered.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Step 4 - Application setup
 {: #caveonix-step4}
 
-After the virtual machines (VMs) are deployed and the application components are installed, the Caveonix RiskForesight solution can be set up for the service provider and the first tenant or organization.
+After the virtual machines (VMs) are deployed and the application components are installed, the Caveonix RiskForesight™ solution can be set up for the service provider and the first tenant or organization.
 
 The Service Provider is the top-level organization. The service provider supports one or more tenants or organizations. The service provider assigns assets that are collected from VMware vCenter Server® to the tenant or organization, who then assigns them to applications or subapplications. These applications are then subject to a compliance regime.
 

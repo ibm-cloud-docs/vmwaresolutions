@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-08-26"
 
 keywords: Caveonix RiskForesight, Caveonix configuration, order Caveonix
 
@@ -25,7 +25,11 @@ On VMware® Regulated Workloads and VMware Security and Compliance Readiness Bun
 ## Ordering Caveonix RiskForesight for a new instance
 {: #caveonix_ordering-new}
 
-When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance#vc_orderinginstance-procedure), scroll down to the services section and click **Caveonix RiskForesight** in the **Security and compliance** category. Follow the steps to add the service to your instance.
+When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Caveonix RiskForesight is in the Recommended services category and is already selected.
+
+Select **Edit** to review and specify the information. If you enter or change information, click **Save**.
+
+If you do not want to order Caveonix RiskForesight, toggle its switch off.
 
 ## Ordering Caveonix RiskForesight for an existing instance
 {: #caveonix_ordering-existing}

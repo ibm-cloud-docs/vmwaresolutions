@@ -1,6 +1,6 @@
 {
     "title": "VMware Solutions docs",
-    "lastupdated": "2022-06-27",
+    "lastupdated": "2022-08-25",
     "introduction": "VMware Solutions is an IBM Cloud offering that provides deployment and management of VMware virtualized environments. Learn how to make the most of your VMware Solutions experience by using the docs, API doc reference, solution architectures, and solution guides.",
     "section_devtools": {
       "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
@@ -30,6 +30,21 @@
         "title": "Ordering services for vCenter Server instances",
         "description": "Order services for your VMware vCenter Server instances, such as a disaster recovery solution.",
         "href": "/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices"
+      },
+      {
+        "title": "Solution architectures on Classic",
+        "description": "Review reference architecture documentation for VMware Solutions based on the IBM Cloud classic infrastructure.",
+        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview"
+      },
+      {
+        "title": "Solution architectures on VPC",
+        "description": "Review reference architecture documentation for VMware Solutions based on the IBM Cloud VPC infrastructure.",
+        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-overview"
+      },
+      {
+        "title": "Solution guides",
+        "description": "Learn how to configure various components to leverage additional solutions, such as cyber recovery.",
+        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-overview"
       }
     ],
     "section_videos": [
@@ -64,19 +79,19 @@
       "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes",
       "tiles": [
         {
+          "date": "29 August 2022",
+          "title": "IBM Cloud for VMware Cloud Foundation",
+          "description": "The IBM Cloud VPC provides the underlying infrastructure for running VMware Cloud Foundation in IBM Cloud. The IBM Cloud bare metal servers for IBM Cloud VPC provide you compute capacity that is provisioned in minutes for your VMware Cloud Foundation deployment."
+        },
+        {
           "date": "22 June 2022",
           "title": "IBM Cloud Identity and Access Management enablement for VMware Solutions Shared",
-          "description": "You can optionally enable IAM for existing sites. After you integrate your site with IAM, you can use single-sign on to log in to the vCloud Director console from the VMware Solutions console."
+          "description": "You can optionally enable IAM for existing sites. After you integrate your site with IAM, you can use single-sign on to log in to the VMware Cloud Director console from the VMware Solutions console."
         },
         {
           "date": "25 April 2022",
           "title": "Price calculation updates",
           "description": "Price calculations are now automatically generated when you access the VMware vCenter Server instance order page."
-        },
-        {
-          "date": "21 February 2022",
-          "title": "VMware vCloud Director upgrade for VMware Solutions Shared",
-          "description": "VMware Solutions provides an upgrade to the Shared infrastructure to the latest version of VMware vCloud Director (vCD) v10.3.2."
         }
       ]
     }

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-07"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,9 +16,9 @@ subcollection: vmwaresolutions
 # Architecture pattern for using {{site.data.keyword.dl_short}} with NSX-T and EVPN
 {: #arch-pattern-direct-link-evpn}
 
-On [VMware vCenter Server®](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in {{site.data.keyword.cloud}} classic infrastructure, your workloads are deployed and run on VMware NSX-T™ overlay networks. As part of the deployment, the automation deploys an example NSX-T topology. You can use the provisioned examples as your base or build your own topologies on overlay. These overlay networks are not automatically advertised to {{site.data.keyword.cloud_notm}} classic infrastructure network. 
+On [VMware vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in {{site.data.keyword.cloud}} classic infrastructure, your workloads are deployed and run on VMware NSX-T™ overlay networks. As part of the deployment, the automation deploys an example NSX-T topology. You can use the provisioned examples as your base or build your own topologies on overlay. These overlay networks are not automatically advertised to {{site.data.keyword.cloud_notm}} classic infrastructure network. 
 
-This architecture pattern presents private connectivity for vCenter Server that uses [{{site.data.keyword.dl_short}}](/docs/dl) and EVPN. EVPN (Ethernet VPN) is a standards-based BGP control plane that extends Layer 2 and Layer 3 connectivity between different data centers. Multi-Protocol BGP (MP-BGP) EVPN is established between NSX-T T0 and a Customer Router through {{site.data.keyword.dl_short}}. {{site.data.keyword.cloud_notm}} private network and {{site.data.keyword.dl_short}} are used as L3 transport network for VXLAN traffic. VXLAN is the used encapsulation between NSX-T and the Customer Router.
+This architecture pattern presents private connectivity for VMware vCenter Server® that uses [{{site.data.keyword.dl_short}}](/docs/dl) and EVPN. EVPN (Ethernet VPN) is a standards-based BGP control plane that extends Layer 2 and Layer 3 connectivity between different data centers. Multi-Protocol BGP (MP-BGP) EVPN is established between NSX-T T0 and a Customer Router through {{site.data.keyword.dl_short}}. {{site.data.keyword.cloud_notm}} private network and {{site.data.keyword.dl_short}} are used as L3 transport network for VXLAN traffic. VXLAN is the used encapsulation between NSX-T and the Customer Router.
 
 You can use Gateway Appliance or vCenter Server edge services cluster with Juniper vSRX or other device as part of the solution. This is optional. 
 

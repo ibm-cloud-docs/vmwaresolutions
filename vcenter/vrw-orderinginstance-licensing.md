@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-02-01"
+lastupdated: "2022-08-26"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -20,12 +20,12 @@ subcollection: vmwaresolutions
 Specify the licensing options for the following VMware® components in the instance:
 * VMware vCenter Server® Standard 7.0
 * VMware vSphere® Enterprise Plus 7.0
-* VMware NSX-T™ 3.1.1 Enterprise edition (Data Center SP Advanced or Data Center SP Enterprise Plus)
+* VMware NSX-T™ 3.2 Enterprise edition (Data Center SP Advanced or Data Center SP Enterprise Plus)
 * (Multizone VMware instance only) VMware vSAN™ Enterprise license
 
 The VMware HCX™ service is not available for Data Center SP Enterprise Plus.
 
-Small differences exist between NSX-T Data Center and Data Center SP editions. For more information, see [Product offerings for VMware NSX-T Data Center 3.1.x (80866)](https://kb.vmware.com/s/article/80866){: external}.
+Small differences exist between NSX-T Data Center and Data Center SP editions. For more information, see [Product offerings for VMware NSX-T Data Center 3.2.x](https://kb.vmware.com/s/article/86095){: external}.
 {: note}
 
 For Business Partner users, all licenses are included and purchased on your behalf. For users who are not Business Partners, you can use the IBM-provided VMware licenses for these components by selecting **Include with purchase**. You can also Bring Your Own License (BYOL) by selecting **I will provide** and entering your own license keys.

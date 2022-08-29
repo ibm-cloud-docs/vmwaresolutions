@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-22"
 
 subcollection: vmwaresolutions
 
@@ -49,7 +49,7 @@ The architecture provides fundamental building blocks, which include VMware vSph
 VMware Solutions in {{site.data.keyword.vpc_short}} have the following key benefits over {{site.data.keyword.cloud_notm}} classic deployments:
 
 * {{site.data.keyword.vpc_short}} gives you the ability to easily and rapidly define and control a virtual network, which is logically isolated from all other tenants. The logical isolation is implemented by using virtual network functions and security that is built into the platform.
-* Provisioning the {{site.data.keyword.cloud_notm}} bare metal server on {{site.data.keyword.vpc_short}} takes minutes instead of hours when compared to the {{site.data.keyword.cloud_notm}} classic {{site.data.keyword.cloud_notm}} bare metal server.
+* Provisioning the {{site.data.keyword.cloud_notm}} bare metal server on {{site.data.keyword.vpc_short}} takes minutes instead of hours when compared to the {{site.data.keyword.cloud_notm}} bare metal server on {{site.data.keyword.cloud_notm}} classic.
 * VMware workloads by running in {{site.data.keyword.vpc_short}} can take advantage of all original functions for VPC networking capabilities and other {{site.data.keyword.cloud_notm}} interconnectivity services.
 
 With this single-tenant {{site.data.keyword.cloud_notm}} bare metal server infrastructure that is provided in {{site.data.keyword.vpc_short}}, you can quickly deploy network, compute, and storage capacity for your VMware environment to the {{site.data.keyword.cloud_notm}} in minutes.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-08-22"
 
 keywords: FAQ, license, BYOL
 
@@ -140,18 +140,6 @@ To find the number of CPUs available in your license key, complete the following
 {: faq}
 
 IBM Support continues to be your point of contact for any instance configuration concern. However, if the reported concern is determined to be for a BYOL VMware component, you are directed to VMware Support.
-
-## Why are vSphere license charges displayed on the price estimation list if you are using BYOL? Is there a cost for them?
-{: #faq_byol-vsphere}
-{: faq}
-
-{{site.data.keyword.cloud_notm}} bare metal servers are provisioned with VMware vSphere installed and with vSphere licenses included. If you selected BYOL for vSphere, a process is automatically initiated upon instance deployment to remove the included vSphere licenses. As part of this process, after you install your BYOL licenses, they are verified. Upon verification and confirmation, the included vSphere license charges are credited to your {{site.data.keyword.cloud_notm}} account.
-
-## Can you still use the existing manual process for BYOL?
-{: #faq_byol-manual-process}
-{: faq}
-
-With the introduction of the BYOL feature, continued use of the manual process is not recommended. If you want to use BYOL, provide your own licenses when you are ordering the instance.
 
 ## Related links
 {: #faq_byol-related}

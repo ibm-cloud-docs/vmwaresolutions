@@ -4,9 +4,9 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-06-22"
+lastupdated: "2022-08-22"
 
-keywords: manage shared resources, set IAM integration the vCloud Director Management console, shared iam roles, iam roles
+keywords: manage shared resources, set IAM integration the VMware Cloud Director Management console, shared iam roles, iam roles
 
 subcollection: vmwaresolutions
 
@@ -17,12 +17,12 @@ subcollection: vmwaresolutions
 # Enabling and managing Identity and Access Management
 {: #shared_set-iam}
 
-You can optionally enable {{site.data.keyword.cloud}} Identity and Access Management (IAM) for your vCloud Director Organization. For new organizations, IAM is enabled by default. For existing organizations, you can set or reset the IAM enablement from the virtual data center site details page.
+You can optionally enable {{site.data.keyword.cloud}} Identity and Access Management (IAM) for your VMware Cloud Director Organization. For new organizations, IAM is enabled by default. For existing organizations, you can set or reset the IAM enablement from the virtual data center site details page.
 
 ## Before you begin
 {: #shared_set-iam-prereq}
 
-Review roles and assign resource access for {{site.data.keyword.vmwaresolutions_short}} Shared service instances. For more information, see [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam) and [Roles and permissions for vCloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui).
+Review roles and assign resource access for {{site.data.keyword.vmwaresolutions_short}} Shared service instances. For more information, see [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam) and [Roles and permissions for VMware Cloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui).
 
 ## Procedure to enable IAM
 {: #shared_set-iam-procedure}
@@ -49,13 +49,13 @@ The IAM integration status can have the following results.
 ### Resetting an IAM integration
 {: #shared_set-iam-results-reset}
 
-You must delete all OpenID Connect (OIDC) users and imported groups with the OIDC type, then the OIDC provider before you can reset the IAM integration. For more information, see [Deleting the OpenID Connect configuration in your vCloud Director Organization](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-delete-oidc).
+You must delete all OpenID Connect (OIDC) users and imported groups with the OIDC type, then the OIDC provider before you can reset the IAM integration. For more information, see [Deleting the OpenID Connect configuration in your VMware Cloud Director Organization](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-delete-oidc).
 
 ### Single sign-on availability
 {: #shared_set-iam-results-sso}
 
-After the IAM integration is enabled, you can use single sign-on to log in to the vCloud Director console. 
-1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **vCloud Director console**. 
+After the IAM integration is enabled, you can use single sign-on to log in to the VMware Cloud Director console.
+1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **VMware Cloud Director console**.
 2. From the log in panel, click **SIGN IN WITH SINGLE SIGN-ON** to log in to the console.
 
 ## Related links
@@ -65,4 +65,4 @@ After the IAM integration is enabled, you can use single sign-on to log in to th
 * [Viewing site and virtual data center details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-details)
 * [Locating an IAM account administrator](/docs/vmwaresolutions?topic=vmwaresolutions-iam_verify_permissions)
 * [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [VMware vCloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}
+* [VMware Cloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}

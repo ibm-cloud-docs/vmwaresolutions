@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-08-15"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -69,6 +69,7 @@ Review and choose your deployment offering.
 | [VMware Solutions Dedicated - vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) | This offering allows you to deploy a VMware virtual environment by using custom compute, storage, and network resources to best fit your business needs. |
 | [VMware Solutions Dedicated - VMware vSphere®](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview) | This offering provides a customizable virtualization service that combines VMware-compatible bare metal servers, hardware components, and licenses, to build your own IBM-hosted VMware environment. |
 | [VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview) | This offering includes a secure-by-default architecture that follows IBM's unique policy controls framework, it provides continuous compliance monitoring, and the highest level of data encryption (FIPS 140-2 Level 4). |
+| [{{site.data.keyword.cloud_notm}} for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw) | The {{site.data.keyword.vpc_full}} provides the underlying infrastructure for running VCF in {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.cloud_notm}} bare metal servers for {{site.data.keyword.vpc_short}} provide you compute capacity that is provisioned in minutes for your VCF deployment. |
 {: caption="Table 2. Deployment offerings" caption-side="bottom"}
 
 ### Add-on services
@@ -86,8 +87,8 @@ The following table describes the security and compliance services that are avai
 | [Caveonix RiskForesight™](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | This service manages cyberrisk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations. |
 | [FortiGate® Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | This service deploys a pair of FortiGate Virtual Appliances to your environment, which can help you reduce risk by implementing critical security controls within your virtual infrastructure. |
 | [F5 BIG-IP®](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | This service provides intelligent L4-L7 load balancing and traffic management services at a local and global scale, robust network and web application firewall protection, and secure and federated application access. |
-| [Entrust CloudControl™](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations) | This service enforces and controls compliance against security standards, and provides detailed role-based access control (RBAC), approval, and auditing capabilities. When combined with Entrust DataControl®, the service can ensure that virtual machines (VMs) and workload data do not leave a particular region, cluster, or ESXi server within the {{site.data.keyword.cloud_notm}} data center. |
-| [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations) | This service offers strong encryption with integrated key management to secure workloads throughout their lifecycle. The service can provide encryption at both the operating system level and at the data level, which means that any directory, folder, or file within a workload can be encrypted and decrypted. |
+| [Entrust CloudControl™](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations) | This service enforces and controls compliance against security standards, and provides detailed role-based access control (RBAC), approval, and auditing capabilities. When combined with Entrust DataControl®, the service can ensure that virtual machines (VMs) and workload data do not leave a particular region, cluster, or ESXi server within the {{site.data.keyword.cloud_notm}} data center. |
+| [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations) | This service offers strong encryption with integrated key management to secure workloads throughout their lifecycle. The service can provide encryption at both the operating system level and at the data level, which means that any directory, folder, or file within a workload can be encrypted and decrypted. |
 | [KMIP™ for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | This service provides a highly available service to manage encryption keys that are used by VMware in {{site.data.keyword.cloud_notm}}. By using the runtime capability, you can manage encryption keys and to maintain the associations between the client credentials and the encryption keys. |
 | [Juniper® vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | This service provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware infrastructure, vSRX runs as a VM within the VMware vSphere environment. The vSRX provides a complete Next-Generation Firewall (NGFW) solution. |
 {: caption="Table 3. Security and compliance services" caption-side="bottom"}

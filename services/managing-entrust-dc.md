@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-07-14"
 
 keywords: Entrust DataControl WebGUI, Entrust DataControl console, enable internet Entrust DataControl
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing Entrust DataControl
-{: #managinghtdc}
+{: #managing-entrust-dc}
 
 New installations of Entrust DataControl® are no longer supported for new or existing deployments of vCenter Server® instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
 {: deprecated}
@@ -24,12 +24,12 @@ New installations of Entrust DataControl® are no longer supported for new or ex
 To manage the Entrust DataControl service, access the Entrust DataControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust DataControl console from the vSphere® Web Client.
 
 ## Accessing the Entrust DataControl WebGUI from the VMware Solutions console
-{: #managinghtdc-accessing-webgui}
+{: #managing-entrust-dc-accessing-webgui}
 
 To log in to the WebGUI of the primary or secondary Entrust DataControl appliance, use the WebGUI credentials that are found on the Entrust DataControl service details page.
 
 ## Accessing the Entrust DataControl console from the vSphere Web Client
-{: #managinghtdc-accessing-console}
+{: #managing-entrust-dc-accessing-console}
 
 To access the Entrust DataControl console from the vSphere Web Client, use the following procedure:
 1. In the vSphere Web Client, find the virtual machines that are named **KC1** and **KC2**.
@@ -39,7 +39,7 @@ To access the Entrust DataControl console from the vSphere Web Client, use the f
 For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 
 ## Enabling internet access for the Entrust DataControl virtual machines
-{: #managinghtdc-internet-access}
+{: #managing-entrust-dc-internet-access}
 
 For Entrust DataControl v4.3.2 and later, {{site.data.keyword.vmwaresolutions_short}} provides automatic renewal support for Entrust licenses with the Call Home feature enabled. For VMware vCenter Server® instances that are not private-only, Entrust DataControl is deployed with firewall and SNAT (Source Network Address Translation) rules that are defined on the management services ESG **mgmt-nsx-edge**.
 
@@ -49,7 +49,7 @@ For private-only vCenter Server environments, the VMware® NSX Edge Services Gat
 {: note}
 
 ### Procedure to find the firewall and SNAT rules defined
-{: #managinghtdc-proc-find-firewall}
+{: #managing-entrust-dc-proc-find-firewall}
 
 1. Log in to the VMware vSphere® Web Client (FLEX) and find the ESG **mgmt-nsx-edge**.
 2. Click **Home > Networking & Security > NSX Edges**.
@@ -58,7 +58,7 @@ For private-only vCenter Server environments, the VMware® NSX Edge Services Gat
 5. Go to the **NAT** tab and find the SNAT rules that are created for the Entrust VMs. The source IP addresses match the IP addresses that you noted in the previous step.
 
 ### Procedure to enable internet connectivity for Entrust DataControl
-{: #managinghtdc-proc-enable-internet}
+{: #managing-entrust-dc-proc-enable-internet}
 
 1. Complete steps 1 - 3 in the previous procedure.
 2. Click **Settings** and then **Interfaces**. Note the IP address for the private uplink. This address becomes the new default gateway.
@@ -73,9 +73,9 @@ For private-only vCenter Server environments, the VMware® NSX Edge Services Gat
 
 
 ## Related links
-{: #managinghtdc-related}
+{: #managing-entrust-dc-related}
 
-* [Entrust DataControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
+* [Entrust DataControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations)
 * [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Entrust website](https://www.entrust.com/){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-08-18"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -21,12 +21,11 @@ subcollection: vmwaresolutions
 The Zerto service integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware® virtual environment on {{site.data.keyword.cloud}}. Zerto is supported on VMware vCenter Server® instances with:
 
 * VMware NSX-T™ 3.1 or later with VMware vSphere® 7.0
-* VMware NSX-V instances V4.7 and earlier
 {: shortdesc}
 
 {{site.data.content.para-promotion-add-on-services}}
 
-The current Zerto version that is installed is 9.0u4.
+The current Zerto version that is installed is 9.5u1.
 {: note}
 
 ## Before you begin
@@ -74,7 +73,7 @@ When you deploy Zerto, you must configure your own proxy or NAT connection to th
 ### Licenses and fees
 {: #addingzertodr-specs-licenses}
 
-Zerto Replication version 9.0u2 license
+Zerto Replication version 9.5u1 license.
 
 ## Related links
 {: #addingzertodr-related}

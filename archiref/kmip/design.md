@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-30"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # KMIP for VMware design
 {: #kmip-design}
 
-KMIP™ for VMware® provides a key management service compatible with VMware vSAN encryption and VMware vSphere® encryption, by using [IBM Key Protect](/docs/key-protect?topic=key-protect-getting-started-tutorial) or [IBM Cloud Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started#get-started) to provide root key and data key storage. Key Protect and Hyper Protect Crypto Services function as the key management service in this solution.
+KMIP™ for VMware® provides a key management service compatible with VMware vSAN™ encryption and VMware vSphere® encryption, by using [IBM Key Protect](/docs/key-protect?topic=key-protect-getting-started-tutorial) or [IBM Cloud Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started#get-started) to provide root key and data key storage. Key Protect and Hyper Protect Crypto Services function as the key management service in this solution.
 
 ## Storage encryption options
 {: #kmip-design-storage-options}
@@ -25,9 +25,9 @@ KMIP for VMware is compatible with both VMware vSAN encryption and vSphere encry
 ### VMware vSAN encryption
 {: #kmip-design-vsan-encrypt}
 
-VMware vSAN encryption is only applicable to vSAN datastores. With this solution, VMware vCenter and your VMware ESXi hosts connect to a key management server such as KMIP for VMware to get encryption keys. These keys are used to protect individual disk drives used for your vSAN datastore, including both cache and capacity disks. vSAN encryption is implemented in a way that preserves the benefits of vSAN deduplication and compression, if you choose this option when you order a new instance or add a cluster.
+VMware vSAN encryption is only applicable to vSAN datastores. With this solution, VMware vCenter and your VMware ESXi™ hosts connect to a key management server such as KMIP for VMware to get encryption keys. These keys are used to protect individual disk drives used for your vSAN datastore, including both cache and capacity disks. vSAN encryption is implemented in a way that preserves the benefits of vSAN deduplication and compression, if you choose this option when you order a new instance or add a cluster.
 
-Because vSAN encryption operates at the datastore level, its primary goal is to prevent data exposure if loss of physical disk drives occurs. Also, vSAN encryption is fully compatible with all virtual machine (VM) backup and replication technologies, such as vSphere replication, cross-vCenter vMotion, VMware HCX, Zerto, and Veeam.
+Because vSAN encryption operates at the datastore level, its primary goal is to prevent data exposure if loss of physical disk drives occurs. Also, vSAN encryption is fully compatible with all virtual machine (VM) backup and replication technologies, such as vSphere replication, cross-vCenter vMotion, VMware HCX™, Zerto, and Veeam®.
 
 #### VMware vSAN encryption notes
 {: #kmip-design-vsan-encrypt-notes}

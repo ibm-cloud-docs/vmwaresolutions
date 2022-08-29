@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-09"
+lastupdated: "2022-08-26"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -25,7 +25,9 @@ You can deploy the service on a single-zone or multizone instance. For multizone
 ## Ordering FortiGate Virtual Appliance for a new instance
 {: #fortinetvm_ordering-new}
 
-When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance#vc_orderinginstance-procedure), scroll down to the services section and click **FortiGate Virtual Appliance** in the **Security and compliance** category. Follow the steps to add the service to your instance.
+When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. FortiGate Virtual Appliance is in the Security and compliance category. Open the category, locate FortiGate Virtual Appliance, and toggle its switch on.
+
+Select **Edit** to review and specify the information. If you enter or change information, click **Save**.
 
 You cannot install Juniper® vSRX and FortiGate Virtual Appliance on the same edge services cluster.
 

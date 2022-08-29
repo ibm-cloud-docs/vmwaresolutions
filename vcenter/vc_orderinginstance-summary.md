@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-01-24"
+lastupdated: "2022-07-07"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 

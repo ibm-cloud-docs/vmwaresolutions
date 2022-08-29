@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,14 +16,14 @@ subcollection: vmwaresolutions
 # Bare metal hosts
 {: #vrw-baremetal}
 
-The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads is built upon multiple clusters of bare metal hosts with ESXi as the hypervisor.
+The {{site.data.keyword.cloud}} for VMware® Regulated Workloads is built upon multiple clusters of bare metal hosts with VMware ESXi™ as the hypervisor.
 
 ![IBM Cloud for VMware Regulated Workloads infrastructure overview](../../images/vrw-architecture.svg "IBM Cloud for VMware Regulated Workloads infrastructure overview"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads infrastructure overview" caption-side="bottom"}
 
 ## Management cluster
 {: #vrw-baremetal-management}
 
-The management cluster is formed of four bare metal hosts. Configuring the cluster with four hosts is the mandatory, minimum requirement where vSAN is the storage platform. These hosts are sized to meet the requirements of the management applications. No non-management workloads are run in the management cluster.
+The management cluster is formed of four bare metal hosts. Configuring the cluster with four hosts is the mandatory, minimum requirement where vSAN™ is the storage platform. These hosts are sized to meet the requirements of the management applications. No non-management workloads are run in the management cluster.
 
 ## Edge services cluster
 {: #vrw-baremetal-edge}

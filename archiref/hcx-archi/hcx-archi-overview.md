@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware HCX overview
 {: #hcx-archi-overview}
 
-VMware® HCX™ seamlessly integrates on-premises vSphere® vCenter™ networks into {{site.data.keyword.vmwaresolutions_short}} deployments. Hybrid networking extends on-premises vSphere vCenter networks into the {{site.data.keyword.cloud_notm}}, supporting bidirectional virtual machine (VM) mobility.
+VMware® HCX™ seamlessly integrates on-premises vSphere® vCenter™ networks into {{site.data.keyword.vmwaresolutions_full}} deployments. Hybrid networking extends on-premises vSphere vCenter networks into the {{site.data.keyword.cloud_notm}}, supporting bidirectional virtual machine (VM) mobility.
 
 HCX owns the source and destination encryption and decryption processes, ensuring consistent security and providing admission for hybrid workflows such as VM migration and network extension.
 

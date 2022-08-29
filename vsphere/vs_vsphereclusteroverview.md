@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-14"
+lastupdated: "2022-08-16"
 
 keywords: vSphere, vSphere component, tech specs vSphere
 
@@ -119,5 +119,5 @@ You must manage the ESXi servers, optional VMware components, and extra hardware
 
 * [VMware vSphere BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vs_bom)
 * [Planning vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning)
-* [Ordering vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances)
+* [Ordering vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
 * [Scaling existing vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_scalingexistingclusters)

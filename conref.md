@@ -3,7 +3,7 @@
 copyright:
   years: 2022
 
-lastupdated: "2022-06-03"
+lastupdated: "2022-08-16"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -22,7 +22,8 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- vcenter\vc_orderinginstance-bare-metal.md
+- vcenter\vc_orderinginstance-bare-metal.md (*file removed*)
+- vcenter\vc_orderinginstance-cluster.md
 - vcenter\vc_addingclusters.md
 
 CONTENT:
@@ -57,6 +58,13 @@ Skylake servers are not supported for VMware vSphere® Enterprise Plus 7.0u1 ins
 {: tab-group="SkyLake Intel servers"}
 {: #simpletabtable-skylake-nsxv}
 
+VMware vCenter Server® with NSX-V instances is available for V4.7 and earlier deployments.
+{: note}
+{: #vcenter-nsxv-note-tm}
+
+vCenter Server with NSX-V instances is available for V4.7 and earlier deployments.
+{: note}
+{: #vcenter-nsxv-note}
 
 For **Cascade Lake** servers, you can choose the following CPU models and a supported RAM size, which depends on the NSX networking solution.
 {: #cascade-para-intro}
@@ -199,7 +207,7 @@ The section is referenced by the following files:
 - services\vrops_overview.md
 - services\veeamvm_overview.md
 - services\managing-ss-sap.md
-- services\htcc_considerations.md
+- services\entrust-cc_considerations.md
 - services\hcx_considerations.md
 - services\f5_considerations.md
 - services\caveonix_considerations.md
@@ -313,6 +321,28 @@ You can also specify an instance name that meets the following requirements:
 * The maximum length of the instance name is 10 characters.
 * The instance name must be unique within your account.
 {: #orderinginstance-inst-name-list}
+
+
+Conref section END.
+
+Conref section START.
+
+INFORMATION:
+The section is referenced by the following files:
+- vcenter\vs_orderinginstance-sys.md
+- vcenter\vrw-orderinginstance-wkld.md
+- vcenter\vrw-orderinginstance-primary.md
+- vcenter\vrw-orderinginstance-edge.md
+
+CONTENT:
+
+You can also specify a cluster name that meets the following requirements:
+* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* The cluster name must start with a lowercase alphabetic character.
+* The cluster name must end with a lowercase alphabetic or numeric character.
+* The maximum length of the cluster name is 10 characters.
+* The cluster name must be unique within your account.
+{: #orderinginstance-cluster-name-list}
 
 
 Conref section END.

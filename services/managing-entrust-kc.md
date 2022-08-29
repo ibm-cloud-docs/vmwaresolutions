@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-07-15"
 
 keywords: Entrust KeyControl WebGUI, Entrust KeyControl console, enable internet Entrust KeyControl
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing Entrust KeyControl
-{: #managinghtkc}
+{: #managing-entrust-kc}
 
 New installations of Entrust KeyControl™ are no longer supported for new or existing deployments of vCenter Server instances. You can still use or delete existing Entrust KeyControl installations on your existing instances.
 {: deprecated}
@@ -24,32 +24,32 @@ New installations of Entrust KeyControl™ are no longer supported for new or ex
 To manage the Entrust KeyControl™ service, access the Entrust KeyControl web GUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust KeyControl console from the vSphere® Web Client.
 
 ## Accessing the Entrust KeyControl web GUI from the VMware Solutions console
-{: #managinghtkc-accessing-webgui}
+{: #managing-entrust-kc-accessing-webgui}
 
 To log in to the web GUI of the primary or secondary Entrust KeyControl appliance, use the WebGUI credentials that are found on the Entrust KeyControl service details page.
 
 ## Accessing the Entrust KeyControl console from the vSphere Web Client
-{: #managinghtkc-accessing-console}
+{: #managing-entrust-kc-accessing-console}
 
 To access the Entrust KeyControl console from the vSphere Web Client, use the following procedure:
-1. In the vSphere Web Client, find the virtual machines that start with the names **KC1** and **KC2** that have the matching IP address that is found on the Entrust KeyControl service details page.
+1. In the vSphere Web Client, find the virtual machines (VMs) that start with the names **KC1** and **KC2** that have the matching IP address that is found on the Entrust KeyControl service details page.
 2. Right-click **KC1** or **KC2**, and then click **Open Console**.
 3. Log in to the console by using the console credentials that you can find on the Entrust KeyControl service details page.
 
 For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 
-## Enabling internet access for the Entrust KeyControl virtual machines
-{: #managinghtkc-internet-access}
+## Enabling internet access for the Entrust KeyControl VMs
+{: #managing-entrust-kc-internet-access}
 
 For Entrust KeyControl 4.3.2 and later, {{site.data.keyword.vmwaresolutions_short}} provides automatic renewal support for Entrust licenses with the Call Home feature enabled. For VMware vCenter Server® instances that are not private-only, Entrust KeyControl is deployed with firewall and SNAT (Source Network Address Translation) rules that are defined on the management services ESG **mgmt-nsx-edge**.
 
-These rules enable internet access for the Entrust virtual machines (VMs). If internet access is not enabled, the license that is applied to your Entrust KeyControl installation will expire after a year.
+These rules enable internet access for the Entrust VMs. If internet access is not enabled, the license that is applied to your Entrust KeyControl installation will expire after a year.
 
 For private-only vCenter Server environments, the VMware® NSX Edge Services Gateway (ESG) **mgmt-nsx-edge** is not added. Therefore, the firewall and SNAT rules are not defined. As a result, internet connectivity cannot be enabled for private-only instances and Entrust licenses expire annually.
 {: note}
 
 ### Procedure to find the firewall and SNAT rules defined
-{: #managinghtkc-proc-find-firewall}
+{: #managing-entrust-kc-proc-find-firewall}
 
 1. Log in to the VMware vSphere® Web Client (FLEX) and find the ESG **mgmt-nsx-edge**.
 2. Click **Home > Networking & Security > NSX Edges**.
@@ -58,7 +58,7 @@ For private-only vCenter Server environments, the VMware® NSX Edge Services Gat
 5. Go to the **NAT** tab and find the SNAT rules that are created for the Entrust VMs. The source IP addresses match the IP addresses that you noted in the previous step.
 
 ### Procedure to enable internet connectivity for Entrust KeyControl
-{: #managinghtkc-proc-enable-internet}
+{: #managing-entrust-kc-proc-enable-internet}
 
 1. Complete steps 1 - 3 in the previous procedure.
 2. Click **Settings** and then **Interfaces**. Note the IP address for the private uplink. This address is the new default gateway.
@@ -72,8 +72,8 @@ For private-only vCenter Server environments, the VMware® NSX Edge Services Gat
 10. Repeat steps 3 - 9 for the other Entrust VM.
 
 ## Related links
-{: #managinghtkc-related}
+{: #managing-entrust-kc-related}
 
-* [Entrust KeyControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-htkc_considerations)
+* [Entrust KeyControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-kc_considerations)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Entrust website](https://www.entrust.com/){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-07-28"
+lastupdated: "2022-08-26"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade
 
@@ -45,7 +45,7 @@ If you are using the VMware vCenter Server® offering, migrate your instances to
 * {{site.data.keyword.cloud_notm}} supports only Cascade Lake bare metal servers for newly deployed vSphere 7.0 instances.
 * If you add clusters or hosts to a vSphere 7.0 instance from the VMware Solutions console, only Cascade Lake bare metal servers are provisioned.
 * After you upgrade, your existing clusters will continue to use N-VDS switches, which are deprecated by VMware. Support for N-VDS (NSX-T Virtual Distributed Switch) will be removed in a future VMware NSX-T™ release.
-* If you are using VMware NSX-V, familiarize yourself with VMware’s product lifecycle for NSX-V and make appropriate plans to migrate your workloads to NSX-T.
+* If you are using VMware NSX-V, familiarize yourself with VMware product lifecycle for NSX-V and make appropriate plans to migrate your workloads to NSX-T.
 * vCenter Server is designed to allow for a “rolling” upgrade. That is, virtual machine (VM) workloads that are currently functioning continue to function without an outage if you complete the following procedure. Enterprises must engage their change management policies to enable a structured and communicated upgrade and plan for contingencies. However, during the upgrade process of certain management functions, such as vCenter Server and NSX Manager, temporary outages of management functions, configuration changes, powering off and on VMs, might be impacted.
 
 ## Before you begin

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-16"
+lastupdated: "2022-08-25"
 
 keywords: vCenter Server, vCenter Server architecture, tech specs vCenter Server
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # vCenter Server overview
 {: #vc_vcenterserveroverview}
 
-VMware vCenter Server® is a hosted private cloud that delivers the VMware vSphere® stack as a service. The VMware® environment is built in addition to a minimum of three {{site.data.keyword.cloud}} bare metal servers and it offers shared network-attached storage and dedicated software-defined storage options. It also includes the automatic deployment and configuration of an easy to manage logical edge firewall, which VMware NSX® powers.
+VMware vCenter Server® is a hosted private cloud that delivers the VMware vSphere® stack as a service. The VMware® environment is built in addition to a minimum of three {{site.data.keyword.cloud}} bare metal servers and it offers shared network-attached storage and dedicated software-defined storage options. It also includes the automatic deployment and configuration of an easy-to-manage logical edge firewall, which VMware NSX® powers.
 {: shortdesc}
 
 In many cases, the entire environment can be provisioned in less than a day and the bare metal infrastructure can rapidly and elastically scale the compute capacity up and down as needed.
@@ -89,7 +89,7 @@ The following components are included in your vCenter Server instance.
 ### Bare metal server
 {: #vc_vcenterserveroverview-bare-metal}
 
-* For NSX-T, you can order two or more bare metal servers in the consolidated or management cluster and in the workload cluster.
+* For NSX-T, you can order three or more bare metal servers in the consolidated or management cluster, and optionally two or more bare metal servers in the workload cluster.
 * For NSX-V, you can order two or more bare metal servers.
 
 Skylake servers are not supported for vSphere Enterprise Plus 7.0 instances.

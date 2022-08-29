@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-05-11"
+lastupdated: "2022-08-08"
 
 subcollection: vmwaresolutions
 
@@ -32,12 +32,12 @@ The immutable backup solution architecture uses the Veeam Linux® hardened repos
 
 ![Isolated recovery environment overview](../../images/veeam-cr-sa-overview-ire.svg){: caption="Figure 2. Isolated recovery environment overview" caption-side="bottom"}
 
-The isolated recovery solution architecture uses a vCenter Server instance in an air-gapped recovery environment separate from the production environment. It is managed and accessed by using a segregated team of cyber-recovery specialists. Key elements of the solution architecture include:
+The isolated recovery solution architecture uses a vCenter Server instance in an air-gapped recovery environment separate from the production environment. It is managed and accessed by using a separate team of cyber-recovery specialists. Key elements of the solution architecture include:
 
 * A vCenter Server instance used for cyber-recovery tasks only, deployed in an {{site.data.keyword.cloud_notm}} account restricted to cyber-recovery activities.
 * The vCenter Server instance does not host production or disaster recovery workloads.
 * The vCenter Server instance includes an edge cluster to host Juniper® vSRX appliances to protect vCenter Server instance networks. It also provides a network air gap between the production environment and the isolated recovery environment.
-* A Veeam instance under segregated management used for cyber recovery only.
+* A Veeam instance under separate management used for cyber recovery only.
 * An immutable repository based on the Veeam Linux hardened repository hosted on an {{site.data.keyword.cloud_notm}} bare metal server.
 * The solution architecture does not preclude any of the vCenter Server options such as Caveonix, Entrust, and vRealize Operations™.
 * Sandboxes can be provisioned by using VMware NSX-T™ overlay segments to provide network-isolated zones to mount cyber-recovery backups for inspection by your cyber toolsets.
@@ -50,7 +50,7 @@ The isolated recovery solution architecture uses a vCenter Server instance in an
    * Requires that the production environment is vSphere based.
    * Requires that cyber-recovery backup proxies that are registered with the cyber-recovery environment be installed on the ESXi hosts in the production environment.
    * Requires that the cyber-recovery backup infrastructure has access with sufficient privileges to the production vCenter and ESXi hosts.
-* This solution is suitable for clients who want to copy critical data away from the production environment. Also, that cyber-recovery backup systems and personnel are segregated from production and disaster recovery processes.
+* This solution is suitable for clients who want to copy critical data away from the production environment. Also, that cyber-recovery backup systems and personnel are separate from production and disaster recovery processes.
 
 [The definitive guide to ransomware: Readiness, response, and remediation](https://www.ibm.com/downloads/cas/EV6NAQR4){: external} provides an overview of ransomware history, its current prevalence, and resources to help fortify organizations and technical-level guidance on techniques to protect networks before an attack can happen. Also, a recovery guidance if an attacker makes it through defenses.
 

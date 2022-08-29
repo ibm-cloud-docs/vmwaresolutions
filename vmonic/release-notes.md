@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-06-22"
+lastupdated: "2022-08-29"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -19,11 +19,70 @@ content-type: release-note
 # Release notes for VMware Solutions
 {: #vmwaresolutions-relnotes}
 
-Use these release notes to learn about the latest updates to {{site.data.keyword.vmwaresolutions_full}}, including new features, component updates, usability enhancements, and bug fixes.
+Use these release notes to learn about updates to {{site.data.keyword.vmwaresolutions_full}}, including new features, component updates, usability enhancements, and bug fixes.
 {: shortdesc}
 
 ## 2022
 {: #year-2022}
+
+### 29 August 2022
+{: #august-2022}
+{: release-note}
+
+Price calculation updates for {{site.data.keyword.vmwaresolutions_short}} Shared
+:   Price calculations are now automatically generated when you access the order pages for {{site.data.keyword.vmwaresolutions_short}} Shared offerings. For more information about the specific default selections, see [Requirements and planning for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning).
+
+Standard - Catalog storage policy availability
+:   The Standard - Catalog storage policy is now available for storing vApp templates and media files in your VMware Cloud Director catalog. For more information, see [VMware Solutions Shared overview](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview#shared_overview-specs-storage).
+
+Private network endpoints for multizone virtual data centers
+:   Two private network endpoints are ordered to correspond with each VMware NSX Edge™ Service Gateway when you create a private network endpoint for VMware Solutions Shared multizone virtual data centers.
+
+vCPU and RAM limits for on-demand and reserved virtual data centers
+:   The vCPU and RAM limits for VMware Solutions Shared virtual data center orders are now increased. Beginning with the 4.9 release, the maximum vCPU limit is 1 - 2000 and the maximum RAM limit is 1 - 40 TBs for both on-demand and reserved virtual data center orders.
+
+vRealize Operations Tenant App for VMware Cloud Director availability
+:   You can now access the vRealize Operations™ Tenant App for a VMware Cloud Director for new and existing organizations through the VMware Cloud Director tenant portal. For more information, see [Enabling the VMware vRealize Operations Tenant App](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-vrops-app).
+
+{{site.data.keyword.cloud_notm}} for VMware Cloud Foundation
+:   The {{site.data.keyword.vpc_short}} provides the underlying infrastructure for running VMware Cloud Foundation in {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.cloud_notm}} bare metal servers for {{site.data.keyword.vpc_short}} provide you compute capacity that is provisioned in minutes for your VMware Cloud Foundation deployment. For more information, see [{{site.data.keyword.cloud_notm}} for VMware Cloud Foundation overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw).
+
+Updates to VMware vCenter Server instances and VMware vSphere clusters
+:   The following upgrades are applied to newly deployed instances, clusters, and hosts.
+   * VMware vSphere ESXi™ 7.0 Update 3e (build 19898904)
+   * VMware vSphere ESXi 6.7 P06 (build 202206001)
+
+Considerations for selecting a new NSX Data Center SP edition
+:   Beginning with the V4.9 release, if your NSX-V instance is using BYOL licenses, you can now order legacy NSX licenses from IBM to replace your own license.
+
+   Also, beginning with this release, if your NSX-T instance is using legacy NSX licenses, you can now order NSX Data Center SP licenses to replace your legacy NSX licenses. You are responsible to select the appropriate NSX Data Center SP license edition based on your needs.
+
+Zerto 9.5u1 new version
+:   The new Zerto version that is installed on newly deployed instances is 9.5u1.
+
+Zerto 9.5u1 support for vSphere 6.5 and 6.7 - deprecated
+:   Zerto v9.5u1 no longer supports vSphere 6.5 and 6.7. However, you can still order stand-alone licenses for existing vSphere 6.x instances.
+{: deprecated}
+
+HCX Appliance activation with BYOL NSX Data Center Enterprise Plus license
+:   If you have a BYOL NSX Data Center Enterprise Plus license and you install VMware HCX™, your NSX Data Center Enterprise Plus license key is now used to activate the HCX appliance. For more information, see [BYOL HCX Enterprise edition and NSX Data Center Enterprise Plus](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering#hcx_ordering-byol-hcx-enterprise).
+
+Linux hardened repository for Veeam
+:   When you order Veeam, you can order a Linux® hardened repository for immutable storage. For more information, see [Linux hardened repository for immutable storage](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview#veeamvm_overview-specs-linux-storage).
+
+New and updated documentation
+:   The following documentation updates are available.
+   * [VMware Cloud Foundation on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-overview), a new architecture reference for a complete set of software-defined services for compute, storage, network security, Kubernetes management, and cloud management.
+   * [Deleting vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_deletingclusters), a new topic about deleting VMware vSphere® clusters by managing your resources and canceling hosts and licenses on your own.
+
+REST API updates
+:   For the [VMware Solutions Dedicated API](/apidocs/vmware-solutions), support is provided for scaling existing VMware vSphere clusters.
+
+User interface updates and enhancements
+:   The user interface is updated with various error messages and tooltip enhancements and provides the following enhancements.
+
+   * A vertical progress indicator bar is now available on the ordering page for VMware Solutions Shared offerings. The progress indicator maps to each section and helps to quickly browse to different areas of the page.
+   * If you are running VMware NSX-V or a vSphere 6 version on the instances in your environment, you now receive notifications to update your environment to the most recent supported version of NSX or vSphere. You can go to the instance summary page to check the NSX solution type and the vSphere version that is most suitable for your environment.
 
 ### 22 June 2022
 {: #june-2022}
@@ -33,9 +92,9 @@ VMware vRealize Operations Tenant App for VMware Solutions Shared
 :   The 4.8 release enables a new optional feature for the {{site.data.keyword.vmwaresolutions_short}} tenant portal. The VMware vRealize Operations™ Tenant App V8.6 provides metering capabilities for tenants to monitor their virtual data centers, virtual applications, and virtual machines. For more information, see [Enabling the VMware vRealize Operations Tenant App](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-vrops-app).
 
 {{site.data.keyword.cloud_notm}} Identity and Access Management enablement for VMware Solutions Shared
-:   {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) is now enabled by default for new sites. You can optionally enable IAM for existing sites. After you integrate your site with IAM, you can use single-sign on to log in to the vCloud Director console from the VMware Solutions console. For more information, see [Enabling and managing Identity and Access Management](/docs/vmwaresolutions?topic=vmwaresolutions-shared_set-iam).
+:   {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) is now enabled by default for new sites. You can optionally enable IAM for existing sites. After you integrate your site with IAM, you can use single sign-on to log in to the VMware Cloud Director console from the VMware Solutions console. For more information, see [Enabling and managing Identity and Access Management](/docs/vmwaresolutions?topic=vmwaresolutions-shared_set-iam).
 
-   With the IAM integration, role-based access control now uses a site and organization IAM policy for VMware Solutions Shared resources. For more information, see [VMware Solutions Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview). For more information about new roles for vCloud Director, see [Roles and permissions for vCloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui).
+   With the IAM integration, role-based access control now uses a site and organization IAM policy for VMware Solutions Shared resources. For more information, see [VMware Solutions Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview). For more information about new roles for VMware Cloud Director, see [Roles and permissions for VMware Cloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui).
 
 {{site.data.keyword.cloud_notm}} data center region and site availability for VMware Solutions Shared
 :   You can now select the region where your virtual data center instance is hosted and the {{site.data.keyword.cloud_notm}} data center site where the virtual data center is hosted.
@@ -44,21 +103,21 @@ Platform management roles
 :   New IAM platform management roles are available for VMware Solutions offerings. For more information, see [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam).
 
 End of Marketing for NSX-V instance deployments
-:   VMware® support for all new VMware NSX-V deployments ended on 16 January 2022. However, VMware and IBM® worked closely to extend the existing NSX–V support until 31 December 2023. For more information, see [End of Marketing for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v). Beginning on 21 June 2022, you can no longer order new VMware vCenter Server with NSX-V instances. 
+:   VMware® support for all new VMware NSX-V deployments ended on 16 January 2022. However, VMware and IBM® worked closely to extend the existing NSX–V support until 31 December 2023. For more information, see [End of Marketing for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v). Beginning on 21 June 2022, you can no longer order new VMware vCenter Server with NSX-V instances.
 
 End of Marketing for vSphere 6.7 instance deployments
 :   VMware support for all new VMware vSphere 6.7 deployments ends on 15 October 2022. However, you can still add or remove existing clusters and hosts until 15 October 2022. After 15 October 2022, vCenter Server instances with vSphere 6.7 become read–only in the VMware Solutions console and through the public REST API. For more information, see [End of Marketing for vSphere 6.7 instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vsphere67). Beginning on 21 June 2022, you can no longer order new vCenter Server instances with vSphere 6.7.
 
 VMware vSphere 7.0 Update 3d support
-:   The 4.8 release provides vSphere® 7.0 Update 3d for newly deployed instances. For existing vSphere 7.0u2 instances and clusters, you can add either a vSphere 7.0u2 or a vSphere 7.0u3 host or cluster.
+:   The 4.8 release provides vSphere 7.0 Update 3d for newly deployed instances. For existing vSphere 7.0u2 instances and clusters, you can add either a vSphere 7.0u2 or a vSphere 7.0u3 host or cluster.
 
 Updates to VMware vCenter Server instances
 :   The following upgrades are applied to newly deployed instances, clusters, and hosts.
-   * VMware vSphere ESXi™ 7.0 Update 3d (build 19482537)
+   * VMware vSphere ESXi 7.0 Update 3d (build 19482537)
    * VMware vCenter Server® Appliance 7.0 Update 3d (build 19480866)
 
 Updates to VMware vSphere cluster names
-:   The requirements for vSphere cluster names are changed. For more information, see [System settings](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-sys-settings#vs_orderinginstances-cluster-name).
+:   The requirements for vSphere cluster names are changed. For more information, see [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-sys-settings#vs_orderinginstances-cluster-name).
 
 VMware ESXi firewall configuration for NFS - issue fixed {: #june-2022-esxi-firewall}
 :   {{site.data.keyword.cloud_notm}} identified a problem with the VMware ESXi firewall configuration for NFS feature, which might cause some firewall rules to be lost during the update. This problem is now fixed.
@@ -83,7 +142,7 @@ Add-on services upgrades
    * Zerto v9.0u4
 
 BYOL HCX Enterprise license for HCX and NSX Data Center SP Enterprise Plus
-:   For extra functionality, you can install an HCX™ Enterprise license as Bring Your Own License (BYOL). You must get the HCX Enterprise license from VMWare. For more information, see [BYOL HCX Enterprise edition for HCX and NSX Data Center SP Enterprise Plus](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering#hcx_ordering-byol-hcx-enterprise).
+:   For extra functionality, you can install an HCX Enterprise license as Bring Your Own License (BYOL). You must get the HCX Enterprise license from VMWare. For more information, see [BYOL HCX Enterprise edition and NSX Data Center SP Enterprise Plus](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering#hcx_ordering-byol-hcx-enterprise).
 
 Entrust DataControl - deprecated
 :   New installations of Entrust DataControl® are no longer supported for new or existing deployments of vCenter Server instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
@@ -95,10 +154,10 @@ New and updated documentation
    * [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam)
 
 REST API updates
-:   New REST APIs are now available.
+:   New REST APIs are available.
 
-   * For VMware Solutions Shared, a new [V2 API](https://cloud.ibm.com/apidocs/vmware-solutions-shared/vmware-solutions-shared-v2.0.0) is introduced, which includes the new `site` object. The [V1 API](https://cloud.ibm.com/apidocs/vmware-solutions-shared/vmware-solutions-shared-v1.0.0) is being deprecated and will be supported until 31 October 2022. To ensure smooth transition in the future, start using the V2 APIs.
-   * For the [VMware Solutions Dedicated API](https://cloud.ibm.com/apidocs/vmware-solutions), support is provided for VMware vSphere cluster new deployments and for the KMIP™ for VMware stand-alone service.
+   * For VMware Solutions Shared, a new [V2 API](/apidocs/vmware-solutions-shared/vmware-solutions-shared-v2.0.0) is introduced, which includes the new `site` object. The [V1 API](/apidocs/vmware-solutions-shared/vmware-solutions-shared-v1.0.0) is being deprecated and will be supported until 31 October 2022. To ensure smooth transition in the future, start using the V2 APIs.
+   * For the [VMware Solutions Dedicated API](/apidocs/vmware-solutions), support is provided for VMware vSphere cluster new deployments and for the KMIP™ for VMware stand-alone service.
 
 User interface updates and enhancements
 :   Various error messages and tooltip enhancements are available to assist you in selecting the appropriate setting on the user interface.
@@ -163,7 +222,7 @@ Name change for HyTrust add-on services
    * Entrust KeyControl™, which is deprecated
 
 Veeam VSI, Veeam bare metal, and Zerto configuration changes
-:   Beginning with the 4.7 release, the Veeam® VSI, Veeam bare metal, and Zerto services are not configured with an {{site.data.keyword.cloud_notm}} Infrastructure portable IP address or with a NAT connection to the public network, even if you have public interfaces in your instance. This update helps to avoid the possibility of asymmetric routing when using a network gateway appliance.
+:   Beginning with the 4.7 release, the Veeam VSI, Veeam bare metal, and Zerto services are not configured with an {{site.data.keyword.cloud_notm}} Infrastructure portable IP address or with a NAT connection to the public network, even if you have public interfaces in your instance. This update helps to avoid the possibility of asymmetric routing when using a network gateway appliance.
 
    For more information about the configuration changes and activities you might need to do, see the following documents.
 
@@ -184,8 +243,8 @@ User interface updates and enhancements
 {: #february-2022}
 {: release-note}
 
-VMware vCloud Director upgrade for VMware Solutions Shared
-:   (Updated on 15 March 2022) VMware Solutions provides an upgrade to the Shared infrastructure to the latest version of VMware vCloud Director (vCD) v10.3.2.
+VMware Cloud Director upgrade for VMware Solutions Shared
+:   (Updated on 15 March 2022) VMware Solutions provides an upgrade to the Shared infrastructure to the latest version of VMware Cloud Director (vCD) v10.3.2.
 
 VMware vCenter Server instances
 :   The 4.6 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts.
@@ -361,7 +420,7 @@ vCenter Server multizone instances - deprecated
    You can still add and delete clusters, add and remove ESXi servers, and add and delete storage for existing multizone instances.
 
 VMware Regulated Workloads - support for consolidated cluster
-:   Rather than requiring that the VMware Regulated Workloads solution deploys a separate management cluster and separate clusters for workloads, now you can start with a smaller footprint by deploying a consolidated management and workload cluster. For more information, see [Primary cluster capacity](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance#vrw-orderinginstance-consldt-capacity).
+:   Rather than requiring that the VMware Regulated Workloads solution deploys a separate management cluster and separate clusters for workloads, now you can start with a smaller footprint by deploying a consolidated management and workload cluster. For more information, see [Cluster type](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-consldt-cluster#vrw-orderinginstance-consldt-capacity).
 
 VMware Regulated Workloads - support for save configuration
 :   A new **Save configuration** button is added to the **Summary** pane of the ordering page for VMware Regulated Workloads. Use this option to save your instance settings as a configuration template without placing an order. You can manage the configuration templates by further editing or deleting them as well.
@@ -400,7 +459,7 @@ VMware Solutions Shared - Veeam Backup and Replication V11
    For more information about the compatibility requirements between Veeam service providers and tenants, see [Product versions in Veeam Cloud Connect infrastructure](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_versions.html?ver=110){: external}.
 
 VMware Solutions Shared - Network High Availability through data center groups
-:   VMware Solutions Shared now provides Network High Availability, a VMware vCloud Director feature that allows a vCloud Director network to be anchored in two data centers. This feature enables the network to be resilient and to withstand an outage in any of the two data centers.
+:   VMware Solutions Shared now provides Network High Availability, a VMware Cloud Director feature that allows a VMware Cloud Director network to be anchored in two data centers. This feature enables the network to be resilient and to withstand an outage in any of the two data centers.
 
 VMware vCenter Server instances
 :   The 4.2 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts.
@@ -807,7 +866,7 @@ User interface updates and enhancements
 {: release-note}
 
 VMware Solutions Shared
-:   (Updated on 25 August 2020) VMware Solutions provides an upgrade to the Shared infrastructure to the latest version of VMware vCloud Director (vCD) v10.1.1. The v10.1.1 update is available to Dallas and Frankfurt {{site.data.keyword.cloud}} data centers.
+:   (Updated on 25 August 2020) VMware Solutions provides an upgrade to the Shared infrastructure to the latest version of VMware Cloud Director (vCD) v10.1.1. The v10.1.1 update is available to Dallas and Frankfurt {{site.data.keyword.cloud}} data centers.
 
    The Flash portal is no longer available with the v10.1.1 update.
    {: note}
@@ -815,10 +874,10 @@ VMware Solutions Shared
 VMware Solutions Shared - storage policy updates
 :   For the existing storage policies in your virtual data center, the default storage policy is now the new *standard* storage policy. Previously, the default storage policy was *4 IOPS/GB*. This default storage policy is automatic for new VMware Solutions Shared instances.
 
-   The 3.8 release introduces *Standard* storage policies and *Encrypted* storage policies. These new storage policies are available for new VMware Solutions Shared instances and added to existing VMware Solutions Shared instances with the VMware vCloud Director (vCD) v10.1.1 upgrade.
+   The 3.8 release introduces *Standard* storage policies and *Encrypted* storage policies. These new storage policies are available for new VMware Solutions Shared instances and added to existing VMware Solutions Shared instances with the VMware Cloud Director (vCD) v10.1.1 upgrade.
 
    * A standard storage policy is now available for both decrypted and encrypted policies. The standard storage policy has no maximum throughput, but the number of IOPS/GB is not guaranteed.
-   * VMware vCloud Director v10.1.1 provides the capability to create encryption enabled storage policies to all organization virtual data centers. Administrators can encrypt virtual machines (VMs) and disks by associating the VM or disk with a storage policy that has the VM encryption capability.
+   * VMware Cloud Director v10.1.1 provides the capability to create encryption enabled storage policies to all organization virtual data centers. Administrators can encrypt virtual machines (VMs) and disks by associating the VM or disk with a storage policy that has the VM encryption capability.
 
 VMware Solutions Shared - off-site copy mode availability for Veeam Availability Suite
 :   Veeam Availability Suite off-site copy mode is now automatically enabled for new and existing VMware Solutions Shared instances.
@@ -1085,7 +1144,7 @@ User interface updates and enhancements
 {: release-note}
 
 VMware Solutions Shared
-:   (Updated on 26 February 2020) {{site.data.keyword.vmwaresolutions_short}} Shared, a managed public Infrastructure as a Service (IaaS) solution, offers either a standardized or customizable deployment option of VMware vCloud Director Virtual Data Center environments. Use Virtual Data Center instances to quickly and seamlessly migrate or deploy VMware workloads to the cloud on top of IBM hosted VMware infrastructure. The Veeam Availability Suite and Veeam Cloud Connect Replication services are available and ready-to-use in all Virtual Data Center instances. Charges are incurred only if you choose to use the service.
+:   (Updated on 26 February 2020) {{site.data.keyword.vmwaresolutions_short}} Shared, a managed public Infrastructure as a Service (IaaS) solution, offers either a standardized or customizable deployment option of VMware Cloud Director virtual data center environments. Use virtual data center instances to quickly and seamlessly migrate or deploy VMware workloads to the cloud on top of IBM hosted VMware infrastructure. The Veeam Availability Suite and Veeam Cloud Connect Replication services are available and ready-to-use in all virtual data center instances. Charges are incurred only if you choose to use the service.
 
 VMware Solutions Dedicated
 :   Beginning with the 3.5 release, the VMware vCenter Server (both NSX-V and NSX-T) instances and VMware vSphere clusters are now grouped under a new card on the console, called {{site.data.keyword.vmwaresolutions_short}} Dedicated. This card consolidates the {{site.data.keyword.vmwaresolutions_short}} offerings for a better customer experience.

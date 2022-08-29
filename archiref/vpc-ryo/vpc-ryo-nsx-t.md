@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-17"
 
 subcollection: vmwaresolutions
 
@@ -79,12 +79,12 @@ The following table shows the specifications for the Manager Nodes. You might se
 
 A VLAN interface is provisioned for each NSX-T manager in the management subnet (`vpc-mgmt-subnet`) of the VPC. This VPC subnet is designated for VMware management components of your solution. If you deploy the NSX-T managers on the same VPC subnet in a zone, and you plan to use the NSX-T internal network load balancer, an additional VLAN interface is needed for this Virtual IP (VIP). All created VLAN interfaces are allowed to float, which means that they can be vMotioned between the ESXi hosts. The following table summarizes the required VLAN interfaces in {{site.data.keyword.vpc_short}}.
 
-Interface name        | Interface type | VLAN ID | Subnet              | Allow float  | NSX-T Interface   | Distributed Port Group Name
-----------------------|----------------|---------|---------------------|--------------|-------------------|------------------------------
-vlan-nic-nsx-0        | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 1   | dpg-mgmt
-vlan-nic-nsx-1        | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 2   | dpg-mgmt
-vlan-nic-nsx-2        | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 3   | dpg-mgmt
-vlan-nic-nsx-vip      | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager VIP | dpg-mgmt
+| Interface name        | Interface type | VLAN ID | Subnet              | Allow float  | NSX-T Interface   | Distributed Port Group Name |
+| ---------------------- | ---------------- | --------- | --------------------- | -------------- | ------------------- | ------------------------------ |
+|vlan-nic-nsx-0        | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 1   | dpg-mgmt |
+| vlan-nic-nsx-1        | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 2   | dpg-mgmt |
+| vlan-nic-nsx-2        | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 3   | dpg-mgmt |
+| vlan-nic-nsx-vip      | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager VIP | dpg-mgmt |
 {: caption="Table 2. VLAN interfaces for NSX-T Managers" caption-side="bottom"}
 
 When the initial NSX Manager is deployed into the host and cluster, you must register the vCenter as the compute manager to facilitate the deployment of other NSX Managers. Public Gateway attached to the management subnet can be used to download updates for the NSX Managers.
@@ -98,9 +98,9 @@ For NSX-T, each ESXi host must be set as a Transport Node so that it becomes cap
 
 The following table lists the required VLAN interfaces for NSX-T VMKs for each host. These interfaces are always local to the host and are not allowed to float. They are provisioned on the `vpc-tep-subnet`. You can provision these VLAN interfaces in {{site.data.keyword.vpc_short}} either when you provision the host, or when you configure and deploy NSX-T.
 
-Interface name        | Interface type | VLAN ID | Subnet              | Allow float  | VMkernel Adapter | Distributed Port Group Name
-----------------------|----------------|---------|---------------------|--------------|------------------|------------------------------
-vlan-nic-tep-vmk10    | vlan           | 400     | vpc-tep-subnet      | false        | vmk10            | dpg-tep
+| Interface name | Interface type | VLAN ID | Subnet | Allow float  | VMkernel Adapter | Distributed Port Group Name |
+| ---------------------- | ---------------- | --------- | --------------------- | -------------- | ------------------ | ------------------------------ |
+| vlan-nic-tep-vmk10    | vlan           | 400     | vpc-tep-subnet      | false        | vmk10            | dpg-tep |
 {: caption="Table 3. Host management networks and VMkernel adapters" caption-side="bottom"}
 
 Host TEP VLAN ID is defined in the host transport profile. The `dpg-tep` creation is optional, and for consistency only. It might help you to identify the VLAN ID used when operating the environment later.
@@ -126,12 +126,12 @@ The following table summarizes the requirements for a Medium Form Factor Edge en
 
 As for the other NSX-T components, VLAN interfaces must be created in {{site.data.keyword.vpc_short}} for connectivity. The following table lists the required VLAN interfaces for Edge Nodes.
 
-Interface name        | Interface type | VLAN ID | Subnet              | Allow float  | NSX-T Interface   | DPG/Segment Name
-----------------------|----------------|---------|---------------------|--------------|-------------------|------------------------------
-vlan-nic-nsx-edge-1   | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Edge 1 Mgmt | dpg-mgmt
-vlan-nic-nsx-edge-2   | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Edge 2 Mgmt | dpg-mgmt
-vlan-nic-tep-edge-1   | vlan           | 400     | vpc-tep-subnet      | true         | NSX-T Edge 1 TEP  | vpc-zone-edge-tep
-vlan-nic-tep-edge-2   | vlan           | 400     | vpc-tep-subnet      | true         | NSX-T Edge 2 TEP  | vpc-zone-edge-tep
+| Interface name        | Interface type | VLAN ID | Subnet              | Allow float  | NSX-T Interface   | DPG/Segment Name |
+| ---------------------- | ---------------- | --------- | --------------------- | -------------- |------------------- | ------------------------------ |
+| vlan-nic-nsx-edge-1   | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Edge 1 Mgmt | dpg-mgmt |
+| vlan-nic-nsx-edge-2   | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Edge 2 Mgmt | dpg-mgmt |
+| vlan-nic-tep-edge-1   | vlan           | 400     | vpc-tep-subnet      | true         | NSX-T Edge 1 TEP  | vpc-zone-edge-tep |
+| vlan-nic-tep-edge-2   | vlan           | 400     | vpc-tep-subnet      | true         | NSX-T Edge 2 TEP  | vpc-zone-edge-tep |
 {: caption="Table 5. Host management networks and VMkernel adapters" caption-side="bottom"}
 
 The edge TEP traffic must traverse in VLAN backed NSX-T segment `vpc-zone-edge-tep` with the specified VLAN ID, and `dpg-tep` cannot be used for action.

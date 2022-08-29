@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-25"
+lastupdated: "2022-07-15"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Storage settings
+# Storage
 {: #vs_orderinginstances-storage-settings}
 
 For orders without vSAN™, VMware ESXi™ servers are ordered with a 12-disk chassis, with two disks for the ESXi operating system (OS).
@@ -29,7 +29,7 @@ If you select the VMware vSAN component for the cluster, specify the following s
    The **High performance with Intel Optane** option is available only for VMware vSphere® 6 instance, and for Skylake and dual-processor Cascade Lake CPU models.
    {: note}
 
-* Review the **Size for vSAN cache disks** and **Number of vSAN cache disks** values. These values depend on whether you selected the **High performance with Intel Optane** checkbox.
+* Review the **Size for vSAN cache disks** and **Number of vSAN cache disks** values. For the VMware vSphere 6 instances, these values depend on whether you selected the **High performance with Intel Optane** checkbox.
 
 ## Enable vSAN deduplication and compression
 {: #vs_orderinginstance-storage-enable-comp}
@@ -42,5 +42,5 @@ The amount of storage reduction from deduplication and compression depends on ma
 ## Related links
 {: #vs_orderinginstances-storage-related}
 
-* [Network interface settings](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-network-interface-settings)
+* [Network interface](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-network-interface-settings)
 * [Procedure to order vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure#vs_orderinginstances-procedure-related)

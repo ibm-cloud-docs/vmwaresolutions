@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-06-17"
+lastupdated: "2022-08-25"
 
 keywords: zerto, zerto self-service portal, zerto portal access procedure
 
@@ -28,7 +28,7 @@ Service charges are incurred only if you choose to use the services.
 {: #shared_zerto-portal-prereq}
 
 - Review the following limitations for Zerto:
-   - The current version of Zerto is 9.0u2 and is only compatible with the N-1 and N+1 level of Zerto on your on-premises site.
+   - The current version of Zerto is 9.5u1 and is only compatible with the N-1 and N+1 level of Zerto on your on-premises site.
    - Currently, Zerto does not support the replication of stand-alone VMs but only vApps with VMs inside them. IBM is working with Zerto to resolve this limitation.
 - You must reset the zOrg administrator password before you can log in to the Zerto portal.
 
@@ -42,7 +42,7 @@ Service charges are incurred only if you choose to use the services.
 After you reset your password on a virtual data center, you have access to the Zerto portal from all virtual data centers in your account. You can now manage VMs across all of your virtual data centers.
 {: note}
 
-For more information about using the Zerto Self-Service Portal to create Virtual Protection Groups, see [Zerto Virtual Manager Administration Guide - VMware vSphere Environment](https://s3.amazonaws.com/zertodownload_docs/Latest/Zerto%20Virtual%20Manager%20vSphere%20Administration%20Guide.pdf){: external}.
+For more information about using the Zerto Self-Service Portal to create Virtual Protection Groups, see [Zerto technical documentation](https://help.zerto.com/category/WmWare_9.5){: external}.
 
 ## Licenses and fees for Zerto
 {: #shared_zerto-portal-fees}
@@ -57,5 +57,5 @@ Zerto usage incurs charges on demand. For more information, see [VMware Solution
 * [Ordering a Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-order)
 * [Viewing Zerto Cloud Connector details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-view)
 * [Deleting Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-delete)
-* [Zerto Installation Guide for VMware vSphere Environments & Microsoft Hyper-V Environments](https://s3.amazonaws.com/zertodownload_docs/Latest/Zerto%20Virtual%20Replication%20Installation%20Guide%20for%20vSphere%20and%20Hyper-V.pdf){: external}
+* [Zerto for VMware vSphere](https://www.zerto.com/solutions/workloads-and-applications/vmware-vsphere/){: external}
 * [Zerto Support and Services](https://www.zerto.com/support-and-services/){: external}

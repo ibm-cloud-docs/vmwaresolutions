@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-08-16"
 
 keywords: vCenter Server add service
 
@@ -23,16 +23,8 @@ You can order services for your VMware vCenter Server® instances, such as a dis
 {: #vc_addingservices-prereq}
 
 * Adding services to vCenter Server instances with VMware vSphere® 6.5 is not supported.
-* Adding services to vCenter Server multizone instances is not supported. You can view or delete existing add-on services. If a service is deleted, it cannot be reinstalled.
-
-## The About service overview and installing a service from the overview
-{: #vc_addingservices-about-page-install}
-
-The About page for a service provides a high-level description of the service and its features. You can also install the service from its overview on a new instance or add the service to an existing instance.
-
-By default, the service assumes that NSX-T is installed. However, if the service does not support NSX-T, it then uses NSX-V for existing instances V4.7 and earlier.
-
-For more information about the service itself and to order, see the individual topics for the service in the documentation.
+* Adding services to vCenter Server multizone instances is not supported. For multizone instances, you can view or delete existing add-on services. If a service is deleted, it cannot be reinstalled.
+* By default, the service assumes that VMware NSX-T is installed. If NSX-T is not supported for a service, then VMware NSX-V is used, but only for existing instances V4.7 and earlier.
 
 ## Available services for vCenter Server instances
 {: #vc_addingservices-available-services}
@@ -41,20 +33,20 @@ The following table shows the services that are available to vCenter Server inst
 
 | Service name | Current version | Notes           |
 |--------------|-----------------|-----------------|
-| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 3.1.0 | |
-| [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations) | 6.5 | NSX-T only |
-| [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations) | 5.5 | VMware vSphere 6.7 only |
-| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 16.1 | |
-| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.0.5 | |
-| [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version | |
-| [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | N/A | |
-| [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (20.4R2) | |
-| [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 | |
-| [PrimaryIO HDM](/docs/vmwaresolutions?topic=vmwaresolutions-managing_pio) | N/A | |
+| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 3.1.0 |
+| [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations) | 6.5 | NSX-T only |
+| [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations) | 5.5 | VMware vSphere 6.7 only |
+| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 16.1 |
+| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.0.5 |
+| [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version |
+| [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | N/A |
+| [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (20.4R2) |
+| [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 |
+| [PrimaryIO HDM](/docs/vmwaresolutions?topic=vmwaresolutions-managing_pio) | N/A |
 | [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.10 | NSX-T only \n If you add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade NSX-T to 3.1 or later. |
-| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 11 | |
-| [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.6 and vRLI 8.6 | |
-| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.0u4 | |
+| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 11 |
+| [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.6 and vRLI 8.6 |
+| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.5u1 | VMware vSphere 7 only |
 {: caption="Table 1. Available services for vCenter Server instances" caption-side="bottom"}
 
 ## Promotions for services
@@ -160,7 +152,7 @@ The following table lists the variables that are used in the previous formula.
 ## Procedure to order services for vCenter Server instances
 {: #vc_addingservices-procedure}
 
-To order a service for your vCenter Server instance, click the appropriate service link in the previous tables in [Available services for vCenter Server instances](#vc_addingservices-available-services) to review the considerations for the service and to check the components that are deployed. Then, follow the instructions in the service ordering topic to add the service to your instance.
+To order a service for your vCenter Server instance, click the appropriate service link in the previous tables in [Available services for vCenter Server instances](#vc_addingservices-available-services) to review the considerations for the service and to check the components that are deployed. Then, follow the instructions in the [Services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services) topic to add the service to your instance.
 
 ## Results after you order services for vCenter Server instances
 {: #vc_addingservices-results}

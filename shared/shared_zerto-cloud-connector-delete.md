@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-08-26"
 
 keywords: zerto, delete zerto cloud connector
 
@@ -31,7 +31,7 @@ You can delete the Zerto Cloud Connector (ZCC) when it is no longer needed.
 {: #shared_zerto-cc-delete-procedure}
 
 1. Under the **Enabled services** on the virtual data center details page, click **Delete ZCC** in the Zerto Cloud Connector details table.
-2. In the **Delete Zerto Cloud Connector** window, review and accept the delete confirmation and click **Delete**. The status of the ZCC is changed to **Deleting**. When the ZCC is deleted successfully, the status is changed to **Deleted**.
+2. In the **Delete Zerto Cloud Connector** window, review, and accept the delete confirmation and click **Delete**. The status of the ZCC is changed to **Deleting**. When the ZCC is deleted successfully, the status is changed to **Deleted**.
 
 ## Related links
 {: #shared_zerto-cc-delete-related}
@@ -41,5 +41,5 @@ You can delete the Zerto Cloud Connector (ZCC) when it is no longer needed.
 * [Accessing the Zerto self-service portal](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal)
 * [Ordering a Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-order)
 * [Viewing Zerto Cloud Connector details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-view)
-* [Zerto installation guide for VMware vSphere environments and Microsoft Hyper-V environments](https://s3.amazonaws.com/zertodownload_docs/Latest/Zerto%20Virtual%20Replication%20Installation%20Guide%20for%20vSphere%20and%20Hyper-V.pdf){: external}
+* [Zerto for VMware vSphere](https://www.zerto.com/solutions/workloads-and-applications/vmware-vsphere/){: external}
 * [Zerto Support and Services](https://www.zerto.com/support-and-services/){: external}

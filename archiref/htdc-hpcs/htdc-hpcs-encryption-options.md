@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-06-28"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,9 @@ subcollection: vmwaresolutions
 
 # vCenter Server encryption options
 {: #htdc-hpcs-encryption-options}
+
+New installations of Entrust DataControl® (formerly known as HyTrust DataControl) are no longer supported for new or existing deployments of vCenter Server® instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
+{: deprecated}
 
 Enterprises that require encrypted data at rest on their vCenter Server instance have the following options:
 
@@ -31,23 +34,7 @@ The use of IBM KP or IBM HPCS allows:
 * Bring Your Own Key (BYOK) - Bring your keys to the cloud and manage them using the IBM KP multitenant key management service.
 * Keep Your Own Key (KYOK) - Keep your keys protected with the IBM HPCS single-tenant key management service. It has built-in customer-controlled FIPS 140-2 Level 4 Hardware Security Modules (HSM), which provide control and authority over encryption keys.
 
-This reference architecture is based on the Entrust DataControl and IBM HPCS option, and the following table compares this option against vSAN and vSphere encryption.
-
-| Item | Entrust DataControl | vSphere Encryption | vSAN Encryption | Notes |
-| ---- | ----------- | ------------------ | --------------- | ----- |
-| Compatible with replication products - Zerto, HCX, and vSphere Replication | Yes | Yes | Yes| |
-| Encryption scope | VM | Hypervisor only | Data store only | The higher up the stack encryption occurs, the higher the security level and fewer attack vectors. |
-| Workload boot and clone protection | Yes | No | No | Ensures cloned workloads. VMs don't work unless authorized. |
-| Encrypted backups with Veeam | Yes | Yes | Yes | |
-| Encryption granularity | Per VM | Per VM | Per vSAN cluster | More granularity provides more secure deployment options. |
-| vSAN deduplication and compression | No | No | Yes | Deduplication reduces storage requirements. |
-| Encrypt and rekey without downtime | Yes | No | No | Frequent rekeying is fundamental to security compliance. Entrust KeyControl can perform rekeying automatically, while VMs continue to run. |
-| Secure workload mobility | vSphere, vSAN, bare metal, or any hypervisor | Within vSphere only | Within the vSAN cluster only | With Entrust KeyControl, policies follow the workload across any platform. |
-| Secure workload mobility public cloud | AWS, Azure, IBM | No | No | Operational simplicity - one solution for encryption across all platforms, less chance of mistakes. |
-| Transparency | Fully transparent | Limited | Limited | vSphere and vSAN provide limited visibility into clones and snapshots. |
-| Geo-Fencing (GDPR) | Yes | No | No | Entrust KeyControl BoundaryControl integration |
-| NIST/PCI compliant live rekey | Yes | No | No | Allows NIST-compliant rekeying without downtime. |
-{: caption="Table 1. Encryption features comparison" caption-side="bottom"}
+For a comparison of features between Entrust DataControl, vSphere Encryption, and vSAN Encryption, see [vSphere and vSAN encryption with Entrust KeyControl](https://www.entrust.com/-/media/documentation/buyersguide/dps-vsphere-vsan-encryption-keycontrol-bg.pdf){: external}.
 
 ## Related links
 {: #htdc-hpcs-encryption-options-related}

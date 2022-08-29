@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-08"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -22,7 +22,7 @@ subcollection: vmwaresolutions
 The trust manifests provide access and control to the following resources:
 - VMware vCenter Server®
 - NSX-T™ administration interface
-- Entrust CloudControl
+- Entrust CloudControl™
 
 ### Entrust CloudControl trust manifest
 {: #vrw-iam-hytrust-trust-manifest}
@@ -463,6 +463,6 @@ The trust manifests provide access and control to the following resources:
 {: #vrw-iam-hytrust-related}
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
-* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
+* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
+* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations)
 * [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)

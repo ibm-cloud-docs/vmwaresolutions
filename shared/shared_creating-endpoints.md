@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-08-03"
 
 keywords: VMware Solutions Shared create private network endpoint
 
@@ -28,7 +28,8 @@ Service charges are incurred only if you choose to use the service.
 {: #shared_creating-endpoints-prereq}
 
 * If you have an {{site.data.keyword.cloud_notm}} Direct Link on your account, you must establish a tunnel between the cross-connect router and the customer edge to have access to the virtual data center.
-* You can order only one private network endpoint per virtual data center.
+* You can order only one private network endpoint per single-zone virtual data centers.
+* For multizone virtual data centers, two private network endpoints are ordered to correspond with each NSX Edge Service Gateway.
 * If you want to change the device type of your private network endpoint, you must first delete the existing private network endpoint. Then, create a new private network endpoint with the new device type.
 * You can simultaneously make resource updates to your virtual data center while you create or delete a private network endpoint.
 
@@ -71,7 +72,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 5. Complete the following configuration in the **Create new private network endpoint** pane.
    1. Select the device type.
    2. Provide the IP addresses or subnets to allowlist.
-   3. Click **Create**.
+   3. Click **Order**.
 
 For more information about creating a private network endpoint and to review an example of a successful configuration, see [Order a Private Network Endpoint (PNE) to connect your IBM account to your VMware Solutions Shared virtual data center](https://mlwiles.github.io/vmwaresolutions/vcd/order-pne/){: external}.
 

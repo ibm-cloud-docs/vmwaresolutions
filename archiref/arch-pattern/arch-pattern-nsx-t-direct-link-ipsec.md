@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-05-09"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,9 +16,9 @@ subcollection: vmwaresolutions
 # Architecture pattern for using IPsec over {{site.data.keyword.dl_short}} with a vCenter Server with NSX-T instance
 {: #arch-pattern-nsx-t-direct-link-ipsec}
 
-On [VMware vCenter Server®](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in {{site.data.keyword.cloud}} classic infrastructure, your workloads are deployed and run on VMware NSX-T™ overlay networks. As part of the deployment, the automation deploys an example NSX-T topology. You can use the provisioned examples as your base or build your own topologies on overlay. These overlay networks are not automatically advertised to {{site.data.keyword.cloud_notm}} classic infrastructure network. 
+On [VMware vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in {{site.data.keyword.cloud}} classic infrastructure, your workloads are deployed and run on VMware NSX-T™ overlay networks. As part of the deployment, the automation deploys an example NSX-T topology. You can use the provisioned examples as your base or build your own topologies on overlay. These overlay networks are not automatically advertised to {{site.data.keyword.cloud_notm}} classic infrastructure network. 
 
-This architecture pattern presents private connectivity for vCenter Server that uses [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and tunneling. This solution is applicable for [NSX-T based vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. You can use Gateway Appliance or vCenter Server edge services cluster with Juniper vSRX or other device as part of the solution as an option.
+This architecture pattern presents private connectivity for VMware vCenter Server® that uses [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and tunneling. This solution is applicable for [NSX-T based vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. You can use Gateway Appliance or vCenter Server edge services cluster with Juniper® vSRX or other device as part of the solution as an option.
 
 The tunnel is established between NSX-T T0 and a customer router routable through {{site.data.keyword.dl_short}}. If vSRX or other third-party device is used in edge services cluster, you can terminate the tunnel in these devices as well. In this case, NSX-T T0 will advertise routes in the vSRX (or other third-party device) through BGP or Static Routes.
 

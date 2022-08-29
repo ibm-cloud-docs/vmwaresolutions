@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-04-19"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -19,14 +19,14 @@ subcollection: vmwaresolutions
 The design uses the following structure:
 * Network
 * vCenter
-* NSX Manager
-* Caveonix RiskForesight
-* Entrust CloudControl
-* vRealize Log Insight
-* vRealize Network Insight
-* vRealize Operations Manager
+* VMware NSX® Manager
+* Caveonix RiskForesight™
+* Entrust CloudControl™
+* vRealize Log Insight™
+* vRealize® Network Insight
+* vRealize Operations™ Manager
 * AD/DNS/NTP
-* Veeam
+* Veeam®
 * KMIP for VMware®
 * Hyper Protect Crypto Service
 
@@ -38,8 +38,8 @@ As the design uses two VMware Regulated Workloads instances, the network design 
 The key design element at the network level is the adoption of cross-region network for the use of the vRealize Operations Manager analytic cluster. The cross-region network is a layer 3 construct that allows the use of the same IP subnet space at either the protected region or the recovery region. In normal operations, the cross-region network is tethered to the vSRX or FortiGate in the protected region that is, the default gateway for this network is the vSRX or FortiGate. The protected region vSRX or FortiGate then advertises this network so that it is reachable from other networks. In recovery operations, the cross-region network is tethered to the vSRX or FortiGate in the recovery region. The recovery region vSRX or FortiGate then advertises this network so that it is reachable from other networks. The use of the cross-region network allows the vRealize Operations Manager Analytic cluster to retain the same IP addresses when they are recovered to the recovery region.
 
 Review the following network design decisions:
-* The {{site.data.keyword.cloud_notm}} classic network environment does not allow the stretching of VLANs across data centers. Therefore, this design does not use stretched VLANs at the physical network infrastructure level.
-* While some NSX-T™ designs can stretch segments across geographically distant vSphere clusters, these designs require a common NSX-T cluster, which does not meet the design requirements for independence between regions.
+* The {{site.data.keyword.cloud}} classic network environment does not allow the stretching of VLANs across data centers. Therefore, this design does not use stretched VLANs at the physical network infrastructure level.
+* While some VMware NSX-T™ designs can stretch segments across geographically distant vSphere clusters, these designs require a common NSX-T cluster, which does not meet the design requirements for independence between regions.
 * It's possible to stretch networks between geographically dispersed vSRX appliances. However, this design does not present this use case.
 * Recovered management components use the same IP addressing to minimize recovery effort.
 * To provide isolation of traffic, the design uses tunnels (GRE or IPsec driven by customer requirements) between regions and also between the region and the SaaS consumer and SaaS provider.

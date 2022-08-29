@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-16"
+lastupdated: "2022-08-02"
 
 keywords: vCenter Server BOM, bill of materials vCenter Server, BOM
 
@@ -38,7 +38,7 @@ The following table details the BOM information for vCenter Server software comp
 
 | Manufacturer | Component                       | Version       |
 |:------------ |:------------------------------- |:------------- |
-| VMware       | vSphere ESXi                    | ESXi 7.0 Update 3d (19482537)[^esxi7] or \n ESXi 6.7 P06 (18828794)[^esxi67] or \n ESXi 6.5 P06 (17477841)[^esxi65] |
+| VMware       | vSphere ESXi                    | ESXi 7.0 Update 3e (19898904)[^esxi7] or \n ESXi 6.7 P06 (202206001)[^esxi67] or \n ESXi 6.5 P06 (17477841)[^esxi65] |
 | VMware       | vSphere 7.0 Update 3c           | Distributed vSwitch 7.0.0 |
 | VMware       | vSphere 6.7[^vcs-vsphere67]                     | Distributed vSwitch 6.6.0 |
 | VMware       | vSphere 6.5[^vcs-vsphere65]     | Distributed vSwitch 6.5.0 |
@@ -77,15 +77,15 @@ The settings apply to new instances and new clusters in new instances V2.2 or la
 
 | Configuration setting | If newly deployed in V2.2 or later  | If upgraded from V2.1 or earlier |
 |:------------- |:------------- |:------------- |
-| Maximum of Volumes | **MaxVolumes** = 256 | Both **/NFS/MaxVolumes** and **/NFS41/MaxVolumes** = 256 |
-| Heartbeat Maximum Failures | **HeartbeatMaxFailures** = 10 | Not set |
-| Heartbeat Frequency | **HeartbeatFrequency** = 12 | Not set |
-| Heartbeat Timeout | **HeartbeatTimeout** = 5 | Not set |
-| Maximum Queue Depth | **MaxQueueDepth** = 64 | Not set |
-| Queue Full Sample Size | **QFullSampleSize** = 32 | **/Disk/QFullSampleSize** = 32 |
-| Queue Full Threshold | **QFullThreshold** = 8 | **/Disk/QFullThreshold** = 8 |
-| TCP/IP Heap Size | **TcpipHeapSize** = 32 | Not set |
-| TCP/IP Heap Maximum | **TcpipHeapMax** = 1536 | Not set |
+| Maximum of Volumes | Both **/NFS/MaxVolumes** and **/NFS41/MaxVolumes** = 256 | Both **/NFS/MaxVolumes** and **/NFS41/MaxVolumes** = 256 |
+| Heartbeat Maximum Failures | **/NFS/HeartbeatMaxFailures** = 10 | Not set |
+| Heartbeat Frequency | **/NFS/HeartbeatFrequency** = 12 | Not set |
+| Heartbeat Timeout | **/NFS/HeartbeatTimeout** = 5 | Not set |
+| Maximum Queue Depth | **/NFS/MaxQueueDepth** = 64 | Not set |
+| Queue Full Sample Size | **/Disk/QFullSampleSize** = 32 | **/Disk/QFullSampleSize** = 32 |
+| Queue Full Threshold | **/Disk/QFullThreshold** = 8 | **/Disk/QFullThreshold** = 8 |
+| TCP/IP Heap Size | **/Net/TcpipHeapSize** = 32 | Not set |
+| TCP/IP Heap Maximum | **/Net/TcpipHeapMax** = 1536 | Not set |
 {: caption="Table 3. ESXi servers advanced configuration settings for vCenter Server instances and clusters before and after V2.2" caption-side="bottom"}
 
 ### Notes
@@ -102,7 +102,7 @@ Review the following table for an overview of the advanced configuration setting
 
 | Configuration setting | If newly deployed in V3.6 or later  | If upgraded from V3.5 or earlier |
 |:------------- |:------------- |:------------- |
-| Block guest sourced BPDU frames | **Net.BlockGuestBPDU** = 1 | **Net.BlockGuestBPDU** = 0 |
+| Block guest sourced BPDU frames | **/Net/BlockGuestBPDU** = 1 | **/Net/BlockGuestBPDU** = 0 |
 | Duration, in seconds, to lock out a user's account after it exceeds the maximum allowed failed login attempts. | **Security.AccountUnlockTime** = 1800 | **Security.AccountUnlockTime** = 900 |
 | Maximum allowed failed login attempts before a user's account is locked out. Zero disables locking of account. | **Security.AccountLockFailures** = 6 | **Security.AccountLockFailures** = 5 |
 {: caption="Table 4. ESXi servers advanced configuration settings for vCenter Server instances and clusters before and after V3.6" caption-side="bottom"}

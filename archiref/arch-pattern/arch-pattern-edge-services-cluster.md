@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-06-09"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,11 +16,11 @@ subcollection: vmwaresolutions
 # Architecture pattern for using edge services cluster with NSX-T
 {: #arch-pattern-edge-services-cluster}
 
-When you deploy a vCenter Server instance in your {{site.data.keyword.cloud}} classic infrastructure, you might optionally deploy an edge services cluster. 
+When you deploy a VMware vCenter Server® instance in your {{site.data.keyword.cloud}} classic infrastructure, you might optionally deploy an edge services cluster. 
 
-Edge services cluster might host, for example, a Juniper vSRX, Fortinet FortiGate or other third-party router or firewall. You can control which VLANs are associated with the router or firewall that is running on it through the [gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about#firewall) configurations.
+Edge services cluster might host, for example, a Juniper® vSRX, Fortinet® FortiGate® or other third-party router or firewall. You can control which VLANs are associated with the router or firewall that is running on it through the [gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about#firewall) configurations.
 
-**Edge services cluster** must not be mixed with **NSX-T edge cluster**, which consists of NSX-T edge transport nodes. Edge services cluster provides compute capacity for Juniper vSRX or third-party router or firewalls. The VLAN routing can be controlled by [gateway appliance configuration](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances) in {{site.data.keyword.cloud_notm}} classic network.
+**Edge services cluster** must not be mixed with **NSX-T edge cluster**, which consists of VMware NSX-T™ edge transport nodes. Edge services cluster provides compute capacity for Juniper vSRX or third-party router or firewalls. The VLAN routing can be controlled by [gateway appliance configuration](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances) in {{site.data.keyword.cloud_notm}} classic network.
 {: important} 
 
 ## Deploying edge services cluster with NSX-T

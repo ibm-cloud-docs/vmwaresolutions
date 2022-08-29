@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ The installation of VMware HCX™ has the following software requirements:
 ## Configuring network connectivity
 {: #hcxclient-planning-config-net}
 
-HCX™ must traverse the public internet and private lines, and connect to data center components, such as networks, switches, and port groups.
+HCX must traverse the public internet and private lines, and connect to data center components, such as networks, switches, and port groups.
 * For more information about the ports that must be opened so that HCX virtual appliances can install successfully, see [Port access requirements](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-port-req).
 * Both the on premises vSphere environment and the vCenter Server HCX Cloud environment must allow Network Time Protocol (NTP) clock synchronization among vSphere on-premises devices and the vCenter Server HCX devices. UDP port 123 must be accessible to HCX virtual appliances and networks.
 

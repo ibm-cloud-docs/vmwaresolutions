@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-06-23"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,9 @@ subcollection: vmwaresolutions
 
 # Encryption overview
 {: #htdc-hpcs-encryption-overview}
+
+New installations of Entrust DataControl® (formerly known as HyTrust DataControl) are no longer supported for new or existing deployments of vCenter Server® instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
+{: deprecated}
 
 ## Terms
 {: #htdc-hpcs-encryption-overview-terms}
@@ -69,4 +72,4 @@ The following are considered to be best practices in key management:
 ## Related links
 {: #htdc-hpcs-encryption-overview-related}
 
-* [Entrust Multi-Cloud Encryption](https://www.entrust.com/digital-security/multi-cloud-encryption){: external}
+* [Entrust multicloud encryption](https://www.entrust.com/digital-security/multi-cloud-encryption){: external}

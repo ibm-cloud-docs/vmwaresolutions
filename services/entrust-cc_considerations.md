@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-15"
+lastupdated: "2022-07-15"
 
 keywords: Entrust CloudControl, tech specs Entrust CloudControl
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 {{site.data.keyword.attribute-definition-list}}
 
 # Entrust CloudControl overview
-{: #htcc_considerations}
+{: #entrust-cc_considerations}
 
 The Entrust CloudControl™ service (formerly known as HyTrust CloudControl) enforces and controls compliance against security standards, which includes role-based access control (RBAC), approval, and auditing. When the service is combined with Entrust DataControl® (formerly known as HyTrust DataControl), the service ensures that virtual machines and workload data don't leave a particular region, cluster, or VMware ESXi™ server within the {{site.data.keyword.cloud}} data center.
 {: shortdesc}
@@ -27,7 +27,7 @@ New installations of Entrust CloudControl are supported only for VMware vCenter 
 {{site.data.content.para-promotion-services}}
 
 ## Technical specifications for Entrust CloudControl
-{: #htcc_considerations-specs}
+{: #entrust-cc_considerations-specs}
 
 For more information about resource requirements and capacity checking for some services, see [Resource requirements for services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-resource-requirements).
 
@@ -43,25 +43,25 @@ Sample users and groups are preconfigured in Active Directory (AD) and are displ
 The following components are ordered and included in the Entrust CloudControl service:
 
 ### Entrust CloudControl appliance
-{: #htcc_considerations-appliance}
+{: #entrust-cc_considerations-appliance}
 
-* CPU: 4 CPUs
-* RAM: 16 GB
-* Disk: 186 GB VMDK
-* Network: Placed on VLAN-backed private portable network specified for management
+* CPU - 4 CPUs
+* RAM - 16 GB
+* Disk - 186 GB VMDK
+* Network - Placed on VLAN-backed private portable network specified for management
 
 ### High availability
-{: #htcc_considerations-ha}
+{: #entrust-cc_considerations-ha}
 
 Two Entrust CloudControl appliances are deployed in an active-passive configuration.
 
 ### Licenses and fees
-{: #htcc_considerations-licenses}
+{: #entrust-cc_considerations-licenses}
 
 Per host license - A Entrust CloudControl license is ordered for each host in the environment.
 
 ## Considerations when you delete Entrust CloudControl
-{: #htcc_considerations-remove}
+{: #entrust-cc_considerations-remove}
 
 Review the following considerations before you delete the service:
 
@@ -70,10 +70,10 @@ Review the following considerations before you delete the service:
 * If you installed the Entrust CloudControl service before VMware Solutions v4.0, and you then delete that service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).
 
 ## Related links
-{: #htcc_considerations-related}
+{: #entrust-cc_considerations-related}
 
-* [Ordering Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_ordering)
-* [Managing Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-managinghtcc)
+* [Ordering Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_ordering)
+* [Managing Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-managing-entrust-cc)
 * [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Entrust website](https://www.entrust.com/){: external}

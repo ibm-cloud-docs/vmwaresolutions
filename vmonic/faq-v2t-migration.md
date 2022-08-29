@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-06-16"
+lastupdated: "2022-07-29"
 
 subcollection: vmwaresolutions
 
@@ -193,17 +193,17 @@ The following recommendations apply:
 
 However, if you have overlapping IP addressing challenges, the note the following guidance:
 
-* You can reuse your existing instance management subnet, if it has IP addresses available and you don't use any IP addresses for your own use. The new instance uses new IP addresses for the vCenter server, NSX-T managers, and Active Directory servers (if AD servers are running on the VMware VMs) from the instance management subnet. Reusing existing IP addresses is not possible for these components.
+* You can still continue to use your existing instance management subnet, if it has IP addresses available and you don't use any IP addresses for your own use. The new instance uses new IP addresses for the vCenter server, NSX-T managers, and Active Directory servers (if AD servers are running on the VMware VMs) from the new instance management subnet. Reusing existing management subnet is not possible for these components until you delete the existing VCS.
 * In addition, the NSX-T T0 gateways are provisioned with new IP addresses from the portable private and portable public subnets for customer workload edge. NSX-T T0 gateways do not support secondary IP addresses on their uplinks. 
 * You can manually configure an existing subnet for the NSX-T T0 gateway uplinks, but only one subnet can be configured in T0. 
-* If you are using secondary IP subnets on the uplinks, you need to redesign the topology. For example, you can order [new public static subnets](/docs/subnets?topic=subnets-about-subnets-and-ips#static-subnets) and route these subnets to NSX-T T0 HA VIP. These IP subnets and addresses can be used with NSX-T NAT rules, load balancing or on overlay attached VMs.
+* If you are using secondary IP subnets on the uplinks, you need to redesign the topology. For example, you can order [new static subnets](/docs/subnets?topic=subnets-about-subnets-and-ips#static-subnets) and route these subnets to NSX-T T0 HA VIP. These IP subnets and addresses can be used with NSX-T NAT rules, load balancing or on overlay attached VMs.
 
 ## Can I reuse existing portable subnets that are ordered outside the VMware Solutions console?
 {: #faq-v2t-migration-customer-portable-subnets}
 
-If you ordered private or public portable subnets outside the VMware Solutions console, and you use these subnets with your workloads by running on VMware clusters, you can reuse these IP addresses if your new instance was deployed on the same VLANs as the existing NSX-V based solution was.
+If you ordered private or public portable subnets outside the VMware Solutions console, and you use these subnets with your workloads by running on VMware clusters, you can still continue to use these IP addresses if your new instance was deployed on the same VLANs as the existing NSX-V based solution was.
 
-If you are using these IP addresses on ESGs for NAT rules or other services, be aware that the NSX-T T0 gateways do not support secondary IP addresses on their uplinks. The NSX-T T0 gateway in the new instance is provisioned with new IP addresses from the portable private and portable public subnets for customer workload edge. You can manually configure an existing subnet for the NSX-T T0 gateway uplinks, but only one subnet can be configured in T0. If you are using secondary IP subnets on the uplinks, you need to redesign the topology. For example, you can order [new public static subnets](/docs/subnets?topic=subnets-about-subnets-and-ips#static-subnets) and route these subnets to NSX-T T0 HA VIP. These IP subnets and addresses can be used with NSX-T NAT rules, load balancing, or on overlay attached VMs.
+If you are using these IP addresses on ESGs for NAT rules or other services, be aware that the NSX-T T0 gateways do not support secondary IP addresses on their uplinks. The NSX-T T0 gateway in the new instance is provisioned with new IP addresses from the portable private and portable public subnets for customer workload edge. You can manually configure an existing subnet for the NSX-T T0 gateway uplinks, but only one subnet can be configured in T0. If you are using secondary IP subnets on the uplinks, you need to redesign the topology. For example, you can order [new static subnets](/docs/subnets?topic=subnets-about-subnets-and-ips#static-subnets) and route these subnets to NSX-T T0 HA VIP. These IP subnets and addresses can be used with NSX-T NAT rules, load balancing, or on overlay attached VMs.
 
 ## Related links
 {: #faq-v2t-migration-links}

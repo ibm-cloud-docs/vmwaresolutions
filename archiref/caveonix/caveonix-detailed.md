@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-16"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Detailed design
 {: #caveonix-detailed}
 
-The following diagram and descriptions provide information about the RiskForesight application components.
+The following diagram and descriptions provide information about the RiskForesight™ application components.
 
 ![Application components](../../images/caveonix-app-components.svg "Application components"){: caption="Figure 1. Application components" caption-side="bottom"}
 
@@ -30,7 +30,7 @@ The following diagram and descriptions provide information about the RiskForesig
 - Central Router - Manages all integration touch points with the VMware® Orchestration layer. All the RiskForesight plug-ins must communicate with the Central Router to get authorized to communicate with the RiskForesight ecosystem.
 - Application Routing Server - Is the REST endpoint middleware that connects the GUI and the backend data stores. Also, it validates the user access requests and manages the RBAC.
 - vCenter Data Collector - The plug-in extracts the virtual machine (VM) details from vCenter. The generic plug-in uses the VMware APIs to connect to vCenter and extracts workload-relevant information. After the information is available, the plug-in packages the payload and sends it to the Central Collector.
-- vCD Data Collector - The plug-in extracts the VM details from the VMware vCloud Director. The generic plug-in uses the VMware APIs to connect to the VMware vCloud Director and extracts the workload-related information. After the information is available, the plug-in packages the payload and sends it to the Central Collector.
+- vCD Data Collector - The plug-in extracts the VM details from the VMware Cloud Director. The generic plug-in uses the VMware APIs to connect to the VMware Cloud Director and extracts the workload-related information. After the information is available, the plug-in packages the payload and sends it to the Central Collector.
 - vCD Network Data Collector - The plug-in extracts Netflow details from the VMware vCD. The generic plug-in uses the VMware APIs to connect to the VMware NSX and extracts Network, FW, Security Rules, and Security Groups. After the information is available, the plug-in packages the payload and send it to the Central Collector.
 - Network Data Collector - A plug-in that extracts Netflow details from the VMware vCenter. The generic plug-in uses VMware APIs to connect to VMware NSX and extracts network, firewall, security rules, and security groups information. After the information is available, the plug-in packages the payload and sends it to the Central Collector.
 -  Remote Collector - Located in the tenant environment or another location where it has network access to the tenant VMs. It handles all compliance and cyberrisk scanning.

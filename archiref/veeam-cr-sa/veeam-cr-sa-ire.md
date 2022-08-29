@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-05-09"
+lastupdated: "2022-08-08"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Isolated recovery environment solution architecture
 {: #veeam-cr-sa-ire}
 
-The isolated recovery environment solution architecture uses a VMware vCenter Server® instance with the Veeam® service, edge services cluster, and Juniper® vSRX options. They create an air gapped cyber-recovery environment separate from the production environment. This isolated recovery environment is managed and accessed by using a segregated cyber-recovery team. The Veeam service is enhanced with a Veeam Linux® hardened repository for immutable storage.
+The isolated recovery environment solution architecture uses a VMware vCenter Server® instance with the Veeam® service, edge services cluster, and Juniper® vSRX options. They create an air gapped cyber-recovery environment separate from the production environment. This isolated recovery environment is managed and accessed by using a separate cyber-recovery team. The Veeam service is enhanced with a Veeam Linux® hardened repository for immutable storage.
 
 The solution architecture is suitable for clients who want to move a copy of critical data away from the production environment, backup systems, and personnel to an environment that requires separate security credentials. The solution architecture does not preclude any of the vCenter Server options, such as Caveonix, Entrust, and vRealize Operations™.
 

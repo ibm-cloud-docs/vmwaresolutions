@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-20"
+lastupdated: "2022-08-26"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -23,7 +23,11 @@ You can include the Veeam® service with a new VMware vCenter Server® instance 
 ## Ordering Veeam for a new instance
 {: #veeam_ordering-new}
 
-When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance#vc_orderinginstance-procedure), scroll down to the services section and click **Veeam** in the **Business continuity and migration** category. Follow the steps to add the service to your instance.
+When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Veeam is in the Recommended services category and is already selected.
+
+Select **Edit** to review and specify the information. If you enter or change information, click **Save**.
+
+If you do not want to order Veeam, toggle its switch off.
 
 ## Ordering Veeam for an existing instance
 {: #veeam_ordering-existing}
@@ -68,6 +72,15 @@ The IOPS (input/output operations per second) per GB based on your workload requ
 
 The backup disks are used as storage repositories for backups. This option is applicable only to the **Bare metal server with local storage** deployment type.
 
+### Linux hardened repository
+{: #veeam_Linux_hardened_repository}
+
+You can order a Linux® hardened repository (LHR) to use for immutable storage. If you select a Linux hardened repository, a list of backup disk size options is displayed. Select the disk size that you want to order.
+
+The Linux hardened repository is only supported for vSphere 7 NSX-T instances.
+
+For more information, see [Hardened Repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=110){: external} in the *Veeam Backup & Replication 11 - User Guide for VMware vSphere*.
+
 ### Number of VMs to license
 {: #veeam_ordering-config-vms}
 
@@ -81,7 +94,6 @@ Specify the number of virtual machines (VMs) to license, in increments of 10. At
 * [Ordering Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
 * [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring IBM Cloud Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
-* [Veeam backup and replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external}
+* [Veeam backup and replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam)
 * [Veeam website](https://www.veeam.com/){: external}
 * [Veeam Help Center](https://www.veeam.com/documentation-guides-datasheets.html){: external}

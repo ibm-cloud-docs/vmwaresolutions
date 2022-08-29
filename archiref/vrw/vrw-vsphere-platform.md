@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # vSphere components
 {: #vrw-vsphere-platform}
 
-The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads is built with vSphere technology, which includes the ESXi hypervisors and vCenter appliance.
+The {{site.data.keyword.cloud}} for VMware® Regulated Workloads is built with vSphere technology, which includes the VMware ESXi™ hypervisors and vCenter appliance.
 
 ## Management cluster
 {: #vrw-vsphere-platform-management}
@@ -91,11 +91,11 @@ For more information, see [vRealize Log Insight design](/docs/vmwaresolutions?to
 
 Entrust Solutions, Entrust CloudControl, and the optional Entrust DataControl are used to unify security policies and the access to the vSphere vCenter and NSX-T management.
 
-Entrust CloudControl provides unified visibility to security configuration and context, and continuous compliance by using templates to enforce segregation of duties. It also provides a robust audit trail that includes a full record of all actions that are taken by security, network, and compute platform administrators. Entrust CloudControl simplifies compliance with administrative controls requirements in HIPAA, PCI, FedRAMP, CJIS, and other regulations.
+Entrust CloudControl provides unified visibility to security configuration and context, and continuous compliance by using templates to enforce separation of duties. It also provides a robust audit trail that includes a full record of all actions that are taken by security, network, and compute platform administrators. Entrust CloudControl simplifies compliance with administrative controls requirements in HIPAA, PCI, FedRAMP, CJIS, and other regulations.
 
 The Entrust CloudControl appliances are deployed in an active-active configuration, with integrations with Active Directory for authentication services and both the vCenter Server and NSX-T admin user interfaces.
 
-For more information, see [Entrust CloudControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations).
+For more information, see [Entrust CloudControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations).
 
 ### Backup server
 {: #vrw-vsphere-platform-management-backupserver}

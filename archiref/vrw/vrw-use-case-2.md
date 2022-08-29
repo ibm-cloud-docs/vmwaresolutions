@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Use case 2
 {: #vrw-use-case-2}
 
-{{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads delivers high security for sensitive workloads such as those run by users in the healthcare or financial sectors.
+{{site.data.keyword.cloud}} for VMware® Regulated Workloads delivers high security for sensitive workloads such as those run by users in the healthcare or financial sectors.
 
 The architecture of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads is designed for isolation of sensitive workloads.
 

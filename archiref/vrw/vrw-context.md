@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # System context
 {: #vrw-context}
 
-Although {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads is a self-contained design, some external dependencies exist. IBM Cloud for VMware Regulated Workloads is designed without the use of {{site.data.keyword.cloud_notm}} shared offerings such as VSIs and shared storage offerings.
+Although {{site.data.keyword.cloud}} for VMware® Regulated Workloads is a self-contained design, some external dependencies exist. {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads is designed without the use of {{site.data.keyword.cloud_notm}} shared offerings such as VSIs and shared storage offerings.
 
 ![IBM Cloud for VMware Regulated Workloads context](../../images/vrw-context.svg "IBM Cloud for VMware Regulated Workloads context"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads context" caption-side="bottom"}
 

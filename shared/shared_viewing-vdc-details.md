@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-08-22"
 
 keywords: manage shared resources, view shared virtual data centers details
 
@@ -39,7 +39,7 @@ You can view property details for {{site.data.keyword.vmwaresolutions_full}} Sha
 ## Procedure to view virtual data center details
 {: #shared_viewing-vdc-details-procedure}
 
-1. Click **Virtual data centers** from the left navigation pane to view the summary of each virtual data center 
+1. Click **Virtual data centers** from the left navigation pane to view the summary of each virtual data center
 2. Click the virtual data center name to view the properties.
 
 | Property        | Description       |
@@ -90,5 +90,5 @@ For more information about recommended services details, see [Managing Veeam for
 * [Creating a private network endpoint](https://test.cloud.ibm.com)/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints)
 * [Resizing your virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_resize)
 * [Deleting VMware Solutions Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
-* [Accessing the vCloud Director Management console](/docs/vmwaresolutions?topic=vmwaresolutions-shared_accessing-vcd-console)
-* [VMware vCloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}
+* [Accessing the VMware Cloud Director Management console](/docs/vmwaresolutions?topic=vmwaresolutions-shared_accessing-vcd-console)
+* [VMware Cloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}

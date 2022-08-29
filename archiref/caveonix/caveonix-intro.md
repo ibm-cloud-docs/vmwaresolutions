@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ Enterprises that undergo a digital transformation are adopting a hybrid cloud st
 
 To protect this expanding attack surface, enterprises need continuous visibility into workloads from the start until the end of their lifecycle. Enterprises must maintain a “full-stack” understanding of the workload vulnerabilities and configuration issues at the infrastructure, platform, and application level in the context of threats and compliance requirements. Enterprises need predictive analytics to “connect the dots” to give a proactive view of their cyberrisk and compliance risk posture in this vast, new hybrid world.
 
-Caveonix RiskForesight provides proactive workload protection from risks due to cyberthreats and regulatory compliance issues. It provides real-time visibility into what is running in an enterprise’s hybrid cloud through native integration into cloud orchestration platforms. Combining such visibility with risk reduction models and enforcement actions that can be automated, RiskForesight quickly develops a prioritized list of actions to mitigate. RiskForesight is a multitenant-aware hybrid cloud workload protection platform that implements a proactive risk management framework. This framework can operate at multiple control planes: network, compute, security, and compliance, while the implementation of the framework at cloud scale is automated.
+Caveonix RiskForesight™ provides proactive workload protection from risks due to cyberthreats and regulatory compliance issues. It provides real-time visibility into what is running in an enterprise’s hybrid cloud through native integration into cloud orchestration platforms. Combining such visibility with risk reduction models and enforcement actions that can be automated, RiskForesight quickly develops a prioritized list of actions to mitigate. RiskForesight is a multitenant-aware hybrid cloud workload protection platform that implements a proactive risk management framework. This framework can operate at multiple control planes: network, compute, security, and compliance, while the implementation of the framework at cloud scale is automated.
 
 The platform is fully integrated into the VMware® technology stack from vCD, vRA, vCenter to NSX and many public clouds. The RiskForesight platform has three key modules: Detect, Predict, and Act, providing 360-degree visibility into hybrid cloud workloads in real time by natively integrating into hybrid cloud orchestration modules. It is the industry’s first, seamless hybrid cloud protection platform. This platform allows customers to see IT, cyberrisk and compliance risk across the full cybercontrol planes of network, security, compute, and compliance.
 

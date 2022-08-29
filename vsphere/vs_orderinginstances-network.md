@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-18"
+lastupdated: "2022-07-15"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Network interface settings
+# Network interface
 {: #vs_orderinginstances-network-interface-settings}
 
 You must specify the following network interface settings when you order a new VMware vSphere® cluster.
@@ -29,18 +29,6 @@ The host name prefix must meet the following requirements:
 * The host name prefix must start with a lowercase alphabetic character.
 * The host name prefix must end with a lowercase alphabetic or numeric character.
 * The maximum length of the host name prefix is 10 characters.
-
-## Subdomain label
-{: #vs_orderinginstances-subdomain-label}
-
-The subdomain label must meet the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
-* The subdomain label must start with a lowercase alphabetic character.
-* The subdomain label must end with a lowercase alphabetic or numeric character.
-* The maximum length of the subdomain label is 10 characters.
-
-The subdomain label is not used for vSphere 7.0 instances.
-{: note}
 
 ## Domain name
 {: #vs_orderinginstances-domain-name}
@@ -90,7 +78,7 @@ When you select to reuse existing public and private VLANs, specify the VLANs an
 * **Private primary subnet** is assigned to physical hosts for management traffic.
 * **Secondary private VLAN** is for VMware features such as vSAN. You can select an existing secondary private VLAN or select to allocate a new one.
 
-### Important
+#### Important
 {: #vs_orderinginstances-important}
 
 * Ensure that the firewall configuration on the selected VLANs does not block the management data traffic.

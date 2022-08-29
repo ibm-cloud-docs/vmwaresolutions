@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-02-04"
+lastupdated: "2022-06-29"
 
 keywords: IAM user, user role, user permission, IAM account administrator
 
@@ -30,13 +30,14 @@ To identify an account owner who has the administrator role, complete the follow
 
 1. Log in to [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com).
 2. On the upper right of the window, select the {{site.data.keyword.cloud_notm}} account that you want to use.
-3. Click **Manage** > **Access (IAM)** > **Users**.
-4. Scroll down through the list until you find a name with an oval icon to the right with the word **Owner**, which indicates that the user is an account administrator.
-5. Write down the name of this user.
+3. Click **Manage** > **Access (IAM)**.
+4. From the left navigation pane, click **Users**.
+5. Scroll down through the list until you find a name with an **owner** icon next to the user name, which indicates that the user is an account administrator.
+6. Write down the name of this user.
 
-If the owner you identified is not available or has left the company, find one or more other users with the administrator role. Consider who might be assigned the role, for example, a manager, team lead, or someone who works directly with {{site.data.keyword.cloud_notm}} customers.
+If the owner that you identified is not available or has left the company, find one or more other users with the administrator role. Consider who might be assigned the role, for example, a manager, team lead, or someone who works directly with {{site.data.keyword.cloud_notm}} customers.
 
-To locate a user with an administrator role, click the name link and review the information on the **Access policies** tab. Look for the following values:
+To locate a user with an administrator role, click the name link and review the information on the **Access** tab. Look for the following values:
 * Role - Administrator
 * Access Type - Service
 * Policy Details - All VMware® Solutions resources
@@ -51,11 +52,10 @@ After you find the account owner or another user with an administrator role, tha
 3. At the right side of the banner, click **Manage** > **Access (IAM)**.
 4. From the left navigation pane, click **Users**.
 5. In the row for the user that you want to assign access, click the vertical overflow menu next to the **Status** column, and then click **Assign access**.
-6. Expand the **Assign users additional access** pane, and then click the **IAM services** card.
-7. Under **What type of access do you want to assign**, select **VMware Solutions** from the list of services, and then select **Account** as the access policy scope.
-8. Under **VMware Instances**, select the **string equals** operator, and then select **All instances**.
-9. Under **Platform access**, select **Administrator**.
-10. Click **Add > Assign**.
+6. Select **VMware Solutions** from the list of services, and then click **Next**.
+7. Select **Specific resources** for the access scope. Select the attribute type as **VMware Instance**, and the value as **All instances**. Then, click **Next**.
+8. Select **Platform access** and **Administrator**. Then, click **Review**.
+9. Click **Add > Assign**.
 
 ## Related links
 {: #iam_verify_permissions-related}

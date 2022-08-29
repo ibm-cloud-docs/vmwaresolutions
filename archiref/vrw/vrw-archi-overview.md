@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -15,9 +15,9 @@ subcollection: vmwaresolutions
 # Architecture overview
 {: #vrw-archi-overview}
 
-The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads architecture is an extension of the VMware vCenter Server® offering.
+The {{site.data.keyword.cloud}} for VMware® Regulated Workloads architecture is an extension of the VMware vCenter Server® offering.
 
-The design extends and enhances the basic vCenter Server architecture to deliver a secure, high-performance platform. Clients are able to run both classic virtualized workloads and containerized applications with the addition of {{site.data.keyword.redhat_openshift_full}}.
+The design extends and enhances the basic VMware vCenter Server® architecture to deliver a secure, high-performance platform. Clients are able to run both classic virtualized workloads and containerized applications with the addition of {{site.data.keyword.redhat_openshift_full}}.
 
 {{site.data.keyword.vmwaresolutions_full}} automation is used to deploy all layers of the platform thus consistently delivering a secure and compliant-ready build for every {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance ordered.
 
@@ -29,7 +29,7 @@ The minimum viable product consists of the following components:
 * At least one workload cluster that includes four or more ESXi™ hosts
 * vSAN™ and NSX-T™
 * A management cluster of four ESXi hosts
-* An edge services cluster of two ESXi hosts or a physical FortiGate appliance
+* An edge services cluster of two ESXi hosts or a physical FortiGate® appliance
 
 ## Management cluster
 {: #vrw-archi-overview-management}
@@ -95,5 +95,5 @@ For more information, see:
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance){: external}
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
-* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
+* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
 * [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)

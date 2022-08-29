@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-15"
+lastupdated: "2022-07-28"
 
 keywords: vCenter Server network config, network configuration, manage NSX ESG
 
@@ -39,9 +39,9 @@ To take advantage of NSX for your workload VMs, you must configure a number of s
 1. Set the network adapter of the VM to the workload logical switch:
    1. On the **New Virtual Machine** dialog box, click the **Customize Hardware** tab.
    2. On the **new device** menu, select **Network** and click **Add**.
-   3. On the newly added network adapter, select the workload logical switch from the menu. The example name of the workload logical switch is:      
-      * For NSX-T: `overlay-ls`
-      * For NSX-V: `vxw-dvs-17-virtualwire-1-sid-6000-Workload`
+   3. On the newly added network adapter, select the workload logical switch from the menu. The following examples show the name of the workload logical switch:
+      * For NSX-T - `overlay-ls`
+      * For NSX-V - `vxw-dvs-17-virtualwire-1-sid-6000-Workload`
 
    Ensure that you do not select the **Workload Transit** switch.
    {: important}
@@ -113,14 +113,13 @@ Additionally, you can find more details about the customer subnets by completing
    Do not use the IP addresses that are ordered and used during the initial setup. However, you can use other IP addresses on these subnets according to your requirements. To set up more network address translation rules, see [Managing NAT rules](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-5896D8CF-20E0-4691-A9EB-83AFD9D36AFD.html){: external}.
    {: important}
 
-## Ordering additional subnets
+## Ordering more subnets
 {: #vc_esg_config-procedure-additional-subnets}
 
-You can order additional subnets if the provided subnets do not fulfill your requirements for IP addresses.
+You can order more subnets if the provided subnets do not fulfill your requirements for IP addresses.
 
-For NSX-V, you can order additional public or private portable subnets.
-
-For NSX-T, order public static subnets and configure them with the Tier-0 VIP for the subnet's endpoint. For NSX-T private subnets, you must order a gateway appliance as a peer for the NSX edge and manage additional subnets in the appliance.
+* For NSX-T, you can order more public or private _static_ subnets and configure them with the Tier-0 VIP for the subnet's endpoint.
+* For NSX-V, you can order more public or private _portable_ subnets.
 
 ## Related links
 {: #vc_esg_config-related}

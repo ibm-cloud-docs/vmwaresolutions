@@ -4,9 +4,9 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-06-16"
+lastupdated: "2022-08-22"
 
-keywords: IAM user, user role, user permission, IAM vCloud Director
+keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
 subcollection: vmwaresolutions
 
@@ -15,13 +15,13 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Roles and permissions for vCloud Director
+# Roles and permissions for VMware Cloud Director
 {: #iam_vcd}
 
 The following table provides information about the platform management roles and permissions for {{site.data.keyword.vmwaresolutions_full}} Shared.
 
-* **Minimum** - roles with the bare minimum permissions in vCloud Director.
-* **vCloud Director** - roles that are provided by vCloud Director. For more information, see [Rights in Predefined Global Tenant Roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.3/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
+* **Minimum** - roles with the bare minimum permissions in VMware Cloud Director.
+* **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in Predefined Global Tenant Roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.3/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
 * **Custom** - roles that are custom defined by IBM.
 
 | Platform management role | Actions | Level of permission |
@@ -33,14 +33,14 @@ The following table provides information about the platform management roles and
 | Operator | Read-only actions. For example, list instances and view instance details. | Minimum |
 | Editor | Update a specific instance. For example, add or remove VMware ESXi™ servers, clusters, and services; upgrade an instance to a higher version. | Minimum |
 | Administrator | Full management access. For example, create new instances, delete instances, and grant platform access to other users.| Custom |
-| Director Full Viewer | All view access to every component in vCloud Director. | Custom |
-| Director vApp Author | Use catalogs and create vApps in vCloud Director. | vCloud Director |
-| Director vApp User | Use existing vApps in vCloud Director. | vCloud Director |
-| Director Catalog Author | Create and publish catalogs in vCloud Director. | vCloud Director |
-| Director Network Admin | Create, view, edit, delete the subnet, the static route, and troubleshoot routing in vCloud Director. | Custom |
-| Director Console User | View a virtual machine state, properties, and use the guest operating system in vCloud Director. | vCloud Director |
-| Director Backup User | Manage Veeam® backup jobs in vCloud Director. | Custom |
-| Director Security Admin | View and edit the edge firewall and the distributed firewall in vCloud Director. | Custom |
+| Director Full Viewer | All view access to every component in VMware Cloud Director. | Custom |
+| Director vApp Author | Use catalogs and create vApps in VMware Cloud Director. | VMware Cloud Director |
+| Director vApp User | Use existing vApps in VMware Cloud Director. | VMware Cloud Director |
+| Director Catalog Author | Create and publish catalogs in VMware Cloud Director. | VMware Cloud Director |
+| Director Network Admin | Create, view, edit, delete the subnet, the static route, and troubleshoot routing in VMware Cloud Director. | Custom |
+| Director Console User | View a virtual machine state, properties, and use the guest operating system in VMware Cloud Director. | VMware Cloud Director |
+| Director Backup User | Manage Veeam® backup jobs in VMware Cloud Director. | Custom |
+| Director Security Admin | View and edit the edge firewall and the distributed firewall in VMware Cloud Director. | Custom |
 {: caption="Table 1. Roles and actions for VMware Solutions Shared" caption-side="bottom"}
 
 ## Custom defined roles and permissions

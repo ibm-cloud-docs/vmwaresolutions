@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Use case 1
 {: #vrw-use-case-1}
 
-{{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads delivers a virtualized platform for users in a highly regulated industry who require a platform that is designed to support compliance with industry security standards or governmental regulations.
+{{site.data.keyword.cloud}} for VMware® Regulated Workloads delivers a virtualized platform for users in a highly regulated industry who require a platform that is designed to support compliance with industry security standards or governmental regulations.
 
 Typical hyper-converged virtual infrastructure designs include management, edge services, and compute all on the same cluster. This approach might blur the lines between the virtualization administrator, typically responsible for the compute and storage infrastructure, the network administrator, and the security administrator.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-07-14"
 
 keywords: Entrust CloudControl WebGUI, Entrust CloudControl console, enable internet Entrust CloudControl
 
@@ -16,17 +16,17 @@ subcollection: vmwaresolutions
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing Entrust CloudControl
-{: #managinghtcc}
+{: #managing-entrust-cc}
 
 To manage the Entrust CloudControl™ service, access the Entrust CloudControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust CloudControl console from the VMware vSphere® Web Client.
 
 ## Accessing the Entrust CloudControl WebGUI from the VMware Solutions console
-{: #managinghtcc-accessing-webgui}
+{: #managing-entrust-cc-accessing-webgui}
 
 To log in to the WebGUI of the primary or secondary Entrust CloudControl appliance, use the WebGUI credentials that are found on the Entrust CloudControl service details page.
 
 ## Accessing the Entrust CloudControl console from the vSphere Web Client
-{: #managinghtcc-accessing-console}
+{: #managing-entrust-cc-accessing-console}
 
 To access the Entrust CloudControl console from the vSphere Web Client, use the following procedure:
 1. In the vSphere Web Client, find the virtual machines (VMs) that are named **CC1** and **CC2**.
@@ -36,17 +36,17 @@ To access the Entrust CloudControl console from the vSphere Web Client, use the 
 For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 
 ## Considerations when you add and remove hosts and clusters
-{: #managinghtcc-consider-addremove-hostsclusters}
+{: #managing-entrust-cc-consider-addremove-hostsclusters}
 
 When you add and remove hosts and clusters to your instance, VMware Solutions do not manage your Entrust CloudControl inventory and credentials for you. IBM Cloud assumes that you take steps to lock IBM Cloud automation from having access to your Entrust CloudControl deployment.
 
 ## Known issue about Network Time (Entrust CloudControl 5.x only)
-{: #managinghtcc-known-issue-ntp}
+{: #managing-entrust-cc-known-issue-ntp}
 
 On the Entrust CloudControl 5.x web console, if you go to **General > Health**, the **Network Time (NTP)** value in the **Services** section might be shown as disabled. Although the value shows disabled on the console, NTP is working as expected.
 
 ## Enabling internet access for the Entrust CloudControl VMs (Entrust CloudControl 5.x only)
-{: #managinghtcc-internet-access}
+{: #managing-entrust-cc-internet-access}
 
 {{site.data.keyword.vmwaresolutions_short}} provides automatic renewal support for Entrust licenses with the Call Home feature enabled. For VMware vCenter Server® instances that are not private-only, Entrust CloudControl is deployed with firewall and SNAT (Source Network Address Translation) rules that are defined on the management services ESG **mgmt-nsx-edge**.
 
@@ -56,7 +56,7 @@ For private-only vCenter Server environments, the VMware NSX® Edge Services Gat
 {: note}
 
 ### Procedure to find the firewall and SNAT rules defined (Entrust CloudControl 5.x only)
-{: #managinghtcc-proc-find-firewall}
+{: #managing-entrust-cc-proc-find-firewall}
 
 1. Log in to the VMware® vSphere Web Client (FLEX) and find the ESG **mgmt-nsx-edge**.
 2. Click **Home > Networking & Security > NSX Edges**.
@@ -65,7 +65,7 @@ For private-only vCenter Server environments, the VMware NSX® Edge Services Gat
 5. Go to the **NAT** tab and find the SNAT rules that are created for the Entrust VMs. The source IP addresses match the IP addresses that you noted in the previous step.
 
 ### Procedure to enable internet connectivity for Entrust CloudControl (Entrust CloudControl 5.x only)
-{: #managinghtcc-enable-internet}
+{: #managing-entrust-cc-enable-internet}
 
 The following steps apply for updating the Entrust CloudControl network settings on the primary VM, which is used for the license upgrades. You don't need to update the settings for the secondary VM.
 {: note}
@@ -93,9 +93,9 @@ The following steps apply for updating the Entrust CloudControl network settings
 7. To confirm that the primary VM has internet access, run a `wget` command to a public IP address or website. To do so, go back to vCenter Server and right-click **CC1 > Open Console**. Log in to the console by using the console credentials from the Entrust CloudControl service details page. Run a `wget` command such as `wget www.ibm.com` to receive an immediate response. Confirm that the request was sent and a `200` response was received.
 
 ## Related links
-{: #managinghtcc-related}
+{: #managing-entrust-cc-related}
 
-* [Entrust CloudControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
+* [Entrust CloudControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
 * [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Entrust website](https://www.entrust.com/){: external}

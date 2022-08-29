@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-05-06"
+lastupdated: "2022-06-30"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -25,7 +25,7 @@ Ensure that you complete the following tasks:
 * If you are ordering an instance for the first time, complete the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
 * Review the information in [Requirements for the IBM Cloud account](/docs/vmwaresolutions?topic=vmwaresolutions-cloud-infra-acct-req).
 * Review the information in [VMware Regulated Workloads overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview).
-* Review the instance and domain name format. The domain name is used to generate the username and server names of the instance.
+* Review the domain name format. The domain name is used to generate the username and server names of the instance.
 
 | Name        | Value format |
 |:------------|:------------ |

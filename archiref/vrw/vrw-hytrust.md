@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Entrust integration
 {: #vrw-hytrust}
 
-{{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads requires Entrust CloudControl for identity and access management. Entrust CloudControl enables fine grained role-based access control with capability of forensic auditing for all actions that are taken by any privileged user.
+{{site.data.keyword.cloud}} for VMware® Regulated Workloads requires Entrust CloudControl™ for identity and access management. Entrust CloudControl enables fine grained role-based access control with capability of forensic auditing for all actions that are taken by any privileged user.
 
 ## Management cluster
 {: #vrw-hytrust-management}
@@ -59,6 +59,6 @@ The ESXi host access is strictly limited. No direct access to an ESXi host is pe
 {: #vrw-hytrust-related}
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
-* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
+* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
+* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations)
 * [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-06-03"
+lastupdated: "2022-07-07"
 
 keywords: vCenter Server add clusters, add cluster, vCenter Server cluster
 
@@ -59,7 +59,7 @@ Options might differ depending on the version that your instance was initially d
 #### Data center location
 {: #vc_addingclusters-dc-location}
 
-The {{site.data.keyword.cloud_notm}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the vCenter Server instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance, but you must ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms. To check the network latency, you can use a tool such as [Looking Glass](http://lg.softlayer.com/){: external}.
+The {{site.data.keyword.cloud_notm}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the vCenter Server instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance if you ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms. To check the network latency, you can use a tool such as [Looking Glass](http://lg.softlayer.com/){: external}.
 
 If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center or {{site.data.keyword.cloud_notm}} infrastructure pod, three extra VLANs are ordered for use with the ordered {{site.data.keyword.cloud_notm}} bare metal servers.
 
@@ -239,9 +239,9 @@ Depending on the {{site.data.keyword.cloud_notm}} data center that you selected,
 
 When you select to reuse existing public and private VLANs, specify the VLANs and subnets:
 * **Public VLAN** is for public network access. If you select the **Allocate a new one** option for this field, a new public VLAN is allocated automatically. This field is only available on the **Public and private network** tab.
-* **Public primary subnet** is assigned to physical hosts for public network access. If you select the **Auto assigned** option for this field, a new public primary subnet is selected automatically and a new one is created if necessary. This field is only available on the **Public and private network** tab.
+* **Public primary subnet** is assigned to physical hosts for public network access. If you select the **Auto assigned** option for this field, a new public primary subnet is selected automatically, and a new one is created if necessary. This field is only available on the **Public and private network** tab.
 * **Private VLAN** is for connectivity among the data centers and services within the {{site.data.keyword.cloud_notm}}. If you select the **Allocate a new one** option for this field, a new private VLAN is allocated automatically.
-* **Private primary subnet** is assigned to physical hosts for management traffic. If you select the **Auto assigned** option for this field, a new private primary subnet is selected automatically and a new one is created if necessary.
+* **Private primary subnet** is assigned to physical hosts for management traffic. If you select the **Auto assigned** option for this field, a new private primary subnet is selected automatically, and a new one is created if necessary.
 * **Secondary private VLAN** is for VMware features such as vSAN. You can select an existing secondary private VLAN or select to allocate a new one.
 
 Ensure that the firewall configuration on the selected VLANs does not block the management data traffic. Also, ensure that all the VLANs that you select are in the same pod. ESXi servers cannot be provisioned on mixed-pod VLANs.
@@ -288,7 +288,7 @@ Select the {{site.data.keyword.cloud_notm}} data center pod where you want to de
 
 By default, the cluster names are set to **_instance name_-edge**.
 
-You can also specify a new name for your clusters. The names must meet the requirements that are listed in [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-mngt-workload-cluster-settings).
+You can also specify a new name for your clusters. The names must meet the requirements that are listed in [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consoldcluster-settings#vc_orderinginstance-consoldcluster-cluster-name).
 
 ### CPU model
 {: #vc_addingclusters-edge-cluster-cpu}
@@ -347,7 +347,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 
 3. Click **Infrastructure** on the left navigation pane and click **Add** on the upper right of the **Clusters** table.
 4. On the **Cluster** page, select the cluster type.
-5. For workload clusters, select a billing option, enter the cluster name and complete the following configuration.
+5. For workload clusters, select a billing option, enter the cluster name, and complete the following configuration.
    1. If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, under **Bare metal server**, select the **Select a different location** checkbox and choose the {{site.data.keyword.cloud_notm}} data center to host the instance.
    2. Complete the bare metal configuration.
       * For **Skylake** or **Cascade Lake**, select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers**.

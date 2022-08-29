@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-01"
+lastupdated: "2022-08-16"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -22,7 +22,9 @@ The **Edge services cluster** section is available for all firewall appliances e
 ## Cluster name
 {: #vrw-orderinginstance-edge-cluster-name}
 
-By default, the edge services cluster name is set to **mcv-_xx_-edge**. You can also specify a new name for the edge services cluster. The edge services cluster name must meet the requirements that are listed in [Cluster name requirements](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance#vrw-orderinginstance-cluster-name-req).
+By default, the edge services cluster name is set to **mcv-_xx_-edge**.
+
+{{site.data.content.orderinginstance-cluster-name-list}}
 
 ## Data center location (multizone VMware instance only)
 {: #vrw-orderinginstance-edge-dc}

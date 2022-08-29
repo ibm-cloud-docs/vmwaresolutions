@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-03"
+lastupdated: "2022-08-26"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -17,12 +17,12 @@ subcollection: vmwaresolutions
 # Operating VMware Solutions Shared
 {: #shared_vcd-ops-guide}
 
-## VMware vCloud Director tenant portal overview
+## VMware Cloud Director tenant portal overview
 {: #shared_vcd-ops-guide-port-ovv}
 
-The VMware® vCloud Director tenant portal is used for administration of your organization and to create and configure virtual machines (VMs), vApps, and networks within vApps.
+The VMware® Cloud Director tenant portal is used for administration of your organization and to create and configure virtual machines (VMs), vApps, and networks within vApps.
 
-You can also configure advanced networking capabilities that are provided by VMware NSX® for vSphere® within a vCloud Director environment. With the tenant portal, you can also create and manage catalogs, vApp, and virtual data center templates.
+You can also configure advanced networking capabilities that are provided by VMware NSX® for vSphere® within a VMware Cloud Director environment. With the tenant portal, you can also create and manage catalogs, vApp, and virtual data center templates.
 
 ### Roles, permissions, and users
 {: #shared_vcd-ops-guide-roles}
@@ -294,7 +294,7 @@ For more information about how to create a routed organization, see [Add a route
 #### Validating that the network is connected to the edge
 {: #shared_vcd-ops-guide-validate-network}
 
-Use the steps to add a static route to validate that the Organization virtual data center networks that you defined earlier are listed as static routes. When you click **Create (+)**, locate the **Next Hop** field and confirm that `52.117.132.2` is displayed. This value is the internal interface of the edge gateway.
+Use the steps to add a static route to validate that the Organization virtual data center networks that you defined earlier are listed as static routes. When you click **Create (+)**, locate the **Next Hop** field, and confirm that `52.117.132.2` is displayed. This value is the internal interface of the edge gateway.
 
  For more information, see [Add a static route](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-1C8D8FF7-7C24-4A44-875B-04DB961FB780.html){: external}.
 
@@ -303,7 +303,7 @@ Use the steps to add a static route to validate that the Organization virtual da
 
 Optionally, you can configure DHCP on the edge gateway to assign IP addresses automatically to the VMs connected to the Organization virtual data center networks. This step is not necessary if you are using static IP addresses.
 
-From the virtual data center for that edge gateway, configure the DHCP. Repeat the procedure for additional Organization virtual data center networks that are attached to the edge that requires DHCP services. For more information, see [Add a DHCP IP pool](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-EF0B4C79-F6F7-4C75-825C-0B76B888856D.html){: external}.
+From the virtual data center for that edge gateway, configure the DHCP. Repeat the procedure for extra Organization virtual data center networks that are attached to the edge that requires DHCP services. For more information, see [Add a DHCP IP pool](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-EF0B4C79-F6F7-4C75-825C-0B76B888856D.html){: external}.
 **Notes**
 * The **IP Range** is a range from the Organization virtual data center network that is attached to the edge.
 * You can define the names for the **Primary Name Server** and the **Secondary Name Server** now or update the names later.
@@ -316,7 +316,7 @@ From the virtual data center for that edge gateway, configure the DHCP. Repeat t
 
 Stand-alone VMs, or VMs in a vApp, can connect to an Organization virtual data center network.  
 
-From the tenant portal, access the hardware properties of the VMs and add the new network interface to the **NICs** field. Repeat the procedure for additional VMs. For more information, see [Change the hardware properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-BB95EAB5-13D7-4C4A-BDA3-AA1338BC01CA.html?hWord=N4IghgNiBcIHIEkDCBnEBfIA){: external}.
+From the tenant portal, access the hardware properties of the VMs and add the new network interface to the **NICs** field. Repeat the procedure for extra VMs. For more information, see [Change the hardware properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-BB95EAB5-13D7-4C4A-BDA3-AA1338BC01CA.html?hWord=N4IghgNiBcIHIEkDCBnEBfIA){: external}.
 
 After the VMs are connected to the Organization virtual data center network, they are able to communicate with each other. You can ping from one of the VMs to another to test. If the ping command does not respond, check the OS firewalls to see whether ICMP is allowed.
 
@@ -342,7 +342,7 @@ From the virtual data center for that edge gateway, create the network firewall 
 * In the **Browse objects of Type** menu, select **Org Vdc Networks**. Select the Organization virtual data center network that you created as the **Source** cell. Click the right arrow to move the Organization virtual data center network into the **Filter** column.
 * Keep all remaining default selections.
 * For **Action**, select **Accept**.
-* To define a source IP address or range, click the **IP** in the **Source** cell and set the IP address or range to allow everything on that subnet. For example, ``192.168.100.2`` or ``192.168.100.0/24``. Destination and services are set to **Any** when you choose the defaults.
+* To define a source IP address or range, click the **IP** in the **Source** cell and set the IP address, or range to allow everything on that subnet. For example, ``192.168.100.2`` or ``192.168.100.0/24``. Destination and services are set to **Any** when you choose the defaults.
 
 ##### Source NAT definitions to the external network
 {: #shared_vcd-ops-guide-source-nat-ext}
@@ -447,7 +447,7 @@ Enabling access to the service network is done in two edge configuration steps.
 {: #shared_vcd-ops-guide-nat-rule}
 
 Add a NAT rule for translating internal network addresses into the service network IP address space.
-1. Log in to the VMware vCloud Director tenant portal.
+1. Log in to the VMware Cloud Director tenant portal.
 2. Click the virtual data center **Edges** tab and open the single preconfigured edge.
 3. In the **External Networks** section, click the **IP Settings** link. Find the name of the service network and the IP address that is assigned for the service network interface from the table displayed. The format for the service network name is ``<datacenter>-w<idx>-service<idx>``, for example, ``dal13-w02-service02``.
 4. Click **SERVICES** to open the Edge Gateway configuration page. Click the **NAT** tab and click **+ SNAT RULE** to add a SNAT rule.
@@ -560,7 +560,7 @@ For more information about creating a private network endpoint, see [Order a pri
 ## Using Network High Availability
 {: #shared_vcd-ops-guide-network-ha}
 
-Use Network High Availability to anchor your vCloud Director network in two data centers.
+Use Network High Availability to anchor your VMware Cloud Director network in two data centers.
 
 You must access data center groups to use the Network High Availability feature. A data center group acts as a cross-virtual data center router that provides the following.
 * Centralized networking administration
@@ -614,7 +614,9 @@ You are now ready to put VMs on the cross-virtual data center network and build 
 ## Enabling the VMware vRealize Operations Tenant App
 {: #shared_vcd-ops-guide-vrops-app}
 
-Open an IBM ServiceNow ticket and submit a request to enable the VMware vRealize Operations Tenant App feature in your organization. When the VMware vRealize Operations Tenant App is enabled, confirm that **Operations Manager** is set in the **More** menu for the {{site.data.keyword.vmwaresolutions_short}} tenant portal.
+The VMware vRealize Operations™ Tenant App feature is enabled by default when your organization is provisioned. From the Cloud Director tenant portal, click **More > Operations Manager** to access the VMware vRealize Operations Tenant App.
+
+If the **Operations Manager** option is not available in the **More** menu, open an IBM ServiceNow ticket, and submit a request to enable the VMware vRealize Operations Tenant App feature in your organization.
 
 After the VMware vRealize Operations Tenant App is enabled for an organization, the users who are defined in the organization have access to the tenant app.
 
@@ -623,15 +625,15 @@ For more information, see [Using vRealize Operations Tenant App for vCloud Direc
 The billing link in the tenant app is disabled. All billing for {{site.data.keyword.vmwaresolutions_short}} Shared is processed through the {{site.data.keyword.vmwaresolutions_short}} portal.
 {: note}
 
-## Deleting the OpenID Connect configuration in your vCloud Director Organization
+## Deleting the OpenID Connect configuration in your VMware Cloud Director Organization
 {: #shared_vcd-ops-guide-delete-oidc}
 
 You must delete all OpenID Connect (OIDC) users and imported groups with the OIDC type, then the OIDC provider before you can reset the IAM integration for a VMware Solutions Shared instance site.
 
-Single sign-on is available only when your site vCloud Director Organization is integrated with IAM.
+Single sign-on is available only when your site VMware Cloud Director Organization is integrated with IAM.
 {: note}
 
-1. From the vCloud Director Console, click **SIGN IN WITH SINGLE SIGN-ON** to log in to the portal.
+1. From the VMware Cloud Director Console, click **SIGN IN WITH SINGLE SIGN-ON** to log in to the portal.
 2. Click **Administration** on the top menu bar.
 3. Under **Access Control** on the left navigation pane, click **Users**.
 4. In the **Users** panel, select all OIDC type users and click **DELETE**.
@@ -645,4 +647,4 @@ Single sign-on is available only when your site vCloud Director Organization is 
 
 * [VMware Solutions Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
-* [VMware vCloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
+* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}

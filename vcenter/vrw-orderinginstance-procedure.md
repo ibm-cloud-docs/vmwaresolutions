@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-08-16"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -25,11 +25,11 @@ subcollection: vmwaresolutions
      * If you want to update a saved configuration or create a new configuration based on a saved one, select a saved configuration.
 5. Under **Licensing**, complete the license settings for the listed components.
    * To use IBM-provided licenses, ensure that the option **Include with purchase** is selected.
-   * To use your own licenses, click **I will provide** and enter the license key.
+   * To use your own licenses, click **I will provide**, and enter the license key.
 6. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the clusters.
 7. (Single-zone VMware® instance only) Specify the primary cluster settings.
    1. Specify the cluster name.
-   2. Select the primary cluster capacity. For the **Customizable consolidated cluster** capacity, select the CPU model and RAM size.
+   2. Select the primary cluster type. For the **Customizable consolidated** cluster, select the CPU model and RAM size.
    3. Select the number of bare metal servers.
    4. Under **vSAN configuration**, select the disk type and size for the vSAN™ capacity disks, the number of vSAN capacity disks, and the vSAN licensing option.
    5. Review the estimated resources available per cluster.
@@ -61,7 +61,7 @@ subcollection: vmwaresolutions
     7. Review the networking type and select the uplink speed.
 
 11. Choose the firewall appliance for your instance and follow the steps, depending on your selection:
-    1. For **Edge services cluster with Juniper vSRX**, **Edge services cluster with FortiGate Virtual Appliance**, and **Bring your own gateway appliance**, specify the edge services [cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance#vrw-orderinginstance-cluster-name-req), the CPU model, the RAM size, the uplink speed, and the networking type.
+    1. For **Edge services cluster with Juniper vSRX**, **Edge services cluster with FortiGate Virtual Appliance**, and **Bring your own gateway appliance**, specify the edge services [cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-edge#vrw-orderinginstance-edge-cluster-name), the CPU model, the RAM size, the uplink speed, and the networking type.
     2. For **Edge services cluster with Juniper vSRX** and **Edge services cluster with FortiGate Virtual Appliance**, you must also specify the corresponding service settings in a later step.
     3. For **FortiGate Security Appliance**, you must order the **FortiGate Security Appliance 10 Gbps** service from the [IBM Cloud catalog](https://cloud.ibm.com/catalog/infrastructure/fortigate-security-appliance-10gb). Confirm that you ordered the service and continue with the following steps.
 
@@ -84,7 +84,7 @@ You get a console notification that the configuration is saved successfully, and
 {: #vrw-orderinginstance-results-order}
 
 1. The deployment of the regulated workload instance starts automatically and you receive confirmation that the order is being processed. You can check the deployment status, including any issues that might require your attention, by viewing the **Deployment history** section of the instance details.
-2. When the instance is successfully deployed, the ordered components are installed on your VMware virtual platform. The deployment of the services starts after your order is completed. When the instance is ready to use, the status of the instance is changed to **Ready to use** and you receive a notification by email.
+2. When the instance is successfully deployed, the ordered components are installed on your VMware virtual platform. The deployment of the services starts after your order is completed. When the instance is ready to use, the status of the instance is changed to **Ready to use**, and you receive a notification by email.
 
 You must manage the {{site.data.keyword.vmwaresolutions_short}} components that are created in your {{site.data.keyword.cloud_notm}} account only from the VMware Solutions console, not the {{site.data.keyword.slportal}}, or any other means outside of the console.
 If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.

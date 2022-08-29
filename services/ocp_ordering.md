@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-20"
+lastupdated: "2022-08-26"
 
 keywords: Red Hat OpenShift for VMware, OpenShift configuration, order OpenShift
 
@@ -20,11 +20,9 @@ subcollection: vmwaresolutions
 
 You can include the {{site.data.keyword.redhat_openshift_full}} for VMware® service with a new VMware vCenter Server® instance or add the service to your existing vCenter Server instance.
 
-1. In the {{site.data.keyword.vmwaresolutions_full}} console, scroll down to the services section and click **Red Hat OpenShift for VMware**.
-2. On the **Red Hat OpenShift for VMware** page, click the **About** tab to review the description and technical specifications for {{site.data.keyword.redhat_openshift_notm}} for VMware.
-3. Click the **Create** tab.
-4. To add the service while you order a new instance, click **Add to new instance**, and then continue with [ordering a new vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure).
-5. To add the service to an existing instance, click **Add to existing instance**. Then, select the instance that you want to use and complete the requested information.
+In the {{site.data.keyword.vmwaresolutions_full}} console, scroll down to the Add-on services section. Red Hat OpenShift for VMware is in the Transformation and modernization of VMware applications category. Open the category, locate Red Hat OpenShift for VMware, and toggle its switch on.
+
+Select **Edit** to review and specify the information. If you enter or change information, click **Save**.
 
 ## Red Hat OpenShift for VMware configuration
 {: #ocp_ordering-config}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-15"
+lastupdated: "2022-07-14"
 
 subcollection: vmwaresolutions
 
@@ -34,9 +34,9 @@ vRealize Operations Manager provides monitoring of VMware objects for violations
 * [FortiGate Security Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fsa_considerations)
 * [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations)
 * [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
-* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
-* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
-* [Entrust KeyControl](/docs/vmwaresolutions?topic=vmwaresolutions-htkc_considerations)
+* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
+* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations)
+* [Entrust KeyControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-kc_considerations)
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
 * [Operations Management on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-intro)
 * [VMware security hardening guides](https://www.vmware.com/security/hardening-guides.html){: external}

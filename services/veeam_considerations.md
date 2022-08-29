@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-20"
+lastupdated: "2022-08-26"
 
 keywords: Veeam 9.5, Veeam 9 overview, Veeam 9.5 deprecated
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Veeam 9.5
 {: #veeam_considerations}
 
-Veeam® v9.5u4b has known vulnerabilities and it is no longer installed with new VMware® Solutions deployments. However, if you installed the service in a previous release, you can continue to use Veeam 9.5u4b.
+Veeam® v9.5u4b has vulnerabilities and it is no longer installed with new VMware® Solutions deployments. However, if you installed the service in a previous release, you can continue to use Veeam 9.5u4b.
 {: deprecated}
 
 The Veeam service seamlessly integrates directly with your VMware hypervisors to help your enterprise achieve high availability. This service provides recovery points and time objectives for your applications and data. The recovery points and time objectives can be provided in less than 15 minutes after configuration is completed. By using this service, you control both the backup and restore of all virtual machines (VMs) for your infrastructure directly from the Veeam console.

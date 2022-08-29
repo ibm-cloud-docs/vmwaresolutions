@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-16"
+lastupdated: "2022-08-25"
 
 keywords: Zerto certificate, Zerto config, update Zerto replication
 
@@ -66,4 +66,4 @@ When you add or remove ESXi servers for the primary cluster of your instance, VR
 * [Zerto](https://www.zerto.com){: external}
 * [Zerto product documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}
 * [Zerto disaster recovery](https://www.zerto.com/solutions/use-cases/disaster-recovery/){: external}
-* [Zerto's alarms, alerts, and events](http://s3.amazonaws.com/zertodownload_docs/Latest/Guide%20to%20Alarms%2C%20Alerts%20and%20Events.pdf){: external}
+* [Zerto's alarms, alerts, and events](https://help.zerto.com/bundle/Alarms.Alerts.HTML.85/page/Content/ErrorsGuide/Alarms_and_Alerts.htm){: external}

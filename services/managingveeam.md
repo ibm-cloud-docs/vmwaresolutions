@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-20"
+lastupdated: "2022-08-24"
 
 keywords: Veeam console, Veeam backup restore, update Veeam license
 
@@ -77,6 +77,13 @@ If you have an existing Veeam 9.5u4b installation that comes with a license and 
 Although you can order a new stand-alone license, stacking licenses is not recommended. For example, if you initially ordered Veeam with 20 VMs and now want coverage for 40 VMs, do not keep your old license and order a new license for 20 VMs. Instead, order a new license for 40 VMs and delete your original 20 VM license.
 
 When licenses are ordered, the system does not generate a key, but applies a primary key.
+
+## Considerations for a Linux hardened repository
+{: #managingveeam-linux-repository}
+
+When you install Veeam, you can optionally install a Linux® hardened repository. For more information, see [Linux hardened repository for immutable storage](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview#veeamvm_overview-specs-linux-storage).
+
+As part of the automation, at the end, the system creates a setting to prevent the root user from being accessed by using SSH. This is done due to security considerations and best practices. To access the Linux hardened repository, you need to go in through the IPMI on the IBM Cloud® portal.
 
 ## Accessing the Veeam console by using Remote Desktop Protocol
 {: #managingveeam-accessing}

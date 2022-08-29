@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-06-16"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,9 +16,9 @@ subcollection: vmwaresolutions
 # Architecture pattern for using {{site.data.keyword.dl_short}} with NSX-T edge cluster in colocation
 {: #arch-pattern-direct-link-edge}
 
-On [VMware vCenter Server®](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in {{site.data.keyword.cloud}} classic infrastructure, your workloads are deployed and run on VMware NSX-T™ overlay networks. As part of the deployment, the automation deploys an example NSX-T topology. You can use the provisioned examples as your base or build your own topologies on overlay. These overlay networks are not automatically advertised to {{site.data.keyword.cloud_notm}} classic infrastructure network. 
+On [VMware vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in {{site.data.keyword.cloud}} classic infrastructure, your workloads are deployed and run on VMware NSX-T™ overlay networks. As part of the deployment, the automation deploys an example NSX-T topology. You can use the provisioned examples as your base or build your own topologies on overlay. These overlay networks are not automatically advertised to {{site.data.keyword.cloud_notm}} classic infrastructure network. 
 
-This architecture pattern presents private connectivity for vCenter Server that uses [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and deploying an NSX-T edge transport node at the colocation. This solution is applicable for [NSX-T based vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. 
+This architecture pattern presents private connectivity for VMware vCenter Server® that uses [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and deploying an NSX-T edge transport node at the colocation. This solution is applicable for [NSX-T based vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. 
 
 This solution relies on the principle that you can advertise NSX-T TEP traffic through {{site.data.keyword.dl_short}} to the colocation. Therefore, you can extend your NSX-T overlays over {{site.data.keyword.dl_short}}. You are responsible for deploying the edge transport nodes in colocation on your own x86 hardware and for creating the NSX-T edge cluster and configuring Tier-0 (T0) Gateway on the edge cluster.
 

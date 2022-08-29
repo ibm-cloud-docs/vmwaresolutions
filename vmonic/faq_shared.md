@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-14"
+lastupdated: "2022-08-22"
 
 keywords: FAQ vmware solutions shared, vmware solutions shared questions
 
@@ -23,7 +23,7 @@ Find answers to frequently asked questions about the {{site.data.keyword.vmwares
 {: #faq-shared}
 {: faq}
 
-VMware Solutions Shared is a multitenant VMware® infrastructure solution based on a robust VMware® product called vCloud Director. You can use this solution to rapidly create, migrate, and use your virtual machines (VMs) in the Cloud.
+VMware Solutions Shared is a multitenant VMware® infrastructure solution based on a robust VMware® product called VMware Cloud Director. You can use this solution to rapidly create, migrate, and use your virtual machines (VMs) in the Cloud.
 
 ## What are my options to use resources with VMware Solutions Shared?
 {: #faq-shared-options}
@@ -123,7 +123,7 @@ Other than the IP addresses used for internet access on each customer ESG, you c
 {: #faq-customimage}
 {: faq}
 
-Yes. vCloud Director supports the same set of guest operating systems as VMware vSphere® 6.7. For more information, see [VMware Guest OS Compatibility Guide](https://www.vmware.com/resources/compatibility/pdf/VMware_GOS_Compatibility_Guide.pdf){: external}.
+Yes. VMware Cloud Director supports the same set of guest operating systems as VMware vSphere® 6.7. For more information, see [VMware Guest OS Compatibility Guide](https://www.vmware.com/resources/compatibility/pdf/VMware_GOS_Compatibility_Guide.pdf){: external}.
 
 VMware Solutions Shared provides Microsoft® Windows® server 2016/2019 templates. You can provide your own image to run other versions.
 

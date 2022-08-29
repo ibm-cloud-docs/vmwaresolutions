@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,12 +16,12 @@ subcollection: vmwaresolutions
 # Storage
 {: #vrw-storage}
 
-{{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads employs multiple storage types.
+{{site.data.keyword.cloud}} for VMware® Regulated Workloads employs multiple storage types.
 
 ## Management cluster
 {: #vrw-storage-management}
 
-The management cluster storage is vSAN™. Security requirements mandate that multitenant shared storage is not permissible and in such cases the use of vSAN is necessary. vSAN requires deploying a minimum of four ESXi hosts to the management cluster.
+The management cluster storage is vSAN™. Security requirements mandate that multitenant shared storage is not permissible and in such cases the use of vSAN is necessary. vSAN requires deploying a minimum of four VMware ESXi™ hosts to the management cluster.
 
 ## Edge services cluster
 {: #vrw-storage-edge}

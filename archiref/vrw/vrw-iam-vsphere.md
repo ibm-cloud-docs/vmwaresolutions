@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-05-30"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # vCenter identity and access management
 {: #vrw-iam-vsphere}
 
-Inside {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads, multiple levels of access are available. The automation uses a set of user IDs to perform operations such as adding hosts, clusters, or storage to your VMware® instance.
+Inside {{site.data.keyword.cloud}} for VMware® Regulated Workloads, multiple levels of access are available. The automation uses a set of user IDs to perform operations such as adding hosts, clusters, or storage to your VMware instance.
 
 ## vCenter and Platform Services Controller user IDs
 {: #vrw-iam-vsphere-vcenter}
@@ -88,7 +88,7 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the E
 | `prod-KMIPAdapter-dynamicID-@domainName` | Used for installation and configuration of the KMIP for VMware service. |
 | `prod-SPPlus-dynamicID-@domainName` | Deprecated - Used for installation and configuration of the IBM Spectrum Protect Plus service. |
 | `prod-Veeam-dynamicID-@domainName` | Used for installation and configuration of the Veeam service. |
-| `prod-HCX-dynamicID-@domainName` | Used for installation and configuration of the VMware HCX service. |
+| `prod-HCX-dynamicID-@domainName` | Used for installation and configuration of the VMware HCX™ service. |
 {: caption="Table 6. Service user IDs" caption-side="bottom"}
 
 where:
@@ -100,6 +100,6 @@ where:
 {: #vrw-iam-vsphere-related}
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-htcc_considerations)
-* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-htdc_considerations)
+* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
+* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations)
 * [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)

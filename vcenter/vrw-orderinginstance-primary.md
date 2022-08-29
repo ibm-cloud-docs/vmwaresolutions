@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-06"
+lastupdated: "2022-08-16"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -20,9 +20,11 @@ subcollection: vmwaresolutions
 ## Cluster name
 {: #vrw-orderinginstance-consldt-cluster-name}
 
-By default, the primary cluster name is set to **vrw-_xx_-management**. You can also specify a new name for the primary cluster. The cluster name must meet the requirements that are listed in [Cluster name requirements](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance#vrw-orderinginstance-cluster-name-req).
+By default, the primary cluster name is set to **vrw-_xx_-management**.
 
-## Primary cluster capacity
+{{site.data.content.orderinginstance-cluster-name-list}}
+
+## Cluster type
 {: #vrw-orderinginstance-consldt-capacity}
 
 You can start with a smaller footprint by deploying a consolidated management and workload cluster, or you can deploy a management cluster and a separate cluster for workloads.

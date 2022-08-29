@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for multisite vCenter Server deployment topologies 
 {: #arch-pattern-deployment-multi-site}
 
-{{site.data.keyword.cloud}} for VMware® Solutions Dedicated instances offer a standard initial topology with a single management or converged cluster, which includes a vCenter, three NSX-T managers, and an Active Directory™ deployment. These deployments run either on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or on two VMware virtual machines (VMs) in a high availability deployment. The initial deployment also includes a standard NSX-T topology.
+{{site.data.keyword.vmwaresolutions_full}} Dedicated instances offer a standard initial topology with a single management or converged cluster, which includes a vCenter, three VMware NSX-T™ managers, and an Active Directory™ deployment. These deployments run either on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or on two VMware virtual machines (VMs) in a high availability deployment. The initial deployment also includes a standard NSX-T topology.
 
 You have several options to expand the capacity for the deployment by provisioning new hosts on the initial cluster or by adding new clusters. This pattern provides a few examples on how to expand and customize the initial deployment for a few use cases to fit your needs.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-01"
+lastupdated: "2022-07-26"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -31,11 +31,11 @@ The primary (management) cluster name is set to **mcv-_xx_-management** by defau
 * The maximum length of the management cluster name is 10 characters.
 * The management cluster name must be unique within the regulated workload instance.
 
-## Management capacity
-{: #vrw-orderinginstance-mngt-capacity}
+## Cluster type
+{: #vrw-orderinginstance-mngt-clust-type}
 
-* For the **Small** capacity, you get a Cascade Lake server with 20 cores, 2.2 GHz, and 384 GB RAM.
-* For the **Customizable** capacity, you can choose the Cascade Lake server and RAM size according to your needs.
+* For **Management-optimized**, you get a Cascade Lake server with 20 cores, 2.2 GHz, and 384 GB RAM.
+* For **Customizable consolidated**, you can choose the Cascade Lake server and RAM size according to your needs.
 
 ## Hosts per site
 {: #vrw-orderinginstance-mngt-hosts}
@@ -45,8 +45,8 @@ Choose the number of management hosts to be deployed in two availability zones. 
 ## vSAN configuration
 {: #vrw-orderinginstance-mgmt-vsan}
 
-* For the **Small** capacity, you get two vSAN™ capacity disks 1.9 TB SSD.
-* For the **Customizable** capacity, you can choose the type and number of capacity disks according to your needs.
+* For **Management-optimized**, you get two vSAN™ capacity disks 1.9 TB SSD.
+* For **Customizable consolidated**, you can choose the type and number of capacity disks according to your needs.
 
 ## Estimated resources available per cluster
 {: #vrw-orderinginstance-mgmt-est}

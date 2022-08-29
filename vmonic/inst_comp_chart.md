@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-06-19"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -28,7 +28,7 @@ Review the following table to understand the differences in feature support for 
 |:-------- |:-------------- |:-------------- |
 | Powered by {{site.data.keyword.IBM}} advanced automation[^automation] | Yes | No. Self-built and configured. |
 | Storage options | NFS or vSAN™ available with automation. </br>iSCSI available with manual configuration. | NFS, vSAN, or iSCSI available with manual configuration |
-| Number of ESXi™ servers in the initial cluster | For vSAN, four servers. </br></br>For NSX-T instances with an NFS cluster:</br>(1) Consolidated NFS clusters require at least three ESXi servers.</br>(2) Management NFS clusters require at least three ESXi servers for production use.</br>(3) All other NFS clusters require at least two ESXi servers.| No limitation. One or more ESXi servers as allowed on the console. For example, you can deploy a three node vSAN cluster with FTT=1. |
+| Number of ESXi™ servers in the initial cluster | For vSAN, four servers. </br></br>For NSX-T instances with an NFS cluster:</br>(1) Consolidated NFS clusters require at least three ESXi servers.</br>(2) Management NFS clusters require at least three ESXi servers.</br>(3) All other NFS clusters require at least two ESXi servers.| No limitation. One or more ESXi servers as allowed on the console. For example, you can deploy a three node vSAN cluster with FTT=1. |
 | Maximum number of ESXi servers[^servers] | 59 per cluster | 96 per cluster |
 | Cloud automated multisite deployment | Supported for new instances | Supported. Automated configuration not included. |
 | Add ESXi servers | Supported | Supported. Automated configuration not included. |
@@ -37,8 +37,6 @@ Review the following table to understand the differences in feature support for 
 | Client-managed updating and patching of VMware stack | Client-managed updates - Native VMware tools (VMware Update Manager™)[^nsxv1] | Client-managed updates - Native VMware tools (VMware Update Manager) |
 | Backup and restore | Manually, by using Veeam® | Backup and restore solution not included |
 | Software-defined networking[^nsxvexist] | NSX DC SP Base, Professional, Advanced, or Enterprise Plus | NSX DC SP Base, Professional, Advanced, or Enterprise Plus. Automated configuration not included. |
-| BYOL for vSphere and vSAN | Fully supported per cluster | Supported |
-| BYOL for vCenter Server and NSX | Fully supported per instance | Supported |
 | NSX license upgrade options[^nsxv3] | Upgrade available from NSX Advanced to Enterprise. | None |
 | vSAN license editions | vSAN Advanced or Enterprise | vSAN Advanced or Enterprise |
 | Add-on services | Supported[^services] | Not supported by the automation of this solution. You can bring and install your own software. |
@@ -63,14 +61,14 @@ Review the following table to understand the differences in feature support for 
 
 | Feature | vCenter Server | VMware Regulated Workloads |
 |:------- |:-------------- |:-------------------------- |
-| vSphere version | 6.7 Update 3q[^nsxv] or 7.0 Update 3d | 7.0 Update 3d |
+| vSphere version | 7.0 Update 3d | 7.0 Update 3d |
 | NSX edition | NSX DC SP Base, Professional, Advanced, or Enterprise Plus | NSX DC SP Advanced or Enterprise Plus |
-| NSX networking solution [^nsxedi] | NSX-T™ or NSX-V | NSX-T |
+| NSX networking solution [^nsxedi] | NSX-T™ | NSX-T |
 | NFS | Optional | Not allowed |
 | vSAN | Optional | Required |
 | Consolidated cluster | Optional | Optional |
 | Separate management cluster | Supported | Supported |
-| Minimum number of ESXi servers | For vSAN, 4 servers. </br>For NFS, 3 servers for production use and 2 servers for nonproduction use. | 6 servers - 4 for the consolidated cluster and 2 for the edge services cluster. |
+| Minimum number of ESXi servers | For vSAN, 4 servers. </br>For NFS, 3 servers. | 6 servers - 4 for the consolidated cluster and 2 for the edge services cluster. |
 | Edge services cluster | Optional | Required. Juniper vSRX, FortiGate Virtual Appliance, Bring your own gateway, or FortiGate Security Appliance. |
 | Logging and monitoring with VMware vRealize® Operations and Log Insight | Optional | Required |
 | Role-based access with Entrust CloudControl™ | Optional | Required |

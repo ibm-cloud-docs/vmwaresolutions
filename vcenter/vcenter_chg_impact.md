@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-08-26"
 
 keywords: change vCenter Server artifacts, automation ID, VMware resource
 
@@ -70,11 +70,11 @@ The following table is applicable to instances deployed in V1.8 and earlier, inc
 | Attempted change  | Impacted operations  | Severity  | Recovery method  |
 |:------------- |:------------- |:--------------|:--------------|
 | Change the VMware virtual data center name. | Adding a VMware virtual data center might fail because the new ESXi server cannot join the changed virtual data center. | Important | Change the VMware virtual data center name back to the original name. |
-| Change any port group names.    | Adding an ESXi server might fail. | Important | Change the port group name back to the original name. |
+| Change any port group names. | Adding an ESXi server might fail. | Important | Change the port group name back to the original name. |
 | Change the cluster name. | Adding an ESXi server might fail. | Important | Change the cluster name back to the original name.
 | Change the public or private Distributed Virtual Switch (DVS) name. | Adding an ESXi server might fail. | Important | Change the public or private Distributed Virtual Switch (DVS) name to the original name.
-| Change the vSAN datastore name in the instance that uses vSAN. | Adding an ESXi server might fail.  \n   \n Upgrading the instance might fail. | Important | Change the vSAN datastore name back to the original name, **vsanDatastore**.
-| Change the management NFS datastore name in the instance that uses NFS. | Adding an ESXi server might fail.  \n   \n Upgrading the instance might fail. | Important | Change the NFS management datastore name back to the original name, **management-share**, and remount the NFS datastore as read-only on the ESXi server.
+| Change the vSAN datastore name in the instance that uses vSAN. | Adding an ESXi server might fail. \n \n Upgrading the instance might fail. | Important | Change the vSAN datastore name back to the original name, **vsanDatastore**.
+| Change the management NFS datastore name in the instance that uses NFS. | Adding an ESXi server might fail. \n \n Upgrading the instance might fail. | Important | Change the NFS management datastore name back to the original name, **management-share**, and remount the NFS datastore as read-only on the ESXi server.
 {: caption="Table 1. Operations that are impacted by changing VMware resources" caption-side="bottom"}
 
 The following table lists the operations that might be impacted if SSH or shell access is disabled for various resources.

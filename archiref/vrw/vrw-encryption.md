@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-08-26"
 
 subcollection: vmwaresolutions
 
@@ -16,9 +16,9 @@ subcollection: vmwaresolutions
 # Encryption
 {: #vrw-encryption}
 
-{{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads relies upon VMware vSphere® encryption to secure management and production VMs while at-rest or in-transit. VMware vSphere® encryption applies to all types of VMware storage, including vSAN storage. With vSphere encryption solution, vCenter Server and your ESXi hosts connect to a key management server to get the required encryption keys. These keys are used to protect individual virtual machine (VM) disks, according to your VM storage policies.
+{{site.data.keyword.cloud}} for VMware® Regulated Workloads relies upon VMware vSphere® encryption to secure management and production VMs while at-rest or in-transit. VMware vSphere encryption applies to all types of VMware storage, including vSAN storage. With vSphere encryption solution, VMware vCenter Server® and your ESXi™ hosts connect to a key management server to get the required encryption keys. These keys are used to protect individual virtual machine (VM) disks, according to your VM storage policies.
 
-As vSphere encryption operates at the VM disk level, it can prevent regulated data exposure if loss of physical disk drives or loss of VM disks occurs. Many backup and replication technologies cannot back up or replicate effectively if the VM is encrypted. It is also notable, that vSphere encryption is not compatible with cross-vCenter vMotion, VMware HCX, or Zerto. However, when properly configured, Veeam Backup and Replication is compatible with vSphere encryption.
+As vSphere encryption operates at the VM disk level, it can prevent regulated data exposure if loss of physical disk drives or loss of VM disks occurs. Many backup and replication technologies cannot back up or replicate effectively if the VM is encrypted. It is also notable, that vSphere encryption is not compatible with cross-vCenter vMotion, VMware HCX™, or Zerto. However, when properly configured, Veeam Backup and Replication is compatible with vSphere encryption.
 
 ## Hyper Protect Crypto Services
 {: #vrw-encryption-hpcs}
