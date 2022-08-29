@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-08-22"
+lastupdated: "2022-08-29"
 
 keywords: manage shared resources, view shared virtual data centers details
 
@@ -87,7 +87,7 @@ For more information about recommended services details, see [Managing Veeam for
 ## Related links
 {: #shared_viewing-vdc-details-related}
 
-* [Creating a private network endpoint](https://test.cloud.ibm.com)/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints)
+* [Creating a private network endpoint](/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints)
 * [Resizing your virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_resize)
 * [Deleting VMware Solutions Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
 * [Accessing the VMware Cloud Director Management console](/docs/vmwaresolutions?topic=vmwaresolutions-shared_accessing-vcd-console)

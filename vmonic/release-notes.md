@@ -33,7 +33,7 @@ Price calculation updates for {{site.data.keyword.vmwaresolutions_short}} Shared
 :   Price calculations are now automatically generated when you access the order pages for {{site.data.keyword.vmwaresolutions_short}} Shared offerings. For more information about the specific default selections, see [Requirements and planning for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning).
 
 Standard - Catalog storage policy availability
-:   The Standard - Catalog storage policy is now available for storing vApp templates and media files in your VMware Cloud Director catalog. For more information, see [VMware Solutions Shared overview](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview#shared_overview-specs-storage).
+:   The Standard - Catalog storage policy is now available for storing vApp templates and media files in your VMware Cloud Director catalog. For more information, see [VMware Solutions Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview#shared_overview-specs-storage).
 
 Private network endpoints for multizone virtual data centers
 :   Two private network endpoints are ordered to correspond with each VMware NSX Edge™ Service Gateway when you create a private network endpoint for VMware Solutions Shared multizone virtual data centers.
@@ -42,7 +42,7 @@ vCPU and RAM limits for on-demand and reserved virtual data centers
 :   The vCPU and RAM limits for VMware Solutions Shared virtual data center orders are now increased. Beginning with the 4.9 release, the maximum vCPU limit is 1 - 2000 and the maximum RAM limit is 1 - 40 TBs for both on-demand and reserved virtual data center orders.
 
 vRealize Operations Tenant App for VMware Cloud Director availability
-:   You can now access the vRealize Operations™ Tenant App for a VMware Cloud Director for new and existing organizations through the VMware Cloud Director tenant portal. For more information, see [Enabling the VMware vRealize Operations Tenant App](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-vrops-app).
+:   You can now access the vRealize Operations™ Tenant App for a VMware Cloud Director for new and existing organizations through the VMware Cloud Director tenant portal. For more information, see [Enabling the VMware vRealize Operations Tenant App](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-vrops-app).
 
 {{site.data.keyword.cloud_notm}} for VMware Cloud Foundation
 :   The {{site.data.keyword.vpc_short}} provides the underlying infrastructure for running VMware Cloud Foundation in {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.cloud_notm}} bare metal servers for {{site.data.keyword.vpc_short}} provide you compute capacity that is provisioned in minutes for your VMware Cloud Foundation deployment. For more information, see [{{site.data.keyword.cloud_notm}} for VMware Cloud Foundation overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw).
