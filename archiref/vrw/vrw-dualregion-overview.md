@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-09-21"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ DR is defined as a plan to recover critical business systems and normal operatio
 {{site.data.keyword.cloud_notm}} provides three tiers of regions: multizone regions (MZR), single-zone regions (SZR), and data centers.
 
 * Multizone regions - Three or more zones that are independent from each other to ensure that single failure events affect only a single zone. Regions in the Americas include `us-south` hosted in Dallas and `us-east` hosted in Washington DC. For more information about all regions in Americas, Europe, and Asia Pacific, see [Multizone regions](/docs/overview?topic=overview-locations#mzr-table).
-* Single-zone regions - Single-zone regions are `kr-seo` hosted in Seoul and `in-che-1` that is hosted in Chennai and consist of a single availability zone. For more information, see [Single-zone regions](/docs/overview?topic=overview-locations#szr-table).
+* Single-zone regions - Single-zone regions are `sg-sng-01` in Singapore and `in-che-1` in Chennai and consist of a single availability zone. For more information, see [Single-zone regions](/docs/overview?topic=overview-locations#szr-table).
 * Data centers - More than 50 data centers exist around the world, including MON01 in Montreal, AMS02 in Amsterdam, and MEL01 Melbourne. For more information about all data centers, see [Data centers](/docs/overview?topic=overview-locations#data-centers). For more information about the data centers in which VMware Solutions can be deployed, see [IBM Cloud data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning#vc_planning-dc-availability).
 
 The focus of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads DR design has the following specifications.
