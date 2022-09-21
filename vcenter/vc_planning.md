@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-18"
+lastupdated: "2022-09-20"
 
 keywords: planning vCenter Server, data center, vCenter Server data centers
 
@@ -34,12 +34,10 @@ The vCenter Server deployment has strict requirements on the physical infrastruc
 
 | Geography | Data center | Pod | Server options for NSX-T[^nsx-t-7] | Server options for NSX-V[^nsx-v] |
 |:----------------------|:-------|:---------------|:-----------|:------|
-| Asia-Pacific| CHE01 | 01 | Skylake, Cascade Lake | Skylake, Cascade Lake, SAP-certified[^sap-che01] |
-| Asia-Pacific | HKG02 | 02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
+| Asia-Pacific | CHE01 | 01 | Skylake, Cascade Lake | Skylake, Cascade Lake, SAP-certified[^sap-che01] |
 | Asia-Pacific | OSA21 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
 | Asia-Pacific | OSA22 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
 | Asia-Pacific | OSA23 | 01 | Cascade Lake, SAP-certified | Cascade Lake, SAP-certified |
-| Asia-Pacific | SEO01 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
 | Asia-Pacific | SNG01| 02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
 | Asia-Pacific | SYD01 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
 | Asia-Pacific | SYD04 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |

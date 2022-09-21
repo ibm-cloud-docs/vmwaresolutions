@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-08-29"
+lastupdated: "2022-09-20"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -28,6 +28,9 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ### 29 August 2022
 {: #august-2022}
 {: release-note}
+
+{{site.data.keyword.cloud_notm}} data centers no longer available
+:   (Updated on 20 September 2022) The **Hong Kong 02** and **Seoul 01** data centers are no longer available for deployment.
 
 Price calculation updates for {{site.data.keyword.vmwaresolutions_short}} Shared
 :   Price calculations are now automatically generated when you access the order pages for {{site.data.keyword.vmwaresolutions_short}} Shared offerings. For more information about the specific default selections, see [Requirements and planning for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning).
@@ -106,7 +109,7 @@ End of Marketing for NSX-V instance deployments
 :   VMware® support for all new VMware NSX-V deployments ended on 16 January 2022. However, VMware and IBM® worked closely to extend the existing NSX–V support until 31 December 2023. For more information, see [End of Marketing for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v). Beginning on 21 June 2022, you can no longer order new VMware vCenter Server with NSX-V instances.
 
 End of Marketing for vSphere 6.7 instance deployments
-:   VMware support for all new VMware vSphere 6.7 deployments ends on 15 October 2022. However, you can still add or remove existing clusters and hosts until 15 October 2022. After 15 October 2022, vCenter Server instances with vSphere 6.7 become read–only in the VMware Solutions console and through the public REST API. For more information, see [End of Marketing for vSphere 6.7 instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vsphere67). Beginning on 21 June 2022, you can no longer order new vCenter Server instances with vSphere 6.7.
+:   VMware support for all new VMware vSphere 6.7 deployments ends on 15 October 2022. For more information, see [End of Marketing for vSphere 6.7 instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vsphere67).
 
 VMware vSphere 7.0 Update 3d support
 :   The 4.8 release provides vSphere 7.0 Update 3d for newly deployed instances. For existing vSphere 7.0u2 instances and clusters, you can add either a vSphere 7.0u2 or a vSphere 7.0u3 host or cluster.

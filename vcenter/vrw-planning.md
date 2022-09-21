@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-07-12"
+lastupdated: "2022-09-20"
 
 keywords: planning vmware regulated workloads, data center vmware regulated workloads, vmware regulated workloads data centers
 
@@ -35,13 +35,11 @@ The VMware Regulated Workloads deployment has strict requirements on the physica
 The following {{site.data.keyword.cloud_notm}} data centers are available for VMware Regulated Workloads single-zone deployment.
 
 | Geography | Data center | Pod |
-|:----------|:------------|:-------|
+|:--------- |:----------- |:--- |
 | Asia-Pacific |CHE01 | 01 |
-| Asia-Pacific | HKG02 | 02 |
 | Asia-Pacific | OSA21 | 01 |
 | Asia-Pacific | OSA22 | 01 |
 | Asia-Pacific | OSA23 | 01 |
-| Asia-Pacific | SEO01 | 01 |
 | Asia-Pacific | SNG01| 02 |
 | Asia-Pacific | SYD01 | 01-02 |
 | Asia-Pacific | SYD04 | 01 |

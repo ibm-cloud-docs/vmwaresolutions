@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-16"
+lastupdated: "2022-09-20"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 Select the **Edge services cluster** checkbox to order a dedicated cluster for the network edge and the firewall components that are required for the Juniper® vSRX service. The edge services cluster is deployed in the same data center as the consolidated cluster.
 
-The data center of the consolidated cluster must be available for edge services cluster deployment. Edge services cluster deployment is not supported for **Dallas 09** and **Hong Kong 02**.
+The data center of the consolidated cluster must be available for edge services cluster deployment. Edge services cluster deployment is not supported for **Dallas 09**.
 {: note}
 
 ## Cluster name

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-23"
+lastupdated: "2022-09-20"
 
 keywords: end of marketing notice, vSphere 6.7 deployment, end of support vSphere 6.7, vSphere 6.7 deprecated, vSphere 6.7 support
 
@@ -18,13 +18,11 @@ subcollection: vmwaresolutions
 # End of Marketing for vSphere 6.7 instance deployments
 {: #eos-vsphere67}
 
-VMware® support for all new VMware vSphere 6.7 deployments ends on 15 October 2022.
+VMware® support for all new VMware vSphere® 6.7 deployments ends on 15 October 2022.
 
-Beginning on 21 June 2022, you can no longer order new VMware vCenter Server® instances with vSphere 6.7. However, you can still add or remove existing clusters and hosts until 15 October 2022. 
+Beginning on 21 June 2022, you can no longer order new VMware vCenter Server® instances with vSphere 6.7. You can still add or remove existing clusters and hosts until 15 October 2022.
 
-After 15 October 2022, vCenter Server instances with vSphere 6.7 become read–only in the VMware Solutions console and through the public REST API.
-
-Beginning on this date, you can no longer add or remove clusters and hosts until you upgrade to vSphere 7.
+After 15 October 2022, you can no longer add or remove hosts or clusters for vCenter Server instances with vSphere 6.7 until you upgrade to vSphere 7.
 
 {{site.data.keyword.cloud_notm}} will continue to support your infrastructure on our cloud and will continue to support the vSphere 6.7 software until the [VMware announced end of support date](https://lifecycle.vmware.com/#/){: external} of 15 October 2022.
 

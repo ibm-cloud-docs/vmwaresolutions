@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-23"
+lastupdated: "2022-09-20"
 
 keywords: planning vSphere, data center, vSphere data centers
 
@@ -39,13 +39,11 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 {: note}
 
 | Geography | Data center | Pod | Server options[^vsphere-7] |
-|:-----------|:----------|:---------------|:--------------|
+|:--------- |:----------- |:--- |:-------------------------- |
 | Asia-Pacific | CHE01 | 01 | Skylake, Cascade Lake, SAP-certified[^sap-che01] |
-| Asia-Pacific | HKG02 | 02 | Skylake, Cascade Lake, SAP-certified |
 | Asia-Pacific | OSA21 | 01 | Cascade Lake, SAP-certified |
 | Asia-Pacific | OSA22 | 01 | Cascade Lake, SAP-certified |
 | Asia-Pacific | OSA23 | 01 | Cascade Lake, SAP-certified |
-| Asia-Pacific | SEO01 | 01 | Skylake, Cascade Lake, SAP-certified |
 | Asia-Pacific | SNG01 | 02 | Skylake, Cascade Lake, SAP-certified |
 | Asia-Pacific | SYD01 | 01-02 | Skylake, Cascade Lake, SAP-certified |
 | Asia-Pacific | SYD04 | 01 | Skylake, Cascade Lake, SAP-certified |
