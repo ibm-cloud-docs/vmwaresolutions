@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-09"
+lastupdated: "2022-09-28"
 
 subcollection: vmwaresolutions
 
@@ -35,10 +35,10 @@ When T0 is run in Active-Standby mode, both participate Edge Transport Node has 
 
 The T0 is configured with **two uplink types**: two uplinks for **private** use and two uplinks for **public** use. HA VIPs are assigned to both public and private uplinks for high availability. For public and private uplinks, two VPC subnets are needed. These subnets are provisioned from the Zone prefix, and they can both use RFC 1918 private addresses, including the public subnet.
 
-Subnet name                   | System traffic type          | Subnet sizing guidance
-------------------------------|------------------------------|-----------------------
-vpc-t0-public-uplink-subnet   | T0 public uplink subnet      | `/29` or larger
-vpc-t0-private-uplink-subnet  | T0 private uplink subnet     | `/29` or larger
+| Subnet name | System traffic type | Subnet sizing guidance |
+| ------------------------------|------------------------------|----------------------- |
+| vpc-t0-public-uplink-subnet | T0 public uplink subnet | `/29` or larger |
+| vpc-t0-private-uplink-subnet | T0 private uplink subnet | `/29` or larger |
 {: caption="Table 1. VPC subnets for NSX-T T0 uplinks" caption-side="bottom"}
 
 If you do not need inbound traffic from the internet, you do not need public uplink subnet.
@@ -46,14 +46,14 @@ If you do not need inbound traffic from the internet, you do not need public upl
 
 The following VLAN interfaces are required in VPC for each T0 uplink. You must separate the public and private uplinks as specified previously. VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `false` allow public floating IP addresses to traverse non-NATted to the public uplinks of the T0 logical router. VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `true` allow VMware workloads on NSX-T overlay with private IP addresses to be routed to {{site.data.keyword.vpc_short}}. These functions cannot be combined into one.
 
-Interface name | Interface type | VLAN ID | Subnet | Allow float | Allow IP spoofing | Enable infra NAT | NSX-T interface | Segment name
-----------------------------|----------------|---------|------------------------------|--------------|-------------------|-------------------|----------------------------|------------------------------
-vlan-nic-t0-pub-uplink-1    | vlan           | 2711    | vpc-t0-public-uplink-subnet  | true         | false             | false             | T0 Public Uplink * Edge 1  | vpc-zone-t0-public-*vlanid*
-vlan-nic-t0-pub-uplink-2    | vlan           | 2711    | vpc-t0-public-uplink-subnet  | true         | false             | false             | T0 Public Uplink * Edge 2  | vpc-zone-t0-public-*vlanid*
-vlan-nic-t0-pub-uplink-vip  | vlan           | 2711    | vpc-t0-public-uplink-subnet  | true         | false             | false             | T0 Public Uplink VIP       | vpc-zone-t0-public-*vlanid*
-vlan-nic-t0-priv-uplink-1   | vlan           | 2712    | vpc-t0-private-uplink-subnet | true         | true              | true              | T0 Private Uplink * Edge 1 | vpc-zone-t0-private-*vlanid*
-vlan-nic-t0-priv-uplink-2   | vlan           | 2712    | vpc-t0-private-uplink-subnet | true         | true              | true              | T0 Private Uplink * Edge 2 | vpc-zone-t0-private-*vlanid*
-vlan-nic-t0-priv-uplink-vip | vlan           | 2712    | vpc-t0-private-uplink-subnet | true         | true              | true              | T0 Private Uplink VIP      | vpc-zone-t0-private-*vlanid*
+| Interface name | Interface type | VLAN ID | Subnet | Allow float | Allow IP spoofing | Enable infra NAT | NSX-T interface | Segment name |
+| ----------------------------|----------------|---------|------------------------------|--------------|-------------------|-------------------|----------------------------|------------------------------ |
+|vlan-nic-t0-pub-uplink-1 | vlan | 2711 | vpc-t0-public-uplink-subnet | true | false | false | T0 Public Uplink * Edge 1 | vpc-zone-t0-public-*vlanid* |
+| vlan-nic-t0-pub-uplink-2 | vlan | 2711 | vpc-t0-public-uplink-subnet | true | false | false | T0 Public Uplink * Edge 2 | vpc-zone-t0-public-*vlanid* |
+| vlan-nic-t0-pub-uplink-vip | vlan | 2711 | vpc-t0-public-uplink-subnet | true | false | false | T0 Public Uplink VIP | vpc-zone-t0-public-*vlanid* |
+| vlan-nic-t0-priv-uplink-1 | vlan | 2712 | vpc-t0-private-uplink-subnet | true | true | true | T0 Private Uplink * Edge 1 | vpc-zone-t0-private-*vlanid* |
+| vlan-nic-t0-priv-uplink-2 | vlan | 2712 | vpc-t0-private-uplink-subnet | true | true | true | T0 Private Uplink * Edge 2 | vpc-zone-t0-private-*vlanid* |
+| vlan-nic-t0-priv-uplink-vip | vlan | 2712 | vpc-t0-private-uplink-subnet | true | true | true | T0 Private Uplink VIP | vpc-zone-t0-private-*vlanid* |
 {: caption="Table 2. VLAN interfaces for T0 uplinks" caption-side="bottom"}
 
 If you do not need inbound traffic from internet, you might not need either public uplinks on T0 or the public VLAN interfaces for the bare metal server.

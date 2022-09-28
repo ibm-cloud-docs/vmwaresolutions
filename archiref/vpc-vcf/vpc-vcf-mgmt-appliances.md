@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-09"
+lastupdated: "2022-09-28"
 
 subcollection: vmwaresolutions
 
@@ -28,11 +28,11 @@ SDDC manager automates the entire system lifecycle, that is, from configuration 
 
 The following table summarizes the required VLAN interfaces in {{site.data.keyword.vpc_short}} for these appliances.
 
-Interface name         | Interface type | VLAN ID | Subnet              | Allow float  | VCF appliance     | Distributed port group name
------------------------|----------------|---------|---------------------|--------------|-------------------|------------------------------
-vlan-nic-cloud-builder | vlan           | 1611    | vpc-mgmt-subnet     | true         | Cloud Builder     | pg-mgmt
-vlan-nic-vcenter       | vlan           | 1611    | vpc-mgmt-subnet     | true         | vCenter Server    | pg-mgmt
-vlan-nic-sddc-manager  | vlan           | 1611    | vpc-mgmt-subnet     | true         | SDDC Manager      | pg-mgmt
+| Interface name | Interface type | VLAN ID | Subnet | Allow float | VCF appliance | Distributed port group name |
+| -----------------------|----------------|---------|---------------------|--------------|-------------------|------------------------------ |
+| vlan-nic-cloud-builder | vlan | 1611 | vpc-mgmt-subnet | true | Cloud Builder | pg-mgmt |
+| vlan-nic-vcenter | vlan | 1611 | vpc-mgmt-subnet | true | vCenter Server | pg-mgmt
+| vlan-nic-sddc-manager | vlan | 1611 | vpc-mgmt-subnet | true | SDDC Manager | pg-mgmt |
 {: caption="Table 1. VLAN interfaces for VCF appliances" caption-side="bottom"}
 
 In addition, you must provision the required VLAN interfaces for NSX-T appliances.

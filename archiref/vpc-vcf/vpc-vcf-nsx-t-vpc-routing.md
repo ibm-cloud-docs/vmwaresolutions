@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-09"
+lastupdated: "2022-09-28"
 
 subcollection: vmwaresolutions
 
@@ -36,9 +36,9 @@ If you want to route natively with {{site.data.keyword.vpc_short}} subnets and o
 
 If your workloads need direct public traffic and have inbound public traffic without using any network translation, you must provision the public uplink subnet and public T0 uplink VLAN interfaces. Also, you must configure your T0 with public uplinks as described in the topic [Tier-0 logical router](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-logical-routers#vpc-vcf-nsx-t-logical-routers-edge-tier-0) previously. As the NSX-T T0 uses Active-Standby, the HA VIP provides high availability for the routing of public traffic between VPC, T0, and your NSX-T workloads. When you need public IP addresses, you can order floating IP address to the HA VIP VLAN interface. Each floating IP address is a single `/32` IP address, and you can order as many as you need within [VPC Quotas](/docs/vpc?topic=vpc-quotas).
 
-Interface name | Interface type | VLAN ID | Subnet | Allow float | Allow IP spoofing | Enable infra NAT| NSX-T interface | Segment name
-----------------------------|----------------|---------|------------------------------|--------------|-------------------|-------------------|----------------------------|------------------------------
-vlan-nic-t0-pub-uplink-vip  | vlan           | 2711    | vpc-t0-public-uplink-subnet  | true         | false             | false             | T0 Public Uplink VIP       | vpc-zone-t0-public-*vlanid*
+| Interface name | Interface type | VLAN ID | Subnet | Allow float | Allow IP spoofing | Enable infra NAT| NSX-T interface | Segment name |
+| ----------------------------|----------------|---------|------------------------------|--------------|-------------------|-------------------|----------------------------|------------------------------ |
+| vlan-nic-t0-pub-uplink-vip | vlan | 2711 | vpc-t0-public-uplink-subnet | true | false | false | T0 Public Uplink VIP | vpc-zone-t0-public-*vlanid* |
 {: caption="Table 1. Public uplink HA VIP to be used for public floating IPs" caption-side="bottom"}
 
 VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `false` allow public floating IP address to traverse non-NATted to the public uplinks of the T0 logical router. For high availability with NSX-T T0 logical router, HA VIPs can be used. When you order floating IP address for public uplinks, always use the VIP VLAN interface instead of the uplinks that are reserved for the actual Edge Nodes.
@@ -57,16 +57,16 @@ For public IP addresses, you can currently use one or more `/32` IP address, but
 
 In this case, your default route `0.0.0.0/0` in NSX-T T0 Logical Router must be pointed to the default gateway of the `vpc-t0-public-uplink-subnet`.
 
-Route description           | Device             | CIDR             | Next-hop
-----------------------------|--------------------|------------------|----------------------------------------------
-Default route               | T0 Logical Router  | 0.0.0.0/0        | Default GW of `vpc-t0-public-uplink-subnet`
+| Route description | Device | CIDR | Next-hop |
+| ----------------------------|--------------------|------------------|---------------------------------------------- |
+| Default route | T0 Logical Router | 0.0.0.0/0 | Default GW of `vpc-t0-public-uplink-subnet` |
 {: caption="Table 2. Default route in T0 Logical Router with public uplinks" caption-side="bottom"}
 
 If you do not need inbound traffic from internet, you do not need public uplinks on T0 nor the public VLAN interfaces. Alternatively, you can use Public Gateway in {{site.data.keyword.vpc_short}}, which provides you the outbound internet access from NSX-T overlay segments, and use the T0s private uplinks for this traffic. In this case, your default route `0.0.0.0/0` in NSX-T T0 Logical Router must be pointed to the default gateway of the `vpc-t0-private-uplink-subnet`.
 
-Route description           | Device             | CIDR             | Next-hop
-----------------------------|--------------------|------------------|----------------------------------------------
-Default route               | T0 Logical Router  | 0.0.0.0/0        | Default GW of `vpc-t0-private-uplink-subnet`
+| Route description | Device | CIDR | Next-hop |
+| ------------------|--------------------|------------------|---------------------------------------------- |
+| Default route | T0 Logical Router | 0.0.0.0/0 | Default GW of `vpc-t0-private-uplink-subnet` |
 {: caption="Table 3. Default route in T0 Logical Router with private uplinks only" caption-side="bottom"}
 
 ## Private traffic between Tier-0 and VPC
@@ -74,9 +74,9 @@ Default route               | T0 Logical Router  | 0.0.0.0/0        | Default GW
 
 If you have both Public and Private Uplinks, first you must create a route in NSX-T T0 pointing to the Private networks. You must connect it to the VMware workloads attached to NSX-T overlay segments. These networks must then be reachable through the VPC, or DL/TGW, which the VPC is attached to. The following table shows an example, when private prefix `172.16.0.0/16` is used elsewhere and this prefix is known by VPC, either directly or through attached {{site.data.keyword.dl_short}} (DL) or {{site.data.keyword.tg_short}} (TGW).
 
-Route description           | Device             | CIDR             | Next-hop
-----------------------------|--------------------|------------------|----------------------------------------------
-Private networks            | T0 Logical Router  | 172.16.0.0/16    | Default GW of `vpc-t0-private-uplink-subnet`
+| Route description | Device | CIDR | Next-hop |
+| ------------------|--------------------|------------------|---------------------------------------------- |
+| Private networks | T0 Logical Router | 172.16.0.0/16 | Default GW of `vpc-t0-private-uplink-subnet` |
 {: caption="Table 4. Private routes in T0 Logical Router with public uplinks" caption-side="bottom"}
 
 If you use only private route, then your default route `0.0.0.0/0` in NSX-T T0 Logical Router routes all traffic to the VPC.
@@ -84,9 +84,9 @@ If you use only private route, then your default route `0.0.0.0/0` in NSX-T T0 L
 
 You must define inbound traffic from VPC. Then, you must create a VPC route in the Zone to the IP subnet or prefix that you are using in the NSX-T overlay. As the NSX-T T0 uses Active-Standby, the HA VIP provides high availability for the routing of private traffic between VPC and your NSX-T overlay. Therefore, the next-hop for the VPC route must be the HA VIP, as specified on the following table.
 
-Interface name | Interface type | VLAN ID | Subnet | Allow float | Allow IP spoofing | Enable Infra NAT | NSX-T interface | Segment name
-----------------------------|----------------|---------|------------------------------|--------------|-------------------|-------------------|----------------------------|------------------------------
-vlan-nic-t0-priv-uplink-vip | vlan           | 2712    | vpc-t0-private-uplink-subnet | true         | true              | true              | T0 Private Uplink VIP      | vpc-zone-t0-private-*vlanid*
+| Interface name | Interface type | VLAN ID | Subnet | Allow float | Allow IP spoofing | Enable Infra NAT | NSX-T interface | Segment name |
+| ----------------------------|----------------|---------|------------------------------|--------------|-------------------|-------------------|----------------------------|------------------------------ |
+| vlan-nic-t0-priv-uplink-vip | vlan | 2712 | vpc-t0-private-uplink-subnet | true | true | true | T0 Private Uplink VIP | vpc-zone-t0-private-*vlanid* |
 {: caption="Table 5. VLAN interfaces for T0 uplinks" caption-side="bottom"}
 
 VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `true` allow VMware workloads on NSX-T overlay with private IP addresses to be routed to {{site.data.keyword.vpc_short}}. To enable this action, a VPC route is created with IP address of private uplink HA VIP/vlan-nic-t0-priv-uplink-vip as the next-hop configured in the {{site.data.keyword.vpc_short}} Zone.
@@ -94,9 +94,9 @@ VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to 
 
 When you plan the routing, summarize the NSX-T overlay subnets, or prefixes to keep the number required routes minimal. When you create a route that points to the NSX-T overlay, the following table provides an example for the required parameters for an NSX-T overlay subnets `192.168.4.0/24`, `192.168.5.0/24`, `192.168.6.0/24`, and `192.168.7.0/24` attached to T1. Further summarized to a prefix `192.168.4.0/22` and by using NSX-T HA VIP `192.168.0.10` in Zone `us-south-2` as the next-hop. For more information about VPC routes, see [VPC routing tables and routes](/docs/vpc?topic=vpc-about-custom-routes).
 
-Route description           | Zone           | Traffic type   | CIDR             | Action    | Type   | Next-hop
-----------------------------|----------------|----------------|------------------|-----------|--------|-------------------
-NSX-T overlay networks      | us-south-2     | Egress         | 192.168.4.0/22   | Deliver   | IP     | 192.168.0.10
+| Route description | Zone | Traffic type | CIDR | Action | Type | Next-hop |
+| ------------------|----------------|----------------|------------------|-----------|--------|------------------- |
+| NSX-T overlay networks | us-south-2 | Egress | 192.168.4.0/22 | Deliver | IP | 192.168.0.10 |
 {: caption="Table 6. VPC routes" caption-side="bottom"}
 
 VPC routes are Zone specific.

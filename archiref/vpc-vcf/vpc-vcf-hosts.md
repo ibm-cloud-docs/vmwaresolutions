@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-11"
+lastupdated: "2022-09-28"
 
 subcollection: vmwaresolutions
 
@@ -61,21 +61,21 @@ In VCF deployments in {{site.data.keyword.vpc_short}}, each {{site.data.keyword.
 
 The following table lists the VMKs that are required for each ESXi host in a VCF deployment.
 
-Interface name         | Interface type | VLAN ID | Subnet              | Allow float  | VMkernel adapter | Distributed port group name
------------------------|----------------|---------|---------------------|--------------|------------------|------------------------------
-`pci-nic-vmnic0-uplink1` | `pci`            | 0       | `vpc-host-subnet`     | false        | none             | `dpg-hosts`
-`pci-nic-vmnic0-uplink2` | `pci`            | 0       | `vpc-host-subnet`     | false        | none             | `dpg-hosts`
-`vlan-nic-vcf-vmk1`      | `vlan`           | 1611    | `vpc-vmot-subnet`     | true         | vmk1             | `pg-vmotion`
+| Interface name | Interface type | VLAN ID | Subnet | Allow float | VMkernel adapter | Distributed port group name |
+| -----------------------|----------------|---------|---------------------|--------------|------------------|------------------------------ |
+| `pci-nic-vmnic0-uplink1` | `pci` | 0 | `vpc-host-subnet` | false | none | `dpg-hosts` |
+| `pci-nic-vmnic0-uplink2` | `pci` | 0 | `vpc-host-subnet` | false | none | `dpg-hosts` |
+| `vlan-nic-vcf-vmk1` | `vlan` | 1611 | `vpc-vmot-subnet` | true | vmk1 | `pg-vmotion` |
 {: caption="Table 1. Host management networks and VMkernel adapters" caption-side="bottom"}
 
 As VCF Cloud Builder and SDDC manager use pool concepts for assigning IP addresses for VMkernel adapters, you must do this action in two steps in {{site.data.keyword.vpc_short}}. First, make sure that you have consecutive IP addresses that are available on the VPC subnet. You can use reserved IP address concept, and reserve the IP addresses from each System Traffic Type subnet. In the second step, you must create a VLAN interface for each pool as shown in the following table. How many IP addresses you need to reserve and how many VLAN interfaces to create depend on the size of your deployment. 
 
-Interface name         | Interface type | VLAN ID | Subnet              | Allow float  | VMkernel adapter | Distributed port group name
------------------------|----------------|---------|---------------------|--------------|------------------|------------------------------
-`vlan-nic-vmot-pool-<1>` | vlan           | 1612    | `vpc-vmot-subnet`     | false        | `vmk0`             | `pg-mgmt`
-`vlan-nic-vsan-pool-<1>` | vlan           | 1613    | `vpc-vsan-subnet`     | false        | `vmk2`             | `pg-vsan`
-`vlan-nic-tep-pool-<1>` | vlan           | 1614    | `vpc-tep-subnet`      | false        | `vmk10`            | none - set in NSX-T profile
-`vlan-nic-tep-pool-<2>` | vlan           | 1614    | `vpc-tep-subnet`      | false        | `vmk11`            | none - set in NSX-T profile
+| Interface name | Interface type | VLAN ID | Subnet | Allow float | VMkernel adapter | Distributed port group name |
+| -----------------------|----------------|---------|---------------------|--------------|------------------|------------------------------ |
+| `vlan-nic-vmot-pool-<1>` | vlan | 1612 | `vpc-vmot-subnet` | false | `vmk0` | `pg-mgmt` |
+| `vlan-nic-vsan-pool-<1>` | vlan | 1613 | `vpc-vsan-subnet` | false | `vmk2` | `pg-vsan` |
+| `vlan-nic-tep-pool-<1>` | vlan | 1614 | `vpc-tep-subnet` | false | `vmk10` | none - set in NSX-T profile |
+| `vlan-nic-tep-pool-<2>` | vlan | 1614 | `vpc-tep-subnet` | false | `vmk11` | none - set in NSX-T profile |
 {: caption="Table 2. VCF pools for VMkernel adapters" caption-side="bottom"}
 
 Before your VMkernel adapter can communicate in VPC, you must create a VLAN interface. Cloud Builder validates the connectivity for each one and you get an error or warning on validation if your VPC is not set up correctly.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-09"
+lastupdated: "2022-09-28"
 
 subcollection: vmwaresolutions
 
@@ -28,22 +28,22 @@ For this architecture, a new VPC is created for each VMware VCF instance. This a
 
 The following table lists the recommended subnets in VPC. Subnet design is based on the VCF requirement to separate System Traffic Types logically and a dedicated VPC subnet for each user used. Bare metal server PCI interfaces are hosted on their own subnet. Management interfaces and appliances, such as VMware vCenter®, VMware NSX-T™ managers, SDDC manager, and NSX-T Edge™ management interfaces are provisioned on their own subnet.
 
-Subnet name           | System traffic type          | Subnet sizing guidance
-----------------------|------------------------------|--------------------------------------------------------------
-vpc-host-subnet       | Host management traffic      | Number of Hosts x 2 (each PCI NIC requires an IP address)
-vpc-mgmt-subnet       | Management appliance traffic | Number of VCF Management Appliances
-vpc-vmot-subnet       | vMotion traffic              | Number of Hosts
-vpc-vsan-subnet       | vSAN traffic                 | Number of Hosts
-vpc-tep-subnet        | TEP traffic for hosts        | Number of Hosts x 2 (each host requires 2 x TEPs)
+| Subnet name | System traffic type | Subnet sizing guidance |
+| ----------------------|------------------------------|-------------------------------------------------------------- |
+| vpc-host-subnet | Host management traffic | Number of Hosts x 2 (each PCI NIC requires an IP address) |
+| vpc-mgmt-subnet | Management appliance traffic | Number of VCF Management Appliances |
+| vpc-vmot-subnet | vMotion traffic | Number of Hosts |
+| vpc-vsan-subnet | vSAN traffic | Number of Hosts |
+| vpc-tep-subnet | TEP traffic for hosts | Number of Hosts x 2 (each host requires 2 x TEPs) |
 {: caption="Table 1. VPC subnets for System traffic types" caption-side="bottom"}
 
 NSX-T edge TEP traffic and NSX-T Tier-0 logical gateway interfaces are deployed on their own subnets in VCF deployments. The following VPC subnets are required for the edge cluster.
 
-Subnet name                   | System traffic type          | Subnet sizing guidance
-------------------------------|------------------------------|-----------------------------------
-vpc-edge-tep-subnet           | TEP traffic for edge nodes   | Number of Edge Nodes x 2 (each edge node requires 2 x TEPs)
-vpc-t0-public-uplink-subnet   | T0 public uplink subnet      | `/29` or larger
-vpc-t0-private-uplink-subnet  | T0 private uplink subnet     | `/29` or larger
+| Subnet name | System traffic type | Subnet sizing guidance |
+| ------------------------------|------------------------------|----------------------------------- |
+| vpc-edge-tep-subnet | TEP traffic for edge nodes   | Number of Edge Nodes x 2 (each edge node requires 2 x TEPs) |
+| vpc-t0-public-uplink-subnet | T0 public uplink subnet | `/29` or larger |
+| vpc-t0-private-uplink-subnet | T0 private uplink subnet | `/29` or larger |
 {: caption="Table 2. VPC subnets for NSX-T T0 uplinks" caption-side="bottom"}
 
 To be able to create subnets in VPC, you must create a VPC prefix. VPC prefixes are defined per zone. To simplify routing, you must allocate the recommended subnets from a single prefix. Which means that to accommodate five subnets, you need one `/21` prefix to cater addresses for about 120 hosts per zone. If you want to use a prefix with `/22`, you can add about 60 hosts per zone. By selecting a large enough prefix, you will have growth for scalability and future needs, such as dedicated VMKs for NFS, replication, and NSX-T Tier-0 uplinks.
