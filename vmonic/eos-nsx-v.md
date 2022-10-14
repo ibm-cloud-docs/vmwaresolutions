@@ -4,9 +4,9 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-17"
+lastupdated: "2022-10-14"
 
-keywords: end of marketing notice, nsx-v deployment, end of support nsx-v, nsx-v deprecated, nsx-v support
+keywords: end of support notice, nsx-v deployment, end of support nsx-v, nsx-v deprecated, nsx-v support
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# End of Marketing for NSX-V instance deployments
+# End of Support for NSX-V instance deployments
 {: #eos-nsx-v}
 
 VMware® support for all new VMware NSX-V deployments ended on 16 January 2022.
@@ -36,4 +36,4 @@ For more information about end of life procedures for {{site.data.keyword.cloud_
 {: #eos-nsx-v-related}
 
 * [End of Support for vSphere 6.5 instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vsphere65)
-* [End of Marketing for vSphere 6.7 instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vsphere67)
+* [End of Support for vSphere 6.7 instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vsphere67)

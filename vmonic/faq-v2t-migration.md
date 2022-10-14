@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-07-29"
+lastupdated: "2022-10-14"
 
 subcollection: vmwaresolutions
 
@@ -63,7 +63,7 @@ If you added deployed assets to the instance manually, after initial deployment,
 ## I have VMware workloads on {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 6.5 and 6.7 and the support is ending. I am not using NSX for my workloads. What do I need to do keep the environment supported, and what options do I have?
 {: #faq-v2t-migration-6x-classic}
 
-The End of General Support for VMware vSphere® 6.5 and 6.7 is 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://lifecycle.vmware.com/#/){: external}.
+General support for VMware vSphere® 6.x ends on 15 October 2022. For IBM-provided licenses, IBM has negotiated an extension for to support vSphere 6.5 and 6.7 until 4 November 2022 so that you can complete your migrations. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://lifecycle.vmware.com/#/){: external}.
 
 Instances with {{site.data.keyword.cloud_notm}} bare metal servers vSphere 6.7 servers are not orderable after 21 June 2022. {{site.data.keyword.cloud_notm}} support for ordering all update levels of vSphere 6.5 ended on 10 October 2021, and vSphere 6.5 will not be orderable after 21 June 2022. 
 
@@ -75,7 +75,7 @@ Instances with {{site.data.keyword.cloud_notm}} bare metal servers vSphere 6.7 s
 ## I have VMware Solutions Dedicated - VMware vSphere, {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 6.5 or 6.7, and the support is ending. I am not using NSX for my workloads. What do I need to do to keep the environment supported, and what options do I have?
 {: #faq-v2t-migration-6x-vss}
 
-The End of General Support for vSphere 6.5 and 6.7 is 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://lifecycle.vmware.com/#/){: external}.
+General support for vSphere 6.x ends on 15 October 2022. For IBM-provided licenses, IBM has negotiated an extension to support vSphere 6.5 and 6.7 until 4 November 2022 so that you can complete your migrations. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://lifecycle.vmware.com/#/){: external}.
 
 Instances with {{site.data.keyword.cloud_notm}} bare metal servers vSphere 6.7 servers are not orderable after 21 June 2022. {{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere 6.5 ended on 10 October 2021, and VMware vSphere 6.5 will not be orderable after 21 June 2022. 
 
@@ -87,7 +87,7 @@ Instances with {{site.data.keyword.cloud_notm}} bare metal servers vSphere 6.7 s
 ## I have VMware Solutions Dedicated - vCenter Server with NSX-V, IBM Cloud Bare Metal Servers with vSphere 6.5 or 6.7, and the support is ending. What do I need to do to keep the environment supported, and what options do I have?
 {: #faq-v2t-migration-6x-vcs}
 
-The End of General Support for vSphere 6.5 and 6.7 is 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://lifecycle.vmware.com/#/){: external}.
+General support for vSphere 6.x ended on 15 October 2022. For IBM-provided licenses, IBM has negotiated an extension to support vSphere 6.5 and 6.7 until 4 November 2022 so that you can complete your migrations. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://lifecycle.vmware.com/#/){: external}.
 
 In addition, the vCenter Server instances with vSphere 6.5 or 6.7 typically run NSX-V 6.4. NSX-V 6.4 is End of General Support on 16 January 2022 and end of technical guidance on 16 January 2023. See more on VMware Official Product Lifecycle Matrix. An exclusive support agreement between VMware and IBM to support NSX-V until 31 December 2023 exists.
 
@@ -117,23 +117,23 @@ Upgrade and migration processes vary depending on the consumption model.
 ## What is the impact if I don't upgrade vSphere 6.x on my {{site.data.keyword.cloud_notm}} bare metal hosts?
 {: #faq-v2t-migration-6x-impact}
 
-Upgrading your vSphere software is a customer responsibility and the decision to upgrade to a supported version is yours. However, your business might be at risk because VMware is under no obligation to provide product patches and updates, such as security updates and bug fixes. If {{site.data.keyword.cloud_notm}} provides your vSphere licenses, then IBM Support cannot assist you with vSphere issues until you upgrade. {{site.data.keyword.cloud_notm}} continues to support your bare metal servers infrastructure on our cloud and the vSphere 6.5 software until the VMware announced end of support date of 15 October 2022.
+Upgrading your vSphere software is a customer responsibility and the decision to upgrade to a supported version is yours. However, your business might be at risk because VMware is under no obligation to provide product patches and updates, such as security updates and bug fixes. If {{site.data.keyword.cloud_notm}} provides your vSphere licenses, then IBM Support cannot assist you with vSphere issues until you upgrade.
 
 See also [different ways to run VMware workloads in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
 
 ## What is the impact if I don't upgrade vSphere 6.x on my VMware Solutions Dedicated - VMware vSphere (vSS) hosts?
 {: #faq-v2t-migration-6x-impact-vss}
 
-Upgrading your vSphere software is a customer responsibility and the decision to upgrade to a supported version is yours. However, your business might be at risk because VMware is under no obligation to provide product patches and updates, such as security updates and bug fixes. If {{site.data.keyword.cloud_notm}} provides your vSphere licenses, then IBM Support cannot assist you with vSphere issues until you upgrade. {{site.data.keyword.cloud_notm}} continues to support your bare metal servers infrastructure on our cloud and the vSphere 6.5 software until the VMware announced end of support date of 15 October 2022.
+Upgrading your vSphere software is a customer responsibility and the decision to upgrade to a supported version is yours. However, your business might be at risk because VMware is under no obligation to provide product patches and updates, such as security updates and bug fixes. If {{site.data.keyword.cloud_notm}} provides your vSphere licenses, then IBM Support cannot assist you with vSphere issues until you upgrade.
 
 See also [different ways to run VMware workloads in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
 
 ## What is the impact if I don't upgrade vSphere 6.x on my VMware Solutions Dedicated - vCenter Server hosts?
 {: #faq-v2t-migration-6x-impact-vcs}
 
-Upgrading your vSphere software is a customer responsibility and the decision to upgrade to a supported version is yours. However, your business might be at risk because VMware is under no obligation to provide product patches and updates, such as security updates and bug fixes. {{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere 6.5 ended on 10 October 2021 and you can no longer order new vCenter Server instances with vSphere 6.5. Existing vCenter Server vSphere 6.5 instances became read–only in the VMware Solutions console and through the public REST API, which means that you cannot add or remove clusters, hosts, storage, or services. Your workloads that are hosted on the platform continue to run. 
+Upgrading your vSphere software is a customer responsibility and the decision to upgrade to a supported version is yours. However, your business might be at risk because VMware is under no obligation to provide product patches and updates, such as security updates and bug fixes. {{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere 6.x ended on 10 October 2021 and you can no longer order new vCenter Server instances with vSphere 6.x.
 
-To regain the ability to add or remove clusters, hosts, storage, or services you must upgrade to vSphere 6.7 or later. {{site.data.keyword.cloud_notm}} recommends upgrading to 7.x until the VMware announced end of support date of 15 October 2022. If your vCenter Server instance is running NSX-V, consider moving to vCenter Server with NSX-T. This lift and shift upgrade approach can be more beneficial due to the end of support of NSX-V. You might benefit from a target platform with updated hardware, upgraded VMware software, NSX-T, and less of an impact lift and shift migration rather than an in-place upgrade.
+{{site.data.keyword.cloud_notm}} recommends upgrading to 7.x. If your vCenter Server instance is running NSX-V, consider moving to vCenter Server with NSX-T. This lift and shift upgrade approach can be more beneficial due to the end of support of NSX-V. You might benefit from a target platform with updated hardware, upgraded VMware software, NSX-T, and less of an impact lift and shift migration rather than an in-place upgrade.
 
 See also [different ways to run VMware workloads in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
 
@@ -153,7 +153,7 @@ Upgrading vSphere software is your responsibility. However, with Bring Your Own 
 
 See also [different ways to run VMware workloads in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
 
-## What product is it running in the VMware Solutions Dedicated - vCenter Server instance? 
+## What product is it running in the VMware Solutions Dedicated - vCenter Server instance?
 {: #faq-v2t-migration-what-products}
 
 For a vCenter Server instance, the following information is displayed on the VMware Solutions user interface.
@@ -166,10 +166,10 @@ What product is it running in the vCenter Server instance?
 
 This vCenter Server instance is running NSX-T version 3.1.1. Due to the licensing agreement between {{site.data.keyword.cloud_notm}} and VMware, NSX-V licenses were being used for NSX-T instances. Newer vCenter Server instances use NSX-T licenses, so the instance is correctly licensed.
 
-## Can I do an in place vSphere upgrade for my vSphere 6.7 with NSX-T VMware Solutions Dedicated vCenter Server instance? 
+## Can I do an in place vSphere upgrade for my vSphere 6.7 with NSX-T VMware Solutions Dedicated vCenter Server instance?
 {: #faq-v2t-migration-67nsxt-upgrade}
 
-Yes, but we strongly advise deploying a new VMware Solutions Dedicated vCenter Server instance and then use the lift and shift migration approach. For more information about the in place vSphere upgrade, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade) and the [important considerations](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade#vc_vsphere_70_upgrade-considerations). 
+Yes, but we strongly advise deploying a new VMware Solutions Dedicated vCenter Server instance and then use the lift and shift migration approach. For more information about the in place vSphere upgrade, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade) and the [important considerations](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade#vc_vsphere_70_upgrade-considerations).
 
 Also, review the following key considerations:
 
@@ -180,7 +180,7 @@ Also, review the following key considerations:
 * A workaround for the add nodes and add cluster features is to use the VMware vSphere offering. For more information, see [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview). You must complete a number of manual tasks after the automated deployment.
 * A workaround for add-on services is to deploy them manually using the documented reference architectures, see the Solution architectures on Classic and Solution Guides sections at [Getting started with VMware Solutions](/docs/vmwaresolutions).
 
-## Can I reuse the portable subnets that are deployed for my existing NSX-V vCenter Server instance? 
+## Can I reuse the portable subnets that are deployed for my existing NSX-V vCenter Server instance?
 {: #faq-v2t-migration-nsx-v-instance-portable-subnets}
 
 When you delete a VMware vCenter Server® instance, the networking (VLANs with private and public subnets) is cancelled together with the {{site.data.keyword.cloud_notm}} bare metal servers. If you have networking assets in your migration, open a support ticket to ensure that IBM Support decouples the VLANs and related subnets from the original instance. This way, these assets are not cancelled when the vCenter Server instance is deleted.
@@ -194,8 +194,8 @@ The following recommendations apply:
 However, if you have overlapping IP addressing challenges, the note the following guidance:
 
 * You can still continue to use your existing instance management subnet, if it has IP addresses available and you don't use any IP addresses for your own use. The new instance uses new IP addresses for the vCenter server, NSX-T managers, and Active Directory servers (if AD servers are running on the VMware VMs) from the new instance management subnet. Reusing existing management subnet is not possible for these components until you delete the existing VCS.
-* In addition, the NSX-T T0 gateways are provisioned with new IP addresses from the portable private and portable public subnets for customer workload edge. NSX-T T0 gateways do not support secondary IP addresses on their uplinks. 
-* You can manually configure an existing subnet for the NSX-T T0 gateway uplinks, but only one subnet can be configured in T0. 
+* In addition, the NSX-T T0 gateways are provisioned with new IP addresses from the portable private and portable public subnets for customer workload edge. NSX-T T0 gateways do not support secondary IP addresses on their uplinks.
+* You can manually configure an existing subnet for the NSX-T T0 gateway uplinks, but only one subnet can be configured in T0.
 * If you are using secondary IP subnets on the uplinks, you need to redesign the topology. For example, you can order [new static subnets](/docs/subnets?topic=subnets-about-subnets-and-ips#static-subnets) and route these subnets to NSX-T T0 HA VIP. These IP subnets and addresses can be used with NSX-T NAT rules, load balancing or on overlay attached VMs.
 
 ## Can I reuse existing portable subnets that are ordered outside the VMware Solutions console?
@@ -211,4 +211,3 @@ If you are using these IP addresses on ESGs for NAT rules or other services, be 
 * [General FAQ about VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions-shared)
 * [General FAQ about VMware Solutions Dedicated](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Considerations about changing vCenter Server artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact)
-

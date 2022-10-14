@@ -4,9 +4,9 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-09-20"
+lastupdated: "2022-10-14"
 
-keywords: end of marketing notice, vSphere 6.7 deployment, end of support vSphere 6.7, vSphere 6.7 deprecated, vSphere 6.7 support
+keywords: end of support notice, vSphere 6.7 deployment, end of support vSphere 6.7, vSphere 6.7 deprecated, vSphere 6.7 support
 
 subcollection: vmwaresolutions
 
@@ -15,20 +15,14 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# End of Marketing for vSphere 6.7 instance deployments
+# End of Support for vSphere 6.7 instance deployments
 {: #eos-vsphere67}
 
-VMware® support for all new VMware vSphere® 6.7 deployments ends on 15 October 2022.
+VMware® support for all new VMware vSphere® 6.7 deployments ends on 15 October 2022. For IBM-provided licenses, IBM has negotiated an extension to support vSphere 6.7 until 4 November 2022 so that you can complete your migrations.
 
-Beginning on 21 June 2022, you can no longer order new VMware vCenter Server® instances with vSphere 6.7. You can still add or remove existing clusters and hosts until 15 October 2022.
+Review the documentation for instructions and considerations for upgrading to vSphere 7. For more information, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade) or [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 
-After 15 October 2022, you can no longer add or remove hosts or clusters for vCenter Server instances with vSphere 6.7 until you upgrade to vSphere 7.
-
-{{site.data.keyword.cloud_notm}} will continue to support your infrastructure on our cloud and will continue to support the vSphere 6.7 software until the [VMware announced end of support date](https://lifecycle.vmware.com/#/){: external} of 15 October 2022.
-
-vSphere 6.7 is superseded by vSphere 7. If you have active workloads on vSphere 6.7, consider upgrading or migrating to vSphere 7 today. The documentation provides instructions and considerations for upgrading to vSphere 7.
-
-{{site.data.keyword.cloud_notm}} recommends you to move to vSphere 7, which is the focus of feature investment for both VMware and {{site.data.keyword.cloud_notm}}. Furthermore, {{site.data.keyword.cloud_notm}} recommends that you migrate rather than upgrade to vSphere 7. Migration ensures that you are aligned with current and supported hardware, other {{site.data.keyword.cloud_notm}} features, and the recommended vSphere 7 NSX–T topology, including the use of VDS switches.
+{{site.data.keyword.cloud_notm}} recommends that you migrate rather than upgrade to vSphere 7. Migration ensures that you are aligned with current and supported hardware, other {{site.data.keyword.cloud_notm}} features, and the recommended vSphere 7 NSX–T topology, including the use of VMware vSphere Distributed Switches.
 
 Before you upgrade, IBM recommends that you assess your environments for infrastructure and workload dependencies to ensure that they are supported for the current version.
 
@@ -46,5 +40,5 @@ For more information about end of life procedures for {{site.data.keyword.cloud_
 ## Related links
 {: #eos-vsphere67-related}
 
-* [End of Marketing for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v)
-* [End of Marketing for vSphere 6.5 instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vsphere65)
+* [End of Support for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v)
+* [End of Support for vSphere 6.5 instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vsphere65)
