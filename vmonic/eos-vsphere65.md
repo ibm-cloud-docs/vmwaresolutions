@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-10-14"
+lastupdated: "2022-10-16"
 
 keywords: end of support notice, vSphere 6.5 deployment, end of support vSphere 6.5, vSphere 6.5 deprecated, vSphere 6.5 support
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # End of Support for vSphere 6.5 instance deployments
 {: #eos-vsphere65}
 
-{{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere® 6.5 ended on 10 October 2021. Beginning on this date, you can no longer order new VMware vCenter Server® instances with vSphere 6.5.
+{{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere® 6.5 ended on 10 October 2021. Beginning on this date, you can no longer order new VMware vCenter Server® instances with vSphere 6.5. Your existing vCenter Server instances with vSphere 6.5 become read–only in the VMware Solutions console.
 
 For IBM-provided licenses, IBM has negotiated an extension to support vSphere 6.5 until 4 November 2022 so that you can complete your migrations.
 
