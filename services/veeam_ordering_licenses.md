@@ -4,9 +4,9 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-05-20"
+lastupdated: "2022-10-26"
 
-keywords: Veeam, Veeam license, order Veeam license, Veeam 10
+keywords: Veeam, Veeam standalone license, order Veeam standalone license
 
 subcollection: vmwaresolutions
 
@@ -14,38 +14,41 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Ordering Veeam licenses
+# Ordering Veeam standalone licenses
 {: #veeam_ordering_licenses}
 
-You can order a Veeam® license without associating it to any VMware® vCenter Server® instance for licensing and activation of your on-premises workloads.
+You can order a Veeam® standalone license without associating it to any VMware® vCenter Server® instance for licensing and activation of your on-premises workloads.
 
 ## Before you begin
 {: #veeam_ordering_licenses-before-begin}
 
 Ensure that you configured the {{site.data.keyword.cloud}} infrastructure credentials on the **Settings** page. For more information, see [Managing user accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount).
 
-## Procedure to order Veeam licenses
+## Procedure to order Veeam standalone licenses
 {: #veeam_ordering_licenses_ordering-procedure}
 
-1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
-2. Scroll down to the **Veeam licenses** table and click **Provision new**.
-3. Specify the resource group.
+1. Log into the IBM Cloud.
 
-   If **No resource group available** is displayed in this field, you currently do not have the permission to add the instance to any resource group in this account. Contact the account owner to be assigned an Editor or Administrator role on a resource group in the account. For more information, see [IAM access](/docs/account?topic=account-userroles).
-   {: note}
+2. Navigate to the VMware page. To find the page, you can search for VMware Solutions.
 
-4. Specify a new license name or use the default name **veeam-_xx_** where _xx_ represents two randomly generated alphabetic characters.
-5. In the **License note** field, enter a note. For example, you can enter a note to help you identify associated instances.
-6. Specify the number of virtual machines (VMs) you want to license. You can order licenses only in multiples of 10.
-7. Click the link or links of the terms that apply to your order. Ensure that you agree with these terms before you order the license.
-8. Click **Add to estimate** or **Create**.
+3. Select **Licenses** from the menu at the left.
+
+4. Scroll down to the **Veeam licenses** entry. Click **Create new**.
+
+5. Enter the required information for the fields.
+
+6. Click the link or links of the terms that apply to your order. Ensure that you agree with the terms before you order the license.
+
+7. Click **Add to estimate** or **Create**.
 
 ## Results
 {: #veeam_ordering_licenses-results}
 
-The ordering process does not automatically start. 
+The ordering process automatically starts.
 
-After you complete the order, you must take a screen capture of your purchase order and email it to veeamvpc@us.ibm.com. A license key is generated to you, the requester.
+An email will be sent confirming the order. Should the order be incorrect, it can be deleted. For more information, see [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses).
+
+A license key will be generated and emailed to whomever placed the order.
 
 ## Related links
 {: #veeam_ordering_licenses-related}

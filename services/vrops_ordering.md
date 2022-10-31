@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-14"
 
 keywords: vRealize, vRealize configuration, order vRealize
 
@@ -23,9 +23,10 @@ You can include the vRealize Operations™ and Log Insight™ service with a new
 ## Ordering vRealize Operations and Log Insight for a new instance
 {: #vrops_ordering-new}
 
-When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. vRealize Operations and Log Insight is in the Management tools category. Open the category, locate vRealize Operations and Log Insight, and toggle its switch on.
-
-Select **Edit** to review and specify the information. If you enter or change information, click **Save**.
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. vRealize Operations and Log Insight is in the Management tools category.
+2. Open the category, locate vRealize Operations and Log Insight, and toggle its switch on.
+3. Select **Edit** to review and specify the information. 
+4. If you enter or change information, click **Save**.
 
 ## Ordering vRealize Operations and Log Insight for an existing instance
 {: #vrops_ordering-existing}

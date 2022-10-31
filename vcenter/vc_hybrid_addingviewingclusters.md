@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-10-20"
 
 keywords: vCenter Server Hybridity add cluster, view cluster vCenter Server Hybridity, delete cluster vCenter Server Hybridity
 
@@ -136,7 +136,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ## Procedure to add clusters to vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingviewingclusters-adding-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance to view the clusters in it.
 
    Ensure that the instance status is **Ready to use**. Otherwise, you can't add clusters to the instance.
@@ -167,7 +167,7 @@ You can't change the cluster name. Changing the cluster name might cause the add
 ## Procedure to view clusters in vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingviewingclusters-viewing-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance to view the clusters in it.
 3. Click **Infrastructure** on the left navigation pane. In the **CLUSTERS** table, view the summary about the clusters.
    * **Name** - The name of the cluster.
@@ -241,7 +241,7 @@ You might want to delete a cluster from an instance when it's no longer needed.
 ## Procedure to delete clusters from vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingviewingclusters-deleting-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance that you want to delete clusters from.
 
    Ensure that the instance is in the **Ready to use** status. Otherwise, you cannot delete clusters from the instance.

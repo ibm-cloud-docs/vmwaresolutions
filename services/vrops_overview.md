@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-06-16"
+lastupdated: "2022-10-26"
 
 keywords: vRealize, vRealize info, tech specs vRealize
 
@@ -27,7 +27,7 @@ Like the other VMware components in the stack, you can bring your enterprise lic
 
 {{site.data.content.para-promotion-services}}
 
-The current versions that are installed are vROps 8.6 and vRLI 8.6.
+The current versions that are installed are vROps 8.6 and vRLI 8.8.
 {: note}
 
 ## Technical specifications for vRealize Operations and Log Insight
@@ -37,7 +37,7 @@ For more information about resource requirements and capacity checking for some 
 
 The following components are ordered and included in the vRealize Operations and Log Insight service:
 * VMware vRealize Operations (vROps) 8.6
-* VMware vRealize Log Insight (vRLI) 8.6
+* VMware vRealize Log Insight (vRLI) 8.8
 
 For more information about the design, requirements, and preconfigured management packs, see [Operations management architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-arch).
 

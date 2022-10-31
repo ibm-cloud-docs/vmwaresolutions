@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-09-22"
 
 subcollection: vmwaresolutions
 
@@ -34,3 +34,4 @@ While many storage encryption solutions are available for your VMware workload, 
 
 * [Solution design](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-design)
 * [Implementation and management](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-implementation)
+* [High availability and disaster recovery](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-hadr)

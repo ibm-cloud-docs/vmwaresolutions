@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-05-10"
+lastupdated: "2022-10-27"
 
 subcollection: vmwaresolutions
 
@@ -48,7 +48,7 @@ The Veeam Data Integration API is a set of Veeam PowerShell cmdlets that allows 
 
 The following diagram shows the communication flow for when backup files are published to a Linux target server. 
 
-![Publishing backup files ](../../images/veeam-cr-sa-lhbr-pub.svg){: caption="Figure 4. Publishing backup files" caption-side="bottom"}
+![Publishing backup files ](../../images/veeam-cr-sa-lhbr-pub.svg){: caption="Figure 2. Publishing backup files" caption-side="bottom"}
 
 By publishing the backup files, the backup files are displayed in the target server file system. The following example shows the backup of the VM named `centos01` mounted on `/temp`:
 

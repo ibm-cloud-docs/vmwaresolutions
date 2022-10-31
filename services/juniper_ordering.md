@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-17"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX console
 
@@ -30,9 +30,10 @@ You cannot install Juniper vSRX and FortiGate Virtual Appliance on the same edge
 ## Ordering Juniper vSRX for a new instance
 {: #juniper-ordering-new-instance}
 
-When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Juniper vSRX is in the Security and compliance category. Open the category, locate Juniper vSRX, and toggle its switch on.
-
-Select **Edit** to review and specify the information. If you enter or change information, click **Save**.
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Juniper vSRX is in the Security and compliance category. 
+2. Open the category, locate Juniper vSRX, and toggle its switch on.
+3. Select **Edit** to review and specify the information. 
+4. If you enter or change information, click **Save**.
 
 The Juniper vSRX service is deployed on the management cluster unless you order the edge services cluster. For the Juniper vSRX service to function as a gateway for your vCenter Server instance, you must include the edge services cluster in your order.
 

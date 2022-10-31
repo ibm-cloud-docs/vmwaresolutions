@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-09-20"
+lastupdated: "2022-10-31"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -25,12 +25,71 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2022
 {: #year-2022}
 
+### 31 October 2022
+{: #october-2022}
+{: release-note}
+
+New Cyber Recovery instance
+:   The V5.0 release offers a new Cyber Recovery instance. The instance can help you protect your systems and data from cyberthreats and attacks. It can assist you with handling ransomware and help you with other problems and threats.
+
+   The Cyber Recovery instance includes Veeam® 11, a Linux® hardened repository (LHR), and an edge gateway. For more information, see [Cyber Recovery overview](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview).
+
+Private network endpoint enhancements
+:   You can now edit the private network endpoints allowlisted IPs and subnets for your VMware Solutions Shared instance. For more information, see [Modifying a private network endpoint for a virtual data center](/docs/vmwaresolutions?topic=vmwaresolutions-shared_modifying-endpoints).
+
+Veeam self-service portal for VMware Solutions Shared
+:   The Veeam self-service portal is now automatically enabled for existing and new VMware Cloud Director organizations. For more information, see [Managing Veeam for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam).
+
+Withdrawal of support for MEX01 data center
+:   The **Mexico 01** {{site.data.keyword.cloud_notm}} data center is closing on 31 January 2023. Starting with 14 November 2022, this data center is no longer available for deployment.
+
+Dark mode temporarily unavailable
+:   The UI **Dark** mode will be temporarily unavailable starting with 14 November 2022. Until it becomes enabled again, use **Light** mode.
+
+Hostname prefix updates
+:   You can now customize the hostnames prefix individually when you order VMware vCenter Server® instances, order new VMware vSphere® clusters, and add hosts and clusters to existing instances.
+
+Updates to VMware vCenter Server instances and VMware vSphere clusters
+:   The following upgrades are applied to newly deployed instances, clusters, and hosts.
+   * VMware vSphere ESXi™ 7.0 Update 3f (build 20036589)
+   * VMware vSphere ESXi 6.7 P08 (build 19997733)
+
+Considerations for selecting a new NSX Data Center SP edition
+:   Beginning with the V5.0 release, if you have a BYOL for VMware NSX-T™ that is not a Data Center SP license, you can now order NSX Data Center SP licenses to replace your licenses. You are responsible to select the appropriate NSX Data Center SP license edition based on your needs.
+
+   Also, beginning with this release, if you have a BYOL Data Center SP edition license, you can start renting NSX Data Center SP edition licenses from IBM. If you already rent an NSX Data Center SP edition license from IBM, you can upgrade and downgrade. If you have VMware HCX™ and an NSX Data Center Enterprise Plus license, you cannot downgrade your license. If you uninstall HCX, you can then downgrade your license.
+
+Add-on services upgrades
+:   The following service versions are installed on newly deployed instances.
+   * Caveonix RiskForesight™ v4.0
+   * FortiGate® Virtual Appliance v7.2.1
+   * Red Hat® OpenShift® v4.11
+   * vRealize Log Insight™ v8.8
+   * Zerto v9.5u3
+
+KMIP support for Key Protect key rings
+:   Beginning with the V5.0 release, KMIP™ supports Key Protect key rings. For more information, see [Ordering KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_ordering).
+
+Ordering Veeam standalone licenses
+:   Starting with this release, if you order Veeam standalone licenses, the ordering process automatically starts. You get an email confirming what you ordered. A license key is generated for you. When the key is ready, it’s emailed to you. For more information, see [Ordering Veeam standalone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses).
+
+   There is no limit to the number of licenses that you can order.
+
+REST API
+:   The following updates are available:
+
+   * For VMware Solutions Shared, the support date for the [V1 API](/apidocs/vmware-solutions-shared/vmware-solutions-shared-v1.0.0) is being extended until 31 December 2022. To ensure smooth transition in the future, start using the [V2 API](/apidocs/vmware-solutions-shared/vmware-solutions-shared-v2.0.0).
+   * For [VMware Solutions Dedicated](/apidocs/vmware-solutions), support is provided for Caveonix RiskForesight, Veeam, Zerto, and VMware HCX stand-alone licenses. Also, support for the 2U chassis types is added by using the new `large_chassis_only` parameter.
+
+User interface enhancements
+:   The left navigation pane on the VMware Solutions console now groups items as **Resources** and **Licenses** so that they are more aligned with the resource types and names.
+
 ### 29 August 2022
 {: #august-2022}
 {: release-note}
 
-{{site.data.keyword.cloud_notm}} data centers no longer available
-:   (Updated on 20 September 2022) The **Hong Kong 02** and **Seoul 01** data centers are no longer available for deployment.
+**HKG02** and **SEO01** data centers no longer available
+:   (Updated on 20 September 2022) The **Hong Kong 02** and **Seoul 01** {{site.data.keyword.cloud_notm}} data centers are no longer available for deployment.
 
 Price calculation updates for {{site.data.keyword.vmwaresolutions_short}} Shared
 :   Price calculations are now automatically generated when you access the order pages for {{site.data.keyword.vmwaresolutions_short}} Shared offerings. For more information about the specific default selections, see [Requirements and planning for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning).
@@ -52,8 +111,8 @@ vRealize Operations Tenant App for VMware Cloud Director availability
 
 Updates to VMware vCenter Server instances and VMware vSphere clusters
 :   The following upgrades are applied to newly deployed instances, clusters, and hosts.
-   * VMware vSphere ESXi™ 7.0 Update 3e (build 19898904)
-   * VMware vSphere ESXi 6.7 P06 (build 202206001)
+   * VMware vSphere ESXi 7.0 Update 3e (build 19898904)
+   * VMware vSphere ESXi 6.7 P07 (build 19898906)
 
 Considerations for selecting a new NSX Data Center SP edition
 :   Beginning with the V4.9 release, if your NSX-V instance is using BYOL licenses, you can now order legacy NSX licenses from IBM to replace your own license.
@@ -68,15 +127,15 @@ Zerto 9.5u1 support for vSphere 6.5 and 6.7 - deprecated
 {: deprecated}
 
 HCX Appliance activation with BYOL NSX Data Center Enterprise Plus license
-:   If you have a BYOL NSX Data Center Enterprise Plus license and you install VMware HCX™, your NSX Data Center Enterprise Plus license key is now used to activate the HCX appliance. For more information, see [BYOL HCX Enterprise edition and NSX Data Center Enterprise Plus](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering#hcx_ordering-byol-hcx-enterprise).
+:   If you have a BYOL NSX Data Center Enterprise Plus license and you install VMware HCX, your NSX Data Center Enterprise Plus license key is now used to activate the HCX appliance. For more information, see [BYOL HCX Enterprise edition and NSX Data Center Enterprise Plus](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering#hcx_ordering-byol-hcx-enterprise).
 
 Linux hardened repository for Veeam
-:   When you order Veeam, you can order a Linux® hardened repository for immutable storage. For more information, see [Linux hardened repository for immutable storage](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview#veeamvm_overview-specs-linux-storage).
+:   When you order Veeam, you can order a Linux hardened repository for immutable storage. For more information, see [Linux hardened repository for immutable storage](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview#veeamvm_overview-specs-linux-storage).
 
 New and updated documentation
 :   The following documentation updates are available.
    * [VMware Cloud Foundation on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-overview), a new architecture reference for a complete set of software-defined services for compute, storage, network security, Kubernetes management, and cloud management.
-   * [Deleting vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_deletingclusters), a new topic about deleting VMware vSphere® clusters by managing your resources and canceling hosts and licenses on your own.
+   * [Deleting vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_deletingclusters), a new topic about deleting VMware vSphere clusters by managing your resources and canceling hosts and licenses on your own.
 
 REST API updates
 :   For the [VMware Solutions Dedicated API](/apidocs/vmware-solutions), support is provided for scaling existing VMware vSphere clusters.
@@ -140,8 +199,8 @@ Security and Compliance Readiness Bundle - deprecated
 Add-on services upgrades
 :   The following service versions are installed on newly deployed instances.
    * Entrust CloudControl™ v6.5 (formerly known as HyTrust® CloudControl)
-   * FortiGate® Virtual Appliance v7.0.5
-   * Red Hat® OpenShift® v4.10
+   * FortiGate Virtual Appliance v7.0.5
+   * Red Hat OpenShift v4.10
    * Zerto v9.0u4
 
 BYOL HCX Enterprise license for HCX and NSX Data Center SP Enterprise Plus
@@ -159,8 +218,8 @@ New and updated documentation
 REST API updates
 :   New REST APIs are available.
 
-   * For VMware Solutions Shared, a new [V2 API](/apidocs/vmware-solutions-shared/vmware-solutions-shared-v2.0.0) is introduced, which includes the new `site` object. The [V1 API](/apidocs/vmware-solutions-shared/vmware-solutions-shared-v1.0.0) is being deprecated and will be supported until 31 October 2022. To ensure smooth transition in the future, start using the V2 APIs.
-   * For the [VMware Solutions Dedicated API](/apidocs/vmware-solutions), support is provided for VMware vSphere cluster new deployments and for the KMIP™ for VMware stand-alone service.
+   * (Updated on 31 October 2022) For VMware Solutions Shared, a new [V2 API](/apidocs/vmware-solutions-shared/vmware-solutions-shared-v2.0.0) is introduced, which includes the new `site` object. The [V1 API](/apidocs/vmware-solutions-shared/vmware-solutions-shared-v1.0.0) is being deprecated and will be supported until 31 December 2022. To ensure smooth transition in the future, start using the V2 APIs.
+   * For the [VMware Solutions Dedicated API](/apidocs/vmware-solutions), support is provided for VMware vSphere cluster new deployments and for the KMIP for VMware stand-alone service.
 
 User interface updates and enhancements
 :   Various error messages and tooltip enhancements are available to assist you in selecting the appropriate setting on the user interface.
@@ -174,8 +233,11 @@ User interface updates and enhancements
 {: #april-2022}
 {: release-note}
 
+VMware Cloud Director upgrade for VMware Solutions Shared
+:   (Updated on 8 May 2022) VMware Solutions provides an upgrade to the Shared infrastructure to the latest version of VMware Cloud Director (vCD) v10.3.3.
+
 Compute policy support for VMware Solutions Shared virtual data centers
-:   You can now choose to enable a compute policy for a VMware Solutions Shared virtual data center. This feature provides a convenient option to choose a compute policy for your virtual machine (VM) from the list of policies that are available for that virtual data center. For more information, see [Enabling a compute policy](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-compute-policy).
+:   You can now choose to enable a compute policy for a VMware Solutions Shared virtual data center. This feature provides a convenient option to choose a compute policy for your virtual machine (VM) from the list of policies that are available for that virtual data center. For more information, see Enabling a compute policy.
 
 vSAN support for VMware Solutions Shared virtual data centers
 :   vSAN™ support is now available for Dallas 10 and Dallas 12 VMware Solutions Shared virtual data centers.
@@ -194,10 +256,10 @@ VMware ESXi firewall configuration for NFS {: #april-2022-esxi-firewall}
    VMware ESXi attempts to manage the outbound firewall for NFS traffic for you automatically. Under some circumstances, VMware ESXi might not discover all IP addresses for an NFS data store, sometimes resulting in loss of connectivity if the {{site.data.keyword.cloud_notm}} Endurance servers are undergoing maintenance. VMware Solutions corrects the ESXi firewall configuration whenever adding hosts, clusters, or storage to your vCenter Server instance. For more information about ESXi firewall rules, see [NFS client firewall behavior](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-70686ADB-961A-46BD-B814-48DCF6C5E34B.html){: external}.
 
 Loss of connectivity to NFS storage {: #april-2022-connect-lost}
-:   (Updated on 7 June 2022) See [Why did my host lose connection to my NFS datastore?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_esxi_firewall_config_nfs)
+:   (Updated on 7 June 2022) See Why did my host lose connection to my NFS datastore?
 
 Edge services cluster updates
-:   You can now add more than one edge services cluster in the same data center pod. For more information, see [Adding clusters to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters).
+:   You can now add more than one edge services cluster in the same data center pod. For more information, see Adding clusters to vCenter Server instances.
 
 Price calculation updates
 :   Price calculations are now automatically generated when you access the VMware vCenter Server instance order page. Default selections include the Data Center SP Professional license for NSX-T, the Advanced license for NSX-V, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, and 768 GB RAM.
@@ -209,13 +271,13 @@ VMware Subscription Purchasing Program credits - deprecated
 Add-on services upgrades
 :   The following service versions are installed on newly deployed instances.
 
-   * FortiGate® Virtual Appliance v7.0.4
+   * FortiGate Virtual Appliance v7.0.4
    * Entrust DataControl® v5.5 (formerly known as HyTrust® DataControl)
    * Red Hat OpenShift v4.9.27
    * Zerto v9.0u3
 
 Dizzion
-:   Dizzion is now available as a featured service from the VMware Solutions console. For more information, see [Dizzion overview](/docs/vmwaresolutions?topic=vmwaresolutions-dizzion-overview).
+:   Dizzion is now available as a featured service from the VMware Solutions console. For more information, see Dizzion overview.
 
 Name change for HyTrust add-on services
 :   The company Entrust acquired the HyTrust company. The names of the following services are updated.
@@ -229,15 +291,15 @@ Veeam VSI, Veeam bare metal, and Zerto configuration changes
 
    For more information about the configuration changes and activities you might need to do, see the following documents.
 
-   * [Networking for Veeam v11](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview#veeamvm_overview-specs-networking)
-   * [Applying updates to Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam#managingveeam-updates)
-   * [Zerto Networking](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr#addingzertodr-specs-network)
-   * [Considerations for ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering#zerto_ordering-private-only)
+   * Networking for Veeam v11
+   * Applying updates to Veeam
+   * Zerto Networking
+   * Considerations for ordering Zerto
 
 New architecture documentation
 :   The following technical documents are now available or updated:
-   * [VMware Solutions architecture patterns](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-nsx-t-topology-overview)
-   * [VMware NSX-V to NSX-T migration](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-overview)
+   * VMware Solutions architecture patterns
+   * VMware NSX-V to NSX-T migration
 
 User interface updates and enhancements
 :   The VMware Solutions documentation now has a [landing page](/docs/vmwaresolutions) where you can get oriented with the content available for the offering.
@@ -269,7 +331,7 @@ Add-on services upgrades
 :   The following service versions are installed on newly deployed instances.
 
    * FortiGate Virtual Appliance v7.0.3
-   * vRealize Log Insight™ v8.6
+   * vRealize Log Insight v8.6
    * Zerto v9.0u2
 
 IBM Spectrum Protect Plus - deprecated
@@ -278,15 +340,15 @@ IBM Spectrum Protect Plus - deprecated
 
 REST API updates
 :   The following API updates are available:
-   * The [/v2/supported_config_options](/apidocs/vmware-solutions#controllers-public-v2-proxy-list-supported-config-) REST API displays a list of supported configuration versions.
-   * The [/v2/disk_types](/apidocs/vmware-solutions#controllers-public-v2-proxy-list-disk-types) REST API is updated to show that SED disks are only for Skylake servers.
+   * The /v2/supported_config_options REST API displays a list of supported configuration versions.
+   * The /v2/disk_types REST API is updated to show that SED disks are only for Skylake servers.
    * A number of REST APIs, such as `/v1/vcenters/nsxt` include the parameters `disks` and `vsan_cache_disks`. For these APIs and for Cascade Lake servers only, do not specify SED disks types.
 
 New architecture documentation
 :   The following technical documents are now available:
-   * [VMware RYO architecture on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-overview)
-   * [Interconnectivity for VMware workloads on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-interconnectivity-overview)
-   * [Fortinet FortiGate solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-fortigate-overview)
+   * VMware RYO architecture on VPC
+   * Interconnectivity for VMware workloads on VPC
+   * Fortinet FortiGate solution architecture
 
 User interface updates and enhancements
 :   Various error messages and tooltip enhancements are available to assist you in selecting the appropriate setting on the user interface.
@@ -319,22 +381,22 @@ Multizone support for VMware Solutions Shared
 
 Add-on services upgrades
 :   The following service versions are installed on newly deployed instances.
-   * Caveonix RiskForesight™ v3.1.0
+   * Caveonix RiskForesight v3.1.0
    * Entrust DataControl v5.4
    * IBM Spectrum Protect Plus v10.1.8
    * Red Hat OpenShift v4.7.34
    * vRealize Operations™ v8.6
 
 About pages for add-on services
-:   You can now access overview information about a service from the first page of the VMware Solutions console. From each overview, you can install the service on a new or existing instance. For more information, see [The About service overview and installing a service from the overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-about-page-install).
+:   You can now access overview information about a service from the first page of the VMware Solutions console. From each overview, you can install the service on a new or existing instance. For more information, see The About service overview and installing a service from the overview.
 
 New endpoints for KMIP for VMware
-:   Two new endpoints are now available in the Sao Paulo location for the KMIP for VMware service. For more information, see [Connecting vCenter Server to the KMIP instance](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_ordering#kmip_standalone_ordering-next).
+:   Two new endpoints are now available in the Sao Paulo location for the KMIP for VMware service.
 
 Zerto support for NSX-T
 :   Zerto is now supported on vCenter Server instances with vSphere 7 and NSX-T 3.1. Zerto is still supported on vCenter Server instances with NSX-V.
 
-:   Zerto is not supported for instances that are upgraded from vSphere 6.7 to vSphere 7. For more information, see [Important considerations](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade#vc_vsphere_70_upgrade-considerations).
+:   Zerto is not supported for instances that are upgraded from vSphere 6.7 to vSphere 7.
 
 New REST API support
 :   Added support for the following features:
@@ -350,7 +412,7 @@ New release notes format
 {: release-note}
 
 End of Support for instance deployments with vSphere 6.5 {: #october-2021-eos-vsphere5}
-:   {{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere 6.5 ended on 10 October 2021. Beginning on this date, you can no longer order new VMware vCenter Server instances with vSphere 6.5 and your existing vCenter Server instances with vSphere 6.5 become read–only in the VMware Solutions console and through the public REST API. For more information, see [End of Support for instance deployments with vSphere 6.5](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vsphere65).
+:   {{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere 6.5 ended on 10 October 2021. Beginning on this date, you can no longer order new VMware vCenter Server instances with vSphere 6.5 and your existing vCenter Server instances with vSphere 6.5 become read–only in the VMware Solutions console and through the public REST API. For more information, see End of Support for instance deployments with vSphere 6.5.
 
  VMware vCenter Server instances
 :   The 4.4 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts.
@@ -423,7 +485,7 @@ vCenter Server multizone instances - deprecated
    You can still add and delete clusters, add and remove ESXi servers, and add and delete storage for existing multizone instances.
 
 VMware Regulated Workloads - support for consolidated cluster
-:   Rather than requiring that the VMware Regulated Workloads solution deploys a separate management cluster and separate clusters for workloads, now you can start with a smaller footprint by deploying a consolidated management and workload cluster. For more information, see [Cluster type](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-consldt-cluster#vrw-orderinginstance-consldt-capacity).
+:   Rather than requiring that the VMware Regulated Workloads solution deploys a separate management cluster and separate clusters for workloads, now you can start with a smaller footprint by deploying a consolidated management and workload cluster.
 
 VMware Regulated Workloads - support for save configuration
 :   A new **Save configuration** button is added to the **Summary** pane of the ordering page for VMware Regulated Workloads. Use this option to save your instance settings as a configuration template without placing an order. You can manage the configuration templates by further editing or deleting them as well.
@@ -436,7 +498,7 @@ Add-on services
 
    * Caveonix RiskForesight v3.0.1
    * FortiGate Virtual Appliance v6.4.6
-   * Juniper vSRX v20.4 (R2)
+   * Juniper® vSRX v20.4 (R2)
    * Red Hat OpenShift v4.7
 
 FortiGate Virtual Appliance
@@ -1039,7 +1101,7 @@ Known issues with Red Hat OpenShift for VMware
    * [Red Hat Bugzilla – Bug 1838781 - EtcdMembersDegraded false alarms](https://bugzilla.redhat.com/show_bug.cgi?id=1838781){: external}
 
 REST APIs
-:   Application programming interfaces (APIs) are now available for the following services: Caveonix RiskForesight, HyTrust DataControl, and Veeam.
+:   REST APIs are now available for the following services: Caveonix RiskForesight, HyTrust DataControl, and Veeam.
 
 New and updated documentation
 :   The following documentation updates are available.
@@ -1115,7 +1177,7 @@ vRealize Operations and Log Insight
 :   You can now install the vRealize Operations and Log Insight service on vCenter Server with NSX-T instances.
 
 REST APIs
-:   Application programming interfaces (APIs) are now available for the following services: HyTrust CloudControl, Juniper vSRX, and vRealize Operations and Log Insight.
+:   REST APIs are now available for the following services: HyTrust CloudControl, Juniper vSRX, and vRealize Operations and Log Insight.
 
 New and updated documentation
 :   The following documentation updates are available.
@@ -1421,407 +1483,3 @@ User interface updates and enhancements
 
    * The instance name requirements have changed. For more information, see the appropriate topic for the instance type that you are ordering.
    * Leading zeros have been added to hostnames to allow for proper sorting.
-
-### 1 July 2019
-{: #july-2019}
-{: release-note}
-
-Single-node Trial for Data Protection and Disaster Recovery instances
-:   The 3.1 release offers the Single-node Trial for Data Protection and Disaster Recovery instances as a quick way to test drive {{site.data.keyword.cloud_notm}} to migrate and recover VMware workloads into the {{site.data.keyword.cloud_notm}}. This trial is a version of VMware vCenter Server, a single-tenant VMware platform that can be managed using the same familiar tools as on-premises environments. This trial includes the Veeam on {{site.data.keyword.cloud_notm}}, VMware HCX on {{site.data.keyword.cloud_notm}}, and Zerto on {{site.data.keyword.cloud_notm}} services.
-
-{{site.data.keyword.cloud_notm}} Expert Services
-:   You can engage {{site.data.keyword.cloud_notm}} Expert Services to work together with your internal team to deploy, migrate, and maintain your own {{site.data.keyword.cloud_notm}} solution from planning to modernization, or any stage in between.
-{: deprecated}
-
-Integration with the {{site.data.keyword.cloud_notm}} Cost Estimator
-:   You can now estimate the cost of your {{site.data.keyword.vmwaresolutions_short}} resources in the unified estimate tool provided by the {{site.data.keyword.cloud_notm}} framework. With this function, you can save a snapshot of resources across the {{site.data.keyword.cloud_notm}} Catalog and store them under a single PDF file that you can download to refer to at a later time. The cost estimator is not a contract or a firm quote, but only an estimate of your total cost.
-
-VMware vCenter Server instances
-:   The 3.1 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts:
-
-   * vSphere ESXi 6.5 Update 2 (build 6.5.0-13635690)
-   * vCenter Server Appliance 6.5 Update 2g (build 6.5.0-13638625)
-
-VMware vCenter Server - alternative ESXi server configuration for clusters
-:   You can now add new ESXi servers to an existing cluster by either selecting an existing configuration or an alternative configuration than the existing hosts in the cluster. When you order new servers from the **Add Server** window, you can instantly select an existing configuration in the cluster or choose a new 	{{site.data.keyword.cloud_notm}} bare metal server configuration. This applies to all vCenter Server, vCenter Server with Hybridity, and vCenter Server with NSX-T instances.
-
-   To avoid performance or stability issues, it is recommended that clusters use the same or similar configuration with regards to CPU, RAM, and storage. This functionality is useful for hardware updates within the same cluster.
-
-VMware vCenter Server - updates for policy configurations
-:   The generated vCenter password for vCenter Server primary instances is now 15 characters in length and has the following password and lockout policy configurations:
-
-   * The minimum length for the vCenter password policy is now 15 characters.
-   * The vCenter lockout policy now allows for a maximum of 3 failed login attempts.
-   * The vCenter lockout policy now allows for a 900 second time interval between failures.
-
-   The generated NSX Manager password for vCenter Server primary instances is now 15 characters in length. Previously, the generated password was eight characters in length.
-
-Caveonix RiskForesight on {{site.data.keyword.cloud_notm}}
-:   Caveonix RiskForesight 2.2.1 is installed on all newly deployed instances.
-
-Automatic renewal for HyTrust licenses
-:   {{site.data.keyword.vmwaresolutions_short}} now provides automatic renewal support for HyTrust licenses that have the Call Home feature enabled. This support is provided starting with:
-
-   * HyTrust CloudControl 5.5.1 and later
-   * HyTrust DataControl 4.3.2 and later
-   * HyTrust KeyControl 4.3.2 and later
-
-   You must complete the procedure to enable internet access for your HyTrust virtual machines (VMs) to ensure the automatic renewal of your license. If you don't complete this procedure, your license continues to expire annually.
-   {: important}
-
-Veeam on {{site.data.keyword.cloud_notm}}
-:   Veeam Availability Suite 9.5 is installed on all newly deployed instances. In addition, a number of updates are made to the Veeam VSIs and Veeam configuration repositories.
-
-Zerto on {{site.data.keyword.cloud_notm}}
-:   For new instances deployed in 3.1 and later, Zerto on {{site.data.keyword.cloud_notm}} installations require a billable  {{site.data.keyword.cloud_notm}} account. The cost of VM replication now uses an {{site.data.keyword.cloud_notm}} billable plan instead of {{site.data.keyword.cloud_notm}} infrastructure billing.
-
-   To order Zerto on {{site.data.keyword.cloud_notm}}, your {{site.data.keyword.cloud_notm}} account must meet specific requirements. If you have an existing Zerto on {{site.data.keyword.cloud_notm}} installation, you can convert your Zerto VM billing type to billable.
-
-New and updated documentation
-:   The following documentation updates are available.
-
-   * The Activity Tracker instance management events and events for the KMIP for VMware on {{site.data.keyword.cloud_notm}} service are updated.
-   * User ID reference documentation is updated with user IDs used for installation and configuration of services by {{site.data.keyword.cloud_notm}} services automation.
-   * Reference documentation is available for the new ``Retrieve the detailed network interface of a cluster`` API.
-   * The following technical documents are new in the **Reference** section of the user documentation:
-      * Operations management
-      * Day 2 operational procedures
-
-User interface updates and enhancements
-:   The **Clusters** details page now displays the type of storage that the cluster uses.
-
-### 17 May 2019
-{: #may-2019}
-{: release-note}
-
-End of Support for VMware Cloud Foundation on {{site.data.keyword.cloud_notm}}
-:   To consolidate our offerings for a better customer experience, the {{site.data.keyword.vmwaresolutions_short}} platform will no longer offer VMware Cloud Foundation effective May 13, 2020.
-
-   Moving forward, all customers are directed to VMware vCenter Server on {{site.data.keyword.cloud_notm}}, our flagship VMware Software-Defined Data Center solution on {{site.data.keyword.cloud_notm}} bare metal servers.
-
-   Existing customers who use VMware Cloud Foundation will be assisted to convert to VMware vCenter Server by the end-of-support date of May 13, 2020.
-
-   After May 13 2020, management functions for VMware Cloud Foundation instances will no longer be available from the {{site.data.keyword.vmwaresolutions_short}} console until the instances are converted to VMware vCenter Server. Customers who choose not to have their VMware Cloud Foundation instances migrated or converted to VMware vCenter Server can access their instances from the {{site.data.keyword.cloud_notm}} infrastructure console.
-
-Removed support for Broadwell 2-CPU servers
-:   Starting with teh 3.0 release, Broadwell 2-CPU servers are no longer available for deployment for new vCenter Server, vCenter Server with Hybridity Bundle, vCenter Server with NSX-T, and vSphere on {{site.data.keyword.cloud_notm}} instances and clusters. You can still add servers to existing clusters.
-
-Network File System operation enhancements
-:   You can simultaneously add or remove NFS storage and ESXi servers to clusters that are in the **Ready to use** state. For example, you can add or remove an ESXi server in a cluster and add or remove NFS storage in another cluster. This update applies to all vCenter Server and vCenter Server with NSX-T instances.
-
-VMware vCenter Server instances
-:   The 3.0 release applies the following upgrades and improvements:
-
-   * vSphere ESXi 6.7 Update 1 (build 6.7.0-13004448)
-   * vSphere ESXi 6.5 Update 2 (build 6.5.0-13004031)
-   * vCenter Server Appliance 6.7 Update 1b (build 6.7.0-11727113)
-   * Platform Services Controller 6.7 Update 1b (build 6.7.0-11727113)
-
-   The Windows software that is ordered for Microsoft Active Directory (AD) and DNS (Domain Name System) services is upgraded to Windows Server 2016 for both configuration options: the VSIs (Virtual Server Instances) and the two highly available Windows VMs.
-
-   The AD domain functional level remains at 2008 to allow for compatibility with an earlier version for any potential secondary instances. If compatibility with earlier (2008) secondary instances is not a consideration in your environment, you can upgrade the domain functional level to a higher version.
-
-VMware vCenter Server - vSAN storage enhancements
-:   When you use vSAN storage, the number of {{site.data.keyword.cloud_notm}} bare metal servers that you can order can now be greater than four. This update applies to all vCenter Server, vCenter Server with Hybridity, and vCenter Server with NSX-T instances.
-
-   Starting with v3.0, an M.2 solid-state drive is ordered with your vSAN storage instance. You can order up to 10 capacity disks or a total of 12 capacity disks if you select the **High Performance with Intel Optane** option.
-
-Add-on services
-:   The 3.0 release provides the following service versions on newly deployed instances.
-
-   * HyTrust CloudControl 5.5
-   * HyTrust DataControl 4.3
-   * HyTrust KeyControl 4.3
-   * {{site.data.keyword.cloud_notm}} Private Hosted 3.1.2, together with {{site.data.keyword.cloud_notm}} Automation Manager 3.1.2
-   * IBM Spectrum Protect Plus V10.1.3
-
-KMIP for VMware on {{site.data.keyword.cloud_notm}}
-:   Two new endpoints are now available in London and US East for the KMIP for VMware on {{site.data.keyword.cloud_notm}} service.
-
-New and updated documentation
-:   The following documentation updates are available.
-
-   * Documentation is now available to assist you in upgrading {{site.data.keyword.vmwaresolutions_short}} components to VMware vSphere 6.7. This upgrade is required if you want to continue to benefit from {{site.data.keyword.vmwaresolutions_short}} automation.
-   * Reference documentation is now available to provide you with user IDs that {{site.data.keyword.vmwaresolutions_short}} maintains for use by {{site.data.keyword.cloud_notm}} automation. Possible messages that display in your instance history logs are also available for your review.
-   * The **Reboot/Control** permission is added to the table that describes required permissions for the {{site.data.keyword.cloud_notm}} infrastructure account.
-   * New reference documentation is available for the following APIs.
-      * List all history messages for a specified VMware vCenter Server instance
-      * Add shared storages to a specified cluster
-      * Delete NFS storages from a specified cluster
-
-### 25 March 2019
-{: #march-2019}
-{: release-note}
-
-VMware vCenter Server on {{site.data.keyword.cloud_notm}} with NSX-T
-:   The 2.9 release introduces the VMware vCenter Server on {{site.data.keyword.cloud_notm}} with NSX-T offering as a proof of concept or sandbox testing offering. vCenter Server with NSX-T is a privately hosted cloud that you can use to test drive the VMware next generation networking platform, NSX-T.
-
-End of Support for VMware Cloud Foundation on {{site.data.keyword.cloud_notm}}
-:   To consolidate the current offerings for better customer experience, {{site.data.keyword.cloud_notm}} will no longer support VMware Cloud Foundation on {{site.data.keyword.cloud_notm}} effective May 13 2020.  
- 
-   Moving forward, all customers are directed to VMware vCenter Server on {{site.data.keyword.cloud_notm}}, which offers more flexibility around storage and licensing options. 
- 
-   Existing customers who use VMware Cloud Foundation on {{site.data.keyword.cloud_notm}} will be assisted to migrate to VMware vCenter Server on {{site.data.keyword.cloud_notm}} by the end-of-support date of May 13, 2020.
-
-   After May 13 2020, management functions for VMware Cloud Foundation on {{site.data.keyword.cloud_notm}} instances will be removed from the {{site.data.keyword.vmwaresolutions_short}} console. Instances that have not been migrated to VMware vCenter Server on {{site.data.keyword.cloud_notm}} can be accessed by using the {{site.data.keyword.cloud_notm}} infrastructure console.
-
-   Customers are contacted by {{site.data.keyword.cloud_notm}} Support before March 25, 2020 to begin migration from VMware Cloud Foundation on {{site.data.keyword.cloud_notm}}.
- 
-   Customers can view their existing VMware Cloud Foundation on {{site.data.keyword.cloud_notm}} instance on the {{site.data.keyword.vmwaresolutions_short}} console.
-
-VMware vSphere 6.7 Update 1 support
-:   You can now order VMware vSphere version 6.7 Update 1 with your VMware vCenter Server, VMware vCenter Server with Hybridity Bundle, and VMware vSphere on {{site.data.keyword.cloud_notm}} instances.
-
-Additionally, Single-node Trial for Migration and App Modernization instances are now ordered with vSphere Enterprise Plus 6.7u1.
-
-vSphere Enterprise Plus 6.7u1 is available for Broadwell and Skylake {{site.data.keyword.cloud_notm}} bare metal servers only.
-
-Support for application programming interfaces
-:   Application programming interfaces (APIs) are now available for deploying instances, deleting instances, and adding and removing ESXi servers and clusters.
-
-   The REST API documentation is available in the **Reference** section of the user documentation.
-
-VMware vCenter Server instances
-:   The 2.9 release applies the following upgrades and improvements:
-
-   * vSphere ESXi 6.7 Update 1 (build 6.7.0-11675023)
-   * vSphere ESXi 6.5 Update 2 (build 6.5.0-11925212)
-   * vSphere 6.7 Distributed vSwitch 6.6.0
-   * vSphere 6.5 Distributed vSwitch 6.5.0
-   * vCenter Server Appliance 6.7 U1 (build 6.7.0-10244745)
-   * vSAN 6.7.0 U1
-   * NSX for vSphere 6.4.4 (build 11197766)
-   * NSX-T for vSphere 2.4
-
-VMware vCenter Server - {{site.data.keyword.cloud_notm}} data centers
-:   The following new data centers are available for deployment: **FRA-05 - Frankfurt** and **LON-05 - London**.
-
-VMware vCenter Server - ESXi server enhancements
-:   The Secure Shell (SSH) Protocol is now disabled for ESXi servers before instance delivery. If you want to enable SSH, see [Enable SSH from the vSphere Web Client](https://vdc-repo.vmware.com/vmwb-repository/dcr-public/4fcf776d-9ec6-448d-83de-bc730ef047ea/e6a46e41-5c99-4a7d-beed-790cf7e146cd/doc/GUID-C3A44A30-EEA5-4359-A248-D13927A94CCE.html).
-
-   Starting with the 2.9 release, the following ESXi server operations are available.
-
-   * Add new ESXi servers to an existing cluster while the servers are in maintenance mode. Virtual machines are not migrated to the new servers until you remove them from maintenance mode.
-   * Simultaneously add or remove ESXi servers across multiple clusters in your instance.
-
-Network File System storage size
-:   For vCenter Server instance orders, you can now add up to 24 TB of Network File System (NFS) shared storage for the performance levels of 0.25, 2, and 4 IOPS/GB.
-
-   The 10 IOPS/GB performance level is still limited to a maximum capacity of 4 TB per file share.
-   {: note}
-
-Add-on services
-:   The 2.9 release provides the following service versions on newly deployed instances.
-
-   * F5-BigIP VE V14.1.0.2
-   * HyTrust CloudControl 5.4.2
-   * Veeam Backup and Replication 9.5 Update 4
-   * Zerto Virtual Replication 6.5 update 3
-
-Caveonix RiskForesight on {{site.data.keyword.cloud_notm}}
-:   The Caveonix RiskForesight on {{site.data.keyword.cloud_notm}} service is now available to VMware vCenter Server instances that are deployed in or upgraded to 2.9 or later releases. This service can help to manage cyber and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations.
-
-   You can order vCenter Server instances with the Caveonix RiskForesight on {{site.data.keyword.cloud_notm}} service included. Additionally, you can add this service to your existing vCenter Server instances later from the **Services** tab on the instance details page.
-
-   You can also order a stand-alone Caveonix RiskForesight license without associating it with any VMware instance for licensing and activation of your on-premises workloads.
-
-KMIP for VMware on {{site.data.keyword.cloud_notm}}
-:   Two new endpoints are now available in Sydney for the KMIP for VMware on {{site.data.keyword.cloud_notm}} service.
-
-   (Updated on 9 April 2019) Previously, KMIP for VMware on {{site.data.keyword.cloud_notm}} used IBM Key Protect for {{site.data.keyword.cloud_notm}} to create, encrypt, and decrypt encryption keys. Starting with the 2.9 release, KMIP for VMware on {{site.data.keyword.cloud_notm}} can also use {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services. These services are a complete set of encryption and key management services that manage encryption keys that are used by VMware in the {{site.data.keyword.cloud_notm}}.
-
-User interface updates and enhancements
-:   On the **Infrastructure** page, a new **Network Interface** table provides VLAN, subnet, and IP address details for your cluster.
-
-### 28 January 2019
-{: #january-2019}
-{: release-note}
-
-Single-node Trial for Migration and App Modernization instances
-:   The 2.8 release offers the Single-node Trial for Migration and App Modernization as a quick way to test drive {{site.data.keyword.cloud_notm}} to migrate VMware workloads into the {{site.data.keyword.cloud_notm}} and then modernize workloads that use containers. This trial is a version of {{site.data.keyword.icpfull_notm}} Hosted on VMware vCenter Server on {{site.data.keyword.cloud_notm}} that provides the Kubernetes management platform for containers and the single-tenant VMware platform that can be managed by using the same familiar tools as on-premises environments.
-
-Adding and removing Network file system storage
-:   You can now add network file system (NFS) storage shares to an existing NFS or vSAN vCenter Server cluster, as well as remove NFS file shares from an existing vCenter Server cluster.
-
-   The following options for customized shared file-level storage are now available.
-
-   * NFS share sizes that start at 20 GB up to 12 TB at single GB increments
-   * 0.25 IOPS/GB
-
-SAP-certified Broadwell E5-2690 and E7-8890 server support
-:   The following {{site.data.keyword.cloud_notm}} bare metal server CPU models are available for deployment for VMware vCenter Server on {{site.data.keyword.cloud_notm}} and VMware vSphere on {{site.data.keyword.cloud_notm}} instances and clusters.
-
-   * Dual Intel Xeon E5-2690 v4 processor / 28 cores total, 2.60 GHz / 512 GB RAM
-   * Quad Intel Xeon E7-8890 v4 processor / 96 cores total, 2.20 GHz / 1024 GB RAM
-   * Quad Intel Xeon E7-8890 v4 processor / 96 cores total, 2.20 GHz / 2048 GB RAM
-   * Quad Intel Xeon E7-8890 v4 processor / 96 cores total, 2.20 GHz / 4096 GB RAM
-
-Broadwell E7-4820 and E7-4850 server support
-:   The following {{site.data.keyword.cloud_notm}} bare metal server CPU models are available for deployment for vCenter Server, vCenter Server with Hybridity Bundle, Cloud Foundation, and vSphere on {{site.data.keyword.cloud_notm}} instances and clusters:
-
-   * Quad Intel Xeon E7-4820 v4 / 40 cores total, 2.0 GHz
-   * Quad Intel Xeon E7-4850 v4 / 64 cores total, 2.1 GHz
-
-Embedded Platform Services Controller
-:   vCenter Server is deployed with an embedded PSC (Platform Services Controller). vCenter Server, the vCenter Server components, and the PSC are deployed on a single virtual machine. This change applies to all newly deployed vCenter Server, vCenter Server with Hybridity, and NetApp instances.
-
-   For instances that are upgraded from an earlier release to 2.8, the PSC is not embedded in vCenter Server. If you want to use embedded PSC, you must convert from external to embedded PSC yourself.
-
-   In a multisite configuration where the primary instance is an upgraded instance for which the PSC was manually converted from external to embed, any newly deployed 2.8 secondary instances have embedded PSC.
-
-Updates for VMware vCenter Server instances
-:   The 2.8 release applies the following upgrades and improvements:
-
-   * vSphere ESXi 6.5 Update EP11 (build 6.5.0-10719125)
-   * vCenter Server 6.5 U2d (build 6.5.0-10964411)
-   * Platform Services Controller 6.5 U2d (build 6.5.0-10964411)
-
-Updates for VMware Cloud Foundation instances
-:   The 2.8 release applies the following upgrades and improvements:
-
-   * vSphere ESXi 6.5 Update EP11 (build 6.5.0-10719125)
-   * vCenter Server 6.5 U2c (build 6.5.0-9451637)
-   * Platform Services Controller 6.5 U2c (build 6.5.0-9451637)
-
-IBM Spectrum Protect Plus on {{site.data.keyword.cloud_notm}}
-:   The current release installs IBM Spectrum Protect Plus V10.1.2 on all newly deployed instances.
-
-KMIP for VMware on {{site.data.keyword.cloud_notm}}
-:   Previously, you might order a Cloud Foundation or vCenter Server instance with the KMIP for VMware on {{site.data.keyword.cloud_notm}} service that is included or add the service to an existing Cloud Foundation or vCenter Server instance after initial deployment.
-
-   Starting with 2.8, the service is available as a stand-alone service without being associated to a VMware instance. Each instance of the service can serve one or more Cloud Foundation instances, vCenter Server instances, or vSphere clusters.
-
-Reference architecture documentation
-:   (Updated on 8 February 2019) The following technical documents are new or updated in the **Reference** section of the user documentation.
-
-   * {{site.data.keyword.vmwaresolutions_short}} architecture (with NSX-V and NSX-T)
-   * Caveonix RiskForesight reference architecture
-   * VMware HCX on {{site.data.keyword.cloud_notm}} for VMware Solutions
-
-## 2018
-{: #year-2018}
-
-### 12 November 2018
-{: #november-2018}
-{: release-note}
-
-SAP-certified 6140 server support
-:   The 2.7 release offers the following {{site.data.keyword.cloud_notm}} bare metal server CPU models are available for deployment for VMware vCenter Server on {{site.data.keyword.cloud_notm}} and VMware vSphere on {{site.data.keyword.cloud_notm}} instances and clusters.
-   * Dual Intel Xeon Gold 6140 processor / 36 cores total, 2.3 GHz / 192 GB RAM
-   * Dual Intel Xeon Gold 6140 processor / 36 cores total, 2.2 GHz / 384 GB RAM
-   * Dual Intel Xeon Gold 6140 processor / 36 cores total, 2.3 GHz / 768 GB RAM
-
-{{site.data.keyword.cloud_notm}} Private Hosted
-:   The {{site.data.keyword.cloud_notm}} Private Hosted service is now available to VMware vCenter Server with Hybridity Bundle instances, in addition to VMware vCenter Server instances that are deployed in (or upgraded to) 2.5 and later releases. You can now order a vCenter Server instance or a vCenter Server with Hybridity Bundle instance with the service included. You can also add the service to an existing vCenter Server instance or a vCenter Server with Hybridity Bundle instance after initial deployment.
-
-Mission Critical VMware on {{site.data.keyword.cloud_notm}}
-:   The Mission Critical VMware on {{site.data.keyword.cloud_notm}} service is now available to instances that are deployed in, or upgraded to, 2.7 or later releases.
-
-   Mission Critical VMware on {{site.data.keyword.cloud_notm}} delivers a multizone cloud architecture to help enterprises prevent downtime for cloud applications and to automate failovers within a cloud region. With this cloud architecture, you can achieve a higher availability and failover success rate than most VMware clients can achieve with on-premises environments or competing cloud platforms.
-
-F5 on {{site.data.keyword.cloud_notm}}
-:   Now when you order the F5 on {{site.data.keyword.cloud_notm}} service, you can select whether you want F5 to apply license over public network or over private network with a proxy server.
-
-FortiGate Virtual Appliance on {{site.data.keyword.cloud_notm}}
-:   In 3Q 2018, Fortinet changed their subscription bundles.
-
-   For FortiGate Virtual Appliance on {{site.data.keyword.cloud_notm}} service that is deployed in 2.7 and later Cloud Foundation instances and vCenter Server instances, FortiOS 6.0.3 is provisioned.
-
-   When you order FortiGate Virtual Appliance on {{site.data.keyword.cloud_notm}}, you can select whether you want FortiGuard to apply license and security updates over public network or over private network with a proxy server.
-
-Zerto on {{site.data.keyword.cloud_notm}} service component updates
-:   For the Zerto on {{site.data.keyword.cloud_notm}} service that is deployed in 2.7 and later Cloud Foundation instances and vCenter Server instances, Zerto Virtual Replication 6.0 update 3 is provisioned.
-
-KMIP for VMware on {{site.data.keyword.cloud_notm}} integration with {{site.data.keyword.cloud_notm}} Activity Tracker
-:   In addition to VMware instance events, events for KMIP for VMware on {{site.data.keyword.cloud_notm}}, such as key creation, key deletion, and key access, are now integrated with your {{site.data.keyword.cloud_notm}} Activity Tracker instance.
-
-KMIP for VMware on {{site.data.keyword.cloud_notm}} - Deprecated
-:   (Updated on 14 December 2018) The current version of KMIP for VMware on {{site.data.keyword.cloud_notm}} is being deprecated.
-{: deprecated}
-
-Reference architecture documentation
-:   The following technical documents are now available in the **Reference** section of the user documentation.
-
-   * NSX Edge Services Gateway solution architecture
-   * VMware Update Manager guide
-
-User interface updates and enhancements
-:   The user interface is updated and provides the following enhancements.
-
-   * The **Customized** tab is now split into the **Skylake** and **Broadwell** tabs based on the server type to help you in server selection. This tab is where you specify CPU model and RAM for bare metal server settings when you order instances.
-   * The **Preconfigured** options for bare metal server configuration are not available anymore.
-   * The **Type** column is now included in the **vCenter Server instances** table on the **Resources** page to identify vCenter Server, vCenter Server with Hybridity Bundle, and vCenter Limited Test Drive instances.
-
-### 1 October 2018
-{: #october-2018}
-{: release-note}
-
-Spectre and Meltdown remediation
-:   {{site.data.keyword.vmwaresolutions_short}} has released patches from VMware in response to vulnerabilities related to Spectre and Meltdown (CVE-2017-5753, CVE-2017-5715, and CVE-2017-5754).
-
-   * CVEID: [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753)
-   * CVEID: [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715)
-   * CVEID: [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754)
-
-High Performance with Intel Optane option
-:   The 2.6 release provides the option to add high-performance cache for vSAN storage when you are ordering a new instance or when you add a vSAN cluster after initial deployment.
-
-   With this option, you can increase the number of storage capacity disks from eight to a maximum of ten.
-
-   The High Performance with Intel Optane option is available only for customized configurations with Dual Intel Xeon Gold 5120 and Dual Intel Xeon Gold 6140 processors.
-
-   For more information, see the appropriate ordering topic for your instance or cluster type.
-
-Enabling a public or private network
-:   You can now deploy vCenter Server and vCenter Server with Hybridity Bundle instances, as well as VMware vSphere clusters, with public and private network interface cards (NICs) enabled or private only NICs enabled. This option is also available when you add a cluster to your vCenter Server and vCenter Server with Hybridity Bundle instance.
-
-   Some add-on services require public NICs and are not available if you select to enable a private only network.
-
-Deleting ESXi servers
-:   You can now delete any ESXi server from your vCenter Server, vCenter Server with Hybridity Bundle, or Cloud Foundation instance if you meet the minimum requirements for your instance.
-
-Updates for VMware vCenter Server instances
-:   The 2.6 release applies the following upgrades and improvements.
-
-   * vSphere ESXi 6.5 Update 2c
-   * vCenter Server Appliance 6.5 Update 2c
-   * Platform Services Controller 6.5 Update 2c
-   * NSX for vSphere 6.4.1
-
-Removing the Hybridity Bundle from a vCenter Server instance
-:   You can now remove the Hybridity Bundle license from your vCenter Server instance. You are required to replace the VMware NSX and VMware vSAN rental license keys with Bring Your Own License (BYOL) keys. You are required to open a support ticket to cancel charges for the rental licenses.
-
-vCenter Server with Hybridity Bundle availability
-:   Business Partners can now order a vCenter Server with Hybridity Bundle instance. Business Partners cannot upgrade an existing vCenter Server instance to a vCenter Server with Hybridity Bundle instance and cannot remove the Hybridity Bundle from a vCenter Server with Hybridity Bundle instance.
-
-Updates for VMware Cloud Foundation instances
-:   The 2.6 release applies the following upgrades and improvements:
-
-   * vSphere ESXi 6.5 Update 2c
-   * vCenter Server Appliance 6.5 Update 2c
-   * Platform Services Controller 6.5 Update 2c
-   * NSX for vSphere 6.4.1
-
-Add-on services
-:   The 2.6 release provides the following service versions on newly deployed instances.
-
-   * HyTrust CloudControl 5.4
-   * HyTrust DataControl 4.2
-   * VMware HCX 3.5.1
-
-HyTrust KeyControl on {{site.data.keyword.cloud_notm}}
-:   The HyTrust KeyControl on {{site.data.keyword.cloud_notm}} service is now available to VMware Cloud Foundation instances and VMware vCenter Server instances that are running vSphere 6.5 and that are deployed in or upgraded to 2.5 and later releases. The service simplifies the management of encrypted workloads by automating and simplifying the lifecycle of encryption keys. The service can easily manage encryption keys at scale by using FIPS 140-2 compliant encryption. By using this service, you can manage the encryption keys for all your virtual machines and encrypted data stores, and scale it to support thousands of encrypted workloads in large deployments.
-
-   You can order instances with the service included when you order your instance, or add this service to your existing instances later.
-
-Veeam on {{site.data.keyword.cloud_notm}} support for vSphere ESXi V6.5 update 2c
-:   New instances and new hosts are provisioned by using the vSphere ESXi V6.5 Update 2c. If you are using Veeam Backup and Replication, Veeam recommends that you update your Veeam on {{site.data.keyword.cloud_notm}} instance to V9.5u3a or later. This update ensures the best compatibility with vSphere ESXi 6.5 Update 2c.
-
-It is recommended that existing Cloud Foundation instances that have Veeam on {{site.data.keyword.cloud_notm}} installed also update to V9.5u3a or later.
-
-Zerto on {{site.data.keyword.cloud_notm}} support for vSphere ESXi V6.5 update 2c
-:   If you update existing hosts to vSphere ESXi V6.5 update 2, and have previously installed Zerto on {{site.data.keyword.cloud_notm}}, the Zerto Virtual
-Replication console might show the `Unsupported ESX Version` warning message under the Zerto Virtual Replication Appliances (VRAs) status.
-
-Reference architecture documentation
-:   The {{site.data.keyword.vmwaresolutions_short}} architecture document is updated to include important considerations to understand your responsibilities for managing and operating your VMware instance.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-06-03"
+lastupdated: "2022-10-20"
 
 keywords: vCenter Server remove hosts, vCenter Server remove ESXi servers
 
@@ -25,16 +25,16 @@ You can contract the capacity of your VMware vCenter Server® instance according
 * Removing ESXi servers from vCenter Server instances with VMware vSphere® 6.5 is not supported.
 * For the edge services cluster, you cannot add or remove ESXi servers.
 * {{site.data.content.para-vcenterremoveESXiservers}}
-* When you remove ESXi servers, the servers are placed in maintenance mode, and after that, all the VMs running on the servers are migrated before they are removed from vCenter Server. For maximum of control over the relocation of VMs, it is recommended that you place the ESXi servers to be removed in maintenance mode and migrate the VMs running on them manually using the VMware vSphere Web Client. After that, remove the ESXi servers by using the VMware Solutions console.
+* When you remove ESXi servers, the servers are placed in maintenance mode, and then, all the virtual machines (VMs) running on the servers are migrated before they are removed from vCenter Server. For maximum of control over the relocation of VMs, place the ESXi servers to remove in maintenance mode and migrate the VMs running on them manually using the VMware vSphere Web Client. After that, remove the ESXi servers by using the VMware Solutions console.
 * If you are using vSAN storage, at least four ESXi servers are required.
 * If you are using NFS storage, NSX-T™ instances require at least three ESXi servers for a consolidated cluster or at least two servers for any other cluster. NSX-V instances require at least two ESXi servers.
 * (NSX-V only) If F5® BIG-IP® or FortiGate® Virtual Appliance is installed on your ESXi server, you must migrate the F5 BIG-IP and FortiGate VMs to a different ESXi server than the one that is hosting the VMs.
-* (NSX-V only) If IBM Spectrum® Protect Plus is installed on your ESXi server, ensure that there are no active (failed or in progress) backup or restore operations, because these active operations might prevent the ESXi server to be removed.
+* (NSX-V only) If IBM Spectrum® Protect Plus is installed on your ESXi server, ensure that there are no active (failed or in progress) backup or restore operations. These active operations might prevent the ESXi server from being removed.
 
 ## Procedure to remove ESXi servers from vCenter Server instances
 {: #vc_removingservers-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance for which you want to contract capacity.
 3. Click **Infrastructure** on the left navigation pane.
 4. In the applicable cluster table, click the cluster from which you want to remove ESXi servers.

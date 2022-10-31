@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-26"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -23,9 +23,9 @@ You can include the Veeam® service with a new VMware vCenter Server® instance 
 ## Ordering Veeam for a new instance
 {: #veeam_ordering-new}
 
-When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Veeam is in the Recommended services category and is already selected.
-
-Select **Edit** to review and specify the information. If you enter or change information, click **Save**.
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Veeam is in the Recommended services category and is already selected.
+2. Select **Edit** to review and specify the information. 
+3. If you enter or change information, click **Save**.
 
 If you do not want to order Veeam, toggle its switch off.
 
@@ -84,14 +84,16 @@ For more information, see [Hardened Repository](https://helpcenter.veeam.com/doc
 ### Number of VMs to license
 {: #veeam_ordering-config-vms}
 
-Specify the number of virtual machines (VMs) to license, in increments of 10. At least 10 VMs are required for license management.
+Enter the number of virtual machines (VMs) to license. There is no limit to the number of licenses that you can order. If you enter a number and then want a few more or a few less, you can use the + and - to increase and decrease the value by 1.
+
+At least 10 VMs are required for license management.
 
 ## Related links
 {: #veeam_ordering-related}
 
 * [Veeam 11 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
-* [Ordering Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
+* [Ordering Veeam standalone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
 * [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring IBM Cloud Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
 * [Veeam backup and replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam)

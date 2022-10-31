@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-26"
 
 keywords: VMware Solutions Shared delete instance, delete VMware Solutions Shared, remove VMware Solutions Shared
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 You can delete a virtual data center when it's in the **Ready To Use** state.
 
-Before you delete your virtual data center, ensure that any items that you created within the are removed. Items might include the following artifacts:
+Before you delete your virtual data center, ensure that any items that you created within the are removed. Items might include the following artifacts.
 
 * vApps, vApp templates, and virtual machines (VMs). You must remove these items even if they are stopped.
 * Organization networks that are removed or unshared from the virtual data center
@@ -40,7 +40,7 @@ Any job that includes instructions to back up the VM fails when the VM restore p
 ## Procedure to delete virtual data centers from the Resources page
 {: #shared_deletinginstance-procedure1}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > VMware Shared** from the left navigation pane.
 2. In the **VMware Solutions Shared** table, expand the site name and find the virtual data center to delete.
 3. Click the vertical overflow menu next to the **Status** column, and then click **Delete instance**.
    The status of the virtual data center is changed to **Deleting**. When the virtual data center is deleted successfully, the components of the virtual data center are released, and the status is changed to **Deleted**.
@@ -48,7 +48,7 @@ Any job that includes instructions to back up the VM fails when the VM restore p
 ## Procedure to delete virtual data centers from the virtual data center details page
 {: #shared_deletinginstance-procedure2}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > VMware Shared** from the left navigation pane.
 2. In the **VMware Solutions Shared** table, expand the site name and click the virtual data center to delete.
 3. Click **Actions** next to **vCenter console**, and then click **Delete instance**.
    The status of the virtual data center is changed to **Deleting**. When the virtual data center is deleted successfully, the components of the virtual data center are released, and the status is changed to **Deleted**.

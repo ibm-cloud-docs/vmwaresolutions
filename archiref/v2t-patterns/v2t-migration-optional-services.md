@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-07-13"
+lastupdated: "2022-09-09"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # IBM Cloud optional services considerations
 {: #v2t-optionalservices}
 
-It is important to understand that any add-on services that you are using in your NSX-V environment are related to that instance. These services are deleted when the NSX-V environment is deprovisioned.
+It is important to understand that any add-on services that you are using in your VMware NSX-V environment are related to that instance. These services are deleted when the NSX-V environment is deprovisioned.
 
 The following list provides the services that you might currently use:
 
@@ -31,7 +31,7 @@ The following list provides the services that you might currently use:
 * [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 * [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
 
-You need to plan to migrate these services to new services on the VMware NSX-T™ environment.
+Plan to migrate these services to new services on the VMware NSX-T™ environment.
 
 ## Understanding metadata
 {: #v2t-optionalservices-metadata}
@@ -47,7 +47,12 @@ Review the following information for Advanced Cross vCenter Server vMotion.
 ## Veeam
 {: #v2t-optionalservices-veeam}
 
-It is possible to decouple your Veeam® instance from your vCenter Server with NSX-V instance for reuse with your vCenter Server with NSX-T instance. Configure Veeam to point to the vCenter Server associated with the NSX-T environment. 
+It is possible to decouple your Veeam® instance from your vCenter Server with NSX-V instance for reuse with your vCenter Server with NSX-T instance. Configuration changes are required to the existing Veeam instance:
+* Update instance point to the vCenter Server associated with the NSX-T environment
+* Update the DNS setting on the Veeam Server, point to the AD/DNS servers.
+* Update the default gateway on the Veeam Server, to the HA VIP IP address of the NSX-T Edge, as access public access is required for license activation.
+* Update or create a record for the Veeam Server on the AD/DNS Servers that is associated with the new instance.
+* Update or create an ID or user on the AD/DNS Servers, which will be used by Veeam to access the vCenter Server instance.
 
 You must open a ticket to ask IBM Support to decouple the Veeam server, management subnet, and any associated iSCSI storage from the vCenter Server with NSX-V instance so that these components are not deleted when the NSX-V instance is cancelled.
 {: important}
@@ -55,7 +60,7 @@ You must open a ticket to ask IBM Support to decouple the Veeam server, manageme
 If you deploy a new Veeam instance, you must consider backup data and backup configuration to migrate Veeam to the new NSX-T instance.
 
 * Backup data - Backup files will be hosted in the Veeam repository server. For more information, see [Importing Veeam Agent backups](https://helpcenter.veeam.com/docs/agentforwindows/userguide/integration_import.html?ver=50){: external}.
-* Backup config - The backup configuration can be saved to a file. For more information, see [Configuration backup and restore](https://helpcenter.veeam.com/docs/backup/vsphere/vbr_config.html?ver=110){: external}.
+* Backup configuration - The backup configuration can be saved to a file. For more information, see [Configuration backup and restore](https://helpcenter.veeam.com/docs/backup/vsphere/vbr_config.html?ver=110){: external}.
 
 
 ## Caveonix RiskForesight
@@ -154,7 +159,6 @@ The migration approach for the primary use case would be to:
 * No performance, capacity, or log messages for the NSX-V instance components need to be retained as the instance will be deleted.
 * When the vCenter Server with NSX-V is deleted, the vRealize Operations and Log Insight service will also be deleted.
 * Migrate the content of the vCenter Server with NSX-V vRealize Operations Manager to vRealize Operations Manager to vCenter Server with NSX-T following VMware documentation.
-
 
 ## Related links
 {: #v2t-optional-services-links}

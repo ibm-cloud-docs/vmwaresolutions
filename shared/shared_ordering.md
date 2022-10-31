@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-08-22"
+lastupdated: "2022-10-26"
 
 keywords: shared order resource, order on demand shared, order on demand resources
 
@@ -78,12 +78,12 @@ If **No resource group available** is displayed in this field, you currently do 
 {: #shared_ordering-deploytop}
 
 * **Single-zone VMware virtual data center** deploys your virtual data center in a single-zone data center.
-* **Multizone VMware virtual data center** deploys your virtual data center across two availability zones in an {{site.data.keyword.cloud}} multizone region if a single-zone data center failure occurs.
+* **Multizone VMware virtual data center** deploys your virtual data center across two availability zones in an {{site.data.keyword.cloud_notm}} multizone region if a single-zone data center failure occurs.
 
 ## Data center location
 {: #shared_ordering-dc}
 
-Select the {{site.data.keyword.cloud}} data center settings. For more information, see [IBM Cloud data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning#shared_planning-dc-availability).
+Select the {{site.data.keyword.cloud_notm}} data center settings. For more information, see [IBM Cloud data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning#shared_planning-dc-availability).
 
 ### Geography
 {: #shared_orderinginstance-dc-region}

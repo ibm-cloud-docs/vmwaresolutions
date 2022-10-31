@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-27"
 
 subcollection: vmwaresolutions
 
@@ -57,7 +57,6 @@ For post initial deployment integrations, for example with Active Directory™, 
 ## Related links
 {: #vpc-vcf-arch-overview-links}
 
-* [{{site.data.keyword.cloud_notm}} for VMware Cloud Foundation cookbook](https://cloud.ibm.com/media/docs/downloads/vmware-cloud-foundation/IBMCloudForVMwareCloudFoundation-Cookbook.pdf)
 * [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
 * [{{site.data.keyword.vpc_short}} bare metal servers](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
 * [{{site.data.keyword.dl_full_notm}} overview](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)

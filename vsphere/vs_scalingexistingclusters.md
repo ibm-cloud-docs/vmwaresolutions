@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-07-13"
+lastupdated: "2022-10-07"
 
 keywords: vSphere scale cluster, scale vSphere, scale vSphere cluster
 
@@ -46,7 +46,7 @@ Ensure that you complete the following tasks:
 
 The cluster scaling starts automatically. You receive an email confirmation that the order is being processed. When the cluster is ready to use, you are notified by email. If the cluster that you are scaling is not ready to use, you might receive an error message.
 
-The vSphere clusters, unlike the VMware vCenter Server® instances, are not displayed on the **Resources** page.
+The vSphere clusters, unlike the VMware vCenter Server® instances, are not displayed on the **Resources** pages.
 {: note}
 
 ## Related links

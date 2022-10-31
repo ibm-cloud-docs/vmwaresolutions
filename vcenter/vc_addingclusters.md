@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-07-07"
+lastupdated: "2022-10-20"
 
 keywords: vCenter Server add clusters, add cluster, vCenter Server cluster
 
@@ -189,6 +189,16 @@ You can use the default hostname prefix or specify a new one. When you specify a
 - The hostname prefix must end with a lowercase alphabetic or numeric character.
 - The maximum length of the hostname prefix is 10 characters.
 
+#### Network diagram
+{: #vc_addingclusters-network-diagram}
+
+You can customize the hostnames prefix individually by selecting **Configure hostnames individually**. It must meet the following requirements:
+* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* No consecutive dash characters are allowed.
+* The hostname prefix must start with a lowercase alphabetic character.
+* The hostname prefix must end with a lowercase alphabetic or numeric character.
+* The maximum length of the hostname prefix is 13 characters.
+
 #### Networking type
 {: #vc_addingclusters-network}
 
@@ -288,7 +298,7 @@ Select the {{site.data.keyword.cloud_notm}} data center pod where you want to de
 
 By default, the cluster names are set to **_instance name_-edge**.
 
-You can also specify a new name for your clusters. The names must meet the requirements that are listed in [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consoldcluster-settings#vc_orderinginstance-consoldcluster-cluster-name).
+You can also specify a new name for your clusters. The names must meet the requirements that are listed in [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consoldworkldcluster-settings#vc_orderinginstance-consoldworkldcluster-cluster-name).
 
 ### CPU model
 {: #vc_addingclusters-edge-cluster-cpu}
@@ -310,14 +320,21 @@ The number of servers is set to two and cannot be changed. Both servers have the
 ### Hostname prefix
 {: #vc_addingclusters-edge-host-name-prefix}
 
-The hostname prefix must meet the following requirements:
+The hostname prefix applies to all clusters in the instance. It must meet the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
 * The hostname prefix must end with a lowercase alphabetic or numeric character.
 * The maximum length of the hostname prefix is 10 characters.
 
-The hostname prefix applies to all clusters in the instance.
-{: note}
+### Network diagram
+{: #vc_addingclusters-edge-network-diagram}
+
+You can customize the hostnames prefix individually by selecting **Configure hostnames individually**. It must meet the following requirements:
+* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* No consecutive dash characters are allowed.
+* The hostname prefix must start with a lowercase alphabetic character.
+* The hostname prefix must end with a lowercase alphabetic or numeric character.
+* The maximum length of the hostname prefix is 13 characters.
 
 ### Uplink speed
 {: #vc_addingclusters-edge-uplink-speed}
@@ -339,7 +356,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ## Procedure to add clusters to vCenter Server instances
 {: #vc_addingclusters-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance that you want to add clusters to.
 
    Ensure that the instance is in the **Ready to use** status. Otherwise, you cannot add clusters to the instance.

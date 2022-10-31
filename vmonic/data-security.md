@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-08-22"
+lastupdated: "2022-10-27"
 
 keywords: data encryption in VMware Solutions, data storage for VMware Solutions, bring your own keys for VMware Solutions, BYOK for VMware Solutions, key management for VMware Solutions, key encryption for VMware Solutions, personal data in VMware Solutions, data deletion for VMware Solutions, data in VMware Solutions, data security in VMware Solutions
 
@@ -38,8 +38,6 @@ With VMware Solutions Dedicated, you can bring your own data to {{site.data.keyw
 
 These solutions include the following options:
 * KMIP™ for VMware service along with {{site.data.keyword.cloud_notm}} Key Protect or {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services to enable vSAN™ or VMware vSphere® encryption for your workloads
-* Entrust DataControl® encryption of your virtual machines (VMs), with optional integration with {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services
-* Entrust KeyControl™ as a key server that enables vSAN or vSphere encryption for your workloads
 * Other self–managed VMware–compatible encryption technologies
 
 If you use VMware Solutions Shared, your workload data exists in an IBM–managed cloud infrastructure account. You are provided with the default vSphere encryption option for your VMs, which uses IBM–managed keys that are backed by the {{site.data.keyword.cloud_notm}} KMIP for VMware and Hyper Protect Crypto Services. You can optionally implement your own encryption solutions within your VMware workloads.
@@ -77,7 +75,7 @@ In VMware Solutions Dedicated, you can take steps to limit {{site.data.keyword.c
 
 For VMware Solutions Dedicated, envelope encryption is used to offer customer–managed keys. For VMware Solutions Shared, envelope encryption is used but with IBM–managed rather than customer–managed keys.
 
-Envelope encryption within VMware Solutions uses either the [KMIP for VMware service](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) to provide key management for VMware vSphere® encryption or vSAN encryption, or [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations) policy–based VM encryption.
+Envelope encryption within VMware Solutions uses the [KMIP for VMware service](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) to provide key management for VMware vSphere® encryption or vSAN encryption.
 
 In both cases, these offerings use {{site.data.keyword.cloud_notm}} Key Protect or {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services for key wrapping and unwrapping. Key Protect offers Bring Your Own Key (BYOK) capability by using FIPS 140–2 level 3 certified hardware security modules (HSMs). Hyper Protect Crypto Services offers Keep Your Own Key (KYOK) capability by using FIPS 140–2 level 4 certified HSMs.
 
@@ -85,8 +83,6 @@ In both cases, these offerings use {{site.data.keyword.cloud_notm}} Key Protect 
 {: #data-security-using-byok}
 
 You can use {{site.data.keyword.cloud_notm}} key management with VMware vSphere or vSAN encryption. For more information, see the [KMIP for VMware implementation guide](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-implementation).
-
-You can use Entrust DataControl together with Hyper Protect Crypto Services to secure your VMs. For more information, see the [Entrust DataControl and HPCS deployment guide](/docs/vmwaresolutions?topic=vmwaresolutions-htdc-hpcs-deployment).
 
 ### Working with customer-managed keys for VMware Solutions
 {: #data-security-working-with-keys}
@@ -117,4 +113,3 @@ You are responsible to make provision for backup and recovery of all data you br
 
 * [Managing access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam)
 * [Auditing events for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-at-events)
-* [Managing security and compliance with VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-manage-scc)

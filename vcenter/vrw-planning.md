@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-09-20"
+lastupdated: "2022-09-28"
 
 keywords: planning vmware regulated workloads, data center vmware regulated workloads, vmware regulated workloads data centers
 
@@ -63,7 +63,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for VM
 | NA East | TOR05 | 01 |
 | NA East | WDC04 | 01-05 |
 | NA East | WDC06 | 01 |
-| NA East | WDC 07 | 01 |
+| NA East | WDC07 | 01 |
 | NA South | DAL09 | 01-06 |
 | NA South | DAL10 | 01-04 |
 | NA South | DAL12 | 01-02 |

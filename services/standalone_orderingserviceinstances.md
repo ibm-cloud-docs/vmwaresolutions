@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-10-21"
+lastupdated: "2022-10-10"
 
 keywords: VMware HCX standalone, HCX on-premises, order HCX
 
@@ -29,8 +29,8 @@ Ensure that you completed the following tasks:
 ## Procedure to order on-premises VMware HCX instances
 {: #standalone_orderingserviceinstances-procedure}
 
-1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
-2. Scroll down to the **On-premises HCX activation keys** table and click **Provision new**.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Licenses** from the left navigation pane.
+2. Scroll down to the **On-premises HCX activation keys** table and click **Create new**.
 3. Specify the resource group.
 
    If **No resource group available** is displayed in this field, you currently do not have the permission to add the instance to any resource group in this account. Contact the account owner to be assigned an Editor or Administrator role on a resource group in the account. For more information, see [IAM access](/docs/account?topic=account-userroles).

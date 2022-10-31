@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-08-16"
+lastupdated: "2022-10-26"
 
 keywords: vCenter Server add service
 
@@ -33,20 +33,19 @@ The following table shows the services that are available to vCenter Server inst
 
 | Service name | Current version | Notes           |
 |--------------|-----------------|-----------------|
-| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 3.1.0 |
+| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 4.0 |
 | [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations) | 6.5 | NSX-T only |
-| [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations) | 5.5 | VMware vSphere 6.7 only |
 | [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 16.1 |
-| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.0.5 |
+| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.2.1 |
 | [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version |
 | [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | N/A |
 | [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (20.4R2) |
 | [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 |
 | [PrimaryIO HDM](/docs/vmwaresolutions?topic=vmwaresolutions-managing_pio) | N/A |
-| [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.10 | NSX-T only \n If you add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade NSX-T to 3.1 or later. |
+| [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.11 | NSX-T only \n If you add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade NSX-T to 3.1 or later. |
 | [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 11 |
-| [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.6 and vRLI 8.6 |
-| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.5u1 | VMware vSphere 7 only |
+| [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.6 and vRLI 8.8 |
+| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.5u3 | VMware vSphere 7 only |
 {: caption="Table 1. Available services for vCenter Server instances" caption-side="bottom"}
 
 ## Promotions for services
@@ -59,7 +58,7 @@ You can use one promotion (promo) code for one or more services for:
 * Adding a service to a vCenter Server instance
 * Ordering a stand-alone service license, such as Caveonix or Veeam®
 
-For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX™, Entrust CloudControl™, Entrust DataControl®, and vRealize Operations™ and Log Insight™.
+For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX™, Entrust CloudControl™, and vRealize Operations™ and Log Insight™.
 
 You can use one promo code per order. Multiple promo codes are not allowed. However, you can use a promo code multiple times per account. A promo code might apply to multiple services, for example, Veeam and Caveonix RiskForesight™.
 
@@ -90,9 +89,9 @@ The following table provides the resource requirements for the services for whic
 | Entrust CloudControl | CPU - 4 CPUs \n RAM - 16 GB \n Storage - 186 GB VMDK |
 | Juniper vSRX | You must have enough available capacity to accommodate two VMs with the following requirements, on different hosts: \n CPU - 6 CPUs \n RAM - 16 GB \n Storage - 18 GB \n If you install Juniper vSRX on clusters with 25 Gb uplink speed, the following capacity requirements apply. \n CPU - 10 CPUs \n RAM - 16 GB \n Storage - 18 GB |
 | {{site.data.keyword.redhat_openshift_notm}} | If you install {{site.data.keyword.redhat_openshift_notm}} with vSAN™ storage, the following capacity requirements apply. \n CPU - 9 CPUs \n RAM - 120 GB \n Storage - 1,170 GB \n If you install {{site.data.keyword.redhat_openshift_notm}} with NFS storage, a new 2-TB NFS datastore, which is dedicated to {{site.data.keyword.redhat_openshift_notm}}, is ordered. |
-| Veeam | If you select Veeam as a VSI option, there is no capacity requirement. \n If you select Veeam as a VM option, the following capacity requirements apply. \n CPU - 8 CPUs \n RAM - 32 GB \n Storage - 100 GB \n  If you select Veeam as a bare metal server option, there is no capacity requirement. |
+| Veeam | If you select Veeam as a VSI option, there is no capacity requirement. \n If you select Veeam as a VM option, the following capacity requirements apply. \n CPU - 8 CPUs \n RAM - 32 GB \n Storage - 100 GB \n If you select Veeam as a bare metal server option, there is no capacity requirement. |
 | VMware HCX | For each gateway in the active-passive pair of VMware NSX-V edge services gateways: \n CPU - 6 CPUs \n RAM - 8 GB \n Storage - 3 GB VMDK \n For the HCX Management Appliance VM: \n CPU - 4 CPUs \n RAM - 12 GB \n Storage - 60 GB VMDK |
-| vRealize Operations and Log Insight | CPU - 18 CPUs \n RAM - 208 GB \n If you install vRealize Operations with vSAN storage, you must have an estimated 750 GB of vSAN storage. \n If you install vRealize Operations with NFS storage, there's no storage requirement because NFS storage is ordered as part of the instance order. |
+| vRealize Operations and Log Insight | CPU - 18 CPUs \n RAM - 208 GB \n If you install vRealize Operations with vSAN storage, you must have an estimated 750 GB of vSAN storage. \n If you install vRealize Operations with NFS storage, you do not have a storage requirement because NFS storage is ordered as part of the instance order. |
 | Zerto | CPU - 2 CPUs \n RAM - 4 GB |
 {: caption="Table 2. Resources required for the services that the system checks for capacity requirements" caption-side="bottom"}
 
@@ -152,7 +151,7 @@ The following table lists the variables that are used in the previous formula.
 ## Procedure to order services for vCenter Server instances
 {: #vc_addingservices-procedure}
 
-To order a service for your vCenter Server instance, click the appropriate service link in the previous tables in [Available services for vCenter Server instances](#vc_addingservices-available-services) to review the considerations for the service and to check the components that are deployed. Then, follow the instructions in the [Services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services) topic to add the service to your instance.
+To order a service for your vCenter Server instance, click the appropriate service link in [Available services for vCenter Server instances](#vc_addingservices-available-services). Review the considerations for the service and to check the components that are deployed and follow the instructions in the [Services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services) topic to add the service to your instance.
 
 ## Results after you order services for vCenter Server instances
 {: #vc_addingservices-results}

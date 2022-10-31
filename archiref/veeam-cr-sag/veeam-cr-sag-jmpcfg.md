@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-05-30"
+lastupdated: "2022-10-10"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ Now that the jump server is ordered and available for connection on its public I
 ## Changing DNS
 {: #veeam-cr-sag-jmpcfg-dns}
 
-1. From the Resources page on the {{site.data.keyword.vmwaresolutions_full}} console, capture the IP address of your AD/DNS servers `DNS1` and `DNS2`.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** > **vCenter Server** from the left navigation pane. Select the instance and go to the **Summary** page to capture the IP address of your AD/DNS servers `DNS1` and `DNS2`.
 2. From your laptop, use an RDP client to access the jump server.
 3. When connected to the jump server, open a PowerShell console with admin privileges.
 4. Use `Get-DNSClientServerAddress` to display the interfaces and their parameters. You need to capture the Interface Indexes `IF1` and `IF2` for the Ethernet interfaces for use in the next command.

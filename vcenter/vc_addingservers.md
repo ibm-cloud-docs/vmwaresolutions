@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-06-03"
+lastupdated: "2022-10-20"
 
 keywords: vCenter Server add host, add server vCenter Server
 
@@ -24,7 +24,7 @@ You can expand the capacity of your VMware® vCenter Server® instance according
 
 * Adding ESXi servers to vCenter Server instances with VMware vSphere® 6.5 is not supported.
 * For the edge services cluster, you cannot add or remove ESXi servers.
-* For existing instances with vSphere 6.7u1, you can add ESXi servers with either vSphere 6.7u1 or vSphere 6.7u3.
+* For existing instances with vSphere 6.7, you cannot add ESXi servers.
 * {{site.data.content.para-vcenteraddESXiservers}}
 * A vCenter Server instance with NFS storage must have at least three ESXi servers. Each of the nondefault clusters can be expanded to have up to 59 ESXi servers.
 * A vCenter Server instance with vSAN™ storage must have at least four ESXi servers.
@@ -37,7 +37,7 @@ You can expand the capacity of your VMware® vCenter Server® instance according
 {: help}
 {: support}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance for which you want to expand capacity.
 3. Click **Infrastructure** on the left navigation pane.
 4. In the **Clusters** table, click the cluster to which you want to add ESXi servers.
@@ -52,7 +52,7 @@ You can expand the capacity of your VMware® vCenter Server® instance according
    * Select an existing bare metal server configuration that is being used by the existing ESXi servers in the cluster. This option is not available under the following conditions:
       * The bare metal configuration that is used by the existing ESXi servers in the cluster is **Broadwell**.
       * The storage type of the cluster is **Local disks**.
-   * Select a new bare metal server configuration. 
+   * Select a new bare metal server configuration.
       * For vSphere 7.0, optionally select to change the bare metal server configuration. Then, select the VMware vSphere version.
       * For **Skylake** and **Cascade Lake**, select the **CPU model**, and the amount of **RAM**.
       * For **SAP-certified**, select the **CPU model and RAM**.
@@ -60,7 +60,8 @@ You can expand the capacity of your VMware® vCenter Server® instance according
 9. Complete the subnet settings.
     * Select to continue to use the previously selected primary subnets.
     * Select to specify primary subnets. Then, use the lists to select the **Public primary subnet** and **Private primary subnet**.
-10. On the **Summary** pane, review the estimated pricing and click **Create**.
+10. If you want to customize the hostnames prefix individually, select **Configure hostnames individually**.
+11. On the **Summary** pane, review the estimated pricing and click **Create**.
 
    You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. This option is useful if you want to estimate the price of the selected {{site.data.keyword.vmwaresolutions_short}} resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider to purchase.
 

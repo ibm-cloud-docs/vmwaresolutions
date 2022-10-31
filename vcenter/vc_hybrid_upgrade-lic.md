@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-20"
 
 keywords: NSX license, upgrade license, Hybridity license
 
@@ -23,7 +23,7 @@ You can upgrade the VMware NSX® license for your instance to a later edition. R
 ## Procedure to upgrade your NSX license
 {: #vc_hybrid_upgrade-lic-nsx}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance to upgrade the NSX license for.
 3. On the **Summary** page, verify that all instance details are displayed correctly. Then, click **Infrastructure** on the left navigation pane to verify the details on the **Infrastructure** page.
 

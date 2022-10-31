@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-06-03"
+lastupdated: "2022-10-20"
 
 keywords: vCenter Server delete clusters, delete clusters, delete vCenter Server cluster, vmware multizone, vCenter Server multizone delete clusters, delete vCenter Server cluster
 
@@ -36,7 +36,7 @@ You can delete clusters from VMware vCenter Server® instances when you do not n
 {: help}
 {: support}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance that you want to delete clusters from.
 
    Ensure that the instance is in the **Ready to use** status. Otherwise, you can't delete clusters from the instance.

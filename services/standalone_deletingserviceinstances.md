@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-11-09"
+lastupdated: "2022-10-10"
 
 keywords: VMware HCX standalone, HCX on-premises, delete HCX
 
@@ -28,7 +28,7 @@ Ensure that you reviewed the considerations in [Considerations before you delete
 ## Procedure to delete on-premises HCX instances
 {: #standalone_deletingserviceinstances-procedure}
 
-1. Click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Licenses** from the left navigation pane.
 2. Scroll down to the **On-premises HCX activation keys** table and find the instance to delete.
 3. In the **Actions** column, click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete").
 4. In the **Delete instance** window, click **OK**.

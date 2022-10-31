@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-26"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -39,7 +39,7 @@ You can access the Veeam portal on the virtual data center details page when the
 
 For more information about generating the VMware Cloud Director console credentials, see [Procedure to access the VMware Cloud Director Management console](/docs/vmwaresolutions?topic=vmwaresolutions-shared_accessing-vcd-console#shared_accessing-vcd-console-procedure).
 
-Alternatively, click **Menu** in the VMware Cloud Director tenant portal and select **Data Protection with Veeam**.
+Alternatively, click the **More** menu in the VMware Cloud Director tenant portal and select **Data Protection with Veeam**.
 
 Contact IBM Support if you do not see the **Data Protection with Veeam** option. In the subject for your issue, include **Request Veeam Self Service Portal for my Organization** and include your Organization ID and virtual data center name in your issue description. For more information, see [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
@@ -63,7 +63,7 @@ For more information about how Veeam Availability Suite stores backups, see [How
 ## Veeam Cloud Connect Replication
 {: #shared_veeam-cloud-connect}
 
-Veeam Cloud Connect Replication provides seamless replication of your workloads from on-premises to {{site.data.keyword.cloud_notm}}. Use Veeam Cloud Connect as disaster recovery for failover during on-premises outages or to permanently move workloads directly to {{site.data.keyword.cloud_notm}}.
+Veeam Cloud Connect Replication provides seamless replication of your workloads from on-premises to {{site.data.keyword.cloud}}. Use Veeam Cloud Connect as disaster recovery for failover during on-premises outages or to permanently move workloads directly to {{site.data.keyword.cloud_notm}}.
 
 Starting with the 4.2 release, VMware Solutions Shared virtual data centers provide Veeam Backup and Replication V11 for the Veeam Cloud Connect Replication ready-to-use service. For more information about compatibility requirements between Veeam service providers and tenants, see [Product versions in Veeam Cloud Connect infrastructure](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_versions.html?ver=110){: external}.
 {: note}

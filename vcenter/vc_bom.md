@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-02"
+lastupdated: "2022-10-14"
 
 keywords: vCenter Server BOM, bill of materials vCenter Server, BOM
 
@@ -38,7 +38,7 @@ The following table details the BOM information for vCenter Server software comp
 
 | Manufacturer | Component                       | Version       |
 |:------------ |:------------------------------- |:------------- |
-| VMware       | vSphere ESXi                    | ESXi 7.0 Update 3e (19898904)[^esxi7] or \n ESXi 6.7 P06 (202206001)[^esxi67] or \n ESXi 6.5 P06 (17477841)[^esxi65] |
+| VMware       | vSphere ESXi                    | ESXi 7.0 Update 3f (20036589)[^esxi7] or \n ESXi 6.7 P08 (19997733)[^esxi67] or \n ESXi 6.5 P06 (17477841)[^esxi65] |
 | VMware       | vSphere 7.0 Update 3c           | Distributed vSwitch 7.0.0 |
 | VMware       | vSphere 6.7[^vcs-vsphere67]                     | Distributed vSwitch 6.6.0 |
 | VMware       | vSphere 6.5[^vcs-vsphere65]     | Distributed vSwitch 6.5.0 |

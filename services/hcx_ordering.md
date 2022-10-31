@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-11"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -23,9 +23,10 @@ You can include the VMware HCX™ service with a new VMware vCenter Server® ins
 ## Ordering HCX for a new instance
 {: #hcx_ordering-new}
 
-To order a new vCenter Server instance with HCX from the VMware Solutions console, scroll down to the Add-on services section. HCX is in the Business continuity and migration category. Open the category, locate HCX, and toggle its switch on.
-
-Select **Edit** to review and specify the information. If you enter or change information, click **Save**.
+1. To order a new vCenter Server instance with HCX from the VMware Solutions console, scroll down to the Add-on services section. HCX is in the Business continuity and migration category. 
+2. Open the category, locate HCX, and toggle its switch on.
+3. Select **Edit** to review and specify the information. 
+4. If you enter or change information, click **Save**.
 
 ## Ordering HCX for an existing instance
 {: #hcx_ordering-existing}

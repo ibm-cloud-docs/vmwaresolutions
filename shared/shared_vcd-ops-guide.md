@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-27"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -68,7 +68,7 @@ Each organization has access to the VMware Solutions Shared public catalog. The 
 Review the following considerations for the VMware Solutions Shared public:
 
 * Operating system licensing costs apply for usage. For more information about how commercial operating system license rentals are billed, see [VMware Solutions Shared pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing).
-* Public templates that are configured to services on the IBM private network require an extra configuration step to enable VM access to the IBM Services network. For more information, see [Enabling VM access to {{site.data.keyword.cloud}} Services by using the private network](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-enable-access).
+* Public templates that are configured to services on the IBM private network require an extra configuration step to enable VM access to the IBM Services network. For more information, see [Enabling VM access to {{site.data.keyword.cloud_notm}} Services by using the private network](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-enable-access).
 * Public templates require a minimum level of customization to establish the initial administrator password. For more information, see [Changing the guest OS customization properties of a VM](#shared_vcd-ops-guide-customization).
 
 The public catalog contains vApp templates for the following components:
@@ -76,7 +76,8 @@ The public catalog contains vApp templates for the following components:
 | Image | Version |
 |---|---|
 | CentOS | 7.x and 8.x |
-| Microsoft® Windows® | 2019 Standard |
+| Microsoft® Windows® | 2022 Standard |
+| Microsoft Windows | 2019 Standard |
 | Microsoft Windows | 2016 Standard |
 | Red Hat Enterprise Linux® | 8.1 |
 | Red Hat Enterprise Linux | 7.7 |
@@ -164,7 +165,7 @@ For more information, see [Create a new stand-alone virtual machine](https://doc
 
 You can edit the properties of a VM, including the VM name and description, hardware and network settings, and operating system settings for a guest.
 
-For more information about working with VMs, see [Working with virtual machines](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-DF0C111D-B638-4EC3-B805-CC33994F8D53.html){: external}.
+For more information about working with VMs, see [Working with virtual machines](https://docs.vmware.com/en/VMware-Cloud-Director/10.3/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-DF0C111D-B638-4EC3-B805-CC33994F8D53.html){: external}.
 
 If you use the tenant portal **Password Reset** field to change your Windows Administrator password, ensure that you adhere to Windows complexity requirements. If you change the password in the tenant portal without doing so, the password does not work in the Windows VM template.
 {: important}
@@ -285,7 +286,9 @@ From the tenant portal, use the following procedures to create a sample network 
 {: #shared_vcd-ops-guide-routed-organization}
 
 For more information about how to create a routed organization, see [Add a routed organization virtual data center network](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C4D27F-9E2A-4EB2-BBE1-CDD45C80E270.html){: external}.
-**Notes**
+
+Review the following notes for creating a routed Organization virtual data center network.
+
 * Virtual data centers can share networks only if they are in the same region. You can choose to set the **Shared** option when an application within an Organization virtual data center has a reservation or allocation pool set as the allocation model. In this case, it might not have enough room to run more VMs. As a solution, you can create a secondary Organization virtual data center with on-demand and run more VMs on that network on a temporary basis.
 * From the **Edge Connection** page, select the edge that was created when the virtual data center was created.
 * Select **Distributed** for the **Interface Type**.
@@ -304,7 +307,9 @@ Use the steps to add a static route to validate that the Organization virtual da
 Optionally, you can configure DHCP on the edge gateway to assign IP addresses automatically to the VMs connected to the Organization virtual data center networks. This step is not necessary if you are using static IP addresses.
 
 From the virtual data center for that edge gateway, configure the DHCP. Repeat the procedure for extra Organization virtual data center networks that are attached to the edge that requires DHCP services. For more information, see [Add a DHCP IP pool](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-EF0B4C79-F6F7-4C75-825C-0B76B888856D.html){: external}.
-**Notes**
+
+Review the following notes for configuring DHCP on the edge gateway.
+
 * The **IP Range** is a range from the Organization virtual data center network that is attached to the edge.
 * You can define the names for the **Primary Name Server** and the **Secondary Name Server** now or update the names later.
 * The **Default Gateway** is the gateway CIDR or the Organization virtual data center network that is attached to the edge.
@@ -337,7 +342,9 @@ Before you create the firewall and NAT rules, capture the information that is ne
 {: #shared_vcd-ops-guide-create-vdc-network-rule-extnetwork}
 
 From the virtual data center for that edge gateway, create the network firewall rule. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
-**Notes**
+
+Review the following notes for creating the Organization virtual data center network firewall rule to allow access to the external network.
+
 * For **Source**, you can use an IP address, a range of addresses, or an object.
 * In the **Browse objects of Type** menu, select **Org Vdc Networks**. Select the Organization virtual data center network that you created as the **Source** cell. Click the right arrow to move the Organization virtual data center network into the **Filter** column.
 * Keep all remaining default selections.
@@ -349,7 +356,8 @@ From the virtual data center for that edge gateway, create the network firewall 
 
 A source NAT rule is necessary to allow traffic from the Organization virtual data center network outbound to the internet. From the virtual data center for that edge gateway, create NAT44 Rules. For more information, see [Add a SNAT or a DNAT rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html){: external}.
 
-**Notes**  
+Review the following notes for source NAT definitions.
+
 Under the **NAT44 Rules**, click **SNAT Rule** and create the configuration by using the following selections.
 * For **Applied On**, select the Organization virtual data center external network.
 * For **Original Source IP/Range**, enter your Organization virtual data center Gateway CIDR.
@@ -363,7 +371,9 @@ Under the **NAT44 Rules**, click **SNAT Rule** and create the configuration by u
 {: #shared_vcd-ops-guide-create-vdc-network-rule-ibm-services-network}
 
 From the virtual data center for that edge gateway, create the network firewall rule. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
-**Notes**
+
+Review the following notes for creating the Organization virtual data center network firewall rule to allow access to the IBM Cloud Services Network.
+
 * For **Source** you can use an IP address, a range of addresses, or an object.
 * In the **Browse objects of Type** menu, select **Org Vdc Networks**. Select the Organization virtual data center network that you created as the **Source** cell. Click the right arrow to move the Organization virtual data center network into the **Filter** column.
 * The destination can be an IP address, a range of addresses, or an object. In the **Destination** column, click the **+** in the upper right of the cell when you hover your mouse in the field. In the **Browse objects of Type** menu, select **Gateway Interfaces**. Select the service network available to your virtual data center. Click the right arrow to move the service network into the right side filter column.
@@ -377,7 +387,6 @@ A source NAT rule is necessary to allow traffic from the Organization virtual da
 
 From the virtual data center for that edge gateway, create the source NAT definitions to the IBM Service Network (Private). For more information, see [Add a SNAT or a DNAT rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html){: external}.
 
-**Notes**  
 Under the **NAT44 Rules**, click **SNAT Rule** and create the configuration by using the following selection.
 * For **Applied On**, select the service network.
 * For **Original Source IP/Range**, enter your Organization virtual data center Gateway CIDR.
@@ -401,19 +410,20 @@ A destination NAT allows an outside host, in this case on the internet, to conne
 
 From the virtual data center for that edge gateway, create the destination NAT definition. For more information, see [Add a SNAT or a DNAT rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html).
 
-**Notes**  
 Under the **NAT44 Rules**, click **DNAT Rule** and create the configuration by using the following selection.
 * For **Applied On**, select the ``<datacenter>-w<idx>-tenant-external`` interface, for example, ``dal13-w02-tenant-external``.
 * For **Original Source IP/Range**, select one of the IP addresses from the Suballocated Public IP address range. Click **SELECT**, and select an IP from the **IP Address** menu. This value is the `tenant-external IP address` referenced in future steps. Click **KEEP**.
 * Optionally, select port forwarding. Click the **Protocol** menu arrow and select **TCP**.
 * Select a port that is not previously used with the original IP address or range. The **Original Port** in this example is ``8000``. Ports that are lower than 1024 are reserved.
 * If ICMP is selected in the **Protocol** menu, select the **ICMP Type**.
-* For **Translated IP/Range**, type the IP address of the VM on the private Organization virtual data center that you want to connect.  
+* For **Translated IP/Range**, type the IP address of the VM on the private Organization virtual data center that you want to connect.
 * For **Translated Port**, select the port on the previous VM that the servicer is listening on. In the Windows RDP example, port 3389 is the default remote desktop port.
 * Optionally, provide a description.
 
 From the virtual data center for that edge gateway, add a firewall rule to enable port forwarding. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html).
-**Notes**
+
+Review the following notes for destination NAT definition and port forwarding.
+
 * For **Source**, optionally define the source if you want to restrict access to the internal Organization virtual data center VM to a specific IP or IP range.
 * For **Destination**, set the value to the `tenant-external IP address` used for **Original IP/Range** in the DNAT rule.
 * For **Service**, set the **Protocol** to TCP and the **Destination Port** to the `tenant-external IP address` used in the DNAT rule. In our example, port ``8000`` is used.
@@ -508,7 +518,7 @@ Every private network endpoint comes configured with one private network IP addr
 
 Collect the service network and private network IP addresses to configure the firewall and DNAT rules.
 
-1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > VMware Shared** from the left navigation pane.
 2. In the **VMware Solutions Shared** table, click the virtual data center to configure.
 3. In the **Private Network Endpoint** section, collect the **Service network IP** address and **Private network IP** address.
 
@@ -620,7 +630,7 @@ If the **Operations Manager** option is not available in the **More** menu, open
 
 After the VMware vRealize Operations Tenant App is enabled for an organization, the users who are defined in the organization have access to the tenant app.
 
-For more information, see [Using vRealize Operations Tenant App for vCloud Director as a Tenant](https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations/8.6/using-vrealize-operations-tenant-app-for-vcloud-director-as-a-tenant-guide.pdf){: external}
+For more information, see [Using vRealize Operations Tenant App for vCloud Director as a Tenant](https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations/8.6/using-vrealize-operations-tenant-app-for-vcloud-director-as-a-tenant-guide.pdf){: external}.
 
 The billing link in the tenant app is disabled. All billing for {{site.data.keyword.vmwaresolutions_short}} Shared is processed through the {{site.data.keyword.vmwaresolutions_short}} portal.
 {: note}

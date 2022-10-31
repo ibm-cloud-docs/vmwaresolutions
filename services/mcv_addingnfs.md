@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-06-16"
+lastupdated: "2022-10-25"
 
 subcollection: vmwaresolutions
 
@@ -30,7 +30,7 @@ You can expand the capacity of your VMware vCenter Server® multizone instances 
 ## Procedure to add NFS storage to vCenter Server multizone instances
 {: #mcv_addingnfs-storage-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance for which you want to expand capacity.
 3. Click **Infrastructure** on the left navigation pane.
 4. In the applicable cluster table, click the cluster to which you want to add NFS storage.
@@ -38,7 +38,7 @@ You can expand the capacity of your VMware vCenter Server® multizone instances 
 6. In the **Storage** window, complete the storage configuration.
    * If you want to add and configure the same settings to all file shares, specify the **Number of Shares**, **Performance**, and **Size (GB)**.
    * If you want to add and configure file shares individually, select **Configure shares individually**. Then, click the **Add** icon ![Add icon](../../icons/add.svg "Add") next to the **Add shared storage** label. Select the **Performance** and **Size (GB)** for each individual file share. You must select at least one file share.
-7. Review the estimated price and click **Provision**.
+7. Review the estimated price and click **Create**.
 
 ## Results after you add NFS storage to vCenter Server multizone instances
 {: #mcv_addingnfs-storage-results}

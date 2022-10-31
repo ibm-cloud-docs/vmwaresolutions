@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-06-03"
+lastupdated: "2022-10-07"
 
 subcollection: vmwaresolutions
 
@@ -31,17 +31,17 @@ Capture the following details of the VMware vCenter Server® instance and Veeam�
 | `<root_domain>` | The vCenter Server instance domain name. For example, `test.ibmcloud.local` |
 | `<sub_domain>` | The vCenter Server instance subdomain name. For example, if the root domain is `test.ibmcloud.local`, then the subdomain is `test`. | 
 | `<dc_code>` | The code for the data center in which the vCenter server instance is deployed into, such as DAL10. |
-| `<public_vlan_number>` | The `Public VLAN` number can be obtained from the UI by browsing to the Infrastructure page under {{site.data.keyword.vmwaresolutions_full}} > Resources page. |
+| `<public_vlan_number>` | The `Public VLAN` number can be obtained from the UI by browsing to the Resources > vCenter Server > Infrastructure page. |
 | `<public_vlan_id>` | The ID can be found from the VLAN number and the {{site.data.keyword.cloud}} CLI. For example, for VLAN number `1344`, `ibmcloud sl vlan list` `awk '/1344/ { print "Public_VLAN_ID: " $1 }'`. |
-| `<private_vlan_number>` | The Private VLAN number can be obtained from the UI by browsing to the Infrastructure page under VMware® Solutions > Resources page. The `Secondary Private VLAN` number is not required. |
+| `<private_vlan_number>` | The Private VLAN number can be obtained from the UI by browsing to the Resources > vCenter Server > Infrastructure page. The `Secondary Private VLAN` number is not required. |
 | `<private_vlan_id>` | The ID can be found from the VLAN number and the {{site.data.keyword.cloud_notm}} CLI. For example, for VLAN number `1607`, `ibmcloud sl vlan list` `awk '/1607/ { print "Private_VLAN_ID: " $1 }'` |
-| `<private_subnet>` | The `Primary subnet for hosts and virtual server instances` on the `Private VLAN` can be obtained from the UI by browsing to the Infrastructure page under {{site.data.keyword.vmwaresolutions_short}} > Resources page. |
+| `<private_subnet>` | The `Primary subnet for hosts and virtual server instances` on the `Private VLAN` can be obtained from the UI by browsing to the Resources > vCenter Server > Infrastructure page. |
 | `<private_subnet_id>` | The ID can be found from the subnet identifier and the {{site.data.keyword.cloud_notm}} CLI. For example, for subnet `10.38.207.128`, `ibmcloud sl subnet list` `awk '/10.38.207.128/ { print "Private_Subnet_ID: " $1 }'`. |
 | `<public_subnet>` | The `Primary subnet for hosts and virtual server instances` on the `Public VLAN`. |
 | `<public_subnet_id>` | The ID can be found from the subnet identifier and the {{site.data.keyword.cloud_notm}} CLI. For example, for subnet `169.60.242.0`, `ibmcloud sl subnet list` `awk '/169.60.242.0/ { print "Public_Subnet_ID: " $1 }'`|
-| `<addns_fqdn>` | The FQDN can be obtained from the UI by browsing to the Infrastructure page under {{site.data.keyword.vmwaresolutions_short}} > Resources > Summary page. |
-| `<addns_1>` | The IP address of the first AD/DNS server can be obtained from the UI by browsing to the Summary page under {{site.data.keyword.vmwaresolutions_short}} > Resources page. |
-| `<addns_2>` | The IP address of the second AD/DNS server can be obtained from the UI by browsing to the Summary page under {{site.data.keyword.vmwaresolutions_short}} > Resources page. |
+| `<addns_fqdn>` | The FQDN can be obtained from the UI by browsing to the Resources > vCenter Server > Summary page. |
+| `<addns_1>` | The IP address of the first AD/DNS server can be obtained from the UI by browsing to the Resources > vCenter Server > Summary page. |
+| `<addns_2>` | The IP address of the second AD/DNS server can be obtained from the UI by browsing to the Resources > vCenter Server > Summary page. |
 | `<vbr_ip>` | The IP address of the Veeam Backup & Replication server. |
 {: caption="Table 1. Capture parameters for Immutable backup planning" caption-side="bottom"}
 

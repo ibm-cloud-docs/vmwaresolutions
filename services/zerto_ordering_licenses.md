@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-02-08"
+lastupdated: "2022-10-10"
 
 keywords: Zerto, Zerto license, order Zerto license
 
@@ -30,8 +30,8 @@ You must have a billable {{site.data.keyword.cloud_notm}} account to order Zerto
 ## Procedure to order Zerto licenses
 {: #zerto_ordering_licenses_ordering-procedure}
 
-1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
-2. Scroll down to the **Zerto licenses** table and click **Provision new**.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Licenses** from the left navigation pane.
+2. Scroll down to the **Zerto licenses** table and click **Create new**.
 3. On the **Zerto license** page, specify the resource group.
 
    If **No resource group available** is displayed in this field, you currently do not have the permission to add the instance to any resource group in this account. Contact the account owner to be assigned an Editor or Administrator role on a resource group in the account. For more information, see [IAM access](/docs/account?topic=account-userroles).

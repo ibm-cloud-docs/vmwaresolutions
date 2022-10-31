@@ -1,6 +1,6 @@
 {
     "title": "VMware Solutions docs",
-    "lastupdated": "2022-08-25",
+    "lastupdated": "2022-10-26",
     "introduction": "VMware Solutions is an IBM Cloud offering that provides deployment and management of VMware virtualized environments. Learn how to make the most of your VMware Solutions experience by using the docs, API doc reference, solution architectures, and solution guides.",
     "section_devtools": {
       "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
@@ -79,6 +79,11 @@
       "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes",
       "tiles": [
         {
+          "date": "31 October 2022",
+          "title": "Cyber Recovery instance",
+          "description": "The V5.0 release offers a new Cyber Recovery instance. The instance provides a way to protect your systems and data from cyberthreats and attacks. It can assist you with handling ransomware and help you with other problems and threats. The Cyber Recovery instance includes Veeam 11, a Linux hardened repository (LHR), and an edge gateway."
+        },
+        {
           "date": "29 August 2022",
           "title": "IBM Cloud for VMware Cloud Foundation",
           "description": "The IBM Cloud VPC provides the underlying infrastructure for running VMware Cloud Foundation in IBM Cloud. The IBM Cloud bare metal servers for IBM Cloud VPC provide you compute capacity that is provisioned in minutes for your VMware Cloud Foundation deployment."
@@ -87,11 +92,6 @@
           "date": "22 June 2022",
           "title": "IBM Cloud Identity and Access Management enablement for VMware Solutions Shared",
           "description": "You can optionally enable IAM for existing sites. After you integrate your site with IAM, you can use single-sign on to log in to the VMware Cloud Director console from the VMware Solutions console."
-        },
-        {
-          "date": "25 April 2022",
-          "title": "Price calculation updates",
-          "description": "Price calculations are now automatically generated when you access the VMware vCenter Server instance order page."
         }
       ]
     }

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-10-25"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -58,7 +58,7 @@ You can also specify a name for your KMIP for VMware instance.
 ### Results of Step 1
 {: #kmip_standalone_ordering-step1-results}
 
-* The deployment of the instance starts automatically and you receive console notification that your order request is being processed. The instance is displayed in the **KMIP for VMware instances** table on the **Resources** page. The status of the instance is **Installing**.
+* The deployment of the instance starts automatically and you receive console notification that your order request is being processed. The instance is displayed in the **KMIP for VMware instances** table on the **KMIP for VMware** > **Resources** pages from the {{site.data.keyword.vmwaresolutions_short}} console. The status of the instance is **Installing**.
 * When the instance is successfully deployed, its status is changed to **Inactive**.
 
 ## Step 2 - Activating the KMIP for VMware instance
@@ -99,23 +99,27 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
 {: #kmip_standalone_ordering-step2-procedure}
 
 1. Select the key management type, either **Hyper Protect Crypto Services** or **Key Protect**.
+
 2. Select a key management service:
    * If you selected **Hyper Protect Crypto Services**, click **Retrieve** to get the list of available HPCS instances and select the one to use for key management.
    * If you selected **Key Protect**, enter your service ID API key, then click **Retrieve** to get the list of available key manager instances and select the one to use for key management.
-3. Click **Retrieve** to get the list of available customer root keys that are stored in your selected HPCS instance or Key Protect instance. Select the root key that you want to use. 
 
-    KMIP for VMware supports root keys only on the default key ring.
-    {: note}
+3. Select the Key Manager instance from the dropdown.
 
-4. Click **Next**.
-5. (Optional) Add client SSL certificates.
+4. If you selected Key Protect as the key management type, under Customer key ring, the names of the key rings belonging to the selected Key Manager instance are displayed. Select the Customer key ring from the dropdown.
+
+    If you selected HPCS, the key ring field is not displayed.
+
+5. Under Customer root key, the names and values of the root keys are displayed. Select the root key you want.
+
+6. (Optional) Add client SSL certificates.
     1. Click **Add**.
     2. In the **Add client SSL certificate** window, enter the name and contents of the certificate, and then click **Add**.
 
        The certificate name cannot be reused within your selected instance. The certificate content must be valid and contain the BEGIN CERTIFICATE and END CERTIFICATE tags. When you use Key Protect, the certificate cannot be reused in the region where the instance is deployed.
        {: note}
 
-6. Click **Configure**.
+7. Click **Configure**.
 
 ### Results of Step 2
 {: #kmip_standalone_ordering-step2-results}
@@ -131,8 +135,8 @@ If you did not add client SSL certificates in Step 2, you must add it after the 
 ### Procedure
 {: #kmip_standalone_ordering-step3-procedure}
 
-1. In the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** from the left navigation.
-2. Scroll down to the **KMIP for VMware instances** table, and then click the instance that you want to add certificates for.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **KMIP for VMware** from the left navigation pane.
+2. In the **KMIP for VMware instances** table, click the instance that you want to add certificates for.
 3. Click **Add**.
 4. In the **Add client SSL certificate** window, enter the certificate name and content, and then click **Add**.
 

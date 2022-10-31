@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-08-17"
+lastupdated: "2022-10-26"
 
 keywords: Veeam, Veeam 11, Veeam install, tech specs Veeam, Veeam overview
 
@@ -150,7 +150,7 @@ When you deploy Veeam as a VM, if your instance has public interfaces, VMware So
 ### Licenses and fees for Veeam
 {: #veeamvm_overview-specs-licenses}
 
-For Veeam Availability Suite 11, you can order 10 - 500 VM licenses in increments of 10.
+For Veeam Availability Suite 11, you can order any number of VM licenses.
 
 You must provide a Microsoft® Windows Server 2019 Standard edition license if you choose the option of installing Veeam as a VM.
 {: important}
@@ -169,7 +169,7 @@ Deleting the Veeam service stops all backups and deletes all the previous backup
 {: important}
 
 Review the following considerations before you delete the service:
-* Deleting the Veeam 11 service does not cancel the Veeam license. You must delete the Veeam license from the **Veeam licenses** table on the **Resources** page in the {{site.data.keyword.vmwaresolutions_short}} console.
+* Deleting the Veeam 11 service does not cancel the Veeam license. You must delete the Veeam license from the **Veeam licenses** table on the **Licenses** page in the {{site.data.keyword.vmwaresolutions_short}} console.
 * When you delete the Veeam 11 service, the VMware Solutions automation deletes only the single Veeam VM, VSI, or bare metal server that was deployed and the dedicated private subnet that was ordered for it. If you scaled out the Veeam VM or VSI into multiple ones, those additional VMs or VSIs are not deleted.
 * If you order iSCSI storage, that storage is deleted when you delete the Veeam 11 service. Therefore, any data within that storage is lost.
 
@@ -178,7 +178,7 @@ Review the following considerations before you delete the service:
 
 * [Ordering Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering)
 * [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
-* [Ordering Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
+* [Ordering Veeam standalone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
 * [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring IBM Cloud Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-17"
+lastupdated: "2022-10-05"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -27,7 +27,7 @@ The FortiGate® Virtual Appliance service deploys a pair of FortiGate Virtual Ap
 
 {{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months at no cost for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
 
-The current FortiGate Virtual Appliance version that is installed is 7.0.5.
+The current FortiGate Virtual Appliance version that is installed is 7.2.1.
 {: note}
 
 ## Technical specifications for FortiGate Virtual Appliance
@@ -59,8 +59,11 @@ Access to the FortiGate console is provided through a private management network
 
 License fees for each VM are applied to each billing cycle. The fees depend on the selected deployment size and monthly subscription license model.
 
-You cannot change the licensing level after service installation. To change the licensing level, you must delete the existing service and reinstall the service by using a different licensing option.
-{: important}
+#### Notes
+{: #fortinetvm_considerations-notes}
+
+* You cannot change the licensing level after service installation. To change the licensing level, you must delete the existing service and reinstall the service by using a different licensing option.
+* If you receive expiration notifications about the FortiGate Virtual Appliance service license, you can ignore them. The license is automatically renewed annually, before it expires.
 
 ## Uplink speeds, deployment sizes, and CPU models
 {: #fortinetvm_considerations-installvalues}

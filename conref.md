@@ -3,7 +3,7 @@
 copyright:
   years: 2022
 
-lastupdated: "2022-08-16"
+lastupdated: "2022-10-24"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -316,6 +316,7 @@ CONTENT:
 
 You can also specify an instance name that meets the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* No consecutive dash characters are allowed.
 * The instance name must start with a lowercase alphabetic character.
 * The instance name must end with a lowercase alphabetic or numeric character.
 * The maximum length of the instance name is 10 characters.

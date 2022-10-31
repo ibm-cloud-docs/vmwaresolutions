@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-10-10"
 
 subcollection: vmwaresolutions
 
@@ -24,13 +24,13 @@ You can expand the capacity of your VMware vCenter Server® multizone instances 
 ## Procedure to add ESXi servers to vCenter Server multizone instances
 {: #mcv_addingremovingservers-adding-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** > **vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance for which you want to expand capacity.
 3. Click **Infrastructure** on the left navigation pane.
 4. In the applicable cluster table, click the cluster to which you want to add ESXi servers.
 5. In the **ESXi servers** section, click **Add**.
 6. In the **ESXi server** window, enter the number of servers that you want to add.
-7. Optionally, select the checkbox to add servers during maintenance mode. The checkbox is selected by default.
+7. Optionally, select the checkbox to add servers during maintenance mode.
 
    When you provision the new ESXi server, virtual machines (VMs) are immediately migrated to the new servers if you do not select the **Maintenance Mode** checkbox. You do not receive a confirmation message before the migration begins.
    {: important}

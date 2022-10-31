@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-16"
+lastupdated: "2022-10-14"
 
 keywords: vSphere, vSphere component, tech specs vSphere
 
@@ -40,7 +40,7 @@ The availability and pricing of standardized hardware configurations might vary 
 Select licenses (IBM-provided or BYOL) for the following VMware components:
 * VMware vSphere Enterprise Plus 7.0u3
 
-   New instances are provisioned with VMware vSphere 7.0u3 or later. To add capacity to an existing vSphere 6.7 cluster, click the Scale Existing tab.
+   New instances are provisioned with VMware vSphere 7.0u3 or later. To add capacity to an existing vSphere 6.7 cluster, click the **Scale Existing** tab.
    {: note}
 
 * The following VMware components are optional:
@@ -108,10 +108,10 @@ One {{site.data.keyword.cloud_notm}} bare metal server with the networking confi
 ### VMware components for expansion nodes
 {: #vs_vsphereclusteroverview-expansion-node-specs-vmware-components}
 
-* One {{site.data.keyword.cloud_notm}} bare metal server with VMware vSphere Enterprise Plus 7.0 or 6.7u3 for V4.7 and earlier.  
+* One {{site.data.keyword.cloud_notm}} bare metal server with VMware vSphere Enterprise Plus 7.0 or 6.7u3 for V4.7 and earlier.
 * Optional VMware components presented in [Technical specifications for VMware vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview#vs_vsphereclusteroverview-specs).
 
-You must manage the ESXi servers, optional VMware components, and extra hardware that is ordered and delivered to your {{site.data.keyword.cloud_notm}} account only from the {{site.data.keyword.slportal}}. After you create a new cluster in the {{site.data.keyword.vmwaresolutions_short}} console, you can return to the console and use the saved information to scale the new cluster. For more information, see [Scaling existing vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_scalingexistingclusters).
+You must manage the ESXi servers, optional VMware components, and extra hardware that is ordered and delivered to your {{site.data.keyword.cloud_notm}} account only from the {{site.data.keyword.slportal}}. After you create a new cluster in the {{site.data.keyword.vmwaresolutions_short}} console, you can return to the console, and use the saved information to scale the new cluster. For more information, see [Scaling existing vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_scalingexistingclusters).
 {: important}
 
 ## Related links

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-20"
 
 keywords: vCenter Server Hybridity add host, add server vCenter Server Hybridity, remove host vCenter Server Hybridity
 
@@ -42,7 +42,7 @@ Because your initial cluster has vSAN™ storage, adding one or more ESXi server
 ## Procedure to add ESXi servers
 {: #vc_hybrid_addingremovingservers-adding-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance for which you want to expand capacity.
 3. Click **Infrastructure** on the left navigation pane.
 4. In the **Clusters** table, click the cluster to which you want to add ESXi servers.
@@ -86,7 +86,7 @@ If you are adding ESXi servers during maintenance mode, virtual machines (VMs) a
 ## Procedure to remove ESXi servers
 {: #vc_hybrid_addingremovingservers-removing-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance for which you want to contract capacity.
 3. Click **Infrastructure** on the left navigation pane.
 4. In the **CLUSTERS** table, click the cluster from which you want to remove ESXi servers.

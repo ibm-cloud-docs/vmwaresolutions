@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-28"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -17,15 +17,15 @@ subcollection: vmwaresolutions
 # Ports that are used for deployment and Day 2 operations
 {: #vmwaresol_ports-deploy-day2ops}
 
-The following table provides information about the ports for deployment and Day 2 operations.
+The following table provides information about the ports for deployment and Day 2 operations. For more information about the ports that are used by the add-on services, see [Ports for services](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-services).
 
 Review the following information about the ports described in the [table](#vmwaresol_ports-deploy-day2ops-table):
 
-* Windows® Active Directory™ has two options: single Windows Virtual Service Instance (VSI) and two HA dedicated Windows Server virtual machines (VMs). For single Windows VSI, the VSI is in the primary subnet. For Windows server VMs, the VSIs are in the infrastructure VMs subnet.
-* {{site.data.keyword.cloud}} infrastructure services network subnets vary from data center to data center. For more information, see [{{site.data.keyword.cloud_notm}} IP ranges](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#ibm-cloud-ip-ranges).
+* Windows® Active Directory™ has two options: single Windows Virtual Service Instance (VSI) and two HA dedicated Windows Server virtual machines (VMs). For single Windows VSI, the VSI is in the primary subnet. For Windows server VMs, the VSIs are in the [infrastructure VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vlans-subnets) subnet.
+* {{site.data.keyword.cloud}} infrastructure services network subnets vary from data center to data center. For more information, see [{{site.data.keyword.cloud_notm}} IP ranges](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges).
 * Some Windows resources in your environment might use classic infrastructure services in Dallas.
 * {{site.data.keyword.cloud_notm}} endpoint service network includes 166.8.0.0/14.
-* IBM CloudBuilder and IBM CloudDriver are ephemeral VSIs that are deployed by {{site.data.keyword.cloud_notm}} automation to configure your instance. While the CloudDriver is being bootstrapped it uses an ephemeral primary IP address. However, after bootstrapping it uses a predictable portable IP address that you can find listed on your instance details page.
+* IBM CloudBuilder and IBM CloudDriver are ephemeral VSIs that are deployed by {{site.data.keyword.cloud_notm}} automation to configure your instance. While the CloudDriver is being bootstrapped, it uses an ephemeral primary IP address. However, after bootstrapping it uses a predictable portable IP address that you can find listed on your instance details page.
 * Infrastructure VMs refer to the private portable subnet allocated for use by vCenter, NSX manager, the cloud driver
 * Depending on your mode of deployment, your Windows Active Directory domain controllers can be VSIs on a primary subnet, or VMs on a portable subnet.
 

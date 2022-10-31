@@ -198,14 +198,52 @@ toc:
               - vcenter/vrw-orderinginstance-services.md
               - vcenter/vrw-orderinginstance-summary.md
               - vcenter/vrw-orderinginstance-procedure.md
+              - vcenter/vrw-apply-updates.md
           - vcenter/vrw-addingremovingservers.md
           - vcenter/vrw-addingviewingclusters.md
           - vcenter/vrw-view-delete-instance.md
       - topicgroup:
-          label: IBM Cloud for VMware Cloud Foundation
+          label: Cyber Recovery
           topics:
-          - vpc-vcf/vpc-vcf-ovw.md
-          - vpc-vcf/vpc-vcf-deployment.md
+          - vcenter/cr_overview.md
+          - vcenter/cr_planning.md
+          - topicgroup:
+              label: Ordering Cyber Recovery
+              topics:
+              - vcenter/cr_orderinginstance-reqs.md
+              - vcenter/cr_orderinginstance-serv-prereq.md
+              - vcenter/cr_orderinginstance-inst-configs.md
+              - vcenter/cr_orderinginstance-licensing.md
+              - vcenter/cr_orderinginstance-cluster-order.md
+              - vcenter/cr_orderinginstance-edge.md
+              - vcenter/cr_orderinginstance-firewall-appl.md
+              - vcenter/cr_orderinginstance-network-interface.md
+              - vcenter/cr_orderinginstance-addon-services.md
+              - vcenter/cr_orderinginstance-order-procedure.md
+          - topicgroup:
+              label: Adding, viewing, and deleting clusters
+              topics:
+              - vcenter/cr_addingclusters.md
+              - vcenter/cr_viewingclusters.md
+              - vcenter/cr_deletingclusters.md
+          - topicgroup:
+              label: Expanding and contracting capacity
+              topics:
+              - vcenter/cr_adding-esxi-servers.md
+              - vcenter/cr_removing-esxi-servers.md
+              - vcenter/cr_adding-nfs-storage.md
+              - vcenter/cr_removing-nfs-storage.md
+          - topicgroup:
+              label: Ordering, viewing, and deleting services
+              topics:
+              - vcenter/cr_ordering-services.md
+              - vcenter/cr_viewing-services.md
+              - vcenter/cr_deleting-services.md
+          - topicgroup:
+              label: Viewing and deleting instances
+              topics:
+              - vcenter/cr_viewing-cr-instances.md
+              - vcenter/cr_deleting-cr-instances.md
       - topicgroup:
           label: Add-on services
           topics:
@@ -303,7 +341,6 @@ toc:
           topics:
           - vmonic/data-security.md
           - vmonic/at-events.md
-          - vmonic/manage-scc.md
           - vmonic/ha-dr.md
       - topicgroup:
           label: Deprecated offerings
@@ -463,13 +500,6 @@ toc:
               - archiref/vrw/vrw-dualregion-overview.md
               - archiref/vrw/vrw-dualregion-design.md
           - topicgroup:
-              label: NSX Edge Services Gateway solution architecture
-              topics:
-              - archiref/nsx/nsx_overview.md
-              - archiref/nsx/nsx_design.md
-              - archiref/nsx/networking_services.md
-              - archiref/nsx/multi_site.md
-          - topicgroup:
               label: Attached storage for vCenter Server architecture
               topics:
               - archiref/attached-storage/storage-benefits.md
@@ -544,16 +574,7 @@ toc:
               - archiref/kmip/overview.md
               - archiref/kmip/design.md
               - archiref/kmip/implementation.md
-          - topicgroup:
-              label: Entrust DataControl with IBM Cloud Hyper Protect Crypto Services architecture
-              topics:
-              - archiref/htdc-hpcs/htdc-hpcs-encryption-overview.md
-              - archiref/htdc-hpcs/htdc-hpcs-encryption-options.md
-              - archiref/htdc-hpcs/htdc-hpcs-hpcs-overview.md
-              - archiref/htdc-hpcs/htdc-hpcs-system-context.md
-              - archiref/htdc-hpcs/htdc-hpcs-reference-architecture.md
-              - archiref/htdc-hpcs/htdc-hpcs-detail.md
-              - archiref/htdc-hpcs/htdc-hpcs-deployment.md
+              - archiref/kmip/hadr.md
 
       - topicgroup:
           label: Solution architectures on VPC

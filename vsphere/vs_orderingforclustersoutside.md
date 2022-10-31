@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-16"
+lastupdated: "2022-10-10"
 
 keywords: vSphere scale cluster, scale vSphere, external vSphere cluster
 
@@ -47,7 +47,7 @@ Ensure that you complete the following tasks:
 
 The deployment of the cluster starts automatically, and you receive an email confirmation that the order is being processed. When the cluster is ready to use, you are notified by email.
 
-The vSphere clusters are not displayed on the **Resources** page, together with the VMware vCenter Server® instances.
+The vSphere clusters, unlike the VMware vCenter Server® instances, are not displayed on the **Resources** pages.
 {: note}
 
 ## Related links

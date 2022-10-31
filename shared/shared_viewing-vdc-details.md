@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-08-29"
+lastupdated: "2022-10-07"
 
 keywords: manage shared resources, view shared virtual data centers details
 
@@ -22,7 +22,7 @@ You can view property details for {{site.data.keyword.vmwaresolutions_full}} Sha
 ## Procedure to view site details
 {: #shared_viewing-site-details-procedure}
 
-1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > VMware Shared** from the left navigation pane.
 2. In the **VMware Solutions Shared** table, click the site.
 3. Click **Summary** from the left navigation pane to view the property details for site.
 

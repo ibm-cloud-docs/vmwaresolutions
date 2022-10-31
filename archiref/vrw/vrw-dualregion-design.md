@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-27"
 
 subcollection: vmwaresolutions
 
@@ -251,5 +251,5 @@ For more information, see:
 {: #vrw-dualregion-design-related}
 
 * [Caveonix integration](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-caveonix)
-* [Veeam v10a overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam on IBM Cloud overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Veeam Backup & Replication best practices](https://bp.veeam.com/vbr/){: external}

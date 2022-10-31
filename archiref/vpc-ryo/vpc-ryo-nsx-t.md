@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-17"
+lastupdated: "2022-10-27"
 
 subcollection: vmwaresolutions
 
@@ -189,7 +189,7 @@ An uplink profile defines policies for the links from hypervisor hosts to NSX-T 
 | Uplink profile name | VLAN | Teaming policy | Active uplinks | Standby links | MTU |
 |:------------------- |:---- |:-------------- |:-------------- |:------------- |:--- |
 | `vpc-esxi-vpc-profile` | 400 | Failover order | uplink-1 | N/A | N/A (Managed by vCenter) |
-| `vpc-edge-vpc-profile` | default | Failover order | uplink-1 | N/A | 1700 |
+| `vpc-edge-vpc-profile` | default | Failover order | uplink-1 | N/A | 9000 |
 {: caption="Table 9. NSX-T uplink profiles" caption-side="bottom"}
 
 The VLAN ID used for Host TEPs is defined here. If you use a different VLAN ID, change the profile.

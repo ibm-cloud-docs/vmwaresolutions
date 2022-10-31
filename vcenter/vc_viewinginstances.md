@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-15"
+lastupdated: "2022-10-20"
 
 keywords: view vCenter Server, view instance, view instance details, vmware multizone, vcenter server multizone, view vCenter Server multizone, view multizone, view multizone instance details
 
@@ -24,7 +24,7 @@ View the summary and detailed information of the VMware vCenter Server® instanc
 
 To view a summary of all the vCenter Server instances that are provisioned for a user account, complete the following steps:
 
-1. In the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** from the left navigation pane.
+1. In the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. From the console banner, click the **Avatar** icon ![Avatar icon](../../icons/i-avatar-icon.svg "Avatar"), and then click the **Account** field. Select the user account that you want to check instances for.
 3. In the **vCenter Server instances** table, view the list of instances that are provisioned in the selected user account.
 

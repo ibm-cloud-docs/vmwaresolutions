@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-07-15"
+lastupdated: "2022-10-24"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -26,6 +26,7 @@ The host name is used for all {{site.data.keyword.cloud}} bare metal server orde
 
 The host name prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* No consecutive dash characters are allowed.
 * The host name prefix must start with a lowercase alphabetic character.
 * The host name prefix must end with a lowercase alphabetic or numeric character.
 * The maximum length of the host name prefix is 10 characters.
@@ -36,11 +37,21 @@ The host name prefix must meet the following requirements:
 The domain name is used for all {{site.data.keyword.cloud_notm}} bare metal servers and must meet the following requirements:
 * For vSphere 7.0 instances, the domain name must consist of three or more strings that are separated by a period (.)
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* No consecutive dash characters are allowed.
 * Each string must start with a lowercase alphabetic character and end with a lowercase alphabetic or numeric character.
 * The last string can contain only lowercase alphabetic characters.
 * The length of the last string must be in the range 2 - 24 characters.
-* The length of the other strings must be in the range 1 - 63 characters.
-* The maximum length of the domain name is 189 characters.
+* The maximum length of the domain name is 50 characters.
+
+## Network diagram
+{: #vs_orderinginstances-network-diagram}
+
+You can customize the hostnames prefix individually by selecting **Configure hostnames individually**. It must meet the following requirements:
+* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* No consecutive dash characters are allowed.
+* The hostname prefix must start with a lowercase alphabetic character.
+* The hostname prefix must end with a lowercase alphabetic or numeric character.
+* The maximum length of the hostname prefix is 13 characters.
 
 ## Networking type
 {: #vs_orderinginstances-public-private-network}

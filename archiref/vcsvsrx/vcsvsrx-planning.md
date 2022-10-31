@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-24"
 
 subcollection: vmwaresolutions
 
@@ -48,10 +48,10 @@ The following figure represents the typical vSRX deployment.
 The deployment of the VMware vCenter Server® instance is required before the vSRX edge gateway appliance order is placed.
 {: note}
 
-## Understanding the default vSRX configuration
+## Understanding the default vSRX configuration for IBM Cloud for VMware Solutions
 {: #vcsvsrx-planning-default-vsrx}
 
-Understanding the default configuration helps both an understanding of the vSRX HA Chassis Cluster and {{site.data.keyword.cloud_notm}} underlay networking. The default configuration is the base upon which all further integration is done.
+Understanding the default configuration helps both an understanding of the vSRX HA Chassis Cluster and {{site.data.keyword.cloud_notm}} underlay networking. The default configuration is the base upon which all further integration is done. For more information about extra configuration options that you might want to include and as an example, see The IBM Cloud IaaS vSRX default configuration. This information does not illustrate your configuration. Your own configuration is different.
 
 For more information, see [Understanding the vSRX Default Configuration](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration#understanding-the-vsrx-default-configuration) and [IBM Cloud IaaS vSRX default configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vcsvsrx-iaas-def-config).
 
@@ -77,13 +77,16 @@ The current vSRX offering has limited hardware options for deployment. Since the
 ### Network design
 {: #vcsvsrx-planning-network-design}
 
-The vCenter Server offering is designed to manage east-west network traffic at the SDN layer by using NSX distributed logical routers (DLR) and virtual tunnel endpoints (VTEP) on each ESXi host and north-south traffic through NSX edge services gateways (ESG). The vSRX is not a replacement for the DLR but can either assist or potentially replace the ESG firewall services in managing the north-south traffic flows.
+The vCenter Server offering is designed to manage east-west network traffic at the SDN layer by using NSX Tier-1 and virtual tunnel endpoints (VTEP) on each ESXi host and north-south traffic through NSX Tier-0. The vSRX is not a replacement for the NSX-T Tier0/1 edge clusters but can either assist or potentially replace the Tier-0 firewall services in managing the north-south traffic flows.
 
 The required network design changes are modest and include all customer VM traffic no matter the destination, platform management traffic, direct-link traffic, where applicable, and internet bound traffic. Traffic that is explicitly excluded includes VTEP traffic, storage traffic, and vMotion traffic.
 
 NSX can be extended from the compute cluster to the edge services cluster. Or BGP over an IPsec VPN can be used to enable connectivity between the edge and compute clusters. When the traffic that flows between the vCenter Server compute cluster and the edge services cluster is not in conflict with the {{site.data.keyword.cloud_notm}} infrastructure assigned subnets, the use of a local VLAN and subnet is suitable as a transit link.
 
 BGP over IPsec VPN is the preferred method of connecting to a customer on-premises data center whether the connection traverses the internet or passes between the customer and {{site.data.keyword.cloud_notm}} through one of the {{site.data.keyword.cloud_notm}} infrastructure direct-link offerings.
+
+It is recommened that you review the architecture patterns in the [Architecture pattern for using edge services cluster with NSX-T](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-edge-services-cluster).
+
 
 #### Interface mapping for vSRX on VMware
 {: #vcsvsrx-planning-interface-map}

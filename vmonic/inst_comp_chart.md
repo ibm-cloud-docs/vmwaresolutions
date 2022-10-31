@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-19"
+lastupdated: "2022-10-16"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -55,7 +55,7 @@ Review the following table to understand the differences in feature support for 
 [^services]: Not all add-on services are supported for NSX-T instances
 
 ## vCenter Server vs VMware Regulated Workloads
-{: #inst_comp_chart-vcs-scb-vrw}
+{: #inst_comp_chart-vcs-vrw}
 
 Review the following table to understand the differences in feature support for vCenter Server instances and VMware Regulated Workloads.
 
@@ -84,7 +84,7 @@ Review the following table to understand the differences in feature support for 
 | Financial Services Cloud with policy framework | No | Yes |
 {: caption="Table 2. Supported features for vCenter Server instances and VMware Regulated Workloads" caption-side="bottom"}
 
-[^nsxedi]: NSX-T is not supported for new deployments of vCenter Server instances with vSphere 6.7
+[^nsxedi]: NSX-T is not supported for new deployments of vCenter Server instances with vSphere 6.7.
 [^nsxv]: Existing instances only.
 
 ## Related links

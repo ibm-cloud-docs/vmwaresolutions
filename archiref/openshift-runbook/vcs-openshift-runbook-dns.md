@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-10-10"
 
 subcollection: vmwaresolutions
 
@@ -20,10 +20,11 @@ subcollection: vmwaresolutions
 {: #openshift-runbook-runbook-dns-creds}
 
 1. Log in to [{{site.data.keyword.cloud}}](https://cloud.ibm.com/login){: external}.
-2. From left menu, select **VMware**, then **Resources**.
-3. Select your deployed instance.
-4. Collect the AD/DNS IP and remote desktop credentials.
-5. From a jump server or by using SSL VPN, remote desktop to the AD/DNS server.
+2. From left menu, select **VMware**. 
+3. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **vCenter Server** from the left navigation pane.
+4. Select your deployed instance.
+5. Collect the AD/DNS IP and remote desktop credentials.
+6. From a jump server or by using SSL VPN, remote desktop to the AD/DNS server.
 
 ## Creating DNS records
 {: #openshift-runbook-runbook-dns-records}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-10-20"
 
 keywords: vCenter Server Hybridity delete instance, delete vCenter Server Hybridity, remove vCenter Server Hybridity
 
@@ -39,7 +39,7 @@ You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastruct
 ## Procedure to delete instances from the Resources page
 {: #vc_hybrid_deletinginstance-procedure1}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, find the instance to delete.
 3. In the **Actions** column, click the Delete icon.
    The status of the instance is changed to **Deleting**. When the instance is deleted successfully, the components of the instance are released, and the status of the instance is changed to **Deleted**.
@@ -50,7 +50,7 @@ You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastruct
 ## Procedure to delete instances from the instance details page
 {: #vc_hybrid_deletinginstance-procedure2}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance to delete.
 3. Click the overflow menu icon next to **vCenter console** and click **Delete instance**.
    The status of the instance is changed to **Deleting**. When the instance is deleted successfully, the components of the instance are released, and the status of the instance is changed to **Deleted**.

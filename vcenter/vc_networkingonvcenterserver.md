@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-10-26"
 
 keywords: vCenter Server networking, networking components, networking vCenter
 
@@ -69,8 +69,6 @@ Review the following considerations before you attempt to change the passwords f
 ## Related links
 {: #vc_networkingonvcenterserver-related}
 
-* [Overview of NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.2/com.vmware.nsx-cross-vcenter-install.doc/GUID-10944155-28FF-46AA-AF56-7357E2F20AF4.html){: external}
-* [NSX Edge Services Gateway](https://www.ibm.com/cloud/garage/architectures/implementation/virtualization_nsx){: external}
-* [Managing NAT Rules](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.2/com.vmware.nsx.admin.doc/GUID-5896D8CF-20E0-4691-A9EB-83AFD9D36AFD.html){: external}
+* [Overview of NSX-T Data Center](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/installation/GUID-10B1A61D-4DF2-481E-A93E-C694726393F9.html){: external}
 * [Resetting the passwords of an appliance](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-8816B842-2EC4-40A8-A618-F68DB29FABD2.html){: external}
-* [Change the CLI user's password](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/2.0/com.vmware.nsxt.admin.doc/GUID-DB31B304-66A5-4516-9E55-2712D12B4F27.html){: external}
+* [Manage local user’s password or name using the CLI](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-DB31B304-66A5-4516-9E55-2712D12B4F27.html){: external}

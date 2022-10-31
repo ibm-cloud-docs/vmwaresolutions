@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-09-20"
+lastupdated: "2022-09-28"
 
 keywords: planning vSphere, data center, vSphere data centers
 
@@ -66,15 +66,15 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | NA East | TOR04 | 01 | Cascade Lake |
 | NA East | TOR05 | 01 | Cascade Lake |
 | NA East | WDC04 | 01-05 | Skylake, Cascade Lake, SAP-certified |
-| NA East | WDC 06 | 01 | Skylake, Cascade Lake, SAP-certified |
-| NA East | WDC 07 | 01 | Skylake, Cascade Lake, SAP-certified |
+| NA East | WDC06 | 01 | Skylake, Cascade Lake, SAP-certified |
+| NA East | WDC07 | 01 | Skylake, Cascade Lake, SAP-certified |
 | NA South | DAL09 | 01-06 | Skylake, Cascade Lake, SAP-certified |
 | NA South | DAL10 | 01-04 | Skylake, Cascade Lake, SAP-certified 
 | NA South | DAL12 | 01-02 | Skylake, Cascade Lake, SAP-certified |
 | NA South | DAL13 |  01-03 | Skylake, Cascade Lake, SAP-certified |
 | NA South | MEX01 | 01 | Skylake, Cascade Lake, SAP-certified[^sap-mex01] |
-| NA West | SJC03 |  | Skylake, Cascade Lake, SAP-certified |
-| NA West | SJC04 |  | Skylake, Cascade Lake, SAP-certified |
+| NA West | SJC03 | 01-02 | Skylake, Cascade Lake, SAP-certified |
+| NA West | SJC04 | 01 | Skylake, Cascade Lake, SAP-certified |
 | South America | SAO01 | 01 | Skylake, Cascade Lake, SAP-certified |
 | South America | SAO04 | 01 | Cascade Lake, SAP-certified |
 | South America | SAO05 | 01 | Cascade Lake, SAP-certified |

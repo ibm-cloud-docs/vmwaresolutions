@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-25"
+lastupdated: "2022-10-16"
 
 keywords: vCenter Server, vCenter Server architecture, tech specs vCenter Server
 
@@ -148,7 +148,7 @@ The vSAN option offers customized configurations, with various options for disk 
    3.8 TB SSD (solid-state disk) drives are supported when they are made generally available in a data center.
    {: note}
 
-* High Performance with Intel Optane - this option provides two extra capacity disk bays for a total of 10 capacity disks. It's available only for vSphere 6 instance.
+* High Performance with Intel Optane - this option provides two extra capacity disk bays for a total of 10 capacity disks. It's available only for vSphere 6 instance.
 
 #### NFS storage
 {: #vc_vcenterserveroverview-nfs-storage}

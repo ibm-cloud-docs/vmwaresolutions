@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-08-16"
+lastupdated: "2022-10-20"
 
 keywords: vCenter Server add NFS storage
 
@@ -34,7 +34,7 @@ You can expand the capacity of your VMware vCenter Server® instance according t
 ## Procedure to add NFS storage to vCenter Server instances
 {: #vc_addingnfs-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance for which you want to expand capacity.
 3. Click **Infrastructure** on the left navigation pane.
 4. In the **Clusters** table, click the cluster to which you want to add NFS storage.

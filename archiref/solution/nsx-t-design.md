@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-27"
 
 subcollection: vmwaresolutions
 
@@ -169,12 +169,12 @@ An uplink profile defines policies for the links from hypervisor hosts to NSX-T 
 | `esxi-private-profile` | default | Default - Loadbalance source | uplink-1  \n uplink-2 |   | N/A (managed by vCenter) |
 | `esxi-private-profile` | default | TEP - Failover order | uplink-1 | uplink-2 | N/A (managed by vCenter) |
 | `esxi-public-profile`  | default | Default - Loadbalance source | uplink-1  \n uplink-2 |   | N/A (managed by vCenter) |
-| `edge-private-profile` | default | N/A | uplink-1 |  | 1700 |
+| `edge-private-profile` | default | N/A | uplink-1 |  | 9000 |
 | `edge-public-profile`  | default | N/A | uplink-1 |  | 1500 |
-| `edge-tep-profile`     | default | Failover order | uplink-1 |   | 1700 |
-| `mgmt-edge-private-profile` | default | N/A | uplink-1 |  | 1700 |
+| `edge-tep-profile`     | default | Failover order | uplink-1 |   | 9000 |
+| `mgmt-edge-private-profile` | default | N/A | uplink-1 |  | 9000 |
 | `mgmt-edge-public-profile`  | default | N/A | uplink-1 |  | 1500 |
-| `mgmt-edge-tep-profile`     | default | Failover order | uplink-1 |   | 1700 |
+| `mgmt-edge-tep-profile`     | default | Failover order | uplink-1 |   | 9000 |
 {: caption="Table 9. NSX-T uplink profiles" caption-side="bottom"}
 
 ## VNI pools

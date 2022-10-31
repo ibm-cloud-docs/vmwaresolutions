@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-22"
+lastupdated: "2022-10-10"
 
 keywords: FAQ, license, BYOL
 
@@ -130,7 +130,7 @@ Yes. When you're adding more ESXi servers to a deployed instance, the capacity o
 {: faq}
 
 To find the number of CPUs available in your license key, complete the following steps:
-1. In the VMware Solutions console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **vCenter Server** from the left navigation pane.
 2. Locate and click the instance.
 3. On the **Infrastructure** tab, click the cluster that you want to check the license capacity for.
    The number of available CPUs is listed in the **User-provided license** table.

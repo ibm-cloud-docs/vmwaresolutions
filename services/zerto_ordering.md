@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-14"
 
 keywords: Zerto, Zerto replication billing, order Zerto
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 You can include the Zerto service with a new VMware vCenter Server® instance or add the service to your existing vCenter Server instance.
 
-The latest version of Zerto (9.5u1) no longer supports vSphere 6.5 and 6.7. However, you can still order stand-alone licenses for existing instances with older versions through our portal.
+Zerto v9.5u1 no longer supports vSphere 6.5 and 6.7. However, you can still order stand-alone licenses for existing vSphere 6.x instances.
 {: note}
 
 ## Billing for Zerto replication
@@ -52,9 +52,10 @@ On the {{site.data.keyword.vmwaresolutions_short}} console, you are prompted to 
 ## Ordering Zerto for a new instance
 {: #zerto_ordering-new}
 
-When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Zerto is in the Business continuity and migration category. Open the category, locate Zerto, and toggle its switch on.
-
-Select **Edit** to review and specify the information. If you enter or change information, click **Save**.
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Zerto is in the Business continuity and migration category. 
+2. Open the category, locate Zerto, and toggle its switch on.
+3. Select **Edit** to review and specify the information. 
+4. If you enter or change information, click **Save**.
 
 ## Ordering Zerto for an existing instance
 {: #zerto_ordering-existing}

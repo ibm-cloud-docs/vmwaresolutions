@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-09-28"
+lastupdated: "2022-10-27"
 
 subcollection: vmwaresolutions
 
@@ -55,7 +55,7 @@ A dedicated VMkernel adapter is created for every VMware System Traffic Type in 
 
 The following diagram presents how PCI and VLAN interfaces, Distributed Virtual Switch, and Distributed Port Groups are used with NSX-T based VCF deployment architecture.
 
-![{{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX-T](../../images/vcf-on-vpc-bms-interfaces.svg "{{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX-T"){: caption="Figure 2. {{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX-T" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX-T](../../images/vcf-on-vpc-bms-interfaces.svg "{{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX-T"){: caption="Figure 1. {{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX-T" caption-side="bottom"}
 
 In VCF deployments in {{site.data.keyword.vpc_short}}, each {{site.data.keyword.cloud_notm}} bare metal server is connected to a VPC subnet by using two PCI interfaces. These interfaces are provisioned with an IP address, but this IP address is not used at all in VCF. A new management VMkernel adapter `vmk1` is created when the host starts, by using a script passed with user data. For the other System Traffic Types in VMware, a VLAN interface is used by Cloud Builder and SDDC manager. However, these VLAN interfaces must be created with {{site.data.keyword.cloud_notm}} UI, CLI, API, or terraform before you start deploying VCF.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-05-27"
+lastupdated: "2022-10-20"
 
 keywords: vCenter Server delete instance, delete vCenter Server, remove vCenter Server, vmware multizone, vcenter server multizone, delete vCenter Server multizone
 
@@ -36,7 +36,7 @@ You can review the next account invoice to confirm that you are no longer billed
 ## Procedure to delete vCenter Server instances from the Resources page
 {: #vc_deletinginstance-procedure1}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, find the instance to delete.
 3. Click the vertical overflow menu next to the **Status** column, and then click **Delete instance**.
    The status of the instance is changed to **Deleting**. When the instance is deleted successfully, the components of the instance are released, and the status of the instance is changed to **Deleted**.
@@ -47,7 +47,7 @@ You can review the next account invoice to confirm that you are no longer billed
 ## Procedure to delete vCenter Server instances from the instance details page
 {: #vc_deletinginstance-procedure2}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance to delete.
 3. Click **Actions** next to **vCenter console**, and then click **Delete instance**.
    The status of the instance is changed to **Deleting**. When the instance is deleted successfully, the components of the instance are released, and the status of the instance is changed to **Deleted**.

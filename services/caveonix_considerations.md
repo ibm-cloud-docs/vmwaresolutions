@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-20"
+lastupdated: "2022-10-10"
 
 keywords: Caveonix, Caveonix RiskForesight, tech specs Caveonix
 
@@ -23,7 +23,7 @@ The Caveonix RiskForesight™ service can help to manage cyberrisk and complianc
 
 {{site.data.content.para-promotion-services}}
 
-The current Caveonix RiskForesight version that is installed is 3.1.0.
+The current Caveonix RiskForesight version that is installed is 4.0.
 {: note}
 
 A Caveonix RiskForesight license is valid for five years. Ordering Caveonix RiskForesight for VMware® vCenter Server instances, VMware Regulated Workloads, and Security and Compliance Readiness Bundle instances differs. For more information, see [Licenses and fees](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations#caveonix_considerations-tech-specs-license-fee).
@@ -70,7 +70,7 @@ You can still order Caveonix RiskForesight licenses for other types of instances
 
 Review the following considerations before you delete the service:
 
-* Deleting Caveonix RiskForesight automatically deletes the initial Caveonix RiskForesight license originally that is associated with the service. However, you need to manually delete any other unwanted licenses from the **Caveonix RiskForesight Licenses** table on the Resources page in the VMware Solutions console.
+* Deleting Caveonix RiskForesight automatically deletes the initial Caveonix RiskForesight license originally that is associated with the service. However, you need to manually delete any other unwanted licenses from the **Caveonix RiskForesight licenses** table on the **Licenses** page in the {{site.data.keyword.vmwaresolutions_full}} console.
 * When you delete the service, the {{site.data.keyword.vmwaresolutions_short}} automation deletes only the single all-in-one Caveonix virtual machine (VM) that was deployed and the dedicated private subnet that was ordered for it. Therefore,
    * If you scaled out the Caveonix VM into multiple VMs, those additional VMs are not deleted.
    * If you used the IP addresses of the dedicated private subnet on more VMs, those VMs must be assigned new IP addresses to continue to function.

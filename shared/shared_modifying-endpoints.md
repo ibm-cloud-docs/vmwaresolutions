@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-10-17"
 
 keywords: VMware Solutions Shared modify private network endpoint
 
@@ -17,16 +17,27 @@ subcollection: vmwaresolutions
 # Modifying a private network endpoint for a virtual data center
 {: #shared_modifying-endpoints}
 
-You can modify a private network endpoint for a virtual data center.
+You can add or remove allow listed IP addresses or subnets for a private network endpoint.
 
-## Procedure to modify a private network endpoint for a virtual data center
-{: #shared_modifying-endpoints-procedure}
+## Procedure to add an IP address or subnet for a private network endpoint
+{: #shared_modifying-endpoints-add}
 
-You must open an {{site.data.keyword.IBM}} Support ticket to modify or adjust allow listed IP addresses or subnets. Provide the following details when you contact IBM Support:
-* The IP addresses and subnets that you want to add or delete
-* The virtual data center ID
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > VMware Shared** from the left navigation pane.
+2. In the **VMware Solutions Shared** table, expand the site and click a virtual data center name.
+3. Click the **Services** tab from the left navigation pane.
+4. From the **Private network endpoint** details pane, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") next to **Allow listed IPs and subnets**.
+5. Enter the IP address in the **New IP** field and click **Add**.
+6. When all modifications are complete, click **Update**.
 
-For more information about submitting an IBM Support ticket, see [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+## Procedure to delete an IP address or subnet from a private network endpoint
+{: #shared_modifying-endpoints-delete}
+
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > VMware Shared** from the left navigation pane.
+2. In the **VMware Solutions Shared** table, expand the site and click a virtual data center name.
+3. Click the **Services** tab from the left navigation pane.
+4. From the **Private network endpoint** details pane, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") next to **Allow listed IPs and subnets**.
+5. Locate the IP address that you want to delete and click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete").
+6. When all modifications are complete, click **Update**.
 
 ## Related links
 {: #shared_modifying-endpoints-related}

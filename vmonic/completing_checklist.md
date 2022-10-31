@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-10-25"
 
 keywords: ordering prerequisites, before you order, pre-order checklist, before first order
 
@@ -26,10 +26,10 @@ When you order your instance for the first time, ensure that your environment is
 
 1. [Upgrade your account to a Pay-As-You-Go account](/docs/account?topic=account-upgrading-account#upgrade-paygo).
 2. [Create a classic infrastructure API key](/docs/account?topic=account-classic_keys#create-classic-infrastructure-key).
-3. In the {{site.data.keyword.vmwaresolutions_full}} console, retrieve your API key and username. Click **Settings** from the left navigation pane then, click **Retrieve credentials**.
-4. Review the username and API key that are automatically entered and then click **Save credentials**. If you receive a message that administrator access is required, you can locate an account administrator by using the steps in [Locating an IAM account administrator](/docs/vmwaresolutions?topic=vmwaresolutions-iam_verify_permissions).
-5. Verify or update the [permissions](/docs/vmwaresolutions?topic=vmwaresolutions-cloud-infra-acct-req) for your {{site.data.keyword.cloud_notm}} infrastructure account.
-6. Convert your {{site.data.keyword.cloud_notm}} infrastructure account to a [virtual routing and forwarding (VRF) account](/docs/direct-link?topic=direct-link-what-happens-during-the-account-conversion-process).
+3. Convert your {{site.data.keyword.cloud_notm}} infrastructure account to a [virtual routing and forwarding (VRF) account](/docs/direct-link?topic=direct-link-what-happens-during-the-account-conversion-process).
+4. In the {{site.data.keyword.vmwaresolutions_full}} console, retrieve your API key and username. Click **Settings** from the left navigation pane then, click **Retrieve credentials**.
+5. Review the username and API key that are automatically entered and then click **Save credentials**. If you receive a message that administrator access is required, you can locate an account administrator by using the steps in [Locating an IAM account administrator](/docs/vmwaresolutions?topic=vmwaresolutions-iam_verify_permissions).
+6. Verify or update the [permissions](/docs/vmwaresolutions?topic=vmwaresolutions-cloud-infra-acct-req) for your {{site.data.keyword.cloud_notm}} infrastructure account.
 7. Enable [service endpoints](/docs/account?topic=account-vrf-service-endpoint#service-endpoint) to connect to certain services over the {{site.data.keyword.cloud_notm}} private network rather than the public network.
 
 ## Results

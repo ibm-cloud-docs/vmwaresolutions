@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-10-10"
 
 subcollection: vmwaresolutions
 
@@ -97,7 +97,12 @@ As the customer, you have full access to tailor these settings as needed to appl
 ## vSphere ESXi hosts
 {: #adds-sso-esxi}
 
-Each vSphere ESXi host has its own `root` account and password. To identify this password, go to the VMware Solutions console and then go to **Resources**, click the instance name, go to **Infrastructure**, and click the cluster name. The vSphere ESXi hosts also join AD so that each system administrator can log in with their own account.
+Each vSphere ESXi host has its own `root` account and password. To identify this password, complete the following steps:
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **vCenter Server** from the left navigation pane.
+2. Locate and click the instance.
+3. Go to **Infrastructure** and click the required cluster.
+
+The vSphere ESXi hosts also join AD so that each system administrator can log in with their own account.
 
 ## Related links
 {: #adds-sso-related}

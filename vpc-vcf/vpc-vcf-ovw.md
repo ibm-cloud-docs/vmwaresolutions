@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-22"
+lastupdated: "2022-10-28"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -61,7 +61,6 @@ The following components are the initial ones for {{site.data.keyword.cloud_notm
 ## Related links
 {: #vpc-vcf-ovw-links}
 
-* [{{site.data.keyword.cloud_notm}} for VMware Cloud Foundation cookbook](https://cloud.ibm.com/media/docs/downloads/vmware-cloud-foundation/IBMCloudForVMwareCloudFoundation-Cookbook.pdf)
 * [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
 * [{{site.data.keyword.vpc_short}} design for VMware deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
 * [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)

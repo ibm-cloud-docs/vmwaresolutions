@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-10-26"
 
 keywords: monitor, default dashboard, custom dashboard, virtual data center, platform metrics, monitoring
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Visualizing your virtual data center environment with IBM Cloud Monitoring
 {: #shared-monitor}
 
-{{site.data.keyword.vmwaresolutions_full}} Shared provides an integration with {{site.data.keyword.mon_full}}, which allows you to use a VMware Solutions Shared provided default dashboard to view metrics for your virtual data centers. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
+{{site.data.keyword.vmwaresolutions_short}} Shared provides an integration with {{site.data.keyword.mon_full}}, which allows you to use a VMware Solutions Shared provided default dashboard to view metrics for your virtual data centers. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
 
 Use {{site.data.keyword.mon_short}} dashboards to complete the following tasks.
 
@@ -42,7 +42,7 @@ Review the following requirements for your instance order.
 
 Order the {{site.data.keyword.mon_short}} instance.
 
-1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > VMware Shared** from the left navigation pane.
 2. In the **VMware Solutions Shared** table, select the instance for which you want to collect platform metrics.
 3. From the instance details page, click the **Actions** menu and click **Add monitoring**.
 4. On the {{site.data.keyword.mon_short}} provisioning page, complete the steps in [Provisioning an instance](/docs/monitoring?topic=monitoring-provision) to order a {{site.data.keyword.mon_short}} instance and enable the automatic platform metrics collection.

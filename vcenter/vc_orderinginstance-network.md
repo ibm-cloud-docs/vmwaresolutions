@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-07-08"
+lastupdated: "2022-10-24"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -22,14 +22,12 @@ You must specify the following network interface settings when you order a VMwar
 ## Hostname prefix
 {: #vc_orderinginstance-host-name-prefix}
 
-The hostname prefix must meet the following requirements:
+The hostname prefix applies to all clusters in the instance. It must meet the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* No consecutive dash characters are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
 * The hostname prefix must end with a lowercase alphabetic or numeric character.
 * The maximum length of the hostname prefix is 10 characters.
-
-The hostname prefix applies to all clusters in the instance.
-{: note}
 
 ## Domain name
 {: #vc_orderinginstance-domain-name}
@@ -39,6 +37,7 @@ The root domain name must meet the following requirements:
 * The first string must start with a lowercase alphabetic character.
 * The first string must end with a lowercase alphabetic or numeric character.
 * All strings, except for the last one, can contain only lowercase alphabetic, numeric, and dash (-) characters.
+* No consecutive dash characters are allowed.
 * The last string can contain only lowercase alphabetic characters.
 * The length of the last string must be in the range 2 - 24 characters.
 
@@ -61,6 +60,16 @@ Each license can be assigned only to one single physical server and covers up to
 You have 30 days to activate the VMs.
 
 For more information about ordering Windows Server 2019 licenses, see [Get started with Windows Server 2019](https://docs.microsoft.com/en-us/windows-server/get-started-19/get-started-19){: external}.
+
+## Network diagram
+{: #vc_orderinginstance-network-diagram}
+
+You can customize the hostnames prefix individually by selecting **Configure hostnames individually**. It must meet the following requirements:
+* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* No consecutive dash characters are allowed.
+* The hostname prefix must start with a lowercase alphabetic character.
+* The hostname prefix must end with a lowercase alphabetic or numeric character.
+* The maximum length of the hostname prefix is 13 characters.
 
 ## Related links
 {: #vc_orderinginstance-network-related}

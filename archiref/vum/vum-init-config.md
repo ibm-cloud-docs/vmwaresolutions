@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-10-10"
 
 subcollection: vmwaresolutions
 
@@ -35,7 +35,7 @@ Before you can start this task, collect the information to populate the followin
 
 To find the customer's private portable subnet, complete the following steps:
 
-1. Go to the **Resources** page in the {{site.data.keyword.vmwaresolutions_short}} console.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **vCenter Server** from the left navigation pane.
 2. Select the required **Instance**, select **Infrastructure** and then the required **Cluster**.
 3. Select **Private VLAN** and locate the subnet that is labeled `Private subnet for customer workload edge`.
 4. Select the **subnet** and you are redirected to the subnet details page that displays the IP addresses and their allocations.
@@ -43,14 +43,14 @@ To find the customer's private portable subnet, complete the following steps:
 
 | Parameter | Suggested values | Notes |
 |:--------- |:---------------- |:----- |
-| Proxy CPU | 1 vCPU | Squid has no minimum requirements |
-| Proxy RAM | 2 GB | Squid has no minimum requirements |
-| Proxy Disk | 25 | GB	Squid has no minimum requirements |
+| Proxy CPU | 1 vCPU | Squid has no minimum requirements. |
+| Proxy RAM | 2 GB | Squid has no minimum requirements. |
+| Proxy Disk | 25 | GB	Squid has no minimum requirements. |
 | Hostname | Proxy01 | |
-| Address | Proxy IP | A spare IP address must be used from the Customer, private portable subnet assigned during the provisioning process. Only two IP addresses are reserved on this subnet; one for the BCR and the other for the customer-esg
+| Address | Proxy IP | A spare IP address must be used from the Customer, private portable subnet assigned during the provisioning process. Only two IP addresses are reserved on this subnet; one for the BCR and the other for the customer-esg. |
 | Netmask | 255.255.255.192 |None |
 | Gateway| customer-nsx-edge private uplink IP | This parameter is the default gateway setting for the proxy server, which is the private uplink IP address of customer-nsx-edge. The IP address can be found by reviewing the **Settings** tab for **customer-nsx-edge**. |
-| DNS Server | AD/DNS IP | This IP address can be found on the instance page in the {{site.data.keyword.vmwaresolutions_short}} console, the **Resources** page. |
+| DNS Server | AD/DNS IP | This IP address can be found in the {{site.data.keyword.vmwaresolutions_short}} console by browsing to the **Resources** > **vCenter Server** > Summary page. |
 | BCR IP | BCR IP| On the same page where you selected the proxy IP, note the address that is labeled **Gateway**. This address is the IP address of the {{site.data.keyword.cloud_notm}} Backend Customer Router and is the gateway for 10.0.0.0/8 and 161.26.0.0/16. You use this address later in a static route in the proxy server so that it can reach the VCSA and the AD/DNS server. |
 | NAT IP | customer-nsx-edge public uplink IP | The public address of the customer NSX ESG serves as the public NAT address for the proxy. This IP address can be found by reviewing the **Settings** tab for **customer-nsx-edge**. |
 {: caption="Table 1. Deployment values" caption-side="bottom"}

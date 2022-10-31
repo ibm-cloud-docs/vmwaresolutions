@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-10"
+lastupdated: "2022-09-22"
 
 subcollection: vmwaresolutions
 
@@ -81,5 +81,6 @@ VMware does not delete keys from the KMS when a VM having encrypted disks is rem
 
 * [Solution overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-overview)
 * [Solution design](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-design)
+* [High availability and disaster recovery](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-hadr)
 * [IBM Key Protect](/docs/key-protect?topic=key-protect-getting-started-tutorial)
 * [{{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started#get-started)

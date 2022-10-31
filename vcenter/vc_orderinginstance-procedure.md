@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-07-26"
+lastupdated: "2022-10-16"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -54,11 +54,12 @@ subcollection: vmwaresolutions
     8. Optionally select the **Include a separate, additional workload cluster** checkbox, then specify the settings if you want to include an additional workload cluster with your instance.
        If the consolidated or management cluster and the workload clusters are in the same location, you cannot use existing VLANs. Instead, the workload clusters reuse the VLANs from the management cluster.
        {: note}
-       
+
 8. If you want to order an edge services cluster with Juniper vSRX included, select the **Edge services cluster** checkbox and configure the appropriate settings: the cluster name, the CPU model, RAM size, the number of bare metal servers, the uplink speed, and the private NICs enablement.
 9. Complete the network interface settings.
     1. Enter the hostname prefix and the root domain name for the instance that you are provisioning. For a secondary instance, the domain name is automatically completed.
     2. Specify the DNS configuration.
+    3. If you want to customize the hostnames prefix individually, select **Configure hostnames individually**.
 10. Under **Recommended services** and **Optional services**, review the service options. If you want to deploy an add-on service, toggle the switch to on and review the service settings. If configuration is required, click **Edit**, then complete the edits and click **Save**. For more information about specific settings for a service, see the corresponding topic for ordering the service.
 11. On the **Summary** pane, review the instance settings and the estimated price.
 
@@ -75,10 +76,11 @@ You get a console notification that the configuration is saved successfully, and
 ## Results if you placed an order
 {: #vc_orderinginstance-results-order}
 
-* The deployment of the instance starts automatically and you receive confirmation that the order is being processed. You can check the deployment status, including any issues that might require your attention, by viewing the **Deployment history** section of the instance details.
-* When the instance is successfully deployed, the components that are described in [Technical specifications for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs) are installed on your VMware virtual platform. If you ordered add-on services, the deployment of the services starts after your order is completed.
-* When the instance is ready to use, the status of the instance is changed to **Ready to use**, and then you receive a notification by email.
-* When you order a secondary instance, the VMware vSphere Web Client for the primary instance (linked to the secondary one) might be restarted after your secondary instance order is completed.
+1. The deployment of the instance starts automatically and you receive confirmation that the order is being processed. You can check the deployment status, including any issues that might require your attention, by viewing the **Deployment history** section of the instance details.
+2. If you experience vSAN Health alerts and warnings, see [How do I manage vSAN Health alerts and warnings?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_vsan_alerts)
+3. When the instance is successfully deployed, the components that are described in [Technical specifications for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs) are installed on your VMware virtual platform. If you ordered add-on services, the deployment of the services starts after your order is completed.
+4. When the instance is ready to use, the status of the instance is changed to **Ready to use**, and then you receive a notification by email.
+5. When you order a secondary instance, the VMware vSphere Web Client for the primary instance (linked to the secondary one) might be restarted after your secondary instance order is completed.
 
 Next, you can view and manage the vCenter Server instance that you ordered.
 

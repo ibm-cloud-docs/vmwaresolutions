@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-09-21"
+lastupdated: "2022-10-27"
 
 subcollection: vmwaresolutions
 
@@ -92,4 +92,4 @@ The VMware Regulated Workloads dual region design uses the following specificati
 ## Related links
 {: #vrw-dualregion-overview-related}
 
-* [Veeam v10a overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam on IBM Cloud overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)

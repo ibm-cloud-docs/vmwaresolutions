@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-25"
+lastupdated: "2022-10-16"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -125,7 +125,6 @@ Specify the number of capacity disks that you want to add.
 If you want to add more capacity disks, select the **High performance with Intel Optane** checkbox. This option provides two extra capacity disk bays, which are useful for workloads that require less latency and higher IOPS throughput.
 
 The **High performance with Intel Optane** option is available only for vSphere 6 instances.
-{: note}
 
 #### Size for vSAN cache disks
 {: #vc_orderinginstance-vsan-storage-size-cachedisks}

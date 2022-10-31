@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-05-24"
+lastupdated: "2022-10-24"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -26,6 +26,7 @@ You must specify the following network interface settings.
 
 The hostname prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* No consecutive dash characters are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
 * The hostname prefix must end with a lowercase alphabetic or numeric character.
 * The maximum length of the hostname prefix is 10 characters.
@@ -40,6 +41,7 @@ The root domain name must meet the following requirements:
 * The first string must start with a lowercase alphabetic character.
 * The first string must end with a lowercase alphabetic or numeric character.
 * All strings, except for the last one, can contain only lowercase alphabetic, numeric, and dash (-) characters.
+* No consecutive dash characters are allowed.
 * The last string can contain only lowercase alphabetic characters.
 * The length of the last string must be in the range 2 - 24 characters.
 

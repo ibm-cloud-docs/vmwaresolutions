@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2022
 
-lastupdated: "2021-09-10"
+lastupdated: "2022-10-04"
 
 keywords: troubleshooting, SAN health, virtual SAN issue
 
@@ -14,15 +14,15 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# How do I manage Virtual SAN Health alerts and warnings?
+# How do I manage vSAN Health alerts and warnings?
 {: #trbl_vsan_alerts}
 {: troubleshoot}
 {: support}
 
-You might see alerts and warnings that relate to Virtual SAN Health (vSAN™) issues on the VMware vSphere® Web Client Monitor page.
+You might see alerts and warnings that relate to Virtual SAN (vSAN™) Health issues on the VMware vSphere® Web Client Monitor page.
 {: tsSymptoms}
 
-These warnings are non-issues and do not indicate functional problems.
+These warnings are nonissues and do not indicate functional problems.
 {: tsCauses}
 
 Use the following steps to clear the warnings from the vSphere Web Client:
@@ -36,13 +36,28 @@ Use the following steps to clear the warnings from the vSphere Web Client:
 
 For more information, see [How to download offline vSAN HCL file for vSAN Health Check plug-in](https://www.virtuallyghetto.com/2015/05/how-to-download-offline-vsan-hcl-file-for-vsan-health-check-plugin.html){: external}.
 
-On the vSAN health page, the following warning might display with the recommendation to Host restart.
+On the vSAN health page, the following warning might be displayed with the recommendation to restart host.
 {: tsSymptoms}
 
 `vSAN extended configuration in sync.`
 
-The warning is a non-issue and does not indicate functional problems.
+The warning is a nonissue and does not indicate functional problems.
 {: tsCauses}
 
 Restart the vSAN Health page to resolve the issue.
+{: tsResolve}
+
+On the vSAN health page, the following warning message might be displayed.
+{: tsSymptoms}
+
+`You have not finished or skipped the cluster Quickstart. vSAN Health checks are suppressed.`
+
+After you click **Go to Quickstart**, an informational message is displayed:
+
+`vSAN alarms are supressed until the cluster is fully configured or this Quickstart workflow is skipped.`
+
+These messages are nonissues and do not indicate functional problems.
+{: tsCauses}
+
+Click **Skip Quickstart** and then click **Continue** to resolve the issue.
 {: tsResolve}
