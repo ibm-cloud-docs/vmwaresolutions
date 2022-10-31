@@ -187,11 +187,6 @@ Select **Public and private network** or **Private network only**.
 
 {{site.data.content.simpletable-uplink-speed-locations}}
 
-## Chassis server type
-{: #cr_orderinginstance-consolidwkld-chassis}
-
-By default, the chassis server type is set to **1U**. If you want an optional upgrade, select the **2U/4U** option.
-
 ## VLANs
 {: #cr_orderinginstance-consolidwkld-vlans}
 
