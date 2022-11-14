@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-09-28"
+lastupdated: "2022-11-03"
 
 keywords: planning vSphere, data center, vSphere data centers
 
@@ -72,7 +72,6 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | NA South | DAL10 | 01-04 | Skylake, Cascade Lake, SAP-certified 
 | NA South | DAL12 | 01-02 | Skylake, Cascade Lake, SAP-certified |
 | NA South | DAL13 |  01-03 | Skylake, Cascade Lake, SAP-certified |
-| NA South | MEX01 | 01 | Skylake, Cascade Lake, SAP-certified[^sap-mex01] |
 | NA West | SJC03 | 01-02 | Skylake, Cascade Lake, SAP-certified |
 | NA West | SJC04 | 01 | Skylake, Cascade Lake, SAP-certified |
 | South America | SAO01 | 01 | Skylake, Cascade Lake, SAP-certified |
@@ -83,8 +82,6 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 [^vsphere-7]: Skylake is not supported for vSphere 7 instances
 
 [^sap-che01]: Existing vSphere 6.5 clusters only
-
-[^sap-mex01]: Existing vSphere 6.5 clusters only
 
 [^sap-mil01]: Existing vSphere 6.5 clusters only
 

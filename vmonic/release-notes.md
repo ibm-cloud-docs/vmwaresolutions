@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-10-31"
+lastupdated: "2022-11-14"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -40,11 +40,15 @@ Private network endpoint enhancements
 Veeam self-service portal for VMware Solutions Shared
 :   The Veeam self-service portal is now automatically enabled for existing and new VMware Cloud Director organizations. For more information, see [Managing Veeam for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam).
 
-Withdrawal of support for MEX01 data center
-:   The **Mexico 01** {{site.data.keyword.cloud_notm}} data center is closing on 31 January 2023. Starting with 14 November 2022, this data center is no longer available for deployment.
+MEX01 data center no longer available
+:   (Updated on 14 November 2022) The **Mexico 01** {{site.data.keyword.cloud_notm}} data center is closing on 31 January 2023. This data center is no longer available for deployments.
+
+VMware vSphere 7.0u2 - deprecated
+:   (Updated on 14 November 2022) The vSphere 7.0u2 option is no longer available for adding hosts to vCenter Server instances and scaling existing vSphere clusters. For existing instances with vSphere 7.0u2, you can add only ESXi servers with vSphere 7.0u3.
+{: deprecated}
 
 Dark mode temporarily unavailable
-:   The UI **Dark** mode will be temporarily unavailable starting with 14 November 2022. Until it becomes enabled again, use **Light** mode.
+:   Starting with 14 November 2022, the UI **Dark** mode is temporarily unavailable. Until it becomes enabled again, use **Light** mode.
 
 Hostname prefix updates
 :   You can now customize the hostnames prefix individually when you order VMware vCenter Server® instances, order new VMware vSphere® clusters, and add hosts and clusters to existing instances.

@@ -3,7 +3,7 @@
 copyright:
   years: 2022
 
-lastupdated: "2022-10-24"
+lastupdated: "2022-11-11"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -166,9 +166,13 @@ The uplink speed provides two options:
 | Asia-Pacific | TOK04 | 01 |
 | Asia-Pacific | TOK05 | 01 |
 | Europe | FRA02 | 02 |
+| Europe | FRA04 | 01 |
 | Europe | FRA05 | 01 |
 | Europe | LON04 | 01 |
 | Europe | LON06 | 01 |
+| Europe | PAR04 | 01 |
+| Europe | PAR05 | 01 |
+| Europe | PAR06 | 01 |
 | NA East | TOR04 | 01 |
 | NA East | WDC04 | 05 |
 | NA East | WDC06 | 01 |

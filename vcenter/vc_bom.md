@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-14"
+lastupdated: "2022-11-08"
 
 keywords: vCenter Server BOM, bill of materials vCenter Server, BOM
 
@@ -28,7 +28,7 @@ The following table details the BOM information for the vCenter Server VLANs.
 |:---------- |:---------- |:------------- |
 | VLAN1     | Public, Primary | Assigned to physical VMware ESXi™ servers for public network access. The servers are assigned a public IP address but this IP address is not configured on the servers, so they are not directly accessible on the public network. Instead, the public VLAN is intended to provide public internet access for other components, such as VMware NSX Edge™ Services Gateways (ESGs). |
 | VLAN2     | Private A, Primary | Assigned by {{site.data.keyword.cloud}} to physical ESXi servers. Used by the management interface for VMware vSphere® management traffic. \n \n Assigned to VMs (virtual machines) that function as management components. \n \n For NSX-T™, assigned to VMware NSX VTEP (VXLAN Tunnel Endpoint) |
-| VLAN3     | Private B, Portable | Assigned to VMware vSAN™, if used. \n \n Assigned to VMware NFS, if used. \n \n Assigned to VMware vSphere® vMotion. \n \n For NSX-T, assigned to VMware NSX VTEP (VXLAN Tunnel Endpoint). \n This applies to vSphere 6.7 only. For vSphere 7.0, all NSX VTEPs are put in VLAN2. |
+| VLAN3     | Private B, Portable | Assigned to VMware vSAN™, if used. \n \n Assigned to VMware NFS, if used. \n \n Assigned to VMware vSphere® vMotion. \n \n For NSX-T, assigned to VMware NSX VTEP (VXLAN Tunnel Endpoint). \n This applies to vSphere 6.7 only. For vSphere 7, all NSX VTEPs are put in VLAN2. |
 {: caption="Table 1. BOM for the VLANs in vCenter Server instances" caption-side="bottom"}
 
 ## Software BOM for vCenter Server instances
@@ -38,7 +38,7 @@ The following table details the BOM information for vCenter Server software comp
 
 | Manufacturer | Component                       | Version       |
 |:------------ |:------------------------------- |:------------- |
-| VMware       | vSphere ESXi                    | ESXi 7.0 Update 3f (20036589)[^esxi7] or \n ESXi 6.7 P08 (19997733)[^esxi67] or \n ESXi 6.5 P06 (17477841)[^esxi65] |
+| VMware       | vSphere ESXi                    | ESXi 7.0 Update 3f (20036589) or \n ESXi 6.7 P08 (19997733)[^esxi67] or \n ESXi 6.5 P06 (17477841)[^esxi65] |
 | VMware       | vSphere 7.0 Update 3c           | Distributed vSwitch 7.0.0 |
 | VMware       | vSphere 6.7[^vcs-vsphere67]                     | Distributed vSwitch 6.6.0 |
 | VMware       | vSphere 6.5[^vcs-vsphere65]     | Distributed vSwitch 6.5.0 |
@@ -49,8 +49,6 @@ The following table details the BOM information for vCenter Server software comp
 | Microsoft®    | Windows® Server Standard edition | 2019 |
 | Microsoft    | Active Directory™ domain functional level | 2016 (WinThreshold)[^domain] |
 {: caption="Table 2. BOM for the software components in vCenter Server instances" caption-side="bottom"}
-
-[^esxi7]: Applicable to 7.0u1 hosts
 
 [^esxi67]: Applicable to 6.7u2 and 6.7u3 hosts
 
@@ -171,7 +169,7 @@ The allocation of distributed switches varies if you have existing instances and
 * If one or more existing clusters are in the same pod that uses distributed switches that are named ``SDDC-DSwitch-Private`` and ``SDDC-DSwitch-Public``, your new cluster uses the same switches as the existing cluster.
 * If one or more existing clusters are in the same pod, and the pod uses distributed switches that are named by using the same name as the pod (rather than named by using the same name as the cluster), your new cluster uses the same switches as the existing cluster.
 * If no existing cluster is in the same pod, or all clusters in that pod distribute switches that are named by using the same name as the cluster rather than the pod, then your new cluster is configured with the new switch whose name is based only on the pod.
-* In vSphere 7.0, each cluster has its own-distributed switch pair that is named ``<instance_name>-<cluster_name>-public`` and ``<instance_name>-<cluster_name>-private``.
+* For vSphere 7, each cluster has its own-distributed switch pair that is named ``<instance_name>-<cluster_name>-public`` and ``<instance_name>-<cluster_name>-private``.
 
 ## Enhanced VMware vMotion Compatibility (EVC) mode settings
 {: #vc_bom-evc-mode-settings}

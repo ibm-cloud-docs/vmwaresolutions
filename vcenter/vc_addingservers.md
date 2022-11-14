@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-10-20"
+lastupdated: "2022-11-08"
 
 keywords: vCenter Server add host, add server vCenter Server
 
@@ -22,9 +22,9 @@ You can expand the capacity of your VMware® vCenter Server® instance according
 ## Before you add ESXi servers to vCenter Server instances
 {: #vc_addingservers-prereq}
 
-* Adding ESXi servers to vCenter Server instances with VMware vSphere® 6.5 is not supported.
+* For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers.
+* For existing instances with vSphere 7.0u2, you can add only ESXi servers with vSphere 7.0u3.
 * For the edge services cluster, you cannot add or remove ESXi servers.
-* For existing instances with vSphere 6.7, you cannot add ESXi servers.
 * {{site.data.content.para-vcenteraddESXiservers}}
 * A vCenter Server instance with NFS storage must have at least three ESXi servers. Each of the nondefault clusters can be expanded to have up to 59 ESXi servers.
 * A vCenter Server instance with vSAN™ storage must have at least four ESXi servers.
@@ -53,7 +53,7 @@ You can expand the capacity of your VMware® vCenter Server® instance according
       * The bare metal configuration that is used by the existing ESXi servers in the cluster is **Broadwell**.
       * The storage type of the cluster is **Local disks**.
    * Select a new bare metal server configuration.
-      * For vSphere 7.0, optionally select to change the bare metal server configuration. Then, select the VMware vSphere version.
+      * For vSphere 7, optionally select to change the bare metal server configuration. Then, select the VMware vSphere version.
       * For **Skylake** and **Cascade Lake**, select the **CPU model**, and the amount of **RAM**.
       * For **SAP-certified**, select the **CPU model and RAM**.
       * Complete the storage configuration. Specify the disk types for the capacity and cache disks, the number of disks, and the vSAN license edition. If you want more storage, select the **High performance Intel Optane** checkbox.

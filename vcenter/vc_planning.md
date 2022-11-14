@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-16"
+lastupdated: "2022-11-03"
 
 keywords: planning vCenter Server, data center, vCenter Server data centers
 
@@ -66,7 +66,6 @@ The vCenter Server deployment has strict requirements on the physical infrastruc
 | NA South | DAL10 | 01-04 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
 | NA South | DAL12 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
 | NA South | DAL13 | 01-03 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
-| NA South | MEX01 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified[^sap-mex01] |
 | NA West | SJC 03 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake |
 | NA West | SJC 04 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake |
 | South America | SAO 01 | 01 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified |
@@ -79,8 +78,6 @@ The vCenter Server deployment has strict requirements on the physical infrastruc
 [^nsx-v]: Existing NSX-V instances only
 
 [^sap-che01]: Existing vSphere 6.5 clusters only
-
-[^sap-mex01]: Existing vSphere 6.5 clusters only
 
 [^sap-mil01]: Existing vSphere 6.5 clusters only
 

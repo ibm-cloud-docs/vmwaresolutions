@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-07-08"
+lastupdated: "2022-11-08"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -22,13 +22,13 @@ You must specify the following system settings when you order a VMware vCenter S
 ## VMware vSphere version
 {: #vc_orderinginstance-vsphere-license}
 
-VMware vSphere® Enterprise Plus 7.0u1 is supported.
+VMware vSphere® Enterprise Plus 7 is ordered by default.
 
 ### Notes on upgrading to vSphere 7
 {: #vc_orderinginstance-vsphere-v6-7-upgrade}
 
-For vCenter Server instances with vSphere 6.7, upgrade to vSphere 7 is supported for selected configurations. If you want to use vSphere 7.0, you have the following options:
-* Deploy a new vSphere 7.0 instance and migrate your current workloads to the new instance.
+For vCenter Server instances with vSphere 6.7, upgrade to vSphere 7 is supported for selected configurations. If you want to use vSphere 7, you have the following options:
+* Deploy a new vSphere 7 instance and migrate your current workloads to the new instance.
 * Contact VMware Solutions Support for assistance with your upgrade process.
 
 Migrating your workloads is recommended in the following cases:

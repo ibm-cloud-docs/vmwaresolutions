@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-10-27"
+lastupdated: "2022-11-03"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -70,7 +70,6 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for Cy
 | NA South | DAL10 | 01-04 |
 | NA South | DAL12 | 01-02 |
 | NA South | DAL13 | 01-03 |
-| NA South | MEX01 | 01 |
 | NA West | SJC03 | 01-02 |
 | NA West | SJC04 | 01 |
 | South America | SAO01 | 01 |
