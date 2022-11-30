@@ -245,11 +245,6 @@ toc:
               - vcenter/cr_viewing-cr-instances.md
               - vcenter/cr_deleting-cr-instances.md
       - topicgroup:
-          label: IBM Cloud for VMware Cloud Foundation
-          topics:
-          - vpc-vcf/vpc-vcf-ovw.md
-          - vpc-vcf/vpc-vcf-deployment.md
-      - topicgroup:
           label: Add-on services
           topics:
           - topicgroup:

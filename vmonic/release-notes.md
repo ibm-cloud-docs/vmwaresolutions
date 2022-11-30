@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-11-14"
+lastupdated: "2022-11-30"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -111,7 +111,7 @@ vRealize Operations Tenant App for VMware Cloud Director availability
 :   You can now access the vRealize Operations™ Tenant App for a VMware Cloud Director for new and existing organizations through the VMware Cloud Director tenant portal. For more information, see [Enabling the VMware vRealize Operations Tenant App](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-vrops-app).
 
 {{site.data.keyword.cloud_notm}} for VMware Cloud Foundation
-:   The {{site.data.keyword.vpc_short}} provides the underlying infrastructure for running VMware Cloud Foundation in {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.cloud_notm}} bare metal servers for {{site.data.keyword.vpc_short}} provide you compute capacity that is provisioned in minutes for your VMware Cloud Foundation deployment. For more information, see [{{site.data.keyword.cloud_notm}} for VMware Cloud Foundation overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw).
+:   The {{site.data.keyword.vpc_short}} provides the underlying infrastructure for running VMware Cloud Foundation in {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.cloud_notm}} bare metal servers for {{site.data.keyword.vpc_short}} provide you compute capacity that is provisioned in minutes for your VMware Cloud Foundation deployment.
 
 Updates to VMware vCenter Server instances and VMware vSphere clusters
 :   The following upgrades are applied to newly deployed instances, clusters, and hosts.
