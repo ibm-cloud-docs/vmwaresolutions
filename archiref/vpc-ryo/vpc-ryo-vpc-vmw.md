@@ -38,7 +38,7 @@ For this architecture, a new VPC is created for VMware workloads for simplicity.
 
 The following table lists the recommended subnets in VPC. It is based on the recommendation to separate System Traffic Types logically and a dedicated VPC subnet for each user used. As each VMK host needs its own IP, it is recommended to keep the PCI interfaces (management) hosts on their own subnet. Also, place other management instances (such as vCenter®, NSX-T managers, NSX-Edge management interfaces) on their own subnet. It allows easier segmentation, sizing, and provides better scalability.
 
-| Subnet name         | System Traffic Type          | Subnet Sizing Guidance |
+| Subnet name         | System traffic type          | Subnet sizing guidance |
 | --------------------| ---------------------------- |----------------------- |
 | vpc-mgmt-subnet       | Management appliance traffic | Number of Management Appliances |
 | vpc-host-subnet       | Host management traffic      | Number of Hosts |
@@ -85,8 +85,8 @@ In {{site.data.keyword.vpc_short}}, each {{site.data.keyword.cloud_notm}} bare m
 
 The following table lists the VMK key that is required in this architecture for each ESXi host. Depending on your design and planned capabilities, you might not need all VMKs listed here. However, when you plan the deployment and VPC infrastructure automation with, for example Terraform, it is recommended to take a note of these requirements.
 
-| Interface name        | Interface type | VLAN ID | Subnet              | Allow float  | VMkernel Adapter | Distributed Port Group Name |
-| ---------------------- | ---------------- | --------- | --------------------- | -------------- | ------------------ | ------------------------------ |
+| Interface name | Interface type | VLAN ID | Subnet | Allow float | VMkernel adapter | Distributed Port Group name |
+| -------------- | -------------- | ------- | ------ | ----------- | ---------------- | --------------------------- |
 | pci-nic-vmnic0-vmk0   | pci            | 0       | vpc-host-subnet     | false        | vmk0             | dpg-hosts |
 | vlan-nic-vmotion-vmk2 | vlan           | 200     | vpc-vmot-subnet     | false        | vmk2             | dpg-vmotion |
 | vlan-nic-vsan-vmk3    | vlan           | 300     | vpc-vsan-subnet     | false        | vmk3             | dpg-vsan |

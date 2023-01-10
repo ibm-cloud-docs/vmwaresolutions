@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-10-26"
+lastupdated: "2022-11-16"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing Veeam for VMware Solutions Shared
+# Managing Veeam for VMware Shared
 {: #shared_veeam}
 
 The Veeam Availability Suite™ and Veeam® Cloud Connect Replication services are available and ready to use in all virtual data centers. These services seamlessly integrate as a managed solution to help your enterprise achieve high availability. They provide recovery points for your applications and data. By using these services, you control both the backup and restore of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
@@ -53,19 +53,19 @@ Contact IBM Support if you do not see the **Data Protection with Veeam** option.
 ### Licenses and fees for Veeam Availability Suite
 {: #shared_veeam-portal-fees}
 
-Veeam usage incurs on-demand charges. For more information, see [VMware Solutions Shared pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing).
+Veeam usage incurs on-demand charges. For more information, see [VMware Shared pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing).
 
 ### Backup data storage and encryption
 {: #shared_veeam-storage}
 
-For more information about how Veeam Availability Suite stores backups, see [How is your data stored and encrypted in the VMware Solutions Shared Veeam Availability Suite service](/docs/vmwaresolutions?topic=vmwaresolutions-data-security-mng-data#data-security-data-veeamshared).
+For more information about how Veeam Availability Suite stores backups, see [How is your data stored and encrypted in the VMware Shared Veeam Availability Suite service](/docs/vmwaresolutions?topic=vmwaresolutions-data-security-mng-data#data-security-data-veeamshared).
 
 ## Veeam Cloud Connect Replication
 {: #shared_veeam-cloud-connect}
 
 Veeam Cloud Connect Replication provides seamless replication of your workloads from on-premises to {{site.data.keyword.cloud}}. Use Veeam Cloud Connect as disaster recovery for failover during on-premises outages or to permanently move workloads directly to {{site.data.keyword.cloud_notm}}.
 
-Starting with the 4.2 release, VMware Solutions Shared virtual data centers provide Veeam Backup and Replication V11 for the Veeam Cloud Connect Replication ready-to-use service. For more information about compatibility requirements between Veeam service providers and tenants, see [Product versions in Veeam Cloud Connect infrastructure](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_versions.html?ver=110){: external}.
+For VMware Shared V4.2 and later, VMware Shared virtual data centers provide Veeam Backup and Replication V11 for the Veeam Cloud Connect Replication ready-to-use service. For more information about compatibility requirements between Veeam service providers and tenants, see [Product versions in Veeam Cloud Connect infrastructure](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_versions.html?ver=110){: external}.
 {: note}
 
 When you access Veeam Cloud Connect, **DNS name** and **Port** details are specific to the region where your virtual data center exists.
@@ -110,7 +110,7 @@ If you remove a VMware Cloud Director virtual data center from your account, all
 ## Related links
 {: #shared_veeam-related}
 
-* [VMware Solutions Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
+* [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
 * [Using Veeam Cloud Connect Portal](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_portal_use.html?ver=100){: external}
 * [Veeam website](https://www.veeam.com/){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-11"
+lastupdated: "2022-11-22"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -35,7 +35,7 @@ You cannot install Juniper® vSRX and FortiGate Virtual Appliance on the same ed
 ## Ordering FortiGate Virtual Appliance for an existing instance
 {: #fortinetvm_ordering-existing}
 
-1. On the instance details page, click **Services** on the left navigation pane.
+1. On the instance details page, click the **Services** tab.
 2. Click **Add** to add the service.
 3. On the **Services** page, locate the **FortiGate Virtual Appliance** service and toggle its switch on.
 4. Follow the steps to configure and add the service to your instance.

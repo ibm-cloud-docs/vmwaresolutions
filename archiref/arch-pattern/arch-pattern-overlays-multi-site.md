@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -13,10 +13,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Architecture pattern for multisite NSX-T topologies 
+# Architecture pattern for multisite NSX-T topologies
 {: #arch-pattern-overlays-multi-site}
 
-{{site.data.keyword.vmwaresolutions_full}} Dedicated instances offer a standard NSX-T topology with a single NSX-T edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) Gateways. You have several options to build and customize multisite overlay topologies. You can manually provision new NSX-T edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) Gateways after initial deployment by following VMware NSX-T™ documentation.
+VMware vCenter Server® instances offer a standard NSX-T topology with a single NSX-T edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) Gateways. You have several options to build and customize multisite overlay topologies. You can manually provision new NSX-T edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) Gateways after initial deployment by following VMware NSX-T™ documentation.
 
 This section provides a few examples on how these topologies can be customized for your needs.
 

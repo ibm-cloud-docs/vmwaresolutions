@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -65,7 +65,7 @@ The analytics cluster consists of the following components:
 - Primary node replica – This node enables high availability of the primary node.
 - Data nodes – The data node enables scale out of vROps in larger environments.
 
-For more information, see [vRealize Operations Manager design](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrops)
+For more information, see [vRealize Operations Manager design](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrops).
 
 ### vRealize Log Insight
 {: #vrw-vsphere-platform-management-vrli}

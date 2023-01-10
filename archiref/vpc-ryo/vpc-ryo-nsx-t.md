@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-10-27"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -79,7 +79,7 @@ The following table shows the specifications for the Manager Nodes. You might se
 
 A VLAN interface is provisioned for each NSX-T manager in the management subnet (`vpc-mgmt-subnet`) of the VPC. This VPC subnet is designated for VMware management components of your solution. If you deploy the NSX-T managers on the same VPC subnet in a zone, and you plan to use the NSX-T internal network load balancer, an additional VLAN interface is needed for this Virtual IP (VIP). All created VLAN interfaces are allowed to float, which means that they can be vMotioned between the ESXi hosts. The following table summarizes the required VLAN interfaces in {{site.data.keyword.vpc_short}}.
 
-| Interface name        | Interface type | VLAN ID | Subnet              | Allow float  | NSX-T Interface   | Distributed Port Group Name |
+| Interface name | Interface type | VLAN ID | Subnet | Allow float | NSX-T interface | Distributed Port Group name |
 | ---------------------- | ---------------- | --------- | --------------------- | -------------- | ------------------- | ------------------------------ |
 |vlan-nic-nsx-0        | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 1   | dpg-mgmt |
 | vlan-nic-nsx-1        | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 2   | dpg-mgmt |
@@ -98,7 +98,7 @@ For NSX-T, each ESXi host must be set as a Transport Node so that it becomes cap
 
 The following table lists the required VLAN interfaces for NSX-T VMKs for each host. These interfaces are always local to the host and are not allowed to float. They are provisioned on the `vpc-tep-subnet`. You can provision these VLAN interfaces in {{site.data.keyword.vpc_short}} either when you provision the host, or when you configure and deploy NSX-T.
 
-| Interface name | Interface type | VLAN ID | Subnet | Allow float  | VMkernel Adapter | Distributed Port Group Name |
+| Interface name | Interface type | VLAN ID | Subnet | Allow float | VMkernel adapter | Distributed Port Group name |
 | ---------------------- | ---------------- | --------- | --------------------- | -------------- | ------------------ | ------------------------------ |
 | vlan-nic-tep-vmk10    | vlan           | 400     | vpc-tep-subnet      | false        | vmk10            | dpg-tep |
 {: caption="Table 3. Host management networks and VMkernel adapters" caption-side="bottom"}
@@ -126,7 +126,7 @@ The following table summarizes the requirements for a Medium Form Factor Edge en
 
 As for the other NSX-T components, VLAN interfaces must be created in {{site.data.keyword.vpc_short}} for connectivity. The following table lists the required VLAN interfaces for Edge Nodes.
 
-| Interface name        | Interface type | VLAN ID | Subnet              | Allow float  | NSX-T Interface   | DPG/Segment Name |
+| Interface name | Interface type | VLAN ID | Subnet | Allow float | NSX-T interface | DPG/Segment name |
 | ---------------------- | ---------------- | --------- | --------------------- | -------------- |------------------- | ------------------------------ |
 | vlan-nic-nsx-edge-1   | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Edge 1 Mgmt | dpg-mgmt |
 | vlan-nic-nsx-edge-2   | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Edge 2 Mgmt | dpg-mgmt |

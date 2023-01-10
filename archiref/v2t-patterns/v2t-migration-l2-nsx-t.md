@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -47,20 +47,20 @@ It is possible to manually add and allow the existing {{site.data.keyword.cloud_
 ## Migrating workloads with Veeam
 {: #v2t-l2-nsx-t-veeam}
 
-VMware Solutions Dedicated offers an optional service for Veeam. The Veeam service seamlessly integrates directly with your VMware® hypervisors and you control both the backup and restore of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
+vCenter Server offers an optional service for Veeam. The Veeam service seamlessly integrates directly with your VMware® hypervisors and you control both the backup and restore of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
 
 The current Veeam version that is installed by automation is Veeam v11, but you might have an older version in your NSX-V based deployment. You can use Veeam's replication capabilities during the migration.  
 
-For more information, see [Ordering services for VMware Solutions Dedicated vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices) and [Veeam Technical Documentation](https://www.veeam.com/documentation-guides-datasheets.html?ad=in-text-link){: external}.
+For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices) and [Veeam technical documentation](https://www.veeam.com/documentation-guides-datasheets.html?ad=in-text-link){: external}.
 
 ## Migrating workloads with Zerto
 {: #v2t-l2-nsx-t-zerto}
 
-{{site.data.keyword.vmwaresolutions_short}} Dedicated offers an optional service for Zerto. The Zerto service integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}.
+vCenter Server instances offer an optional service for Zerto. The Zerto service integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}.
 
 You can use Zerto's replication capabilities during the migration.
 
-For more information, see [Ordering services for VMware Solutions Dedicated vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices) and [Zerto Product Documentation](https://help.zerto.com){: external}.
+For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices) and [Zerto product documentation](https://help.zerto.com){: external}.
 
 ## Considerations for using NSX-T L2 bridge in migration
 {: #v2t-l2-nsx-t-considerations}
@@ -74,11 +74,11 @@ After all the workloads are migrated from NSX-V to NSX-T, you can remove the bri
 ## Related links
 {: #v2t-l2-nsx-t-links}
 
-* [Overview of Edge Bridging in NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-12FE83E9-2FA9-40F7-A3FF-BC21E13F6720.html){: external}
-* [Extending Layer 2 Networks with NSX-T Edge Bridge](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-5B9390FB-7E52-4669-AF63-3C3490841432.html){: external}
-* [Ordering services for VMware Solutions Dedicated vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
-* [Veeam Technical Documentation](https://www.veeam.com/documentation-guides-datasheets.html?ad=in-text-link){: external}
-* [Zerto Product Documentation](https://help.zerto.com){: external}
-* [Migration Between vCenter Server Systems](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-59C7D7FF-D17E-45BC-9145-06B2993880A2.html){: external}
-* [VMware KB2106952: Cross vCenter Migration and Clone requirements in VMware vSphere 6.x and later](https://kb.vmware.com/s/article/2106952){: external}
-* [Introducing the Advanced Cross vCenter Server vMotion Capability](https://core.vmware.com/resource/introducing-advanced-cross-vcenter-server-vmotion-capability#section1){: external}
+* [Overview of edge bridging in NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-12FE83E9-2FA9-40F7-A3FF-BC21E13F6720.html){: external}
+* [Extending Layer 2 networks with NSX-T edge bridge](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-5B9390FB-7E52-4669-AF63-3C3490841432.html){: external}
+* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [Veeam technical documentation](https://www.veeam.com/documentation-guides-datasheets.html?ad=in-text-link){: external}
+* [Zerto product documentation](https://help.zerto.com){: external}
+* [Migration between vCenter Server systems](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-59C7D7FF-D17E-45BC-9145-06B2993880A2.html){: external}
+* [Cross vCenter migration and clone requirements in VMware vSphere 6.x and later](https://kb.vmware.com/s/article/2106952){: external}
+* [Introducing the Advanced Cross vCenter Server vMotion capability](https://core.vmware.com/resource/introducing-advanced-cross-vcenter-server-vmotion-capability#section1){: external}

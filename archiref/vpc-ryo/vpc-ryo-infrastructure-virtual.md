@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Virtual infrastructure design
 {: #vpc-ryo-infrastructure-virtual}
 
-The virtual infrastructure layer includes the VMware® software components that virtualize the compute, storage, and network resources provided in the physical infrastructure layer, such as VMware vSphere® ESXi™, VMware NSX-T™, and optionally VMware vSAN™. As with the roll-your-own VMware Solution in VPC, you are responsible for configuring the virtual layer based on your needs.
+The virtual infrastructure layer includes the VMware® software components that virtualize the compute, storage, and network resources provided in the physical infrastructure layer, such as VMware vSphere® ESXi™, VMware NSX-T™, and optionally VMware vSAN™. As with the roll-your-own VMware solution in VPC, you are responsible for configuring the virtual layer based on your needs.
 
 ![Virtual infrastructure](../../images/vpc-ryo-diagrams-overview-virtual.svg "Virtual infrastructure"){: caption="Figure 1. Virtual infrastructure" caption-side="bottom"}
 
@@ -39,8 +39,8 @@ Then, your vCenter Server is deployed and initially configured for the data cent
 
 The vSphere cluster is located in the virtual machines (VMs) that manage the vCenter Server instance and the compute resources for user workloads.
 
-* When your roll-your-own VMware Solution in VPC solution uses vSAN, it is recommended that the minimum number of ESXi hosts in the initial deployment be four.
-* When your roll-your-own VMware Solution in VPC solution uses shared file–level storage, the minimum number of ESXi hosts in the initial deployment is two.
+* When your roll-your-own VMware solution in VPC uses vSAN, it is recommended that the minimum number of ESXi hosts in the initial deployment be four.
+* When your roll-your-own VMware solution in VPC uses shared file–level storage, the minimum number of ESXi hosts in the initial deployment is two.
 
 You can design your clusters and their sizes based on your need, and use VMware for best practices.
 
@@ -81,7 +81,7 @@ For more information about physical NIC connections, see [Networking overview fo
 ### vSAN storage policy
 {: #vpc-ryo-infrastructure-virtual-storage-policy}
 
-When vSAN is enabled and configured, storage policies are configured to define the VM storage characteristics. Storage characteristics specify different levels of service for different VMs. With the roll-your-own VMware Solution in VPC, you are responsible for configuring the storage policies based on your needs.
+When vSAN is enabled and configured, storage policies are configured to define the VM storage characteristics. Storage characteristics specify different levels of service for different VMs. With the roll-your-own VMware solution in VPC, you are responsible for configuring the storage policies based on your needs.
 
 The default storage policy in this design tolerates a single failure. It is configured with erasure coding, with the Failure tolerance method set to RAID-5/6 (Erasure Coding) - Capacity and Primary level of failures set to 1. The RAID 5 configuration requires a minimum of four hosts.
 
@@ -94,7 +94,7 @@ Storage policies must be reapplied after adding new ESXi hosts or patching ESXi 
 ### vSAN storage settings
 {: #vpc-ryo-infrastructure-virtual-vsan-sett}
 
-vSAN settings are configured based on best practices for deploying VMware solutions within {{site.data.keyword.cloud_notm}}. The vSAN configuration includes storage IO Control (SIOC) settings, explicit failover settings port group, and disk cache settings. With the roll-your-own VMware Solution in VPC, you are responsible for configuring the storage policies based on your needs.
+vSAN settings are configured based on best practices for deploying VMware solutions within {{site.data.keyword.cloud_notm}}. The vSAN configuration includes storage IO Control (SIOC) settings, explicit failover settings port group, and disk cache settings. With the roll-your-own VMware solution in VPC, you are responsible for configuring the storage policies based on your needs.
 
 The following list includes an example design:
 

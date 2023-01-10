@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ The {{site.data.keyword.dl_full_notm}} service is a routed OSI Layer-3 service. 
 
 For more information, see [About {{site.data.keyword.dl_full_notm}} (2.0)](/docs/dl?topic=dl-dl-about).
 
-## Considerations with roll-your-own VMware Solution in VPC
+## Considerations with roll-your-own VMware solution in VPC
 {: #interconnectivity-dl-ryo-considerations}
 
 When you use the VMware® virtual machines (VMs) on VPC subnets architecture, your VMs are attached to VPC subnets and the routing behaves in the same way as with VPC Virtual Servers. The VPC subnets are provisioned from the zone prefix, and when the VPC is attached to a {{site.data.keyword.dl_short}}, the routing works between on-premises without any required changes. If you are using IANA-registered IP addresses in your VPC, see [Routing considerations for IANA-registered IP assignments](/docs/vpc?topic=vpc-interconnectivity#routing-considerations-iana).

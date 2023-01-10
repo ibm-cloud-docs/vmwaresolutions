@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-24"
+lastupdated: "2022-12-09"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -34,14 +34,13 @@ The hostname prefix applies to all clusters in the instance. It must meet the fo
 
 The root domain name must meet the following requirements:
 * The domain name must consist of three or more strings that are separated by a period (.) with a maximum of 50 characters.
-* The first string must start with a lowercase alphabetic character.
-* The first string must end with a lowercase alphabetic or numeric character.
+* The first string (NetBIOS name) must start with a lowercase alphabetic character and end with a lowercase alphabetic or numeric character. It must not exceed 15 characters.
 * All strings, except for the last one, can contain only lowercase alphabetic, numeric, and dash (-) characters.
 * No consecutive dash characters are allowed.
 * The last string can contain only lowercase alphabetic characters.
 * The length of the last string must be in the range 2 - 24 characters.
 
-The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and VMs is 50 characters. Domain names must accommodate for this maximum length.
+The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and VMs is 63 characters. Domain names must accommodate for this maximum length.
 {: note}
 
 ## Domain Name System configuration

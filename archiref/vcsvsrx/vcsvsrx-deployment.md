@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -73,7 +73,6 @@ If you opted to deploy the No-OS gateway offering, then follow the guidance in [
 ## Related links
 {: #vcsvsrx-deployment-related}
 
-* [vCenter Server on {{site.data.keyword.cloud_notm}} with Hybridity Bundle overview](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-hybridity-intro)
 * [Getting started with IBM Cloud Juniper vSRX](/docs/vsrx?topic=vsrx-getting-started)
 * [Juniper Networks vSRX deployment guide for VMware](https://www.juniper.net/documentation/en_US/vsrx/information-products/pathway-pages/security-vsrx-vmware-guide-pwp.html){: external}
 * [Juniper Networks requirements for vSRX on VMware](https://www.juniper.net/documentation/en_US/vsrx/topics/reference/general/security-vsrx-vmware-system-requirement.html){: external}

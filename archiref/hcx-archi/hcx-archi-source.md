@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-11-28"
 
 subcollection: vmwaresolutions
 
@@ -121,7 +121,7 @@ To deploy the HCX, the proper number of IP addresses must be available both on-p
 
 Proximity routing is a networking feature that can be enabled when the HCX-IX is configured. Proximity routing is only available with NSX-V target.
 
-On 21 June 2022, you will no longer be able to provision new VCS instances using NSX–V but, you will be able to add hosts and clusters to your existing NSX–V deployments. IBM strongly recommends that clients immediately assess their NSX–V networks and plan a much earlier migration to NSX–T.
+After 21 June 2022, provisioning new vCenter Server instances with NSX–V is no longer supported. However, you can add hosts and clusters to your existing NSX–V deployments. IBM strongly recommends that clients immediately assess their NSX–V networks and plan a much earlier migration to NSX–T.
 {: note}
 
 Proximity routing ensures forwarding between VMs that are connected to stretched and routed networks, both on-premises and in the cloud, is symmetrical. This feature requires Dynamic Routing to be configured between the customer premises and the cloud.

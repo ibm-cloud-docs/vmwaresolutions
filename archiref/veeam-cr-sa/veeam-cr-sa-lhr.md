@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-05-10"
+lastupdated: "2022-12-19"
 
 subcollection: vmwaresolutions
 
@@ -17,13 +17,13 @@ subcollection: vmwaresolutions
 
 The key solution component in both the immutable backup and isolated recovery environment solution architectures is the Linux® hardened repository. 
 
-To prevent attacks on backups, Veeam® Backup and Replication v11 introduces the Linux hardened repository feature, which makes backups immutable for the required number of days. This action enables protection against threats, such as ransomware and hackers.
+To prevent attacks on backups, Veeam® Backup and Replication 11 introduces the Linux hardened repository feature, which makes backups immutable for the required number of days. This action enables protection against threats, such as ransomware and hackers.
 
 ![Linux hardened repository](../../images/veeam-cr-sa-lhbr.svg){: caption="Figure 1. Linux hardened repository" caption-side="bottom"}
 
 The Veeam Linux hardened repository feature uses immutability features in the Linux OS. The immutability file attribute is set for each backup file, which assures the contents of the file. Its associated metadata is retained as nonrewriteable and nonerasable until expiration of an applied Immutable Until Date.
 
-The following only two Veeam services run on the Linux hardened repository server: 
+Only the following two Veeam services run on the Linux hardened repository server: 
 
 * The Veeam Transport Service receives the backup data and instructs the Veeam Immureposvc Service to set the Immutable Until Dates. This service runs as a normal user (nonroot).
 * The Veeam Immureposvc Service sets the immutable flag for the backup files, monitors the Immutable Until Dates and removes the immutable flag when it is expired.

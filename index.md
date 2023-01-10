@@ -57,10 +57,11 @@ Review and choose your deployment offering.
 
 | Deployment offering | Description |
 |:------------------- |:----------- |
-| [VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview) | This offering provides standardized and customizable deployment choices of VMware® virtual data center environments. |
-| [VMware Solutions Dedicated - vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) | This offering allows you to deploy a VMware virtual environment by using custom compute, storage, and network resources to best fit your business needs. |
-| [VMware Solutions Dedicated - VMware vSphere®](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview) | This offering provides a customizable virtualization service that combines VMware-compatible bare metal servers, hardware components, and licenses, to build your own IBM-hosted VMware environment. |
+| [VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview) | This offering provides standardized and customizable deployment choices of VMware® virtual data center environments. |
+| [VMware vSphere®](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview) | This offering provides a customizable virtualization service that combines VMware-compatible bare metal servers, hardware components, and licenses, to build your own IBM-hosted VMware environment. |
+| [VMware vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) | This offering allows you to deploy a VMware virtual environment by using custom compute, storage, and network resources to best fit your business needs. |
 | [VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview) | This offering includes a secure-by-default architecture that follows IBM's unique policy controls framework, it provides continuous compliance monitoring, and the highest level of data encryption (FIPS 140-2 Level 4). |
+| [Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview) | This offering provides air-gapped protection, immutable storage, and rapid recovery of applications and data for ransomware protection. |
 {: caption="Table 2. Deployment offerings" caption-side="bottom"}
 
 ### Add-on services
@@ -83,21 +84,10 @@ The following table describes the security and compliance services that are avai
 | [Juniper® vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | This service provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware infrastructure, vSRX runs as a VM within the VMware vSphere environment. The vSRX provides a complete Next-Generation Firewall (NGFW) solution. |
 {: caption="Table 3. Security and compliance services" caption-side="bottom"}
 
-#### Related security services
-{: #getting-started-serv-related-sec}
-
-The following table describes related security services available from {{site.data.keyword.cloud_notm}}.
-
-| Service name | Description |
-|:------------ |:----------- |
-| [FortiGate Security Appliance](/docs/fortigate-10g) | This service deploys the FortiGate Security Appliance 10 Gbps {{site.data.keyword.cloud_notm}} service. |
-| [Gateway Appliance](/docs/gateway-appliance) | These devices give you enhanced control over network traffic, helps accelerate network performance, and give your network a security boost. |
-{: caption="Table 4. Related security services" caption-side="bottom"}
-
-#### Business continuity and migration services
+#### Data resiliency and migration services
 {: #getting-started-serv-buss-cont}
 
-The following table describes the business continuity and migration services that are available.
+The following table describes the data resiliency and migration services that are available.
 
 | Service name | Description |
 |:------------ |:----------- |
@@ -105,7 +95,8 @@ The following table describes the business continuity and migration services tha
 | [PrimaryIO HDM](/docs/vmwaresolutions?topic=vmwaresolutions-managing_pio) | This service decouples VMs and storage (VMDKs) to seamlessly move workloads to and from {{site.data.keyword.cloud_notm}} faster and efficiently. |
 | [Veeam®](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | This service integrates directly with your VMware hypervisors to help your enterprise achieve high availability. You can control both the backup and restore of all VMs for your infrastructure from the Veeam console. |
 | [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | This service provides replication and disaster recovery capabilities, which can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}. |
-{: caption="Table 5. Business continuity and migration services" caption-side="bottom"}
+| [Managed Disaster Recovery Services by Kyndryl](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services) | This service provides replication and disaster recovery capabilities. These capabilities can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}. |
+{: caption="Table 4. Data resiliency and migration services" caption-side="bottom"}
 
 #### Featured workload solutions
 {: #getting-started-serv-feat-sol}
@@ -116,7 +107,7 @@ The following table describes the featured workload solutions services that are 
 |:------------ |:----------- |
 | [Dizzion](/docs/vmwaresolutions?topic=vmwaresolutions-dizzion-overview) | This service provides more service-level choices, multicloud integration, compliance, protection, and simplified management for the teams that are in charge with environment optimization. |
 | [IBM Security Services for SAP®](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | This service offers a cybersecurity solution to automate the monitoring and protection of SAP applications on {{site.data.keyword.cloud_notm}}, and to keep workloads compliant and secure from inside and outside threats. |
-{: caption="Table 6. Featured workload solutions" caption-side="bottom"}
+{: caption="Table 5. Featured workload solutions" caption-side="bottom"}
 
 #### Other services
 {: #getting-started-serv-other}
@@ -125,10 +116,9 @@ The following table describes other services that are available.
 
 | Service category | Service name | Description |
 |:---------------- |:------------ |:----------- |
-| Professional services | [Managed Disaster Recovery Services by Kyndryl](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services) | This service provides replication and disaster recovery capabilities. These capabilities can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}. |
-| Transformation and modernization of VMware applications | [Red Hat® OpenShift® for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | This service brings together the power of the Red Hat OpenShift Container Platform and the VMware software-defined data center stack. |
+| Transformation and modernization | [Red Hat® OpenShift® for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | This service brings together the power of the Red Hat OpenShift Container Platform and the VMware software-defined data center stack. |
 | Management tools | [vRealize® Operations™ and Log Insight™](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the VMware vRealize Operations (vROps) and VMware vRealize Log Insight (vRLI) tools, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
-{: caption="Table 7. Other services" caption-side="bottom"}
+{: caption="Table 6. Other services" caption-side="bottom"}
 
 ## Accessing the VMware Solutions console
 {: #getting-started-step1}
@@ -137,7 +127,7 @@ The following table describes other services that are available.
 The VMware Solutions console is the user interface where you order and manage your deployments. Each deployment is managed as an instance in the console. The console is a stand-alone user interface that is separate from the {{site.data.keyword.cloud_notm}} infrastructure customer portal.
 
 To access the {{site.data.keyword.vmwaresolutions_short}} console:
-1. Go to https://cloud.ibm.com/infrastructure/vmware-solutions/console.
+1. Go to https://cloud.ibm.com/vmware.
 2. Log in to the console with your **IBMid**.
 
 ## Setting up your environment for your first order

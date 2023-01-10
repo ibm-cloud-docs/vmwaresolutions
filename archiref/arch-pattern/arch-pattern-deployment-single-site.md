@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for single site vCenter Server deployment topologies 
 {: #arch-pattern-deployment-single-site}
 
-{{site.data.keyword.vmwaresolutions_full}} Dedicated instances offer a standard initial topology with a single management or converged cluster. It includes a vCenter, three VMware NSX-T™ managers, and an Active Directory™ deployment. They run either on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or on two VMware virtual machines (VMs) in a high availability deployment. The initial deployment also includes a standard NSX-T topology. 
+VMware vCenter Server® instances offer a standard initial topology with a single management or converged cluster. It includes a vCenter, three VMware NSX-T™ managers, and an Active Directory™ deployment. They run either on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or on two VMware virtual machines (VMs) in a high availability deployment. The initial deployment also includes a standard NSX-T topology. 
 
 You have several options to expand the capacity for the deployment by provisioning new hosts on the initial cluster or by adding new clusters. This pattern provides a few examples on how to expand and customize the initial deployment for a few use cases to fit your needs.
 
@@ -26,7 +26,7 @@ To customize the NSX-T topologies, see [the architecture pattern for single site
 ## Single-site vCenter Server deployment
 {: #arch-pattern-deployment-single-site-vcs-depl}
 
-Single-site deployment is the most common use case and network deployment pattern. This pattern uses a single [VMware Solution Dedicated - vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview). It is also highly scalable and easy to manage and expand.
+Single-site deployment is the most common use case and network deployment pattern. This pattern uses a single [vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview). It is also highly scalable and easy to manage and expand.
 
 The following diagram shows an example of a customer deployment by using the standard topology. You can add more hosts or new clusters to scale the solution.
 

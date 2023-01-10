@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-10-07"
+lastupdated: "2022-11-16"
 
 keywords: VMware Solutions Shared delete private network endpoint
 
@@ -25,15 +25,15 @@ You might want to delete a private network endpoint from a virtual data center w
 {: support}
 
 1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > VMware Shared** from the left navigation pane.
-2. In the **VMware Solutions Shared** table, click the virtual data center that you want to delete the private network endpoint from.
+2. In the **VMware Shared** table, click the virtual data center that you want to delete the private network endpoint from.
 3. In the **Private network endpoint** section, click **Delete**.
 4. Confirm that you want to delete the private network endpoint.
 
 ## Related links
 {: #shared_deleting-endpoints-related}
 
-* [Operating VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware Solutions Shared pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing)
+* [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
+* [VMware Shared pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing)
 * [Creating a private network endpoint](/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints)
 * [Viewing a private network endpoint for a virtual data center](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints)
 * [Modifying a private network endpoint for a virtual data center](/docs/vmwaresolutions?topic=vmwaresolutions-shared_modifying-endpoints)

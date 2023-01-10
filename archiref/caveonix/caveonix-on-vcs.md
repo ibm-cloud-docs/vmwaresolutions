@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ The following examples are typical use cases:
 - Customer wants to achieve faster time to detection with machine learning by analyzing volumes of data to understand good behavior and identify anomalies.
 - Customer wants to reduce overall compliance costs due to automated controls and assessments.
 - Customer wants to eliminate blind spots by viewing multidimensional grouping of assets across each location, organization, and application group in hybrid cloud.
--	Customer wants to build and enforce security and compliance policies based on predictive analytics engine that uses network traffic flows across all applications.
+- Customer wants to build and enforce security and compliance policies based on predictive analytics engine that uses network traffic flows across all applications.
 
 ## Key benefits to customers
 {: #caveonix-on-vcs-benefits}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-10-26"
+lastupdated: "2022-11-10"
 
 keywords: vRealize, vRealize info, tech specs vRealize
 
@@ -15,10 +15,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# vRealize Operations and Log Insight overview
+# vRealize Operations and Log Insight on IBM Cloud overview
 {: #vrops_overview}
 
-The vRealize Operations™ and vRealize Log Insight™ service deploys the VMware® vRealize Operations (vROps) and VMware vRealize Log Insight (vRLI) tools. These tools help you operate and monitor the performance, health, and capacity of your {{site.data.keyword.IBM}}-hosted, dedicated VMware environment. The service also includes vRLI to help you troubleshoot issues by using log files more quickly.
+vRealize Operations™ and vRealize Log Insight™ on IBM Cloud deploys the VMware® vRealize Operations (vROps) and VMware vRealize Log Insight (vRLI) tools. These tools help you operate and monitor the performance, health, and capacity of your {{site.data.keyword.IBM}}-hosted, dedicated VMware environment. The service also includes vRLI to help you troubleshoot issues by using log files more quickly. vRealize Operations and Log Insight on IBM Cloud is a non-IBM product that is offered under terms and conditions from VMware, not IBM.
 {: shortdesc}
 
 These tools are deployed by using the IBM advanced automation and are based on a consistent highly available design. vROps includes preinstalled and configured Management Packs to provide deeper visibility into the core VMware Software Defined Data Center components like VMware NSX®, vSAN™, and HCX™. The automation provides optimized dashboards out of the box so that you can monitor the full VMware stack more easily.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-12-19"
 
 keywords: manage shared resources, access the VMware Cloud Director Management console
 
@@ -44,8 +44,8 @@ You can use the VMware Cloud Director Management console to manage the {{site.da
 {: #shared_accessing-vcd-console-related}
 
 * [Resizing virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_resize)
-* [Operating VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [Deleting VMware Solutions Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
+* [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
+* [Deleting VMware Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
 * [Viewing the virtual data center summary](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary)
 * [Viewing virtual data center details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-details)
-* [VMware Cloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}
+* [VMware Cloud Director](https://www.vmware.com/ca/products/cloud-director.html){: external}

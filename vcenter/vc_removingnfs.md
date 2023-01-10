@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-10-20"
+lastupdated: "2022-11-23"
 
 keywords: vCenter Server remove NFS storage
 
@@ -33,8 +33,8 @@ You can contract the capacity of your VMware vCenter Server® instance according
 {: #vc_removingnfs-procedure}
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
-2. In the **vCenter Server instances** table, click the instance for which you want to contract capacity.
-3. Click **Infrastructure** on the left navigation pane.
+2. In the **vCenter Server** table, click the instance for which you want to contract capacity.
+3. Click the **Infrastructure** tab.
 4. In the applicable cluster table, click the cluster from which you want to remove NFS storage.
 5. In the **Storage** section, select the storage share that you want to remove and click **Delete**.
 6. Click **Remove** in the **Remove storage** window.

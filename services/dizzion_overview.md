@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-14"
+lastupdated: "2022-11-11"
 
 keywords: dizzion service, request dizzion, tech specs dizzion
 
@@ -15,11 +15,11 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Dizzion
+# Dizzion on IBM Cloud overview
 {: #dizzion-overview}
 
 Organizations with high-performing, remote, and hybrid workforces choose Dizzion digital workspaces, Desktop as a Service (DaaS), and virtual applications to protect sensitive data and create a seamless, work-from-anywhere platform.
-Dizzion outperforms legacy virtual desktop infrastructure (VDI) and commodity Desktop as a Service (DaaS) for a superior user experience. At the same time, it provides more service-level choices, multicloud integration, compliance, protection, and simplified management for the teams that are in charge with environment optimization.
+Dizzion on IBM Cloud outperforms legacy virtual desktop infrastructure (VDI) and commodity Desktop as a Service (DaaS) for a superior user experience. At the same time, it provides more service-level choices, multicloud integration, compliance, protection, and simplified management for the teams that are in charge with environment optimization. Dizzion on IBM Cloud is a non-IBM product that is offered under terms and conditions from Dizzion, not IBM.
 
 ## Technical specifications for Dizzion
 {: #dizzion-overview-specs}

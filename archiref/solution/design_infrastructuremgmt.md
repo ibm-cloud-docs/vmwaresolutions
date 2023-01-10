@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-11-23"
 
 subcollection: vmwaresolutions
 
@@ -82,7 +82,7 @@ Cornerstone to these solutions is automation. Automation reduces the complexity 
 
 IBM CloudBuilder is an ephemeral {{site.data.keyword.cloud_notm}} VM virtual server instance (VSI) which works to start a new VMware instance and perform lifecycle management functions. It is deployed when overall vCenter Server instance management is required and is deleted when the process is complete.
 
-IBM CloudDriver is an ephemeral {{site.data.keyword.cloud_notm}} VM virtual server instance (VSI) which is deployed as needed for day 2 operations such as adding hosts, clusters, or add-on services to your VMware instance.
+IBM CloudDriver is an ephemeral {{site.data.keyword.cloud_notm}} VM virtual server instance (VSI) which is deployed as needed for Day 2 operations such as adding hosts, clusters, or add-on services to your VMware instance.
 
 The IBM CloudBuilder and IBM CloudDriver components are deployed only on the private network that connects to the IBM management plane over a private message queue. They are IBM developed components, are not user accessible, and have the following attributes and functions:
 * Deployment and configuration of the vCenter Server instance within the user account.

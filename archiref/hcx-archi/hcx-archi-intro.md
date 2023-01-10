@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -32,7 +32,7 @@ This connection creates a loosely coupled interconnectivity between on-premises 
 * Encryption – network traffic is securely encrypted between the two sides.
 * Optimized network – selects the best connection and efficiently floods the connection so that network traffic is moved as fast as possible.
 * Data deduplication – as much as 50% reduction in network traffic can be achieved
-* vMotion migration	- a single running system can be moved between HCX enabled sites by using the VMware vMotion protocol with no service interruption.
+* vMotion migration - a single running system can be moved between HCX enabled sites by using the VMware vMotion protocol with no service interruption.
 * Bulk migration - multiple systems can be moved in parallel using VMware vSphere® Replication protocol between HCX enabled sites.
 * Scheduled migration – any number of VMs can be replicated to the destination site and then activated on that site at a designated time. The replication replaces the systems that are running on the originating site.
 * Migration of security policies – if NSX is used on-premises, any security policies or firewalls are moved along with the workload.

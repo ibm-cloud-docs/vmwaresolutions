@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -58,7 +58,8 @@ The new profile appears in the profile list.
 
 1. Go to the host profile that was previously completed.
 2. Click the Check **Host Profile Compliance icon**.
-3. On the **Objects** tab, the compliance status is updated as; _Compliant, Unknown, or _Non-compliant_. A non-compliant status indicates a discovered and specific inconsistency between the profile and the new host.
+
+   On the **Objects** tab, the compliance status is updated as `Compliant, Unknown` or `Non-compliant`. A non-compliant status indicates a discovered and specific inconsistency between the profile and the new host.
 
 ## Reviewing compliance failures and remediation
 {: #vum-host-profiles-review-compliance}

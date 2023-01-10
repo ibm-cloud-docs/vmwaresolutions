@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-10-20"
+lastupdated: "2022-12-21"
 
 keywords: vCenter Server add clusters, add cluster, vCenter Server cluster
 
@@ -49,7 +49,8 @@ The cluster name is set to **vcs-_xx_** by default, where _xx_ represents two ra
 
 Review the following information and specify the licensing setting for the VMware vSphere component in the cluster:
 * For Business Partner users, the vSphere license (Enterprise Plus edition) is included and purchased on your behalf.
-* For users who are not Business Partners, you can use the IBM-provided VMware licenses for this component by selecting **Include with purchase**. Or you can Bring Your Own License (BYOL) by selecting **I will provide** and entering your own license key.
+* For users who are not Business Partners, you can use the IBM-provided VMware licenses for this component by selecting **Include with purchase**.
+* Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Only select **I will provide** and enter your own license key if you are performing an upgrade or migration of an existing BYOL cluster.
 
 ### Bare metal server settings
 {: #vc_addingclusters-bare-metal-settings}
@@ -149,7 +150,7 @@ The amount of storage reduction from deduplication and compression depends on ma
 ##### vSAN license
 {: #vc_addingclusters-vsan-storage-lic}
 
-Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**, or Bring Your Own License (BYOL) by selecting **I will provide** and entering your own license key.
+Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**. Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Only select **I will provide** and enter your own license key if you are performing an upgrade or migration of an existing BYOL cluster.
 
 If your initial cluster was a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This behavior is also true if any cluster (initial or additional) in the instance has vSAN chosen to be deployed on it. The first time you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that was chosen initially is reused.
 
@@ -357,12 +358,12 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 {: #vc_addingclusters-procedure}
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
-2. In the **vCenter Server instances** table, click the instance that you want to add clusters to.
+2. In the **vCenter Server** table, click the instance that you want to add clusters to.
 
    Ensure that the instance is in the **Ready to use** status. Otherwise, you cannot add clusters to the instance.
    {: note}
 
-3. Click **Infrastructure** on the left navigation pane and click **Add** on the upper right of the **Clusters** table.
+3. Click the **Infrastructure** tab and click **Add** on the upper right of the **Clusters** table.
 4. On the **Cluster** page, select the cluster type.
 5. For workload clusters, select a billing option, enter the cluster name, and complete the following configuration.
    1. If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, under **Bare metal server**, select the **Select a different location** checkbox and choose the {{site.data.keyword.cloud_notm}} data center to host the instance.

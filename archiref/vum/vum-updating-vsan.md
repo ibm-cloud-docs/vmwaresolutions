@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -47,11 +47,11 @@ The first step is to add your my.vmware.com credentials to the vSAN Build Recomm
 ### Configure the VCSA to use the proxy
 {: #vum-updating-vsan-config-vcsa-proxy}
 
-1.	From your jump server web browser, connect to the VCSA Management Interface `https://<vCenter ip>:5480`
-2.	Using the credentials from the {{site.data.keyword.vmwaresolutions_full}} console, log in to the VCSA Management Interface as root.
-3.	In the vCenter Server Appliance Management Interface, click **Networking** and click **Manage**.
-4.	To configure a proxy server, in the Proxy Settings pane, click **Edit**.
-5.	Select **Use a Proxy Server**, enter the proxy server settings, and click **OK**.
+1. From your jump server web browser, connect to the VCSA Management Interface `https://<vCenter ip>:5480`
+2. Using the credentials from the {{site.data.keyword.vmwaresolutions_full}} console, log in to the VCSA Management Interface as root.
+3. In the vCenter Server Appliance Management Interface, click **Networking** and click **Manage**.
+4. To configure a proxy server, in the Proxy Settings pane, click **Edit**.
+5. Select **Use a Proxy Server**, enter the proxy server settings, and click **OK**.
 
 There have been reports where the proxy information is only set for HTTP but not for HTTPS. To configure the proxy information also for HTTPS traffic, it must be enabled first. After you log in to the VCSA via SSH, use the proxy.get command to view the configuration and confirm that the HTTPS parameters are not set.
 

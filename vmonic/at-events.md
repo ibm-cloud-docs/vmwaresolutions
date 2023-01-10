@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2022
 
-lastupdated: "2022-06-14"
+lastupdated: "2022-12-28"
 
 keywords: activity tracker, event, security, vmware solutions events, vmware solutions shared events, instance events, view events
 
@@ -22,7 +22,7 @@ Use the {{site.data.keyword.at_full}} service to track how users and application
 
 {{site.data.keyword.at_full_notm}} records user-initiated activities that change the state of a service in the {{site.data.keyword.cloud_notm}}. You can use this service to investigate for abnormal activity and critical actions, and comply with regulatory audit requirements. In addition, you can be alerted on actions as they happen. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard. For more information, see [Getting started with {{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
 
-## Events for VMware Solutions Shared
+## Events for VMware Shared
 {: #at-events-vdc}
 
 When you use {{site.data.keyword.vmwaresolutions_short}} Shared, an event is generated to track how users and applications interact with virtual data centers.
@@ -34,7 +34,7 @@ The following table lists the actions that generate and send an event to {{site.
 | `vmware-solutions.vdc.create` | An event is generated when a virtual data center instance is created. |`pending` \n `success` \n `failure` |
 | `vmware-solutions.vdc.delete` | An event is generated when a virtual data center instance is deleted. | `pending` \n `success` \n `failure` |
 | `vmware-solutions.vdc.update` | An event is generated when capacity is added to a virtual data center instance. \n An event is generated when capacity is removed from a virtual data center instance. | `pending` \n `success` \n `failure` |
-{: caption="Table 1. Description of actions that generate VMware Solutions Shared events" caption-side="bottom"}
+{: caption="Table 1. Description of actions that generate VMware Shared events" caption-side="bottom"}
 
 ## Events for vCenter Server instance management
 {: #at-events-instance-mgmt}
@@ -48,7 +48,7 @@ The following table provides the actions that generate and send management event
 | `vmware-solutions.account-apikey.update` | The infrastructure API key for an account is updated. |
 | `vmware-solutions.account-notification.update` | The notification setting for an account is updated. |
 | `vmware-solutions.instance-secure-data.wipe` | The instance-secure data is wiped. |
-| `vmware-solutions.instance-bss-account.migrate` |	An instance is migrated to a BSS account. |
+| `vmware-solutions.instance-bss-account.migrate` | An instance is migrated to a BSS account. |
 | `vmware-solutions.vcs.create` | A VMware vCenter Server® instance is created. |
 | `vmware-solutions.vcs.delete` | A vCenter Server instance is deleted. |
 | `vmware-solutions.vcs-host.add` | A host is added to a vCenter Server instance. |
@@ -89,7 +89,7 @@ The initiator ID is derived from the TLS (Transport Layer Security) certificate
 ## Viewing events
 {: #at-events-viewing}
 
-VMware Solutions Shared and vCenter Server events are global events. The KMIP for VMware events are location-based events that are automatically forwarded to the {{site.data.keyword.at_full_notm}} service instance that is available in the same location as the KMIP for VMware instance. For more information, see [Monitoring global and location-based events](/docs/activity-tracker?topic=activity-tracker-monitor_events#mon_def_event_type).
+VMware Shared and vCenter Server events are global events. The KMIP for VMware events are location-based events that are automatically forwarded to the {{site.data.keyword.at_full_notm}} service instance that is available in the same location as the KMIP for VMware instance. For more information, see [Monitoring global and location-based events](/docs/activity-tracker?topic=activity-tracker-monitor_events#mon_def_event_type).
 
 {{site.data.keyword.at_full_notm}} can have only one instance per location. To view events, you must access the web UI of the {{site.data.keyword.at_full_notm}} service in the same location where your service instance is available. For more information, see [Navigating to the UI](/docs/activity-tracker?topic=activity-tracker-launch#launch).
 

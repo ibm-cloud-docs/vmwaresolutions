@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-28"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -32,7 +32,7 @@ Before you can start the build process to install the {{site.data.keyword.redhat
 ## Ordering new subnets for the Red Hat OpenShift environment
 {: #openshift-runbook-runbook-prereq-cloud-subnets}
 
-1. Log in to the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.com/infrastructure/vmware-solutions/console).
+1. Log in to the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.com/vmware).
 2. Select **Classic Infrastructure>Network>IP management>Subnets**.
 3. Click **Order IP Subnets**.
 
@@ -61,18 +61,18 @@ Download the ISO image for the bastion host.
 3. Download the source ISO images.
 4. The ISO file name is `rhel-8.x-x86_64-dvd.iso`.
 
-## vCenter Server instance details
+## Collecting vCenter Server instance details
 {: #openshift-runbook-runbook-prereq-cloud}
 
 Access the {{site.data.keyword.cloud_notm}} environment details.
 
-1. Log in to the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.com/infrastructure/vmware-solutions/console).
+1. Log in to the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.com/vmware).
 2. Click the {{site.data.keyword.vmwaresolutions_short}} instance under **Deployed Instances**.
 3. From the **Summary** page, collect the vCenter and Active Directory information.
 4. Click **Infrastructure** and select the cluster.
 5. Under **Network Interfaces**, collect the Public and Private VLANs.
 
-## Download and install govc
+## Downloading and installing govc
 {: #openshift-runbook-runbook-prereq-govc}
 
 The `govc` command is used to upload the OVF and ISO to a datastore from the jump-server or remote device.

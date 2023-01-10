@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Veeam on bare metal server overview
 {: #veeam-bms-archi-overview}
 
-The following diagram describes an architecture overview for Veeam® on VMware Solutions Dedicated by using {{site.data.keyword.cloud}} bare metal servers. This solution is modular, where a single bare metal server can be used as an initial all-in-one deployment, which includes all required software components and local SATA DAS for backups. The solution can be scaled up with optional "add-on" servers.
+The following diagram describes an architecture overview for Veeam® on VMware vCenter Server® instances by using {{site.data.keyword.cloud}} bare metal servers. This solution is modular, where a single bare metal server can be used as an initial all-in-one deployment, which includes all required software components and local SATA DAS for backups. The solution can be scaled up with optional "add-on" servers.
 
 ![Architecture overview for Veeam on bare metal server deployments](../../images/veeam-bms-aod.svg "Architecture overview for Veeam on bare metal server deployments"){: caption="Figure 1. Architecture overview for Veeam on bare metal server deployments" caption-side="bottom"}
 

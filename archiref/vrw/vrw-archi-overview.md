@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-12-14"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ The minimum viable product consists of the following components:
 ## Management cluster
 {: #vrw-archi-overview-management}
 
-The management cluster is sized to support only the requirements of the management software stack. Do not run non-management function workloads in the management cluster. Keeping the management functions fully isolated from the workload cluster makes it impossible for a runaway workload VM to use resources that are dedicated to platform management. This way, administrators ensure that they can maintain full control of the environment.
+The management cluster is sized to support only the requirements of the management software stack. Do not run nonmanagement function workloads in the management cluster. Keeping the management functions fully isolated from the workload cluster makes it impossible for a runaway workload VM to use resources that are dedicated to platform management. This way, administrators ensure that they can maintain full control of the environment.
 
 vSAN is used to provide enhanced resiliency to the management stack. The use of shared storage provides rapid restoration of management components if an ESXi host is lost.
 
@@ -54,16 +54,16 @@ The management software stack includes the following components:
 ## Edge services cluster
 {: #vrw-archi-overview-edge}
 
-The FortiGate physical 10 Gb HA appliance is the only point of entry into the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. The edge services cluster with the vSRX HA appliance or a suitable bring your own gateway appliance is an alternative to the physical FortiGate appliance. The edge services cluster uses local storage only (no vSAN, no NFS) with each host running a virtual appliance node. The edge services cluster requires only two ESXi hosts. The nodes are configured as a highly available cluster. The cluster is sized to support 10 Gb networking.
+The FortiGate physical 10 Gb HA appliance is the only point of entry into the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. The edge services cluster with the vSRX HA appliance or a suitable bring your own gateway appliance is an alternative to the physical FortiGate appliance. The edge services cluster uses local storage only (no vSAN, no NFS) and each host is running a virtual appliance node. The edge services cluster requires only two ESXi hosts. The nodes are configured as a highly available cluster. The cluster is sized to support 10 Gb networking.
 
 ## Workload cluster
 {: #vrw-archi-overview-workloads}
 
-The sizing of four ESXi servers for the workload cluster is based on the required compute resources, memory, and storage needs of the customer applications. The minimum host count of four is a vSAN requirement.
+The sizing of four ESXi servers for the workload cluster is based on the required compute resources, memory, and storage needs of the customer applications. The minimum host count of four is a vSAN requirement. Each workload cluster added is provisioned on new VLANs in the same datacenter location to separate traffic of different workload clusters with the firewall, either physical or an appliance that is running on the edge services cluster.
 
 vSAN is the storage provider and is fully contained within the workload environment. Therefore, all regulated data is isolated from external access and threats.
 
-NSX-T provides a highly secure and flexible software defined network to support the application requirements. NSX-T management is external to the workload cluster thus ensuring that network and security changes are not possible by anyone other than the designated administrators. All north-south network access in the workload cluster is done through private and secure connections by using IPsec or IBM Direct Link.
+NSX-T provides a highly secure and flexible software-defined network to support the application requirements. NSX-T management is external to the workload cluster thus ensuring that network and security changes are not possible by anyone other than the designated administrators. All north-south network access in the workload cluster is done through private and secure connections by using IPsec or IBM Direct Link.
 
 Add more workload clusters to deliver dedicated resources for more applications or to satisfy business or compliance requirements.
 
@@ -72,7 +72,7 @@ Add more workload clusters to deliver dedicated resources for more applications 
 
 Smaller deployments, such as those for Development, Test, or a minimal footprint DR site, might not require the deployment of both dedicated management and workload clusters. You can order the VMware Regulated Workloads environment with a consolidated management and workload cluster. When you use a consolidated cluster, additional operation and security risks exist. No option is offered to deploy without a Perimeter Gateway.
 
-Resource exhaustion is an operational risk that might require reserving sufficient compute, storage, and network resources for management functions to guarantee the necessary resources are available to manage the environment. Another option to prevent resource exhaustion is through the assignment of quotas to workloads.
+Resource exhaustion is an operational risk that might require reserving sufficient compute, storage, and network resources for management functions to ensure that the necessary resources are available to manage the environment. Another option to prevent resource exhaustion is through the assignment of quotas to workloads.
 
 Before you deploy a consolidated cluster, consider the following possible security risks:
 * An attacker who gets access to a workload VM might be able to use future microarchitectural vulnerabilities to steal secrets from or manipulate memory on an ESXi host.
@@ -81,7 +81,7 @@ Before you deploy a consolidated cluster, consider the following possible securi
 ## Optional management by IBM
 {: #vrw-archi-overview-ibm-services}
 
-The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads is available as a self-managed or SaaS provider-managed solution. However, a SaaS provider might choose to deploy the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads as an IBM-managed offering by bundling in IBM GTS services.
+The VMware Regulated Workloads offering is available as a self-managed or SaaS provider-managed solution. However, a SaaS provider might choose to deploy the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads as an IBM-managed offering by bundling in IBM GTS services.
 
 ## How to order VMware Regulated Workloads instances
 {: #vrw-archi-overview-order-inst}

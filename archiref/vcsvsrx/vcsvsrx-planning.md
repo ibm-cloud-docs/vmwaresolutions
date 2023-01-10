@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-10-24"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -166,7 +166,6 @@ The traffic that originates from the client facility flows through AT&T NetBond 
 ## Related links
 {: #vcsvsrx-planning-related}
 
-* [vCenter Server on {{site.data.keyword.cloud_notm}} with Hybridity Bundle overview](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-hybridity-intro)
 * [Getting Started with IBM Cloud Juniper vSRX](/docs/vsrx?topic=vsrx-getting-started)
 * [Juniper Networks vSRX Deployment Guide for VMware](https://www.juniper.net/documentation/en_US/vsrx/information-products/pathway-pages/security-vsrx-vmware-guide-pwp.html){: external}
 * [Juniper Networks Requirements for vSRX on VMware](https://www.juniper.net/documentation/en_US/vsrx/topics/reference/general/security-vsrx-vmware-system-requirement.html){: external}

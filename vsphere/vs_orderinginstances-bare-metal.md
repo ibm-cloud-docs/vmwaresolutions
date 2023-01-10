@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-07-26"
+lastupdated: "2023-01-06"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -81,15 +81,16 @@ The **SAP-certified** servers are not available if you selected VMware vSAN prev
 
 For **SAP-certified** servers, you have the following options:
 * **NetWeaver**, for which the CPU and RAM size are preset.
-* **HANA**, for which you can choose the CPU model and a supported RAM size.
+* **HANA**, for which you can choose the CPU model with its supported RAM size.
 
 | CPU model     | Cores     | GHz     | RAM sizes |
 |:------------- |:----------|:--------|:--------- |
 | Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW192) | 32 | 2.3 | 192 GB |
 | Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW384) | 32 | 2.3 | 384 GB |
 | Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768) | 40 | 2.5 | 768 GB |
-| Dual Intel Xeon Platinum 8280 M processor (Cascade Lake, BI.S4.NW1500) | 56 | 2.7 | 1.5 TB |
-| Dual Intel Xeon Platinum 8280 M processor (Cascade Lake, BI.S4.NW3000) | 56 | 2.7 | 3 TB |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768_v2) | 48 | 2.4 | 768 GB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW1500) | 56 | 2.7 | 1.5 TB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW3000) | 56 | 2.7 | 3 TB |
 {: caption="Table 3. Options for SAP-certified bare metal servers - NetWeaver" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: tab-title="NetWeaver"}
@@ -98,10 +99,13 @@ For **SAP-certified** servers, you have the following options:
 
 | CPU model     | Cores     | GHz     | RAM sizes |
 |:------------- |:----------|:--------|:--------- |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake) | 32 | 2.3 | 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake) | 40 | 2.5 | 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Dual Intel Xeon Platinum 8280 M processor (Cascade Lake) | 56 | 2.7 | 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Quad Intel Xeon Platinum 8280 M processor (Cascade Lake) | 112 | 2.7 | 3 TB, 6 TB |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.192) | 32 | 2.3 | 192 GB |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.384) | 32 | 2.3 | 384 GB |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.H2.768) | 40 | 2.5 | 768 GB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.1500) | 56 | 2.7 | 1.5 TB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.3000) | 56 | 2.7 | 3 TB |
+| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.3000) | 112 | 2.7 | 3 TB |
+| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.6000) | 112 | 2.7 | 6 TB |
 {: caption="Table 3. Options for SAP-certified bare metal servers - HANA" caption-side="bottom"}
 {: tab-title="HANA"}
 {: tab-group="SAP-certified Intel servers"}

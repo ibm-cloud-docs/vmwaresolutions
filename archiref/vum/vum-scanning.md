@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -16,10 +16,10 @@ subcollection: vmwaresolutions
 {: #vum-scanning}
 
 When you scan hosts, virtual machines (VMs), and virtual appliances (VAs), you evaluate them against baselines and baseline groups to determine their levels of compliance. Inventory objects are scanned, and the results are reviewed to determine how they comply with the baselines and baseline groups. Scan results can be filtered by text search, group selection, baseline selection, and compliance status selection. You can initiate the following scans:
-*	**Manually Initiate a Scan of vSphere ESXi Hosts** - You can scan vSphere® ESXi™ hosts in the vSphere inventory against attached baselines and baseline groups.
-*	**Manually Initiate a Scan of Virtual Machines and Virtual Appliances** - You can scan VMs and VAs in the vSphere inventory against attached baselines and baseline groups.
-*	**Manually Initiate a Scan of a Container Object** - Starts a simultaneous scan of hosts, VMs, and VAs, by scanning a container object that is a data center or a data center folder.
-*	**Schedule a Scan** - You can configure the vSphere Web Client to scan VMs, VAs, and ESXi hosts at specific times or at intervals as needed.
+* **Manually Initiate a Scan of vSphere ESXi Hosts** - You can scan vSphere® ESXi™ hosts in the vSphere inventory against attached baselines and baseline groups.
+* **Manually Initiate a Scan of Virtual Machines and Virtual Appliances** - You can scan VMs and VAs in the vSphere inventory against attached baselines and baseline groups.
+* **Manually Initiate a Scan of a Container Object** - Starts a simultaneous scan of hosts, VMs, and VAs, by scanning a container object that is a data center or a data center folder.
+* **Schedule a Scan** - You can configure the vSphere Web Client to scan VMs, VAs, and ESXi hosts at specific times or at intervals as needed.
 
 ## Manually initiating a scan of vSphere ESXi hosts
 {: #vum-scanning-scan-hosts}
@@ -35,35 +35,36 @@ When you scan hosts, virtual machines (VMs), and virtual appliances (VAs), you e
 
 You can scan VMs and virtual appliances in the vSphere inventory against attached baselines and baseline groups. The VMs and appliances that you select are scanned against the attached baselines, depending on the options that you select. All child objects are scanned, so the larger the virtual infrastructure and the higher up in the object hierarchy that you initiate the scan, the longer the scan takes and the more accurate the compliance view is.
 
-1.	Using the vSphere Web Client, select **Home** > **VMs and Templates**.
-2.	Right-click a _virtual machine_, _virtual appliance_, or a _folder of virtual machines and appliances_ and click **Scan for Updates**.
-3.	Select the types of updates to scan for. The options are _Virtual Appliance upgrades, VM Hardware upgrades_, and _VMware Tools upgrades_.
-4.	Click **Scan**.
+1. Using the vSphere Web Client, select **Home** > **VMs and Templates**.
+2. Right-click a _virtual machine_, _virtual appliance_, or a _folder of virtual machines and appliances_ and click **Scan for Updates**.
+3. Select the types of updates to scan for. The options are _Virtual Appliance upgrades, VM Hardware upgrades_, and _VMware Tools upgrades_.
+4. Click **Scan**.
 
-##	Manually initiating a scan of a container object
+## Manually initiating a scan of a container object
 {: #vum-scanning-scan-container}
 
 Start a simultaneous scan of hosts, VMs, and virtual appliances, by scanning a container object that is a data center or a data center folder.
-1.	Using the vSphere Web Client, select **Home** > **VMs and Templates**.
-2.	Right-click a _datacenter_ or _datacenter folder_ and click **Scan for Updates**.
-3.	Select the types of updates to scan for. The options are _Virtual Appliance upgrades, VM Hardware upgrades_, and _VMware Tools upgrades_.
-4.	Click **Scan**.
+1. Using the vSphere Web Client, select **Home** > **VMs and Templates**.
+2. Right-click a _datacenter_ or _datacenter folder_ and click **Scan for Updates**.
+3. Select the types of updates to scan for. The options are _Virtual Appliance upgrades, VM Hardware upgrades_, and _VMware Tools upgrades_.
+4. Click **Scan**.
 
-##	Scheduling a scan
+## Scheduling a scan
 {: #vum-scanning-schedule}
 
 You can configure the vSphere Web Client to scan VMs, virtual appliances, and vSphere ESXi hosts at specific times or at intervals that are convenient for you.
 
-1.	Using the vSphere Web Client, select an object from the inventory. All child objects of the object that you select are also scanned.
-2.	Select the **Monitor** tab and click **Task & Events**.
-3.	Select **Scheduled Tasks** and click **Schedule a New Task**.
-4.	Select **Scan for Updates** from the list that appears.
-5.	On the Edit Settings page, select the types of updates to scan the inventory object for. You must select at least one scan type. On the Scheduling options page, describe and schedule the scan task.
-6.	Enter a unique name, and optionally, a description for the scan task. Click **Change** to set the frequency and the start time for the scan task. Click **OK**.
-7.	The scan task is listed in the Scheduled Tasks view of the vSphere Web Client.
+1. Using the vSphere Web Client, select an object from the inventory. All child objects of the object that you select are also scanned.
+2. Select the **Monitor** tab and click **Task & Events**.
+3. Select **Scheduled Tasks** and click **Schedule a New Task**.
+4. Select **Scan for Updates** from the list that appears.
+5. On the Edit Settings page, select the types of updates to scan the inventory object for. You must select at least one scan type. On the Scheduling options page, describe and schedule the scan task.
+6. Enter a unique name, and optionally, a description for the scan task. Click **Change** to set the frequency and the start time for the scan task. Click **OK**.
+
+The scan task is listed in the Scheduled Tasks view of the vSphere Web Client.
 
 ## Related links
 {: #vum-scanning-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [VMware Solutions on 	{{site.data.keyword.cloud_notm}} Digital Technical Engagement](https://www.ibm.com/demos/collection/IBM-Cloud-for-VMware-Solutions/) (demonstrations)
+* [VMware Solutions on {{site.data.keyword.cloud_notm}} Digital Technical Engagement](https://www.ibm.com/demos/collection/IBM-Cloud-for-VMware-Solutions/) (demonstrations)

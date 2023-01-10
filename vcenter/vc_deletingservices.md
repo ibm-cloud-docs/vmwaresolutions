@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-10-20"
+lastupdated: "2022-11-23"
 
 keywords: remove services vCenter Server
 
@@ -29,8 +29,8 @@ You can delete the services that were provisioned for your VMware vCenter Server
 {: #vc_deletingservices-procedure}
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
-2. In the **vCenter Server instances** table, click the instance for which you want to delete services.
-3. Click **Services** on the left navigation pane.
+2. In the **vCenter Server** table, click the instance for which you want to delete services.
+3. Click the **Services** tab.
 4. On the **Services** page, locate the service instance that you want to delete, click the vertical overflow menu next to the **Status** column, and then click **Delete service**.
 5. In the **Remove service** window, review the considerations or warnings if there are any and select **I Understand**. Click **Delete**.
 

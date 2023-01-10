@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-03-31"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ FortiGate® VM is available in several sizes and licensing options. The license 
 * Standard FW + Unified Threat Management
 * Standard FW + Enterprise
 
-For more information about the capabilities of each license tier and bundle, see [FortiGate–VM on VMware ESXi data sheet](https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/FortiGate_VM_ESXi.pdf){: external}
+For more information about the capabilities of each license tier and bundle, see [FortiGate–VM on VMware ESXi data sheet](https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/FortiGate_VM_ESXi.pdf){: external}.
 
 ## Specifications
 {: #fortigate-implementation-specs}

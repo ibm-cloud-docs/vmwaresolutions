@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-02-10"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.cloud_notm}} Client {{site.data.keyword.vpn_vpc_short}} provides an open source compatible client-to-site VPN solution that allows users to connect to {{site.data.keyword.cloud_notm}} resources through secure, encrypted connections. Whether you want to connect to access or manage your workloads that are running in VPC Virtual Servers or VMware® workloads, you can use the OpenVPN-based client-to-site VPN solution for remote access. For more information, see [About client-to-site VPN servers](/docs/vpc?topic=vpc-vpn-client-to-site-overview).
 
-## Considerations with roll-your-own VMware Solution in VPC
+## Considerations with roll-your-own VMware solution in VPC
 {: #interconnectivity-vpn-ryo-considerations}
 
 When you use the VMware virtual machines (VMs) on VPC subnets architecture, your VMs are attached to VPC subnets and the routing behaves in the same way as with VPC Virtual Servers. The VPC subnets are provisioned from the zone prefix, and the routing works between the VPC without any required changes. You can use both {{site.data.keyword.cloud_notm}} VPN Gateway for VPC and {{site.data.keyword.cloud_notm}} Client {{site.data.keyword.vpn_vpc_short}} with this solution as described in the documentation previously listed.

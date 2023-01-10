@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-08-25"
+lastupdated: "2023-01-04"
 
 keywords: zerto, order zerto cloud connector
 
@@ -22,10 +22,21 @@ Optionally order Zerto Cloud Connector (ZCC) as an enhanced Zerto option to link
 ## Before you begin
 {: #shared_zerto-cc-order-prereq}
 
-- Review the following limitations that currently exist for Zerto Cloud Connector:
-   - You can create a ZCC only if you have a network that is created in VMware® Cloud Director. You must ensure that you do not delete that network, either while the ZCC order is in progress or later.
-   - You cannot use the ``172.16.3.x.``, ``172.16.7.x``, or ``10.0.0.0/8`` subnets for your on-premises Virtual Replication Appliance or Zerto Virtual Manager deployments if you are ordering a Zerto Cloud Connector.
-- You must create Organization networks before you order a ZCC. For more information, see [Creating a network](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-create-network).
+Review the following limitations that currently exist for ZCC:
+
+* You can create a ZCC only if you have a network that is created in VMware® Cloud Director. Ensure that you do not delete that network, either while the ZCC order is in progress or later.
+* If you are ordering a Zerto Cloud Connector, you cannot use the following IP subnets for your on-premises Virtual Replication Appliance or Zerto Virtual Manager deployments:
+   * For the Dallas locations:
+      * 172.16.3.0/24 - Management
+      * 10.37.7.0/24 - DAL13
+      * 10.5.30.0/24 - DAL10
+      * 10.184.193.0/24 - DAL12
+   * For the Frankfurt locations:
+      * 172.16.7.0/24 - Management
+      * 10.215.201.0/24 - FRA02
+      * 10.240.220.0/24 - FRA04
+      * 10.13.28.0/24 - FRA05
+* You must create Organization networks before you order a ZCC. For more information, see [Creating a network](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-create-network).
 
 ## Procedure to order a Zerto Cloud Connector from the virtual data center
 {: #shared_zerto-cc-order-procedure}
@@ -42,7 +53,7 @@ Optionally order Zerto Cloud Connector (ZCC) as an enhanced Zerto option to link
 ## Related links
 {: #shared_zerto-cc-order-related}
 
-* [VMware Solutions Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
+* [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
 * [Accessing the Zerto Self-Service Portal](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal)
 * [Viewing Zerto Cloud Connector details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-view)

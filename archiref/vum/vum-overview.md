@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -45,30 +45,30 @@ The downloading of upgrades, host patches, extensions, and related metadata is a
 
 VUM supports the recall of patches for hosts that are running ESXi 5.0 or later. A patch is recalled if the released patch has problems or potential issues. After you scan the hosts in your VMware vCenter Server® instance, VUM alerts you if the recalled patch is installed on a certain host. Recalled patches cannot be installed on hosts with VUM. VUM also deletes all the recalled patches from the patch repository. After a patch fix to the problem is released, VUM downloads the new patch to its patch repository. If you installed the problematic patch, VUM notifies you that a fix was released and prompts you to apply the new patch.
 
-The VUM client interface provides two main views:
-*	Administration view
-*	Compliance view
+The VUM client interface provides the following views:
+* Administration view
+* Compliance view
 
-##	Administration view
+## Administration view
 {: #vum-overview-admin-view}
 
 To access the administration view, go to **Home > Update Manager** and select the IP address of the Update Manager instance. In the Administration view, you can do the following tasks:
-*	Configure the Update Manager settings
-*	Create and manage baselines and baseline groups
-*	View Update Manager events
-*	Review the patch repository and available virtual appliance upgrades
-*	Review and check notifications
-*	Import ESXi images
+* Configure the Update Manager settings
+* Create and manage baselines and baseline groups
+* View Update Manager events
+* Review the patch repository and available virtual appliance upgrades
+* Review and check notifications
+* Import ESXi images
 
-##	Compliance view
+## Compliance view
 {: #vum-overview-compliance-view}
 
 The compliance view of a selected inventory object is accessed by navigating to **Hosts and Clusters** or **VMs and Templates** and clicking the **Update Manager** tab. In the Update Manager Compliance view, you can do the following tasks:
-*	View compliance and scan results for each selected inventory object
-*	Attach and detach baselines and baseline groups from a selected inventory object
-*	Scan a selected inventory object
-*	Stage patches or extensions to hosts
-*	Remediate a selected inventory object
+* View compliance and scan results for each selected inventory object
+* Attach and detach baselines and baseline groups from a selected inventory object
+* Scan a selected inventory object
+* Stage patches or extensions to hosts
+* Remediate a selected inventory object
 
 ## Related links
 {: #vum-overview-related}

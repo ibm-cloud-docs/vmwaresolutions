@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-03-31"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -15,10 +15,10 @@ subcollection: vmwaresolutions
 # Storage options on IBM Cloud and Red Hat OpenShift
 {: #vcs-openshift-storage}
 
-## vSphere Storage for Kubernetes
+## vSphere storage for Kubernetes
 {: #vcs-openshift-storage-kubernetes}
 
-You can use the vSphere® datastores as a location for storing persistent volumes for Kubernetes by using the VMware® Cloud Provider.
+You can use the VMware vSphere® datastores as a location for storing persistent volumes for Kubernetes by using the VMware® Cloud Provider.
 
 Complete the following steps to create a new volume:
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-08-22"
+lastupdated: "2022-12-21"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -15,23 +15,23 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# VMware Solutions Shared overview
+# VMware Shared overview
 {: #shared_overview}
 
-{{site.data.keyword.vmwaresolutions_full}} Shared provides standardized and customizable deployment choices of VMware® virtual data center environments. With VMware Solutions Shared virtual data centers, you can quickly and seamlessly migrate or deploy VMware workloads to the cloud, on IBM-hosted VMware infrastructure. IBM provides a self-service on-demand VMware cloud computing platform with VMware Cloud Director running on {{site.data.keyword.cloud_notm}}. This Infrastructure as a Service (IaaS) on-demand offering provides the option to use specific virtual CPU (vCPU), storage, vRAM, Network, and IP, as needed.
+The {{site.data.keyword.vmwaresolutions_full}} Shared offering provides standardized and customizable deployment choices of VMware® virtual data center environments. With VMware Shared virtual data centers, you can quickly and seamlessly migrate or deploy VMware workloads to the cloud, on IBM-hosted VMware infrastructure. IBM provides a self-service on-demand VMware cloud computing platform with VMware Cloud Director running on {{site.data.keyword.cloud_notm}}. This Infrastructure as a Service (IaaS) on-demand offering provides the option to use specific virtual CPU (vCPU), storage, vRAM, Network, and IP, as needed.
 
-VMware Solutions Shared has the following IaaS subscription service types:
+VMware Shared has the following IaaS subscription service types:
 
 * Multitenant on-demand virtual data centers
 * Multitenant reserved virtual data centers
 
-You can manage the lifecycle of virtual data centers by using the VMware Solutions Shared offering. The following functions are supported when you use the VMware Cloud Director Management console or public API:
+You can manage the lifecycle of virtual data centers by using VMware Shared. The following functions are supported when you use the VMware Cloud Director Management console or public API:
 
 * Virtual data center creation
 * Virtual data center elasticity
 * Virtual data center deletion
 
-The VMware Solutions Shared offerings come standard with five public IP addresses on an NSX Edge Service Gateway with unlimited ingress over the public network.
+VMware Shared comes standard with five public IP addresses on an NSX Edge Service Gateway with unlimited ingress over the public network.
 
 Virtual data centers incur charges for the following components:
 
@@ -42,17 +42,18 @@ Virtual data centers incur charges for the following components:
 * Commercial operating system licenses used
 * Optional VMware services
 
-## VMware Solutions Shared architecture
+## VMware Shared architecture
 {: #shared_overview-archi}
 
-The following graphic depicts the high-level architecture and components of VMware Solutions Shared deployment.
+The following graphic depicts the high-level architecture and components of VMware Shared deployment.
 
-![VMware Solutions Shared architecture](../images/vclouddirector-architecture-public.svg "VMware Solutions Shared architecture"){: caption="Figure 1. VMware Solutions Shared architecture" caption-side="bottom"}
+![VMware Shared architecture](../images/vclouddirector-architecture-public.svg "VMware Shared architecture"){: caption="Figure 1. VMware Shared architecture" caption-side="bottom"}
 
 ### VMware Cloud Director
 {: #shared_overview-vcloud-dir}
 
 This layer represents the management interface. VMware Cloud Director provides role-based access to a web-based tenant portal. The portal allows the members of an organization to interact with the organization's resources to create and work with vApps and virtual machines (VMs).
+The supported version of VMware Cloud Director (vCD) is v10.4 and it supports up to virtual hardware version 19.
 
 ### Organization
 {: #shared_overview-org}
@@ -74,7 +75,7 @@ Organizations use catalogs to store vApp templates and media files. The members 
 
 An Organization virtual data center provides resources to an organization. Virtual data centers provide an environment where virtual systems can be stored, deployed, and operated. They also provide storage for virtual CD and DVD media. An organization can have multiple virtual data centers.
 
-![VMware Solutions Shared virtual data center architecture](../images/virtual-datacenter-architecture-public.svg "{{site.data.keyword.cloud_notm}} for virtual data center architecture"){: caption="Figure 2. VMware Solutions Shared virtual data center architecture" caption-side="bottom"}
+![VMware Shared virtual data center architecture](../images/virtual-datacenter-architecture-public.svg "{{site.data.keyword.cloud_notm}} for virtual data center architecture"){: caption="Figure 2. VMware Shared virtual data center architecture" caption-side="bottom"}
 
 ### Sites
 {: #shared_overview-sites}
@@ -83,22 +84,12 @@ A site is a Cloud Director instance that is set up over a set of zones in a mult
 
 For example, the following graphic depicts two Cloud Director instances, *VCD1* and *VCD2*. The clusters span across the dal10 and dal12 locations. Two organizations, *Org A* and *Org B* belong to the same customer and one organization, *Org C* belongs to a different customer.
 
-![VMware Solutions Shared site architecture](../images/shared-site-policy.svg "VMware Solutions Shared site architecture"){: caption="Figure 3. VMware Solutions Shared site architecture" caption-side="bottom"}
+![VMware Shared site architecture](../images/shared-site-policy.svg "VMware Shared site architecture"){: caption="Figure 3. VMware Shared site architecture" caption-side="bottom"}
 
 ## Role-based access policies
 {: #shared_overview-access-policies}
 
-Before V4.8, role-based access control is achieved by using a virtual data center IAM policy for VMWare Solutions Shared resources.
-
-| Access policy level| Access |
-|:----------------- |:--------- |
-| Site/Org IAM Policy | Hidden |
-| VDC IAM Policy | Exposed and active |
-| Global Resource List | Virtual data center only |
-| VMware Console Resource List | Virtual data center only|
-{: caption="Table 1. Virtual data center IAM policy control for VMware Solutions Shared" caption-side="bottom"}
-
-Beginning with V4.8, role-based access control is achieved by using a site and organization IAM policy for VMware Solutions Shared resources.
+For VMware Shared V4.8 and later, role-based access control is achieved by using a site and organization IAM policy for VMware Shared resources.
 
 | Access policy level | Access |
 |:----------------- |:---------- |
@@ -106,19 +97,29 @@ Beginning with V4.8, role-based access control is achieved by using a site and o
 | VDC IAM Policy | View and delete only |
 | Global Resource List | Organizations only |
 | VMware Console Resource List | Organizations and associated virtual data centers only|
-{: caption="Table 2. Site and Orginization IAM policy control for VMware Solutions Shared" caption-side="bottom"}
+{: caption="Table 1. Site and Organization IAM policy control for VMware Shared" caption-side="bottom"}
+
+For VMware Shared versions earlier than V4.8, role-based access control is achieved by using a virtual data center IAM policy for VMware Shared resources.
+
+| Access policy level | Access |
+|:------------------- |:------ |
+| Site/Org IAM Policy | Hidden |
+| VDC IAM Policy | Exposed and active |
+| Global Resource List | Virtual data center only |
+| VMware Console Resource List | Virtual data center only|
+{: caption="Table 2. Virtual data center IAM policy control for VMware Shared" caption-side="bottom"}
 
 ### Access policy updates
 {: #shared_overview-access-policies-reqs}
 
-Beginning with V4.8, you have access to your sites only to assign access policies. The access policy at the site level applies to every resource within it. You no longer assign access control directly to a virtual data center.
+For VMware Shared V4.8 and later, you have access to your sites only to assign access policies. The access policy at the site level applies to every resource within it. You no longer assign access control directly to a virtual data center.
 
 For more information about assigning resource access and roles, see [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam) and [Roles and permissions for Cloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui).
 
 #### Resource Group based access policy updates
 {: #shared_overview-access-policies-reqs-rg}
 
-Beginning with V4.8, if you have multiple resource groups with different virtual data centers from one specific location, only the resource group that contains the first virtual data center of that location (based on creation date) applies to all of the virtual data centers in that location. Policies apply to the resource group that contains the first virtual data center or you can set a policy at the VMWare Solutions service.
+For VMware Shared V4.8 and later, if you have multiple resource groups with different virtual data centers from one specific location, only the resource group that contains the first virtual data center of that location (based on creation date) applies to all of the virtual data centers in that location. Policies apply to the resource group that contains the first virtual data center or you can set a policy at the VMware Solutions service level.
 
 If all of your virtual data centers are in a single location and belong to only one resource group access policy, your site automatically belongs to the same resource group as the virtual data center.
 
@@ -128,12 +129,12 @@ Your existing group membership now has sites that are listed instead of virtual 
 #### Virtual data center based access policy updates
 {: #shared_overview-access-policies-reqs-vdc}
 
-Beginning with V4.8, a new access policy is required at the VMware Solutions service level for all of your resources.
+For VMware Shared V4.8 and later, a new access policy is required at the VMware Solutions service level for all of your resources.
 
 Virtual data center based access policies are now named after the site. If you did not make the required policy updates before the V4.8 release, your virtual data center based policy is ineffective.
 {: note}
 
-## Technical specifications for VMware Solutions Shared
+## Technical specifications for VMware Shared
 {: #shared_overview-specs}
 
 The following components are included in your virtual data center:
@@ -162,7 +163,7 @@ The service address can be used for access to {{site.data.keyword.cloud_notm}} i
 
 When you create or deploy vApps or VMs, you can select either an unencrypted or encrypted storage policy. Each option has six different tiers of storage available, depending on the storage performance required.
 
-Storage policy availability can vary by region and deployment topology. On the VMware Solutions Shared order page, select the **About** tab to view available storage policy offerings.
+Storage policy availability can vary by region and deployment topology. On the VMware Shared order page, click the **About** tab to view available storage policy offerings.
 {: note}
 
 #### Unencrypted storage policy options
@@ -190,7 +191,7 @@ Encryption-enabled storage policies are available to all Organization virtual da
 * 0.25 IOPS/GB - Encrypted. Storage tier with a maximum throughput of 0.25 IOPS/GB.
 * vSAN - Encrypted. No IOPS limitation.
 
-For more information about the VM encryption limitations for VMware Cloud Director 10.3, see [Enabling VM encryption on storage policies of an Organization virtual data center](https://docs.vmware.com/en/VMware-Cloud-Director/10.3/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-80F58C1D-A97E-43FE-8E41-E9242A1D2332.html){: external}.
+For more information about the VM encryption limitations for VMware Cloud Director 10.4, see [Enabling VM encryption on storage policies of an Organization virtual data center](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-80F58C1D-A97E-43FE-8E41-E9242A1D2332.html){: external}.
 
 The encryption storage policies do not currently work with VM customizations. IBM is working closely with VMware to resolve this issue in a future release. In the meantime, you can use encryption storage policies after a VM is deployed and customized by using the unencrypted storage policies. For more information, see [Changing the general properties of a virtual machine](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-change-properties).
 {: note}
@@ -226,8 +227,8 @@ to {{site.data.keyword.vmwaresolutions_short}} service instances. For more infor
 ## Related links
 {: #shared_overview-related}
 
-* [Requirements and planning for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning)
+* [Requirements and planning for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
-* [Operating VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
+* [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
+* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
 * [Troubleshooting NSX Edge](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.troubleshooting.doc/GUID-E6CD6FAA-3DA7-4AD7-9577-EE121AA7E1E6.html){: external}

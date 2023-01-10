@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-06-20"
+lastupdated: "2023-01-09"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -15,14 +15,16 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# F5 BIG-IP overview
+# F5 BIG-IP on IBM Cloud overview
 {: #f5_considerations}
 
-The F5 BIG-IP® service (F5 BIG-IP Virtual Edition) provides:
+F5 BIG-IP® on IBM Cloud (F5 BIG-IP Virtual Edition) provides:
 
 * Intelligent L4-L7 load balancing and traffic management services at a local and global scale.
 * Robust network and web application firewall protection.
 * Secure and federated application access.
+
+F5 BIG-IP on IBM Cloud is a non-IBM product that is offered under terms and conditions from F5 Networks, not IBM.
 
 You can install more than one instance of this service as needed.
 {: shortdesc}
@@ -135,7 +137,7 @@ Review the following considerations before you delete the service:
 
 * Before you delete the F5 BIG-IP service, ensure that the existing BIG-IP VE configuration is removed correctly. Specifically, network traffic must be routed around BIG-IP VE instead of through BIG-IP VE. Otherwise, the existing data traffic from your environment might be impacted.
 
-* If you installed the F5 BIG-IP service before VMware Solutions v4.0 and you, then delete that service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).
+* If you installed the F5 BIG-IP service before VMware Solutions v4.0 and then deleted that service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).
 
 ## Related links
 {: #f5_considerations-related}

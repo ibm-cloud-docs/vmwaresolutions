@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-10-27"
+lastupdated: "2022-12-28"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Operating VMware Solutions Shared
+# Operating VMware Shared
 {: #shared_vcd-ops-guide}
 
 ## VMware Cloud Director tenant portal overview
@@ -22,7 +22,7 @@ subcollection: vmwaresolutions
 
 The VMware® Cloud Director tenant portal is used for administration of your organization and to create and configure virtual machines (VMs), vApps, and networks within vApps.
 
-You can also configure advanced networking capabilities that are provided by VMware NSX® for vSphere® within a VMware Cloud Director environment. With the tenant portal, you can also create and manage catalogs, vApp, and virtual data center templates.
+You can also configure advanced networking capabilities that are provided by VMware NSX® for vSphere® within a VMware Cloud Director environment. With the tenant portal, you can also create and manage catalogs, vApps, and virtual data center templates.
 
 ### Roles, permissions, and users
 {: #shared_vcd-ops-guide-roles}
@@ -54,20 +54,20 @@ For more information about modifying SMTP server settings, see [Modify your emai
 ## Catalogs
 {: #shared_vcd-ops-guide-catalogs}
 
-A catalog is a container for vApp templates and media files in an organization. Organization administrators and catalog authors can create catalogs in an organization. Catalog contents can be shared with other users or organizations in the {{site.data.keyword.vmwaresolutions_full}} Shared installation. Or they can be published externally for access by organizations outside the VMware Solutions Shared installation.
+A catalog is a container for vApp templates and media files in an organization. Organization administrators and catalog authors can create catalogs in an organization. Catalog contents can be shared with other users or organizations in the VMware Shared installation. Or they can be published externally for access by organizations outside the VMware Shared installation.
 
-VMware Solutions Shared contains private catalogs, shared catalogs, and externally accessible catalogs. Private catalogs include vApp templates and media files that you can share with other users in the organization. If a system administrator enables catalog-sharing for your organization, you can share an organization catalog to create a catalog accessible to other organizations in the VMware Solutions Shared installation.
+VMware Shared contains private catalogs, shared catalogs, and externally accessible catalogs. Private catalogs include vApp templates and media files that you can share with other users in the organization. If a system administrator enables catalog-sharing for your organization, you can share an organization catalog to create a catalog accessible to other organizations in the VMware Shared installation.
 
-If a system administrator enables external catalog publishing for your organization, you can publish an organization catalog for access by organizations outside the VMware Solutions Shared installation. An organization outside the VMware Solutions Shared installation must subscribe to an externally published catalog to access its contents.
+If a system administrator enables external catalog publishing for your organization, you can publish an organization catalog for access by organizations outside the VMware Shared installation. An organization outside the VMware Shared installation must subscribe to an externally published catalog to access its contents.
 
-### VMware Solutions Shared public catalog
+### VMware Shared public catalog
 {: #shared_vcd-ops-guide-public-cat}
 
-Each organization has access to the VMware Solutions Shared public catalog. The catalog contains IBM-compliant images that are configured, secured, and ready for use.
+Each organization has access to the VMware Shared public catalog. The catalog contains IBM-compliant images that are configured, secured, and ready for use.
 
-Review the following considerations for the VMware Solutions Shared public:
+Review the following considerations for VMware Shared:
 
-* Operating system licensing costs apply for usage. For more information about how commercial operating system license rentals are billed, see [VMware Solutions Shared pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing).
+* Operating system licensing costs apply for usage. For more information about how commercial operating system license rentals are billed, see [VMware Shared pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing).
 * Public templates that are configured to services on the IBM private network require an extra configuration step to enable VM access to the IBM Services network. For more information, see [Enabling VM access to {{site.data.keyword.cloud_notm}} Services by using the private network](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-enable-access).
 * Public templates require a minimum level of customization to establish the initial administrator password. For more information, see [Changing the guest OS customization properties of a VM](#shared_vcd-ops-guide-customization).
 
@@ -121,7 +121,7 @@ After you deploy the VM on the tenant portal, register the Red Hat VM with your 
 
 Complete the following steps to register the Red Hat VM with your RHEL activation key. For more information about accessing virtual data center details, see [Procedure to view the virtual data center summary](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary#shared_viewing-vdc-summary-procedure).
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click the virtual data center name in the **VMware Solutions Shared** virtual data center table.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click the virtual data center name in the **VMware Shared** virtual data center table.
 2. On the virtual data center details page, locate and make note of the **Red Hat activation key**.
 3. Run the following commands from the Red Hat VM.  
      1. ``rpm -ivh http://52.117.132.7/pub/katello-ca-consumer-latest.noarch.rpm``
@@ -243,7 +243,7 @@ For more information about vApps, see [Working with vApps](https://docs.vmware.c
 ## Networking
 {: #shared_vcd-ops-guide-networking}
 
-Every VMware Solutions Shared virtual data center comes configured with one edge gateway with five public IP addresses and one private IBM Services network IP address. You can open an {{site.data.keyword.cloud_notm}} Support ticket to request five more public IP addresses or an entire subnet for your virtual data center.
+Every VMware Shared virtual data center comes configured with one edge gateway with five public IP addresses and one private IBM Services network IP address. You can open an {{site.data.keyword.cloud_notm}} Support ticket to request five more public IP addresses or an entire subnet for your virtual data center.
 
 Include the following details in your support ticket:
 * Virtual data center region and location
@@ -261,7 +261,7 @@ The service address is used for access to a number of {{site.data.keyword.cloud_
 * Red Hat operating system licensing and updates
 * Cloud Object Storage
 
-Two types of Organization virtual data center networks are available in the VMware Solutions Shared virtual data center: routed and internal.
+Two types of Organization virtual data center networks are available in the VMware Shared virtual data center: routed and internal.
 
 ### Routed network
 {: #shared_vcd-ops-guide-routed}
@@ -336,7 +336,7 @@ Before you create the firewall and NAT rules, capture the information that is ne
 2. On the main page, under **Virtual Data Center**, click the virtual data center for that edge gateway.
 3. In the left pane under **Networking**, click **Edges**.
 4. Under Configuration, select **Gateway Interfaces**. Copy the values in the table for the tenant external and the Service networks. With the tenant external addresses, we can route to the external network, and with the service network addresses, we can route to the IBM private network.
-5. Return to the {{site.data.keyword.vmwaresolutions_short}} console. From the {{site.data.keyword.vmwaresolutions_short}} Shared **Resources** page, copy the public IP addresses that were assigned to your virtual data center.
+5. Return to the {{site.data.keyword.vmwaresolutions_short}} console. From the **Resources > VMware Shared** page, copy the public IP addresses that were assigned to your virtual data center.
 
 ##### Create the Organization virtual data center network firewall rule to allow access to the external network
 {: #shared_vcd-ops-guide-create-vdc-network-rule-extnetwork}
@@ -383,7 +383,7 @@ Review the following notes for creating the Organization virtual data center net
 ##### Source NAT definitions to the IBM Service Network (Private)
 {: #shared_vcd-ops-guide-source-nat-int}
 
-A source NAT rule is necessary to allow traffic from the Organization virtual data center network into the 	{{site.data.keyword.cloud_notm}} Service Network. This rule is used to enable VM access to 	{{site.data.keyword.cloud_notm}} Services such as update servers, DNS servers, NTP servers, or to get to the {{site.data.keyword.cloud_notm}} Object Storage.
+A source NAT rule is necessary to allow traffic from the Organization virtual data center network into the {{site.data.keyword.cloud_notm}} Service Network. This rule is used to enable VM access to {{site.data.keyword.cloud_notm}} Services such as update servers, DNS servers, NTP servers, or to get to the {{site.data.keyword.cloud_notm}} Object Storage.
 
 From the virtual data center for that edge gateway, create the source NAT definitions to the IBM Service Network (Private). For more information, see [Add a SNAT or a DNAT rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html){: external}.
 
@@ -435,7 +435,7 @@ To test the configuration, use the remote desktop client and connect to the ``te
 
 You can configure vApps and VMs running inside of the virtual data center to use the {{site.data.keyword.cloud_notm}} private network to access {{site.data.keyword.cloud_notm}} services. Accessing {{site.data.keyword.cloud_notm}} services through a private network can save on outbound public networking costs and can provide a higher degree of reliability and security. Virtual data centers route to the {{site.data.keyword.cloud_notm}} private network through a virtual data center service network that is configured as an available external network on virtual data centers edge.
 
-VMware Solutions Shared fully enables access to IaaS endpoints for {{site.data.keyword.cloud_notm}} Virtual Private Cloud (VPC). For more information, see [Endpoints available for VPC](/docs/vpc?topic=vpc-service-endpoints-for-vpc).
+VMware Shared fully enables access to IaaS endpoints for {{site.data.keyword.cloud_notm}} Virtual Private Cloud (VPC). For more information, see [Endpoints available for VPC](/docs/vpc?topic=vpc-service-endpoints-for-vpc).
 
 The following services are available:
 
@@ -508,7 +508,7 @@ Every private network endpoint comes configured with one private network IP addr
 ### Prerequisites for configuring a private network endpoint
 {: #shared_vcd-ops-guide-pne-prereqs}
 
-* Review [Getting Started with IBM Cloud for VMware Solutions Shared](/docs/solution-tutorials?topic=solution-tutorials-vmware-solutions-shared-getting-started).
+* Review [Getting Started with VMware Shared](/docs/solution-tutorials?topic=solution-tutorials-vmware-solutions-shared-getting-started).
 * You must have a running VM.
 * The VM must be connected to a routed Organization virtual data center network. For more information, see [Creating a routed Organization virtual data center network](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-routed-organization) and [Connect the VMs to the network](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-connect-vm).
 * You must have virtual routing and forwarding and service endpoints that are enabled on the account that the allow listed IP or subnet belong to. For more information, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
@@ -519,7 +519,7 @@ Every private network endpoint comes configured with one private network IP addr
 Collect the service network and private network IP addresses to configure the firewall and DNAT rules.
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > VMware Shared** from the left navigation pane.
-2. In the **VMware Solutions Shared** table, click the virtual data center to configure.
+2. In the **VMware Shared** table, click the virtual data center to configure.
 3. In the **Private Network Endpoint** section, collect the **Service network IP** address and **Private network IP** address.
 
 ### Configuring firewall rules for the VMware NSX Edge Services Gateway
@@ -565,7 +565,7 @@ To validate the private network endpoint connection, log in to the virtual serve
 Ensure that the Organization virtual data center network type is `routed`.
 {: important}
 
-For more information about creating a private network endpoint, see [Order a private network endpoint to connect your IBM account to your IBM VMware Solutions Shared virtual data center](https://mlwiles.github.io/vmwaresolutions/vcd/order-pne/){: external}. An example of a successful configuration is also provided.
+For more information about creating a private network endpoint, see [Order a private network endpoint to connect your IBM account to your VMware Shared virtual data center](https://mlwiles.github.io/vmwaresolutions/vcd/order-pne/){: external}. An example of a successful configuration is also provided.
 
 ## Using Network High Availability
 {: #shared_vcd-ops-guide-network-ha}
@@ -621,24 +621,24 @@ Add a stretched network to use the cross-virtual data center networking.
 
 You are now ready to put VMs on the cross-virtual data center network and build out your use case.
 
-## Enabling the VMware vRealize Operations Tenant App
+## Enabling VMware Chargeback
 {: #shared_vcd-ops-guide-vrops-app}
 
-The VMware vRealize Operations™ Tenant App feature is enabled by default when your organization is provisioned. From the Cloud Director tenant portal, click **More > Operations Manager** to access the VMware vRealize Operations Tenant App.
+The VMware Chargeback (formerly known as vRealize Operations™ Tenant App for VMware Cloud Director) feature is enabled by default when your organization is provisioned. From the Cloud Director tenant portal, click **More > Operations Manager** to access VMware Chargeback.
 
-If the **Operations Manager** option is not available in the **More** menu, open an IBM ServiceNow ticket, and submit a request to enable the VMware vRealize Operations Tenant App feature in your organization.
+If the **Operations Manager** option is not available in the **More** menu, open an IBM ServiceNow ticket, and submit a request to enable the VMware Chargeback feature in your organization.
 
-After the VMware vRealize Operations Tenant App is enabled for an organization, the users who are defined in the organization have access to the tenant app.
+After the VMware Chargeback feature is enabled for an organization, the users who are defined in the organization have access to it.
 
-For more information, see [Using vRealize Operations Tenant App for vCloud Director as a Tenant](https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations/8.6/using-vrealize-operations-tenant-app-for-vcloud-director-as-a-tenant-guide.pdf){: external}.
+For more information, see [Using VMware Chargeback as a tenant](https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations/8.10/vmware-chargeback-for-vcd-for-a-tenant/GUID-4D7030B6-AF73-464B-8FE8-75B879EE76B8.html){: external}.
 
-The billing link in the tenant app is disabled. All billing for {{site.data.keyword.vmwaresolutions_short}} Shared is processed through the {{site.data.keyword.vmwaresolutions_short}} portal.
+The billing link in VMware Chargeback is disabled. All billing for VMware Shared is processed through the VMware Solutions console.
 {: note}
 
 ## Deleting the OpenID Connect configuration in your VMware Cloud Director Organization
 {: #shared_vcd-ops-guide-delete-oidc}
 
-You must delete all OpenID Connect (OIDC) users and imported groups with the OIDC type, then the OIDC provider before you can reset the IAM integration for a VMware Solutions Shared instance site.
+You must delete all OpenID Connect (OIDC) users and imported groups with the OIDC type, then the OIDC provider before you can reset the IAM integration for a VMware Shared instance site.
 
 Single sign-on is available only when your site VMware Cloud Director Organization is integrated with IAM.
 {: note}
@@ -655,6 +655,6 @@ Single sign-on is available only when your site VMware Cloud Director Organizati
 ## Related links
 {: #shared_vcd-ops-guide-related}
 
-* [VMware Solutions Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
+* [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
-* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
+* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}

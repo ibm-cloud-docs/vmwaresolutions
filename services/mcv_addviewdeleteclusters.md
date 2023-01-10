@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-10-10"
+lastupdated: "2022-11-22"
 
 subcollection: vmwaresolutions
 
@@ -24,8 +24,8 @@ You can add workload and edge services clusters to VMware® vCenter Server® mul
 {: #mcv_addviewdeleteclusters-workload-procedure}
 
 1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** > **vCenter Server** from the left navigation pane.
-2. In the **vCenter Server instances** table, click the multizone instance that you want to add the edge services cluster to.
-3. Click **Infrastructure** on the left navigation pane and click **Add** on the upper right of the **Workload cluster** table.
+2. In the **vCenter Server** table, click the multizone instance that you want to add the edge services cluster to.
+3. Click the **Infrastructure** tab and click **Add** on the upper right of the **Workload cluster** table.
 4. On the **Cluster** page, enter the cluster name.
 5. Select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers**.
 6. Specify the vSAN storage settings. Specify the disk types for the capacity and cache disks and the number of disks. Optionally, select the **Enable vSAN deduplication and compression** checkbox. For more information, see [Enable vSAN deduplication and compression](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters#vc_addingclusters-vsan-storage-enable-comp).
@@ -43,8 +43,8 @@ You can add edge services clusters to your vCenter Server multizone instance if 
 You cannot add more than one cluster in the same data center pod.
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **vCenter Server** from the left navigation pane.
-2. In the **vCenter Server instances** table, click the multizone instance that you want to add the edge services cluster to.
-3. Click **Infrastructure** on the left navigation pane and click **Add** on the **Edge services cluster** table.
+2. In the **vCenter Server** table, click the multizone instance that you want to add the edge services cluster to.
+3. Click the **Infrastructure** tab and click **Add** on the **Edge services cluster** table.
 4. On the **Cluster** page, select the data center to host the cluster and then enter the cluster name.
 5. Select the amount of **RAM** and the **Number of bare metal servers**.
 6. On the **Summary** pane, verify the cluster configuration before you add the cluster.

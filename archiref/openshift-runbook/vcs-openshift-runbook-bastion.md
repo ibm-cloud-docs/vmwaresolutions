@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -16,23 +16,23 @@ subcollection: vmwaresolutions
 # Red Hat OpenShift Bastion node setup
 {: #openshift-runbook-runbook-bastion-intro}
 
-To enable the deployment, a virtual machine is provisioned to run the {{site.data.keyword.redhat_openshift_full}} installation steps and host an HTTP Server. This virtual machine is known as the bastion node. The bastion node is connected to the {{site.data.keyword.redhat_openshift_notm}} logical switch and the ESG firewall and NAT rules are configured to allow SSH access from the jump-server or remote device.
+To enable the deployment, a virtual machine (VM) is provisioned to run the {{site.data.keyword.redhat_openshift_full}} installation steps and host an HTTP Server. This VM is known as the bastion node. The bastion node is connected to the {{site.data.keyword.redhat_openshift_notm}} logical switch and the ESG firewall and NAT rules are configured to allow SSH access from the jump-server or remote device.
 
 The bastion node runs {{site.data.keyword.redhat_full}} Enterprise Linux®, and it is used to host the scripts, files, and tools to provision the bootstrap, control-plane, and compute nodes. After the deployment, it is recommended to keep the bastion node as an administrative node for the cluster.
 
 The bastion node setup consists of the following steps:
 
-1. Provision a {{site.data.keyword.redhat_notm}} virtual machine.
-2. Register the {{site.data.keyword.redhat_notm}} virtual machine.
+1. Provision a {{site.data.keyword.redhat_notm}} VM.
+2. Register the {{site.data.keyword.redhat_notm}} VM.
 3. Install NGINX (HTTP Server).
 4. Generate an SSH private key and add it to the agent.
 
-## Provisioning a Red Hat virtual machine
+## Provisioning a Red Hat VM
 {: #openshift-runbook-runbook-bastion-prov-red-hat}
 
-Provision a {{site.data.keyword.redhat_notm}} virtual machine based on the following specifications. Use the vCenter Server user interface or by using the PowerCLI script that is documented later in this document to provision the virtual machine. Record you NAT address, which is configured in the NSX ESG.
+Provision a {{site.data.keyword.redhat_notm}} VM based on the following specifications. Use the vCenter Server user interface or by using the PowerCLI script that is documented later in this document to provision the VM. Record you NAT address, which is configured in the NSX ESG.
 
-| Virtual machine | IP address | Gateway | Disk (GB) | Memory (GB) | vCPU | NAT address |
+| VM | IP address | Gateway | Disk (GB) | Memory (GB) | vCPU | NAT address |
 | --- | --- | --- | --- | --- | --- | --- |
 | bastion | 192.168.133.8 | 192.168.133.1 | 50 | 2 | 1 | 10.208.59.197 |
 {: caption="Table 1. Red Hat VM - provision" caption-side="bottom"}
@@ -82,7 +82,7 @@ After the VM starts, connect to the VM by using the web console or remote consol
 5. Set the root password.
 6. Create a user.
 
-## Registering the Red Hat virtual machine
+## Registering the Red Hat VM
 {: #openshift-runbook-runbook-bastion-register}
 
 For this step, you require your {{site.data.keyword.redhat_notm}} subscription details:

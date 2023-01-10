@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -12,7 +12,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-#	Orchestrated upgrades
+# Orchestrated upgrades
 {: #vum-orchestr-updates}
 
 You can use orchestrated upgrades to upgrade the virtual hardware and VMware® Tools of virtual machines in the inventory after you update the vSphere® ESXi™ hosts. After the hosts are updated, the VMware Tools upgrade baseline runs first, followed by the virtual machine hardware upgrade baseline. You can use orchestrated upgrades at a cluster, a folder, or a data center level.
@@ -61,8 +61,9 @@ The following workflow describes the process to perform an orchestrated upgrade:
 3. Scan the container object to view the compliance state of the virtual machines in the container. You can start the scan manually or schedule a scan task.
 4. Review the scan results displayed in the VUM Client Compliance view.
 5. Remediate the non-compliant virtual machines in the container object to make them compliant with the attached baseline group. You can start the remediation manually or schedule a remediation task.
-* During an upgrade of VMware Tools, the virtual machines must be powered on. If a virtual machine is in a powered off or suspended state before remediation, VUM powers on the virtual machine. After the upgrade is completed, VUM restarts the virtual machine and restores the original power state of it.
-* During a virtual machine hardware upgrade, the virtual machines must be shut down. After the remediation is completed, VUM restores the original power state of the virtual machines. If a virtual machine is powered on, VUM powers it off, upgrades its hardware, and then powers it on.
+
+   * During an upgrade of VMware Tools, the virtual machines must be powered on. If a virtual machine is in a powered off or suspended state before remediation, VUM powers on the virtual machine. After the upgrade is completed, VUM restarts the virtual machine and restores the original power state of it.
+   * During a virtual machine hardware upgrade, the virtual machines must be shut down. After the remediation is completed, VUM restores the original power state of the virtual machines. If a virtual machine is powered on, VUM powers it off, upgrades its hardware, and then powers it on.
 
 You can now use these baseline groups in the scan, review, staging, and remediation processes.
 

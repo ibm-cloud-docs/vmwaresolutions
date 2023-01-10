@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-10-14"
+lastupdated: "2022-12-23"
 
 keywords: vRealize, vRealize configuration, order vRealize
 
@@ -31,18 +31,10 @@ You can include the vRealize Operations™ and Log Insight™ service with a new
 ## Ordering vRealize Operations and Log Insight for an existing instance
 {: #vrops_ordering-existing}
 
-1. On the instance details page, click **Services** on the left navigation pane.
+1. On the instance details page, click the **Services** tab.
 2. Click **Add** to add the service.
 3. On the **Services** page, locate the **vRealize Operations and Log Insight** service and toggle its switch on.
 4. Follow the steps to configure and add the service to your instance.
-
-## vRealize Operations and Log Insight configuration
-{: #vrops_ordering-config}
-
-When you order the vRealize Operations and Log Insight service, you must specify whether you want to rent (include with purchase) the vRealize Operations and the vRealize Log Insight licenses from {{site.data.keyword.cloud}} or bring your own licenses (BYOL).
-
-If you're planning to use your own vRealize Operations and vRealize Log Insight licenses (BYOL), ensure that the license keys are correct and that the license capacity is sufficient. The license keys and capacity are not verified during the service order.
-{: note}
 
 ## Related links
 {: #vrops_ordering-related}

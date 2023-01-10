@@ -14,10 +14,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# General FAQ about VMware Solutions Dedicated
+# General FAQ about VMware Solutions
 {: #faq-vmwaresolutions}
 
-Find answers to frequently asked questions about the {{site.data.keyword.vmwaresolutions_full}} Dedicated offering.
+Find answers to frequently asked questions about the {{site.data.keyword.vmwaresolutions_full}} offering.
 
 ## What user accounts do I need for VMware Solutions?
 {: #faq-user-accts}
@@ -179,7 +179,7 @@ VMware ESXi is automatically installed on each {{site.data.keyword.cloud_notm}} 
 
 To view the complete notification history, click **Notifications** from the left navigation.
 
-## What if I have issues with VMware Solutions Dedicated?
+## What if I have issues with VMware Solutions?
 {: #faq-support}
 {: faq}
 {: support}

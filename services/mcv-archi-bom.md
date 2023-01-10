@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-06-20"
+lastupdated: "2022-12-20"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ The following components are available for vCenter Server multizone instances:
 * Licensing:
    * vSAN Enterprise.
    * VMware NSX® Enterprise or Enterprise Plus.
-   * Bring Your Own Licenses (BYOL) is supported.
+   * Bring Your Own Licenses (BYOL) is no longer supported.
 * HA Active Directory with two virtual machines or two VSIs distributed between the two workload sites.
 
 ### Component naming conventions

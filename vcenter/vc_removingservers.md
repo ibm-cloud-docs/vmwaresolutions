@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-10-20"
+lastupdated: "2022-11-23"
 
 keywords: vCenter Server remove hosts, vCenter Server remove ESXi servers
 
@@ -36,7 +36,7 @@ You can contract the capacity of your VMware vCenter Server® instance according
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server instances** table, click the instance for which you want to contract capacity.
-3. Click **Infrastructure** on the left navigation pane.
+3. Click the **Infrastructure** tab.
 4. In the applicable cluster table, click the cluster from which you want to remove ESXi servers.
 5. In the **ESXi servers** section, select the servers that you want to remove and click **Remove**.
 6. Click **Delete** in the **Remove ESXi server** window.

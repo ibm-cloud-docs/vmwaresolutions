@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-14"
+lastupdated: "2022-11-22"
 
 keywords: Zerto, Zerto replication billing, order Zerto
 
@@ -52,7 +52,7 @@ On the {{site.data.keyword.vmwaresolutions_short}} console, you are prompted to 
 ## Ordering Zerto for a new instance
 {: #zerto_ordering-new}
 
-1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Zerto is in the Business continuity and migration category. 
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Zerto is in the Data resiliency and migration category.
 2. Open the category, locate Zerto, and toggle its switch on.
 3. Select **Edit** to review and specify the information. 
 4. If you enter or change information, click **Save**.
@@ -60,7 +60,7 @@ On the {{site.data.keyword.vmwaresolutions_short}} console, you are prompted to 
 ## Ordering Zerto for an existing instance
 {: #zerto_ordering-existing}
 
-1. On the instance details page, click **Services** on the left navigation pane.
+1. On the instance details page, click the **Services** tab.
 2. Click **Add** to add the service.
 3. On the **Services** page, locate the **Zerto** service and toggle its switch on.
 4. Follow the steps to configure and add the service to your instance.

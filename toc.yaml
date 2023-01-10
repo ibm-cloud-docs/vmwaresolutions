@@ -9,7 +9,7 @@ toc:
     category: compute_baremetal
     audience: service
     href: /docs/vmwaresolutions
-    console-page: /infrastructure/vmware-solutions/console
+    console-page: /vmware
     product-page: https://www.ibm.com/cloud/vmware
     path: vmwaresolutions
     label: VMware Solutions
@@ -56,7 +56,7 @@ toc:
               - vmonic/vmwaresol_ports-vmwareuses.md
               - vmonic/vmwaresol_ports-services.md
       - topicgroup:
-          label: VMware Solutions Shared
+          label: VMware Shared
           topics:
           - shared/shared_overview.md
           - shared/shared_planning.md
@@ -71,7 +71,7 @@ toc:
               - shared/shared_deleting-endpoints.md
           - shared/shared_veeam.md
           - topicgroup:
-              label: Managing Zerto for VMware Solutions Shared
+              label: Managing Zerto for VMware Shared
               topics:
               - shared/shared_zerto-portal.md
               - shared/shared_zerto-cloud-connector-order.md
@@ -91,7 +91,7 @@ toc:
           - shared/shared_pricing.md
           - shared/shared_bnpp.md
       - topicgroup:
-          label: VMware Solutions Dedicated - vCenter Server
+          label: vCenter Server
           topics:
           - topicgroup:
               label: Overview
@@ -149,7 +149,7 @@ toc:
               - vcenter/vc_deletinginstance.md
               - vcenter/vc_deletinginstance_multi.md
       - topicgroup:
-          label: VMware Solutions Dedicated - VMware vSphere
+          label: VMware vSphere
           topics:
           - topicgroup:
               label: Overview
@@ -174,76 +174,75 @@ toc:
           - vsphere/vs_orderingforclustersoutside.md
           - vsphere/vs_deletingclusters.md
       - topicgroup:
-          label: VMware Regulated Workloads
+          label: Regulated Workloads
           topics:
-          - vcenter/vrw-overview.md
-          - vcenter/vrw-planning.md
+          - vrw/vrw-overview.md
+          - vrw/vrw-planning.md
           - topicgroup:
               label: Ordering VMware Regulated Workloads
               topics:
-              - vcenter/vrw-orderinginstance-reqs.md
-              - vcenter/vrw-orderinginstance-topology.md
-              - vcenter/vrw-orderinginstance-serv-prereq.md
-              - vcenter/vrw-orderinginstance-config.md
-              - vcenter/vrw-orderinginstance-licensing.md
-              - vcenter/vrw-orderinginstance-location.md
-              - vcenter/vrw-orderinginstance-primary.md
-              - vcenter/vrw-orderinginstance-witness.md
-              - vcenter/vrw-orderinginstance-mgmt.md
-              - vcenter/vrw-orderinginstance-wkld.md
-              - vcenter/vrw-orderinginstance-firewall-app.md
-              - vcenter/vrw-orderinginstance-edge.md
-              - vcenter/vrw-orderinginstance-network.md
-              - vcenter/vrw-orderinginstance-resource.md
-              - vcenter/vrw-orderinginstance-services.md
-              - vcenter/vrw-orderinginstance-summary.md
-              - vcenter/vrw-orderinginstance-procedure.md
-              - vcenter/vrw-apply-updates.md
-          - vcenter/vrw-addingremovingservers.md
-          - vcenter/vrw-addingviewingclusters.md
-          - vcenter/vrw-view-delete-instance.md
+              - vrw/vrw-orderinginstance-reqs.md
+              - vrw/vrw-orderinginstance-topology.md
+              - vrw/vrw-orderinginstance-serv-prereq.md
+              - vrw/vrw-orderinginstance-config.md
+              - vrw/vrw-orderinginstance-licensing.md
+              - vrw/vrw-orderinginstance-location.md
+              - vrw/vrw-orderinginstance-primary.md
+              - vrw/vrw-orderinginstance-witness.md
+              - vrw/vrw-orderinginstance-mgmt.md
+              - vrw/vrw-orderinginstance-wkld.md
+              - vrw/vrw-orderinginstance-firewall-app.md
+              - vrw/vrw-orderinginstance-edge.md
+              - vrw/vrw-orderinginstance-network.md
+              - vrw/vrw-orderinginstance-resource.md
+              - vrw/vrw-orderinginstance-services.md
+              - vrw/vrw-orderinginstance-summary.md
+              - vrw/vrw-orderinginstance-procedure.md
+              - vrw/vrw-apply-updates.md
+          - vrw/vrw-addingremovingservers.md
+          - vrw/vrw-addingviewingclusters.md
+          - vrw/vrw-view-delete-instance.md
       - topicgroup:
           label: Cyber Recovery
           topics:
-          - vcenter/cr_overview.md
-          - vcenter/cr_planning.md
+          - cr/cr_overview.md
+          - cr/cr_planning.md
           - topicgroup:
               label: Ordering Cyber Recovery
               topics:
-              - vcenter/cr_orderinginstance-reqs.md
-              - vcenter/cr_orderinginstance-serv-prereq.md
-              - vcenter/cr_orderinginstance-inst-configs.md
-              - vcenter/cr_orderinginstance-licensing.md
-              - vcenter/cr_orderinginstance-cluster-order.md
-              - vcenter/cr_orderinginstance-edge.md
-              - vcenter/cr_orderinginstance-firewall-appl.md
-              - vcenter/cr_orderinginstance-network-interface.md
-              - vcenter/cr_orderinginstance-addon-services.md
-              - vcenter/cr_orderinginstance-order-procedure.md
+              - cr/cr_orderinginstance-reqs.md
+              - cr/cr_orderinginstance-serv-prereq.md
+              - cr/cr_orderinginstance-inst-configs.md
+              - cr/cr_orderinginstance-consolidwkld.md
+              - cr/cr_orderinginstance-edge.md
+              - cr/cr_orderinginstance-firewall-appl.md
+              - cr/cr_orderinginstance-network-interface.md
+              - cr/cr_orderinginstance-addon-services.md
+              - cr/cr_orderinginstance-order-procedure.md
           - topicgroup:
               label: Adding, viewing, and deleting clusters
               topics:
-              - vcenter/cr_addingclusters.md
-              - vcenter/cr_viewingclusters.md
-              - vcenter/cr_deletingclusters.md
+              - cr/cr_addingclusters.md
+              - cr/cr_viewingclusters.md
+              - cr/cr_deletingclusters.md
           - topicgroup:
               label: Expanding and contracting capacity
               topics:
-              - vcenter/cr_adding-esxi-servers.md
-              - vcenter/cr_removing-esxi-servers.md
-              - vcenter/cr_adding-nfs-storage.md
-              - vcenter/cr_removing-nfs-storage.md
+              - cr/cr_adding-esxi-servers.md
+              - cr/cr_removing-esxi-servers.md
+              - cr/cr_adding-nfs-storage.md
+              - cr/cr_removing-nfs-storage.md
           - topicgroup:
               label: Ordering, viewing, and deleting services
               topics:
-              - vcenter/cr_ordering-services.md
-              - vcenter/cr_viewing-services.md
-              - vcenter/cr_deleting-services.md
+              - cr/cr_ordering-services.md
+              - cr/cr_viewing-services.md
+              - cr/cr_deleting-services.md
           - topicgroup:
               label: Viewing and deleting instances
               topics:
-              - vcenter/cr_viewing-cr-instances.md
-              - vcenter/cr_deleting-cr-instances.md
+              - cr/cr_viewing-cr-instances.md
+              - cr/cr_deleting-cr-instances.md
       - topicgroup:
           label: Add-on services
           topics:
@@ -255,7 +254,8 @@ toc:
               - services/managingcaveonix.md
               - services/caveonix_license_ordering.md
               - services/caveonix_license_managing.md
-          - services/dizzion_overview.md
+          - topic: services/dizzion_overview.md
+            navtitle: Dizzion
           - topicgroup:
               label: Entrust CloudControl
               topics:
@@ -285,7 +285,8 @@ toc:
               - services/standalone_viewingserviceinstances.md
               - services/standalone_deletingserviceinstances.md
               - services/hcx_glossary.md
-          - services/managing-ss-sap.md
+          - topic: services/managing-ss-sap.md
+            navtitle: Security Services for SAP
           - topicgroup:
               label: Juniper vSRX
               topics:
@@ -300,7 +301,8 @@ toc:
               - services/kmip_standalone_viewing.md
               - services/kmip_standalone_addingdeletingcert.md
               - services/kmip_standalone_deleting.md
-          - services/managing_zerto_services.md
+          - topic: services/managing_zerto_services.md
+            navtitle: Managed Disaster Recovery Services by Kyndryl
           - topicgroup:
               label: PrimaryIO HDM
               topics:
@@ -415,8 +417,8 @@ toc:
               label: VMware Solutions API
               href: https://{DomainName}/apidocs/vmware-solutions
           - link:
-              label: VMware Solutions Shared API
-              href: https://{DomainName}/apidocs/vmware-solutions-shared
+              label: VMware Shared API
+              href: https://{DomainName}/apidocs/vmware-solutions-shared-v2.0.0
       - vmonic/understand-responsib.md
       - topicgroup:
           label: Auditing
@@ -600,20 +602,6 @@ toc:
               - archiref/vpc-ryo/vpc-ryo-backingup.md
 
           - topicgroup:
-              label: VMware Cloud Foundation on VPC
-              topics:
-              - archiref/vpc-vcf/vpc-vcf-overview.md
-              - archiref/vpc-vcf/vpc-vcf-arch-overview.md
-              - archiref/vpc-vcf/vpc-vcf-architectures.md
-              - archiref/vpc-vcf/vpc-vcf-vpc-vmw.md
-              - archiref/vpc-vcf/vpc-vcf-hosts.md
-              - archiref/vpc-vcf/vpc-vcf-mgmt-appliances.md
-              - archiref/vpc-vcf/vpc-vcf-nsx-t.md
-              - archiref/vpc-vcf/vpc-vcf-nsx-t-logical-routers.md
-              - archiref/vpc-vcf/vpc-vcf-nsx-t-vpc-routing.md
-              - archiref/vpc-vcf/vpc-vcf-scaling.md
-
-          - topicgroup:
               label: Interconnectivity for VMware workloads on VPC
               topics:
               - archiref/vpc-interconnectivity/overview.md
@@ -647,7 +635,6 @@ toc:
           - topicgroup:
               label: VMware Update Manager guide
               topics:
-              - archiref/vcs/vcs-hybridity-intro.md
               - archiref/vum/vum-intro.md
               - archiref/vum/vum-overview.md
               - archiref/vum/vum-init-config.md
@@ -741,6 +728,7 @@ toc:
           - vmonic/faq_shared.md
           - vmonic/faq.md
           - vmonic/faq_esxi.md
+          - vmonic/faq_licensing.md
           - vmonic/faq_byol.md
           - vcenter/vcenter_chg_impact.md
           - vmonic/trbl_limitations.md

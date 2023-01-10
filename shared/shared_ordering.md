@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-10-26"
+lastupdated: "2022-12-19"
 
 keywords: shared order resource, order on demand shared, order on demand resources
 
@@ -27,7 +27,7 @@ If you are ordering a virtual data center for the first time, ensure that you co
 ## System settings
 {: #shared_ordering-sys-settings}
 
-You must specify the following system settings when you order a VMware Solutions Shared virtual data center.
+You must specify the following system settings when you order a VMware Shared virtual data center.
 
 ### Pricing plans
 {: #shared_ordering-pricing}
@@ -37,7 +37,7 @@ The pricing plan is based on your selection of **On-demand** or **Reserved**.
 #### On-demand
 {: #shared_ordering-pricing-on-demand}
 
-For the on-demand offering, virtual data center virtual CPU (vCPU) and RAM are allocated as needed. The amount of time that the allocation takes depends on global usage of the virtual data center vCPU and RAM.
+For the On-demand offering, virtual data center virtual CPU (vCPU) and RAM are allocated as needed. The amount of time that the allocation takes depends on global usage of the virtual data center vCPU and RAM.
 
 * The limits that are established for the amount of vCPU and RAM are maximum values that can be used at any time.
 * You can increase and decrease the vCPU and RAM resources on a virtual data center later as required.
@@ -55,7 +55,7 @@ For the Reserved offering, the vCPU and RAM virtual data center reservations are
 * The amount of storage that can be allocated and used in the virtual data center is unlimited. Charges are hourly based on GB of allocated storage.
 * The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB.
 
-For more information, see [VMware Solutions Shared pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing).
+For more information, see [VMware Shared pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing).
 
 ### Virtual data center name
 {: #shared_ordering-inst-name}
@@ -141,22 +141,22 @@ The following services are preinstalled and ready to use in all virtual data cen
 * Veeam® Availability Suite and Veeam Cloud Connect Replication
 * Zerto
 
-For more information, see [Managing Veeam for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam) and [Managing Zerto for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal).
+For more information, see [Managing Veeam for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam) and [Managing Zerto for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal).
 
 ## Summary
 {: #shared_ordering-summary}
 
 Based on your selected configuration for the virtual data center, the estimated price is instantly generated and displayed in the **Summary** pane.
 
-You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. The tool is useful if you want to estimate the price of the selected VMware Solutions Shared resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider purchasing.
+You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. The tool is useful if you want to estimate the price of the selected VMware Shared resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider purchasing.
 
-## Procedure to order VMware Solutions Shared on-demand
+## Procedure to order VMware Shared On-demand
 {: #shared_ordering-procedure-ondemand}
 {: help}
 {: support}
 
-1. In the {{site.data.keyword.vmwaresolutions_short}} console, click the **VMware Solutions Shared** card in the **IaaS platforms** section.
-2. On the **Create** tab of the **VMware Solutions Shared** page, select **On-demand**.
+1. In the VMware Solutions console, click the **VMware Shared** card in the **Platforms** section.
+2. On the **Create** tab of the **VMware Shared** page, select **On-demand**.
 3. Enter the virtual data center name and select a resource group.
 4. Select a deployment topology according to your needs.
 5. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, site, and location to host the instance.
@@ -165,11 +165,11 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 8. On the **Summary** pane, verify the configuration and estimated price before you place the order.
 9. Click **Create**.
 
-## Procedure to order VMware Solutions Shared Reserved
+## Procedure to order VMware Shared Reserved
 {: #shared_ordering-procedure-reserved}
 
-1. In the {{site.data.keyword.vmwaresolutions_short}} console, click the **VMware Solutions Shared** card in the **IaaS platforms** section.
-2. On the **Create** tab of the **VMware Solutions Shared** page, select **Reserved**.
+1. In the VMware Solutions console, click the **VMware Shared** card in the **Platforms** section.
+2. On the **Create** tab of the **VMware Shared** page, select **Reserved**.
 3. Enter the virtual data center name and select a resource group.
 4. Select a deployment topology according to your needs.
 5. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, site, and location to host the instance.
@@ -180,11 +180,11 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 8. On the **Summary** pane, verify the configuration and estimated price before you place the order.
 9. Click **Create**.
 
-## Results after you order VMware Solutions Shared
+## Results after you order VMware Shared
 {: #shared_ordering-results}
 
 * The deployment of the resources starts automatically and you receive confirmation that the order is being processed. You can check the deployment status, including any issues that might require your attention, by viewing the **Virtual Data Center Status**.
-* When the resources are successfully deployed, the components that are described in [Technical specifications for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview#shared_overview-specs) are installed on your VMware® virtual platform.
+* When the resources are successfully deployed, the components that are described in [Technical specifications for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview#shared_overview-specs) are installed on your VMware® virtual platform.
 * When the resources are ready to use, the status is changed to **Ready to use**.
 
 ## What to do next
@@ -195,5 +195,5 @@ View the virtual data center that you ordered and then set the **admin** passwor
 ## Related links
 {: #shared_ordering-related}
 
-* [Operating VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware Cloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}
+* [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
+* [VMware Cloud Director](https://www.vmware.com/ca/products/cloud-director.html){: external}

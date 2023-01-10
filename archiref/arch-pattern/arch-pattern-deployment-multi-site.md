@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -13,10 +13,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Architecture pattern for multisite vCenter Server deployment topologies 
+# Architecture pattern for multisite vCenter Server deployment topologies
 {: #arch-pattern-deployment-multi-site}
 
-{{site.data.keyword.vmwaresolutions_full}} Dedicated instances offer a standard initial topology with a single management or converged cluster, which includes a vCenter, three VMware NSX-T™ managers, and an Active Directory™ deployment. These deployments run either on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or on two VMware virtual machines (VMs) in a high availability deployment. The initial deployment also includes a standard NSX-T topology.
+VMware vCenter Server® instances offer a standard initial topology with a single management or converged cluster, which includes a vCenter, three VMware NSX-T™ managers, and an Active Directory™ deployment. These deployments run either on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or on two VMware virtual machines (VMs) in a high availability deployment. The initial deployment also includes a standard NSX-T topology.
 
 You have several options to expand the capacity for the deployment by provisioning new hosts on the initial cluster or by adding new clusters. This pattern provides a few examples on how to expand and customize the initial deployment for a few use cases to fit your needs.
 
@@ -26,7 +26,7 @@ To customize the NSX-T topologies, see [the architecture pattern for multisite N
 ## Multisite vCenter Server deployment
 {: #arch-pattern-deployment-multi-site-base}
 
-The multisite deployment is a common use case and network deployment pattern. This topology is highly scalable and it is easy to manage and expand. The multisite deployment pattern is based on [VMware Solutions Dedicated - vCenter Server multisite deployment option](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite).
+The multisite deployment is a common use case and network deployment pattern. This topology is highly scalable and it is easy to manage and expand. The multisite deployment pattern is based on the [vCenter Server multisite deployment option](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite).
 
 The following diagram shows an example of a customer deployment by using this topology. You can add more hosts or new clusters to scale the solution.
 
@@ -45,7 +45,7 @@ The following diagram shows an example of a customer deployment by using this to
 ## Dual-site vCenter Server deployment
 {: #arch-pattern-deployment-dual-site-base}
 
-The dual-site deployment is a typically suitable for production and disaster recovery use cases. This deployment pattern is based on two [VMware Solutions Dedicated - vCenter Server as a single site instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), where each instance is deployed separately and they do not have any common management. This pattern is highly scalable and each instance is managed and expand separately. Integration between these environments is typically at network level and in disaster recovery use cases, third-party products are typically used to replicate data and VMs.
+The dual-site deployment is typically suitable for the production and disaster recovery use cases. This deployment pattern is based on two [vCenter Server as a single site instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), where each instance is deployed separately and they do not have any common management. This pattern is highly scalable and each instance is managed and expand separately. Integration between these environments is typically at network level and in disaster recovery use cases, third-party products are typically used to replicate data and VMs.
 
 The following diagram shows an example of a customer deployment by using this topology. 
 

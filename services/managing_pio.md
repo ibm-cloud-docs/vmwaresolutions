@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-08-24"
+lastupdated: "2022-11-11"
 
 keywords: primary io hdm, hdm intro, tech specs hdm
 
@@ -15,10 +15,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# PrimaryIO Hybrid Cloud Data Management (HDM) overview
+# PrimaryIO HDM on IBM Cloud overview
 {: #managing_pio}
 
-The PrimaryIO Hybrid Cloud Data Management (HDM) service decouples virtual machines (VMs) and storage (VMDKs) to seamlessly move workloads to and from {{site.data.keyword.cloud}} faster and efficiently. The PrimaryIO HDM solution enables a hybrid cloud environment to extend on-premises VMware® environments to the public cloud for on-demand compute capacity.
+PrimaryIO Hybrid Cloud Data Management (HDM) on IBM Cloud decouples virtual machines (VMs) and storage (VMDKs) to seamlessly move workloads to and from {{site.data.keyword.cloud}} faster and efficiently. The PrimaryIO HDM solution enables a hybrid cloud environment to extend on-premises VMware® environments to the public cloud for on-demand compute capacity. PrimaryIO HDM on IBM Cloud is a non-IBM product that is offered under terms and conditions from PrimaryIO, not IBM.
 
 HDM has built-in functions to identify frequently used data, called hot data. Hot data is moved into an intelligent cloud cache, while less used data is moved to the background. This way, HDM can provision workloads in the {{site.data.keyword.cloud_notm}} within minutes.
 

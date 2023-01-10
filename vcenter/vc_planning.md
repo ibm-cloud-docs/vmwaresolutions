@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-11-03"
+lastupdated: "2022-12-16"
 
 keywords: planning vCenter Server, data center, vCenter Server data centers
 
@@ -95,8 +95,10 @@ You are responsible for maintaining and ensuring the availability of all instanc
 
 You can order services for your instance based on your needs, for example, disaster recovery. For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 
-Services support varies between vCenter Server with NSX-T and vCenter Server with NSX-V instances.
-{: important}
+Add-on services support varies between vCenter Server with NSX-T™ and existing vCenter Server with NSX-V instances V4.7 and earlier.
+
+If you want to migrate your Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+{: note}
 
 ### Planning for VMware HCX
 {: #vc_planning-addon-services-hcx}

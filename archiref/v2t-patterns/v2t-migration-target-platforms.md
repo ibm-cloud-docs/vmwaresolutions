@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-05-10"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -16,16 +16,16 @@ subcollection: vmwaresolutions
 # Target platforms in IBM Cloud
 {: #v2t-targets}
 
-{{site.data.keyword.vmwaresolutions_full}} has a number of offerings, deployment patterns, and options that can be used to create your target VMware NSX-T™ environment. For this documentation, they are defined as follows:
+{{site.data.keyword.vmwaresolutions_full}} has a number of offerings, deployment patterns, and options that can be used to create your target VMware NSX-T™ environment:
 
-* Automated offerings - These offerings are available from the [{{site.data.keyword.vmwaresolutions_full_notm}}](https://cloud.ibm.com/infrastructure/vmware-solutions/console) console and VMware Solutions Dedicated tiles.
-* Regulated workload offerings - These offerings are available from the [{{site.data.keyword.vmwaresolutions_full_notm}}](https://cloud.ibm.com/infrastructure/vmware-solutions/console) console, the **VMware Regulated Workloads** card. They are suitable for clients that require a prescriptive reference architecture that matches the {{site.data.keyword.framework-fs_full}}.
-* Automated offerings with manual customization tasks - These offerings are based on the offering available from the [{{site.data.keyword.vmwaresolutions_full_notm}}](https://cloud.ibm.com/infrastructure/vmware-solutions/console) console, the **VMware Solutions Dedicated** card. They require a number of post-deployment manual tasks to achieve the architectural pattern needed.
+* Automated offerings - These offerings are available from the [VMware Solutions](https://cloud.ibm.com/vmware) console.
+* Regulated workload offerings - These offerings are available from the [VMware Solutions](https://cloud.ibm.com/vmware) console, the **VMware Regulated Workloads** card. They are suitable for clients that require a prescriptive reference architecture that matches the {{site.data.keyword.framework-fs_full}}.
+* Automated offerings with manual customization tasks - These offerings are based on the offering available from the [VMware Solutions](https://cloud.ibm.com/vmware) console. They require a number of post-deployment manual tasks to achieve the architectural pattern needed.
 
 Based on the assessment of your source NSX-V environment, you can identify the requirements for your target platform. After the analysis, do the following steps:
 
 1. Select the target platform that supports all your requirements from the information on the features that are shown in the following diagrams.
-2. Use the [Getting started with VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started) documentation to know more on the offerings, deployment patterns, and services.
+2. Review [Getting started with VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started) to learn more about the offerings, deployment patterns, and services.
 
 A summary and key capabilities of the target VMware Solutions offerings in {{site.data.keyword.cloud_notm}} is provided with architectural guidance to ease up the selection process.
 
@@ -34,11 +34,11 @@ A summary and key capabilities of the target VMware Solutions offerings in {{sit
 
 The offerings are described in detail in the following documents:
 
-* [VMware Solutions Dedicated - vCenter Server as a single site deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) - This offering deploys a VMware® based platform in a single {{site.data.keyword.cloud_notm}} data center automatically.
-* [VMware Solutions Dedicated - vCenter Server as a multisite deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) - This offering deploys a secondary vCenter Server instance in a single {{site.data.keyword.cloud_notm}} data center automatically. It is linked to a primary [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) previously deployed. Multiple secondary instances can be created. 
-* vCenter Server dual-site - This deployment pattern is based on two [VMware Solutions Dedicated - vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) deployments but not in a primary-secondary relationship as in the [vCenter Server multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) pattern. This is typically used in a production-disaster recovery pattern by using Zerto or Veeam® replication between the two sites. 
+* [vCenter Server as a single site deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) - This offering deploys a VMware® based platform in a single {{site.data.keyword.cloud_notm}} data center automatically.
+* [vCenter Server as a multisite deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) - This offering deploys a secondary VMware vCenter Server® instance in a single {{site.data.keyword.cloud_notm}} data center automatically. It is linked to a primary [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) previously deployed. Multiple secondary instances can be created.
+* vCenter Server dual-site - This deployment pattern is based on two [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) deployments but not in a primary-secondary relationship as in the [vCenter Server multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) pattern. This is typically used in a production-disaster recovery pattern by using Zerto or Veeam® replication between the two sites. 
 
-In the VMware Solutions Dedicated - vCenter Server deployments, each site, and each instance has its own NSX-T Manager cluster. In the multisite deployments, the vCenter, NSX-T managers, and domain controller components are deployed per site. Each instance on each site has [a default NSX-T overlay topology](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and no networking integrations nor dependencies exist between the sites.
+In the vCenter Server deployments, each site, and each instance has its own NSX-T Manager cluster. In the multisite deployments, the vCenter, NSX-T managers, and domain controller components are deployed per site. Each instance on each site has [a default NSX-T overlay topology](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and no networking integrations nor dependencies exist between the sites.
 {: note}
 
 The following diagram can be used to compare and contrast the features that are offered by these offerings.
@@ -127,7 +127,7 @@ In the previous diagram, the following terms require some additional comments:
 ## Related links
 {: #v2t-targets-links}
 
-* [VMware Solutions Dedicated - vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
-* [VMware Solutions Dedicated - vCenter Server multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite)
-* [Regulated workloads - Single site](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview)
-* [Regulated workloads - Multizone](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-mzr)
+* [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
+* [vCenter Server multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite)
+* [Regulated workloads - single site](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview)
+* [Regulated workloads - multizone](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-mzr)

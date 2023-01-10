@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2021
 
-lastupdated: "2021-11-09"
+lastupdated: "2021-11-21"
 
 keywords: FortiGate security, FortiGate Security Appliance, tech specs FortiGate
 
@@ -64,7 +64,7 @@ Review the following considerations before you install the FortiGate Security Ap
 * You must manage the FortiGate Security Appliance configuration carefully to allow only necessary communications and deny all other communications.
 * If you order extra clusters, the public VLANs for these newly added clusters do not have the HA-pair of Security Appliances.
 
-### Notes for Installation Considerations
+### Notes for installation considerations
 {: #fsa_considerations-install-notes}
 
 Review the following notes about installation:

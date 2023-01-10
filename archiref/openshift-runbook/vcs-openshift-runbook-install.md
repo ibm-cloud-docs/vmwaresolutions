@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -58,11 +58,11 @@ Using the following install-config.yaml file shown in the figure, update it usin
 
 1. Update the base domain name.
 2. Update the metadata name with the {{site.data.keyword.redhat_openshift_notm}} cluster name.
-3. Provide the following vCenter information:
-   * vCenter IP address.
-   * vCenter username and password.
-   * Datacenter name.
-   * Datastore name.
+3. Provide the following vCenter Server information:
+   * vCenter IP address
+   * vCenter username and password
+   * Datacenter name
+   * Datastore name
 4. Paste the Pull Secret.
 5. Paste the SSH key.
 6. The following figure shows the install-config.yaml file. Copy the file to the clipboard.
@@ -266,14 +266,14 @@ You can copy the ignition files after you use the following commands to display 
 | compute_ips | 192.168.133.13 \n 192.168.133.14 \n 192.168.133.15| |
 | machine_cidr | 192.168.133.0/24| |
 | cluster_id | `ocp`| |
-| cluster_domain | ocp.dallas.ibm.local| |
-| base_domain | dallas.ibm.local| |
-| vsphere_server| 10.208.17.2| |
-| vsphere_user | administrator@vsphere.local|
+| cluster_domain | ocp.dallas.ibm.local | |
+| base_domain | dallas.ibm.local | |
+| vsphere_server| 10.208.17.2 | |
+| vsphere_user | administrator@vsphere.local |
 | vsphere_password | s3cretPassw0rd | |
 | vsphere_cluster | cluster1 | |
 | vsphere_datacenter | datacenter1 | |
-| vsphere_datastore | vsanDatastore| |
+| vsphere_datastore | vsanDatastore | |
 | vm_template | `rhcos-latest` | |
 | vm_network | vxw-dvs-22-virtualwire-24-sid-6011-OpenShift-LS | |
 | bootstrap_ignition_url | `http://192.168.133.08/bootstrap.ign` | |
@@ -313,7 +313,7 @@ END_OF_WORKER_IGNITION
 ```
 {: caption="Figure 2. terraform.tfvars example file" caption-side="bottom"}
 
-The terraform.tfvars file is created.
+The `terraform.tfvars` file is created.
 1. In the SSH session to the bastion node, with root privileges, use the following command to open the file; `vi /opt/ocpinstall/installer/upi/vsphere/terraform.tfvars`.
 2. Type `i` to enter insert mode, paste the file contents.
 3. Press Esc, then type `:wq` to save the file and exit the vi editor.
@@ -417,15 +417,15 @@ terraform apply -auto-approve
     INFO Login to the console with user: kubeadmin, password: my-kube-password
     ```
 
-The password for the user that was created during installation can also be found in the auth subdirectory in the install-dir. You can log in through oc login and have access to the web console. The URL for the console is `https://console-openshift-console.<cluster>.<base_domain>`.
+   The password for the user that was created during installation can also be found in the auth subdirectory in the install-dir. You can log in through oc login and have access to the web console. The URL for the console is `https://console-openshift-console.<cluster>.<base_domain>`.
 
-1. Run the following command from the `/opt/ocpinstall` directory:
+6. Run the following command from the `/opt/ocpinstall` directory:
 
     ```bash
     watch -n5 oc get clusteroperators
     ```
 
-2. Monitor for cluster completion. An output is provided in the following example. Replace 4.x.5 with the current {{site.data.keyword.redhat_openshift_notm}} version, for example, 4.7.5.
+7. Monitor for cluster completion. An output is provided in the following example. Replace 4.x.5 with the current {{site.data.keyword.redhat_openshift_notm}} version, for example, 4.7.5.
 
     ```bash
     Every 5.0s: oc get clusteroperators

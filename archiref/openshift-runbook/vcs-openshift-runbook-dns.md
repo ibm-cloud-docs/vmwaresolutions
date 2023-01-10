@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-10-10"
+lastupdated: "2022-11-23"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ subcollection: vmwaresolutions
 2. From left menu, select **VMware**. 
 3. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **vCenter Server** from the left navigation pane.
 4. Select your deployed instance.
-5. Collect the AD/DNS IP and remote desktop credentials.
+5. Click the **Access information** tab and collect the AD/DNS IP and remote desktop credentials.
 6. From a jump server or by using SSL VPN, remote desktop to the AD/DNS server.
 
 ## Creating DNS records

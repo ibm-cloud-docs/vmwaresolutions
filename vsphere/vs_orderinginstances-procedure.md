@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-10"
+lastupdated: "2022-12-20"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -17,14 +17,14 @@ subcollection: vmwaresolutions
 # Procedure to order vSphere clusters
 {: #vs_orderinginstances-procedure}
 
-1. In the {{site.data.keyword.vmwaresolutions_full}} console, click the **VMware Solutions Dedicated** card in the **IaaS platforms** section.
-2. On the **VMware Solutions Dedicated** page, click the **VMware vSphere offering** card. Ensure that you are on the **Create new** tab and that **New cluster** is displayed in the **Cluster configurations** list.
+1. In the VMware Solutions console, click the **VMware vSphere** card in the **Platforms** section.
+2. On the **Create** tab, select **Create new** and ensure that **New cluster** is displayed in the **Cluster configurations** list.
 3. Enter the cluster name.
 4. Select the VMware® components:
    * If you are an IBM Business Partner, select a license bundle and any additional available VMware components.
    * If you are a non-Business Partner, select the component, edition if any, and specify the licensing option.
-
-   When you bring your own license (BYOL) for VMware vSphere® Enterprise Plus, an {{site.data.keyword.cloud_notm}} ticket is opened automatically. This ticket requests the default vSphere licenses on your ordered bare metal servers to be replaced with your provided licenses.
+   
+   Bring your own license (BYOL) for VMware vSphere® Enterprise Plus is no longer supported, except for migrations or upgrades of existing BYOL clusters. If you do select that you are providing your own license, an {{site.data.keyword.cloud_notm}} ticket is opened automatically. This ticket requests the default vSphere licenses on your ordered bare metal servers to be replaced with your provided licenses.
 
    You are responsible to track the ticket so that you replace the vSphere license on the newly ordered VMware ESXi® servers. This way the {{site.data.keyword.cloud_notm}} infrastructure grants the cancellation of the initially provided {{site.data.keyword.cloud_notm}} infrastructure vSphere license charge. To replace your ESXi vSphere license, see [Configure license settings for an ESXi host](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.vcenterhost.doc/GUID-1B128360-0060-40F2-A6F0-43CD2534B034.html){: external}.
    {: important}

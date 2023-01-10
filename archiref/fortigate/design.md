@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -38,7 +38,7 @@ You can deploy an VMware ESXi™ edge services cluster as part of your vCenter S
 * Network peering between your private environment (including your NSX edges and networks) and external environments (such as your on–premises networks).
 * Advanced firewall services such as VPN and IPS for these networks.
 
-In Figure 1, this topology is illustrated by the "FortiGate-VM Edge" component.
+In the previous figure, this topology is illustrated by the FortiGate-VM Edge component.
 
 ### Virtual firewall appliance
 {: #fortigate-design-topologies-virtual-firewall}
@@ -51,7 +51,7 @@ You can also deploy FortiGate VM as a virtual firewall appliance directly within
 
 Additionally, FortiGate VM can use service chaining to integrate directly with NSX–T.
 
-In Figure 2, these topologies are illustrated by the "FortiGate-VM Internal" component.
+In the previous figure, these topologies are illustrated by the FortiGate-VM Internal component.
 
 ## Related links
 {: #fortigate-design-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-11-17"
 
 keywords: about vmware solutions, product overview, benefits
 
@@ -38,7 +38,7 @@ As we take a look under the hood of the {{site.data.keyword.vmwaresolutions_shor
 ## VMware Solutions basics
 {: #under_the_hood-solution-basics}
 
-Your software-defined data centers are provisioned and managed by using the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.com/infrastructure/vmware-solutions/console). You log in to the console by using your IBMid account.
+Your software-defined data centers are provisioned and managed by using the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.com/vmware). You log in to the console by using your IBMid account.
 
 From the VMware Solutions catalog, you can provision one of several kinds of virtualization environment. The featured virtualization solution is vCenter Server, which offers VMware's vSphere hypervisor, VMware vCenter Server®, VMware NSX, and optionally VMware vSAN. You can also provision this environment with more add–on services that provide backup, disaster recovery, migration, security, compliance, and networking services.
 
@@ -110,7 +110,7 @@ While the environment is an integrated virtualization environment, the price of 
 ### The VMware Solutions console
 {: #under_the_hood-console}
 
-You log in to the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.com/infrastructure/vmware-solutions/console) to create and manage your instances. This portion of the solution is responsible for the initial ordering and provisioning of your environment, and also for the ongoing management of your environment. Your deployed instances communicate with the console by using the {{site.data.keyword.cloud_notm}} Private network.
+You log in to the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.com/vmware) to create and manage your instances. This portion of the solution is responsible for the initial ordering and provisioning of your environment, and also for the ongoing management of your environment. Your deployed instances communicate with the console by using the {{site.data.keyword.cloud_notm}} Private network.
 
 ### The IBM CloudBuilder component
 {: #under_the_hood-ibm-cb}

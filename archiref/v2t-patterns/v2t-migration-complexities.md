@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ In this step of the process, you can check the source NSX-V environment and use 
 
 The following diagram depicts the parameters and shows how the values of these parameters map to the complexity assessment.
 
-![Complexity category](../../images/v2t-diagrams-criteria.svg "Complexity category"){: caption="Figure 1. Complexity category" caption-side="bottom"}
+![Complexity categories](../../images/v2t-diagrams-criteria.svg "Complexity categories"){: caption="Figure 1. Complexity categories" caption-side="bottom"}
 
 You can use the following assessment approach:
 
@@ -130,8 +130,8 @@ This is not a key parameter. However, it gives guidance on where additional proj
 ## Related links
 {: #v2t-complexity-links}
 
-* [VMware Solutions Dedicated - vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
-* [VMware Solutions Dedicated - vCenter Server multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite)
-* [Regulated workloads - Single site](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview)
-* [Regulated workloads - Multizone](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-mzr)
+* [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
+* [vCenter Server multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite)
+* [Regulated workloads - single site](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview)
+* [Regulated workloads - multizone](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-mzr)
 * [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-09-22"
+lastupdated: "2023-01-03"
 
 subcollection: vmwaresolutions
 
@@ -21,11 +21,11 @@ subcollection: vmwaresolutions
 
 You are not charged for the KMIP™ for VMware service. To review the Key Protect and Hyper Protect Crypto Services pricing plans, see the [Key Protect](https://cloud.ibm.com/catalog/services/key-protect) and [Hyper Protect Crypto Services](https://cloud.ibm.com/catalog/services/hyper-protect-crypto-services) catalog pages.
 
-If you are using vSAN™ encryption, plan to use one root key in Key Protect or Hyper Protect Crypto Services, and two standard keys for each vSAN cluster that you encrypt.
+If you are using VMware vSAN™ encryption, plan to use one root key in Key Protect or Hyper Protect Crypto Services, and two standard keys for each vSAN cluster that you encrypt.
 
-If you are using vSphere encryption, plan to use one root key, one standard key per vSphere cluster, and one standard key per encrypted virtual machine (VM).
+If you are using VMware vSphere® encryption, plan to use one root key, one standard key per vSphere cluster, and one standard key per encrypted virtual machine (VM).
 
-Key Protect and Hyper Protect Crypto Services are available in multizone regions (MZRs) only. Hyper Protect Crypto Services (HPCS) is available in selected MZRs only. KMIP for VMware® is automatically deployed in the same region as your Key Protect or HPCS instance. VMware vCenter Server can tolerate high latency to the KMIP service, so distance is usually not be a cause for concern.
+Key Protect and Hyper Protect Crypto Services are available in multizone regions (MZRs) only. Hyper Protect Crypto Services (HPCS) is available in selected MZRs only. KMIP for VMware® is automatically deployed in the same region as your Key Protect or HPCS instance. VMware vCenter Server® can tolerate high latency to the KMIP service, so distance is usually not be a cause for concern.
 
 ## Connecting the key management server
 {: #kmip-implementation-connecting-kms}
@@ -55,13 +55,23 @@ The vSAN health check might send periodic warnings that it is unable to connect 
 
 To use vSphere encryption, edit your VM storage policies to require disk encryption.
 
+## Important caveats
+{: #kmip-implementation-important-caveats}
+
+Some VMs require special planning for encryption, especially if they are involved in a possible circular dependency to obtain the key material to operate themselves. Consider the following information:
+
+- vCenter Server is involved in retrieving encryption keys. This VM should not be encrypted using vSphere encryption or located on an encrypted vSAN datastore.
+- The Micorsoft Windows® Active Directory controllers in your environment are used for hostname resolution to connect to key management. You should not encrypt them using vSphere encryption or locate them on an encrypted vSAN datastore unless you are prepared to provide alternate hostname resolution if you need to restart your environment.
+- VMware does not recommend encrypting VMware NSX® VMs by using vSphere encryption.
+- Entrust does not recommend encrypting Entrust CloudControl™ VMs that use vSphere encryption.
+
 ## Key rotation
 {: #kmip-implementation-key-rotation}
 
 Rotate your [Key Protect](/docs/key-protect?topic=key-protect-rotate-keys#rotate-keys) or [Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-rotate-keys) customer root key (CRK) by using the {{site.data.keyword.cloud_notm}} console or API.
 
-* For VMware vSAN encryption, rotate your VMware key encryption keys (KEKs) and optionally data encryption keys (DEKs) from the vSAN general settings in your vCenter Server cluster.
-* For VMware vSphere encryption, rotate your VMware KEKs and DEKs (optionally) by using the **Set-VMEncryptionKey** PowerShell command.
+* For vSAN encryption, rotate your VMware key encryption keys (KEKs) and optionally data encryption keys (DEKs) from the vSAN general settings in your vCenter Server cluster.
+* For vSphere encryption, rotate your VMware KEKs and DEKs (optionally) by using the **Set-VMEncryptionKey** PowerShell command.
 
 ## Key revocation
 {: #kmip-implementation-key-revocation}

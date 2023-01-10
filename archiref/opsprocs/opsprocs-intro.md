@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-11-23"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Operational procedures overview
 {: #opsprocs-intro-overview}
 
-This document provides a view of day 2 operations that you must complete after your VMware vCenter Server® instance has been provisioned. {{site.data.keyword.vmwaresolutions_full}} is a deployment service that automatically deploys VMware’s Software-Defined Data Center software on to the {{site.data.keyword.cloud_notm}}. Many of the following day 0 and day 1 tasks are completed by the deployment automation.
+This document provides a view of Day 2 operations that you must complete after your VMware vCenter Server® instance has been provisioned. {{site.data.keyword.vmwaresolutions_full}} is a deployment service that automatically deploys VMware’s Software-Defined Data Center software on to the {{site.data.keyword.cloud_notm}}. Many of the following day 0 and day 1 tasks are completed by the deployment automation.
 
 * Day 0
    * Requirements
@@ -32,7 +32,7 @@ Day 2 operations typically consist of the following high-level tasks.
 * Compliance. For more information, see [Compliance](/docs/vmwaresolutions?topic=vmwaresolutions-opsprocs-compliance).
 * Proactive and reactive maintenance. For more information, see [Proactive tasks](/docs/vmwaresolutions?topic=vmwaresolutions-opsprocs-proactive) and [Troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-opsprocs-trouble).
 
-For more information about day 2 responsibilities, see [Responsibilities for day 2 operations](/docs/vmwaresolutions?topic=vmwaresolutions-opsprocs-responsibilities).
+For more information about Day 2 responsibilities, see [Responsibilities for Day 2 operations](/docs/vmwaresolutions?topic=vmwaresolutions-opsprocs-responsibilities).
 
 ## Operational procedures introduction
 {: #opsprocs-intro-proc}

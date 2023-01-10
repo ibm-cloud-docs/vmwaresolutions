@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-09-06"
+lastupdated: "2022-11-09"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -15,10 +15,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Zerto overview
+# Zerto on IBM Cloud overview
 {: #addingzertodr}
 
-The Zerto service integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware® virtual environment on {{site.data.keyword.cloud}}. 
+Zerto on IBM Cloud integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware® virtual environment on {{site.data.keyword.cloud}}. Zerto on IBM Cloud is a non-IBM product that is offered under terms and conditions from Zerto, not IBM.
 
 Zerto is supported on VMware vCenter Server® instances that meet the following requirements:
 

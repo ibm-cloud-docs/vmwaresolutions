@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-06-21"
+lastupdated: "2022-11-16"
 
 keywords: manage shared resources, shared resources, shared resource tasks
 
@@ -37,6 +37,6 @@ The configuration change might fail if the vCPU and RAM resources are in use whi
 ## Related links
 {: #shared_resize-related}
 
-* [VMware Solutions Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
+* [VMware  Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
 * [Viewing and managing virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary)
-* [Deleting VMware Solutions Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
+* [Deleting VMware Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)

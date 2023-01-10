@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -83,7 +83,7 @@ The setting alarms workflow is as follows.
    * Do you need to configure your own alarms?
    * Do you need to include virtual machines?
 
-##  Typical alarm workflow
+## Typical alarm workflow
 {: #opsprocs-alarms-alarm-workflow}
 
 After set-up, review the following example of an alarm workflow, typically adopted by system administrators, when an alarm is triggered.
@@ -97,14 +97,14 @@ After set-up, review the following example of an alarm workflow, typically adopt
 ## Preconfigured alarms - standard
 {: #opsprocs-alarms-preconfigured-std}
 
-* Alarm Name - The name of the alarm visible in vCenter.
+* Alarm name - The name of the alarm visible in vCenter.
 * Guidance - {{site.data.keyword.vmwaresolutions_short}} guidance on the use of this alarm.
 * More Information - Additional information available from IBM or VMware to help with the resolution of these alarms when they are triggered.
 
 The following table describes the standard preconfigured alarms.
 
-| Alarm Name | Guidance | More Information |
-|---|---|---|
+| Alarm name | Guidance | Details |
+|:---------- |:-------- |:------- |
 | Host connection and power state | Configure to send email one time when set to Not Responding or Standby. | [Alarms about the host connection state changing from green to red frequently occur (1020210)](https://kb.vmware.com/s/article/1020210){: external} |
 | Host CPU usage | Configure to send email one time when host CPU usage > 90% for 5 mins. | [Knowledge - KB0012707 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=342e3d6adbc5730030c93a1b7c961976){: external} |
 | Host memory usage | Configure to send email one time when host memory usage > 95% for 5 mins. | [Knowledge - KB0012712 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=30110ee2db49730030c93a1b7c96194f){: external} |
@@ -213,14 +213,14 @@ The asterisk (*) denotes a stateless alarm. vCenter does not keep data on statel
 ## Preconfigured alarms - vSAN
 {: #opsprocs-alarms-preconfigured-vsan}
 
-* Alarm Name - The name of the alarm visible in vCenter.
+* Alarm name - The name of the alarm visible in vCenter.
 * Guidance - {{site.data.keyword.vmwaresolutions_short}} guidance on the use of this alarm.
 * More Information - Additional information available from {{site.data.keyword.IBM}} or VMware to help with the resolution of these alarms when triggered.
 
 If you have a vSAN cluster, the additional preconfigured alarms in the following table apply.
 
-| Alarm Name | Guidance | More Information |
-|---|---|---|
+| Alarm name | Guidance | Details |
+|:---------- |:-------- |:------- |
 | Host flash capacity exceeds the licensed limit for vSAN | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
 | Expired vSAN license | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Troubleshooting licensing](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-3C4E8BF7-B0A9-46F0-BA50-D69F950AB958.html){: external} |
 | Errors occurred on the disks of a vSAN host | Configure to send email one time when a permanent error is on a vSAN disk. | [vSAN device encounters a permanent error when devices are not readable or writeable (2071075)](https://kb.vmware.com/s/article/2071075){: external}  |
@@ -323,8 +323,8 @@ If you have a vSAN cluster, the additional preconfigured alarms in the following
 
 The hybridity bundle installs HCX and creates the following additional preconfigured alarms.
 
-| Alarm Name | Guidance | More Information |
-|---|---|---|
+| Alarm name | Guidance | Details |
+|:---------- |:-------- |:------- |
 | Bulk Migration Failed | Not considered essential for notification as migrations would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-B6CF4054-9C8C-43DE-AC67-01AE0679B190.html){: external}. |
 | Cold Migration Failed | Not considered essential for notification as migrations would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-B6CF4054-9C8C-43DE-AC67-01AE0679B190.html){: external}. |
 | HCX Cloud Database Upgrade Failed | Not considered essential for notification as upgrades would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-B6CF4054-9C8C-43DE-AC67-01AE0679B190.html){: external}. |

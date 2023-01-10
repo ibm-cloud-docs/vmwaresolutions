@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-10-07"
+lastupdated: "2022-12-19"
 
 keywords: manage shared resources, view shared virtual data centers summary
 
@@ -26,7 +26,7 @@ Optionally, validate that you are in the correct account for your instance. From
 {: #shared_viewing-vdc-summary-procedure}
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > VMware Shared** from the left navigation pane.
-2. In the **VMware Solutions Shared** table, view the list of data center sites and the virtual data centers that are provisioned for each site.
+2. In the **VMware Shared** table, view the list of data center sites and the virtual data centers that are provisioned for each site.
 
 | Item | Description |
 |:---- |:----------- |
@@ -61,8 +61,8 @@ The virtual data center can have different statuses.
 {: #shared_viewing-vdc-summary-related}
 
 * [Resizing-virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_resize)
-* [Operating VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [Deleting VMware Solutions Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
+* [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
+* [Deleting VMware Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
 * [Viewing-virtual data center details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-details)
 * [Accessing the VMware Cloud Director Management console](/docs/vmwaresolutions?topic=vmwaresolutions-shared_accessing-vcd-console)
-* [VMware Cloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}
+* [VMware Cloud Director](https://www.vmware.com/ca/products/cloud-director.html){: external}

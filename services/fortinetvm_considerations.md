@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-05"
+lastupdated: "2022-11-15"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -15,10 +15,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FortiGate Virtual Appliance overview
+# FortiGate Virtual Appliance on IBM Cloud overview
 {: #fortinetvm_considerations}
 
-The FortiGate® Virtual Appliance service deploys a pair of FortiGate Virtual Appliances to your environment, which can help you reduce risk by implementing critical security controls within your virtual infrastructure.
+FortiGate® Virtual Appliance on IBM Cloud deploys a pair of FortiGate Virtual Appliances to your environment, which can help you reduce risk by implementing critical security controls within your virtual infrastructure. FortiGate Virtual Appliance on IBM Cloud is a non-IBM product that is offered under terms and conditions from Fortinet, not IBM.
 {: shortdesc}
 
 * You can install multiple instances of this service as needed. You can manage this service by using the FortiOS web Client or the CLI through SSH.
@@ -27,7 +27,7 @@ The FortiGate® Virtual Appliance service deploys a pair of FortiGate Virtual Ap
 
 {{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months at no cost for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
 
-The current FortiGate Virtual Appliance version that is installed is 7.2.1.
+The current FortiGate Virtual Appliance version that is installed is 7.2.2.
 {: note}
 
 ## Technical specifications for FortiGate Virtual Appliance

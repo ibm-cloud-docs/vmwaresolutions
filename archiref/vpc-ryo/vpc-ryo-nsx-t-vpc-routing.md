@@ -38,7 +38,7 @@ If you want to route natively with {{site.data.keyword.vpc_short}} subnets and o
 
 The second architectural decision to be made for your solution is public traffic. If your workloads need direct public traffic and have inbound public traffic without using any network translation, you must provision the public uplink subnet and public T0 uplink VLAN interfaces. Also, you must configure your T0 with public uplinks as described in the topic [Tier-0 logical router](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-nsx-t-logical-routers#vpc-ryo-nsx-t-logical-routers-edge-tier-0) previously. As the NSX-T T0 uses Active-Standby, the HA VIP provides high availability for the routing of public traffic between VPC, T0 and your NSX-T workloads. When you need public IPs, you can order floating IP address to the HA VIP VLAN interface. Each floating IP is a single `/32`IP address, and you can order as many as you need within [VPC Quotas](/docs/vpc?topic=vpc-quotas).
 
-| Interface name | Interface type | VLAN ID | Subnet | Allow float  | Allow IP spoofing | Enable Infra NAT | NSX-T Interface | Segment Name |
+| Interface name | Interface type | VLAN ID | Subnet | Allow float | Allow IP spoofing | Enable Infra NAT | NSX-T interface | Segment name |
 | ----------------------------| ---------------- | --------- | ------------------------------ | --------------| ------------------- | ------------------- | ---------------------------- | ------------------------------ |
 | vlan-nic-t0-pub-uplink-vip | vlan           | 700     | vpc-t0-public-uplink-subnet  | true         | false             | false             | T0 Public Uplink VIP       | vpc-zone-t0-public-*vlanid* |
 {: caption="Table 1. Public uplink HA VIP to be used for Public floating IPs" caption-side="bottom"}
@@ -88,7 +88,7 @@ If you use only private route, then your default route `0.0.0.0/0` in NSX-T T0 L
 
 You must define inbound traffic from VPC. Then, you must create a VPC route in the Zone to the IP subnet/prefix that you are using in the NSX-T overlay. As the NSX-T T0 uses Active-Standby, the HA VIP provides high availability for the routing of private traffic between VPC and your NSX-T overlay. Therefore, the next-hop for the VPC route must be the HA VIP, as specified on the following table.
 
-| Interface name | Interface type | VLAN ID | Subnet | Allow float  | Allow IP spoofing | Enable Infra NAT  | NSX-T Interface | Segment Name |
+| Interface name | Interface type | VLAN ID | Subnet | Allow float  | Allow IP spoofing | Enable Infra NAT | NSX-T interface | Segment name |
 | ---------------------------- | ---------------- | --------- | ------------------------------ | -------------- | ------------------- | ------------------- | ---------------------------- | ------------------------------ |
 | vlan-nic-t0-priv-uplink-vip | vlan           | 710     | vpc-t0-private-uplink-subnet | true         | true              | true              | T0 Private Uplink VIP      | vpc-zone-t0-private-*vlanid* |
 {: caption="Table 5. VLAN interfaces for T0 uplinks" caption-side="bottom"}

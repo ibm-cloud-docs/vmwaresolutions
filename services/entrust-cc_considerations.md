@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-05"
+lastupdated: "2022-12-14"
 
 keywords: Entrust CloudControl, tech specs Entrust CloudControl
 
@@ -15,13 +15,13 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Entrust CloudControl overview
+# Entrust CloudControl on IBM Cloud overview
 {: #entrust-cc_considerations}
 
-The Entrust CloudControl™ service (formerly known as HyTrust CloudControl) enforces and controls compliance against security standards, which includes role-based access control (RBAC), approval, and auditing.
+Entrust CloudControl™ on IBM Cloud (formerly known as HyTrust CloudControl) enforces and controls compliance against security standards, which includes role-based access control (RBAC), approval, and auditing. Entrust CloudControl on IBM Cloud is a non-IBM product that is offered under terms and conditions from Entrust, not IBM.
 {: shortdesc}
 
-New installations of Entrust CloudControl are supported only for VMware vCenter Server® with NSX-T™ instances. The Entrust CloudControl version that is installed is 6.5. Previous installations of Entrust CloudControl 5.6 are still supported for existing VMware® vCenter Server with NSX-V instances V4.7 and earlier.
+New installations of Entrust CloudControl are supported only for VMware vCenter Server® with NSX-T™ instances. The Entrust CloudControl version that is installed is 6.5. Previous installations of Entrust CloudControl 5.6 are still supported for existing VMware® vCenter Server with NSX-V instances V4.7 and earlier. 
 {: note}
 
 {{site.data.content.para-promotion-services}}

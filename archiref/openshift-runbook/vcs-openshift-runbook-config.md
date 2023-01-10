@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -16,10 +16,10 @@ subcollection: vmwaresolutions
 # Red Hat OpenShift 4.7 additional configuration
 {: #openshift-runbook-runbook-config-intro}
 
-## vSphere Storage for Kubernetes
+## vSphere storage for Kubernetes
 {: #openshift-runbook-runbook-config-storage-vsphere}
 
-You can use the vSphere datastores as a location for storing persistent volumes for Kubernetes by using the VMware® Cloud Provider.
+You can use the VMware vSphere® datastores as a location for storing persistent volumes for Kubernetes by using the VMware® Cloud Provider.
 
 Complete the following steps to create a new volume.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-10-19"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -59,9 +59,7 @@ Depending on the source environment complexity and the skills, experience and ti
 ## Considerations for migration
 {: #v2t-overview-considerations}
 
-You must be familiar with NSX-T concepts and administration tasks before any migrations. 
-
-For example, review the following options and materials:
+You must be familiar with NSX-T concepts and administration tasks before any migrations. Review the following information:
 
 * [VMware Learning for NSX-T education](https://www.vmware.com/learning.html){: external}
 * [{{site.data.keyword.cloud_notm}} VMware NSX-T Architecture](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design)
@@ -71,7 +69,7 @@ For example, review the following options and materials:
 ## Related links
 {: #v2t-overview-links}
 
-* [PrimaryIO NSX-V to NSX-T fast track migration service](https://hdm.primaryio.com/lp/nsxvtot){: external}.
+* [PrimaryIO NSX-V to NSX-T fast track migration service](https://hdm.primaryio.com/lp/nsxvtot){: external}
 * [PrimaryIO HDM Cloud Connect NSX-V to NSX-T](https://cloud.ibm.com/catalog/services/hdm-cloud-connect-nsx-v-to-nsx-t#about)
-* [cITopus for NSX](https://citopus.com/){: external}.
-* [ReSTNSX's migration assistance tool](https://restnsx.com/mat/){: external}.
+* [cITopus tool for VMware NSX](https://citopus.com/){: external}
+* [MAT - ReSTNSX's migration assistance tool](https://restnsx.com/mat/){: external}

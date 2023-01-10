@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-20"
+lastupdated: "2022-11-22"
 
 keywords: vCenter Server migrate instance, add account vCenter Server, migrate cloud account
 
@@ -33,7 +33,7 @@ For more information about how to link your Iaas-only account to your PaaS accou
 
 1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. From the console banner, click the **Avatar** icon ![Avatar icon](../../icons/i-avatar-icon.svg "Avatar"), and then click the account field to select the user account that you want to migrate the instance to.
-3. In the **vCenter Server instances** table, find the pre-V2.5 instance.
+3. In the **vCenter Server** table, find the pre-V2.5 instance.
 4. Click the vertical overflow menu next to the **Status** column, and then click **Migrate instance to account**.
 5. In the **Migrate instance to account** window, confirm the account to migrate the instance to, and then click **Migrate**.
 

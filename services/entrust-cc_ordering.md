@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-14"
+lastupdated: "2022-11-22"
 
 keywords: Entrust CloudControl, Entrust configuration, order Entrust
 
@@ -29,7 +29,7 @@ You can add the Entrust CloudControl™ service to a new VMware vCenter Server®
 ## Ordering Entrust CloudControl for an existing instance
 {: #entrust-cc_ordering-existing}
 
-1. On the instance details page, click **Services** on the left navigation pane.
+1. On the instance details page, click the **Services** tab.
 2. Click **Add** to add the service.
 3. On the **Services** page, locate the **Entrust CloudControl** service and toggle its switch on.
 

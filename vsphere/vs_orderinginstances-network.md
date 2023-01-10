@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-24"
+lastupdated: "2022-11-07"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -35,7 +35,7 @@ The host name prefix must meet the following requirements:
 {: #vs_orderinginstances-domain-name}
 
 The domain name is used for all {{site.data.keyword.cloud_notm}} bare metal servers and must meet the following requirements:
-* For vSphere 7.0 instances, the domain name must consist of three or more strings that are separated by a period (.)
+* For vSphere 7 instances, the domain name must consist of three or more strings that are separated by a period (.)
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * No consecutive dash characters are allowed.
 * Each string must start with a lowercase alphabetic character and end with a lowercase alphabetic or numeric character.

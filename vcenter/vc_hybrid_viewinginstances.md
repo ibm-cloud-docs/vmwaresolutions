@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-20"
+lastupdated: "2022-11-22"
 
 keywords: view vCenter Server Hybridity, view instance, view instance details
 
@@ -26,7 +26,7 @@ View the summary and detailed information of the VMware vCenter Server® with Hy
 To view a summary of all the vCenter Server with Hybridity Bundle instances that are provisioned for a user account, complete the following steps:
 1. In the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. From the console banner, click your user account icon, and then click the **Account** field to select the user account that you want to check instances for.
-3. In the **vCenter Server instances** table, view the list of instances that are provisioned in the selected user account.
+3. In the **vCenter Server** table, view the list of instances that are provisioned in the selected user account.
 
 | Item        | Description   |
 |:----------- |:------------- |
@@ -56,7 +56,7 @@ The instance can have different statuses.
 {: #vc_hybrid_viewinginstances-procedure-view-inst-property}
 
 To view the property details of a vCenter Server with Hybridity Bundle instance:
-1. In the **vCenter Server instances** table, click an instance name.
+1. In the **vCenter Server** table, click an instance name.
 2. Under **Properties**, view the details for the instance.
 
 | Property        | Description       |
@@ -97,7 +97,7 @@ Under **Access information**, view the access information for the instance-relat
 ## Procedure to view the deployment history for vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_viewinginstances-procedure-view-deploy-history}
 
-Click **Deployment History** from the left navigation pane to view the deployment history for the instance.
+Click the **Deployment History** tab to view the deployment history for the instance.
 
 | Item        | Description       |  
 |:------------- |:------------- |

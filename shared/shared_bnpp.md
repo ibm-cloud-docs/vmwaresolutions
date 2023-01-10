@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-08-22"
+lastupdated: "2022-12-19"
 
 keywords: troubleshooting VMware Solutions Shared, data center, VMware Solutions Shared data centers, Business Partners
 
@@ -23,7 +23,7 @@ Review the following considerations and limitations that Business Partner users 
 ## High availability in stretched locations
 {: #shared_bnpp-ha}
 
-For Business Partner users, {{site.data.keyword.vmwaresolutions_full}} Shared virtual data centers support highly availability for in-cloud replication from one virtual data center to another. However, ordering a Zerto Cloud Connector (ZCC) to replicate on-premises virtual machines (VMs) to {{site.data.keyword.cloud_notm}} does not support high availability.
+For Business Partner users, VMware Shared virtual data centers support highly availability for in-cloud replication from one virtual data center to another. However, ordering a Zerto Cloud Connector (ZCC) to replicate on-premises virtual machines (VMs) to {{site.data.keyword.cloud_notm}} does not support high availability.
 
 ## Resetting passwords
 {: #shared_bnpp-pw-reset}
@@ -37,5 +37,5 @@ For example, ``PAR04- windows`` and ``PAR04- linux`` are in a group with the sam
 ## Related links
 {: #shared_bnpp-related}
 
-* [Operating VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware Cloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}
+* [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
+* [VMware Cloud Director](https://www.vmware.com/ca/products/cloud-director.html){: external}

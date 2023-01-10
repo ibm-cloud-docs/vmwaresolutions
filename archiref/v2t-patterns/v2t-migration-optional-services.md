@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-09-09"
+lastupdated: "2022-12-19"
 
 subcollection: vmwaresolutions
 
@@ -61,6 +61,9 @@ If you deploy a new Veeam instance, you must consider backup data and backup con
 
 * Backup data - Backup files will be hosted in the Veeam repository server. For more information, see [Importing Veeam Agent backups](https://helpcenter.veeam.com/docs/agentforwindows/userguide/integration_import.html?ver=50){: external}.
 * Backup configuration - The backup configuration can be saved to a file. For more information, see [Configuration backup and restore](https://helpcenter.veeam.com/docs/backup/vsphere/vbr_config.html?ver=110){: external}.
+
+If you want to migrate your Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+{: note}
 
 
 ## Caveonix RiskForesight

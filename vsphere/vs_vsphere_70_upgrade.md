@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-21"
+lastupdated: "2022-11-07"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade
 
@@ -29,21 +29,21 @@ Use this offering to create a new cluster of VMware ESXi™ servers or scale out
 
 You must apply patches and upgrade the VMware software periodically, over the lifecycle of a vSphere Server instance.
 
-The following procedure provides the steps that are required to convert a VMware vSphere 6.5 or 6.7-based instance to a vSphere 7.0-based instance. These steps provide the initial upgrade to vSphere, and vSAN 6.7. After this upgrade, you might need to use the normal vSphere functions to upgrade virtual machine (VM) hardware levels and tools. 
+The following procedure provides the steps that are required to convert a VMware vSphere 6.5 or 6.7-based instance to a vSphere 7-based instance. These steps provide the initial upgrade to vSphere, and vSAN 6.7. After this upgrade, you might need to use the normal vSphere functions to upgrade virtual machine (VM) hardware levels and tools. 
 
 The following procedure is for VMware vSphere instances or IaaS bare metal roll-your-own provisions, covering ESXi, vCenter, and VSAN. 
 {: Important}
 
-If you are using the VMware vCenter Server® offering, migrate your instances to a v7.x environment. For more information, see the following topics:
+If you are using the VMware vCenter Server® offering, migrate your instances to a vSphere 7.x environment. For more information, see the following topics:
 * [{{site.data.keyword.cloud_notm}} VMware NSX-T architecture](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design)
 * [NSX-V to NSX-T migration overview](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-overview)
 
 ## Important considerations
 {: #vs_vsphere_70_upgrade-considerations}
 
-* You are responsible to ensure that all VMware ESXi™ servers have proper firmware and drivers to support vSphere 7.0. Broadwell servers are not supported. Research and plan carefully for Skylake and Cascade Lake servers.
-* {{site.data.keyword.cloud_notm}} supports only Cascade Lake bare metal servers for newly deployed vSphere 7.0 instances.
-* If you add clusters or hosts to a vSphere 7.0 instance from the VMware Solutions console, only Cascade Lake bare metal servers are provisioned.
+* You are responsible to ensure that all VMware ESXi™ servers have proper firmware and drivers to support vSphere 7. Broadwell servers are not supported. Research and plan carefully for Skylake and Cascade Lake servers.
+* {{site.data.keyword.cloud_notm}} supports only Cascade Lake bare metal servers for newly deployed vSphere 7 instances.
+* If you add clusters or hosts to a vSphere 7 instance from the VMware Solutions console, only Cascade Lake bare metal servers are provisioned.
 * After you upgrade, your existing clusters will continue to use N-VDS switches, which are deprecated by VMware. Support for N-VDS (NSX-T Virtual Distributed Switch) will be removed in a future VMware NSX-T™ release.
 * If you are using VMware NSX-V, familiarize yourself with VMware product lifecycle for NSX-V and make appropriate plans to migrate your workloads to NSX-T.
 * vCenter Server is designed to allow for a “rolling” upgrade. That is, virtual machine (VM) workloads that are currently functioning continue to function without an outage if you complete the following procedure. Enterprises must engage their change management policies to enable a structured and communicated upgrade and plan for contingencies. However, during the upgrade process of certain management functions, such as vCenter Server and NSX Manager, temporary outages of management functions, configuration changes, powering off and on VMs, might be impacted.
@@ -185,7 +185,7 @@ If the upgrade process fails immediately and the `host cannot enter maintenance 
 ### Updating vCenter Server and ESXi host licenses
 {: #vs_vsphere_70_upgrade-license-update}
 
-After you upgrade the vCenter Server and ESXi hosts to vSphere 7.0, you must update the licenses on the vCenter Server and the ESXi hosts. If you have a vSAN cluster, you must update the vSAN license. Contact [IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to obtain the new licenses for vSphere 7.0.
+After you upgrade the vCenter Server and ESXi hosts to vSphere 7, you must update the licenses on the vCenter Server and the ESXi hosts. If you have a vSAN cluster, you must update the vSAN license. Contact [IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to obtain the new licenses for vSphere 7.
 
 #### Procedure to update the vCenter Server license
 {: #vs_vsphere_70_upgrade-license-update-vcs}
@@ -202,7 +202,7 @@ Complete the following steps from the vCenter Server user interface.
 {: #vs_vsphere_70_upgrade-license-update-esxi}
 
 1. From the **Licenses** page, click **+ Add New Licenses**.
-2. Enter the new vSphere 7.0 license keys in the **New Licenses** field. If you have multiple vSphere 7.0 license keys, input the all of the licenses in the **New Licenses** filed, enter a name for each license, and click **OK**.
+2. Enter the new vSphere 7 license keys in the **New Licenses** field. If you have multiple vSphere 7 license keys, input the all of the licenses in the **New Licenses** filed, enter a name for each license, and click **OK**.
 3. Complete the following steps from the **Assets** page.
    1. Select **HOSTS**.
    2. Select the host and click **Assign License**.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-16"
+lastupdated: "2022-11-17"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -17,19 +17,18 @@ subcollection: vmwaresolutions
 # Procedure to order vCenter Server instances
 {: #vc_orderinginstance-procedure}
 
-1. In the {{site.data.keyword.vmwaresolutions_full}} console, click the **VMware Solutions Dedicated** card in the **IaaS platforms** section.
-2. On the **VMware Solutions Dedicated** page, click the **vCenter Server offering** card.
-3. Specify the instance configuration:
+1. In the VMware Solutions console, click the **VMware vCenter Server** card in the **Platforms** section.
+2. On the **Create** tab, specify the instance configuration:
     * If you want to create a new configuration, select **New configuration**.
     * If you want to update a saved configuration or create a new configuration based on a saved one, select a saved configuration.
-4. Enter the instance name and select a resource group.
-5. Select the instance type:
+3. Enter the instance name and select a resource group.
+4. Select the instance type:
    * Click **Primary instance** to deploy a single instance in the environment or to deploy the first instance in a multisite topology.
    * Click **Secondary instance** to connect the instance with an existing (primary) instance in the environment for high availability. Select the primary instance that you want the secondary instance to be connected with, then enter the vCenter Server Administrator password for the primary instance.
-6. Complete the license settings for the instance components.
+5. Complete the license settings for the instance components.
     * To use IBM-provided licenses, ensure that **Include with purchase** is selected. For NSX, specify the license edition.
     * To use your own licenses, for each license, click **I will provide**, and enter the license key.
-7.  Specify the settings for the consolidated cluster and the optional workload cluster.
+6.  Specify the settings for the consolidated cluster and the optional workload cluster.
     1. Specify the cluster name.
     2. Complete the bare metal server settings.
        1. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the instance or cluster.
@@ -55,18 +54,18 @@ subcollection: vmwaresolutions
        If the consolidated or management cluster and the workload clusters are in the same location, you cannot use existing VLANs. Instead, the workload clusters reuse the VLANs from the management cluster.
        {: note}
 
-8. If you want to order an edge services cluster with Juniper vSRX included, select the **Edge services cluster** checkbox and configure the appropriate settings: the cluster name, the CPU model, RAM size, the number of bare metal servers, the uplink speed, and the private NICs enablement.
-9. Complete the network interface settings.
+7. If you want to order an edge services cluster with Juniper vSRX included, select the **Edge services cluster** checkbox and configure the appropriate settings: the cluster name, the CPU model, RAM size, the number of bare metal servers, the uplink speed, and the private NICs enablement.
+8. Complete the network interface settings.
     1. Enter the hostname prefix and the root domain name for the instance that you are provisioning. For a secondary instance, the domain name is automatically completed.
     2. Specify the DNS configuration.
     3. If you want to customize the hostnames prefix individually, select **Configure hostnames individually**.
-10. Under **Recommended services** and **Optional services**, review the service options. If you want to deploy an add-on service, toggle the switch to on and review the service settings. If configuration is required, click **Edit**, then complete the edits and click **Save**. For more information about specific settings for a service, see the corresponding topic for ordering the service.
-11. On the **Summary** pane, review the instance settings and the estimated price.
+9. Under **Recommended services** and **Optional services**, review the service options. If you want to deploy an add-on service, toggle the switch to on and review the service settings. If configuration is required, click **Edit**, then complete the edits and click **Save**. For more information about specific settings for a service, see the corresponding topic for ordering the service.
+10. On the **Summary** pane, review the instance settings and the estimated price.
 
     * To save the settings as a new configuration template without placing an order, click **Save configuration**, enter a name for the configuration, and click **Continue**.
     * To save the updates to a saved configuration, click **Save configuration**, select **Modify current configuration**, and click **Continue**.
     * To save the updates to a new saved configuration, click **Save configuration**, select **Create new configuration**, enter a new name for the configuration, and click **Continue**.
-12. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
+11. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
 
 ## Results if you saved a configuration
 {: #vc_orderinginstance-results-config}

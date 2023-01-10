@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-02-16"
+lastupdated: "2022-11-10"
 
 keywords: disaster recovery, request DR services, DR managed service
 
@@ -15,12 +15,12 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managed Disaster Recovery Services by Kyndryl
+# Managed Disaster Recovery Services by Kyndryl on IBM Cloud overview
 {: #managing_zerto_services}
 
 The Zerto service provides replication and disaster recovery capabilities. These capabilities can be integrated into the deployment offerings to protect and recover data in your VMware® virtual environment on {{site.data.keyword.cloud}}.
 
-When you request Managed Disaster Recovery Services by Kyndryl, a fully managed disaster recovery (DR) environment can be deployed by using both Zerto DR software and IBM Resiliency Services.
+When you request Managed Disaster Recovery Services by Kyndryl on IBM Cloud, a fully managed disaster recovery (DR) environment can be deployed by using both Zerto DR software and IBM Resiliency Services. Managed Disaster Recovery Services by Kyndryl on IBM Cloud is a non-IBM product that is offered under terms and conditions from Kyndryl, not IBM.
 
 The following models for Managed Disaster Recovery Services by Kyndryl are available.
 

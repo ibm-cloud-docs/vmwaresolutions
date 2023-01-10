@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-20"
+lastupdated: "2022-11-22"
 
 keywords: view vCenter Server, view instance, view instance details, vmware multizone, vcenter server multizone, view vCenter Server multizone, view multizone, view multizone instance details
 
@@ -26,7 +26,7 @@ To view a summary of all the vCenter Server instances that are provisioned for a
 
 1. In the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. From the console banner, click the **Avatar** icon ![Avatar icon](../../icons/i-avatar-icon.svg "Avatar"), and then click the **Account** field. Select the user account that you want to check instances for.
-3. In the **vCenter Server instances** table, view the list of instances that are provisioned in the selected user account.
+3. In the **vCenter Server** table, view the list of instances that are provisioned in the selected user account.
 
 | Item | Description |
 |:---- |:----------- |
@@ -57,7 +57,7 @@ The instance can have different statuses.
 
 To view the property details of an instance, complete the following steps.
 
-1. In the **vCenter Server instances** table, click an instance name.
+1. In the **vCenter Server** table, click an instance name.
 2. Under **Properties**, view the details for the instance.
 
 | Property | Description |
@@ -84,7 +84,7 @@ To view the property details of an instance, complete the following steps.
 
 [^vsphere]: Single-zone instances only.
 
-[^subdomain]: The subdomain label is not used for VMware vSphere 7.0 instances.
+[^subdomain]: The subdomain label is not used for VMware vSphere 7 instances.
 
 ## Procedure to view access information for vCenter Server instances
 {: #vc_viewinginstances-procedure-view-access-info}
@@ -132,7 +132,7 @@ Under **Access information**, view the access information for the instance-relat
 ## Procedure to view deployment history for vCenter Server instances
 {: #vc_viewinginstances-procedure-view-deploy-history}
 
-Click **Deployment history** from the left navigation pane to view the deployment history for the instance.
+Click the **Deployment history** tab to view the deployment history for the instance.
 
 | Item        | Description       |  
 |:------------- |:------------- |

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-11-08"
+lastupdated: "2022-11-23"
 
 keywords: vCenter Server add host, add server vCenter Server
 
@@ -38,8 +38,8 @@ You can expand the capacity of your VMware® vCenter Server® instance according
 {: support}
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
-2. In the **vCenter Server instances** table, click the instance for which you want to expand capacity.
-3. Click **Infrastructure** on the left navigation pane.
+2. In the **vCenter Server** table, click the instance for which you want to expand capacity.
+3. Click the **Infrastructure** tab.
 4. In the **Clusters** table, click the cluster to which you want to add ESXi servers.
 5. In the **ESXi servers** section, click **Add**.
 6. On the **ESXi server** page, enter the number of bare metal servers that you want to add.

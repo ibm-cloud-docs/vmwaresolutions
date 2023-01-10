@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -93,7 +93,7 @@ The following table shows the index datastore parameters for the primary nodes.
 | RAM | 16 GB |
 | Disk | 1 TB |
 | OS | CentOS 7 |
-| Installed application component	|Index Datastore (Primary Nodes) |
+| Installed application component |Index Datastore (Primary Nodes) |
 {: caption="Table 6. Base - index datastore (primary nodes)" caption-side="bottom"}
 
 The following table shows the index datastore parameters for the data nodes.

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-08-22"
+lastupdated: "2023-01-06"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -18,10 +18,10 @@ subcollection: vmwaresolutions
 # Roles and permissions for VMware Cloud Director
 {: #iam_vcd}
 
-The following table provides information about the platform management roles and permissions for {{site.data.keyword.vmwaresolutions_full}} Shared.
+The following table provides information about the platform management roles and permissions for VMware Shared.
 
 * **Minimum** - roles with the bare minimum permissions in VMware Cloud Director.
-* **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in Predefined Global Tenant Roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.3/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
+* **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in Predefined Global Tenant Roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
 * **Custom** - roles that are custom defined by IBM.
 
 | Platform management role | Actions | Level of permission |
@@ -41,7 +41,7 @@ The following table provides information about the platform management roles and
 | Director Console User | View a virtual machine state, properties, and use the guest operating system in VMware Cloud Director. | VMware Cloud Director |
 | Director Backup User | Manage Veeam® backup jobs in VMware Cloud Director. | Custom |
 | Director Security Admin | View and edit the edge firewall and the distributed firewall in VMware Cloud Director. | Custom |
-{: caption="Table 1. Roles and actions for VMware Solutions Shared" caption-side="bottom"}
+{: caption="Table 1. Roles and actions for VMware Shared" caption-side="bottom"}
 
 ## Custom defined roles and permissions
 {: #iam_vcd-custom}
@@ -50,7 +50,10 @@ The following table provides information about roles that are custom defined by 
 
 | Permission | Manager | Administrator | Director Full Viewer | Director Network Admin | Director Security Admin | Director Backup User |
 |:--------------|:---------------|:---------------|:---------------|:---------------|:-----------------|:---------------|
+| Access Control List: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  |  | ![Available](../../../icons/checkmark-icon.svg) |  |
+| Access Control List: View  | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  |
 | Access All Organization VDCs | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
+| Alternate Admin Entity: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  | ![Available](../../../icons/checkmark-icon.svg) |  |
 | API Explorer: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | |
 | API Tokens: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | API Tokens: Manage All | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
@@ -69,6 +72,12 @@ The following table provides information about roles that are custom defined by 
 | Certificate Library: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Custom entity: View all custom entity instances in org | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Custom entity: View custom entity instance | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | |
+| Extension Service API Definition: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  |  | | |
+| Extension Service API Definition: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  | | |
+| Extension Services: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  | | |
+| Extensions: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  | | |
+| External Service: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  |  | | |
+| External Service: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  | | |
 | General: Administrator Control | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |  | | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | General: Administrator View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | General: Send Notification | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
@@ -83,13 +92,16 @@ The following table provides information about roles that are custom defined by 
 | Hybrid Cloud Operations: Delete from-the-cloud tunnel | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | Hybrid Cloud Operations: Delete to-the-cloud tunnel | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | Hybrid Cloud Operations: Update from-the-cloud tunnel endpoint tag | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
-| Hybrid Cloud Operations: View from-the-cloud tunnel | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
-| Hybrid Cloud Operations: View to-the-cloud tunnel | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
+| Localization Resources: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
+| Metadata File Entry: Create/Modify | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | Network Pool: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
+| Object Extensions: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  |  |  | |
+| Object Extensions: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  |  | |
 | Organization Network: Create or Delete | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization Network: Edit Properties | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization Network: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Compute Policy: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
+| Organization vDC Disk: View IOPS| ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  |  | ![Available](../../../icons/checkmark-icon.svg) |
 | Organization vDC Distributed Firewall: Configure Rules | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Distributed Firewall: View Rules | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: Configure BGP Routing | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
@@ -104,6 +116,7 @@ The following table provides information about roles that are custom defined by 
 | Organization vDC Gateway: Configure OSPF Routing | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Configure Remote Access | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Configure Route Advertisement | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
+| Organization vDC Gateway: Configure SLAAC Profile | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Configure SSL VPN | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: Configure Static Routing | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Configure Syslog | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
@@ -121,6 +134,7 @@ The following table provides information about roles that are custom defined by 
 | Organization vDC Gateway: View OSPF Routing | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: View Remote Access | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: View Route Advertisement | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
+| Organization vDC Gateway: View SLAAC Profile | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: View SSL VPN | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: View Static Routing | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Named Disk: Change Owner | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
@@ -160,12 +174,26 @@ The following table provides information about roles that are custom defined by 
 | Provider Network: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Provider vDC: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Quota Policy Capabilities: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
+| Resource Class Action: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  |  |  | |
+| Resource Class Action: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  |  | |
 | Role: Create, Edit, Delete, or Copy | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | Security Tag Edit | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
+| Selector Extensions: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
+| Selector Extensions: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | |
+| Service Authorization: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  | | | |
+| Service Configuration: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  | | | |
+| Service Configuration: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | |
+| Service Link: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  | | | |
+| Service Link: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | |
+| Service Resource Type: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  | | | |
+| Service Resource Type: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | |
+| Service Resource: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  | | | |
+| Service Resource: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | |
 | Service Library: View service libraries | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | SSL: Test Connection | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | Truststore: Manage | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | ![Available](../../../icons/checkmark-icon.svg) | |
 | Truststore: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
+| UI Plugins: Define Upload Modify Delete Associate or Disassociate | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  |  | |  |
 | UI Plugins: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) |
 | UI Plugins: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | |
 | vApp Template / Media: Copy | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
@@ -200,6 +228,8 @@ The following table provides information about roles that are custom defined by 
 | vApp: VM Boot Options | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | vApp: VM Metadata to vCenter | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | vApp: VM Migrate, Force Undeploy, Relocate, Consolidate | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
+| VCD Extension: Register, Unregister, Refresh, Associate or Disassociate | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
+| VCD Extension: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | |
 | VDC Group: Configure | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | VDC Group: Configure Logging | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | VDC Group: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
@@ -213,7 +243,7 @@ The following table provides information about roles that are custom defined by 
 | Catalog: CLSP Publish Subscribe | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | Catalog: VCSP Publish Subscribe Caching | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | vApp Template: Checkout | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
-{: caption="Table 2. Custom defined roles and permissions for VMware Solutions Shared" caption-side="bottom"}
+{: caption="Table 2. Custom defined roles and permissions for VMware Shared" caption-side="bottom"}
 
 ## Related links
 {: #iam_vcd-related}

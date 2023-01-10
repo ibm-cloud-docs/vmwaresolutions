@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-05-06"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -91,4 +91,4 @@ The management NIC on the NSX-T Edge node VM must be able to reach the NSX-T Man
 
 * [Overview of Edge Bridging in NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-12FE83E9-2FA9-40F7-A3FF-BC21E13F6720.html){: external}
 * [Extending Layer 2 Networks with NSX-T Edge Bridge](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-5B9390FB-7E52-4669-AF63-3C3490841432.html){: external}
-* [Ordering services for VMware Solutions Dedicated vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-22"
+lastupdated: "2022-12-19"
 
 subcollection: vmwaresolutions
 
@@ -37,7 +37,7 @@ On-premises connectivity over public internet can be arranged by using {{site.da
 
 With the roll-your-own VMware Solutions in {{site.data.keyword.vpc_short}}, you are responsible for ordering the VPC, prefixes, and subnets for it. Also, ordering the {{site.data.keyword.cloud_notm}} bare metal server and setting up the vSphere clusters, including installing and configuring VMware vCenter Server®, vSAN, NSX-T, attaching file storage.
 
-The {{site.data.keyword.cloud_notm}} bare metal server for {{site.data.keyword.vpc_short}} has the VMware ESXi™ 7.x hypervisor preinstalled. IBM can manage the licensing, or you can bring your own license to the solution.
+The {{site.data.keyword.cloud_notm}} bare metal server for {{site.data.keyword.vpc_short}} has the VMware ESXi™ 7.x hypervisor preinstalled.
 
 For day two of operation, it is your responsibility to monitor and manage the vCenter and NSX-T, including backups, patching, configuration, and monitoring of the VMware software and the underlying vSphere hypervisor.
 

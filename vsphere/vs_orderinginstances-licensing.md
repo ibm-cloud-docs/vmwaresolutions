@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-01-06"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -55,7 +55,7 @@ If you're a non-Business Partner, you can select the following components for yo
 
 Small differences exist between NSX-T Data Center and Data Center SP editions. For more information, see [Product offerings for VMware NSX-T Data Center 3.2.x](https://kb.vmware.com/s/article/86095){: external}.
 
-The VMware vSAN component is not available when you order VMware vSphere Enterprise Plus 6. If you plan to use your own license for VMware vSphere Enterprise Plus 6, an {{site.data.keyword.cloud_notm}} infrastructure ticket is opened on your behalf. The ticket requests that the vSphere licenses of the ordered {{site.data.keyword.cloud_notm}} bare metal servers are replaced with your provided licenses.
+The VMware vSAN component is not available when you order VMware vSphere Enterprise Plus 6.
 
 ## Licensing options
 {: #vs_orderinginstances-licensing-options}
@@ -68,7 +68,7 @@ You have the following options for licensing the selected VMware components:
 
    When you purchase any license, except for vSphere Enterprise Plus and vCenter Server, and you order multiple VMware ESXi™ servers, an {{site.data.keyword.cloud_notm}} ticket is opened automatically to combine license keys. You are responsible to follow up with the ticket to ensure that you use only the license keys that the VMware Solutions Support team generates.
 
-* **I will provide the license**: In this case, you use your own license (BYOL) for the VMware component. You do not enter your BYOL licenses when you create your order for the first time, but you do it later when the vSphere cluster is created.
+* **I will provide the license**: Bring your own license (BYOL) is no longer allowed for VMware components except if you are migrating or upgrading an existing BYOL cluster. If you are upgrading your cluster, do not enter your BYOL licenses when you create your order for the first time, but do it later when the vSphere cluster is created.
 
 ## Related links
 {: #vs_orderinginstances-licensing-related}

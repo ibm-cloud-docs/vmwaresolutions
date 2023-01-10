@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-25"
+lastupdated: "2022-11-22"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -58,7 +58,7 @@ You can also specify a name for your KMIP for VMware instance.
 ### Results of Step 1
 {: #kmip_standalone_ordering-step1-results}
 
-* The deployment of the instance starts automatically and you receive console notification that your order request is being processed. The instance is displayed in the **KMIP for VMware instances** table on the **KMIP for VMware** > **Resources** pages from the {{site.data.keyword.vmwaresolutions_short}} console. The status of the instance is **Installing**.
+* The deployment of the instance starts automatically and you receive console notification that your order request is being processed. The instance is displayed in the **KMIP for VMware** table on the **KMIP for VMware** > **Resources** pages from the {{site.data.keyword.vmwaresolutions_short}} console. The status of the instance is **Installing**.
 * When the instance is successfully deployed, its status is changed to **Inactive**.
 
 ## Step 2 - Activating the KMIP for VMware instance
@@ -136,7 +136,7 @@ If you did not add client SSL certificates in Step 2, you must add it after the 
 {: #kmip_standalone_ordering-step3-procedure}
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **KMIP for VMware** from the left navigation pane.
-2. In the **KMIP for VMware instances** table, click the instance that you want to add certificates for.
+2. In the **KMIP for VMware** table, click the instance that you want to add certificates for.
 3. Click **Add**.
 4. In the **Add client SSL certificate** window, enter the certificate name and content, and then click **Add**.
 

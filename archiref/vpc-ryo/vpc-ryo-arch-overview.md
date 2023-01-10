@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ You can also use VMware software-defined networking for your workloads and NSX-T
 
 ![Architecture Overview of VMware with NSX-T on {{site.data.keyword.vpc_short}}](../../images/vpc-ryo-diagrams-aod-nsx-t-based.svg "The solution uses Virtual Private Cloud compute, network, storage resources, and VMware NSX-T for hosting VMware workloads."){: caption="Figure 2. Architecture Overview of VMware with NSX-T on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
 
-These two architectures serve as the baseline designs for deploying VMware on {{site.data.keyword.vpc_short}}. The deployment architectures provide the foundation for the roll-your-own VMware Solution in VPC.
+These two architectures serve as the baseline designs for deploying VMware on {{site.data.keyword.vpc_short}}. The deployment architectures provide the foundation for the roll-your-own VMware solution in VPC.
 
 You can alter and customize the architecture to meet your design goals within the limits of {{site.data.keyword.vpc_short}}, {{site.data.keyword.cloud_notm}} bare metal server for {{site.data.keyword.vpc_short}} and VMware capabilities.
 {: note}

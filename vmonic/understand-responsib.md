@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2022
 
-lastupdated: "2022-04-22"
+lastupdated: "2022-11-24"
 
 subcollection: vmwaresolutions
 
@@ -27,10 +27,10 @@ Review the following sections for the specific responsibilities for you and for 
 
 Incident and operations management includes tasks such as monitoring, event management, high availability, problem determination, recovery, and full state backup and recovery.
 
-### Incident and operations management for VMware Solutions Shared
+### Incident and operations management for VMware Shared
 {: #understand-responsib-incident-and-ops-shared}
 
-The following table describes the responsibilities that are related to incident and operations management for VMware Solutions Shared.
+The following table describes the responsibilities that are related to incident and operations management for VMware Shared.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
@@ -40,7 +40,7 @@ The following table describes the responsibilities that are related to incident 
 | Infrastructure management | New features, updates, and bug fixes are continuously delivered as needed in a manner transparent to you. Maintenance activities that have customer impact are scheduled in advance, and notifications are posted to the {{site.data.keyword.cloud_notm}} status page. | Set preferences to receive emails notifications. Monitor the {{site.data.keyword.cloud_notm}} status page for general announcements. |
 | Incident management | Unplanned incidents with customer impact are communicated through the CIE process. | Impacted customers can obtain a report about the incident upon request. |
 {: row-headers}
-{: caption="Table 1. Responsibilities for incident and operations for VMware Solutions Shared" caption-side="bottom"}
+{: caption="Table 1. Responsibilities for incident and operations for VMware Shared" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-incident-and-ops-shared-table}
 
@@ -49,10 +49,10 @@ The following table describes the responsibilities that are related to incident 
 
 [^mzr2]: Multizone region virtual data centers are limited to allow listed customers. For more information, contact your VMware Solutions representative.
 
-### Incident and operations management for VMware Solutions Dedicated
+### Incident and operations management for VMware Solutions
 {: #understand-responsib-incident-and-ops-dedicated}
 
-The following table describes the responsibilities that are related to incident and operations management for VMware Solutions Dedicated.
+The following table describes the responsibilities that are related to incident and operations management for VMware Solutions.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
@@ -62,7 +62,7 @@ The following table describes the responsibilities that are related to incident 
 | Infrastructure management | | Implement monitoring and management system that is integrated with virtualization management. |
 | Incident management | Unplanned incidents with customer impact are communicated through the CIE process. | Impacted customers can obtain a report about the incident upon request. |
 {: row-headers}
-{: caption="Table 2. Responsibilities for incident and operations for VMware Solutions Dedicated" caption-side="bottom"}
+{: caption="Table 2. Responsibilities for incident and operations for VMware Solutions" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-incident-and-ops-dedicated-table}
 
@@ -72,32 +72,32 @@ The following table describes the responsibilities that are related to incident 
 
 Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion.
 
-### Change management for VMware Solutions Shared
+### Change management for VMware Shared
 {: #understand-responsib-change-management-shared}
 
-The following table describes the responsibilities that are related to change management for VMware Solutions Shared.
+The following table describes the responsibilities that are related to change management for VMware Shared.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Updates, fixes, and new features | Regular updates, bug fixes, and new features are provided, following a continuous delivery model in a way that is transparent to you. Notifications are posted for changes that impact you. | Set preferences to receive email notifications. Monitor the {{site.data.keyword.cloud_notm}} status page for general announcements. |
 | Scaling | Scale the customer VMware infrastructure as requested and to meet the capacity that you selected. | Choose the capacity for your VMware Solutions instances. |
 {: row-headers}
-{: caption="Table 3. Responsibilities for change management for VMware Solutions Shared" caption-side="bottom"}
+{: caption="Table 3. Responsibilities for change management for VMware Shared" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-change-management-shared-table}
 
 
-### Change management for VMware Solutions Dedicated
+### Change management for VMware Solutions
 {: #understand-responsib-change-management-dedicated}
 
-The following table describes the responsibilities that are related to change management for VMware Solutions Dedicated.
+The following table describes the responsibilities that are related to change management for VMware Solutions.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Scaling | Scale your VMware infrastructure as requested. | Choose the capacity for your VMware Solutions instances. |
 | Upgrading |  | Keep your VMware environment updated. For more information, see [Preventing problems with Active Directory](/docs/vmwaresolutions?topic=vmwaresolutions-adds-intro#adds-intro-prevent-probs) and [VMware Update Manager](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vum). |
 {: row-headers}
-{: caption="Table 4. Responsibilities for change management for VMware Solutions Dedicated" caption-side="bottom"}
+{: caption="Table 4. Responsibilities for change management for VMware Solutions" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-change-management-dedicated-table}
 
@@ -106,7 +106,7 @@ The following table describes the responsibilities that are related to change ma
 
 Identity and access management includes tasks such as authentication, authorization, access control policies, and approving, granting, and revoking access.
 
-The following table describes the responsibilities that are related to identity and access management for both VMware Solutions Shared and Dedicated.
+The following table describes the responsibilities that are related to identity and access management for all VMware Solutions instances.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
@@ -122,30 +122,30 @@ The following table describes the responsibilities that are related to identity 
 
 Security and regulation compliance includes tasks such as security controls implementation and compliance certification.
 
-### Security and regulation compliance for VMware Solutions Shared
+### Security and regulation compliance for VMware Shared
 {: #understand-responsib-security-compliance-shared}
 
-The following table describes the responsibilities that are related to security and regulation compliance for VMware Solutions Shared.
+The following table describes the responsibilities that are related to security and regulation compliance for VMware Shared.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Encryption | Secure connections are provided to administration portals and replication endpoints. Backups are encrypted uniquely per customer. | If required, secure with HTTPS. |
 {: row-headers}
-{: caption="Table 6. Responsibilities for security and regulation compliance for VMware Solutions Shared" caption-side="bottom"}
+{: caption="Table 6. Responsibilities for security and regulation compliance for VMware Shared" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-security-compliance-shared-table}
 
 
-### Security and regulation compliance for VMware Solutions Dedicated
+### Security and regulation compliance for VMware Solutions
 {: #understand-responsib-security-compliance-dedicated}
 
-The following table describes the responsibilities that are related to security and regulation compliance for VMware Solutions Dedicated.
+The following table describes the responsibilities that are related to security and regulation compliance for VMware Solutions.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Encryption | Provide integration with Key Protect and Hyper Protect Crypto Services through KMIP service as an option for implementing data at-rest encryption. | Configure and manage encryption for both data at rest and in transit, as needed. |
 {: row-headers}
-{: caption="Table 7. Responsibilities for security and regulation compliance for VMware Solutions Dedicated" caption-side="bottom"}
+{: caption="Table 7. Responsibilities for security and regulation compliance for VMware Solutions" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-security-compliance-dedicated-table}
 
@@ -160,10 +160,10 @@ Disaster recovery includes tasks such as:
 * Replicating data and configuration to the disaster recovery environment
 * Fail over on disaster events
 
-### Disaster recovery for VMware Solutions Shared
+### Disaster recovery for VMware Shared
 {: #understand-responsib-disaster-recovery-shared}
 
-The following table describes the responsibilities that are related to disaster recovery for VMware Solutions Shared.
+The following table describes the responsibilities that are related to disaster recovery for VMware Shared.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
@@ -172,21 +172,20 @@ The following table describes the responsibilities that are related to disaster 
 | Recovery of configuration | Recovery will be conducted in the original data center after the infrastructure is available. If long-term outage occurs, offsite recovery is conducted. | |
 | Recovery of workloads | Restore capabilities are available in normal operations. For configuration restores, customer restore services will be provided after the infrastructure is available. If an offsite recovery is required, IBM works with the customer to help recover. | Restore systems from the configured backup jobs. |
 {: row-headers}
-{: caption="Table 8. Responsibilities for disaster recovery for VMware Solutions Shared" caption-side="bottom"}
+{: caption="Table 8. Responsibilities for disaster recovery for VMware Shared" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-disaster-recovery-shared-table}
 
-
-### Disaster recovery for VMware Solutions Dedicated
+### Disaster recovery for VMware Solutions
 {: #understand-responsib-disaster-recovery-dedicated}
 
-The following table describes the responsibilities that are related to disaster recovery for VMware Solutions Dedicated.
+The following table describes the responsibilities that are related to disaster recovery for VMware Solutions.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Business continuity and Disaster Recovery (DR) | Provide automated provision and integration for third-party services, such as Veeam and Zerto. | Provision third-party solutions such as Veeam and Zerto, or other solutions of your choice, along with the VMware Solutions instance. Configure these solutions to meet your business continuity and DR requirements for your workload. |
 {: row-headers}
-{: caption="Table 9. Responsibilities for disaster recovery for VMware Solutions Dedicated" caption-side="bottom"}
+{: caption="Table 9. Responsibilities for disaster recovery for VMware Solutions" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-disaster-recovery-dedicated-table}
 
@@ -214,7 +213,7 @@ In {{site.data.keyword.vmwaresolutions_short}}, every primary instance deploys a
 {: #understand-responsib-related}
 
 * [Compliance information for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info)
-* [Managing your data in VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_data)
+* [Managing your data in VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_data)
 * [Post-deployment considerations for your VMware instance](/docs/vmwaresolutions?topic=vmwaresolutions-solution_considerations)
 * [Day 2 operational procedures guide](/docs/vmwaresolutions?topic=vmwaresolutions-opsprocs-intro-overview)
 * [Operations management guide](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-intro)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-10-10"
+lastupdated: "2022-11-11"
 
 keywords: Caveonix, Caveonix RiskForesight, tech specs Caveonix
 
@@ -15,10 +15,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Caveonix RiskForesight overview
+# Caveonix RiskForesight on IBM Cloud overview
 {: #caveonix_considerations}
 
-The Caveonix RiskForesight™ service can help to manage cyberrisk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations.
+Caveonix RiskForesight™ on IBM Cloud can help to manage cyberrisk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations. Caveonix RiskForesight on IBM Cloud is a non-IBM product that is offered under terms and conditions from Caveonix, not IBM.
 {: shortdesc}
 
 {{site.data.content.para-promotion-services}}

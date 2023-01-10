@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-07-28"
+lastupdated: "2022-11-23"
 
 keywords: vCenter Server network config, network configuration, manage NSX ESG
 
@@ -79,10 +79,11 @@ The logical routers `<instance_name>-<podname>-<cluster_name>-T1-workload` and `
 
 To identify the details for the customer subnets so you can use the IP addresses ordered, complete the following steps in the NSX-T Web Client:
 
-1. Go to your vCenter Server instance infrastructure page.
-2. Select the management cluster.
-3. Go to the **Network interface** section on the cluster page.
-4. Collapse the **Public VLAN** and **Private VLAN** options. The public and private customer subnets are the ones that have **customer workload edge** in the **Description** field.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **vCenter Server** from the left navigation pane.
+2. Locate and select the instance.
+3. Click the **Infrastructure** tab and select the management cluster.
+4. Go to the **Network interface** section on the cluster page.
+5. Collapse the **Public VLAN** and **Private VLAN** options. The public and private customer subnets are the ones that have **customer workload edge** in the **Description** field.
 
 Additionally, you can find more details about the customer subnets by completing the following steps in the {{site.data.keyword.slportal}}:
 
@@ -125,5 +126,5 @@ You can order more subnets if the provided subnets do not fulfill your requireme
 {: #vc_esg_config-related}
 
 * [Considerations about changing vCenter Server artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact#vcenter_chg_impact)
-* [General FAQ about VMware Solutions Dedicated](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [General FAQ about VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [NSX Edge Services Gateway design](/docs/vmwaresolutions?topic=vmwaresolutions-nsx_design)

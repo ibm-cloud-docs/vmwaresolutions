@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-12-29"
 
 subcollection: vmwaresolutions
 
@@ -13,17 +13,17 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Architecture pattern for single site NSX-T topologies 
+# Architecture pattern for single site NSX-T topologies
 {: #arch-pattern-overlays-single-site}
 
-{{site.data.keyword.vmwaresolutions_full}} Dedicated instances offer a standard VMware NSX-T™ topology with a single NSX-T edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) Gateways. You have several options to build and customize the overlay topology. You can provision new NSX-T edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) Gateways.
+VMware vCenter Server® instances offer a standard VMware NSX-T™ topology with a single NSX-T edge cluster, which includes Tier-0 (T0) and Tier-1 (T1) Gateways. You have several options to build and customize the overlay topology. You can provision new NSX-T edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) Gateways.
 
 This pattern provides a few examples on how these topologies can be customized for your needs.
 
 ## Single-site – single tenant
 {: #arch-pattern-overlays-single-site-single-site-st}
 
-Single-site – single tenant is the most common use case and network deployment pattern. The vCenter Server automation deploys an example topology by following this model, which includes single Tier-0 and Tier-1 Gateways and a few NSX-T overlay segments as a starting point. This topology is highly scalable and easily to automate.
+Single-site – single tenant is the most common use case and network deployment pattern. The vCenter Server automation deploys an example topology by following this model, which includes single Tier-0 and Tier-1 Gateways and a few NSX-T overlay segments as a starting point. This topology is highly scalable and easy to automate.
 
 The following diagram shows an example of a customer deployment that uses the standard topology, when the segments are attached to the Tier-1 Gateway. You can add more segments to the existing Tier-1 Gateway or more Tier-1 Gateways on the same NSX-T edge clusters, if needed.
 

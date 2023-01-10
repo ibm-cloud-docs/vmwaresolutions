@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2022
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-12-19"
 
 keywords: planning VMware Solutions Shared, data center, VMware Solutions Shared data centers
 
@@ -15,17 +15,17 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Requirements and planning for VMware Solutions Shared
+# Requirements and planning for VMware Shared
 {: #shared_planning}
 
-Review the following requirements before you order your {{site.data.keyword.vmwaresolutions_full}} Shared virtual data centers. Plan for your order by considering the {{site.data.keyword.cloud_notm}} data center location, your workload capacity requirements, and services requirements.
+Review the following requirements before you order your VMware Shared virtual data centers. Plan for your order by considering the {{site.data.keyword.cloud_notm}} data center location, your workload capacity requirements, and services requirements.
 
-Price calculations are automatically generated when you access the VMware Solutions Shared instance order page. Default selections for on-demand virtual data centers include public and private networking, 2000 vCPU, and 40960 RAM. Default selections for reserved virtual data centers include public and private networking, and customizable vCPU and RAM limits.
+Price calculations are automatically generated when you access the VMware Shared instance order page. Default selections for on-demand virtual data centers include public and private networking, 2000 vCPU, and 40960 RAM. Default selections for reserved virtual data centers include public and private networking, and customizable vCPU and RAM limits.
 
 ## IBM Cloud account requirements
 {: #shared_ordering-account-req}
 
-To order VMware Solutions Shared, you must have a **Pay As You Go** or **Subscription** {{site.data.keyword.cloud_notm}} account. The cost of the resources that are ordered is billed to that {{site.data.keyword.cloud_notm}} account.
+To order VMware Shared, you must have a **Pay As You Go** or **Subscription** {{site.data.keyword.cloud_notm}} account. The cost of the resources that are ordered is billed to that {{site.data.keyword.cloud_notm}} account.
 
 ## Virtual data center name requirements
 {: #shared_ordering-vdc-name-req}
@@ -39,9 +39,9 @@ The virtual data center name must meet the following requirements:
 ## IBM Cloud data center availability
 {: #shared_planning-dc-availability}
 
-The VMware Solutions Shared deployment has strict requirements on the physical infrastructure. Therefore, you can deploy your virtual data centers only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements.
+The VMware Shared deployment has strict requirements on the physical infrastructure. Therefore, you can deploy your virtual data centers only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements.
 
-The following {{site.data.keyword.cloud_notm}} data centers are available for VMware Solutions Shared deployment.
+The following {{site.data.keyword.cloud_notm}} data centers are available for VMware Shared deployment.
 
 | Geography | Site | Location | vSAN support | Multizone support |
 |:----------|:----------|:----------|:-------|:-------|
@@ -53,12 +53,12 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for VM
 | North America | Dallas Director 01 | Dallas 13 | vSAN | No |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
 
-## Services for VMware Solutions Shared
+## Services for VMware Shared instances
 {: #shared_planning-addon-services}
 
 The following preinstalled services are available for your virtual data center based on your needs.
-* [Managing Veeam for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam)
-* [Managing Zerto for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal)
+* [Managing Veeam for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam)
+* [Managing Zerto for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal)
 
 Service charges are incurred only if you choose to use the service.
 {: note}
@@ -68,5 +68,5 @@ Service charges are incurred only if you choose to use the service.
 
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
 * [Viewing and managing virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary)
-* [Operating VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware Cloud Director](https://www.vmware.com/ca/products/vcloud-director.html){: external}
+* [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
+* [VMware Cloud Director](https://www.vmware.com/ca/products/cloud-director.html){: external}

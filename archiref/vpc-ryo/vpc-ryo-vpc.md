@@ -4,7 +4,7 @@ copyright:
 
   years:  2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2022-12-28"
 
 subcollection: vmwaresolutions
 
@@ -43,16 +43,16 @@ A security group operates as a virtual firewall that controls the traffic for on
 
 Interconnectivity between VPCs can be established by using {{site.data.keyword.tg_full_notm}}. When a VPC is attached to a Transit Gateway as a connection, the VPC prefixes (not the subnets) are advertised to the Transit Gateway instance. The connectivity to on-premises networks can be established through {{site.data.keyword.dl_full_notm}}, where you can bring your WAN or MPLS connection to one of {{site.data.keyword.cloud_notm}} PoPs and connect to your resources.
 
-For more information, see [{{site.data.keyword.cloud_notm}} Documentation](/docs/vpc?topic=vpc-about-networking-for-vpc).
+For more information, see [About networking](/docs/vpc?topic=vpc-about-networking-for-vpc).
 
 ## Related links
 {: #vpc-ryo-vpc-links}
 
-* [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
-* [{{site.data.keyword.vpc_short}} Bare Metal Servers](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
-* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
-* [{{site.data.keyword.dl_full_notm}} overview](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
-* [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
-* [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)
+* [Getting started with {{site.data.keyword.vpc_short}} (VPC)](/docs/vpc?topic=vpc-getting-started)
+* [Planning for Bare Metal Servers on VPC](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
+* [Architecture overview of roll-your-own VMware solution on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
+* [Getting started with {{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
+* [Getting started with {{site.data.keyword.tg_full_notm}}](/docs/transit-gateway?topic=transit-gateway-getting-started)
+* [VPNs for VPC overview](/docs/vpc?topic=vpc-vpn-overview)
 * [VPC IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints)
-* [VMware on Bare Metal VPC tutorial](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)
+* [Deploying Roll Your Own VMware on IBM Cloud Bare Metal Servers for Virtual Private Cloud](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)
