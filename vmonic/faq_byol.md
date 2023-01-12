@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-01-05"
+lastupdated: "2023-01-12"
 
 keywords: FAQ, license, BYOL
 
@@ -30,7 +30,7 @@ Existing BYOL servers will be able to perform upgrades and migrations to refresh
 {: #faq_byol-mthly-license}
 {: faq}
 
-Yes. You can continue to use the BYOL feature for clusters that already have BYOL. You must purchase licencse from IBM for any new combination of the four VMware components. The {{site.data.keyword.vmwaresolutions_short}} console makes it straightforward for you to select the licensing option when you order your instance. Only select **I will provide** and enter your own license key if you are performing an upgrade or migration of an existing BYOL cluster. 
+Yes. You can continue to use the BYOL feature for clusters that already have BYOL. You must purchase licenses from IBM for any new combination of the four VMware components. The {{site.data.keyword.vmwaresolutions_short}} console makes it straightforward for you to select the licensing option when you order your instance. Only select **I will provide** and enter your own license key if you are performing an upgrade or migration of an existing BYOL cluster. 
 
 ## For a specific VMware component, can you use BYOL for some licenses and buy the rest of licenses from IBM?
 {: #faq_byol-purchase}
