@@ -38,7 +38,7 @@ Name change for vRealize Operations Tenant App for VMware Cloud Director
 :   VMware changed the vRealize Operations Tenant App for VMware Cloud Director product name to VMware Chargeback. The name is updated throughout the VMware Shared documentation.
 
 Bring Your Own License (BYOL) no longer supported
-:   IBM Cloud previously allowed you to bring your own license (BYOL) when you move your existing on-premises VMware workloads to IBM Cloud. BYOL is no longer allowed by VMware. You can no longer bring your own licenses for any new hosts. This restriction applies to all VMware products that are available from IBM Cloud. For existing BYOL serversyou can still upgrade and migrate to refresh software and hardware.
+:   IBM Cloud previously allowed you to bring your own license (BYOL) when you move your existing on-premises VMware workloads to IBM Cloud. BYOL is no longer allowed by VMware. You can no longer bring your own licenses for any new hosts. This restriction applies to all VMware products that are available from IBM Cloud. For existing BYOL servers, you can still upgrade and migrate to refresh software and hardware.
 
 SAP-certified servers updates
 :   SAP HANA certified bare metal servers now offer only fixed configurations with defined RAM sizes. Also, new SAP HANA and SAP NetWeaver models are available for deployment with VMware vSphere® 7.0u3. These models are available for VMware vCenter Server® and Cyber Recovery instances and clusters, and for VMware vSphere clusters. For more information, see [SAP-certified](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consoldworkldcluster-settings#vc_orderinginstance-sap).
