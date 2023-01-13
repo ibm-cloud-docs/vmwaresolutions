@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-12-09"
+lastupdated: "2023-01-13"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -37,7 +37,7 @@ The hostname prefix applies to all hosts in the instance.
 
 The domain name must meet the following requirements:
 * The domain name must consist of three or more strings that are separated by a period (.) with a maximum of 50 characters.
-* * The first string (NetBIOS name) must start with a lowercase alphabetic character and end with a lowercase alphabetic or numeric character. It must not exceed 15 characters.
+* The first string (NetBIOS name) must start with a lowercase alphabetic character and end with a lowercase alphabetic or numeric character. It must not exceed 15 characters.
 * All strings, except for the last one, can contain only lowercase alphabetic, numeric, and dash (-) characters.
 * No consecutive dash characters are allowed.
 * The last string can contain only lowercase alphabetic characters.
