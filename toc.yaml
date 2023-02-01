@@ -211,6 +211,7 @@ toc:
               label: Ordering Cyber Recovery
               topics:
               - cr/cr_orderinginstance-reqs.md
+              - cr/cr_orderinginstance-gen-info.md
               - cr/cr_orderinginstance-serv-prereq.md
               - cr/cr_orderinginstance-inst-configs.md
               - cr/cr_orderinginstance-consolidwkld.md
