@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-11-10"
+lastupdated: "2023-01-31"
 
 keywords: vRealize, vRealize info, tech specs vRealize
 
@@ -22,8 +22,6 @@ vRealize Operations™ and vRealize Log Insight™ on IBM Cloud deploys the VMwa
 {: shortdesc}
 
 These tools are deployed by using the IBM advanced automation and are based on a consistent highly available design. vROps includes preinstalled and configured Management Packs to provide deeper visibility into the core VMware Software Defined Data Center components like VMware NSX®, vSAN™, and HCX™. The automation provides optimized dashboards out of the box so that you can monitor the full VMware stack more easily.
-
-Like the other VMware components in the stack, you can bring your enterprise licenses to the cloud (per CPU or OSI) or to rent VMware licenses from {{site.data.keyword.cloud}}.
 
 {{site.data.content.para-promotion-services}}
 
