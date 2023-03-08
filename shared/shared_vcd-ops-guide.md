@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-12-28"
+lastupdated: "2023-02-21"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -150,7 +150,7 @@ OVF packages can be uploaded to a catalog as a vApp template to make the templat
 
 Media files, such as ISO disk images and FLP diskette drive images, can be uploaded to a catalog as a media file. For more information, see [Working with media files](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-A7530A4B-F782-4848-90FC-BBDE41E3AE85.html){: external}.
 
-The maximum import size is 750 GB. Large image files or templates might take extended time to upload. Contact IBM Support for assistance with files larger than 750 GB. For more information, see [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+The maximum import size is 750 GB. Large image files or templates might take extended time to upload. For assistance with files larger than 750 GB, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
 
 ## Virtual machines
@@ -251,7 +251,7 @@ Include the following details in your support ticket:
 * Virtual data center name
 * Number of IP addresses required
 
-For more information about opening a support ticket, see [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+For more information about opening a support ticket, follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 The edge gateway services are customer configurable and require configuration to allow network traffic in and out of their Organization virtual data center. Configuration is required for access to the internet and the IBM Services network. The five public addresses are used for public facing vApps for inbound and outbound public internet traffic.
 

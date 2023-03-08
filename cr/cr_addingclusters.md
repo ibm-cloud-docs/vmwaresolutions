@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-01-06"
+lastupdated: "2023-02-17"
 
 keywords: cyber recovery add clusters, add cluster, cyber recovery cluster
 
@@ -29,7 +29,7 @@ You can add clusters to Cyber Recovery instances to expand the compute and stora
 ## Cluster type
 {: #cr_addingclusters-cluster-type}
 
-Select the cluster type, either **Workload cluster** or **Edge services cluster**.
+Select the cluster type, either **Workload cluster** or **Edge gateway cluster**.
 
 ## System settings for workload clusters
 {: #cr_addingclusters-sys-settings-workload}
@@ -48,8 +48,12 @@ The cluster name is set to **vcs-lj-workload_xx_** by default, where _xx_ repres
 
 Review the following information and specify the licensing setting for the Cyber Recovery component in the cluster.
 * For Business Partner users, the vSphere license (Enterprise Plus edition) is included and purchased on your behalf.
-* For users who are not Business Partners, you can use the IBM-provided VMware licenses for this component by selecting **Include with purchase**.
-* Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Only select **I will provide** and enter your own license key if you are performing an upgrade or migration of an existing BYOL cluster.
+* For users who are not Business Partners, use the IBM-provided VMware licenses for this component by selecting **Include with purchase**.
+
+Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+{: important}
+
+* The **Use existing license** option is available only if you are using a BYOL vSphere license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
 
 ### Bare metal server settings
 {: #cr_addingclusters-bare-metal-settings}
@@ -68,16 +72,55 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 
 {{site.data.content.cascade-para-intro}}
 
-{{site.data.content.simpletabtable-cascade-nsxt}}
+| CPU model     | Cores     | GHz     | RAM sizes   |
+|:------------- |:----------|:--------|:----------- |
+| Dual Intel Xeon Silver 4210 processor | 20 | 2.2 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 5218 processor | 32 | 2.3 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6248 processor | 40 | 2.5 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6250 processor | 16 | 3.9 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Platinum 8260 processor | 48 | 2.4 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Quad Intel Xeon Gold 6248 processor | 80 | 2.5 | 384 GB, 768 GB, 1.5 TB, 3 TB |
+| Quad Intel Xeon Platinum 8260 processor | 96 | 2.4 | 384 GB, 768 GB, 1.5 TB, 3 TB |
+{: caption="Table 1. Options for Cascade Lake bare metal servers - NSX-T instances" caption-side="bottom"}
+{: class="simple-tab-table"}
+{: tab-title="NSX-T instances"}
+{: tab-group="Cascade Lake Intel servers"}
+{: #simpletabtable-cascade-nsxt}
 
 #### SAP-certified
 {: #cr_addingclusters-sap}
 
 {{site.data.content.sap-para-intro}}
 
-{{site.data.content.simpletabtable-sap-netweaver}}
+| CPU model     | Cores     | GHz     | RAM sizes   |
+|:------------- |:----------|:--------|:----------- |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW192) | 32 | 2.3 | 192 GB |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW384) | 32 | 2.3 | 384 GB |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768) | 40 | 2.5 | 768 GB |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768_v2) | 48 | 2.4 | 768 GB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW1500) | 56 | 2.7 | 1.5 TB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW3000) | 56 | 2.7 | 3 TB |
+{: caption="Table 2. Options for SAP-certified bare metal servers - NetWeaver" caption-side="bottom"}
+{: class="simple-tab-table"}
+{: tab-title="NetWeaver"}
+{: tab-group="SAP-certified Intel servers"}
+{: #simpletabtable-sap-netweaver}
 
-{{site.data.content.simpletabtable-sap-hana}}
+
+| CPU model     | Cores     | GHz     | RAM sizes |
+|:------------- |:----------|:--------|:--------- |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.192) | 32 | 2.3 | 192 GB |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.384) | 32 | 2.3 | 384 GB |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.H2.768) | 40 | 2.5 | 768 GB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.1500) | 56 | 2.7 | 1.5 TB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.3000) | 56 | 2.7 | 3 TB |
+| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.3000) | 112 | 2.7 | 3 TB |
+| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.6000) | 112 | 2.7 | 6 TB |
+{: caption="Table 2. Options for SAP-certified bare metal servers - HANA" caption-side="bottom"}
+{: tab-title="HANA"}
+{: tab-group="SAP-certified Intel servers"}
+{: class="simple-tab-table"}
+{: #simpletabtable-sap-hana}
 
 #### Number of bare metal servers
 {: #cr_addingclusters-bare-metal-number}
@@ -130,7 +173,12 @@ The amount of storage reduction from deduplication and compression depends on ma
 ##### vSAN license
 {: #cr_addingclusters-vsan-storage-lic}
 
-Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**. Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Only select **I will provide** and enter your own license key if you are performing an upgrade or migration of an existing BYOL cluster.
+Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**.
+
+Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+{: important}
+
+The **Use existing license** option is available only if you are using a BYOL vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
 
 If your initial cluster was a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This behavior is also true if any cluster (initial or additional) in the instance has vSAN chosen to be deployed on it. The first time you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that was chosen initially is reused.
 
@@ -187,7 +235,7 @@ Network interface card (NIC) enablement settings are based on your selection of 
 #### Uplink speed
 {: #cr_addingclusters-uplink}
 
-The **Uplink speed** option is not available to edge services clusters.
+The **Uplink speed** option is not available to edge gateway clusters.
 {: note}
 
 {{site.data.content.uplink-speed-options-list}}
@@ -207,7 +255,6 @@ The **Uplink speed** option is not available to edge services clusters.
 | NA East | WDC07 | 01 |
 | NA South | DAL10 | 03 |
 | NA South | DAL12 | 01 |
-| NA South | DAL13 | 02 |
 {: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 
 #### VLANs
@@ -248,10 +295,10 @@ Use the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** tabs to
 {{site.data.keyword.vmwaresolutions_short}} takes control of the entire subnet and you can't use any IP addresses in the subnet.
 {: important}
 
-## System settings for edge services clusters
+## System settings for edge gateway clusters
 {: #cr_addingclusters-sys-settings-edge}
 
-When you add an edge services cluster to a Cyber Recovery instance, you must specify the following settings.
+When you add an edge gateway cluster to a Cyber Recovery instance, you must specify the following settings.
 
 ### Data center location
 {: #cr_orderinginstance-dc-edge}
@@ -323,7 +370,7 @@ The uplink speed of 10 Gb, which is selected by default.
 ### Networking type
 {: #cr_addingclusters-edge-cluster-private-nics}
 
-Select either **Public and private network** or **Private network only** for the edge services cluster.
+Select either **Public and private network** or **Private network only** for the edge gateway cluster.
 
 ## Summary
 {: #cr_addingclusters-order-summary}
@@ -362,13 +409,17 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 
       * If you select **NFS storage** and want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
       * If you select **NFS storage** and want to add and configure file shares individually, select **Configure shares individually**. Then, click the **Add** icon ![Add icon](../../icons/add.svg "Add") next to the **Add shared storage** label and select the **Size (GB)** and **Performance** for each file share. You must select at least one file share.
-   4. Complete the network interface settings.
-
+   4. Complete the Licensing settings.
       * For Business Partner users, the vSphere license (Enterprise Plus edition) is included and purchased on your behalf.
-      * For users who are not Business Partners, you can select one of the following options:
+      * For users who are not Business Partners, select one of the following options:
          * If you want new licenses to be purchased on your behalf, select **Include with purchase** for the component.
-         * If you want to use your own VMware license for the component, select **I will provide** and enter your license key.
-6. For edge services clusters, complete the following configuration.
+
+Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+{: important}
+
+The **Use existing license** option is available only if you are using a BYOL vSphere or vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
+
+6. For edge gateway clusters, complete the following configuration.
    1. For data center location, click **Edit** and select the geography, data center, and pod to host the instance or cluster.
    2. Specify the cluster name.
    3. Select the CPU model, RAM size, and the number of bare metal servers.

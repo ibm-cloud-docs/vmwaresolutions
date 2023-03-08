@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-16"
+lastupdated: "2023-02-21"
 
 keywords: vCenter Server compliance, compliance info, vCenter Server policy
 
@@ -94,7 +94,7 @@ vCenter Server environments, which are delivered as {{site.data.keyword.vmwareso
 * Due to the level of specialization that is required to maintain superior technical expertise at the team level, it is sometimes necessary to involve more than one support team in resolving a particular software problem. This is easily handled, as our support teams are all networked together and work as one to resolve whatever problems or issues arise.
 * To investigate the issue, IBM might need to access information on your system relative to the failure or might need to re-create the failure to get more information.
 * A client–generated support ticket serves as acknowledgment that IBM Support can access the VMware management layer for investigation, debugging, and triage. If maintenance outage or changes to the environment are required, IBM Support requests extra-documented confirmation from the client through tickets as part of our change management process.
-* For more information about support tickets, see [IBM Support Guide](https://www-01.ibm.com/support/docview.wss?uid=ibm10733923){: external} and [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+* For more information about support tickets, see [IBM Support Guide](https://www-01.ibm.com/support/docview.wss?uid=ibm10733923){: external} and follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 ## Client responsibilities
 {: #vc_compl_info-client-responsibilities}

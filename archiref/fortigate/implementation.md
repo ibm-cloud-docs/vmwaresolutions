@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-12-29"
+lastupdated: "2023-02-08"
 
 subcollection: vmwaresolutions
 
@@ -38,10 +38,10 @@ FortiGate VM appliances are deployed according to the following specifications.
 | vRAM      | For 2–CPU deployments, the initial allocation is 4 GB; for 4–CPU deployments, it is 6 GB; for all other deployments, it is 12 GB |
 | High availability | Two appliances deployed to ensure high availability |
 | Disk usage | One 2 GB and one 30 GB disk |
-| Disk backing | When deployed to an edge services cluster, local SSD storage; when deployed to any other cluster, by using vSAN or {{site.data.keyword.cloud}} Endurance, as applicable |
+| Disk backing | When deployed to an edge gateway cluster, local SSD storage; when deployed to any other cluster, by using vSAN or {{site.data.keyword.cloud}} Endurance, as applicable |
 {: caption="Table 1. Appliance specifications" caption-side="bottom"}
 
-{{site.data.keyword.cloud_notm}} automation limits you to choosing 16– and 32–CPU options when you deploy FortiGate into an edge services cluster.
+{{site.data.keyword.cloud_notm}} automation limits you to choosing 16– and 32–CPU options when you deploy FortiGate into an edge gateway cluster.
 
 ## Network configuration
 {: #fortigate-implementation-network}
@@ -55,7 +55,7 @@ The management interface is attached to the management VLAN and port group for t
 
 When deployed to a management cluster that has public interfaces, a firewall and source NAT rules are created on the services NSX Edge™ to allow the FortiGate devices to connect to the public network by using http and https only. It allows license management and it is not recommended to change these rules as it might lead to your license to be deactivated.
 
-When deployed to an edge services cluster, or to a management cluster that has only private interfaces, you must instead provide the details for a proxy server that the FortiGate appliances can use to connect to the public network for licensing. The appliances might attempt to access any of the following hostnames:
+When deployed to an edge gateway cluster, or to a management cluster that has only private interfaces, you must instead provide the details for a proxy server that the FortiGate appliances can use to connect to the public network for licensing. The appliances might attempt to access any of the following hostnames:
 
 * update.fortiguard.net
 * service.fortiguard.net
@@ -67,14 +67,14 @@ When deployed to an edge services cluster, or to a management cluster that has o
 
 When deployed to a management cluster, the FortiGate appliances’ HA interfaces are connected to a dedicated logical switch.
 
-When deployed to an edge services cluster, the FortiGate appliances’ HA interfaces are connected to the storage VLAN used by the edge services cluster.
+When deployed to an edge gateway cluster, the FortiGate appliances’ HA interfaces are connected to the storage VLAN used by the edge gateway cluster.
 
 ### Firewall interfaces
 {: #fortigate-implementation-firewall-network}
 
 When deployed to a management cluster, the remaining firewall interfaces for the FortiGate appliances are attached to the management network yet with no IP addresses assigned. You must assign these interfaces to the networks you want to protect.
 
-When deployed ot an edge services cluster, the FortiGate VM appliances are connected to the {{site.data.keyword.cloud_notm}} transit network and configured to peer with the {{site.data.keyword.cloud_notm}} customer routers. Define appropriate firewall rules before you configure your VLANs to be protected by the edge services cluster.
+When deployed ot an edge gateway cluster, the FortiGate VM appliances are connected to the {{site.data.keyword.cloud_notm}} transit network and configured to peer with the {{site.data.keyword.cloud_notm}} customer routers. Define appropriate firewall rules before you configure your VLANs to be protected by the edge gateway cluster.
 
 ## VMware DRS and reservations
 {: #fortigate-implementation-drs}

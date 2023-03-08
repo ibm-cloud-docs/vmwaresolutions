@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-10-16"
+lastupdated: "2023-02-20"
 
 keywords: end of support notice, vSphere 6.5 deployment, end of support vSphere 6.5, vSphere 6.5 deprecated, vSphere 6.5 support
 
@@ -20,9 +20,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere® 6.5 ended on 10 October 2021. Beginning on this date, you can no longer order new VMware vCenter Server® instances with vSphere 6.5. Your existing vCenter Server instances with vSphere 6.5 become read–only in the VMware Solutions console.
 
-For IBM-provided licenses, IBM has negotiated an extension to support vSphere 6.5 until 4 November 2022 so that you can complete your migrations.
-
-Review the documentation for instructions and considerations for upgrading to vSphere 7. For more information, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade) or [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
+For more information about upgrading to vSphere 7, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade) or [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 
 {{site.data.keyword.cloud_notm}} encourages that you migrate rather than upgrade to vSphere 7. Migration ensures that you are aligned with current and supported hardware, other {{site.data.keyword.cloud_notm}} features, and the vSphere 7 NSX–T topology, including the use of VMware vSphere Distributed Switches.
 

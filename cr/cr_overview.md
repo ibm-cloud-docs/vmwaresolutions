@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-11-18"
+lastupdated: "2023-02-10"
 
 keywords: Cyber Recovery, Cyber Recovery offering, Cyber Recovery instance, data protection, cyber threat, ransomware, Cyber resilience
 
@@ -27,8 +27,8 @@ Cyber Recovery can help protect you from cyberthreats, cyberattacks, and ransomw
 
 For the gateway, you can bring your own gateway appliance or choose from the following options:
 
-* Edge services cluster with Juniper® vSRX
-* Edge services cluster with FortiGate® Virtual Appliance
+* Edge gateway cluster with Juniper® vSRX
+* Edge gateway cluster with FortiGate® Virtual Appliance
 * FortiGate Security Appliance
 
 VMware vSphere® v7.0u3 and VMware NSX-T™ v3.2 are automatically installed.

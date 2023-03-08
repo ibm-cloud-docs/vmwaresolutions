@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-01-04"
+lastupdated: "2023-02-17"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 VMware vCenter Server® instances are deployed with a consolidated cluster for VMware vSphere® 7 in which all the VMware® management components and user workloads run.
 
-Optionally, you can order an additional workload cluster and an edge services cluster. Select the **Include a separate, additional workload cluster** checkbox to deploy a workload cluster.
+Optionally, you can order an additional workload cluster and an edge gateway cluster. Select the **Include a separate, additional workload cluster** checkbox to deploy a workload cluster.
 
 ## Cluster name
 {: #vc_orderinginstance-consoldworkldcluster-cluster-name}
@@ -147,7 +147,10 @@ The amount of storage reduction from deduplication and compression depends on ma
 #### vSAN license
 {: #vc_orderinginstance-vsan-storage-license}
 
-Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**, or Bring Your Own License (BYOL) by selecting **I will provide** and entering your own license key.
+Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**.
+
+Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+{: important}
 
 If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This statement is also true for any initial or additional clusters in the instance for which you select vSAN. The first time you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
 
@@ -183,7 +186,27 @@ Select **Public and private network** or **Private network only**.
 
 {{site.data.content.uplink-speed-options-list}}
 
-{{site.data.content.simpletable-uplink-speed-locations}}
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
+| Asia-Pacific | TOK02 | 02 |
+| Asia-Pacific | TOK04 | 01 |
+| Asia-Pacific | TOK05 | 01 |
+| Europe | FRA02 | 02 |
+| Europe | FRA04 | 01 |
+| Europe | FRA05 | 01 |
+| Europe | LON04 | 01 |
+| Europe | LON06 | 01 |
+| Europe | PAR04 | 01 |
+| Europe | PAR05 | 01 |
+| Europe | PAR06 | 01 |
+| NA East | TOR04 | 01 |
+| NA East | WDC04 | 05 |
+| NA East | WDC06 | 01 |
+| NA East | WDC07 | 01 |
+| NA South | DAL10 | 03 |
+| NA South | DAL12 | 01 |
+{: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: #simpletable-uplink-speed-locations}
 
 ## VLANs
 {: #vc_orderinginstance-vlans}
@@ -234,5 +257,5 @@ For the workload cluster network settings, select the **Reuse VLANs from the con
 ## Related links
 {: #vc_orderinginstance-consoldworkldcluster-related}
 
-* [Edge services cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-edge-services-cluster)
+* [Edge gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-edge-gateway-cluster)
 * [Procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)

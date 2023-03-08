@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-02-22"
 
 keywords: troubleshooting, installation fail HCX, installation fail BYOL NSX Data Center Enterprise Plus
 
@@ -28,5 +28,5 @@ If you select the incorrect NSX-T license, the installation bypasses the HCX ins
 You can correct the problem in one of the following ways:
 {: tsResolve}
 
-* Open an IBM Support ticket to request that your BYOL NSX Data Center Enterprise Plus license key is updated. For more information, see [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). After your key is updated, you can install HCX again.
+* To request that your BYOL NSX Data Center Enterprise Plus license key is updated, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). After your key is updated, you can install HCX again.
 * Select an appropriate NSX license edition. After that, HCX is installed without using your BYOL key. An activation key is generated for you and the extra charge for the HCX service is added.

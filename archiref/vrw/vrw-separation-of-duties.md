@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-06-20"
+lastupdated: "2023-02-10"
 
 subcollection: vmwaresolutions
 
@@ -70,14 +70,14 @@ The use of NSX-T as the software defined networking provider eliminates reliance
 
 Both the vSphere administrator and network administrator create roles with the necessary and appropriate privilege levels to enable the SaaS application administrators to fulfill their required duties. The use of a zero-trust model improves the security of the entire {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads implementation.
 
-## Edge services cluster
+## Edge gateway cluster
 {: #vrw-separation-of-duties-edge}
 
-While the vSphere administrator holds responsibility for proper operation of the underlying ESXi hosts that form the edge services cluster, the VMware administrator has no access rights to the vSRX appliance nodes that run on them. There is no software defined network applicable to the edge services cluster, so the NSX-T administrator has no access to the vSRX appliance nodes.
+While the vSphere administrator holds responsibility for proper operation of the underlying ESXi hosts that form the edge gateway cluster, the VMware administrator has no access rights to the vSRX appliance nodes that run on them. There is no software defined network applicable to the edge gateway cluster, so the NSX-T administrator has no access to the vSRX appliance nodes.
 
 The security administrator is solely responsible for the configuration, operation, and maintenance of the vSRX gateway cluster. Only the security administrator has the right to implement configuration changes that impact the security stance of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads management layer.
 
-Where a physical appliance such as the FortiGate appliance is used in place of the edge services cluster, the security administrator retains responsibility for its operation though no role for the virtual platform administrator exists.
+Where a physical appliance such as the FortiGate appliance is used in place of the edge gateway cluster, the security administrator retains responsibility for its operation though no role for the virtual platform administrator exists.
 
 ## Workload cluster
 {: #vrw-separation-of-duties-workload}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-01-06"
+lastupdated: "2023-01-30"
 
 keywords: Cyber Recovery delete instance, delete Cyber Recovery, remove Cyber Recovery
 
@@ -19,7 +19,13 @@ subcollection: vmwaresolutions
 
 To release the components that you ordered in a Cyber Recovery instance, delete the instance.
 
-{{site.data.content.deletinginstance-components-list}}
+When you delete a Cyber Recovery instance, the following components are released sequentially:
+1. All deployed services
+2. The Support fee for VMware NSX-T™ instances or the Support and Services fee for NSX-V instances
+3. VMware® product licenses
+4. VMware ESXi™ servers
+5. Subnets
+6. VLANs
 
 {{site.data.content.deletinginstance-delete-vlans}}
 

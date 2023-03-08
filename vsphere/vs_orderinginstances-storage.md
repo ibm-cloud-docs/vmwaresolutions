@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-10-16"
+lastupdated: "2023-02-09"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -26,7 +26,7 @@ If you select the VMware vSAN component for the cluster, specify the following s
 * **Number of vSAN capacity disks** - Specify the number of capacity disks that you want to add.
 * If you want to add more capacity disks, select the **High performance with Intel Optane** checkbox. This option provides two extra capacity disk bays, which are useful for workloads that require less latency and higher IOPS throughput.
 
-   The **High performance with Intel Optane** option is available only for VMware vSphere® 6 instance, and for Skylake and dual-processor Cascade Lake CPU models.
+   The **High performance with Intel Optane** option is available only for VMware vSphere® 6, and for Skylake and dual-processor Cascade Lake CPU models.
    {: note}
 
 * Review the **Size for vSAN cache disks** and **Number of vSAN cache disks** values. For the VMware vSphere 6 instances, these values depend on whether you selected the **High performance with Intel Optane** checkbox.

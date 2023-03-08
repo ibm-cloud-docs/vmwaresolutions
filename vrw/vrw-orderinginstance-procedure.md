@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-11-21"
+lastupdated: "2023-02-17"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -23,9 +23,11 @@ subcollection: vmwaresolutions
 4. Specify the instance configuration:
      * If you want to create a new configuration, select **New configuration**.
      * If you want to update a saved configuration or create a new configuration based on a saved one, select a saved configuration.
-5. Under **Licensing**, complete the license settings for the listed components.
-   * To use IBM-provided licenses, ensure that the option **Include with purchase** is selected.
-   * To use your own licenses, click **I will provide**, and enter the license key.
+5. Use the IBM-provided licenses for VMware components by selecting **Include with purchase**. For NSX, specify the license edition.
+
+Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+{: important}
+
 6. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the clusters.
 7. (Single-zone VMware® instance only) Specify the primary cluster settings.
    1. Specify the cluster name.
@@ -61,8 +63,8 @@ subcollection: vmwaresolutions
     7. Review the networking type and select the uplink speed.
 
 11. Choose the firewall appliance for your instance and follow the steps, depending on your selection:
-    1. For **Edge services cluster with Juniper vSRX**, **Edge services cluster with FortiGate Virtual Appliance**, and **Bring your own gateway appliance**, specify the edge services [cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-edge#vrw-orderinginstance-edge-cluster-name), the CPU model, the RAM size, the uplink speed, and the networking type.
-    2. For **Edge services cluster with Juniper vSRX** and **Edge services cluster with FortiGate Virtual Appliance**, you must also specify the corresponding service settings in a later step.
+    1. For **Edge gateway cluster with Juniper vSRX**, **Edge gateway cluster with FortiGate Virtual Appliance**, and **Bring your own gateway appliance**, specify the [edge gateway cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-edge#vrw-orderinginstance-edge-cluster-name), the CPU model, the RAM size, the uplink speed, and the networking type.
+    2. For **Edge gateway cluster with Juniper vSRX** and **Edge gateway cluster with FortiGate Virtual Appliance**, you must also specify the corresponding service settings in a later step.
     3. For **FortiGate Security Appliance**, you must order the **FortiGate Security Appliance 10 Gbps** service from the [IBM Cloud catalog](https://cloud.ibm.com/catalog/infrastructure/fortigate-security-appliance-10gb). Confirm that you ordered the service and continue with the following steps.
 
 12. Under **Network interface**, enter the hostname prefix for the regulated workload and the root domain name. If you want to customize the hostnames prefix individually, select **Configure hostnames individually**.

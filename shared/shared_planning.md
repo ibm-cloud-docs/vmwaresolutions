@@ -27,6 +27,8 @@ Price calculations are automatically generated when you access the VMware Shared
 
 To order VMware Shared, you must have a **Pay As You Go** or **Subscription** {{site.data.keyword.cloud_notm}} account. The cost of the resources that are ordered is billed to that {{site.data.keyword.cloud_notm}} account.
 
+
+
 ## Virtual data center name requirements
 {: #shared_ordering-vdc-name-req}
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-17"
+lastupdated: "2023-02-17"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -25,9 +25,11 @@ subcollection: vmwaresolutions
 4. Select the instance type:
    * Click **Primary instance** to deploy a single instance in the environment or to deploy the first instance in a multisite topology.
    * Click **Secondary instance** to connect the instance with an existing (primary) instance in the environment for high availability. Select the primary instance that you want the secondary instance to be connected with, then enter the vCenter Server Administrator password for the primary instance.
-5. Complete the license settings for the instance components.
-    * To use IBM-provided licenses, ensure that **Include with purchase** is selected. For NSX, specify the license edition.
-    * To use your own licenses, for each license, click **I will provide**, and enter the license key.
+5. Use the IBM-provided licenses for VMware components by selecting **Include with purchase**. For NSX, specify the license edition.
+
+Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+{: important}
+
 6.  Specify the settings for the consolidated cluster and the optional workload cluster.
     1. Specify the cluster name.
     2. Complete the bare metal server settings.
@@ -54,7 +56,7 @@ subcollection: vmwaresolutions
        If the consolidated or management cluster and the workload clusters are in the same location, you cannot use existing VLANs. Instead, the workload clusters reuse the VLANs from the management cluster.
        {: note}
 
-7. If you want to order an edge services cluster with Juniper vSRX included, select the **Edge services cluster** checkbox and configure the appropriate settings: the cluster name, the CPU model, RAM size, the number of bare metal servers, the uplink speed, and the private NICs enablement.
+7. If you want to order an edge gateway cluster with Juniper vSRX included, select the **Edge gateway cluster** checkbox and configure the appropriate settings: the cluster name, the CPU model, RAM size, the number of bare metal servers, the uplink speed, and the private NICs enablement.
 8. Complete the network interface settings.
     1. Enter the hostname prefix and the root domain name for the instance that you are provisioning. For a secondary instance, the domain name is automatically completed.
     2. Specify the DNS configuration.

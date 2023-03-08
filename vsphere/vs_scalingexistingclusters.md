@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-17"
+lastupdated: "2023-02-09"
 
 keywords: vSphere scale cluster, scale vSphere, scale vSphere cluster
 
@@ -19,11 +19,11 @@ subcollection: vmwaresolutions
 
 You can scale out a VMware vSphere® cluster that you ordered or saved in the {{site.data.keyword.vmwaresolutions_full}} console. To do so, add VMware ESXi™ servers or order a FortiGate® 300 Series Security Appliance HA pair for the cluster.
 
-## Requirements for vSphere clusters
+## Requirements for VMware vSphere
 {: #vs_scalingexistingclusters-req}
 
 Ensure that you complete the following tasks:
-* If you are ordering an instance for the first time, complete the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
+* If you are ordering a vSphere cluster for the first time, complete the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
 *  Review the requirements and considerations in [Planning for vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning).
 *  Verify that you received an email with the confirmation that the cluster you want to scale is ready to use.
 
@@ -36,7 +36,7 @@ Ensure that you complete the following tasks:
 2. On the **Create** tab, select **Scale existing** and select the cluster that you want to scale from the **Cluster configurations** list.
 3. Review the cluster settings that are automatically completed, update the settings according to your needs, and complete any required fields. In this step, when you scale out a configuration, the **Number of bare metal servers** field refers to the number of servers to add to the configuration. It doesn't refer to the total number of servers in the configuration after the scale operation. For more information about the settings, see [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req).
 4. If the cluster does not include the FortiGate 300 Series Security Appliance HA Pair on its public VLAN, you can order the appliance. To do so, select the **Include with purchase** checkbox under **FortiGate Physical Appliance 300 Series HA Pair**.
-5. In the **Summary** pane, verify the instance configuration and the estimated price.
+5. In the **Summary** pane, verify the ordered configuration and the estimated price.
    * To save the configuration as a template without placing an order, click **Save configuration**.
    * To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
 
@@ -45,7 +45,7 @@ Ensure that you complete the following tasks:
 
 The cluster scaling starts automatically. You receive an email confirmation that the order is being processed. When the cluster is ready to use, you are notified by email. If the cluster that you are scaling is not ready to use, you might receive an error message.
 
-The vSphere clusters, unlike the VMware vCenter Server® instances, are not displayed on the **Resources** pages.
+The vSphere clusters, unlike the VMware vCenter Server® instances, are not displayed on the **Resources** pages. The vSphere cluster servers are listed under **Devices** on the [Classic Infrastructure](https://cloud.ibm.com/classic) page.
 {: note}
 
 ## Related links

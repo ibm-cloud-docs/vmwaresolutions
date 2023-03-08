@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-12-20"
+lastupdated: "2023-02-10"
 
 subcollection: vmwaresolutions
 
@@ -69,7 +69,7 @@ Your choice of effective RAID level determines the minimum number of hosts that 
 | RAID 6 | PFTT=1  SFTT=2 | Yes | 6+6+2+2+2 |
 {: caption="Table 2. RAID and FTM levels" caption-side="bottom"}
 
-If you choose to use an IBM Global Technology Services (GTS) large style design with separate edge services clusters, you must deploy those clusters after their instance was provisioned. This operation is not automated.
+If you choose to use an IBM Global Technology Services (GTS) large style design with separate edge gateway clusters, you must deploy those clusters after their instance was provisioned. This operation is not automated.
 
 ## Day 2 operations
 {: #mcv-archi-bom-ordering-daytwo}

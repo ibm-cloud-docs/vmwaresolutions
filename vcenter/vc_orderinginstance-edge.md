@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-09-20"
+lastupdated: "2022-02-08"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -14,12 +14,12 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Edge services cluster
-{: #vc_orderinginstance-edge-services-cluster}
+# Edge gateway cluster
+{: #vc_orderinginstance-edge-gateway-cluster}
 
-Select the **Edge services cluster** checkbox to order a dedicated cluster for the network edge and the firewall components that are required for the Juniper® vSRX service. The edge services cluster is deployed in the same data center as the consolidated cluster.
+Select the **Edge gateway cluster** checkbox to order a dedicated cluster for the network edge and the firewall components that are required for the Juniper® vSRX service. The edge gateway cluster is deployed in the same data center as the consolidated cluster.
 
-The data center of the consolidated cluster must be available for edge services cluster deployment. Edge services cluster deployment is not supported for **Dallas 09**.
+The data center of the consolidated cluster must be available for edge gateway cluster deployment. Edge gateway cluster deployment is not supported for **Dallas 09**.
 {: note}
 
 ## Cluster name
@@ -54,7 +54,7 @@ The number of servers is set to two and cannot be changed. Both servers have the
 ## Networking type
 {: #vc_orderinginstance-edge-cluster-private-nics}
 
-Select either **Public and private network** or **Private network only** for the edge services cluster.
+Select either **Public and private network** or **Private network only** for the edge gateway cluster.
 
 ## Related links
 {: #vc_orderinginstance-edge-related}

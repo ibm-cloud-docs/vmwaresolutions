@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-12-19"
+lastupdated: "2023-02-10"
 
 subcollection: vmwaresolutions
 
@@ -65,7 +65,6 @@ If you deploy a new Veeam instance, you must consider backup data and backup con
 If you want to migrate your Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
 
-
 ## Caveonix RiskForesight
 {: #v2t-optionalservices-caveonix}
 
@@ -124,13 +123,16 @@ Entrust KeyControl is no longer available in IBM Cloud. Investigate alternative 
 
 F5® BIG-IP® is available for vCenter Server with NSX-T instances. The migration approach is to configure F5 BIG-IP in the NSX-T environment in parallel to the existing NSX-V configuration to allow testing. After verification, cut-over to NSX-T F5 BIG-IP appliances.
 
+If you want to migrate your F5 BIG-IP service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+{: note}
+
 ## Juniper vSRX
 {: #v2t-optionalservices-vsrx}
 
 Juniper® vSRX is available for vCenter Server with NSX-T instances. In the vCenter Server NSX-V instance, the Juniper vSRX virtual appliance might be deployed:
 
 * On the consolidated or management cluster - The Juniper vSRX protects the traffic to your workload VMs.
-* On the edge services cluster - The Juniper vSRX appliances protects the vSphere hosts and the workload VMs in the same data center PoD.
+* On the edge gateway cluster - The Juniper vSRX appliances protects the vSphere hosts and the workload VMs in the same data center PoD.
 
 The migration approach would be to:
 

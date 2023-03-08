@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-12-20"
+lastupdated: "2023-01-26"
 
 keywords: vSphere order cluster, order vSphere, order vSphere cluster
 
@@ -61,7 +61,7 @@ If you saved the cluster configuration as a template, you get a console notifica
 
 If you placed an order, the deployment of the cluster starts automatically, and you receive an email confirmation that the order is being processed. When the cluster is ready to use, you are notified by email.
 
-The vSphere clusters, unlike the VMware vCenter Server® instances, are not displayed on the **Resources** pages.
+The vSphere clusters, unlike the VMware vCenter Server® instances, are not displayed on the **Resources** pages. The vSphere cluster servers are listed under **Devices** on the [Classic Infrastructure](https://cloud.ibm.com/classic) page.
 {: note}
 
 ## Related links

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-22"
+lastupdated: "2023-02-10"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 You can include the FortiGate® Virtual Appliance service with a new VMware vCenter Server® instance or add the service to your existing vCenter Server instance.
 
-You can deploy the service on a single-zone or multizone instance. For multizone instances, three FortiGate Virtual Appliances are installed, one for each of the three edge services clusters.
+You can deploy the service on a single-zone or multizone instance. For multizone instances, three FortiGate Virtual Appliances are installed, one for each of the three edge gateway clusters.
 
 ## Ordering FortiGate Virtual Appliance for a new instance
 {: #fortinetvm_ordering-new}
@@ -30,7 +30,7 @@ You can deploy the service on a single-zone or multizone instance. For multizone
 3. Select **Edit** to review and specify the information. 
 4. If you enter or change information, click **Save**.
 
-You cannot install Juniper® vSRX and FortiGate Virtual Appliance on the same edge services cluster.
+You cannot install Juniper® vSRX and FortiGate Virtual Appliance on the same edge gateway cluster.
 
 ## Ordering FortiGate Virtual Appliance for an existing instance
 {: #fortinetvm_ordering-existing}

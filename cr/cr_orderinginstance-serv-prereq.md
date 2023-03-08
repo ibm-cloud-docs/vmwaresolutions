@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-11-21"
+lastupdated: "2023-02-08"
 
 keywords: cyber recovery, service prerequisites cyber recovery, cyber recovery instance service prerequisites
 
@@ -25,8 +25,8 @@ The Cyber Recovery instance requires the following services:
 
 For the edge gateway, you can bring your own gateway appliance or choose from the following options:
 
-* Edge services cluster with Juniper® vSRX
-* Edge services cluster with FortiGate® Virtual Appliance
+* Edge gateway cluster with Juniper® vSRX
+* Edge gateway cluster with FortiGate® Virtual Appliance
 * FortiGate Security Appliance
 
 ## Related links

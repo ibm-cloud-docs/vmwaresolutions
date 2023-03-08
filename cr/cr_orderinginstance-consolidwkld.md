@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-01-06"
+lastupdated: "2023-02-17"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -69,21 +69,60 @@ Select the CPU model. For Cascade Lake, the default is Dual Intel® Xeon® Plati
 
 {{site.data.content.cascade-para-intro}}
 
-{{site.data.content.simpletabtable-cascade-nsxt}}
+| CPU model     | Cores     | GHz     | RAM sizes   |
+|:------------- |:----------|:--------|:----------- |
+| Dual Intel Xeon Silver 4210 processor | 20 | 2.2 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 5218 processor | 32 | 2.3 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6248 processor | 40 | 2.5 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6250 processor | 16 | 3.9 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Platinum 8260 processor | 48 | 2.4 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Quad Intel Xeon Gold 6248 processor | 80 | 2.5 | 384 GB, 768 GB, 1.5 TB, 3 TB |
+| Quad Intel Xeon Platinum 8260 processor | 96 | 2.4 | 384 GB, 768 GB, 1.5 TB, 3 TB |
+{: caption="Table 1. Options for Cascade Lake bare metal servers - NSX-T instances" caption-side="bottom"}
+{: class="simple-tab-table"}
+{: tab-title="NSX-T instances"}
+{: tab-group="Cascade Lake Intel servers"}
+{: #simpletabtable-cascade-nsxt}
 
 ### SAP-certified
 {: #cr_orderinginstance-consolidwkld-sap}
 
 {{site.data.content.sap-para-intro}}
 
-{{site.data.content.simpletabtable-sap-netweaver}}
+| CPU model     | Cores     | GHz     | RAM sizes   |
+|:------------- |:----------|:--------|:----------- |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW192) | 32 | 2.3 | 192 GB |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW384) | 32 | 2.3 | 384 GB |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768) | 40 | 2.5 | 768 GB |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768_v2) | 48 | 2.4 | 768 GB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW1500) | 56 | 2.7 | 1.5 TB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW3000) | 56 | 2.7 | 3 TB |
+{: caption="Table 2. Options for SAP-certified bare metal servers - NetWeaver" caption-side="bottom"}
+{: class="simple-tab-table"}
+{: tab-title="NetWeaver"}
+{: tab-group="SAP-certified Intel servers"}
+{: #simpletabtable-sap-netweaver}
 
-{{site.data.content.simpletabtable-sap-hana}}
+
+| CPU model     | Cores     | GHz     | RAM sizes |
+|:------------- |:----------|:--------|:--------- |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.192) | 32 | 2.3 | 192 GB |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.384) | 32 | 2.3 | 384 GB |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.H2.768) | 40 | 2.5 | 768 GB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.1500) | 56 | 2.7 | 1.5 TB |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.3000) | 56 | 2.7 | 3 TB |
+| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.3000) | 112 | 2.7 | 3 TB |
+| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.6000) | 112 | 2.7 | 6 TB |
+{: caption="Table 2. Options for SAP-certified bare metal servers - HANA" caption-side="bottom"}
+{: tab-title="HANA"}
+{: tab-group="SAP-certified Intel servers"}
+{: class="simple-tab-table"}
+{: #simpletabtable-sap-hana}
 
 ## Number of bare metal servers
 {: #cr_orderinginstance-consolidwkld-bare-metal-number}
 
-Select the number of bare metal servers. The default is 3.
+Select the number of bare metal servers. The default is three.
 
 * All servers that you order have the same configuration.
 * If you are planning to use vSAN™ storage, you can order 3 - 20 servers.
@@ -135,7 +174,10 @@ The amount of storage reduction from deduplication and compression depends on ma
 #### vSAN license
 {: #cr_orderinginstance-consolidwkld-vsan-storage-license}
 
-Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**. Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Only select **I will provide** and enter your own license key if you are performing an upgrade or migration of an existing BYOL cluster.
+Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**.
+
+Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+{: important}
 
 If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This statement is also true for any initial or additional clusters in the instance for which you select vSAN. The first time, you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
 
@@ -145,7 +187,7 @@ If your initial cluster is a vSAN cluster, any additional vSAN clusters use the 
 When you select **NFS storage**, you can decide on one of the following options:
 
 * Add file-level shared storage for your instance, where all shares use the same settings
-* Specify different configuration settings for each file share. 
+* Specify different configuration settings for each file share.
 
 The number of file shares must be in the range 1 - 100.
 
@@ -164,7 +206,7 @@ Choose performance level options according to your needs.
 | 2 IOPS/GB | This option is designed for most general-purpose workloads. For example, hosting small databases, backing up web applications, or virtual machine disk images for a hypervisor. |
 | 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. For example, transactional databases. |
 | 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. For example, high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
-{: caption="Table 1. NFS performance level options" caption-side="bottom"}
+{: caption="Table 3. NFS performance level options" caption-side="bottom"}
 
 ## Networking type
 {: #cr_orderinginstance-consolidwkld-public-private-network}
@@ -176,7 +218,27 @@ Select **Public and private network** or **Private network only**.
 
 {{site.data.content.uplink-speed-options-list}}
 
-{{site.data.content.simpletable-uplink-speed-locations}}
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
+| Asia-Pacific | TOK02 | 02 |
+| Asia-Pacific | TOK04 | 01 |
+| Asia-Pacific | TOK05 | 01 |
+| Europe | FRA02 | 02 |
+| Europe | FRA04 | 01 |
+| Europe | FRA05 | 01 |
+| Europe | LON04 | 01 |
+| Europe | LON06 | 01 |
+| Europe | PAR04 | 01 |
+| Europe | PAR05 | 01 |
+| Europe | PAR06 | 01 |
+| NA East | TOR04 | 01 |
+| NA East | WDC04 | 05 |
+| NA East | WDC06 | 01 |
+| NA East | WDC07 | 01 |
+| NA South | DAL10 | 03 |
+| NA South | DAL12 | 01 |
+{: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: #simpletable-uplink-speed-locations}
 
 ## VLANs
 {: #cr_orderinginstance-consolidwkld-vlans}
@@ -206,7 +268,7 @@ When you select to reuse existing public and private VLANs, specify the VLANs an
 * **Secondary private VLAN** is for VMware features such as vSAN. You can select an existing secondary private VLAN or select to allocate a new one.
 
 Ensure that the firewall configuration on the selected VLANs does not block the management data traffic. Also, ensure that all the VLANs that you select are in the same pod. VMware ESXi™ servers cannot be provisioned on mixed-pod VLANs.
-{: important}  
+{: important}
 
 Optionally, use **Advanced settings** to configure portable subnets for VLANs.
 
@@ -225,5 +287,5 @@ Use the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** tabs to
 ## Related links
 {: #cr_orderinginstance-consolidwkld-related-links}
 
-* [Edge services cluster](/docs/vmwaresolutions?topic=vmwaresolutions-cr-orderinginstance-edge)
+* [Edge gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-cr-orderinginstance-edge)
 * [Procedure to order Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-order-procedure)

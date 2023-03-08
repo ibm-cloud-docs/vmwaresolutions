@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-09"
+lastupdated: "2023-02-14"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -28,7 +28,7 @@ Zerto is supported on VMware vCenter Server® instances that meet the following 
 
 {{site.data.content.para-promotion-add-on-services}}
 
-The current Zerto version that is installed is 9.5u3.
+The current Zerto version that is installed is 9.7u1.
 {: note}
 
 ## Before you begin
@@ -76,7 +76,7 @@ When you deploy Zerto, you must configure your own proxy or NAT connection to th
 ### Licenses and fees
 {: #addingzertodr-specs-licenses}
 
-Zerto Replication version 9.5u3 license.
+Zerto Replication version 9.7u1 license.
 
 ## Related links
 {: #addingzertodr-related}
@@ -85,6 +85,6 @@ Zerto Replication version 9.5u3 license.
 * [Managing Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-managingzertodr)
 * [Ordering Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering_licenses)
 * [Managing Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
-* [Managed Disaster Recovery Services by Kyndryl](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services)
+* [Managed Disaster Recovery Services by Kyndryl](https://www.kyndryl.com/us/en/services/cyber-resilience){: external}
 * [Zerto](https://www.zerto.com){: external}
 * [Zerto product documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}

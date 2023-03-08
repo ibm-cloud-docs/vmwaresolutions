@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-08-16"
+lastupdated: "2023-02-08"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -14,22 +14,22 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Edge services cluster
+# Edge gateway cluster
 {: #vrw-orderinginstance-edge}
 
-The **Edge services cluster** section is available for all firewall appliances except for **FortiGate Security Appliance**.
+The **Edge gateway cluster** section is available for all firewall appliances except for **FortiGate Security Appliance**.
 
 ## Cluster name
 {: #vrw-orderinginstance-edge-cluster-name}
 
-By default, the edge services cluster name is set to **mcv-_xx_-edge**.
+By default, the edge gateway cluster name is set to **mcv-_xx_-edge**.
 
 {{site.data.content.orderinginstance-cluster-name-list}}
 
 ## Data center location (multizone VMware instance only)
 {: #vrw-orderinginstance-edge-dc}
 
-The edge services clusters are colocated with the witness and consolidated clusters.
+The edge gateway clusters are colocated with the witness and consolidated clusters.
 
 ## Compute capacity
 {: #vrw-orderinginstance-edge-compute}
@@ -51,7 +51,7 @@ You can select a RAM size from 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, and
 ## Networking type
 {: #vrw-orderinginstance-edge-net}
 
-Select either **Public and private network** or **Private network only** for the edge services cluster.
+Select either **Public and private network** or **Private network only** for the edge gateway cluster.
 
 ## Related links
 {: #vrw-orderinginstance-edge-related}

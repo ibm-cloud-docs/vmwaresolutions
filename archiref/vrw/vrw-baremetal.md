@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-02-08"
 
 subcollection: vmwaresolutions
 
@@ -25,10 +25,10 @@ The {{site.data.keyword.cloud}} for VMware® Regulated Workloads is built upon m
 
 The management cluster is formed of four bare metal hosts. Configuring the cluster with four hosts is the mandatory, minimum requirement where vSAN™ is the storage platform. These hosts are sized to meet the requirements of the management applications. No non-management workloads are run in the management cluster.
 
-## Edge services cluster
+## Edge gateway cluster
 {: #vrw-baremetal-edge}
 
-The edge services cluster requires only two bare metal hosts. vSAN is not an available storage option. Shared storage is not required since use of the local datastore is preferred. The hosts are sized to support the requirements of the virtual router or gateway appliance that is deployed to the individual hosts.
+The edge gateway cluster requires only two bare metal hosts. vSAN is not an available storage option. Shared storage is not required since use of the local datastore is preferred. The hosts are sized to support the requirements of the virtual router or gateway appliance that is deployed to the individual hosts.
 
 ## Workload cluster
 {: #vrw-baremetal-workload}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-12-20"
+lastupdated: "2023-02-17"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -102,7 +102,10 @@ The amount of storage reduction from deduplication and compression depends on ma
 #### vSAN Enterprise license
 {: #scb-orderinginstance-consoli-vsan-license}
 
-Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**. Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Only select **I will provide** and enter your own license key if you are performing an upgrade or migration of an existing BYOL cluster.
+Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**.
+
+Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+{: important}
 
 If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This is also true if any cluster (initial or additional) in the instance has vSAN selected to be deployed on it. The first time you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
 
@@ -153,7 +156,6 @@ Select **Public and private network** or **Private network only** for the consol
 | NA East | WDC07 | 01 |
 | NA South | DAL10 | 03 |
 | NA South | DAL12 | 01 |
-| NA South | DAL13 | 02 |
 {: caption="Table 2. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 
 ## VLANs

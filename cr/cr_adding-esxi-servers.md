@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-11-22"
+lastupdated: "2023-02-09"
 
 keywords: Cyber Recovery add host, add server Cyber Recovery
 
@@ -22,7 +22,7 @@ You can expand the capacity of your Cyber Recovery instance according to your bu
 ## Before you add ESXi servers to Cyber Recovery instances
 {: #cr_addingservers-prereq}
 
-* For the edge services cluster, you cannot add or remove ESXi servers.
+* For the edge gateway cluster, you cannot add or remove ESXi servers.
 * Whenever possible, add ESXi servers by using the VMware Solutions console because changes that you make on the VMware vSphere® Web Client are not synchronized with the VMware Solutions console. Therefore, add ESXi servers to Cyber Recovery only for on-premises ESXi servers or ESXi servers that you don't manage in the VMware Solutions console.
 * A Cyber Recovery instance with NFS storage must have at least three ESXi servers. Each of the nondefault clusters can be expanded to have up to 59 ESXi servers.
 * A Cyber Recovery instance with vSAN™ storage must have at least four ESXi servers.
@@ -35,7 +35,7 @@ You can expand the capacity of your Cyber Recovery instance according to your bu
 {: help}
 {: support}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > Cyber Recovery** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > Cyber Recovery** from the left navigation pane.
 2. In the **Cyber Recovery** table, click the instance for which you want to expand capacity.
 3. Click the **Infrastructure** tab.
 4. In the **Clusters** table, click the cluster to which you want to add ESXi servers.

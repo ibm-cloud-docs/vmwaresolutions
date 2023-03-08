@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-11-22"
+lastupdated: "2023-02-10"
 
 keywords: Cyber Recovery remove hosts, Cyber Recovery remove ESXi servers
 
@@ -22,7 +22,7 @@ You can contract the capacity of your Cyber Recovery instance according to your 
 ## Before you remove ESXi servers from Cyber Recovery instances
 {: #cr_removingservers-prereq}
 
-* For the edge services cluster, you cannot add or remove ESXi servers.
+* For the edge gateway cluster, you cannot add or remove ESXi servers.
 * Whenever possible, remove ESXi servers by using the VMware Solutions console because changes that you make on the VMware vSphere® Web Client are not synchronized with the VMware Solutions console. Therefore, remove ESXi servers from Cyber Recovery only for on-premises ESXi servers or ESXi servers that you don't manage in the VMware Solutions console.
 * When you remove ESXi servers, the servers are placed in maintenance mode, and then, all the virtual machines (VMs) running on the servers are migrated before they are removed from Cyber Recovery. For maximum of control over the relocation of VMs, place the ESXi servers to remove in maintenance mode and migrate the VMs running on them manually using the VMware vSphere Web Client. After that, remove the ESXi servers by using the VMware Solutions console.
 * If you are using vSAN™ storage, at least four ESXi servers are required.
@@ -31,7 +31,7 @@ You can contract the capacity of your Cyber Recovery instance according to your 
 ## Procedure to remove ESXi servers from Cyber Recovery instances
 {: #cr_removingservers-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > Cyber Recovery** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > Cyber Recovery** from the left navigation pane.
 2. In the **Cyber Recovery** table, click the instance for which you want to contract capacity.
 3. Click the **Infrastructure** tab.
 4. In the applicable cluster table, click the cluster from which you want to remove ESXi servers.

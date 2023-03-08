@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-12-29"
+lastupdated: "2023-02-23"
 
 subcollection: vmwaresolutions
 
@@ -71,5 +71,5 @@ You must be familiar with NSX-T concepts and administration tasks before any mig
 
 * [PrimaryIO NSX-V to NSX-T fast track migration service](https://hdm.primaryio.com/lp/nsxvtot){: external}
 * [PrimaryIO HDM Cloud Connect NSX-V to NSX-T](https://cloud.ibm.com/catalog/services/hdm-cloud-connect-nsx-v-to-nsx-t#about)
-* [cITopus tool for VMware NSX](https://citopus.com/){: external}
+* [cITopus tool for VMware NSX](https://spjsolutions.com){: external}
 * [MAT - ReSTNSX's migration assistance tool](https://restnsx.com/mat/){: external}

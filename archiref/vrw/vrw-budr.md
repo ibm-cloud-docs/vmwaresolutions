@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-02-15"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 ## Management cluster
 {: #vrw-budr-management}
 
-The management cluster relies upon native vSphere® DRS capabilities to keep management services available to the platform administrators. Even with the configuration of the vSphere DRS features, manual intervention is sometimes necessary to restore access to management services. The use of shared storage minimizes the necessity of manual restoration activities if an VMware ESXi™ host is lost.
+The management cluster relies upon native vSphere® DRS capabilities to keep management services available to the platform administrators. Even with the configuration of the vSphere DRS features, manual intervention is sometimes necessary to restore access to management services. The use of shared storage minimizes the necessity of manual restoration activities if a VMware ESXi™ host is lost.
 
 | System | Backup option | Frequency |
 |---|---|---
@@ -46,10 +46,10 @@ The Veeam environment is provisioned initially with a single VM. The SaaS provid
 
 Veeam is deployed to the management regions in both availability zones (AZ) for use in an MZR.
 
-## Edge services cluster
+## Edge gateway cluster
 {: #vrw-budr-edge}
 
-The edge services cluster does not use any vSphere resiliency features and backup of the gateway VMs is not performed. The gateway appliances deliver resilience at the application layer through formation of a high-availability cluster at the time of deployment. When you are using the vSRX, it is recommended that the rescue configuration is set anytime a change is made to the running configuration. To update it, in operational mode, run `request system configuration rescue save`. The use of an SCP server to automatically back up the configuration anytime changes are made is optional and left to the client to implement.
+The edge gateway cluster does not use any vSphere resiliency features and backup of the gateway VMs is not performed. The gateway appliances deliver resilience at the application layer through formation of a high-availability cluster at the time of deployment. When you are using the vSRX, it is recommended that the rescue configuration is set anytime a change is made to the running configuration. To update it, in operational mode, run `request system configuration rescue save`. The use of an SCP server to automatically back up the configuration anytime changes are made is optional and left to the client to implement.
 
 ```sh
 vSRX config archive on commit

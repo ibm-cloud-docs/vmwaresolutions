@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-01-06"
+lastupdated: "2023-01-11"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -21,8 +21,8 @@ subcollection: vmwaresolutions
 The following table provides information about the platform management roles and permissions for VMware Shared.
 
 * **Minimum** - roles with the bare minimum permissions in VMware Cloud Director.
-* **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in Predefined Global Tenant Roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
-* **Custom** - roles that are custom defined by IBM.
+* **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in predefined global tenant roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
+* **Custom** - roles that are custom-defined by IBM.
 
 | Platform management role | Actions | Level of permission |
 |:----------------- |:----------------- |:----------------- |
@@ -46,7 +46,7 @@ The following table provides information about the platform management roles and
 ## Custom defined roles and permissions
 {: #iam_vcd-custom}
 
-The following table provides information about roles that are custom defined by IBM.
+The following table provides information about roles that are custom-defined by IBM.
 
 | Permission | Manager | Administrator | Director Full Viewer | Director Network Admin | Director Security Admin | Director Backup User |
 |:--------------|:---------------|:---------------|:---------------|:---------------|:-----------------|:---------------|
@@ -243,7 +243,7 @@ The following table provides information about roles that are custom defined by 
 | Catalog: CLSP Publish Subscribe | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | Catalog: VCSP Publish Subscribe Caching | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | vApp Template: Checkout | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
-{: caption="Table 2. Custom defined roles and permissions for VMware Shared" caption-side="bottom"}
+{: caption="Table 2. Custom-defined roles and permissions for VMware Shared" caption-side="bottom"}
 
 ## Related links
 {: #iam_vcd-related}

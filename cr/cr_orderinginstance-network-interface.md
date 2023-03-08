@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-12-09"
+lastupdated: "2023-01-27"
 
 keywords: cyber recovery, IBM Cloud cyber recovery, cyber recovery network interface, network interface cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -43,7 +43,7 @@ The domain name must meet the following requirements:
 * The last string can contain only lowercase alphabetic characters.
 * The length of the last string must be in the range 2 - 24 characters.
 
-The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and VMs is 63 characters. Domain names must accommodate for this maximum length.
+The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and virtual machines (VMs) is 63 characters. Domain names must accommodate for this maximum length.
 {: note}
 
 ## DNS configuration
@@ -51,7 +51,7 @@ The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and VMs i
 
 Select the DNS configuration for your instance:
 
-* **Single public Windows VSI for Active Directory/DNS** - A single Microsoft® Windows® Server VSI for Microsoft Active Directory™ (AD) is deployed and can be looked up. The VSI functions as the DNS for the instance where the hosts and VMs are registered.
+* **Single public Windows® VSI for Active Directory™/DNS** - A single Microsoft® Windows Server VSI for Microsoft Active Directory (AD) is deployed and can be looked up. The VSI functions as the DNS for the instance where the hosts and VMs are registered.
 * **Two highly available dedicated Windows server VMs on the management cluster** - Two Microsoft Windows® VMs are deployed, helping enhance security and robustness.
 
 You must provide two Microsoft Windows Server 2019 Standard edition licenses if you configure your instance to use the two Microsoft Windows VMs.

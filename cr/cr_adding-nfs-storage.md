@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-01-06"
+lastupdated: "2023-02-16"
 
 keywords: Cyber Recovery add NFS storage, Cyber Recovery NFS storage, add NFS storage Cyber Recovery
 
@@ -23,7 +23,7 @@ You can expand the capacity of your Cyber Recovery instance according to your bu
 {: #cr_addingnfs-prereq}
 
 * Do not add NFS storage from the VMware vSphere® Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_full}} console.
-* IBM does not manage NFS file shares that you manually add to an instance.
+* {{site.data.keyword.IBM}} does not manage NFS file shares that you manually add to an instance.
 * You can add or remove NFS storage shares to or from an existing NFS or vSAN™ cluster.
 * If you mount {{site.data.keyword.cloud_notm}} Endurance NFS storage to your cluster, consider the following steps:
    * Ping the NFS server for the storage and note the subnet for the server IP address.
@@ -38,7 +38,7 @@ You can expand the capacity of your Cyber Recovery instance according to your bu
 3. Click the **Infrastructure** tab.
 4. In the **Clusters** table, click the cluster to which you want to add NFS storage.
 5. In the **Storage** section, click **Add**.
-6. In the **Storage** window, complete the storage configuration.
+6. In the **Storage** side panel, complete the storage configuration.
    * If you want to add and configure the same settings to all file shares, specify the **Number of shares**, **Performance**, and **Size (GB)**.
    * If you want to add and configure file shares individually, select **Configure shares individually**. Then click the **Add** icon ![Add icon](../../icons/add.svg "Add") next to the **Add shared storage** label and select the **Performance** and **Size (GB)** for each individual file share. You must select at least one file share. For more information about the available options, see [NFS storage](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-consolidwkld#cr_orderinginstance-consolidwkld-nfs-storage).
 7. Review the estimated price and click **Add NFS storage**.

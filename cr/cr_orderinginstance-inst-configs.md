@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-11-17"
+lastupdated: "2023-01-20"
 
 keywords: cyber recovery, instance configuration cyber recovery, cyber recovery instance configuration, order cyber recovery
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-11-22"
+lastupdated: "2023-01-30"
 
 keywords: Cyber Recovery remove NFS storage, remove NFS storage Cyber Recovery
 
@@ -22,7 +22,7 @@ You can contract the capacity of your Cyber Recovery instance according to your 
 ## Before you remove NFS storage from Cyber Recovery instances
 {: #cr_removingnfs-prereq}
 
-* Do not remove NFS storage from the VMware vSphere Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_full}} console.
+* Do not remove NFS storage from the VMware vSphere® Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_full}} console.
 * Before you remove the NFS storage, ensure that you removed all the VMs from the storage.
 * Ensure that the shares that you plan to remove are associated with the correct Cyber Recovery instance.
 * The cluster must be in **Ready to use** status.

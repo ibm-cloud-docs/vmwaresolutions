@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-12-14"
+lastupdated: "2023-01-27"
 
 keywords: cyber recovery, cyber recovery requirements, requirements cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Requirements for Cyber Recovery
 {: #cr_orderinginstance_reqs}
 
-The Cyber Recovery offering helps you with data protection, cyberthreats and attacks, ransomware, and more. The instance automatically includes the Veeam 11 add-on service and a Linux® hardened repository (LHR). An edge gateway is required and you can provide your own or order one of the following edges:
+The Cyber Recovery offering helps you with data protection, cyberthreats and attacks, ransomware, and more. The instance automatically includes the Veeam® 11 add-on service and a Linux® hardened repository (LHR). An edge gateway is required and you can provide your own or order one of the following edges:
 
 * Juniper® vSRX
 * FortiGate® Virtual Appliance
@@ -25,7 +25,7 @@ The Cyber Recovery offering helps you with data protection, cyberthreats and att
 
 You can order add-on services. For more information, see [Services for {{site.data.keyword.cloud_notm}} Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_planning#cr_planning-addon-services).
 
-Price calculations are automatically generated when you access the {{site.data.keyword.cloud_notm}} Cyber Recovery instance order page. Default selections include the Data Center SP Professional license for NSX-T™, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, 768 GB RAM, and NFS storage for both the consolidated and workload clusters.
+Price calculations are automatically generated when you access the {{site.data.keyword.cloud}} Cyber Recovery instance order page. Default selections include the Data Center SP Professional license for NSX-T™, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, 768 GB RAM, and NFS storage for both the consolidated and workload clusters.
 
 Ensure that you complete the following tasks:
 

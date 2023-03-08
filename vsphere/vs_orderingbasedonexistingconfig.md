@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-17"
+lastupdated: "2023-02-09"
 
 keywords: vSphere order cluster, vSphere configuration, order vSphere cluster
 
@@ -19,11 +19,11 @@ subcollection: vmwaresolutions
 
 You can order a VMware vSphere® cluster based on a configuration template that you saved. Use this procedure to define a new cluster based on an existing cluster configuration.
 
-## Requirements for vSphere clusters
+## Requirements for VMware vSphere
 {: #vs_orderingbasedonexistingconfig-req}
 
 Ensure that you complete the following tasks:
-* If you are ordering an instance for the first time, complete the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
+* If you are ordering a vSphere cluster for the first time, complete the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
 *  Review the requirements and considerations in [Planning for vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning).
 *  Create a configuration template to be reused.
 
@@ -35,7 +35,7 @@ Ensure that you complete the following tasks:
 3. Select a configuration template from the **Cluster configurations** list.
 4. Enter a new cluster name.
 5. Review the cluster settings that are automatically completed and update the settings according to your needs. For more information about the settings, see [Ordering new vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req).
-6. In the **Summary** pane, verify the instance configuration and the estimated price.
+6. In the **Summary** pane, verify the ordered configuration and the estimated price.
    * To save the configuration as a template without placing an order, click **Save configuration**.
    * To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
 
@@ -49,7 +49,7 @@ If you saved the cluster configuration as a template, you get a console notifica
 
 If you placed an order, the deployment of the cluster starts automatically. You receive an email confirmation that the order is being processed. When the cluster is ready to use, you're also notified by email.
 
-The vSphere clusters, unlike the VMware vCenter Server® instances, are not displayed on the **Resources** pages.
+The vSphere clusters, unlike the VMware vCenter Server® instances, are not displayed on the **Resources** pages. The vSphere cluster servers are listed under **Devices** on the [Classic Infrastructure](https://cloud.ibm.com/classic) page.
 {: note}
 
 ## Related links

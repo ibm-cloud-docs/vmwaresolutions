@@ -56,6 +56,44 @@ toc:
               - vmonic/vmwaresol_ports-vmwareuses.md
               - vmonic/vmwaresol_ports-services.md
       - topicgroup:
+          label: VMware as a Service
+          topics:
+          - include: ../vmware-service/common/vmware-aas-overview.md
+          - topicgroup:
+              label: Managing instances
+              topics:
+              - include: ../vmware-service/vmaas/tenant-plan-deploy.md
+              - include: ../vmware-service/vmaas/tenant-ordering.md
+              - include: ../vmware-service/vmaas/tenant-viewing.md
+              - include: ../vmware-service/vmaas/tenant-deleting.md
+          - include: ../vmware-service/vmaas/pvdc-adding-deleting.md
+          - include: ../vmware-service/vmaas/cluster-adding-deleting.md
+          - include: ../vmware-service/vmaas/host-adding-deleting.md
+          - include: ../vmware-service/vmaas/storage-adding-deleting.md
+          - topicgroup:
+              label: Managing virtual data centers
+              topics:
+              - include: ../vmware-service/vmaas/vdc-adding.md
+              - include: ../vmware-service/vmaas/vdc-view-delete.md
+              - include: ../vmware-service/vmaas/accessing-vcd-console.md
+              - include: ../vmware-service/common/iam-integration.md
+          - topicgroup:
+              label: Enhancing security
+              topics:
+              - include: ../vmware-service/common/architecture-workload-isolation.md
+              - include: ../vmware-service/common/single-tenant-monitoring.md
+              - include: ../vmware-service/common/vmaas-iam.md
+              - include: ../vmware-service/common/vmaas-iam_vcd.md
+              - include: ../vmware-service/common/vmaas-data-security.md
+              - include: ../vmware-service/common/vmaas-at-events.md
+          - topicgroup:
+              label: Reference
+              topics:
+              - include: ../vmware-service/common/vmaas-understand-responsib.md
+              - include: ../vmware-service/common/policies.md
+              - include: ../vmware-service/common/ha.md
+              - include: ../vmware-service/common/bc-dr.md
+      - topicgroup:
           label: VMware Shared
           topics:
           - shared/shared_overview.md
@@ -90,6 +128,31 @@ toc:
           - shared/shared_deletinginstance.md
           - shared/shared_pricing.md
           - shared/shared_bnpp.md
+      - topicgroup:
+          label: VMware vSphere
+          topics:
+          - topicgroup:
+              label: Overview
+              topics:
+              - vsphere/vs_vsphereclusteroverview.md
+              - vsphere/vs_bom.md
+          - vsphere/vs_planning.md
+          - vsphere/vs_vsphere_70_upgrade.md
+          - topicgroup:
+              label: Ordering new vSphere clusters
+              topics:
+              - vsphere/vs_orderinginstances-req.md
+              - vsphere/vs_orderinginstances-sys.md
+              - vsphere/vs_orderinginstances-licensing.md
+              - vsphere/vs_orderinginstances-bare-metal.md
+              - vsphere/vs_orderinginstances-storage.md
+              - vsphere/vs_orderinginstances-network.md
+              - vsphere/vs_orderinginstances-summary.md
+              - vsphere/vs_orderinginstances-procedure.md
+          - vsphere/vs_orderingbasedonexistingconfig.md
+          - vsphere/vs_scalingexistingclusters.md
+          - vsphere/vs_orderingforclustersoutside.md
+          - vsphere/vs_deletingclusters.md
       - topicgroup:
           label: vCenter Server
           topics:
@@ -148,31 +211,6 @@ toc:
               - vcenter/vc_viewinginstances.md
               - vcenter/vc_deletinginstance.md
               - vcenter/vc_deletinginstance_multi.md
-      - topicgroup:
-          label: VMware vSphere
-          topics:
-          - topicgroup:
-              label: Overview
-              topics:
-              - vsphere/vs_vsphereclusteroverview.md
-              - vsphere/vs_bom.md
-          - vsphere/vs_planning.md
-          - vsphere/vs_vsphere_70_upgrade.md
-          - topicgroup:
-              label: Ordering new vSphere clusters
-              topics:
-              - vsphere/vs_orderinginstances-req.md
-              - vsphere/vs_orderinginstances-sys.md
-              - vsphere/vs_orderinginstances-licensing.md
-              - vsphere/vs_orderinginstances-bare-metal.md
-              - vsphere/vs_orderinginstances-storage.md
-              - vsphere/vs_orderinginstances-network.md
-              - vsphere/vs_orderinginstances-summary.md
-              - vsphere/vs_orderinginstances-procedure.md
-          - vsphere/vs_orderingbasedonexistingconfig.md
-          - vsphere/vs_scalingexistingclusters.md
-          - vsphere/vs_orderingforclustersoutside.md
-          - vsphere/vs_deletingclusters.md
       - topicgroup:
           label: Regulated Workloads
           topics:
@@ -302,8 +340,6 @@ toc:
               - services/kmip_standalone_viewing.md
               - services/kmip_standalone_addingdeletingcert.md
               - services/kmip_standalone_deleting.md
-          - topic: services/managing_zerto_services.md
-            navtitle: Managed Disaster Recovery Services by Kyndryl
           - topicgroup:
               label: PrimaryIO HDM
               topics:
@@ -466,7 +502,7 @@ toc:
               - archiref/arch-pattern/arch-pattern-deployment-multi-site.md
               - archiref/arch-pattern/arch-pattern-overlays-single-site.md
               - archiref/arch-pattern/arch-pattern-overlays-multi-site.md
-              - archiref/arch-pattern/arch-pattern-edge-services-cluster.md
+              - archiref/arch-pattern/arch-pattern-edge-gateway-cluster.md
               - archiref/arch-pattern/arch-pattern-bastion-vpc.md
               - archiref/arch-pattern/arch-pattern-nsx-t-private-connectivity.md
               - archiref/arch-pattern/arch-pattern-bridging.md
@@ -633,6 +669,7 @@ toc:
               - archiref/veeam-cr-sag/veeam-cr-sag-ireprod.md
               - archiref/veeam-cr-sag/veeam-cr-sag-instantrestore.md
               - archiref/veeam-cr-sag/veeam-cr-sag-lnxmgdsvr.md
+          - archiref/cr-byo/cr-byo-overview.md
           - topicgroup:
               label: VMware Update Manager guide
               topics:

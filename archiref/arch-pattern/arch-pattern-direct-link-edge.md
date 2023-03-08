@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2022-02-08"
 
 subcollection: vmwaresolutions
 
@@ -22,7 +22,7 @@ This architecture pattern presents private connectivity for VMware vCenter Serve
 
 This solution relies on the principle that you can advertise NSX-T TEP traffic through {{site.data.keyword.dl_short}} to the colocation. Therefore, you can extend your NSX-T overlays over {{site.data.keyword.dl_short}}. You are responsible for deploying the edge transport nodes in colocation on your own x86 hardware and for creating the NSX-T edge cluster and configuring Tier-0 (T0) Gateway on the edge cluster.
 
-You can use Gateway Appliance or vCenter Server edge services cluster with Juniper vSRX or other device as part of the solution. This is optional.
+You can use Gateway Appliance or vCenter Server edge gateway cluster with Juniper vSRX or other device as part of the solution. This is optional.
 
 ## Deploying {{site.data.keyword.dl_short}} with NSX-T edge cluster in colocation
 {: #arch-pattern-direct-link-edge-overview}
@@ -35,7 +35,7 @@ This architecture pattern deployment is summarized as follows:
 
 1. vCenter Server instance is deployed at {{site.data.keyword.cloud_notm}} classic infrastructure. Two {{site.data.keyword.cloud_notm}} private VLANs and one {{site.data.keyword.cloud_notm}} public VLAN (optional) are deployed. Each of these VLANs host multiple subnets. You can see the details through {{site.data.keyword.vmwaresolutions_short}} portal.
 2. NSX-T T0 is deployed with two interfaces - private and public (optional). If you opt for a public one, this interface is attached to your Public VLAN and has direct internet access. Your T0's private interface is attached to the Private VLAN and it uses {{site.data.keyword.cloud_notm}} portable private IP.
-3. If vCenter Server edge services cluster with vSRX (or other third-party device) or {{site.data.keyword.cloud_notm}} Gateway Appliance is deployed to your classic infrastructure, you must configure your vCenter Server instance Private Primary VLAN. It is routed through the vSRX or Gateway Appliance and allows TEP traffic through it.
+3. If vCenter Server edge gateway cluster with vSRX (or other third-party device) or {{site.data.keyword.cloud_notm}} Gateway Appliance is deployed to your classic infrastructure, you must configure your vCenter Server instance Private Primary VLAN. It is routed through the vSRX or Gateway Appliance and allows TEP traffic through it.
 4. Create a {{site.data.keyword.dl_short}} at your {{site.data.keyword.cloud_notm}} data center or zone location and attach your classic network as a connection. All your classic networks in the region are advertised with Local routing option (or all with Global Option). Use BGP between your colocation router and {{site.data.keyword.dl_short}}. Ensure that the networks planned for NSX-T edge transport node management and TEP traffic are advertised through this BGP session to {{site.data.keyword.dl_short}}.
 5. Deploy NSX-T edge cluster at colocation and create a T0 at the colocation cluster. Create routes on edge nodes for management and TEP traffic through the {{site.data.keyword.dl_short}} path.
 6. Configure an NSX-T overlay transit segment between T0 VRFs and configure routing between the T0 VRFs.

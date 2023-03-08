@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-12-19"
+lastupdated: "2023-02-22"
 
 keywords: manage shared resources, view shared virtual data centers details
 
@@ -56,14 +56,14 @@ You can view property details for VMware Shared sites and virtual data centers. 
 ### Opening a support ticket for additional IP addresses or subnet
 {: #shared_viewing-vdc-details-support}
 
-You can open an {{site.data.keyword.cloud_notm}} Support ticket to request five additional public IP addresses or an entire subnet for your virtual data center. Include the following details in your support ticket.
+To request five additional public IP addresses or an entire subnet for your virtual data center, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). 
+
+Include the following details in your support ticket:
 * Virtual data center region and location
 * Organization ID
 * Virtual data center name
 * Number of additional IP addresses required
 * Specify whether you plan to use the additional IP addresses by using Network Address Translate through the virtual data center Edge Services Gateway or by directly assigning the IP address to a VM.
-
-For more information about opening a support ticket, see [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 ### Viewing virtual data center resource reservation details
 {: #shared_viewing-vdc-details-resource}

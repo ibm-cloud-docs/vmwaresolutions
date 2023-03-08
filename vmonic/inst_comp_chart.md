@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-10-16"
+lastupdated: "2023-03-08"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -59,17 +59,18 @@ Review the following table to understand the differences in feature support for 
 
 Review the following table to understand the differences in feature support for vCenter Server instances and VMware Regulated Workloads.
 
-| Feature | vCenter Server | VMware Regulated Workloads |
+| Feature | vCenter Server offering | Regulated Workloads offering |
 |:------- |:-------------- |:-------------------------- |
-| vSphere version | 7.0 Update 3d | 7.0 Update 3d |
+| vCenter Server version | 7.0 Update 3j | 7.0 Update 3j |
+| vSphere version | 7.0 Update 3k | 7.0 Update 3k | 
 | NSX edition | NSX DC SP Base, Professional, Advanced, or Enterprise Plus | NSX DC SP Advanced or Enterprise Plus |
 | NSX networking solution [^nsxedi] | NSX-T™ | NSX-T |
 | NFS | Optional | Not allowed |
 | vSAN | Optional | Required |
 | Consolidated cluster | Optional | Optional |
 | Separate management cluster | Supported | Supported |
-| Minimum number of ESXi servers | For vSAN, 4 servers. </br>For NFS, 3 servers. | 6 servers - 4 for the consolidated cluster and 2 for the edge services cluster. |
-| Edge services cluster | Optional | Required. Juniper vSRX, FortiGate Virtual Appliance, Bring your own gateway, or FortiGate Security Appliance. |
+| Minimum number of ESXi servers | For vSAN, 4 servers. </br>For NFS, 3 servers. | 6 servers - 4 for the consolidated cluster and 2 for the edge gateway cluster. |
+| Edge gateway cluster | Optional | Required. Juniper vSRX, FortiGate Virtual Appliance, Bring your own gateway, or FortiGate Security Appliance. |
 | Logging and monitoring with VMware vRealize® Operations and Log Insight | Optional | Required |
 | Role-based access with Entrust CloudControl™ | Optional | Required |
 | Compliance with Caveonix | Optional | Required |
@@ -85,7 +86,6 @@ Review the following table to understand the differences in feature support for 
 {: caption="Table 2. Supported features for vCenter Server instances and VMware Regulated Workloads" caption-side="bottom"}
 
 [^nsxedi]: NSX-T is not supported for new deployments of vCenter Server instances with vSphere 6.7.
-[^nsxv]: Existing instances only.
 
 ## Related links
 {: #inst_comp_chart-related}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-07-14"
+lastupdated: "2023-02-25"
 
 keywords: Entrust CloudControl WebGUI, Entrust CloudControl console, enable internet Entrust CloudControl
 
@@ -40,6 +40,15 @@ For more information, see [Ordering services for vCenter Server instances](/docs
 
 When you add and remove hosts and clusters to your instance, VMware Solutions do not manage your Entrust CloudControl inventory and credentials for you. IBM Cloud assumes that you take steps to lock IBM Cloud automation from having access to your Entrust CloudControl deployment.
 
+## Procedure to find the firewall and SNAT rules defined (NSX-T only)
+{: #managing-entrust-cc-proc-find-firewall-nsxt}
+
+1. Log in to the NSX-T Manager, and click **Networking** in the menu.
+2. Click **NAT** from the left navigation pane.
+3. Select the T0 consolidated gateway from the **Gateway** list.
+
+   The EntrustCC SNAT rules are displayed in the NAT rules table.
+
 ## Known issue about Network Time (Entrust CloudControl 5.x only)
 {: #managing-entrust-cc-known-issue-ntp}
 
@@ -55,7 +64,7 @@ These rules enable internet access for the Entrust VMs. If internet access is no
 For private-only vCenter Server environments, the VMware NSX® Edge Services Gateway (ESG) **mgmt-nsx-edge** is not added. Therefore, the firewall and SNAT rules are not defined. As a result, internet connectivity cannot be enabled for private-only instances and Entrust licenses expire annually.
 {: note}
 
-### Procedure to find the firewall and SNAT rules defined (Entrust CloudControl 5.x only)
+### Procedure to find the firewall and SNAT rules defined (Entrust CloudControl 5.x and NSX-V only)
 {: #managing-entrust-cc-proc-find-firewall}
 
 1. Log in to the VMware® vSphere Web Client (FLEX) and find the ESG **mgmt-nsx-edge**.
@@ -71,7 +80,7 @@ The following steps apply for updating the Entrust CloudControl network settings
 {: note}
 
 1. Complete steps 1-3 in the previous procedure.
-2. Click **Settings** and then click **Interfaces**. Note the IP address for the private uplink, which becomes the new default gateway. 
+2. Click **Settings** and then click **Interfaces**. Note the IP address for the private uplink, which becomes the new default gateway.
 3. Go to the Entrust CloudControl service details page, click **View Entrust CloudControl Web UI** and log in with the credentials from the service details page.
 4. Note the existing default gateway. Click **Configuration > Network**. Note the gateway IP address that is listed, which becomes the gateway for the static route.
 5. Add a static route. Click **Configuration > Static Routes**. Click **Add**, enter the following information, and click **OK**.

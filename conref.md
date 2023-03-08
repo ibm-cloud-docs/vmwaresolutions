@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-01-04"
+lastupdated: "2023-02-08"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -143,14 +143,14 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- vcenter\vc_addingclusters.md
-- vcenter\vc_orderinginstance-network.md
+
+- vcenter\vc_orderinginstance-edge.md
 - vcenter\vrw-orderinginstance-edge.md
 - vcenter\vrw-orderinginstance-mgmt.md
 - vcenter\vrw-orderinginstance-primary.md
-- vcenter\vrw-orderinginstance-witness.md
 - vcenter\vrw-orderinginstance-wkld.md
 - vsphere\vs_orderinginstances-network.md
+- cr\cr_orderinginstance-edge.md
 
 CONTENT:
 
@@ -183,8 +183,7 @@ The uplink speed provides two options:
 | NA East | WDC07 | 01 |
 | NA South | DAL10 | 03 |
 | NA South | DAL12 | 01 |
-| NA South | DAL13 | 02 |
-{: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: caption="Table 1. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 {: #simpletable-uplink-speed-locations}
 
 

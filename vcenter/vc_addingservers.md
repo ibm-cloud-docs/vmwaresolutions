@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-11-23"
+lastupdated: "2023-02-23"
 
 keywords: vCenter Server add host, add server vCenter Server
 
@@ -24,13 +24,16 @@ You can expand the capacity of your VMware® vCenter Server® instance according
 
 * For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers.
 * For existing instances with vSphere 7.0u2, you can add only ESXi servers with vSphere 7.0u3.
-* For the edge services cluster, you cannot add or remove ESXi servers.
+* For the edge gateway cluster, you cannot add or remove ESXi servers.
 * {{site.data.content.para-vcenteraddESXiservers}}
 * A vCenter Server instance with NFS storage must have at least three ESXi servers. Each of the nondefault clusters can be expanded to have up to 59 ESXi servers.
 * A vCenter Server instance with vSAN™ storage must have at least four ESXi servers.
 * If your initial cluster has vSAN storage, adding one or more ESXi servers after deployment can increase the cluster storage capacity.
 * If your initial cluster has vSAN storage, SED SSD disks are no longer available. Non-SED SSD disks are ordered.
 * You can add 1 - 20 ESXi servers at a time. For more information about the minimum of ESXi servers, see [Is a two-node vCenter Server instance highly available?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#is-a-two-node-vcenter-server-instance-highly-available)
+
+Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Add a host to a BYOL cluster only if you are performing a migration or upgrade of an existing BYOL cluster.
+{: important}
 
 ## Procedure to add ESXi servers to vCenter Server instances
 {: #vc_addingservers-procedure}

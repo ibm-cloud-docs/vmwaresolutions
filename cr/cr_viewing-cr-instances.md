@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-11-18"
+lastupdated: "2023-02-17"
 
 keywords: view Cyber Recovery, view instance, view instance details, instance view Cyber Recovery
 
@@ -117,7 +117,7 @@ Click **Deployment history** from the left navigation pane to view the deploymen
 ## What to do if errors occur
 {: #cr_viewinginstances-if-errors-occur}
 
-If errors occur during instance deployment or instance deletion, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, you can [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+If errors occur during instance deployment or instance deletion, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). 
 
 ## What to do next
 {: #cr_viewinginstances-next}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-06-01"
+lastupdated: "2023-02-08"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -102,7 +102,6 @@ The networking type is set to **Private network only**.
 | NA East | WDC07 | 01 |
 | NA South | DAL10 | 03 |
 | NA South | DAL12 | 01 |
-| NA South | DAL13 | 02 |
 {: caption="Table 2. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 
 ## Related links

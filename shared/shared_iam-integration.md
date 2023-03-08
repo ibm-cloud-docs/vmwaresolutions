@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-12-19"
+lastupdated: "2023-02-22"
 
 keywords: manage shared resources, set IAM integration the VMware Cloud Director Management console, shared iam roles, iam roles
 
@@ -61,7 +61,7 @@ The IAM integration status can have the following results.
 | Status        | Description       |
 |:------------- |:------------- |
 | Integration pending | The IAM integration is in progress. |
-| Integration incomplete | The integration is not successful. Contact IBM Support. |
+| Integration incomplete | The integration is not successful. Open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). |
 | Integration enabled | The IAM integration was previously enabled for the organization. You can reset the integration, if needed. |
 {: caption="Table 1. Status descriptions for IAM implementation" caption-side="bottom"}
 

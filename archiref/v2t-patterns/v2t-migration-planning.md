@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-12-29"
+lastupdated: "2023-03-03"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ In the initial stage, the complexity of the migration is estimated. An aspect of
 * Logical networking and security configurations - Detailed parameters that are used in the configuration of the NSX-V network and security. Logical switches, routing, distributed firewall, edge firewall, NAT, VPNs, and load balancing are included.
 * Clusters and hosts - Information on the clusters and their hosts.
 * Workload virtual machines - Placement of VMs, and their relationships to each other.
-* Integration - External tools that integrate with vCenter or NSX-V Manager, such as Veeam®, vRealize Operations™ Manager, vRealize Automation, custom scripts, and other tool.
+* Integration - External tools that integrate with vCenter or NSX-V Manager, such as Veeam®, vRealize Operations™ Manager, vRealize Automation, custom scripts, and other tools.
 
 The following factors govern the complexity of migration:
 

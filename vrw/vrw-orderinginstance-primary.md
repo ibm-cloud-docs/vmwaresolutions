@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-12-19"
+lastupdated: "2023-02-17"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -47,7 +47,7 @@ You can order 4 - 20 servers. All servers have the same configuration.
 
 * For the **Small** capacity, you get two vSAN™ capacity disks 1.9 TB SSD.
 * For the **Customizable** capacity, you can choose the type and number of capacity disks according to your needs.
-* Use the IBM-provided VMware license for vSAN by selecting **Include with purchase**. Only select **I will provide** if you are upgrading an existing BYOL cluster.
+* Use the IBM-provided VMware license for vSAN by selecting **Include with purchase**. Select **I will provide** only if you are upgrading an existing BYOL cluster.
 
 ## Estimated resources available per cluster
 {: #vrw-orderinginstance-consldt-est}

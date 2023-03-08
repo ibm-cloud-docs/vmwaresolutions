@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-01-06"
+lastupdated: "2023-02-08"
 
 keywords: Cyber Recovery delete clusters, delete clusters, delete Cyber Recovery clusters, delete Cyber Recovery clusters
 
@@ -27,8 +27,8 @@ You can delete clusters from Cyber Recovery instances when you do not need them.
 * You can delete a single cluster at a time. To delete more than one cluster, you must do it in sequence. Wait for the previous cluster to be deleted before you delete the next cluster.
 * Ensure that all nodes in a cluster are powered on and operational before you delete the cluster.
 * You can add or delete a cluster while another cluster is being created or deleted.
-* When you delete a cluster, all VMs from the cluster are also deleted, and they can't be recovered. If you want to keep the VMs, migrate them to other clusters.
-* You do not have to delete any services that are installed on the cluster, including services on an edge services cluster. The services are automatically deleted when you delete the cluster.
+* When you delete a cluster, all virtual machines (VMs) from the cluster are also deleted, and they can't be recovered. If you want to keep the VMs, migrate them to other clusters.
+* You do not have to delete any services that are installed on the cluster, including services on an edge gateway cluster. The services are automatically deleted when you delete the cluster.
 
 ## Procedure to delete clusters from Cyber Recovery instances
 {: #cr_deletingclusters-procedure}

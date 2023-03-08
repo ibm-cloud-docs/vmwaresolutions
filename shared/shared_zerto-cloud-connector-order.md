@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-01-04"
+lastupdated: "2023-02-13"
 
 keywords: zerto, order zerto cloud connector
 
@@ -48,7 +48,7 @@ Review the following limitations that currently exist for ZCC:
    1. In the **Zerto Cloud Connector (ZCC)** table, expand **Pairing token**.
    2. Click **Generate token**. The generated token link expires in 48 hours and a new token is generated.
    3. Click the **Copy** icon ![Copy icon](../../icons/copy.svg "Copy") to copy the pairing token key.
-   4. From the on-premises site, use the pairing token key to link the on-premises virtual data centers to {{site.data.keyword.cloud_notm}}. For more information, see [Zerto technical documentation](https://help.zerto.com/category/WmWare_9.5){: external}.
+   4. From the on-premises site, use the pairing token key to link the on-premises virtual data centers to {{site.data.keyword.cloud_notm}}. For more information, see [Zerto technical documentation](https://help.zerto.com/category/WmWare_9.7){: external}.
 
 ## Related links
 {: #shared_zerto-cc-order-related}

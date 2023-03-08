@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-12-28"
+lastupdated: "2023-02-22"
 
 keywords: vCenter Server multisite, multisite configuration, multisite deployment vCenter Server
 
@@ -42,7 +42,7 @@ A multisite deployment consists of the following components.
 
 The multisite configuration feature uses a hub and spoke topology with a primary site and a maximum of seven secondary sites. A single layer of sites is supported, that is, you cannot configure subsequent sites that are linked to other secondary sites. You can have a total of 128 VMware ESXi™ servers in a multisite configuration across all instances.
 
-If your configuration requires a multisite deployment with more than 128 ESXi servers, contact IBM Support for assistance. For more information, see [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+If your configuration requires a multisite deployment with more than 128 ESXi servers, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
 
 The following graphic depicts the overall view of the vCenter Server multisite deployment.

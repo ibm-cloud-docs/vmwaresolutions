@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-11-17"
+lastupdated: "2023-02-23"
 
 keywords: about vmware solutions, product overview, benefits
 
@@ -78,7 +78,7 @@ You select the {{site.data.keyword.cloud_notm}} data center where you want to pr
 
 After your instance is provisioned, if you are connected to your {{site.data.keyword.cloud_notm}} account through a VPN, you can connect to your vCenter Server directly from your workstation web browser.
 
-Your instance components are typically accessed by their hostnames rather than their IP addresses. To connect to and authenticate with vCenter, ensure that the vCenter and Platform Services Controller (PSC) hostname can be resolved by your workstation. Add it to your workstation's hosts file as shown in Listing 1. You can find the hostname and IP address in the {{site.data.keyword.vmwaresolutions_short}} console, on the **Summary** tab for your instance. You might also want to add the hostnames and IP addresses for your vSphere hosts to your hosts file.
+Your instance components are typically accessed by their hostnames rather than their IP addresses. To connect to and authenticate with vCenter, ensure that the vCenter and Platform Services Controller (PSC) hostname can be resolved by your workstation. Add it to your workstation's hosts file as shown in Listing 1. You can find the hostname and IP address in the {{site.data.keyword.vmwaresolutions_short}} console, on the **Summary** tab for your instance. You might also want to add the hostnames and IP addresses for your vSphere hosts to your hosts file, like in the following example:
 
 ```sh
 # Dallas site vCenter and Platform Services Controller (PSC)
@@ -89,7 +89,6 @@ Your instance components are typically accessed by their hostnames rather than t
 10.208.85.137  host2.dallas.example.com
 ```
 {: pre}
-{: caption="Figure 1. hosts file" caption-side="bottom"}
 
 After your instance is deployed, you can manage it from the console. The management capabilities include the ability to do each of the following tasks.
 

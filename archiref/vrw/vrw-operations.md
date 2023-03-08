@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-02-08"
 
 subcollection: vmwaresolutions
 
@@ -52,10 +52,10 @@ All systems that generate logs are configured to send their logs to vRealize Log
 
 vRealize Network Insight monitors network components and management traffic throughout the entire {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance. The monitoring scope includes insight into the operation of the NSX-T™ overlay network. Network Insight is also used to help optimizing performance by eliminating network bottlenecks. vRealize Network Insight is an optional component that requires manual installation.
 
-## Edge services cluster
+## Edge gateway cluster
 {: #vrw-operations-edge}
 
-No operational tools are deployed to the edge services cluster. The edge services cluster is monitored and managed by using the tools that are deployed on the management cluster. All components of the edge services cluster are configured to deliver their log files to vRLI, inclusive of the virtual gateway syslog facilities. If the physical FortiGate is deployed instead of the edge services cluster, its syslog facility must send logs to vRLI.
+No operational tools are deployed to the edge gateway cluster. The edge gateway cluster is monitored and managed by using the tools that are deployed on the management cluster. All components of the edge gateway cluster are configured to deliver their log files to vRLI, inclusive of the virtual gateway syslog facilities. If the physical FortiGate is deployed instead of the edge gateway cluster, its syslog facility must send logs to vRLI.
 
 ## Workload cluster
 {: #vrw-operations-workload}

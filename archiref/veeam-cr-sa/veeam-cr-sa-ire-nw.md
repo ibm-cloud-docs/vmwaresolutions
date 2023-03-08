@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-08-24"
+lastupdated: "2023-02-10"
 
 subcollection: vmwaresolutions
 
@@ -25,13 +25,13 @@ While Veeam® DataLabs enables the sandbox concept, it is not yet enabled for VM
 * NSX-T T1 - Provides routing and gateway firewall capabilities.
 * NSX-T distributed firewall - Distributed firewall enables firewall capability on east-west traffic on VMs.
 
-The isolated recovery environment also uses vSRX appliances that are hosted on an edge services cluster along with a management VM to provide an air-gaped environment. In normal operation, the only inbound traffic is limited to accessing the VMs in the DMZ zone.
+The isolated recovery environment also uses vSRX appliances that are hosted on an edge gateway cluster along with a management VM to provide an air-gaped environment. In normal operation, the only inbound traffic is limited to accessing the VMs in the DMZ zone.
 
 ![Isolated recovery environment network overview](../../images/veeam-cr-sa-sb-ire.svg){: caption="Figure 1. Isolated recovery environment network overview" caption-side="bottom"}
 
 The previous diagram shows the networks that are associated with a consolidated cluster of the vCenter Server® instance that is used for an isolated recovery environment. The customer order is:
 
-* A private network only vCenter Server® instance with edge services cluster and Juniper® vSRX firewalls.
+* A private network only vCenter Server® instance with edge gateway cluster and Juniper® vSRX firewalls.
 * The Veeam service on a bare metal server.
 * A bare metal server that runs Ubuntu 20.04 LTS.
 
@@ -47,7 +47,7 @@ When the IaaS is provisioned, the customer:
    * Interfaces and zones.
    * Address books, services, and security policies.
    * NAT, routing, and VPN.
-* Associates and routes-through the vCenter Server instance VLANs with the {{site.data.keyword.cloud}} gateway devices, which are the ESXi hosts in the edge services cluster.
+* Associates and routes-through the vCenter Server instance VLANs with the {{site.data.keyword.cloud}} gateway devices, which are the ESXi hosts in the edge gateway cluster.
 
 The vSRX security policies enable the objectives that are listed in the following table:
 

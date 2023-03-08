@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-05-09"
+lastupdated: "2023-02-10"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ The solution is considered to be an extra component and extension of the VMware 
 
 You can deploy FortiGate VM according to several different strategies:
 
-* FortiGate VM can be deployed as part of an ESXi™ edge services cluster that is directly integrated with the {{site.data.keyword.cloud_notm}} customer routers. It provides firewall and gateway functions for your private and public {{site.data.keyword.cloud_notm}} network VLANs.
+* FortiGate VM can be deployed as part of an ESXi™ edge gateway cluster that is directly integrated with the {{site.data.keyword.cloud_notm}} customer routers. It provides firewall and gateway functions for your private and public {{site.data.keyword.cloud_notm}} network VLANs.
 * FortiGate VM can be deployed to your management and workload cluster. In this form, you can use FortiGate to provide firewall and gateway services between various networks. FortiGate VM provides controlled connectivity between:
    * Public and private networks
    * Private VLANs and NSX logical switches

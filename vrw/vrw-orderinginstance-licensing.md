@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-01-05"
+lastupdated: "2023-02-17"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -26,7 +26,10 @@ Specify the licensing options for the following VMware® components in the insta
 Small differences exist between NSX-T Data Center and Data Center SP editions. For more information, see [Product offerings for VMware NSX-T Data Center 3.2.x](https://kb.vmware.com/s/article/86095){: external}.
 {: note}
 
-For Business Partner users, all licenses are included and purchased on your behalf. For users who are not Business Partners, you can use the IBM-provided VMware licenses for these components by selecting **Include with purchase**. You can no longer Bring Your Own License (BYOL). Only select **I will provide** and enter your own license keys if you are performing an upgrade or migration of an existing BYOL cluster.
+For Business Partner users, all licenses are included and purchased on your behalf. For users who are not Business Partners, use the IBM-provided VMware licenses for these components by selecting **Include with purchase**.
+
+Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+{: important}
 
 ## Related links
 {: #vrw-orderinginstance-licensing-related}

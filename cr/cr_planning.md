@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-11-21"
+lastupdated: "2023-02-10"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -84,8 +84,8 @@ The following services are required for a Cyber Recovery instance.
 
 * [Veeam® 11](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) is required and also included in the Cyber Recovery instance. For Veeam 11, a Linux hardened repository is already chosen for you.
 * An edge gateway is required. You can bring your own gateway appliance or choose from:
-   * Edge services cluster with Juniper® vSRX
-   * Edge services cluster with FortiGate® Virtual Appliance
+   * Edge gateway cluster with Juniper® vSRX
+   * Edge gateway cluster with FortiGate® Virtual Appliance
    * FortiGate Security Appliance
 
 The [Caveonix RiskForesight™](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) service is recommended.

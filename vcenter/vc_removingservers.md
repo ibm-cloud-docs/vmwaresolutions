@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-11-23"
+lastupdated: "2023-02-09"
 
 keywords: vCenter Server remove hosts, vCenter Server remove ESXi servers
 
@@ -23,7 +23,7 @@ You can contract the capacity of your VMware vCenter Server® instance according
 {: #vc_removingservers-prereq}
 
 * Removing ESXi servers from vCenter Server instances with VMware vSphere® 6.5 is not supported.
-* For the edge services cluster, you cannot add or remove ESXi servers.
+* For the edge gateway cluster, you cannot add or remove ESXi servers.
 * {{site.data.content.para-vcenterremoveESXiservers}}
 * When you remove ESXi servers, the servers are placed in maintenance mode, and then, all the virtual machines (VMs) running on the servers are migrated before they are removed from vCenter Server. For maximum of control over the relocation of VMs, place the ESXi servers to remove in maintenance mode and migrate the VMs running on them manually using the VMware vSphere Web Client. After that, remove the ESXi servers by using the VMware Solutions console.
 * If you are using vSAN storage, at least four ESXi servers are required.

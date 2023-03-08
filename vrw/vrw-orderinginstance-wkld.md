@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-08-16"
+lastupdated: "2023-02-17"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -47,7 +47,10 @@ Choose the number of vSAN™ stretched cluster resource hosts to be deployed in 
 {: #vrw-orderinginstance-wkld-vsan}
 
 * You can choose the type and number of capacity disks according to your needs.
-* For single-zone VMware instance only - Use the IBM-provided VMware license for vSAN by selecting **Include with purchase** or Bring Your Own License (BYOL) by selecting **I will provide** and entering your own license key.
+* For single-zone VMware instance only - Use the IBM-provided VMware license for vSAN by selecting **Include with purchase**. 
+
+Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+{: important}
 
 ## Estimated resources available per cluster
 {: #vrw-orderinginstance-wkld-est}

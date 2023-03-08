@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-02-09"
 
 subcollection: vmwaresolutions
 
@@ -45,7 +45,7 @@ Entrust CloudControl is composed of many internal functional components:
 
 All access is through Entrust CloudControl and no direct access to the ESXi hosts is enabled. The network is designed to allow only the necessary connections from the vCenter Server. Lockdown mode is enabled. Allow listing of IP addresses permitted network access to the ESXi hosts is required in the integrated host firewall. The rules on the perimeter gateway further enforce the limited traffic flows from the vCenter Server to the subnets upon which the ESXi hosts are deployed. The cloud account administrator (through {{site.data.keyword.cloud_notm}} IAM) should not authorize VPN connections to the subnets upon which the ESXi hosts are deployed except for the connections that are essential to support DR recovery operations.
 
-## Edge services cluster
+## Edge gateway cluster
 {: #vrw-hytrust-edge}
 
 Access to the ESXi hosts is strictly limited. No direct access to an ESXi host is permissible. The gateway appliance is deployed with only local accounts and it is necessary to configure the appliance to use centrally managed user accounts (Radius or Tacplus server for the vSRX). The gateway is configured to forward all logs to vRealize Log Insight. These logs contain authentication failure and success events for full visibility into the activities taken that potentially impact security or compliance status. Entrust does not play a role in authentication or authorization for access to the gateway appliance. Allow listing of IP addresses permitted network access to the ESXi hosts is required in the integrated host firewall.

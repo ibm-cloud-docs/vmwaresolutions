@@ -84,13 +84,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-end; justify-content: unsafe flex-start; width: 298px; height: 1px; padding-top: 173px; margin-left: 33px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
                             <div style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                Edge services cluster -
+                                Edge gateway cluster -
                                 <span style="background-color: rgb(255 , 255 , 255)">Data center 1</span>
                             </div>
                         </div>
                     </div>
                 </foreignObject>
-                <text x="33" y="173" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px">Edge services cluster - Data center 1</text>
+                <text x="33" y="173" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px">Edge gateway cluster - Data center 1</text>
             </switch>
         </g>
         <image x="291.5" y="190.5" width="30" height="30" xlink:href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTA5cHgiIGhlaWdodD0iMTA4cHgiIHZpZXdCb3g9IjAgMCAxMDkgMTA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPiYjeGE7ICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTMgKDcyNTIwKSAtIGh0dHBzOi8vc2tldGNoYXBwLmNvbSAtLT4mI3hhOyAgICA8dGl0bGU+R3JvdXAgMTg8L3RpdGxlPiYjeGE7ICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiYjeGE7ICAgIDxkZWZzPiYjeGE7ICAgICAgICA8cG9seWdvbiBpZD0icGF0aC0xIiBwb2ludHM9IjAgMC4zNTIyIDEwNy45OTk4IDAuMzUyMiAxMDcuOTk5OCAxMDggMCAxMDgiLz4mI3hhOyAgICA8L2RlZnM+JiN4YTsgICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+JiN4YTsgICAgICAgIDxnIGlkPSJJbmZyYXN0cnVjdHVyZS1JY29ucyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI3MC4wMDAwMDAsIC00NzYuMDAwMDAwKSI+JiN4YTsgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI3MC4xOTE0MDYsIDQ3NS4wMDAwMDApIj4mI3hhOyAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDAuNjQ4MDAwKSI+JiN4YTsgICAgICAgICAgICAgICAgICAgIDxtYXNrIGlkPSJtYXNrLTIiIGZpbGw9IndoaXRlIj4mI3hhOyAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtMSIvPiYjeGE7ICAgICAgICAgICAgICAgICAgICA8L21hc2s+JiN4YTsgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJDbGlwLTIiLz4mI3hhOyAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwNy45OTk4LDU0LjE3NjIgQzEwNy45OTk4LDgzLjkwMjIgODMuODIyOCwxMDguMDAwMiA1My45OTk4LDEwOC4wMDAyIEMyNC4xNzY4LDEwOC4wMDAyIC0wLjAwMDIsODMuOTAyMiAtMC4wMDAyLDU0LjE3NjIgQy0wLjAwMDIsMjQuNDQ5MiAyNC4xNzY4LDAuMzUyMiA1My45OTk4LDAuMzUyMiBDODMuODIyOCwwLjM1MjIgMTA3Ljk5OTgsMjQuNDQ5MiAxMDcuOTk5OCw1NC4xNzYyIiBpZD0iRmlsbC0xIiBmaWxsPSIjN0RCQzQyIiBtYXNrPSJ1cmwoI21hc2stMikiLz4mI3hhOyAgICAgICAgICAgICAgICA8L2c+JiN4YTsgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IkZpbGwtNCIgZmlsbD0iIzdEQkM0MiIgcG9pbnRzPSI1MC45NDcxIDQ1LjI1MDQgNS43NjMxIDU4LjE0MzQgNTQuMTUzMSA3NS4zODk0IDk5LjAyNTEgNTkuNjQ5NCIvPiYjeGE7ICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtNiIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgcG9pbnRzPSI1MC45NDcxIDQ1LjI1MDQgNS43NjMxIDU4LjE0MzQgNTQuMTUzMSA3NS4zODk0IDk5LjAyNTEgNTkuNjQ5NCIvPiYjeGE7ICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJGaWxsLTgiIGZpbGw9IiM3REJDNDIiIHBvaW50cz0iNTAuOTQ3MSAzNC42NjMgNS43NjMxIDQ3LjU1NSA1NC4xNTMxIDY0LjgwMSA5OS4wMjUxIDQ5LjA2MiIvPiYjeGE7ICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtMTAiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHBvaW50cz0iNTAuOTQ3MSAzNC42NjMgNS43NjMxIDQ3LjU1NSA1NC4xNTMxIDY0LjgwMSA5OS4wMjUxIDQ5LjA2MiIvPiYjeGE7ICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik01MC45NDcxLDIyLjU3NjEgTDUuNzYzMSwzNS40NjkxIEw1NC4xNTMxLDUyLjcxNDEgTDk5LjAyNTEsMzYuOTc1MSBMNTAuOTQ3MSwyMi41NzYxIFoiIGlkPSJTdHJva2UtMTIiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1kYXNoYXJyYXk9IjQiLz4mI3hhOyAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS0xNCIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgcG9pbnRzPSI1Ljc2MzUgNTguMTQzIDUuNzYzNSA3My4yMTIgNTQuMTUzNSA5MC4yMDcgOTkuMDI1NSA3NC43MTkgOTkuMDI1NSA1OS42NSIvPiYjeGE7ICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik01Mi4zOTQzLDgxLjk4NjggQzUyLjM5NDMsODMuNzk0OCA1MS4yMjAzLDg1LjI1OTggNDkuNzcxMyw4NS4yNTk4IEM0OC4zMjMzLDg1LjI1OTggNDcuMTQ4Myw4My43OTQ4IDQ3LjE0ODMsODEuOTg2OCBDNDcuMTQ4Myw4MC4xNzg4IDQ4LjMyMzMsNzguNzEzOCA0OS43NzEzLDc4LjcxMzggQzUxLjIyMDMsNzguNzEzOCA1Mi4zOTQzLDgwLjE3ODggNTIuMzk0Myw4MS45ODY4IiBpZD0iRmlsbC0xNiIgZmlsbD0iI0ZGRkZGRiIvPiYjeGE7ICAgICAgICAgICAgPC9nPiYjeGE7ICAgICAgICA8L2c+JiN4YTsgICAgPC9nPiYjeGE7PC9zdmc+" />
@@ -248,13 +248,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-end; justify-content: unsafe flex-start; width: 302px; height: 1px; padding-top: 173px; margin-left: 378px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
                             <div style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                Edge services cluster -
+                                Edge gateway cluster -
                                 <span style="background-color: rgb(255 , 255 , 255)">Data center 2</span>
                             </div>
                         </div>
                     </div>
                 </foreignObject>
-                <text x="378" y="173" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px">Edge services cluster - Data center 2</text>
+                <text x="378" y="173" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px">Edge gateway cluster - Data center 2</text>
             </switch>
         </g>
         <rect x="376" y="251" width="304" height="115" fill="none" stroke="#00882b" stroke-width="2" stroke-dasharray="6 6" pointer-events="all" />

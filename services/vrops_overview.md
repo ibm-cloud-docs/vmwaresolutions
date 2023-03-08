@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-01-31"
+lastupdated: "2023-02-23"
 
 keywords: vRealize, vRealize info, tech specs vRealize
 
@@ -25,7 +25,7 @@ These tools are deployed by using the IBM advanced automation and are based on a
 
 {{site.data.content.para-promotion-services}}
 
-The current versions that are installed are vROps 8.6 and vRLI 8.8.
+The current versions that are installed are vROps 8.10 and vRLI 8.10.
 {: note}
 
 ## Technical specifications for vRealize Operations and Log Insight
@@ -34,8 +34,8 @@ The current versions that are installed are vROps 8.6 and vRLI 8.8.
 For more information about resource requirements and capacity checking for some services, see [Resource requirements for services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-resource-requirements).
 
 The following components are ordered and included in the vRealize Operations and Log Insight service:
-* VMware vRealize Operations (vROps) 8.6
-* VMware vRealize Log Insight (vRLI) 8.8
+* VMware vRealize Operations (vROps) 8.10
+* VMware vRealize Log Insight (vRLI) 8.10
 
 For more information about the design, requirements, and preconfigured management packs, see [Operations management architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-arch).
 
@@ -57,7 +57,63 @@ Review the following considerations before you delete the service:
 2. Select **Manage Appliance Settings**.
 3. Under the **General** tab, remove the Syslog Server configuration.
 
-### Removing the Syslog Server from the NSX Controller nodes
+### Removing the Syslog Server from the NSX Controller nodes (NSX-T only)
+{: #vrops_overview-remove-nsx-controller-nsx-t}
+
+1. Gather the NSX Manager's IP address, username, and password to use in the following commands.
+2. View the NSX-T Manager's current Syslog configuration by running the following command:
+
+   ```sh
+   curl -k -u '<USERNAME>:<PASSWORD>' -XGET https://<IPADDRESS>/api/v1/node/services/syslog/exporters
+   {
+     "_schema": "NodeSyslogExporterPropertiesListResult",
+     "_self": {
+       "href": "/node/services/syslog/exporters",
+       "rel": "self"
+     },
+     "result_count": 1,
+     "results": [
+       {
+         "_schema": "NodeSyslogExporterProperties",
+         "_self": {
+           "href": "/node/services/syslog/exporters/syslog1",
+           "rel": "self"
+         },
+         "exporter_name": "syslog1",
+         "level": "INFO",
+         "port": 514,
+         "protocol": "TCP",
+         "server": "10.243.152.6"
+       }
+     ]
+   }
+   ```
+   {: pre}
+
+3. Delete the NSX-T Manager's Syslog forwarder by running the following command:
+
+   ```sh
+   curl -k -u '<USERNAME>:<PASSWORD>' -XDELETE https://<IPADDRESS>/api/v1/node/services/syslog/exporters/syslog1
+   ```
+   {: pre}
+
+4. Verify the removed Syslog configuration by running the following command:
+
+   ```sh
+   curl -k -u '<USERNAME>:<PASSWORD>' -XGET https://<IPADDRESS>/api/v1/node/services/syslog/exporters
+   {
+     "_schema": "NodeSyslogExporterPropertiesListResult",
+     "_self": {
+       "href": "/node/services/syslog/exporters",
+       "rel": "self"
+     },
+     "result_count": 0,
+     "results": []
+   }
+   ```
+   {: pre}
+
+### Removing the Syslog Server from the NSX Controller nodes (NSX-V only)
 {: #vrops_overview-remove-nsx-controller}
 
 1. Log in to the VMware vSphere™ Web Client.

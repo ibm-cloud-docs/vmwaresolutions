@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-06-09"
+lastupdated: "2023-02-09"
 
 subcollection: vmwaresolutions
 
@@ -56,16 +56,16 @@ The following steps summarize this architecture pattern deployment.
 4. You can configure DNAT rules on T0 or T1 for ingress access, or SNAT for egress access from NSX-T overlay by using the IP addresses from the private portable subnet configured in the T0 uplinks. You can also configure load balancer VIPs, IPsec, or L2 VPN. Each of these are advertised as `/32` host IP addresses. You need to enable route advertisements on T1 Gateways so that T0 is aware of these IP addresses, and they must appear on T0s routing table.
 5. T0 Gateway uses proxy ARP on the uplink subnet for each `/32` IP address that is aware of (that is, which exists in its routing table). BCR can route ingress traffic only to these IP addresses. To check the routing table of T0, use the NSX-T GUI or login to NSX-T edge node and its T0 Service Router (SR) VRF.
 
-## Ingress private connectivity with edge services cluster
-{: #arch-pattern-nsx-t-private-connectivity-edge-services-cluster}
+## Ingress private connectivity with edge gateway cluster
+{: #arch-pattern-nsx-t-private-connectivity-edge-gateway-cluster}
 
-Private ingress connectivity to NSX-T overlay is enabled through NAT or though using overlay tunnels. You can use IP addresses from the private portable subnet that is provisioned for T0 private uplinks for these use cases. With Juniper vSRX running on the [edge services cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-edge-services-cluster), you can alternatively route portable IP addresses to the T0 HA VIP and use the portable IP subnets in the overlay.
+Private ingress connectivity to NSX-T overlay is enabled through NAT or though using overlay tunnels. You can use IP addresses from the private portable subnet that is provisioned for T0 private uplinks for these use cases. With Juniper vSRX running on the [edge gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-edge-gateway-cluster), you can alternatively route portable IP addresses to the T0 HA VIP and use the portable IP subnets in the overlay.
 
-![Private ingress access to {{site.data.keyword.cloud_notm}} NSX-T overlay with edge services cluster](../../images/arch-pattern-nsx-t-private-access-ingress-vsrx.svg "Private ingress access to {{site.data.keyword.cloud_notm}} NSX-T overlay with edge services cluster"){: caption="Figure 3. Private ingress access to {{site.data.keyword.cloud_notm}} NSX-T overlay with edge services cluster" caption-side="bottom"}
+![Private ingress access to {{site.data.keyword.cloud_notm}} NSX-T overlay with edge gateway cluster](../../images/arch-pattern-nsx-t-private-access-ingress-vsrx.svg "Private ingress access to {{site.data.keyword.cloud_notm}} NSX-T overlay with edge gateway cluster"){: caption="Figure 3. Private ingress access to {{site.data.keyword.cloud_notm}} NSX-T overlay with edge gateway cluster" caption-side="bottom"}
 
 The following list summarizes this architecture pattern deployment.
 
-1. The automation deploys an NSX-T T0 Gateway in the NSX-T workload edge cluster. The T0 gateway provides connectivity to {{site.data.keyword.cloud_notm}} private network. With edge services cluster, this uplink VLAN can be routed through the firewall, for example Juniper vSRX.
+1. The automation deploys an NSX-T T0 Gateway in the NSX-T workload edge cluster. The T0 gateway provides connectivity to {{site.data.keyword.cloud_notm}} private network. With edge gateway cluster, this uplink VLAN can be routed through the firewall, for example Juniper vSRX.
 2. The automation deploys an example NSX-T overlay topology with a T1 Gateway and a few example segments attached both to the T1 and T0 Gateways. You can customize the topology based on your needs.
 3. Workload T0 Gateway has a private uplink that is attached to the {{site.data.keyword.cloud_notm}} private VLAN with three IP addresses, two for uplinks in edge 1 and edge 2 and one for HA VIP. Interfaces are configured with the network mask of the private portable subnet.
 
@@ -79,16 +79,16 @@ The following list summarizes this architecture pattern deployment.
 ## Private connectivity through direct link
 {: #arch-pattern-nsx-t-private-connectivity-direct-link}
 
-Private connectivity for vCenter Server can use [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and tunneling. This solution is applicable for [NSX-T based vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. You can use Gateway Appliance or vCenter Server edge services cluster with Juniper vSRX or other device as part of the solution as an option.
+Private connectivity for vCenter Server can use [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and tunneling. This solution is applicable for [NSX-T based vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. You can use Gateway Appliance or vCenter Server edge gateway cluster with Juniper vSRX or other device as part of the solution as an option.
 
-The tunnel is established between NSX-T T0 and a customer router routable through {{site.data.keyword.dl_short}}. If vSRX or other third-party device is used in edge services cluster, you can terminate the tunnel in these devices as well. In this case, NSX-T T0 advertises routes in the vSRX (or other third-party device) through BGP or Static Routes.
+The tunnel is established between NSX-T T0 and a customer router routable through {{site.data.keyword.dl_short}}. If vSRX or other third-party device is used in edge gateway cluster, you can terminate the tunnel in these devices as well. In this case, NSX-T T0 advertises routes in the vSRX (or other third-party device) through BGP or Static Routes.
 
 For more information about this architecture pattern, see [Architecture pattern for using IPsec over {{site.data.keyword.dl_short}} with a vCenter Server with NSX-T instance](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-nsx-t-direct-link-ipsec).
 
 ## Private connectivity through transit gateway
 {: #arch-pattern-nsx-t-private-connectivity-transit-gateway}
 
-Hybrid cloud connectivity can be established by using [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-about). This solution is applicable for NSX-T based vCenter Server instance, which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. This pattern requires a [gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about#firewall) or [edge services cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-edge-services-cluster) with Juniper vSRX or other third-party device, which supports GRE. In this solution, GRE tunnel is established between this device and Transit GW Router in a specific Zone. NSX-T T0 advertises routes through vSRX (or other device) to Transit Gateway.
+Hybrid cloud connectivity can be established by using [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-about). This solution is applicable for NSX-T based vCenter Server instance, which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. This pattern requires a [gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about#firewall) or [edge gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-edge-gateway-cluster) with Juniper vSRX or other third-party device, which supports GRE. In this solution, GRE tunnel is established between this device and Transit GW Router in a specific Zone. NSX-T T0 advertises routes through vSRX (or other device) to Transit Gateway.
 
 For more information about this architecture pattern, see [Architecture pattern for using Transit Gateway with a vCenter Server with NSX-T instance](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-nsx-t-transit-gw).
 
