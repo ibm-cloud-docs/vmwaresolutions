@@ -1,6 +1,6 @@
 {
     "title": "VMware Solutions docs",
-    "lastupdated": "2023-02-20",
+    "lastupdated": "2023-03-08",
     "introduction": "VMware Solutions is an IBM Cloud offering that provides deployment and management of VMware virtualized environments. Learn how to make the most of your VMware Solutions experience by using the docs, API doc reference, solution architectures, and solution guides.",
     "section_devtools": {
       "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
