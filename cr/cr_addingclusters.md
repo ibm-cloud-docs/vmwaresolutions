@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-17"
+lastupdated: "2023-03-10"
 
 keywords: cyber recovery add clusters, add cluster, cyber recovery cluster
 
@@ -414,10 +414,10 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
       * For users who are not Business Partners, select one of the following options:
          * If you want new licenses to be purchased on your behalf, select **Include with purchase** for the component.
 
-Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
-{: important}
+   Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+   {: important}
 
-The **Use existing license** option is available only if you are using a BYOL vSphere or vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
+   The **Use existing license** option is available only if you are using a BYOL vSphere or vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
 
 6. For edge gateway clusters, complete the following configuration.
    1. For data center location, click **Edit** and select the geography, data center, and pod to host the instance or cluster.
@@ -425,10 +425,10 @@ The **Use existing license** option is available only if you are using a BYOL vS
    3. Select the CPU model, RAM size, and the number of bare metal servers.
    4. For network interface settings, enter the hostname prefix, and then select the uplink speed and network type.
 7. On the **Summary** pane, verify the cluster configuration before you add the cluster.
-    1. Review the settings for the cluster.
-    2. Review the estimated price of the cluster. Click **Pricing details** to generate a PDF summary. To save or print your order summary, click **Print** or **Download** on the upper right of the PDF window.
-    3. Click the link or links of the terms that apply to your order, and confirm that you agree with these terms before you add the cluster.
-    4. Click **Create**.
+   1. Review the settings for the cluster.
+   2. Review the estimated price of the cluster. Click **Pricing details** to generate a PDF summary. To save or print your order summary, click **Print** or **Download** on the upper right of the PDF window.
+   3. Click the link or links of the terms that apply to your order, and confirm that you agree with these terms before you add the cluster.
+   4. Click **Create**.
 
 ## Results after you add clusters to Cyber Recovery instances
 {: #cr_addingclusters-results}

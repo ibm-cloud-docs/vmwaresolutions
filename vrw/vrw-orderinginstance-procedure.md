@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-17"
+lastupdated: "2023-03-10"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -21,12 +21,12 @@ subcollection: vmwaresolutions
 2. On the **VMware Regulated Workloads** page, select a deployment topology according to your needs.
 3. Review the service prerequisites and confirm that you ordered the mandatory services listed.
 4. Specify the instance configuration:
-     * If you want to create a new configuration, select **New configuration**.
-     * If you want to update a saved configuration or create a new configuration based on a saved one, select a saved configuration.
+   * If you want to create a new configuration, select **New configuration**.
+   * If you want to update a saved configuration or create a new configuration based on a saved one, select a saved configuration.
 5. Use the IBM-provided licenses for VMware components by selecting **Include with purchase**. For NSX, specify the license edition.
 
-Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
-{: important}
+   Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+   {: important}
 
 6. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the clusters.
 7. (Single-zone VMware® instance only) Specify the primary cluster settings.
@@ -36,7 +36,6 @@ Bring Your Own License (BYOL) is no longer supported except for migrations or up
    4. Under **vSAN configuration**, select the disk type and size for the vSAN™ capacity disks, the number of vSAN capacity disks, and the vSAN licensing option.
    5. Review the estimated resources available per cluster.
    6. Review the networking type and select the uplink speed.
-
 8. (Multizone VMware instance only) Specify the witness cluster settings.
    1. Specify the witness cluster name.
    2. Select the CPU model, RAM size, and the number of bare metal servers.
@@ -44,7 +43,6 @@ Bring Your Own License (BYOL) is no longer supported except for migrations or up
    4. Review the estimated resources available per cluster.
    5. Review the networking configuration.
    6. Select the uplink speed. The 25 Gb option is available for specific data centers only.
-
 9. (Multizone VMware instance only) Specify the management cluster settings.
    1. Specify the cluster name.
    2. Select the management cluster capacity. For the **Customizable** capacity, select the CPU model and RAM size.
@@ -52,7 +50,6 @@ Bring Your Own License (BYOL) is no longer supported except for migrations or up
    4. Select the disk type and size for the vSAN capacity disks, the number of vSAN capacity disks, and complete the vSAN license configuration. The available options depend on your deployment topology and capacity configurations. For small capacity instances, disk type and size for the vSAN capacity disks and the number of vSAN capacity disks are predefined.
    5. Review the estimated resources available per cluster.
    6. Review the networking type and select the uplink speed.
-
 10. Specify the settings for the workload cluster. For single-zone VMware instances with a customizable consolidated cluster, optionally select the **Include a separate cluster for workloads** checkbox and complete the settings.
     1. Specify the cluster name.
     2. Select the workload capacity. For the **Customizable** capacity, select the CPU model and RAM size.
@@ -61,12 +58,10 @@ Bring Your Own License (BYOL) is no longer supported except for migrations or up
     5. Select the disk type and size for the vSAN capacity disks, and the number of vSAN capacity disks. For single-zone VMware virtual data centers, also select the vSAN licensing option.
     6. Review the estimated resources available per cluster.
     7. Review the networking type and select the uplink speed.
-
 11. Choose the firewall appliance for your instance and follow the steps, depending on your selection:
     1. For **Edge gateway cluster with Juniper vSRX**, **Edge gateway cluster with FortiGate Virtual Appliance**, and **Bring your own gateway appliance**, specify the [edge gateway cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-edge#vrw-orderinginstance-edge-cluster-name), the CPU model, the RAM size, the uplink speed, and the networking type.
     2. For **Edge gateway cluster with Juniper vSRX** and **Edge gateway cluster with FortiGate Virtual Appliance**, you must also specify the corresponding service settings in a later step.
     3. For **FortiGate Security Appliance**, you must order the **FortiGate Security Appliance 10 Gbps** service from the [IBM Cloud catalog](https://cloud.ibm.com/catalog/infrastructure/fortigate-security-appliance-10gb). Confirm that you ordered the service and continue with the following steps.
-
 12. Under **Network interface**, enter the hostname prefix for the regulated workload and the root domain name. If you want to customize the hostnames prefix individually, select **Configure hostnames individually**.
 13. Under **Resource details**, enter the instance name and select a resource group.
 14. Under **Included services**, review the add-on services to be deployed into the instance. If a service requires configuration, complete the service-specific settings by clicking **Edit** on the service card. Then, complete your edits and click **Save**. For more information about specific settings for a service, see the corresponding topic for ordering the service.
