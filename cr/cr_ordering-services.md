@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-28"
+lastupdated: "2023-03-10"
 
 keywords: Cyber Recovery add service, add service Cyber Recovery, Cyber Recovery order service, order service Cyber Recovery
 
@@ -33,7 +33,7 @@ The following table shows the services that are available to Cyber Recovery inst
 | [VMware HCX™](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version |
 | [Juniper® vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (21.4R2) |
 | [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.11 |
-| [Veeam®](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 11 |
+| [Veeam®](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 11a (11.0.1) |
 | [vRealize Operations™ and Log Insight™](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.10 and vRLI 8.10 |
 | [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.7u1 |
 {: caption="Table 1. Available services for Cyber Recovery instances" caption-side="bottom"}
@@ -67,7 +67,7 @@ For certain services, the system completes a capacity check on the targeted clus
 
 During deployment, if the capacity check fails, the service is not installed and the service state is set to **Capacity Validation Failed** on the console. In addition, a console message with more details is displayed and you are notified by email. The message displays the expected capacity for all services that do not meet the requirements.
 
-To install the service, you must increase the capacity in your cluster either by adding more VMware ESXi™ servers or by freeing up RAM, CPU, or disk space. After that, you can add the service or services again. To remove the existing service in the **Capacity Validation Failed** state, click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete") next to it.
+To install the service, you must increase the capacity in your cluster either by adding more VMware ESXi™ servers or by freeing up RAM, CPU, or disk space. After that, you can add the service or services again. To remove the existing service that is in a **Capacity Validation Failed** state, click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete") next to it.
 
 The following table provides the resource requirements for the services for which a capacity check is completed.
 

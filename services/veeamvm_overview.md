@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-10-26"
+lastupdated: "2023-03-10"
 
 keywords: Veeam, Veeam 11, Veeam install, tech specs Veeam, Veeam overview
 
@@ -18,12 +18,14 @@ subcollection: vmwaresolutions
 # Veeam on IBM Cloud overview
 {: #veeamvm_overview}
 
-Veeam® on IBM Cloud seamlessly integrates directly with your VMware® hypervisors to help your enterprise achieve high availability. This service provides recovery points and time objectives for your applications and data. The recovery points and time objectives can be provided in less than 15 minutes after configuration is completed. By using this service, you control both the backup and restore of all virtual machines (VMs) for your infrastructure directly from the Veeam console. Veeam on IBM Cloud is a non-IBM product that is offered under terms and conditions from Veeam, not IBM.
+Veeam® on IBM Cloud seamlessly integrates directly with your VMware® hypervisors to help your enterprise achieve high availability. This service provides recovery points and time objectives for your applications and data. The recovery points and time objectives can be provided in less than 15 minutes after configuration is completed. 
+
+By using this service, you control both the backup and restore of all virtual machines (VMs) for your infrastructure directly from the Veeam console. Veeam on IBM Cloud is a non-IBM product that is offered under terms and conditions from Veeam, not IBM.
 {: shortdesc}
 
 {{site.data.content.para-promotion-services}}
 
-The current Veeam service that is installed is the new Veeam Availability Suite™ 11 known as Veeam 11.
+The Veeam service that is installed is Veeam Availability Suite™ 11 (known as Veeam 11). The Veeam version available for deployment is Veeam 11a (11.0.1).
 {: note}
 
 ## Veeam on a bare metal server
@@ -86,7 +88,7 @@ The following components are included if you deploy Veeam 11 on a bare metal ser
 * 10 Gbps private redundant network uplink
 * 2 x 1 TB, RAID 1, OS drive
 * 2 x 1 TB, RAID 1, database config drive
-* User selectable size backup data drive
+* Customizable size for backup data drive
 
 ### Storage for backups for Veeam
 {: #veeamvm_overview-specs-storage}
@@ -178,7 +180,7 @@ Review the following considerations before you delete the service:
 
 * [Ordering Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering)
 * [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
-* [Ordering Veeam standalone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
+* [Ordering Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
 * [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring IBM Cloud Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
