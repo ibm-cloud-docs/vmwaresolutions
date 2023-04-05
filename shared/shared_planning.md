@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-01-31"
+lastupdated: "2023-04-05"
 
 keywords: planning VMware Solutions Shared, data center, VMware Solutions Shared data centers
 
@@ -70,12 +70,12 @@ Service charges are incurred only if you choose to use the service.
 
 Review [VMware Cloud Director 10.4 Configuration Limits](https://configmax.esp.vmware.com/guest?vmwareproduct=%20VMware%20Cloud%20Director&release=VMware%20Cloud%20Director%2010.4&categories=35-0){: external} to ensure that you understand configuration limits in VMware Cloud Director.
 
-### 5,000 vApps per Cloud Director organization
+### 10,000 vApps per Cloud Director organization
 {: #shared_ordering-cloud-dir-limits-vapp}
 
-One of the configuration limits in VMware Cloud Director is a maximum of 5,000 vApps per Cloud Director organization. In VMware Shared, this means you cannot have more than 5,000 vApps in a single account in a particular site location since each site location is the same Cloud Director instance. For more information about sites and VMware Cloud Director, see [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview).
+One of the configuration limits in VMware Cloud Director is a maximum of 10,000 vApps per Cloud Director organization. In VMware Shared, this means you cannot have more than 10,000 vApps in a single account in a particular site location since each site location is the same Cloud Director instance. For more information about sites and VMware Cloud Director, see [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview).
 
-If you need more than 5,000 vApps in a single account, consider the following design options.
+If you need more than 10,000 vApps in a single account, consider the following design options.
 
 * Increase the number of virtual machines in each vApp.
 * Use a separate account in that region to host additional vApps.
