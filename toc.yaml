@@ -59,6 +59,7 @@ toc:
           label: VMware as a Service
           topics:
           - include: ../vmware-service/common/vmware-aas-overview.md
+          - include: ../vmware-service/common/release-notes.md
           - topicgroup:
               label: Managing instances
               topics:
