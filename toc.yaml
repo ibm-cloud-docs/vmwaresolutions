@@ -28,7 +28,6 @@ toc:
         navtitle: Under the hood
       - vmonic/inst_comp_chart.md
       - topic: vmonic/release-notes.md
-        navtitle: Release notes
       - vmonic/additional_resources.md
 
   - navgroup:
