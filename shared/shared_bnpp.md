@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2022
 
-lastupdated: "2023-04-13"
+lastupdated: "2022-12-19"
 
 keywords: troubleshooting VMware Solutions Shared, data center, VMware Solutions Shared data centers, Business Partners
 
@@ -33,28 +33,6 @@ Business Partner users cannot use one virtual data center to reset the VMware Cl
 For Business Partner users, all virtual data centers in the same data center number group have the same password. Groups with the same data center number can reset the VMware Cloud Director account password from any virtual data center in the number group.
 
 For example, ``PAR04- windows`` and ``PAR04- linux`` are in a group with the same data center number. When you reset the VMware Cloud Director password in either, the password is reset for any virtual data center in ``PAR04``. The password is not reset for the ``PAR05`` or ``PAR06`` data center number groups.
-
-## Modifying roles used for IAM integration
-{: #shared_bnpp-iam}
-
-Business Partner users cannot modify a role in VMware Cloud Director used for the IAM integration.
-
-When the VMWare Cloud Director version is updated, the new version can introduce new dependencies between rights. If the affected right is used by one of the roles created in VMware Cloud Director for the integration with IAM, you cannot modify that role in VMware Cloud Director.
-
-An error similar to the following displays.
-``Required implied right <righ name 1> has not been selected for selected right <right name 2>``
-
-This occurs because the roles were created before the update of VMware Cloud Director and the roles do not have the latest information about their rights. To fix this problem you can follow one of the following options.
-
-* Reset the OpenID Connect configuration. For more information, see [Deleting the OpenID Connect configuration in your VMware Cloud Director Organization](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-delete-oidc).
-* Create a copy of the affected role and add the missing right. This option helps you to keep all possible changes made to one specific role used for OpenID Connect.
-
- 1. Select the role and click **Clone**.
- 2. Before cloning, select the **Modify selected rights** toggle button. The rights error displays.
- 3. Find the right that you need to update, uncheck it, and check it again. The missing right is now added.
- 4. Click **Save**
- 5. Make note of the name of the original role, then delete the role. If you assigned this role to users that were created manually, you must reassign the users to the cloned role before you can delete the original one.
- 6. Rename the cloned role with the name of the original role.
 
 ## Related links
 {: #shared_bnpp-related}
