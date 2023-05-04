@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-12-28"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -36,8 +36,8 @@ When you scan hosts, virtual machines (VMs), and virtual appliances (VAs), you e
 You can scan VMs and virtual appliances in the vSphere inventory against attached baselines and baseline groups. The VMs and appliances that you select are scanned against the attached baselines, depending on the options that you select. All child objects are scanned, so the larger the virtual infrastructure and the higher up in the object hierarchy that you initiate the scan, the longer the scan takes and the more accurate the compliance view is.
 
 1. Using the vSphere Web Client, select **Home** > **VMs and Templates**.
-2. Right-click a _virtual machine_, _virtual appliance_, or a _folder of virtual machines and appliances_ and click **Scan for Updates**.
-3. Select the types of updates to scan for. The options are _Virtual Appliance upgrades, VM Hardware upgrades_, and _VMware Tools upgrades_.
+2. Right-click a virtual machine, virtual appliance, or a folder of virtual machines and appliances and click **Scan for Updates**.
+3. Select the types of updates to scan for. The options are Virtual Appliance upgrades, VM Hardware upgrades, and VMware Tools upgrades.
 4. Click **Scan**.
 
 ## Manually initiating a scan of a container object
@@ -45,8 +45,8 @@ You can scan VMs and virtual appliances in the vSphere inventory against attache
 
 Start a simultaneous scan of hosts, VMs, and virtual appliances, by scanning a container object that is a data center or a data center folder.
 1. Using the vSphere Web Client, select **Home** > **VMs and Templates**.
-2. Right-click a _datacenter_ or _datacenter folder_ and click **Scan for Updates**.
-3. Select the types of updates to scan for. The options are _Virtual Appliance upgrades, VM Hardware upgrades_, and _VMware Tools upgrades_.
+2. Right-click a datacenter or datacenter folder and click **Scan for Updates**.
+3. Select the types of updates to scan for. The options are Virtual Appliance upgrades, VM Hardware upgrades, and VMware Tools upgrades.
 4. Click **Scan**.
 
 ## Scheduling a scan

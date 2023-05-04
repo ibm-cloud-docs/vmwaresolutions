@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-02-17"
+lastupdated: "2023-04-24"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 VMware vCenter Server® instances are deployed with a consolidated cluster for VMware vSphere® 7 in which all the VMware® management components and user workloads run.
 
-Optionally, you can order an additional workload cluster and an edge gateway cluster. Select the **Include a separate, additional workload cluster** checkbox to deploy a workload cluster.
+Optionally, you can order a separate workload cluster and a gateway cluster. To deploy a workload cluster, toggle the **Deploy separate workload cluster** switch on.
 
 ## Cluster name
 {: #vc_orderinginstance-consoldworkldcluster-cluster-name}
@@ -104,6 +104,28 @@ Storage settings are based on your selection of bare metal server configuration 
 
 For deployed instances, you can add NFS storage shares to an existing NFS or vSAN™ cluster. For more information, see [Adding NFS storage to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs).
 
+### NFS storage
+{: #vc_orderinginstance-nfs-storage}
+
+When you select **NFS storage**, you can add file-level shared storage for your instance where all shares use the same settings or you can specify different configuration settings for each file share. The number of file shares must be in the range 1 - 100.
+
+Specify the following NFS options:
+* **Configure shares individually** - Toggle this switch on to specify different configuration settings for each file share.
+* **Number of shares** - When you use the same configuration setting for each file share, specify the number of file shares for the NFS shared storage that you want to add.
+* **Size (GB)** - Select the capacity that meets your shared storage needs.
+* **Performance** - Select the IOPS (input/output operations per second) per GB based on your workload requirements.
+* **Add shared storage** - Select to add individual file shares that use different configuration settings.
+
+Choose performance level options according to your needs.
+
+| Option       | Details       |
+|:------------ |:------------- |
+| 0.25 IOPS/GB | This option is designed for workloads that are not used often. For example, vaulted data, hosting large databases with legacy data, or virtual disk images of virtual memory system as backup. |
+| 2 IOPS/GB | This option is designed for most general-purpose workloads. For example, hosting small databases, backing up web applications, or virtual machine disk images for a hypervisor. |
+| 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. For example, transactional databases. |
+| 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. For example, high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
+{: caption="Table 4. NFS performance level options" caption-side="bottom"}
+
 ### vSAN storage
 {: #vc_orderinginstance-vsan-storage}
 
@@ -147,34 +169,12 @@ The amount of storage reduction from deduplication and compression depends on ma
 #### vSAN license
 {: #vc_orderinginstance-vsan-storage-license}
 
-Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**.
+Use the IBM-provided VMware license for the vSAN component, which is included with purchase.
 
 Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
 {: important}
 
-If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This statement is also true for any initial or additional clusters in the instance for which you select vSAN. The first time you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
-
-### NFS storage
-{: #vc_orderinginstance-nfs-storage}
-
-When you select **NFS storage**, you can add file-level shared storage for your instance where all shares use the same settings or you can specify different configuration settings for each file share. The number of file shares must be in the range 1 - 100.
-
-Specify the following NFS options:
-* **Configure shares individually** - Select to specify different configuration settings for each file share.
-* **Number of shares** - When you use the same configuration setting for each file share, specify the number of file shares for the NFS shared storage that you want to add.
-* **Size (GB)** - Select the capacity that meets your shared storage needs.
-* **Performance** - Select the IOPS (input/output operations per second) per GB based on your workload requirements.
-* **Add shared storage** - Select to add individual file shares that use different configuration settings.
-
-Choose performance level options according to your needs.
-
-| Option       | Details       |
-|:------------ |:------------- |
-| 0.25 IOPS/GB | This option is designed for workloads that are not used often. For example, vaulted data, hosting large databases with legacy data, or virtual disk images of virtual memory system as backup. |
-| 2 IOPS/GB | This option is designed for most general-purpose workloads. For example, hosting small databases, backing up web applications, or virtual machine disk images for a hypervisor. |
-| 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. For example, transactional databases. |
-| 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. For example, high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
-{: caption="Table 4. NFS performance level options" caption-side="bottom"}
+If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This statement is also true for any initial or extra clusters in the instance for which you select vSAN. The first time, you must provide the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license you initially chose will be reused.
 
 ## Networking type
 {: #vc_orderinginstance-public-private-network}
@@ -205,6 +205,7 @@ Select **Public and private network** or **Private network only**.
 | NA East | WDC07 | 01 |
 | NA South | DAL10 | 03 |
 | NA South | DAL12 | 01 |
+| NA South | DAL13 | 02 |
 {: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 {: #simpletable-uplink-speed-locations}
 
@@ -257,5 +258,5 @@ For the workload cluster network settings, select the **Reuse VLANs from the con
 ## Related links
 {: #vc_orderinginstance-consoldworkldcluster-related}
 
-* [Edge gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-edge-gateway-cluster)
+* [Gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-edge-gateway-cluster)
 * [Procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)

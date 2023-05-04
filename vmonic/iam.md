@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-24"
+lastupdated: "2023-03-27"
 
 keywords: IAM user, user role, user permission, IAM access for vmwaresolutions, permissions for vmwaresolutions, identity and access management for vmwaresolutions, roles for vmwaresolutions, actions for vmwaresolutions, assigning access for vmwaresolutions
 
@@ -38,7 +38,7 @@ Review the following information, which outlines the actions that each role allo
 
 Platform management roles enable users to complete tasks on service resources at the platform level. For example, assign user access to the service, create or delete service IDs, create instances, and bind instances to applications.
 
-For the option to use a smaller set of permissions, use the following roles.
+To use a smaller set of permissions, use the following roles:
 
 * Reader in place of Viewer or Operator
 * Writer in place of Editor
@@ -90,11 +90,11 @@ You can choose from the following options when you assign resource access.
    * Click **All resources** to grant access to all service resources.
    * Click **Specific resources** and select the attribute type, operator, and value.
 6. Select any combination of roles and click **Review** to review all of your selections.
-7. Optionally, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") to make any changes to your selections.
-8. Click **Add**, and then, **Assign**.
+7. Optionally, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") to update any of your selections.
+8. Click **Add** and click **Assign**.
 
 To grant user permission to create new instances for VMware Shared, you must also assign Resource Group access policies. For more information, see [Giving access to resources in resource groups](/docs/account?topic=account-rgs_manage_access) and [Ordering virtual data center instances](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering).
-{: note}
+{: important}
 
 ## Managing access for users
 {: #iam-users}
@@ -107,17 +107,16 @@ You can also manage the access for existing users, including modifying existing 
 {: #iam-assign-access-console}
 {: ui}
 
-There are two common ways to assign access in the console:
+You can assign access in the console in one of the following ways:
 
-* Access policies per user. You can manage access policies per user from the **Manage** > **Access (IAM)** > **Users** page in the console. For information about the steps to assign IAM access, see [Managing access to resources](https://cloud.ibm.com/docs/account?topic=account-assign-access-resources&interface=ui#access-resources-console).
-* Access groups. Access groups are used to streamline access management by assigning access to a group once, then you can add or remove users as needed from the group to control their access. You manage access groups and their access from the **Manage** > **Access (IAM)** > **Access groups** page in the console. For more information, see [Assigning access to a group in the console](/docs/account?topic=account-groups&interface=ui#access_ag).
+* Access policies per user. You can manage access policies per user from the **Manage** > **Access (IAM)** > **Users** page in the console. For more information about the steps to assign IAM access, see [Managing access to resources](https://cloud.ibm.com/docs/account?topic=account-assign-access-resources&interface=ui#access-resources-console).
+* Access groups. Access groups are used to streamline access management by assigning access to a group once. After that, you can add or remove users as needed from the group to control their access. You manage access groups and their access from the **Manage** > **Access (IAM)** > **Access groups** page in the console. For more information, see [Assigning access to a group in the console](/docs/account?topic=account-groups&interface=ui#access_ag).
 
 ## Assigning access to VMware Solutions by using the API
 {: #iam-assign-access-api}
 {: api}
 
 For step-by-step instructions for assigning, removing, and reviewing access, see [Assigning access to resources by using the API](/docs/account?topic=account-assign-access-resources&interface=api) or the [Create a policy API docs](/apidocs/iam-policy-management#create-policy). Role cloud resource names (CRN) in the following table are used to assign access with the API.
-
 
 | Role name | Role description | Role CRN |
 |---------------|-----------------|-----------------|

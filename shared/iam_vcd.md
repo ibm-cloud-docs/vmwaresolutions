@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-01-11"
+lastupdated: "2023-04-21"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-02-09"
+lastupdated: "2023-04-28"
 
 keywords: planning vmware regulated workloads, data center vmware regulated workloads, vmware regulated workloads data centers
 
@@ -19,10 +19,10 @@ subcollection: vmwaresolutions
 
 Review the following requirements before you order your VMware® Regulated Workloads instance. Plan your instance based on the {{site.data.keyword.cloud}} data center location, your capacity requirements, and services requirements.
 
-## IBM Cloud account requirements
+## Account requirements
 {: #vrw-planning-account-req}
 
-The {{site.data.keyword.cloud_notm}} account that you are using must meet certain requirements. For more information, see [Requirements for the {{site.data.keyword.cloud_notm}} account](/docs/vmwaresolutions?topic=vmwaresolutions-cloud-infra-acct-req).
+The account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
 
 ## IBM Cloud data center availability
 {: #vrw-planning-dc-availability}
@@ -96,10 +96,10 @@ The following services are required for VMware Regulated Workloads:
 * [Direct Link Dedicated](https://cloud.ibm.com/interconnectivity/direct-link)
 
 The following services are included with VMware Regulated Workloads:
-* [Veeam 11](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam Backup and Replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
 * [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
-* [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview). This service is included when you choose **Edge gateway cluster with Juniper vSRX**.
+* [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview). This service is included when you choose **Gateway cluster with Juniper vSRX**.
 * [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 
 The following services are optional for VMware Regulated Workloads and are available to single-zone VMware instances only:

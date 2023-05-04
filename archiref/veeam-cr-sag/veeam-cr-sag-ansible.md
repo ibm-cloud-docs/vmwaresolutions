@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2023
 
-lastupdated: "2022-06-07"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -162,7 +162,6 @@ The use of the `vault_pass` file is an optional task, which creates and protects
 7. In the editor, enter the password:
 
    ```text
-   ---
    ansible_password: <password>
    ```
    {: codeblock}
@@ -178,7 +177,6 @@ The use of the `vault_pass` file is an optional task, which creates and protects
 11. In the editor, enter the following command, where `<lhbr_password>` and `<sa_ansible_password>` are the passwords that are defined in the planning stage.
 
     ```text
-    ---
     vault_lhbr_password: <lhbr_password>
     vault_sa_ansible_password: <sa_ansible_password>
     ```

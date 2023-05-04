@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-02-17"
+lastupdated: "2023-04-03"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -32,11 +32,10 @@ Small differences exist between NSX-T Data Center and Data Center SP editions. F
 
 For Business Partner users, the vCenter Server license (Standard edition), the vSphere license (Enterprise Plus edition), and the VMware NSX® license are included and purchased on your behalf. However, you must specify the edition for the NSX license.
 
-For users who are not Business Partners, use the IBM-provided VMware licenses for these components by selecting **Include with purchase**.
+For users who are not Business Partners, use the IBM-provided VMware licenses for these components, which are included with purchase.
 
 Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
 {: important}
-
 
 ## Related links
 {: #vc_orderinginstance-licensing-related}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2023
 
-lastupdated: "2022-12-29"
+lastupdated: "2023-04-28"
 
 subcollection: vmwaresolutions
 
@@ -49,7 +49,7 @@ It is possible to manually add and allow the existing {{site.data.keyword.cloud_
 
 vCenter Server offers an optional service for Veeam. The Veeam service seamlessly integrates directly with your VMware® hypervisors and you control both the backup and restore of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
 
-The current Veeam version that is installed by automation is Veeam v11, but you might have an older version in your NSX-V based deployment. You can use Veeam's replication capabilities during the migration.  
+The current Veeam version that is installed by automation is Veeam Backup and Replication 12, but you might have an older version in your NSX-V based deployment. You can use Veeam's replication capabilities during the migration.  
 
 For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices) and [Veeam technical documentation](https://www.veeam.com/documentation-guides-datasheets.html?ad=in-text-link){: external}.
 

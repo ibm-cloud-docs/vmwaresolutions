@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-04-22"
+lastupdated: "2023-04-29"
 
 keywords: troubleshooting, bypassing signing and acceptance, bypassing verification issue
 
@@ -27,5 +27,5 @@ When you add a host, you see the following event in VMware vCenter Server®:
 This event occurs because VMware® is installing the High Availability agent by intended bypassing acceptance level verification.
 {: tsCauses}
 
-This message does not indicate a problem and it can be ignored.
+This message does not indicate a problem and can be ignored.
 {: tsResolve}

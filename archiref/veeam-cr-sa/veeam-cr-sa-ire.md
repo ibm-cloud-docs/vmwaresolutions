@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-04-17"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Isolated recovery environment solution architecture
 {: #veeam-cr-sa-ire}
 
-The isolated recovery environment solution architecture uses a VMware vCenter Server® instance with the Veeam® service, edge gateway cluster, and Juniper® vSRX options. They create an air gapped cyber-recovery environment separate from the production environment. This isolated recovery environment is managed and accessed by using a separate cyber-recovery team. The Veeam service is enhanced with a Veeam Linux® hardened repository for immutable storage.
+The isolated recovery environment solution architecture uses a VMware vCenter Server® instance with the Veeam® service, gateway cluster, and Juniper® vSRX options. They create an air gapped cyber-recovery environment separate from the production environment. This isolated recovery environment is managed and accessed by using a separate cyber-recovery team. The Veeam service is enhanced with a Veeam Linux® hardened repository for immutable storage.
 
 The solution architecture is suitable for clients who want to move a copy of critical data away from the production environment, backup systems, and personnel to an environment that requires separate security credentials. The solution architecture does not preclude any of the vCenter Server options, such as Caveonix, Entrust, and vRealize Operations™.
 
@@ -61,9 +61,9 @@ The vCenter Server instance consists of a consolidated cluster with a minimum of
 
 * vCenter server appliance - The VCSA manages the vSphere resources and provides a single management plane for vSphere.
 * NSX-T™ manager cluster - The NSX-T manager cluster consists of three manager appliances that provide the management and control plane for the virtualized network, also known as the overlay network.
-* Active Directory™ and domain name service - The ADDNS VMs are two Microsoft® Windows 2019 VMs configured for Active Directory and DNS. This option is selected in the order process by selecting the "Two highly available dedicated Windows Server VMs on the management cluster" option.
+* Active Directory™ and domain name service - The ADDNS VMs are two Microsoft® Windows 2019 VMs configured for Active Directory and DNS. This option is selected in the order process by selecting the "Two highly available dedicated Windows Server VMs on the management cluster" option. By selecting this option, you must provide your own licenses. 
 * Veeam service instance - For more information, see [Veeam components](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-components).
-* Edge gateway cluster - An edge gateway cluster consists of two vSphere ESXi hosts provisioned on {{site.data.keyword.cloud_notm}} gateways. It provides the resources to run network edge gateway that include firewalls and the ability to become the default gateways for {{site.data.keyword.cloud_notm}} subnets that are associated with them. In this solution architecture, the cluster hosts the Juniper vSRX firewalls that run as virtual appliances. While Juniper vSRX appliances can be run directly on the consolidated cluster, it cannot act as the default gateways to the {{site.data.keyword.cloud_notm}} subnets, as this requires the {{site.data.keyword.cloud_notm}} gateway appliance
+* Gateway cluster - A gateway cluster consists of two vSphere ESXi hosts provisioned on {{site.data.keyword.cloud_notm}} gateways. It provides the resources to run the network edge gateway. These resources include firewalls and the ability to become the default gateways for {{site.data.keyword.cloud_notm}} subnets that are associated with them. In this solution architecture, the cluster hosts the Juniper vSRX firewalls that run as virtual appliances. While Juniper vSRX appliances can be run directly on the consolidated cluster, it cannot act as the default gateways to the {{site.data.keyword.cloud_notm}} subnets, as this requires the {{site.data.keyword.cloud_notm}} gateway appliance.
 
 The solution architecture adds the following components to the vCenter Server instance:
 
@@ -73,7 +73,7 @@ The solution architecture adds the following components to the vCenter Server in
 
 The vCenter Server instance uses the following {{site.data.keyword.cloud_notm}} services:
 
-* NFS service - If VMware vSAN is not specified for the vCenter Server instance, then {{site.data.keyword.cloud_notm}} file storage (NFS) is used or the VMware datastores. The {{site.data.keyword.cloud_notm}} file storage (NFS) is in the {{site.data.keyword.cloud_notm}} services network in the data center. Customers don't have direct access to the underlying storage infrastructure and consume file shares.
+* NFS service - If VMware vSAN is not specified for the vCenter Server instance, then {{site.data.keyword.cloud_notm}} file storage (NFS) is used or the VMware datastores. The {{site.data.keyword.cloud_notm}} file storage (NFS) is in the {{site.data.keyword.cloud_notm}} services network in the data center. Customers don't have direct access to the underlying storage infrastructure and use file shares.
 * NTP service - In this architecture, the isolated recovery environment uses the ADDNS servers as a time source. The ADDNS servers use the {{site.data.keyword.cloud_notm}} NTP service for their time reference.
 * DNS service - In this architecture, the isolated recovery environment uses the ADDNS servers for name resolution. The ADDNS servers use the {{site.data.keyword.cloud_notm}} DNS service for requests that they cannot resolve directly.
 
@@ -108,4 +108,4 @@ The internet repositories and services are resources that are used by the soluti
 * [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup)
 * [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview)
 * [Veeam on bare metal server introduction](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-bms-archi-intro)
-* [Veeam v11 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)

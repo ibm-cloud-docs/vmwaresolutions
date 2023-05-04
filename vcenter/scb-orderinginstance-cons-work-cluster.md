@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-02-17"
+lastupdated: "2023-04-24"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -21,7 +21,7 @@ New deployments of Security and Compliance Readiness Bundle instances are no lon
 
 Specify the following settings for the consolidated cluster.
 
-You can select to include a separate, extra workload cluster in the same way as you order the consolidated cluster.
+You can select to include a separate workload cluster in the same way as you order the consolidated cluster.
 
 ## Cluster name
 {: #scb-orderinginstance-consoli-cluster}
@@ -66,6 +66,28 @@ Storage settings are based on your selection of the storage type.
 
 For deployed instances, you can add NFS storage shares to an existing NFS or vSAN cluster. For more information, see [Adding NFS storage to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs).
 
+### NFS storage
+{: #scb-orderinginstance-consoli-nfs}
+
+When you select NFS storage, you can add file-level shared storage for your instance where all shares use the same settings or you can specify different configuration settings for each file share. The number of file shares must be in the range 1 - 100.
+
+Specify the following NFS options:
+* **Configure shares individually** - Toggle this switch on to specify different configuration settings for each file share.
+* **Number of shares** - When you use the same configuration setting for each file share, specify the number of file shares for the NFS shared storage that you want to add.
+* **Size (GB)** - Select the capacity that meets your shared storage needs.
+* **Performance** - Select the IOPS (input/output operations per second) per GB based on your workload requirements.
+* **Add shared storage** - Select to add individual file shares that use different configuration settings.
+
+Choose performance level options according to your needs.
+
+| Option        | Details       |
+|:------------- |:------------- |
+| 0.25 IOPS/GB | This option is designed for workloads that are not used often. Example applications include vaulted data, hosting large databases with legacy data, or virtual disk images of virtual memory system as backup. |
+| 2 IOPS/GB | This option is designed for most general-purpose workloads. Example applications include hosting small databases, backing up web applications, or virtual machine disk images for a hypervisor. |
+| 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. Example applications include transactional databases. |
+| 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. Example applications include high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
+{: caption="Table 1. NFS performance level options" caption-side="bottom"}
+
 ### vSAN storage
 {: #scb-orderinginstance-consoli-vsan}
 
@@ -109,28 +131,6 @@ Bring Your Own License (BYOL) is no longer supported except for migrations or up
 
 If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This is also true if any cluster (initial or additional) in the instance has vSAN selected to be deployed on it. The first time you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
 
-### NFS storage
-{: #scb-orderinginstance-consoli-nfs}
-
-When you select NFS storage, you can add file-level shared storage for your instance where all shares use the same settings or you can specify different configuration settings for each file share. The number of file shares must be in the range 1 - 100.
-
-Specify the following NFS options:
-* **Configure shares individually** - Select to specify different configuration settings for each file share.
-* **Number of shares** - When you use the same configuration setting for each file share, specify the number of file shares for the NFS shared storage that you want to add.
-* **Size (GB)** - Select the capacity that meets your shared storage needs.
-* **Performance** - Select the IOPS (input/output operations per second) per GB based on your workload requirements.
-* **Add shared storage** - Select to add individual file shares that use different configuration settings.
-
-Choose performance level options according to your needs.
-
-| Option        | Details       |
-|:------------- |:------------- |
-| 0.25 IOPS/GB | This option is designed for workloads that are not used often. Example applications include vaulted data, hosting large databases with legacy data, or virtual disk images of virtual memory system as backup. |
-| 2 IOPS/GB | This option is designed for most general-purpose workloads. Example applications include hosting small databases, backing up web applications, or virtual machine disk images for a hypervisor. |
-| 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. Example applications include transactional databases. |
-| 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. Example applications include high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
-{: caption="Table 1. NFS performance level options" caption-side="bottom"}
-
 ## Networking type
 {: #scb-orderinginstance-consoli-private-nics}
 
@@ -141,22 +141,7 @@ Select **Public and private network** or **Private network only** for the consol
 
 {{site.data.content.uplink-speed-options-cascadelake-list}}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| Asia-Pacific | TOK02 | 02 |
-| Asia-Pacific | TOK04 | 01 |
-| Asia-Pacific | TOK05 | 01 |
-| Europe | FRA02 | 02 |
-| Europe | FRA05 | 01 |
-| Europe | LON04 | 01 |
-| Europe | LON06 | 01 |
-| NA East | TOR04 | 01 |
-| NA East | WDC04 | 05 |
-| NA East | WDC06 | 01 |
-| NA East | WDC07 | 01 |
-| NA South | DAL10 | 03 |
-| NA South | DAL12 | 01 |
-{: caption="Table 2. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{{site.data.content.simpletable-uplink-speed-locations-other}}
 
 ## VLANs
 {: #scb-orderinginstance-consoli-vlans}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-12-28"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -122,13 +122,13 @@ Many basic administrative tasks can be done much more efficiently than clicking 
 1. SSH to the VCSA and login by using root and the password that is provided on the ICVS Console.
 2. At the prompt, type:
    `rvc Administrator@vsphere.local@localhost` and press **Enter**.
-3. Enter the Administrator’s password provided on the ICVS Console. You will now be at the root of the virtual file system, type ls and then press **Enter**, you see:
+3. Enter the Administrator’s password provided on the ICVS Console. You are now at the root of the virtual file system, type ls and then press **Enter**. The output is:
    `0 / 1 localhost/`
 
-4. Type `cd 1`, enter and then `ls` and press **Enter**. You see:
+4. Type `cd 1`, enter and then `ls` and press **Enter**. The output is:
    `0 / datacenter1 (datacenter)`
 
-5. Type `cd 0`, enter and then `ls` and press **Enter**. You see:
+5. Type `cd 0`, enter and then `ls` and press **Enter**. The output is:
 
    `0 storage/
    1 computers [host]/
@@ -136,7 +136,7 @@ Many basic administrative tasks can be done much more efficiently than clicking 
    3 datastores [datastore]/
    4 vms [vm]/`
 
-6. Type `cd 1`, press **Enter** and then `ls` and press **Enter**. You see your cluster:
+6. Type `cd 1`, press **Enter** and then `ls` and press **Enter**. The output is your cluster:
    `0 cluster1 (cluster)`
 
 7. Use the vSAN commands against this cluster. To check the disk status type `vsan.disks_stats 0` and press **Enter**.

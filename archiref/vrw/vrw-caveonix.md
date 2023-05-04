@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-03-21"
 
 subcollection: vmwaresolutions
 
@@ -31,10 +31,10 @@ RiskForesight’s unique Risk Management Control Plane (RMCP) interface slashes 
 
 ![IBM Cloud for VMware Regulated Workloads Caveonix](../../images/caveonix-app-components.svg "Caveonix components"){: caption="Figure 2. Caveonix components" caption-side="bottom"}
 
-## Edge gateway cluster
+## Gateway cluster
 {: #vrw-caveonix-edge}
 
-Caveonix RiskForesight is used to continuously monitor compliance of the edge gateway cluster.
+Caveonix RiskForesight is used to continuously monitor compliance of the gateway cluster.
 
 ## Workload cluster
 {: #vrw-caveonix-workload}

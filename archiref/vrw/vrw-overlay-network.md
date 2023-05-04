@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-08"
+lastupdated: "2023-03-21"
 
 subcollection: vmwaresolutions
 
@@ -23,14 +23,14 @@ subcollection: vmwaresolutions
 
 The management cluster uses VLANs only to support the requirements of the management services. No overlay networking is enabled on the management cluster.
 
-## Edge gateway cluster
+## Gateway cluster
 {: #vrw-overlay-network-edge}
 
-The optional edge gateway cluster does not employ any overlay networking and a physical FortiGate appliance is available to serve as the perimeter gateway in its place.
+The optional gateway cluster does not employ any overlay networking and a physical FortiGate appliance is available to serve as the perimeter gateway in its place.
 
-The vSRX running on the edge gateway cluster connects the management network to the private and public transit networks. The vSRX is configured to allow only traffic in or out of the management region that is necessary for proper operation and monitoring of the environment. The vSRX also isolates all traffic between the ESXi hosts in the clusters and vCenter Server. ESXi hosts within a cluster can communicate with each other and vCenter Server. ESXi hosts in one cluster (workload or management for example) are unable to communicate with the hosts of any other clusters. The limitation of cross-cluster traffic is enforced by vSRX and the configuration of the firewalls of the ESXi hosts.
+The vSRX running on the gateway cluster connects the management network to the private and public transit networks. The vSRX is configured to allow only traffic in or out of the management region that is necessary for proper operation and monitoring of the environment. The vSRX also isolates all traffic between the ESXi hosts in the clusters and vCenter Server. ESXi hosts within a cluster can communicate with each other and vCenter Server. ESXi hosts in one cluster (workload or management for example) are unable to communicate with the hosts of any other clusters. The limitation of cross-cluster traffic is enforced by vSRX and the configuration of the firewalls of the ESXi hosts.
 
-The edge gateway cluster is the peering point for traffic between the on-premises SaaS provider and {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads. It also serves as the demarcation for traffic from the SaaS consumer. The SaaS provider uses vSRX as the secure tunnel endpoint for its VPN.
+The gateway cluster is the peering point for traffic between the on-premises SaaS provider and {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads. It also serves as the demarcation for traffic from the SaaS consumer. The SaaS provider uses vSRX as the secure tunnel endpoint for its VPN.
 
 Traffic from the SaaS consumer passes through the vSRX in an encrypted tunnel, which lands on the overlay network virtual edge device.
 

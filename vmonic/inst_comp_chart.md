@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-03-08"
+lastupdated: "2023-03-17"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -69,17 +69,17 @@ Review the following table to understand the differences in feature support for 
 | vSAN | Optional | Required |
 | Consolidated cluster | Optional | Optional |
 | Separate management cluster | Supported | Supported |
-| Minimum number of ESXi servers | For vSAN, 4 servers. </br>For NFS, 3 servers. | 6 servers - 4 for the consolidated cluster and 2 for the edge gateway cluster. |
-| Edge gateway cluster | Optional | Required. Juniper vSRX, FortiGate Virtual Appliance, Bring your own gateway, or FortiGate Security Appliance. |
+| Minimum number of ESXi servers | For vSAN, 4 servers. </br>For NFS, 3 servers. | 6 servers - 4 for the consolidated cluster and 2 for the gateway cluster. |
+| Gateway cluster | Optional | Required. Juniper vSRX, FortiGate Virtual Appliance, Bring your own gateway, or FortiGate Security Appliance. |
 | Logging and monitoring with VMware vRealize® Operations and Log Insight | Optional | Required |
 | Role-based access with Entrust CloudControl™ | Optional | Required |
 | Compliance with Caveonix | Optional | Required |
 | Caveonix pricing | Per VM | Per host |
 | Key encryption | Key Protect or Hyper Protect Crypto Services | Hyper Protect Crypto Services required |
 | Direct Link | Optional | Required for private only instances |
-| Backup | Veeam (opt out) | Veeam 11 required with option to remove on Day 2 |
+| Backup | Veeam (opt out) | Veeam Backup and Replication 12 required with option to remove on Day 2 |
 | Veeam backup server | Optional (opt out) | Required with option to remove on Day 2 |
-| Disaster recovery | Veeam or Zerto | Veeam 11|
+| Disaster recovery | Veeam or Zerto | Veeam |
 | Migration | HCX, Zerto, or PrimaryIO | HCX (optional) |
 | Stretched cluster - High Availability | Not supported | Optional |
 | Financial Services Cloud with policy framework | No | Yes |

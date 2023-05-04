@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2023
 
-lastupdated: "2022-12-19"
+lastupdated: "2023-04-17"
 
 subcollection: vmwaresolutions
 
@@ -52,11 +52,11 @@ Your existing vCenter server environment might differ from the previous due to a
 
 * You have a vCenter Server instance with vSAN. This solution architecture does not dictate the type of vSphere data store.
 * You have extra optional services, such as Caveonix, vRealize Operations™ Manager, and vRealize Log Insights™.
-* You select a different option for the Veeam service as three options are available. This solution architecture does not dictate the VM option for the Veeam service. VSI or bare metal are also available. For more information, see [Veeam v11 overview](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
+* You select a different option for the Veeam service as three options are available. This solution architecture does not dictate the VM option for the Veeam service. VSI or bare metal are also available. For more information, see [Veeam Backup and Replication 12 overview](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
 * You expand your Veeam service from a simple deployment "all-in-one" to an advanced deployment by deploying extra Veeam components on different servers.
 * You select a different ADDNS option. This solution architecture does not dictate the type of option, either two VMs or single VSI are available. For more information, see [Domain Name System Configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings#vc_orderinginstance-dns-config).
 
-If you have a vCenter Server instance that is deployed with the Veeam service added and Veeam is version 11, then this is a suitable base topology for the immutable backup solution architecture. The immutable backup solution architecture consists of:
+If you have a vCenter Server instance that is deployed with the Veeam service added and Veeam is version 12, then this is a suitable base topology for the immutable backup solution architecture. The immutable backup solution architecture consists of:
 
 * Linux hardened repository - The hardened repository is one or more {{site.data.keyword.cloud_notm}} bare metal servers that run a supported Linux OS. The hardened repository is configured as an immutable storage repository. The {{site.data.keyword.cloud_notm}} bare metal servers are ordered with internal disks and a RAID card to present this directly attached storage to the OS to be used as a backup repository.
 * Optionally, the immutable backup solution architecture can include one or more sandboxes. For more information, see [Veeam technologies used in the sandbox](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sandboxveeam).
@@ -77,5 +77,5 @@ To adhere to this rule, consider:
 
 * [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview)
 * [Veeam on bare metal server introduction](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-bms-archi-intro)
-* [Veeam v11 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 

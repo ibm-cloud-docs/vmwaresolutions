@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-06-21"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -105,7 +105,7 @@ As the customer, you have full access to add more system administrators to the `
 ## User IDs
 {: #adds-infra-domain-ids}
 
-The {{site.data.keyword.cloud_notm}} automation initially configures some customer and IBM user IDs when the vCenter Server instance is created. The IBM user IDs are used by the automation for operations such as: adding clusters, vSphere ESXi hosts, or storage to your vCenter Server instance. These operations might fail if the IBM user IDs are deleted, disabled, or if their passwords are changed.
+The {{site.data.keyword.cloud_notm}} automation initially configures some customer and IBM user IDs when the vCenter Server instance is created. The IBM user IDs are used by the automation for operations, such as adding clusters, vSphere ESXi hosts, or storage to your vCenter Server instance. These operations might fail if the IBM user IDs are deleted, disabled, or if their passwords are changed.
 
 For more information, see [IBM user IDs](/docs/vmwaresolutions?topic=vmwaresolutions-audit_user_ids).
 
@@ -151,7 +151,7 @@ ELM simplifies the management of multiple vCenters, but it does not bring high a
 
 In cross-vCenter NSX, you have a primary NSX Manager and multiple secondary NSX managers. Each of these NSX managers is linked to a separate vCenter Server. On the primary NSX Manager, you can create universal NSX components such as switches and routers that are viewable from the secondary NSX managers.
 
-Cross-vCenter NSX includes these features:
+Cross-vCenter NSX includes the following features:
 
 * The same logical networks are available in the cross-vCenter environment, so it's possible for VMs on any cluster on any vCenter Server system to be connected to the same logical network.
 * Firewall rules are managed from one centralized location, and apply to the VM regardless of location or vCenter Server system.
@@ -228,4 +228,4 @@ All deployed appliances (vCenter Server Appliance, NSX Manager and Controllers, 
 
 * [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview)
 * [Getting started with VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started)
-* [VMware Solutions - Under the hood](/docs/vmwaresolutions?topic=vmwaresolutions-under_the_hood)
+

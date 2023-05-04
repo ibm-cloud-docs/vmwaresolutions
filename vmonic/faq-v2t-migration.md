@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-14"
+lastupdated: "2023-04-29"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 ## What happens to the networking or storage assets when I delete a vCenter Server instance?
 {: #faq-v2t-migration-existing-assets}
 
-When you delete a VMware vCenter Server® instance, the networking (VLANs with private and public subnets) and storage ({{site.data.keyword.cloud}} File Storage) assets are cancelled together with the {{site.data.keyword.cloud_notm}} bare metal Servers. If you have networking or storage assets in your migration, open a support ticket to ensure that {{site.data.keyword.cloud_notm}} decouples the VLANs and related subnets and NFS storage from the original instance. This way, these assets are not cancelled when the vCenter Server instance is deleted.
+When you delete a VMware vCenter Server® instance, the networking (VLANs with private and public subnets) and storage ({{site.data.keyword.cloud}} File Storage) assets are cancelled together with the {{site.data.keyword.cloud_notm}} bare metal Servers. If you have networking or storage assets in your migration, open a support ticket to ensure that {{site.data.keyword.cloud_notm}} decouples the VLANs and related subnets and NFS storage from the original instance. Then, these assets are not cancelled when the vCenter Server instance is deleted.
 
 The following recommendations apply:
 
@@ -30,13 +30,13 @@ The following recommendations apply:
 ## Can I attach my existing {{site.data.keyword.cloud_notm}} File Storage to the new vCenter Server instance?
 {: #faq-v2t-migration-storage}
 
-If you are using NFS storage, you can manually attach the NFS storage to the new instance and perform a cross–vCenter vMotion without also requiring a storage vMotion. You must authorize the NFS subnet from their new instance to the NFS storage.
+If you are using NFS storage, you can manually attach the NFS storage to the new instance and perform a cross–vCenter vMotion without requiring a storage vMotion. You must authorize the NFS subnet from their new instance to the NFS storage.
 
 The following recommendations apply:
 
 * Configure static `/etc/hosts` entries on the new hosts for the storage hostnames for bootstrap purposes.
 * Configure static routes on the new hosts to ensure that traffic to the NFS is driven over the NFS subnet and storage VLAN.
-* After migration, open a support ticket to ensure that {{site.data.keyword.cloud_notm}} decouples the NFS storage from the original instance. This way, the storage is not cancelled when the original instance is deleted.
+* After migration, open a support ticket to ensure that {{site.data.keyword.cloud_notm}} decouples the NFS storage from the original instance. Then, the storage is not cancelled when the original instance is deleted.
 
 ## Can I reuse my existing Active Directory in the new vCenter Server instance?
 {: #faq-v2t-migration-ad}
@@ -65,7 +65,7 @@ If you added deployed assets to the instance manually, after initial deployment,
 
 General support for vSphere® 6.x ended on 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://lifecycle.vmware.com/#/){: external}.
 
-Instances with {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 6.7 cannot be ordered after 21 June 2022. {{site.data.keyword.cloud_notm}} support for ordering all update levels of vSphere 6.5 ended on 10 October 2021, and vSphere 6.5 cannot be ordered after 21 June 2022. 
+Instances with {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 6.7 cannot be ordered post 21 June 2022. {{site.data.keyword.cloud_notm}} support for ordering all update levels of vSphere 6.5 ended on 10 October 2021, and vSphere 6.5 cannot be ordered post 21 June 2022. 
 
 {{site.data.keyword.cloud_notm}} recommends an upgrade to vSphere 7.x. If you ordered your servers from the Bare metal catalog for {{site.data.keyword.cloud_notm}} Classic Infrastructure, you have the following options.
 
@@ -77,7 +77,7 @@ Instances with {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 
 
 General support for vSphere 6.x ended on 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://lifecycle.vmware.com/#/){: external}.
 
-Instances with {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 6.7 cannot be ordered after 21 June 2022. {{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere 6.5 ended on 10 October 2021, and VMware vSphere 6.5 cannot be ordered after 21 June 2022. 
+Instances with {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 6.7 cannot be ordered post 21 June 2022. {{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere 6.5 ended on 10 October 2021, and VMware vSphere 6.5 cannot be ordered post 21 June 2022. 
 
 {{site.data.keyword.cloud_notm}} recommends an upgrade to vSphere 7.x. If you ordered your servers from the VMware Solutions console, the VMware vSphere offering, you have the following options.
 
@@ -142,7 +142,7 @@ See also [different ways to run VMware workloads in {{site.data.keyword.cloud_no
 
 Upgrading vSphere software is your responsibility. However, with Bring Your Own License (BYOL) you can access VMware Support directly by using your license agreement. {{site.data.keyword.cloud_notm}} provides support for your bare metal servers infrastructure on {{site.data.keyword.cloud_notm}}.
 
-For more information about upgrading, see [VMware ESXi upgrade VMware vSphere 6.7](https://docs.vmware.com/en/VMware-vSphere/6.7/vsphere-esxi-671-upgrade-guide.pdf){: external} and [vSphere upgrade VMware vSphere 6.5](https://docs.vmware.com/en/VMware-vSphere/6.5/vsphere-esxi-vcenter-server-651-upgrade-guide.pdf){: external}. As part of the upgrade planning, consider moving to the {{site.data.keyword.cloud_notm}} vCenter Server with NSX-T offering, this lift and shift upgrade approach might be more beneficial.
+For more information about upgrading, see [VMware ESXi upgrade VMware vSphere 6.7](https://docs.vmware.com/en/VMware-vSphere/6.7/vsphere-esxi-671-upgrade-guide.pdf){: external} and [vSphere upgrade VMware vSphere 6.5](https://docs.vmware.com/en/VMware-vSphere/6.5/vsphere-esxi-vcenter-server-651-upgrade-guide.pdf){: external}. As part of the upgrade planning, consider moving to the {{site.data.keyword.cloud_notm}} vCenter Server with NSX-T offering, this lift-and-shift upgrade approach might be more beneficial.
 
 See also [different ways to run VMware workloads in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
 
@@ -183,7 +183,7 @@ Also, review the following key considerations:
 ## Can I reuse the portable subnets that are deployed for my existing NSX-V vCenter Server instance?
 {: #faq-v2t-migration-nsx-v-instance-portable-subnets}
 
-When you delete a VMware vCenter Server® instance, the networking (VLANs with private and public subnets) is cancelled together with the {{site.data.keyword.cloud_notm}} bare metal servers. If you have networking assets in your migration, open a support ticket to ensure that IBM Support decouples the VLANs and related subnets from the original instance. This way, these assets are not cancelled when the vCenter Server instance is deleted.
+When you delete a VMware vCenter Server® instance, the networking (VLANs with private and public subnets) is cancelled together with the {{site.data.keyword.cloud_notm}} bare metal servers. If you have networking assets in your migration, open a support ticket to ensure that IBM Support decouples the VLANs and related subnets from the original instance. Then, these assets are not cancelled when the vCenter Server instance is deleted.
 
 The following recommendations apply:
 

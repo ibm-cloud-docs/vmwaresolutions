@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-17"
+lastupdated: "2023-04-24"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -136,6 +136,33 @@ Storage settings are based on your selection of bare metal server configuration 
 
 For deployed instances, you can add NFS storage shares to an existing NFS or vSAN cluster. For more information, see [Adding NFS storage to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs).
 
+### NFS storage
+{: #cr_orderinginstance-consolidwkld-nfs-storage}
+
+When you select **NFS storage**, you can decide on one of the following options:
+
+* Add file-level shared storage for your instance, where all shares use the same settings
+* Specify different configuration settings for each file share.
+
+The number of file shares must be in the range 1 - 100.
+
+Specify the following NFS options:
+* **Configure shares individually** - Toggle this switch on to specify different configuration settings for each file share.
+* **Number of shares** - When you use the same configuration setting for each file share, specify the number of file shares for the NFS shared storage that you want to add.
+* **Size (GB)** - Select the capacity that meets your shared storage needs.
+* **Performance** - Select the IOPS (input/output operations per second) per GB based on your workload requirements.
+* **Add shared storage** - Select to add individual file shares that use different configuration settings.
+
+Choose performance level options according to your needs.
+
+| Option       | Details       |
+|:------------ |:------------- |
+| 0.25 IOPS/GB | This option is designed for workloads that are not used often. For example, vaulted data, hosting large databases with legacy data, or virtual disk images of virtual memory system as backup. |
+| 2 IOPS/GB | This option is designed for most general-purpose workloads. For example, hosting small databases, backing up web applications, or virtual machine disk images for a hypervisor. |
+| 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. For example, transactional databases. |
+| 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. For example, high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
+{: caption="Table 3. NFS performance level options" caption-side="bottom"}
+
 ### vSAN storage
 {: #cr_orderinginstance-consolidwkld-vsan-storage}
 
@@ -151,7 +178,7 @@ Select an option for the capacity disks that you need.
 
 Specify the number of capacity disks that you want to add.
 
-For VMware vSphere 7, order up to 10 disks for Dual CPU models and order up to 8 disks for Quad CPU models.
+For VMware vSphere 7, order up to 10 disks for Dual CPU models and order up to eight disks for Quad CPU models.
 
 #### Size for vSAN cache disks
 {: #cr_orderinginstance-consolidwkld-vsan-storage-size-cachedisks}
@@ -174,39 +201,12 @@ The amount of storage reduction from deduplication and compression depends on ma
 #### vSAN license
 {: #cr_orderinginstance-consolidwkld-vsan-storage-license}
 
-Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**.
+Use the IBM-provided VMware license for the vSAN component, which is included with purchase.
 
 Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
 {: important}
 
 If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This statement is also true for any initial or additional clusters in the instance for which you select vSAN. The first time, you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
-
-### NFS storage
-{: #cr_orderinginstance-consolidwkld-nfs-storage}
-
-When you select **NFS storage**, you can decide on one of the following options:
-
-* Add file-level shared storage for your instance, where all shares use the same settings
-* Specify different configuration settings for each file share.
-
-The number of file shares must be in the range 1 - 100.
-
-Specify the following NFS options:
-* **Configure shares individually** - Select to specify different configuration settings for each file share.
-* **Number of shares** - When you use the same configuration setting for each file share, specify the number of file shares for the NFS shared storage that you want to add.
-* **Size (GB)** - Select the capacity that meets your shared storage needs.
-* **Performance** - Select the IOPS (input/output operations per second) per GB based on your workload requirements.
-* **Add shared storage** - Select to add individual file shares that use different configuration settings.
-
-Choose performance level options according to your needs.
-
-| Option       | Details       |
-|:------------ |:------------- |
-| 0.25 IOPS/GB | This option is designed for workloads that are not used often. For example, vaulted data, hosting large databases with legacy data, or virtual disk images of virtual memory system as backup. |
-| 2 IOPS/GB | This option is designed for most general-purpose workloads. For example, hosting small databases, backing up web applications, or virtual machine disk images for a hypervisor. |
-| 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. For example, transactional databases. |
-| 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. For example, high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
-{: caption="Table 3. NFS performance level options" caption-side="bottom"}
 
 ## Networking type
 {: #cr_orderinginstance-consolidwkld-public-private-network}
@@ -237,6 +237,7 @@ Select **Public and private network** or **Private network only**.
 | NA East | WDC07 | 01 |
 | NA South | DAL10 | 03 |
 | NA South | DAL12 | 01 |
+| NA South | DAL13 | 02 |
 {: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 {: #simpletable-uplink-speed-locations}
 
@@ -287,5 +288,5 @@ Use the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** tabs to
 ## Related links
 {: #cr_orderinginstance-consolidwkld-related-links}
 
-* [Edge gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-cr-orderinginstance-edge)
+* [Gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-cr-orderinginstance-edge)
 * [Procedure to order Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-order-procedure)

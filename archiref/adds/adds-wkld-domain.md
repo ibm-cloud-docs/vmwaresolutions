@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 Your customer workload virtual machines (VMs) are using the network overlay virtualized network with customer Bring Your Own IP (BYOIP) address space. Associate these IP ranges with the customer workload AD domain and not the {{site.data.keyword.vmwaresolutions_full}} infrastructure Active Directory™ (AD) domain. We recommend that the VMware Solutions infrastructure AD domain holds resources and user accounts for administration of the vCenter Server instance only. Resources and user accounts for your workload VMs are held in a separate forest or domain.
 
-The infrastructure appliances and VMs such as; vCenter and NSX Manager, are deployed on the underlay network with an IP address space that is assigned by {{site.data.keyword.cloud_notm}}. Unless configured, the customer workload VMs on the overlay networks are not able to reach the AD domain controllers on the underlay network. Also, the infrastructure appliances on the underlay network are not able to reach the customer workload AD domain controllers on the overlay networks.
+The infrastructure appliances and VMs, such as vCenter and NSX Manager, are deployed on the underlay network with an IP address space that is assigned by {{site.data.keyword.cloud_notm}}. Unless configured, the customer workload VMs on the overlay networks are not able to reach the AD domain controllers on the underlay network. Also, the infrastructure appliances on the underlay network are not able to reach the customer workload AD domain controllers on the overlay networks.
 
 VMware Solutions customers typically use one of the following models for their VMware Solutions workload domain.
 * New stand-alone AD forest-domain.
@@ -30,7 +30,7 @@ VMware Solutions customers typically use one of the following models for their V
 ## New stand-alone AD forest-domain model
 {: #adds-wkld-domain-new-standalone}
 
-This model deploys a stand-alone forest domain with no trust. In this deployment model, a new forest and VMware Solutions workload domain for your workloads that are hosted in your vCenter Server instance is configured. This domain is different and separate from an existing AD that is running on-premises. The main reason for selecting this model is to keep accounts and resources separate between the two forests or domains. In this model, the customer would provision a minimum of two domain controllers as VMs hosted in each vCenter Server instance. These VMs would be connected to an overlay network and the new domain controllers would have the primary domain controller role. All user credentials, service accounts, and computer objects are on in this {{site.data.keyword.vmwaresolutions_short}} workload domain that is hosted on these domain controllers. No AD network connectivity requirement between on-premises and {{site.data.keyword.cloud_notm}} as nothing is shared between the two AD forests. The {{site.data.keyword.vmwaresolutions_short}} infrastructure domain is used for the user credentials and service accounts of your system administrators and the resource objects for the underlay-connected infrastructure components only. The following diagram shows the Active Directory Domain Services topology for this stand-alone AD forest model.
+This model deploys a stand-alone forest domain with no trust. In this deployment model, a new forest and VMware Solutions workload domain for your workloads that are hosted in your vCenter Server instance is configured. This domain is different and separate from an existing AD that is running on-premises. The main reason for selecting this model is to keep accounts and resources separate between the two forests or domains. In this model, the customer provisions a minimum of two domain controllers as VMs hosted in each vCenter Server instance. These VMs would be connected to an overlay network and the new domain controllers would have the primary domain controller role. All user credentials, service accounts, and computer objects are on in this {{site.data.keyword.vmwaresolutions_short}} workload domain that is hosted on these domain controllers. No AD network connectivity requirement between on-premises and {{site.data.keyword.cloud_notm}} as nothing is shared between the two AD forests. The {{site.data.keyword.vmwaresolutions_short}} infrastructure domain is used for the user credentials and service accounts of your system administrators and the resource objects for the underlay-connected infrastructure components only. The following diagram shows the Active Directory Domain Services topology for this stand-alone AD forest model.
 
 ![New stand-alone AD forest-domain diagram](../../images/adds-standalone.svg "New stand-alone AD forest-domain diagram"){: caption="Figure 1. New stand-alone AD forest-domain diagram" caption-side="bottom"}
 
@@ -50,14 +50,14 @@ In this deployment model, you extend your existing AD forest from on-premises to
 * Domain controllers in {{site.data.keyword.cloud_notm}} are handling both accounts and resources.
 * More resilient to network connectivity issues.
 
-In this model, the customer would provision a minimum of two domain controllers as VMs hosted in each vCenter Server instance. These VMs would be connected to an overlay network and the new domain controllers would have the primary domain controller role for the child domain. All user credentials, service accounts, and resource objects are on in this {{site.data.keyword.vmwaresolutions_short}} workload child domain that is hosted on these domain controllers. However, because of the two-way trust inherent in the parent-child relationship, the child domain resource objects can be accessed by using the users in the parent domain and vice versa. Network connectivity is required between your data center and IBM for initial and on-going replication of data between the domain controllers. The following diagram shows the Active Directory Domain Services topology for this extended forest with new child domain model.
+In this model, the customer provisions a minimum of two domain controllers as VMs hosted in each vCenter Server instance. These VMs would be connected to an overlay network and the new domain controllers would have the primary domain controller role for the child domain. All user credentials, service accounts, and resource objects are on in this {{site.data.keyword.vmwaresolutions_short}} workload child domain that is hosted on these domain controllers. However, because of the two-way trust inherent in the parent-child relationship, the child domain resource objects can be accessed by using the users in the parent domain and vice versa. Network connectivity is required between your data center and IBM for initial and on-going replication of data between the domain controllers. The following diagram shows the Active Directory Domain Services topology for this extended forest with new child domain model.
 
 ![Extend forest and create new domain diagram](../../images/adds-extendforest.svg "Extend forest and create new domain diagram"){: caption="Figure 3. Extend forest and create new domain diagram" caption-side="bottom"}
 
 ## Extend domain with AD sites model
 {: #adds-wkld-domain-ext-sites}
 
-In this model, the customer would provision a minimum of two domain controllers as VMs hosted in each vCenter Server instance. These VMs would be connected to an overlay network and this network would have connectivity to existing customer domain controllers in the enterprise. A new AD site would be configured in the existing forest domain along with a new site link. The new domain controllers would be connected to the existing domain and moved into the new AD site. The AD site contains the overlay subnet. The new domain controllers would have the Additional Domain controller role while the existing domain controllers would have the primary domain controller role. For more information, see [Understanding AD site topology](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/understanding-active-directory-site-topology){: external}. The following diagram shows the Active Directory Domain Services topology for this extended domain with AD sites model.
+In this model, the customer provisions a minimum of two domain controllers as VMs hosted in each vCenter Server instance. These VMs would be connected to an overlay network and this network would have connectivity to existing customer domain controllers in the enterprise. A new AD site would be configured in the existing forest domain along with a new site link. The new domain controllers would be connected to the existing domain and moved into the new AD site. The AD site contains the overlay subnet. The new domain controllers would have the Additional Domain controller role while the existing domain controllers would have the primary domain controller role. For more information, see [Understanding AD site topology](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/understanding-active-directory-site-topology){: external}. The following diagram shows the Active Directory Domain Services topology for this extended domain with AD sites model.
 
 ![Extend domain with AD sites diagram](../../images/adds-extenddomainwithsites.svg "Extend domain with AD sites diagram"){: caption="Figure 4. Extend domain with AD sites diagram" caption-side="bottom"}
 
@@ -118,4 +118,4 @@ Review the following guidance for AD in a vCenter Server instance.
 
 * [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview)
 * [Getting started with VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started)
-* [VMware Solutions - Under the hood](/docs/vmwaresolutions?topic=vmwaresolutions-under_the_hood)
+

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-04-13"
 
 subcollection: vmwaresolutions
 
@@ -80,5 +80,4 @@ Review the following three forest models.
 
 * [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview)
 * [Getting started with VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started)
-* [VMware Solutions - Take a look under the hood](/docs/vmwaresolutions?topic=vmwaresolutions-under_the_hood)
 * [More limitations and considerations - Windows automatic installation of updates](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_limitations#trbl_limitations-windows-update)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-02-09"
+lastupdated: "2023-03-21"
 
 keywords: vCenter Server networking, networking components, networking vCenter
 
@@ -30,7 +30,7 @@ To review the networking components that are included in your vCenter Server ins
 {: #vc_networkingonvcenterserver-firewall-considerations}
 {: faq}
 
-If you're using firewalls, you must configure rules for all communications from the {{site.data.keyword.IBM}} CloudDriver virtual server instance (VSI) and the SDDC Manager virtual machines (VMs). These rules must allow all protocols to communicate on the IP addresses `10.0.0.0/8` and `161.26.0.0/16`. Examples of such firewalls are NSX Distributed Firewalls (DFW) or vSRX edge gateway cluster firewalls.
+If you're using firewalls, you must configure rules for all communications from the {{site.data.keyword.IBM}} CloudDriver virtual server instance (VSI) and the SDDC Manager virtual machines (VMs). These rules must allow all protocols to communicate on the IP addresses `10.0.0.0/8` and `161.26.0.0/16`. Examples of such firewalls are NSX Distributed Firewalls (DFW) or vSRX gateway cluster firewalls.
 
 Some components might attempt to connect to the public network, although they are deployed to your private network. In some cases, such as Zerto Virtual Replication or FortiGate-VM, this connection is required for licensing or to report usage. These components are configured to connect either by using the instance NAT or a proxy you provide. You might need to allow these connections in your firewall. In other cases, these connection attempts are only for diagnostic and usage data, and the connections fail since no public connectivity is available or configured.
 

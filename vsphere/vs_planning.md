@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-03"
+lastupdated: "2023-04-13"
 
 keywords: planning vSphere, data center, vSphere data centers
 
@@ -22,10 +22,10 @@ Review the following requirements before you order a VMware vSphere® cluster. P
 You are responsible for setting up the environment, installing, and configuring various VMware® components after the VMware ESXi™ servers are deployed. The following examples are VMware components: VMware vCenter Server®, VMware NSX®, and VMware vSAN™.
 {: note}
 
-## IBM Cloud account requirements
+## Account requirements
 {: #vs_planning-account-req}
 
-The {{site.data.keyword.cloud_notm}} account that you are using must meet certain requirements. For more information, see [Requirements for the {{site.data.keyword.cloud_notm}} account](/docs/vmwaresolutions?topic=vmwaresolutions-cloud-infra-acct-req).
+The account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
 
 ## IBM Cloud data center availability
 {: #vs_planning-dc-availability}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-02-23"
+lastupdated: "2023-03-24"
 
 subcollection: vmwaresolutions
 
@@ -28,7 +28,7 @@ Key elements of the solution architecture include:
 * A vCenter Server instance used for cyber-recovery tasks only, deployed in an {{site.data.keyword.cloud_notm}} account restricted to cyber-recovery activities. For more information about vCenter Server instances, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).
 * The vCenter Server instance can use VMware vSAN or use NFS datastores, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
 * The vCenter Server instance does not host production or disaster recovery workloads.
-* The vCenter Server instance includes an edge gateway cluster to host your choice of one of the following to protect vCenter Server instance networks. It also provides a network air gap between the production environment and the isolated recovery environment:
+* The vCenter Server instance includes a gateway cluster to host your choice of one of the following to protect vCenter Server instance networks. It also provides a network air gap between the production environment and the isolated recovery environment:
   
    * Juniper® vSRX appliances
    * FortiGate® Security Appliance
@@ -61,7 +61,7 @@ Consider using a separate IBM Cloud account to deploy your cyber-recovery instan
 To create your custom cyber-recovery solution based on a VMware vCenter Server instance, follow the [procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
 
 1. In Step 4, select **Primary**.
-2. In Step 7, order an edge gateway cluster with your preferred firewall option:
+2. In Step 7, order a gateway cluster with your preferred firewall option:
     * If you select Juniper vSRX, see [Ordering Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering).
     * If you select FortiGate, see [Ordering FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering).
     * If you select Bring Your Own gateway appliance, see the installation instructions that are provided by your firewall vendor.

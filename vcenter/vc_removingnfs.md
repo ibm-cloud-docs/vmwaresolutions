@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-11-23"
+lastupdated: "2023-04-03"
 
 keywords: vCenter Server remove NFS storage
 
@@ -26,7 +26,7 @@ You can contract the capacity of your VMware vCenter Server® instance according
 * Do not remove NFS storage from the VMware vSphere Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_full}} console.
 * Before you remove the NFS storage, ensure that you removed all the VMs that reside on the storage.
 * Ensure that the shares that you plan to remove are associated with the correct vCenter Server instance.
-* The cluster must be in **Ready to use** status.
+* The cluster status must be **Available**.
 * You can remove NFS storage shares from an existing NFS or vSAN cluster.
 
 ## Procedure to remove NFS storage from vCenter Server instances
@@ -42,7 +42,7 @@ You can contract the capacity of your VMware vCenter Server® instance according
 ## Results after you remove NFS storage from vCenter Server instances
 {: #vc_removingnfs-results}
 
-1. You might experience a slight delay on the console, while the instance status changes from **Ready to use** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
+1. You might experience a slight delay on the console, while the instance status changes from **Available** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
 2. You are notified by email that your request to remove NFS storage is being processed. On the console, the status of the cluster that is associated with the NFS storage is changed to **Modifying**.
 3. The NFS storage is fully reclaimed by {{site.data.keyword.cloud_notm}} infrastructure at the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle, which is typically 30 days.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-04-17"
+lastupdated: "2023-05-02"
 
 keywords: troubleshooting VMware Solutions Shared, data center, VMware Solutions Shared data centers, Business Partners
 
@@ -42,7 +42,7 @@ Business Partner users cannot modify a role in VMware Cloud Director used for th
 When the VMWare Cloud Director version is updated, the new version can introduce new dependencies between rights. If the affected right is used by one of the roles created in VMware Cloud Director for the integration with IAM, you cannot modify that role in VMware Cloud Director.
 
 An error similar to the following displays.
-``Required implied right <righ name 1> has not been selected for selected right <right name 2>``
+``Required implied right <right name 1> has not been selected for selected right <right name 2>``
 
 This occurs because the roles were created before the update of VMware Cloud Director and the roles do not have the latest information about their rights. Complete one of the following options to resolve this limitation.
 

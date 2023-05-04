@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-12-28"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ The VMware HCX components are deployed as virtual machines (VMs) in the {{site.d
 
 ![VMware vCenter Server – Hybrid Cloud services](../../images/ibmcloud-hcx-overview.svg "VMware vCenter Server – HCX overview"){: caption="Figure 1. VMware vCenter Server - HCX overview" caption-side="bottom"}
 
-This connection creates a loosely coupled interconnectivity between on-premises and {{site.data.keyword.cloud_notm}} and enables capabilities such as:
+This connection creates a loosely coupled interconnectivity between on-premises and {{site.data.keyword.cloud_notm}} and enables capabilities, such as:
 * Simple interconnectivity – logical network connections are established easily over any physical connection such as public internet, private VPN, or direct link.
 * Layer 2 extension – on-premises networks are extended into the cloud. These networks include on-premises subnets and IP addressing.
 * Encryption – network traffic is securely encrypted between the two sides.

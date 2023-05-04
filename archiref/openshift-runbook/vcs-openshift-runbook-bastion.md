@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-12-28"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -73,6 +73,7 @@ Start-VM -VM $vm
 # Disconnect
 Disconnect-NsxServer
 ```
+{: pre}
 
 After the VM starts, connect to the VM by using the web console or remote console and complete the following installation steps. If needed, see the {{site.data.keyword.redhat_notm}} Enterprise Linux documentation.
 1. Select the required language.
@@ -103,6 +104,7 @@ subscription-manager repos --enable  rhel-8-server-rpms
 subscription-manager repos --enable  rhel-8-server-extras-rpms
 subscription-manager repos --enable  rhel-server-rhscl-8-rpms
 ```
+{: pre}
 
 ## Installing NGINX (HTTP Server)
 {: #openshift-runbook-runbook-bastion-http}
@@ -119,6 +121,7 @@ The deployment of the {{site.data.keyword.redhat_openshift_notm}} nodes uses Ign
    gpgcheck=0
    enabled=1
    ```
+   {: pre}
 
 3. Press Esc to get back to command mode and then type `:wq` to save the file and exit vi.
 4. Use the `yum` command to install the NGINX package.
@@ -127,6 +130,7 @@ The deployment of the {{site.data.keyword.redhat_openshift_notm}} nodes uses Ign
    yum update
    yum install -y nginx
    ```
+   {: pre}
 
 5. Create the default configuration file `vi /etc/nginx/conf.d/default.conf`.
 6. Type `i` to insert and paste the following information into the file:
@@ -145,6 +149,7 @@ The deployment of the {{site.data.keyword.redhat_openshift_notm}} nodes uses Ign
        }
    }
    ```
+   {: pre}
 
 7. Press Esc to get back to command mode and then type `:wq` to save the file and exit vi.
 8. Run the following commands to start NGINX.
@@ -153,6 +158,7 @@ The deployment of the {{site.data.keyword.redhat_openshift_notm}} nodes uses Ign
    systemctl enable nginx
    systemctl start nginx
    ```
+   {: pre}
 
 9. The Linux firewall needs to configured to enable HTTP by using the following firewall-cmd commands:
 
@@ -160,6 +166,7 @@ The deployment of the {{site.data.keyword.redhat_openshift_notm}} nodes uses Ign
    firewall-cmd --permanent --zone=public --add-service=http
    firewall-cmd --reload
    ```
+   {: pre}
 
 ## Generating an SSH private key and add it to the agent
 {: #openshift-runbook-runbook-bastion-sshkey}
@@ -178,6 +185,7 @@ You must use a local key.
    ```bash
    ssh-keygen -f ~/.ssh/id_rsa -t rsa -b 4096 -N ''
    ```
+   {: pre}
 
    The private key is `/root/.ssh/id_rsa` and the public key is `/root/.ssh/id_rsa.pub`.
 
@@ -186,6 +194,7 @@ You must use a local key.
    ```bash
    eval "$(ssh-agent -s)"
    ```
+   {: pre}
 
 3. Add your SSH private key to the ssh-agent:
 
@@ -242,6 +251,7 @@ wget https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_am
 unzip terraform_0.11.13_linux_amd64.zip
 mv terraform /usr/local/bin
 ```
+{: pre}
 
 The Bastion node is now ready for the steps to install {{site.data.keyword.redhat_openshift_notm}} 4.7, which are described in [{{site.data.keyword.redhat_openshift_notm}} 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro).
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-22"
+lastupdated: "2023-04-03"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -117,7 +117,7 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
     2. In the **Add client SSL certificate** window, enter the name and contents of the certificate, and then click **Add**.
 
        The certificate name cannot be reused within your selected instance. The certificate content must be valid and contain the BEGIN CERTIFICATE and END CERTIFICATE tags. When you use Key Protect, the certificate cannot be reused in the region where the instance is deployed.
-       {: note}
+       {: important}
 
 7. Click **Configure**.
 
@@ -130,7 +130,7 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
 ## Step 3 - (Optional) Adding client SSL certificates
 {: #kmip_standalone_ordering-step3}
 
-If you did not add client SSL certificates in Step 2, you must add it after the instance is ready to use.
+If you did not add client SSL certificates in Step 2, you must add it after the instance can be used.
 
 ### Procedure
 {: #kmip_standalone_ordering-step3-procedure}
@@ -141,7 +141,7 @@ If you did not add client SSL certificates in Step 2, you must add it after the 
 4. In the **Add client SSL certificate** window, enter the certificate name and content, and then click **Add**.
 
    The certificate name cannot be reused within your selected instance. The certificate content must be valid and contain the BEGIN CERTIFICATE and END CERTIFICATE tags, and the certificate cannot be reused in the selected region where the instance is deployed.
-   {: note}
+   {: important}
 
 ### Results of Step 3
 {: #kmip_standalone_ordering-step3-results}

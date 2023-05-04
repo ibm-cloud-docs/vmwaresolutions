@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-02-08"
+lastupdated: "2023-04-24"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -151,6 +151,8 @@ The section is referenced by the following files:
 - vcenter\vrw-orderinginstance-wkld.md
 - vsphere\vs_orderinginstances-network.md
 - cr\cr_orderinginstance-edge.md
+- vrw\vrw-orderinginstance-witness.md
+- vcenter\scb-orderinginstance-cons-work-cluster.md
 
 CONTENT:
 
@@ -183,9 +185,28 @@ The uplink speed provides two options:
 | NA East | WDC07 | 01 |
 | NA South | DAL10 | 03 |
 | NA South | DAL12 | 01 |
+| NA South | DAL13 | 02 |
 {: caption="Table 1. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 {: #simpletable-uplink-speed-locations}
 
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
+| Asia-Pacific | TOK02 | 02 |
+| Asia-Pacific | TOK04 | 01 |
+| Asia-Pacific | TOK05 | 01 |
+| Europe | FRA02 | 02 |
+| Europe | FRA05 | 01 |
+| Europe | LON04 | 01 |
+| Europe | LON06 | 01 |
+| NA East | TOR04 | 01 |
+| NA East | WDC04 | 05 |
+| NA East | WDC06 | 01 |
+| NA East | WDC07 | 01 |
+| NA South | DAL10 | 03 |
+| NA South | DAL12 | 01 |
+| NA South | DAL13 | 02 |
+{: caption="Table 2. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: #simpletable-uplink-speed-locations-other}
 
 Conref section END.
 
@@ -248,6 +269,8 @@ INFORMATION:
 The section is referenced by the following files:
 - vcenter\vc_deletinginstance.md
 - vcenter\vc_deletinginstance_multi.md
+- vcenter/vc_hybrid_deletinginstance.md
+- vcenter/vc_hybrid_deletinginstance_multi.md
 
 CONTENT:
 
@@ -266,7 +289,7 @@ Review the following information before you proceed.
 * Any VLANs or subnets without attached gateways or servers will be deleted even though you might have IP addresses assigned from the subnets to your VMs.
 {: #deletinginstance-delete-vlans}
 
-Because of resource dependencies, the components in your instance are not released immediately when you delete the instance. For example, the subnets and VLANs cannot be deleted until the ESXi servers are fully reclaimed by the {{site.data.keyword.cloud_notm}} infrastructure, which happens at the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle. At the end of the billing cycle, which is typically 30 days, the subnets and VLANs are deleted and the instance deletion is completed.
+Because of resource dependencies, the components in your instance are not released immediately when you delete the instance. For example, the VLANs and the VLAN primary subnets cannot be deleted until the ESXi servers are fully reclaimed by the {{site.data.keyword.cloud_notm}} infrastructure, which happens at the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle. At the end of the billing cycle, which is typically 30 days, the subnets and VLANs are deleted and the instance deletion is completed.
 {: #deletinginstance-delete-info}
 
 You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle for the deleted instance.
@@ -304,10 +327,10 @@ The section is referenced by the following files:
 
 CONTENT:
 
-Whenever possible, add clusters by using the {{site.data.keyword.vmwaresolutions_full}} console because changes that you make on the VMware vSphere® Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, add clusters to vCenter Server only for on-premises clusters or clusters that you don't plan to manage in the {{site.data.keyword.vmwaresolutions_short}} console.
+Whenever possible, add clusters by using the {{site.data.keyword.vmwaresolutions_full}} console and not the VMware vSphere® Web Client. Changes that you make on the vSphere Web Client are not synchronized with the VMware Solutions console. If you want to add clusters to vCenter Server instances by using the vSphere Web Client, do so only for on-premises clusters or clusters that you don't manage in the VMware Solutions console.
 {: #para-vcenteraddclusters}
 
-Whenever possible, delete clusters by using the {{site.data.keyword.vmwaresolutions_full}} console because changes that you make on the VMware vSphere® Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, delete clusters from vCenter Server only for on-premises clusters or clusters that you don't plan to manage in the {{site.data.keyword.vmwaresolutions_short}} console.
+Whenever possible, delete clusters by using the {{site.data.keyword.vmwaresolutions_full}} console and not the VMware vSphere® Web Client. Changes that you make on the vSphere Web Client are not synchronized with the VMware Solutions console. If you want to delete clusters from vCenter Server instances by using the vSphere Web Client, do so only for on-premises clusters or clusters that you don't manage in the VMware Solutions console.
 {: #para-vcenterremoveclusters}
 
 Conref section END.

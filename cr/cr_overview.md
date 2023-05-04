@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-04-25"
 
 keywords: Cyber Recovery, Cyber Recovery offering, Cyber Recovery instance, data protection, cyber threat, ransomware, Cyber resilience
 
@@ -17,25 +17,23 @@ subcollection: vmwaresolutions
 # Cyber Recovery overview
 {: #cr_overview}
 
-The most critical aspects of your organization are your overall computer systems and networks, and your data. You must protect everything from different types of situations and threats.
+The most critical aspects of your organization are your computer systems and networks and your data. You must protect them from threats.
 
-Cyber resilience is the ability to avert, handle, and recover from various incidents that can damage or compromise your data or systems. You must be able to continue to provide your operations to your users.
+Cyber resilience is the ability to avert, handle, and recover from various incidents that can damage or compromise your data or systems. You must be able to continue to provide your operations to your users. For more information, see [What is cyber resilience](https://www.ibm.com/topics/cyber-resilience){: external}.
 
-For more information, see [What is cyber resilience](https://www.ibm.com/topics/cyber-resilience){: external}.
+Cyber Recovery can help protect your data from cyberthreats, cyberattacks, and ransomware. A Cyber Recovery instance includes Veeam Backup and  Replication 12, a Linux® hardened repository (LHR), and an edge gateway.
 
-Cyber Recovery can help protect you from cyberthreats, cyberattacks, and ransomware. A Cyber Recovery instance includes Veeam® 11, a Linux® hardened repository (LHR), and an edge gateway.
+For the edge gateway, you can bring your own gateway appliance or choose from the following options:
 
-For the gateway, you can bring your own gateway appliance or choose from the following options:
-
-* Edge gateway cluster with Juniper® vSRX
-* Edge gateway cluster with FortiGate® Virtual Appliance
+* Gateway cluster with Juniper® vSRX
+* Gateway cluster with FortiGate® Virtual Appliance
 * FortiGate Security Appliance
 
-VMware vSphere® v7.0u3 and VMware NSX-T™ v3.2 are automatically installed.
+VMware vSphere® 7.0u3 and VMware NSX-T™ 3.2 are automatically installed.
 
 The offering is for a single-zone VMware instance only.
 
-When you install Cyber Recovery, the add-on service Veeam 11 and the add-on service that you choose as your firewall appliance are automatically included services. When you edit Veeam to configure it, the Linux hardened repository is already chosen and is a required selection. You cannot deselect it.
+When you install Cyber Recovery, the Veeam add-on service and the add-on service that you choose as your firewall appliance are automatically included. When you edit Veeam to configure it, the Linux hardened repository is required and already selected.
 
 ## Related links
 {: #cr_overview-related-links}

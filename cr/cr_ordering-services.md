@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-10"
+lastupdated: "2023-03-30"
 
 keywords: Cyber Recovery add service, add service Cyber Recovery, Cyber Recovery order service, order service Cyber Recovery
 
@@ -33,7 +33,7 @@ The following table shows the services that are available to Cyber Recovery inst
 | [VMware HCX™](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version |
 | [Juniper® vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (21.4R2) |
 | [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.11 |
-| [Veeam®](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 11a (11.0.1) |
+| [Veeam®](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12 |
 | [vRealize Operations™ and Log Insight™](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.10 and vRLI 8.10 |
 | [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.7u1 |
 {: caption="Table 1. Available services for Cyber Recovery instances" caption-side="bottom"}
@@ -90,7 +90,7 @@ The following table provides the resource requirements for the services for whic
 ### Formulas for calculating space requirements for services
 {: #cr_addingservices-resource-requirements-spacecalc-forms}
 
-The following formulas are used to calculate the space requirements for the services and the management overheads. The formulas apply to management clusters, workload clusters, edge gateway clusters, and single-node management clusters.
+The following formulas are used to calculate the space requirements for the services and the management overheads. The formulas apply to management clusters, workload clusters, gateway clusters, and single-node management clusters.
 
 #### Formula to calculate the number of available cores
 {: #cr_addingservices-resource-requirements-spacecalc-forms-cores}
@@ -110,9 +110,9 @@ The following table lists the variables that are used in the previous formula.
 | HostVsanOverheadCorePercentage | The percentage of a host's cores used by vSAN | % | 10 | 0 |
 {: caption="Table 3. Description of variables in formula 1" caption-side="bottom"}
 
-[^mgmtcores]: Management cluster only. No core reservation for the workload cluster, the edge gateway cluster, and the single-node management cluster.
+[^mgmtcores]: Management cluster only. No core reservation for the workload cluster, the gateway cluster, and the single-node management cluster.
 
-[^vspherehacores]: Management and workload clusters only. No hosts are reserved for the edge gateway cluster or the single-node management cluster.
+[^vspherehacores]: Management and workload clusters only. No hosts are reserved for the gateway cluster or the single-node management cluster.
 
 #### Formula to calculate the available memory
 {: #cr_addingservices-resource-requirements-spacecalc-forms-memory}
@@ -134,9 +134,9 @@ The following table lists the variables that are used in the previous formula.
 | HostVsanOverheadMemory | The number of GB of memory reserved by vSAN management regardless of disk size | GB | 7 | 0 |
 {: caption="Table 4. Description of variables in formula 2" caption-side="bottom"}
 
-[^mgmtmem]: Management cluster only. No memory reservation for the workload cluster, the edge gateway cluster, and the single-node management cluster.
+[^mgmtmem]: Management cluster only. No memory reservation for the workload cluster, the gateway cluster, and the single-node management cluster.
 
-[^vspherehamem]: Management and workload clusters only. No hosts are reserved for the edge gateway cluster or the single-node management cluster.
+[^vspherehamem]: Management and workload clusters only. No hosts are reserved for the gateway cluster or the single-node management cluster.
 
 ## Procedure to order services for Cyber Recovery instances
 {: #cr_addingservices-procedure}

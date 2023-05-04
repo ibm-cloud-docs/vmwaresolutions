@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-23"
+lastupdated: "2023-04-03"
 
 keywords: vCenter Server Hybridity add cluster, view cluster vCenter Server Hybridity, delete cluster vCenter Server Hybridity
 
@@ -29,8 +29,7 @@ You can add clusters to your VMware vCenter Server® with Hybridity Bundle insta
 
 * Adding clusters to instances with VMware vSphere® 6.5 is not supported.
 * {{site.data.content.para-vcenteraddclusters}}
-* For instances that were deployed in (or upgraded to) V2.5 and later, the number of clusters, hosts, and VMs determines the maximum limit for the number of clusters you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information about maximum limits, see [VMware Configuration Maximums](https://configmax.vmware.com/home){: external}.
-* For instances that were deployed in (or upgraded to) V2.3 and V2.4, you can add up to 10 clusters.
+* The number of clusters, hosts, and VMs determines the maximum limit for the number of clusters you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information about maximum limits, see [VMware Configuration Maximums](https://configmax.vmware.com/home){: external}.
 
 ### System settings
 {: #vc_hybrid_addingviewingclusters-adding-sys-settings}
@@ -139,11 +138,11 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server** table, click the instance to view the clusters in it.
 
-   Ensure that the instance status is **Ready to use**. Otherwise, you can't add clusters to the instance.
-   {: note}
+   Ensure that the instance status is **Available**. Otherwise, you can't add clusters to the instance.
+   {: important}
 
-3. Click the **Infrastructure** tab and click **Add** at the upper right of the **CLUSTERS** table.
-4. On the **Add cluster** page, enter the cluster name.
+3. Click the **Infrastructure** tab and click **Create** at the upper right of the **Clusters** table.
+4. On the **Create cluster** page, enter the cluster name.
 5. You can host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in. To do so, under **Bare metal server**, select the **Select a different location** checkbox and choose the {{site.data.keyword.cloud_notm}} data center to host the instance.
 6. Select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers** for the bare metal configuration.
 7.  Select **vSAN storage** and specify the disk types for the capacity and cache disks and the number of disks. If you want more storage, select the **High performance with Intel Optane** checkbox.
@@ -159,7 +158,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 {: #vc_hybrid_addingviewingclusters-adding-results}
 
 1. The deployment of the cluster starts automatically and the status of the cluster is changed to **Initializing**. You can check the status of the deployment by viewing the deployment history on the **Summary** page of the instance.
-2. When the cluster is ready to use, its status changes to **Ready to use**. The newly added cluster is enabled with vSphere High Availability (HA) and vSphere Distributed Resource Scheduler (DRS).
+2. When the cluster is ready to use, its status changes to **Available**. The newly added cluster is enabled with vSphere High Availability (HA) and vSphere Distributed Resource Scheduler (DRS).
 
 You can't change the cluster name. Changing the cluster name might cause the add or remove ESXi servers operations in the cluster to fail.
 {: important}
@@ -180,7 +179,7 @@ You can't change the cluster name. Changing the cluster name might cause the add
    * **Status** - The status of the cluster. The status can have one of the following values:
       * Initializing - The cluster is being created and configured.
       * Modifying - The cluster is being modified.
-      * Ready to use - The cluster is ready to use.
+      * Available - The cluster is ready to use.
       * Deleting - The cluster is being deleted.
       * Deleted - The cluster is deleted.
 4. Click a cluster name to view the ESXi servers, storage, and network interface details:
@@ -199,7 +198,7 @@ You can't change the cluster name. Changing the cluster name might cause the add
       * **Credentials** - The username and password to access the ESXi server.
       * **Private IP** - The private IP address of the ESXi server.
       * **Status** - The status of the ESXi server, which can be one of the following values:
-         * Added - The ESXi server is added and is ready for use.
+         * Available - The ESXi server is ready to use.
          * Adding - The ESXi server is being added.
          * Deleting - The ESXi server is being deleted.
 
@@ -244,8 +243,8 @@ You might want to delete a cluster from an instance when it's no longer needed.
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server** table, click the instance that you want to delete clusters from.
 
-   Ensure that the instance is in the **Ready to use** status. Otherwise, you cannot delete clusters from the instance.
-   {: note}
+   Ensure that the instance status is **Available**. Otherwise, you cannot delete clusters from the instance.
+   {: important}
 
 3. Click the **Infrastructure** tab. In the **CLUSTERS** table, locate the cluster that you want to delete and click the **Delete** icon in the **Actions** column.
 

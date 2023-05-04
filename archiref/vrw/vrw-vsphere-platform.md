@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-09"
+lastupdated: "2023-03-21"
 
 subcollection: vmwaresolutions
 
@@ -44,7 +44,7 @@ Veeam is used to continuously back up the management stack for protection agains
 
 The vCenter Server with an embedded PSC is installed on a portable subnet on the private VLAN that is associated with management VMs. Its default gateway is set to the IP address assigned on the perimeter gateway.
 
-One vCenter Server is deployed to manage the management cluster, the edge gateway cluster, and the SaaS consumer workload clusters.
+One vCenter Server is deployed to manage the management cluster, the gateway cluster, and the SaaS consumer workload clusters.
 
 ### NSX-T
 {: #vrw-vsphere-platform-management-nsxt}
@@ -107,15 +107,15 @@ This server is a Linux® VM that is manually deployed to provide a location for 
 
 The Caveonix RiskForesight service manages cyberrisk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations.
 
-## Edge gateway cluster
+## Gateway cluster
 {: #vrw-vsphere-platform-edge}
 
-No vSphere management components are deployed to the edge gateway cluster. The tooling in the management cluster is used to manage the edge gateway cluster ESXi hosts.
+No vSphere management components are deployed to the gateway cluster. The tooling in the management cluster is used to manage the gateway cluster ESXi hosts.
 
 ## Workload cluster
 {: #vrw-vsphere-platform-workload}
 
-THe NSX-T edge gateway cluster VMs that house the Tier-0 and Tier-1 routers are on the workload clusters. No vSphere management components are deployed to the workload cluster. The tooling in the management cluster is used to manage the workload cluster ESXi hosts.
+THe NSX-T gateway cluster VMs that house the Tier-0 and Tier-1 routers are on the workload clusters. No vSphere management components are deployed to the workload cluster. The tooling in the management cluster is used to manage the workload cluster ESXi hosts.
 
 ## Related links
 {: #vrw-vsphere-platform-related}

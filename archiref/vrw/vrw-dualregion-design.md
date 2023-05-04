@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-10-27"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -193,7 +193,7 @@ Review the following Veeam design decisions:
 * Proxies can be hosted on Windows Server or Linux OS with almost no performance differences. For the all-in-one deployment scenario, a Windows OS is used.
 * For the repository server, a bare metal server is recommended to maximize performance and to separate the production environment that needs to be protected from the backup storage. It is also recommended to combine this practice with the proxy role to keep overheads on the virtual environment and on the network to a minimum. Best practice is to avoid the usage of the same storage for backups and for the virtualized infrastructure because the loss of this single system might lead to the loss of both copies of the data, the production and the backups.
 * Repository servers can be either Windows or Linux. For the all-in-one deployment scenario, a Windows OS is used. Additionally, for Microsoft Windows-based repositories, Veeam uses the Windows Crypto API complying with the Federal Information Processing Standards (FIPS 140). For Linux-based repositories, Veeam uses a statically linked OpenSSL encryption library, without the FIPS 140 support.
-* For bare metal servers, the block storage device can be a local disk or a LUN provided through a SAN by using iSCSI. For the VMware Regulated Workloads design, SAN that uses iSCSI is not supported; therefore, local disk is used.
+* For bare metal servers, the block storage device can be a local disk or a LUN provided through a SAN by using iSCSI. For the VMware Regulated Workloads design, SAN that uses iSCSI is not supported. Therefore, local disk is used.
 * Configure a scheduled, encrypted backup of the Veeam Backup & Replication configuration and use a Veeam file copy job to copy the file to the protected region. This way, if a failure occurs, the Veeam Backup server can be rebuilt and the configuration can be restored from an off-site copy.
 * A capacity tier that uses {{site.data.keyword.cloud_notm}} Object Storage is not configured as the storage requirements for use case 1 are low.
 
@@ -209,7 +209,7 @@ The following guidance applies to use cases 2 and 3:
 
 The Key Management Interoperability Protocol (KMIP) for VMware service provides a 24x7 highly available service to allow the interconnection of vCenter to the Hyper Protect Crypto Service. For more information about the encryption design in for VMware® Regulated Workloads, see [Encryption](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-encryption).
 
-KMIP is a region-based service. Therefore, in the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads dual region design a separate KMIP instance is used and interfaced into vCenter and Hyper Protect Crypto Service. Available regions are; Dallas, Washington DC, Sydney, London, Frankfurt, and Tokyo. When you order the KMIP service, select the KMIP instance in the region where the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads instance is deployed.
+KMIP is a region-based service. Therefore, in the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads dual region design a separate KMIP instance is used and interfaced into vCenter and Hyper Protect Crypto Service. The available regions are Dallas, Washington DC, Sydney, London, Frankfurt, and Tokyo. When you order the KMIP service, select the KMIP instance in the region where the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads instance is deployed.
 
 ## Hyper Protect Crypto Service
 {: #vrw-dualregion-design-hpcs}

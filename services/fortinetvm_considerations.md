@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-03-24"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -27,7 +27,7 @@ FortiGate® Virtual Appliance on IBM Cloud deploys a pair of FortiGate Virtual A
 
 {{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months at no cost for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
 
-The current FortiGate Virtual Appliance version that is installed is 7.2.2.
+The FortiGate Virtual Appliance version available for deployment is 7.2.2.
 {: note}
 
 ## Technical specifications for FortiGate Virtual Appliance
@@ -52,7 +52,7 @@ Two VMs are deployed and ready for HA or Virtual Router Redundancy Protocol (VRR
 ### Networking
 {: #fortinetvm_considerations-specs-network}
 
-Access to the FortiGate console is provided through a private management network. When deployed to a management or consolidated cluster, FortiGate Virtual Appliance management addresses are drawn from the instance management private portable subnet. When deployed to an edge gateway cluster, a new private portable subnet is ordered for these addresses.
+Access to the FortiGate console is provided through a private management network. When deployed to a management or consolidated cluster, FortiGate Virtual Appliance management addresses are drawn from the instance management private portable subnet. When deployed to a gateway cluster, a new private portable subnet is ordered for these addresses.
 
 ### License and fees
 {: #fortinetvm_considerations-specs-license}
@@ -73,7 +73,7 @@ The following information describes the different considerations for the uplink 
 ### FortiGate Virtual Appliance on vCenter Server 7 with NSX-T
 {: #fortinetvm_considerations-installvalues-vcs7}
 
-On vCenter Server 7 with NSX-T, you can install FortiGate Virtual Appliance on the consolidated cluster or the edge gateway cluster.
+On vCenter Server 7 with NSX-T, you can install FortiGate Virtual Appliance on the consolidated cluster or the gateway cluster.
 
 On the consolidated cluster, note the following.
 
@@ -84,7 +84,7 @@ On the consolidated cluster, note the following.
 
 * The FortiGate-VM32 deployment size requires Cascade Lake 5218 or higher.
 
-On the edge gateway cluster, note the following.
+On the gateway cluster, note the following.
 
 * For 10 Gb uplink speed, select Cascade Lake 4210 and FortiGate-VM16.
 * For 25 Gb uplink speed, select Cascade Lake 5218 and either FortiGate-VM16 or FortiGate-VM32.
@@ -101,18 +101,18 @@ On existing vCenter Server 6.7 with NSX-V instances V4.7 and earlier, you can in
 ### FortiGate Virtual Appliance on the Security and Compliance Readiness Bundle
 {: #fortinetvm_considerations-installvalues-scb}
 
-On the Security and Compliance Readiness Bundle, you can install FortiGate Virtual Appliance on the edge gateway cluster.
+On the Security and Compliance Readiness Bundle, you can install FortiGate Virtual Appliance on the gateway cluster.
 
-* You can install FortiGate Virtual Appliance on edge gateway clusters with a 10 Gb or 25 Gb uplink speed.
+* You can install FortiGate Virtual Appliance on gateway clusters with a 10 Gb or 25 Gb uplink speed.
 * With a 10 Gb uplink speed, you can select a deployment size from FortiGate-VM02 up to FortiGate-VM32. The FortiGate-VM32 deployment size requires Cascade Lake 5218 or higher.
 * With a 25 Gb uplink speed, you can install FortiGate-VM16 or FortiGate-VM32. The FortiGate-VM32 deployment size requires Cascade Lake 5218 or higher.
 
 ### FortiGate Virtual Appliance on Regulated Workloads
 {: #fortinetvm_considerations-installvalues-regworkload}
 
-For Regulated Workloads, you can install FortiGate Virtual Appliance on the edge gateway cluster. You can deploy the service for single-zone and multizone instances.
+For Regulated Workloads, you can install FortiGate Virtual Appliance on the gateway cluster. You can deploy the service for single-zone and multizone instances.
 
-* You can install FortiGate Virtual Appliance on edge gateway clusters with a 10 Gb or 25 Gb uplink speed.
+* You can install FortiGate Virtual Appliance on gateway clusters with a 10 Gb or 25 Gb uplink speed.
 * With a 10 Gb uplink speed, you can install FortiGate-VM16 on Cascade Lake 4210.
 * With a 25 Gb uplink speed, you can install FortiGate-VM16 or FortiGate-VM32. The FortiGate-VM32 deployment size requires Cascade Lake 5218 or higher.
 
@@ -121,9 +121,9 @@ For Regulated Workloads, you can install FortiGate Virtual Appliance on the edge
 
 Review the following considerations before you install the FortiGate Virtual Appliance service:
 
-* The FortiGate VMs are deployed on the management cluster or edge gateway cluster.
-* If you want to deploy FortiGate-VM16 or FortiGate-VM32, it is recommended that you consider deploying on an edge gateway cluster instead of a management cluster because of resource requirements. For more information about Fortinet® sizing, see [FortiGate-VM on VMware ESXi data sheet](https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/FortiGate_VM_ESXi.pdf){: external}.
-* You cannot install Juniper® vSRX and FortiGate Virtual Appliance on the same edge gateway cluster.
+* The FortiGate VMs are deployed on the management cluster or gateway cluster.
+* If you want to deploy FortiGate-VM16 or FortiGate-VM32, it is recommended that you consider deploying on a gateway cluster instead of a management cluster because of resource requirements. For more information about Fortinet® sizing, see [FortiGate-VM on VMware ESXi data sheet](https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/FortiGate_VM_ESXi.pdf){: external}.
+* You cannot install Juniper® vSRX and FortiGate Virtual Appliance on the same gateway cluster.
 * The initial memory allocation is determined by your initial CPU selection. However, you can change the memory allocation after deployment.
 * For larger deployment sizes, such as FortiGate-VM16 and FortiGate-VM32, the initial CPU allocation is set to half the deployment size limit to ensure successful deployment. After deployment, you can change the CPU allocation up to the deployment size limit.
 * When you deploy FortiGate Virtual Appliances to your instance, SNAT and firewall rules are defined on the Management NSX Edge™ Services Gateway (ESG). In addition, static routes on the FortiGate Virtual Appliances are defined to allow outbound HTTPS communications from your instance to the public network. These communications are needed for license activation and for acquiring the most updated security policies and content.
@@ -136,7 +136,7 @@ Review the following considerations before you install the FortiGate Virtual App
 
 The following table shows the configuration of network and storage for your FortiGate Virtual Appliance, depending on where they are deployed.
 
-| Component | Management cluster | Edge gateway cluster |
+| Component | Management cluster | Gateway cluster |
 |-----------------|-----------------|-----------------|
 | Management IP | Existing management subnet | {{site.data.keyword.cloud}} primary subnet |
 | Storage | Management data store (vSAN or NFS) | Local data store |

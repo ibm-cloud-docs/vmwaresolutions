@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-12-28"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -90,6 +90,7 @@ platform:
 pullSecret: 'COPY PULL SECRET HERE'
 sshKey: 'COPY PUBLIC SSH KEY HERE'
 ```
+{: pre}
 {: caption="Figure 1. install-config.yaml file contents" caption-side="bottom"}
 
 In the SSH session to the bastion node with root privileges, use the following commands to create the install-config.yaml file:
@@ -98,6 +99,7 @@ In the SSH session to the bastion node with root privileges, use the following c
 cd /opt/ocpinstall
 vi install-config.yaml
 ```
+{: pre}
 
 Type `i` to enter insert mode, paste the file contents. Press Esc, then type `:wq` to save the file and exit the vi editor.
 
@@ -106,6 +108,7 @@ The {{site.data.keyword.redhat_openshift_notm}} Installer deletes this file so t
 ```bash
 cp install-config.yaml install-config.bak
 ```
+{: pre}
 
 ## Running the Red Hat OpenShift Ignition command
 {: #openshift-runbook-runbook-install-ignition-cmd}
@@ -116,6 +119,8 @@ Now that the install-config.yaml is created and populated run the {{site.data.ke
 cd /opt/ocpinstall/
 openshift-install create ignition-configs --dir=/opt/ocpinstall/
 ```
+{: pre}
+
 The Ignition files are valid for 24 hours and your {{site.data.keyword.redhat_openshift_notm}} deployment must be completed within this time. Otherwise, you must regenerate the Ignition files. For more information, see [Troubleshooting {{site.data.keyword.redhat_openshift_notm}} problems](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-trbl-intro).
 {: note}
 
@@ -142,6 +147,7 @@ Copy the *bootstrap.ign* file to the document root of NGINX.
 ```bash
 cp bootstrap.ign /usr/share/nginx/html
 ```
+{: pre}
 
 ## Terraform files
 {: #openshift-runbook-runbook-install-terraform}
@@ -311,6 +317,7 @@ compute_ignition = <<END_OF_WORKER_IGNITION
 COPY IN CONTENTS OF WORKER.IGN HERE
 END_OF_WORKER_IGNITION
 ```
+{: pre}
 {: caption="Figure 2. terraform.tfvars example file" caption-side="bottom"}
 
 The `terraform.tfvars` file is created.
@@ -375,6 +382,7 @@ terraform init
 terraform plan
 terraform apply -auto-approve
 ```
+{: pre}
 
 ## Post deployment
 {: #openshift-runbook-runbook-install-postdeployment}
@@ -385,6 +393,7 @@ terraform apply -auto-approve
     cd /opt/ocpinstall
     openshift-install --dir=. wait-for bootstrap-complete --log-level debug
     ```
+    {: pre}
 
 2. Wait until you see the following information:
 
@@ -399,6 +408,7 @@ terraform apply -auto-approve
     cp /opt/ocpinstall/auth/kubeconfig ~/.kube/config
     oc patch configs.imageregistry.operator.openshift.io cluster --type merge --patch '{"spec":{"storage":{"emptyDir":{}}}}'
     ```
+    {: pre}
 
     After the installation is complete, change the image-registry to a suitable location.
 
@@ -407,6 +417,7 @@ terraform apply -auto-approve
     ```bash
     openshift-install --dir=. wait-for install-complete
     ```
+    {: pre}
 
 5. Wait until you see the following message. The system provides the URL and credentials to log in to the {{site.data.keyword.redhat_openshift_notm}} Console after the installation is complete. Your URL and password is different:
 
@@ -424,6 +435,7 @@ terraform apply -auto-approve
     ```bash
     watch -n5 oc get clusteroperators
     ```
+    {: pre}
 
 7. Monitor for cluster completion. An output is provided in the following example. Replace 4.x.5 with the current {{site.data.keyword.redhat_openshift_notm}} version, for example, 4.7.5.
 

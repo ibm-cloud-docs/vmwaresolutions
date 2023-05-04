@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-11-23"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -106,6 +106,7 @@ Add-DnsServerResourceRecord -Srv -ZoneName "ibm.local" -Name "_etcd-server-ssl._
 Add-DnsServerResourceRecord -Srv -ZoneName "ibm.local" -Name "_etcd-server-ssl._tcp.ocp.dallas" -DomainName "etcd-1.ocp.dallas.ibm.local"  -Priority 10 -Weight 0 -Port 2380
 Add-DnsServerResourceRecord -Srv -ZoneName "ibm.local" -Name "_etcd-server-ssl._tcp.ocp.dallas" -DomainName "etcd-2.ocp.dallas.ibm.local"  -Priority 10 -Weight 0 -Port 2380
 ```
+{: pre}
 
 ## Related links
 {: #vcs-openshift-runbook-dns-related}

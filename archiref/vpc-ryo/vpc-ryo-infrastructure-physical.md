@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-03-30"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ The physical infrastructure consists of the following components:
 ## Physical compute design
 {: #vpc-ryo-infrastructure-physical-host-design}
 
-Each VMware® deployment begins with a minimum of two host deployment, depending on the choice of storage solution and High Availability (HA) architecture that you want. You are responsible to design your VMware deployment and its clusters to meet your HA goals.
+Each VMware® deployment begins with a minimum of two hosts, depending on the choice of storage solution and High Availability (HA) architecture that you want. You are responsible to design your VMware deployment and its clusters to meet your HA goals.
 
 The server configurations available in the solution meet or exceed the minimum requirements to install, configure, and manage vSphere® ESXi™. The {{site.data.keyword.cloud_notm}} bare metal server for VPC on {{site.data.keyword.vpc_short}} uses second Generation Intel® Xeon® Platinum 8260 processors.
 

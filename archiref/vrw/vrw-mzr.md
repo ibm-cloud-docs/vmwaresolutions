@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-12-28"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -40,7 +40,7 @@ Dual Domain controllers in each data center with default domain replication to e
 ### Veeam management backup
 {: #vrw-mzr-considerations-veeam}
 
-Veeam backup and replication servers (VBR) are placed in either both the primary and secondary sites or located in the witness site. The Veeam proxy VMs deployed to the ESXi hosts are used for backup jobs since vSphere encryption is in use. A copy job that goes to Cloud Object Storage is created when allowed, this design allows the use of lower-cost storage for long-term retention of backups. When the dual site VBR servers are used a VBR configuration backup of each VBR is stored on the server in the other site. If a total loss of the VBR server occurs in one site, it can be restored to the other.
+Veeam Backup and Replication servers (VBR) are placed in either both the primary and secondary sites or located in the witness site. The Veeam proxy VMs deployed to the ESXi hosts are used for backup jobs since vSphere encryption is in use. A copy job that goes to Cloud Object Storage is created when allowed, this design allows the use of lower-cost storage for long-term retention of backups. When the dual site VBR servers are used a VBR configuration backup of each VBR is stored on the server in the other site. If a total loss of the VBR server occurs in one site, it can be restored to the other.
 
 ### vCenter
 {: #vrw-mzr-considerations-vcenter}

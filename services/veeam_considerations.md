@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-05-01"
 
 keywords: Veeam 9.5, Veeam 9 overview, Veeam 9.5 deprecated
 
@@ -27,7 +27,7 @@ The Veeam service seamlessly integrates directly with your VMware hypervisors to
 ## Technical specifications for Veeam 9.5u4b
 {: #veeam_considerations-specs}
 
-The current Veeam version that is installed is Veeam 11. The documentation about Veeam 9.5u4b is included for your information if you are using Veeam 9.5u4b.
+The current Veeam version that is installed is Veeam Backup and Replication 12. The documentation about Veeam 9.5u4b is included for your information if you are using Veeam 9.5u4b.
 {: note}
 
 The following components are in the Veeam 9.5u4b service:
@@ -75,10 +75,10 @@ Deleting the Veeam service stops all backups and deletes all the previous backup
 ## Related links
 {: #veeam_considerations-related}
 
-* [Veeam 11 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
 * [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring IBM Cloud Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Veeam backup and replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external}
+* [Veeam Backup and Replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external}
 * [Veeam technical documentation)](https://www.veeam.com/documentation-guides-datasheets.html){: external}

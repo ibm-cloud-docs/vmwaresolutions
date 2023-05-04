@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2023
 
-lastupdated: "2022-05-10"
+lastupdated: "2023-04-18"
 
 subcollection: vmwaresolutions
 
@@ -51,7 +51,7 @@ In order of the most efficient data transfer, the following backup proxy transpo
 * Network mode allows the backup proxy access to VM data over the network from the vSphere ESXi hosts by using the NBD/NDBSSL protocol. For this transport mode, the backup proxy can be either physical or virtual. In network mode, the backup proxy uses VMware Virtual Disk Development Kit (VDDK) to communicate with the ESXi host, which produces extra load on the vSphere ESXi host.
 * Backup from storage snapshots mode allows the backup proxy to access VM disks when they are on a supported storage system and the storage system is managed by Veeam Backup and Replication. This method is not available if the production environment is in {{site.data.keyword.cloud}}.
 
-For more information, see [Transport modes](https://helpcenter.veeam.com/docs/backup/vsphere/transport_modes.html?ver=110).
+For more information, see [Transport modes](https://helpcenter.veeam.com/docs/backup/vsphere/transport_modes.html?ver=120).
 
 When you use a VM based backup proxy:
 
@@ -72,6 +72,6 @@ For the isolated recovery environment solution architecture, backup proxies that
 ## Related links
 {: #veeam-cr-sa-vp-related}
 
-* [Backup proxy](https://helpcenter.veeam.com/docs/backup/vsphere/backup_proxy.html?ver=110){: external}
-* [Transport modes](https://helpcenter.veeam.com/docs/backup/vsphere/transport_modes.html?ver=110){: external}
+* [Backup proxy](https://helpcenter.veeam.com/docs/backup/vsphere/backup_proxy.html?ver=120){: external}
+* [Transport modes](https://helpcenter.veeam.com/docs/backup/vsphere/transport_modes.html?ver=120){: external}
 * [Veeam VMware vSphere backup proxy](https://bp.veeam.com/vbr/2_Design_Structures/D_Veeam_Components/D_backup_proxies/vmware_proxies.html#veeam-vmware-vsphere-backup-proxy){: external}

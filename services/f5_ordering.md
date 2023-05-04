@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-22"
+lastupdated: "2023-03-28"
 
 keywords: F5 license activation, F5 configuration, order F5
 
@@ -18,23 +18,22 @@ subcollection: vmwaresolutions
 # Ordering F5 BIG-IP
 {: #f5_ordering}
 
-You can include the F5 BIG-IP® service with a new vCenter Server® instance or add the service to your existing vCenter Server instance.
+You can include the F5 BIG-IP® service with a new vCenter Server® instance or add the service to your existing instance.
 
 ## Ordering F5 BIG-IP for a new instance
 {: #f5_ordering-new}
 
-1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. F5 BIG-IP is in the Security and compliance category. 
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. F5 BIG-IP is in the **Security and compliance** category. 
 2. Open the category, locate F5 BIG-IP, and toggle its switch on.
-3. Select **Edit** to review and specify the information. 
-4. If you enter or change information, click **Save**.
+3. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-f5_ordering#f5_ordering-config), then click **Save**.
 
 ## Ordering F5 BIG-IP for an existing instance
 {: #f5_ordering-existing}
 
 1. On the instance details page, click the **Services** tab.
 2. Click **Add** to add the service.
-3. On the **Services** page, locate the **F5 BIG-IP** service and toggle its switch on.
-4. Follow the steps to configure and add the service to your instance.
+3. On the **Add services** page, locate the **F5 BIG-IP** service in the **Security and Compliance** section and toggle its switch on.
+4. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-f5_ordering#f5_ordering-config), then click **Save**.
 
 ## Ordering F5 BIG-IP for private instances
 {: #f5_ordering-private}
@@ -44,7 +43,7 @@ When you order F5 BIG-IP for instances that are not configured with public inter
 The BigIP Virtual Edition (VE) endpoints must be able to activate their license before they can become operational. After the BigIP VE endpoints are installed, they no longer require the use of the proxy server.
 
 The F5 BIG-IP service cannot be added without a working proxy server at the time of service installation.
-{: note}
+{: important}
 
 ## F5 BIG-IP service configuration
 {: #f5_ordering-config}

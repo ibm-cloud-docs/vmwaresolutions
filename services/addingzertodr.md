@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-02-14"
+lastupdated: "2023-03-10"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -28,7 +28,7 @@ Zerto is supported on VMware vCenter Server® instances that meet the following 
 
 {{site.data.content.para-promotion-add-on-services}}
 
-The current Zerto version that is installed is 9.7u1.
+The Zerto version available for deployment is 9.7u1.
 {: note}
 
 ## Before you begin

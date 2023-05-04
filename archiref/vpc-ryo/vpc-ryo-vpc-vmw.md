@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2023
 
-lastupdated: "2022-08-17"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -47,7 +47,7 @@ The following table lists the recommended subnets in VPC. It is based on the rec
 | vpc-tep-subnet        | TEP traffic                  | Number of Hosts + \n 2 x Edge Nodes |
 {: caption="Table 1. VPC subnets for System Traffic Types" caption-side="bottom"}
 
-To be able to create subnets in VPC, you must create a VPC prefix. VPC prefixes are defined per zone. To simplify routing, it is recommended to allocate the recommended subnets from a single prefix. Which means that to be able to accommodate 5 subnets, you need one `/21` prefix to cater addresses for about 120 hosts per zone. If you want to use a prefix with `/22`, you can add about 60 hosts per zone. By selecting a large enough prefix, it will leave you growth for scalability and future needs, such as dedicated VMKs for NFS, replication and for NSX-T Tier-0 uplinks.
+To be able to create subnets in VPC, you must create a VPC prefix. VPC prefixes are defined per zone. To simplify routing, it is recommended to allocate the recommended subnets from a single prefix. Which means that to be able to accommodate 5 subnets, you need one `/21` prefix to cater addresses for about 120 hosts per zone. If you want to use a prefix with `/22`, you can add about 60 hosts per zone. By selecting a large enough prefix, it will leave you growth for scalability and future needs, such as dedicated VMKs for NFS replication and for NSX-T Tier-0 uplinks.
 
 ### Physical host connections in VPC
 {: #vpc-ryo-vpc-vmw-host-connect}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-07-12"
+lastupdated: "2023-04-28"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -23,7 +23,7 @@ When you order a VMware vCenter Server® instance, you can also order add-on ser
 {: #vc_orderinginstance-addon-services-recomm}
 
 The following services are recommended with your vCenter Server instance. The recommended add-on services require configuration setup.
-* [Veeam 11](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam Backup and Replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
 
 ## Optional services

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-09-06"
+lastupdated: "2023-04-12"
 
 keywords: openshift for vmware, request openshift for vmware, tech specs openshift vmware
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 The {{site.data.keyword.redhat_openshift_full}} for VMware® service deploys an {{site.data.keyword.redhat_openshift_notm}} cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The {{site.data.keyword.redhat_openshift_notm}} components are deployed as virtual machines (VMs) or appliances by using VMware NSX® software-defined networking.
 
-The current {{site.data.keyword.redhat_openshift_notm}} version that is installed is 4.11.
+The {{site.data.keyword.redhat_openshift_notm}} version available for deployment is 4.11.
 {: note}
 
 Review the following information before you install the {{site.data.keyword.redhat_openshift_notm}} for VMware service:
@@ -144,8 +144,8 @@ For more information about updating {{site.data.keyword.redhat_openshift_notm}},
 
 * Before you delete {{site.data.keyword.redhat_openshift_notm}} for VMware, you must remove any additional VMs that you created in the `ocp` directory on VMware. The VMware Solutions automation removes only the items that were deployed during the initial installation of {{site.data.keyword.redhat_openshift_notm}} (VMs, storage, and NSX). Any node that is deployed after the installation is not cleaned up.
 * The VXLAN, DLR, and the Edge Gateway that were created during the initial deployment of {{site.data.keyword.redhat_openshift_notm}} for VMware is deleted. The VMs that you deployed on VXLAN will lose connectivity after the removal of {{site.data.keyword.redhat_openshift_notm}} for VMware starts.
-* If you are using a vSAN datastore, delete any persistent volumes that you no longer need before you uninstall {{site.data.keyword.redhat_openshift_notm}}. Any volumes that are not deleted will remain in the vSAN storage after the {{site.data.keyword.redhat_openshift_notm}} uninstallation.
 * If your cluster uses NFS storage, deleting {{site.data.keyword.redhat_openshift_notm}} deletes the NFS datastore that was added during installation.
+* If you are using a vSAN datastore, delete any persistent volumes that you no longer need before you uninstall {{site.data.keyword.redhat_openshift_notm}}. Any volumes that are not deleted will remain in the vSAN storage after the {{site.data.keyword.redhat_openshift_notm}} uninstallation.
 * Before you delete the service, you must remove any personal VMs that were deployed with this service, from the storage. {{site.data.keyword.redhat_openshift_notm}} only orders personal VMs if it’s not vSAN.
 
 ## Related links

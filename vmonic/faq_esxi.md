@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-04-22"
+lastupdated: "2023-04-29"
 
 keywords: FAQ, host, ESXi server
 
@@ -42,7 +42,7 @@ For instances deployed in V2.1 or earlier, you must enable the necessary vSAN™
 
 2. Restart each ESXi server. For more information, see [Creating vSAN clusters with up to 64 nodes](https://kb.vmware.com/s/article/2110081){: external}.
 3. You might need to increase the size of the vCenter Server to accommodate the added virtual machines and ESXi servers.
-4. Open an IBM Support ticket to indicate that you applied the vSAN changes manually by completing steps 1 - 3. In the ticket, request that your upgraded instance is enabled for ESXi servers beyond 32.
+4. Open an IBM Support ticket to indicate that you applied the vSAN changes manually by completing steps 1 to 3. In the ticket, request that your upgraded instance is enabled for ESXi servers beyond 32.
 
 ## Can I change the ESXi server names and IP addresses?
 {: #faq_esxi-change-name-ip}
@@ -59,9 +59,9 @@ Don't use the **Rename Device** feature on the {{site.data.keyword.cloud_notm}} 
 
 It is recommended to keep root access enabled on ESXi servers, otherwise failure in the {{site.data.keyword.vmwaresolutions_short}} functions might occur.
 
-If necessary, you can disable root access after the ESXi servers have a status of **Ready to use** on the {{site.data.keyword.vmwaresolutions_short}} console.
+If necessary, you can disable root access when the ESXi servers have a status of **Available** on the VMware Solutions console.
 
-You must re-enable root access for subsequent automation operations, for example, when you add or remove file shares or when you install add-on services, such as Zerto.
+You must re-enable root access for subsequent automation operations. For example, when you add or remove file shares, or when you install add-on services such as Zerto.
 
 ## How do I place a host in maintenance mode?
 {: #faq_esxi-maint-mode}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-04-28"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -114,7 +114,8 @@ Use the following table to document the parameters that you need for your deploy
 | vCenter Server instance datastore | `vsanDatastore` | |
 {: caption="Table 8. PowerNSX DLR parameters" caption-side="bottom"}
 
-```powernsx
+
+```text
 # Connect to NSX Manager
 Connect-NsxServer -vCenterServer <IP_Address> -User <UserName> -Password '<Password>'
 
@@ -156,6 +157,7 @@ $null = invoke-nsxwebrequest -method "put" -uri $uri -body $xmlPayload -connecti
 # Disconnect
 Disconnect-NsxServer
 ```
+{: pre}
 
 ## Related links
 {: #vcs-openshift-runbook-nsxdlr-related}

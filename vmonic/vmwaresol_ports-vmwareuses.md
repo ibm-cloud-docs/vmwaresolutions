@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-04-06"
+lastupdated: "2023-04-13"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -45,4 +45,4 @@ For more information, see [TCP and UDP ports required to access VMware component
 {: #vmwaresol_ports-vmwareuses-related}
 
 * [Ports for services](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-services)
-* [VMware Solutions network architecture](/docs/vmwaresolutions?topic=vmwaresolutions-under_the_hood#under_the_hood-network)
+

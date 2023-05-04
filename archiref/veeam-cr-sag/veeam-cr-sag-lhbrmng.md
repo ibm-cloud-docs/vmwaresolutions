@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2023
 
-lastupdated: "2022-05-30"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -30,7 +30,6 @@ The playbook can be written locally on your laptop by using an editor, such as V
 The playbook `create_lhbr.yml` starts with the following code:
 
 ```text
----
 - hosts: vbr
   vars_files:
     - vault
@@ -154,8 +153,8 @@ The following code snippet adds the Linux hardened repository as an extant to a 
 {: #veeam-cr-sag-lhbrmng-related}
 
 * [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
-* [Add-VBRLinux](https://helpcenter.veeam.com/docs/backup/powershell/add-vbrlinux.html?ver=110){: external}
-* [Add-VBRBackupRepository](https://helpcenter.veeam.com/docs/backup/powershell/add-vbrbackuprepository.html?ver=110){: external}
-* [Per-Machine Backup Files](https://helpcenter.veeam.com/docs/backup/vsphere/per_vm_backup_files.html?ver=110){: external}
-* [Task Limitation for Backup Repositories](https://helpcenter.veeam.com/docs/backup/vsphere/limiting_tasks.html?ver=110#task-limitation-for-backup-repositories){: external}
+* [Add-VBRLinux](https://helpcenter.veeam.com/docs/backup/powershell/add-vbrlinux.html?ver=120){: external}
+* [Add-VBRBackupRepository](https://helpcenter.veeam.com/docs/backup/powershell/add-vbrbackuprepository.html?ver=120){: external}
+* [Per-Machine Backup Files](https://helpcenter.veeam.com/docs/backup/vsphere/per_vm_backup_files.html?ver=120){: external}
+* [Task Limitation for Backup Repositories](https://helpcenter.veeam.com/docs/backup/vsphere/limiting_tasks.html?ver=120){: external}
 

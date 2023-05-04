@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2023
 
-lastupdated: "2022-10-27"
+lastupdated: "2023-04-18"
 
 subcollection: vmwaresolutions
 
@@ -74,5 +74,5 @@ For example, if the target server installs ClamAV, the following command scans t
 ## Related links
 {: #veeam-cr-sandboxveeam-related}
 
-* [Veeam vPower NFS service](https://helpcenter.veeam.com/docs/backup/vsphere/vpower_nfs_service.html?ver=110){: external}
-* [Veeam data integration API](https://helpcenter.veeam.com/docs/backup/powershell/veeam-data-integration-api.html?ver=110){: external}
+* [Veeam vPower NFS service](https://helpcenter.veeam.com/docs/backup/vsphere/vpower_nfs_service.html?ver=120){: external}
+* [Veeam data integration API](https://helpcenter.veeam.com/docs/backup/vsphere/data_integration_api.html?ver=120){: external}

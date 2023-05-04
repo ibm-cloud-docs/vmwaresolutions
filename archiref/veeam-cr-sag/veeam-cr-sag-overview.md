@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-09"
+lastupdated: "2023-03-21"
 
 subcollection: vmwaresolutions
 
@@ -60,7 +60,7 @@ Optionally, you can use the following information:
 
 * The vCenter Server instance is already deployed and consists of:
    * A three-host consolidated cluster that runs NSX-T and uses NFS data stores. Your vCenter Server instance might be different, and the step-by-step instructions can accommodate different instances.
-   * An edge gateway cluster that hosts vSRX firewall appliances.
+   * A gateway cluster that hosts vSRX firewall appliances.
 * The Veeam service is already deployed and uses the bare metal option. However, the VSI instance is similar from a network perspective with two IP addresses; one on the primary subnet and one on the instance management subnet. The VM option has a single IP address only on the instance management subnet.
 
 ### High-level steps

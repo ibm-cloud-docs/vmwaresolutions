@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2023
 
-lastupdated: "2022-05-09"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -19,12 +19,12 @@ This document describes the Veeam® components that are used in these solution a
 
 Pertinent details are taken from the following information sources and also introduce the Veeam components:
 
-* [Veeam Backup and replication 11 user guide for VMware vSphere®](https://helpcenter.veeam.com/docs/backup/vsphere/overview.html?ver=110)
-* [Veeam Backup and replication best practices](https://bp.veeam.com/vbr/#veeam-backup--replication-best-practices){: external}
+* [Veeam Backup and Replication 12 user guide for VMware vSphere®](https://helpcenter.veeam.com/docs/backup/vsphere/overview.html?ver=120)
+* [Veeam Backup and Replication best practices](https://bp.veeam.com/vbr/#veeam-backup--replication-best-practices){: external}
 
 ![Veeam components](../../images/veeam-cr-sa-veeam-components.svg){: caption="Figure 1. Veeam components" caption-side="bottom"}
 
-The Veeam service instance is based on an "all-in-one" [Simple deployment](https://helpcenter.veeam.com/docs/backup/vsphere/simple.html?ver=110){: external} scenario where the following Veeam components are deployed on a single server:
+The Veeam service instance is based on an "all-in-one" [Simple deployment](https://helpcenter.veeam.com/docs/backup/vsphere/simple.html?ver=120){: external} scenario where the following Veeam components are deployed on a single server:
 
 * Backup server.
 * Configuration database.
@@ -44,9 +44,9 @@ The "all-in-one" server is installed automatically when the Veeam service instan
 
 The simple deployment scenario is suitable for small virtual environments. 
 
-For larger scale-virtual environments, the [Advanced deployment](https://helpcenter.veeam.com/docs/backup/vsphere/advanced.html?ver=110){: external} scenario is recommended. This deployment scenario moves backup workload to dedicated backup infrastructure components. In this scenario, the backup server functions as a manager for backup jobs and for deploying and maintaining backup infrastructure components. The move from a simple to an advanced deployment scenario is a manual process.
+For larger scale-virtual environments, the [Advanced deployment](https://helpcenter.veeam.com/docs/backup/vsphere/advanced.html?ver=120){: external} scenario is recommended. This deployment scenario moves backup workload to dedicated backup infrastructure components. In this scenario, the backup server functions as a manager for backup jobs and for deploying and maintaining backup infrastructure components. The move from a simple to an advanced deployment scenario is a manual process.
 
-The Veeam [distributed deployment](https://helpcenter.veeam.com/docs/backup/vsphere/distributed.html?ver=110){: external} scenario federates multiple Veeam instances and uses Veeam Backup Enterprise Manager for centralized management and reporting for multiple backup servers. This deployment scenario is not used in these solution architectures.
+The Veeam [distributed deployment](https://helpcenter.veeam.com/docs/backup/vsphere/distributed.html?ver=120){: external} scenario federates multiple Veeam instances and uses Veeam Backup Enterprise Manager for centralized management and reporting for multiple backup servers. This deployment scenario is not used in these solution architectures.
 
 ## Backup server
 {: #veeam-cr-sa-components-backup}
@@ -140,7 +140,7 @@ More managed servers are added in the advanced deployment scenario, such as:
 ## Related links
 {: #veeam-cr-sa-components-related}
 
-* [About Veeam backup and replication](https://helpcenter.veeam.com/docs/backup/vsphere/overview.html?ver=110){: external}
+* [About Veeam Backup and Replication](https://helpcenter.veeam.com/docs/backup/vsphere/overview.html?ver=120){: external}
 * [Veeam architects site](https://www.veeambp.com/){: external}
 * [Veeam Size Estimator (VSE)](https://bp.veeam.com/vbr/2_Design_Structures/D_VSE_guide/){: external}
 * [Using Veeam ports mapper tool](https://bp.veeam.com/vbr/2_Design_Structures/D_Tools/PortsTool.html){: external}

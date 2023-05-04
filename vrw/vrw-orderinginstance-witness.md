@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-08"
+lastupdated: "2023-04-24"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -87,22 +87,7 @@ The networking type is set to **Private network only**.
 
 {{site.data.content.uplink-speed-options-cascadelake-list}}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| Asia-Pacific | TOK02 | 02 |
-| Asia-Pacific | TOK04 | 01 |
-| Asia-Pacific | TOK05 | 01 |
-| Europe | FRA02 | 02 |
-| Europe | FRA05 | 01 |
-| Europe | LON04 | 01 |
-| Europe | LON06 | 01 |
-| NA East | TOR04 | 01 |
-| NA East | WDC04 | 05 |
-| NA East | WDC06 | 01 |
-| NA East | WDC07 | 01 |
-| NA South | DAL10 | 03 |
-| NA South | DAL12 | 01 |
-{: caption="Table 2. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{{site.data.content.simpletable-uplink-speed-locations-other}}
 
 ## Related links
 {: #vrw-orderinginstance-whitness-related}

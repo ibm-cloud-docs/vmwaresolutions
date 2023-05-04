@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-12-09"
+lastupdated: "2023-04-17"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -49,12 +49,12 @@ The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and VMs i
 Select the Domain Name System (DNS) configuration for your instance:
 
 * **Single public Windows VSI for Active Directory/DNS** - A single Microsoft® Windows® Server VSI for Microsoft® Active Directory™ (AD) is deployed and can be looked up. The VSI functions as the DNS for the instance where the hosts and VMs are registered.
-* **Two highly available dedicated Windows server VMs on the management cluster** - Two Microsoft Windows® VMs are deployed, helping enhance security and robustness.
+* **Two highly available dedicated Windows Server VMs on the consolidated cluster** - Two Microsoft Windows® VMs are deployed, which enhances security and robustness.
 
-You must provide two Microsoft Windows Server 2019 Standard edition licenses if you configure your instance to use the two Microsoft Windows VMs.
+You must provide two Microsoft Windows Server 2019 Standard edition licenses if you configure your instance to use two Windows Server VMs.
 {: important}
 
-Each license can be assigned only to one single physical server and covers up to two physical processors. One Standard edition license can run two virtualized Microsoft Windows VMs per 2-processor server. Therefore, two licenses are required since two Microsoft Windows VMs are deployed in two different hosts.
+Each license can be assigned only to one single physical server and covers up to two physical processors. One Standard edition license can run two virtualized Windows VMs per 2-processor server. Therefore, two licenses are required since two Windows VMs are deployed on two different hosts.
 
 You have 30 days to activate the VMs.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-08"
+lastupdated: "2023-03-21"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX virtual security appliance, Juniper virtual security appliance, Juniper vSRX console
 
@@ -22,16 +22,16 @@ Juniper® vSRX on IBM Cloud is a virtual security appliance that provides securi
 
 {{site.data.content.para-promotion-add-on-services}}
 
-The current Juniper vSRX version that is installed is 3.0 (21.4R2).
+The Juniper vSRX version available for deployment is 3.0 (21.4R2).
 {: note}
 
 For more information about vSRX and the vSRX 3.0 architecture, see [vSRX Deployment Guide for Private and Public Cloud Platforms](https://www.juniper.net/documentation/us/en/software/vsrx/vsrx-consolidated-deployment-guide/index.html){: external}.
 
 You can install Juniper vSRX as one of the following components:
 * As a virtual appliance on the management cluster. In this case, Juniper vSRX protects the traffic in the management cluster. That is, the service protects only the traffic that you forward from your devices, for example, setting the default gateway to point to Juniper vSRX.
-* As a security or gateway appliance on the edge gateway cluster. In this case, Juniper vSRX works like a gateway appliance, which you can set without having to configure any devices. Juniper vSRX protects all clusters in the same pod and data center. With this deployment, you route all traffic in the same pod and data center to protect a broader portion of the system.
+* As a security or gateway appliance on the gateway cluster. In this case, Juniper vSRX works like a gateway appliance, which you can set without having to configure any devices. Juniper vSRX protects all clusters in the same pod and data center. With this deployment, you route all traffic in the same pod and data center to protect a broader portion of the system.
 
-   You cannot install Juniper vSRX and FortiGate Virtual Appliance on the same edge gateway cluster.
+   You cannot install Juniper vSRX and FortiGate Virtual Appliance on the same gateway cluster.
 
 Juniper vSRX is built on the Junos® operating system (Junos OS™) and delivers networking and security features similar to ones on the software releases for SRX Series Services Gateways.
 
@@ -44,7 +44,7 @@ Juniper vSRX provides a complete Next-Generation Firewall (NGFW) solution. This 
 * Intrusion detection and prevention (IPS)
 * UTM features that include Enhanced Web Filtering and Anti-Virus
 
-You can install multiple instances of Juniper vSRX on the management cluster. On a single edge gateway cluster, you can install only one instance of Juniper vSRX.
+You can install multiple instances of Juniper vSRX on the management cluster. On a single gateway cluster, you can install only one instance of Juniper vSRX.
 
 You can manage this service by using the J-Web interface link that is provided on the service details page on the {{site.data.keyword.vmwaresolutions_short}} console.
 
@@ -98,7 +98,7 @@ If you need to extend your license after expiration, you can update your vSRX li
 {: #juniper-overview-install-consider}
 
 Review the following considerations before you install the Juniper vSRX service:
-* The Juniper vSRX VMs are deployed only into the default cluster or the edge gateway cluster.
+* The Juniper vSRX VMs are deployed only into the default cluster or the gateway cluster.
 * Juniper vSRX can protect only items in the same data center and pod.
 * You are responsible for Juniper vSRX configuration.
 * For more information about extra configuration options that you might want to include and as an example, see [The IBM Cloud IaaS vSRX default configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vcsvsrx-iaas-def-config). This information does not illustrate your configuration. Your own configuration is different.

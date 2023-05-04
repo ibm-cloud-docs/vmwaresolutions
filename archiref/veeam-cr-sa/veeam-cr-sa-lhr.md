@@ -87,5 +87,5 @@ The previous assessment report considers the following details as best practice 
 ## Related links
 {: #veeam-cr-sa-lhr-related}
 
-* [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=110){: external}
+* [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external}
 

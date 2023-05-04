@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-05-16"
+lastupdated: "2023-04-28"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ You can order services for your Security and Compliance Readiness Bundle instanc
 {: #scb_addingremovingservices-available-services}
 
 The following services are available for Security and Compliance Readiness Bundle instances:
-* [Veeam 11](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam Backup and Replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)
 * [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations)
 * [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)

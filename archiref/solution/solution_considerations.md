@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-07-26"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ Complete the following steps to manage access to your {{site.data.keyword.cloud_
 
 - Access instance management endpoints by using the [{{site.data.keyword.cloud_notm}} VPN](https://www.ibm.com/cloud/vpn-access) or your [{{site.data.keyword.cloud_notm}} Direct Link connection](https://www.ibm.com/cloud/direct-link).
 - Devise a strategy for public network connectivity from within your instance. Your options include the sample customer VMware NSX Edge™ Services Gateway (ESG), gateway appliances such as Vyatta and FortiGate, and proxy servers deployed in the {{site.data.keyword.cloud_notm}} network or on your own network accessed through Direct Link.
-- Plan whether to deploy your workload on {{site.data.keyword.cloud_notm}} VLANs with [{{site.data.keyword.cloud_notm}} portable IP addresses](/docs/subnets?topic=subnets-getting-started) or [on NSX logical switches (VXLANs) using your own IP addresses](/docs/vmwaresolutions?topic=vmwaresolutions-nsx_overview). When you use NSX software-defined networking (SDN), it gives you the greatest flexibility to manage and secure your workload network in the {{site.data.keyword.cloud_notm}}.
+- Plan whether to deploy your workload on {{site.data.keyword.cloud_notm}} VLANs with [{{site.data.keyword.cloud_notm}} portable IP addresses](/docs/subnets?topic=subnets-getting-started) or [on NSX-T logical switches using your own IP addresses](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design). When you use NSX software-defined networking (SDN), it gives you the greatest flexibility to manage and secure your workload network in the {{site.data.keyword.cloud_notm}}.
 - Use NSX ESGs, [IBM Cloud Vyatta](https://cloud.ibm.com/catalog/infrastructure/virtual-router-appliance), and Direct Link peering to plan for connectivity to workloads (Network Address Translation, Virtual Private Network, routing).
 - If you implement Cross-vCenter NSX, ensure that your local segment ID ranges are not overlapping before you deploy any local workloads.
 
@@ -113,7 +113,7 @@ Complete the following steps to ensure that you make adequate plans for high ava
 - Configure resource pools, as needed, for management and workload.
 - Plan, implement, and monitor a backup solution for both [instance management components](/docs/vmwaresolutions?topic=vmwaresolutions-solution_backingup) and workload.
 - Plan for high availability of instance management, including the possibility of multiple instances, multiple clusters, vCenter HA, and PSC HA.
-- Use solutions such as [Zerto Disaster Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) or [Veeam backup and replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) to plan for business continuity for your workloads.
+- Use solutions such as [Zerto Disaster Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) or [Veeam Backup and Replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) to plan for business continuity for your workloads.
 
 ## Storage planning
 {: #solution_considerations-storage}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-02-08"
+lastupdated: "2023-03-27"
 
 subcollection: vmwaresolutions
 
@@ -15,37 +15,38 @@ subcollection: vmwaresolutions
 # Adding clusters to vCenter Server multizone instances
 {: #mcv_addviewdeleteclusters}
 
-New deployments of vCenter Server multizone instances are no longer supported. You can still add and delete clusters, add and remove ESXi servers, and add and delete storage for existing multizone instances.
+New deployments of VMware vCenter Server® multizone instances are no longer supported. You can still add and delete clusters, add and remove ESXi servers, and add and delete storage for existing multizone instances.
 {: deprecated}
 
-You can add workload and edge gateway clusters to VMware® vCenter Server® multizone instances. When no longer needed, delete the clusters from your instance.
+You can add workload or gateway clusters to vCenter Server multizone instances. When no longer needed, delete the clusters from your instance.
 
 ## Procedure to add workload clusters to vCenter Server multizone instances
 {: #mcv_addviewdeleteclusters-workload-procedure}
 
 1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** > **vCenter Server** from the left navigation pane.
-2. In the **vCenter Server** table, click the multizone instance that you want to add the edge gateway cluster to.
-3. Click the **Infrastructure** tab and click **Add** on the upper right of the **Workload cluster** table.
-4. On the **Cluster** page, enter the cluster name.
+2. In the **vCenter Server** table, click the multizone instance that you want to add the workload cluster to.
+3. Click the **Infrastructure** tab and click **Create** on the upper right of the **Workload clusters** table.
+4. On the **Create cluster** page, enter the cluster name.
 5. Select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers**.
 6. Specify the vSAN storage settings. Specify the disk types for the capacity and cache disks and the number of disks. Optionally, select the **Enable vSAN deduplication and compression** checkbox. For more information, see [Enable vSAN deduplication and compression](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters#vc_addingclusters-vsan-storage-enable-comp).
-7. On the **Summary** pane, review the instance settings and the estimated price.
+7. On the **Summary** pane, review the cluster settings and the estimated price.
       * To save the settings as a new configuration template without placing an order, click **Save configuration**, enter a name for the configuration, and click **Continue**.
       * To save the updates to a saved configuration, click **Save configuration**, select **Modify current configuration**, and click **Continue**.
       * To save the updates to a new saved configuration, click **Save configuration**, select **Create new configuration**, enter a new name for the configuration, and click **Continue**.
 8. To place the order, ensure that the account to be charged is correct, review and accept the terms, and click **Create**.
 
-## Procedure to add edge gateway clusters to vCenter Server multizone instances
+## Procedure to add gateway clusters to vCenter Server multizone instances
 {: #mcv_addviewdeleteclusters-edge-procedure}
 
-You can add edge gateway clusters to your vCenter Server multizone instance if you did not select to optionally enable during your initial order. When you add edge gateway clusters, you must add each cluster one at a time.
+You can add gateway clusters to your vCenter Server multizone instance if you did not select to enable during your initial order. When you add gateway clusters, you must add each cluster one at a time.
 
 You cannot add more than one cluster in the same data center pod.
+{: restriction}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **vCenter Server** from the left navigation pane.
-2. In the **vCenter Server** table, click the multizone instance that you want to add the edge gateway cluster to.
-3. Click the **Infrastructure** tab and click **Add** on the **Edge gateway cluster** table.
-4. On the **Cluster** page, select the data center to host the cluster and then enter the cluster name.
+1. From the VMware Solutions console, click **Resources** > **vCenter Server** from the left navigation pane.
+2. In the **vCenter Server** table, click the multizone instance that you want to add the gateway cluster to.
+3. Click the **Infrastructure** tab and click **Create** on the upper right of the **Gateway clusters** table.
+4. On the **Create cluster** page, select the data center to host the cluster, then enter the cluster name.
 5. Select the amount of **RAM** and the **Number of bare metal servers**.
 6. On the **Summary** pane, verify the cluster configuration before you add the cluster.
    1. Review the settings for the cluster.

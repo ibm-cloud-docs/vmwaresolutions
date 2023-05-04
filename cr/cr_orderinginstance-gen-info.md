@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-17"
+lastupdated: "2023-04-25"
 
 keywords: cyber recovery, cyber recovery settings, cyber recovery license settings, cyber recovery versions, cyber recovery instances
 
@@ -19,10 +19,8 @@ subcollection: vmwaresolutions
 
 The following VMware® components are part of the Cyber Recovery instance.
 
-* VMware vSphere® version 7.0u3
-* VMware NSX-T™ version 3.2
-
-The default instance name is **vcs-za**.
+* VMware vSphere® 7.0u3
+* VMware NSX-T™ 3.2
 
 {{site.data.content.orderinginstance-inst-name-list}}
 

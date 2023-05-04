@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-02-23"
+lastupdated: "2023-03-10"
 
 keywords: vRealize, vRealize info, tech specs vRealize
 
@@ -25,7 +25,7 @@ These tools are deployed by using the IBM advanced automation and are based on a
 
 {{site.data.content.para-promotion-services}}
 
-The current versions that are installed are vROps 8.10 and vRLI 8.10.
+The service versions available for deployment are vROps 8.10 and vRLI 8.10.
 {: note}
 
 ## Technical specifications for vRealize Operations and Log Insight

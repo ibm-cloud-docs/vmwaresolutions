@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-02-09"
+lastupdated: "2023-04-12"
 
 keywords: vCenter Server remove hosts, vCenter Server remove ESXi servers
 
@@ -23,11 +23,11 @@ You can contract the capacity of your VMware vCenter Server® instance according
 {: #vc_removingservers-prereq}
 
 * Removing ESXi servers from vCenter Server instances with VMware vSphere® 6.5 is not supported.
-* For the edge gateway cluster, you cannot add or remove ESXi servers.
+* For the gateway cluster, you cannot add or remove ESXi servers.
 * {{site.data.content.para-vcenterremoveESXiservers}}
 * When you remove ESXi servers, the servers are placed in maintenance mode, and then, all the virtual machines (VMs) running on the servers are migrated before they are removed from vCenter Server. For maximum of control over the relocation of VMs, place the ESXi servers to remove in maintenance mode and migrate the VMs running on them manually using the VMware vSphere Web Client. After that, remove the ESXi servers by using the VMware Solutions console.
-* If you are using vSAN storage, at least four ESXi servers are required.
 * If you are using NFS storage, NSX-T™ instances require at least three ESXi servers for a consolidated cluster or at least two servers for any other cluster. NSX-V instances require at least two ESXi servers.
+* If you are using vSAN storage, at least four ESXi servers are required.
 * (NSX-V only) If F5® BIG-IP® or FortiGate® Virtual Appliance is installed on your ESXi server, you must migrate the F5 BIG-IP and FortiGate VMs to a different ESXi server than the one that is hosting the VMs.
 * (NSX-V only) If IBM Spectrum® Protect Plus is installed on your ESXi server, ensure that there are no active (failed or in progress) backup or restore operations. These active operations might prevent the ESXi server from being removed.
 
@@ -44,7 +44,7 @@ You can contract the capacity of your VMware vCenter Server® instance according
 ## Results after you remove ESXi servers from vCenter Server instances
 {: #vc_removingservers-results}
 
-1. You might experience a slight delay on the console, while the instance status changes from **Ready to use** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
+1. You might experience a slight delay on the console, while the instance status changes from **Available** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
 2. You are notified by email that your request to remove ESXi servers is being processed. On the console, the status of the cluster that is associated with the ESXi servers is changed to **Modifying**.
 3. The ESXi servers are fully reclaimed by {{site.data.keyword.cloud_notm}} infrastructure at the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle, which is typically 30 days.
 

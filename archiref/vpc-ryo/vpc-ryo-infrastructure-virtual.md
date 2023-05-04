@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-12-29"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -57,7 +57,7 @@ The VMware vSAN is a distributed layer of software that runs natively as a part 
 
 Within vSAN design, the compute nodes contain local disk drives for the ESXi operating system (OS) and extra disk drives for the vSAN data store. In every bare metal server, two M.2 SSD mirrored drives are included in each node to house the ESXi installation, regardless of which type of cluster the host belongs to. The {{site.data.keyword.cloud_notm}} bare metal server profiles with letter `d` represent a number of additional attached NVMe U.2 SSDs, which can be used for vSAN.
 
-With vSAN, you must specify each host and each device to be used for the vSAN data store. You can organize cache and capacity devices into disk groups. Each disk group contains one flash cache device and one or more capacity devices. When you create a disk group, consider the ratio of flash cache to used capacity. The ratio depends on the requirements and workload of the cluster. For more information about disk groups, see [Administering VMware vSAN - Managing disk groups and devices](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vsan.doc/GUID-88790522-2FA0-476F-B874-6FE4E8E5B908.html){: external}. For more information about determining the cache ratio for all-flash clusters, see [Designing vSAN Disk groups – All Flash Cache Ratio Update](https://blogs.vmware.com/virtualblocks/2017/01/18/designing-vsan-disk-groups-cache-ratio-revisited/){: external}.
+With vSAN, you must specify each host and each device to be used for the vSAN data store. You can organize cache and capacity devices into disk groups. Each disk group contains one flash cache device and one or more capacity devices. When you create a disk group, consider the ratio of flash cache to used capacity. The ratio depends on the requirements and workload of the cluster. For more information about disk groups, see [Managing disk groups and devices](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vsan.doc/GUID-88790522-2FA0-476F-B874-6FE4E8E5B908.html){: external}. For more information about determining the cache ratio for all-flash clusters, see [Understanding vSAN architecture: disk groups](https://blogs.vmware.com/virtualblocks/2019/04/18/vsan-disk-groups/){: external}.
 
 vSAN can be employed as follows:
 

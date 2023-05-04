@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-11-22"
+lastupdated: "2023-04-06"
 
 subcollection: vmwaresolutions
 
@@ -35,14 +35,14 @@ You can expand the capacity of your VMware vCenter Server® multizone instances 
 3. Click the **Infrastructure** tab.
 4. In the applicable cluster table, click the cluster to which you want to add NFS storage.
 5. In the **Storage** section, click **Add**.
-6. In the **Storage** window, complete the storage configuration.
-   * If you want to add and configure the same settings to all file shares, specify the **Number of Shares**, **Performance**, and **Size (GB)**.
-   * If you want to add and configure file shares individually, select **Configure shares individually**. Then, click the **Add** icon ![Add icon](../../icons/add.svg "Add") next to the **Add shared storage** label. Select the **Performance** and **Size (GB)** for each individual file share. You must select at least one file share.
-7. Review the estimated price and click **Create**.
+6. In the **Add NFS storage** side panel, complete the storage configuration.
+   * If you want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
+   * If you want to add and configure file shares individually, toggle the **Configure shares individually** switch on. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. You must select at least one file share.
+7. Review the estimated price and click **Add**.
 
 ## Results after you add NFS storage to vCenter Server multizone instances
 {: #mcv_addingnfs-storage-results}
 
-1. You might experience a slight delay on the console while the instance status changes from **Ready to use** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
+1. You might experience a slight delay on the console while the instance status changes from **Available** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
 2. You are notified by email that your request to add NFS storage is being processed. On the console, the status of the cluster that is associated with the NFS storage is changed to **Modifying**.
 3. If you do not see that the new NFS storage is added to the list in the cluster, check the email or console notifications to find more details about the failure.

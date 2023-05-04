@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-04-22"
+lastupdated: "2023-04-29"
 
 keywords: troubleshooting, Zerto VRA, Zerto uninstall
 
@@ -26,5 +26,5 @@ Manually remove the VRAs from the vCenter® console.
 {: tsResolve}
 
 1. Log in to the vCenter console.
-2. Click **Hosts and Clusters** and locate the virtual machines with names that start with **Z-VRA-**. For example, **`Z-VRA-host0-vcs40dal.vcs.icvs.org`**.
-3. Right-click the **Z-VRA-** virtual machine and click **Delete from Disk**.
+2. Click **Hosts and Clusters**, and locate the virtual machines with names that start with **Z-VRA-**. For example, **`Z-VRA-host0-vcs40dal.vcs.icvs.org`**.
+3. Right-click the **Z-VRA-** virtual machine, and click **Delete from Disk**.

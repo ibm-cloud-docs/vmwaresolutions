@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-09"
+lastupdated: "2023-03-24"
 
 subcollection: vmwaresolutions
 
@@ -23,13 +23,13 @@ The design extends and enhances the basic VMware vCenter Server® architecture t
 
 ![IBM Cloud for VMware Regulated Workloads infrastructure overview](../../images/vrw-architecture.svg "IBM Cloud for VMware Regulated Workloads infrastructure overview"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads infrastructure overview" caption-side="bottom"}
 
-The perimeter gateway cluster that is shown in the workload region is the same gateway that runs on the dedicated edge gateway cluster.
+The perimeter gateway cluster that is shown in the workload region is the same gateway that runs on the dedicated gateway cluster.
 
 The minimum viable product consists of the following components:
 * At least one workload cluster that includes four or more ESXi™ hosts
 * vSAN™ and NSX-T™
 * A management cluster of four ESXi hosts
-* An edge gateway cluster of two ESXi hosts or a physical FortiGate® appliance
+* A gateway cluster of two ESXi hosts or a physical FortiGate® appliance
 
 ## Management cluster
 {: #vrw-archi-overview-management}
@@ -51,15 +51,15 @@ The management software stack includes the following components:
 * VMware vRealize Operations Manager (vROps), vRealize Log Insight (vRLI), and the optional vRealize Network Insight (vRNI). These components collectively provide a native console for vSphere operations, the ability to automate management of the cloud platform, centralized log collection, and network visibility, analysis, and optimization.  
 * Veeam provides continuous backup of the management stack for protection against disasters and rapid restoration to known good states if corruption of any management stack component were to occur. Veeam can also provide backup services for the workload cluster. The single site deployment can use the Veeam bare metal option to provide a suitable backup repository.
 
-## Edge gateway cluster
+## Gateway cluster
 {: #vrw-archi-overview-edge}
 
-The FortiGate physical 10 Gb HA appliance is the only point of entry into the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. The edge gateway cluster with the vSRX HA appliance or a suitable bring your own gateway appliance is an alternative to the physical FortiGate appliance. The edge gateway cluster uses local storage only (no vSAN, no NFS) and each host is running a virtual appliance node. The edge gateway cluster requires only two ESXi hosts. The nodes are configured as a highly available cluster. The cluster is sized to support 10 Gb networking.
+The FortiGate physical 10 Gb HA appliance is the only point of entry into the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. The gateway cluster with the vSRX HA appliance or a suitable bring your own gateway appliance is an alternative to the physical FortiGate appliance. The gateway cluster uses local storage only (no vSAN, no NFS) and each host is running a virtual appliance node. The gateway cluster requires only two ESXi hosts. The nodes are configured as a highly available cluster. The cluster is sized to support 10 Gb networking.
 
 ## Workload cluster
 {: #vrw-archi-overview-workloads}
 
-The sizing of four ESXi servers for the workload cluster is based on the required compute resources, memory, and storage needs of the customer applications. The minimum host count of four is a vSAN requirement. Each workload cluster added is provisioned on new VLANs in the same datacenter location to separate traffic of different workload clusters with the firewall, either physical or an appliance that is running on the edge gateway cluster.
+The sizing of four ESXi servers for the workload cluster is based on the required compute resources, memory, and storage needs of the customer applications. The minimum host count of four is a vSAN requirement. Each workload cluster added is provisioned on new VLANs in the same datacenter location to separate traffic of different workload clusters with the firewall, either physical or an appliance that is running on the gateway cluster.
 
 vSAN is the storage provider and is fully contained within the workload environment. Therefore, all regulated data is isolated from external access and threats.
 

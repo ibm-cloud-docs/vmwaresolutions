@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-04-28"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -26,6 +26,7 @@ If you encounter a problem with your subscription, use the following command to 
 ```bash
 subscription-manager list --available --all
 ```
+{: pre}
 
 ## Load-balancer
 {: #openshift-runbook-runbook-trbl-intro-lb}
@@ -35,6 +36,7 @@ To check that load balancing is working, use the following command from the bast
 ```bash
 wget --no-check-certificate https://api.ocp.dallas.ibm.local:6443
 ```
+{: pre}
 
 ## Red Hat CoreOS
 {: #openshift-runbook-runbook-trbl-intro-coreos}
@@ -44,12 +46,14 @@ You do not need to connect by using SSH to node, but if you need to, you can do 
 ```bash
 ssh core@192.168.133.9
 ```
+{: pre}
 
 If you get an error, then try the following commands that disable the checking of the fingerprint:
 
 ```bash
 ssh -o StrictHostKeyChecking=no core@192.168.133.9
 ```
+{: pre}
 
 This example shows how to connect to control-plane node from the bastion node to view the logs and change the permission to make them readable. The directory name might be different.
 
@@ -58,12 +62,14 @@ ssh -i /root/.ssh/id_rsa core@192.168.133.12
 sudo su
 chmod 777 /var/log/pods/b2810e842791d83d48a4684295b7cd01/etcd-member/0.log
 ```
+{: pre}
 
 This example shows how to download the log to the bastion node and then on to the jump-server or remote device for readability and the ability to parse the logs. The directory name might be different.
 
 ```bash
 scp -i /root/.ssh/id_rsa core@192.168.133.10:/var/log/pods/b2810e842791d83d48a4684295b7cd01/etcd-member/0.log 0.log
 ```
+{: pre}
 
 ## Red Hat OpenShift
 {: #openshift-runbook-runbook-trbl-intro-openshift}
@@ -73,6 +79,7 @@ Gets a list of nodes and their status:
 ```bash
 oc get nodes
 ```
+{: pre}
 
 When you use kubectl, a preference takes effect while it determines which kubeconfig file is used.
 
@@ -85,6 +92,7 @@ To export the kubeconfig that is created by the {{site.data.keyword.redhat_opens
 ```bash
 export KUBECONFIG=/opt/ocpinstall/auth/kubeconfig
 ```
+{: pre}
 
 ## Deleting deployment
 {: #openshift-runbook-runbook-trbl-intro-del}
@@ -94,6 +102,7 @@ If you encounter a problem with your Terraform deployment, you can delete your d
 ```bash
 terraform destroy
 ```
+{: pre}
 
 In some cases, you might have issues with Terraform to finish the automation. In these cases, you might need to delete your deployment manually by using vCenter and by deleting the Terraform state files.
 
@@ -113,17 +122,20 @@ Your ignition files are valid for 24 hours. You can generate the `.ign` files by
     cd /opt/ocpinstall
     rm -R .openshift_install.log .openshift_install_state.json auth *.ign metadata.json
     ```
+    {: pre}
 
 2. Copy {{site.data.keyword.redhat_openshift_notm}} the `install-config` backup to yaml:
     ```bash
     cp install-config.bak install-config.yaml
     openshift-install create ignition-configs --dir=/opt/ocpinstall/
     ```
+    {: pre}
 
 3. Copy bootstrap.ign to nginx home folder.
     ```bash
     cp bootstrap.ign /usr/share/nginx/html
     ```
+    {: pre}
 
 4. Replace the primary section (cat master.ign) and the worker section (cat worker.ign) in terraform.tfvars.
     nano /opt/ocpinstall/installer/upi/vsphere/terraform.tfvars.
@@ -139,6 +151,7 @@ Your ignition files are valid for 24 hours. You can generate the `.ign` files by
     <replace with new worker.ign>
     END_OF_WORKER_IGNITION
     ```
+    {: pre}
 
 ## Taking a snapshot of Red Hat OpenShift
 {: #openshift-runbook-runbook-trbl-snapshot}
@@ -154,6 +167,7 @@ You can check the validity of the certificate by running the following command i
 ```bash
 ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no core@192.168.133.10 -- sudo openssl x509 -text -noout -in /var/lib/kubelet/pki/kubelet-client-current.pem
 ```
+{: pre}
 
 Run the following command to check the lifetime of the certificate of the output.
 
@@ -170,6 +184,7 @@ Certificate:
             Not Before: Nov  6 08:22:00 2019 GMT
             Not After : Dec  6 04:57:43 2019 GMT
 ```
+{: pre}
 
 For more information about shutting down the cluster after installation, see [Enabling {{site.data.keyword.redhat_openshift_notm}} 4 Clusters to Stop and Resume Cluster VMs](https://blog.openshift.com/enabling-openshift-4-clusters-to-stop-and-resume-cluster-vms/){: external}.
 

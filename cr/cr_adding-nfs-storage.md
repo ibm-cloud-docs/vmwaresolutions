@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-16"
+lastupdated: "2023-04-18"
 
 keywords: Cyber Recovery add NFS storage, Cyber Recovery NFS storage, add NFS storage Cyber Recovery
 
@@ -33,24 +33,22 @@ You can expand the capacity of your Cyber Recovery instance according to your bu
 ## Procedure to add NFS storage to Cyber Recovery instances
 {: #cr_addingnfs-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > Cyber Recovery** from the left navigation pane.
+1. From the VMware Solutions console, click **Resources > Cyber Recovery** from the left navigation pane.
 2. In the **Cyber Recovery** table, click the instance for which you want to expand capacity.
 3. Click the **Infrastructure** tab.
 4. In the **Clusters** table, click the cluster to which you want to add NFS storage.
 5. In the **Storage** section, click **Add**.
-6. In the **Storage** side panel, complete the storage configuration.
-   * If you want to add and configure the same settings to all file shares, specify the **Number of shares**, **Performance**, and **Size (GB)**.
-   * If you want to add and configure file shares individually, select **Configure shares individually**. Then click the **Add** icon ![Add icon](../../icons/add.svg "Add") next to the **Add shared storage** label and select the **Performance** and **Size (GB)** for each individual file share. You must select at least one file share. For more information about the available options, see [NFS storage](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-consolidwkld#cr_orderinginstance-consolidwkld-nfs-storage).
-7. Review the estimated price and click **Add NFS storage**.
-
-   You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. This action is useful if you want to estimate the price of the selected {{site.data.keyword.vmwaresolutions_short}} resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider to purchase.
+6. In the **Add NFS storage** side panel, complete the storage configuration.
+   * If you want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
+   * If you want to add and configure file shares individually, toggle the **Configure shares individually** switch on, then click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. You must select at least one file share. For more information, see [NFS storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consoldworkldcluster-settings#vc_orderinginstance-nfs-storage).
+7. Review the estimated price and click **Add**.
 
 ## Results after you add NFS storage to Cyber Recovery instances
 {: #cr_addingnfs-results}
 
-1. You might experience a slight delay on the console while the instance status changes from **Ready to use** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
+1. You might experience a slight delay on the console while the instance status changes from **Available** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
 2. You are notified by email that your request to add NFS storage is being processed. On the console, the status of the cluster that is associated with the NFS storage is changed to **Modifying**.
-3. If you do not see the new NFS storage added to the list in the cluster, check the email or console notifications to find more details about the failure.
+3. If you do not see that the new NFS storage is added to the list in the cluster, check the email or console notifications to find more details about the failure.
 
 ## Related links
 {: #cr_addingnfs-related}

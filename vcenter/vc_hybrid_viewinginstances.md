@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-02-21"
+lastupdated: "2023-04-03"
 
 keywords: view vCenter Server Hybridity, view instance, view instance details
 
@@ -44,7 +44,7 @@ The instance can have different statuses.
 |:------------- |:----------- |
 | Creating | The instance is being created. |
 | Building | The instance is being configured. |
-| Ready to use | The instance is ready to use. |
+| Available | The instance is ready to use. |
 | Modifying | The instance is being modified. |
 | Failed | The creation, configuration, or modification process failed. |
 | Deleting | The instance is being deleted. |

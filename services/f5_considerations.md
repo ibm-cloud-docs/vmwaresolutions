@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-01-25"
+lastupdated: "2023-03-10"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -34,7 +34,7 @@ You can install more than one instance of this service as needed.
 
 {{site.data.content.para-promotion-services}}
 
-The current F5 BIG-IP version that is installed is v17.0.
+The F5 BIG-IP version available for deployment is 17.0.
 {: note}
 
 ## Technical specifications for F5 BIG-IP

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2023
 
-lastupdated: "2022-06-10"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -22,9 +22,9 @@ An Ansible® playbook is used to configure the Juniper vSRX to allow traffic to 
 
 The document also describes a second Ansible playbook that can be used to schedule the opening and closing of the airgap.
 
-The playbook might be extended to trigger the Veeam backup job instead of running the backup job on a schedule controlled by the Veeam backup server. For more information about using the Veeam PowerShell module, see [Start-VBRJob](https://helpcenter.veeam.com/docs/backup/powershell/start-vbrjob.html?ver=110){: external}.
+The playbook might be extended to trigger the Veeam backup job instead of running the backup job on a schedule controlled by the Veeam backup server. For more information about using the Veeam PowerShell module, see [Start-VBRJob](https://helpcenter.veeam.com/docs/backup/powershell/start-vbrjob.html?ver=120){: external}.
 
-As an alternative, scripts can be used before and after the backup job that connects to the automation server and initiates the Ansible playbook. For more information, see [Script settings](https://helpcenter.veeam.com/docs/backup/vsphere/backup_job_advanced_scripts_vm.html?ver=110){: external} and [New-PSSession](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/new-pssession?view=powershell-7.2){: external}.
+As an alternative, scripts can be used before and after the backup job that connects to the automation server and initiates the Ansible playbook. For more information, see [Script settings](https://helpcenter.veeam.com/docs/backup/vsphere/backup_job_advanced_scripts_vm.html?ver=120){: external} and [New-PSSession](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/new-pssession?view=powershell-7.2){: external}.
 
 The New-PSSession module requires PowerShell 7. For more information, see [Installing the MSI package](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#msi){: external}.
 {: note}
@@ -106,7 +106,6 @@ The Ansible playbook is run by using `ansible-playbook airgap.yml --tag open` or
 The Ansible playbook file `airgap.yml` contains the following lines:
 
 ```text
----
 - hosts: vsrx
   connection: local
   gather_facts: no
@@ -166,7 +165,6 @@ The Ansible playbook file `airgap.yml` contains the following lines:
 The following file `sched_airgap.yml` uses cron on the automation server to open and close the airgap based on a schedule. The `ansible-playbook sched_airgap.yml --tags set` command configures the cron job while `ansible-playbook sched_airgap.yml --tags cancel` command deletes the cron job. You can verify by using the `crontab -l` command. Ansible output is captured in a log file `/swlib/ansible/airgap.log`. The following example opens the airgap at 01:00 and closes the airgap at 05:00 each day.
 
 ```text
----
 - hosts: localhost
   connection: local
   gather_facts: no

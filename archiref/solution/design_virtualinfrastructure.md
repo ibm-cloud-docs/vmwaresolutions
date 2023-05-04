@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-04-29"
 
 subcollection: vmwaresolutions
 
@@ -63,7 +63,7 @@ To support more user workloads, you can scale the environment by taking the foll
 
 In this design, VMware vSAN storage is employed in vCenter Server instances to provide shared storage for the vSphere hosts.
 
-As shown in the following figure, vSAN aggregates the local storage across multiple ESXi hosts within a vSphere cluster and manages the aggregated storage as a single VM datastore. Within this design, the compute nodes contain local disk drives for the ESXi operating system (OS) and the vSAN datastore. An M.2 SSD drive is included in each node to house the ESXi installation, regardless of which cluster a node belongs to.
+As shown in the following figure, vSAN aggregates the local storage across multiple ESXi hosts within a vSphere cluster and manages the aggregated storage as a single VM datastore. Within this design, the compute nodes contain local disk drives for the ESXi operating system (OS) and the vSAN datastore. An M.2 SSD drive is included in each node to house the ESXi installation regardless of which cluster a node belongs to.
 
 ![vSAN concept](../../images/vcsv4radiagrams-ra-vsan.svg "vSAN aggregates the local storage across multiple ESXi hosts within a vSphere cluster and manages the aggregated storage as a single VM datastore"){: caption="Figure 2. vSAN concept" caption-side="bottom"}
 
@@ -123,4 +123,4 @@ Management virtual machines can be located on an NFS data store. This approach c
 ## Related links
 {: #design_virtualinfrastructure-related}
 
-* [NSX Edge Services Gateway solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-nsx_overview#nsx_overview)
+* [VMware NSX-T design](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design)

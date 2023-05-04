@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-10-16"
+lastupdated: "2023-04-12"
 
 keywords: vCenter Server, vCenter Server architecture, tech specs vCenter Server
 
@@ -97,8 +97,8 @@ Skylake servers are not supported for vSphere Enterprise Plus 7.0 instances.
 
 The following configurations are available:
 * **Skylake** - 2-CPU Intel® Skylake generation servers (Intel® Xeon® 4100/5100/6100 series) with your selected CPU model and RAM size.
-* **Cascade Lake** - 4-CPU Intel Cascade Lake generation server (Quad Intel Xeon Gold 6248 and Quad Intel Xeon Platinum 8260) and 2-CPU Intel Cascade Lake generation servers (Intel Xeon 4200/5200/6200/8200 series) with your selected CPU model and RAM size.
-* **SAP-certified** - Intel Skylake generation servers (Intel Xeon 6140 series) and Intel Cascade Lake generation servers (Intel Xeon 5218, 6248, and 8280 M series) with your selected CPU model.
+* **Cascade Lake** - 4-CPU Intel Cascade Lake generation server (Quad Intel Xeon Gold 6248 and Quad Intel Xeon Platinum 8260) or 2-CPU Intel Cascade Lake generation servers (Intel Xeon 4200/5200/6200/8200 series) with your selected CPU model and RAM size.
+* **SAP-certified** - Intel Skylake generation servers (Intel Xeon 6140 series) or Intel Cascade Lake generation servers (Intel Xeon 5218, 6248, and 8280 M series) with your selected CPU model.
 
 If you plan to use vSAN storage, the configuration requires a minimum of four bare metal servers.
 {: note}
@@ -131,10 +131,21 @@ The following virtual server instances (VSIs) are ordered:
 ### Storage
 {: #vc_vcenterserveroverview-storage}
 
-During initial deployment, you can choose between vSAN and NFS storage options.
+During initial deployment, you can choose between NFS and vSAN storage options.
 
 After deployment, you can add NFS storage shares to an existing NFS or vSAN cluster. For more information, see [Adding NFS storage to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs).
 {: note}
+
+#### NFS storage
+{: #vc_vcenterserveroverview-nfs-storage}
+
+The NFS option offers customized shared file-level storage for workloads with various options for size and performance:
+* Size - 20 GB to 24 TB
+* Performance - 0.25, 2, 4, or 10 IOPS/GB. The 10 IOPS/GB performance level is limited to a maximum capacity of 4 TB per file share.
+* Individual configuration of file shares
+
+   (NSX-V only) If you choose the NFS option, one 2 TB and four IOPS/GB file share for management components are ordered.
+   {: note}
 
 #### vSAN storage
 {: #vc_vcenterserveroverview-vsan-storage}
@@ -148,18 +159,7 @@ The vSAN option offers customized configurations, with various options for disk 
    3.8 TB SSD (solid-state disk) drives are supported when they are made generally available in a data center.
    {: note}
 
-* High Performance with Intel Optane - this option provides two extra capacity disk bays for a total of 10 capacity disks. It's available only for vSphere 6 instance.
-
-#### NFS storage
-{: #vc_vcenterserveroverview-nfs-storage}
-
-The NFS option offers customized shared file-level storage for workloads with various options for size and performance:
-* Size - 20 GB to 24 TB
-* Performance - 0.25, 2, 4, or 10 IOPS/GB. The 10 IOPS/GB performance level is limited to a maximum capacity of 4 TB per file share.
-* Individual configuration of file shares
-
-   (NSX-V only) If you choose the NFS option, one 2 TB and four IOPS/GB file share for management components are ordered.
-   {: note}
+* High Performance with Intel Optane - this option provides two extra capacity disk bays for a total of 10 capacity disks. It's available only for vSphere 6 instances.
 
 #### Local disk storage (NSX-V only)
 {: #vc_vcenterserveroverview-local-disk-storage}

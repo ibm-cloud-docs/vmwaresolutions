@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-12-19"
+lastupdated: "2023-04-05"
 
 keywords: manage shared resources, view shared virtual data centers summary
 
@@ -52,7 +52,7 @@ The virtual data center can have different statuses.
 | Status | Description |
 |:------ |:----------- |
 | Creating | The virtual data center is being created. |
-| Ready to use | The virtual data center is ready to use. |
+| Available | The virtual data center is ready to use. |
 | Modifying | The virtual data center is being modified. |
 | Deleting | The virtual data center is being deleted. |
 {: caption="Table 3. Status descriptions for virtual data centers" caption-side="bottom"}

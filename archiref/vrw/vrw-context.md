@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-03-21"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ Connections between the on-premises environment, CSP (Cloud Service Provider), C
 * User (SaaS consumer) - uses the resources available in the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instances to run their applications. The SaaS consumer has no access to the management plane.
 * {{site.data.keyword.cloud_notm}} data centers - supply the needed racks, cooling, and power to support the vSphere hosts used to build out the regions of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads.
 * {{site.data.keyword.cloud_notm}} network services - enable the connection of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads to the internet (disabled by default). The connection is done through the frontside network and through private connection to the SaaS provider and SaaS consumer over the backside network through {{site.data.keyword.cloud_notm}} network offerings such as Direct Link.
-* Edge gateway cluster - provides compute, storage, and network services to support the gateway appliance. The edge gateway cluster is only present when a virtual appliance is deployed as the perimeter gateway.
+* Gateway cluster - provides compute, storage, and network services to support the gateway appliance. The gateway cluster is only present when a virtual appliance is deployed as the perimeter gateway.
 * Edge gateway appliance - physical or virtual device that protects the management plane and supports secure network communication between the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads Management region and the SaaS provider and SaaS consumer.
 * Management cluster - provides compute, storage, and network services to support management functions.
 * Management services - enable administrators to monitor, operate, and maintain the infrastructure to ensure it is compliant, secure, and available to support hosted applications.

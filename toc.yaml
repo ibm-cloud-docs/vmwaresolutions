@@ -21,11 +21,6 @@ toc:
       topics:
       - topic: index.md
         navtitle: Getting started
-      - link:
-          label: Why VMware Solutions
-          href: https://www.ibm.com/cloud/blog/top-10-reasons-to-choose-ibm-cloud-for-vmware-solutions
-      - topic: vmonic/under_the_hood.md
-        navtitle: Under the hood
       - vmonic/inst_comp_chart.md
       - topic: vmonic/release-notes.md
       - vmonic/additional_resources.md
@@ -37,16 +32,11 @@ toc:
           label: First steps
           topics:
           - vmonic/signing_required_accounts.md
-          - vmonic/cloud-infra-acct-req.md
           - vmonic/loginmethod.md
           - vmonic/completing_checklist.md
           - vmonic/notifications.md
           - vmonic/useraccount.md
-          - topicgroup:
-              label: IAM access for VMware Solutions
-              topics:
-              - vmonic/iam.md
-              - vmonic/iam_vcd.md
+          - vmonic/iam.md
           - topicgroup:
               label: Ports used by VMware Solutions
               topics:
@@ -77,15 +67,6 @@ toc:
               - include: ../vmware-service/vmaas/vdc-view-delete.md
               - include: ../vmware-service/vmaas/accessing-vcd-console.md
               - include: ../vmware-service/common/iam-integration.md
-          - topicgroup:
-              label: Enhancing security
-              topics:
-              - include: ../vmware-service/common/architecture-workload-isolation.md
-              - include: ../vmware-service/common/single-tenant-monitoring.md
-              - include: ../vmware-service/common/vmaas-iam.md
-              - include: ../vmware-service/common/vmaas-iam_vcd.md
-              - include: ../vmware-service/common/vmaas-data-security.md
-              - include: ../vmware-service/common/vmaas-at-events.md
           - topicgroup:
               label: Reference
               topics:
@@ -121,6 +102,7 @@ toc:
               - shared/shared_viewing-vdc-summary.md
               - shared/shared_viewing-vdc-details.md
               - shared/shared_iam-integration.md
+              - shared/iam_vcd.md
               - shared/shared_accessing-vcd-console.md
           - shared/shared_vcd-ops-guide.md
           - shared/shared-monitor.md
@@ -212,7 +194,7 @@ toc:
               - vcenter/vc_deletinginstance.md
               - vcenter/vc_deletinginstance_multi.md
       - topicgroup:
-          label: Regulated Workloads
+          label: VMware Regulated Workloads
           topics:
           - vrw/vrw-overview.md
           - vrw/vrw-planning.md
@@ -250,7 +232,6 @@ toc:
               topics:
               - cr/cr_orderinginstance-reqs.md
               - cr/cr_orderinginstance-gen-info.md
-              - cr/cr_orderinginstance-serv-prereq.md
               - cr/cr_orderinginstance-inst-configs.md
               - cr/cr_orderinginstance-consolidwkld.md
               - cr/cr_orderinginstance-edge.md
@@ -293,8 +274,6 @@ toc:
               - services/managingcaveonix.md
               - services/caveonix_license_ordering.md
               - services/caveonix_license_managing.md
-          - topic: services/dizzion_overview.md
-            navtitle: Dizzion
           - topicgroup:
               label: Entrust CloudControl
               topics:
@@ -324,28 +303,12 @@ toc:
               - services/standalone_viewingserviceinstances.md
               - services/standalone_deletingserviceinstances.md
               - services/hcx_glossary.md
-          - topic: services/managing-ss-sap.md
-            navtitle: Security Services for SAP
           - topicgroup:
               label: Juniper vSRX
               topics:
               - services/juniper_overview.md
               - services/juniper_ordering.md
               - services/juniper_managing.md
-          - topicgroup:
-              label: KMIP for VMware
-              topics:
-              - services/kmip_standalone_considerations.md
-              - services/kmip_standalone_ordering.md
-              - services/kmip_standalone_viewing.md
-              - services/kmip_standalone_addingdeletingcert.md
-              - services/kmip_standalone_deleting.md
-          - topicgroup:
-              label: PrimaryIO HDM
-              topics:
-              - services/managing_pio.md
-              - services/pio_ordering.md
-              - services/pio_installing.md
           - topicgroup:
               label: Red Hat OpenShift for VMware
               topics:
@@ -376,11 +339,44 @@ toc:
               - services/zerto_ordering_licenses.md
               - services/zerto_managing_licenses.md
       - topicgroup:
+              label: KMIP for VMware
+              topics:
+              - services/kmip_standalone_considerations.md
+              - services/kmip_standalone_ordering.md
+              - services/kmip_standalone_viewing.md
+              - services/kmip_standalone_addingdeletingcert.md
+              - services/kmip_standalone_deleting.md
+      - topic: services/dizzion_overview.md
+        navtitle: Dizzion
+      - topic: services/managing-ss-sap.md
+        navtitle: Security Services for SAP
+      - topicgroup:
+          label: PrimaryIO HDM
+          topics:
+          - services/managing_pio.md
+          - services/pio_ordering.md
+          - services/pio_installing.md
+      - topicgroup:
           label: Enhancing security
           topics:
+          - topicgroup:
+              label: VMware as a Service
+              topics:
+              - include: ../vmware-service/common/architecture-workload-isolation.md
+              - include: ../vmware-service/common/single-tenant-monitoring.md
+              - include: ../vmware-service/common/vmaas-iam.md
+              - include: ../vmware-service/common/vmaas-iam_vcd.md
+              - include: ../vmware-service/common/vmaas-data-security.md
+              - include: ../vmware-service/common/vmaas-at-events.md
           - vmonic/data-security.md
           - vmonic/at-events.md
           - vmonic/ha-dr.md
+          - vmonic/understand-responsib.md
+          - topicgroup:
+              label: Auditing
+              topics:
+              - vmonic/audit_user_ids.md
+              - vmonic/audit_messages.md
       - topicgroup:
           label: Deprecated offerings
           topics:
@@ -455,13 +451,7 @@ toc:
               href: https://{DomainName}/apidocs/vmware-solutions
           - link:
               label: VMware Shared API
-              href: https://{DomainName}/apidocs/vmware-solutions-shared-v2.0.0
-      - vmonic/understand-responsib.md
-      - topicgroup:
-          label: Auditing
-          topics:
-          - vmonic/audit_user_ids.md
-          - vmonic/audit_messages.md
+              href: https://{DomainName}/apidocs/vmware-solutions-shared-v2.0.0      
       - topicgroup:
           label: VMware NSX-V to NSX-T migration
           topics:
@@ -614,7 +604,6 @@ toc:
               - archiref/kmip/design.md
               - archiref/kmip/implementation.md
               - archiref/kmip/hadr.md
-
       - topicgroup:
           label: Solution architectures on VPC
           topics:

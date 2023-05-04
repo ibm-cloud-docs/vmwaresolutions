@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ Review the following steps to configure the VMware HCX™ Client instance.
 2. From the **Home** menu, select the **HCX** option.
 3. Under **Infrastructure**, **InterConnect**, click **Add Site Pairing**.
    1. Set the Site URL to the HCX Cloud Manager URL, for example, `https://x.x.x.x.x`.
-   2. Set the username and password to the HCX Manager Admin Details: admin / password.
+   2. Set the username and password to the HCX Manager Admin Details: `admin / password`.
 
       The previous details can be obtained from the {{site.data.keyword.vmwaresolutions_full}} console, under **Services**, **HCX** for the VMware vCenter Server® instance.
 

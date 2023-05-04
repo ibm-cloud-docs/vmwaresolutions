@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-23"
+lastupdated: "2023-05-01"
 
 keywords: vCenter Server network config, network configuration, manage NSX ESG
 
@@ -127,4 +127,4 @@ You can order more subnets if the provided subnets do not fulfill your requireme
 
 * [Considerations about changing vCenter Server artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact#vcenter_chg_impact)
 * [General FAQ about VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [NSX Edge Services Gateway design](/docs/vmwaresolutions?topic=vmwaresolutions-nsx_design)
+* [VMware NSX-T design](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-02-01"
+lastupdated: "2023-03-29"
 
 keywords: Zerto, Zerto replication billing, order Zerto
 
@@ -18,10 +18,10 @@ subcollection: vmwaresolutions
 # Ordering Zerto
 {: #zerto_ordering}
 
-You can include the Zerto service with a new VMware vCenter Server® instance or add the service to your existing vCenter Server instance.
+You can include the Zerto service with a new VMware vCenter Server® instance or add the service to your existing instance.
 
-Zerto v9.5u1 no longer supports vSphere 6.5 and 6.7. However, you can still order stand-alone licenses for existing vSphere 6.x instances.
-{: note}
+Zerto v9.5u1 does not support vSphere 6.5 and 6.7. However, you can still order stand-alone licenses for existing vSphere 6.x instances.
+{: important}
 
 ## Billing for Zerto replication
 {: #zerto_ordering-billing}
@@ -52,28 +52,27 @@ On the {{site.data.keyword.vmwaresolutions_short}} console, you are prompted to 
 ## Ordering Zerto for a new instance
 {: #zerto_ordering-new}
 
-1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Zerto is in the Data resiliency and migration category.
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. Zerto is in the **Data resiliency and migration** category.
 2. Open the category, locate Zerto, and toggle its switch on.
-3. Select **Edit** to review and specify the information. 
-4. If you enter or change information, click **Save**.
+3. Click **Edit** to review and specify the configuration information, then click **Save**.
 
 ## Ordering Zerto for an existing instance
 {: #zerto_ordering-existing}
 
 1. On the instance details page, click the **Services** tab.
 2. Click **Add** to add the service.
-3. On the **Services** page, locate the **Zerto** service and toggle its switch on.
-4. Follow the steps to configure and add the service to your instance.
+3. On the **Add services** page, locate the **Zerto** service in the **Data resiliency and migration** section and toggle its switch on.
+4. Click **Edit** to review and specify the configuration information, then click **Save**.
 
 If you add Zerto to a vCenter Server instance that has a VMware® ESXi™ server that is in maintenance mode, you must use the Zerto Virtual Manager (ZVM) console. Use the pre-populated Zerto Virtual Replication Appliance (VRA) IP address to manually deploy the VRA virtual machine (VM).
-{: note}
+{: important}
 
 ## Considerations for ordering Zerto
 {: #zerto_ordering-private-only}
 
 When you deploy Zerto, you must configure your own proxy or NAT connection to the public network.
 
-Within 15 days, you must configure the Call Home feature for Zerto. If you do not complete the configuration in this timeframe, Zerto blocks certain management activities.
+Within 15 days, you must configure the Call Home feature for Zerto. If you do not complete the configuration in this time frame, Zerto blocks certain management activities.
 
 For more information about Zerto Call Home, see [How to configure Zerto Reporting for Enterprise environments (Call Home)](https://www.zerto.com/myzerto/knowledge-base/zerto-reporting-for-enterprise-environments-call-home/){: external}.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-08"
+lastupdated: "2023-03-21"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 ## Single data center base topology
 {: #vrw-nsxt-topologies-single}
 
-This topology creates a single edge gateway cluster, with active-passive Tier-0 and Tier-1.
+This topology creates a single gateway cluster, with active-passive Tier-0 and Tier-1.
 
 Active-passive on the Tier0 provides IPsec capability for access through the HA VIP address. Alternatively, Tier-0 can use Border Gateway Protocol (BGP) and peer with a vSRX firewall.
 

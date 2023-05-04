@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-03-22"
 
 subcollection: vmwaresolutions
 
@@ -40,7 +40,7 @@ The following diagram shows an example of a customer deployment by using this to
 6. You can also use vSAN with your vSphere clusters. When you use vSAN, due to the nature of dedicated local storage, you must select vSAN option when ordering the cluster. Each instance uses its own storage.
 7. Both primary and secondary instance have their own NSX-T managers and their own NSX-T topologies. Each instance has a workload edge cluster, which consists of two edge transport nodes for your usage.
 8. The hosts and NSX-T Tier-0 Gateways in the specific data center or POD are attached to VLANs and subnets that are local to that {{site.data.keyword.cloud_notm}} data center or POD. These VLANs and subnets cannot be extended or moved to other {{site.data.keyword.cloud_notm}} data centers. However, these subnets can communicate with subnets that are provisioned to another {{site.data.keyword.cloud_notm}} data center over {{site.data.keyword.cloud_notm}} private network.
-9. If you select an optional edge gateway cluster, the vCenter Server automates two ESXi hosts by using {{site.data.keyword.cloud_notm}} bare metal servers and forms a new vSphere cluster in your deployment. This can be done on each instance separately.
+9. If you select an optional gateway cluster, the vCenter Server automates two ESXi hosts by using {{site.data.keyword.cloud_notm}} bare metal servers and forms a new vSphere cluster in your deployment. This can be done on each instance separately.
 
 ## Dual-site vCenter Server deployment
 {: #arch-pattern-deployment-dual-site-base}
@@ -54,7 +54,7 @@ The following diagram shows an example of a customer deployment by using this to
 1. The vCenter Server automation deploys instance A and its management or converged cluster, which includes a vCenter, three NSX-T managers, and an Active Directory deployment. They run either on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or two VMware VMs in a high availability deployment. This instance includes a vCenter, three NSX-T managers, an Active Directory deployment with either running on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or two VMware VMs in a high availability deployment and two NSX-T edge clusters, one for services and one for workloads.
 2. You can provision another vCenter Server instance, instance B, at the same time or later than the instance A. By using this option, the automation deploys a new vCenter Server instance in the new {{site.data.keyword.cloud_notm}} data center location. As the instance A, this instance includes a vCenter, three NSX-T managers, an Active Directory deployment with either running on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or two VMware VMs in a high availability deployment and two NSX-T edge clusters, one for services and one for workloads.
 3. Both vCenter Server instances can include several vSphere clusters (refer to single site deployment). 
-4. If you select an optional edge gateway cluster, the vCenter Server automates two ESXi hosts by using {{site.data.keyword.cloud_notm}} bare metal servers and forms a new vSphere cluster in your deployment. This can be done on each instance separately.
+4. If you select an optional gateway cluster, the vCenter Server automates two ESXi hosts by using {{site.data.keyword.cloud_notm}} bare metal servers and forms a new vSphere cluster in your deployment. This can be done on each instance separately.
 5. Each instance has its own storage, which can be NFS based {{site.data.keyword.filestorage_full_notm}} or vSAN. You can add one or more NFS file shares and configure them individually by selecting the performance (IOPS) and size (GB) for each. When you use vSAN, due to the nature of dedicated local storage, you must select vSAN option when ordering the cluster.
 6. Both instances have their own NSX-T managers and their own NSX-T topologies. Each instance has a workload edge cluster, which consists of two edge transport nodes for your usage.
 7. The hosts and NSX-T Tier-0 Gateways in the specific data center or POD are attached to VLANs and subnets that are local to that {{site.data.keyword.cloud_notm}} data center or POD. These VLANs and subnets cannot be extended or moved to other {{site.data.keyword.cloud_notm}} data centers. However, these subnets can communicate with subnets that are provisioned to another {{site.data.keyword.cloud_notm}} data center over {{site.data.keyword.cloud_notm}} private network.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-17"
+lastupdated: "2023-03-24"
 
 subcollection: vmwaresolutions
 
@@ -23,19 +23,19 @@ vCenter Server instance is deployed at {{site.data.keyword.cloud_notm}} classic 
 
 The architecture patterns give an introduction to connectivity patterns to integrate a third-party router, firewall, or other network device. They run as a virtual appliance on VMware with the standard NSX-T based vCenter Server instance. 
 
-## Deploying third-party router in edge gateway cluster
+## Deploying third-party router in gateway cluster
 {: #arch-pattern-3rd-party-router-edge-gateway-cluster}
 
-When you deploy a vCenter Server instance in your {{site.data.keyword.cloud_notm}} classic infrastructure, you might optionally deploy an edge gateway cluster. This cluster can host a third-party router or firewall. You are able to control which VLANs are routed through the router or firewall running on it.
+When you deploy a vCenter Server instance in your {{site.data.keyword.cloud_notm}} classic infrastructure, you might optionally deploy a gateway cluster. This cluster can host a third-party router or firewall. You are able to control which VLANs are routed through the router or firewall running on it.
 
-The edge gateway cluster must not be mixed with NSX-T edge cluster, which consists of NSX-T edge transport nodes. The edge gateway cluster provides compute capacity for third-party router or firewalls, and VLAN routing can be controlled by the [gateway appliance configuration](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances) in {{site.data.keyword.cloud_notm}} classic network.
+The gateway cluster must not be mixed with NSX-T edge cluster, which consists of NSX-T edge transport nodes. The gateway cluster provides compute capacity for third-party router or firewalls, and VLAN routing can be controlled by the [gateway appliance configuration](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances) in {{site.data.keyword.cloud_notm}} classic network.
 {: important} 
 
-![Deploying third-party router in third-party router or firewall in edge gateway cluster](../../images/arch-pattern-nsx-t-edge-services-cluster.svg "Deploying third-party router in third-party router or firewall in edge gateway cluster."){: caption="Figure 1. Deploying third-party router in third-party router or firewall in edge gateway cluster" caption-side="bottom"}
+![Deploying third-party router in third-party router or firewall in gateway cluster](../../images/arch-pattern-nsx-t-edge-services-cluster.svg "Deploying third-party router in third-party router or firewall in gateway cluster."){: caption="Figure 1. Deploying third-party router in third-party router or firewall in gateway cluster" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows: 
 
-1. You can optionally deploy an edge gateway cluster to host your own routing or firewall device. This cluster is attached to both {{site.data.keyword.cloud_notm}} private and public networks through transit networks.
+1. You can optionally deploy a gateway cluster to host your own routing or firewall device. This cluster is attached to both {{site.data.keyword.cloud_notm}} private and public networks through transit networks.
 2. The third-party device can route assigned VLANs through it. You can choose the VLANs to be routed through it on {{site.data.keyword.cloud_notm}} portal. You must configure the required VLAN interfaces and IP addresses to the devices as well as firewall zones, rules, and policies.
 3. If you route your management VLAN through the firewall, you can also secure your management workloads, such as vCenter and NSX-T managers. Ensure that you allow the traffic for your management.
 4. Your workload T0 is attached to {{site.data.keyword.cloud_notm}} private network. If you route this VLAN through the firewall, add the required rules on both the firewall and T0.
@@ -55,7 +55,7 @@ In this pattern, you are not able to control which VLANs are routed through the 
 This architecture pattern deployment is summarized as follows: 
 
 1. Depending on the network preference selection, your vCenter Server instance is deployed with both public and private connectivity or private connectivity only.
-2. You can optionally deploy an edge gateway cluster to host Juniper vSRX or your own routing or firewall device. In this case, you might put public and private VLANs behind the firewall.
+2. You can optionally deploy a gateway cluster to host Juniper vSRX or your own routing or firewall device. In this case, you might put public and private VLANs behind the firewall.
 3. You can deploy third-party network devices into vCenter Server clusters by bringing in your own license and following the hardware and software guidance as provided by the specific third-party vendor. Discuss the technical details with the vendor.
 4. You can integrate the third-party network device or a router into using service insertion. With service insertion, you can apply third-party services to north-south traffic as well as east-west traffic that passes through a router. The services typically provide advanced security features, such as an intrusion detection system (IDS) or an intrusion prevention system (IPS).
 5. When you use service insertion and after, deploy a service instance, you can configure the type of traffic that the router redirects to the service. Configuring traffic redirection is similar to configuring a firewall.

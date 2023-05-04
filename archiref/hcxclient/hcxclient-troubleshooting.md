@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -46,7 +46,7 @@ If a migration fails because of a licensing issue, current versions of HCX clear
 
 If you have any WAN connectivity issues, always check the **Interconnect -> HCX Components** screen within the HCX user interface for tunnel status. The fleet components typically do not need to be reset or rebooted. If WAN connectivity is restored, they reconnect automatically.
 
-If any fixes and updates were applied to the HCX managers (Client and Cloud) and those updates also patch issues with the fleet components, you must redeploy the Cloud Gateway and any L2Cs deployed. It is possible to do further tunnel status debugging, by connecting to HCX Manager through an SSH client such as `ccli`
+If any fixes and updates were applied to the HCX managers (Client and Cloud) and those updates also patch issues with the fleet components, you must redeploy the Cloud Gateway and any L2Cs deployed. It is possible to do further tunnel status debugging, by connecting to HCX Manager through an SSH client such as `ccli`.
 
 1. SSH to HCX Manager by using the admin account and the supplied password.
 2. Run the `su –` command and enter the password of the `root` user (same as admin password) to change to root.

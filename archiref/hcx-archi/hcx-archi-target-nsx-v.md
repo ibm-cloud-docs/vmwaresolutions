@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -175,7 +175,7 @@ Direct-Link is used to deploy the HCX-NE appliance so that you can stretch multi
 | Disk      | 2 GB VMDK on shared storage |
 {: caption="Table 7. HCX Network Extension Virtual Appliance sizing" caption-side="bottom"}
 
-The HCX-NE appliance is deployed on the management VLAN and on the public VLAN. The public interface is used for application traffic that bound for the source of the extended network. More connections such as the extended networks, are created and attached to the HCX-NE appliance after the source administrator initiates the network extension into the {{site.data.keyword.cloud_notm}}.
+The HCX-NE appliance is deployed on the management VLAN and on the public VLAN. The public interface is used for application traffic that bound for the source of the extended network. More connections, such as the extended networks, are created and attached to the HCX-NE appliance after the source administrator initiates the network extension into the {{site.data.keyword.cloud_notm}}.
 
 ## Related links
 {: #hcx-archi-target-v-related}

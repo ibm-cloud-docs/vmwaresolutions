@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-08-25"
+lastupdated: "2023-04-19"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -39,7 +39,7 @@ The following table provides information about the Caveonix RiskForesight™ por
 The following table provides information about the F5 BIG-IP® ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:-------|:----------------|:-------|:----------------|:------|:---------|:--------|:--------|
+|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
 | BigIP | New subnet ordered in private VLAN | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
 | Management-nsx-edge public IP | Public subnet for management edge | BigIP license server | `104.219.111.132/32` | 443 | TCP | License registration | HTTPS |
 {: caption="Table 2. F5 BIG-IP ports" caption-side="bottom"}
@@ -50,7 +50,7 @@ The following table provides information about the F5 BIG-IP® ports.
 The following table provides information about the FortiGate® virtual appliance ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:-------|:----------------|:-------|:----------------|:------|:---------|:--------|:--------|
+|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
 | Management-nsx-edge public IP | Public subnet for management edge | Fortinet® servers | `208.91.112.0/22` | 443 | TCP | FortiGate installation | HTTPS |
 | Management-nsx-edge public IP | Public subnet for management edge | Fortinet servers | `96.45.33.0/24` | 443 | TCP | FortiGate installation | HTTPS |
 | Management-nsx-edge public IP | Public subnet for management edge | Fortinet servers | `66.35.17.248` | 443 | TCP | FortiGate installation | HTTPS |
@@ -62,11 +62,11 @@ The following table provides information about the FortiGate® virtual appliance
 The following table provides information about the VMware HCX™ ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:-------|:----------------|:-------|:----------------|:------|:---------|:--------|:--------|
+|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
 | HCX | New subnet ordered in private VLAN | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
 | HCX | New subnet ordered in private VLAN | vCenter Server | Infrastructure VMs | 443 | TCP | Use vCenter Server REST service | HTTPS |
 | HCX | New subnet ordered in private VLAN | NSX Manager | Infrastructure VMs | 443 | TCP | Use NSX Manager registration service | HTTPS |
-| HCX public IP | New subnet ordered in public VLAN | connect.hcx. \n vmware.com | Public IP 45.60.63.140 | 443 | TCP | Registration service | HTTPS |
+| HCX public IP | New subnet ordered in public VLAN | connect.hcx. \n vmware.com | Public IP `45.60.63.140` | 443 | TCP | Registration service | HTTPS |
 | vCenter Server | Infrastructure VMs | HCX | New subnet ordered in private VLAN | 443 | TCP | Use HCX REST service | HTTPS |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | HCX | New subnet ordered in private VLAN | 443 | TCP | Use HCX REST service | HTTPS |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | HCX | New subnet ordered in private VLAN | 9443 | TCP | Use the HCX appliance management interface for HCX system configuration | HTTPS |
@@ -186,7 +186,7 @@ The following table provides information about the vRealize Operations™ and vR
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
 | ESXi host | Private primary subnet | vROps | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
 | vCenter Server | Infrastructure VMs | vROps | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
-| Local address (192.168.100.3) | Local address | vROps | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
+| Local address `192.168.100.3` | Local address | vROps | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
 | vROps | New subnet ordered in private VLAN | Windows Active Directory | Private primary subnet \n Infrastructure VMs| 53 | TCP and UDP | Use Windows DNS service | DNS |
 | vROps | New subnet ordered in private VLAN | vCenter Server | Infrastructure VMs | 443 | TCP | vROps configuration | HTTPS |
 | vROps | New subnet ordered in private VLAN | NSX Manager | Infrastructure VMs | 443 | TCP | vROps configuration | HTTPS |
@@ -214,7 +214,6 @@ The following table provides information about Zerto ports.
 
 For more information about Zerto networking, see [Zerto - prerequisites and requirements for vSphere environments](https://help.zerto.com/bundle/Prereq.VC.HTML/page/Content/Ent_Guide_VC/Prerequisites_Requirements_vSphere_Environments.htm ){: external}.
 
-## Related links
-{: #vmwaresol_ports-related}
 
-* [VMware Solutions network architecture](/docs/vmwaresolutions?topic=vmwaresolutions-under_the_hood#under_the_hood-network)
+
+

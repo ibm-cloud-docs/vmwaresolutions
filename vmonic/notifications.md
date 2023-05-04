@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-06-21"
+lastupdated: "2023-05-02"
 
 keywords: notifications console, filter notifications, system notification
 
@@ -22,7 +22,7 @@ You can check notifications for the status of system or user operations. You can
 ## Viewing notifications
 {: #notifications-view}
 
-From the {{site.data.keyword.vmwaresolutions_full}} console, click **Notifications** from the left navigation pane to view a summary about all notifications. To view the details of a notification, click the notification row.
+From the {{site.data.keyword.vmwaresolutions_full}} console, click **Notifications** from the left navigation pane to view a summary of all notifications. To view the details of a notification, click the notification row.
 
 | Column | Description |
 |:------ |:----------- |

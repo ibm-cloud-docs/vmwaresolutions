@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2023
 
-lastupdated: "2022-06-08"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -37,7 +37,6 @@ The server name and IP address must be registered in DNS in the AD/DNS server.
 The playbook `create_lhbr.yml` starts with the following code.
 
 ```text
----
 - hosts: lhbr
   vars_files:
     - vault
@@ -161,7 +160,7 @@ The code snippet does the following actions:
 * Adds a user, called `veeamlhbr`.
 * Changes the ownership of `/mnt/veeamrepo01`, and sets the permissions so that the owner can read, write, and run, and the group cannot read, write, and run. Other users cannot read, write, and run. Veeam uses this user to read and write to the file system.
 
-Change file permissions for authentication certificates on the Linux server to maximize the repository security. For more information, see [Tips for enhanced security of hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository_tips.html?ver=110){: external}.
+Change file permissions for authentication certificates on the Linux server to maximize the repository security. For more information, see [Tips for enhanced security of hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external}.
 
 ```text
    - name: Create the veeamlhbr group

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-17"
+lastupdated: "2023-04-06"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Workload cluster
 {: #vrw-orderinginstance-wkld-cluster}
 
-For single-zone VMware® instances with a customizable consolidated cluster, you can optionally select the **Include a separate cluster for workloads** checkbox to deploy a workload cluster. An extra cluster for workloads is required for a management-optimized cluster.
+For single-zone VMware® instances with a customizable consolidated cluster, you can toggle the **Deploy separate workload cluster** switch on to deploy a workload cluster. An extra cluster for workloads is required for a management-optimized cluster.
 
 ## Cluster name
 {: #vrw-orderinginstance-wkld-cluster-name}
@@ -47,7 +47,7 @@ Choose the number of vSAN™ stretched cluster resource hosts to be deployed in 
 {: #vrw-orderinginstance-wkld-vsan}
 
 * You can choose the type and number of capacity disks according to your needs.
-* For single-zone VMware instance only - Use the IBM-provided VMware license for vSAN by selecting **Include with purchase**. 
+* For single-zone VMware instance only - Use the IBM-provided VMware license for vSAN, which is included with purchase.
 
 Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
 {: important}

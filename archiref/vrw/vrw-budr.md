@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-15"
+lastupdated: "2023-03-21"
 
 subcollection: vmwaresolutions
 
@@ -46,10 +46,10 @@ The Veeam environment is provisioned initially with a single VM. The SaaS provid
 
 Veeam is deployed to the management regions in both availability zones (AZ) for use in an MZR.
 
-## Edge gateway cluster
+## Gateway cluster
 {: #vrw-budr-edge}
 
-The edge gateway cluster does not use any vSphere resiliency features and backup of the gateway VMs is not performed. The gateway appliances deliver resilience at the application layer through formation of a high-availability cluster at the time of deployment. When you are using the vSRX, it is recommended that the rescue configuration is set anytime a change is made to the running configuration. To update it, in operational mode, run `request system configuration rescue save`. The use of an SCP server to automatically back up the configuration anytime changes are made is optional and left to the client to implement.
+The gateway cluster does not use any vSphere resiliency features and backup of the gateway VMs is not performed. The gateway appliances deliver resilience at the application layer through formation of a high-availability cluster at the time of deployment. When you are using the vSRX, it is recommended that the rescue configuration is set anytime a change is made to the running configuration. To update it, in operational mode, run `request system configuration rescue save`. The use of an SCP server to automatically back up the configuration anytime changes are made is optional and left to the client to implement.
 
 ```sh
 vSRX config archive on commit

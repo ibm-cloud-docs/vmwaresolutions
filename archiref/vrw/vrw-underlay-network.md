@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-08"
+lastupdated: "2023-03-21"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Underlay networking
 {: #vrw-underlay-network}
 
-{{site.data.keyword.cloud}} for VMware® Regulated Workloads requires isolated networking between the workload clusters and the management and edge gateway clusters.
+{{site.data.keyword.cloud}} for VMware® Regulated Workloads requires isolated networking between the workload clusters and the management and gateway clusters.
 
 ## Management cluster
 {: #vrw-underlay-network-management}
@@ -27,16 +27,16 @@ One VLAN includes subnets for ESXi management (vmk0) and management services suc
 
 The second VLAN includes subnets that are dedicated to vMotion and vSAN. No routing between these subnets is allowed and the VLAN is isolated by the perimeter gateway from all other security zones and networks in a single-zone deployment.
 
-## Edge gateway cluster
+## Gateway cluster
 {: #vrw-underlay-network-edge}
 
-The optional edge gateway cluster adds two transit network VLANs to the solution. These VLANs connect the vSRX to both the back-end customer router (BCR) for private traffic and front-end customer router (FCR) for public (internet) traffic flows. When a private-only deployment is wanted, the public transit VLAN is not ordered. The management VLAN is trunked to the edge gateway cluster.
+The optional gateway cluster adds two transit network VLANs to the solution. These VLANs connect the vSRX to both the back-end customer router (BCR) for private traffic and front-end customer router (FCR) for public (internet) traffic flows. When a private-only deployment is wanted, the public transit VLAN is not ordered. The management VLAN is trunked to the gateway cluster.
 
-The network design is done in this manner to enable the vSRX to control traffic flows within the management zone and between the management zone and the {{site.data.keyword.cloud}} private and public networks. The FortiGate appliance transit and VLAN network design are the same as the ones used with the edge gateway cluster.
+The network design is done in this manner to enable the vSRX to control traffic flows within the management zone and between the management zone and the {{site.data.keyword.cloud}} private and public networks. The FortiGate appliance transit and VLAN network design are the same as the ones used with the gateway cluster.
 
-The vSRX running on the edge gateway cluster connects the management network to the private and public transit networks. The vSRX is configured to allow only traffic in or out of the management region that is necessary for proper operation and monitoring of the environment. The vSRX also isolates all traffic between the ESXi hosts in the clusters and vCenter Server. ESXi hosts within a cluster can communicate with each other and vCenter Server. ESXi hosts in one cluster (workload or management for example) are unable to communicate with the hosts of any other clusters. The limitation of cross-cluster traffic is enforced by vSRX and the configuration of the firewalls of the ESXi hosts.
+The vSRX running on the gateway cluster connects the management network to the private and public transit networks. The vSRX is configured to allow only traffic in or out of the management region that is necessary for proper operation and monitoring of the environment. The vSRX also isolates all traffic between the ESXi hosts in the clusters and vCenter Server. ESXi hosts within a cluster can communicate with each other and vCenter Server. ESXi hosts in one cluster (workload or management for example) are unable to communicate with the hosts of any other clusters. The limitation of cross-cluster traffic is enforced by vSRX and the configuration of the firewalls of the ESXi hosts.
 
-The edge gateway cluster is the peering point for traffic between the SaaS provider on-premises and the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. It also serves as the demarcation for traffic from the SaaS consumer. The SaaS provider uses the vSRX as the secure tunnel endpoint for its VPN.
+The gateway cluster is the peering point for traffic between the SaaS provider on-premises and the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. It also serves as the demarcation for traffic from the SaaS consumer. The SaaS provider uses the vSRX as the secure tunnel endpoint for its VPN.
 
 Traffic from the SaaS consumer passes through the vSRX in an encrypted tunnel, which lands on the overlay network virtual edge device.
 
@@ -45,7 +45,7 @@ Traffic from the SaaS consumer passes through the vSRX in an encrypted tunnel, w
 
 The workload cluster network design is closely aligned to that of a traditional vCenter Server deployment. VLANs and subnets are provisioned to support vMotion, vSAN, VTEPS for the Software-Defined Networking (SDN) network, and workload cluster host management functions.
 
-Within the workload clusters, NSX-T™ provides a highly secure and flexible software defined network to support the application requirements. NSX-T management is external to the workload cluster thus ensuring that network and security changes are not possible by anyone other than the designated administrators. All north-south network access in the workload cluster is done through private and secure connections by using IPsec or IBM Direct Link. The workload clusters are protected by the same edge gateway cluster with the vSRX or the physical FortiGate that protects the management plane.
+Within the workload clusters, NSX-T™ provides a highly secure and flexible software defined network to support the application requirements. NSX-T management is external to the workload cluster thus ensuring that network and security changes are not possible by anyone other than the designated administrators. All north-south network access in the workload cluster is done through private and secure connections by using IPsec or IBM Direct Link. The workload clusters are protected by the same gateway cluster with the vSRX or the physical FortiGate that protects the management plane.
 
 ## IBM Cloud networking
 {: #vrw-underlay-network-cloud}

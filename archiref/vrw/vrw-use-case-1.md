@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-03-21"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads architecture
 The management region allows the virtualization administrator to manage the entire compute and storage infrastructure. Through the adoption of NSX-T™ as the SDN provider for the workloads, it removes the network and security administration duties from the scope of the virtualization administrator role. NSX-T, unlike NSX for vSphere, is not reliant upon a vCenter to manage the SDN network objects, traffic flows, and security configurations. Divorcing the network control plane from the vCenter means it is no longer possible for the virtualization administrator to view or change anything that impacts the network.
 The network and security administrators use the NSX-T dedicated management portal to configure the network and the required security policies.
 
-The edge services region is strictly limited to the protection of the management region and the vSphere components that deliver compute and storage resources to the workload region. The security administrator, who has the responsibility of managing the SDN security, might also serve as the administrator of the gateway VMs that run on the edge gateway cluster. Or, to isolate a single administrator's scope of influence, the responsibility might be assigned to an administrator who has access only to the edge gateway and no access to manage SDN security.
+The edge services region is strictly limited to the protection of the management region and the vSphere components that deliver compute and storage resources to the workload region. The security administrator, who has the responsibility of managing the SDN security, might also serve as the administrator of the gateway VMs that run on the gateway cluster. Or, to isolate a single administrator's scope of influence, the responsibility might be assigned to an administrator who has access only to the edge gateway and no access to manage SDN security.
 
 The workload region is managed by one or more administrators that are only responsible for the management of the application VMs deployed upon the workload clusters. One approach where multiple administrators are useful is the case where a user wants to isolate administrative tasks on a per business unit basis or other compliance requirements.
 

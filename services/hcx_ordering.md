@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-12-22"
+lastupdated: "2023-03-29"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -18,23 +18,22 @@ subcollection: vmwaresolutions
 # Ordering VMware HCX
 {: #hcx_ordering}
 
-You can include the VMware HCX™ service with a new VMware vCenter Server® instance or add the service to your existing vCenter Server instance.
+You can include the VMware HCX™ service with a new VMware vCenter Server® instance or add the service to your existing instance.
 
 ## Ordering HCX for a new instance
 {: #hcx_ordering-new}
 
-1. To order a new vCenter Server instance with HCX from the VMware Solutions console, scroll down to the Add-on services section. HCX is in the Data resiliency and migration category.
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. HCX is in the **Data resiliency and migration** category.
 2. Open the category, locate HCX, and toggle its switch on.
-3. Select **Edit** to review and specify the information. 
-4. If you enter or change information, click **Save**.
+3. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering#hcx_ordering-config), then click **Save**.
 
 ## Ordering HCX for an existing instance
 {: #hcx_ordering-existing}
 
 1. On the instance details page, click the **Services** tab.
 2. Click **Add** to add the service.
-3. On the **Services** page, locate the **VMware HCX** service and toggle its switch on.
-4. Follow the steps to configure and add the service to your instance.
+3. On the **Add services** page, locate the **HCX** service in the **Data resiliency and migration** section and toggle its switch on.
+4. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering#hcx_ordering-config), then click **Save**.
 
 ## HCX configuration
 {: #hcx_ordering-config}
@@ -73,7 +72,7 @@ The deployment of HCX is automated. Whether you order a vCenter Server instance 
    * One private portable subnet for HCX interconnects. This subnet is used when the **Private network** option is selected for **HCX connection type**.
    * One public portable subnet for HCX interconnects, if the **Public network** option is selected for **HCX connection type**. On NSX-V, this subnet is also used for activation and maintenance with VMware.
 
-   The IP addresses in the subnets that are ordered for HCX are intended to be managed by the VMware on {{site.data.keyword.cloud_notm}} automation. These IP addresses cannot be assigned to VMware resources, such as VMs and NSX Edges, that are created by you. If you need more IP addresses for your VMware artifacts, you must order your own subnets from {{site.data.keyword.cloud_notm}}.
+   The IP addresses in the subnets that are ordered for HCX are intended to be managed by the VMware Solutions automation. These IP addresses cannot be assigned to VMware resources (such as VMs and NSX Edges) that are created by you. If you need more IP addresses for your VMware artifacts, you must order your own subnets from {{site.data.keyword.cloud_notm}}.
    {: important}
 
 2. If **Private Network** was selected for **HCX Network Connection**, a port group that is named **SDDC-DPortGroup-HCX-Private** is created on the private Distributed Virtual Switch (DVS).

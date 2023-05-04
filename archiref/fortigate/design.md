@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-15"
+lastupdated: "2023-03-21"
 
 subcollection: vmwaresolutions
 
@@ -31,7 +31,7 @@ In this figure, FCR is the {{site.data.keyword.cloud_notm}} front–end (public)
 ### IBM Cloud edge services
 {: #fortigate-design-topologies-edge}
 
-You can deploy a VMware ESXi™ edge gateway cluster as part of your vCenter Server instance. This cluster is configured to peer with the {{site.data.keyword.cloud_notm}} customer routers to provide firewall and gateway services for {{site.data.keyword.cloud_notm}} public and private VLANs of your choice. While you can deploy any virtual firewall technology of your choice to this edge gateway cluster, {{site.data.keyword.cloud_notm}} features FortiGate VM as an option for these firewall and gateway services. Using this approach, your FortiGate VM appliances can provide services such as:
+You can deploy a VMware ESXi™ gateway cluster as part of your vCenter Server instance. This cluster is configured to peer with the {{site.data.keyword.cloud_notm}} customer routers to provide firewall and gateway services for {{site.data.keyword.cloud_notm}} public and private VLANs of your choice. While you can deploy any virtual firewall technology of your choice to this gateway cluster, {{site.data.keyword.cloud_notm}} features FortiGate VM as an option for these firewall and gateway services. Using this approach, your FortiGate VM appliances can provide services such as:
 
 * The firewall between public and private networks.
 * The firewall between your private VLANs and the subnets within them. For example, you can deploy separate clusters for workload and management on to separate VLANs and use the edge to limit connectivity between management and workload.

@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-10-26"
+lastupdated: "2023-04-17"
 
-keywords: Veeam, Veeam license, manage Veeam license, Veeam 10
+keywords: Veeam, Veeam license, manage Veeam license, Veeam Backup and Replication 12 
 
 subcollection: vmwaresolutions
 
@@ -35,9 +35,9 @@ The following information is displayed for the Veeam license:
 * Number of virtual machines (VMs) licensed
 * Creation date
 * Status - the status can be one of the following items.
-   * Modifying - license is being created
-   * Installed - license is ready to use
-   * Removing - license is being deleted
+   * Modifying - The license is being created.
+   * Installed - The license is ready to use.
+   * Removing - The license is being deleted.
 
 ## Procedure to edit notes for Veeam licenses
 {: #veeam_managing_licenses-procedure-edit}
@@ -72,8 +72,8 @@ To delete a Veeam license:
 ## Related links
 {: #veeam_managing_licenses-related}
 
-* [Veeam 11 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Ordering Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering)
 * [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
-* [Ordering Veeam standalone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
+* [Ordering Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
 * [Ordering and configuring IBM Cloud Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)

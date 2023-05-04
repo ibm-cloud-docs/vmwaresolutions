@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-09-15"
+lastupdated: "2023-04-19"
 
 keywords: change vCenter Server artifacts, automation ID, VMware resource
 
@@ -50,7 +50,7 @@ The `<service_name>` together with the `<service_uuid>` truncates to 20 characte
 {: #vcenter_chg_impact-vmware-resources-for-inst-v1.9-and-later}
 {: faq}
 
-If the vCenter Server instance is in a **Ready to use** state, you can modify the VMware virtual data center, cluster, switches, port groups, and customer Network File System (NFS) datastore names from the VMware vSphere Web Client.
+If the status of the vCenter Server instance is **Available**, you can modify the VMware virtual data center, cluster, switches, port groups, and customer Network File System (NFS) datastore names from the VMware vSphere Web Client.
 
 Review the following restrictions:
 * Do not change the vCenter Server instance name and the vCenter Server virtual machine name.
@@ -82,7 +82,7 @@ The following table lists the operations that might be impacted if SSH or shell 
 
 | Attempted change  | Impacted operations  | Severity  | Recovery method  |
 |:------------- |:------------- |:--------------|:--------------|
-| Disable SSH or shell access for vCenter Server or PSC. | Pairing a primary and secondary instance might fail.    | Important    | N/A    |
+| Disable SSH or shell access for vCenter Server or PSC. | Pairing a primary and secondary instance might fail.    | Important    |    |
 {: caption="Table 2. Operations that are impacted by SSH and shell access (local)" caption-side="bottom"}
 
 If you choose to disable SSH or shell access, re-enable it temporarily before you complete the indicated operations.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-01-05"
+lastupdated: "2023-04-29"
 
 keywords: FAQ, license, BYOL
 
@@ -23,7 +23,7 @@ Find answers to frequently asked questions about licensing.
 {: #faq_licensing-license-mgmt}
 {: faq}
 
-After an order to create a new cluster for VMware vSphere® is placed, the VMware® licenses, VMware ESXi™ servers, and other networking components, are delivered and can be managed from the {{site.data.keyword.slportal}}.
+After an order to create a new cluster for VMware vSphere® is placed, the VMware® licenses, VMware ESXi™ servers, and other networking components are delivered and can be managed from the {{site.data.keyword.slportal}}.
 
 After deployment, go to the {{site.data.keyword.vmwaresolutions_short}} console to scale the new cluster by using the saved configuration. For more information, see [Scaling existing vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_scalingexistingclusters).
 

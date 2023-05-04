@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-02-17"
+lastupdated: "2023-04-29"
 
 keywords: FAQ, license, BYOL
 
@@ -22,7 +22,7 @@ subcollection: vmwaresolutions
 {: faq}
 {: support}
 
-BYOL was a feature available to vCenter Server and VMware vSphere clusters in V2.0 and later. IBM Cloud previously allowed clients to bring their own licenses (BYOL) when moving their existing on-premises VMware workloads to IBM Cloud. BYOL is no longer allowed by VMware. You can no longer bring your own licenses for any new hosts. This applies to all VMware products that are available through IBM Cloud.
+BYOL was a feature available to vCenter Server and VMware vSphere clusters in version 2.0 and later. IBM Cloud previously allowed clients to bring their own licenses (BYOL) when moving their existing on-premises VMware workloads to IBM Cloud. BYOL is no longer allowed by VMware. You can no longer bring your own licenses for any new hosts. This applies to all VMware products that are available through IBM Cloud.
 
 Existing BYOL servers will be able to perform upgrades and migrations to refresh software and hardware.
 
@@ -30,7 +30,7 @@ Existing BYOL servers will be able to perform upgrades and migrations to refresh
 {: #faq_byol-mthly-license}
 {: faq}
 
-Yes. You can continue to use the BYOL feature for clusters that already have BYOL. You must purchase licenses from IBM for any new combination of the four VMware components. The {{site.data.keyword.vmwaresolutions_short}} console makes it straightforward for you to select the licensing option when you order your instance. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster. 
+Yes. You can continue to use the BYOL feature for clusters that already have BYOL. You must purchase licenses from IBM for any new combination of the four VMware components. The {{site.data.keyword.vmwaresolutions_short}} console makes it straightforward for you to select the licensing option when you order your instance. Select **I will provide**, and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster. 
 
 ## For a specific VMware component, can you use BYOL for some licenses and buy the rest of licenses from IBM?
 {: #faq_byol-purchase}
@@ -50,7 +50,7 @@ You cannot mix and match BYOL and IBM-provided licensing for any VMware componen
 {: #faq_byol-cluster}
 {: faq}
 
-No. BYOL is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+No. BYOL is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide**, and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
 
 ## How do you manage BYOL licenses?
 {: #faq_byol-mgmt}

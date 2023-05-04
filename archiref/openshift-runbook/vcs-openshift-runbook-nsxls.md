@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -44,7 +44,7 @@ Use the following table to document the parameters you need for your deployment,
 | NSX Transport Zone| transport-1 | |
 {: caption="Table 1. PowerNSX LS Parameters" caption-side="bottom"}
 
-```powernsx
+```text
 # Allow self-signed certificates on PowerCLI
 Set-PowerCLIConfiguration -InvalidCertificateAction:Ignore
 
@@ -59,6 +59,7 @@ Get-NsxTransportZone transport-1 | new-nsxlogicalswitch -Name OpenShift-HA -Desc
 # Disconnect
 Disconnect-NsxServer
 ```
+{: pre}
 
 ## Related links
 {: #vcs-openshift-runbook-nsxdls-related}

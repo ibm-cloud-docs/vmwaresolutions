@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-10"
+lastupdated: "2023-04-24"
 
 keywords: cyber recovery add clusters, add cluster, cyber recovery cluster
 
@@ -22,14 +22,14 @@ You can add clusters to Cyber Recovery instances to expand the compute and stora
 ## Before you add clusters to Cyber Recovery instances
 {: #cr_addingclusters-before}
 
-* Whenever possible, add clusters by using the {{site.data.keyword.vmwaresolutions_full}} console because changes that you make on the VMware vSphere® Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, add clusters to Cyber Recovery only for on-premises clusters or clusters that you don't plan to manage in the {{site.data.keyword.vmwaresolutions_short}} console.
+* Whenever possible, add clusters by using the {{site.data.keyword.vmwaresolutions_full}} console and not the VMware vSphere® Web Client. Changes that you make on the vSphere Web Client are not synchronized with the VMware Solutions console. If you want to add clusters to Cyber Recovery instances by using the vSphere Web Client, do so only for on-premises clusters or clusters that you don't manage in the VMware Solutions console.
 * The number of clusters, hosts, and virtual machines (VMs) determines the maximum limit for the number of clusters you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information about maximum limits, see [VMware Configuration Maximums](https://configmax.vmware.com/home){: external}.
 * You can add or delete a cluster while another cluster is being created or deleted.
 
 ## Cluster type
 {: #cr_addingclusters-cluster-type}
 
-Select the cluster type, either **Workload cluster** or **Edge gateway cluster**.
+Select the cluster type, either **Workload cluster** or **Gateway cluster**.
 
 ## System settings for workload clusters
 {: #cr_addingclusters-sys-settings-workload}
@@ -48,7 +48,7 @@ The cluster name is set to **vcs-lj-workload_xx_** by default, where _xx_ repres
 
 Review the following information and specify the licensing setting for the Cyber Recovery component in the cluster.
 * For Business Partner users, the vSphere license (Enterprise Plus edition) is included and purchased on your behalf.
-* For users who are not Business Partners, use the IBM-provided VMware licenses for this component by selecting **Include with purchase**.
+* For users who are not Business Partners, use the IBM-provided VMware licenses for this component, which are included with purchase.
 
 Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
 {: important}
@@ -126,8 +126,8 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 {: #cr_addingclusters-bare-metal-number}
 
 * All servers that you order have the same configuration.
-* For vSAN™ storage, you can order in the range 4 - 59 servers.
-* For NFS storage, you can order 2 - 59 servers. However, for production workloads, a minimum of two servers is recommended.
+* For NFS storage, you can order 2-59 servers. However, for production workloads, a minimum of 3 servers is recommended.
+* For vSAN™ storage, you can order 4-59 servers.
 
 ### Storage settings
 {: #cr_addingclusters-storage-settings}
@@ -173,7 +173,7 @@ The amount of storage reduction from deduplication and compression depends on ma
 ##### vSAN license
 {: #cr_addingclusters-vsan-storage-lic}
 
-Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**.
+Use the IBM-provided VMware license for the vSAN component, which is included with purchase.
 
 Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
 {: important}
@@ -185,14 +185,14 @@ If your initial cluster was a vSAN cluster, any additional vSAN clusters use the
 #### NFS storage
 {: #cr_addingclusters-nfs-storage}
 
-When you select **NFS storage**, you can add file-level shared storage for your instance where all shares use the same settings or you can specify different configuration settings for each file share. The number of file shares must be in the range of 1 to 100.
+When you select **NFS storage**, you can add file-level shared storage for your instance where all shares use the same settings or you can specify different configuration settings for each file share. The number of file shares must be in the range 1-100.
 
 Specify the following NFS options.
-* **Configure shares individually** - Select to specify different configuration settings for each file share.
+* **Configure shares individually** - Toggle this switch on to specify different configuration settings for each file share.
 * **Number of shares** - When want to use the same configuration setting for each file share, specify the number of file shares for the NFS shared storage that you want to add.
 * **Size (GB)** - Select the capacity that meets your shared storage needs.
 * **Performance** - Select the IOPS (input/output operations per second) per GB based on your workload requirements.
-* **Add shared storage icon** - Select to add individual file shares with different configuration settings.
+* **Add shared storage** - Select to add individual file shares with different configuration settings.
 
 The following table indicates the performance level details.
 
@@ -235,7 +235,7 @@ Network interface card (NIC) enablement settings are based on your selection of 
 #### Uplink speed
 {: #cr_addingclusters-uplink}
 
-The **Uplink speed** option is not available to edge gateway clusters.
+The **Uplink speed** option is not available to gateway clusters.
 {: note}
 
 {{site.data.content.uplink-speed-options-list}}
@@ -255,6 +255,7 @@ The **Uplink speed** option is not available to edge gateway clusters.
 | NA East | WDC07 | 01 |
 | NA South | DAL10 | 03 |
 | NA South | DAL12 | 01 |
+| NA South | DAL13 | 02 |
 {: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 
 #### VLANs
@@ -295,10 +296,10 @@ Use the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** tabs to
 {{site.data.keyword.vmwaresolutions_short}} takes control of the entire subnet and you can't use any IP addresses in the subnet.
 {: important}
 
-## System settings for edge gateway clusters
+## System settings for gateway clusters
 {: #cr_addingclusters-sys-settings-edge}
 
-When you add an edge gateway cluster to a Cyber Recovery instance, you must specify the following settings.
+When you add a gateway cluster to a Cyber Recovery instance, you must specify the following settings.
 
 ### Data center location
 {: #cr_orderinginstance-dc-edge}
@@ -370,7 +371,7 @@ The uplink speed of 10 Gb, which is selected by default.
 ### Networking type
 {: #cr_addingclusters-edge-cluster-private-nics}
 
-Select either **Public and private network** or **Private network only** for the edge gateway cluster.
+Select either **Public and private network** or **Private network only** for the gateway cluster.
 
 ## Summary
 {: #cr_addingclusters-order-summary}
@@ -382,20 +383,29 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ## Procedure to add clusters to Cyber Recovery instances
 {: #cr_addingclusters-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > Cyber Recovery** from the left navigation pane.
+1. From the VMware Solutions console, click **Resources > Cyber Recovery** from the left navigation pane.
 2. In the **Cyber Recovery** table, click the instance that you want to add clusters to.
 
-   Ensure that the instance is in the **Ready to use** status. Otherwise, you cannot add clusters to the instance.
-   {: note}
+   Ensure that the instance status is **Available**. Otherwise, you cannot add clusters to the instance.
+   {: important}
 
-3. Click the **Infrastructure** tab and click **Add** on the upper right of the **Clusters** table.
-4. On the **Cluster** page, select the cluster type.
-5. For workload clusters, select a billing option, enter the cluster name, and complete the following configuration.
-   1. If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, under **Bare metal server**, select the **Select a different location** checkbox and choose the {{site.data.keyword.cloud_notm}} data center to host the instance.
-   2. Complete the bare metal configuration.
-      * For **Cascade Lake**, select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers**.
+3. Click the **Infrastructure** tab and click **Create** on the upper right of the **Clusters** table.
+4. On the **Create cluster** page, select the cluster type.
+5. For workload clusters, enter the cluster name and complete the following configuration.
+   1. Complete the licensing settings.
+      * For Business Partner users, the vSphere license (Enterprise Plus edition) is included and purchased on your behalf.
+      * For users who are not Business Partners, select **Include with purchase** for the new vSphere license to be purchased on your behalf. 
+      * Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
+      * The **Use existing license** option is available only if you are using a BYOL vSphere or vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
+
+   2. Complete the bare metal server configuration. 
+      * If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, check the **Select a different location** box and choose the {{site.data.keyword.cloud_notm}} data center to host the instance.
+      * For **Cascade Lake** CPU generation type, select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers**.
       * For **SAP-certified** NetWeaver, select one of the preset configurations. For **SAP-certified** HANA, select the **CPU model** and **RAM**.
+
    3. Complete the storage configuration.
+      * If you select **NFS storage** and want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
+      * If you select **NFS storage** and want to add and configure file shares individually, select the **Configure shares individually** checkbox, then  click **Add shared storage** and select the **Size (GB)** and **Performance** for each file share. You must select at least one file share.
       * If you select **vSAN storage**, specify the following values:
          * Size for the vSAN capacity disks
          * Number of vSAN capacity disks
@@ -407,24 +417,14 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 
       By default, the **Enable vSAN deduplication and compression** box is selected. If you do not want to enable vSAN deduplication and compression, clear the checkbox.
 
-      * If you select **NFS storage** and want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
-      * If you select **NFS storage** and want to add and configure file shares individually, select **Configure shares individually**. Then, click the **Add** icon ![Add icon](../../icons/add.svg "Add") next to the **Add shared storage** label and select the **Size (GB)** and **Performance** for each file share. You must select at least one file share.
-   4. Complete the Licensing settings.
-      * For Business Partner users, the vSphere license (Enterprise Plus edition) is included and purchased on your behalf.
-      * For users who are not Business Partners, select one of the following options:
-         * If you want new licenses to be purchased on your behalf, select **Include with purchase** for the component.
-
-   Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
-   {: important}
-
-   The **Use existing license** option is available only if you are using a BYOL vSphere or vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
-
-6. For edge gateway clusters, complete the following configuration.
-   1. For data center location, click **Edit** and select the geography, data center, and pod to host the instance or cluster.
+6. For gateway clusters, complete the following configuration.
+   1. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the cluster.
    2. Specify the cluster name.
    3. Select the CPU model, RAM size, and the number of bare metal servers.
-   4. For network interface settings, enter the hostname prefix, and then select the uplink speed and network type.
-7. On the **Summary** pane, verify the cluster configuration before you add the cluster.
+
+7. For network interface settings, enter the hostname prefix, and then select the uplink speed and network type.
+
+8. On the **Summary** pane, verify the cluster configuration before you add the cluster.
    1. Review the settings for the cluster.
    2. Review the estimated price of the cluster. Click **Pricing details** to generate a PDF summary. To save or print your order summary, click **Print** or **Download** on the upper right of the PDF window.
    3. Click the link or links of the terms that apply to your order, and confirm that you agree with these terms before you add the cluster.
@@ -434,7 +434,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 {: #cr_addingclusters-results}
 
 1. The deployment of the cluster starts automatically and the status of the cluster is changed to **Initializing**. You can check the status of the deployment by viewing the deployment history from the **Summary** page of the instance.
-2. When the cluster is ready to use, its status changes to **Ready to use**. The newly added cluster is enabled with vSphere High Availability (HA) and vSphere Distributed Resource Scheduler (DRS).
+2. When the cluster is ready to use, its status changes to **Available**. The newly added cluster is enabled with vSphere High Availability (HA) and vSphere Distributed Resource Scheduler (DRS).
 
 You cannot change the cluster name. Changing the cluster name might cause the add or remove ESXi servers operations in the cluster to fail.
 {: important}

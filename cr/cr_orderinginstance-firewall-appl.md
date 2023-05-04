@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-09"
+lastupdated: "2023-03-21"
 
 keywords: cyber recovery, cyber recovery firewall appliance, firewall appliance cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -18,8 +18,8 @@ subcollection: vmwaresolutions
 {: #cr_orderinginstance-firewall-appl}
 
 You have the following options for your firewall appliance:
-* **Edge gateway cluster with Juniper® vSRX** - Order a dedicated cluster for the network edge and firewall components and install Juniper vSRX on it.
-* **Edge gateway cluster with FortiGate® Virtual Appliance** - Order a dedicated cluster for the network edge and firewall components and install FortiGate Virtual Appliance on it.
+* **Gateway cluster with Juniper® vSRX** - Order a dedicated cluster for the network edge and firewall components and install Juniper vSRX on it.
+* **Gateway cluster with FortiGate® Virtual Appliance** - Order a dedicated cluster for the network edge and firewall components and install FortiGate Virtual Appliance on it.
 * **Bring your own gateway appliance** - Order a dedicated cluster for the network edge and firewall components.
 * **FortiGate Security Appliance** - Use an {{site.data.keyword.cloud} service, which is an enterprise-class hardware firewall for enhanced and granular control over your network.
 

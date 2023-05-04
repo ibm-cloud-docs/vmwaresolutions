@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-03-29"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -18,27 +18,27 @@ subcollection: vmwaresolutions
 # Ordering FortiGate Virtual Appliance
 {: #fortinetvm_ordering}
 
-You can include the FortiGate® Virtual Appliance service with a new VMware vCenter Server® instance or add the service to your existing vCenter Server instance.
+You can include the FortiGate® Virtual Appliance service with a new VMware vCenter Server® instance or add the service to your existing instance.
 
-You can deploy the service on a single-zone or multizone instance. For multizone instances, three FortiGate Virtual Appliances are installed, one for each of the three edge gateway clusters.
+You can deploy the service on a single-zone (new or existing) or multizone (existing only) instance. For multizone instances, three FortiGate Virtual Appliances are installed, one for each of the three gateway clusters.
 
 ## Ordering FortiGate Virtual Appliance for a new instance
 {: #fortinetvm_ordering-new}
 
-1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. FortiGate Virtual Appliance is in the Security and compliance category. 
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. FortiGate Virtual Appliance is in the **Security and compliance** category. 
 2. Open the category, locate FortiGate Virtual Appliance, and toggle its switch on.
-3. Select **Edit** to review and specify the information. 
-4. If you enter or change information, click **Save**.
+3. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering#fortinetvm_ordering-config), then click **Save**.
 
-You cannot install Juniper® vSRX and FortiGate Virtual Appliance on the same edge gateway cluster.
+You cannot install Juniper® vSRX and FortiGate Virtual Appliance on the same gateway cluster.
+{: restriction}
 
 ## Ordering FortiGate Virtual Appliance for an existing instance
 {: #fortinetvm_ordering-existing}
 
 1. On the instance details page, click the **Services** tab.
 2. Click **Add** to add the service.
-3. On the **Services** page, locate the **FortiGate Virtual Appliance** service and toggle its switch on.
-4. Follow the steps to configure and add the service to your instance.
+3. On the **Add services** page, locate the **FortiGate Virtual Appliance** service in the **Security and Compliance** section and toggle its switch on.
+4. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering#fortinetvm_ordering-config), then click **Save**.
 
 ## Ordering FortiGate Virtual Appliance for private instances
 {: #fortinetvm_ordering-private}
@@ -47,10 +47,10 @@ When you order FortiGate Virtual Appliance for instances that are not configured
 
 To ensure continued operation, FortiGate Virtual Appliance must have persistent access to the FortiGate license server through the internet. The virtual appliance can access any of the following hostnames:
 
-* update.fortiguard.net
-* service.fortiguard.net
-* support.fortinet.com
-* guard.fortinet.com
+* `update.fortiguard.net`
+* `service.fortiguard.net`
+* `support.fortinet.com`
+* `guard.fortinet.com`
 
 ## FortiGate Virtual Appliance service configuration
 {: #fortinetvm_ordering-config}
@@ -65,7 +65,7 @@ Enter the service name.
 ### FortiGuard network connection
 {: #fortinetvm_ordering-config-network-connect}
 
-Select **Public network** or **Private network** for FortiGuard. If the target cluster is configured with private-only network interfaces or the deployment is for a multizone instance, only the **Private network** option is available. This selection determines how FortiGuard contacts the Fortinet license server to activate the license and to download security patches, and it doesn't impact the workload data plane.
+Select **Public network** or **Private network** for FortiGuard. If the target cluster is configured with private-only network interfaces or the deployment is for a multizone instance, only the **Private network** option is available. This selection determines how FortiGuard contacts the Fortinet license server to activate the license and to download security fixes, and it doesn't impact the workload data plane.
 
 If you select **Private network**, specify the following settings:
 * **Proxy IP address** - The IPv4 address of the proxy server.
@@ -91,7 +91,7 @@ The monthly subscription license model for FortiGate Virtual Appliance offers th
 * **Standard FW** - This bundle includes the following.
    * Stateful packet inspection
    * VLAN protection and advanced logging
-   * Ingress/egress FW rules
+   * Ingress and egress FW rules
    * SSL/IPsec VPN termination
    * Continuous support
 * **Standard FW + UTM** - This bundle includes all standard firewall services in addition to the Advanced Malware Protection (AMP) service.
@@ -103,9 +103,6 @@ The monthly subscription license model for FortiGate Virtual Appliance offers th
     * CASB (Cloud Access Security Broker) - This service provides visibility, compliance, data security, and threat protection for cloud-based services.
     * Industrial security - This service provides signatures for common ICS/SCADA protocols.
     * Security rating - This service provides audit capabilities to identify critical vulnerabilities and configuration weaknesses and implement best practice recommendations.
-
-In 3Q 2018, Fortinet added three new services (CASB, Industrial Security, and Security Rating) to their Enterprise bundle. These services are available for FortiGate V6.0 and later only.
-{: note}
 
 You can't change the monthly subscription license model after service installation. To change the monthly subscription license model, you must delete the existing service and reinstall the service by selecting a different license option.
 {: important}

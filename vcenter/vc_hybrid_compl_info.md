@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-02-21"
+lastupdated: "2023-05-01"
 
 keywords: vCenter Server Hybridity compliance, compliance info Hybridity, vCenter Server Hybridity policy
 
@@ -84,7 +84,7 @@ VMware vCenter Server environments, which are delivered as {{site.data.keyword.v
 {: #vc_hybrid_compl_info-client-responsibilities}
 
 * While we commend clients taking steps to make their environments more secure, it should be noted that some practices might have adverse effects on the effectiveness of VMware Solutions.
-* Clients are accountable for the firewalls they create and the resulting limitations that are imposed on communications between the VMware Solutions components. These firewalls might also hinder the ability of IBM Support to access client instances and resolve issues. For more information about minimum recommended firewall configuration, see [Ports that are used by VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports).
+* Clients are accountable for the firewalls they create and the resulting limitations that are imposed on communications between the VMware Solutions components. These firewalls might also hinder the ability of IBM Support to access client instances and resolve issues. For more information about minimum recommended firewall configuration, see [Ports that are used by VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vmwareuses).
 * Clients are fully responsible for encrypting the data in their system.
 * Upon initial deployment, the offering’s automation and client’s account are separate. The client is allowed and encouraged to change all passwords that IBM provides in the console.
 * vCenter access and credentials are created during initial deployments and provided to the client. As part of the requirement of our offering, IBM Support must retain full access to the management layer to provide life–cycle management and support to our clients.

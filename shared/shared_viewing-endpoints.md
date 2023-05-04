@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-11-16"
+lastupdated: "2023-03-23"
 
 keywords: VMware Solutions Shared view private network endpoint
 
@@ -36,7 +36,7 @@ You can view the details of a private network endpoint for a virtual data center
 {: caption="Table 1. Private network endpoint items" caption-side="bottom"}
 
 The **Service address** is available only when you select the *Dedicated 1 Gbps uplinks* or *Dedicated 10 Gbps uplinks* **Device type** when you order the private network endpoint.
-{: note}
+{: important}
 
 The private network endpoint can have different statuses.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-04-25"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -19,10 +19,10 @@ subcollection: vmwaresolutions
 
 Review the following requirements before you order your Cyber Recovery instance. Plan your instance based on the {{site.data.keyword.cloud}} data center location, your capacity requirements, and services requirements.
 
-## IBM Cloud account requirements
+## Account requirements
 {: #cr_planning-account-req}
 
-The {{site.data.keyword.cloud_notm}} account that you are using must meet certain requirements. For more information, see [Requirements for the {{site.data.keyword.cloud_notm}} account](/docs/vmwaresolutions?topic=vmwaresolutions-cloud-infra-acct-req).
+The account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
 
 ## IBM Cloud data center availability
 {: #cr_planning-dc-availability}
@@ -35,7 +35,7 @@ The Cyber Recovery deployment has strict requirements on the physical infrastruc
 The following {{site.data.keyword.cloud_notm}} data centers are available for Cyber Recovery.
 
 | Geography | Data center | Pod |
-|:----------|:------------|:-------|
+|:--------- |:----------- |:--- |
 | Asia-Pacific |CHE01 | 01 |
 | Asia-Pacific | HKG02 | 02 |
 | Asia-Pacific | OSA21 | 01 |
@@ -80,24 +80,24 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for Cy
 ## Services for Cyber Recovery
 {: #cr_planning-addon-services}
 
-The following services are required for a Cyber Recovery instance.
+The following services and components are required for Cyber Recovery instances.
 
-* [Veeam® 11](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) is required and also included in the Cyber Recovery instance. For Veeam 11, a Linux hardened repository is already chosen for you.
-* An edge gateway is required. You can bring your own gateway appliance or choose from:
-   * Edge gateway cluster with Juniper® vSRX
-   * Edge gateway cluster with FortiGate® Virtual Appliance
+* [Veeam Backup and Replication 12](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) is required and also included. For Veeam, a Linux hardened repository is selected for you.
+* An edge gateway is required. You can bring your own gateway appliance or choose from the following options:
+   * Gateway cluster with Juniper® vSRX
+   * Gateway cluster with FortiGate® Virtual Appliance
    * FortiGate Security Appliance
 
 The [Caveonix RiskForesight™](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) service is recommended.
 
 The following services are optional for Cyber Recovery.
 
-* [HCX™](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations)
-* [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
 * [Entrust CloudControl™](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
 * [F5® BIG-IP®](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
+* [HCX™](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations)
 * [Red Hat® OpenShift® for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
 * [vRealize Operations™ and Log Insight™](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
+* [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
 
 ## Related links
 {: #cr_planning-related-links}

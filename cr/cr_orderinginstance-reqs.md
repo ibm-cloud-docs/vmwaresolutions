@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-04-19"
+lastupdated: "2023-04-25"
 
 keywords: cyber recovery, cyber recovery requirements, requirements cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Requirements for Cyber Recovery
 {: #cr_orderinginstance_reqs}
 
-The Cyber Recovery offering helps you with data protection, cyberthreats and attacks, ransomware, and more. The instance automatically includes the Veeam® 11 add-on service and a Linux® hardened repository (LHR). An edge gateway is required and you can provide your own or order one of the following edges:
+Cyber Recovery helps you with data protection, cyberthreats, cyberattacks, and ransomware. The instance includes the Veeam Backup and Replication 12 add-on service and a Linux® hardened repository (LHR). An edge gateway is required and you can provide your own or order one of the following edges:
 
 * Juniper® vSRX
 * FortiGate® Virtual Appliance
@@ -25,16 +25,12 @@ The Cyber Recovery offering helps you with data protection, cyberthreats and att
 
 You can order add-on services. For more information, see [Services for {{site.data.keyword.cloud_notm}} Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_planning#cr_planning-addon-services).
 
-Price calculations are automatically generated when you access the {{site.data.keyword.cloud}} Cyber Recovery instance order page. Default selections include the Data Center SP Professional license for NSX-T™, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, 768 GB RAM, and NFS storage for both the consolidated and workload clusters.
+Price calculations are automatically generated when you access the Cyber Recovery instance order page. Default selections include the Data Center SP Professional license for NSX-T™, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, 768 GB RAM, and NFS storage for both the consolidated and workload clusters.
 
 Ensure that you complete the following tasks:
-
 * If you are ordering an instance for the first time, complete the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
-
-* Review the information in [Requirements for the {{site.data.keyword.cloud_notm}} account](/docs/vmwaresolutions?topic=vmwaresolutions-cloud-infra-acct-req).
-
+* Review the information in [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
 * Review the information in [Cyber Recovery overview](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview).
-
 * Review the domain name format. The domain name is used to generate the username and server names of the instance.
 
 | Name        | Value format |
@@ -47,11 +43,5 @@ Ensure that you complete the following tasks:
 | NetBIOS name | First string of `<root_domain>`. The maximum length is 15 characters. |
 {: caption="Table 1. Value format for instance and domain names" caption-side="bottom"}
 
-After the instance is provisioned, do not modify any value that is set during instance order. Otherwise, the instance might become unusable.
-{: important}
-
-## Related links
-{: #cr_orderinginstance_reqs_related}
-
-* [Signing up for an {{site.data.keyword.cloud_notm}} account](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts#signing_required_accounts-cloud)
-* [Service prerequisites](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance_serv_prereq)
+After the instance is provisioned, do not modify any values that are set during instance order. Otherwise, the instance might become unusable.
+{: attention}

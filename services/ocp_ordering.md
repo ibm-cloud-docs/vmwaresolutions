@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-10-17"
+lastupdated: "2023-03-28"
 
 keywords: Red Hat OpenShift for VMware, OpenShift configuration, order OpenShift
 
@@ -18,12 +18,22 @@ subcollection: vmwaresolutions
 # Ordering Red Hat OpenShift for VMware
 {: #ocp_ordering}
 
-You can include the {{site.data.keyword.redhat_openshift_full}} for VMware® service with a new VMware vCenter Server® instance or add the service to your existing vCenter Server instance.
+You can include the {{site.data.keyword.redhat_openshift_full}} for VMware® service with a new VMware vCenter Server® instance or add the service to your existing instance.
 
-1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Red Hat OpenShift for VMware is in the Transformation and modernization of VMware applications category. 
+## Ordering Red Hat OpenShift for VMware for a new instance
+{: #ocp_ordering-new}
+
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. Red Hat OpenShift for VMware is in the **Transformation and modernization of VMware applications** category. 
 2. Open the category, locate Red Hat OpenShift for VMware, and toggle its switch on.
-3. Select **Edit** to review and specify the information. 
-4. If you enter or change information, click **Save**.
+3. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_ordering#ocp_ordering-config), then click **Save**.
+
+## Ordering Red Hat OpenShift for VMware for an existing instance
+{: #ocp_ordering-existing}
+
+1. On the instance details page, click the **Services** tab.
+2. Click **Add** to add the service.
+3. On the **Add services** page, locate the **Red Hat OpenShift for VMware** service in the **Transformation and modernization of VMware applications** section and toggle its switch on.
+4. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_ordering#ocp_ordering-config), then click **Save**.
 
 ## Red Hat OpenShift for VMware configuration
 {: #ocp_ordering-config}
@@ -47,7 +57,6 @@ Alternately, you can configure your local `hosts` file with the following entrie
 
    `APPLICATION_IP  console-openshift-console.apps.ocp.ROOTDOMAIN`
    `APPLICATION_IP  oauth-openshift.apps.ocp.ROOTDOMAIN`
-
 
 ## Related links
 {: #ocp_ordering-related}

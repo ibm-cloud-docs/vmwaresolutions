@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-12-28"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -85,9 +85,8 @@ If you need to install Homebrew, see [Installing Homebrew on a Mac](https://tree
 
 If your jump-host or remote device uses Linux, complete the following steps:
 
-1. Download govc and make it executable.
-   `curl -L https://github.com/vmware/govmomi/releases/download/v0.20.0/govc_linux_amd64.gz | gunzip > /usr/local/bin/govc`.
-2. `chmod +x /usr/local/bin/govc`.
+1. Download govc and make it executable. Run `curl -L https://github.com/vmware/govmomi/releases/download/v0.20.0/govc_linux_amd64.gz | gunzip > /usr/local/bin/govc`.
+2. Run `chmod +x /usr/local/bin/govc`.
 
 ## Validating Distributed PortGroup and Datastore names
 {: #openshift-runbook-runbook-prereq-netstorage-ic4v}
@@ -109,6 +108,8 @@ govc ls network | grep -E 'dpg-external|SDDC-DPortGroup-External' | awk -F / '{p
 # Datastore names
 govc ls datastore | grep -E 'vsan|share' | awk -F / '{print $4}'
 ```
+{: pre}
+
 Pick your deployment-specific values and use them throughout the runbook.
 
 ## Uploading the OVA image to vCenter
@@ -135,6 +136,7 @@ vi rhcos.json
 govc import.ova -options=./rhcos.json -name=rhcos-4.x-x86_64-vmware.x86_64.ova
 govc vm.markastemplate vm/rhcos-latest
 ```
+{: pre}
 
 ## Uploading the ISO image to vCenter storage
 {: #openshift-runbook-runbook-prereq-cloud-iso}
@@ -150,6 +152,7 @@ export GOVC_DATASTORE='vsanDatastore'
 govc datastore.mkdir isos
 govc datastore.upload rhel-8.x-x86_64-dvd.iso isos/rhel-8.x-x86_64-dvd.iso
 ```
+{: pre}
 
 ## Related links
 {: #vcs-openshift-runbook-prerequisites-related}

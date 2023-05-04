@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -25,13 +25,13 @@ While Veeam® DataLabs enables the sandbox concept, it is not yet enabled for VM
 * NSX-T T1 - Provides routing and gateway firewall capabilities.
 * NSX-T distributed firewall - Distributed firewall enables firewall capability on east-west traffic on VMs.
 
-The isolated recovery environment also uses vSRX appliances that are hosted on an edge gateway cluster along with a management VM to provide an air-gaped environment. In normal operation, the only inbound traffic is limited to accessing the VMs in the DMZ zone.
+The isolated recovery environment also uses vSRX appliances that are hosted on a gateway cluster along with a management VM to provide an air-gaped environment. In normal operation, the only inbound traffic is limited to accessing the VMs in the DMZ zone.
 
 ![Isolated recovery environment network overview](../../images/veeam-cr-sa-sb-ire.svg){: caption="Figure 1. Isolated recovery environment network overview" caption-side="bottom"}
 
 The previous diagram shows the networks that are associated with a consolidated cluster of the vCenter Server® instance that is used for an isolated recovery environment. The customer order is:
 
-* A private network only vCenter Server® instance with edge gateway cluster and Juniper® vSRX firewalls.
+* A private network only vCenter Server® instance with gateway cluster and Juniper® vSRX firewalls.
 * The Veeam service on a bare metal server.
 * A bare metal server that runs Ubuntu 20.04 LTS.
 
@@ -47,7 +47,7 @@ When the IaaS is provisioned, the customer:
    * Interfaces and zones.
    * Address books, services, and security policies.
    * NAT, routing, and VPN.
-* Associates and routes-through the vCenter Server instance VLANs with the {{site.data.keyword.cloud}} gateway devices, which are the ESXi hosts in the edge gateway cluster.
+* Associates and routes-through the vCenter Server instance VLANs with the {{site.data.keyword.cloud}} gateway devices, which are the ESXi hosts in the gateway cluster.
 
 The vSRX security policies enable the objectives that are listed in the following table:
 
@@ -71,9 +71,9 @@ The vSRX security policies enable the objectives that are listed in the followin
 * Veeam backup server access to the Linux hardened repository is done through the connected network.
 * The "Allow proxy access to Linux hardened repository" rule can be toggled between "Allow" and "Deny" to facilitate the air gap.
 * If NFS is used, then this action bypasses the vSRX as the storage VLAN is not associated with the {{site.data.keyword.cloud_notm}} gateway devices that host the vSRX appliances.
-* If the "Allow access between vCenter Server subnets" rule needs to be locked down further, for more information, see [Ports that are used by VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports).
+* If the "Allow access between vCenter Server subnets" rule needs to be locked down further, for more information, see [Ports that are used by VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vmwareuses).
 * If encryption is used, then vCenter needs access to the KMIP service. This service is accessed through the {{site.data.keyword.cloud_notm}} endpoint service network 166.8.0.0/14.
-* If automated Day 2 operations are required on the vCenter Server instance, for more information, see [Ports that are used for deployment and Day 2 operations](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports#vmwaresol_ports-vmwaredeploy-day2ops).
+* If automated Day 2 operations are required on the vCenter Server instance, for more information, see [Ports that are used for deployment and Day 2 operations](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-deploy-day2ops).
 
 To enable the air gap, the customer:
 

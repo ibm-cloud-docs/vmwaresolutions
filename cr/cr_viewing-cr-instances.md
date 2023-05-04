@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-17"
+lastupdated: "2023-04-03"
 
 keywords: view Cyber Recovery, view instance, view instance details, instance view Cyber Recovery
 
@@ -44,7 +44,7 @@ The instance can have different statuses.
 |:------ |:----------- |
 | Creating | The instance is being created. |
 | Building | The instance is being configured. |
-| Ready to use | The instance is ready to use. |
+| Available | The instance is ready to use. |
 | Modifying | The instance is being modified. |
 | Failed | The creation, configuration, or modification process failed. |
 | Deleting | The instance is being deleted. |
@@ -87,7 +87,7 @@ Under **Access information**, view the access information for the instance-relat
 | Component | Description |
 |:--------- |:----------- |
 | AD/DNS IP or IPs | The two IP addresses for the two AD servers. |
-| AD/DNS FQDN | The AD/DNS server fully qualified domain names (FQDN). These are the two FQDNs for the two AD servers. \n \n **Note:** The same administrator password can be used to connect to all the AD/DNS servers by using a remote desktop connection. |
+| AD/DNS FQDN | The AD/DNS server fully qualified domain names (FQDN); two FQDNs for the two AD servers. \n \n **Note:** The same administrator password can be used to connect to all the AD/DNS servers by using a remote desktop connection. |
 | Cyber Recovery/PSC IP | The IP address of the Cyber Recovery. |
 | Cyber Recovery/PSC FQDN | The Cyber Recovery fully qualified domain name (FQDN). |
 | Cyber Recovery/PSC ADMIN | The Cyber Recovery SSO username and password that you can use to log in to the Cyber Recovery by using the vSphere Web Client. |
@@ -117,14 +117,14 @@ Click **Deployment history** from the left navigation pane to view the deploymen
 ## What to do if errors occur
 {: #cr_viewinginstances-if-errors-occur}
 
-If errors occur during instance deployment or instance deletion, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). 
+If errors occur during instance deployment or instance deletion, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 ## What to do next
 {: #cr_viewinginstances-next}
 
 Manage your instances from the VMware Solutions console or the VMware vSphere Web Client.
 
-Before you click **vCenter console** on the instance summary page to go to the vSphere Web Client and start managing your VMware ESXi™ servers, you must log in to the VPN portal of the {{site.data.keyword.cloud_notm}} data center. Hover over **vCenter console** and follow the instructions to ensure that you meet all requirements and you completed the necessary steps before you access the vSphere Web Client.
+You must log in to the VPN portal of the {{site.data.keyword.cloud_notm}} data center before you click **vCenter console** on the instance summary page to start managing your VMware ESXi™ servers from the vSphere Web Client. Hover over **vCenter console** and follow the instructions to ensure that you meet all requirements and you completed the necessary steps before you access the vSphere Web Client.
 {: important}
 
 Review the following topics for information to help you complete the login instructions:

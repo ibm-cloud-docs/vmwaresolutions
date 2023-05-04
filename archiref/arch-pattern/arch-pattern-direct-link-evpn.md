@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-03-21"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ On [VMware vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcente
 
 This architecture pattern presents private connectivity for VMware vCenter Server® that uses [{{site.data.keyword.dl_short}}](/docs/dl) and EVPN. EVPN (Ethernet VPN) is a standards-based BGP control plane that extends Layer 2 and Layer 3 connectivity between different data centers. Multi-Protocol BGP (MP-BGP) EVPN is established between NSX-T T0 and a Customer Router through {{site.data.keyword.dl_short}}. {{site.data.keyword.cloud_notm}} private network and {{site.data.keyword.dl_short}} are used as L3 transport network for VXLAN traffic. VXLAN is the used encapsulation between NSX-T and the Customer Router.
 
-You can use Gateway Appliance or vCenter Server edge gateway cluster with Juniper vSRX or other device as part of the solution. This is optional. 
+You can use Gateway Appliance or vCenter Server gateway cluster with Juniper vSRX or other device as part of the solution. This is optional. 
 
 ## Deploying {{site.data.keyword.dl_short}} with NSX-T and EVPN
 {: #arch-pattern-direct-link-evpn-overview}
@@ -33,7 +33,7 @@ This architecture pattern deployment is summarized as follows:
 
 1. vCenter Server instance is deployed at {{site.data.keyword.cloud_notm}} classic infrastructure. Two {{site.data.keyword.cloud_notm}} private VLANs and one {{site.data.keyword.cloud_notm}} Public VLAN (optional) are deployed. Each of these VLANs host multiple subnets. You can see the details through {{site.data.keyword.vmwaresolutions_short}} portal.
 2. NSX-T T0 is deployed with two interfaces - private and public (optional). If you opt for a public one, this interface is attached to your Public VLAN and has direct internet access. Your T0's private interface is attached to the Private VLAN and it uses {{site.data.keyword.cloud_notm}} portable private IP.
-3. If vCenter Server edge gateway cluster with vSRX (or other third-party device) or {{site.data.keyword.cloud_notm}} Gateway Appliance is deployed to your classic infrastructure, you must configure your vCenter Server instance Private Primary VLAN. It is routed through the vSRX or Gateway Appliance. Ensure that you allow BGP and VXLAN traffic though the firewall.
+3. If vCenter Server gateway cluster with vSRX (or other third-party device) or {{site.data.keyword.cloud_notm}} Gateway Appliance is deployed to your classic infrastructure, you must configure your vCenter Server instance Private Primary VLAN. It is routed through the vSRX or Gateway Appliance. Ensure that you allow BGP and VXLAN traffic though the firewall.
 4. Create a {{site.data.keyword.dl_short}} at your {{site.data.keyword.cloud_notm}} data center or zone location and attach your classic network as a connection. All your classic networks in the region are advertised with Local routing option (or all with Global Option). Ensure that you advertise the required networks for establishing the BGP session and VXLAN traffic.
 5. Configure MP-BGP with eBGP multihop and EVPN on your T0 router. Create a T0 VRF for each tenant as an EVPN tenant in NSX-T.
 6. VXLAN or VNI is used for each tenant. Transport between your colocation router and NSX-T transport nodes and Tier-0 traverse through {{site.data.keyword.cloud_notm}} classic infrastructure network and {{site.data.keyword.dl_short}}.

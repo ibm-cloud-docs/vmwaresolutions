@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2023
 
-lastupdated: "2022-06-07"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,6 @@ The playbook can be written locally on your laptop by using an editor, such as V
 The playbook `secure_lhbr.yml` starts with the following code:
 
 ```text
----
 - hosts: lhbr
   vars:
     vbr_ip: <vbr_ip>

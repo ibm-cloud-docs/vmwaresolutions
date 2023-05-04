@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-03-21"
 
 subcollection: vmwaresolutions
 
@@ -23,10 +23,10 @@ subcollection: vmwaresolutions
 
 The management cluster storage is vSAN™. Security requirements mandate that multitenant shared storage is not permissible and in such cases the use of vSAN is necessary. vSAN requires deploying a minimum of four VMware ESXi™ hosts to the management cluster.
 
-## Edge gateway cluster
+## Gateway cluster
 {: #vrw-storage-edge}
 
-The edge gateway cluster uses only local data stores. Local data stores are suited to support the vSRX nodes since they do not require any vSphere DRS functions. The resiliency of the vSRX HA cluster is a function of the clustering mechanism that is used by the vSRX and is not reliant on the underlying hosts.
+The gateway cluster uses only local data stores. Local data stores are suited to support the vSRX nodes since they do not require any vSphere DRS functions. The resiliency of the vSRX HA cluster is a function of the clustering mechanism that is used by the vSRX and is not reliant on the underlying hosts.
 
 ## Workload cluster
 {: #vrw-storage-workload}

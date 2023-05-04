@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-11-22"
+lastupdated: "2023-04-03"
 
 keywords: Cyber Recovery view clusters, view Cyber Recovery clusters
 
@@ -36,7 +36,7 @@ You can view the summary and detailed information of the clusters that are provi
    * **Status**: The status of the cluster. The status can have one of the following values:
       * Initializing: The cluster is being created and configured.
       * Modifying: The cluster is being modified.
-      * Ready to use: The cluster is ready to use.
+      * Available: The cluster is ready to use.
       * Deleting: The cluster is being deleted.
       * Deleted: The cluster is deleted.
    * **Actions**: Click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete") to delete the cluster.
@@ -48,7 +48,7 @@ You can view the summary and detailed information of the clusters that are provi
 | Hardware | The hardware specification. |
 | Credentials | The username and password to access the ESXi server. |
 | Private IP | The private IP address of the ESXi server. |
-| Status | The status of the ESXi server, which can be one of the following values: \n **Added** The ESXi server is added and is ready for use. \n **Adding** The ESXi server is being added. \n **Deleting** The ESXi server is being deleted. |
+| Status | The status of the ESXi server, which can be one of the following values: \n **Available** The ESXi server is ready to use. \n **Adding** The ESXi server is being added. \n **Deleting** The ESXi server is being deleted. |
 {: caption="Table 1. ESXi server details" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #table1}
@@ -74,7 +74,7 @@ You can view the summary and detailed information of the clusters that are provi
 | Size | The capacity of the storage. |
 | IOPS/GB | The performance level of the storage. |
 | NFS protocol | The NFS version of the storage. |
-| Status | The storage status, which can be one of the following values: \n **Added** The storage is added and is ready for use. \n **Adding** The storage is being added. \n **Deleting** The storage is being deleted. |
+| Status | The storage status, which can be one of the following values: \n **Available** The storage is ready to use. \n **Adding** The storage is being added. \n **Deleting** The storage is being deleted. |
 {: caption="Table 1. Storage details" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #table3}

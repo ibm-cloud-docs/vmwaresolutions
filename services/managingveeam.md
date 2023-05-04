@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-08-24"
+lastupdated: "2023-05-01"
 
 keywords: Veeam console, Veeam backup restore, update Veeam license
 
@@ -20,28 +20,28 @@ subcollection: vmwaresolutions
 
 After the service is deployed into your instance, you can access the Veeam® console by using Remote Desktop Protocol. With Remote Desktop Protocol, you can manage the backup and restore of all the virtual machines in your environment, including the management components. You can also upgrade the service by downloading and installing the Veeam updates from the Veeam website.
 
-Veeam 11 is installed on newly deployed instances. If you have Veeam 9.5u4b, you can continue to use it. However, you cannot install Veeam 9.5u4b on a new instance.
+Veeam Backup and Replication 12 is available for deployment on new instances. If you have Veeam 9.5u4b, you can continue to use it. However, you cannot install Veeam 9.5u4b on a new instance.
 
-## Tasks that you can complete with Veeam 11
+## Tasks that you can complete with Veeam 
 {: #managingveeam-fivetasks_v10}
 
 * Order a new VMware vCenter Server® instance with Veeam
 
    A Veeam stand-alone license is automatically deployed. The Veeam service installation starts only after the stand-alone license was successfully ordered.
 
-   Veeam 11 is installed on a bare metal server, VM, or VSI, depending on what you selected.
+   Veeam is installed on a bare metal server, VM, or VSI, depending on what you selected.
 
 * Install Veeam on an existing VMware® vCenter Server instance
 
    A Veeam stand-alone license is automatically deployed. The Veeam service installation starts only after the stand-alone license was successfully ordered.
 
-   Veeam 11 is installed on a bare metal server, VM, or VSI depending on what you selected.
+   Veeam is installed on a bare metal server, VM, or VSI depending on what you selected.
 
 * Uninstall Veeam on an existing vCenter Server instance
 
    If you uninstall an older version of Veeam, for example Veeam 9.5u4b, the license charge for that version is canceled because the license is attached to the older version.
 
-   However, if you uninstall Veeam 11, the stand-alone license instance is not deleted. To cancel the license charge, you must delete the license separately.
+   However, if you uninstall Veeam, the stand-alone license instance is not deleted. To cancel the license charge, you must delete the license separately.
 
    For more information, see [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses).
 
@@ -62,15 +62,15 @@ Veeam 11 is installed on newly deployed instances. If you have Veeam 9.5u4b, you
 ## Considerations for installing and deleting Veeam licenses
 {: #managingveeam-install-delete-consid}
 
-The following information about licenses applies to both Veeam 9.5u4b and Veeam 11.
+The following information about licenses applies to both Veeam and Veeam 9.5u4b.
 
-Starting with Veeam v10 and continuing with Veeam 11, Veeam licenses are installed and deleted in a different way than previous Veeam versions.
+For Veeam 10 and Veeam, Veeam licenses are installed and deleted in a different way than previous Veeam versions.
 
-After you place an order for Veeam 11, a Veeam stand-alone license is automatically deployed. The Veeam service installation begins only after the stand-alone license order completed successfully. After that, depending on what you ordered, Veeam is installed on the bare metal server, VM, or VSI.
+After you place an order for Veeam, a Veeam stand-alone license is automatically deployed. The Veeam service installation begins only after the stand-alone license order completed successfully. After that, depending on what you ordered, Veeam is installed on the bare metal server, VM, or VSI.
 
-When you uninstall Veeam 11, the stand-alone license instance is not deleted. You must delete it separately to avoid being charged for the stand-alone license.
+When you uninstall Veeam, the stand-alone license instance is not deleted. You must delete it separately to avoid being charged for the stand-alone license.
 
-Consider the following when you plan to upgrade your Veeam usage. You might be charged for licenses for Veeam 9.5, which is deprecated, and for Veeam 11. Therefore, you might decide to order a new license for your Veeam installation toward the end of a month, so you aren’t charged for both licenses for most of the month.
+Consider the following when you plan to upgrade your Veeam usage. You might be charged for licenses for Veeam 9.5, which is deprecated, and for Veeam. Therefore, you might decide to order a new license for your Veeam installation toward the end of a month, so you aren’t charged for both licenses for most of the month.
 
 If you have an existing Veeam 9.5u4b installation that comes with a license and you want more coverage, you can keep your license that came with the installation and order a new license to upgrade usage. Later, if you delete Veeam 9.5u4b, you must delete separately any stand-alone licenses that you ordered. Otherwise, you continue to be charged for them.
 
@@ -124,7 +124,7 @@ If the Veeam service is installed on an instance as a bare metal server or VSI,
 ### Updating Veeam licenses for instances that are deployed with public and private network
 {: #managingveeam-update-license-public-private}
 
-If the Veeam service is installed on an instance with public and private network, you can update your Veeam 9.5u4b license either automatically or manually. For Veeam 11, you must update your Veeam license automatically. You cannot update it manually. Follow the Veeam instructions at [Updating license](https://helpcenter.veeam.com/docs/backup/vsphere/license_update.html){: external}.
+If the Veeam service is installed on an instance with public and private network, you can update your Veeam 9.5u4b license either automatically or manually. For Veeam, you must update your Veeam license automatically. You cannot update it manually. Follow the Veeam instructions at [Updating license](https://helpcenter.veeam.com/docs/backup/vsphere/license_update.html){: external}.
 
 ### Updating Veeam licenses for instances that are deployed as a bare metal server or VSI, or deployed as a VM with private network only
 {: #managingveeam-update-license-private}
@@ -134,17 +134,17 @@ If the Veeam service is deployed on an instance as a bare metal server or VSI, 
 ### Known issue about license key message for automatic updating
 {: #managingveeam-known-issue-message}
 
-On the Veeam 11 console, when you’re automatically updating a license before it expires, you might see a `License key is up-to-date` message that looks like an error. You can ignore the message because it's not an error.
+On the Veeam console, when you’re automatically updating a license before it expires, you might see a `License key is up-to-date` message that looks like an error. You can ignore the message because it's not an error.
 
 ## Related links
 {: #managingveeam-related}
 
-* [Veeam 11 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Ordering Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering)
 * [Ordering Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
 * [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring IBM Cloud Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
 * [VMware Solutions FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Veeam backup and replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external}
-* [Veeam backup and replication FAQ](https://www.veeam.com/availability-suite-faq.html){: external}
+* [Veeam Backup and Replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external}
+* [Veeam Backup and Replication FAQ](https://www.veeam.com/availability-suite-faq.html){: external}
 * [Veeam technical documentation](https://www.veeam.com/documentation-guides-datasheets.html){: external}

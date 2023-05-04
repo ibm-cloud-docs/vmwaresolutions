@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-08"
+lastupdated: "2023-04-28"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -23,19 +23,19 @@ Review services that are included with or optional for your VMware® Regulated W
 {: #vrw-orderinginstance-services-included}
 
 The following services are included with your Regulated Workloads instance. Some of the included add-on services require configuration setup.
-* [Veeam 11](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam Backup and Replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
 * [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
-* [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview), if you're using **Edge gateway cluster with Juniper vSRX** as your firewall appliance
-* [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations), if you're using **Edge gateway cluster with FortiGate Virtual Appliance** as your firewall appliance
+* [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview), if you're using **Gateway cluster with Juniper vSRX** as your firewall appliance
+* [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations), if you're using **Gateway cluster with FortiGate Virtual Appliance** as your firewall appliance
 * [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 
 ## Optional services (Single-zone VMware instance only)
 {: #vrw-orderinginstance-services-optional}
 
 You can choose to install the following services:
-- [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations). This service is available if you select to include a separate, additional workload cluster.
-- [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
+* [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations). This service is available if you select to deploy a separate workload cluster.
+* [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
 
 ## Related links
 {: #vrw-orderinginstance-services-related}

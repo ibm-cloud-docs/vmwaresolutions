@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-06-29"
+lastupdated: "2023-04-29"
 
 keywords: IAM user, user role, user permission, IAM account administrator
 
@@ -21,7 +21,7 @@ Use {{site.data.keyword.cloud}} Identity and Access Management (IAM) to define u
 
 You must have an IAM account administrator role to complete various tasks. For example, setting account credentials and granting platform access to users.
 
-If you do not have an administrator role and you want to complete a task that requires the administrator role, you can locate someone with that role. That person can then assign access. For more information about what an account administrator can do, see [IAM access](/docs/account?topic=account-userroles#userroles).
+If you do not have an administrator role and you want to complete a task that requires the administrator role, you can locate someone with that role. The person that you located can then assign access. For more information about what an account administrator can do, see [IAM access](/docs/account?topic=account-userroles#userroles).
 
 ## Locating an account owner with the administrator role
 {: #iam_verify_permissions-locate-admin}
@@ -32,7 +32,7 @@ To identify an account owner who has the administrator role, complete the follow
 2. On the upper right of the window, select the {{site.data.keyword.cloud_notm}} account that you want to use.
 3. Click **Manage** > **Access (IAM)**.
 4. From the left navigation pane, click **Users**.
-5. Scroll down through the list until you find a name with an **owner** icon next to the user name, which indicates that the user is an account administrator.
+5. Scroll down through the list until you find a name with an **owner** tag next to the user's name, which indicates that the user is an account administrator.
 6. Write down the name of this user.
 
 If the owner that you identified is not available or has left the company, find one or more other users with the administrator role. Consider who might be assigned the role, for example, a manager, team lead, or someone who works directly with {{site.data.keyword.cloud_notm}} customers.

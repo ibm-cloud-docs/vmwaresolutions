@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-06-20"
+lastupdated: "2023-04-26"
 
 subcollection: vmwaresolutions
 
@@ -175,7 +175,7 @@ For more information about the supported configurations, see [vCenter Server BOM
 ### Shared File-level storage across hosts
 {: #design_physicalinfrastructure-shared-storage}
 
-If you use shared file-level storage, a 2 TB NFS share is attached to the hosts that comprise the initial VMware cluster. This share, which is known as the management share, is used for management components such as vCenter Server, Platform Services Controller, and VMware NSX.
+If you use shared file-level storage, a 2 TB NFS share is attached to the hosts that comprise the initial VMware cluster. This share, which is known as the management share, is used for management components, such as vCenter Server, Platform Services Controller, and VMware NSX.
 
 The storage is attached by using the NFS v3 protocol at a 4 IOPS/GB level from {{site.data.keyword.cloud_notm}}.
 

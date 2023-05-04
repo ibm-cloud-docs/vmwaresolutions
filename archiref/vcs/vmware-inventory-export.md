@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2022
+  years: 2016, 2023
 
-lastupdated: "2022-12-28"
+lastupdated: "2023-04-29"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ You can export the contents of an inventory list into a CSV file.
     - Resources > Networks
     - Resources > Distributed Port Groups
     - Resources > Distributed Switches
-4. For each of the previous items, click **Export** and save to a file name that is labeled with the contents, as such:
+4. For each of the previous items, click **Export** and save to a file name that is labeled with the contents, such as:
     - Global Inventory Lists > Virtual Machines
     - Resources > vCenter Servers > `exportlist-vcenters.csv`
     - Resources > Datacenters > `exportlist-datacenters.csv`

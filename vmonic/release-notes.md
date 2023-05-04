@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-03-08"
+lastupdated: "2023-05-03"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -25,6 +25,38 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2023
 {: #year-2023}
 
+### 3 May 2023
+{: #may-2023}
+{: release-note}
+
+Bring Your Own License (BYOL) no longer available
+:   BYOL is now disabled in the **Licensing** section for VMware vCenter Server® instances, VMware vSphere clusters, adding hosts and clusters, and vRealize Operations and Log Insight™ service.
+
+VMware NSX-T 4.0.1.1 manual upgrade
+:   VMware NSX-T™ version 4.0.1.1 is now available if you want to upgrade your existing NSX-T instances manually. All newly deployed VMware NSX-T instances are still provisioned with NSX-T version 3.2.0.1.
+
+Updates to VMware vCenter Server instances and VMware vSphere clusters
+:   The following upgrades are applied to newly deployed instances, clusters, and hosts.
+   * VMware vCenter Server Appliance 7.0 Update 3k (build 21290409)
+   * VMware vSAN Witness 7.0 Update 3c (build 19193900)
+
+Veeam 12 availability
+:   Veeam® Backup and Replication 12 (Veeam 12) is now available for deployment with VMware vCenter Server, Cyber Recovery, and VMware Regulated Workloads offerings. Veeam 12 allows you to write directly to {{site.data.keyword.cloud}} Object Storage and it provides other features, such as data protection, improved Recovery Point Objective using Continuous Data Protection for disaster recovery purposes, and general operational efficiency. For more information, see the [Veeam Backup and Replication 12 release notes](https://www.veeam.com/veeam_backup_12_release_notes_rn.pdf){: external}.
+
+New and updated documentation
+:   The table of contents is updated for topic rearrangement and removal of outdated content.
+
+User interface updates and enhancements
+:   The user interface is updated with various messages and tooltips, and provides the following enhancements.
+
+   * The term **edge gateway cluster** is updated to **gateway cluster** throughout the UI, user documentation, and REST APIs.
+   * You can check the prices for VMware Solutions offerings without having to sign in to {{site.data.keyword.cloud_notm}}. However, you might have limited access to some sections of the ordering pages. To place an order, or for a complete access to the ordering pages, you must log in to {{site.data.keyword.cloud_notm}}.
+   * The page titles and labels for adding clusters, storage, and services are updated for consistency throughout the user interface.
+   * The status of instances and clusters when they are ready to use is updated to **Available**.
+   * The UI controls for the separate workload cluster, gateway cluster, and file shares are changed to switches instead of checkboxes.
+   * Guidance is provided on the UI for the workload and gateway cluster configuration.
+   * A side panel is displayed when you add hosts to vCenter Server, Cyber Recovery, and VMware Regulated Workloads instances.
+
 ### 8 March 2023
 {: #march-2023}
 {: release-note}
@@ -38,11 +70,11 @@ End of Marketing for IBM Cloud Secure Virtualization
 
 Updates to VMware vCenter Server instances and VMware vSphere clusters
 :   The following upgrades are applied to newly deployed instances, clusters, and hosts.
-   * VMware vCenter Server® Appliance 7.0 Update 3j (build 20990077)
+   * VMware vCenter Server Appliance 7.0 Update 3j (build 20990077)
    * VMware vSphere ESXi™ 7.0 Update 3k (build 21313628)
 
 Add-on services upgrades
-:   The following service versions are now available to install on deployed instances.
+:   The following service versions are now available for deployment:
    * Entrust CloudControl™ v6.6
    * F5® BIG-IP® v17.0
    * vRealize Operations™ and vRealize Log Insight™ v8.10
@@ -52,7 +84,7 @@ F5 BIG-IP migration from NSX-V to NSX-T
 :   To migrate the F5 BIG-IP service from VMware NSX-V to VMware NSX-T™, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 New and updated documentation
-:   Documentation is available to assist with your custom cyber-recovery requirements. For more information, see [Cyber recovery with Bring Your Own appliances](/docs/vmwaresolutions?topic=vmwaresolutions-cr-byo-overview).
+:   Documentation is available to assist with your custom cyber-recovery requirements. For more information, see [Cyber Recovery with Bring Your Own appliances](/docs/vmwaresolutions?topic=vmwaresolutions-cr-byo-overview).
 
 REST API updates
 :   The [VMware Solutions API](/apidocs/vmware-solutions) provides support for getting and canceling billing item IDs for VMware vSphere® clusters, deleting hosts from vSphere clusters, and deleting vSphere clusters.
@@ -60,8 +92,8 @@ REST API updates
 User interface updates and enhancements
 :   The user interface is updated with various messages and tooltips, and provides the following enhancements.
 
-   * BYOL notification in the **Licensing** section for VMware vCenter Server instances, VMware vSphere clusters, add hosts and clusters, vRealize Operations and Log Insight™, and VMware HCX™ services.  Bring Your Own License (BYOL) is no longer supported, except for migrations or upgrades of existing BYOL clusters.
-   * The term **edge services cluster** has been updated to **edge gateway cluster** throughout the UI, user documentation, and REST APIs.
+   * BYOL notification in the **Licensing** section for VMware vCenter Server instances, VMware vSphere clusters, add hosts and clusters, vRealize Operations and Log Insight, and VMware HCX™ services. Bring Your Own License (BYOL) is no longer supported, except for migrations or upgrades of existing BYOL clusters.
+   * The term **edge services cluster** is updated to **edge gateway cluster** throughout the UI, user documentation, and REST APIs.
    * A side panel is now displayed when NFS storage is added to VMware vCenter Server, VMware NSX®, Cyber Recovery, and VMware Regulated Workloads instances.
 
 ### 10 January 2023
@@ -109,13 +141,13 @@ User interface updates and enhancements
 Cyber Recovery
 :   The V5.0 release offers a new Cyber Recovery instance. The instance can help you protect your systems and data from cyberthreats and attacks. It can assist you with handling ransomware and help you with other problems and threats.
 
-   The Cyber Recovery instance includes Veeam® 11, a Linux® hardened repository (LHR), and an edge gateway. For more information, see [Cyber Recovery overview](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview).
+   The Cyber Recovery instance includes Veeam Backup and Replication 12, a Linux® hardened repository (LHR), and an edge gateway. For more information, see Cyber Recovery overview.
 
 Private network endpoint enhancements
-:   You can now edit the private network endpoints allowlisted IP addresses and subnets for your VMware Solutions Shared instance. For more information, see [Modifying a private network endpoint for a virtual data center](/docs/vmwaresolutions?topic=vmwaresolutions-shared_modifying-endpoints).
+:   You can now edit the private network endpoints allowlisted IP addresses and subnets for your VMware Solutions Shared instance. For more information, see Modifying a private network endpoint for a virtual data center.
 
 Veeam self-service portal for VMware Shared
-:   The Veeam self-service portal is now automatically enabled for existing and new VMware Cloud Director organizations. For more information, see [Managing Veeam for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam).
+:   The Veeam self-service portal is now automatically enabled for existing and new VMware Cloud Director organizations. For more information, see Managing Veeam for VMware Shared.
 
 MEX01 data center no longer available
 :   (Updated on 14 November 2022) The **Mexico 01** {{site.data.keyword.cloud_notm}} data center is closing on 31 January 2023. This data center is no longer available for deployments.
@@ -149,10 +181,10 @@ Add-on services upgrades
    * Zerto v9.5u3
 
 KMIP support for Key Protect key rings
-:   KMIP™ for VMware supports Key Protect key rings. For more information, see [Ordering KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_ordering).
+:   KMIP™ for VMware supports Key Protect key rings. For more information, see Ordering KMIP for VMware instances.
 
 Ordering Veeam stand-alone licenses
-:   Starting with this release, if you order Veeam stand-alone licenses, the ordering process automatically starts. You get an email confirming what you ordered. A license key is generated for you. When the key is ready, it is emailed to you. For more information, see [Ordering Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses).
+:   Starting with this release, if you order Veeam stand-alone licenses, the ordering process automatically starts. You get an email confirming what you ordered. A license key is generated for you. When the key is ready, it is emailed to you. For more information, see Ordering Veeam stand-alone licenses.
 
    There is no limit to the number of licenses that you can order.
 
@@ -210,7 +242,9 @@ Linux hardened repository for Veeam
 :   When you order Veeam, you can order a Linux hardened repository for immutable storage. For more information, see Linux hardened repository for immutable storage.
 
 New and updated documentation
-:   Deleting vSphere clusters is a new topic about deleting VMware vSphere clusters by managing your resources and canceling hosts and licenses on your own.
+:   The following documentation updates are available.
+   * VMware Cloud Foundation on VPC, a new architecture reference for a complete set of software-defined services for compute, storage, network security, Kubernetes management, and cloud management.
+   * Deleting vSphere clusters, a new topic about deleting VMware vSphere clusters by managing your resources and canceling hosts and licenses on your own.
 
 REST API updates
 :   The [VMware Solutions API](/apidocs/vmware-solutions) provides support for scaling existing VMware vSphere clusters.
@@ -1174,91 +1208,3 @@ New and updated documentation
    * Documentation is available about the access type that {{site.data.keyword.cloud_notm}} Support has on your environment and the steps that you can take to limit the access, if required.
    * Documentation is available about the various ports that are used in VMware Solutions.
    * New FAQ about VMware Solutions Shared is. Various updates to the existing FAQs have also been made.
-
-### 20 April 2020
-{: #april-2020}
-{: release-note}
-
-VMware Solutions Shared
-:   For the 3.6 release, you can open an {{site.data.keyword.cloud_notm}} Support ticket to request five additional public IP addresses or an entire subnet for your virtual data center. Include the following details in your support ticket.
-
-   * Instance region and location
-   * Organization ID
-   * Virtual data center name
-   * Number of additional IP addresses required
-
-VMware Solutions Dedicated - advanced configuration settings for ESXi servers
-:   For 3.6 and later releases, new instances are ordered with a new set of advanced configuration settings for ESXi servers.
-
-VMware Solutions Dedicated - port group configuration settings
-:   For 3.6 and later releases, security policies for promiscuous mode, MAC address changes, and forged transmits are now accepted on disturbed port groups.
-
-VMware Solutions Dedicated - withdrawal of support for MEL01 data center
-:   As part of the data center modernization strategy for {{site.data.keyword.cloud_notm}}, the **MEL01 - Melbourne** {{site.data.keyword.cloud_notm}} data center is closing on 31 August 2020.
-
-   {{site.data.keyword.cloud_notm}} invests significantly in data center infrastructure. These investments include rolling out newer data centers and multizone regions (MZRs) designed to deliver a more resilient architecture with higher levels of network throughput and redundancy.
-
-   Part of this modernization strategy is to close older data centers that are unsuitable for upgrading. As this transition approaches, help is available to assist you in your migration to modern data centers.
-
-VMware vCenter Server - new resource group option
-:   When you order the following instances, services, or licenses, you can now select a **Resource group** to organize resources management for access control and billing purposes.
-
-   * vCenter Server instances
-   * Caveonix RiskForesight licenses
-   * On-premises VMware HCX instances
-   * KMIP for VMware instances
-
-VMware vCenter Server - support for edge services cluster
-:   You can now order an edge services cluster when you are ordering a new vCenter Server instance, with or without the Juniper vSRX service installed on it. You can also install the Juniper vSRX service as a gateway appliance.
-
-Managed Services for VMware Workload Transformation
-:   You can now engage Managed Services for VMware Workload Transformation for the day to day management of the virtual infrastructure so that you are free to focus on critical items. This service offers a modular approach with the best in class tools and expertise to deliver remote managed services worldwide.
-
-   You can add Managed Services for VMware Workload Transformation to your instance order at any time by requesting a consultation from the **Overview** page.
-
-F5 BIG-IP
-:   The 3.6 release installs BIG-IP VE v15.1.0.2 on newly deployed instances.
-
-HyTrust CloudControl
-:   The following versions of the HyTrust CloudControl service are installed on newly deployed instances, based on the NSX networking solution type of your instance.
-
-   * 5.6 for vCenter Server with NSX-V
-   * 6.1 for vCenter Server with NSX-T
-
-Juniper vSRX
-:   You can install the Juniper vSRX service as one of the following appliances.
-
-   * Juniper vSRX security or gateway appliance on the edge services cluster
-   * Juniper vSRX virtual appliance on the management cluster
-
-vRealize Operations and Log Insight
-
-:   You can now install the vRealize Operations and Log Insight service on vCenter Server with NSX-T instances.
-
-REST APIs
-:   REST APIs are now available for the following services: HyTrust CloudControl, Juniper vSRX, and vRealize Operations and Log Insight.
-
-New and updated documentation
-:   The following documentation updates are available.
-
-   * Documentation is now provided about managing your data when you use {{site.data.keyword.vmwaresolutions_short}}. For example, what data is stored and encrypted, how to protect your sensitive data, and how you can delete any stored personal data.
-   * VMware Solution Shared video tutorials are now available in the **Related links** sections of the VMware Solution Shared and learning resource topics.
-
-User interface updates and enhancements
-:   The user interface is updated and provides the following enhancements.
-
-   * {{site.data.keyword.cloud_notm}} data center regional pricing is available as a list in the **Pricing Plans** section of the **About** tab for VMware Solutions Shared instances. Use the {{site.data.keyword.cloud_notm}} Cost Estimator to compare the price difference for each region.
-   * When there are new notifications for your system status or user actions, a red dot indicator is displayed along with **Notifications** on the left navigation pane in the {{site.data.keyword.vmwaresolutions_short}} console.
-   * On the instance details page, the tags that were specified for search and identification of the instances are displayed next to the instance status.
-   * When you order instances, clusters, and licenses, the instance name, cluster name, and license name are set to a default value as follows:
-      * Virtual data center instances: vdc-*xx*
-      * vCenter Server instances: vcs-*xx*
-      * vSphere clusters: vss-*xx*
-      * Caveonix RiskForesight licenses: cav-*xx*
-      * On-premises VMware HCX instances: hcx-*xx*
-      * KMIP for VMware instances: kmip-*xx*
-
-      where *xx* represents two randomly generated alphabetic characters. You can use the default names or specify new names for them.
-   * The following enhancements are made to the **Network Interface** section when you order vCenter Server or vCenter Server with NSX-T instances and when you add clusters for these instances.
-      * When you reuse an existing primary subnet, the **Public Primary Subnet** and **Private Primary Subnet** lists display the number of available slots for each IP address.
-      * A new **Advanced Settings** option is available for configuring portable subnet settings.

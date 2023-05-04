@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-08"
+lastupdated: "2023-03-29"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX console
 
@@ -17,38 +17,35 @@ subcollection: vmwaresolutions
 # Ordering Juniper vSRX
 {: #juniper-ordering}
 
-You can include the Juniper® vSRX service with a new VMware vCenter Server® instance or add the service to your existing VMware® vCenter Server instance.
+You can include the Juniper® vSRX service with a new VMware vCenter Server® instance or add the service to your existing instance.
 
-You can install multiple instances of Juniper vSRX on the management cluster. On a single edge gateway cluster, you can install only one instance of Juniper vSRX.
+You can install multiple instances of Juniper vSRX on the management cluster. On a single gateway cluster, you can install only one instance of Juniper vSRX.
 
-You can now install Juniper vSRX on 25 Gb uplink speed management and edge gateway clusters on VMware vSphere® 7 with NSX-T. On 25 Gb uplink speed clusters, only the Content Security Bundle license is available.
+You can install Juniper vSRX on 25 Gb uplink speed management and gateway clusters on VMware vSphere® 7 with NSX-T. On 25 Gb uplink speed clusters, only the Content Security Bundle license is available.
 
-The license that is used depends on the target cluster you choose. For vCenter Server instances with vSphere 7 and NSX-T, management and edge gateway clusters with 25 Gb uplink speed use the 25 Gb uplink speed version of the license selected. For Regulated Workload (including Regulated Workload stretched) and Security & Compliance Readiness Bundle instances, the same license selection process occurs for edge gateway clusters with 25 Gb uplink speeds.
+The license that is used depends on the target cluster you choose. For vCenter Server instances with vSphere 7 and NSX-T, management and gateway clusters with 25 Gb uplink speed use the 25 Gb uplink speed version of the license selected. For VMware Regulated Workloads (single-zone and multizone) and Security and Compliance Readiness Bundle instances, the same license selection process occurs for gateway clusters with 25 Gb uplink speeds.
 
-You cannot install Juniper vSRX and FortiGate Virtual Appliance on the same edge gateway cluster.
+You cannot install Juniper vSRX and FortiGate Virtual Appliance on the same gateway cluster.
+{: restriction}
 
 ## Ordering Juniper vSRX for a new instance
 {: #juniper-ordering-new-instance}
 
-1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Juniper vSRX is in the Security and compliance category. 
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. Juniper vSRX is in the **Security and compliance** category. 
 2. Open the category, locate Juniper vSRX, and toggle its switch on.
-3. Select **Edit** to review and specify the information. 
-4. If you enter or change information, click **Save**.
+3. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering#juniper-ordering-service-config), then click **Save**.
 
-The Juniper vSRX service is deployed on the management cluster unless you order the edge gateway cluster. For the Juniper vSRX service to function as a gateway for your vCenter Server instance, you must include the edge gateway cluster in your order.
+   The Juniper vSRX service is deployed on the management cluster unless you order a gateway cluster. For Juniper vSRX to function as a gateway for your instance, you must include the gateway cluster in your order.
 
 ## Ordering Juniper vSRX for an existing instance
 {: #juniper-ordering-exist-instance}
 
-1. On the instance details page, click **Services** on the left navigation window.
+1. On the instance details page, click the **Services** tab.
 2. Click **Add** to add the service.
-3. On the **Services** page, locate the **Juniper vSRX** service and toggle its switch on.
-4. Follow the steps to configure and add the service to your instance.
+3. On the **Add services** page, locate the **Juniper vSRX** service in the **Security and compliance** section and toggle its switch on.
+4. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering#juniper-ordering-service-config), then click **Save**.
 
-When you add Juniper vSRX to an existing vCenter Server instance, you can select a cluster on which to install Juniper vSRX. You can install Juniper vSRX on a management cluster or on any edge gateway cluster.
-You must deploy Juniper vSRX to an edge gateway cluster for Juniper vSRX to function as a gateway for your vCenter Server instance.
-
-You cannot install Juniper vSRX and FortiGate Virtual Appliance on the same edge gateway cluster.
+   When you add Juniper vSRX to an existing vCenter Server instance, you can select the cluster on which to install Juniper vSRX, either a management cluster or a gateway cluster. For Juniper vSRX to function as a gateway for your instance, you must deploy the service to a gateway cluster.
 
 ## Juniper vSRX service configuration
 {: #juniper-ordering-service-config}
@@ -70,13 +67,14 @@ You can't change the license model after service installation. To change the lic
 
 After the service is ordered, the vSRX nodes are automatically ordered with the selected license models.
 
-### Juniper vSRX deployment on an edge gateway cluster
+### Juniper vSRX deployment on a gateway cluster
 {: #juniper-ordering-service-config-edge-deployment}
 
-If you deploy Juniper vSRX on an edge gateway cluster, after deployment, you must configure Juniper vSRX specifically for your environment. Complete the following steps:
-1. Configure the redundant Ethernet (`reth`) 2 interface with the default gateway IP addresses of each subnet in your private trunk VLAN. The IP addresses are assigned to the logical interface, which is in the format of `reth2.VLANid`.
-2. Configure the redundant Ethernet (`reth`) 3 interface with the default gateway IP addresses of each subnet in your public trunk VLAN, if you have one. The IP addresses are assigned to the logical interface, which is in the format of `reth3.VLANid`.
-3. In the {{site.data.keyword.cloud}} classic infrastructure view, look at the gateway appliance ordered for the edge gateway cluster. From there, assign the VLANs that you want to the gateway appliance and put them in *route-through* mode.
+If you deploy Juniper vSRX on a gateway cluster, after deployment, you must configure Juniper vSRX for your environment. Complete the following steps:
+
+1. Configure the redundant Ethernet `reth2` interface with the default gateway IP addresses of each subnet in your private trunk VLAN. The IP addresses are assigned to the logical interface, which is in the format of `reth2.VLANid`.
+2. Configure the redundant Ethernet `reth3` interface with the default gateway IP addresses of each subnet in your public trunk VLAN, if you have one. The IP addresses are assigned to the logical interface, which is in the format of `reth3.VLANid`.
+3. In the {{site.data.keyword.cloud}} classic infrastructure view, look at the gateway appliance ordered for the gateway cluster. From there, assign the VLANs that you want to the gateway appliance and put them in `route-through` mode.
 
 ## Related links
 {: #juniper-ordering-related-links}

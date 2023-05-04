@@ -1,7 +1,7 @@
 {
     "title": "VMware Solutions docs",
-    "lastupdated": "2023-03-08",
-    "introduction": "VMware Solutions is an IBM Cloud offering that provides deployment and management of VMware virtualized environments. Learn how to make the most of your VMware Solutions experience by using the docs, API doc reference, solution architectures, and solution guides.",
+    "lastupdated": "2023-05-03",
+    "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
     "section_devtools": {
       "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
     },
@@ -25,26 +25,6 @@
         "title": "Setting up your environment for your first order",
         "description": "Ensure that your environment is ready for your order.",
         "href": "/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist"
-      },
-      {
-        "title": "Ordering services for vCenter Server instances",
-        "description": "Order services for your VMware vCenter Server instances, such as a disaster recovery solution.",
-        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices"
-      },
-      {
-        "title": "Solution architectures on Classic",
-        "description": "Review reference architecture documentation for VMware Solutions based on the IBM Cloud classic infrastructure.",
-        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview"
-      },
-      {
-        "title": "Solution architectures on VPC",
-        "description": "Review reference architecture documentation for VMware Solutions based on the IBM Cloud VPC infrastructure.",
-        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-overview"
-      },
-      {
-        "title": "Solution guides",
-        "description": "Learn how to configure various components to leverage additional solutions, such as cyber recovery.",
-        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-overview"
       }
     ],
     "section_videos": [
@@ -62,11 +42,6 @@
         "title": "Zerto on IBM Cloud",
         "href": "https://mediacenter.ibm.com/id/1_eb2k7077",
         "thumbnail": "/images/thumbnails/zerto-on-ibm-cloud-thumbnail.jpg"
-      },
-      {
-        "title": "IBM & VMware: Disaster Recovery & Backup",
-        "href": "https://mediacenter.ibm.com/id/1_5aydx023",
-        "thumbnail": "/images/thumbnails/ibm-and-vmware-disaster-recovery-thumbnail.jpg"
       }
     ],
     "section_learn": {
@@ -79,6 +54,11 @@
       "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes",
       "tiles": [
         {
+          "date": "3 May 2023",
+          "title": "Veeam 12 availability",
+          "description": "Veeam® Backup and Replication 12 (Veeam 12) is now available for deployment with VMware vCenter Server, Cyber Recovery, and VMware Regulated Workloads offerings. Veeam 12 allows you to write directly to IBM Cloud Object Storage and it provides other features, such as data protection, improved Recovery Point Objective using Continuous Data Protection for disaster recovery purposes, and general operational efficiency."
+        },
+        {
           "date": "8 March 2023",
           "title": "VMware Cloud Director upgrade for VMware Shared",
           "description": "VMware Solutions 5.2 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director (vCD) v10.4.1."
@@ -87,11 +67,6 @@
           "date": "10 January 2023",
           "title": "VMware Cloud Director upgrade for VMware Shared",
           "description": "VMware Solutions 5.1 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director (vCD) v10.4, which supports up to virtual hardware version 19."
-        },
-        {
-          "date": "31 October 2022",
-          "title": "Cyber Recovery",
-          "description": "The V5.0 release offers a new Cyber Recovery instance. The instance provides a way to protect your systems and data from cyberthreats and attacks. It can assist you with handling ransomware and help you with other problems and threats. The Cyber Recovery instance includes Veeam 11, a Linux hardened repository (LHR), and an edge gateway."
         }
       ]
     }

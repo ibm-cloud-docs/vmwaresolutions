@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-12-29"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -32,24 +32,28 @@ Complete the following steps to create a new volume:
    export GOVC_NETWORK='SDDC-DPortGroup-Mgmt'
    export GOVC_DATASTORE='vsanDatastore'
    ```
+   {: pre}
 
 2. Create a folder on the specified datastore.
 
    ```bash
    govc datastore.mkdir ocp-volumes
    ```
+   {: pre}
 
 3. Create a new persistent volume (vmdk).
 
    ```bash
    govc datastore.disk.create -size 10G volumes/ocp-pv-001.vmdk
    ```
+   {: pre}
 
 4. Log in to your Kubernetes environment from the command line.
 
    ```bash
    oc login
    ```
+   {: pre}
 
 5. Create a persistent volume in Kubernetes, for the recently created vdmk. Replace volumePath with your vmdk, in the example file called vsphere-volume-pv.yaml.
 
@@ -70,10 +74,12 @@ Complete the following steps to create a new volume:
     storageClassName: "vsphere-standard"
 
    ```
+   {: pre}
 
    ```bash
    kubectl create -f  vsphere-volume-pvc.yaml
    ```
+   {: pre}
 
 6. Create a Persistent Volume Claim in Kubernetes. Replace volumePath with your Persistent Volume name, in the example file called vsphere-volume-pvc.yaml.
 
@@ -91,10 +97,12 @@ Complete the following steps to create a new volume:
      storageClassName: "vsphere-standard"
      volumeName: "ocpvsan002"
    ```
+   {: pre}
 
    ```bash
    kubectl create -f vsphere-volume-pv.yaml
    ```
+   {: pre}
 
 Now you have a persistent volume claim that can be mapped to container application.
 

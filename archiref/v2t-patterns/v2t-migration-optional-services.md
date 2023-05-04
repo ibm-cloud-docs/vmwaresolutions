@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-04-18"
 
 subcollection: vmwaresolutions
 
@@ -60,7 +60,7 @@ You must open a ticket to ask IBM Support to decouple the Veeam server, manageme
 If you deploy a new Veeam instance, you must consider backup data and backup configuration to migrate Veeam to the new NSX-T instance.
 
 * Backup data - Backup files will be hosted in the Veeam repository server. For more information, see [Importing Veeam Agent backups](https://helpcenter.veeam.com/docs/agentforwindows/userguide/integration_import.html?ver=50){: external}.
-* Backup configuration - The backup configuration can be saved to a file. For more information, see [Configuration backup and restore](https://helpcenter.veeam.com/docs/backup/vsphere/vbr_config.html?ver=110){: external}.
+* Backup configuration - The backup configuration can be saved to a file. For more information, see [Configuration backup and restore](https://helpcenter.veeam.com/docs/backup/vsphere/vbr_config.html?ver=120){: external}.
 
 If you want to migrate your Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
@@ -132,7 +132,7 @@ If you want to migrate your F5 BIG-IP service from VMware NSX-V to VMware NSX-T,
 Juniper® vSRX is available for vCenter Server with NSX-T instances. In the vCenter Server NSX-V instance, the Juniper vSRX virtual appliance might be deployed:
 
 * On the consolidated or management cluster - The Juniper vSRX protects the traffic to your workload VMs.
-* On the edge gateway cluster - The Juniper vSRX appliances protects the vSphere hosts and the workload VMs in the same data center PoD.
+* On the gateway cluster - The Juniper vSRX appliances protects the vSphere hosts and the workload VMs in the same data center PoD.
 
 The migration approach would be to:
 

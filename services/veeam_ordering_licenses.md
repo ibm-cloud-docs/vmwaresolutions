@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-10-26"
+lastupdated: "2023-04-17"
 
 keywords: Veeam, Veeam standalone license, order Veeam standalone license
 
@@ -54,7 +54,7 @@ A license key will be generated and emailed to whomever placed the order.
 {: #veeam_ordering_licenses-related}
 
 * [Veeam 9.5 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations)
-* [Veeam 11 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Ordering Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering)
 * [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
 * [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)

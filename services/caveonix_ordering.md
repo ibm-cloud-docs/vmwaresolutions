@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-03-06"
+lastupdated: "2023-03-28"
 
 keywords: Caveonix RiskForesight, Caveonix configuration, order Caveonix
 
@@ -18,24 +18,24 @@ subcollection: vmwaresolutions
 # Ordering Caveonix RiskForesight
 {: #caveonix_ordering}
 
-You can include the Caveonix RiskForesight™ service with a new VMware vCenter Server® instance or add the service to your existing vCenter Server instance. On these standard vCenter Servers instances, Caveonix RiskForesight generates a license for the number of VMs (virtual machines) that you select.
+You can include the Caveonix RiskForesight™ service with a new VMware vCenter Server® instance or add the service to your existing instance. 
 
-For VMware® Regulated Workloads and VMware Security and Compliance Readiness Bundle instances, Caveonix RiskForesight offers per host licensing. You are charged for every host on the instance, which includes management, workload, and edge gateway clusters.
+* For vCenter Servers instances, Caveonix RiskForesight generates a license for the number of VMs (virtual machines) that you select.
+* For VMware® Regulated Workloads and VMware Security and Compliance Readiness Bundle instances, Caveonix RiskForesight offers per host licensing. You are charged for every host in the instance, which includes management, workload, and gateway clusters.
 
 ## Ordering Caveonix RiskForesight for a new instance
 {: #caveonix_ordering-new}
 
-1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the Add-on services section. Caveonix RiskForesight is in the Recommended services category and is already selected.
-2. Select **Edit** to review and specify the information.
-3. If you enter or change information, click **Save**.
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. Caveonix RiskForesight is in the **Recommended services** category and is already selected.
+2. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_ordering#caveonix_ordering-config), then click **Save**.
 
 ## Ordering Caveonix RiskForesight for an existing instance
 {: #caveonix_ordering-existing}
 
 1. On the instance details page, click the **Services** tab.
 2. Click **Add** to add the service.
-3. On the **Services** page, locate the **Caveonix RiskForesight** service and toggle its switch on.
-4. Follow the steps to configure and add the service to your instance.
+3. On the **Add services** page, locate the **Caveonix RiskForesight** service in the **Security and Compliance** section and toggle its switch on.
+4. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_ordering#caveonix_ordering-config), then click **Save**.
 
 ## Caveonix RiskForesight configuration
 {: #caveonix_ordering-config}

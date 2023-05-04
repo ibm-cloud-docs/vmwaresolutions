@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-12-19"
+lastupdated: "2023-04-05"
 
 keywords: shared order resource, order on demand shared, order on demand resources
 
@@ -42,7 +42,7 @@ For the On-demand offering, virtual data center virtual CPU (vCPU) and RAM are a
 * The limits that are established for the amount of vCPU and RAM are maximum values that can be used at any time.
 * You can increase and decrease the vCPU and RAM resources on a virtual data center later as required.
 * The price is calculated hourly and it is based on the resource usage in the virtual data center.
-* The amount of storage that can be allocated and used in the virtual data center is limited to 200 TB for each storage policy. Charges are hourly based on GB of allocated storage.
+* The amount of storage that can be allocated and used in the virtual data center is limited to 200 TB for each storage policy. Charges are calculated per hour and are based on GB of allocated storage.
 * The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB.
 
 #### Reserved
@@ -52,7 +52,7 @@ For the Reserved offering, the vCPU and RAM virtual data center reservations are
 
 * The price is calculated monthly for the full reservation and it is based on the allocation size of the virtual data center.
 * vCPU and RAM resources can be increased and decreased later as required.
-* The amount of storage that can be allocated and used in the virtual data center is unlimited. Charges are hourly based on GB of allocated storage.
+* The amount of storage that can be allocated and used in the virtual data center is unlimited. Charges are calculated per hour and are based on GB of allocated storage.
 * The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB.
 
 For more information, see [VMware Shared pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing).
@@ -185,7 +185,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 
 * The deployment of the resources starts automatically and you receive confirmation that the order is being processed. You can check the deployment status, including any issues that might require your attention, by viewing the **Virtual Data Center Status**.
 * When the resources are successfully deployed, the components that are described in [Technical specifications for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview#shared_overview-specs) are installed on your VMware® virtual platform.
-* When the resources are ready to use, the status is changed to **Ready to use**.
+* When the resources are ready to use, the status of the virtual data center changes to **Available**.
 
 ## What to do next
 {: #shared_ordering-next}

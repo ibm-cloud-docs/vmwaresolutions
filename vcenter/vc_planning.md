@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-01-18"
+lastupdated: "2023-04-25"
 
 keywords: planning vCenter Server, data center, vCenter Server data centers
 
@@ -19,13 +19,14 @@ subcollection: vmwaresolutions
 
 Plan your instance based on the {{site.data.keyword.cloud}} data center location, your workload capacity requirements, and add-on services requirements. Review the following requirements before you order your VMware vCenter Server® instance.
 
-* New deployments of vCenter Server instances with VMware vSphere® 6.5 are not supported.
+* New deployments of vCenter Server instances with VMware vSphere® 6.5 or 6.7 are not supported.
 * New deployments of vCenter Server multizone instances are not supported.
+* New deployments of vCenter Server with NSX-V instances are not supported.
 
-## IBM Cloud account requirements
+## Account requirements
 {: #vc_planning-account-req}
 
-The {{site.data.keyword.cloud_notm}} account that you are using must meet certain requirements. For more information, see [Requirements for the {{site.data.keyword.cloud_notm}} account](/docs/vmwaresolutions?topic=vmwaresolutions-cloud-infra-acct-req).
+The account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
 
 ## IBM Cloud data center availability
 {: #vc_planning-dc-availability}

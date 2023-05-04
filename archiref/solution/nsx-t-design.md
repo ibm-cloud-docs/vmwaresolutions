@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-02-08"
+lastupdated: "2023-04-29"
 
 subcollection: vmwaresolutions
 
@@ -18,9 +18,9 @@ subcollection: vmwaresolutions
 
 VMware® NSX-T™ is designed to address application frameworks and architectures that have heterogeneous endpoints and technology stacks. In addition to VMware vSphere®, these environments can include other hypervisors, KVM, containers, and bare metal servers. NSX-T is designed to span a software defined network and security infrastructure across platforms other than just vSphere alone. While it is possible to deploy NSX-T components without needing vSphere, this design focuses on NSX-T and its integration primarily within a vCenter Server vSphere automated deployment.
 
-As of version 3, NSX-T can run on the vSphere virtual distributed switch (VDS) version 7.0. All new deployments of VMware NSX and vSphere use NSX-T on VDS and N-VDS is no longer used. Beginning with NSX-T 2.4, the manager VM and the controller VM functions are combined. As a result, three controller or manager VMs are deployed. If on the same subnet, they use an internal network load balancer. If across different subnets, an external load balancer is required.
+As of version 3, NSX-T can run on the vSphere virtual distributed switch (VDS) version 7.0. All new deployments of VMware NSX and vSphere use NSX-T on VDS, and N-VDS is no longer used. Beginning with NSX-T 2.4, the manager VM and the controller VM functions are combined. As a result, three controller or manager VMs are deployed. If on the same subnet, they use an internal network load balancer. If across different subnets, an external load balancer is required.
 
-NSX-T brings many advanced features such as firewall policies, inclusion of guest introspection within firewall policies, and advanced netflow tracking. Describing these features is beyond the scope of this document. In this design, the NSX-T Management Infrastructure is deployed during the initial vCenter Server® cluster deployment. For more information about NSX-T, see the VMware documentation.
+NSX-T brings many advanced features, such as firewall policies, inclusion of guest introspection within firewall policies, and advanced netflow tracking. Describing these features is beyond the scope of this document. In this design, the NSX-T Management Infrastructure is deployed during the initial vCenter Server® cluster deployment. For more information about NSX-T, see the VMware documentation.
 
 ## NSX-T vs NSX-V
 {: #nsx-t-design-nsx-t-nsx-v}
@@ -54,8 +54,8 @@ For NSX-T, two new concepts are introduced: Distributed Router (DR) and Service 
 {: caption="Table 2. NSX-T Distributer and Service Routers" caption-side="bottom"}
 
 Some key NSX-T concepts do not correspond to NSX-V functions. You need to review the following concepts so you can understand the NSX-T design implementation.
-* An edge gateway cluster is one or more VMs or physical machines that participate in an NSX-T virtual fabric. They are endpoints for the overlay network transport zones and VLAN backed transport zones. An edge gateway cluster can support a single T0 gateway instance.
-* A T0 gateway is a virtual router instance, but not a VM. Multiple T0 gateway instances can run within an edge gateway cluster each with its own routing table and functions. An edge gateway cluster must exist before you can create a T0 router instance.
+* A gateway cluster is one or more VMs or physical machines that participate in an NSX-T virtual fabric. They are endpoints for the overlay network transport zones and VLAN backed transport zones. A gateway cluster can support a single T0 gateway instance.
+* A T0 gateway is a virtual router instance, but not a VM. Multiple T0 gateway instances can run within a gateway cluster each with its own routing table and functions. A gateway cluster must exist before you can create a T0 router instance.
 * A transport zone can span endpoints across different platforms and multiple vSphere vCenter instances. No cross-vCenter linked NSX is required. Transport zones can be excluded from specific endpoints.
 * Uplink failover order is created independent of a particular logical switch as they are created in profiles as “Uplink Profiles” and are applied to a particular logical switch based on VLAN. It's possible to need a differing failover order or load balancing of physical uplinks for the same VLAN. Therefore, the uplink profile for a particular VLAN can contain multiple entries for “Teaming” with different a failover order and load balancing. When you assign the uplink profile to a logical switch, the specific teaming profile is chosen.
 * The manager VM and the controller VM function are combined, which results in three NSX-T manager VMs being deployed. If on the same subnet, they use an internal network load balancer. If across different subnets, an external load balancer is required.
@@ -88,7 +88,7 @@ After initial deployment, the {{site.data.keyword.cloud}} automation deploys thr
 
 You must deploy the management cluster with a minimum of three nodes to ensure high availability for the managers or controllers. In addition to the managers, the {{site.data.keyword.cloud_notm}} automation prepares the deployed workload cluster as NSX-T transport nodes. The ESXi transport nodes are assigned a VLAN–backed IP address from the **Private A** portable IP address range that is specified by an NSX IP pool ranged derived from the VLAN and subnet summary. Transport node traffic resides on the untagged VLAN and is assigned to the private NSX-T VDS.
 
-Depending on the NSX-T topology that you choose to deploy, this design allows you to deploy an NSX-T edge gateway cluster either as a pair of VMs or as software deployed on bare metal cluster nodes. Bare metal edges are not supported by the {{site.data.keyword.cloud_notm}} automation and must be manually deployed and configured. Regardless of whether the cluster pair is virtual or physical, uplinks are configured to VDS switches for both {{site.data.keyword.cloud_notm}} private and (if present) public networks.
+Depending on the NSX-T topology that you choose to deploy, this design allows you to deploy an NSX-T gateway cluster either as a pair of VMs or as software deployed on bare metal cluster nodes. Bare metal edges are not supported by the {{site.data.keyword.cloud_notm}} automation and must be manually deployed and configured. Regardless of whether the cluster pair is virtual or physical, uplinks are configured to VDS switches for both {{site.data.keyword.cloud_notm}} private and (if present) public networks.
 
 The following table summarizes the requirements for a medium size environment, which is the recommended starting size for production workloads.
 
@@ -140,7 +140,7 @@ The following naming conventions are used for deployment. For readability, only 
 | Management VMs | `instancename-nsxt-ctrlmgr0`  \n `instancename-nsxt-ctrlmgr1`  \n `instancename-nsxt-ctrlmgr2` |
 | Uplink profiles | `instancename-esxi-private-profile`  \n `instancename-esxi-public-profile`  \n `instancename-edge-private-profile`  \n `instancename-edge-public-profile`  \n `instancename-edge-tep-profile`  \n `instancename-mgmt-edge-private-profile`  \n `instancename-mgmt-edge-public-profile`  \n `instancename-mgmt-edge-tep-profile` |
 | NIOC profiles | `instancename-clustername-nioc-private-profile`  \n `instancename-clustername-nioc-public-profile` |
-| Edge gateway cluster profiles | `instancename-dcname-clustername-service-edge-cluster-profile`  \n `instancename-dcname-clustername-service-edge-cluster-profile` |
+| Gateway cluster profiles | `instancename-dcname-clustername-service-edge-cluster-profile`  \n `instancename-dcname-clustername-service-edge-cluster-profile` |
 | Transport zones | `instancename-tz-esxi-private`  \n `instancename-tz-esxi-public`  \n `instancename-tz-vm-overlay`  \n `instancename-tz-edge-private`  \n `instancename-tz-edge-public` |
 | Segments | `instancename-podname.dcname-customer-t0-172-16-16-0`  \n `instancename-podname.dcname-customer-t1-192-168-0-0`  \n `instancename-podname.dcname-customer-t1-192-168-1-0`  \n `instancename-podname.dcname-customer-to-private`  \n `instancename-podname.dcname-customer-to-public`  \n `instancename-podname.dcname-service-to-private`  \n `instancename-podname.dcname-service-to-public`  \n `instancename-clustername-edge-teps` |
 | IP address pools | `instancename-clustername-tep-pool` |
@@ -156,7 +156,7 @@ Transport nodes define the physical server objects or VMs that participate in th
 | Transport node type   | Uplink profile | IP assignment |
 |:-------------------  |:-------------- |:------------- |
 | ESXi | `esxi-private-profile`  \n `esxi-public-profile` | `tep-pool` |
-| Edge gateway cluster | `edge-private-profile`  \n `edge-public-profile`  \n `edge-tep-profile`  \n `mgmt-edge-private-profile`  \n `mgmt-edge-public-profile`  \n `mgmt-edge-tep-profile` | `tep-pool` |
+| Gateway cluster | `edge-private-profile`  \n `edge-public-profile`  \n `edge-tep-profile`  \n `mgmt-edge-private-profile`  \n `mgmt-edge-public-profile`  \n `mgmt-edge-tep-profile` | `tep-pool` |
 {: caption="Table 8. NSX-T transport nodes" caption-side="bottom"}
 
 ## Uplink profiles and teaming
@@ -166,14 +166,14 @@ An uplink profile defines policies for the links from hypervisor hosts to NSX-T 
 
 | Uplink profile name | VLAN | Teaming policy | Active uplinks | Standby links | MTU |
 |:------------------- |:---- |:-------------- |:-------------- |:------------- |:--- |
-| `esxi-private-profile` | default | Default - Loadbalance source | uplink-1  \n uplink-2 |   | N/A (managed by vCenter) |
-| `esxi-private-profile` | default | TEP - Failover order | uplink-1 | uplink-2 | N/A (managed by vCenter) |
-| `esxi-public-profile`  | default | Default - Loadbalance source | uplink-1  \n uplink-2 |   | N/A (managed by vCenter) |
-| `edge-private-profile` | default | N/A | uplink-1 |  | 9000 |
-| `edge-public-profile`  | default | N/A | uplink-1 |  | 1500 |
+| `esxi-private-profile` | default | Default - Loadbalance source | uplink-1  \n uplink-2 |   | Managed by vCenter Server |
+| `esxi-private-profile` | default | TEP - Failover order | uplink-1 | uplink-2 | Managed by vCenter Server |
+| `esxi-public-profile`  | default | Default - Loadbalance source | uplink-1  \n uplink-2 |   | Managed by vCenter Server |
+| `edge-private-profile` | default |   | uplink-1 |  | 9000 |
+| `edge-public-profile`  | default |   | uplink-1 |  | 1500 |
 | `edge-tep-profile`     | default | Failover order | uplink-1 |   | 9000 |
-| `mgmt-edge-private-profile` | default | N/A | uplink-1 |  | 9000 |
-| `mgmt-edge-public-profile`  | default | N/A | uplink-1 |  | 1500 |
+| `mgmt-edge-private-profile` | default |   | uplink-1 |  | 9000 |
+| `mgmt-edge-public-profile`  | default |   | uplink-1 |  | 1500 |
 | `mgmt-edge-tep-profile`     | default | Failover order | uplink-1 |   | 9000 |
 {: caption="Table 9. NSX-T uplink profiles" caption-side="bottom"}
 
@@ -190,35 +190,35 @@ An NSX-T segment reproduces switching functions, broadcast, unknown unicast, mul
 | Segment name | VLAN |Transport zone | Uplink teaming policy |
 |:------------ |:---- |:------------- |:--------------------- |
 | `edge-teps` | default | `tz-esxi-private` | TEP - Failover order |
-| `service-to-private` | default | `tz-edge-private` | N/A |
-| `service-to-public` | default | `tz-edge-public` | N/A |
-| `customer-to-private` | default | `tz-edge-private` | N/A |
-| `customer-to-public` | default | `tz-edge-public` | N/A |
-| `customer-t0-172-16-16-0` | N/A | `tz-vm-overlay` | N/A |
-| `customer-t1-192-168-0-0` | N/A | `tz-vm-overlay` | N/A |
-| `customer-t1-192-168-1-0` | N/A | `tz-vm-overlay` | N/A |
+| `service-to-private` | default | `tz-edge-private` |   |
+| `service-to-public` | default | `tz-edge-public` |   |
+| `customer-to-private` | default | `tz-edge-private` |   |
+| `customer-to-public` | default | `tz-edge-public` |   |
+| `customer-t0-172-16-16-0` |   | `tz-vm-overlay` |   |
+| `customer-t1-192-168-0-0` |   | `tz-vm-overlay` |   |
+| `customer-t1-192-168-1-0` |   | `tz-vm-overlay` |   |
 {: caption="Table 10. NSX-T logical switches" caption-side="bottom"}
 
-### Edge gateway cluster
+### Gateway cluster
 {: #nsx-t-design-edge-cluster}
 
 Within this design, two virtual edge node clusters are provisioned, one for management and the other for customer workloads. A limitation of one T0 per Edge Transport Node exists, which means that a single Edge Node Cluster can support one T0 Gateway (in either active-standby or active-active).
 
-The following figures show the functional components of an NSX-T edge gateway cluster.
+The following figures show the functional components of an NSX-T gateway cluster.
 
-![Topology for the customer edge gateway cluster](../../images/nsx-t-3-ra-diagrams-customer-edge-cluster-t0-t1.svg "Topology for the customer edge gateway cluster"){: caption="Figure 4. Topology for the customer edge gateway cluster" caption-side="bottom"}
+![Topology for the customer gateway cluster](../../images/nsx-t-3-ra-diagrams-customer-edge-cluster-t0-t1.svg "Topology for the customer gateway cluster"){: caption="Figure 4. Topology for the customer gateway cluster" caption-side="bottom"}
 
-![Edge gateway cluster topology](../../images/nsx-t-3-ra-diagrams-management-edge-cluster-t0.svg "Edge gateway cluster topology"){: caption="Figure 5. Edge gateway cluster topology" caption-side="bottom"}
+![Gateway cluster topology](../../images/nsx-t-3-ra-diagrams-management-edge-cluster-t0.svg "Gateway cluster topology"){: caption="Figure 5. Gateway cluster topology" caption-side="bottom"}
 
 #### Tier 0 logical gateway
 {: #nsx-t-design-tier-0}
 
-An NSX-T Tier-0 logical gateway provides a gateway service between the logical and physical networks (for north-south traffic). In this design, two highly available T0 gateways are deployed in two separate NSX-T edge gateway clusters, one for customer and one services/managment needs. More services and products are optional for customer chosen topologies and they use the services T0 for their inbound or outbound connectivity needs. Each T0 logical gateway is configured with two uplinks for private and two for public. Additionally, VIPs are assigned to both public and private uplinks.
+An NSX-T Tier-0 logical gateway provides a gateway service between the logical and physical networks (for north-south traffic). In this design, two highly available T0 gateways are deployed in two separate NSX-T gateway clusters, one for customer and one services/managment needs. More services and products are optional for customer chosen topologies and they use the services T0 for their inbound or outbound connectivity needs. Each T0 logical gateway is configured with two uplinks for private and two for public. Additionally, VIPs are assigned to both public and private uplinks.
 
 #### Tier 1 logical gateway
 {: #nsx-t-design-tier-1}
 
-An NSX-T Tier-1 logical gateway has downlink ports to connect to NSX-T Data Center logical switches and uplink ports to connect to NSX-T Data Center Tier-0 logical gateways. They run in the kernel level of the hypervisor they are configured for, and they are virtual router instances (vrf) of the NSX-T edge gateway cluster. In this design, one or more T1 logical gateways can be created for the needs of customer chosen topologies.
+An NSX-T Tier-1 logical gateway has downlink ports to connect to NSX-T Data Center logical switches and uplink ports to connect to NSX-T Data Center Tier-0 logical gateways. They run in the kernel level of the hypervisor they are configured for, and they are virtual router instances (vrf) of the NSX-T gateway cluster. In this design, one or more T1 logical gateways can be created for the needs of customer chosen topologies.
 
 #### Tier 1 to Tier 0 route advertisement
 {: #nsx-t-design-tier-1-tier-0}
@@ -228,7 +228,7 @@ To provide Layer 3 connectivity between VMs connected to logical switches that a
 ### Preconfigured topologies
 {: #nsx-t-design-preconfig-topo}
 
-Workload to T1 to T0 gateway – virtual edge gateway cluster
+Workload to T1 to T0 gateway – virtual gateway cluster
 
 ![NSX-T deployed topology virtual T0 Edge Gateway](../../images/nsx-t-3-ra-diagrams-preconfigured-topology.svg "NSX-T deployed topology virtual T0 Edge Gateway"){: caption="Figure 6. NSX-T deployed topology virtual T0 Edge Gateway" caption-side="bottom"}
 

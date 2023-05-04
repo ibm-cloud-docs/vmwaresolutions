@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-03-15"
+lastupdated: "2022-04-20"
 
 keywords: vCenter Server Hybridity delete instance, delete vCenter Server Hybridity, delete multisite
 
@@ -31,7 +31,7 @@ When you delete a vCenter Server with Hybridity Bundle instance, the following c
 Any VLANs that have your own resources added to them, such as gateways, Veeam® servers, and so on, are not deleted. In addition, any existing VLANs that you own, outside of {{site.data.keyword.vmwaresolutions_full}}, are not deleted.
 {: note}
 
-Because of resource dependencies, the components in your instance are not released immediately when you delete the instance. For example, the subnets and VLANs cannot be deleted until the ESXi servers are fully reclaimed by the {{site.data.keyword.cloud_notm}} infrastructure, which happens at the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle. At the end of the billing cycle, which is typically 30 days, the subnets and VLANs are deleted and the instance deletion is completed.
+{{site.data.content.deletinginstance-delete-info}}
 
 You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle for the deleted instance.
 {: important}

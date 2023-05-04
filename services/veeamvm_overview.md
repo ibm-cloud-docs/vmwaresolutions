@@ -4,9 +4,9 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-03-10"
+lastupdated: "2023-05-01"
 
-keywords: Veeam, Veeam 11, Veeam install, tech specs Veeam, Veeam overview
+keywords: Veeam, Veeam Backup and Replication 12, Veeam install, tech specs Veeam, Veeam overview
 
 subcollection: vmwaresolutions
 
@@ -25,13 +25,13 @@ By using this service, you control both the backup and restore of all virtual ma
 
 {{site.data.content.para-promotion-services}}
 
-The Veeam service that is installed is Veeam Availability Suite™ 11 (known as Veeam 11). The Veeam version available for deployment is Veeam 11a (11.0.1).
+The Veeam service that is installed is Veeam Availability Suite™ 12 (known as Veeam 12).
 {: note}
 
 ## Veeam on a bare metal server
 {: #veeamvm_overview-baremetal-server}
 
-You can install Veeam 11 on a bare metal server. This installation is supported only for VMware vSphere® 7.0 with VMware NSX-T™.
+You can install Veeam Backup and Replication 12 on a bare metal server. This installation is supported only for VMware vSphere® 7.0 with VMware NSX-T™.
 
 * For VMware Regulated Workloads, the Veeam bare metal server is the only option. For Security and Compliance Readiness Bundle, the Veeam bare metal server is the default option with a choice of switching to Veeam VM.
 * Veeam is always deployed to the management cluster.
@@ -45,21 +45,21 @@ For more information about Veeam on bare metal server, see the following topics.
 ## Technical specifications for Veeam
 {: #veeamvm_overview-specs}
 
-You can choose one of the following deployment types with Veeam 11:
+You can choose one of the following deployment types with Veeam:
 * Windows® Server VM on the management cluster or consolidated cluster
 * Single Public Windows VSI
 * Bare metal server
 
 For more information about resource requirements and capacity checking for some services, see [Resource requirements for services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-resource-requirements).
 
-The following components are ordered and included in the Veeam 11 service.
+The following components are ordered and included in the Veeam service.
 
 ### VMs for Veeam
 {: #veeamvm_overview-specs-vms}
 
-The following components are included if you deploy Veeam 11 as a Windows Server VM on the management cluster:
+The following components are included if you deploy Veeam as a Windows Server VM on the management cluster:
 
-* VM with Veeam Backup and Replication 11 OS Add-on and Veeam Availability Suite 11
+* VM with Veeam Backup and Replication 12 OS Add-on and Veeam Availability Suite™ 12
 * Windows Server 2019 Standard Edition (64-bit)
 * 8 CPUs, 32 GB RAM
 * 100 GB disk (SAN)
@@ -67,9 +67,9 @@ The following components are included if you deploy Veeam 11 as a Windows Server
 ### VSIs for Veeam
 {: #veeamvm_overview-specs-vsi}
 
-The following components are included if you deploy Veeam 11 as a single public Windows VSI:
+The following components are included if you deploy Veeam as a single public Windows VSI:
 
-* Single VSI with Veeam Backup and Replication 11 OS Add-on and Veeam Availability Suite 11
+* Single VSI with Veeam Backup and Replication 12 OS Add-on and Veeam Availability Suite™ 12
 * Windows Server 2019 Standard Edition (64-bit)
 * 4 x 2.0 GHz Cores
 * 8 CPUs, 32 GB RAM
@@ -79,9 +79,9 @@ The following components are included if you deploy Veeam 11 as a single public 
 ### Bare metal servers for Veeam
 {: #veeamvm_overview-specs-baremetal}
 
-The following components are included if you deploy Veeam 11 on a bare metal server:
+The following components are included if you deploy Veeam on a bare metal server:
 
-* Bare metal server with Veeam Backup and Replication 11 OS Add-on and Veeam Availability Suite 11
+* Bare metal server with Veeam Backup and Replication 12 OS Add-on and Veeam Availability Suite™ 12
 * Windows Server 2019 Standard Edition (64-bit)
 * 2 x 2.2 GHz CPU
 * 64 GB RAM
@@ -136,7 +136,7 @@ When you order Veeam, you can optionally order a Linux hardened repository (LHR)
 See the following information:
 * [Cyber recovery with Veeam architecture](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview), which describes two solution architectures to help you with cyber recovery.
 * [Cyber recovery with Veeam guide](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-overview), which describes how to create two cyber-recovery solution architectures.
-* [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=110){: external} in the *Veeam Backup & Replication 11 - User Guide for VMware vSphere*.
+* [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external} in the *Veeam Backup and Replication 12 - User Guide for VMware vSphere*.
 
 ### Networking for Veeam
 {: #veeamvm_overview-specs-networking}
@@ -152,7 +152,7 @@ When you deploy Veeam as a VM, if your instance has public interfaces, VMware So
 ### Licenses and fees for Veeam
 {: #veeamvm_overview-specs-licenses}
 
-For Veeam Availability Suite 11, you can order any number of VM licenses.
+For Veeam Availability Suite™ 12, you can order any number of VM licenses.
 
 You must provide a Microsoft® Windows Server 2019 Standard edition license if you choose the option of installing Veeam as a VM.
 {: important}
@@ -160,9 +160,9 @@ You must provide a Microsoft® Windows Server 2019 Standard edition license if y
 ## Considerations when you install Veeam
 {: #veeamvm_overview-install}
 
-You can order a new vCenter Server instance with Veeam and order or delete a Veeam stand-alone license. For more information, see [Tasks you can complete with Veeam 11](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam#managingveeam-fivetasks_v10).
+You can order a new vCenter Server instance with Veeam and order or delete a Veeam stand-alone license. For more information, see [Tasks you can complete with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam#managingveeam-fivetasks_v10).
 
-For more information about Veeam license installation and deletion in Veeam 11, see [Considerations for installing and deleting Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam#managingveeam-install-delete-consid).
+For more information about Veeam license installation and deletion in Veeam, see [Considerations for installing and deleting Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam#managingveeam-install-delete-consid).
 
 ## Considerations when you delete Veeam
 {: #veeamvm_overview-remove}
@@ -171,9 +171,9 @@ Deleting the Veeam service stops all backups and deletes all the previous backup
 {: important}
 
 Review the following considerations before you delete the service:
-* Deleting the Veeam 11 service does not cancel the Veeam license. You must delete the Veeam license from the **Veeam licenses** table on the **Licenses** page in the {{site.data.keyword.vmwaresolutions_short}} console.
-* When you delete the Veeam 11 service, the VMware Solutions automation deletes only the single Veeam VM, VSI, or bare metal server that was deployed and the dedicated private subnet that was ordered for it. If you scaled out the Veeam VM or VSI into multiple ones, those additional VMs or VSIs are not deleted.
-* If you order iSCSI storage, that storage is deleted when you delete the Veeam 11 service. Therefore, any data within that storage is lost.
+* Deleting the Veeam service does not cancel the Veeam license. You must delete the Veeam license from the **Veeam licenses** table on the **Licenses** page in the {{site.data.keyword.vmwaresolutions_short}} console.
+* When you delete the Veeam service, the VMware Solutions automation deletes only the single Veeam VM, VSI, or bare metal server that was deployed and the dedicated private subnet that was ordered for it. If you scaled out the Veeam VM or VSI into multiple ones, those additional VMs or VSIs are not deleted.
+* If you order iSCSI storage, that storage is deleted when you delete the Veeam service. Therefore, any data within that storage is lost.
 
 ## Related links
 {: #veeamvm_overview-related}
@@ -184,6 +184,6 @@ Review the following considerations before you delete the service:
 * [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring IBM Cloud Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Veeam backup and replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external}
+* [Veeam Backup and Replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external}
 * [Veeam website](https://www.veeam.com/){: external}
 * [Veeam Help Center (Technical Documentation)](https://www.veeam.com/documentation-guides-datasheets.html){: external}

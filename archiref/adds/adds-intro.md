@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-12-28"
+lastupdated: "2023-04-13"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ The following terms are used:
 
 * {{site.data.keyword.vmwaresolutions_short}} infrastructure domain - This domain is configured as part of the automation process when your VMware vCenter Server® instance is initially deployed. It is used for the user credentials and service accounts of your system administrators and the computer objects for the underlay-connected infrastructure components only. This document describes the components and configuration of this domain and how it can be incorporated in your AD design.
 * {{site.data.keyword.vmwaresolutions_short}} workload domain - This term is used for the domain that needs to be designed and implemented by you after the deployment of the vCenter Server instance. This domain becomes the resource domain where your workload VMs computer objects are located and optionally the user credentials and service accounts of your users. This document describes some typical deployment patterns that are used in {{site.data.keyword.vmwaresolutions_short}}.
-* Underlay networks - These networks use the {{site.data.keyword.cloud_notm}} IP address schema. The {{site.data.keyword.vmwaresolutions_short}} automation deploys {{site.data.keyword.cloud_notm}} bare metal servers, physical appliances, Virtual Server Instances (VSI), virtual machines (VMs), and appliances onto these networks. Do not deply customer workload VMs onto these networks. The domain controllers for the {{site.data.keyword.vmwaresolutions_short}} infrastructure domain are connected to these underlay networks.
+* Underlay networks - These networks use the {{site.data.keyword.cloud_notm}} IP address schema. The {{site.data.keyword.vmwaresolutions_short}} automation deploys {{site.data.keyword.cloud_notm}} bare metal servers, physical appliances, Virtual Server Instances (VSI), virtual machines (VMs), and appliances onto these networks. Do not deploy customer workload VMs onto these networks. The domain controllers for the {{site.data.keyword.vmwaresolutions_short}} infrastructure domain are connected to these underlay networks.
 * Overlay networks - These networks are virtual networks that are enabled by VMware NSX and use your IP address schema. You are free to design your network topology to suit your requirements. Your workload VMs are connected to these networks. If connection to these networks from on-premises is required, then these networks are connected typically through layer 3 IP connectivity over the internet or through Direct-Link connection. The domain controllers for your {{site.data.keyword.vmwaresolutions_short}} workload domain are connected to these overlay networks.
 
 ## Preventing problems with Active Directory
@@ -40,4 +40,4 @@ To prevent problems with your system in the future, you must keep your Active Di
 
 * [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview)
 * [Getting started with VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started)
-* [VMware Solutions - Take a look under the hood](/docs/vmwaresolutions?topic=vmwaresolutions-under_the_hood)
+

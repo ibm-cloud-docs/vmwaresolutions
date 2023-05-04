@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-03-21"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ subcollection: vmwaresolutions
 There are two options for deploying a vSRX HA cluster:
 
 * Deploy gateway on bare metal servers - deploys vSRX on a KVM-based host.
-* Deploy gateway as part of the {{site.data.keyword.vmwaresolutions_full}} offering (edge gateway cluster) - deploys vSRX on a VMware vSphere® ESXi™ hypervisor.
+* Deploy gateway as part of the {{site.data.keyword.vmwaresolutions_full}} offering (gateway cluster) - deploys vSRX on a VMware vSphere® ESXi™ hypervisor.
 
 The two vSRX nodes are tied together in a highly available chassis cluster and deliver a reliable gateway solution that provides for continuous network traffic flows through the loss of a host that supports a node or a vSRX node.
 
@@ -36,7 +36,7 @@ These features are common to both deployment types.
 
 The following features are unique to a deployment with the ESXi as the host OS.
 - VXLAN connectivity into a VMware vCenter Server® instance.
-- Ability to host extra virtual machines (VMs) on the edge gateway cluster.
+- Ability to host extra virtual machines (VMs) on the gateway cluster.
 - NSX edges, load balancers.
 
 The basic vSRX offering architecture places a vSRX in front of all the VLANs deployed into a customer account. The vSRX is a powerful Vyatta replacement for situations in which a customer-controlled gateway appliance is desirable.
@@ -67,7 +67,7 @@ The tight integration of the vSRX HA Chassis Cluster into a vCenter Server insta
 
 When a vCenter Server instance is deployed to a customer account it is typically a single hyper-converged cluster in which compute, management, and edge functions are delivered by a single three ESXi host (NFS shared storage) or four node (vSAN shared storage) cluster configuration.
 
-The addition of the vSRX offering on ESXi impacts the basic vCenter Server design by moving the edge gateway out of the hyper-converged cluster onto a dedicated two ESXi host cluster. The edge gateway cluster is managed by the existing vCenter Server that is deployed with the initial vCenter Server instance.
+The addition of the vSRX offering on ESXi impacts the basic vCenter Server design by moving the edge gateway out of the hyper-converged cluster onto a dedicated two ESXi host cluster. The gateway cluster is managed by the existing vCenter Server that is deployed with the initial vCenter Server instance.
 
 #### Host sizing
 {: #vcsvsrx-planning-host-sizing}
@@ -81,11 +81,11 @@ The vCenter Server offering is designed to manage east-west network traffic at t
 
 The required network design changes are modest and include all customer VM traffic no matter the destination, platform management traffic, direct-link traffic, where applicable, and internet bound traffic. Traffic that is explicitly excluded includes VTEP traffic, storage traffic, and vMotion traffic.
 
-NSX can be extended from the compute cluster to the edge gateway cluster. Or BGP over an IPsec VPN can be used to enable connectivity between the edge and compute clusters. When the traffic that flows between the vCenter Server compute cluster and the edge gateway cluster is not in conflict with the {{site.data.keyword.cloud_notm}} infrastructure assigned subnets, the use of a local VLAN and subnet is suitable as a transit link.
+NSX can be extended from the compute cluster to the gateway cluster. Or BGP over an IPsec VPN can be used to enable connectivity between the edge and compute clusters. When the traffic that flows between the vCenter Server compute cluster and the gateway cluster is not in conflict with the {{site.data.keyword.cloud_notm}} infrastructure assigned subnets, the use of a local VLAN and subnet is suitable as a transit link.
 
 BGP over IPsec VPN is the preferred method of connecting to a customer on-premises data center whether the connection traverses the internet or passes between the customer and {{site.data.keyword.cloud_notm}} through one of the {{site.data.keyword.cloud_notm}} infrastructure direct-link offerings.
 
-It is recommened that you review the architecture patterns in the [Architecture pattern for using edge gateway cluster with NSX-T](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-edge-services-cluster).
+It is recommened that you review the architecture patterns in the [Architecture pattern for using gateway cluster with NSX-T](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-edge-services-cluster).
 
 
 #### Interface mapping for vSRX on VMware
