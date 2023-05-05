@@ -447,11 +447,15 @@ toc:
           label: API reference
           topics:
           - link:
+              label: VMware as a Service API
+              href: https://{DomainName}/apidocs/vmware-service
+          - include: ../vmware-service/common/api-change-log.md
+          - link:
               label: VMware Solutions API
               href: https://{DomainName}/apidocs/vmware-solutions
           - link:
               label: VMware Shared API
-              href: https://{DomainName}/apidocs/vmware-solutions-shared-v2.0.0      
+              href: https://{DomainName}/apidocs/vmware-solutions-shared-v2.0.0
       - topicgroup:
           label: VMware NSX-V to NSX-T migration
           topics:
