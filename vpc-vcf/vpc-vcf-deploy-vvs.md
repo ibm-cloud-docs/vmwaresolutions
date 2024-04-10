@@ -114,8 +114,8 @@ To deploy the Advanced Load Balancing for VMware Cloud Foundation validated solu
 ### Notes
 {: #vpc-vcf-deploy-vvs-nsx-advanced-load-balancing-notes}
 
-* VMware recommends customers use [NSX Advanced Load Balancer](https://www.vmware.com/products/nsx-advanced-load-balancer.html){: external} for load balancing. NSX Advanced Load Balancer – Basic Edition is included with NSX Advanced (VMware Cloud Foundation Advanced Edition) and NSX Enterprise Plus (VMware Cloud Foundation Enterprise Edition).
-* VMware NSX Advanced Load Balancer – Basic Edition offers L4–L7 load balancing with SSL offload and pass-through, server health checks, application rules for programmability, and traffic manipulation by using the GUI or REST API. Advanced features of NSX Advanced Load Balancer are available as an add-on license.
+* VMware recommends customers use [NSX Advanced Load Balancer](https://www.vmware.com/products/nsx-advanced-load-balancer.html){: external} for load balancing.
+* VMware NSX Advanced Load Balancer – Available as an add-on to the VCF license.
 * NSX Advanced Load Balancer Controllers implement the control plane for the NSX Advanced Load Balancer. For high availability, it is typically deployed as a 3-node cluster. In a VMware Cloud Foundation, NSX Advanced Load Balancer Controllers run as VMs in the management domain.
 * Deploying the Controller cluster nodes on the VMware Cloud Foundation management network requires 4 new {{site.data.keyword.cloud_notm}} bare metal server VLAN interfaces on the management network as shown in the following table. To create VLAN interfaces, see [Managing network interfaces for bare metal servers on {{site.data.keyword.vpc_short}}](/docs/vpc?topic=vpc-managing-nic-for-bare-metal-servers).
 * NSX Advanced Load Balancer Service Engine implements the data plane for the NSX Advanced Load Balancer. The NSX Advanced Load Balancer SEs perform load balancing for the configured applications. The NSX Advanced Load Balancer Controller cluster provides load-balancing services and it also manages the service engines that are deployed in the VI workload domain that is managed by the NSX-T Data Center.
