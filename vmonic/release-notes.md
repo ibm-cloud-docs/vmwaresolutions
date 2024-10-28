@@ -262,7 +262,7 @@ Active Directory server OS upgrade
 Add-on services upgrades
 :   The following service versions are now available for deployment:
 
-   * Caveonix RiskForesight™ v5.0
+   * Caveonix RiskForesight v5.0
    * FortiGate Virtual Appliance v7.4.1
 
 New region for KMIP for VMware

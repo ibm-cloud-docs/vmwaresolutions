@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-05-16"
+lastupdated: "2024-10-25"
 
 keywords: vcf classic remove hosts, vcf automated remove ESXi servers
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Deleting ESXi servers from Automated instances
+# Deleting ESXi servers from {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_removingservers}
 
 You can contract the capacity of your {{site.data.keyword.vcf-auto}} instance according to your business needs by deleting VMware ESXi™ servers.

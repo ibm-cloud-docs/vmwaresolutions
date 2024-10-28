@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-09-17"
+lastupdated: "2024-10-25"
 
 keywords: automated instance, order automated, order automated instance
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Procedure to order Automated instances
+# Procedure to order {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_orderinginstance-procedure}
 
 
