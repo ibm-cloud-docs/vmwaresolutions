@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-09-04"
+lastupdated: "2024-10-25"
 
 keywords: automated instance add host, add server automated instance
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding ESXi servers to Automated instances
+# Adding ESXi servers to {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_addingservers}
 
 You can expand the capacity of your {{site.data.keyword.vcf-auto}} instance according to your business needs by adding VMware ESXi™ servers.

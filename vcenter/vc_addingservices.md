@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-25"
 
 keywords: add service, order service, add-on service
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Ordering services for Automated instances
+# Ordering services for {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_addingservices}
 
 You can order services for your {{site.data.keyword.vcf-auto}} instances, such as a disaster recovery solution. Add-on services support varies between {{site.data.keyword.vcf-auto-short}} and existing {{site.data.keyword.vcf-auto-short}} with NSX-V instances V4.7 and earlier.

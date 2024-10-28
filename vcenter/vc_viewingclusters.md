@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-25"
 
 keywords: vcf automated view clusters, view clusters, view vcf classic cluster
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Viewing clusters for Automated instances
+# Viewing clusters for {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_viewingclusters}
 
 View the summary and detailed information of the clusters that are provisioned in a {{site.data.keyword.vcf-auto}} instance.

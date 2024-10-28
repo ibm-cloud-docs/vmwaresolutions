@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-25"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding clusters to Automated instances
+# Adding clusters to {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_addingclusters}
 
 You can add clusters to {{site.data.keyword.vcf-auto}} instances to expand the compute and storage capacity. Within a cluster, you can manage VMware ESXi™ servers for better resource allocation and high availability.

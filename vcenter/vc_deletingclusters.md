@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-05-02"
+lastupdated: "2024-10-25"
 
 keywords: vcf classic delete clusters, delete clusters, delete vcf classic cluster, delete vcf classic cluster
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Deleting clusters from Automated instances
+# Deleting clusters from {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_deletingclusters}
 
 You can delete clusters from {{site.data.keyword.vcf-auto}} instances when you do not need them.

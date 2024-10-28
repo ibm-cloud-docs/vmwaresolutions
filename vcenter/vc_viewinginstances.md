@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-10-25"
 
 keywords: view vcf classic, view instance, view instance details, vmware cloud foundation view
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Viewing Automated instances
+# Viewing {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_viewinginstances}
 
 View the summary and detailed information of the {{site.data.keyword.vcf-auto}} instances that are provisioned for different user accounts.
