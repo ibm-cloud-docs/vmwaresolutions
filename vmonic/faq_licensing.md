@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-10-09"
+lastupdated: "2024-10-29"
 
 keywords: FAQ, license, licensing
 
@@ -61,4 +61,4 @@ Your case is opened and will be reviewed by the {{site.data.keyword.IBM_notm}} S
 
 * [Accessing the console](/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [Creating a support case](/docs/get-support?topic=get-support-open-case&interface=ui#creating-support-case)
+* [Creating a support case](/docs/account?topic=account-open-case&interface=ui#creating-support-case)

@@ -4,7 +4,7 @@
 
 copyright:
   years: 2016, 2024
-lastupdated: "2024-10-08"
+lastupdated: "2024-10-29"
 
 keywords: getting help, getting support, troubleshooting, contact support, support ticket
 
@@ -24,7 +24,7 @@ If you experience an issue or have questions when using VMware Solutions, you ca
 * Review the [troubleshooting documentation](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_timeout_vc_console) to troubleshoot and resolve common issues.
 * Check the status of the {{site.data.keyword.Bluemix_notm}} platform and resources by going to the [Status](/status) page.
 
-If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/get-support?topic=get-support-open-case). And, if you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).
+If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/account?topic=account-open-case&interface=ui). And, if you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).
 
 ## Procedure to create a case for VMware Solutions
 {: #trbl_support-procedure}
@@ -33,4 +33,4 @@ If you still can't resolve the problem, you can open a support case. For more in
 2. Log in with your **IBMid** account.
 3. Select **All Products** and type **VMware Solutions** where prompted for the product name, then click **VMware Solutions**.
 4. Review the various solutions offered. If you do not see an answer to your problem, click **Create a case** in the **Contact Support** section.
-5. Continue with the steps in [Creating a support case](/docs/get-support?topic=get-support-open-case&interface=ui#creating-support-case).
+5. Continue with the steps in [Creating a support case](/docs/account?topic=account-open-case&interface=ui#creating-support-case).
