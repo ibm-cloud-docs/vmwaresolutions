@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-11-04"
 
 keywords: vcf automated compliance, compliance info, vcf automated policy
 
@@ -41,7 +41,7 @@ vCenter Server
 
 Only the offerings that are previously listed can be provisioned to implement the HIPAA Privacy and Security Rule controls for use with Health Data if Client notifies IBM in advance that Client will use Health Data with the Cloud Service and IBM confirms in writing that the Cloud Service will be provisioned for Health Data usage. The Cloud Service cannot be used for the transmission, storage, or other usage of any Health Data protected under HIPAA unless (i) Client provides IBM such notification; (ii) IBM and Client have entered into an applicable Business Associate Agreement; and (iii) IBM provides Client with express- written confirmation that the Cloud Service can be used with Health Data. In no event, shall the Cloud Service be used for processing PHI as a healthcare clearinghouse within the meaning of HIPAA.
 
-If a system failure occurs, a third-party service provider might request debugging artifacts from the client (logs, core memory dumps). It is the client’s sole responsibility to gather and transmit these artifacts to the third-party provider. The IBM support team might assist by providing links to documentation or providing direction through screen sharing sessions. However, the client is responsible for cleansing the data of any PHI and ensuring that it is properly encrypted before it is transmitted. It is also the client’s responsibility to evaluate whether they require a BAA to be executed with the third-party provider before data is sent.
+If a system failure occurs, a third-party service provider might request debugging artifacts from the client (logs, core memory dumps). It is the client’s sole responsibility to gather and transmit these artifacts to the third-party provider. The IBM Support team might assist by providing links to documentation or providing direction through screen sharing sessions. However, the client is responsible for cleansing the data of any PHI and ensuring that it is properly encrypted before it is transmitted. It is also the client’s responsibility to evaluate whether they require a BAA to be executed with the third-party provider before data is sent.
 
 ## Personal information and regulated data
 {: #vc_compl_info-personal-info-and-regulated-data}
@@ -122,7 +122,7 @@ vCenter Server environments, which are delivered as {{site.data.keyword.vmwareso
 {: #vc_compl_info-security-measures}
 
 * Management of Cloud Service - Client is responsible for managing administration, operation, maintenance, and security of the applications, including underlying middleware.
-* Service Integrity and Availability - IBM forwards to the Client all network intrusion notifications detected for this Cloud Service. It is the Client’s responsibility to ascertain the impact of each notification that is reported. Client is notified of hardware failures. Monitoring and responding to OS or software failures is the responsibility of the Client, engaging IBM support as required.
+* Service Integrity and Availability - IBM forwards to the Client all network intrusion notifications detected for this Cloud Service. It is the Client’s responsibility to ascertain the impact of each notification that is reported. Client is notified of hardware failures. Monitoring and responding to OS or software failures is the responsibility of the Client, engaging IBM Support as required.
 * Activity Logging - Client is responsible for activity logging of OS/System and Database/Applications, as needed.
 * Encryption - Client is responsible for configuring and managing all encryption (for both data at rest and in transit), as needed.
 * Business Continuity and Disaster Recovery - Client is responsible for configuring and managing all business continuity and disaster recovery processes, as needed.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-11-04"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade
 
@@ -25,7 +25,7 @@ It has a policy of supporting the automation of VMware® SDDC software versions 
 Adding and removing services is not supported for instances that are upgraded to vSphere 7. Due to this limitation and the architecture improvements, {{site.data.keyword.cloud}} suggests that you deploy a new vSphere 7 instance and migrate your current network topology and workloads to the new instance.
 {: important}
 
-If your instance is at a version earlier than the version level that is needed for automation support, it continues to be supported as required by the VMware support policy. However, your instance might not function with the current {{site.data.keyword.vmwaresolutions_short}} automation.
+If your instance is at a version earlier than the version level that is needed for automation support, it continues to be supported as required by the Broadcom Support policy. However, your instance might not function with the current {{site.data.keyword.vmwaresolutions_short}} automation.
 
 You must apply patches and upgrade the VMware software periodically, over the lifecycle of an instance. This maintenance includes upgrading the VMware SDDC software to a version that is supported by the {{site.data.keyword.vmwaresolutions_short}} automation.
 
@@ -58,7 +58,7 @@ Complete the following requirements before you begin the upgrade:
    * Ensure that each node has space to handle rebuilding redundancy of vSAN objects in case an ESXi host fails to come back up during the upgrade. You might need to either reduce disk usage or add an ESXi host before the upgrade.
    * Verify whether the overall vSAN volume usage is higher than 70%. You might need to either reduce disk usage or add an ESXi host before the upgrade.
 * Verify that the vCenter Server root user ID with its credentials are visible on the console. If your instance was initially ordered in a VMware Solutions version between V2.5 and V5.7, only the `customerroot` account is visible on the console. For new instances, clusters, hosts, and VMs ordered in VMware Solutions V5.7 and later, the `customerroot` user is no longer created by the VMware Solutions automation.
-* Confirm that you have a [My VMware](https://support.broadcom.com/){: external} user ID for which to download the required binary files to upgrade. If you don't, contact IBM Support with the upgrade support ticket ID.
+* Confirm that you have a [My VMware](https://support.broadcom.com/){: external} user ID for which to download the required binary files to upgrade. If you don't have a user ID, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) with the upgrade support ticket ID.
 * Confirm that VUM is configured to reach https://www.vmware.com to download patches. If it can't be configured because of security policies, then you must manually download the most recent patch sets and upload them into VUM. For more information, see [VMware Update Manager introduction](/docs/vmwaresolutions?topic=vmwaresolutions-vum-intro#vum-intro).
 
 ## Supported upgrade paths
@@ -97,9 +97,9 @@ You can also upgrade vCenter Server to version 8.0. For more information, see [U
 ### Before you begin
 {: #vc_vsphere_70_upgrade-procedure-before}
 
-* If you encounter a problem during the upgrade process, use the {{site.data.keyword.vmwaresolutions_short}} upgrade ticket that you opened at the beginning of the process to contact IBM Support. IBM Support then opens tickets with VMware Support if required.
-* You must follow the support process to ensure that {{site.data.keyword.vmwaresolutions_short}} provides VMware Support with all the information about the vCenter Server design and setup, and the {{site.data.keyword.cloud_notm}} information.
-* By following the support process, you ensure that accurate information is shared with VMware Support, which shortens the support experience. After IBM Support provides the necessary information to VMware Support, you can interact with VMware Support directly.
+* If you encounter a problem during the upgrade process, use the {{site.data.keyword.vmwaresolutions_short}} upgrade ticket that you opened at the beginning of the process to [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). If required, IBM Support will open tickets with Broadcom Support.
+* You must follow the support process to ensure that {{site.data.keyword.vmwaresolutions_short}} provides Broadcom Support with all the information about the vCenter Server design and setup, and the {{site.data.keyword.cloud_notm}} information.
+* By following the support process, you ensure that accurate information is shared with Broadcom Support, which shortens the support experience. After IBM Support provides the necessary information to Broadcom Support, you can interact with Broadcom Support directly.
 * Ensure that you keep a record of all the new passwords and credentials that you create as part of the upgrade process. IBM Support requires these credentials at the end of the upgrade process to update their internal database.
 
 ### Procedure to set the cluster Distributed Resource Schedule to manual
@@ -180,7 +180,7 @@ If the upgrade process fails immediately and the ``host cannot enter maintenance
 ### Updating vCenter Server and ESXi host licenses
 {: #vc_vsphere_70_upgrade-license-update}
 
-After you upgrade the vCenter Server and ESXi hosts to vSphere 7, you must update the licenses on the vCenter Server and the ESXi hosts. If you have a vSAN cluster, you must update the vSAN license. [Contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to obtain the new licenses for vSphere 7.
+After you upgrade the vCenter Server and ESXi hosts to vSphere 7, you must update the licenses on the vCenter Server and the ESXi hosts. If you have a vSAN cluster, you must update the vSAN license. To obtain the new licenses for vSphere 7, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 #### Procedure to update the vCenter Server license
 {: #vc_vsphere_70_upgrade-license-update-vcs}

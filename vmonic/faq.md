@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-28"
+lastupdated: "2024-11-04"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -90,7 +90,7 @@ Newly deployed VMware ESXi™ servers and clusters are patched with recent, but 
 
 For all other VMware component updates, you must ensure that newly deployed ESXi servers and clusters have the most recent updates that you require. {{site.data.keyword.vmwaresolutions_short}} does not offer support for applying updates and patches for VMware components. You must monitor and apply these updates yourself.
 
-To download ESXi updates from VMware, you can configure VMware Update Manager (VUM) or vSphere Lifecycle Manager (vLCM), which are integrated into your vCenter Server. For more information, see [VMware Support](https://www.broadcom.com/support/vmware-services){: external}.
+To download ESXi updates from VMware, you can configure VMware Update Manager (VUM) or vSphere Lifecycle Manager (vLCM), which are integrated into your vCenter Server. For more information, see [Broadcom Support](https://www.broadcom.com/support/vmware-services){: external}.
 
 IBM does not provide ongoing updates to add-on services such as Zerto or Veeam®. Obtaining and installing these updates is your responsibility.
 {: important}

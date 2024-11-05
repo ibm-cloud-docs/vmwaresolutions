@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-10-31"
+lastupdated: "2024-11-04"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -29,9 +29,9 @@ Complete the following requirements before you begin the upgrade:
 
 * Open a support ticket with the {{site.data.keyword.vmwaresolutions_full}} team to notify them that an upgrade is being planned. The ticket remains open until the instance is registered at the upgraded level in the {{site.data.keyword.vmwaresolutions_short}} console.
 * Verify that the vCenter Server `root` user ID and its credentials are visible on the console. If your instance was initially ordered in a VMware Solutions environment V2.5 to V5.7, only the `customerroot` account is visible on the console. For instances, clusters, hosts, and vCenter Server VMs ordered in VMware Solutions V5.7 and later, the `customerroot` user is no longer created by the VMware Solutions automation.
-* If you encounter a problem during the upgrade process, use the {{site.data.keyword.vmwaresolutions_short}} upgrade ticket that you opened at the beginning of the process to contact IBM Support. IBM Support then opens tickets with VMware Support if required.
-* Follow the support process to ensure that {{site.data.keyword.vmwaresolutions_short}} provides VMware Support with all the information about the vCenter Server design and setup, and the {{site.data.keyword.cloud}} information.
-* By following the support process, you ensure that accurate information is shared with VMware Support, which shortens the support experience. After IBM Support provides the necessary information to VMware Support, you can interact with VMware Support directly.
+* If you encounter a problem during the upgrade process, use the {{site.data.keyword.vmwaresolutions_short}} upgrade ticket that you opened at the beginning of the process to contact IBM Support. If required, IBM Support will open tickets with Broadcom Support.
+* Follow the support process to ensure that {{site.data.keyword.vmwaresolutions_short}} provides Broadcom Support with all the information about the vCenter Server design and setup, and the {{site.data.keyword.cloud}} information.
+* By following the support process, you ensure that accurate information is shared with Broadcom Support, which shortens the support experience. After IBM Support provides the necessary information to Broadcom Support, you can interact with Broadcom Support directly.
 * Ensure that you keep a record of all the new passwords and credentials that you create as part of the upgrade process. IBM Support requires these credentials at the end of the upgrade process to update its internal database.
 
 ## Procedure to upgrade to vCenter Server 8.0
