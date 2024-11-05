@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-05-23"
+lastupdated: "2024-11-04"
 
 subcollection: vmwaresolutions
 
@@ -59,7 +59,7 @@ The following table describes the responsibilities that are related to incident 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Availability | Offer VMware® infrastructure in multiple locations, including [multizone regions (MZR)](#x9774820){: term}. | Plan and provision VMware infrastructure according to your availability requirements. |
-| Infrastructure monitoring and notification | Forward to the client all network intrusion notifications detected. Maintain shared cloud infrastructure, including network and storage. | Implement monitoring system and integrate with virtualization management. Determine the impact of each notification reported. Engage IBM support as required. |
+| Infrastructure monitoring and notification | Forward to the client all network intrusion notifications detected. Maintain shared cloud infrastructure, including network and storage. | Implement monitoring system and integrate with virtualization management. Determine the impact of each notification reported. Engage IBM Support as required. |
 | Workload monitoring |  | Monitor and respond to OS or software failures. |
 | Infrastructure management | | Implement monitoring and management system that is integrated with virtualization management. |
 | Incident management | Unplanned incidents with customer impact are communicated through the CIE process. | Impacted customers can obtain a report about the incident upon request. |
