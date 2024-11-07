@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-11-05"
 
 keywords: planning vcf classic, data center, vcf automated data centers
 
@@ -95,7 +95,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 
 | Data center | Pod | Server options for NSX-T[^nsx-t-7-04] | Server options for NSX-V[^nsx-v-04] |
 |:----------- |:--- |:------------------------------------- |:----------------------------------- |
-| DAL09 | 01-06 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
+| DAL09 | 01-02, 05-06 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | DAL10 | 01-04 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | DAL12 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | DAL13 | 01-03 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
