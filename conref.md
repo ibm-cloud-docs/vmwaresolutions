@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-10-28"
+lastupdated: "2024-11-05"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -89,6 +89,7 @@ The uplink speed provides two options:
 | SYD05 | 01 |
 | TOK02 | 02 |
 | TOK04 | 01 |
+| TOK05 | 01 |
 {: caption="Available locations for 25 Gb uplink speed - Asia Pacific" caption-side="bottom"}
 {: tab-title="Asia Pacific"}
 {: tab-group="Data centers"}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-11-05"
 
 keywords: planning vmware regulated workloads, data center vmware regulated workloads, vmware regulated workloads data centers
 
@@ -96,7 +96,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 
 | Data center | Pod |
 |:----------- |:--- |
-| DAL09 | 01-06 |
+| DAL09 | 01-02, 05-06 |
 | DAL10 | 01-04 |
 | DAL12 | 01-02 |
 | DAL13 | 01-03 |
