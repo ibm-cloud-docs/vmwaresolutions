@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-18"
+lastupdated: "2024-11-07"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ This architecture pattern deployment is summarized as follows:
 ## Connectivity over the internet
 {: #arch-pattern-vcf-hcx-xconnectivity-public-internet}
 
-Currently, {{site.data.keyword.vcf-vpc}} supports to be a source only when you create site peering and service mesh over a public network. Though HCX is used as a source, migration is possible both ways. In this model, HCX appliances use {{site.data.keyword.vpc_short}} public gateway for the egress traffic. 
+Currently, {{site.data.keyword.vcf-vpc}} supports to be a source only when you create site peering and service mesh over a public network. Though HCX is used as a source, migration is possible both ways. In this model, HCX appliances use {{site.data.keyword.vpc_short}} public gateway for the egress traffic.
 
 The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 
@@ -49,7 +49,7 @@ The following diagram introduces the high-level steps to configure and deploy th
 
 This architecture pattern deployment is summarized as follows:
 
-1. Establish site peering between on-premises and the VMware Cloud Foundation instance in {{site.data.keyword.vpc_short}}. The connection must be established from the VMware Cloud Foundation instance.  
+1. Establish site peering between on-premises and the VMware Cloud Foundation instance in {{site.data.keyword.vpc_short}}. The connection must be established from the VMware Cloud Foundation instance.
 1. Egress connectivity to the internet is established through the public gateway that is attached to the management subnet. Here, the traffic is in principle just source NATed by using the floating IP address that is assigned to the public gateway as the new source IP address. You can use this floating IP address in your firewall rules, if needed.
 1. Create a service mesh by using the compute profile created during the deployment.
 1. Use management subnet for HCX management and uplink network interfaces in the network profiles. Use the vMotion subnet for vMotion traffic.
@@ -63,7 +63,7 @@ HCX as Cloud target does not support NAT and floating IP addresses cannot be use
 
 When you design or deploy this architecture pattern, consider the following information:
 
-* For detailed HCX network flows, see [Networks diagrams for VMware HCX](https://ports.esp.vmware.com/network-diagrams/VMware-HCX){: external}.
+* For detailed HCX network flows, see [Networks diagrams for VMware HCX](https://ports.broadcom.com/network-diagrams/VMware-HCX){: external}.
 * Create a network profile that matches the required HCX network flows.
 * Ensure your MTUs match end to end.
 * Ensure that the networks are properly routed and possible firewall rules allow the required traffic at both the source and destination sites and between the HCX appliance uplinks.

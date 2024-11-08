@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-12"
+lastupdated: "2024-11-08"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -23,13 +23,15 @@ Zerto on {{site.data.keyword.cloud}} integrates replication and disaster recover
 Zerto is supported on {{site.data.keyword.vcf-auto}} instances that meet the following requirements:
 
 * VMware NSX-T™ 3.1 or later
-* VMware vSphere® 7.0
+* VMware vSphere® 7.0 
 {: shortdesc}
 
 {{site.data.content.para-promotion-services}}
 
 The Zerto version available for deployment is 9.7u4.
 {: note}
+
+
 
 ## Before you begin
 {: #addingzertodr-req}
@@ -46,13 +48,13 @@ The following components are ordered and included in the Zerto service.
 Zerto Virtual Replication Appliance (VRA) components are deployed only into the default cluster.
 {: note}
 
-### Virtual Service Instances
+### Virtual Service Instances 
 {: #addingzertodr-specs-vsi}
 
 * One Virtual Service Instance (VSI) - Zerto Virtual Manager
 * 2 x 2.0 GHz cores
 * 4 GB RAM
-* Windows® Server 2019 Standard Edition (64-bit)
+* Windows Server 2019 Standard Edition (64-bit)
 
 ### Storage
 {: #addingzertodr-specs-storage}
@@ -62,7 +64,7 @@ Zerto Virtual Replication Appliance (VRA) components are deployed only into the 
 ### Zerto Networking
 {: #addingzertodr-specs-network}
 
-* VSI
+* VSI 
    * One primary private IP address
    * 1 Gbps private network uplink
 * Virtual replication appliances (VRAs) - One private portable subnet for VRA deployment

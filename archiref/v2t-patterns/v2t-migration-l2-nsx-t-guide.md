@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-11-07"
 
 subcollection: vmwaresolutions
 
@@ -64,7 +64,7 @@ If you experience issues during migration, see [Migrating a virtual machine betw
 ![Migrating network connectivity with NSX-T L2 bridge solution](../../images/v2t-nsx-t-l2-bridge-3.svg "Migrating network connectivity with NSX-T L2 bridge solution."){: caption="Migrating network connectivity with NSX-T L2 bridge solution" caption-side="bottom"}
 
 1. Before migrating VMs, ensure that you migrated the distributed firewall configuration to allow the required traffic flow to and from the VMs. If you are considering the Migration Coordinator, see [Migrating distributed firewall configuration](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/migration/GUID-CFFE8C28-2D32-4AC5-98C2-9F1AEE525190.html){: external}.
-2. To migrate the VMs hosted on the NSX-V logical switch that is stretched to the NSX-T environment, log in to the vCenter appliance on the {{site.data.keyword.vcf-auto-short}} with NSX-T environment and initiate the import VMs workflow. This process asks for credentials on the vCenter appliance on the {{site.data.keyword.vcf-auto-short}} with NSX-T environment and vMotion one or more VMs. For more information, see [Introducing the Advanced Cross vCenter Server vMotion capability](https://core.vmware.com/resource/introducing-advanced-cross-vcenter-server-vmotion-capability#section1){: external}.
+2. To migrate the VMs hosted on the NSX-V logical switch that is stretched to the NSX-T environment, log in to the vCenter appliance on the {{site.data.keyword.vcf-auto-short}} with NSX-T environment and initiate the import VMs workflow. This process asks for credentials on the vCenter appliance on the {{site.data.keyword.vcf-auto-short}} with NSX-T environment and vMotion one or more VMs. For more information, see [Introducing the Advanced Cross vCenter Server vMotion capability](https://www.vmware.com/docs/introducing-the-advanced-cross-vcenter-server-vmotion-capability){: external}.
 3. When all the VMs are migrated, the L2 bridge can be disconnected.
 
 ## Considerations for using NSX-T L2 bridge in migration
