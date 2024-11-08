@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-11-07"
 
 subcollection: vmwaresolutions
 
@@ -125,7 +125,7 @@ Considerations include the following questions:
 The following migration patterns for workload migration must be considered:
 
 * HCX™ - VMware HCX application migration enables the scheduling and migration of thousands of VMs. For more information, see [VMware HCX Migration Types](https://docs.vmware.com/en/VMware-HCX/4.3/VMware%20HCX%20Documentation%204.3.zip){: external}.
-* Advanced vCenter vMotion - From vSphere 7.0 Update 1c (Patch 02), vCenter supports the import of VMs from another {{site.data.keyword.vcf-auto-short}} that is not part of the same SSO Domain. The source {{site.data.keyword.vcf-auto-short}} must be version 6.5 or later. For more information, see [Introducing the Advanced Cross vCenter Server vMotion Capability](https://core.vmware.com/resource/introducing-advanced-cross-vcenter-server-vmotion-capability#){: external}.
+* Advanced vCenter vMotion - From vSphere 7.0 Update 1c (Patch 02), vCenter supports the import of VMs from another {{site.data.keyword.vcf-auto-short}} that is not part of the same SSO Domain. The source {{site.data.keyword.vcf-auto-short}} must be version 6.5 or later. For more information, see [Introducing the Advanced Cross vCenter Server vMotion Capability](https://www.vmware.com/docs/introducing-the-advanced-cross-vcenter-server-vmotion-capability){: external}.
 * Zerto or Veeam® - You might have Zerto or Veeam installed on your NAX-V environment and be competent in their usage. These products can be used to replicate VMs from the source data store to the target data store and then initiate a fail-over. And also to replicate a backup from the source cluster to a recovery on the target cluster.
 
 ## Network L2 extension
@@ -150,6 +150,6 @@ A third possible Layer 2 approach is to use NSX-T L2VPN. In this approach, the N
 
 * [Terraform by Hashicorp](https://www.terraform.io/){: external}
 * [The NSX Terraform Provider](https://registry.terraform.io/providers/vmware/nsxt/latest/docs){: external}
-* [NSX-V to NSX-T 3.x Migration Coordinator](https://nsx.techzone.vmware.com/resource/nsx-v-nsx-t-3x-migration-coordinator#_Toc57645169){: external}
+* [NSX-V to NSX-T 3.x Migration Coordinator](https://www.vmware.com/docs/nsx-v-to-nsx-t-3x-migration-coordinator#_Toc57645169){: external}
 * [NSX-V to NSX-T fast track migration service](https://hdm.primaryio.com/lp/nsxvtot){: external}
 * [VMware Cloud Migration Services](https://cloud.ibm.com/catalog/services/vmware-cloud-migration-services)

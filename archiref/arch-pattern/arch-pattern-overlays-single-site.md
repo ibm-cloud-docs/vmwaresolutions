@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-10"
+lastupdated: "2024-11-07"
 
 subcollection: vmwaresolutions
 
@@ -51,7 +51,7 @@ The following diagram shows an example of a customer deployment that uses the st
 ## Single-site – multitenant
 {: #arch-pattern-overlays-single-site-single-site-mt}
 
-Single-site – multitenant pattern provides a simple highly scalable pattern if you need multiple tenants (for example, different business units), which require route table isolation or have conflicting IP address spaces. This deployment pattern uses the base topology that is provided by {{site.data.keyword.cloud_notm}} vCenter Server automation, which includes single Tier-0 and Tier-1 Gateways and a few NSX overlay segments as a starting point. If you have multiple tenants, you can divide them by using multiple Tier-1 Gateways and by controlling routing advertisements, and use network address translation (NAT). 
+Single-site – multitenant pattern provides a simple highly scalable pattern if you need multiple tenants (for example, different business units), which require route table isolation or have conflicting IP address spaces. This deployment pattern uses the base topology that is provided by {{site.data.keyword.cloud_notm}} vCenter Server automation, which includes single Tier-0 and Tier-1 Gateways and a few NSX overlay segments as a starting point. If you have multiple tenants, you can divide them by using multiple Tier-1 Gateways and by controlling routing advertisements, and use network address translation (NAT).
 
 The following diagram shows an example of a multitenant deployment by using the standard topology. Also, it shows how to expand it for a simple multitenant pattern. You can manually deploy multiple Tier-1 Gateways through NSX and add each tenant segment to their own Tier-1 Gateway.
 
@@ -62,10 +62,10 @@ The following diagram shows an example of a multitenant deployment by using the 
 3. The Tier-0 Gateway provides north-south routing capabilities and the access to {{site.data.keyword.cloud_notm}} private network is provided through its uplinks.
 4. The access to the private network is provided through private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. The routing to {{site.data.keyword.cloud_notm}} services uses these uplinks. The automation provisions the IP addresses to the uplinks from the {{site.data.keyword.cloud_notm}} managed 10/8 address space.
 5. If you provision your instance with public interfaces, the access to the public network is provided through public uplinks, which are attached to a portable subnet in a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The routing to the internet uses these uplinks, and the public IP addresses to the uplinks are provisioned by the automation.
-6. A single Tier-1 Gateway is provisioned for the workloads by the automation. You can use this topology and expand it by adding new Tier-1 Gateways. 
+6. A single Tier-1 Gateway is provisioned for the workloads by the automation. You can use this topology and expand it by adding new Tier-1 Gateways.
 7. You can add new tenant segments to the existing Tier-1 Gateway (or to the other Tier-1 Gateways provisioned by you). The route advertisements between T1 and T0 Gateways are fully customizable by you and is done by NSX. No routing protocol is required or used between T1 and T0 advertisements. You can control which routes are advertised to the Tier-0. You can also use NAT, for example, each Tier-1 Gateway can have one or more IP public addresses for inbound or outbound public traffic to be used for NAT.
 
-You can manually deploy edge nodes on the initial cluster for scalability, if needed. You can also manually deploy new edge clusters to host new Tier-1 Gateways. 
+You can manually deploy edge nodes on the initial cluster for scalability, if needed. You can also manually deploy new edge clusters to host new Tier-1 Gateways.
 {: note}
 
 Tier-0 Gateways support VRF lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. Refer to VMware documentation for more details on capabilities and limitations.
@@ -85,4 +85,4 @@ Most of the content in the VMware NSX design guides and documentation can be app
 {: #arch-pattern-overlays-single-site-links}
 
 * [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}
-* [NSX Reference Design Guide](https://nsx.techzone.vmware.com/resource/nsx-reference-design-guide){: external}
+* [VMware NSX Reference Design Guide](https://www.vmware.com/docs/nsx-t-reference-design-guide-3-2-v1.1-1){: external}

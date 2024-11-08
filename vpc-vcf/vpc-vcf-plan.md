@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-08-16"
+lastupdated: "2024-11-08"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -46,6 +46,7 @@ The ESXi servers in {{site.data.keyword.vcf-vpc-short}} are built on Bare Metal 
 The following bare metal profiles are supported:
 * `bx2d-metal-96×384`
 * `mx2d-metal-96x768`
+
 
 For more information about {{site.data.keyword.vpc_short}} bare metal servers by region, see [Profile configurations](/docs/vpc?topic=vpc-bare-metal-servers-profile&interface=ui#bare-metal-servers-profile-list) and [Generation 2 (x2 and x2d) bare metal profiles availability by region](/docs/vpc?topic=vpc-bare-metal-servers-profile&interface=ui#bare-metal-profile-availability-by-region).
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-11-07"
 
 subcollection: vmwaresolutions
 
@@ -48,4 +48,4 @@ The following table lists ports that must be opened so that Hybrid Cloud Service
 ## Related links
 {: #hcx-archi-port-req-related}
 
-* [VMware HCX ports and protocols](https://ports.esp.vmware.com/home/VMware-HCX){: external}
+* [VMware HCX ports and protocols](https://ports.broadcom.com/home/VMware-HCX){: external}

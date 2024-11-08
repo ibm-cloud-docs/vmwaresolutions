@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-10-25"
+lastupdated: "2024-11-07"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -28,7 +28,7 @@ Adding clusters to instances with VMware vSphere® 6.5 or 6.7 is not supported.
 {{site.data.content.para-vcenteraddclusters}}
 
 * New clusters are provisioned with mirrored M.2 boot drives.
-* The number of clusters, hosts, and virtual machines (VMs) determines the maximum number of clusters that you can add. Remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware configuration maximums](https://configmax.esp.vmware.com/home){: external}.
+* The number of clusters, hosts, and virtual machines (VMs) determines the maximum number of clusters that you can add. Remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware configuration maximums](https://configmax.broadcom.com/home){: external}.
 * You can add a cluster while another cluster is being created or deleted.
 * For clusters that belong to vCenter Server 8 instances, you can select a vSphere version.
 

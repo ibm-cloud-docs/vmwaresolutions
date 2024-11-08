@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-11-07"
 
 subcollection: vmwaresolutions
 
@@ -162,5 +162,5 @@ Most of the content in the VMware NSX-T Design Guides and documentation can be a
 {: #v2t-example-overlays-links}
 
 * [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}
-* [NSX-T reference design guide 3-0](https://nsx.techzone.vmware.com/resource/nsx-reference-design-guide){: external}
+* [VMware NSX reference design guide 3.2](https://www.vmware.com/docs/nsx-t-reference-design-guide-3-2-v1.1-1){: external}
 * [NSX-T Multi-Location Design Guide (Federation + Multisite)](https://community.broadcom.com/viewdocument/nsx-t-multi-location-design-guide?CommunityKey=b76535ef-c5a2-474d-8270-3e83685f020e&tab=librarydocuments){: external}
