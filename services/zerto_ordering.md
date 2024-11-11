@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-25"
+lastupdated: "2024-11-11"
 
 keywords: Zerto, Zerto replication billing, order Zerto
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 You can include the Zerto service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
-Zerto v9.5u1 does not support VMware vSphere 6.5 and 6.7. However, you can still order stand-alone licenses for existing instances with vSphere 6.x.
+Zerto v9.5u1 is not supported for instances with VMware vSphere 6.5 and 6.7. However, you can still order stand-alone licenses for existing instances with vSphere 6.x.
 {: restriction}
 
 ## Billing for Zerto replication
