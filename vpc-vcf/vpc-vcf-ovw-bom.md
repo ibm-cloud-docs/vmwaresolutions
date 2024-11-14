@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-11-13"
 
 keywords: vmware cloud foundation BOM, bill of materials vmware cloud foundation, BOM
 
@@ -48,6 +48,8 @@ Review the BOM information for {{site.data.keyword.vcf-vpc-short}} software comp
 | VMware NSX-T | 4.1.2.3 | 23382408 |
 | VMware Aria® Suite Lifecycle Manager | 8.16 | 23377566 |
 {: caption="BOM for software components in {{site.data.keyword.vcf-vpc-short}} instances" caption-side="bottom"}
+
+
 
 ## Network MTU configuration settings
 {: #vpc-vcf-ovw-bom-mtu-config}
