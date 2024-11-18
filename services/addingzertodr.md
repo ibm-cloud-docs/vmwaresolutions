@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-11-08"
+lastupdated: "2024-11-18"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -31,8 +31,6 @@ Zerto is supported on {{site.data.keyword.vcf-auto}} instances that meet the fol
 The Zerto version available for deployment is 9.7u4.
 {: note}
 
-
-
 ## Before you begin
 {: #addingzertodr-req}
 
@@ -48,13 +46,13 @@ The following components are ordered and included in the Zerto service.
 Zerto Virtual Replication Appliance (VRA) components are deployed only into the default cluster.
 {: note}
 
-### Virtual Service Instances 
+### Virtual Service Instances
 {: #addingzertodr-specs-vsi}
 
 * One Virtual Service Instance (VSI) - Zerto Virtual Manager
 * 2 x 2.0 GHz cores
 * 4 GB RAM
-* Windows Server 2019 Standard Edition (64-bit)
+* Windows® Server 2019 Standard Edition (64-bit)
 
 ### Storage
 {: #addingzertodr-specs-storage}
@@ -64,10 +62,13 @@ Zerto Virtual Replication Appliance (VRA) components are deployed only into the 
 ### Zerto Networking
 {: #addingzertodr-specs-network}
 
-* VSI 
+
+* VSI
    * One primary private IP address
    * 1 Gbps private network uplink
 * Virtual replication appliances (VRAs) - One private portable subnet for VRA deployment
+
+
 
 The Zerto service is not configured with an {{site.data.keyword.cloud_notm}} infrastructure portable IP address or with a NAT connection to the public network, even if you have public interfaces in your instance. This implementation helps to avoid the possibility of asymmetric routing when it uses a network gateway appliance.
 
@@ -78,7 +79,7 @@ For more information, see [Considerations for ordering Zerto](/docs/vmwaresoluti
 ### Licenses and fees
 {: #addingzertodr-specs-licenses}
 
-Zerto Replication version 9.7u4 license.
+Zerto Replication version 9.7u4 license. 
 
 ## Related links
 {: #addingzertodr-related}
