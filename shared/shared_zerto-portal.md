@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-05-21"
+lastupdated: "2024-11-18"
 
 keywords: zerto, zerto self-service portal, zerto portal access procedure
 
