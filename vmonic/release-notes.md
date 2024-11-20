@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-11-18"
+lastupdated: "2024-11-20"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -26,6 +26,13 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 {: #year-2024}
 
 
+
+### 20 November 2024
+{: #vmwaresolutions-nov2024}
+{: release-note}
+
+VCF 5.2.1 for VMware Cloud Foundation for VPC instances
+:   VMware Cloud Foundation 5.2.1 is offered for all VCF for VPC instances. The configuration with VMware vSphere® 8 and VMware vSAN ESA (Express Storage Architecture) on Intel Sapphire Rapids Generation 3 bare metal profiles is available only in the Sao Paulo region.
 
 ### 9 October 2024
 {: #vmwaresolutions-oct0924}
@@ -291,7 +298,7 @@ New documentation
 {: release-note}
 
 VMware Cloud Foundation
-:   (Updated on 3 November 2023) The {{site.data.keyword.cloud}} for VMware Cloud Foundation offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Edition. It delivers compute, storage, networking, management automation, and security in a single platform on {{site.data.keyword.bm_is_full_notm}} (VPC). For more information, see [Cloud Foundation overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw).
+:   (Updated on 3 November 2023) The {{site.data.keyword.cloud}} for VMware Cloud Foundation offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Edition. It delivers compute, storage, networking, management automation, and security in a single platform on {{site.data.keyword.bm_is_full_notm}} (VPC).
 
 VMware Cloud Foundation BOM updates
 :   (Updated on 17 November 2023) The following updates are applied to newly deployed instances:
@@ -303,7 +310,7 @@ VMware Cloud Foundation BOM updates
    * VMware Aria Suite Lifecycle Manager 8.12.0.9 (build 22652426)
 
 VMware vSphere Day 2 updates
-:   You can now choose a new bare metal server configuration when you add a host to your existing instances. For more information, see [Adding ESXi servers to VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_addingservers#vs_addingservers-procedure).
+:   You can now choose a new bare metal server configuration when you add a host to your existing instances.
 
 vCenter Server and VMware vSphere BOM updates
 :   The following update is applied to newly deployed instances, clusters, and hosts:
@@ -332,7 +339,7 @@ User interface updates and enhancements
    * For gateway and edge clusters, the uplink speed setting is now included in the **CPU model** table when you choose your servers.
 
 New documentation
-:   The Veeam backup guide provides information about expanding backup storage as a day-2 operation, the deployment of proxy and repository servers, and recommendations for sizing and performance. For more information, see [Veeam backup guide](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_cloud_vmware).
+:   The Veeam backup guide provides information about expanding backup storage as a day-2 operation, the deployment of proxy and repository servers, and recommendations for sizing and performance.
 
 ### 24 August 2023
 {: #vmwaresolutions-aug2423}
@@ -364,7 +371,7 @@ FortiGate Virtual Appliance v7.4
 :   The FortiGate Virtual Appliance v7.4 add-on service is available for deployment.
 
 Name change for PrimaryIO
-:   The PrimaryIO add-on service name is changed to PrimaryIO Migrations and its [About](/infrastructure/vmware-solutions/console/newserviceentry/PIO/vcs) page is updated with the most recent feature information.
+:   The PrimaryIO add-on service name is changed to PrimaryIO Migrations and its About page is updated with the most recent feature information.
 
 User interface updates and enhancements
 :   The UI is updated with various messages and tooltips, and provides the following enhancements:
@@ -375,7 +382,7 @@ User interface updates and enhancements
 New and updated documentation
 :   The following updates are available:
 
-   * The [VMware Shared metrics](/docs/vmwaresolutions?topic=vmwaresolutions-shared-monitor#shared-monitor-metrics) are updated with metadata details.
+   * The VMware Shared metrics are updated with metadata details.
    * New documentation is available to assist with expanding ordered endurance storage after ordering the Veeam add-on service.
 
 ### 5 July 2023

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-11-13"
+lastupdated: "2024-11-20"
 
 keywords: vmware cloud foundation BOM, bill of materials vmware cloud foundation, BOM
 
@@ -40,16 +40,17 @@ Review the BOM information for {{site.data.keyword.vcf-vpc-short}} software comp
 
 | Component | Version | Build number |
 | --------- | ------- | ------------ |
-| Cloud Builder VM | 5.1.1 | 23480823 |
-| SDDC Manager | 5.1.1 | 23480823 |
-| VMware vCenter Server Appliance | 8.0 Update 3b | 24262322 |
-| VMware ESXi | 8.0 Update 2b | 23305546 |
-| VMware Virtual SAN Witness Appliance | 8.0 Update 2 | 22443122 |
-| VMware NSX-T | 4.1.2.3 | 23382408 |
-| VMware Aria® Suite Lifecycle Manager | 8.16 | 23377566 |
+| Cloud Builder VM | 5.2.1 | 24307856 |
+| SDDC Manager | 5.2.1 | 24307856 |
+| VMware vCenter Server Appliance | 8.0 Update 3c | 24305161 |
+| VMware ESXi | 8.0 Update 3b | 24280767 |
+| VMware Virtual SAN Witness Appliance | 8.0 Update 3b | 24280767 |
+| VMware NSX-T | 4.2.1 | 24304122 |
+| VMware Aria® Suite Lifecycle Manager | 8.18 | 24029603 |
 {: caption="BOM for software components in {{site.data.keyword.vcf-vpc-short}} instances" caption-side="bottom"}
 
-
+If you are provisioning VMware Aria® Suite components with Lifecycle Manager, see [VMware Product Interoperability Matrix](https://interopmatrix.vmware.com/Interoperability){: external} for detailed product and version support information for the specific Aria Suite components that you need. For more information, see [Deploying VMware validated solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-deploy-vvs).
+{: note}
 
 ## Network MTU configuration settings
 {: #vpc-vcf-ovw-bom-mtu-config}

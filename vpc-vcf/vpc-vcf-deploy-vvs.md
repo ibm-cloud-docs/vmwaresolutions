@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-11-13"
+lastupdated: "2024-11-20"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -21,6 +21,15 @@ subcollection: vmwaresolutions
 A VMware validated solution is a technically validated implementation that is built and tested by VMware and VMware partners to help you resolve common business use cases. VMware validated solutions are operational, cost-effective, performant, reliable, and secure.
 
 Each solution contains a detailed design, implementation, and operational guidance. The following information provides a summary of the validated solutions on your {{site.data.keyword.vcf-vpc}} instance with some {{site.data.keyword.cloud}} specific design and installation considerations and notes.
+
+If you are provisioning VMware Aria® Suite components with Lifecycle Manager, review the following changes for VMware Aria® Suite v8.18 and later.
+{: important}
+
+1. You must download all product support packs and their product and patch binary files from the [Broadcom Support Portal](https://support.broadcom.com/web/ecx){: external}. To do that, contact {{site.data.keyword.cloud_notm}} Support and provide the list of binary files that you need with their version details. For more information about product and version support, see [VMware Product Interoperability Matrix](https://interopmatrix.vmware.com/Interoperability){: external}.
+
+2. Before you deploy the Aria Suite Lifecycle components to Lifecycle Manager, upload the binary files provided by {{site.data.keyword.cloud_notm}} Support.
+
+3. In VMware Aria Suite Lifecycle, map the binary files to each VMware Aria Suite product. For more information, see [Configure product binaries](https://docs.vmware.com/en/VMware-Aria-Suite-Lifecycle/8.18/lifecycle-install-upgrade-manage/GUID-2C93EB0A-055C-4897-A764-77FC73EFE992.html){: external}.
 
 ## Identity and Access Management for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-deploy-vvs-iam}

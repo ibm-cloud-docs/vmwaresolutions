@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-10-22"
+lastupdated: "2024-11-20"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -42,7 +42,7 @@ For the 1-year or 3-year subscription, use [this form](https://www.ibm.com/accou
 ### VMware Cloud Foundation version
 {: #vpc-vcf-ordering-version}
 
-VMware Cloud Foundation™ 5.1.1 is installed on your {{site.data.keyword.vcf-vpc-short}} instance. For more information, see [Software BOM for {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw-bom#vpc-vcf-ovw-bom-software).
+VMware Cloud Foundation™ 5.2.1 is installed on your {{site.data.keyword.vcf-vpc-short}} instance. For more information, see [Software BOM for {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw-bom#vpc-vcf-ovw-bom-software).
 
 ### Architecture
 {: #vpc-vcf-ordering-archi}

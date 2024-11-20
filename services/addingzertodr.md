@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-11-18"
+lastupdated: "2024-11-19"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -30,6 +30,8 @@ Zerto is supported on {{site.data.keyword.vcf-auto}} instances that meet the fol
 
 The Zerto version available for deployment is 9.7u4.
 {: note}
+
+
 
 ## Before you begin
 {: #addingzertodr-req}
