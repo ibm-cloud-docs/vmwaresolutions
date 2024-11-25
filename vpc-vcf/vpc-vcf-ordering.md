@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-11-20"
+lastupdated: "2024-11-21"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -105,7 +105,7 @@ The management domain is the first domain that is deployed in a {{site.data.keyw
 
 By default, an {{site.data.keyword.cloud_notm}} DNS service is ordered and a DNS zone and DNS records are created for all VMware components in the selected {{site.data.keyword.vpc_short}} zone.
 The root domain name must meet the following requirements:
-   * The domain name must consist of three or more strings that are separated by a period (.) with a maximum of 50 characters.
+   * The domain name must consist of two or more strings that are separated by a period (.) with a maximum of 15 characters.
    * The first string (NetBIOS name) must start with a lowercase alphabetic character and end with a lowercase alphabetic or numeric character. It must not exceed 15 characters.
    * All strings, except for the last one, can contain only lowercase alphabetic, numeric, and hyphen (-) characters.
    * No consecutive hyphens are allowed.
