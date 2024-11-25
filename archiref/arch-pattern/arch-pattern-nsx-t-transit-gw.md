@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-03"
+lastupdated: "2024-11-25"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for using Transit Gateway with a vCenter Server with NSX instance
 {: #arch-pattern-nsx-t-transit-gw}
 
-This architecture pattern presents hybrid cloud connectivity by using [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-about). This solution is applicable for NSX based {{site.data.keyword.vcf-auto-short}} instance, which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. This pattern requires a [gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about) or [gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addl-clusters#vc_orderinginstance-addl-clusters-gate) with Juniper vSRX or other third-party device, which supports GRE. Ad of NSX 4.1, you can also use GRE tunnels with NSX. In this example, GRE tunnel is established between vSRX and a Transit GW Router in a specific Zone. NSX T0 advertises routes through vSRX (or other device) to Transit Gateway.
+This architecture pattern presents hybrid cloud connectivity by using [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-about). This solution is applicable for VMware NSX-based {{site.data.keyword.vcf-auto-short}} instance, which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. This pattern requires a [gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about) or [gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addl-clusters#vc_orderinginstance-addl-clusters-gate) with Juniper vSRX or other third-party device, which supports GRE. For NSX 4.1 and later, you can also use GRE tunnels with NSX. In this example, GRE tunnel is established between vSRX and a Transit GW Router in a specific Zone. NSX T0 advertises routes through vSRX (or other device) to Transit Gateway.
 
 ## Deploying Transit Gateway with vCenter Server and NSX
 {: #arch-pattern-nsx-t-transit-gw-overview}

@@ -31,7 +31,7 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 {: #vmwaresolutions-nov2024}
 {: release-note}
 
-VCF 5.2.1 for VMware Cloud Foundation for VPC instances
+VCF 5.2.1 for VMware Cloud Foundation for VPC
 :   VMware Cloud Foundation 5.2.1 is offered for all VCF for VPC instances. The configuration with VMware vSphere® 8 and VMware vSAN ESA (Express Storage Architecture) on Intel Sapphire Rapids Generation 3 bare metal profiles is available only in the Sao Paulo region.
 
 ### 9 October 2024
@@ -50,7 +50,7 @@ BOM updates for {{site.data.keyword.vcf-classic-short}}
 {: release-note}
 
 Veeam 12.2 add-on service upgrade
-:   Veeam® Backup and Replication 12.2 (Veeam 12.2) add-on service is now available for deployment.
+:   Veeam® Backup and Replication 12.2 (Veeam 12.2) add-on service is available for deployment.
 
 ### 13 September 2024
 {: #vmwaresolutions-sep1324}
@@ -264,7 +264,7 @@ vCenter Server and VMware vSphere BOM updates
    * VMware NSX 4.1.0.2 (build 21761695)
 
 Active Directory server OS upgrade
-:   To upgrade your Microsoft® Active Directory™ server, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support#trbl_support-procedure). Before you proceed with a new server installation, ensure that you back up all domain controllers and vCenter Server instances.
+:   To upgrade your Microsoft Active Directory™ server, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support#trbl_support-procedure). Before you proceed with a new server installation, ensure that you back up all domain controllers and vCenter Server instances.
 
 Add-on services upgrades
 :   The following service versions are now available for deployment:
@@ -335,7 +335,7 @@ User interface updates and enhancements
 
    * The **VMware instance configuration manager** is enhanced with extra details and tooltips to differentiate and help you choose from the available saved configurations.
    * The checkbox **Maintenance mode** in the **Add ESXi server** window is changed to a switch, for consistency with other similar UI options.
-   * The contents of the **Add ESXi server** and **Add NFS storage** windows is better structured and organized for a more streamlined user experience.
+   * The contents of the **Add ESXi server** and **Add NFS storage** panels is better structured and organized for a more streamlined user experience.
    * For gateway and edge clusters, the uplink speed setting is now included in the **CPU model** table when you choose your servers.
 
 New documentation
