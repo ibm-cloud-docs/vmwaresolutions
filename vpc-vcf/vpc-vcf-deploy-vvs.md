@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-11-20"
+lastupdated: "2024-11-26"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -25,7 +25,7 @@ Each solution contains a detailed design, implementation, and operational guidan
 If you are provisioning VMware Aria® Suite components with Lifecycle Manager, review the following changes for VMware Aria® Suite v8.18 and later.
 {: important}
 
-1. You must download all product support packs and their product and patch binary files from the [Broadcom Support Portal](https://support.broadcom.com/web/ecx){: external}. To do that, contact {{site.data.keyword.cloud_notm}} Support and provide the list of binary files that you need with their version details. For more information about product and version support, see [VMware Product Interoperability Matrix](https://interopmatrix.vmware.com/Interoperability){: external}.
+1. You must download all product support packs and their product and patch binary files from the [Broadcom Support Portal](https://support.broadcom.com/web/ecx){: external}. To do that, contact {{site.data.keyword.cloud_notm}} Support and provide the list of binary files that you need with their version details. For more information about product and version support, see [VMware Product Interoperability Matrix](https://interopmatrix.broadcom.com/Interoperability){: external}.
 
 2. Before you deploy the Aria Suite Lifecycle components to Lifecycle Manager, upload the binary files provided by {{site.data.keyword.cloud_notm}} Support.
 

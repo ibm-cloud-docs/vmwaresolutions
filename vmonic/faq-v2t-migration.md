@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-05-17"
+lastupdated: "2024-11-26"
 
 subcollection: vmwaresolutions
 
@@ -69,7 +69,7 @@ Instances with {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 
 
 {{site.data.keyword.cloud_notm}} recommends an upgrade to vSphere 7.x. If you ordered your servers from the Bare metal catalog for {{site.data.keyword.cloud_notm}} Classic Infrastructure, you have the following options.
 
-* Check whether your server and its hardware options are compatible with vSphere 7.0. For more information, see [VMware compatibility guide](https://www.vmware.com/resources/compatibility/search.php){: external}. Alternatively, if you are running vCenter, you can upgrade your vCenter, set up vSphere Update Manager (VUM) or vSphere Lifecycle Manager, and run Hardware Compatibility Checks for the upgrade.
+* Check whether your server and its hardware options are compatible with vSphere 7.0. For more information, see [Broadcom Compatibility Guide](https://compatibilityguide.broadcom.com/){: external}. Alternatively, if you are running vCenter, you can upgrade your vCenter, set up vSphere Update Manager (VUM) or vSphere Lifecycle Manager, and run Hardware Compatibility Checks for the upgrade.
 * Order new {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 7.x from the Bare metal catalog for {{site.data.keyword.cloud_notm}} Classic Infrastructure or from the VMware Solutions console, the {{site.data.keyword.vcf-flex}} offering. Configure your vSphere host and vCenter Server and migrate the workloads. After the workloads are migrated, you can remove the VMware ESXi™ hosts from vCenter Server and decommission the old servers through the {{site.data.keyword.cloud_notm}} portal. 
 
 ## I have an old VMware vSphere instance, {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 6.5 or 6.7, and the support is ending. I am not using NSX for my workloads. What do I need to do to keep the environment supported, and what options do I have?
@@ -81,7 +81,7 @@ Instances with {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 
 
 {{site.data.keyword.cloud_notm}} recommends an upgrade to vSphere 7.x. If you ordered your servers from the VMware Solutions console, you have the following options.
 
-* Check whether your server and its hardware options are compatible with vSphere 7.0. For more information, see [VMware compatibility guide](https://www.vmware.com/resources/compatibility/search.php){: external}. Alternatively, you can upgrade your vCenter Server, set up vSphere Update Manager (VUM) or vSphere Lifecycle Manager, and run hardware compatibility checks for the upgrade.
+* Check whether your server and its hardware options are compatible with vSphere 7.0. For more information, see [Broadcom Compatibility Guide](https://compatibilityguide.broadcom.com/){: external}. Alternatively, you can upgrade your vCenter Server, set up vSphere Update Manager (VUM) or vSphere Lifecycle Manager, and run hardware compatibility checks for the upgrade.
 * Order new {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 7.x from the VMware Solutions console, the {{site.data.keyword.vcf-flex}} offering. Configure your vSphere host and vCenter Server, and migrate the workloads. After the workloads are migrated, you can remove the ESXi hosts from vCenter and decommission the old servers from the {{site.data.keyword.cloud_notm}} portal. 
 
 ## I have an old vCenter Server with NSX-V instance, {{site.data.keyword.cloud_notm}} Bare Metal Servers with vSphere 6.5 or 6.7, and the support is ending. What do I need to do to keep the environment supported, and what options do I have?
@@ -98,7 +98,7 @@ To migrate from NSX-V to NSX-T (also called a V2T migration), {{site.data.keywor
 ## How do I know whether my {{site.data.keyword.cloud_notm}} bare metal server hardware is suitable for in-place vSphere 7.x upgrade?
 {: #faq-v2t-migration-7x-hw-support}
 
-You can check whether your server and its hardware options are compatible with vSphere 7.x. For more information, see [VMware compatibility guide](https://www.vmware.com/resources/compatibility/search.php){: external}.
+You can check whether your server and its hardware options are compatible with vSphere 7.x. For more information, see [Broadcom Compatibility Guide](https://compatibilityguide.broadcom.com/){: external}.
 
 Alternatively, you can upgrade your vCenter, set up vSphere Update Manager (VUM) or vSphere Lifecycle Manager, and run Hardware Compatibility Checks for the upgrade.
 

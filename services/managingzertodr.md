@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-10-06"
+lastupdated: "2024-11-26"
 
 keywords: Zerto certificate, Zerto config, update Zerto replication
 
@@ -19,6 +19,7 @@ subcollection: vmwaresolutions
 {: #managingzertodr}
 
 After the Zerto service is deployed into your instance, you can configure or update Zerto Virtual Replication. You can also deploy more Virtual Replication Appliances to newly added VMware® ESXi™ servers.
+
 
 ## Using your own certificate for Zerto
 {: #managingzertodr-ssl-cert}
@@ -64,4 +65,3 @@ When you add or remove ESXi servers for the primary cluster of your instance, VR
 * [Managing Zerto stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
 * [Zerto product documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}
 * [Zerto disaster recovery](https://www.zerto.com/solutions/use-cases/disaster-recovery/){: external}
-

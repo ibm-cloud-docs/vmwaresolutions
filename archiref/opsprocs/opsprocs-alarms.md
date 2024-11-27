@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-11-26"
 
 subcollection: vmwaresolutions
 
@@ -108,7 +108,7 @@ The following table describes the standard preconfigured alarms.
 | Host connection and power state | Configure to send an email one time when set to Not Responding or Standby. | ["Host connection and power state" alarm when an ESXi host wakes from standby](https://knowledge.broadcom.com/external/article?articleNumber=322793){: external} |
 | Host CPU usage | Configure to send an email one time when host CPU usage > 90% for 5 mins. | [Knowledge - KB0012707 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=342e3d6adbc5730030c93a1b7c961976){: external} |
 | Host memory usage | Configure to send an email one time when host memory usage > 95% for 5 mins. | [Knowledge - KB0012712 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=30110ee2db49730030c93a1b7c96194f){: external} |
-| Virtual machine CPU usage | Configure to send an email one time when VM CPU usage > 90% for 5 mins for critical appliances. | [Virtual machine CPU usage alarm (2057830)](https://knowledge.broadcom.com/external/article?legacyId=2057830){: external} |
+| Virtual machine CPU usage | Configure to send an email one time when VM CPU usage > 90% for 5 mins for critical appliances. | [Creating an alarm for specific virtual machines](https://knowledge.broadcom.com/external/article?articleNumber=308798){: external} |
 | Virtual machine memory usage | Configure to send an email one time when VM memory usage > 95% for 5 mins for critical appliances. | [Memory usage alarm triggers for certain types of Virtual Machines in ESXi](https://knowledge.broadcom.com/external/article?articleNumber=318857){: external} |
 | Datastore usage on disk | For vSAN, configure to send email one time when datastore usage > 70%. For non-vSAN, configure to send email one time when datastore usage > 85%. | [Knowledge - KB0012713 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=ddb3422edb89730030c93a1b7c9619f6){: external} |
 | Virtual machine CPU ready | Configure to send email one time when VM CPU ready > 2000 ms for 5 mins for critical appliances. | [Knowledge - KB0012718 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=7056426adb0d730030c93a1b7c9619e6){: external} |
@@ -168,8 +168,8 @@ The following table describes the standard preconfigured alarms.
 | Virtual machine Consolidation Needed status | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Using Snapshots To Manage Virtual Machines](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-CA948C69-7F58-4519-AEB1-739545EA94E5.html){: external} |
 | Host virtual flash resource status | Host virtual flash is not supported in {{site.data.keyword.vcf-auto-short}} instances. | No additional information |
 | Host virtual flash resource usage | Not configured in {{site.data.keyword.vcf-auto-short}} instances as they do not support host virtual flash. | [About Virtual Flash Resource](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-E69F0809-3B19-483A-B906-4CE397CE56D6.html){: external} |
-| Registration or unregistration of a VASA vendor provider on a vSAN host fails | Not configured in {{site.data.keyword.vcf-auto-short}} instances as they do not support VASA storage. | [VMware compatibility guide](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=vasa){: external} |
-| Registration or unregistration of third-party IO filter storage providers fails on a host | Not configured in {{site.data.keyword.vcf-auto-short}} instances as they do not support VASA storage. | [VMware compatibility guide](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=vasa){: external} |
+| Registration or unregistration of a VASA vendor provider on a vSAN host fails | Not configured in {{site.data.keyword.vcf-auto-short}} instances as they do not support VASA storage. | [Broadcom Compatibility Guide](https://compatibilityguide.broadcom.com/search?program=vasa&persona=live){: external} |
+| Registration or unregistration of third-party IO filter storage providers fails on a host | Not configured in {{site.data.keyword.vcf-auto-short}} instances as they do not support VASA storage. | [Broadcom Compatibility Guide](https://compatibilityguide.broadcom.com/search?program=vasa&persona=live){: external} |
 | Service Control Agent Health Alarm | Configure to send an email one time when component ID equal to sca and New status equal to red. | [How to stop, start, or restart vCenter Server 6.x services (2109881)](https://knowledge.broadcom.com/external/article?legacyId=2109881){: external} |
 | Identity Health Alarm | Configure to send an email one time when component ID equal to identity and New status equal to red. | [How to stop, start, or restart vCenter Server 6.x services (2109881)](https://knowledge.broadcom.com/external/article?legacyId=2109881){: external} |
 | vSphere Web Client Health Alarm | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Enabling debug logging on the VMware vSphere 5.x/6.x Web Client service (2011485)](https://knowledge.broadcom.com/external/article?legacyId=2011485){: external} |

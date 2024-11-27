@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-11-04"
+lastupdated: "2024-11-26"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 VMware vSphere® is a streamlined and optimized ordering platform for VMware®. With this platform, you can build your own {{site.data.keyword.IBM}}-hosted VMware environment by customizing and ordering the VMware-compatible hardware based on your selected VMware components.
 {: shortdesc}
 
-The {{site.data.keyword.vmwaresolutions_full}} console filters the hardware automatically, based on the VMware components that you select. For example, when you create a new all-flash VMware vSAN™ cluster, only the hardware that is validated against the [VMware compatibility guide](https://www.vmware.com/resources/compatibility/search.php){: external} is presented.
+The {{site.data.keyword.vmwaresolutions_full}} console filters the hardware automatically, based on the VMware components that you select. For example, when you create a new all-flash VMware vSAN™ cluster, only the hardware that is validated against the [Broadcom Compatibility Guide](https://compatibilityguide.broadcom.com/){: external} is presented.
 
 {{site.data.keyword.vcf-flex}} does not automate the installation, configuration, and bring-up of the optional VMware components. The platform allows maximum of flexibility to design and build your hosted VMware environment while you incorporate VMware-compatible hardware.
 

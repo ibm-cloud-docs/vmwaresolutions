@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-11-20"
+lastupdated: "2024-11-26"
 
 keywords: vmware cloud foundation BOM, bill of materials vmware cloud foundation, BOM
 
@@ -49,7 +49,7 @@ Review the BOM information for {{site.data.keyword.vcf-vpc-short}} software comp
 | VMware Aria® Suite Lifecycle Manager | 8.18 | 24029603 |
 {: caption="BOM for software components in {{site.data.keyword.vcf-vpc-short}} instances" caption-side="bottom"}
 
-If you are provisioning VMware Aria® Suite components with Lifecycle Manager, see [VMware Product Interoperability Matrix](https://interopmatrix.vmware.com/Interoperability){: external} for detailed product and version support information for the specific Aria Suite components that you need. For more information, see [Deploying VMware validated solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-deploy-vvs).
+If you are provisioning VMware Aria® Suite components with Lifecycle Manager, see [VMware Product Interoperability Matrix](https://interopmatrix.broadcom.com/Interoperability){: external} for detailed product and version support information for the specific Aria Suite components that you need. For more information, see [Deploying VMware validated solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-deploy-vvs).
 {: note}
 
 ## Network MTU configuration settings
