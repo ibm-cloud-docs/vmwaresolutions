@@ -139,7 +139,7 @@ This design also installs:
 * VMware NSX for vSphere
 * VMware Aria Operations™ for Networks
 
-Other content packs can be obtained from [VMware Solution Exchange](https://marketplace.cloud.vmware.com/){: external}.
+Other content packs can be obtained from [VMware Marketplace](https://vcf.broadcom.com/vsc/){: external}.
 
 The VMware Aria Operations for Logs content pack for NSX-T™ provides more dashboards for viewing log information. For more information, see the VMware documentation about installing the content pack for NSX-T.
 
