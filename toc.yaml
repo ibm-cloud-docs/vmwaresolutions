@@ -402,7 +402,7 @@ toc:
           label: Observability
           topics:
           - topicgroup:
-              label: Activity Tracker events
+              label: Activity tracking events
               topics:
               - include: ../vmware-service/common/vmaas-at-events.md
               - vmonic/at-events.md
