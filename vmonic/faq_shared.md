@@ -125,7 +125,7 @@ Other than the IP addresses used for internet access on each customer ESG, you c
 {: #faq-customimage}
 {: faq}
 
-Yes. VMware Cloud Director supports the same set of guest operating systems as VMware vSphere® 6.7. For more information, see [VMware Guest OS Compatibility Guide](https://www.vmware.com/resources/compatibility/pdf/VMware_GOS_Compatibility_Guide.pdf){: external}.
+Yes. VMware Cloud Director supports the same set of guest operating systems as VMware vSphere® 6.7. For more information, see [VMware Guest OS Compatibility Guide](https://compatibilityguide.broadcom.com/search?program=software&persona=live&column=osVendors&order=asc){: external}.
 
 {{site.data.keyword.vm-shared}} provides Microsoft® Windows® server 2016/2019 templates. You can provide your own image to run other versions.
 
