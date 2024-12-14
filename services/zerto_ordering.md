@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-11-18"
+lastupdated: "2024-12-10"
 
 keywords: Zerto, Zerto replication billing, order Zerto
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 You can include the Zerto service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
-Zerto v9.5u1 is not supported for instances with VMware vSphere 6.5 and 6.7. However, you can still order stand-alone licenses for existing instances with vSphere 6.x.
+Zerto version 9.5u1 and later are not supported for instances with VMware vSphere 6.5 and 6.7. However, you can still order stand-alone licenses for existing instances with vSphere 6.x.
 {: restriction}
 
 ## Billing for Zerto replication
@@ -61,9 +61,9 @@ If you add Zerto to a {{site.data.keyword.vcf-auto-short}} instance that has a V
 
 When you deploy Zerto, you must configure your own proxy or NAT connection to the public network.
 
-Within 15 days, you must configure the Call Home feature for Zerto. If you do not complete the configuration in this time frame, Zerto blocks certain management activities.
-
-
+Within 15 days, you must configure the Call Home feature for Zerto. If you do not complete the configuration in this time frame, the following issues might happen:
+* Zerto blocks certain management activities.
+* You are charged for a full month of usage.
 
 For more information about Zerto Call Home, see [How to configure Zerto Reporting for Enterprise environments (Call Home)](https://help.zerto.com/kb/000004824){: external}.
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-11-04"
+lastupdated: "2024-12-10"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Upgrading to vCenter Server 8.0
+# Migrating to vSphere 8.0
 {: #vc_vcs_80_upgrade}
 
 You can upgrade the VMware vCenter Server® software on your instances to version 8.0. After that, you can migrate your NFS and gateway clusters to VMware vSphere® 8.0.
@@ -26,7 +26,7 @@ You can upgrade the VMware vCenter Server® software on your instances to versio
 {{site.data.content.para-vcs80upgrade-prereq}}
 
 Complete the following requirements before you begin the upgrade:
-
+* Before you upgrade vCenter Server, you might need to upgrade VMware NSX®. You are responsible to determine the interoperability requirements for all of your software, including all VMware software and third-party software. For more information about VMware interoperability, see [Product interoperability matrix](https://sim.esp.spespg1.vmw.saas.broadcom.com/Interoperability){: external}.
 * Open a support ticket with the {{site.data.keyword.vmwaresolutions_full}} team to notify them that an upgrade is being planned. The ticket remains open until the instance is registered at the upgraded level in the {{site.data.keyword.vmwaresolutions_short}} console.
 * Verify that the vCenter Server `root` user ID and its credentials are visible on the console. If your instance was initially ordered in a VMware Solutions environment V2.5 to V5.7, only the `customerroot` account is visible on the console. For instances, clusters, hosts, and vCenter Server VMs ordered in VMware Solutions V5.7 and later, the `customerroot` user is no longer created by the VMware Solutions automation.
 * If you encounter a problem during the upgrade process, use the {{site.data.keyword.vmwaresolutions_short}} upgrade ticket that you opened at the beginning of the process to contact IBM Support. If required, IBM Support will open tickets with Broadcom Support.
@@ -111,11 +111,40 @@ If you have an NFS cluster with vSphere 7.0 and you want to migrate it to vSpher
 3. Put the vSphere 7.0 server into maintenance mode.
 4. Remove the vSphere 7.0 server from your cluster.
 
+### Procedure to upgrade the ESXi hosts (Sapphire Rapids only)
+{: #vc_vcs_80_upgrade-procedure-esxi-sapphire}
 
+1. From the vCenter Server user interface, go to **LCM menu > LifeCycle Manager**.
+2. Select **IMPORT ISO > IMPORT ISO**, and then the ISO file.
+3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
+4. For each host, choose the host in the vCenter browser tree. Then, select **update** (located in the far left in the main window).
+5. If the Zerto VRA is present on the host, put the host into maintenance mode first. Recent releases of Zerto stop the VRA, which otherwise would prevent the update.
+6. Complete the update.
+   1. [ATTACH] Baseline, select the previously created baseline.
+   2. Select Baseline and [REMEDIATE].
+7. Remediate each host in turn. After remediation, ensure to pull the host out of maintenance mode.
 
+There are several methods to upgrade your ESXi hosts. For more information, see [Overview of the ESXi Host Upgrade Process](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.esxi.upgrade.doc/GUID-FE668788-1F32-4CB2-845C-5547DD59EB48.html){: external}. If you need to access an ISO file or upgrade bundle as part of your selected method, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
+If the upgrade process fails immediately and the ``host cannot enter maintenance mode`` error message is displayed, shut down the Zerto ZVAs and try again. The ZVRA VMs automatically start as each server comes out of remediation. For more information about continuing Zerto replication during the upgrade process, see [How to Place a Host with an Associated VRA into Maintenance Mode](https://www.zerto.com/myzerto/knowledge-base/how-to-place-a-host-with-an-associated-vra-into-maintenance-mode/){: external}.
+{: note}
 
+### Upgrading vSphere licenses
+{: #vc_vcs_80_upgrade-procedure-licenses}
 
+After you upgrade the vSphere and ESXi hosts to vSphere 8, you must upgrade the licenses on the vSphere and the ESXi hosts. If you have a vSAN cluster, you must update the vSAN license. To obtain the new licenses for vSphere 8, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+
+#### Procedure to upgrade the vSAN cluster license
+{: #vc_vcs_80_upgrade-procedure-vsan-cluster-license}
+
+1. From the **Licenses** page, click **+ Add New Licenses**.
+2. Enter the new vSAN license keys in the **New Licenses** field. If you have multiple vSAN license keys, enter all the licenses in the **New Licenses** field, specify a name for each license, and then click **OK**.
+3. Complete the following steps from the **Assets** page.
+   1. Select **VSAN CLUSTERS**.
+   2. Select the vSAN cluster and click **Assign License**.
+   3. Select one of the new vSAN license keys and click **OK**.
+   4. Repeat this step for each vSAN cluster.
+4. From the **Licenses** page, select all the old vSAN cluster licenses and click **Remove Licenses**.
 
 ## Related links
 {: #vc_vcs_80_upgrade-related}

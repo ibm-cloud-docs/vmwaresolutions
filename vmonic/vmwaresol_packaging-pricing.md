@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-05-15"
+lastupdated: "2024-12-10"
 
 keywords: vmware solutions packaging, vmware solutions pricing, vmware solutions naming
 
@@ -72,7 +72,7 @@ You are entitled to the following VMware software products that are included in 
 For Tanzu Kubernetes Grid and for Data Services Manager, there might be a delay in providing the license keys.
 {: note}
 
-If you need access to a VMware software product or edition that you are entitled to with VMware Cloud Foundation, contact your IBM Business Partner representative or [IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+If you need access to a VMware software product or edition that you are entitled to with VMware Cloud Foundation, based on your procurement vehicle, contact your IBM Business Partner representative or IBM Sales representative.
 
 ## Related links
 {: #vmwaresol_packaging-pricing-related}

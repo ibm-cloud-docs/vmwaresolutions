@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-12-11"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -38,12 +38,11 @@ The following table details the BOM information for {{site.data.keyword.vcf-auto
 
 | Manufacturer | Component | Version |
 |:------------ |:--------- |:------- |
-| VMware® by Broadcom | vSphere ESXi | ESXi 8.0 Update 2b (build 23305546)[^esxi80] or \n ESXi 7.0 Update 3q (build 23794027)[^esxi70] or \n ESXi 6.7 (202403001)[^esxi67] |
+| VMware® by Broadcom | vSphere ESXi | ESXi 8.0 Update 3b (build 24280767)[^esxi80] or \n ESXi 7.0 Update 3q (build 23794027)[^esxi70] |
 | VMware by Broadcom | Distributed vSwitch | 8.0.0[^vcs-vsphere800] or 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660] |
-| VMware by Broadcom | vCenter Server Appliance | 8.0 Update 3b (24262322) or \n 7.0 Update 3s (24201990) |
+| VMware by Broadcom | vCenter Server Appliance | 8.0 Update 3d (24322831) or \n 7.0 Update 3t (24322018) |
 | VMware by Broadcom | vSAN[^vsan] | 7.0 Update 3l (21424296) |
-| VMware by Broadcom | NSX for vSphere[^nsxt] | 4.1.2.4 (23786733) |
-| VMware by Broadcom | NSX-V for vSphere[^nsxv] | 6.4.13 (19307994) |
+| VMware by Broadcom | NSX for vSphere | 4.1.2.4 (23786733) |
 | Microsoft® | Windows® Server Standard edition | 2019 |
 | Microsoft | Active Directory™ domain functional level | 2016 (WinThreshold)[^domain] |
 {: caption="BOM for the software components in Automated instances" caption-side="bottom"}
@@ -53,8 +52,6 @@ The following table details the BOM information for {{site.data.keyword.vcf-auto
 
 [^esxi70]: Applicable to vSphere 7
 
-[^esxi67]: Applicable to existing vSphere 6.7 hosts
-
 [^vcs-vsphere800]: Applicable to vSphere 8
 
 [^vcs-vsphere700]: Applicable to vSphere 7
@@ -62,10 +59,6 @@ The following table details the BOM information for {{site.data.keyword.vcf-auto
 [^vcs-vsphere660]: Applicable to existing vSphere 6.7 hosts
 
 [^vsan]: VMware vSAN is an optional component
-
-[^nsxt]: Applicable to NSX-T instances
-
-[^nsxv]: Applicable to existing NSX-V instances
 
 [^domain]: The domain functional level is set to 2016 for compatibility with an earlier version. For more information, see [Domain controllers](/docs/vmwaresolutions?topic=vmwaresolutions-adds-infra-domain#adds-infra-domain-controllers).
 

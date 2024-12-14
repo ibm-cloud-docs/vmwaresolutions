@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-11-07"
+lastupdated: "2024-12-11"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -66,7 +66,7 @@ If you are a BYOL user, provide your own license key for vSphere:
 ### Bare metal server settings
 {: #vc_addingclusters-bare-metal-settings}
 
-The CPU models differ depending on the version that your instance was initially deployed in. You can choose **Cascade Lake** or **SAP-certified Cascade Lake** servers[^1u].
+The CPU models differ depending on the version that your instance was initially deployed in. You can choose **Sapphire Rapids**, **Cascade Lake**, or **SAP-certified Cascade Lake** servers[^1u].
 
 [^1u]: For clusters with NFS storage, where locations with appropriate 1U servers are available, 1U servers (up to 4 drives of storage) are ordered silently rather than 2U servers. For gateway clusters and clusters with vSAN storage, 2U servers are ordered.
 
@@ -77,7 +77,12 @@ The {{site.data.keyword.cloud_notm}} data center location of the cluster is set 
 
 If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center or {{site.data.keyword.cloud_notm}} infrastructure pod, three extra VLANs are ordered for use with the ordered {{site.data.keyword.cloud_notm}} bare metal servers.
 
+#### Sapphire Rapids
+{: #vc_addingclusters-sapphire}
 
+{{site.data.content.sapphire-para-intro}}
+
+{{site.data.content.simpletabtable-sapphire}}
 
 #### Cascade Lake
 {: #vc_addingclusters-cascade}
@@ -139,9 +144,14 @@ The following table indicates the performance level details.
 #### vSAN storage
 {: #vc_addingclusters-vsan-storage}
 
-Specify the following vSAN options.
+Review the following vSAN options.
 
+##### Storage architecture
+{: #vc_addingclusters-vsan-storage-archi}
 
+{{site.data.content.storage-arch-spr-intro}}
+
+{{site.data.content.storage-arch-spr}}
 
 ##### Size for vSAN capacity disks
 {: #vc_addingclusters-vsan-capacity-size}
@@ -176,7 +186,10 @@ vSAN storage depends on the number of servers and your total disk capacity, and 
 The amount of storage reduction from deduplication and compression depends on many factors, including the type of data stored and the number of duplicate blocks. Larger disk groups tend to provide a higher deduplication ratio. For more information, see [Using deduplication and compression](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vsan.doc/GUID-3D2D80CC-444E-454E-9B8B-25C3F620EFED.html){: external}.
 {: note}
 
+##### Enable vSAN compression (vSAN ESA only)
+{: #vc_addingclusters-vsan-storage-enable-comp-esa}
 
+vSAN storage depends on the number of servers and your total disk capacity, and the use of deduplication. For Sapphire Rapids servers, both vSAN ESA and vSAN OSA are available. However, the **Enable vSAN compression** option is available only for vSAN ESA. For more information, see [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters#vc_addingclusters-vsan-storage-archi).
 
 ##### vSAN license (BYOL only)
 {: #vc_addingclusters-vsan-storage-lic}
@@ -380,13 +393,14 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 
    2. Complete the bare metal server configuration.
       * If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, toggle the **Select a different location** switch on and choose the {{site.data.keyword.cloud_notm}} data center to host the cluster.
-      * For **Cascade Lake**, select the **CPU model**, **RAM size**, and the **Number of bare metal servers**.
+      * For **Sapphire Rapids** and **Cascade Lake**, select the **CPU model**, **RAM size**, and the **Number of bare metal servers**.
       * For **SAP-certified Cascade Lake** (vSphere 7 only), select one of the preset configurations.
 
    3. Complete the storage configuration.
       * If you select **NFS storage** and want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
       * If you select **NFS storage** and want to add and configure file shares individually, toggle the **Configure shares individually** switch on, then click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. Select at least one file share.
       * If you select **vSAN storage**, specify the following values:
+         * The [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters#vc_addingclusters-vsan-storage-archi) can be either **vSAN ESA** (Express Storage Architecture) (vSphere 8 only) or **vSAN OSA** (Original Storage Architecture). This option is available only when you select **Sapphire Rapids** bare metal servers.
          * Size for the vSAN capacity disks
          * Number of vSAN capacity disks
          * Size for vSAN cache disks
@@ -395,7 +409,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 
       If you want more storage, check the **High performance with Intel Optane** box.
 
-      If you want to **Enable vSAN deduplication and compression**, toggle its switch on.
+      If you want to **Enable vSAN deduplication and compression** or **Enable vSAN compression** (vSAN ESA only), toggle its switch on.
 
 6. For gateway clusters, complete the following configuration.
    1. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the cluster.

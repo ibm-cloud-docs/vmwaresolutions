@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-04-03"
+lastupdated: "2024-12-11"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -44,7 +44,7 @@ The domain name must meet the following requirements:
 * The length of the last string must be in the range 2 - 24 characters.
 
 The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and VMs is 63 characters. Domain names must accommodate for this maximum length.
-{: note}
+{: restriction}
 
 ## DNS configuration
 {: #vrw-orderinginstance-dns-config}

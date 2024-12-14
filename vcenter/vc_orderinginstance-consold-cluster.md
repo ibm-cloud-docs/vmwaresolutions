@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-12-11"
 
 keywords: automated consolidated cluster, order consolidated cluster, order automated instance
 
@@ -51,11 +51,16 @@ Select the {{site.data.keyword.cloud_notm}} data center pod where you want to de
 ## CPU model
 {: #vc_orderinginstance-cpumodel}
 
-You can choose **Cascade Lake** or **SAP-certified Cascade Lake** servers[^1u].
+You can choose **Sapphire Rapids**, **Cascade Lake**, or **SAP-certified Cascade Lake** servers[^1u].
 
 [^1u]: For clusters with NFS storage, where locations with appropriate 1U servers are available, 1U servers (up to 4 drives of storage) are ordered silently rather than 2U servers. For gateway clusters and clusters with vSAN storage, 2U servers are ordered.
 
+### Sapphire Rapids
+{: #vc_orderinginstance-sapphire}
 
+{{site.data.content.sapphire-para-intro}}
+
+{{site.data.content.simpletabtable-sapphire}}
 
 ### Cascade Lake
 {: #vc_orderinginstance-cascade}
@@ -67,14 +72,14 @@ You can choose **Cascade Lake** or **SAP-certified Cascade Lake** servers[^1u].
 ### SAP-certified Cascade Lake
 {: #vc_orderinginstance-sap}
 
+vSphere 8 is not supported for SAP-certified Cascade Lake servers.
+{: important}
+
 {{site.data.content.sap-para-intro}}
 
 {{site.data.content.simpletabtable-sap-netweaver}}
 
 {{site.data.content.simpletabtable-sap-hana}}
-
-vSphere 8 is not supported for SAP-certified Cascade Lake servers.
-{: important}
 
 ## RAM
 {: #vc_orderinginstance-consold-cluster-ram}
@@ -124,12 +129,14 @@ Choose performance level options according to your needs.
 ### vSAN storage
 {: #vc_orderinginstance-vsan-storage}
 
-Specify the following settings for vSAN storage.
+Review the following settings for vSAN storage.
 
-For new instances, vSAN storage is not available with vSphere 8. To use vSAN storage, select vSphere 7.
-{: important}
+#### Storage architecture
+{: #vc_orderinginstance-vsan-storage-archi}
 
+{{site.data.content.storage-arch-spr-intro}}
 
+{{site.data.content.storage-arch-spr}}
 
 #### Size for vSAN capacity disks
 {: #vc_orderinginstance-vsan-storage-typesize-capdisks}
@@ -139,7 +146,7 @@ Select an option for the capacity disks that you need.
 #### Number of vSAN capacity disks
 {: #vc_orderinginstance-vsan-storage-number-capdisks}
 
-Specify the number of capacity disks that you want to add. You can order up to 10 disks for Dual CPU models and up to 8 disks for Quad CPU models.
+Specify the number of capacity disks that you want to add.
 
 If you want to add more capacity disks, select the **High performance with Intel Optane** checkbox. This option provides two extra capacity disk bays, which are useful for workloads that require less latency and higher IOPS throughput.
 
@@ -163,7 +170,10 @@ vSAN storage depends on the number of servers and your total disk capacity, and 
 The amount of storage reduction from deduplication and compression depends on many factors, including the type of data stored and the number of duplicate blocks. Larger disk groups tend to provide a higher deduplication ratio. For more information, see [Using deduplication and compression](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vsan.doc/GUID-3D2D80CC-444E-454E-9B8B-25C3F620EFED.html){: external}.
 {: note}
 
+#### Enable vSAN compression (vSAN ESA only)
+{: #vc_orderinginstance-vsan-storage-enable-comp-esa}
 
+vSAN storage depends on the number of servers and your total disk capacity, and the use of deduplication. For Sapphire Rapids servers, both vSAN ESA and vSAN OSA are available. However, the **Enable vSAN compression** option is available only for vSAN ESA. For more information, see [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage-archi).
 
 #### vSAN license (BYOL only)
 {: #vc_orderinginstance-vsan-storage-license}

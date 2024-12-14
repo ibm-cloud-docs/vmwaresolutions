@@ -173,6 +173,7 @@ toc:
               label: Managing clusters
               topics:
               - vcenter/vc_addingclusters.md
+              - vcenter/vc_reassigningprimarycluster.md
               - vcenter/vc_viewingclusters.md
               - vcenter/vc_deletingclusters.md
           - topicgroup:
@@ -203,6 +204,7 @@ toc:
               - vsphere/vs_vsphereoverview.md
               - vsphere/vs_bom.md
           - vsphere/vs_planning.md
+          - vsphere/vs_vsphere_80_upgrade.md
           - vsphere/vs_vsphere_70_upgrade.md
           - topicgroup:
               label: Ordering Flexible instances
@@ -371,6 +373,7 @@ toc:
               - services/managingzertodr.md
               - services/zerto_ordering_licenses.md
               - services/zerto_managing_licenses.md
+              - services/zerto_migration.md
       - topicgroup:
               label: KMIP for VMware
               topics:
@@ -404,8 +407,11 @@ toc:
           - topicgroup:
               label: Activity tracking events
               topics:
-              - include: ../vmware-service/common/vmaas-at-events.md
+              - link:
+                 label: Activity tracking events for VCF as a Service
+                 href: https://{DomainName}/docs/vmware-service?topic=vmware-service-at_events
               - vmonic/at-events.md
+              - vmonic/logging.md
           - topicgroup:
               label: Platform metrics
               topics:
@@ -866,6 +872,7 @@ toc:
           - vmonic/trbl_add_ha_cluster_config.md
           - vmonic/trbl_no_zerto_vra.md
           - vmonic/trbl_zerto_vra.md
+          - vmonic/trbl_zertovma_migration.md
           - vmonic/trbl_host_displays_warning_msg.md
           - vmonic/trbl_add_host_bypass.md
           - vmonic/trbl_deploy_ovf.md

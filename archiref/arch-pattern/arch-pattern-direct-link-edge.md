@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-10-31"
+lastupdated: "2024-12-10"
 
 subcollection: vmwaresolutions
 
@@ -46,8 +46,7 @@ This architecture pattern deployment is summarized as follows:
 
 When you design or deploy this architecture pattern, consider the following steps:
 
-* This pattern requires BYOL for the colocation solution VMware licensing. For licensing details, contact Broadcom or your Business Partner representative.
-
+* This pattern requires you to secure your own VMware licensing. For licensing details, contact Broadcom, your Business Partner representative, or a third-party license sales entity.
 * This pattern requires you to bring your own x86 hardware at colocation to host the NSX edge transport nodes.
 
 ## Related links

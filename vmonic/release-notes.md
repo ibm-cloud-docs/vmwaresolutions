@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-11-20"
+lastupdated: "2024-12-13"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -25,7 +25,47 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2024
 {: #year-2024}
 
+### 13 December 2024
+{: #vmwaresolutions-dec1324}
+{: release-note}
 
+vSphere 7 and 8 on Sapphire Rapids servers
+:   The bare metal server Dual Intel® Xeon® Platinum 8474C (96 cores, 2.1/3.1 GHz) is available for deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, Regulated Workloads, and Cyber Recovery instances with VMware vSphere® 7 and 8. You can also use this bare metal server when you add clusters and hosts to your existing instances. For Sapphire Rapids servers, vSAN storage is now based on either vSAN ESA (Express Storage Architecture) (for vSphere 8 only) or vSAN OSA (Original Storage Architecture) (for vSphere 7 and 8). For Cascade Lake servers, vSAN storage remains based on vSAN OSA and available only with vSphere 7. For more information, see [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage-archi).
+
+vSphere 8 manual upgrade on Sapphire Rapids
+:   You can manually upgrade vSphere to version 8.0 on your instances with Sapphire Rapids servers. After that, you can migrate your NFS and gateway clusters to vSphere 8.0. For more information, see [Upgrading VMware vSphere software from vSphere 7.0 to 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_80-upgrade).
+
+Data centers for Sapphire Rapids
+:   You can deploy instances with specific {{site.data.keyword.cloud}} data centers for **Sapphire Rapids** servers. For more information, see [{{site.data.keyword.cloud_notm}} data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning#vc_planning-dc-availability).
+
+DAL14 data center available
+:   The **Dallas 14** {{site.data.keyword.cloud_notm}} data center is available for deployment with Automated, Flexible, Regulated Workloads, and Cyber Recovery instances.
+
+Primary cluster reassignment
+:   You can reassign the primary cluster to another cluster in your Automated instances.
+
+BOM updates for {{site.data.keyword.vcf-classic-short}}
+:   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
+
+   * VMware vCenter Server® Appliance
+      * 8.0 Update 3d (build 24322831)
+      * 7.0 Update 3t (build 24322018)
+   * VMware vSphere ESXi™ 8.0 Update 3b (build 24280767)
+
+Zerto add-on service upgrade
+:   Zerto add-on service version 10.0u5 is available for deployment. To upgrade from Zerto versions that are earlier than 10.0u5, you must migrate from a Microsoft Windows® Virtual Service Instance (VSI) to a Linux® virtual machine (VM). For more information, see [Migrating Zerto from Windows ZVM to Linux ZVMA](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_migration).
+
+REST API updates
+:   The following updates are available for the [VMware Solutions API](/apidocs/vmware-solutions):
+
+   * The REST APIs to get the list of supported RAM types as a JSON object (`ram_types`) and to get the list of supported disk types as a JSON object (`disk_types`) are replaced by the `server_types` API. For more information, see [Get the list of server CPU types that are supported, per location or vSphere version, as a JSON object](/apidocs/vmware-solutions#controllers-public-v2-proxy-list-server-types-request).
+   * Outdated information is removed.
+
+New and updated documentation
+:   The following technical documents are now available:
+
+   * [Migrating Zerto from Windows ZVM to Linux ZVMA](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_migration)
+   * [Why does the Zerto Migration from Windows Zerto Virtual Manager to Linux ZVM Appliance fail?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_zerto_zvma_migration)
 
 ### 20 November 2024
 {: #vmwaresolutions-nov2024}
@@ -913,110 +953,3 @@ New REST API support
 
 New release notes format
 :   The release notes have been consolidated to one location for you to review the latest and previous offering updates.
-
-### 13 October 2021
-{: #vmwaresolutions-oct1321}
-{: release-note}
-
-End of Support for instance deployments with vSphere 6.5 {: #october-2021-eos-vsphere5}
-:   {{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere 6.5 ended on 10 October 2021. Ordering new VMware vCenter Server instances with vSphere 6.5 is not supported after this date. Your existing vCenter Server instances with vSphere 6.5 are read–only in the VMware Solutions console and through the public REST API.
-
- VMware vCenter Server instances
-:   The 4.4 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts.
-
-   * VMware vSphere ESXi 7.0 Update 2d (build 18538813)
-   * VMware vCenter Server Appliance
-      * 7.0 Update 2d (build 18455184)
-      * 6.7 Update 3o (build 18485166)
-   * VMware NSX-T 3.1.1.0.0 (build 17483185)
-
-Add-on services
-:   The following service versions are now available to install on deployed instances.
-
-   * F5 BIG-IP v16.1
-   * FortiGate Virtual Appliance v7.0.1
-   * HyTrust CloudControl v6.4.1
-   * Red Hat OpenShift v4.7.24
-   * Zerto v9.0u1
-
-FortiGate Virtual Appliance for multizone instances on VMware Regulated Workloads
-:   For VMware Regulated Workloads, you can deploy FortiGate Virtual Appliance on edge services clusters for multizone instances. You can deploy FortiGate Virtual Appliance when you first order the instance or as part of Day 2 operations.
-
-Veeam deployment type displayed on services detail page
-:   The deployment type for Veeam is displayed on the service details page. The possible deployment types are VM, VSI, or Bare metal.
-
-Zerto licenses availability
-:   You can now order Zerto license without associating it to any vCenter Server instance. When you submit your order, IBM Support requests a license key from Zerto that is then delivered to the email address that is associated with your order.
-
-   You can use the {{site.data.keyword.vmwaresolutions_short}} console to view license details and delete the license.
-
-REST APIs
-:   As a result of End of Support for instance deployments with vSphere 6.5, REST APIs for the following tasks for instances with vSphere 6.5 are no longer provided:
-
-   * Adding and deleting clusters
-   * Adding and removing ESXi servers
-   * Adding and removing storage
-   * Adding and deleting services
-
-### 9 August 2021
-{: #vmwaresolutions-aug0921}
-{: release-note}
-
-VMware vSphere 7.0 Update 2a support
-:   The 4.3 release provides VMware vSphere 7.0 Update 2a for newly deployed instances. For existing vSphere 7.0u1 instances and clusters, you can either add a 7.0u1 or 7.0u2 host or cluster.
-
-New disk type for VMware vSAN
-:   For the VMware vSAN component, the 7.68 TB SSD SED capacity disk is now available for {{site.data.keyword.cloud_notm}} bare metal servers for newly deployed instances and when you add hosts and clusters to existing instances. The 7.68 TB SSD SED disk type is supported for only VMware vSphere 7.0 or 6.7 instances with 25 Gb uplink speed.
-
-VMware Solutions Shared - Windows pricing metrics
-:   (Updated on 1 October 2021) The Microsoft Windows pricing metric is now hourly for VMware Solutions Shared instances.
-
-VMware vCenter Server instances
-:   The 4.3 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts.
-
-   * VMware vSphere ESXi
-      * 7.0 Update 2a (build 17867351)
-      * 6.7 P05 (build 17700523)
-      * 6.5 P06 (build 17477841)
-   * VMware vCenter Server Appliance
-      * 7.0 Update 2b (build 17958471/17958471)
-      * 6.7 Update 3n (build 18010531/18010599)
-   * VMware NSX-T 3.1.0.0.0 (build 17107167)
-   * VMware NSX-V 6.4.10 (build 17626462)
-   * VMware vSAN 7.0 Update 2 (build 17630552) or 6.7 P05
-
-vCenter Server multizone instances - deprecated
-:   New deployments of vCenter Server multizone instances are no longer supported.
-   {: deprecated}
-
-   You can still add and delete clusters, add and remove ESXi servers, and add and delete storage for existing multizone instances.
-
-VMware Regulated Workloads - support for consolidated cluster
-:   Rather than requiring that the VMware Regulated Workloads solution deploys a separate management cluster and separate clusters for workloads, now you can start with a smaller footprint by deploying a consolidated management and workload cluster.
-
-VMware Regulated Workloads - support for save configuration
-:   A new **Save configuration** button is added to the **Summary** pane of the ordering page for VMware Regulated Workloads. Use this option to save your instance settings as a configuration template without placing an order. You can manage the configuration templates by further editing or deleting them as well.
-
-Security and Compliance Readiness Bundle
-:   A new **Save configuration** button is added to the **Summary** pane of the ordering page for Security and Compliance Readiness Bundle instances. Use this option to save your instance settings as a configuration template without placing an order. You can manage the configuration templates by further editing or deleting them as well.
-
-Add-on services
-:   The following service versions are now available to install on deployed instances.
-
-   * Caveonix RiskForesight v3.0.1
-   * FortiGate Virtual Appliance v6.4.6
-   * Juniper vSRX v20.4 (R2)
-   * Red Hat OpenShift v4.7
-
-FortiGate Virtual Appliance
-:   FortiGate Virtual Appliance adds the following features.
-   * 25 Gb uplink speed on vSphere 7 and NSX-T
-   * High-performance deployment size of Fortigate-VM32
-
-   The uplink speed and deployment size require Cascade Lake 5218 or higher.
-
-Juniper vSRX
-:   You can install Juniper vSRX on 25 Gb uplink speed consolidated and edge services clusters on vSphere 7 with NSX-T. On 25 Gb uplink speed clusters, only the Content Security Bundle license is available.
-
-REST API updates
-:   REST API support for vCenter Server multizone instances is no longer provided as a result of feature deprecation.

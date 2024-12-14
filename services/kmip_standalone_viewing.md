@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-12-12"
 
 keywords: KMIP for VMware, view KMIP stand-alone, KMIP for VMware status
 
@@ -22,7 +22,8 @@ Use this procedure to view the KMIP™ for VMware® instances that you ordered a
 ## Procedure to view KMIP for VMware instances
 {: #kmip_standalone_viewing-procedure}
 
-From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > KMIP for VMware** from the left navigation pane. In the **KMIP for VMware** table, you can see information about the instances that you ordered.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > KMIP for VMware** from the left navigation pane.
+2. In the **KMIP for VMware** table, you can see information about the instances that you ordered.
 
 | Item | Description |
 |:---- |:----------- |
@@ -49,4 +50,4 @@ The instance can have different statuses.
 * [Ordering KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_ordering)
 * [Adding, viewing, and deleting certificates for KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_addingdeletingcert)
 * [Deleting KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_deleting)
-* [Auditing events for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-at-events)
+* [Activity tracking events for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-at_events)

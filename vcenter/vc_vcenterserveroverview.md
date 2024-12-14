@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-12-12"
 
 keywords: vcf automated, vcf classic architecture, tech specs vmware cloud foundation
 
@@ -82,8 +82,9 @@ If you plan to use vSAN storage, the configuration requires a minimum of four ba
 {: note}
 
 The following configurations are available:
-* **Cascade Lake** - 4-CPU Intel® Cascade Lake generation servers (Quad Intel Xeon® 6200/8200 series) or 2-CPU Intel Cascade Lake generation servers (Dual Intel Xeon 4200/5200/6200/8200 series) with your selected RAM size.
-* **SAP-certified Cascade Lake** - 2-CPU Intel Cascade Lake generation servers (Dual Intel Xeon 5200/6200/8200 series).
+* **Sapphire Rapids** - Intel® Sapphire Rapids generation servers (Dual Intel Xeon® 8400 series) with your selected RAM size.
+* **Cascade Lake** - Intel Cascade Lake generation servers (Dual Intel Xeon 4200/5200/6200/8200 series or Quad Intel Xeon 6200/8200 series) with your selected RAM size.
+* **SAP-certified Cascade Lake** - Intel Cascade Lake generation servers (Dual Intel Xeon 5200/6200/8200 series or Quad Intel Xeon 8200 series) with a preset RAM size.
 
 ### Networking
 {: #vc_vcenterserveroverview-networking}
@@ -133,7 +134,7 @@ The NFS option offers customized shared file-level storage for workloads with va
 {: #vc_vcenterserveroverview-vsan-storage}
 
 The vSAN option offers customized configurations, with various options for disk type, size, and quantity:
-* Disk quantity - 2, 4, 6, 8, or 10
+* Disk quantity - various options depending on the CPU model and storage architecture.
 * Storage disk - 960 GB SSD, 1.9 TB SSD, 3.8 TB SSD, or 7.68 TB SSD. In addition, two cache disks of 960 GB are also ordered per host.
 
    3.8 TB SSD (solid-state disk) drives are supported when they are made available in a data center.

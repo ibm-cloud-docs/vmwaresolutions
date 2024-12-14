@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-16"
+lastupdated: "2024-12-12"
 
 keywords: Caveonix, Caveonix RiskForesight, tech specs Caveonix
 
@@ -52,13 +52,13 @@ A dedicated private subnet with 32 IP addresses is ordered.
 
 A Caveonix RiskForesight license key is ordered for each instance of the service.
 
-If you order Caveonix RiskForesight for a {{site.data.keyword.rw}} or Security and Compliance Readiness Bundle instance, you are charged for a per-host license for every host on the instance. This way of charging for Caveonix RiskForesight is new in Version 4.1. However, you are not charged for per-VM licenses.
+If you order Caveonix RiskForesight for a {{site.data.keyword.rw}} or Security and Compliance Readiness Bundle instance, you are charged for a per-host license for every host on the instance. This way of charging for Caveonix RiskForesight is new in version 4.1. However, you are not charged for per-VM licenses.
 
 If you order Caveonix RiskForesight for a {{site.data.keyword.vcf-auto-short}} instance, you are charged for the number of per-VM licenses that you choose at installation. This method of charging for Caveonix RiskForesight is the same as in previous releases. You can select 10 - 25,000 VMs to license.
 
 If you order Caveonix RiskForesight for a {{site.data.keyword.rw}} or Security and Compliance Readiness Bundle instance, the host-based licenses are hidden. Caveonix RiskForesight is deployed with a 25,000 VM key. You do not need to upgrade.
 
-Caveonix RiskForesight licenses that are ordered separately from the Resources page are not per-host. Therefore, it is recommended that you do not order new Caveonix RiskForesight licenses and apply the key to your Caveonix RiskForesight service on {{site.data.keyword.rw}} or Security and Compliance Readiness Bundle instances. Ordering in this way will:
+Caveonix RiskForesight licenses that are ordered separately from the Resources page are not per-host. Therefore, it is recommended that you do not order new Caveonix RiskForesight licenses and apply the key to your Caveonix RiskForesight service on {{site.data.keyword.rw}} or Security and Compliance Readiness Bundle instances. If you order in this way, the following things can occur:
 
 * Provide less coverage than when the license was initially deployed.
 * Result in you being charged twice for Caveonix RiskForesight licenses because your initial license cannot be canceled. Therefore, you pay for both per-host and per-VM licensing.

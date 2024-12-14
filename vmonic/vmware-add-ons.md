@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-10-24"
+lastupdated: "2024-12-10"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -37,7 +37,7 @@ The NSX firewall add-on is the same for both the distributed and the gateway fir
 
 * If you are ordering a new {{site.data.keyword.vcf-auto}} instance, the minimum gateway firewall cores are calculated for your order.
 * If you are an existing customer, you must purchase NSX firewall licenses separately for the number of cores that are required for your environment.
-* To calculate the number of firewall cores that you need for your environment and to confirm the cost (depending on whether you use distributed, gateway, or no firewall), contact your IBM Business Partner representative or IBM Support.
+* To calculate the number of firewall cores that you need for your environment and to confirm the cost (depending on whether you use distributed, gateway, or no firewall), based on your procurement vehicle, contact your IBM Business Partner representative or IBM Sales representative.
 
 For on-demand, the cost for the firewall add-on is $12.50 per core, per month. Discounts are available depending on your contract commitment.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-11-25"
+lastupdated: "2024-12-10"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -23,16 +23,14 @@ Zerto on {{site.data.keyword.cloud}} integrates replication and disaster recover
 Zerto is supported on {{site.data.keyword.vcf-auto}} instances that meet the following requirements:
 
 * VMware NSX-T™ 3.1 or later
-* VMware vSphere® 7.0 
+* VMware vSphere® 7.0 or later
 {: shortdesc}
 
 {{site.data.content.para-promotion-services}}
 
 
-The Zerto version available for deployment is 9.7u4.
+The Zerto version available for deployment is 10.0u5. To upgrade from Zerto versions that are earlier than 10.0u5, you must migrate from a Microsoft Windows® Virtual Service Instance (VSI) to a Linux® virtual machine (VM).
 {: note}
-
-
 
 ## Before you begin
 {: #addingzertodr-req}
@@ -49,14 +47,6 @@ The following components are ordered and included in the Zerto service.
 Zerto Virtual Replication Appliance (VRA) components are deployed only into the default cluster.
 {: note}
 
-### Virtual Service Instances
-{: #addingzertodr-specs-vsi}
-
-* One Virtual Service Instance (VSI) - Zerto Virtual Manager
-* 2 x 2.0 GHz cores
-* 4 GB RAM
-* Windows® Server 2019 Standard Edition (64-bit)
-
 ### Storage
 {: #addingzertodr-specs-storage}
 
@@ -65,15 +55,10 @@ Zerto Virtual Replication Appliance (VRA) components are deployed only into the 
 ### Zerto Networking
 {: #addingzertodr-specs-network}
 
-
-* VSI
-   * One primary private IP address
-   * 1 Gbps private network uplink
+* One portable private IP address
 * Virtual replication appliances (VRAs) - One private portable subnet for VRA deployment
 
-
-
-The Zerto service is not configured with an {{site.data.keyword.cloud_notm}} infrastructure portable IP address or with a NAT connection to the public network, even if you have public interfaces in your instance. This implementation helps to avoid the possibility of asymmetric routing when it uses a network gateway appliance.
+The Zerto service is not configured with an {{site.data.keyword.cloud_notm}} infrastructure public IP address or with a NAT connection to the public network, even if you have public interfaces in your instance. This implementation helps to avoid the possibility of asymmetric routing when it uses a network gateway appliance.
 
 When you deploy Zerto, you must configure your own proxy or NAT connection to the public network. If you do not complete the configuration, Zerto blocks management activities in 15 days.
 
@@ -82,7 +67,7 @@ For more information, see [Considerations for ordering Zerto](/docs/vmwaresoluti
 ### Licenses and fees
 {: #addingzertodr-specs-licenses}
 
-Zerto Replication version 9.7u4 license. 
+Zerto Replication version 10.0u5 license. You must use the license for disaster recovery purposes only. The license key cannot be used for migrating existing instances.
 
 ## Related links
 {: #addingzertodr-related}

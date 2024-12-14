@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-11-26"
+lastupdated: "2024-12-10"
 
 keywords: Zerto certificate, Zerto config, update Zerto replication
 
@@ -20,24 +20,10 @@ subcollection: vmwaresolutions
 
 After the Zerto service is deployed into your instance, you can configure or update Zerto Virtual Replication. You can also deploy more Virtual Replication Appliances to newly added VMware® ESXi™ servers.
 
-
-## Using your own certificate for Zerto
-{: #managingzertodr-ssl-cert}
-
-Always use your own SSL certificate for Zerto Virtual Manager (ZVM). After you deploy Zerto, replace the SSL certificate for ZVM with your own certificate. To change the default security certificate for your ZVM, follow these steps:
-
-1. Open the Zerto Diagnostics utility on the Windows® virtual machine that is running the ZVM.
-2. Choose **Reconfigure Zerto Virtual Manager**.
-3. Ensure that the VMware vCenter Server® configuration is correct, and click **Next**.
-4. In the **HTTP Certificate** section, check the **Replace SSL Certificate** box.
-5. Click browse (...) and then locate and select the new SSL certificate.
-6. Enter the new SSL certificates associated password and click **Next**.
-7. The utility verifies the necessary vCenter Server connectivity. After verified, click **Next** and the ZVM is reconfigured.
-
 ## Managing the configuration of Zerto replications
 {: #managingzertodr-manage}
 
-To manage the configuration of Zerto replications, log in to the Zerto Virtual Replication console by using the vCenter Server credentials with administrator permissions. For example, re-pairing Zerto instances or configuring virtual protection groups to replicate virtual machines.
+To manage the configuration of Zerto replications, log in to the Zerto Virtual Replication console. For example, re-pairing Zerto instances or configuring virtual protection groups to replicate virtual machines.
 
 When you're replicating between different {{site.data.keyword.cloud}} Zerto instances, you can configure replication directly between the Zerto instances. If you're replicating between the {{site.data.keyword.cloud_notm}} Zerto instance and your own data center, you must install Zerto yourself in your own data center. This instance can license itself automatically when you pair it with the {{site.data.keyword.cloud_notm}} Zerto instance.
 

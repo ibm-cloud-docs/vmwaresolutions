@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-10-25"
+lastupdated: "2024-12-10"
 
 keywords: automated instance add host, add server automated instance
 
@@ -80,7 +80,8 @@ Review the following additional information applicable to Automated instances wi
    2. From the list, you can select a bare metal server configuration that is being used by the existing ESXi servers in the cluster. Then, click **Next**. This option is not available for existing ESXi servers with **Broadwell CPU** or if the storage type of the cluster is **Local disks**.
    3. You can also choose a new bare metal server configuration by selecting the option from the list and clicking **Next**. Select the **CPU model**, the **vSphere version** (vSphere 8 clusters only), the amount of **RAM**, and **vSAN** if you have vSAN storage type.
 
-   
+   When you select **Sapphire Rapids** bare metal servers, the **Storage architecture** is either **vSAN ESA** (Express Storage Architecture) (vSphere 8 only) or **vSAN OSA** (Original Storage Architecture). For more information, see [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters#vc_addingclusters-vsan-storage-archi).
+   {: important}
 
 8. Click **Next** and complete the network settings.
     * You can continue to use the previously selected primary subnets.

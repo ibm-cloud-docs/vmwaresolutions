@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-04"
+lastupdated: "2024-12-11"
 
 keywords: network interface, domain name, hostname prefix, configure hostnames, dns configuration
 
@@ -41,7 +41,7 @@ The root domain name must meet the following requirements:
 * The length of the last string must be in the range 2 - 24 characters.
 
 The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and VMs is 63 characters. Domain names must accommodate for this maximum length.
-{: note}
+{: restriction}
 
 ## Configure hostnames individually
 {: #vc_orderinginstance-network-diagram}

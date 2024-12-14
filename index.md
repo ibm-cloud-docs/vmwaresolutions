@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-12-11"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -72,26 +72,37 @@ The following table describes the security and compliance services that are avai
 
 | Service name | Description |
 |:------------ |:----------- |
-| [Caveonix RiskForesight™](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | This service manages cyberrisk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations. |
-| [FortiGate® Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | This service deploys a pair of FortiGate Virtual Appliances to your environment, which can help you reduce risk by implementing critical security controls within your virtual infrastructure. |
-| [F5 BIG-IP®](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | This service provides intelligent L4-L7 load balancing and traffic management services at a local and global scale, robust network and web application firewall protection, and secure and federated application access. |
-| [KMIP™ for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | This service provides a highly available service to manage encryption keys that are used by VMware in {{site.data.keyword.cloud_notm}}. By using the runtime capability, you can manage encryption keys and to maintain the associations between the client credentials and the encryption keys. |
-| [Juniper® vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | This service provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware infrastructure, vSRX runs as a VM within the VMware vSphere® environment. The vSRX provides a complete Next-Generation Firewall (NGFW) solution. |
+| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | This service manages cyberrisk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations. |
+| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | This service deploys a pair of FortiGate Virtual Appliances to your environment, which can help you reduce risk by implementing critical security controls within your virtual infrastructure. |
+| [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | This service provides a highly available service to manage encryption keys that are used by VMware in {{site.data.keyword.cloud_notm}}. By using the runtime capability, you can manage encryption keys and to maintain the associations between the client credentials and the encryption keys. |
+| [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | This service provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware infrastructure, vSRX runs as a VM within the VMware vSphere® environment. The vSRX provides a complete Next-Generation Firewall (NGFW) solution. |
+| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | This service provides intelligent L4-L7 load balancing and traffic management services at a local and global scale, robust network and web application firewall protection, and secure and federated application access. |
 {: caption="Security and compliance services" caption-side="bottom"}
 
-#### Data resiliency and migration services
-{: #getting-started-serv-buss-cont}
+#### Data resiliency services
+{: #getting-started-serv-dr}
 
-The following table describes the data resiliency and migration services that are available.
+The following table describes the data resiliency services that are available.
 
 | Service name | Description |
 |:------------ |:----------- |
-| [HCX™](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations#hcx_considerations) | This service can extend the networks of on-premises data centers into {{site.data.keyword.cloud_notm}}, which allows VMs to be migrated to and from the {{site.data.keyword.cloud_notm}} without any conversion or change. |
-| [PrimaryIO Migrations](https://www.primaryio.com/#){: external} | This service offers various capabilities to facilitate the cloud journey for organizations with an investment in VMware. |
-| [ProtectIO](/infrastructure/vmware-solutions/console/newserviceentry/ProtectIO/vcs) | This service provides a robust disaster recovery solution while leveraging the latest cloud economics for an attractive Total Cost of Ownership. |
-| [Veeam®](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | This service integrates directly with your VMware hypervisors to help your enterprise achieve high availability. You can control both the backup and restore of all VMs for your infrastructure from the Veeam console. |
+| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | This service integrates directly with your VMware hypervisors to help your enterprise achieve high availability. You can control both the backup and restore of all VMs for your infrastructure from the Veeam console. |
 | [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | This service provides replication and disaster recovery capabilities, which can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}. |
-{: caption="Data resiliency and migration services" caption-side="bottom"}
+| [VMware Cloud Director Availability for Disaster Recovery](/docs/vmware-service?topic=vmware-service-tenant-vcda-dr) | This service delivers simple, secure, and cost-effective onboarding, migration, and disaster recovery support for VCF as a Service. |
+| [ProtectIO](/infrastructure/vmware-solutions/console/newserviceentry/ProtectIO/vcs) | This service provides a robust disaster recovery solution while leveraging the latest cloud economics for an attractive Total Cost of Ownership. |
+{: caption="Data resiliency services" caption-side="bottom"}
+
+#### Migration services
+{: #getting-started-serv-mig}
+
+The following table describes the migration services that are available.
+
+| Service name | Description |
+|:------------ |:----------- |
+| [VMware Cloud Director Availability for Migration](/docs/vmware-service?topic=vmware-service-tenant-vcda) | This service delivers simple, secure, and cost-effective onboarding, migration, and disaster recovery support for VCF as a Service. |
+| [HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations#hcx_considerations) | This service can extend the networks of on-premises data centers into {{site.data.keyword.cloud_notm}}, which allows VMs to be migrated to and from the {{site.data.keyword.cloud_notm}} without any conversion or change. |
+| [PrimaryIO Migrations](https://www.primaryio.com/#){: external} | This service offers various capabilities to facilitate the cloud journey for organizations with an investment in VMware. |
+{: caption="Migration services" caption-side="bottom"}
 
 #### Featured workload solutions
 {: #getting-started-serv-feat-sol}
@@ -101,7 +112,7 @@ The following table describes the featured workload solutions services that are 
 | Service name | Description |
 |:------------ |:----------- |
 | [Dizzion](/docs/vmwaresolutions?topic=vmwaresolutions-dizzion-overview) | This service provides more service-level choices, multicloud integration, compliance, protection, and simplified management for the teams that are in charge with environment optimization. |
-| [{{site.data.keyword.IBM_notm}} Security Services for SAP®](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | This service offers a cybersecurity solution to automate the monitoring and protection of SAP applications on {{site.data.keyword.cloud_notm}}, and to keep workloads compliant and secure from inside and outside threats. |
+| [{{site.data.keyword.IBM_notm}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | This service offers a cybersecurity solution to automate the monitoring and protection of SAP applications on {{site.data.keyword.cloud_notm}}, and to keep workloads compliant and secure from inside and outside threats. |
 {: caption="Featured workload solutions" caption-side="bottom"}
 
 #### Other services
@@ -111,8 +122,8 @@ The following table describes other services that are available.
 
 | Service category | Service name | Description |
 |:---------------- |:------------ |:----------- |
-| Transformation and modernization | [Red Hat® OpenShift® for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | This service brings together the power of the Red Hat OpenShift Container Platform and the VMware software-defined data center stack. |
-| Management tools | [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the tools of VMware Aria® Operations™ and VMware Aria Operations™ for Logs, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
+| Transformation and modernization | [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | This service brings together the power of the Red Hat OpenShift Container Platform and the VMware software-defined data center stack. |
+| Management tools | [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the tools of VMware Aria® Operations™ and VMware Aria Operations™ for Logs Enterprise Edition, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
 {: caption="Other services" caption-side="bottom"}
 
 ## Accessing the VMware Solutions console

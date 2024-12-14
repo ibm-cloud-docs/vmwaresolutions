@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-16"
+lastupdated: "2024-12-13"
 
 keywords: Caveonix RiskForesight, Caveonix configuration, order Caveonix
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Ordering Caveonix RiskForesight
 {: #caveonix_ordering}
 
-You can include the Caveonix RiskForesight™ service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
+You can include the Caveonix RiskForesight™ service with a new {{site.data.keyword.vcf-auto}} instance, or add the service to your existing instance.
 
 * For {{site.data.keyword.vcf-auto-short}} instances, Caveonix RiskForesight generates a license for the number of VMs (virtual machines) that you select.
 * For {{site.data.keyword.rw}} and Security and Compliance Readiness Bundle instances, Caveonix RiskForesight offers per host licensing. You are charged for every host in the instance, which includes management, workload, and gateway clusters.
@@ -66,7 +66,7 @@ After you order Caveonix RiskForesight, if you want more VMs licensed than you s
 2. Copy the license to your Caveonix RiskForesight console.
 3. Delete the previous license from the {{site.data.keyword.vmwaresolutions_short}} console.
 
-For more information, see:
+For more information, see the following topics:
 * [Procedure to order Caveonix RiskForesight licenses](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_license_ordering#caveonix_license_ordering-procedure)
 * [Procedure to delete Caveonix RiskForesight licenses](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_license_managing#caveonix_license_managing_procedure-delete)
 

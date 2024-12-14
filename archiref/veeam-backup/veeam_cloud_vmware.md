@@ -4,9 +4,9 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-10-24"
+lastupdated: "2024-12-10"
 
-keywords: veeam, IBM cloud for vmware, veeam in IBM Cloud for vmware
+keywords: veeam, veeam ibm cloud vmware
 
 subcollection: vmwaresolutions
 

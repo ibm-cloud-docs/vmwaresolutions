@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-11-18"
+lastupdated: "2024-12-10"
 
 keywords: zerto, zerto self-service portal, zerto portal access procedure
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 {{site.data.content.shared-deprecated-note}}
 
-The Zerto service is available and ready to use in all virtual data centers. Use Zerto as a service to replicate your VMs between your {{site.data.keyword.cloud}} data centers to {{site.data.keyword.cloud_notm}}. The Zerto service is enabled by default.
+The Zerto service is available and ready to use in all virtual data centers. Use Zerto as a service to replicate your VMs between your {{site.data.keyword.cloud}} data centers to {{site.data.keyword.cloud_notm}} for disaster recovery purposes only. The Zerto service is enabled by default.
 
 You can access the Zerto portal on the virtual data center details page when the status of the virtual data center is **Available**. For more information, see [Procedure to view the virtual data center summary](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary#shared_viewing-vdc-summary-procedure) or [Procedure to view virtual data center details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-details#shared_viewing-vdc-details-procedure).
 

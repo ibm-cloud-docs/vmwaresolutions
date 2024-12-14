@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-10-02"
+lastupdated: "2024-12-10"
 
 keywords: regulated workloads, regulated workloads order instance, order regulated workloads, regulated workloads instances
 
@@ -34,21 +34,21 @@ subcollection: vmwaresolutions
 1. Specify the settings for the primary cluster:
    1. Specify the cluster name.
    1. Select the primary cluster type. For the **Customizable consolidated** cluster, select the CPU model and RAM size.
-   
-   
+   1. For the **CPU model**, select **Sapphire Rapids** or **Cascade Lake** and choose one of the available configurations.
+   1. Select the RAM size.
    1. Select the number of bare metal servers.
    1. Under **vSAN configuration**, select the disk type and size for the vSAN capacity disks, the number of vSAN capacity disks, the disk size for vSAN cache disks, and the number of vSAN cache disks.
-   
+   1. Review the summary.
    1. Review the estimated resources available per cluster.
    1. Review the networking type and select the uplink speed.
-1. Specify the settings for the additional workload cluster. For VMware instances with a customizable consolidated cluster, optionally toggle the **Deploy separate workload cluster** switch on and complete the cluster settings.
+1. Specify the settings for the additional workload cluster. For VMware instances with a customizable consolidated cluster, optionally toggle the **Include a separate cluster for workloads** switch on and complete the cluster settings.
    1. Specify the cluster name.
    1. Select the workload capacity. For the **Customizable** capacity, select the CPU model and RAM size.
-   
-   
+   1. For the **CPU model**, select **Sapphire Rapids** or **Cascade Lake** and choose one of the available configurations.
+   1. Select the RAM size.
    1. Select the number of bare metal servers.
    1. Select the disk type and size for the vSAN capacity disks, the number of vSAN capacity disks, the disk size for vSAN cache disks, and the number of vSAN cache disks.
-   
+   1. Review the summary.
    1. Review the estimated resources available per cluster.
    1. Review the networking type and select the uplink speed.
 1. Choose the firewall appliance for your instance and follow the steps, depending on your selection:

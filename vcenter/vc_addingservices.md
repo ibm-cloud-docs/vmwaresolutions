@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-10-25"
+lastupdated: "2024-12-11"
 
 keywords: add service, order service, add-on service
 
@@ -46,7 +46,7 @@ The following table shows the services that are available to Automated instances
 | [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.15 | NSX-T only \n If you want to add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade to 3.1 or later. |
 | [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12.2 | |
 | [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | VMware Aria® Operations™ 8.17.1 and VMware Aria Operations™ for Logs 8.17 | |
-| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.7u4 | VMware vSphere 7 only |
+| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 10.0u5 | VMware vSphere 7 or later |
 {: caption="Available services for Automated instances" caption-side="bottom"}
 
 ## Promotions for services
@@ -55,13 +55,13 @@ The following table shows the services that are available to Automated instances
 {{site.data.keyword.vmwaresolutions_full}} offers promotion pricing for some services. The promotions offer a number of months without any charge for service licenses, if the service has license charges.
 
 You can use promotion (promo) codes for one or more services when you:
-* Order a new Automated instance
-* Add a service to an Automated instance
-* Order a stand-alone service license, such as Caveonix or Veeam®
+* Order a new Automated instance.
+* Add a service to an Automated instance.
+* Order a stand-alone service license, such as Caveonix RiskForesight™ or Veeam®.
 
 For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX™ and VMware Aria® Operations™ and VMware Aria Operations™ for Logs.
 
-You can use one promo code per order. Multiple promo codes are not allowed. However, you can use a promo code multiple times per account. A promo code might apply to multiple services, for example, Veeam and Caveonix RiskForesight™.
+You can use one promo code per order. Multiple promo codes are not allowed. However, you can use a promo code multiple times per account. A promo code might apply to multiple services, for example, Veeam and Caveonix RiskForesight.
 
 After you start an order, enter the promo code for your services in the promo code box and click **Apply**. If you decide to use a different promo code, enter that code in the box and click **Apply** again to calculate a new price.
 

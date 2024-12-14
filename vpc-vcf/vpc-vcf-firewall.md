@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-04-20"
+lastupdated: "2024-12-10"
 
 keywords: vmware cloud foundation, configure firewall, firewall config, vcf for vpc
 
@@ -28,7 +28,7 @@ Before you configure the VMware NSX firewalls, review the information in [NSX fi
 
 {{site.data.keyword.cloud}} Security Groups for VPC (Virtual Private Cloud) also provide network security and act as a virtual firewall for your Virtual Server Instances and Bare Metal Servers in the {{site.data.keyword.cloud_notm}} VPC environment by managing east-west and north-south network traffic.
 
-Security Groups for VPC provides a convenient way to define and apply rules that establish filtering to a target of a resource, based on protocols, ports, and IP addresses. For more information, see [About security groups](/docs/vpc?topic=vpc-using-security-groups).
+Security Groups for VPC provides a convenient way to define and apply rules that establish filtering to a target of a resource, based on protocols, ports, and IP addresses. `uplink-priv-sg` and `uplink-pub-sg` are provisioned for the Tier 0 gateway with default rules, and you can modify these rules based on your needs. For more information, see [About security groups](/docs/vpc?topic=vpc-using-security-groups).
 
 ## Related links
 {: #vpc-vcf-firewall-links}

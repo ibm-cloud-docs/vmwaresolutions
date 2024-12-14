@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-25"
+lastupdated: "2024-12-10"
 
 keywords: automated instance, order automated, order automated instance
 
@@ -35,14 +35,15 @@ subcollection: vmwaresolutions
 1. Specify the settings for the consolidated cluster:
    1. Specify the cluster name.
    1. Specify the data center location. Click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the instance.
-   1. Specify the CPU model: **Cascade Lake** or **SAP-certified Cascade Lake** (vSphere 7 only) and choose one of the available configurations. For **Cascade Lake**, also select the RAM size.
+   1. Specify the CPU model: **Sapphire Rapids**, **Cascade Lake** or **SAP-certified Cascade Lake** (vSphere 7 only) and choose one of the available configurations. For **Sapphire Rapids** and **Cascade Lake**, also select the RAM size.
    1. Specify [the number of bare metal servers](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-bare-metal-number).
    1. If you want to use NFS storage, select the corresponding option.
       * To add and configure file shares individually, toggle the **Configure shares individually** switch on. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each file share. You must select at least one file share.
       * To add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
    1. If you want to use vSAN™ storage, select the corresponding option.
+      * The [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage-archi) can be either **vSAN ESA** (Express Storage Architecture) (vSphere 8 only) or **vSAN OSA** (Original Storage Architecture). This option is available only when you select **Sapphire Rapids** bare metal servers.
       * Select the disk type and size for the vSAN capacity disks, the number of vSAN capacity disks, the disk size for vSAN cache disks, and the number of vSAN cache disks.
-      * If you want to **Enable vSAN deduplication and compression**, toggle its switch on.
+      * If you want to **Enable vSAN deduplication and compression** or **Enable vSAN compression** (vSAN ESA only), toggle its switch on.
    1. Specify the networking type.
    1. Select the uplink speed. The 25 Gb option is available only for specific pods and data center locations.
    1. Select the VLAN settings:

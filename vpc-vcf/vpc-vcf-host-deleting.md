@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-09-24"
+lastupdated: "2024-12-10"
 
 keywords: delete host, host remove, vmware cloud foundation, vmware cloud edition
 
@@ -33,10 +33,11 @@ You can contract the capacity of your {{site.data.keyword.vcf-vpc}} instance acc
 {: #vpc-vcf-host-deleting-proc1}
 
 1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc-short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vcf-vpc}}** table, hover over the instance from which you want to delete ESXi servers.
-3. Click the **Edit hosts** link on the row next to status.
-4. In the **Hosts** section, select the servers that you want to delete and click **Remove hosts**.
-5. In the **Remove hosts** window, type the hostname to confirm, then click **Delete**.
+2. In the **{{site.data.keyword.vcf-vpc}}** table, click the instance from which you want to delete ESXi servers.
+3. Click the **Infrastructure** tab.
+4. In the **Domains** table, click the domain from which you want to delete ESXi servers.
+5. In the **Hosts** section, select the servers that you want to delete and click **Remove hosts**.
+6. In the **Remove hosts** window, type the hostname to confirm, then click **Delete**.
 
 ## Procedure to delete ESXi servers from the instance details page
 {: #vpc-vcf-host-deleting-proc2}

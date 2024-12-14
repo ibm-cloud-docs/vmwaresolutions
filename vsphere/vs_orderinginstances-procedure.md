@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-09-17"
+lastupdated: "2024-12-10"
 
 keywords: flexible order instances, order flexible, order vmaware vSphere instance
 
@@ -38,13 +38,14 @@ subcollection: vmwaresolutions
 1. Complete the bare metal server settings:
    1. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod where the instance is to be hosted.
    1. Select the CPU model:
-      * For **Cascade Lake** servers, select the CPU model and the RAM size.
+      * For **Sapphire Rapids** servers and **Cascade Lake** servers, select the CPU model and the RAM size.
       * For **SAP-certified Cascade Lake** servers (vSphere 7 only), choose one of the preset configurations.
    1. Specify the number of bare metal servers.
 1. If you selected the **VMware vSAN** component, complete the vSAN™ storage configuration.
    * If you want more storage, select the **High performance with Intel Optane** checkbox.
+   * The [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-storage-settings#vs_orderinginstances-storage-archi) can be either **vSAN ESA** (Express Storage Architecture) (vSphere 8 only) or **vSAN OSA** (Original Storage Architecture). This option is available only when you select **Sapphire Rapids** bare metal servers.
    * Specify the disk types for the capacity and cache disks, and the number of disks.
-   * If you want to **Enable vSAN deduplication and compression**, toggle its switch on.
+   * If you want to **Enable vSAN deduplication and compression** or **Enable vSAN compression** (vSAN ESA only), toggle its switch on.
 1. Complete the network interface settings:
    1. Enter the hostname prefix and domain name.
    1. Select the network setting of either **Public and private network** or **Private network only**.

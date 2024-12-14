@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-12"
+lastupdated: "2024-12-13"
 
 keywords: HCX updates, HCX management console, login HCX console
 

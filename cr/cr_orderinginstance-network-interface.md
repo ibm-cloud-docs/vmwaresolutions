@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-03"
+lastupdated: "2024-12-11"
 
 keywords: cyber recovery, IBM Cloud cyber recovery, cyber recovery network interface, network interface cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -44,7 +44,7 @@ The domain name must meet the following requirements:
 * The length of the last string must be in the range 2 - 24 characters.
 
 The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and virtual machines (VMs) is 63 characters. Domain names must accommodate for this maximum length.
-{: note}
+{: restriction}
 
 ## DNS configuration
 {: #cr_orderinginstance-net-interface-dns-config}

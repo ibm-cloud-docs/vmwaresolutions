@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-13"
+lastupdated: "2024-12-13"
 
 keywords: KMIP for VMware, KMIP stand-alone, tech specs KMIP
 
@@ -22,7 +22,7 @@ The Key Management Interoperability Protocol (KMIP™) for VMware® service prov
 
 The KMIP for VMware service is available as a stand-alone service without being associated to a VMware instance. Each instance of the service can serve one or more {{site.data.keyword.vcf-auto}} or {{site.data.keyword.vcf-flex}} instances.
 
-The supported client applications are:
+The following client applications are supported:
 * vCenter Server 6.7, 7.0, and 8.0
 * vSphere 6.7 and 7.0
 
@@ -47,7 +47,7 @@ Before you install KMIP for VMware, complete the following tasks and review the 
 
 1. Order a usable Key Protect or HPCS service instance in the {{site.data.keyword.cloud_notm}} region where your KMIP for VMware instance is to be hosted. If you are using HPCS, in addition to provisioning the HPCS service, you must also initialize your crypto instance so that HPCS can provide key-related functions.
 
-   For more information, see:
+   For more information, see the following topics:
    * [Provisioning the Key Protect service](/docs/key-protect?topic=key-protect-provision)
    * [Provisioning HPCS service instances](/docs/hs-crypto?topic=hs-crypto-provision#provision)
    * [Initializing HPCS service instances using key part files](/docs/hs-crypto?topic=hs-crypto-initialize-hsm#initialize-hsm)
@@ -64,13 +64,13 @@ Before you install KMIP for VMware, complete the following tasks and review the 
    If you are using HPCS, the CRK must be created within the default key ring for the HPCS instance.
    {: important}
 
-   For more information about Key Protect, see:
+   For more information about Key Protect, see the following topics:
    * [Importing root keys](/docs/key-protect?topic=key-protect-import-root-keys)
    * [Creating root keys](/docs/key-protect?topic=key-protect-create-root-keys)
    * [Creating import tokens](/docs/key-protect?topic=key-protect-create-import-tokens)
    * [IBM Key Protect API](/apidocs/key-protect)
 
-   For more information about HPCS, see:
+   For more information about HPCS, see the following topics:
    * [Importing root keys](/docs/hs-crypto?topic=hs-crypto-import-root-keys)
    * [Creating root keys](/docs/hs-crypto?topic=hs-crypto-create-root-keys)
    * [Creating import tokens](/docs/hs-crypto?topic=hs-crypto-create-import-tokens)
@@ -78,7 +78,7 @@ Before you install KMIP for VMware, complete the following tasks and review the 
 
 4. Ensure that your {{site.data.keyword.cloud_notm}} infrastructure account is enabled for Virtual Routing and Forwarding (VRF) and for connectivity to service endpoints.
 
-   For more information, see:
+   For more information, see the following topics:
    * [Virtual Routing and Forwarding on {{site.data.keyword.cloud_notm}}](/docs/direct-link?topic=direct-link-overview-of-virtual-routing-and-forwarding-vrf-on-ibm-cloud)
    * [Enabling service endpoints](/docs/account?topic=account-vrf-service-endpoint#service-endpoint)
 
@@ -92,5 +92,5 @@ Only private connection is supported. As a result, you don't need to configure f
 * [Managing certificates for KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_addingdeletingcert)
 * [Viewing KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_viewing)
 * [Deleting KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_deleting)
-* [Auditing events for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-at-events)
+* [Activity tracking events for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-at_events)
 * [Getting help and support for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

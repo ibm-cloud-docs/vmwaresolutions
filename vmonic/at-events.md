@@ -1,49 +1,122 @@
 ---
 
 copyright:
+  years: 2024
+lastupdated: "2024-12-10"
 
-  years: 2016, 2024
-
-lastupdated: "2024-05-30"
-
-keywords: activity tracker, event, security, vmware solutions events, vmware solutions shared events, instance events, view events
+keywords: activity tracking, tracking locations, enable events, view events, analyze events
 
 subcollection: vmwaresolutions
-
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Auditing events for VMware Solutions
-{: #at-events}
+# Activity tracking events for VMware Solutions
+{: #at_events}
+
+{{site.data.keyword.cloud}} services, such as {{site.data.keyword.vmwaresolutions_full}}, generate activity tracking events.
+{: shortdesc}
+
+Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements.
+
+You can use {{site.data.keyword.atracker_full_notm}}, a platform service to route auditing events in your account to destinations of your choice by configuring targets and routes that define where activity tracking events are sent. For more information, see [About {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-about).
+
+You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
 {{site.data.content.impnote-at-deprecation}}
 
-Use the {{site.data.keyword.at_full}} service to track how users and applications interact with {{site.data.keyword.cloud_notm}} for VMware® Solutions in {{site.data.keyword.cloud_notm}}.
+## Locations where activity tracking events are generated
+{: #at-locations}
 
-{{site.data.keyword.at_full_notm}} records user-initiated activities that change the state of a service in the {{site.data.keyword.cloud_notm}}. You can use this service to investigate for abnormal activity and critical actions, and comply with regulatory audit requirements. In addition, you can be alerted on actions as they happen. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard. For more information, see [Getting started with {{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
+{{site.data.keyword.vmwaresolutions_short}} generates activity tracking events in the regions that are indicated in the following table.
 
-## Events for {{site.data.keyword.vm-shared}}
-{: #at-events-vdc}
+| Dallas (`us-south`) | Washington (`us-east`) | Toronto (`ca-tor`) | Sao Paulo (`br-sao`) |
+|---------------------|------------------------|--------------------|----------------------|
+| [Yes]{: tag-green}  | [Yes]{: tag-green}     | [Yes]{: tag-green} | [No]{: tag-red}      |
+{: caption="Regions where activity tracking events are generated in Americas locations" caption-side="bottom"}
+{: #at-table-1}
+{: tab-title="Americas"}
+{: tab-group="at"}
+{: class="simple-tab-table"}
+{: row-headers}
 
-{{site.data.content.shared-deprecated-note}}
+| Tokyo (`jp-tok`)   | Sydney (`au-syd`) | Osaka (`jp-osa`) | Chennai (`in-che`) |
+|--------------------|-------------------|------------------|--------------------|
+| [Yes]{: tag-green} | [No]{: tag-red}   | [No]{: tag-red}  | [No]{: tag-red}    |
+{: caption="Regions where activity tracking events are generated in Asia Pacific locations" caption-side="bottom"}
+{: #at-table-2}
+{: tab-title="Asia Pacific"}
+{: tab-group="at"}
+{: class="simple-tab-table"}
+{: row-headers}
 
-When you use {{site.data.keyword.vm-shared}}, an event is generated to track how users and applications interact with virtual data centers.
+| Frankfurt (`eu-de`) | London (`eu-gb`) | Madrid (`eu-es`) |
+|---------------------|------------------|------------------|
+| [Yes]{: tag-green}  | [No]{: tag-red}  | [No]{: tag-red}  |
+{: caption="Regions where activity tracking events are generated in Europe locations" caption-side="bottom"}
+{: #at-table-3}
+{: tab-title="Europe"}
+{: tab-group="at"}
+{: class="simple-tab-table"}
+{: row-headers}
 
-The following table lists the actions that generate and send an event to {{site.data.keyword.at_short}}.
+## Locations where activity tracking events are sent to {{site.data.keyword.at_full_notm}} hosted event search
+{: #at-legacy-locations}
 
-| Action | Description | Outcome |
-|:------ |:----------- |:------- |
-| `vmware-solutions.vdc.create` | An event is generated when a virtual data center instance is created. |`pending` \n `success` \n `failure` |
-| `vmware-solutions.vdc.delete` | An event is generated when a virtual data center instance is deleted. | `pending` \n `success` \n `failure` |
-| `vmware-solutions.vdc.update` | An event is generated when capacity is added to a virtual data center instance. \n An event is generated when capacity is removed from a virtual data center instance. | `pending` \n `success` \n `failure` |
-{: caption="Description of actions that generate {{site.data.keyword.vm-shared}} events" caption-side="bottom"}
+
+
+VMware Solutions sends activity tracking events to {{site.data.keyword.at_full_notm}} hosted event search in the regions that are indicated in the following table.
+
+| Dallas (`us-south`) | Washington (`us-east`) | Toronto (`ca-tor`) | Sao Paulo (`br-sao`) |
+|---------------------|------------------------|--------------------|----------------------|
+| [Yes]{: tag-green}  | [Yes]{: tag-green}     | [Yes]{: tag-green} | [No]{: tag-red}      |
+{: caption="Regions where activity tracking events are sent in Americas locations" caption-side="bottom"}
+{: #at-legacy-table-1}
+{: tab-title="Americas"}
+{: tab-group="at-legacy"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Tokyo (`jp-tok`)   | Sydney (`au-syd`) |  Osaka (`jp-osa`) | Chennai (`in-che`) |
+|--------------------|-------------------|-------------------|--------------------|
+| [Yes]{: tag-green} | [No]{: tag-red}   | [No]{: tag-red}   | [No]{: tag-red}    |
+{: caption="Regions where activity tracking events are sent in Asia Pacific locations" caption-side="bottom"}
+{: #at-legacy-table-2}
+{: tab-title="Asia Pacific"}
+{: tab-group="at-legacy"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Frankfurt (`eu-de`) | London (`eu-gb`) | Madrid (`eu-es`) |
+|---------------------|------------------|------------------|
+| [Yes]{: tag-green}  | [No]{: tag-red}  | [No]{: tag-red}  |
+{: caption="Regions where activity tracking events are sent in Europe locations" caption-side="bottom"}
+{: #at-legacy-table-3}
+{: tab-title="Europe"}
+{: tab-group="at-legacy"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+## Viewing activity tracking events for VMware Solutions
+{: #at-viewing}
+
+{{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.vm-shared}} events are global events. The KMIP for VMware events are location-based events that are automatically forwarded to the {{site.data.keyword.at_short}} service instance that is available in the same location as the KMIP for VMware instance. For more information, see [Monitoring global and location-based events](/docs/activity-tracker?topic=activity-tracker-monitor_events#mon_def_event_type).
+
+### Launching {{site.data.keyword.logs_full_notm}} from the VMware Solutions console
+{: #at-launch-integrated}
+
+{{site.data.keyword.at_short}} can have only one instance per location. To view events, you must access the web UI of the {{site.data.keyword.at_short}} service in the same location where your service instance is available. For more information, see [Navigating to the UI](/docs/activity-tracker?topic=activity-tracker-launch#launch).
+
+### Launching {{site.data.keyword.logs_full_notm}} from the Observability page
+{: #at-launch-standalone}
+
+For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [Launching the UI through the {{site.data.keyword.cloud_notm}} UI](/docs/cloud-logs?topic=cloud-logs-instance-launch#instance-launch-cloud-ui).
 
 ## Events for {{site.data.keyword.vcf-classic-short}} instance management
 {: #at-events-instance-mgmt}
 
-When you manage user accounts, instances, clusters, and services in {{site.data.keyword.vmwaresolutions_short}}, an event is generated.
+When you manage user accounts, instances, clusters, and services in VMware Solutions, an event is generated.
 
 The following table provides the actions that generate and send management events to {{site.data.keyword.at_short}}.
 
@@ -90,15 +163,24 @@ The initiator ID is derived from the TLS (Transport Layer Security) certificate
 | `vmware-solutions.kmip-key.destroy` | A KMIP key is destroyed. |
 {: caption="Description of actions that generate events for the KMIP for VMware service" caption-side="bottom"}
 
-## Viewing events
-{: #at-events-viewing}
+## Events for {{site.data.keyword.vm-shared}}
+{: #at-events-vdc}
 
-{{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.vm-shared}} events are global events. The KMIP for VMware events are location-based events that are automatically forwarded to the {{site.data.keyword.at_short}} service instance that is available in the same location as the KMIP for VMware instance. For more information, see [Monitoring global and location-based events](/docs/activity-tracker?topic=activity-tracker-monitor_events#mon_def_event_type).
+{{site.data.content.shared-deprecated-note}}
 
-{{site.data.keyword.at_short}} can have only one instance per location. To view events, you must access the web UI of the {{site.data.keyword.at_short}} service in the same location where your service instance is available. For more information, see [Navigating to the UI](/docs/activity-tracker?topic=activity-tracker-launch#launch).
+When you use {{site.data.keyword.vm-shared}}, an event is generated to track how users and applications interact with virtual data centers.
+
+The following table lists the actions that generate and send an event to {{site.data.keyword.at_short}}.
+
+| Action | Description | Outcome |
+|:------ |:----------- |:------- |
+| `vmware-solutions.vdc.create` | An event is generated when a virtual data center instance is created. |`pending` \n `success` \n `failure` |
+| `vmware-solutions.vdc.delete` | An event is generated when a virtual data center instance is deleted. | `pending` \n `success` \n `failure` |
+| `vmware-solutions.vdc.update` | An event is generated when capacity is added to a virtual data center instance. \n An event is generated when capacity is removed from a virtual data center instance. | `pending` \n `success` \n `failure` |
+{: caption="Description of actions that generate {{site.data.keyword.vm-shared}} events" caption-side="bottom"}
 
 ## Related links
-{: #at-events-related}
+{: #at-events-links}
 
 * [Provisioning an instance](/docs/activity-tracker?topic=activity-tracker-provision)
 * [Navigating to the UI](/docs/activity-tracker?topic=activity-tracker-launch#launch)

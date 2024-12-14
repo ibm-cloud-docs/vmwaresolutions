@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-12-12"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -35,7 +35,7 @@ Review the following considerations before you install the FortiGate Virtual App
 * When you deploy FortiGate Virtual Appliances to your instance, SNAT and firewall rules are defined on the Management NSX Edge™ Services Gateway (ESG). In addition, static routes on the FortiGate Virtual Appliances are defined to allow outbound HTTPS communications from your instance to the public network. These communications are needed for license activation and for acquiring the most updated security policies and content.
 * For high CPU licenses, make sure that you have enough CPUs available on the consolidated cluster.
 
-   * At least 2 VMware ESXi™ servers are available and each active host has sufficient resources to host a single FortiGate VM.
+   * At least 2 VMware ESXi™ servers are available, and each active host has sufficient resources to host a single FortiGate VM.
    * VMware® vSphere HA has enough resources to host two FortiGate VMs.
 
    Because of the requirements, you must plan carefully for the space that is needed for the FortiGate Virtual Appliance. If needed, before you order FortiGate Virtual Appliance, add 1 - 2 ESXi servers to your instance, or reduce the vSphere HA CPU reservation for failover, or both.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-11-05"
+lastupdated: "2024-12-13"
 
 keywords: planning flexible, data center, vSphere data centers
 
@@ -43,86 +43,87 @@ Cascade Lake bare metal servers are available in [multizone region](#x9774820){:
 If you select a vSAN component, the location list is filtered by SSD (Solid-State Disk) availability.
 {: note}
 
-| Data center | Pod | Server options[^vsphere-7] |
-|:----------- |:--- |:-------------------------- |
-| CHE01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
+| Data center | Pod | Server options |
+|:----------- |:--- |:-------------- |
+| CHE01 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 | OSA21 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 | OSA22 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 | OSA23 | 01 | Cascade Lake, SAP-certified Cascade Lake |
-| SNG01 | 02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| SYD01 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| SYD04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| SYD05 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| TOK02 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| TOK04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| TOK05 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
+| SNG01 | 02 | Cascade Lake, SAP-certified Cascade Lake |
+| SYD01 | 01-02 | Cascade Lake, SAP-certified Cascade Lake |
+| SYD04 | 01 | Cascade Lake, SAP-certified Cascade Lake |
+| SYD05 | 01 | Cascade Lake, SAP-certified Cascade Lake |
+| TOK02 | 01-02 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| TOK04 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| TOK05 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - Asia Pacific" caption-side="bottom"}
 {: tab-title="Asia Pacific"}
 {: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-ap}
 
-| Data center | Pod | Server options[^vsphere-7-02] |
-|:----------- |:--- |:----------------------------- |
-| AMS03 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| FRA02 | 01-03 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| FRA04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| FRA05 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| LON02 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| LON04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| LON05 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| LON06 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| MAD02 | 01 | Cascade Lake, SAP-certified Cascade Lake |
-| MAD04 | 01 | Cascade Lake, SAP-certified Cascade Lake |
-| MAD05 | 01 | Cascade Lake, SAP-certified Cascade Lake |
-| MIL01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| PAR01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
+| Data center | Pod | Server options |
+|:----------- |:--- |:-------------- |
+| AMS03 | 01-02 | Cascade Lake, SAP-certified Cascade Lake |
+| FRA02 | 01-03 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| FRA04 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| FRA05 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| LON02 | 01-02 | Cascade Lake, SAP-certified Cascade Lake |
+| LON04 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| LON05 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| LON06 | 01 | Cascade Lake, SAP-certified Cascade Lake |
+| MAD02 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| MAD04 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| MAD05 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| MIL01 | 01 | Cascade Lake, SAP-certified Cascade Lake |
+| PAR01 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-eur}
 
-| Data center | Pod | Server options[^vsphere-7-03] |
-|:----------- |:--- |:----------------------------- |
-| MON01 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| TOR01 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| TOR04 | 01 | Cascade Lake |
-| TOR05 | 01 | Cascade Lake |
-| WDC04 | 01-05 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| WDC06 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| WDC07 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
+| Data center | Pod | Server options |
+|:----------- |:--- |:-------------- |
+| MON01 | 01-02 | Cascade Lake, SAP-certified Cascade Lake |
+| TOR01 | 01-02 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| TOR04 | 01 | Cascade Lake, Sapphire Rapids |
+| TOR05 | 01 | Cascade Lake, Sapphire Rapids |
+| WDC04 | 01-05 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| WDC06 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| WDC07 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - NA East" caption-side="bottom"}
 {: tab-title="NA East"}
 {: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-naeast}
 
-| Data center | Pod | Server options[^vsphere-7-04] |
-|:----------- |:--- |:----------------------------- |
-| DAL09 | 01-02, 05-06 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| DAL10 | 01-04 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| DAL12 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| DAL13 | 01-03 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
+| Data center | Pod | Server options |
+|:----------- |:--- |:-------------- |
+| DAL09 | 01-02, 05-06 | Cascade Lake, SAP-certified Cascade Lake |
+| DAL10 | 01-04 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| DAL12 | 01-02 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| DAL13 | 01-03 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| DAL14 | 01 | Cascade Lake, Sapphire Rapids |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - NA South" caption-side="bottom"}
 {: tab-title="NA South"}
 {: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-nasouth}
 
-| Data center | Pod | Server options[^vsphere-7-05] |
-|:----------- |:--- |:----------------------------- |
-| SJC03 | 01-02 | Skylake, Cascade Lake |
-| SJC04 | 01 | Skylake, Cascade Lake |
+| Data center | Pod | Server options |
+|:----------- |:--- |:-------------- |
+| SJC03 | 01-02 | Cascade Lake |
+| SJC04 | 01 | Cascade Lake |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - NA West" caption-side="bottom"}
 {: tab-title="NA West"}
 {: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-nawest}
 
-| Data center | Pod | Server options[^vsphere-7-06] |
-|:----------- |:--- |:----------------------------- |
-| SAO01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
+| Data center | Pod | Server options |
+|:----------- |:--- |:-------------- |
+| SAO01 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 | SAO04 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 | SAO05 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - South America" caption-side="bottom"}
@@ -130,18 +131,6 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 {: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-sa}
-
-[^vsphere-7]: Skylake is supported for existing vSphere 6 instances only
-
-[^vsphere-7-02]: Skylake is supported for existing vSphere 6 instances only
-
-[^vsphere-7-03]: Skylake is supported for existing vSphere 6 instances only
-
-[^vsphere-7-04]: Skylake is supported for existing vSphere 6 instances only
-
-[^vsphere-7-05]: Skylake is supported for existing vSphere 6 instances only
-
-[^vsphere-7-06]: Skylake is supported for existing vSphere 6 instances only
 
 ## Related links
 {: #vs_planning-related}

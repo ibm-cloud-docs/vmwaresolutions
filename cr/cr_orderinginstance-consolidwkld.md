@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-12-11"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -52,9 +52,14 @@ Select the {{site.data.keyword.cloud_notm}} data center pod where you want to de
 ## CPU model
 {: #cr_orderinginstance-consolidwkld-cpumodel}
 
-Select **Cascade Lake** or **SAP-certified Cascade Lake**.
+Select **Sapphire Rapids**, **Cascade Lake**, or **SAP-certified Cascade Lake**.
 
+### Sapphire Rapids
+{: #cr_orderinginstance-consolidwkld-sapphire}
 
+{{site.data.content.sapphire-para-intro}}
+
+{{site.data.content.simpletabtable-sapphire}}
 
 ### Cascade Lake
 {: #cr_orderinginstance-consolidwkld-cascade}
@@ -128,14 +133,14 @@ Choose performance level options according to your needs.
 ### vSAN storage
 {: #cr_orderinginstance-consolidwkld-vsan-storage}
 
+Review the following settings for vSAN storage.
 
+#### Storage architecture
+{: #cr_orderinginstance-consolidwkld-vsan-storage-archi}
 
-vSAN is available only for **Cascade Lake** bare metal servers.
+{{site.data.content.storage-arch-spr-intro}}
 
-For new instances, vSAN storage is not available with vSphere 8. To use vSAN storage, select vSphere 7.
-{: important}
-
-
+{{site.data.content.storage-arch-spr}}
 
 #### Size for vSAN capacity disks
 {: #cr_orderinginstance-consolidwkld-vsan-storage-typesize-capdisks}
@@ -146,8 +151,6 @@ Select an option for the capacity disks that you need.
 {: #cr_orderinginstance-consolidwkld-vsan-storage-number-capdisks}
 
 Specify the number of capacity disks that you want to add.
-
-For VMware vSphere 7, order up to 10 disks for Dual CPU models and order up to eight disks for Quad CPU models.
 
 #### Size for vSAN cache disks
 {: #cr_orderinginstance-consolidwkld-vsan-storage-size-cachedisks}
@@ -167,7 +170,10 @@ vSAN storage depends on the number of servers and your total disk capacity, and 
 The amount of storage reduction from deduplication and compression depends on many factors, including the type of data stored and the number of duplicate blocks. Larger disk groups tend to provide a higher deduplication ratio. For more information, see [Using deduplication and compression](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vsan.doc/GUID-3D2D80CC-444E-454E-9B8B-25C3F620EFED.html){: external}.
 {: note}
 
+#### Enable vSAN compression (vSAN ESA only)
+{: #cr_orderinginstance-conconsolidwkldsolidated-vsan-storage-enable-comp-esa}
 
+vSAN storage depends on the number of servers and your total disk capacity, and the use of deduplication. For Sapphire Rapids servers, both vSAN ESA and vSAN OSA are available. However, the **Enable vSAN compression** option is available only for vSAN ESA. For more information, see [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-consolidwkld#cr_orderinginstance-consolidwkld-vsan-storage-archi).
 
 #### vSAN license (BYOL only)
 {: #cr_orderinginstance-consolidwkld-vsan-storage-license}

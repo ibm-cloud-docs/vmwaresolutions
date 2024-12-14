@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-25"
+lastupdated: "2024-12-12"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -77,7 +77,7 @@ To install HCX, complete the following settings:
    * By sending a request through the proxy.
    * By sending a request to `connect.hcx.vmware.com`. For more information, see the [HCX User Guide: Configure a Proxy Server](https://docs.vmware.com/en/VMware-HCX/4.8/hcx-user-guide/GUID-387A91E6-E0DA-41B4-8EFA-9BF2D5F90AB3.html){: external}.
 
- If the proxy is unreachable or does not handle the license activation request, the HCX automated installation fails. A proxy is not required if a firewall that manages the VLAN, where vCenter is installed, is configured to route traffic from the new HCX manager to `connect.hcx.vmware.com`.
+   If the proxy is unreachable or does not handle the license activation request, the HCX automated installation fails. A proxy is not required if a firewall that manages the VLAN, where vCenter is installed, is configured to route traffic from the new HCX manager to `connect.hcx.vmware.com`.
 
    Complete the following proxy fields:
    * **Proxy IP address** - The IPv4 address of the proxy server.

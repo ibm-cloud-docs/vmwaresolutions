@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-09-17"
+lastupdated: "2024-12-13"
 
 keywords: Veeam, Veeam Backup and Replication 12.2, Veeam install, tech specs Veeam, Veeam overview
 
@@ -40,8 +40,7 @@ You can install Veeam Backup and Replication 12.2 on a bare metal server. This i
 * Veeam is always deployed on the management cluster.
 * No migration path is available for existing Veeam 9.5u4b users.
 
-For more information about Veeam on bare metal server, see the following topics.
-
+For more information about Veeam on bare metal server, see the following topics:
 * [Veeam on bare metal server introduction](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-bms-archi-intro)
 * [Veeam on bare metal server overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-bms-archi-overview)
 

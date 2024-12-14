@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-08-13"
+lastupdated: "2024-12-11"
 
 keywords: cyber recovery, cyber recovery settings, cyber recovery license settings, cyber recovery versions, cyber recovery instances
 
@@ -27,7 +27,6 @@ The following VMware® components are part of the {{site.data.keyword.cr}} insta
 VMware vSphere® Enterprise Plus 7 is ordered by default.
 
 For new instances, vSphere 8 is available to order. However, vSphere 8 instances do not support configuration as secondary instances.
-{: note}
 
 ## VMware vCenter Server version
 {: #cr_orderinginstance-vcenter-license}

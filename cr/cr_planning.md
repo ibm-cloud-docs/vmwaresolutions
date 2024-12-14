@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-11-05"
+lastupdated: "2024-12-10"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -100,6 +100,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | DAL10 | 01-04 |
 | DAL12 | 01-02 |
 | DAL13 | 01-03 |
+| DAL14 | 01 |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - NA South" caption-side="bottom"}
 {: tab-title="NA South"}
 {: tab-group="Data centers for {{site.data.keyword.cr}}"}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-10-04"
+lastupdated: "2024-12-10"
 
 keywords: regulated workloads, regulated workloads order instance, order regulated workloads, regulated workloads instances
 
@@ -37,42 +37,71 @@ You can start with a smaller footprint by deploying a consolidated management an
 
    You can choose a Cascade Lake CPU model and a RAM size according to your needs. This option brings down the entry price point by enabling workloads to run alongside VMware® management components in the same cluster. You can start with only 6 hosts instead of 10. This option is helpful for proof of concepts (POCs) or if you want to start small and grow over time.
 
+## CPU model
+{: #vrw-orderinginstance-consldt-cpumodel}
 
+Select **Sapphire Rapids** or **Cascade Lake**.
 
+### Sapphire Rapids
+{: #vrw-orderinginstance-consldt-sapphire}
 
+{{site.data.content.sapphire-para-intro}}
 
+{{site.data.content.simpletabtable-sapphire}}
 
+### Cascade Lake
+{: #vrw-orderinginstance-consldt-cascade}
 
+{{site.data.content.cascade-para-intro}}
 
+{{site.data.content.simpletabtable-cascade}}
+
+## RAM
+{: #vrw-orderinginstance-consldt-cluster-ram}
+
+Various RAM sizes are available depending on the CPU model.
 
 ## Number of bare metal servers
 {: #vrw-orderinginstance-consldt-bare-metal}
 
-You can order 4-51 servers. All servers have the same configuration.
-
+For vSAN™ OSA storage, you can order 4-59 servers. For vSAN ESA storage, you can order 3-59 servers. All servers have the same configuration.
 
 ## vSAN configuration
 {: #vrw-orderinginstance-consldt-vsan}
 
-* For the **Small** capacity, you get two vSAN™ capacity disks 1.9 TB SSD.
-* For the **Customizable** capacity, you can choose the type and number of capacity disks according to your needs.
-* If you are a BYOL user, provide your own vSAN license key. Toggle the **BYOL** switch to **Enabled** and enter your license key.
+Review the following settings for vSAN storage.
 
-   {{site.data.content.attnnote-byol}}
+### Storage architecture
+{: #vrw-orderinginstance-consldt-vsan-storage-archi}
 
+{{site.data.content.storage-arch-spr-intro}}
 
+{{site.data.content.storage-arch-spr}}
 
+### Size for vSAN capacity disks
+{: #vrw-orderinginstance-consldt-vsan-storage-typesize-capdisks}
 
+Select an option for the capacity disks that you need.
 
+### Number of vSAN capacity disks
+{: #vrw-orderinginstance-consldt-vsan-storage-number-capdisks}
 
+Specify the number of capacity disks that you want to add.
 
+### Size for vSAN cache disks
+{: #vrw-orderinginstance-consldt-vsan-storage-size-cachedisks}
 
+Review the **Size for vSAN cache disks** value.
 
+### Number of vSAN cache disks
+{: #vrw-orderinginstance-consldt-vsan-storage-number-cachedisks}
 
+Review the **Number of vSAN cache disks** value.
 
+## Summary
+{: #vrw-orderinginstance-consldt-summary}
 
-
-
+Review the vSAN details based on your selected configuration.
 
 ## Estimated resources available per cluster
 {: #vrw-orderinginstance-consldt-est}

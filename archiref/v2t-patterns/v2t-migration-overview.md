@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-11-07"
+lastupdated: "2024-12-13"
 
 subcollection: vmwaresolutions
 
@@ -64,15 +64,15 @@ Depending on the source environment complexity and the skills, experience and ti
 
 You must be familiar with NSX-T concepts and administration tasks before any migration. Review the following information:
 
-* [VMware Learning for NSX-T education](https://www.broadcom.com/support/education/vmware){: external}
 * [{{site.data.keyword.cloud_notm}} VMware NSX-T Architecture](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design)
 * [{{site.data.keyword.vcf-auto-short}} Overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
-* [NSX-V to NSX-T 3.x Migration Coordinator](https://www.vmware.com/docs/nsx-v-to-nsx-t-3x-migration-coordinator#_Toc57645169){: external}
+* [VMware Learning for NSX-T education](https://www.broadcom.com/support/education/vmware){: external}
+* [NSX-T Data Center Migration Coordinator Guide](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/nsxt_31_migrate.pdf){: external}
 
 ## Related links
 {: #v2t-overview-links}
 
-* [PrimaryIO NSX-V to NSX-T fast track migration service](https://hdm.primaryio.com/lp/nsxvtot){: external}
 * [VMware Cloud Migration Services](https://cloud.ibm.com/catalog/services/vmware-cloud-migration-services)
+* [PrimaryIO NSX-V to NSX-T fast track migration service](https://hdm.primaryio.com/lp/nsxvtot){: external}
 * [cITopus tool for VMware NSX](https://spjsolutions.com){: external}
 * [MAT - ReSTNSX's migration assistance tool](https://www.restnsx.com/post/migration-assistance-tool-mat){: external}
