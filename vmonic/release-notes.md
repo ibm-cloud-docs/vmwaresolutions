@@ -58,7 +58,7 @@ Zerto add-on service upgrade
 REST API updates
 :   The following updates are available for the [VMware Solutions API](/apidocs/vmware-solutions):
 
-   * The REST APIs to get the list of supported RAM types as a JSON object (`ram_types`) and to get the list of supported disk types as a JSON object (`disk_types`) are replaced by the `server_types` API. For more information, see [Get the list of server CPU types that are supported, per location or vSphere version, as a JSON object](/apidocs/vmware-solutions#controllers-public-v2-proxy-list-server-types-request).
+   * The REST APIs to get the list of supported RAM types as a JSON object (`ram_types`) and to get the list of supported disk types as a JSON object (`disk_types`) are replaced by the `server_types` API. For more information, see [Get the list of server CPU types that are supported, per location or vSphere version, as a JSON object](/apidocs/vmware-solutions#controllers-public-v2-proxy-list-server-types).
    * Outdated information is removed.
 
 New and updated documentation
