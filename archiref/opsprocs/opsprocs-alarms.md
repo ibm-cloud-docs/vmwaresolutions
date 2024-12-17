@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-11-26"
+lastupdated: "2024-12-17"
 
 subcollection: vmwaresolutions
 
@@ -172,7 +172,7 @@ The following table describes the standard preconfigured alarms.
 | Registration or unregistration of third-party IO filter storage providers fails on a host | Not configured in {{site.data.keyword.vcf-auto-short}} instances as they do not support VASA storage. | [Broadcom Compatibility Guide](https://compatibilityguide.broadcom.com/search?program=vasa&persona=live){: external} |
 | Service Control Agent Health Alarm | Configure to send an email one time when component ID equal to sca and New status equal to red. | [How to stop, start, or restart vCenter Server 6.x services (2109881)](https://knowledge.broadcom.com/external/article?legacyId=2109881){: external} |
 | Identity Health Alarm | Configure to send an email one time when component ID equal to identity and New status equal to red. | [How to stop, start, or restart vCenter Server 6.x services (2109881)](https://knowledge.broadcom.com/external/article?legacyId=2109881){: external} |
-| vSphere Web Client Health Alarm | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Enabling debug logging on the VMware vSphere 5.x/6.x Web Client service (2011485)](https://knowledge.broadcom.com/external/article?legacyId=2011485){: external} |
+| vSphere Web Client Health Alarm | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Enabling debug logging on the VMware vSphere 5.x/6.x/7.x/8.0 Web Client services](https://knowledge.broadcom.com/external/article/326324/enabling-debug-logging-on-the-vmware-vsp.html){: external} |
 | ESX Agent Manager Health Alarm | Configure to send an email one time when component ID equal to `eam` and New status equal to `red`. | [How to stop, start, or restart vCenter Server 6.x services (2109881)](https://knowledge.broadcom.com/external/article?legacyId=2109881){: external} |
 | Message Bus Config Health Alarm | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [How to stop, start, or restart vCenter Server 6.x services (2109881)](https://knowledge.broadcom.com/external/article?legacyId=2109881){: external} |
 | Cis License Health Alarm | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [How to stop, start, or restart vCenter Server 6.x services (2109881)](https://knowledge.broadcom.com/external/article?legacyId=2109881){: external} |
