@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-12-19"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.vcf-classic-short}} and Red Hat OpenShift architecture overview
 {: #vcs-openshift-intro}
 
-The {{site.data.keyword.vmwaresolutions_full}} offering includes fully automated, rapid deployments of {{site.data.keyword.vcf-classic}}. This offering complements the on-premises infrastructure and allows existing and future workloads to run on {{site.data.keyword.cloud_notm}} without conversion by using the same tools, skills, and processes that are used on-premises. For more information, see [What is virtualization?](https://www.ibm.com/topics/virtualization){: external}.
+The {{site.data.keyword.vmwaresolutions_full}} offering includes fully automated, rapid deployments of {{site.data.keyword.vcf-classic}}. This offering complements the on-premises infrastructure and allows existing and future workloads to run on {{site.data.keyword.cloud_notm}} without conversion by using the same tools, skills, and processes that are used on-premises. For more information, see [What is virtualization?](https://www.ibm.com/think/topics/virtualization){: external}.
 
 {{site.data.keyword.redhat_openshift_full}} on {{site.data.keyword.vmwaresolutions_short}} provides the capability to deploy a {{site.data.keyword.redhat_openshift_notm}} cluster by using an automated deployment of the VMware Software Defined Data Center (SDDC) architecture. The {{site.data.keyword.redhat_openshift_notm}} cluster is deployed as virtual machines (VM) or appliances on {{site.data.keyword.cloud_notm}} components by using VMware NSX® software-defined networking.
 

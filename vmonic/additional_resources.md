@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-29"
+lastupdated: "2024-12-19"
 
 keywords: vmware solutions data sheet, vmware solutions developer, vmware solutions video
 
@@ -33,7 +33,7 @@ Review the following resources to get started faster or gain more in-depth techn
 ## Platform extensions
 {: #additional_resources-plat-extensions}
 
-Review the architecture of all [virtualization platform extensions](https://www.ibm.com/topics/virtualization) such as:
+Review the architecture of all [virtualization platform extensions](https://www.ibm.com/think/topics/virtualization) such as:
 
 * VMware HCX™ on {{site.data.keyword.cloud_notm}}
 * {{site.data.keyword.cloud_notm}} file and block storage
@@ -50,7 +50,7 @@ Review the architecture of all [virtualization platform extensions](https://www.
 
 * [Veeam on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/veeam)
 * [Zerto on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/zerto)
-* [What is virtualization?](https://www.ibm.com/topics/virtualization)
+* [What is virtualization?](https://www.ibm.com/think/topics/virtualization)
 
 ## VMware documentation
 {: #additional_resources-vmware-doc}
