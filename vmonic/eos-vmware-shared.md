@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # End of Support for {{site.data.keyword.vm-shared}} deployments
 {: #eos-vmware-shared}
 
-{{site.data.keyword.vm-shared}} is not available for new deployments after 28 March 2024. Existing instances are supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025.
+{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances are supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025.
 {: deprecated}
 
 {{site.data.keyword.cloud_notm}} support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} will end on 15 January 2025. As stated in [End of Support for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v), IBM’s exclusive support extension for VMware® NSX-V will end on 15 January 2025.
