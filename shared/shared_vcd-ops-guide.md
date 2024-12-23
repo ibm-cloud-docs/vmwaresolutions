@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-12-23"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -562,7 +562,7 @@ Every private network endpoint comes configured with one private network IP addr
 * Review [{{site.data.keyword.vcf-aas}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-aas-overview).
 * You must have a running VM.
 * The VM must be connected to a routed Organization virtual data center network. For more information, see [Creating a routed Organization virtual data center network](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-routed-organization) and [Connect the VMs to the network](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-connect-vm).
-* You must have virtual routing and forwarding and service endpoints that are enabled on the account that the allow listed IP or subnet belong to. For more information, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
+* You must have virtual routing and forwarding and service endpoints that are enabled on the account that the allowlisted IP address or subnet belong to. For more information, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
 
 ### Collecting network IP addresses
 {: #shared_vcd-ops-guide-pne-IPs}

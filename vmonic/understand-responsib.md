@@ -140,9 +140,9 @@ The following table describes the responsibilities that are related to incident 
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-incident-and-ops-shared-table}
 
-[^mzr1]: Multizone region virtual data centers are limited to allow listed customers. For more information, contact your VMware Solutions representative.
+[^mzr1]: Multizone region virtual data centers are limited to allowlisted customers. For more information, contact your VMware Solutions representative.
 
-[^mzr2]: Multizone region virtual data centers are limited to allow listed customers. For more information, contact your VMware Solutions representative.
+[^mzr2]: Multizone region virtual data centers are limited to allowlisted customers. For more information, contact your VMware Solutions representative.
 
 ### Change management for {{site.data.keyword.vm-shared}}
 {: #understand-responsib-change-management-shared}
