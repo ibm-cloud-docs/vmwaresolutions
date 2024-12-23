@@ -22,6 +22,10 @@ content-type: release-note
 Use these release notes to learn about updates to {{site.data.keyword.vmwaresolutions_full}}, including new features, component updates, usability enhancements, and bug fixes.
 {: shortdesc}
 
+
+
+
+
 ## 2024
 {: #year-2024}
 
