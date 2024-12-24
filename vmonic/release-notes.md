@@ -125,8 +125,8 @@ Add-on services upgrades
    * {{site.data.keyword.redhat_openshift_full}} v4.15
    * VMware Aria® Operations™ v8.17.1 and VMware Aria Operations™ for Logs v8.17
 
-Veeam 12.1.2 for VMware Shared
-:   Veeam Backup and Replication 12.1.2 (Veeam 12.1.2) is now available for deployment with the VMware Shared offering.
+Veeam 12.1.2 for {{site.data.keyword.vm-shared}}
+:   Veeam Backup and Replication 12.1.2 (Veeam 12.1.2) is now available for deployment with the {{site.data.keyword.vm-shared}} offering.
 
 Known issue about text overflow
 :   When you select the instance type in the **Create a resource** section, the text on the card might overflow out of the card margins. This issue happens on some browsers when the font size setting for the browser is set to **Large** or **Very large**. To resolve the issue, view the console with the font size set to **Medium**.
@@ -135,8 +135,8 @@ Known issue about text overflow
 {: #vmwaresolutions-jun2424}
 {: release-note}
 
-VMware Cloud Director upgrade for VMware Shared
-:   The VMware Shared infrastructure is upgraded to VMware Cloud Director v10.5.1.1, which resolves various issues and includes bug fixes. For more information, see [VMware Cloud Director 10.5.1.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.5.1.1/rn/vmware-cloud-director-10511-release-notes/index.html){: external}.
+VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
+:   The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.5.1.1, which resolves various issues and includes bug fixes. For more information, see [VMware Cloud Director 10.5.1.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.5.1.1/rn/vmware-cloud-director-10511-release-notes/index.html){: external}.
 
 ### 14 June 2024
 {: #vmwaresolutions-jun1424}
@@ -214,8 +214,8 @@ REST API updates
 {: #vmwaresolutions-apr0424}
 {: release-note}
 
-Veeam 12.1.1 for VMware Shared
-:   Veeam Backup and Replication 12.1.1 (Veeam 12.1.1) is now available for deployment with the VMware Shared offering.
+Veeam 12.1.1 for {{site.data.keyword.vm-shared}}
+:   Veeam Backup and Replication 12.1.1 (Veeam 12.1.1) is now available for deployment with the {{site.data.keyword.vm-shared}} offering.
 
 ### 1 April 2024
 {: #vmwaresolutions-apr0124}
@@ -224,15 +224,15 @@ Veeam 12.1.1 for VMware Shared
 Updated packaging and pricing for VMware Solutions offerings
 :   {{site.data.keyword.cloud}} is changing its {{site.data.keyword.vmwaresolutions_short}} portfolio and pricing, in response to the changes to the packaging and pricing of the VMware® portfolio, announced by Broadcom. These changes will be effective on 1 May 2024. For more information, see [Packaging and pricing for VMware by Broadcom](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing).
 
-Updated pricing structure for RHEL for VMware Shared
+Updated pricing structure for RHEL for {{site.data.keyword.vm-shared}}
 :   The Red Hat Enterprise Linux (RHEL) pricing is updated from the existing 2-tier pricing structure (Small and Large) to a 3-tier pricing structure (Small, Medium, and Large). For more information, see [April 2024 price changes](/docs/overview?topic=overview-price-adjustments#april-2024).
 
 ### 28 March 2024
 {: #vmwaresolutions-mar2824}
 {: release-note}
 
-End of Support for VMware Shared deployments
-:   Starting on 28 March 2024, VMware Shared will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.cloud_notm}} for VMware as a Service](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+End of Support for {{site.data.keyword.vm-shared}} deployments
+:   Starting on 28 March 2024, {{site.data.keyword.vm-shared}} will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.cloud_notm}} for VMware as a Service](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 
 ### 15 March 2024
 {: #vmwaresolutions-mar1524}
@@ -249,8 +249,8 @@ VMware Cloud Foundation for VPC enhancements
 {: #vmwaresolutions-feb1424}
 {: release-note}
 
-VMware Cloud Director upgrade for VMware Shared
-:   The VMware Shared infrastructure is upgraded to VMware Cloud Director v10.4.2.2, which resolves various issues, includes security fixes, and introduces new features, such as an improved tenant login experience. For more information, see [VMware Cloud Director 10.4.2.2 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.2.2/rn/vmware-cloud-director-10422-release-notes/index.html){: external}.
+VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
+:   The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.4.2.2, which resolves various issues, includes security fixes, and introduces new features, such as an improved tenant login experience. For more information, see [VMware Cloud Director 10.4.2.2 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.2.2/rn/vmware-cloud-director-10422-release-notes/index.html){: external}.
 
 ### 7 February 2024
 {: #vmwaresolutions-feb0724}
@@ -395,8 +395,8 @@ VMware vSphere 8 on Cascade Lake - not supported
    Do not upgrade to vSphere 8.x on Cascade Lake servers. If you upgrade to vSphere 8.x, your environment configuration becomes unsupported by IBM and VMware.
    {: important}
 
-Veeam 12 for VMware Shared
-:   Veeam Backup and Replication 12 (Veeam 12) is now available for deployment with the VMware Shared offering.
+Veeam 12 for {{site.data.keyword.vm-shared}}
+:   Veeam Backup and Replication 12 (Veeam 12) is now available for deployment with the {{site.data.keyword.vm-shared}} offering.
 
 vCenter Server and VMware vSphere BOM updates
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
@@ -426,7 +426,7 @@ User interface updates and enhancements
 New and updated documentation
 :   The following updates are available:
 
-   * The VMware Shared metrics are updated with metadata details.
+   * The {{site.data.keyword.vm-shared}} metrics are updated with metadata details.
    * New documentation is available to assist with expanding ordered endurance storage after ordering the Veeam add-on service.
 
 ### 5 July 2023
@@ -519,8 +519,8 @@ User interface updates and enhancements
 {: #vmwaresolutions-mar0823}
 {: release-note}
 
-VMware Cloud Director upgrade for VMware Shared
-:   The VMware Shared infrastructure is upgraded to VMware Cloud Director v10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes.
+VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
+:   The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes.
 
 End of Marketing for {{site.data.keyword.cloud_notm}} Secure Virtualization
 :   The {{site.data.keyword.cloud_notm}} Secure Virtualization offering is no longer available for new deployments. Support for existing customers who are using the offering is still provided.
@@ -559,13 +559,13 @@ User interface updates and enhancements
 {: #vmwaresolutions-jan1023}
 {: release-note}
 
-VMware Cloud Director upgrade for VMware Shared
-:   The VMware Shared infrastructure is upgraded to VMware Cloud Director v10.4, which supports up to virtual hardware version 19. If you use the VMware Cloud Director API, consider the following updated product support notices:
+VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
+:   The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.4, which supports up to virtual hardware version 19. If you use the VMware Cloud Director API, consider the following updated product support notices:
    * VMware Cloud Director API versions 31.0 and 32.0 are not supported.
    * VMware Cloud Director API versions 33.0, 34.0, 35.0, and 35.2 are deprecated and are not supported starting with the next major release of VMware Cloud Director.
 
 Name change for vRealize Operations Tenant App for VMware Cloud Director
-:   VMware changed the vRealize Operations Tenant App for VMware Cloud Director product name to VMware Chargeback. The name is updated throughout the VMware Shared documentation.
+:   VMware changed the vRealize Operations Tenant App for VMware Cloud Director product name to VMware Chargeback. The name is updated throughout the {{site.data.keyword.vm-shared}} documentation.
 
 Bring Your Own License (BYOL) no longer supported
 :   {{site.data.keyword.cloud_notm}} previously allowed you to bring your own license (BYOL) when you move your existing on-premises VMware workloads to {{site.data.keyword.cloud_notm}}. BYOL is no longer allowed by VMware. You can no longer bring your own licenses for any new hosts. This restriction applies to all VMware products that are available from {{site.data.keyword.cloud_notm}}. For existing BYOL servers, you can still upgrade and migrate to refresh software and hardware.
@@ -585,7 +585,7 @@ Veeam migration from NSX-V to NSX-T
 :   To migrate the Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket.
 
 REST API updates
-:   For VMware Shared, the V1 API support ended on 31 December 2022. Use the V2 API.
+:   For {{site.data.keyword.vm-shared}}, the V1 API support ended on 31 December 2022. Use the V2 API.
 
 User interface updates and enhancements
 :   The left navigation menu in the instance detail page is now changed to tabs. Also, a new tab **Access information** is added, where you can find information such as AD/DNS IP and remote desktop credentials for your instance.
@@ -605,7 +605,7 @@ Cyber Recovery
 Private network endpoint enhancements
 :   You can now edit the private network endpoints allowlisted IP addresses and subnets for your VMware Solutions Shared instance.
 
-Veeam self-service portal for VMware Shared
+Veeam self-service portal for {{site.data.keyword.vm-shared}}
 :   The Veeam self-service portal is now automatically enabled for existing and new VMware Cloud Director organizations.
 
 MEX01 data center no longer available
@@ -650,7 +650,7 @@ Ordering Veeam stand-alone licenses
 REST API updates
 :   The following updates are available:
 
-   * For VMware Shared, the support date for the V1 API is being extended until 31 December 2022. To ensure smooth transition in the future, start using the V2 API.
+   * For {{site.data.keyword.vm-shared}}, the support date for the V1 API is being extended until 31 December 2022. To ensure smooth transition in the future, start using the V2 API.
    * For VMware Solutions API, support is provided for Caveonix RiskForesight, Veeam, Zerto, and VMware HCX stand-alone licenses. Also, support for the 2U chassis types is added by using the new `large_chassis_only` parameter.
 
 User interface enhancements
@@ -713,7 +713,7 @@ User interface updates and enhancements
 {: #vmwaresolutions-jun2222}
 {: release-note}
 
-VMware vRealize Operations Tenant App V8.6 for VMware Shared
+VMware vRealize Operations Tenant App V8.6 for {{site.data.keyword.vm-shared}}
 :   The 4.8 release enables a new optional feature for the {{site.data.keyword.vmwaresolutions_short}} tenant portal. VMware vRealize Operations Tenant App V8.6 provides metering capabilities for tenants to monitor their virtual data centers, virtual applications, and virtual machines.
 
 {{site.data.keyword.cloud_notm}} Identity and Access Management enablement for VMware Solutions Shared
@@ -776,13 +776,13 @@ New and updated documentation
 REST API updates
 :   New REST APIs are available.
 
-   * (Updated on 31 October 2022) For VMware Shared, a new V2 API is introduced, which includes the new `site` object. The V1 API is being deprecated and will be supported until 31 December 2022. To ensure smooth transition in the future, start using the V2 APIs.
+   * (Updated on 31 October 2022) For {{site.data.keyword.vm-shared}}, a new V2 API is introduced, which includes the new `site` object. The V1 API is being deprecated and will be supported until 31 December 2022. To ensure smooth transition in the future, start using the V2 APIs.
    * For the VMware Solutions API, support is provided for VMware vSphere cluster new deployments and for the KMIP for VMware stand-alone service.
 
 User interface updates and enhancements
 :   Various error messages and tooltip enhancements are available to assist you in selecting the appropriate setting on the UI.
 
-   * You can now view site and virtual data center details from the **Resources** page for VMware Shared.
+   * You can now view site and virtual data center details from the **Resources** page for {{site.data.keyword.vm-shared}}.
    * The following enhancements are made to the ordering page for {{site.data.keyword.vmwaresolutions_short}} offerings.
       * A vertical progress indicator bar is now available that maps each section on the ordering page and helps to quickly browse to different areas of the page. You can directly jump onto any specific section of the page by clicking the heading in the progress bar. When you scroll through the page, the progress bar also keeps a check on whether the data is entered or not.
       * The CPU model selection tile group is now changed to a list of items in a table. You can select the CPU model of your choice from the table.
@@ -791,8 +791,8 @@ User interface updates and enhancements
 {: #vmwaresolutions-apr2522}
 {: release-note}
 
-VMware Cloud Director upgrade for VMware Shared
-:   (Updated on 8 May 2022) The VMware Shared infrastructure is upgraded to VMware Cloud Director v10.3.3.
+VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
+:   (Updated on 8 May 2022) The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.3.3.
 
 Compute policy support for VMware Solutions Shared virtual data centers
 :   You can now choose to enable a compute policy for a VMware Solutions Shared virtual data center. This feature provides a convenient option to choose a compute policy for your virtual machine (VM) from the list of policies that are available for that virtual data center.
@@ -859,8 +859,8 @@ User interface updates and enhancements
 {: #vmwaresolutions-feb2122}
 {: release-note}
 
-VMware Cloud Director upgrade for VMware Shared
-:   (Updated on 15 March 2022) The VMware Shared infrastructure is upgraded to VMware Cloud Director v10.3.2.
+VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
+:   (Updated on 15 March 2022) The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.3.2.
 
 VMware vCenter Server instances
 :   The following upgrades and improvements are available for newly deployed instances, clusters, and hosts.
