@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-11-26"
+lastupdated: "2024-12-24"
 
 subcollection: vmwaresolutions
 
@@ -131,7 +131,7 @@ See also [different ways to run VMware workloads in {{site.data.keyword.cloud_no
 ## What is the impact if I don't upgrade vSphere 6.x on my old instance hosts?
 {: #faq-v2t-migration-6x-impact-vcs}
 
-Upgrading your vSphere software is a customer responsibility and the decision to upgrade to a supported version is yours. However, your business might be at risk because VMware by Broadcom is under no obligation to provide product patches and updates, such as security updates and bug fixes. {{site.data.keyword.cloud_notm}} support for ordering all update levels of vSphere 6.x ended on 10 October 2021 and you can no longer order new instances with vSphere 6.x.
+Upgrading your vSphere software is a customer responsibility and the decision to upgrade to a supported version is yours. However, your business might be at risk because VMware by Broadcom is under no obligation to provide product patches and updates, such as security updates and bug fixes. {{site.data.keyword.cloud_notm}} support for ordering all update levels of vSphere 6.x ended on 10 October 2021 and you cannot order new instances with vSphere 6.x.
 
 {{site.data.keyword.cloud_notm}} recommends upgrading to 7.x. If your old instance is running NSX-V, consider moving to {{site.data.keyword.vcf-auto-short}}. This lift and shift upgrade approach can be more beneficial due to the end of support of NSX-V. You might benefit from a target platform with updated hardware, upgraded VMware software, NSX-T, and less of an impact lift and shift migration rather than an in-place upgrade.
 
