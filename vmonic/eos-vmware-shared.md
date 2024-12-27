@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-12-24"
+lastupdated: "2024-12-27"
 
 keywords: end of support notice, vmware shared, end of support vmware shared, vmware shared deprecated, vmware shared support
 
@@ -28,9 +28,9 @@ Because {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} use
 
 The upgraded replacement for {{site.data.keyword.vm-shared}} is {{site.data.keyword.vcf-aas-full}}, the next generation IBM-managed VMware Cloud Director offering. IBM® strongly recommends that you migrate your workloads to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service).
 
-{{site.data.keyword.vcf-aas}} is based on VMware NSX-T software and is provided at near-identical [pricing](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared#eos-vmware-shared-pricing). As of December 2024, {{site.data.keyword.vcf-aas}} multitenant is available in 7 {{site.data.keyword.cloud_notm}} regions, with more regions being added periodically.
+{{site.data.keyword.vcf-aas}} is based on VMware NSX-T software and is provided at near-identical [pricing](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared#eos-vmware-shared-pricing). As of December 2024, {{site.data.keyword.vcf-aas}} multitenant is available in 7 {{site.data.keyword.cloud_notm}} regions, and more regions are added periodically.
 
-As of 28 March 2024, new orders for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} instances are not accepted. If you are an existing customer, you can continue to use your {{site.data.keyword.vm-shared}} deployments until 15 January 2025. However, IBM strongly recommends that you immediately assess your workloads and plan your migration to {{site.data.keyword.vcf-aas}}.
+As of 28 March 2024, new orders for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} instances are not accepted. If you are an existing customer, you can continue to use your {{site.data.keyword.vm-shared}} deployments until 15 January 2025 after which access to workloads will end. IBM strongly recommends that you assess your workloads immediately and plan your migration to {{site.data.keyword.vcf-aas}}.
 
 {{site.data.keyword.cloud_notm}} offers secure, simple, and cost-effective onboarding and migration options: either self-service or assisted. For more information, see [Migrating from {{site.data.keyword.vm-shared}} to {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_migration).
 

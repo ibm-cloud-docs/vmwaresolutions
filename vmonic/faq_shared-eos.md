@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-12-24"
+lastupdated: "2024-12-27"
 
 keywords: FAQ vmware shared, vmware shared, end of support vmware shared, vmware shared deprecated
 
@@ -25,7 +25,7 @@ Find answers to frequently asked questions about the End of Support for {{site.d
 {: #faq-shared-eos}
 {: faq}
 
-If you are an existing customer, support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} deployments will continue until 28 February 2025 after which access to workloads will end. It is recommended that you deploy any new instances on the next-generation multitenant offering {{site.data.keyword.vcf-aas-full}}. {{site.data.keyword.vcf-aas}} is based on the same underlying software VMware Cloud Director, which retains the same admin console. You also benefit from performance improvements, options of network edge tier, improved private networking through {{site.data.keyword.tg_full_notm}}, greater regional coverage, and minor rebalancing in pricing. All these benefits make {{site.data.keyword.vcf-aas}} the ideal landing zone for your workloads.
+If you are an existing customer, support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} deployments will continue until 15 January 2025 after which access to workloads will end. It is recommended that you deploy any new instances on the next-generation multitenant offering {{site.data.keyword.vcf-aas-full}}. {{site.data.keyword.vcf-aas}} is based on the same underlying software VMware Cloud Director, which retains the same admin console. You also benefit from performance improvements, options of network edge tier, improved private networking through {{site.data.keyword.tg_full_notm}}, greater regional coverage, and minor rebalancing in pricing. All these benefits make {{site.data.keyword.vcf-aas}} the ideal landing zone for your workloads.
 
 If you are new to {{site.data.keyword.vm-shared}}, and don't have any existing deployments, you are not able to provision new instances of {{site.data.keyword.vm-shared}}. You can directly use the next-generation performance that is offered by {{site.data.keyword.vcf-aas}}, with on-demand pricing (hourly) and discounted reserved usage (monthly). For more discounts for continued use, contact your {{site.data.keyword.IBM}} seller.
 
@@ -128,7 +128,7 @@ No. VCDA does not include any capability to migrate the network configuration.
 {: #faq-shared-eos-subnets}
 {: faq}
 
-You can use new subnets, however most customers don't. If you plan to migrate a subnet in multiple batches, then you need to reassign IP addresses as no L2 extension capability exists.
+You can use new subnets; however most customers don't. If you plan to migrate a subnet in multiple batches, then you need to reassign IP addresses as no L2 extension capability exists.
 
 ## What are the recommended steps for an optimal migration? 
 {: #faq-shared-eos-optimal-mig}
@@ -137,7 +137,7 @@ You can use new subnets, however most customers don't. If you plan to migrate a 
 We recommend the following best practices:
 
 1. Provision your {{site.data.keyword.vmware-service_short}} instance in the same region as the existing {{site.data.keyword.vm-shared}} instance.
-2. Create your network or networks in {{site.data.keyword.vcf-aas}}: segments, networks, firewall rules, NAT, and so on. For more information, see [Technical considerations about migrating from {{site.data.keyword.vm-shared}} to {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared-vmwaas-migration).
+2. Create your network or networks in {{site.data.keyword.vcf-aas}}: segments, networks, firewall rules, and NAT. For more information, see [Technical considerations about migrating from {{site.data.keyword.vm-shared}} to {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared-vmwaas-migration).
 3. (Optional) If you are planning to use {{site.data.keyword.tg_full}} to connect to other resources, configure interconnectivity. 
 
    If you are planning to keep the existing subnets, do not advertise these routes through {{site.data.keyword.tg_short}} until the VMs are migrated.
