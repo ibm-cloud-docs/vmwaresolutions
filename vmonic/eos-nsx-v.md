@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-12-24"
+lastupdated: "2024-12-27"
 
 keywords: end of support notice, nsx-v deployment, end of support nsx-v, nsx-v deprecated, nsx-v support
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 Broadcom's support for all new VMware NSX-V deployments ended on 16 January 2022.
 
-However, Broadcom® and IBM worked closely to extend the existing NSX–V support into 2025. This support is exclusive only for {{site.data.keyword.cloud}}. No other on–premises or hyper–scaler company has this support benefit. With this support, you have more time to migrate, but IBM advises you to start migration as soon as possible.
+However, Broadcom® and IBM worked closely to extend the existing NSX–V support into 2025. This support is exclusive to {{site.data.keyword.cloud}} only. No other on–premises or hyper–scaler company has this support benefit. With this support, you have more time to migrate, but IBM advises you to start migration as soon as possible.
 
 As of 21 June 2022, you cannot order new VMware vCenter Server® with NSX-V instances, but you can add hosts and clusters to your existing NSX–V deployments. IBM strongly recommends that you immediately assess your NSX–V networks and plan a much earlier migration to NSX–T.
 

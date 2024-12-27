@@ -22,9 +22,7 @@ subcollection: vmwaresolutions
 {: deprecated}
 
 {{site.data.keyword.cloud_notm}} support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} will end on 15 January 2025. As stated in [End of Support for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v), IBM’s exclusive support extension for VMware® NSX-V will end on 15 January 2025.
-
-
-Because {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} uses NSX-V as the underlying networking software, it will no longer be supported.
+ Because {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} uses NSX-V as the underlying networking software, it will no longer be supported.
 
 The upgraded replacement for {{site.data.keyword.vm-shared}} is {{site.data.keyword.vcf-aas-full}}, the next generation IBM-managed VMware Cloud Director offering. IBM® strongly recommends that you migrate your workloads to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service).
 

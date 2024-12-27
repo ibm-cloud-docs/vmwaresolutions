@@ -65,7 +65,7 @@ All existing customers will receive an email with these changes.
 
 {{site.data.keyword.vcf-aas}} offers several advantages over {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}}:
 * Better architecture design that is based on the most recent supported software-defined networking platform from VMware NSX-T™ Networking, with upgraded High Availability.
-* Increased global reach with planned expansion through 2024 and 2025.
+* Increased global reach with planned expansion through 2025.
 * Single-pane-of-glass management for customers that use both single and multitenant consumption, with a common bill across.
 * Optimized compute pricing model to provide better cost economics for scaling of RAM.
 * Optional high-performance network edges to support bandwidth-intensive workloads.
