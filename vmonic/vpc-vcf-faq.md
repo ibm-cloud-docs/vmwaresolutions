@@ -22,7 +22,7 @@ subcollection: vmwaresolutions
 {: #vpc-vcf-faq-vcf-glossary}
 {: faq}
 
-You can use the VMware Cloud Foundation™ documentation for most Day 2 operations. For more information, see [About getting started with {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-getting-started/GUID-F77789E2-5A3E-4055-AA4D-904DB2DDC8C3.html?hWord=N4IghgNiBcIG4FsDuYBOBTABAYwgewFcATTAM0IDsiwAXASzwpAF8g){: external}.
+You can use the VMware Cloud Foundation™ documentation for most Day 2 operations. For more information, see [Getting started with {{site.data.keyword.vcf-vpc-short}}](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/getting-started-with-the-management-domain-5-2.html){: external}.
 
 Exceptions apply, some of which are documented in this FAQ. If you need assistance for the administration of your {{site.data.keyword.vcf-vpc}} instance, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 

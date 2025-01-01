@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-09-17"
+lastupdated: "2025-01-01"
 
 keywords: Cyber Recovery, Cyber Recovery offering, Cyber Recovery instance, data protection, cyber threat, ransomware, Cyber resilience
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 The most critical aspects of your organization are your computer systems and networks and your data. You must protect them from threats.
 
-Cyber resilience is the ability to avert, handle, and recover from various incidents that can damage or compromise your data or systems. You must be able to continue to provide your operations to your users. For more information, see [What is cyber resilience](https://www.ibm.com/topics/cyber-resilience){: external}.
+Cyber resilience is the ability to avert, handle, and recover from various incidents that can damage or compromise your data or systems. You must be able to continue to provide your operations to your users. For more information, see [What is cyber resilience](https://www.ibm.com/think/topics/cyber-resilience){: external}.
 
 {{site.data.keyword.cr}} can help protect your data from cyberthreats, cyberattacks, and ransomware. This offering is for a single-zone VMware instance only.
 

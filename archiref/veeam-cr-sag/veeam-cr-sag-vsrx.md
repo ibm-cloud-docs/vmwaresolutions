@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-01-01"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ The playbook might be extended to trigger the Veeam backup job instead of runnin
 
 As an alternative, scripts can be used before and after the backup job that connects to the automation server and initiates the Ansible playbook. For more information, see [Script settings](https://helpcenter.veeam.com/docs/backup/vsphere/backup_job_advanced_scripts_vm.html?ver=120){: external} and [New-PSSession](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/new-pssession?view=powershell-7.2){: external}.
 
-The New-PSSession module requires PowerShell 7. For more information, see [Installing the MSI package](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#msi){: external}.
+The New-PSSession module requires PowerShell 7. For more information, see [Installing the MSI package](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4&viewFallbackFrom=powershell-7.2#msi){: external}.
 {: note}
 
 Another option is to use the Posh-Junos® PowerShell module to interface with the vSRX directly from the Veeam backup server. For more information, see [Scripting how to: Windows® PowerShell](https://community.juniper.net/browse/blogs/blogviewer?blogkey=0903395c-8f62-433d-be52-ad636d75ed9c){: external}.
