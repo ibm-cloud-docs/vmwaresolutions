@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-12-24"
+lastupdated: "2025-01-01"
 
 subcollection: vmwaresolutions
 
@@ -142,7 +142,7 @@ See also [different ways to run VMware workloads in {{site.data.keyword.cloud_no
 
 Upgrading vSphere software is your responsibility. However, with Bring Your Own License (BYOL) you can access VMware by Broadcom Support directly by using your license agreement. {{site.data.keyword.cloud_notm}} provides support for your bare metal servers infrastructure on {{site.data.keyword.cloud_notm}}.
 
-For more information about upgrading, see [VMware ESXi upgrade VMware vSphere 6.7](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.esxi.upgrade.doc/GUID-FE668788-1F32-4CB2-845C-5547DD59EB48.html){: external} and [vSphere upgrade VMware vSphere 6.5](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.upgrade.doc/GUID-FE668788-1F32-4CB2-845C-5547DD59EB48.html){: external}. As part of the upgrade planning, consider moving to {{site.data.keyword.vcf-auto-short}}, this lift-and-shift upgrade approach might be more beneficial.
+For more information about upgrading, see [Overview of the ESXi Host Upgrade Process](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0/about-vsphere-upgrade-upgrade/overview-of-the-upgrade-process-upgrade/overview-of-the-esxi-host-upgrade-process-upgrade.html){: external} and [Overview of the vSphere Upgrade Process](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0/about-vsphere-upgrade-upgrade/overview-of-the-upgrade-process-upgrade.html){: external}. As part of the upgrade planning, consider moving to {{site.data.keyword.vcf-auto-short}}, this lift-and-shift upgrade approach might be more beneficial.
 
 See also [different ways to run VMware workloads in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
 

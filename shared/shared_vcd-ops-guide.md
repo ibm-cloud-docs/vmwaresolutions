@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-12-23"
+lastupdated: "2025-01-01"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -37,7 +37,7 @@ The tenant portal includes a preconfigured set of user roles and their privilege
 * vApp User
 * Console Access Only
 
-For more information about roles and permissions, see [VMware Cloud Director tenant portal roles and rights](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-754BD24F-63C7-422F-83BC-BFA275CEDA8E.html){: external}.
+For more information about roles and permissions, see [VMware Cloud Director tenant portal roles and rights](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5.html){: external}.
 
 #### Managing users
 {: #shared_vcd-ops-guide-roles-procedures}
@@ -51,7 +51,7 @@ For more information about creating and modifying tenant portal users, see [Mana
 
 The Organization Administrator must modify email notification settings to the organization SMTP server.
 
-For more information about modifying SMTP server settings, see [Modify your email settings](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-726D40D7-4251-47AD-B945-2030E489165F.html){: external}.
+For more information about modifying SMTP server settings, see [Modify your email settings]( https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5.html){: external}.
 
 ## Catalogs
 {: #shared_vcd-ops-guide-catalogs}
@@ -143,7 +143,7 @@ You can still use another RHEL Capsule Server or a satellite server if you alrea
 
 To create a catalog, you must have either the **Organizational Administrator** or **Catalog Author** tenant portal role.
 
-For more information about defining catalogs and policies, see [Working with catalogs](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-6424C4A7-EA95-49A0-B673-9DDB971AB566.html){: external}.
+For more information about defining catalogs and policies, see [Working with catalogs](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5.html){: external}.
 
 ### Uploading your media or templates
 {: #shared_vcd-ops-guide-customer}
