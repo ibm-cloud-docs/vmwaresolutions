@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-06-04"
+lastupdated: "2025-01-03"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -16,6 +16,20 @@ subcollection: vmwaresolutions
 
 # General information
 {: #vrw-orderinginstance-general-info}
+
+## VMware vSphere version
+{: #vrw_orderinginstance-vsphere-license}
+
+VMware vSphere® Enterprise Plus 7 is ordered by default.
+
+For new instances, vSphere 8 is also available to order.
+
+## VMware vCenter Server version
+{: #vrw-orderinginstance-vcenter-license}
+
+{{site.data.content.para-vcsversion80-vcsline1}}
+
+{{site.data.content.para-vcsversion80-vcsline2}}
 
 ## Instance name
 {: #vrw-orderinginstance-config-inst-name}
@@ -30,13 +44,6 @@ The instance name is set to **vrw-_xx_** by default, where _xx_ represents two r
 {{site.data.content.para-orderinginstance-resource-group}}
 
 {{site.data.content.note-orderinginstance-resource-group}}
-
-## VMware vCenter Server version
-{: #vrw-orderinginstance-vcenter-license}
-
-{{site.data.content.para-vcsversion80-vcsline1}}
-
-{{site.data.content.para-vcsversion80-vcsline2}}
 
 ## Instance configuration name
 {: #vrw-orderinginstance-inst-config}

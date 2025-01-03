@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-11"
+lastupdated: "2025-01-02"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -169,9 +169,9 @@ Review the following table for an overview of the EVC (Enhanced VMware vMotion C
 ## Related links
 {: #vc_bom-related}
 
-* [Build numbers and versions of VMware ESXi and ESX (2143832)](https://knowledge.broadcom.com/external/article?legacyId=2143832){: external}
-* [Build numbers and versions of VMware vCenter Server (2143838)](https://knowledge.broadcom.com/external/article?legacyId=2143838){: external}
+* [Build numbers and versions of VMware ESXi and ESX](https://knowledge.broadcom.com/external/article?legacyId=2143832){: external}
+* [VMware vCenter Server versions and build numbers](https://knowledge.broadcom.com/external/article?legacyId=2143838){: external}
 * [Enabling Jumbo Frames on virtual switches](https://knowledge.broadcom.com/external/article?legacyId=1038827){: external}
-* [{{site.data.keyword.vmwaresolutions_short}} Protection data sheet](https://www.ibm.com/software/reports/compatibility/clarity-reports/report/html/softwareReqsForProduct?deliverableId=236C87407E7411E6BA51E79BE9476040){: external}
+* [VMware Solutions data processing and protection datasheet](https://www.ibm.com/software/reports/compatibility/clarity-reports/report/html/softwareReqsForProduct?deliverableId=236C87407E7411E6BA51E79BE9476040)
 * [{{site.data.keyword.vcf-auto-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
 * [Planning for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
