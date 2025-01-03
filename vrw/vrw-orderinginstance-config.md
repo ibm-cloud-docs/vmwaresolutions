@@ -22,9 +22,7 @@ subcollection: vmwaresolutions
 
 VMware vSphere® Enterprise Plus 7 is ordered by default.
 
-
-
-For new instances, vSphere 8 is available to order. However, vSphere 8 instances do not support configuration as secondary instances.
+For new instances, vSphere 8 is also available to order.
 
 ## VMware vCenter Server version
 {: #vrw-orderinginstance-vcenter-license}
