@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-11-07"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -37,12 +37,12 @@ The following diagram shows an example of a multisite single-tenant network topo
 3. In the initial {{site.data.keyword.cloud_notm}} data center, the access to the private network is provided through private uplinks. They are attached to a portable subnet in a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. If you provision your instance with public interfaces, the access to the public network is provided through public uplinks. They are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The uplinks have IP addresses specific to this data center and they cannot move between the data centers.
 4. You must manually deploy two additional edge cluster transport nodes. Also, you must create a new edge cluster for your Tier-0 and Tier-1 Gateways in the second {{site.data.keyword.cloud_notm}} data center hosts.
 5. In the second {{site.data.keyword.cloud_notm}} data center, the access to the private network is provided through private uplinks. They are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. If you provision your instance with public interfaces, the access to the public network is provided through public uplinks. They are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The uplinks have IP addresses specific to this data center and they cannot move between the data centers.
-6. You must manually deploy two or more edge cluster transport nodes in the regional edge cluster, at least one in each zone or data center for high availability. Then, create a new edge cluster by using these edge transport nodes, and create your regional Tier-0 in this cluster. You can select which data center (or edge node) is your preferred Tier-0 path in the regional cluster.
+6. You must manually deploy two or more edge cluster transport nodes in the regional edge cluster, at least one in each zone or data center for high availability (HA). Then, create a new edge cluster by using these edge transport nodes, and create your regional Tier-0 in this cluster. You can select which data center (or edge node) is your preferred Tier-0 path in the regional cluster.
 7. Create an overlay transit and uplinks in Tier-0 Gateways into the transit segment. Establish dynamic routing between the Tier-0 Gateways and BGP. This is the preferred routing protocol.
 8. Then, create your Tier-1 Gateways in the regional edge cluster. You can select which data center (or edge node) is your preferred Tier-1 path in the regional cluster.
 9. You can attach your segments into this level of Tier-1 Gateways. Also, you can create multiple segments and advertise them through Tier-1 Gateway to north bound Tier-0 Gateways.
 
-This network topology example does not consider the management and control plane (vCenter and NSX Managers). The control plane of high availability is discussed in another availability pattern.
+This network topology example does not consider the management and control plane (vCenter and NSX Managers). The control plane of HA is discussed in another availability pattern.
 {: note}
 
 The main reason that you need two layers is for physical north-south connectivity in the data centers and each data center having their own private and public VLANs and IP addresses for the uplinks. These IP addresses cannot move between the data centers. Therefore, you must consider the routing and network address translation if you use public connectivity in this topology.
@@ -62,12 +62,12 @@ The following diagram shows an example of a multisite – multitenant topology. 
 3. In the initial {{site.data.keyword.cloud_notm}} data center, the access to the private network is provided through private uplinks. They are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. If you provision your instance with public interfaces, the access to the public network is provided through public uplinks. They are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The uplinks have IP addresses specific to this data center and they cannot move between the data centers.
 4. You must manually deploy two additional edge cluster transport nodes and create a new edge cluster for your Tier-0 and Tier-1 Gateways in the second {{site.data.keyword.cloud_notm}} data center hosts.
 5. In the second {{site.data.keyword.cloud_notm}} data center, the access to the private network is provided through private uplinks. They are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. If you provision your instance with public interfaces, the access to the public network is provided through public uplinks. They are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The uplinks have IP addresses specific to this data center and they cannot move between the data centers.
-6. You must manually deploy two or more edge cluster transport nodes in the regional edge cluster, at least one in each zone or data center for high availability. Then, create a new edge cluster by using these edge transport nodes, and create your regional Tier-0 in this cluster. You can select which data center (or edge node) is your preferred Tier-0 path in the regional cluster. You can separate routing tables at this level by using VRF lite capability in the Tier-0 Gateway. For more information, see VMware documentation.
+6. You must manually deploy two or more edge cluster transport nodes in the regional edge cluster, at least one in each zone or data center for HA. Then, create a new edge cluster by using these edge transport nodes, and create your regional Tier-0 in this cluster. You can select which data center (or edge node) is your preferred Tier-0 path in the regional cluster. You can separate routing tables at this level by using VRF lite capability in the Tier-0 Gateway. For more information, see VMware documentation.
 7. Manually create an overlay transit segment and create uplinks in Tier-0 Gateways into the transit segment. Establish dynamic routing between the Tier-0 Gateways and BGP is the preferred routing protocol. If you use VRF lite capability in the Tier-0 Gateway, you might use multiple transit segments depending on your design.
 8. Then, create your Tier-1 Gateways in the regional edge cluster. You can select which data center (or edge node) is your preferred Tier-1 path in the regional cluster. You can separate routing tables at this level and decide which routes as advertised to the north bound Tier-0. As in the other multitenant patterns, you can use NAT as well.
 9. You can attach your segments into this level of Tier-1 Gateways. You can create multiple segments and advertise them through Tier-1 Gateway to north-bound Tier-0 Gateways.
 
-This network topology example does not consider the management and control plane (vCenter and NSX Managers). The control plane of high availability is discussed in another availability pattern.
+This network topology example does not consider the management and control plane (vCenter and NSX Managers). The control plane of HA is discussed in another availability pattern.
 {: note}
 
 Tier-0 Gateways support VRF lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. For more information about capabilities and limitations, see the [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}.

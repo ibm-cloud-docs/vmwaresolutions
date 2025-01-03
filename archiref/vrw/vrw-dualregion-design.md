@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -50,7 +50,7 @@ Review the following network design decisions:
 
 Each region has a vCenter Server instance for the management of the ESXi hosts within the region. Each instance is a separate SSO domain. The {{site.data.keyword.cloud_notm}} design uses a vCenter Server Appliance (VCSA) with an embedded Platform Services Controller (PSC). The use of one vCenter per region with separate SSO domains provides service isolation.
 
-Within each region, vSphere High Availability (HA) provides availability of the appliance. For business resiliency, image level and file level backups of the appliance are recommended. These backups are stored locally in the region to allow for quick restore.
+Within each region, vSphere high availability (HA) provides availability of the appliance. For business resiliency, image level and file level backups of the appliance are recommended. These backups are stored locally in the region to allow for quick restore.
 
 It is recommended to also configure Veeam backup copy jobs. If a failure of the Veeam Repository server occurs, a copy of the appliance backup at the other region is available.
 
@@ -69,7 +69,7 @@ For a file-based restore, the process consists of deploying a new VCSA and resto
 
 NSX Manager provides the user interface and the API for creating, configuring, and monitoring the NSX components, such as virtual network segments, Tier-0 and Tier-1 gateways. NSX Manager implements both the management and the control planes for the NSX infrastructure. In the design, the protected region and the recovery region have their own NSX Manager cluster and the span of the Transport Zones is limited to the region. NSX managers per region enable service isolation so that each region is considered to be independent.
 
-The use of the cluster virtual IP address provides high availability of the user interface and API of the NSX Manager cluster. The use of vSphere HA enables business continuity of a failed appliance.
+The use of the cluster virtual IP address provides HA of the user interface and API of the NSX Manager cluster. The use of vSphere HA enables business continuity of a failed appliance.
 
 Image-based backups of NSX manager are not supported. Therefore, it is recommended to configure a scheduled NSX appliance backup by using an SFTP server, as the only option with NSX. In the design, the SFTP server destination is a directory on the local Veeam Repository server. This Windows® server is configured as an SFTP server and used for the recovery of the backup files when needed. To limit the number of components needed, a separate stand-alone SFTP server is not used and instead the SFTP service within the Windows OS of the Veeam Repository server is used.
 
@@ -97,7 +97,7 @@ The {{site.data.keyword.rw}} automation deploys a VMware Aria Operations for Log
 
 In the dual region design, each region is configured to forward log information to the VMware Aria Operations for Logs instance in the other region. Due to this forwarding configuration, either of the VMware Aria Operations for Logs clusters can be used to query the available logs from either of the regions. As a result, failover configuration is not required for the VMware Aria Operations for Logs clusters, and each cluster remains associated with the region in which it was deployed. This approach minimizes failover configuration in a DR invocation.
 
-The use of a VMware Aria Operations for Logs cluster plus the use of vSphere HA provides high availability within a region. For business continuity, configure an image level backup of the cluster nodes by using Veeam.
+The use of a VMware Aria Operations for Logs cluster plus the use of vSphere HA provides HA within a region. For business continuity, configure an image level backup of the cluster nodes by using Veeam.
 
 ## VMware Aria Operations for Networks
 {: #vrw-dualregion-design-vrni}
@@ -106,7 +106,7 @@ The VMware Aria Operations for Networks service is an optional manual installati
 
 In the dual region design, install a VMware Aria Operations for Networks instance manually in each region for the monitoring and management of that region. Recovery of the instance in the protected region to the recovery region is not required. VMware Aria Operations for Networks instances are deployed per region to enable service isolation so that each region is considered to be independent.
 
-The use of a VMware Aria Operations for Networks cluster and the use of vSphere HA provides high availability within a region. For business continuity, configure a file level backup. While VMware supports image level backups, they recommend that the VMware Aria Operations for Networks appliances are shut down. This process is practical during an upgrade, but not for regular backups. Therefore, it is recommended to configure file level backup, which supports SSH backups. Configure VMware Aria Operations for Networks for scheduled backups with the Veeam Repository server as the target. Configure a Veeam file copy job to copy the backup to the protected site so you can provide an off-site copy of the backup.
+The use of a VMware Aria Operations for Networks cluster and the use of vSphere HA provides HA within a region. For business continuity, configure a file level backup. While VMware supports image level backups, they recommend that the VMware Aria Operations for Networks appliances are shut down. This process is practical during an upgrade, but not for regular backups. Therefore, it is recommended to configure file level backup, which supports SSH backups. Configure VMware Aria Operations for Networks for scheduled backups with the Veeam Repository server as the target. Configure a Veeam file copy job to copy the backup to the protected site so you can provide an off-site copy of the backup.
 
 ## VMware Aria Operations Manager
 {: #vrw-dualregion-design-vrops}
@@ -187,7 +187,7 @@ Review the following Veeam design decisions:
 
 The following guidance applies to use cases 2 and 3:
 * Deploy more bare metal servers hosted on the workload cluster primary subnet to enable separation and scaling of backup repositories and allow better performance.
-* For optimal performance and availability, placing the Veeam components on separate virtual and physical servers is considered best practice. Consider the use of a virtual machine for the Veeam Backup server as it provides high availability through vSphere HA. It also provides great flexibility in sizing and scaling as the environment grows.
+* For optimal performance and availability, placing the Veeam components on separate virtual and physical servers is considered best practice. Consider the use of a virtual machine for the Veeam Backup server as it provides HA through vSphere HA. It also provides great flexibility in sizing and scaling as the environment grows.
 * Microsoft SQL Server 2016 Express edition is included in the Veeam Backup and Replication standard installation. In environments with more than 500 protected VMs, consider the use of a different version of Microsoft SQL Server.
 * For large storage requirements, it is recommended to not size volumes larger than 200 TB to keep failure domains small and manageable. For larger repositories, use a Scale-Out Backup Repository with multiple extents.
 * The {{site.data.keyword.cloud_notm}} Object Storage repository cannot be used on its own but can be configured as Capacity Tier in the Veeam Scale-out Backup Repository. Consider this type of repository for large deployments or for deployments with a large archive requirement.

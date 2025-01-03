@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ Patches and extensions can be optionally staged before remediation to ensure tha
 
 In the remediation process, if any host fails to enter maintenance mode, VUM reports an error and the remediation process stops and fails. The vSphere ESXi hosts that are already remediated remain at the updated level.
 
-For the remediation process to work smoothly, it's advisable to disable some of the cluster features such as DPM, HA Admission Control, Fault Tolerance, and to disconnect any removable devices from the virtual machines (VMs) to avoid DRS issues when you migrate VMs to other hosts.
+For the remediation process to work smoothly, it's advisable to disable some of the cluster features such as DPM, high availability (HA) Admission Control, Fault Tolerance, and to disconnect any removable devices from the virtual machines (VMs) to avoid DRS issues when you migrate VMs to other hosts.
 Also, while you run the remediation wizard, you can Generate Reports to verify that there are no inconsistent settings present at host or VM level that can cause the remediation process to fail.
 
 1. In the vSphere Web Client, go to **Home > Hosts and Clusters**.

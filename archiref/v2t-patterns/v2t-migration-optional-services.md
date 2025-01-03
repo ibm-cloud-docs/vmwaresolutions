@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-13"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -48,7 +48,7 @@ Review the following information for Advanced Cross vCenter Server vMotion.
 It is possible to decouple your Veeam® instance from your {{site.data.keyword.vcf-auto-short}} with NSX-V instance for reuse with your {{site.data.keyword.vcf-auto-short}} with NSX-T instance. Configuration changes are required to the existing Veeam instance:
 * Update instance point to the {{site.data.keyword.vcf-auto-short}} associated with the NSX-T environment
 * Update the DNS setting on the Veeam Server, point to the AD/DNS servers.
-* Update the default gateway on the Veeam Server, to the HA VIP IP address of the NSX-T Edge, as access public access is required for license activation.
+* Update the default gateway on the Veeam Server, to the high availability VIP IP address of the NSX-T Edge, as access public access is required for license activation.
 * Update or create a record for the Veeam Server on the AD/DNS Servers that is associated with the new instance.
 * Update or create an ID or user on the AD/DNS Servers, which will be used by Veeam to access the {{site.data.keyword.vcf-auto-short}} instance.
 

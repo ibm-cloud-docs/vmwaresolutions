@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -50,7 +50,7 @@ The management software stack includes the following components:
 ## Gateway cluster
 {: #vrw-archi-overview-edge}
 
-The FortiGate physical 10 Gb HA appliance is the only point of entry into {{site.data.keyword.rw}}. The gateway cluster with the vSRX HA appliance or a suitable bring your own gateway appliance is an alternative to the physical FortiGate appliance. The gateway cluster uses local storage only (no vSAN, no NFS) and each host is running a virtual appliance node. The gateway cluster requires only two ESXi hosts. The nodes are configured as a highly available cluster. The cluster is sized to support 10 Gb networking.
+The FortiGate physical 10 Gb high availability (HA) appliance is the only point of entry into {{site.data.keyword.rw}}. The gateway cluster with the vSRX HA appliance or a suitable bring your own gateway appliance is an alternative to the physical FortiGate appliance. The gateway cluster uses local storage only (no vSAN, no NFS) and each host is running a virtual appliance node. The gateway cluster requires only two ESXi hosts. The nodes are configured as a highly available cluster. The cluster is sized to support 10 Gb networking.
 
 ## Workload cluster
 {: #vrw-archi-overview-workloads}

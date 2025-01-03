@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-12"
+lastupdated: "2025-01-03"
 
 keywords: vcf automated, vcf classic architecture, tech specs vmware cloud foundation
 
@@ -109,7 +109,7 @@ The following networking components are ordered:
 
 The following virtual server instances (VSIs) are ordered:
 * A VSI for IBM CloudDriver, which is deployed as needed for initial deployment and for Day 2 operations.
-* Choose to deploy a single Microsoft® Windows® Server VSI for Microsoft Active Directory™ (AD) or two high availability Microsoft Windows VMs on the management cluster to help enhance security and robustness.
+* Choose to deploy a single Microsoft® Windows® Server VSI for Microsoft Active Directory™ (AD) or two high availability (HA) Microsoft Windows VMs on the management cluster to help enhance security and robustness.
 
 ### Storage
 {: #vc_vcenterserveroverview-storage}
@@ -180,7 +180,7 @@ The base infrastructure has the following specifications:
 * The resource cluster is a vSphere + vSAN stretched cluster.
 * The witness site contains two VMware ESXi™ hosts that provide quorum for both vSAN and vCenter.
 * Single vCenter Server and NSX Manager architecture.
-* vCenter Server Appliance with embedded Platform Services Controller (PSC) that uses vCenter Server High Availability (HA) over an L3 network architecture.
+* vCenter Server Appliance with embedded Platform Services Controller (PSC) that uses vCenter Server HA over an L3 network architecture.
 * NSX Manager recovery is using a Hot Standby method that syncs up backup files.
 
 ### Tools and technology architecture specifications

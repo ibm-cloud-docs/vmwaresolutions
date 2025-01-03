@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-19"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -33,7 +33,7 @@ More tools such as those incorporated into the Operations Management on {{site.d
 The following guidelines are considered best practices for troubleshooting your {{site.data.keyword.vmwaresolutions_short}} issue.
 * Approach troubleshooting and problem-solving systematically.
 * Are the symptoms related to; availability, usage, or configuration:
-   *  Availability - These symptoms relate to the availability of hardware and software components and are typified by a no response. Often high availability design masks these issues so that they do not impact your workloads and users directly.
+   *  Availability - These symptoms relate to the availability of hardware and software components and are typified by a no response. Often high availability (HA) design masks these issues so that they do not impact your workloads and users directly.
    * Usage - These symptoms relate to capacity and performance and are typified by slow-running or in-ability to load. Proactively managing capacity drastically reduces these issues.
    * Configuration - These issues are typically discovered in the provision of new services or as a result to applying a change. Incorrect settings can surface as either availability or usage symptoms. For example, an incorrect IP address is displayed as an availability issue, whereas low virtual machine (VM) RAM settings cause usage symptoms.
 * Try to isolate the issue to a component in the environment.
@@ -139,7 +139,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 | Virtual Machine Console Access | For more information, see [Using a virtual machine console](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-89E7E8F0-DB2B-437F-8F70-BA34C505053F.html?hWord=N4IghgNiBcIG4EsBOAXArpABAWzAYwAsEA7AU0zwHtiBnSic-PUmmkAXyA){: external}. |
 | New vCenter Server Certificate Does Not Appear to Load | After the replacement of the default vCenter certificates, the new certificates might not appear to load. For more information, see [New vCenter Server certificate does not appear to load](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-415CF843-42E8-4AD7-98EC-7265227337B6.html){: external}. |
 | vCenter Server Cannot Connect to Managed Hosts | After the replacement of the default vCenter certificates and restarting the system, VMware vCenter® Server Appliance (VCSA) cannot connect to managed hosts. For more information, see [vCenter Server cannot connect to managed hosts](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-8D3DCEC4-50B6-4523-BF24-0DE6C65600E9.html){: external}. |
-| Cannot Configure vSphere HA When Using Custom SSL Certificates | After the installation of custom SSL certificates, attempts to enable vSphere High Availability (HA) fail. For more information, see [Cannot configure vSphere HA when you use custom SSL certificates](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-3FC16DC8-7157-4340-AB8A-B8DC87D7DC0F.html){: external}. |
+| Cannot Configure vSphere HA When Using Custom SSL Certificates | After the installation of custom SSL certificates, attempts to enable vSphere HA fail. For more information, see [Cannot configure vSphere HA when you use custom SSL certificates](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-3FC16DC8-7157-4340-AB8A-B8DC87D7DC0F.html){: external}. |
 {: caption="Typical vCenter troubleshooting" caption-side="bottom"}
 {: #table5}
 {: tab-title="vCenter"}

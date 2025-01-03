@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024
+  years:  2024, 2025
 
-lastupdated: "2024-12-27"
+lastupdated: "2025-01-03"
 
 keywords: FAQ vmware shared, vmware shared, end of support vmware shared, vmware shared deprecated
 
@@ -64,7 +64,7 @@ All existing customers will receive an email with these changes.
 {: faq}
 
 {{site.data.keyword.vcf-aas}} offers several advantages over {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}}:
-* Better architecture design that is based on the most recent supported software-defined networking platform from VMware NSX-T™ Networking, with upgraded High Availability.
+* Better architecture design that is based on the most recent supported software-defined networking platform from VMware NSX-T™ Networking, with upgraded high availability (HA).
 * Increased global reach with planned expansion through 2025.
 * Single-pane-of-glass management for customers that use both single and multitenant consumption, with a common bill across.
 * Optimized compute pricing model to provide better cost economics for scaling of RAM.
@@ -109,7 +109,7 @@ The key capabilities of both platforms are:
 {{site.data.keyword.IBM_notm}} is actively working on some features to address in 2024, which include:
 * Load balancer
 * Self-managed disaster recovery that uses Veeam Cloud Connect
-* High availability: multi-zone regional network HA
+* High availability: multizone regional network HA
 * High availability: stretched vSAN
 * SOC2 and C5 report
 

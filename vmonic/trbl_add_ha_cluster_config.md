@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-05-24"
+lastupdated: "2025-01-03"
 
 keywords: troubleshooting, vSphere configuration issue, HA cluster issue
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 {: #trbl_add_ha_cluster_config}
 {: troubleshoot}
 
-When you add a High Availability (HA) cluster configuration with only one file share, the following configuration issue is seen on the VMware ESXi™ hosts:
+When you add a high availability (HA) cluster configuration with only one file share, the following configuration issue is seen on the VMware ESXi™ hosts:
 {: tsSymptoms}
 
 `The number of heartbeat datastores for host is 1, which is less than required: 2`

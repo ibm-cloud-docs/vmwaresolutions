@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ The following user IDs are used to add an identity source, which is embedded by 
 
 | User     | User ID      | Method | Description |
 |:---------|:-------------|:-------|:------------|
-| Privileged user | `root` | SSH | Used for VMware configuration such as setting up VMware High Availability and creating distributed switches. Used post deployment to pair primary and secondary vCenter Server instances. |
+| Privileged user | `root` | SSH | Used for VMware configuration such as setting up VMware high availability and creating distributed switches. Used post deployment to pair primary and secondary vCenter Server instances. |
 | IBM automation | `automation`@``root_domain`` \n (Active Directory user) | HTTPS | Used post deployment to add and remove hosts and clusters and to deploy and configure virtual machines (VMs) for add-on services. |
 | Privileged user | `cloudadmin`@`root_domain` \n (Active Directory user) | HTTPS | Created for customer use only. |
 {: caption="vCenter and Platform Services Controller user IDs" caption-side="bottom"}

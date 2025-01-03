@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-12"
+lastupdated: "2025-01-03"
 
 keywords: vcf flexible, vcf for classic flexible, tech specs flexible instances
 
@@ -70,7 +70,7 @@ Additionally, the following disk and networking specifications apply:
 {: #vs_vsphereoverview-specs-network}
 
 * One VLAN (Virtual LAN) public VLAN and two private VLANs
-* (Optional) An HA-pair of FortiGate® Physical Appliance devices
+* (Optional) A high availability pair of FortiGate® Physical Appliance devices
 
 ### Storage
 {: #vs_vsphereoverview-specs-storage}

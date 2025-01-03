@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-13"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -61,7 +61,7 @@ This is not a key parameter. Therefore, if you have more than 1000 VMs, it does 
 ## vCenter deployment
 {: #v2t-complexity-vc}
 
-Is your vCenter deployed as independent or is it using the vCenter HA pattern? vCenter HA is not deployed as part of automation. If you want to deploy it, you must do the customization post deployment manually.
+Is your vCenter deployed as independent or is it using the vCenter high availability (HA) pattern? vCenter HA is not deployed as part of automation. If you want to deploy it, you must do the customization post deployment manually.
 
 This is not a key parameter. However, it is related to the zone deployment category. 
 

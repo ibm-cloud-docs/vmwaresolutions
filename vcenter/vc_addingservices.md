@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-12-11"
+lastupdated: "2025-01-03"
 
 keywords: add service, order service, add-on service
 
@@ -116,7 +116,7 @@ The following table lists the variables that are used in the previous formula.
 | HostCoreCount | The number of raw cores available in each host in the default cluster | Cores | 16 | 16 |
 | HostOverheadCores | The number of cores that are reserved by the ESXi server as overhead | Cores | 0.1 | 0.1 |
 | MgmtOverheadCores[^mgmtcores] | The number of cores reserved by the vCenter Server management components (vCenter Server, PSC, AD/DNS, Edges) | Cores | 5 | 5 |
-| vSphereHAHostTolerance[^vspherehacores] | The number of hosts to tolerate in the vSphere HA configuration | Hosts | 1 | 1 |
+| vSphereHAHostTolerance[^vspherehacores] | The number of hosts to tolerate in the vSphere high availability (HA) configuration | Hosts | 1 | 1 |
 | HostVsanOverheadCorePercentage | The percentage of a host's cores used by vSAN | % | 10 | 0 |
 {: caption="Description of variables in formula 1" caption-side="bottom"}
 

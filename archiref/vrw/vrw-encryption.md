@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -27,9 +27,9 @@ As vSphere encryption operates at the VM disk level, it can prevent regulated da
 
 {{site.data.keyword.cloud_notm}} HPCS is backed by a FIPS 140-2 level 4 certified hardware security module (HSM). At a high level, the IBM HPCS consists of the following components.
 * Crypto unit - a singular unit that represents a piece of hardware, the HSM, and the corresponding software stack, both are dedicated to a single tenant.
-* Service instance - a cluster of crypto units, which operates as a single logical entity to provide redundancy and scalability. It is recommended to have at least two crypto units per instance of HPCS to provide high availability.
+* Service instance - a cluster of crypto units, which operates as a single logical entity to provide redundancy and scalability. It is recommended to have at least two crypto units per instance of HPCS to provide high availability (HA).
 
-HPCS is a highly available solution for the multizone Region (MZR) architecture. Cross-regional high availability is available in some geographies with an expanding footprint.
+HPCS is a highly available solution for the multizone Region (MZR) architecture. Cross-regional HA is available in some geographies with an expanding footprint.
 
 The KMIP for VMware instance is authorized to Hyper Protect Crypto Services instance by using an {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) service ID that has access to the instance. The service ID must have a minimum of platform Viewer access and service Manager access to the key manager instance. KMIP for VMware uses the customer root key (CRK) in the key manager instance, and stores all KEKs generated on behalf of VMware, in wrapped form, in the key manager instance.
 

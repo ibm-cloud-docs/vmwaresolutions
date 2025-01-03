@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-13"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -77,7 +77,7 @@ In the previous diagram, the following terms require some additional comments:
 
 * Single SSO and root domain - A single instance of Active Directory and Domain Name Services is deployed with replication between the dual domain controllers automatically.
 * Single vCenter - The automation deploys a single vCenter appliance.
-* vCenter HA - vCenter High Availability (HA) protects vCenter against failures by using an active-passive architecture that uses a three-node cluster with active, passive, and witness nodes. For more information about the VMware architecture, see [vCenter High Availability](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.avail.doc/GUID-4A626993-A829-495C-9659-F64BA8B560BD.html){: external}.
+* vCenter HA - vCenter high availability (HA) protects vCenter against failures by using an active-passive architecture that uses a three-node cluster with active, passive, and witness nodes. For more information about the VMware architecture, see [vCenter high availability](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.avail.doc/GUID-4A626993-A829-495C-9659-F64BA8B560BD.html){: external}.
 * Single NSX-T Manager cluster - The automation deploys three NSX-T Manager appliances in a cluster with a Virtual IP address.
 * Distributed NSX-T Manager cluster - In the regulated workloads multizone architecture, an NSX-T Manager appliance is deployed automatically into each of the three sites along with an {{site.data.keyword.cloud_notm}} private load balancer.
 * Active NSX-T data plane - All site ingress and egress traverses through the single edge cluster that is deployed in that site automatically.
@@ -108,7 +108,7 @@ In the previous diagram, the following terms require some additional comments:
 
 * Single SSO and root domain - A single instance of Active Directory and Domain Name Services is deployed automatically. Additional Microsoft® domain controllers must be deployed manually at the other site and replication must be configured to enable this pattern.
 * Single vCenter - vCenter is deployed automatically. A manual deployment of a backup server must be done to enable backups of this server to be made available at the other site to enable recovery. During failure of vCenter, some management functions are not available. However, workload VMs are still accessible.
-* vCenter HA - vCenter High Availability (HA) protects vCenter against failures by using an active-passive architecture that uses a three-node cluster with active, passive, and witness nodes. For more information about the VMware architecture pattern that must be manually deployed, see [vCenter High Availability](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.avail.doc/GUID-4A626993-A829-495C-9659-F64BA8B560BD.html){: external}.
+* vCenter HA - vCenter HA protects vCenter against failures by using an active-passive architecture that uses a three-node cluster with active, passive, and witness nodes. For more information about the VMware architecture pattern that must be manually deployed, see [vCenter high availability](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.avail.doc/GUID-4A626993-A829-495C-9659-F64BA8B560BD.html){: external}.
 * Single NSX-T Manager cluster - The automation deploys three NSX-T Manager appliances in a cluster with a Virtual IP address.
 * Distributed NSX-T Manager cluster - The initial single NSX-T Manager cluster that is deployed automatically must be modified.
 * Active-DR NSX-T data plane - This pattern is suitable for where the network latency between data centers is more than 10 ms but less than 150 ms, such as across regions. For more information, see [NSX-T Data Center Multisite](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-5D7E3D43-6497-4273-99C1-77613C36AD75.html){: external} and also [NSX-T Multi Location Design Guide](https://community.broadcom.com/blogs/dimitri-desmidt/2024/05/20/nsx-t-multi-location-design-guide){: external}.

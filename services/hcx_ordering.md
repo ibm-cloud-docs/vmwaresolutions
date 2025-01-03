@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-12"
+lastupdated: "2025-01-03"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -112,7 +112,7 @@ The deployment of HCX is automated. Whether you order a {{site.data.keyword.vcf-
 4. For {{site.data.keyword.vcf-auto-short}} with NSX-T instances, the firewall rules and network address translation (NAT) rules are configured to allow inbound and outbound HTTPS traffic to and from the HCX Manager.
 5. For {{site.data.keyword.vcf-auto-short}} with NSX-V instances, a pair of NSX Edge Services Gateways (ESGs) for the HCX management traffic is deployed and configured:
    * Public and private uplink interfaces are configured by using the ordered subnets.
-   * The ESGs are configured as a pair of extra large edge appliances with High Availability (HA) enabled.
+   * The ESGs are configured as a pair of extra large edge appliances with high availability (HA) enabled.
    * The firewall rules and network address translation (NAT) rules are configured to allow inbound and outbound HTTPS traffic to and from the HCX Manager.
    * The load balancer rules and resource pools are configured. These rules and resource pools are used to forward HCX-related inbound traffic to the appropriate virtual appliances of HCX Manager and VMware vCenter® Server Appliance (VCSA).
    * An SSL certificate to encrypt the HCX-related inbound HTTPS traffic that is coming through the ESGs is applied.

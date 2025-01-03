@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-10"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -35,7 +35,7 @@ The following list summarizes the private connectivity pattern.
 4. {{site.data.keyword.cloud_notm}} Services can be reached through {{site.data.keyword.cloud_notm}} private network by using Cloud Services Endpoints when it uses {{site.data.keyword.cloud_notm}} private network addresses.
 5. When you use BYOIP on NSX overlay networks, you must use SNAT at T0 or T1. If you use SNAT at T1, you can advertise the NAT IP addresses from T1 to T0, where proxy ARP is used.
 6. You can create DNAT rules on T0 Gateway to access your workloads from {{site.data.keyword.cloud_notm}} private networks.
-7. You can use IP addresses from {{site.data.keyword.cloud_notm}} private portable subnet that is deployed for NSX Edge uplinks for the NAT. Alternatively, you can order [{{site.data.keyword.cloud_notm}} Private static subnets](/docs/subnets?topic=subnets-getting-started) that are routed toward your T0's private HA VIP to be used for NAT-ing or on segments.
+7. You can use IP addresses from {{site.data.keyword.cloud_notm}} private portable subnet that is deployed for NSX Edge uplinks for the NAT. Alternatively, you can order [{{site.data.keyword.cloud_notm}} Private static subnets](/docs/subnets?topic=subnets-getting-started) that are routed toward your T0's private high availability (HA) VIP to be used for NAT-ing or on segments.
 
 ## Ingress private connectivity
 {: #arch-pattern-nsx-t-private-connectivity-ingress}

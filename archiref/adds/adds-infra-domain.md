@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-10-15"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -75,7 +75,7 @@ The domain controller is provisioned with a name of `ADNS<instance_name>.<root_d
 The following diagram shows the deployment pattern of the two highly available VM domain controllers.
 ![Two highly available VM domain controllers diagram](../../images/adds-adha.svg "Two highly available VM domain controllers"){: caption="Two highly available VM domain controllers" caption-side="bottom"}
 
-If you order the two high availability Microsoft Windows VMs, you must provide two Microsoft Windows Server 2019 licenses. For more information, see [Domain Name System configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings#vc_orderinginstance-dns-config).
+If you order the two high availability (HA) Microsoft Windows VMs, you must provide two Microsoft Windows Server 2019 licenses. For more information, see [Domain Name System configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings#vc_orderinginstance-dns-config).
 
 After the provisioning of the vCenter Server instance, you have 30 days to activate the VMs. The cluster is configured with a VM-VM anti-affinity rule. Therefore, Distributed Resource Scheduler (DRS) tries to keep the VMs apart by placing them on different physical vSphere ESXi hosts. The following table describes the VM configuration.
 
@@ -144,7 +144,7 @@ ELM provides the following benefits:
 * In a cross-vCenter NSX environment, you can manage all NSX managers from a single vSphere Web Client
 * Single pane of glass management across all sites for both NSX and normal vCenter functions
 
-ELM simplifies the management of multiple vCenters, but it does not bring high availability for vCenter services. ELM is configured by the {{site.data.keyword.vmwaresolutions_short}} automation when a secondary instance is deployed.
+ELM simplifies the management of multiple vCenters, but it does not bring HA for vCenter services. ELM is configured by the {{site.data.keyword.vmwaresolutions_short}} automation when a secondary instance is deployed.
 
 ### Cross vCenter NSX
 {: #adds-infra-domain-multisite-nsx}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Dual region Disaster Recovery overview
 {: #vrw-dualregion-overview}
 
-The {{site.data.keyword.cloud}} for VMware® Regulated Workloads instance is a single regional deployment, which includes a number of High Availability (HA) and business continuity features. However, this single regional design does not address Disaster Recovery (DR).
+The {{site.data.keyword.cloud}} for VMware® Regulated Workloads instance is a single regional deployment, which includes a number of high availability (HA) and business continuity features. However, this single regional design does not address Disaster Recovery (DR).
 
 DR is defined as a plan to recover critical business systems and normal operations if a catastrophic disaster occurs. For example, a major weather event, a cyberattack, or another cause of significant downtime. Key concepts that differentiate DR from HA include: policy-based management, nondisruptive testing, and automated orchestration.
 

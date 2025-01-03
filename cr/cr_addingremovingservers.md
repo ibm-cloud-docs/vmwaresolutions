@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-07-31"
+lastupdated: "2025-01-03"
 
 keywords: cyber recovery, add hosts cyber recovery, add servers cyber recovery, remove hosts cyber recovery
 
@@ -22,7 +22,7 @@ Expand or contract the capacity of your {{site.data.keyword.cr}} instances accor
 ## Before you add or delete ESXi servers
 {: #cr-addingremovingservers-before}
 
-You must migrate the VMware vCenter Server® virtual machines (VMs) before you delete a server. This requirement applies to the vCenter Server VM and to the additional vCenter HA VMs on the management cluster.
+You must migrate the VMware vCenter Server® virtual machines (VMs) before you delete a server. This requirement applies to the vCenter Server VM and to the additional vCenter high availability VMs on the management cluster.
 
 ## Adding or deleting ESXi servers
 {: #cr-addingremovingservers-add-delete-esxi}

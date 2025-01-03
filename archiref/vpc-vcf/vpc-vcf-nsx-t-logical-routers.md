@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-10-22"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -23,17 +23,17 @@ For more information about edge cluster deployment, see [CF NSX design on {{site
 ## Tier-0 gateway
 {: #vpc-vcf-nsx-t-logical-routers-edge-tier-0}
 
-An NSX Tier-0 gateway provides connectivity between the logical NSX overlay segments and VPC subnets, for example, for north-south traffic. In this architecture, a highly available T0 gateway is deployed in the NSX edge cluster. Because of a VMware NSX limitation, this edge cluster can host only a single T0 gateway, which runs in Active-Standby mode. Active-Standby mode is required, for example, to have High Availability VIPs in the T0.
+An NSX Tier-0 gateway provides connectivity between the logical NSX overlay segments and VPC subnets, for example, for north-south traffic. In this architecture, a highly available T0 gateway is deployed in the NSX edge cluster. Because of a VMware NSX limitation, this edge cluster can host only a single T0 gateway, which runs in Active-Standby mode. Active-Standby mode is required, for example, to have high availability (HA) VIPs in the T0.
 
 ![T0 gateway in VPC edge cluster](../../images/vcf-vpc-v2-overlay-routing.svg "T0 gateway in VPC edge cluster"){: caption="T0 gateway in VPC edge cluster" caption-side="bottom"}
 
 Currently, Active-Active mode with T0 is not supported in {{site.data.keyword.vpc_full}}.
 {: note}
 
-When T0 is run in Active-Standby mode, both participate Edge Transport Node has their own uplink. High availability between these uplinks uses a High Availability VIP.
+When T0 is run in Active-Standby mode, both participate Edge Transport Node has their own uplink. HA between these uplinks uses an HA VIP.
 {: note}
 
-The T0 is configured with **two uplink types**: two uplinks for **private** use and two uplinks for **public** use. HA VIPs are assigned to both public and private uplinks for high availability. For public and private uplinks, two VPC subnets are needed. These subnets are provisioned from the Zone prefix, and they can both use RFC 1918 private addresses, including the public subnet. In the consolidated architecture, only one set of uplink subnets are provisioned. In the standard architecture, both management and VI workload domain Tier-0s have their own uplink subnets.
+The T0 is configured with **two uplink types**: two uplinks for **private** use and two uplinks for **public** use. HA VIPs are assigned to both public and private uplinks for HA. For public and private uplinks, two VPC subnets are needed. These subnets are provisioned from the Zone prefix, and they can both use RFC 1918 private addresses, including the public subnet. In the consolidated architecture, only one set of uplink subnets are provisioned. In the standard architecture, both management and VI workload domain Tier-0s have their own uplink subnets.
 
 | Subnet name | System traffic type | Subnet sizing guidance |
 | ------------|---------------------|----------------------- |
