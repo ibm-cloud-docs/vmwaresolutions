@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, [{CURRENT_YEAR}]
 
-lastupdated: "2024-06-04"
+lastupdated: "[{LAST_UPDATED_DATE}]"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
