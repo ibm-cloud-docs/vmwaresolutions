@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -28,7 +28,7 @@ As part of {{site.data.keyword.vcf-vpc}} automation, vSAN is deployed automatica
 ## VMware vSAN design
 {: #vpc-vcf-storage-virtual-vsan-design}
 
-The VMware vSAN is a distributed layer of software that runs natively as a part of the ESXi hypervisor. It aggregates local or direct-attached capacity devices of all hosts in the vSAN cluster and it creates a single storage pool that is shared across all hosts in the vSAN cluster. The VMware features that require shared storage, such as HA, vMotion, DRS, and vSAN eliminate the need for external shared storage. They also simplify storage configuration and virtual machine provisioning activities. However, if needed, you can combine these functions with {{site.data.keyword.vpc_short}} provided storage solutions.
+The VMware vSAN is a distributed layer of software that runs natively as a part of the ESXi hypervisor. It aggregates local or direct-attached capacity devices of all hosts in the vSAN cluster and it creates a single storage pool that is shared across all hosts in the vSAN cluster. The VMware features that require shared storage, such as high availability (HA), vMotion, DRS, and vSAN eliminate the need for external shared storage. They also simplify storage configuration and virtual machine provisioning activities. However, if needed, you can combine these functions with {{site.data.keyword.vpc_short}} provided storage solutions.
 
 Within vSAN design, the compute nodes contain local disk drives for the ESXi operating system (OS) and extra disk drives for the vSAN data store. In every bare metal server, two M.2 SSD mirrored drives are included in each node to house the ESXi installation, regardless of which type of cluster the host belongs to. The {{site.data.keyword.cloud_notm}} bare metal server profiles with letter `d` represent a number of additional attached NVMe U.2 SSDs, which can be used for vSAN.
 
@@ -46,7 +46,7 @@ VMware Cloud Foundation deploys the vSAN component automatically. You do not nee
 
 In this reference design, the vSAN traffic traverses between ESXi hosts on a dedicated VPC subnet. The PCI network adapter attached to the {{site.data.keyword.cloud_notm}} bare metal server is configured within vSphere as a vSphere Distributed Switch (vDS) with the network adapters as uplink. A dedicated vSAN kernel port group is configured for the vSAN VPC subnet and is located within the vDS. Jumbo frames (MTU 9000) are enabled for the private vDS.
 
-vSAN does not load balance traffic across uplinks. High availability (HA) for the uplink is provided by the SmartNIC.
+vSAN does not load balance traffic across uplinks. HA for the uplink is provided by the SmartNIC.
 {: note}
 
 For more information about physical NIC connections, see [Networking overview for {{site.data.keyword.cloud_notm}} Bare Metal Servers on VPC](/vpc?topic=vpc-bare-metal-servers-network&interface=ui).

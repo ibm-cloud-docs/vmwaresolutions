@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2025
 
-lastupdated: "2023-09-11"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ The management cluster storage is vSAN™. Security requirements mandate that mu
 ## Gateway cluster
 {: #vrw-storage-edge}
 
-The gateway cluster uses only local data stores. Local data stores are suited to support the vSRX nodes since they do not require any vSphere DRS functions. The resiliency of the vSRX HA cluster is a function of the clustering mechanism that is used by the vSRX and is not reliant on the underlying hosts.
+The gateway cluster uses only local data stores. Local data stores are suited to support the vSRX nodes since they do not require any vSphere DRS functions. The resiliency of the vSRX high availability cluster is a function of the clustering mechanism that is used by the vSRX and is not reliant on the underlying hosts.
 
 ## Workload cluster
 {: #vrw-storage-workload}

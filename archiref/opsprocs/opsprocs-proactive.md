@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-12"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -48,7 +48,7 @@ The following guidelines assist you in being proactive and maintaining a stable 
 * Run your clusters at no more than 80% usage to allow remediation of hosts by using VMware Update Manager. Cluster remediation is most likely to succeed when the cluster is running at a maximum of 80% usage.
 * Thin provisioning of storage increases the management workload of maintaining your environment as you need to be careful in your capacity management process.
 *  Analyze your VM growth and understand how your infrastructure is getting used up to support this growth, order more capacity to facilitate this growth.
-* Use usable capacity, which considers HA and buffers and not total available capacity.
+* Use usable capacity, which considers high availability and buffers and not total available capacity.
 * Ensure that you are running the current version of the BIOS available for your system.
 * Ensure that you are running the current VMware updates to your installed products, including VM hardware and VM tools.
 

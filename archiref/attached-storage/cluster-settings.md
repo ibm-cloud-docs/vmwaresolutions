@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Cluster settings
 {: #cluster-settings}
 
-Before the addition of attached storage, the VMware vCenter Server® solution didn't enable advanced features such as VMware® vSphere Distributed Resource Scheduler (DRS) and VMware vSphere® High Availability (HA). With the addition of the NFS attached storage device, these features are enabled on the cluster with the settings that are listed in the following sections.
+Before the addition of attached storage, the VMware vCenter Server® solution didn't enable advanced features such as VMware® vSphere Distributed Resource Scheduler (DRS) and VMware vSphere® high availability (HA). With the addition of the NFS attached storage device, these features are enabled on the cluster with the settings that are listed in the following sections.
 
 ## vSphere Distributed Resource Scheduler
 {: #cluster-settings-vsphere-drs}
@@ -53,12 +53,12 @@ When the VMware Distributed Power Management feature is enabled, DRS compares cl
 
 In this design, power management is not enabled as no operational or financial benefit exists to powering on and off hosts in the cluster.
 
-## vSphere High Availability
+## vSphere HA
 {: #cluster-settings-vsphere-ha}
 
-vSphere provides high availability for VMs by pooling them and the hosts that they are on into a cluster. Hosts in the cluster are monitored and if a failure occurs, the VMs on a failed host are restarted on alternative hosts.
+vSphere provides HA for VMs by pooling them and the hosts that they are on into a cluster. Hosts in the cluster are monitored and if a failure occurs, the VMs on a failed host are restarted on alternative hosts.
 
-In this design, vSphere High Availability is enabled with host monitoring and VM monitoring on the cluster.
+In this design, vSphere HA is enabled with host monitoring and VM monitoring on the cluster.
 
 ### Host monitoring
 {: #cluster-settings-host-monitor}

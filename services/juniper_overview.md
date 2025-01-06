@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-08-12"
+lastupdated: "2025-01-03"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX virtual security appliance, Juniper virtual security appliance, Juniper vSRX console
 
@@ -59,7 +59,7 @@ The following components are ordered and included in the Juniper vSRX service.
 ### Virtual machines
 {: #juniper-overview-specs-vms}
 
-* vSRX is deployed as a pair of VMs configured for High Availability.
+* vSRX is deployed as a pair of VMs configured for high availability.
 * Each VM is configured with 6 CPUs, 16 GB of memory, and 16 GB of storage. When installed on a cluster with 25 Gb uplink speed, each VM is configured with 10 CPUs, 16 GB of memory, and 16 GB of storage.
 
 ### High availability

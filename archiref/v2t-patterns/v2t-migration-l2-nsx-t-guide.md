@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-11-07"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ After all the workloads are migrated from NSX-V to NSX-T, the L2 bridge can be r
    * The Edge Node VM requires two host switches:
      * `nsxHostSwitch overlay` - is associated with an overlay transport zone that is shared with the NSX-T ESXi transport nodes and uses the IP pool that was previously configured.
      * `nsxHostSwitch vlan` - is associated with a VLAN transport zone and is used to enable bridging the virtual wire that is connected to this interface to an NSX-T segment.
-   * The Edge node VM must be part of an Edge cluster. An Edge cluster can consist of a single Edge node VM. If HA is required, deploy two Edge node VMs with the same configuration and add to the cluster.
+   * The Edge node VM must be part of an Edge cluster. An Edge cluster can consist of a single Edge node VM. If high availability is required, deploy two Edge node VMs with the same configuration and add to the cluster.
 4. Create NSX-T segments with connectivity turned off while the north-south traffic is being routed through the ESGs in the NSX-V environment. For more information, see [Create the NSX-T Data Center Topology](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/migration/GUID-48287E4C-7C0F-4146-94D4-6D295623E7EB.html){: external}. Using NSX-T Manager, create an edge bridge profile and associate it with the NSX-T Edges nodes. The profile defines the Edge cluster that is used for bridging, the primary node, the (optionally) backup node, and failover policy. Configure the bridging on the required NSX-T segment.
 5. The NSX-V logical switch is now bridged to the associated NSX-T logical segment. You can test by deploying a VM on the {{site.data.keyword.vcf-auto-short}} with NSX-T environment on the bridged segment with an IP address from the subnet that is used on the NSX-V logical switch.
 

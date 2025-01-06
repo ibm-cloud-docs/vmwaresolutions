@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -51,14 +51,14 @@ The Veeam [distributed deployment](https://helpcenter.veeam.com/docs/backup/vsph
 ## Backup server
 {: #veeam-cr-sa-components-backup}
 
-The backup server is a Windows-based component and is the core component in the backup infrastructure. The backup server performs the administrative activities, such as coordination, scheduling, resource allocation, and management of backup infrastructure components. Each Veeam instance has only one backup server and high availability support is not provided. The VM option provides some high availability functions due to vSphere HA and DRS. Recovery of a backup server is achieved by restoring a configuration backup.
+The backup server is a Windows-based component and is the core component in the backup infrastructure. The backup server performs the administrative activities, such as coordination, scheduling, resource allocation, and management of backup infrastructure components. Each Veeam instance has only one backup server and high availability (HA) support is not provided. The VM option provides some HA functions due to vSphere HA and DRS. Recovery of a backup server is achieved by restoring a configuration backup.
 
 ## Configuration database
 {: #veeam-cr-sa-components-configdb}
 
 The Veeam Backup and Replication configuration database stores data about the backup infrastructure, jobs, sessions, and other configuration data. In the deployment pattern, the database instance uses the default Microsoft® SQL Server Express Edition on the same virtual server that hosts the backup server.
 
-If you are protecting more than 500 VMs, it is recommended to move to either a Standard or Enterprise Edition. It is still recommended to run the SQL Server locally on the backup server for lowest latency and highest performance. In large deployments, for high availability and fast recovery, you can use a Microsoft SQL cluster with AlwaysOn Availability Group. Fail over to a standby backup server can be simplified by connecting to the configuration database directly without the need to restore from a configuration backup.
+If you are protecting more than 500 VMs, it is recommended to move to either a Standard or Enterprise Edition. It is still recommended to run the SQL Server locally on the backup server for lowest latency and highest performance. In large deployments, for HA and fast recovery, you can use a Microsoft SQL cluster with AlwaysOn Availability Group. Fail over to a standby backup server can be simplified by connecting to the configuration database directly without the need to restore from a configuration backup.
 
 ## Backup and replication console
 {: #veeam-cr-sa-components-console}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 
 This topology creates a single gateway cluster, with active-passive Tier-0 and Tier-1.
 
-Active-passive on Tier-0 provides IPsec capability for access through the HA VIP address. Alternatively, Tier-0 can use Border Gateway Protocol (BGP) and peer with a vSRX firewall.
+Active-passive on Tier-0 provides IPsec capability for access through the high availability VIP address. Alternatively, Tier-0 can use Border Gateway Protocol (BGP) and peer with a vSRX firewall.
 
 The following diagram shows an example of a customer deployment that uses the standard topology, when the segments are attached to the Tier-1 Gateway. You can add more segments to the existing Tier-1 Gateway or more Tier-1 Gateways on the same NSX edge clusters, if needed.
 

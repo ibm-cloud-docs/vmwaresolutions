@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-04-26"
+lastupdated: "2025-01-03"
 
 keywords: personal data, data deletion, PHI, data, data security, high availability, ha, disaster recovery, vmware solutions shared, compliance
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 {{site.data.content.shared-deprecated-note}}
 
-Review the following data storage, high availability, and disaster recovery considerations for {{site.data.keyword.vmwaresolutions_full}} Shared.
+Review the following data storage, high availability (HA), and disaster recovery considerations for {{site.data.keyword.vmwaresolutions_full}} Shared.
 
 ## Data security
 {: #shared_data-security}
@@ -51,11 +51,11 @@ The {{site.data.keyword.vm-shared}} management service is initially only offered
 ### High availability
 {: #shared_data-ha}
 
-{{site.data.keyword.vm-shared}} supports high availability of the VMware Cloud Director service itself. The service achieves high availability automatically and transparently by using the Multizone region (MZR) feature that is provided by {{site.data.keyword.cloud_notm}}.
+{{site.data.keyword.vm-shared}} supports HA of the VMware Cloud Director service itself. The service achieves HA automatically and transparently by using the Multizone region (MZR) feature that is provided by {{site.data.keyword.cloud_notm}}.
 
-However, you cannot configure workloads that are running VMs and vApps in a high availability manner across multiple {{site.data.keyword.cloud_notm}} data center sites. {{site.data.keyword.vm-shared}} currently allows workloads to operate in only one {{site.data.keyword.cloud_notm}} data center site.
+However, you cannot configure workloads that are running VMs and vApps in an HA manner across multiple {{site.data.keyword.cloud_notm}} data center sites. {{site.data.keyword.vm-shared}} currently allows workloads to operate in only one {{site.data.keyword.cloud_notm}} data center site.
 
-Use {{site.data.keyword.vm-shared}} with vCenter Server to achieve high availability. You can deploy vCenter Server in multiple {{site.data.keyword.cloud_notm}} data center regions.
+Use {{site.data.keyword.vm-shared}} with vCenter Server to achieve HA. You can deploy vCenter Server in multiple {{site.data.keyword.cloud_notm}} data center regions.
 
 ### Disaster recovery
 {: #shared_data-dr}

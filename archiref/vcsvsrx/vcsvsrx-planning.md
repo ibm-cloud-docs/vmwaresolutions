@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-06-13"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 {:note: .note}
 {:important: .important}
 
-There are two options for deploying a vSRX HA cluster:
+There are two options for deploying a vSRX high availability (HA) cluster:
 
 * Deploy gateway on bare metal servers - deploys vSRX on a KVM-based host.
 * Deploy gateway as part of the {{site.data.keyword.vmwaresolutions_full}} offering (gateway cluster) - deploys vSRX on a VMware vSphere® ESXi™ hypervisor.
@@ -30,7 +30,7 @@ The two vSRX nodes are tied together in a highly available chassis cluster and d
 
 The following features are common to both deployment types:
 
-* Provides a high availability pair within a single data center:
+* Provides an HA pair within a single data center:
    * A pair of vSRX gateway appliance hosts
    * NFS storage that is shared between the hosts
 * Full vSRX firewall and routing capability implemented.
@@ -96,7 +96,7 @@ The vSRX in the {{site.data.keyword.vcf-auto-short}} instance has specific conne
 
 ![vSRX HA chassis cluster on {{site.data.keyword.vcf-auto-short}} interconnections](../../images/vcsvsrx-vsrx-vcs-connections.svg){: caption="vSRX HA chassis cluster on {{site.data.keyword.vcf-auto-short}} interconnections" caption-side="bottom"}
 
-Each network adapter that is defined on the vSRX is mapped to a specific interface, depending on whether the vSRX instance is a stand-alone VM or one of a cluster pair for high availability.
+Each network adapter that is defined on the vSRX is mapped to a specific interface, depending on whether the vSRX instance is a stand-alone VM or one of a cluster pair for HA.
 
 Note the following information for the stand-alone mode:
 

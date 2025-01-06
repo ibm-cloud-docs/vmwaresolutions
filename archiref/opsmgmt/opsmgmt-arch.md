@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -124,7 +124,7 @@ To monitor NSX-T™, the following tools are implemented:
 
 The VMware SDDC Health Management Pack monitors the following components:
 * Logical Switches - Monitors the state of the logical switches.
-* Controller Cluster - Monitors the deployed cluster node count for HA and maintains quorum.
+* Controller Cluster - Monitors the deployed cluster node count for high availability and maintains quorum.
 * Controller Nodes - Monitors node connectivity with controller cluster and manager node.
 * Edge Nodes - Monitors edge node running state and its connectivity with controller cluster and manager nodes.
 * NSX-T Management Services.

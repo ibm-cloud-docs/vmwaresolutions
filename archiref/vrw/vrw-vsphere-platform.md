@@ -51,7 +51,7 @@ One vCenter Server is deployed to manage the management cluster, the gateway clu
 
 NSX™ provides a highly secure and flexible software-defined network to support the application requirements. NSX controllers are hosted in the management cluster.
 
-NSX is configured with three controllers, which provide a highly available and redundant configuration. Additionally a virtual IP (VIP) address is used to access the cluster to provide fault tolerance and high availability to NSX Manager nodes. Each controller manager is assigned a VLAN–backed IP address from the private portable address block that is designated for management components.
+NSX is configured with three controllers, which provide a highly available and redundant configuration. Additionally a virtual IP (VIP) address is used to access the cluster to provide fault tolerance and high availability (HA) to NSX Manager nodes. Each controller manager is assigned a VLAN–backed IP address from the private portable address block that is designated for management components.
 
 Hosting the NSX controllers in the management cluster ensures that network and security changes are not possible by anyone other than the designated administrators.
 
@@ -62,7 +62,7 @@ The VMware Aria Operations analytics cluster contains the nodes that analyze and
 
 The analytics cluster consists of the following components:
 - Primary node – The primary node is the initial node in a VMware Aria Operations cluster. In a large environment, this node manages all the other nodes.
-- Primary node replica – This node enables high availability of the primary node.
+- Primary node replica – This node enables HA of the primary node.
 - Data nodes – The data node enables scale out of VMware Aria Operations in larger environments.
 
 For more information, see [VMware Aria Operations Manager design](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrops).

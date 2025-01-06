@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-01-01"
+lastupdated: "2025-01-03"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -618,12 +618,12 @@ Ensure that the Organization virtual data center network type is `routed`.
 
 For more information about creating a private network endpoint, see [Order a private network endpoint to connect your IBM account to your {{site.data.keyword.vm-shared}} virtual data center](https://mlwiles.github.io/vmwaresolutions/vcd/order-pne/){: external}. An example of a successful configuration is also provided.
 
-## Using Network High Availability
+## Using Network high availability
 {: #shared_vcd-ops-guide-network-ha}
 
-Use Network High Availability to anchor your VMware Cloud Director network in two data centers.
+Use Network high availability (HA) to anchor your VMware Cloud Director network in two data centers.
 
-You must access data center groups to use the Network High Availability feature. A data center group acts as a cross-virtual data center router that provides the following.
+You must access data center groups to use the Network HA feature. A data center group acts as a cross-virtual data center router that provides the following.
 * Centralized networking administration
 * Configuration for multiple Egress points in multiple virtual data centers
 * East-west traffic between all networks within the group

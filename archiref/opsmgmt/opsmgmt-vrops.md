@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-11-26"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ The VMware Aria® Operations™ Manager (formerly known as VMware vRealize® Ope
 
 The 4-node analytics cluster consists of the following components:
 * Primary node – The primary node is the initial node in a VMware Aria Operations cluster. In a large environment, this node manages all the other nodes.
-* Primary node replica – This node enables high availability of the primary node.
+* Primary node replica – This node enables high availability (HA) of the primary node.
 * Data nodes – The data node enables scale out of VMware Aria Operations in larger environments, two are deployed in this design.
 
 Additionally, the design uses Remote Collector nodes, which act as a proxy or relay server to collect data only and forward collected data to the primary and data nodes. Data nodes and Remote Collectors can be added to scale up depending on environment size. The placement of VMware Aria Operations components onto VLANs or VXLANs is shown in the following diagram.
@@ -50,7 +50,7 @@ The client can configure VMware Aria Operations manually to collect data from VM
 ## System requirements
 {: #opsmgmt-vrops-requirements}
 
-The analytics cluster consists of one primary node, one primary replica node, and two data nodes to enable scaling out and high availability. More data nodes are added to scale up. The analytics cluster can scale to a maximum of eight medium-sized nodes.
+The analytics cluster consists of one primary node, one primary replica node, and two data nodes to enable scaling out and HA. More data nodes are added to scale up. The analytics cluster can scale to a maximum of eight medium-sized nodes.
 
 | Attribute | Specification |
 |-----------|---------------|

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-11-04"
+lastupdated: "2025-01-03"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -68,7 +68,7 @@ For more information, see [Technical specifications for Flexible instances](/doc
 {: #faq-ha}
 {: faq}
 
-You can configure vCenter HA, but configuration support is not provided by {{site.data.keyword.vmwaresolutions_short}}.
+You can configure vCenter high availability (HA), but configuration support is not provided by {{site.data.keyword.vmwaresolutions_short}}.
 
 ## Can clusters be renamed?
 {: #faq-rename-cluster}

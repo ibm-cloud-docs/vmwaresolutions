@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ The following components are part of your existing {{site.data.keyword.vcf-auto-
 * Licensing:
    * vSAN Enterprise
    * VMware NSX® Enterprise or Enterprise Plus
-* HA Active Directory with two virtual machines or two VSIs distributed between the two workload sites.
+* High availability Active Directory with two virtual machines or two VSIs distributed between the two workload sites.
 
 ### Component naming conventions
 {: #mcv-archi-bom-components-naming}

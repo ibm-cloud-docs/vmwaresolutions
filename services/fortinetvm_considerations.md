@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-29"
+lastupdated: "2025-01-03"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -47,7 +47,7 @@ The following components are ordered and included in the FortiGate Virtual Appli
 ### High availability
 {: #fortinetvm_considerations-specs-ha}
 
-Two VMs are deployed and ready for HA or Virtual Router Redundancy Protocol (VRRP) configuration.
+Two VMs are deployed and ready for high availability (HA) or Virtual Router Redundancy Protocol (VRRP) configuration.
 
 ### Networking
 {: #fortinetvm_considerations-specs-network}

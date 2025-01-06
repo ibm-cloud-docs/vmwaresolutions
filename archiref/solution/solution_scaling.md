@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2025
 
-lastupdated: "2023-12-07"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -53,7 +53,7 @@ When the initial cluster is converted into a management-only cluster, you must c
 ## Adding ESXi hosts into existing clusters
 {: #solution_scaling-hosts}
 
-You can scale out an existing cluster by ordering hosts from the {{site.data.keyword.vmwaresolutions_short}} console. The new hosts are automatically added to the cluster. You might need to adjust the HA reservation policy for the cluster based on your reservation requirements.
+You can scale out an existing cluster by ordering hosts from the {{site.data.keyword.vmwaresolutions_short}} console. The new hosts are automatically added to the cluster. You might need to adjust the high availability reservation policy for the cluster based on your reservation requirements.
 
 ## Related links
 {: #solution_scaling-related}

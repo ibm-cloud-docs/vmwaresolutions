@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-13"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -104,13 +104,13 @@ Ensure to plan for and implement the following solutions for monitoring your ins
 
 Your VMware instance is running on {{site.data.keyword.cloud_notm}} bare metal servers.
 
-Complete the following steps to ensure that you make adequate plans for high availability and business continuity.
+Complete the following steps to ensure that you make adequate plans for HA and business continuity.
 - Review vSphere HA and vSphere Distributed Resource Scheduler (DRS) configuration against your requirements.
 - Review network and storage I/O control configuration against your requirements.
 - Configure the virtual machine startup order against your requirements.
 - Configure resource pools, as needed, for management and workload.
 - Plan, implement, and monitor a backup solution for both [instance management components](/docs/vmwaresolutions?topic=vmwaresolutions-solution_backingup) and workload.
-- Plan for high availability of instance management, including the possibility of multiple instances, multiple clusters, vCenter HA.
+- Plan for HA of instance management, including the possibility of multiple instances, multiple clusters, vCenter HA.
 - Use solutions such as [Zerto Disaster Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) or [Veeam Backup and Replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) to plan for business continuity for your workloads.
 
 ## Storage planning

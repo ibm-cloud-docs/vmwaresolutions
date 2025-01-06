@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-12"
+lastupdated: "2025-01-03"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -54,7 +54,7 @@ The following components are included with the F5 BIG-IP service:
 ### Networking
 {: #f5_considerations-specs-network}
 
-* Private Virtual Extensible LAN (VXLAN) for High Availability (HA) synchronization.
+* Private Virtual Extensible LAN (VXLAN) for high availability (HA) synchronization.
 * Access to Traffic Management Shell (TMSH) and Management Console through private management network.
 
 ### Licenses and fees

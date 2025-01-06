@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-12-16"
+lastupdated: "2025-01-03"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -21,7 +21,7 @@ The following table provides information about the ports for deployment and Day 
 
 Review the following information about the ports described in the [table](#vmwaresol_ports-deploy-day2ops-table):
 
-* Windows® Active Directory™ has two options: single Windows Virtual Service Instance (VSI) and two HA dedicated Windows Server virtual machines (VMs). For single Windows VSI, the VSI is in the primary subnet. For Windows Server VMs, the VMs are in the [infrastructure VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vlans-subnets) subnet.
+* Windows® Active Directory™ has two options: single Windows Virtual Service Instance (VSI) and two HA-dedicated Windows Server virtual machines (VMs). For single Windows VSI, the VSI is in the primary subnet. For Windows Server VMs, the VMs are in the [infrastructure VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vlans-subnets) subnet.
 * {{site.data.keyword.cloud}} infrastructure services network subnets vary from data center to data center. For more information, see [{{site.data.keyword.cloud_notm}} IP ranges](/docs/infrastructure-hub?topic=infrastructure-hub-ibm-cloud-ip-ranges).
 * Some Windows resources in your environment might use classic infrastructure services in Dallas.
 * {{site.data.keyword.cloud_notm}} endpoint service network includes `166.8.0.0/14`.

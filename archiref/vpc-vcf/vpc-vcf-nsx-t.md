@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -40,13 +40,13 @@ When you create {{site.data.keyword.cloud_notm}} bare metal server VLAN interfac
 Each physical host has a redundant 100 Gb network connection for network access to {{site.data.keyword.vpc_short}}. The 100 Gb bandwidth is shared by the network interfaces that are on the bare metal server.
 {: note}
 
-The high availability for physical network connectivity is handled by {{site.data.keyword.cloud_notm}}, which manages the aggregation. The multiple PCI interfaces, as seen in VMware Cloud Foundation deployment, do not add redundancy, but are required in VMware Cloud Foundation deployments and they are up the uplink migrations from vSphere Standard Switch to vSphere Distributed Switch.
+The high availability (HA) for physical network connectivity is handled by {{site.data.keyword.cloud_notm}}, which manages the aggregation. The multiple PCI interfaces, as seen in VMware Cloud Foundation deployment, do not add redundancy, but are required in VMware Cloud Foundation deployments and they are up the uplink migrations from vSphere Standard Switch to vSphere Distributed Switch.
 {: note}
 
 ## NSX manager deployment
 {: #vpc-vcf-nsx-t-managers}
 
-NSX Manager Node hosts the API services, the management plane, and the agent services. It provides a graphical user interface (GUI) and REST APIs for creating, configuring, and monitoring NSX Data Center components, such as logical switches, gateways, and firewalls. It also provides a system view and it is the management component of NSX Data Center. For high availability, VMware Cloud Foundation deploys a management cluster of three NSX Manager virtual machines (VMs) and a virtual IP.
+NSX Manager Node hosts the API services, the management plane, and the agent services. It provides a graphical user interface (GUI) and REST APIs for creating, configuring, and monitoring NSX Data Center components, such as logical switches, gateways, and firewalls. It also provides a system view and it is the management component of NSX Data Center. For HA, VMware Cloud Foundation deploys a management cluster of three NSX Manager virtual machines (VMs) and a virtual IP.
 
 A VLAN interface is provisioned for each NSX manager in the management subnet (`vpc-mgmt-subnet`) of the VPC. This VPC subnet is designated for VMware management components of your solution. If you deploy the NSX managers on the same VPC subnet in a zone, and you plan to use the NSX internal network load balancer, you need an extra VLAN interface for this virtual IP (VIP). All created VLAN interfaces are allowed to float, which means that they can be vMotioned between the ESXi hosts. The following table summarizes the required VLAN interfaces in {{site.data.keyword.vpc_short}}.
 

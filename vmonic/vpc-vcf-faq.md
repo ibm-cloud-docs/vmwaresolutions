@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-05-23"
+lastupdated: "2025-01-03"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc, faq
 
@@ -101,7 +101,7 @@ Starting with the VMware Cloud Foundation 4.4 release, SSH Service on ESXi hosts
 {: #vpc-vcf-faq-nsx-edge-nodes}
 {: faq}
 
-In {{site.data.keyword.vcf-vpc-short}} instances, the High Availability setting for and Tier 0 Gateway is set as Active-Standby and uses HA VIP. For this reason, the process that is documented in [Add edge nodes to an NSX edge cluster](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-ED90A614-B670-4E1C-9143-82896F147F74.html){: external} cannot be used.
+In {{site.data.keyword.vcf-vpc-short}} instances, the high availability setting for and Tier 0 Gateway is set as Active-Standby and uses HA VIP. For this reason, the process that is documented in [Add edge nodes to an NSX edge cluster](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-ED90A614-B670-4E1C-9143-82896F147F74.html){: external} cannot be used.
 
 When you deploy the solution, it is recommended to select a large enough NSX and edge node size.
 

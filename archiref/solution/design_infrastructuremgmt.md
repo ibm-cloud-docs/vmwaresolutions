@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-13"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -46,7 +46,7 @@ The vCenter Server configuration uses a local, embedded PostgreSQL database that
 ### vCenter Server cluster specification
 {: #design_infrastructuremgmt-vcenter-cluster}
 
-With this design, you can cluster the vSphere ESXi® hosts that are provisioned through the solution. However, before clusters can be created a data center object is created that signifies the location of the vSphere ESXi hosts and the pod within the data center. A cluster is created after the data center object is created. The cluster is deployed with VMware vSphere High Availability (HA) and VMware vSphere Distributed Resource Scheduler (DRS) enabled.
+With this design, you can cluster the vSphere ESXi® hosts that are provisioned through the solution. However, before clusters can be created a data center object is created that signifies the location of the vSphere ESXi hosts and the pod within the data center. A cluster is created after the data center object is created. The cluster is deployed with VMware vSphere high availability (HA) and VMware vSphere Distributed Resource Scheduler (DRS) enabled.
 
 ### vSphere Distributed Resource Scheduler
 {: #design_infrastructuremgmt-vsphere-drs}
@@ -56,10 +56,10 @@ This design uses vSphere Distributed Resource Scheduling (DRS) in the initial cl
 Power management through the **Distributed Power Management** feature is not used in this design.
 {: note}
 
-### vSphere High Availability
+### vSphere high availability
 {: #design_infrastructuremgmt-vsphere-ha}
 
-This design uses vSphere High Availability (HA) in the initial cluster and in the additional clusters to detect compute failures and recover VMs that run in a cluster. The vSphere HA feature in this design is configured with both the **Host Monitoring** and **Admission Control** options that are enabled in the cluster. Additionally, the initial cluster reserves one node’s resources as spare capacity for the admission control policy.
+This design uses vSphere HA in the initial cluster and in the additional clusters to detect compute failures and recover VMs that run in a cluster. The vSphere HA feature in this design is configured with both the **Host Monitoring** and **Admission Control** options that are enabled in the cluster. Additionally, the initial cluster reserves one node’s resources as spare capacity for the admission control policy.
 
 You are responsible for adjusting the admission control policy when the cluster is later expanded or contracted.
 {: note}

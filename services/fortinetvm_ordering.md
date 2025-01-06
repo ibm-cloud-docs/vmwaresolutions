@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-12"
+lastupdated: "2025-01-03"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -36,7 +36,7 @@ Review the following considerations before you install the FortiGate Virtual App
 * For high CPU licenses, make sure that you have enough CPUs available on the consolidated cluster.
 
    * At least 2 VMware ESXi™ servers are available, and each active host has sufficient resources to host a single FortiGate VM.
-   * VMware® vSphere HA has enough resources to host two FortiGate VMs.
+   * VMware® vSphere high availability (HA) has enough resources to host two FortiGate VMs.
 
    Because of the requirements, you must plan carefully for the space that is needed for the FortiGate Virtual Appliance. If needed, before you order FortiGate Virtual Appliance, add 1 - 2 ESXi servers to your instance, or reduce the vSphere HA CPU reservation for failover, or both.
 

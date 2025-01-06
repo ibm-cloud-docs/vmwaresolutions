@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2024
+  years: 2016, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-01-03"
 
 keywords: user IDs vCenter, PSC user, user ID service
 
@@ -30,7 +30,7 @@ VMware instance operations fail if IBM user IDs are deleted, disabled, or if the
 
 | User     | User ID      | Method | Description |
 |:---------|:-------------|:-------|:------------|
-| IBM      | `root`       | SSH    | Used for VMware configuration such as setting up VMware High Availability and creating distributed switches. Used post deployment to pair primary and secondary {{site.data.keyword.vcf-auto}} instances. |
+| IBM      | `root`       | SSH    | Used for VMware configuration such as setting up VMware high availability and creating distributed switches. Used post deployment to pair primary and secondary {{site.data.keyword.vcf-auto}} instances. |
 | IBM      | `automation@root_domain`  \n (Active Directory™ user) | HTTP | Used post deployment to add and remove hosts and clusters and to deploy and configure virtual machines (VMs) for services. |
 | Customer | `administrator@vsphere.local` | HTTP | Created for customer use only. |
 {: caption="vCenter Server and Platform Services Controller user IDs" caption-side="bottom"}

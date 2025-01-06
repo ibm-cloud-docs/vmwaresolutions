@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-01-03"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ The following information provides an overview of how {{site.data.keyword.cloud_
 ## Physical host connections in VPC
 {: #vpc-vcf-hosts-connections}
 
-The {{site.data.keyword.cloud_notm}} bare metal server in {{site.data.keyword.vpc_short}} uses SmartNICs for VPC network capabilities. Each physical host has a redundant 100 Gb network connection for network access to {{site.data.keyword.vpc_short}}. The high availability for physical network connectivity is handled by {{site.data.keyword.cloud_notm}}, and you do not have to configure anything special. All network interfaces are backed by two redundant physical ports that are on the top-of-rack (TORs) switch. {{site.data.keyword.cloud_notm}} manages the aggregation, and you do not have to create multiple PCI interfaces for redundancy, for example. The 100 Gb bandwidth is shared by the network interfaces that are configured and currently active on the bare metal server.
+The {{site.data.keyword.cloud_notm}} bare metal server in {{site.data.keyword.vpc_short}} uses SmartNICs for VPC network capabilities. Each physical host has a redundant 100 Gb network connection for network access to {{site.data.keyword.vpc_short}}. The high availability (HA) for physical network connectivity is handled by {{site.data.keyword.cloud_notm}}, and you do not have to configure anything special. All network interfaces are backed by two redundant physical ports that are on the top-of-rack (TORs) switch. {{site.data.keyword.cloud_notm}} manages the aggregation, and you do not have to create multiple PCI interfaces for redundancy, for example. The 100 Gb bandwidth is shared by the network interfaces that are configured and currently active on the bare metal server.
 
 A network interface in an {{site.data.keyword.cloud_notm}} bare metal server is an abstract representation of a network interface card, and a network interface connects an {{site.data.keyword.cloud_notm}} bare metal server to a VPC subnet.
 
@@ -34,7 +34,7 @@ In {{site.data.keyword.vpc_short}}, you can create two types of network interfac
 
 The PCI interface in an {{site.data.keyword.cloud_notm}} bare metal server is a physical PCI device that can be created or deleted only when the {{site.data.keyword.cloud_notm}} bare metal server is stopped or during initial bare metal server provisioning. The PCI interface has an `allowed_VLANs` property, which controls the VLANs that use the PCI interface. VLAN interface is a virtual device, which is used through a PCI device that has the VLAN in its array of `allowed_VLANs`.
 
-In VMware Cloud Foundation deployments, the bare metal servers in {{site.data.keyword.vpc_short}} use two PCI interfaces. This does not increase the high availability with SmartNICs but is a VMware Cloud Foundation prerequisite and the capability that is used by Cloud Builder and SDDC manager to handle deployment automation.
+In VMware Cloud Foundation deployments, the bare metal servers in {{site.data.keyword.vpc_short}} use two PCI interfaces. This does not increase HA with SmartNICs but is a VMware Cloud Foundation prerequisite and the capability that is used by Cloud Builder and SDDC manager to handle deployment automation.
 {: note}
 
 The allowed VLANs list must be updated separately for all PCI interfaces and all hosts if you use new VLAN IDs in your solution.
@@ -44,7 +44,7 @@ VLAN interfaces are created for every virtual machine (VM) or VMware Cloud Found
 
 Every VLAN interface must use an IEEE 802.1q tag in the range 1-4094. It is important to understand that these VLAN tags have only local significance to the bare metal server, VPC subnet does not understand VLANs. You can see SmartNIC as a switch that handles this mapping between VLAN IDs and VPC subnets. VLAN tags are used internally inside the bare metal server to isolate and separate the traffic at layer 2 and it is used as the mechanism to isolate VPC subnet traffic inside the host. For example, in Distributed Virtual Switches different port groups are created to match used VLAN IDs. Each VLAN interface can attach to only one subnet, but you can create multiple VLAN interfaces that are attached to different subnets and use different VLAN IDs for each. In this design, the VLAN analogy is used and only a single VLAN ID is used for a single VPC subnet.
 
-VLAN interfaces can be set to be `floatable`. This action is important with VMware workloads that require vMotion between the {{site.data.keyword.cloud_notm}} bare metal server. This capability is used with VMware management workloads, such as vCenter or NSX managers to allow them to be moved between hosts for High Availability (HA) or Distributed Resource Scheduler (DRS).
+VLAN interfaces can be set to be `floatable`. This action is important with VMware workloads that require vMotion between the {{site.data.keyword.cloud_notm}} bare metal server. This capability is used with VMware management workloads, such as vCenter or NSX managers to allow them to be moved between hosts for HA or Distributed Resource Scheduler (DRS).
 
 Both PCI and VLAN interfaces can be attached to one or more VPC security groups. A VLAN interface does not inherit the security groups of the PCI interface through which the VLAN interface traffic flows. Also, VPC ACLs can be used to control inbound and outbound traffic for a subnet to which these PCI and VLAN interfaces are attached.
 
