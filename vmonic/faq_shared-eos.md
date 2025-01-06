@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-01-06"
 
 keywords: FAQ vmware shared, vmware shared, end of support vmware shared, vmware shared deprecated
 
@@ -130,7 +130,7 @@ No. VCDA does not include any capability to migrate the network configuration.
 
 You can use new subnets; however most customers don't. If you plan to migrate a subnet in multiple batches, then you need to reassign IP addresses as no L2 extension capability exists.
 
-## What are the recommended steps for an optimal migration? 
+## What are the recommended steps for an optimal migration?
 {: #faq-shared-eos-optimal-mig}
 {: faq}
 
@@ -138,13 +138,13 @@ We recommend the following best practices:
 
 1. Provision your {{site.data.keyword.vmware-service_short}} instance in the same region as the existing {{site.data.keyword.vm-shared}} instance.
 2. Create your network or networks in {{site.data.keyword.vcf-aas}}: segments, networks, firewall rules, and NAT. For more information, see [Technical considerations about migrating from {{site.data.keyword.vm-shared}} to {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared-vmwaas-migration).
-3. (Optional) If you are planning to use {{site.data.keyword.tg_full}} to connect to other resources, configure interconnectivity. 
+3. (Optional) If you are planning to use {{site.data.keyword.tg_full}} to connect to other resources, configure interconnectivity.
 
    If you are planning to keep the existing subnets, do not advertise these routes through {{site.data.keyword.tg_short}} until the VMs are migrated.
    {: attention}
 
 4. Verify that your workloads are ready to be migrated, that is, you can see the source VMs and destination VDC and networks. For more information, see [Migrating {{site.data.keyword.vm-shared}} workloads to {{site.data.keyword.vcf-aas}} with cloud-to-cloud connections](/docs/vmware-service?topic=vmware-service-vcda-migrating-cloudtocloud-shared).
-5. Set up the replication in advance and plan to perform the migration outside working hours, for example, a weekend evening. 
+5. Set up the replication in advance and plan to perform the migration outside working hours, for example, a weekend evening.
 
    The workloads are restarted as part of the migration.
    {: note}
