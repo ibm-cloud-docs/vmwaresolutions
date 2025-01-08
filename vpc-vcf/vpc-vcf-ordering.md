@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-11-21"
+lastupdated: "2025-01-08"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -49,7 +49,7 @@ VMware Cloud Foundation™ 5.2.1 is installed on your {{site.data.keyword.vcf-vp
 
 For the **Consolidated** architecture, instances are deployed with a management domain. To deploy a workload domain with your instance, select the **Standard** architecture.
 
-For more information, see [Supported {{site.data.keyword.vcf-vpc-short}} architectures in {{site.data.keyword.vpc_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw#vpc-vcf-ovw-supported-arch).
+For more information, see [Supported {{site.data.keyword.vcf-vpc-short}} architecture models in {{site.data.keyword.vpc_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw#vpc-vcf-ovw-supported-arch).
 
 ## Deployment
 {: #vpc-vcf-ordering-deployment}

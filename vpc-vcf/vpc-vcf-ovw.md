@@ -44,11 +44,13 @@ Unlike the managed service offerings, {{site.data.keyword.vcf-vpc-short}} on {{s
 
 {{site.data.keyword.vcf-vpc-short}} supports two architecture models - Standard and Consolidated. You can select your preferred architecture according to the specific requirements of your organization, such as the size of the deployment, the level of scalability needed. Both architecture models are supported for {{site.data.keyword.vcf-vpc-short}} on {{site.data.keyword.cloud_notm}}.
 
-In {{site.data.keyword.vcf-vpc-short}} Standard, the management and workload domains are deployed on separate sets of physical servers. This architecture is recommended for larger-scale deployments that require more capacity and scalability. The management domain is responsible for managing the overall infrastructure, while the workload domain is used to run specific workloads. 
+In {{site.data.keyword.vcf-vpc-short}} Standard, the management and workload domains are deployed on separate sets of physical servers. This architecture is recommended for larger-scale deployments that require more capacity and scalability. The management domain is responsible for managing the overall infrastructure, while the workload domain is used to run specific workloads.
 
 {{site.data.keyword.vcf-vpc-short}} Consolidated Architecture combines the management and workload domains on a single set of physical servers. This architecture is recommended for smaller-scale deployments.
 
 In both architecture models, {{site.data.keyword.vcf-vpc-short}} provides a unified software-defined data center platform that includes vSphere, vSAN, NSX, and SDDC Manager. The main benefit of using {{site.data.keyword.vcf-vpc-short}} is that it simplifies the deployment and management of the software-defined data center infrastructure by providing a single integrated solution that reduces the complexity of deploying and configuring multiple VMware products.
+
+
 
 For more information, see [Supported {{site.data.keyword.vcf-vpc-short}} architecture models](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-architectures).
 
