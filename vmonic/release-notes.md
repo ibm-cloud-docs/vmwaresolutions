@@ -26,6 +26,8 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 
 
+
+
 ## 2024
 {: #year-2024}
 
