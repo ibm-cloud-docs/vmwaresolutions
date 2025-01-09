@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-05-16"
+lastupdated: "2025-01-09"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -39,7 +39,7 @@ With this single-tenant {{site.data.keyword.cloud_notm}} bare metal server infra
 
 Unlike the managed service offerings, {{site.data.keyword.vcf-vpc-short}} on {{site.data.keyword.vpc_short}} gives you flexibility to design a solution for your needs, and it provides you full and complete access to all components.
 
-## Supported {{site.data.keyword.vcf-vpc-short}} architecture models in {{site.data.keyword.vpc_short}}
+## {{site.data.keyword.vcf-vpc-short}} architecture models
 {: #vpc-vcf-ovw-supported-arch}
 
 {{site.data.keyword.vcf-vpc-short}} supports two architecture models - Standard and Consolidated. You can select your preferred architecture according to the specific requirements of your organization, such as the size of the deployment, the level of scalability needed. Both architecture models are supported for {{site.data.keyword.vcf-vpc-short}} on {{site.data.keyword.cloud_notm}}.
