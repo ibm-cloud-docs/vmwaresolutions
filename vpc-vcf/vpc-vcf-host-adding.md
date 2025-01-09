@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-01-09"
 
 keywords: add host, host adding, vmware cloud foundation, vmware cloud edition
 
@@ -31,22 +31,11 @@ You can increase or decrease the capacity of your deployment by adding or deleti
 * When you add ESXi servers to your infrastructure, they are provisioned with the same version that was initially configured during the setup process. 
 * Adding ESXi servers through automation is provided only for management and workload clusters in a {{site.data.keyword.vcf-vpc-short}} instance.
 
-## Procedure to add ESXi servers from the resources page
-{: #vpc-vcf-host-adding-proc1}
+## Procedure to add ESXi servers to {{site.data.keyword.vcf-vpc-short}} instances
+{: #vpc-vcf-host-adding-proc}
 
 1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc-short}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vcf-vpc}}** table, click the instance to add ESXi servers.
-3. Click the **Infrastructure** tab.
-4. In the **Domains** table, click the domain to add ESXi servers to.
-5. In the **Hosts** section, click **Add host**.
-6. On the **Add host** side panel, enter the number of hosts that you want to add in the **Host quantity** field. Keep the default value for **Host name suffix** or enter the suffix for each newly added host. Ensure that the suffix is unique across the domain.
-7. In the **Summary** section on the side panel, review the estimated pricing, ensure that the account to be charged is correct, and review and accept the terms. Then, click **Add**.
-
-## Procedure to add ESXi servers from the instance details page
-{: #vpc-vcf-host-adding-proc2}
-
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc-short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vcf-vpc}}** table, click the instance to add ESXi servers to.
 3. Click the **Infrastructure** tab.
 4. In the **Domains** table, click the domain to add ESXi servers to.
 5. In the **Hosts** section, click **Add host**.
