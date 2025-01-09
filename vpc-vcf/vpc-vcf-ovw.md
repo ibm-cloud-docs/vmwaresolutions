@@ -52,7 +52,7 @@ In both architecture models, {{site.data.keyword.vcf-vpc-short}} provides a unif
 
 
 
-For more information, see [{{site.data.keyword.vcf-vpc-short}} architecture model](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-architectures).
+For more information, see [Supported {{site.data.keyword.vcf-vpc-short}} architecture models](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-architectures).
 
 ## Supported {{site.data.keyword.vcf-vpc-short}} products in {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-ovw-supported-edition}
