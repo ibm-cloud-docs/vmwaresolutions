@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2024-12-13"
+lastupdated: "2025-01-10"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -26,7 +26,12 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 
 
+### 10 January 2025
+{: #vmwaresolutions-jan1025}
+{: release-note}
 
+End of Support for {{site.data.keyword.vm-shared}} deployments - extended
+:   As of 28 March 2024, {{site.data.keyword.vm-shared}} is not available for new deployments. Support for existing instances is extended until 28 February 2025 after which access to all customer and management data, including the backups of workloads, will end. Existing instances are scheduled for deletion in March 2025. Migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 28 February 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 
 ## 2024
 {: #year-2024}

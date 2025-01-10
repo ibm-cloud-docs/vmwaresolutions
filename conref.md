@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022, 2024
+  years: 2022, 2025
 
-lastupdated: "2024-12-24"
+lastupdated: "2025-01-10"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -338,7 +338,7 @@ For new instances, vCenter Server 8 is available to order. However, for existing
 
 CONTENT:
 
-{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances are supported until 15 January 2025. Migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+As of 28 March 2024, {{site.data.keyword.vm-shared}} is not available for new deployments. Support for existing instances is extended until 28 February 2025. All customer and management data, including the backups of workloads, will be deleted in March 2025. Migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 28 February 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 {: #shared-deprecated-note}
 
