@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-01-06"
+lastupdated: "2025-01-10"
 
 keywords: FAQ vmware shared, vmware shared, end of support vmware shared, vmware shared deprecated
 
@@ -25,7 +25,7 @@ Find answers to frequently asked questions about the End of Support for {{site.d
 {: #faq-shared-eos}
 {: faq}
 
-If you are an existing customer, support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} deployments will continue until 15 January 2025 after which access to workloads will end. It is recommended that you deploy any new instances on the next-generation multitenant offering {{site.data.keyword.vcf-aas-full}}. {{site.data.keyword.vcf-aas}} is based on the same underlying software VMware Cloud Director, which retains the same admin console. You also benefit from performance improvements, options of network edge tier, improved private networking through {{site.data.keyword.tg_full_notm}}, greater regional coverage, and minor rebalancing in pricing. All these benefits make {{site.data.keyword.vcf-aas}} the ideal landing zone for your workloads.
+If you are an existing customer, support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} deployments will continue until 28 February 2025 after which access to workloads will end. It is recommended that you deploy any new instances on the next-generation multitenant offering {{site.data.keyword.vcf-aas-full}}. {{site.data.keyword.vcf-aas}} is based on the same underlying software VMware Cloud Director, which retains the same admin console. You also benefit from performance improvements, options of network edge tier, improved private networking through {{site.data.keyword.tg_full_notm}}, greater regional coverage, and minor rebalancing in pricing. All these benefits make {{site.data.keyword.vcf-aas}} the ideal landing zone for your workloads.
 
 If you are new to {{site.data.keyword.vm-shared}}, and don't have any existing deployments, you are not able to provision new instances of {{site.data.keyword.vm-shared}}. You can directly use the next-generation performance that is offered by {{site.data.keyword.vcf-aas}}, with on-demand pricing (hourly) and discounted reserved usage (monthly). For more discounts for continued use, contact your {{site.data.keyword.IBM}} seller.
 
@@ -34,8 +34,7 @@ If you are new to {{site.data.keyword.vm-shared}}, and don't have any existing d
 {: faq}
 {: support}
 
-It is important to understand that {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} is based on VMware NSX-V, which continues to be supported until the end of 2024. {{site.data.keyword.IBM_notm}}'s exclusive support extension contract with VMware® by Broadcom will end in January 2025, thus rendering {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} unsupported.
-
+It is important to understand that {{site.data.keyword.vm-shared}} is based on VMware NSX-V, which is no longer supported by VMware® by Broadcom. {{site.data.keyword.IBM_notm}}'s exclusive contract with Broadcom® extends NSX-V support for {{site.data.keyword.cloud_notm}} customers into 2025, allowing for this extension to {{site.data.keyword.vm-shared}} deployments. For more information, see [End of Support for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v). IBM does not anticipate any further extensions after 28 February 2025.
 
 ## What is the next step?
 {: #faq-shared-eos-next}
@@ -87,9 +86,7 @@ Some migrations require redesigning and reestablishing network connections, edge
 {: #faq-shared-eos-promotions}
 {: faq}
 
-Yes. {{site.data.keyword.IBM_notm}} offers migration promotions and discounts for existing {{site.data.keyword.vm-shared}} customers. Contact your IBM Customer Success Manager or IBM Sales representative for details about approved promotions that you can take advantage of and start your upgrade or migration.
-
-
+Yes. IBM offers migration promotions (VCFaaS-exclusive credits) for existing {{site.data.keyword.vm-shared}} customers who want to migrate to {{site.data.keyword.vcf-aas}}. For details about approved promotions that you can take advantage of and start your upgrade or migration, contact your IBM Customer Success Manager or IBM Sales representative. You can also request migration credits by completing [a promo request form](https://forms.monday.com/forms/75adc2e53e58807ee5ac01cfc80d2972){: external}.
 
 ## Does {{site.data.keyword.vcf-aas}} offer all the features and capabilities that are available in {{site.data.keyword.vm-shared}}? If any parity gaps exist, when will they be addressed?
 {: #faq-shared-eos-features}
