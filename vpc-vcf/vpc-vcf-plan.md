@@ -49,7 +49,7 @@ The following bare metal profiles are supported:
 * `mx2d-metal-96x768`
 * `mx3d-metal-192x2048` (available only in the Sao Paulo region)
 
-For more information about {{site.data.keyword.vpc_short}} bare metal servers by region, see [Generation 2 (x2 and x2d) bare metal profiles availability by region](/docs/vpc?topic=vpc-bare-metal-servers-profile&interface=ui#bare-metal-profile-availability-by-region) and[Generation 3 (x3 and x3d) bare metal profiles availability by region](/docs/vpc?topic=vpc-bare-metal-servers-profile&interface=ui#bare-metal-profile-availability-by-region-gen3).
+For more information about {{site.data.keyword.vpc_short}} bare metal servers by region, see [Generation 2 (x2 and x2d) bare metal profiles availability by region](/docs/vpc?topic=vpc-bare-metal-servers-profile&interface=ui#bare-metal-profile-availability-by-region) and [Generation 3 (x3 and x3d) bare metal profiles availability by region](/docs/vpc?topic=vpc-bare-metal-servers-profile&interface=ui#bare-metal-profile-availability-by-region-gen3).
 
 ## {{site.data.keyword.cloud_notm}} quotas and service limits
 {: #vpc-vcf-plan-limits}
