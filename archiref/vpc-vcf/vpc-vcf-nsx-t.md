@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-01-13"
 
 subcollection: vmwaresolutions
 
@@ -80,7 +80,6 @@ Host TEP VLAN ID is defined in the host transport profile.
 
 The previous table shows the naming and numbering principles. The actual deployment subnet or distributed port group names might vary.
 {: note}
-
 
 In the standard architecture, the VI workload domain deployment uses new VPC subnets and new VLAN IDs are used.
 

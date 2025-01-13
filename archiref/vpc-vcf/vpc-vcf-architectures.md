@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-18"
+lastupdated: "2025-01-13"
 
 subcollection: vmwaresolutions
 
@@ -44,6 +44,9 @@ In the VI workload domains, VMware vSphere clusters host the VMware NSX edge clu
 {: note}
 
 If you need an expansion to another zone or region, you can deploy a new VMware Cloud Foundation instance and use NSX and VPC networking capabilities to connect these.
+
+
+
 
 ## Related links
 {: #vpc-vcf-architectures-links}

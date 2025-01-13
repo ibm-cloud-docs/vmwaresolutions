@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-12-16"
+lastupdated: "2025-01-13"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
