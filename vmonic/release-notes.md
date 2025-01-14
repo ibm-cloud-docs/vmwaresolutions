@@ -146,7 +146,7 @@ Known issue about text overflow
 {: release-note}
 
 VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
-:   The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.5.1.1, which resolves various issues and includes bug fixes. For more information, see [VMware Cloud Director 10.5.1.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.5.1.1/rn/vmware-cloud-director-10511-release-notes/index.html){: external}.
+:   The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.5.1.1, which resolves various issues and includes bug fixes. For more information, see [VMware Cloud Director 10.5.1.1 release notes](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/release-notes/vmware-cloud-director-10511-release-notes.html){: external}.
 
 ### 14 June 2024
 {: #vmwaresolutions-jun1424}

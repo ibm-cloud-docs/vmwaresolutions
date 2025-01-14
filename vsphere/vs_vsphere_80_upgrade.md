@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2025
+  years:  2024, 2025
 
-lastupdated: "2025-01-01"
+lastupdated: "2025-01-14"
 
 keywords: vSphere migration, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -185,6 +185,6 @@ If you have an NFS cluster with vSphere 7.0 and you want to migrate it to vSpher
 ## Related links
 {: #vs_vsphere_80_upgrade-related}
 
-* [About vCenter Server upgrade](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vcenter.upgrade.doc/GUID-9ED7B32A-019F-4A97-BC58-1A9BF7D16C57.html){: external}
-* [About VMware ESXi upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0.html){: external}
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [vCenter Server upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-server-upgrade-7-0.html){: external}
+* [ESXi upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0.html){: external}

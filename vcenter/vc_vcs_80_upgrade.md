@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2025
+  years: 2024, 2025
 
-lastupdated: "2025-01-01"
+lastupdated: "2025-01-14"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -149,6 +149,6 @@ After you upgrade the vSphere and ESXi hosts to vSphere 8, you must upgrade the 
 ## Related links
 {: #vc_vcs_80_upgrade-related}
 
-* [About vCenter Server upgrade](https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-vcenter-upgrade/GUID-9ED7B32A-019F-4A97-BC58-1A9BF7D16C57.html){: external}
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [vCenter Server upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-server-upgrade-8-0.html){: external}
 * [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade)
