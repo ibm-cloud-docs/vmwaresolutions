@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024
+  years:  2024, 2025
 
-lastupdated: "2024-06-18"
+lastupdated: "2025-01-14"
 
 subcollection: vmwaresolutions
 
@@ -48,5 +48,5 @@ When you design or deploy this architecture pattern, note that Tanzu can be depl
 {: #arch-pattern-vcf-tanzu-std-links}
 
 * [VPC network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
-* [Developer Ready Infrastructure for VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-developer-ready-infrastructure-v1/GUID-641F8C25-CA4E-4F27-B467-484C849C7332.html){: external}
+* [Developer ready infrastructure for VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/developer-ready-infrastructure-for-vmware-cloud-foundation.html){: external}
 * [VMware Cloud Foundation with VMware Tanzu](https://docs.vmware.com/en/VMware-Cloud-Foundation/5.1/vcf-admin/GUID-9BEED8EB-0DD7-4AC1-A9ED-216EDEA97D6C.html){: external}

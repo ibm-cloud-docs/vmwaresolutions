@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-01"
+lastupdated: "2025-01-14"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -55,7 +55,7 @@ The time to complete the upgrade is unknown. It is possible that it might take s
 
 Complete the following requirements before you begin the upgrade:
 * Upgrade any extensions or snap-ins within the vCenter Server environment. Review the following documentation before you plan your upgrade:
-   * [VMware vSphere 7.0 release notes](https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vsphere-esxi-vcenter-server-70-release-notes.html){: external}
+   * [VMware vSphere 7.0 release notes](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/release-notes/vsphere-esxi-vcenter-server-70-release-notes.html){: external}
    * [About VMware ESXi upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0.html){: external}
 * Set up vSphere Update Manager (VUM) within your {{site.data.keyword.vcf-auto-short}} instance to download updates from VMware vSphere. For more information, see [VMware Update Manager introduction](/docs/vmwaresolutions?topic=vmwaresolutions-vum-intro#vum-intro).
 * Open a support ticket with the {{site.data.keyword.vmwaresolutions_short}} team to notify them that an upgrade is being planned. The ticket remains open until the instance is registered at the upgraded level in the {{site.data.keyword.vmwaresolutions_short}} console.
@@ -242,6 +242,6 @@ Complete the following steps from the vCenter Server user interface.
 ## Related links
 {: #vs_vsphere_70_upgrade-related}
 
-* [About vCenter Server upgrade](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vcenter.upgrade.doc/GUID-9ED7B32A-019F-4A97-BC58-1A9BF7D16C57.html){: external}
-* [About VMware ESXi upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0.html){: external}
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [vCenter Server upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-server-upgrade-7-0.html){: external}
+* [ESXi upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0.html){: external}

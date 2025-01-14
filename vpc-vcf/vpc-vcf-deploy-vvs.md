@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-11-26"
+lastupdated: "2025-01-14"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -34,13 +34,13 @@ If you are provisioning VMware Aria® Suite components with Lifecycle Manager, r
 ## Identity and Access Management for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-deploy-vvs-iam}
 
-The [Identity and Access Management for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-identity-and-access-management-v1/GUID-FF35966D-2225-4825-9E38-C7287B069D4D.html){: external} validated solution provides detailed design, implementation, configuration, and operation guidance on the use of Active Directory as an identity provider and authentication source, and on the use of role-based access control (RBAC) in {{site.data.keyword.vcf-vpc-short}} SDDC Manager™, VMware vCenter Server®, VMware ESXi™, and VMware NSX™.
+The [Identity and Access Management for VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/identity-and-access-management-for-vmware-cloud-foundation.html){: external} validated solution provides detailed design, implementation, configuration, and operation guidance on the use of Active Directory as an identity provider and authentication source, and on the use of role-based access control (RBAC) in {{site.data.keyword.vcf-vpc-short}} SDDC Manager™, VMware vCenter Server®, VMware ESXi™, and VMware NSX™.
 
 This solution is intended for cloud architects and administrators who are familiar with VMware software and a role-based access control solution by using a central identity provider for {{site.data.keyword.vcf-vpc-short}}.
 
 Solution-added products for this VMware validated solution include VMware Workspace ONE Access.
 
-To deploy the Identity and Access Management for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Identity and Access Management for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-identity-and-access-management-v1/GUID-FF35966D-2225-4825-9E38-C7287B069D4D.html){: external}.
+To deploy the Identity and Access Management for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Identity and Access Management for VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/identity-and-access-management-for-vmware-cloud-foundation.html){: external}.
 
 Use VMware Aria® Suite Lifecycle Manager (formerly VMware vRealize® Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
 {: important}
@@ -66,11 +66,11 @@ To deploy the Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-sho
 ## Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-deploy-vvs-aria-operations-for-logs}
 
-[The Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}} validated solution](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-intelligent-logging-and-analytics-v1/GUID-42022E8E-7C84-4864-AE49-69D016EF5600.html){: external} provides information on the use of a log analysis tool that delivers highly scalable log management with intuitive and actionable dashboards, sophisticated analytics, and broad third-party extensibility. The solution provides deep operational visibility and fast troubleshooting for your {{site.data.keyword.vcf-vpc-short}} instance and workloads that are running on it.
+[The Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}} validated solution](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/intelligent-logging-and-analytics-for-vmware-cloud-foundation.html){: external} provides information on the use of a log analysis tool that delivers highly scalable log management with intuitive and actionable dashboards, sophisticated analytics, and broad third-party extensibility. The solution provides deep operational visibility and fast troubleshooting for your {{site.data.keyword.vcf-vpc-short}} instance and workloads that are running on it.
 
 Solution-added products for this VMware validated solutions include Aria Operations™ for Logs (formerly vRealize Log Insight). Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) is deployed as part of the initial provisioning for your {{site.data.keyword.vcf-vpc-short}} instance, and you use this deployment method to deploy Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}}.
 
-To deploy the Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-intelligent-logging-and-analytics-v1/GUID-42022E8E-7C84-4864-AE49-69D016EF5600.html){: external}.
+To deploy the Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}}](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/intelligent-logging-and-analytics-for-vmware-cloud-foundation.html){: external}.
 
 Use Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
 {: important}
@@ -78,13 +78,13 @@ Use Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) to 
 ## Intelligent Operations Management for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-deploy-vvs-aria-operations}
 
-[The Intelligent Operations Management for {{site.data.keyword.vcf-vpc-short}} validated solution](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-intelligent-operations-management-v1/GUID-31B18AB1-9E88-4355-BECF-A90F1E1F7C19.html){: external} provides instructions for implementing a centralized monitoring and alerting platform to deliver proactive management of system failures through a single interface to review and act on events and alerts for your {{site.data.keyword.vcf-vpc-short}} instance and workloads that are running on it.
+[The Intelligent Operations Management for {{site.data.keyword.vcf-vpc-short}} validated solution](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/intelligent-operations-management-for-vmware-cloud-foundation.html){: external} provides instructions for implementing a centralized monitoring and alerting platform to deliver proactive management of system failures through a single interface to review and act on events and alerts for your {{site.data.keyword.vcf-vpc-short}} instance and workloads that are running on it.
 
 This solution is intended for cloud architects and administrators who are familiar with and want to use VMware software and to provide a centralized monitoring and alerting platform to deliver proactive management of system failures.
 
 Solution-added products for this VMware validated solutions include Aria Operations Manager (formerly vRealize Operations Manager). Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) is deployed as part of the initial provisioning of your {{site.data.keyword.vcf-vpc-short}} instance. You can use this method to deploy Intelligent Operations Management for {{site.data.keyword.vcf-vpc-short}}.
 
-To deploy the Intelligent Operations Management for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-intelligent-operations-management-v1/GUID-31B18AB1-9E88-4355-BECF-A90F1E1F7C19.html){: external}.
+To deploy the Intelligent Operations Management for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}}](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/intelligent-operations-management-for-vmware-cloud-foundation.html){: external}.
 
 Use Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
 {: important}
@@ -92,13 +92,13 @@ Use Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) to 
 ## Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-deploy-vvs-aria-automation}
 
-[The Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}} validated solution](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-33896484-4331-46F1-8875-B487BBEDCE05.html){: external} provides information about the use of Aria Automation (formerly vRealize Automation) for cloud automation services with the {{site.data.keyword.vcf-vpc-short}} platform.
+[The Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}} validated solution](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/private-cloud-automation-for-vmware-cloud-foundation.html){: external} provides information about the use of Aria Automation (formerly vRealize Automation) for cloud automation services with the {{site.data.keyword.vcf-vpc-short}} platform.
 
 This solution is intended for cloud architects and administrators who are familiar with implementation of cloud automation services that can use {{site.data.keyword.vcf-vpc-short}}.
 
 Solution-added products for this VMware validated solution include Aria Automation (formerly vRealize Automation).
 
-To deploy the Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, see [Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-33896484-4331-46F1-8875-B487BBEDCE05.html){: external}.
+To deploy the Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, see [Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}}](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/private-cloud-automation-for-vmware-cloud-foundation.html){: external}.
 
 ### Important notes
 {: #vpc-vcf-deploy-vvs-aria-automation-notes}
@@ -112,13 +112,13 @@ To deploy the Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}} v
 Deploying VMware Avi Load Balancer (formerly NSX Advanced Load Balancer) Controllers require new {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}) bare metal server VLAN interfaces and changes to {{site.data.keyword.vpc_short}} default routing tables. This configuration task is manual and it requires understanding of the {{site.data.keyword.vpc_short}} and its routing concepts.
 {: important}
 
-[The Advanced Load Balancing for {{site.data.keyword.vcf-vpc-short}} validated solution](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-nsx-advanced-load-balancer-v1/GUID-F8696F0A-D91B-46B1-A824-8FAE461E57B3.html){: external} provides information on the use of Avi Load Balancer as a load-balancing solution for {{site.data.keyword.vcf-vpc-short}}.
+[The Advanced Load Balancing for {{site.data.keyword.vcf-vpc-short}} validated solution](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/advanced-load-balancing-for-vmware-cloud-foundation.html){: external} provides information on the use of Avi Load Balancer as a load-balancing solution for {{site.data.keyword.vcf-vpc-short}}.
 
 This solution is intended for cloud architects and administrators who want to use Avi Load Balancer for load balancing in {{site.data.keyword.vcf-vpc-short}}.
 
 Solution-added products for VMware validated solutions include Avi Load Balancer.
 
-To deploy the Advanced Load Balancing for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, see [Advanced Load Balancing for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-nsx-advanced-load-balancer-v1/GUID-F8696F0A-D91B-46B1-A824-8FAE461E57B3.html){: external}.
+To deploy the Advanced Load Balancing for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, see [Advanced Load Balancing for {{site.data.keyword.vcf-vpc-short}}](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/advanced-load-balancing-for-vmware-cloud-foundation.html){: external}.
 
 ### Notes
 {: #vpc-vcf-deploy-vvs-nsx-advanced-load-balancing-notes}
@@ -143,8 +143,8 @@ The following table shows the VLAN interfaces for Avi Load Balancer Controllers.
 ## Related links
 {: #vpc-vcf-deploy-vvs-links}
 
-* [The Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-short}} validated solution](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-developer-ready-infrastructure-v1/GUID-641F8C25-CA4E-4F27-B467-484C849C7332.html){: external}
-* [The Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}} validated solution](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-intelligent-logging-and-analytics-v1/GUID-42022E8E-7C84-4864-AE49-69D016EF5600.html){: external}
-* [The Intelligent Operations Management for {{site.data.keyword.vcf-vpc-short}} validated solution](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-intelligent-operations-management-v1/GUID-31B18AB1-9E88-4355-BECF-A90F1E1F7C19.html){: external}
-* [The Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}} validated solution](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-33896484-4331-46F1-8875-B487BBEDCE05.html){: external}
-* [The Advanced Load Balancing for {{site.data.keyword.vcf-vpc-short}} validated solution](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-nsx-advanced-load-balancer-v1/GUID-F8696F0A-D91B-46B1-A824-8FAE461E57B3.html){: external}
+* [The Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-short}} validated solution](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/developer-ready-infrastructure-for-vmware-cloud-foundation.html){: external}
+* [The Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}} validated solution](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/intelligent-logging-and-analytics-for-vmware-cloud-foundation.html){: external}
+* [The Intelligent Operations Management for {{site.data.keyword.vcf-vpc-short}} validated solution](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/intelligent-operations-management-for-vmware-cloud-foundation.html){: external}
+* [The Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}} validated solution](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/private-cloud-automation-for-vmware-cloud-foundation.html){: external}
+* [The Advanced Load Balancing for {{site.data.keyword.vcf-vpc-short}} validated solution](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/advanced-load-balancing-for-vmware-cloud-foundation.html){: external}
