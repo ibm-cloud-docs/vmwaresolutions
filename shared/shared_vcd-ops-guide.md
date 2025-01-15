@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-01-14"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -238,7 +238,7 @@ If you use the tenant portal **Password Reset** field to change your Windows Adm
 
 A vApp consists of one or more VMs that communicate over a network and use resources and services in a virtual data center. Create the vApp and then add VMs and networks.
 
-For more information about vApps, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
+For more information about vApps, see [Working with vApps](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/working-with-vapps.html){: external}.
 
 ## Networking
 {: #shared_vcd-ops-guide-networking}
@@ -341,7 +341,7 @@ Before you create the firewall and NAT rules, capture the information that is ne
 ##### Create the Organization virtual data center network firewall rule to allow access to the external network
 {: #shared_vcd-ops-guide-create-vdc-network-rule-extnetwork}
 
-From the virtual data center for that edge gateway, create the network firewall rule. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
+From the virtual data center for that edge gateway, create the network firewall rule. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/managing-nsx-v-edge-gateway-services-tenant/firewall-configuration-using-the-tenant-portal-vcd-h5-tenant/manage-edge-gateway-firewall-rules-vcd-h5-tenant/add-an-edge-gateway-firewall-rule-vcd-tenant.html){: external}.
 
 Review the following notes for creating the Organization virtual data center network firewall rule to allow access to the external network.
 
@@ -354,7 +354,7 @@ Review the following notes for creating the Organization virtual data center net
 ##### Source NAT definitions to the external network
 {: #shared_vcd-ops-guide-source-nat-ext}
 
-A source NAT rule is necessary to allow traffic from the Organization virtual data center network outbound to the internet. From the virtual data center for that edge gateway, create NAT44 Rules. For more information, see [Add a SNAT or a DNAT rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html){: external}.
+A source NAT rule is necessary to allow traffic from the Organization virtual data center network outbound to the internet. From the virtual data center for that edge gateway, create NAT44 Rules. For more information, see [Add an SNAT or a DNAT rule](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/managing-nsx-v-edge-gateway-services-tenant/managing-network-address-translation-on-an-nsx-data-center-for-vsphere-edge-gateway-tenant/add-an-snat-or-a-dnat-rule-tenant.html){: external}.
 
 Review the following notes for source NAT definitions.
 
@@ -370,7 +370,7 @@ Under the **NAT44 Rules**, click **SNAT Rule** and create the configuration by u
 ##### Create the Organization virtual data center network firewall rule to allow access to the {{site.data.keyword.cloud_notm}} Services Network
 {: #shared_vcd-ops-guide-create-vdc-network-rule-ibm-services-network}
 
-From the virtual data center for that edge gateway, create the network firewall rule. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
+From the virtual data center for that edge gateway, create the network firewall rule. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/managing-nsx-v-edge-gateway-services-tenant/firewall-configuration-using-the-tenant-portal-vcd-h5-tenant/manage-edge-gateway-firewall-rules-vcd-h5-tenant/add-an-edge-gateway-firewall-rule-vcd-tenant.html){: external}.
 
 Review the following notes for creating the Organization virtual data center network firewall rule to allow access to the {{site.data.keyword.cloud_notm}} Services Network.
 
@@ -385,7 +385,7 @@ Review the following notes for creating the Organization virtual data center net
 
 A source NAT rule is necessary to allow traffic from the Organization virtual data center network into the {{site.data.keyword.cloud_notm}} Service Network. This rule is used to enable VM access to {{site.data.keyword.cloud_notm}} Services such as update servers, DNS servers, NTP servers, or to get to the {{site.data.keyword.cloud_notm}} Object Storage.
 
-From the virtual data center for that edge gateway, create the source NAT definitions to the IBM Service Network (Private). For more information, see [Add a SNAT or a DNAT rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html){: external}.
+From the virtual data center for that edge gateway, create the source NAT definitions to the IBM Service Network (Private). For more information, see [Add an SNAT or a DNAT rule](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/managing-nsx-v-edge-gateway-services-tenant/managing-network-address-translation-on-an-nsx-data-center-for-vsphere-edge-gateway-tenant/add-an-snat-or-a-dnat-rule-tenant.html){: external}.
 
 Under the **NAT44 Rules**, click **SNAT Rule** and create the configuration by using the following selection.
 * For **Applied On**, select the service network.
@@ -408,7 +408,7 @@ The steps differ depending on the VM operating system and network configuration:
 
 A destination NAT allows an outside host, in this case on the internet, to connect to an inside host on the Organization virtual data center network. The destination NAT maps one IP address or port to another IP address or port. The following instructions are an example of configuring DNAT and port forwarding to allow a Windows remote desktop connection to a Windows VM in the Organization virtual data center. Port forwarding is optional.
 
-From the virtual data center for that edge gateway, create the destination NAT definition. For more information, see [Add a SNAT or a DNAT rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html){: external}.
+From the virtual data center for that edge gateway, create the destination NAT definition. For more information, see [Add an SNAT or a DNAT rule](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/managing-nsx-v-edge-gateway-services-tenant/managing-network-address-translation-on-an-nsx-data-center-for-vsphere-edge-gateway-tenant/add-an-snat-or-a-dnat-rule-tenant.html){: external}.
 
 Under the **NAT44 Rules**, click **DNAT Rule** and create the configuration by using the following selection.
 * For **Applied On**, select the ``<datacenter>-w<idx>-tenant-external`` interface, for example, ``dal13-w02-tenant-external``.
@@ -420,7 +420,7 @@ Under the **NAT44 Rules**, click **DNAT Rule** and create the configuration by u
 * For **Translated Port**, select the port on the previous VM that the servicer is listening on. In the Windows RDP example, port 3389 is the default remote desktop port.
 * Optionally, provide a description.
 
-From the virtual data center for that edge gateway, add a firewall rule to enable port forwarding. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
+From the virtual data center for that edge gateway, add a firewall rule to enable port forwarding. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/managing-nsx-v-edge-gateway-services-tenant/firewall-configuration-using-the-tenant-portal-vcd-h5-tenant/manage-edge-gateway-firewall-rules-vcd-h5-tenant/add-an-edge-gateway-firewall-rule-vcd-tenant.html){: external}.
 
 Review the following notes for destination NAT definition and port forwarding.
 
@@ -460,7 +460,7 @@ Add a NAT rule for translating internal network addresses into the service netwo
 1. Log in to the VMware Cloud Director tenant portal.
 2. Click the virtual data center **Edges** tab and open the single preconfigured edge.
 3. In the **External Networks** section, click the **IP Settings** link. Find the name of the service network and the IP address that is assigned for the service network interface from the table displayed. The format for the service network name is `<datacenter>-w<idx>-service<idx>`, for example, `dal13-w02-service02`.
-4. Click **SERVICES** to open the Edge Gateway configuration page. Click the **NAT** tab and click **+ SNAT RULE** to add a SNAT rule.
+4. Click **SERVICES** to open the Edge Gateway configuration page. Click the **NAT** tab and click **+ SNAT RULE** to add an SNAT rule.
 5. Select the service network next to the **Applied on** field and add the IP addresses or range from one of the virtual data center Organization networks to the **Original Source IP/Range** field.
 6. In the **Translated Source IP/Range** field, click **Select**. From the **Network** menu, select the service network. From the **IP Address** menu, select the service IP address that you want to use.
 7. Optionally define the **Description** field.
@@ -520,7 +520,7 @@ If your vApp or VM is deployed from the IBM templates that are provided in the p
 #### Creating a vApp Network for VMware Solutions Shared
 {: #shared_vcd-ops-guide-vapp-network}
 
-If not already completed, create a vApp containing at least two VMs. For more information, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
+If not already completed, create a vApp containing at least two VMs. For more information, see [Working with vApps](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/working-with-vapps.html){: external}.
 
 1. From the tenant portal, click the **Menu** icon at the upper left of the page and select **Data Centers**.
 2. From the main page under **Virtual Data Center**, click the virtual data center where you want to create the vApp network.
@@ -534,12 +534,12 @@ If not already completed, create a vApp containing at least two VMs. For more in
 10. Set the slider to **Connect to an organization VDC network**.
 11. Click **Add**.
 
-For more information, see [Working with networks in a vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FCBC791B-3183-4CD9-A194-856E98CC32D3.html).
+For more information, see [Working with networks in a vApp](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-vapps-tenant/working-with-networks-in-a-vapp-tenant.html){: external}.
 
 #### Creating a vApp Network for {{site.data.keyword.vcf-aas}}
 {: #shared_vcd-ops-guide-vapp-network-vmaas}
 
-If not already completed, create a vApp containing at least two VMs. For more information, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
+If not already completed, create a vApp containing at least two VMs. For more information, see [Working with vApps](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/working-with-vapps.html){: external}.
 
 1. From the tenant portal, click the **Menu** icon at the upper left of the page and select **Data Centers**.
 2. From the main page under **Virtual Data Center**, click the virtual data center where you want to create the vApp network.
@@ -549,7 +549,7 @@ If not already completed, create a vApp containing at least two VMs. For more in
 6. On the **Add Network to** window, select **OrgVDC Network** and select the network name.
 7. Click **Add**.
 
-For more information, see [Working with networks in a vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FCBC791B-3183-4CD9-A194-856E98CC32D3.html).
+For more information, see [Working with networks in a vApp](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-vapps-tenant/working-with-networks-in-a-vapp-tenant.html){: external}.
 
 ## Configuring a private network endpoint
 {: #shared_vcd-ops-guide-pne}
@@ -589,7 +589,7 @@ The firewall rule allows traffic from the private network IP to go through your 
 9. Select **Accept** for the **Action** field.
 10. Click **Save changes**.
 
-For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
+For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/managing-nsx-v-edge-gateway-services-tenant/firewall-configuration-using-the-tenant-portal-vcd-h5-tenant/manage-edge-gateway-firewall-rules-vcd-h5-tenant/add-an-edge-gateway-firewall-rule-vcd-tenant.html){: external}.
 
 ### Configuring DNAT rules for the NSX Edge Services Gateway
 {: #shared_vcd-ops-guide-pne-dnat-rules}

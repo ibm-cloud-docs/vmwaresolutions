@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-01-14"
 
 subcollection: vmwaresolutions
 
@@ -150,10 +150,10 @@ The following table describes the standard preconfigured alarms.
 | vSphere HA failover in progress | Not considered essential for notification. The alarm is reviewed as part of proactive daily checks. | No additional information |
 | Cannot find vSphere HA primary agent | Configure to send email one time when unable to find or communicate with the HA primary agent. | [About vSphere availability](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-63F459B7-8884-4818-8872-C9753B2E0215.html){: external} |
 | vSphere HA host status  | Configure to send an email one time when: vSphere HA agent on a host has an error, vSphere HA detects a network-isolated host, vSphere HA detects a network-partitioned host, or vSphere HA detects a host failure. | [Troubleshooting vSphere HA host states](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-DF7CEF44-98EC-458A-8614-50CCAEC0A7C5.html){: external} |
-| vSphere HA virtual machine failover failed | Configure to send email one time when critical for critical appliances. | [Creating and using vSphere HA Clusters](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html){: external} |
-| vSphere HA virtual machine monitoring action | Configure to send email one time when critical for critical appliances. | [Creating and using vSphere HA clusters](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html){: external} |
-| vSphere HA virtual machine monitoring error | Configure to send email one time when critical for critical appliances. | [Creating and using vSphere HA clusters](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html){: external} |
-| vSphere HA VM Component Protection could not power off a virtual machine | Configure to send email one time when critical for critical appliances. | [Creating and Using vSphere HA Clusters](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html){: external} |
+| vSphere HA virtual machine failover failed | Configure to send email one time when critical for critical appliances. | [Creating and using vSphere HA Clusters](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vsphere-availability/creating-and-using-vsphere-ha-clusters-vSphereAvailability.html){: external} |
+| vSphere HA virtual machine monitoring action | Configure to send email one time when critical for critical appliances. | [Creating and using vSphere HA clusters](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vsphere-availability/creating-and-using-vsphere-ha-clusters-vSphereAvailability.html){: external} |
+| vSphere HA virtual machine monitoring error | Configure to send email one time when critical for critical appliances. | [Creating and using vSphere HA clusters](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vsphere-availability/creating-and-using-vsphere-ha-clusters-vSphereAvailability.html){: external} |
+| vSphere HA VM Component Protection could not power off a virtual machine | Configure to send email one time when critical for critical appliances. | [Creating and Using vSphere HA Clusters](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vsphere-availability/creating-and-using-vsphere-ha-clusters-vSphereAvailability.html){: external} |
 | License error * |  Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Troubleshooting licensing](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-3C4E8BF7-B0A9-46F0-BA50-D69F950AB958.html){: external} |
 | Health status changed * | Configure to send an email one time if status changes to critical. | [Troubleshooting hosts](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-6F6CE545-58FA-490B-8C8A-3CB8196CAEA8.html){: external} |
 | Storage DRS recommendation | Not considered essential for notification. Alarm is reviewed as part of proactive daily checks. | [DRS troubleshooting information](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-5E7F6DEC-02A2-4221-AABA-EDFB9AE9EC70.html){: external} |
