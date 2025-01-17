@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-08-13"
+lastupdated: "2025-01-17"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -21,6 +21,8 @@ Select the VMware® components for your instance and specify the licensing optio
 
 ## VMware vSphere version
 {: #vs_orderinginstances-vsphere-version}
+
+
 
 Select the VMware vSphere® version for your instance. If you want to use vSphere 8, consider the following information:
 * For new instances, you can use only VMware vCenter Server® 8.

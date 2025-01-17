@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024
+  years:  2024, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-01-17"
 
 subcollection: vmwaresolutions
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 {: #arch-pattern-vcf-zerto-xconnectivity}
 
 This architecture pattern explains how to deploy and configure Zerto replication connectivity on {{site.data.keyword.vcf-vpc}} instances that are running on {{site.data.keyword.vpc_short}}. These connectivity patterns use a combination of {{site.data.keyword.cloud_notm}} native services and networking services that are provided by VMware NSX®.
+
+
 
 This pattern assumes that Zerto is deployed by following the guidance for [consolidated](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-zerto-con) or [standard](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-zerto-std) architecture models.
 
@@ -78,7 +80,6 @@ When you design or deploy this architecture pattern, consider the following info
 {: #arch-pattern-vcf-zerto-xconnectivity-links}
 
 * [Architecture pattern for Zerto - consolidated architecture](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-zerto-con)
-* [Architecture pattern for Zerto - standard architecture](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-zerto-std)
 * [Ordering Zerto stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering_licenses)
 * [VPC network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
 * [Zerto product documentation](https://help.zerto.com){: external}
