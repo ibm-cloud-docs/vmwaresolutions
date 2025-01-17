@@ -75,4 +75,4 @@ When you design or deploy this architecture pattern, consider the following info
 
 * [Architecture pattern for HCX - consolidated architecture](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-hcx-con)
 * [VPC network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
-* [VMware HCX documentation](https://docs.vmware.com/en/VMware-HCX/index.html){: external}
+* [VMware HCX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/hcx.html){: external}
