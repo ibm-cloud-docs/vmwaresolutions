@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024
+  years:  2024, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-01-17"
 
 subcollection: vmwaresolutions
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 {: #arch-pattern-vcf-veeam-xconnectivity}
 
 This architecture pattern explains how to deploy and configure Veeam® replication connectivity on {{site.data.keyword.vcf-vpc}} instances that are running on {{site.data.keyword.vpc_short}}. These connectivity patterns use a combination of {{site.data.keyword.cloud_notm}} native services and networking services that are provided by VMware NSX®.
+
+
 
 This pattern assumes that Veeam is deployed by following the guidance for [consolidated](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-veeam-con) or [standard](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-veeam-std) architecture models.
 
@@ -80,7 +82,6 @@ When you design or deploy this architecture pattern, consider the following info
 {: #arch-pattern-vcf-veeam-xconnectivity-links}
 
 * [Architecture pattern for Veeam - consolidated architecture](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-veeam-con)
-* [Architecture pattern for Veeam - standard architecture](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-veeam-std)
 * [Ordering Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
 * [VPC network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
 * [Veeam Backup & Replication ports and protocols](https://helpcenter.veeam.com/docs/backup/vsphere/used_ports.html?ver=120){: external}
