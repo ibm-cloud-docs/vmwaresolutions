@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-01-20"
 
 subcollection: vmwaresolutions
 
@@ -96,7 +96,7 @@ In addition to monitoring, Operations Management on {{site.data.keyword.cloud_no
 ## Related links
 {: #opsprocs-intro-links}
 
-* [About vSphere Monitoring and Performance](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.monitoring.doc/GUID-A8B06BE0-E5FC-435C-B12F-A31618B21E2C.html){: external}
+* [vSphere Monitoring and Performance](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vsphere-monitoring-and-performance-6-7.html){: external}
 * [VMware security hardening guides](https://www.vmware.com/solutions/security/hardening-guides){: external}
 * [Operations management introduction](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-intro)
 * [Considerations about changing {{site.data.keyword.vcf-auto-short}} artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact#vcenter_chg_impact)
