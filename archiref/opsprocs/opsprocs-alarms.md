@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-14"
+lastupdated: "2025-01-20"
 
 subcollection: vmwaresolutions
 
@@ -148,7 +148,7 @@ The following table describes the standard preconfigured alarms.
 | Refreshing CA certificates and CRLs for a VASA provider failed | Not configured in {{site.data.keyword.vcf-auto-short}} instances as they do not support VASA storage. | No additional information |
 | Insufficient vSphere HA failover resources | Configure to send email one time when critical. | [Knowledge - KB0012739 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=fe1f0beedb8db300d5a971198c96191a){: external} |
 | vSphere HA failover in progress | Not considered essential for notification. The alarm is reviewed as part of proactive daily checks. | No additional information |
-| Cannot find vSphere HA primary agent | Configure to send email one time when unable to find or communicate with the HA primary agent. | [About vSphere availability](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-63F459B7-8884-4818-8872-C9753B2E0215.html){: external} |
+| Cannot find vSphere HA primary agent | Configure to send email one time when unable to find or communicate with the HA primary agent. | [vSphere availability](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-availability.html){: external} |
 | vSphere HA host status  | Configure to send an email one time when: vSphere HA agent on a host has an error, vSphere HA detects a network-isolated host, vSphere HA detects a network-partitioned host, or vSphere HA detects a host failure. | [Troubleshooting vSphere HA host states](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-DF7CEF44-98EC-458A-8614-50CCAEC0A7C5.html){: external} |
 | vSphere HA virtual machine failover failed | Configure to send email one time when critical for critical appliances. | [Creating and using vSphere HA Clusters](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vsphere-availability/creating-and-using-vsphere-ha-clusters-vSphereAvailability.html){: external} |
 | vSphere HA virtual machine monitoring action | Configure to send email one time when critical for critical appliances. | [Creating and using vSphere HA clusters](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vsphere-availability/creating-and-using-vsphere-ha-clusters-vSphereAvailability.html){: external} |

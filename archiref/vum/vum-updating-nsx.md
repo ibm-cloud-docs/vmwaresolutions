@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-01-20"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Updating VMware NSX
 {: #vum-updating-nsx}
 
-The following information is a summary of the update process for NSX-T Data Center®. Refer to the VMware® guide for the update process for the NSX-T Data Center version that you are upgrading to, for example to update to version 3.2 see [Upgrading NSX-T Data Center](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/upgrade/GUID-E04242D7-EF09-4601-8906-3FA77FBB06BD.html){: external}.
+The following information is a summary of the update process for NSX-T Data Center®. Refer to the VMware® guide for the update process for the NSX-T Data Center version that you are upgrading to, for example to update to version 3.2 see [Upgrading NSX-T Data Center](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/upgrade-guide/nsx-t-upgrade-guide.html){: external}.
 
 VMware provides the [NSX-T Data Center Upgrade Checklist](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/upgrade/GUID-E35506A7-8050-482A-BABA-F356D2AC3B65.html){: external} with the steps that are required to update NSX-T Data Center. In summary, the steps are:
 

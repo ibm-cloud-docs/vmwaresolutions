@@ -68,7 +68,7 @@ For example, you can use the Async Patch tool to get a vCenter Server patch that
 As the {{site.data.keyword.vcf-vpc-short}} instance does not provide you with the credentials to log in to VMware software depot, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). The {{site.data.keyword.cloud_notm}} Support team can provide you access to these Async Patch bundles.
 {: important}
 
-For more information, see [Async Patch tool](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/ap-tool/GUID-49818DF1-94EA-4C85-8CB6-6EFFCE5F8060.html){: external}.
+For more information, see [Async Patch tool](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/ap-tool-4-5.html){: external}.
 
 ## How do I keep the Aria Suite software in my {{site.data.keyword.vcf-vpc-short}} instance up to date?
 {: #vpc-vcf-faq-aria-updates}
@@ -181,4 +181,4 @@ For more information about how to back up and restore {{site.data.keyword.vcf-vp
 {: #vpc-vcf-faq-operations-best-practice}
 {: faq}
 
-For more information about best practices and step-by-step instructions to operate {{site.data.keyword.vcf-vpc-short}}, see [VMware Cloud Foundation operations guide](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-operations/GUID-BE7C1509-709A-4A56-875B-EAC5EA61BB56.html){: external}.
+For more information about best practices and step-by-step instructions to operate {{site.data.keyword.vcf-vpc-short}}, see [VMware Cloud Foundation operations guide](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/5-2/vmware-cloud-foundation-operations-5-2.html){: external}.

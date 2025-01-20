@@ -51,7 +51,7 @@ For more information about creating and modifying tenant portal users, see [Mana
 
 The Organization Administrator must modify email notification settings to the organization SMTP server.
 
-For more information about modifying SMTP server settings, see [Modify your email settings]( https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5.html){: external}.
+For more information about modifying SMTP server settings, see [Modify Your Email Settings in VMware Cloud Director](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/modify-your-email-settings.html){: external}.
 
 ## Catalogs
 {: #shared_vcd-ops-guide-catalogs}
@@ -212,14 +212,14 @@ Guest OS customization is optional for all platforms. It is required for VMs tha
 
 When you use an IBM template to create the VM, use the **Guest OS Customization** pane to acquire or set the unique password for the OS instance. Ensure that the option **Enable guest customization** is selected and then use one of the **Password Reset** options to establish the initial administrator credential.
 
-For more information, see [Change the guest OS customization properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html#GUID-2B7A04E8-7479-4EE9-99B0-1A46751BE46F__GUID-658C5607-04BA-4BE1-87D3-8553DD2601EE){: external}.
+For more information, see [Change the Guest OS Customization of a Virtual Machine](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/editing-virtual-machine-properties-tenant.html#GUID-2B7A04E8-7479-4EE9-99B0-1A46751BE46F-en){: external}.
 
 #### Changing the advanced properties of a virtual machine
 {: #shared_vcd-ops-guide-advanced}
 
 In the Advanced settings, you can configure the resource allocation settings (shares, reservation, and limit) to determine the amount of virtual CPU (vCPU), memory, and storage resources provided for a VM.
 
-For more information, see [Edit virtual machine properties](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html){: external}.
+For more information, see [Edit Virtual Machine Properties in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/editing-virtual-machine-properties-tenant.html#GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1-en){: external}.
 
 ### Using IBM templates
 {: #shared_vcd-ops-guide-ibm-templates}
@@ -285,7 +285,7 @@ From the tenant portal, use the following procedures to create a sample network 
 #### Creating a routed Organization virtual data center network
 {: #shared_vcd-ops-guide-routed-organization}
 
-For more information about how to create a routed organization, see [Add a routed organization virtual data center network](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-74C4D27F-9E2A-4EB2-BBE1-CDD45C80E270.html){: external}.
+For more information about how to create a routed organization, see [Add a Routed Organization Virtual Data Center Network in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/add-a-routed-org-vdc-network.html){: external}.
 
 Review the following notes for creating a routed Organization virtual data center network.
 
@@ -299,14 +299,14 @@ Review the following notes for creating a routed Organization virtual data cente
 
 Use the steps to add a static route to validate that the Organization virtual data center networks that you defined earlier are listed as static routes. When you click **Create (+)**, locate the **Next Hop** field, and confirm that `52.117.132.2` is displayed. This value is the internal interface of the edge gateway.
 
- For more information, see [Add a static route](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-1C8D8FF7-7C24-4A44-875B-04DB961FB780.html){: external}.
+ For more information, see [Add a Static Route To an NSX Data Center for vSphere Edge Gateway Using the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/managing-nsx-v-edge-gateway-services-tenant/advanced-routing-configuration-for-nsx-data-center-for-vsphere-edge-gateways-tenant/add-a-static-route-tenant.html){: external}.
 
 #### Configuring DHCP on the edge gateway
 {: #shared_vcd-ops-guide-configure-dhcp}
 
 Optionally, you can configure DHCP on the edge gateway to assign IP addresses automatically to the VMs connected to the Organization virtual data center networks. This step is not necessary if you are using static IP addresses.
 
-From the virtual data center for that edge gateway, configure the DHCP. Repeat the procedure for extra Organization virtual data center networks that are attached to the edge that requires DHCP services. For more information, see [Add a DHCP IP pool](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-EF0B4C79-F6F7-4C75-825C-0B76B888856D.html){: external}.
+From the virtual data center for that edge gateway, configure the DHCP. Repeat the procedure for extra Organization virtual data center networks that are attached to the edge that requires DHCP services. For more information, see [Add a DHCP IP Pool on an NSX Data Center for vSphere Edge Gateway in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/managing-nsx-v-edge-gateway-services-tenant/managing-nsx-data-center-for-vsphere-edge-gateway-dhcp-in-vcd-tenant/add-a-dhcp-ip-pool-on-an-nsx-data-center-for-vsphere-edge-gateway-tenant.html){: external}.
 
 Review the following notes for configuring DHCP on the edge gateway.
 
@@ -321,7 +321,7 @@ Review the following notes for configuring DHCP on the edge gateway.
 
 Stand-alone VMs, or VMs in a vApp, can connect to an Organization virtual data center network.
 
-From the tenant portal, access the hardware properties of the VMs and add the new network interface to the **NICs** field. Repeat the procedure for extra VMs. For more information, see [Change the hardware properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html#GUID-BB95EAB5-13D7-4C4A-BDA3-AA1338BC01CA__GUID-A3963005-8914-4F8E-A4AC-007C88E52EE8){: external}.
+From the tenant portal, access the hardware properties of the VMs and add the new network interface to the **NICs** field. Repeat the procedure for extra VMs. For more information, see [Change the Hardware Properties of a Virtual Machine](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/editing-virtual-machine-properties-tenant.html#GUID-BB95EAB5-13D7-4C4A-BDA3-AA1338BC01CA-en){: external}.
 
 After the VMs are connected to the Organization virtual data center network, they are able to communicate with each other. You can ping from one of the VMs to another to test. If the ping command does not respond, check the OS firewalls to see whether ICMP is allowed.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-01-20"
 
 subcollection: vmwaresolutions
 
@@ -47,5 +47,5 @@ If needed, you can get help from various service providers. For example, the {{s
 {: #v2t-lift-and-shift-links}
 
 * [Requirements for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
-* [NSX-T Data Center Migration Guide](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-7899A104-2662-4FC9-87B2-F4688FAEBBBA.html){: external}
+* [NSX-T Data Center Migration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/migration-guide/nsx-t-data-center-migration-guide.html){: external}
 * [Preparing for a Lift-and-Shift Migration](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-BC8C6568-754A-4F73-812C-8D5424BF7EA2.html){: external}
