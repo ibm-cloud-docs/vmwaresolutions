@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2020, 2024
+  years: 2020, 2025
 
-lastupdated: "2024-05-22"
+lastupdated: "2025-01-20"
 
 keywords: vmware solutions shared, price for shared, pricing plan
 
@@ -213,5 +213,5 @@ You can change how fast the inactive backup chains are moved to Cloud Object Sto
 * [Operating {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
 * [Managing Veeam for {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam)
 * [Managing Zerto for {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal)
-* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
+* [VMware Cloud Director Tenant Guide](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5.html){: external}
 * [Troubleshooting NSX Edge](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.troubleshooting.doc/GUID-E6CD6FAA-3DA7-4AD7-9577-EE121AA7E1E6.html){: external}

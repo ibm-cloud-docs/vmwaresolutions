@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-01-20"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc, faq
 
@@ -22,11 +22,11 @@ subcollection: vmwaresolutions
 {: #vpc-vcf-faq-vcf-glossary}
 {: faq}
 
-You can use the VMware Cloud Foundation™ documentation for most Day 2 operations. For more information, see [Getting started with {{site.data.keyword.vcf-vpc-short}}](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/getting-started-with-the-management-domain-5-2.html){: external}.
+You can use the VMware Cloud Foundation™ documentation for most Day 2 operations. For more information, see [Getting started with VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/5.2/vcf-52-getting-started.pdf){: external}.
 
 Exceptions apply, some of which are documented in this FAQ. If you need assistance for the administration of your {{site.data.keyword.vcf-vpc}} instance, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
-To understand the terms used in VMware Cloud Foundation 4.5.x, see [VMware Cloud Foundation glossary](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-2AC7AC13-2A70-478D-AE6B-6193BAEB793D.html){: external}.
+To understand the terms used in VMware Cloud Foundation, see [VMware Cloud Foundation glossary](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/5-2/getting-started-with-vcf-5-2/cloud-foundation-glossary.html){: external}.
 
 ## How can I reduce or expand my {{site.data.keyword.vcf-vpc-short}} instance capacity?
 {: #vpc-vcf-faq-expanding-capacity}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-10-22"
+lastupdated: "2025-01-20"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -23,7 +23,7 @@ subcollection: vmwaresolutions
 The following table provides information about the platform management roles and permissions for {{site.data.keyword.vm-shared}}.
 
 * **Minimum** - roles with the bare minimum permissions in VMware Cloud Director.
-* **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in predefined global tenant roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
+* **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [VMware Cloud Director Rights in Predefined Global Tenant Roles](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/vcd-rights-in-predefined-global-tenant-roles.html){: external}.
 * **Custom** - roles that are custom-defined by IBM.
 
 | Platform management role | Actions | Level of permission |

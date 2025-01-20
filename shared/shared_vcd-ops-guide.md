@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-01-14"
+lastupdated: "2025-01-20"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -42,9 +42,9 @@ For more information about roles and permissions, see [VMware Cloud Director ten
 #### Managing users
 {: #shared_vcd-ops-guide-roles-procedures}
 
-Use the tenant portal to create a user or change passwords or roles for an existing user. For more information about accessing the tenant portal, see [Log in to the VMware Cloud Director tenant portal](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-28972197-D45B-4156-A733-5966730B5E03.html){: external}.
+Use the tenant portal to create a user or change passwords or roles for an existing user. For more information about accessing the tenant portal, see [Log In to the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/getting-started-with-vmware-cloud-director-tenant-portal-tenant/log-in-to-the-vcloud-director-tenant-portal-tenant.html){: external}.
 
-For more information about creating and modifying tenant portal users, see [Managing users](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FE38C285-7605-4473-870C-6AD44D8BF42E.html){: external}.
+For more information about creating and modifying tenant portal users, see [Managing Users in Your VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/managing-users-in-your-vcd-tenant-portal.html){: external}.
 
 #### Modifying your email settings
 {: #shared_vcd-ops-guide-roles-email}
@@ -148,9 +148,9 @@ For more information about defining catalogs and policies, see [Working with cat
 ### Uploading your media or templates
 {: #shared_vcd-ops-guide-customer}
 
-OVF packages can be uploaded to a catalog as a vApp template to make the template available to users. For more information, see [Create a vApp template from an OVF file](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-5EA412C4-179A-42CF-9B30-1B81C23551E6.html){: external}.
+OVF packages can be uploaded to a catalog as a vApp template to make the template available to users. For more information, see [Create a vApp Template from an OVF File Using Your VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-vapp-templates-tenant/create-a-vapp-template-from-an-ovf-file-using-your-vcd-tenant-portal-tenant.html){: external}.
 
-Media files, such as ISO disk images and FLP diskette drive images, can be uploaded to a catalog as a media file. For more information, see [Working with media files](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-A7530A4B-F782-4848-90FC-BBDE41E3AE85.html){: external}.
+Media files, such as ISO disk images and FLP diskette drive images, can be uploaded to a catalog as a media file. For more information, see [Upload Media Files in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-media-files-tenant/upload-media-files-tenant.html){: external}.
 
 The maximum import size is 750 GB. Large image files or templates might take a long time to upload. For assistance with files larger than 750 GB, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
@@ -160,14 +160,14 @@ The maximum import size is 750 GB. Large image files or templates might take a l
 
 When you use the tenant portal, you can create a virtual machine (VM) or provision a VM from a template.
 
-For more information, see [Create a standalone virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-64CFBEFC-8E3D-49FC-B1BD-16CCE7493544.html){: external}.
+For more information, see [Create a Standalone Virtual Machine in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/creating-a-virtual-machine-tenant/create-a-standalone-vm-tenant.html){: external}.
 
 ### Customizing virtual machine properties
 {: #shared_vcd-ops-guide-cust-properties}
 
 You can edit the properties of a VM, including the VM name and description, hardware and network settings, and operating system settings for a guest.
 
-For more information about working with VMs, see [Working with virtual machines](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-DF0C111D-B638-4EC3-B805-CC33994F8D53.html){: external}.
+For more information about working with VMs, see [Working with Virtual Machines in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant.html){: external}.
 
 If you use the tenant portal **Password Reset** field to change your Windows Administrator password, ensure that you adhere to Windows complexity requirements. If you change the password in the tenant portal without doing so, the password does not work in the Windows VM template.
 {: important}
@@ -180,11 +180,11 @@ You can change the name, description, storage policy, and other general properti
 ##### Switching between storage properties
 {: #shared_vcd-ops-guide-change-properties-storage}
 
-Some disk settings cannot be changed while the VM is powered on. For example, you can increase the disk size while the VM is powered on, but you cannot decrease the disk size unless the VM is powered off. A message displays if you must power off the VM before you modify a disk setting. For more information, see [Power off a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-2323B049-4E36-4510-999E-F2D4A77AC0F9.html){: external}.
+Some disk settings cannot be changed while the VM is powered on. For example, you can increase the disk size while the VM is powered on, but you cannot decrease the disk size unless the VM is powered off. A message displays if you must power off the VM before you modify a disk setting. For more information, see [Power Off a Virtual Machine in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/performing-power-operations-on-virtual-machines-tenant/power-off-a-virtual-machine-tenant.html){: external}.
 
-For more information about changing a storage policy, see [Change the general properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html#GUID-8301D672-8333-4FD2-B132-2D4A42E11216__GUID-BE9430B7-40F8-43F7-AED4-1080F9E04E34){: external}.
+For more information about changing a storage policy, see [Change the General Properties of a Virtual Machine](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/editing-virtual-machine-properties-tenant.html#GUID-8301D672-8333-4FD2-B132-2D4A42E11216-en){: external}.
 
-If you must power off the VM before you change a storage policy, power the VM back on after the VM is moved to the new storage policy. For more information, see [Power on a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-33C22124-A610-4C3E-8F40-26CAC570F958.html){: external}.
+If you must power off the VM before you change a storage policy, power the VM back on after the VM is moved to the new storage policy. For more information, see [Power On a Virtual Machine in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/performing-power-operations-on-virtual-machines-tenant/power-on-a-virtual-machine-tenant.html){: external}.
 
 #### Enabling a compute policy
 {: #shared_vcd-ops-guide-compute-policy}
@@ -628,7 +628,7 @@ You must access data center groups to use the Network HA feature. A data center 
 * Configuration for multiple Egress points in multiple virtual data centers
 * East-west traffic between all networks within the group
 
-For more information, see [Managing organization virtual data center networks](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-B208CDD2-5D46-4841-8F3C-BED9E4F27F07.html){: external}.
+For more information, see [Managing Organization Virtual Data Center Networks in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/managing-organization-vdc-networks.html){: external}.
 
 The data center groups do not require physical separation. However, for optimal redundancy, the recommended implementation of a data center group has the Egress points in two different physical data centers, for example, **Dallas 10** and **Dallas 12**.
 
@@ -708,4 +708,4 @@ Single sign-on is available only when your site VMware Cloud Director Organizati
 
 * [{{site.data.keyword.vm-shared}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
-* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
+* [VMware Cloud Director Tenant Guide](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5.html){: external}
