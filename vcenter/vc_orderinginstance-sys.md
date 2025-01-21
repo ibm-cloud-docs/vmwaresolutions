@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-20"
+lastupdated: "2025-01-21"
 
 keywords: vcf classic order instance, order vcf automated, order vmware cloud foundation instance
 
@@ -28,17 +28,15 @@ For new instances, vSphere 8 is available to order. However, vSphere 8 instances
 
 
 
-### Notes on upgrading to vSphere 7
+### Requirements for upgrading to vSphere 7
 {: #vc_orderinginstance-vsphere-v6-7-upgrade}
 
-For instances with vSphere 6.7, upgrading to vSphere 7 is supported for selected configurations. If you want to use vSphere 7, you can:
-* Deploy a new vSphere 7 instance and migrate your current workloads to the new instance.
-* [Contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) for assistance with your upgrade process.
+Upgrading to vSphere 7 is supported for certain instance configurations with vSphere 6.7. To use vSphere 7, deploy a new vSphere 7 instance and migrate your current workloads to the new instance. For assistance with the upgrade process, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
-Migrating your workloads is recommended if you want to:
-* Perform a hardware refresh.
-* Migrate from VMware NSX–V to VMware NSX–T™.
-* Migrate your existing NSX–T topology with separate management and workload clusters to a converged topology.
+It is recommended to migrate your workloads for the following use cases:
+* Performing a hardware refresh.
+* Migrating from VMware NSX–V to VMware NSX–T™.
+* Migrating your existing NSX–T topology with separate management and workload clusters to a consolidated topology.
 
 ## VMware vCenter Server version
 {: #vc_orderinginstance-vcenter-license}
