@@ -125,7 +125,7 @@ BOM updates for {{site.data.keyword.vcf-classic-short}}
 
    * VMware vCenter Server Appliance 8.0 Update 2d (build 23929136)
    * VMware vSphere ESXi™ 8.0 Update 2b (build 23305546)
-   * VMware NSX 4.1.2.4 (build 23786733)
+   * VMware NSX® 4.1.2.4 (build 23786733)
 
 Add-on services upgrades
 :   The following service versions are now available for deployment:
@@ -133,7 +133,7 @@ Add-on services upgrades
    * F5® BIG-IP® v17.1.1.3
    * Juniper® vSRX v3.0 (23.4R1)
    * {{site.data.keyword.redhat_openshift_full}} v4.15
-   * VMware Aria Operations v8.17.1 and VMware Aria Operations for Logs v8.17
+   * VMware Aria® Operations™ v8.17.1 and VMware Aria Operations™ for Logs v8.17
 
 Veeam 12.1.2 for {{site.data.keyword.vm-shared}}
 :   Veeam Backup and Replication 12.1.2 (Veeam 12.1.2) is now available for deployment with the {{site.data.keyword.vm-shared}} offering.
