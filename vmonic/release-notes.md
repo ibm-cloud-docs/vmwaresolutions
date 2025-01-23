@@ -156,7 +156,7 @@ VMware Cloud Foundation for VPC enhancements
 :   The following features are now available:
 
    * **Server backup**: You can do regular backups of management components, such as SDDC Manager, VMware vCenter Server®, and NSX Manager. For more information, see [Management domain backup](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ordering#vpc-vcf-ordering-mgmt-domain-backup).
-   * **Contact form**: You can now use a form to contact an IBM representative through the 1-year and 3-year subscription options.
+   * **Contact form**: You can use a form to contact an IBM Sales representative for the 1-year and 3-year subscription options.
    * The following **BOM updates** are applied to newly deployed instances:
       * Cloud Builder VM 5.1.1 (build 23480823)
       * SDDC Manager 5.1.1 (build 23480823)
