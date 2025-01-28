@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-01-10"
+lastupdated: "2025-01-28"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -299,8 +299,8 @@ Select whether to order a new primary instance or a secondary instance for an ex
 
 CONTENT:
 
-* If you are planning to use vSAN™ OSA storage, you can order 4-59 servers.
-* If you are planning to use vSAN ESA storage, you can order 3-59 servers.
+* If you are planning to use vSAN™ OSA storage, you can order 4-51 servers.
+* If you are planning to use vSAN ESA storage, you can order 3-51 servers.
 * If you are planning to use NFS storage, you can order 3-51 servers.
 * All servers that you order have the same configuration.
 {: #number-of-baremetal-servers-consol}
