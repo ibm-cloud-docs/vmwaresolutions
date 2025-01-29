@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-01-29"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -45,6 +45,10 @@ Review the following table to understand the differences in feature support for 
 
 [^esxivcsvss08]: Applicable to vSphere 8
 
+
+
+
+
 [^services]: Add-on services that are supported might vary.
 
 ## {{site.data.keyword.vcf-auto-short}} vs {{site.data.keyword.rw}}
@@ -75,6 +79,10 @@ Review the following table to understand the differences in feature support for 
 [^esxivcsvrw07]: Applicable to vSphere 7
 
 [^esxivcsvrw08]: Applicable to vSphere 8
+
+
+
+
 
 ## Related links
 {: #inst_comp_chart-related}
