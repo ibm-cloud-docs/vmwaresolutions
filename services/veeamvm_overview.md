@@ -6,7 +6,7 @@ copyright:
 
 lastupdated: "2025-01-31"
 
-keywords: Veeam, Veeam Backup and Replication 12.2, 12.3, Veeam install, tech specs Veeam, Veeam overview
+keywords: Veeam, Veeam Backup and Replication 12.2, Veeam install, tech specs Veeam, Veeam overview
 
 subcollection: vmwaresolutions
 
