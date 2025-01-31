@@ -694,10 +694,14 @@ toc:
               topics:
               - archiref/arch-pattern-vcf/arch-pattern-vcf-clientvpn.md
               - archiref/arch-pattern-vcf/arch-pattern-vcf-hcx-cons.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-hcx-std.md
               - archiref/arch-pattern-vcf/arch-pattern-vcf-hcx-xconnectivity.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-tanzu.md
               - archiref/arch-pattern-vcf/arch-pattern-vcf-veeam-con.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-veeam-std.md
               - archiref/arch-pattern-vcf/arch-pattern-vcf-veeam.xconnectivity.md
               - archiref/arch-pattern-vcf/arch-pattern-vcf-zerto-con.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-zerto-std.md
               - archiref/arch-pattern-vcf/arch-pattern-vcf-zerto-xconnectivity.md
               - archiref/arch-pattern-vcf/arch-pattern-vcf-sccwpp.md
           - topicgroup:

@@ -18,7 +18,9 @@ subcollection: vmwaresolutions
 
 This architecture pattern explains how to deploy and configure Veeam® replication connectivity on {{site.data.keyword.vcf-vpc}} instances that are running on {{site.data.keyword.vpc_short}}. These connectivity patterns use a combination of {{site.data.keyword.cloud_notm}} native services and networking services that are provided by VMware NSX®.
 
-This pattern assumes that Veeam is deployed by following the guidance for the [consolidated architecture](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-veeam-con).
+
+
+This pattern assumes that Veeam is deployed by following the guidance for [consolidated](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-veeam-con) or [standard](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-veeam-std) architecture models.
 
 ## Replication connectivity over private network
 {: #arch-pattern-vcf-veeam-xconnectivity-private}

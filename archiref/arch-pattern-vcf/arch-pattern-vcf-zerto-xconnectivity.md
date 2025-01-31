@@ -18,7 +18,9 @@ subcollection: vmwaresolutions
 
 This architecture pattern explains how to deploy and configure Zerto replication connectivity on {{site.data.keyword.vcf-vpc}} instances that are running on {{site.data.keyword.vpc_short}}. These connectivity patterns use a combination of {{site.data.keyword.cloud_notm}} native services and networking services that are provided by VMware NSX®.
 
-This pattern assumes that Zerto is deployed by following the guidance for the [consolidated architecture](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-zerto-con).
+
+
+This pattern assumes that Zerto is deployed by following the guidance for [consolidated](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-zerto-con) or [standard](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-zerto-std) architecture models.
 
 ## Replication connectivity over private network
 {: #arch-pattern-vcf-zerto-xconnectivity-private}

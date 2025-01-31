@@ -49,6 +49,37 @@ NSX edge TEP traffic and NSX Tier-0 logical gateway interfaces are deployed on t
 
 To be able to create subnets in VPC, you must create a VPC prefix. VPC prefixes are defined per zone. To simplify routing, you must allocate the recommended subnets from a single prefix. Which means that to accommodate five subnets, you need one `/21` prefix to cater addresses for about 120 hosts per zone. If you want to use a prefix with `/22`, you can add about 60 hosts per zone. By selecting a large enough prefix, you will have growth for scalability and future needs, such as dedicated VMKs for NFS, replication, and NSX Tier-0 uplinks.
 
+The standard deployment differs slightly from the consolidated deployment. Different subnets are used for VI workload domain as shown in the following diagram.
+
+![VPC design for standard VMware Cloud Foundation deployment](../../images/vcf-vpc-v2-arch-net-std.svg "VPC design for VMware Cloud Foundation deployment"){: caption="VPC network design for standard VMware Cloud Foundation deployment" caption-side="bottom"}
+
+The following subnets are deployed for hosts in the standard architecture model.
+
+| Subnet name | System traffic type | Subnet sizing guidance |
+| ------------|---------------------|----------------------- |
+| `vpc-host-subnet` | Host management traffic | Number of Hosts x 2 (each PCI NIC requires an IP address) |
+| `vpc-mgmt-subnet` | Management traffic | Number of VMware Cloud Foundation Management Appliances |
+| `vpc-vmot-subnet` | vMotion traffic for management | Number of Hosts |
+| `vpc-vsan-subnet` | vSAN traffic for management | Number of Hosts |
+| `vpc-tep-subnet` | TEP traffic for management hosts | Number of Hosts x 2 (each host requires 2 x TEPs) |
+| `vpc-wl-mgmt-subnet` | Management traffic for workload domain hosts and edges | Number of VMware Cloud Foundation Management Appliances |
+| `vpc-wl-vmot-subnet` | vMotion traffic for workload domain | Number of Hosts |
+| `vpc-wl-vsan-subnet` | vSAN traffic for workload domain | Number of Hosts |
+| `vpc-wl-tep-subnet` | TEP traffic for workload domain hosts | Number of Hosts x 2 (each host requires 2 x TEPs) |
+{: caption="VPC subnets for System traffic types" caption-side="bottom"}
+
+For edges, the following subnets are deployed in the standard architecture model.
+
+| Subnet name | System traffic type | Subnet sizing guidance |
+| ------------|---------------------|----------------------- |
+| `vpc-edge-tep-subnet` | TEP traffic for edge nodes   | Number of Edge Nodes x 2 (each edge node requires 2 x TEPs) |
+| `vpc-t0-public-uplink-subnet` | T0 public uplink subnet | `/29` or larger |
+| `vpc-t0-private-uplink-subnet` | T0 private uplink subnet | `/29` or larger |
+| `vpc-wl-edge-tep-subnet` | TEP traffic for workload domain edge nodes   | Number of Edge Nodes x 2 (each edge node requires 2 x TEPs) |
+| `vpc-wl-t0-public-uplink-subnet` | T0 public uplink subnet for workload domain | `/29` or larger |
+| `vpc-wl-t0-private-uplink-subnet` | T0 private uplink subnet for workload domain | `/29` or larger |
+{: caption="VPC subnets for NSX T0 uplinks" caption-side="bottom"}
+
 ## VPC access control lists and security groups
 {: #vpc-vcf-vpc-deployment-net-security}
 

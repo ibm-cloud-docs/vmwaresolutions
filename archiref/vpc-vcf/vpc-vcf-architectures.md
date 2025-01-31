@@ -30,9 +30,22 @@ Initial cluster in the management domain hosts includes VMware vCenter Server, N
 ## Standard architecture model
 {: #vpc-vcf-architectures-standard}
 
-With the standard architecture model, the management workloads run on a dedicated management domain and the customer workloads are deployed in separate virtual infrastructure (VI) workload domains. Each VI workload domain is managed by a separate vCenter Server instance, which provides for scalability and allows for autonomous licensing and lifecycle management.
+With the standard architecture model, the management workloads run on a dedicated management domain and the customer workloads are deployed in separate virtual infrastructure (VI) workload domains. Each VI workload domain is managed by a separate vCenter Server instance, which provides for scalability and allows for autonomous licensing and lifecycle management. In {{site.data.keyword.cloud_notm}}, the VI workload domains can run only on the same {{site.data.keyword.vpc_short}} availability zone in the same {{site.data.keyword.cloud_notm}} multizone region.
 
-Currently, the offering does not support the standard architecture model.
+![VMware Cloud Foundation standard architecture model on {{site.data.keyword.vpc_short}}](../../images/vcf-vpc-v2-arch-std.svg "VMware Cloud Foundation standard architecture model on {{site.data.keyword.vpc_short}}."){: caption="VMware Cloud Foundation standard architecture model on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
+
+For the first VI workload domain, SDDC manager deploys a vCenter Server and an NSX manager cluster in the management domain (in the management cluster). For each subsequent VI workload domain, the SDDC manager deploys an extra vCenter Server. These VI workload domains can share the NSX manager cluster or you can deploy a new NSX manager cluster for each.
+
+Standard architecture is the recommended architecture model because it aligns with the VMware best practice of separating management workloads from customer workloads. It also provides better long-term flexibility and expansion options. 
+
+Deploying VI workload domains with multiple availability zones is not supported in {{site.data.keyword.cloud_notm}}. In VMware Cloud Foundation architecture, to be able to span workload domains across multiple availability zones, the network fabric must support stretched Layer 2 networks between the availability zones. Subnets in {{site.data.keyword.vpc_short}} are deployed for each zone and they do not span across zones. Therefore, this multizone scenario is not possible in {{site.data.keyword.vpc_short}}.
+
+In the VI workload domains, VMware vSphere clusters host the VMware NSX edge clusters needed to service north-south traffic of your workloads. In the VMware Cloud Foundation architecture, the NSX edge appliances must rely on a single VLAN-backed network for management and uplink connectivity. In {{site.data.keyword.vpc_short}}, the subnets are deployed on each zone and they do not span across zones. Therefore, in VMware Cloud Foundation, the NSX edge clusters cannot be deployed on clusters that are spanning Layer 3 networks.
+{: note}
+
+If you need an expansion to another zone or region, you can deploy a new VMware Cloud Foundation instance and use NSX and VPC networking capabilities to connect these.
+
+
 
 
 ## Related links
