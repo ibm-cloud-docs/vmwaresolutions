@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-01-23"
+lastupdated: "2025-01-31"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -47,9 +47,9 @@ VMware Cloud Foundation™ 5.2.1 is installed on your {{site.data.keyword.vcf-vp
 ### Architecture
 {: #vpc-vcf-ordering-archi}
 
-For the **Consolidated** architecture, instances are deployed with a management domain. To deploy a workload domain with your instance, select the **Standard** architecture.
+For the **Consolidated** architecture, instances are deployed with a management domain.
 
-For more information, see [Supported {{site.data.keyword.vcf-vpc-short}} architecture models in {{site.data.keyword.vpc_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw#vpc-vcf-ovw-supported-arch).
+For more information, see [Supported {{site.data.keyword.vcf-vpc-short}} architecture model in {{site.data.keyword.vpc_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw#vpc-vcf-ovw-supported-arch).
 
 ## Deployment
 {: #vpc-vcf-ordering-deployment}
@@ -205,79 +205,6 @@ To enable the virtual server for backing up SDDC Manager, vCenter Server, and NS
 
 You can choose existing SSH keys from the list or create a new one by clicking the **Create SSH key** button. After creating it, refresh the list to see the new SSH key. For more information about VCF backup, see [Backup and restore of VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/5.1/vcf-admin/GUID-F8634D37-FA26-40DF-A135-62D0265DA4FA.html){: external}.
 
-## Workload domain
-{: #vpc-vcf-ordering-wl-vcf}
-
-A workload domain is a logical construct that represents a set of resources that are dedicated to a specific application or set of applications. Each Workload Domain is deployed as a separate vSphere cluster within the {{site.data.keyword.vcf-vpc-short}} environment and can be customized to meet the specific needs of the applications that are deployed. Workload Domains can be used to separate workloads based on characteristics such as security, compliance, performance, or management requirements.
-
-The workload domain is created when you select the {{site.data.keyword.vcf-vpc-short}} Standard architecture, and it requires a minimum of 3 hosts.
-{: important}
-
-### Workload host profile
-{: #vpc-vcf-ordering-wl-profile}
-
-The bare metal profile that is used by the hosts in the workload domain. For the supported profiles, see [{{site.data.keyword.cloud_notm}} region and zone availability for {{site.data.keyword.vcf-vpc-short}} deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-region).
-
-### Workload host list
-{: #vpc-vcf-ordering-wl-host-list}
-
-The workload domain is deployed as a cluster of vSphere ESXi hosts, which are managed by a {{site.data.keyword.vcf-vpc-short}} instance.
-
-#### Number of workload hosts
-{: #vpc-vcf-ordering-wl-host-number}
-
-The workload domain requires a minimum of 3 hosts and can have a maximum of 25 hosts.
-
-The quota for bare metal servers is 25 per account by default. To increase the quota for a resource, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
-{: note}
-
-#### Host name suffix and name
-{: #vpc-vcf-ordering-wl-host-suffix}
-
-Bare metal server name suffixes. By default, the bare metal server hostname is **_resource name prefix_-wl-esx-_host name suffix_**.
-
-The hostname suffix can contain only lowercase alphanumeric characters and can have a maximum length of 10 characters. Ensure that the suffix of each bare metal server is unique.
-
-### Workload overlay networks
-{: #vpc-vcf-ordering-wl-overlay}
-
-Workload overlay networks are subnets that are allocated in the NSX overlay on the workload domain. {{site.data.keyword.vpc_short}} custom routes are created for these subnets pointing to the Tier 0 gateway of the workload domain. By default, the destination of the route is `172.17.0.0/16`.
-
-### Public floating IPs
-{: #vpc-vcf-ordering-wl-floating-ips}
-
-The number of public floating IP addresses that you want to reserve for the workload domain. After the floating IP addresses are ordered, they are associated with the first Bare Metal Server.
-
-### Optional workload domain settings
-{: #vpc-vcf-ordering-wl-optional}
-
-With these settings, you can configure your workload domain in a more flexible way based on your requirements.
-
-#### VCF appliance sizing
-{: #vpc-vcf-ordering-wl-vcf-appliance}
-
-Review the VCF appliance sizing settings.
-
-##### Workload vCenter VM size
-{: #vpc-vcf-ordering-wl-vcf-vc-vm}
-
-The size of the vCenter Server appliance that is deployed in the workload domain, which determines the number of CPUs and the amount of memory of the appliance. By default, the vCenter Server appliance in the workload domain is deployed in small size. For more information, see [Deployment model for vCenter Server for a Virtual Infrastructure workload domain](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-vi-workload-domain-design/GUID-CD8F5B55-AFB6-4AE3-A258-425E82147EF1.html){: external}.
-
-##### Workload vCenter storage size
-{: #vpc-vcf-ordering-wl-vcf-vc-storage}
-
-When you deploy the vCenter Server appliance, you must determine the required storage according to the size of the environment, the storage size, and the disk provisioning mode. For more information, see [Deployment model for vCenter Server for a Virtual Infrastructure workload domain](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-vi-workload-domain-design/GUID-CD8F5B55-AFB6-4AE3-A258-425E82147EF1.html){: external}.
-
-##### Workload NSX-T size
-{: #vpc-vcf-ordering-wl-vcf-nsxt-vm}
-
-A highly available NSX Global Manager instance is deployed in the {{site.data.keyword.vcf-vpc-short}} location instance. You can also select an NSX Global Manager appliance size according to the number of anticipated objects that are required to run the workload components of the private cloud. For more information, see [Deployment model for NSX Manager for a VI workload domain](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-vi-workload-domain-design/GUID-F7044DCA-6780-4C9B-8822-C9CA4382F5AA.html){: external}.
-
-##### Workload NSX Edge VM size
-{: #vpc-vcf-ordering-wl-nsx-edge-vm}
-
-You can determine the size of the NSX Edge appliances for the VI workload domain according to the design objectives of your organization and aggregated requirements of the customer workloads of the SDDC. For more information, see [Deployment Model for the NSX Edge Nodes for a Virtual Infrastructure Workload Domain](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-vi-workload-domain-design/GUID-28FCCC3C-5B34-4EB0-9D2F-EFFE9C718E17.html){: external}.
-
 ## Network interface
 {: #vpc-vcf-ordering-network}
 
@@ -336,7 +263,6 @@ For {{site.data.keyword.vcf-vpc-short}} deployment, you can determine whether to
 1. In the VMware Solutions console, click the **VMware Cloud Foundation (VCF) for VPC** card in the **Create a resource** section. {: #step-1}
 1. On the **Create** tab, review the software components included by clicking **View components**.
 1. Choose the subscription type.
-1. Select the {{site.data.keyword.vcf-vpc-short}} architecture.
 
 1. Specify the **Deployment** settings.
    1. Enter the instance name and the resource name prefix.
@@ -353,19 +279,6 @@ For {{site.data.keyword.vcf-vpc-short}} deployment, you can determine whether to
    1. Specify the {{site.data.keyword.vpc_short}} routes for NSX overlay network in the management domain.
    1. Specify the number of public floating IP addresses.
    1. Specify the **Optional management domain settings**: the vCenter appliance size and storage size in the management domain and the NSX-T manager appliance size, the VCF data center name for the VCF deployment, and the backup server for the management domain backup.
-
-1. Specify the **Workload domain** settings.
-
-   The workload domain configuration applies only to the **Standard** architecture.
-   {: note}
-
-   1. Specify the workload domain name.
-   1. Select the {{site.data.keyword.vpc_short}} bare metal profile for hosts in the workload domain.
-   1. Specify the number of bare metal servers.
-   1. Specify the hostname suffix of each host.
-   1. Specify the {{site.data.keyword.vpc_short}} routes for NSX overlay network in the workload domain.
-   1. Specify the number of public floating IP addresses.
-   1. Specify the **Optional workload domain settings**: the vCenter appliance size and storage size in the workload domain and the NSX-T manager appliance size.
 
 1. Specify the **Network interface** settings.
    1. Enter the additional **DNS records** for the Aria Suite components or appliances that you want to deploy on {{site.data.keyword.vcf-vpc-short}}.

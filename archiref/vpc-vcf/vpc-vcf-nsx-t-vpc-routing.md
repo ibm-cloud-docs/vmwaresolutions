@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-01-13"
+lastupdated: "2025-01-31"
 
 subcollection: vmwaresolutions
 
@@ -22,7 +22,7 @@ When logical network topologies are deployed on {{site.data.keyword.vpc_full}} h
 
 The {{site.data.keyword.vcf-vpc}} automation deploys these routes based on customer-given variables. The following information explains the core principles for these routing configurations done both in VPC and in NSX Tier-0 and Tier-1 gateways.
 
-In the consolidated deployment, you have only one edge cluster and one Tier-0 gateway. In the standard deployment, you have two edge clusters and two Tier-0 gateways. The Tier-0 gateways follow the same principles presented.
+In the consolidated deployment, you have only one edge cluster and one Tier-0 gateway.
 {: note}
 
 If your design does not need direct inbound public access, you can customize the architecture and remove the public uplinks.

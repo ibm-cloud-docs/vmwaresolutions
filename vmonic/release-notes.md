@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-01-10"
+lastupdated: "2025-01-31"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -27,7 +27,15 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 
 
+### 31 January 2025
+{: #vmwaresolutions-jan3125}
+{: release-note}
 
+VMware Cloud Foundation for VPC updates
+:   The following updates are available:
+
+   * VMware Cloud Foundation 5.2.1 supports the Intel® Sapphire Rapids Generation 3 bare metal profiles for all the available regions.
+   * The consolidated architecture model is the only option for newly deployed instances.
 
 ### 10 January 2025
 {: #vmwaresolutions-jan1025}
@@ -76,7 +84,7 @@ REST API updates
    * Outdated information is removed.
 
 New and updated documentation
-:   The following technical documents are now available:
+:   The following technical documents are available:
 
    * [Migrating Zerto from Windows ZVM to Linux ZVMA](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_migration)
    * [Why does the Zerto Migration from Windows Zerto Virtual Manager to Linux ZVM Appliance fail?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_zerto_zvma_migration)
