@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-01-31"
+lastupdated: "2025-02-03"
 
 subcollection: vmwaresolutions
 
@@ -18,9 +18,7 @@ subcollection: vmwaresolutions
 
 This architecture pattern explains how to deploy and configure connectivity for VMware HCX™ on {{site.data.keyword.vcf-vpc}} instances that are running on {{site.data.keyword.vpc_short}}. These connectivity patterns use a combination of {{site.data.keyword.cloud_notm}} native services and networking services that are provided by VMware NSX®.
 
-
-
-This pattern assumes that HCX is deployed following the guidance for [consolidated](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-hcx-con) or [standard](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-hcx-std) architecture models.
+This pattern assumes that HCX is deployed by following the guidance for the [consolidated architecture](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-hcx-con).
 
 ## Connectivity over private network
 {: #arch-pattern-vcf-hcx-xconnectivity-private}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-01-31"
+lastupdated: "2025-02-03"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -45,11 +45,11 @@ Ensure that the following requirements are met:
 The ESXi servers in {{site.data.keyword.vcf-vpc-short}} are built on Bare Metal Servers on {{site.data.keyword.vpc_short}}. Therefore, you can deploy instances only in {{site.data.keyword.cloud}} data centers that meet the requirements for {{site.data.keyword.vpc_short}} [bare metal profiles](/docs/vpc?topic=vpc-bare-metal-servers-profile&interface=ui) that are supported by {{site.data.keyword.vcf-vpc-short}}.
 
 The following bare metal profiles are supported:
-* `bx2d-metal-96×384`
-* `mx2d-metal-96x768`
+* `bx3d-metal-192x1024`
+* `mx3d-metal-64x512`
 * `mx3d-metal-192x2048` (available only in the Sao Paulo region)
 
-For more information about {{site.data.keyword.vpc_short}} bare metal servers by region, see [Generation 2 (x2 and x2d) bare metal profiles availability by region](/docs/vpc?topic=vpc-bare-metal-servers-profile&interface=ui#bare-metal-profile-availability-by-region) and [Generation 3 (x3 and x3d) bare metal profiles availability by region](/docs/vpc?topic=vpc-bare-metal-servers-profile&interface=ui#bare-metal-profile-availability-by-region-gen3).
+For more information about {{site.data.keyword.vpc_short}} bare metal servers by region, see [Generation 3 (x3 and x3d) bare metal profiles availability by region](/docs/vpc?topic=vpc-bare-metal-servers-profile&interface=ui#bare-metal-profile-availability-by-region-gen3).
 
 ## {{site.data.keyword.cloud_notm}} quotas and service limits
 {: #vpc-vcf-plan-limits}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-01-31"
+lastupdated: "2025-02-03"
 
 subcollection: vmwaresolutions
 
@@ -20,9 +20,10 @@ The architecture of {{site.data.keyword.vcf-vpc}} is built upon {{site.data.keyw
 
 ![Architecture overview of {{site.data.keyword.vcf-vpc}}](../../images/vcf-vpc-v2-net-arch.svg "The solution uses Virtual Private Cloud compute, network, storage resources, and VMware NSX for hosting VMware workloads."){: caption="Architecture overview of {{site.data.keyword.vcf-vpc}}" caption-side="bottom"}
 
-VMware Cloud Foundation™ supports the two base architecture models - consolidated and standard. When you deploy your VMware Cloud Foundation instance in {{site.data.keyword.cloud}}, you can select the wanted model according to the requirements of your deployment and organization.
+VMware Cloud Foundation™ supports the two base architecture models - consolidated and standard. 
 
-
+Currently, {{site.data.keyword.vcf-vpc}} supports only consolidated deployments.
+{: important}
 
 ## VMware Cloud Foundation components
 {: #vpc-vcf-arch-vcf-components}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-01-31"
+lastupdated: "2025-02-03"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -39,20 +39,16 @@ With this single-tenant {{site.data.keyword.cloud_notm}} bare metal server infra
 
 Unlike the managed service offerings, {{site.data.keyword.vcf-vpc-short}} on {{site.data.keyword.vpc_short}} gives you flexibility to design a solution for your needs, and it provides you full and complete access to all components.
 
-## {{site.data.keyword.vcf-vpc-short}} architecture models
+## {{site.data.keyword.vcf-vpc-short}} architecture model
 {: #vpc-vcf-ovw-supported-arch}
 
-{{site.data.keyword.vcf-vpc-short}} supports two architecture models - Standard and Consolidated. You can select your preferred architecture according to the specific requirements of your organization, such as the size of the deployment, the level of scalability needed. Both architecture models are supported for {{site.data.keyword.vcf-vpc-short}} on {{site.data.keyword.cloud_notm}}.
+{{site.data.keyword.vcf-vpc-short}} provides a consolidated architecture model for the specific requirements of your organization, such as the size of the deployment and the level of scalability needed. This architecture is recommended for smaller-scale deployments.
 
-In {{site.data.keyword.vcf-vpc-short}} Standard, the management and workload domains are deployed on separate sets of physical servers. This architecture is recommended for larger-scale deployments that require more capacity and scalability. The management domain is responsible for managing the overall infrastructure, while the workload domain is used to run specific workloads.
+The {{site.data.keyword.vcf-vpc-short}} architecture combines the management and workload domains on a single set of physical servers. It provides a unified software-defined data center platform that includes vSphere, vSAN, NSX, and SDDC Manager.
 
-{{site.data.keyword.vcf-vpc-short}} Consolidated Architecture combines the management and workload domains on a single set of physical servers. This architecture is recommended for smaller-scale deployments.
+The main benefit of using {{site.data.keyword.vcf-vpc-short}} is that it simplifies the deployment and management of the software-defined data center infrastructure by providing a single integrated solution that reduces the complexity of deploying and configuring multiple VMware products.
 
-In both architecture models, {{site.data.keyword.vcf-vpc-short}} provides a unified software-defined data center platform that includes vSphere, vSAN, NSX, and SDDC Manager. The main benefit of using {{site.data.keyword.vcf-vpc-short}} is that it simplifies the deployment and management of the software-defined data center infrastructure by providing a single integrated solution that reduces the complexity of deploying and configuring multiple VMware products.
-
-
-
-For more information, see [Supported {{site.data.keyword.vcf-vpc-short}} architecture models](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-architectures).
+For more information, see [{{site.data.keyword.vcf-vpc-short}} architecture model](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-architectures).
 
 ## Supported {{site.data.keyword.vcf-vpc-short}} products in {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-ovw-supported-edition}

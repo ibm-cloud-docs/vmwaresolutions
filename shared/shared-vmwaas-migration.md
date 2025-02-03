@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-01-20"
+lastupdated: "2025-02-03"
 
 keywords: migrating to VMware Cloud Foundation as a Service
 
@@ -160,4 +160,4 @@ For more information, see [Managing Veeam for {{site.data.keyword.vcf-aas}}](/do
 * [VMware Cloud Director](https://www.vmware.com/products/cloud-infrastructure/cloud-director){: external}
 * [vCloud Director API](https://developer.broadcom.com/xapis/vmware-cloud-director-openapi/latest/){: external}
 * [Terraform VMware Cloud Director Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs){: external}
-* [Network Edge Size](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/installation/GUID-22F87CA8-01A9-4F2E-B7DB-9350CA60EA4E.html){: external}
+* [NSX Edge Installation Requirements](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/installation-guide/installing-nsx-edge/nsx-edge-installation-requirements.html){: external}

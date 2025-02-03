@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-01-10"
+lastupdated: "2025-02-03"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -27,7 +27,15 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 
 
+### 3 February 2025
+{: #vmwaresolutions-feb0325}
+{: release-note}
 
+VMware Cloud Foundation for VPC updates
+:   The following updates are available:
+
+   * VMware Cloud Foundation 5.2.1 supports Intel® Sapphire Rapids Generation 3 bare metal profiles for all available regions.
+   * The consolidated architecture model is the only option for newly deployed instances.
 
 ### 10 January 2025
 {: #vmwaresolutions-jan1025}
@@ -260,7 +268,7 @@ VMware Cloud Foundation for VPC enhancements
 {: release-note}
 
 VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
-:   The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.4.2.2, which resolves various issues, includes security fixes, and introduces new features, such as an improved tenant login experience. For more information, see [VMware Cloud Director 10.4.2.2 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.2.2/rn/vmware-cloud-director-10422-release-notes/index.html){: external}.
+:   The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.4.2.2, which resolves various issues, includes security fixes, and introduces new features, such as an improved tenant login experience.
 
 ### 7 February 2024
 {: #vmwaresolutions-feb0724}
