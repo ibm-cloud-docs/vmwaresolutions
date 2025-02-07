@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2025-02-03"
+lastupdated: "2025-02-07"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -73,15 +73,15 @@ You can also cancel the VMware add-ons from the {{site.data.keyword.cloud}} cons
 
 If applicable to you, complete the following tasks:
 
-* If you ordered the Avi Load Balancer add-on, also install an Avi (NSX ALB) license key. For more information, see [Using NSX Advanced Load Balancer License File](https://docs.vmware.com/en/VMware-NSX-Advanced-Load-Balancer/30.1/Administration-Guide/GUID-AF9067C3-2F07-45E5-A9E6-3A696066EEAB.html){: external}.
+* If you ordered the Avi Load Balancer add-on, also install an Avi (NSX ALB) license key. For more information, see [Using NSX Advanced Load Balancer License File](https://techdocs.broadcom.com/us/en/vmware-security-load-balancing/avi-load-balancer/avi-load-balancer/30-1/vmware-avi-load-balancer-administration-guide/licensing.html){: external}.
 * If you are planning to order VMware Cloud Foundation for VPC instances, also [configure the NSX firewalls for VCF for VPC instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-firewall) after you deployed your VCF for VPC instance.
 
 ## Related links
 {: #vmware-add-ons-links}
 
-* [VMware Avi Load Balancer](https://www.vmware.com/products/cloud-infrastructure/avi-load-balancer ){: external}
-* [Gateway Firewall](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html){: external}
-* [Distributed Firewall](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-6AB240DB-949C-4E95-A9A7-4AC6EF5E3036.html){: external}
+* [VMware Avi Load Balancer](https://techdocs.broadcom.com/us/en/vmware-security-load-balancing/avi-load-balancer.html){: external}
+* [Gateway Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/gateway-firewall.html){: external}
+* [Distributed Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/distributed-firewall.html){: external}
 * [NSX Edge Installation Requirements](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/installation-guide/installing-nsx-edge/nsx-edge-installation-requirements.html){: external}
 * [Counting Cores for VMware Cloud Foundation and vSphere Foundation and TiBs for vSAN](https://knowledge.broadcom.com/external/article?legacyId=95927){: external}
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

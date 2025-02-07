@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-02-07"
 
 keywords: vmware cloud foundation, configure firewall, firewall config, vcf for vpc
 
@@ -23,8 +23,8 @@ Before you configure the VMware NSX firewalls, review the information in [NSX fi
 1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc-short}}** from the left navigation pane.
 2. In the instances table, click the instance to configure the firewalls for.
 3. On the **Access Information** tab, under **Management domain**, use the NSX-T admin account for VMware NSX-T Data Center to log in to the VMware NSX-T console.
-   * To configure the gateway firewall, see [Gateway Firewall](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html){: external}.
-   * To configure the distributed firewall, see [Distributed Firewall](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-6AB240DB-949C-4E95-A9A7-4AC6EF5E3036.html){: external}.
+   * To configure the gateway firewall, see [Gateway Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/gateway-firewall.html){: external}.
+   * To configure the distributed firewall, see [Distributed Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/distributed-firewall.html){: external}.
 
 {{site.data.keyword.cloud}} Security Groups for VPC (Virtual Private Cloud) also provide network security and act as a virtual firewall for your Virtual Server Instances and Bare Metal Servers in the {{site.data.keyword.cloud_notm}} VPC environment by managing east-west and north-south network traffic.
 

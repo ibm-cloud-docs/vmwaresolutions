@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-01-20"
+lastupdated: "2025-02-07"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -681,7 +681,7 @@ If the **Operations Manager** option is not available in the **More** menu, open
 
 After the VMware Chargeback feature is enabled for an organization, the users who are defined in the organization have access to it.
 
-For more information, see [Using VMware Chargeback as a tenant](https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations/8.10/vmware-chargeback-for-vcd-for-a-tenant/GUID-4D7030B6-AF73-464B-8FE8-75B879EE76B8.html){: external}.
+For more information, see [Performing VMware Cloud Director (VCD) Based Multitenancy Operations in VMware Aria Operations](https://techdocs.broadcom.com/us/en/vmware-cis/aria/aria-operations/8-18/vmware-aria-operations-configuration-guide-8-18/performing-vcd-based-multitenancy-operations.html){: external}.
 
 The billing link in VMware Chargeback is disabled. All billing for {{site.data.keyword.vm-shared}} is processed through the VMware Solutions console.
 {: note}
