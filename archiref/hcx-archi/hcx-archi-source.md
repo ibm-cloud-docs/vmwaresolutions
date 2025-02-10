@@ -135,4 +135,4 @@ To prevent tromboning, HCX uses intelligent route management to choose routes ap
 * Migrated to the cloud by using host-based replication (low-downtime migration).
 * Created in the cloud (on a stretched network).
 
-For more information about HCX on-premises deployments, see the [VMware HCX documentation](https://docs.vmware.com/en/VMware-HCX/index.html){: external}.
+For more information about HCX on-premises deployments, see the [VMware HCX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/hcx.html){: external}.

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-12-13"
+lastupdated: "2025-02-10"
 
 subcollection: vmwaresolutions
 
@@ -38,7 +38,7 @@ Configurations can be applied by one of the following approaches:
 If the configurations are simple, or there are not too many rules or definitions, manual, or scripted is typically the simplest way to migrate the configuration. If the configurations are complex, consider the use of a third-party tool.
 {: note}
 
-Migration Coordinator supports other migration approaches such as "in-place migration", which is not supported in {{site.data.keyword.cloud}}. For more information, see [NSX-T Data Center Migration Coordinator Guide](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/nsxt_31_migrate.pdf){: external}.
+Migration Coordinator supports other migration approaches such as "in-place migration", which is not supported in {{site.data.keyword.cloud}}. For more information, see [NSX-T Data Center Migration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/nsx-t-data-center-migration-guide.html){: external}.
 {: note}
 
 ## Understanding distributed firewall complexity

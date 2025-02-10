@@ -84,4 +84,4 @@ An active-passive pair of VMware NSX Edge Services Gateways for HCX management i
 * [Managing HCX](/docs/vmwaresolutions?topic=vmwaresolutions-managinghcx)
 * [Glossary of HCX terms](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_glossary)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [VMware HCX documentation](https://docs.vmware.com/en/VMware-HCX/index.html){: external}
+* [VMware HCX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/hcx.html){: external}

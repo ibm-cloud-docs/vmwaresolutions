@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 Configure the network for your virtual machines (VMs) so you can take advantage of the VMware NSX Edge™ cluster that is deployed in your {{site.data.keyword.vcf-auto}} instances. For more information about the security measures that are in place to help minimize security risk, see [Does the management services NSX Edge pose a security risk?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#faq-mgmt-nsx)
 
-VMware NSX® is a network virtualization platform that allows the virtualization of isolated networks and provides several networking services such as switches, routing, and firewalls. For more information about NSX, see [Overview of NSX for vSphere](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.3/NSX-Data-Center-for-vSphere-63.zip){: external}.
+VMware NSX® is a network virtualization platform that allows the virtualization of isolated networks and provides several networking services such as switches, routing, and firewalls. For more information about NSX, see [Overview of NSX for vSphere](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/migration-guide/migrating-vsphere-networking.html){: external}.
 
 As part of the ordering process for your Automated instance, the following actions are completed on your behalf:
 * A private customer subnet is ordered to be used by your VMs to access the {{site.data.keyword.cloud}} infrastructure private network.
@@ -58,12 +58,12 @@ To take advantage of NSX for your workload VMs, you must configure a number of s
 ## Enabling the SNAT rule for NSX-T
 {: #vc_nsx-t_esg_config-procedure-enable-snat-rule}
 
-NSX-T enables the SNAT rule by default. For more information about modifying the existing rules, see [Configure source and destination NAT on a Tier-0 logical router](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/2.4/VMware-NSX-T-Data-Center-24.zip){: external}.
+NSX-T enables the SNAT rule by default. For more information about modifying the existing rules, see [Configure source and destination NAT on a Tier-0 logical router](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/manager-mode/advanced-nat/nat/tier-0-nat/configure-source-and-destination-nat-on-a-tier-0-router.html){: external}.
 
 ## Enabling the firewall rule for NSX-T
 {: #vc_esg_config-procedure-enable-firewall-rule}
 
-NSX-T disables all traffic through the workload NSX edge rule by default. To allow VMs to use the SNAT rule described in the previous section, you must create a firewall policy and rule to define and allow the traffic. For more information about modifying the existing rules, see [Add a Gateway Firewall Policy and Rule](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-DE6FE8CB-017E-41C8-85FC-D71CF27F85C2.html){: external}.
+NSX-T disables all traffic through the workload NSX edge rule by default. To allow VMs to use the SNAT rule described in the previous section, you must create a firewall policy and rule to define and allow the traffic. For more information about modifying the existing rules, see [Add a Gateway Firewall Policy and Rule](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/gateway-firewall/add-a-gateway-firewall-policy-and-rule.html){: external}.
 
 ## Enabling the SNAT rule for NSX-V
 {: #vc_esg_config-procedure-enable-snat-rule}
@@ -75,7 +75,7 @@ If you want your workload VMs to have outbound access to the internet, you must 
 3. Click **Management > NAT** to open the **NAT** tab.
 4. Select the default SNAT rule in the table and click the green checkmark next to the table to enable the rule.
 
-For more information about NSX Edge NAT rules, see [Managing NAT rules](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-5896D8CF-20E0-4691-A9EB-83AFD9D36AFD.html){: external}.
+For more information about NSX Edge NAT rules, see [Managing NAT rules](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/network-address-translation/configure-an-nsx-nat.html){: external}.
 
 ## Identifying customer subnets details for NSX-T
 {: #vc_nsx-t_esg_config-procedure-identify-customer-subnets-details}
@@ -96,7 +96,7 @@ Additionally, you can find more details about the customer subnets by completing
 2. Click the filter menu and in the **Subnet** field enter the identifier as seen in the description of **cust-edge0** in the NSX-T Web Client.
 3. Review the notes that are shown for the IP addresses. These notes identify which of the subnets and IP addresses are ordered and used during the initial setup.
 
-   Do not use the IP addresses that are ordered and used during the initial setup. However, you can use other IP addresses on these subnets according to your requirements. To set up more network address translation rules, see [Managing NAT rules](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-5896D8CF-20E0-4691-A9EB-83AFD9D36AFD.html){: external}.
+   Do not use the IP addresses that are ordered and used during the initial setup. However, you can use other IP addresses on these subnets according to your requirements. To set up more network address translation rules, see [Managing NAT rules](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/network-address-translation/configure-an-nsx-nat.html){: external}.
    {: important}
 
 ## Identifying customer subnets details for NSX-V
@@ -116,7 +116,7 @@ Additionally, you can find more details about the customer subnets by completing
 2. Click the filter menu and in the **Subnet** field enter the identifier as seen in the description of **customer-nsx-edge** in the VMware vSphere Web Client.
 3. Review the notes that are shown for the IP addresses. These notes identify which of the subnets and IP addresses are ordered and used during the initial setup.
 
-   Do not use the IP addresses that are ordered and used during the initial setup. However, you can use other IP addresses on these subnets according to your requirements. To set up more network address translation rules, see [Managing NAT rules](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-5896D8CF-20E0-4691-A9EB-83AFD9D36AFD.html){: external}.
+   Do not use the IP addresses that are ordered and used during the initial setup. However, you can use other IP addresses on these subnets according to your requirements. To set up more network address translation rules, see [Managing NAT rules](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/network-address-translation/configure-an-nsx-nat.html){: external}.
    {: important}
 
 ## Ordering more subnets

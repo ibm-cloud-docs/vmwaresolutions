@@ -92,7 +92,7 @@ For more information about the lockout policy, see [Policy configurations](/docs
 | Character requirements | * At least two alphabetic characters \n * At least one special character \n * At least one uppercase character \n * At least one lowercase character \n * At least one numeric character \n * Identical adjacent characters - 3 |
 {: caption="Password policy" caption-side="bottom"}
 
-As the customer, you have full access to tailor these settings as needed to apply your enterprise security policies. For changing these policies, see [Managing vCenter single sign-on policies](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.psc.doc/GUID-43527B09-63BB-44A6-91D3-E3A470904698.html){: external}.
+As the customer, you have full access to tailor these settings as needed to apply your enterprise security policies. For changing these policies, see [Managing vCenter single sign-on policies](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/platform-services-controller-administration-6-7/vsphere-authentication-with-vcenter-single-sign-onplatform-services-controller-admin/vmware-single-sign-on-policesplatform-services-controller-admin.html){: external}.
 
 ## vSphere ESXi hosts
 {: #adds-sso-esxi}

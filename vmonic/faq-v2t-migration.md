@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-01-01"
+lastupdated: "2025-02-10"
 
 subcollection: vmwaresolutions
 
@@ -172,7 +172,7 @@ Yes, but we strongly advise deploying a new {{site.data.keyword.vcf-auto-short}}
 Also, review the following key considerations:
 
 * At the end of the documented process, your {{site.data.keyword.vcf-auto-short}} instance is running vSphere 7.0 Update 1c with N-VDS distributed switches. This configuration is different than the currently supported [Software BOM for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom#vc_bom-software), which is vSphere 7.0 Update 3c with Distributed vSwitch 7.0.0.
-* For more information about the migration of N-VDS to VDS switches for vSphere 7.0 or later and NSX-T Data Center 3.0 and later, see [Migrate host switch to vSphere Distributed Switch](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-1039A36F-F55E-4A0A-B6C6-2C383F4A716D.html){: external}. Currently, this procedure is not verified on a VMware Solutions vCenter Server instance.
+* For more information about the migration of N-VDS to VDS switches for vSphere 7.0 or later and NSX-T Data Center 3.0 and later, see [Migrate host switch to vSphere Distributed Switch](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-1/administration-guide/host-switches/migrate-host-switch-to-vsphere-distributed-switch.html){: external}. Currently, this procedure is not verified on a VMware Solutions vCenter Server instance.
 * {{site.data.keyword.cloud_notm}} is undertaking an assessment of the N-VDS to VDS conversion and the required changes to the automation database to allow this in-place upgrade.
 * Currently, Day 2 automation workflows such as add host or add cluster, are not tested against old vCenter Server instances that are upgraded from vSphere 6.7 to 7 and still using N-VDS distributed switches. Customers must assume that this automation might fail and that if this automation is required then the lift and shift migration approach used. If this automation is not needed, you can use the upgrade process that is documented.
 * A workaround for the featur of adding nodes and clusters is to use the {{site.data.keyword.vcf-flex-short}} offering. For more information, see [{{site.data.keyword.vcf-flex-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview). You must complete a number of manual tasks after the automated deployment.

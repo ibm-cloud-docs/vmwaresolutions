@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-13"
+lastupdated: "2025-02-10"
 
 keywords: HCX updates, HCX management console, login HCX console
 
@@ -64,4 +64,4 @@ Only the VMs that were deployed during the initial installation of the HCX insta
 
 * [HCX overview](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations#hcx_considerations)
 * [Glossary of HCX terms](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_glossary)
-* [VMware HCX documentation](https://docs.vmware.com/en/VMware-HCX/index.html){: external}
+* [VMware HCX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/hcx.html){: external}

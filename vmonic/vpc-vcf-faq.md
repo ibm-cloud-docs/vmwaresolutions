@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-01-20"
+lastupdated: "2025-02-10"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc, faq
 
@@ -84,7 +84,7 @@ For more information about the Aria Suite supported upgrade paths in VMware Clou
 
 For Aria Suite (formerly vRealize Suite) certificates, you must manually generate self-signed certificates in Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager).
 
-For more information about how to generate self-signed certificates in vRealize Suite Lifecycle Manager (currently Aria Lifecycle Manager) 8.8.2P6, see [Replace the certificate of the vRealize Suite Lifecycle Manager instance](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/com.vmware.vcf.vxrail.doc/GUID-DC03F8FF-543E-46D2-AFCF-1468EA966B63.html?hWord=N4IghgNiBcIOYFMB2CBOYAuCAEBnAlnCgCbYBuquEAxgLYgC+QA){: external}.
+For more information about how to generate self-signed certificates in vRealize Suite Lifecycle Manager (currently Aria Lifecycle Manager) 8.8.2P6, see [Replace the certificate of the vRealize Suite Lifecycle Manager instance](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/administering/vrealize-suite-lifecycle-manager-in-cloud-foundation-admin/vrealize-suite-lifecycle-manager-implementation-admin/replace-the-certificate-of-the-vrealize-suite-lifecycle-manager-instance-in-first-region-admin.html){: external}.
 
 ## How do I manage certificates in SDDC manager?
 {: #vpc-vcf-faq-sddc-certificates}
@@ -92,7 +92,7 @@ For more information about how to generate self-signed certificates in vRealize 
 
 You can use the SDDC Manager UI to manage certificates in a {{site.data.keyword.vcf-vpc-short}} instance, including integrating a certificate authority, generating and submitting certificate signing requests (CSR) to a certificate authority, and downloading and installing certificates.
 
-For more information, see [Managing certificates in VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-80431626-B9CD-4F21-B681-A8F5024D2375.html?hWord=N4IghgNiBcIMYFMBOAXAlgMzXMKEgF8g){: external}.
+For more information, see [Managing certificates in VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/administering/certificate-management-admin.html){: external}.
 
 Starting with the VMware Cloud Foundation 4.4 release, SSH Service on ESXi hosts is disabled on new and upgraded VMware Cloud Foundation deployments. You must enable the SSH service for each ESXi host.
 {: important}
@@ -101,7 +101,7 @@ Starting with the VMware Cloud Foundation 4.4 release, SSH Service on ESXi hosts
 {: #vpc-vcf-faq-nsx-edge-nodes}
 {: faq}
 
-In {{site.data.keyword.vcf-vpc-short}} instances, the high availability setting for and Tier 0 Gateway is set as Active-Standby and uses HA VIP. For this reason, the process that is documented in [Add edge nodes to an NSX edge cluster](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-ED90A614-B670-4E1C-9143-82896F147F74.html){: external} cannot be used.
+In {{site.data.keyword.vcf-vpc-short}} instances, the high availability setting for and Tier 0 Gateway is set as Active-Standby and uses HA VIP. For this reason, the process that is documented in [Add edge nodes to an NSX edge cluster](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/administering/deploying-nsx-edge-clusters-admin/add-edge-nodes-to-an-nsx-edge-cluster-admin.html){: external} cannot be used.
 
 When you deploy the solution, it is recommended to select a large enough NSX and edge node size.
 
@@ -131,7 +131,7 @@ We don’t recommend you to change the **ibm_admin** password, but if you change
 2. Click the **Access information** tab and scroll down to the **SDDC Manager** section.
 3. Under the **IBM Automation** account, click **Update password** and enter your updated **ibm_admin** password.
 
-For more information about the supported password policies in VMware Cloud Foundation, see [Configuring password complexity policies in VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-operations/GUID-22C6746A-6703-47E5-B17A-313EC959EC62.html){: external}.
+For more information about the supported password policies in VMware Cloud Foundation, see [Configuring password complexity policies in VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/vmware-cloud-foundation-operations-4-5/password-policy-configuration-operations/configuring-password-complexity-policies-for-vmware-cloud-foundation-operations.html#GUID-22C6746A-6703-47E5-B17A-313EC959EC62){: external}.
 
 You can rotate and update some of these passwords by using the password management functions in the SDDC Manager UI. You can rotate passwords for the following accounts:
 
@@ -146,8 +146,8 @@ To provide optimal security and proactively prevent any passwords from expiring,
 
 For more information, see:
 
-* [Password management](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-1D25D0B6-E054-4F49-998C-6D386C800061.html?hWord=N4IghgNiBcIA5gM6IO4HsBOATABAWzADswBzAUzzMIBcQBfIA){: external}
-* [Password policy configuration for VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-operations/GUID-18A95158-30F5-460F-AF80-33F25B6533D0.html){: external}
+* [Password management](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/administering/manage-passwords-admin.html){: external}
+* [Password policy configuration for VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/vmware-cloud-foundation-operations-4-5/password-policy-configuration-operations.html){: external}
 
 ## I have an issue with my {{site.data.keyword.vcf-vpc-short}} passwords, what can I do?
 {: #vpc-vcf-faq-passwords}
@@ -175,7 +175,7 @@ SSH into the SDDC manager by using user `vcf`. You can view the passwords by usi
 
 {{site.data.keyword.vcf-vpc-short}} system backups are configured to use SDDC manager. Backups are configured to use the folder `/nfs/vmware/vcf/nfs-mount/backup` on the SDDC manager. You can change this configuration post-deployment to fit your own backup requirements.
 
-For more information about how to back up and restore {{site.data.keyword.vcf-vpc-short}}, see [Backup and restore of VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-F8634D37-FA26-40DF-A135-62D0265DA4FA.html){: external}.
+For more information about how to back up and restore {{site.data.keyword.vcf-vpc-short}}, see [Backup and restore of VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/administering/backup-and-restore-of-cloud-foundation-admin.html){: external}.
 
 ## What are the best practices to operate {{site.data.keyword.vcf-vpc-short}}?
 {: #vpc-vcf-faq-operations-best-practice}
