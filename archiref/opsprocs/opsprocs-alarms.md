@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-20"
+lastupdated: "2025-02-10"
 
 subcollection: vmwaresolutions
 
@@ -108,7 +108,7 @@ The following table describes the standard preconfigured alarms.
 | Host connection and power state | Configure to send an email one time when set to Not Responding or Standby. | ["Host connection and power state" alarm when an ESXi host wakes from standby](https://knowledge.broadcom.com/external/article?articleNumber=322793){: external} |
 | Host CPU usage | Configure to send an email one time when host CPU usage > 90% for 5 mins. | [Knowledge - KB0012707 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=342e3d6adbc5730030c93a1b7c961976){: external} |
 | Host memory usage | Configure to send an email one time when host memory usage > 95% for 5 mins. | [Knowledge - KB0012712 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=30110ee2db49730030c93a1b7c96194f){: external} |
-| Virtual machine CPU usage | Configure to send an email one time when VM CPU usage > 90% for 5 mins for critical appliances. | [Creating an alarm for specific virtual machines](https://knowledge.broadcom.com/external/article?articleNumber=308798){: external} |
+| Virtual machine CPU usage | Configure to send an email one time when VM CPU usage > 90% for 5 mins for critical appliances. | [Setting an alarm for virtual machine hard disk usage](https://knowledge.broadcom.com/external/article?articleNumber=322857){: external} |
 | Virtual machine memory usage | Configure to send an email one time when VM memory usage > 95% for 5 mins for critical appliances. | [Memory usage alarm triggers for certain types of Virtual Machines in ESXi](https://knowledge.broadcom.com/external/article?articleNumber=318857){: external} |
 | Datastore usage on disk | For vSAN, configure to send email one time when datastore usage > 70%. For non-vSAN, configure to send email one time when datastore usage > 85%. | [Knowledge - KB0012713 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=ddb3422edb89730030c93a1b7c9619f6){: external} |
 | Virtual machine CPU ready | Configure to send email one time when VM CPU ready > 2000 ms for 5 mins for critical appliances. | [Knowledge - KB0012718 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=7056426adb0d730030c93a1b7c9619e6){: external} |
