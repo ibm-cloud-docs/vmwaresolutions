@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-11-07"
+lastupdated: "2025-02-10"
 
 subcollection: vmwaresolutions
 
@@ -79,4 +79,4 @@ After all the workloads are migrated from NSX-V to NSX-T, you can remove the bri
 * [Veeam technical documentation](https://www.veeam.com/support/help-center-technical-documentation.html?ad=in-text-link){: external}
 * [Zerto product documentation](https://help.zerto.com){: external}
 * [Migration between {{site.data.keyword.vcf-auto-short}} systems](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-59C7D7FF-D17E-45BC-9145-06B2993880A2.html){: external}
-* [Introducing the Advanced Cross vCenter Server vMotion capability](https://www.vmware.com/docs/introducing-the-advanced-cross-vcenter-server-vmotion-capability){: external}
+* [Introducing the Advanced Cross vCenter Server vMotion capability](https://www.vmware.com/docs/vmw-introducing-the-advanced-cross-vcenter-server-vmotion-capability){: external}
