@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-10-29"
+lastupdated: "2025-02-10"
 
 subcollection: vmwaresolutions
 
@@ -31,7 +31,7 @@ Day 2 responsibilities include the following items:
 * Incident and Problem Management - You are responsible for incident and problem management of your {{site.data.keyword.vcf-auto-short}} instances after deployment. You must have tools and processes to detect incidents, record the issues, classify their severity, escalate, and return the failing component to service.
 * Capacity Management - You are responsible for capacity management of your {{site.data.keyword.vcf-auto-short}} instances, adding or removing additional capacity to match business demands. For more information, see [Adding ESXi servers to {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers) and [Adding clusters for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters).
 * Data Recovery - You are responsible for all backup and restoration of the components in the {{site.data.keyword.vcf-auto-short}} instance, including VMware vCenter® Server Appliance, NSX Manager, virtual appliances, virtual machines, and content libraries. Use optional services, such as [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) or implement your own enterprise systems.
-* Bare metal server firmware - You are responsible for updating out-of-date firmware. For more information, see [FAQs: Bare metal servers](/docs/virtual-servers?topic=virtual-servers-bm-faq).
+* Bare metal server firmware - You are responsible for updating out-of-date firmware. For more information, see [FAQ: Bare metal servers](/docs/virtual-servers?topic=virtual-servers-bm-faq).
 * VMware software updates - Updates to the VMware software, such as fixes and service packs, are necessary to maintain the health and availability of your {{site.data.keyword.vcf-auto-short}} instance. Review these updates and apply them periodically. For more information, see [VMware update manager introduction](/docs/vmwaresolutions?topic=vmwaresolutions-vum-intro).
 * VMware software upgrades - You must upgrade existing {{site.data.keyword.vcf-auto-short}} instances to continue to benefit from the automation. For more information, see [Upgrading {{site.data.keyword.vcf-auto-short}} vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade).
 * IBM provides notification of scheduled maintenance at [Planned maintenance](/status/maintenance){: external}.
@@ -46,5 +46,5 @@ Day 2 responsibilities include the following items:
 * [Managing system notifications](/docs/vmwaresolutions?topic=vmwaresolutions-notifications)
 * [Compliance information for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info)
 * [Using the Support Center](/docs/account?topic=account-using-avatar)
-* [FAQs for getting support](/docs/account?topic=account-get-supportfaq)
+* [FAQ for getting support](/docs/account?topic=account-get-supportfaq)
 * [Cloud Event Management documentation](https://www.ibm.com/docs/en/cem)

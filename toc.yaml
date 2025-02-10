@@ -843,7 +843,7 @@ toc:
       id: help
       topics:
       - topicgroup:
-          label: FAQs
+          label: FAQ
           topics:
           - vmonic/vmwaresol_packaging-pricing.md
           - vmonic/faq.md

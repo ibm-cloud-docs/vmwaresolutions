@@ -3,8 +3,8 @@
 
 
 copyright:
-  years: 2016, 2024
-lastupdated: "2024-10-29"
+  years: 2016, 2025
+lastupdated: "2025-02-10"
 
 keywords: getting help, getting support, troubleshooting, contact support, support ticket
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 If you experience an issue or have questions when using VMware Solutions, you can use the following resources before you open a support case.
 {: shortdesc}
 
-* Review the [FAQs](/docs?tab=faqs&tags=get-support%2Cbilling-usage%2Caccount%2Csell&faqtags=vmwaresolutions%2Cvmware-service) in the product documentation.
+* Review the [FAQ](/docs?tab=faqs&tags=get-support%2Cbilling-usage%2Caccount%2Csell&faqtags=vmwaresolutions%2Cvmware-service) in the product documentation.
 * Review the [troubleshooting documentation](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_timeout_vc_console) to troubleshoot and resolve common issues.
 * Check the status of the {{site.data.keyword.Bluemix_notm}} platform and resources by going to the [Status](/status) page.
 
