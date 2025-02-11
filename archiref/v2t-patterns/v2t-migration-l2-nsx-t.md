@@ -78,5 +78,5 @@ After all the workloads are migrated from NSX-V to NSX-T, you can remove the bri
 * [Extending Layer 2 networks with NSX-T edge bridge](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/extending-layer-2-networks-with-nsx-t-edge-bridge.html){: external}
 * [Veeam technical documentation](https://www.veeam.com/support/help-center-technical-documentation.html?ad=in-text-link){: external}
 * [Zerto product documentation](https://help.zerto.com){: external}
-* [Migration between {{site.data.keyword.vcf-auto-short}} systems](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-and-host-management-7-0/migrating-virtual-machines-host-management/migration-with-vmotion-host-management/vmotion-across-vcenter-server-systems-host-management.html){: external}
+* [Migration between vCenter Server systems](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-and-host-management-7-0/migrating-virtual-machines-host-management/migration-with-vmotion-host-management/vmotion-across-vcenter-server-systems-host-management.html){: external}
 * [Introducing the Advanced Cross vCenter Server vMotion capability](https://www.vmware.com/docs/vmw-introducing-the-advanced-cross-vcenter-server-vmotion-capability){: external}
