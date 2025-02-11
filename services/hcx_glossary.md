@@ -31,4 +31,4 @@ This glossary provides definitions for the terms that are associated with the VM
 ## Related links
 {: #hcx_glossary-related}
 
-* [VMware HCX documentation](https://docs.vmware.com/en/VMware-HCX/index.html){: external}
+* [VMware HCX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/hcx.html){: external}

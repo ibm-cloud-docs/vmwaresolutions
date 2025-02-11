@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-11"
+lastupdated: "2025-02-11"
 
 keywords: automated consolidated cluster, order consolidated cluster, order automated instance
 
@@ -167,7 +167,7 @@ Review **Number of vSAN cache disks**. The value depends on whether you selected
 
 vSAN storage depends on the number of servers and your total disk capacity, and the use of deduplication and compression.
 
-The amount of storage reduction from deduplication and compression depends on many factors, including the type of data stored and the number of duplicate blocks. Larger disk groups tend to provide a higher deduplication ratio. For more information, see [Using deduplication and compression](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vsan.doc/GUID-3D2D80CC-444E-454E-9B8B-25C3F620EFED.html){: external}.
+The amount of storage reduction from deduplication and compression depends on many factors, including the type of data stored and the number of duplicate blocks. Larger disk groups tend to provide a higher deduplication ratio. For more information, see [Using deduplication and compression](https://techdocs.broadcom.com/us/en/vmware-cis/vsan/vsan/7-0/vsan-adminstration-7-0/increasing-space-efficiency-in-a-vsan-cluster/using-deduplication-and-compression-in-vsan-cluster.html){: external}.
 {: note}
 
 #### Enable vSAN compression (vSAN ESA only)

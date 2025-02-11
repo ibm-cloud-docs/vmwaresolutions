@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-10"
+lastupdated: "2025-02-11"
 
 subcollection: vmwaresolutions
 
@@ -74,9 +74,9 @@ After all the workloads are migrated from NSX-V to NSX-T, you can remove the bri
 ## Related links
 {: #v2t-l2-nsx-t-links}
 
-* [Overview of edge bridging in NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-12FE83E9-2FA9-40F7-A3FF-BC21E13F6720.html){: external}
-* [Extending Layer 2 networks with NSX-T edge bridge](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-5B9390FB-7E52-4669-AF63-3C3490841432.html){: external}
+* [Overview of edge bridging in NSX-T](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/overview-of-edge-bridging-in-nsx-t-data-center.html){: external}
+* [Extending Layer 2 networks with NSX-T edge bridge](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/extending-layer-2-networks-with-nsx-t-edge-bridge.html){: external}
 * [Veeam technical documentation](https://www.veeam.com/support/help-center-technical-documentation.html?ad=in-text-link){: external}
 * [Zerto product documentation](https://help.zerto.com){: external}
-* [Migration between {{site.data.keyword.vcf-auto-short}} systems](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-59C7D7FF-D17E-45BC-9145-06B2993880A2.html){: external}
+* [Migration between {{site.data.keyword.vcf-auto-short}} systems](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-and-host-management-7-0/migrating-virtual-machines-host-management/migration-with-vmotion-host-management/vmotion-across-vcenter-server-systems-host-management.html){: external}
 * [Introducing the Advanced Cross vCenter Server vMotion capability](https://www.vmware.com/docs/vmw-introducing-the-advanced-cross-vcenter-server-vmotion-capability){: external}

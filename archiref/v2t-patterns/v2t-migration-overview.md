@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-12-13"
+lastupdated: "2025-02-10"
 
 subcollection: vmwaresolutions
 
@@ -67,7 +67,7 @@ You must be familiar with NSX-T concepts and administration tasks before any mig
 * [{{site.data.keyword.cloud_notm}} VMware NSX-T Architecture](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design)
 * [{{site.data.keyword.vcf-auto-short}} Overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
 * [VMware Learning for NSX-T education](https://www.broadcom.com/support/education/vmware){: external}
-* [NSX-T Data Center Migration Coordinator Guide](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/nsxt_31_migrate.pdf){: external}
+* [NSX-T Data Center Migration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/nsx-t-data-center-migration-guide.html){: external}
 
 ## Related links
 {: #v2t-overview-links}

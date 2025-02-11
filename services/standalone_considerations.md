@@ -64,7 +64,7 @@ You must complete the following tasks for a successful installation of the on-pr
     3. Click **URL**, and then enter the URL of the certificate you want to apply. The URL is the **HCX Cloud IP** (``https://<cloud-side public IP>``), which you can find on the HCX service details page in the {{site.data.keyword.vmwaresolutions_short}} console.
     4. Click **APPLY**.
 
-The basic setup of the on-premises HCX Manager is complete. You can proceed to pair the on-premises HCX site with the cloud-side HCX site. For more information, see [VMware HCX documentation](https://docs.vmware.com/en/VMware-HCX/index.html){: external}.
+The basic setup of the on-premises HCX Manager is complete. You can proceed to pair the on-premises HCX site with the cloud-side HCX site. For more information, see [VMware HCX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/hcx.html){: external}.
 
 ## Related links
 {: #standalone_considerations-related}

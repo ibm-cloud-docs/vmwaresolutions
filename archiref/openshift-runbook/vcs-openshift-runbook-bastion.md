@@ -259,4 +259,4 @@ The Bastion node is now ready for the steps to install {{site.data.keyword.redha
 {: #vcs-openshift-runbook-bastion-related}
 
 * [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/upi/installing-vsphere.html){: external}
-* [Using the vi text editor](http://etutorials.org/Linux+systems/red+hat+linux+bible+fedora+enterprise+edition/Part+II+Using+Red+Hat+Linux/Chapter+4+Using+Linux+Commands/Using+the+vi+Text+Editor/){: external}
+* [An introduction to the vi editor](https://www.redhat.com/en/blog/introduction-vi-editor){: external}

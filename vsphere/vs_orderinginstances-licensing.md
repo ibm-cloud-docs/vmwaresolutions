@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-17"
+lastupdated: "2025-02-11"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -48,4 +48,4 @@ Select the VMware® components for your instance and specify the licensing optio
 
 * [Bare metal server](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-bare-metal)
 * [Procedure to order Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
-* [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}
+* [VMware NSX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx.html){: external}

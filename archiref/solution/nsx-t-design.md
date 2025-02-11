@@ -20,7 +20,7 @@ VMware® NSX-T™ is designed to address application frameworks and architecture
 
 As of version 3, NSX-T can run on the vSphere virtual distributed switch (VDS) version 7.0. All new deployments of VMware NSX and vSphere use NSX-T on VDS, and N-VDS is no longer used. Beginning with NSX-T 2.4, the manager VM and the controller VM functions are combined. As a result, three controller or manager VMs are deployed. If on the same subnet, they use an internal network load balancer. If across different subnets, an external load balancer is required.
 
-NSX-T brings many advanced features, such as firewall policies, inclusion of guest introspection within firewall policies, and advanced netflow tracking. Describing these features is beyond the scope of this document. In this design, the NSX-T Management Infrastructure is deployed during the initial vCenter Server® cluster deployment. For more information about NSX-T, see the [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}.
+NSX-T brings many advanced features, such as firewall policies, inclusion of guest introspection within firewall policies, and advanced netflow tracking. Describing these features is beyond the scope of this document. In this design, the NSX-T Management Infrastructure is deployed during the initial vCenter Server® cluster deployment. For more information about NSX-T, see the [VMware NSX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx.html){: external}.
 
 ## NSX-T vs NSX-V
 {: #nsx-t-design-nsx-t-nsx-v}
