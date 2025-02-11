@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-10-25"
+lastupdated: "2025-02-11"
 
 keywords: vcf classic remove hosts, vcf automated remove ESXi servers
 
@@ -60,5 +60,5 @@ You can contract the capacity of your {{site.data.keyword.vcf-auto}} instance ac
 * [Planning for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
 * [Ordering Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Deleting clusters from Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingclusters)
-* [Place a host in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-resource-management/GUID-8F705E83-6788-42D4-93DF-63A2B892367F.html?hWord=N4IghgNiBcIAoTAYwKYAIxoBYHsDOALmgJYB2aAtmGQSqWKapTgCYogC+QA){: external}
+* [Place a host in maintenance mode](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/esxi-upgrade-8-0/upgrading-esxi-hosts-upgrade/how-to-upgrade-hosts-by-using-esxcli-commands-upgrade/place-a-host-in-maintenance-mode-upgrade.html){: external}
 * [Enhanced vMotion Compatibility (EVC) processor support](https://knowledge.broadcom.com/external/article?legacyId=1003212){: external}

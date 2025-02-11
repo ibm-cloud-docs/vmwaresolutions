@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-07"
+lastupdated: "2025-02-11"
 
 subcollection: vmwaresolutions
 
@@ -70,7 +70,7 @@ The following diagram shows an example of a multisite – multitenant topology. 
 This network topology example does not consider the management and control plane (vCenter and NSX Managers). The control plane of HA is discussed in another availability pattern.
 {: note}
 
-Tier-0 Gateways support VRF lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. For more information about capabilities and limitations, see the [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}.
+Tier-0 Gateways support VRF lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. For more information about capabilities and limitations, see the [VMware NSX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx.html){: external}.
 {: note}
 
 The main reason that you need two layers is for physical north-south connectivity in the data centers and each data center having their own private and public VLANs and IP addresses for the uplinks. These IP addresses cannot move between the data centers. Therefore, you must consider the routing and network address translation if you use public connectivity in this topology.

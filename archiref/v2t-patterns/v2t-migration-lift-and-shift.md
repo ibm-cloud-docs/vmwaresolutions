@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-01-20"
+lastupdated: "2025-02-11"
 
 subcollection: vmwaresolutions
 
@@ -48,4 +48,4 @@ If needed, you can get help from various service providers. For example, the {{s
 
 * [Requirements for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [NSX-T Data Center Migration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/migration-guide/nsx-t-data-center-migration-guide.html){: external}
-* [Preparing for a Lift-and-Shift Migration](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-BC8C6568-754A-4F73-812C-8D5424BF7EA2.html){: external}
+* [Preparing for a Lift-and-Shift Migration](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/migrating-a-user-defined-topology/preparing-the-nsx-v-environment-for-a-user-defined-topology-lift-and-shift-migration.html){: external}

@@ -50,5 +50,5 @@ Before you delete ESXi servers, ensure that you remove your workloads from these
 
 * [Planning for Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning)
 * [Procedure to order Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
-* [Place a host in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-resource-management/GUID-8F705E83-6788-42D4-93DF-63A2B892367F.html?hWord=N4IghgNiBcIAoTAYwKYAIxoBYHsDOALmgJYB2aAtmGQSqWKapTgCYogC+QA){: external}
+* [Place a host in maintenance mode](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/esxi-upgrade-8-0/upgrading-esxi-hosts-upgrade/how-to-upgrade-hosts-by-using-esxcli-commands-upgrade/place-a-host-in-maintenance-mode-upgrade.html){: external}
 * [Enhanced vMotion Compatibility (EVC) processor support](https://knowledge.broadcom.com/external/article?legacyId=1003212){: external}

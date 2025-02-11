@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-07"
+lastupdated: "2025-02-11"
 
 subcollection: vmwaresolutions
 
@@ -84,5 +84,5 @@ Most of the content in the VMware NSX design guides and documentation can be app
 ## Related links
 {: #arch-pattern-overlays-single-site-links}
 
-* [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}
+* [VMware NSX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx.html){: external}
 * [VMware NSX Administration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-1-2/administration-guide.html){: external}

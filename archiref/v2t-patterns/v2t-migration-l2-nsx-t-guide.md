@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-10"
+lastupdated: "2025-02-11"
 
 subcollection: vmwaresolutions
 
@@ -89,6 +89,6 @@ The management NIC on the NSX-T Edge node VM must be able to reach the NSX-T Man
 ## Related links
 {: #v2t-l2-nsx-t-guide-links}
 
-* [Overview of Edge Bridging in NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-12FE83E9-2FA9-40F7-A3FF-BC21E13F6720.html){: external}
-* [Extending Layer 2 Networks with NSX-T Edge Bridge](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-5B9390FB-7E52-4669-AF63-3C3490841432.html){: external}
+* [Overview of Edge Bridging in NSX-T](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/overview-of-edge-bridging-in-nsx-t-data-center.html){: external}
+* [Extending Layer 2 Networks with NSX-T Edge Bridge](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/extending-layer-2-networks-with-nsx-t-edge-bridge.html){: external}
 * [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)

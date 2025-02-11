@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-14"
+lastupdated: "2025-02-11"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade
 
@@ -135,7 +135,7 @@ Complete the following steps from the vCenter Server user interface.
 ### Procedure to upgrade vCenter Server
 {: #vc_vsphere_70_upgrade-procedure-vcenter}
 
-Follow the VMware instructions for upgrading vCenter. For more information, see [Upgrade a vCenter Server Appliance 6.5 or 6.7 with an embedded Platform Services Controller by using the GUI](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vcenter.upgrade.doc/GUID-6A5C596D-103E-4024-9353-5569263EB427.html){: external}.
+Follow the VMware instructions for upgrading vCenter. For more information, see [Upgrade a vCenter Server Appliance 6.5 or 6.7 with an embedded Platform Services Controller by using the GUI](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-server-upgrade-7-0/upgrading-and-updating-the-vcenter-server-appliance/gui-upgrade-of-the-vcsa-and-psc-appliance/upgrade-the-vmware-vcenter-server-appliance-with-embedded-sso.html){: external}.
 
 Ensure to complete the following requirements during the upgrade:
 
