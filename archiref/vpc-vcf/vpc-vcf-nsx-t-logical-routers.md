@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-01-31"
+lastupdated: "2025-02-12"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # NSX Tier-0 and Tier-1 gateways on {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-nsx-t-logical-routers}
 
-A single VMware NSX™ edge cluster with two virtual edge nodes is used in consolidated architecture and standard architecture has its own edge cluster for workloads. Automation creates Tier-0 (T0) gateways and Tier-1 (T1) routers with uplinks that are connected to VPC subnets. In this architecture, the edge clusters host both T0 and T1 gateways. The following information discusses how these gateways interact with {{site.data.keyword.vpc_short}}.
+A single VMware NSX™ edge cluster with two virtual edge nodes is used in consolidated architecture. Automation creates Tier-0 (T0) gateways and Tier-1 (T1) routers with uplinks that are connected to VPC subnets. In this architecture, the edge clusters host both T0 and T1 gateways. The following information discusses how these gateways interact with {{site.data.keyword.vpc_short}}.
 
 For more information about edge cluster deployment, see [CF NSX design on {{site.data.keyword.vpc_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t).
 
@@ -33,7 +33,7 @@ Currently, Active-Active mode with T0 is not supported in {{site.data.keyword.vp
 When T0 is run in Active-Standby mode, both participate Edge Transport Node has their own uplink. HA between these uplinks uses an HA VIP.
 {: note}
 
-The T0 is configured with **two uplink types**: two uplinks for **private** use and two uplinks for **public** use. HA VIPs are assigned to both public and private uplinks for HA. For public and private uplinks, two VPC subnets are needed. These subnets are provisioned from the Zone prefix, and they can both use RFC 1918 private addresses, including the public subnet. In the consolidated architecture, only one set of uplink subnets are provisioned. In the standard architecture, both management and VI workload domain Tier-0s have their own uplink subnets.
+The T0 is configured with **two uplink types**: two uplinks for **private** use and two uplinks for **public** use. HA VIPs are assigned to both public and private uplinks for HA. For public and private uplinks, two VPC subnets are needed. These subnets are provisioned from the Zone prefix, and they can both use RFC 1918 private addresses, including the public subnet. In the consolidated architecture, only one set of uplink subnets are provisioned.
 
 | Subnet name | System traffic type | Subnet sizing guidance |
 | ------------|---------------------|----------------------- |
@@ -63,27 +63,6 @@ By routing in T0, you need to take the previous note into consideration. If you 
 {: note}
 
 You can provision only one pair of uplinks from the T0 gateway from the same edge cluster in the same VPC subnet. This limitation also includes T0 VRFs. Each T0 uplink pair needs its own VPC subnet.
-{: note}
-
-In the standard architecture, the VI workload domain has its own Tier-0 gateway, and it uses its own uplink subnets.
-
-| Interface name | Interface type | VLAN ID | Subnet | Allow float | Allow IP spoofing | Enable infra NAT | NSX interface | Segment name |
-| ---------------|----------------|---------|--------|-------------|-------------------|-------------------|--------------|------------ |
-| `vlan-nic-t0-pub-uplink-1` | `vlan` | 2711 | `vpc-t0-public-uplink-subnet` | `true` | `false` | `false` | T0 Public Uplink * Edge 1 | `vpc-zone-t0-public-*vlanid*` |
-| `vlan-nic-t0-pub-uplink-2` | `vlan` | 2711 | `vpc-t0-public-uplink-subnet` | `true` | `false` | `false` | T0 Public Uplink * Edge 2 | `vpc-zone-t0-public-*vlanid*` |
-| `vlan-nic-t0-pub-uplink-vip` | `vlan` | 2711 | `vpc-t0-public-uplink-subnet` | `true` | `false` | `false` | T0 Public Uplink VIP | `vpc-zone-t0-public-*vlanid*` |
-| `vlan-nic-t0-priv-uplink-1` | `vlan` | 2712 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink * Edge 1 | `vpc-zone-t0-private-*vlanid*` |
-| `vlan-nic-t0-priv-uplink-2` | `vlan` | 2712 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink * Edge 2 | vpc-zone-t0-private-*vlanid* |
-| `vlan-nic-t0-priv-uplink-vip` | `vlan` | 2712 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink VIP | vpc-zone-t0-private-*vlanid* |
-| `vlan-nic-t0-pub-uplink-1` | `vlan` | 2731 | `vpc-t0-public-uplink-subnet` | `true` | `false` | `false` | T0 Public Uplink * Edge 1 | vpc-zone-t0-public-*vlanid* |
-| `vlan-nic-t0-pub-uplink-2` | `vlan` | 2731 | `vpc-t0-public-uplink-subnet` | `true` | `false` | `false` | T0 Public Uplink * Edge 2 | vpc-zone-t0-public-*vlanid* |
-| `vlan-nic-t0-pub-uplink-vip` | `vlan` | 2731 | `vpc-t0-public-uplink-subnet` | `true` | `false` | `false` | T0 Public Uplink VIP | vpc-zone-t0-public-*vlanid* |
-| `vlan-nic-t0-priv-uplink-1` | `vlan` | 2732 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink * Edge 1 | vpc-zone-t0-private-*vlanid* |
-| `vlan-nic-t0-priv-uplink-2` | `vlan` | 2732 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink * Edge 2 | `vpc-zone-t0-private-*vlanid*` |
-| `vlan-nic-t0-priv-uplink-vip` | `vlan` | 2732 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink VIP | `vpc-zone-t0-private-*vlanid*` |
-{: caption="VLAN interfaces for T0 uplinks for standard architecture" caption-side="bottom"}
-
-VI workload domain edge nodes are hosted on the VI workload domain hosts, and the VLAN interfaces are only allowed to float between these hosts. This is specified by using the specific VLAN ID in the allowed VLAN list for the VPC Bare Metal Server PCI interface.
 {: note}
 
 ## Tier-1 gateway

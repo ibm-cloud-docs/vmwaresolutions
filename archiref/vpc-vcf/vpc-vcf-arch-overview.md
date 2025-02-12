@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-03"
+lastupdated: "2025-02-12"
 
 subcollection: vmwaresolutions
 
@@ -68,10 +68,6 @@ The automation provisions a new {{site.data.keyword.vpc_short}}, prefixes, subne
 An overview of the consolidated architecture and deployed assets is shown in the following diagram. Consolidated architecture deploys a singe set of VMware assets, a vCenter, NSX managers, and two NSX edges in addition to the SDDC manager. A Tier-0 gateway is deployed and integrated with VPC with external uplinks.
 
 ![Architecture overview - consolidated deployment](../../images/vcf-vpc-v2-arch-net-cons.svg "The solution uses Virtual Private Cloud compute, network, storage resources, and VMware NSX for hosting VMware workloads."){: caption="Architecture overview - consolidated deployment" caption-side="bottom"}
-
-An overview of the standard architecture and deployed assets is shown in the following diagram. As a main difference to consolidated architecture, this architecture model deploys more hosts for the VI workload domain, a new vCenter, new NSX appliances, and a new Tier-0 gateway. Also, new VPC subnets are provisioned for the VI workload domain hosts and NSX edges.
-
-![Architecture overview - consolidated deployment](../../images/vcf-vpc-v2-arch-net-std.svg "The solution uses Virtual Private Cloud compute, network, storage resources, and VMware NSX for hosting VMware workloads."){: caption="Architecture overview - standard deployment" caption-side="bottom"}
 
 For the connectivity needs and as the NSX deployment is integrated with VPC, you can use {{site.data.keyword.vpc_short}} connectivity services and {{site.data.keyword.cloud_notm}} interconnectivity solutions with your deployment. Public internet network access capabilities to the workloads are provided through floating IP addresses or Public Gateway configurations within your VPC. On-premises connectivity over the public internet can be arranged by using {{site.data.keyword.vpc_short}} VPN services (site-to-site and client-to-site), or alternatively by using NSX built-in capabilities. For private networking, you can use {{site.data.keyword.cloud_notm}} interconnectivity services to connect your VMware workloads with {{site.data.keyword.cloud_notm}} classic infrastructure, other VPCs, and on-premises networks.
 
