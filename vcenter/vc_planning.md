@@ -99,7 +99,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | DAL10 | 01-04 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | DAL12 | 01-02 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | DAL13 | 01-03 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
-| DAL14 | 01 | Cascade Lake, Sapphire Rapids | Cascade Lake, Sapphire Rapids |
+| DAL14 | 01 | Cascade Lake, Sapphire Rapids | Cascade Lake |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - NA South" caption-side="bottom"}
 {: tab-title="NA South"}
 {: tab-group="Data centers for Automated instances"}
