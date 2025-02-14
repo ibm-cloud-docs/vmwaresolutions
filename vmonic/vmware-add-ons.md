@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2025-02-07"
+lastupdated: "2025-02-12"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -53,7 +53,7 @@ As many environments use multiple edges for redundancy, 2 large edges (8 vCPUs e
 
 VMware vSAN is included at a rate of 1 TiB per VMware Cloud Foundation core.
 
-To calculate the amount of vSAN storage for your entire environment, see [Counting Cores for VMware Cloud Foundation and vSphere Foundation and TiBs for vSAN](https://knowledge.broadcom.com/external/article?legacyId=95927){: external}.  If you need more than 1 TiB of vSAN, order the  new vSAN add-on from the {{site.data.keyword.cloud_notm}} console.
+To calculate the amount of vSAN storage for your entire environment, see [Counting Cores for VMware Cloud Foundation and vSphere Foundation and TiBs for vSAN](https://knowledge.broadcom.com/external/article?legacyId=95927){: external}.  If you need more than 1 TiB of vSAN, order the new vSAN add-on from the {{site.data.keyword.cloud_notm}} console.
 
 The vSAN add-on is priced at $21 per TiB of vSAN per month. Discounts are available depending on your contract commitment.
 

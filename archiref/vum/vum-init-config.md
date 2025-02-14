@@ -79,7 +79,7 @@ Add a gateway firewall policy and rule by using the parameters in the following 
 ### Defining the NAT rule
 {: #vum-init-config-nat}
 
-Add a NAT rule by using the parameters in the following table. For more information, see [Configure SNAT/DNAT/No SNAT/No DNAT/Reflexive NAT](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-DDB35A76-BD12-4F09-8D88-2490E4DAA8F6.html){: external}.
+Add a NAT rule by using the parameters in the following table. For more information, see [Configure SNAT/DNAT/No SNAT/No DNAT/Reflexive NAT](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/network-address-translation/configure-an-nsx-nat.html){: external}.
 
 | Parameter | Suggested values |
 |:--------- |:---------------- |
@@ -108,13 +108,13 @@ Using a browser on your jump server download the required Linux ISO file.
 ### Configuring a content library and populating it with the CentOS ISO file
 {: #vum-init-config-config-content-library}
 
-Create a local vCenter content library, see [Create a library](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-2A0F1C13-7336-45CE-B211-610D39A6E1F4.html){: external}. The library is accessible only in the {{site.data.keyword.vcf-auto-short}} instance where it is created. Populate the library with the Linux ISO. See [Import Items to a Content Library](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-897EEEC2-B378-41A7-B92B-D1159B5F6095.html){: external}.
+Create a local vCenter content library, see [Create a library](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration-guide-7-0/using-content-librariesvm-admin/create-a-content-libraryvm-admin.html){: external}. The library is accessible only in the {{site.data.keyword.vcf-auto-short}} instance where it is created. Populate the library with the Linux ISO. See [Import Items to a Content Library](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration-guide-7-0/using-content-librariesvm-admin/how-to-populate-libraries-with-contentvm-admin/import-content-library-item-from-a-url-h5-and-flexvm-admin.html){: external}.
 
 ### Configuring the VM and installing CentOS and Squid
 {: #vum-init-config-config-proxy}
 
 1. Create a VM. For more information, see [Create a VM with the new virtual machine wizard](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-AE8AFBF1-75D1-4172-988C-378C35C9FAF2.html){: external}.
-2. Attach the ISO to the VM's CD/DVD drive by using the `Content Library ISO File` option. For more information, see [Add or modify a VM CD or DVD drive](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-C58B93A7-52CF-456D-95C1-8B5A906C9619.html){: external}.
+2. Attach the ISO to the VM's CD/DVD drive by using the `Content Library ISO File` option. For more information, see [How do I Add or Modify a Virtual Machine CD or DVD Drive](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration-guide-7-0/configuring-virtual-machine-hardwarevm-admin/other-virtual-machine-device-configurationvm-admin/add-or-modify-a-virtual-machine-cd-or-dvd-drivevm-admin.html){: external}.
 3. Install Linux by following the instructions provided by the Linux distributor.
 4. Install Squid. The installation of Squid varies depending on the Linux distribution. Use the following code as an example only:
 
@@ -134,7 +134,7 @@ firewall-cmd –reload
 ## Setting up VUM initially
 {: #vum-init-config-init-setup-vum}
 
-Configure the VCSA to use the proxy. For more information, see [Configure the DNS, IP address, and proxy settings](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenter.configuration.doc/GUID-7576FBBE-8B67-4D3F-B859-C9688E9442D7.html){: external}.
+Configure the VCSA to use the proxy. For more information, see [Configure the DNS, IP address, and proxy settings](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/configuring-vcenter-server-7-0/configuring-vcenter-server-using-the-management-interface/configure-the-dns-ip-address-and-proxy-settings.html){: external}.
 
 ## Related links
 {: #vum-init-config-related}

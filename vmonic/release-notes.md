@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-02-03"
+lastupdated: "2025-02-14"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -25,7 +25,28 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2025
 {: #year-2025}
 
+### 14 February 2025
+{: #vmwaresolutions-feb1425}
+{: release-note}
 
+Support for Dual Intel Xeon Platinum 6416H Sapphire Rapids servers
+:   Dual Intel® Xeon® Platinum 6416H (36 cores, 2.2 GHz) bare metal servers are available for deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, Regulated Workloads, and Cyber Recovery instances with VMware vSphere® 7 and 8.
+
+vSphere 8 and Sapphire Rapids - selected by default
+:   VMware vSphere 8.0 and Sapphire Rapids servers are selected by default for new instances and new clusters on {{site.data.keyword.vcf-classic}} offerings.
+
+Regulated Workloads multizone on Sapphire Rapids
+:   Sapphire Rapids servers are available for existing Regulated Workloads multizone instances. You can add new ESXi servers with vSphere 7 to existing clusters.
+
+Microsoft Entra ID enablement for vCenter Server
+:   You can manually replace Single Sign-On (SSO) with Microsoft® Entra ID (formerly Azure Active Directory) to enable multifactor authentication (MFA) in your vCenter Server. For this purpose, open an IBM Support ticket. This option applies only to existing instances.
+
+Add-on services upgrades
+:   The following service versions are available for deployment:
+
+   * Caveonix RiskForesight v5.1.5
+   * Veeam® Backup and Replication 12.3 (does not apply to {{site.data.keyword.vm-shared}} deployments)
+   * VMware Aria® Operations™ and VMware Aria Operations™ for Logs v8.18
 
 ### 3 February 2025
 {: #vmwaresolutions-feb0325}
@@ -141,7 +162,7 @@ Add-on services upgrades
    * F5® BIG-IP® v17.1.1.3
    * Juniper® vSRX v3.0 (23.4R1)
    * {{site.data.keyword.redhat_openshift_full}} v4.15
-   * VMware Aria® Operations™ v8.17.1 and VMware Aria Operations™ for Logs v8.17
+   * VMware Aria Operations v8.17.1 and VMware Aria Operations for Logs v8.17
 
 Veeam 12.1.2 for {{site.data.keyword.vm-shared}}
 :   Veeam Backup and Replication 12.1.2 (Veeam 12.1.2) is now available for deployment with the {{site.data.keyword.vm-shared}} offering.
@@ -326,7 +347,7 @@ vCenter Server and VMware vSphere BOM updates
    * VMware NSX 4.1.0.2 (build 21761695)
 
 Active Directory server OS upgrade
-:   To upgrade your Microsoft Active Directory™ server, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support#trbl_support-procedure). Before you proceed with a new server installation, ensure that you back up all domain controllers and vCenter Server instances.
+:   To upgrade your Microsoft Active Directory™ server, open an IBM Support ticket by following the steps in Getting help and support. Before you proceed with a new server installation, ensure that you back up all domain controllers and vCenter Server instances.
 
 Add-on services upgrades
 :   The following service versions are now available for deployment:
@@ -341,7 +362,7 @@ Ordering Veeam licenses
 :   You can order a maximum of 500 VMs under a single license key for Veeam®. If you need a single license key for more than 500 VMs, you must order a stand-alone license separately.
 
 REST API updates
-:   The following updates are available for the [VMware Solutions API](/apidocs/vmware-solutions):
+:   The following updates are available for the VMware Solutions API:
 
    * The `check_price` parameter is deprecated. Beginning with this release, the `verify_only` parameter performs a price check regardless of whether `check_price` is indicated.
    * The `disks` parameter used to order vSAN storage can now also be defined as an object (size and quantity), in addition to an array of disk types.
@@ -353,7 +374,7 @@ customerroot user - deprecated
 {: deprecated}
 
 New documentation
-:   A number of [tutorials](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-as-a-service-vdc) are now available from the user documentation. These solution tutorials provide step-by-step instructions about using VMware as a Service to implement common patterns based on best practices.
+:   A number of tutorials are now available from the user documentation. These solution tutorials provide step-by-step instructions about using VMware as a Service to implement common patterns based on best practices.
 
 ### 18 October 2023
 {: #vmwaresolutions-oct1823}
@@ -921,57 +942,3 @@ New architecture documentation
 
 User interface updates and enhancements
 :   Various error messages and tooltip enhancements are available to assist you in selecting the appropriate setting on the UI.
-
-## 2021
-{: #year-2021}
-
-### 13 December 2021
-{: #vmwaresolutions-dec1321}
-{: release-note}
-
-NSX-T Data Center SP license availability
-:   VMware NSX-T Data Center SP license editions are available for new instances for the following VMware Solutions offerings. Existing instances continue to use the previous NSX licenses for all new clusters and hosts.
-   * VMware Solutions Dedicated instances offer Data Center SP Base, Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus.
-   * Security and Compliance Readiness Bundle instances offer Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus.
-   * VMware Regulated Workloads offer Data Center SP Advanced or Data Center SP Enterprise Plus.
-
-:   NSX-T Data Center SP license restrictions
-   * License upgrade is not available for NSX-T Data Center SP license edition.
-   * Automated deployment of the VMware HCX service is not supported for VMware vCenter Server instances with the NSX-T Data Center SP Enterprise Plus license edition. However, you can manually deploy HCX outside of the VMware Solutions console.
-
-{{site.data.keyword.cloud_notm}} data center pod availability
-:   You can now select the data center pod for your resource deployment. By using this feature, you can deploy new resources to the same pod where you have existing resources.
-
-Support for Dual Intel Xeon Gold 6250 Cascade Lake servers
-:   Dual Intel® Xeon® Gold 6250 / 16 cores, 3.9 GHz bare metal servers are available for deployment for vCenter Server instances and VMware vSphere clusters with VMware vSphere 7, and for VMware Regulated Workloads and Security and Compliance Bundle instances.
-
-Multizone support for VMware Solutions Shared
-:   VMware Solutions Shared now offers multizone VMware virtual data centers. Multizone is offered for new on-demand and reserved virtual data centers and includes support for Dallas 10 and Dallas 12 {{site.data.keyword.cloud_notm}} data centers.
-
-Add-on services upgrades
-:   The following service versions are now available to install on deployed instances.
-   * Caveonix RiskForesight v3.1.0
-   * Entrust DataControl v5.4
-   * IBM Spectrum Protect Plus v10.1.8
-   * Red Hat OpenShift v4.7.34
-   * vRealize Operations v8.6
-
-About pages for add-on services
-:   You can now access overview information about a service from the first page of the VMware Solutions console. From each overview, you can install the service on a new or existing instance.
-
-New endpoints for KMIP for VMware
-:   Two new endpoints are now available in the Sao Paulo location for the KMIP for VMware service.
-
-Zerto support for NSX-T
-:   Zerto is now supported on vCenter Server instances with vSphere 7 and NSX-T 3.1. Zerto is still supported on vCenter Server instances with NSX-V.
-
-:   Zerto is not supported for instances that are upgraded from vSphere 6.7 to vSphere 7.
-
-New REST API support
-:   Added support for the following features:
-   * Zerto for vSphere 7 with NSX-T instances and for NSX-V instances
-   * Ordering new NSX-T instances with NSX-T Data Center SP licenses
-   * Selecting the data center pod location for resource deployment
-
-New release notes format
-:   The release notes have been consolidated to one location for you to review the latest and previous offering updates.

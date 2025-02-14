@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-01-29"
+lastupdated: "2025-02-12"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -27,7 +27,8 @@ For **Sapphire Rapids** servers, choose the following CPU model and a supported 
 
 | CPU model | Cores | GHz | Storage type | RAM options |
 |:--------- |:----- |:--- |:------------ |:----------- |
-| Dual Intel Xeon Platinum 8474C | 96 | 2.1/3.1 | Up to 14 drives | 256 GB, 512 GB, 1 TB, 2 TB |
+| Dual Intel Xeon Platinum 6416H | 36 | 2.2 | Up to 16 drives | 256 GB, 512 GB, 1 TB, 2 TB |
+| Dual Intel Xeon Platinum 8474C | 96 | 2.1/3.1 | Up to 16 drives | 256 GB, 512 GB, 1 TB, 2 TB |
 {: caption="Option for Sapphire Rapids bare metal servers" caption-side="bottom"}
 {: #simpletabtable-sapphire}
 
@@ -128,6 +129,7 @@ The uplink speed provides two options:
 | TOR05 | 01 |
 | WDC04 | 05 |
 | WDC06 | 01 |
+| WDC07 | 01 |
 {: caption="Available locations for 25 Gb uplink speed - NA East" caption-side="bottom"}
 {: tab-title="NA East"}
 {: tab-group="Data centers"}
@@ -326,10 +328,10 @@ The time to complete the upgrade is unknown. It is possible that it might take s
 
 CONTENT:
 
-vCenter Server 7 is selected by default.
+vCenter Server 8 is selected by default.
 {: #para-vcsversion80-vcsline1}
 
-For new instances, vCenter Server 8 is available to order. However, for existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts.
+For new instances, vCenter Server 7 is also available to order. However, for existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts.
 {: #para-vcsversion80-vcsline2}
 
 

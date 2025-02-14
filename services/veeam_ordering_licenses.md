@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-09-17"
+lastupdated: "2025-02-12"
 
 keywords: Veeam, Veeam standalone license, order Veeam standalone license
 
@@ -22,7 +22,7 @@ You can order a Veeam® stand-alone license without associating it to any {{site
 ## Considerations for installing and deleting Veeam licenses
 {: #managingveeam-install-delete-consid}
 
-The following information about licenses applies to both Veeam 12.2 and Veeam 9.5u4b.
+The following information about licenses applies to both Veeam 12.3 and Veeam 9.5u4b.
 
 For Veeam 10 and later versions, Veeam licenses are installed and deleted in a different way than previous Veeam versions.
 
@@ -33,7 +33,7 @@ When you uninstall Veeam, the stand-alone license instance is not deleted. To av
 Consider the following when you plan to upgrade your Veeam usage. You might be charged for licenses for Veeam 9.5, which is deprecated, and for the currently supported Veeam version. Therefore, order a new license for your Veeam installation toward the end of a month, so you aren’t charged for both licenses for most of the month.
 
 If you have an existing Veeam 9.5u4b installation that comes with a license and you want more coverage, you can keep your license that came with the installation and order a new license to upgrade usage. Later, if you delete Veeam 9.5u4b, you must delete separately any stand-alone licenses that you ordered. Otherwise, you continue to be charged for them.
-{: important}
+{: attention}
 
 ## Procedure to order Veeam stand-alone licenses
 {: #veeam_ordering_licenses_ordering-procedure}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-02-12"
 
 keywords: automated consolidated cluster, order consolidated cluster, order automated instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Consolidated cluster
 {: #vc_orderinginstance-consold-cluster}
 
-{{site.data.keyword.vcf-auto}} instances are deployed with a consolidated cluster for VMware vSphere® 7 in which all the VMware® management components and user workloads run.
+{{site.data.keyword.vcf-auto}} instances are deployed with a consolidated cluster for VMware vSphere® 8 in which all the VMware® management components and user workloads run.
 
 Optionally, you can order a separate workload cluster or a gateway cluster, or both. For more information, see [Additional clusters (optional)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addl-clusters).
 

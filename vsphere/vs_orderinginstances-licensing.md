@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-02-12"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -22,9 +22,7 @@ Select the VMware® components for your instance and specify the licensing optio
 ## VMware vSphere version
 {: #vs_orderinginstances-vsphere-version}
 
-
-
-Select the VMware vSphere® version for your instance. If you want to use vSphere 8, consider the following information:
+VMware vSphere® Enterprise Plus 8 is selected by default. When you use vSphere 8, consider the following information:
 * For new instances, you can use only VMware vCenter Server® 8.
 * vSAN storage is not supported with vSphere 8.
 * SAP-certified Cascade Lake servers are not supported with vSphere 8.

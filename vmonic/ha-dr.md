@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2020, 2024
+  years: 2020, 2025
 
-lastupdated: "2024-04-02"
+lastupdated: "2025-02-12"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,8 @@ keywords: HA for vmware solutions, DR for vmware solutions, high availability fo
 Learn about high availability and disaster recovery for {{site.data.keyword.cloud}} for VMware® Solutions.
 {: shortdesc}
 
-Review the following sections for more information:
+For more information, see:
+
 * [Disaster recovery](/docs/vmwaresolutions?topic=vmwaresolutions-understand-responsib#understand-responsib-disaster-recovery)
 * [Client responsibilities](/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info#vc_compl_info-client-responsibilities)
 * [High availability and disaster recovery for KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-hadr)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-29"
+lastupdated: "2025-02-12"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -28,7 +28,7 @@ Review the following table to understand the differences in feature support for 
 |:------- |:--------- |:-------- |
 | Powered by {{site.data.keyword.IBM}} advanced automation[^automation] | Yes | No. Self-built and configured. |
 | Storage options | * NFS or vSAN™ - available with automation \n * iSCSI - available with manual configuration | NFS, vSAN, or iSCSI - available with manual configuration |
-| Number of ESXi™ servers in the initial cluster | For vSAN: 4 servers[^esxivcsvss07] or 3 servers[^esxivcsvss08] \n \n For NFS: \n * At least 3 servers for consolidated clusters \n * At least 2 servers for other clusters | No limitation. One or more ESXi servers are allowed on the console. For example, you can deploy a 3-node vSAN cluster with FTT=1. |
+| Number of ESXi™ servers in the initial cluster | For vSAN: 4 servers[^esxivsanvcs07] or 3 servers[^esxivsanvcs08] \n \n For NFS: \n * At least 3 servers for consolidated clusters \n * At least 2 servers for other clusters | No limitation. One or more ESXi servers are allowed on the console. For example, you can deploy a 3-node vSAN cluster with FTT=1. |
 | Maximum number of ESXi servers | * 51 per consolidated cluster \n * 59 per workload cluster | 59 per cluster |
 | Cloud automated multisite deployment | Supported for new instances | Supported. Automated configuration - not included. |
 | Add or remove ESXi servers | Supported | Supported. Automated configuration - not included. |
@@ -41,13 +41,9 @@ Review the following table to understand the differences in feature support for 
 
 [^automation]: According to a validated design and with verification during deployment
 
-[^esxivcsvss07]: Applicable to vSphere 7
+[^esxivsanvcs07]: Except for vSAN ESA
 
-[^esxivcsvss08]: Applicable to vSphere 8
-
-
-
-
+[^esxivsanvcs08]: For vSAN ESA on vSphere 8
 
 [^services]: Add-on services that are supported might vary.
 
@@ -61,7 +57,7 @@ Review the following table to understand the differences in feature support for 
 | NFS | Optional | Not allowed |
 | Consolidated cluster | Optional | Optional |
 | Separate management cluster | Supported | Supported |
-| Minimum number of ESXi servers | * For vSAN, 4 servers[^esxivcsvrw07] or 3 servers[^esxivcsvrw08] \n * For NFS, 3 servers | 6 servers: \n * 4 for the consolidated cluster \n * 2 for the gateway cluster |
+| Minimum number of ESXi servers | * For vSAN, 4 servers[^esxivsanvrw07] or 3 servers[^esxivsanvrw08] \n * For NFS, 3 servers | 6 servers: \n * 4 for the consolidated cluster \n * 2 for the gateway cluster |
 | Gateway cluster | Optional | Required. Juniper vSRX, FortiGate Virtual Appliance, Bring your own gateway, or FortiGate Security Appliance. |
 | Logging and monitoring with VMware Aria® Operations™ and VMware Aria Operations™ for Logs | Optional | Required |
 | Compliance with Caveonix | Optional | Required |
@@ -76,13 +72,9 @@ Review the following table to understand the differences in feature support for 
 | VMware components licensing | Automated for some VMware products | Not automated |
 {: caption="Supported features for Automated instances and {{site.data.keyword.rw}}" caption-side="bottom"}
 
-[^esxivcsvrw07]: Applicable to vSphere 7
+[^esxivsanvrw07]: Except for vSAN ESA
 
-[^esxivcsvrw08]: Applicable to vSphere 8
-
-
-
-
+[^esxivsanvrw08]: For vSAN ESA on vSphere 8
 
 ## Related links
 {: #inst_comp_chart-related}

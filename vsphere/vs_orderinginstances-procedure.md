@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-02-14"
 
 keywords: flexible order instances, order flexible, order vmaware vSphere instance
 
@@ -32,7 +32,7 @@ subcollection: vmwaresolutions
 
    If you do select that you are providing your own license, an {{site.data.keyword.cloud_notm}} ticket is opened automatically. This ticket requests the default vSphere licenses on your ordered bare metal servers to be replaced with your provided licenses.
 
-   You are responsible to track the ticket so that you replace the vSphere license on the newly ordered VMware ESXi® servers. This way the {{site.data.keyword.cloud_notm}} infrastructure grants the cancellation of the initially provided {{site.data.keyword.cloud_notm}} infrastructure vSphere license charge. To replace your ESXi vSphere license, see [Configure license settings for an ESXi host](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-1B128360-0060-40F2-A6F0-43CD2534B034.html?hWord=N4IghgNiBcIMIHsB2AzAlgcwK4CcCmABBGgMZ5IDOhVALjWkhhQSgjgWEgQKIDKAGmgIALBBRogAvkA){: external}.
+   You are responsible to track the ticket so that you replace the vSphere license on the newly ordered VMware ESXi® servers. This way the {{site.data.keyword.cloud_notm}} infrastructure grants the cancellation of the initially provided {{site.data.keyword.cloud_notm}} infrastructure vSphere license charge. To replace your ESXi vSphere license, see [Configure license settings for an ESXi host](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-and-host-management-7-0/license-management-host-management/managing-licenses-host-management/configuring-license-settings-for-assets-in-the-vsphere-client-host-management/assign-a-license-to-a-host-host-management.html){: external}.
    {: important}
 
 1. Complete the bare metal server settings:

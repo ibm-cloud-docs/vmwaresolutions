@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-10"
+lastupdated: "2025-02-12"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -45,8 +45,7 @@ Before you install the HCX service, you must add a firewall rule to any existing
 5. Collapse the **Public VLAN** option and collapse the subnet with the description that corresponds to the portable subnet of the particular cluster.
 6. Use the IP address from the Service T0 uplink2 Virtual IP address to route the traffic in the firewall rule. The firewall rule is required to allow all outbound HTTPS traffic so that the HCX Manager virtual appliance (HCX Manager) can register itself.
 7. After the HCX Manager installation is completed, you can remove the firewall rule.
-
-In addition, you must configure firewall rules to allow HCX to function properly. For more information, see [Port access requirements for VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-port-req#hcx-archi-port-req).
+8. In addition, you must configure firewall rules to allow HCX to function properly. For more information, see [Port access requirements for VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-port-req#hcx-archi-port-req).
 
 ## Ordering HCX for a new instance
 {: #hcx_ordering-new}
@@ -66,7 +65,7 @@ In addition, you must configure firewall rules to allow HCX to function properly
 ## HCX configuration
 {: #hcx_ordering-config}
 
-To install HCX, complete the following settings:
+To install HCX, complete the following steps:
 
 1. Select the **HCX Service Mesh target cluster**, either the management or the workload cluster.
 2. Specify the **HCX network connection** by selecting one of the following options. If any of the management or service mesh target clusters are deployed with private network only, the only networking option that you can choose is private.
@@ -105,7 +104,7 @@ The deployment of HCX is automated. Whether you order a {{site.data.keyword.vcf-
    * One public portable subnet for HCX interconnects, if the **Public network** option is selected for **HCX connection type**. On NSX-V, this subnet is also used for activation and maintenance with VMware.
 
    The IP addresses in the subnets that are ordered for HCX are intended to be managed by the VMware Solutions automation. These IP addresses cannot be assigned to VMware resources (such as VMs and NSX Edges) that are created by you. If you need more IP addresses for your VMware artifacts, you must order your own subnets from {{site.data.keyword.cloud_notm}}.
-   {: important}
+   {: restriction}
 
 2. If **Private Network** was selected for **HCX Network Connection**, a port group that is named **SDDC-DPortGroup-HCX-Private** is created on the private Distributed Virtual Switch (DVS).
 3. An HCX activation key is ordered from VMware.
@@ -118,7 +117,7 @@ The deployment of HCX is automated. Whether you order a {{site.data.keyword.vcf-
    * An SSL certificate to encrypt the HCX-related inbound HTTPS traffic that is coming through the ESGs is applied.
 
    The HCX management edge is dedicated to the HCX management traffic between the on-premises HCX components and the cloud-side HCX components. Do not modify the HCX management edge or use it for HCX network extensions. Instead, create separate edges for network extensions. In addition, if you use a firewall or you disable the HCX management edge communications to the private IBM management components or the internet, the HCX functions might be impacted.
-   {: important}
+   {: attention}
 
 6. The HCX Manager is deployed, activated, and configured:
    * The HCX Manager is registered with the VCSA.

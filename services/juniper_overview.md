@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-02-12"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX virtual security appliance, Juniper virtual security appliance, Juniper vSRX console
 
@@ -97,7 +97,7 @@ For more information about the features and options in each license, see [Choosi
 Two licenses of the selected type are ordered, one for each of the appliance nodes.
 
 You cannot change the licensing level after service installation. To change the licensing level, you must delete the existing service and reinstall the service by using a different licensing option.
-{: important}
+{: attention}
 
 If you need to extend your license after expiration, you can update your vSRX license key. For more information, see the [Juniper vSRX documentation](https://www.juniper.net/documentation/product/us/en/vsrx/){: external}.
 

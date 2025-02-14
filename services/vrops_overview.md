@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-02-12"
 
 keywords: VMware Aria, VMware Aria info, tech specs VMware Aria, vRealize info
 
@@ -25,7 +25,7 @@ These tools are deployed by using the IBM advanced automation and are based on a
 
 {{site.data.content.para-promotion-services}}
 
-The service versions available for deployment are VMware Aria Operations 8.17.1 and VMware Aria Operations for Logs 8.17.
+The service versions available for deployment are VMware Aria Operations and VMware Aria Operations for Logs 8.18.
 {: note}
 
 ## Technical specifications for VMware Aria Operations and VMware Aria Operations for Logs

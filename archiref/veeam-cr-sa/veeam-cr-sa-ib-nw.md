@@ -111,8 +111,8 @@ The distributed firewall policy configuration in a policy named `Cyber-Isolated`
 ## Related links
 {: #veeam-cr-sa-ib-nw-related}
 
-* [Tier-1 logical router](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-DAEF8457-8363-4F33-84DA-68AA36A2DE3C.html){: external}
-* [Network Address Translation (NAT)](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-7AD2C384-4303-4D6C-A44A-DEF45AA18A92.html){: external}
-* [Distributed firewall](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-6AB240DB-949C-4E95-A9A7-4AC6EF5E3036.html){: external}
-* [Tags](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-358DF469-75C8-48C4-B0E2-279E55C7BB3E.html){: external}
-* [Segments](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-316E5027-E588-455C-88AD-A7DA930A4F0B.html){: external}
+* [Tier-1 logical router](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/manager-mode/advanced-routing/tier-1-logical-router.html){: external}
+* [Network Address Translation (NAT)](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/network-address-translation.html){: external}
+* [Distributed firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/distributed-firewall.html){: external}
+* [Tags](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/inventory/nsx-tags.html){: external}
+* [Segments](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/segments.html){: external}

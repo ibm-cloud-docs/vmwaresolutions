@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-03"
+lastupdated: "2025-02-14"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -136,7 +136,7 @@ The hostname suffix is the bare metal server name suffix. The hostname suffix ca
 ### Application Virtual Network (AVN)
 {: #vpc-vcf-ordering-mgmt-avn}
 
-An Application Virtual Network (AVN) is a software-defined networking concept based on NSX-T Data Center that allows the hosting of management applications on NSX segments. It must be deployed before you can deploy Aria Suite components or implement the Identity and Access Management for {{site.data.keyword.vcf-vpc-short}} validated solution. For more information, see [Deploying Application Virtual Networks in {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-59E5BEE3-B157-426D-A40C-F21171586863.html){: external}.
+An Application Virtual Network (AVN) is a software-defined networking concept based on NSX-T Data Center that allows the hosting of management applications on NSX segments. It must be deployed before you can deploy Aria Suite components or implement the Identity and Access Management for {{site.data.keyword.vcf-vpc-short}} validated solution. For more information, see [Deploying Application Virtual Networks in {{site.data.keyword.vcf-vpc-short}}](https://techdocs.broadcom.com/us/en/vmware-cis/aria/aria-automation/all/deploying-application-virtual-networks-for-vrealize-suite-components.html){: external}.
 
 #### VCF AVN local region network
 {: #vpc-vcf-ordering-mgmt-avn-local}
@@ -171,17 +171,17 @@ Review the VCF appliance sizing settings.
 ##### Management vCenter VM size
 {: #vpc-vcf-ordering-mgmt-vcf-vc-vm}
 
-The size of the vCenter Server appliance deployed in the management domain, which determines the number of CPUs and the amount of memory of the appliance. By default, the vCenter Server appliance in the management domain is deployed in small size. For more information, see [Deployment model for vCenter Server for the management domain](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-management-domain-design/GUID-D635D474-D4E9-4743-A83B-84957C9B3FF0.html){: external}.
+The size of the vCenter Server appliance deployed in the management domain, which determines the number of CPUs and the amount of memory of the appliance. By default, the vCenter Server appliance in the management domain is deployed in small size. For more information, see [Deployment model for vCenter Server for the management domain](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/vcf-design-management-domain-4-5/vcf-vcenter-server-design/vcf-deployment-specification-of-vcenter-server-for-the-management-domain/vcf-deployment-model-for-vcenter-server-for-the-management-domain.html){: external}.
 
 ##### Management vCenter storage size
 {: #vpc-vcf-ordering-mgmt-vcf-vc-storage}
 
-When you deploy the vCenter Server appliance, you must determine the required storage according to the size of the environment, the storage size, and the disk provisioning mode. For more information, see [Deployment model for vCenter Server for the management domain](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-management-domain-design/GUID-D635D474-D4E9-4743-A83B-84957C9B3FF0.html){: external}.
+When you deploy the vCenter Server appliance, you must determine the required storage according to the size of the environment, the storage size, and the disk provisioning mode. For more information, see [Deployment model for vCenter Server for the management domain](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/vcf-design-management-domain-4-5/vcf-vcenter-server-design/vcf-deployment-specification-of-vcenter-server-for-the-management-domain/vcf-deployment-model-for-vcenter-server-for-the-management-domain.html){: external}.
 
 ##### Management NSX-T size
 {: #vpc-vcf-ordering-mgmt-vcf-nsxt-vm}
 
-A highly available NSX Global Manager instance is deployed in the {{site.data.keyword.vcf-vpc-short}} location instance. You also select an NSX Global Manager appliance size according to the number of anticipated objects that are required to run the management components of the private cloud. For more information, see [Deployment model for NSX Global Manager for the management domain](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-management-domain-design/GUID-3345887C-649D-4269-8DDA-9BD6F12505EE.html){: external}.
+A highly available NSX Global Manager instance is deployed in the {{site.data.keyword.vcf-vpc-short}} location instance. You also select an NSX Global Manager appliance size according to the number of anticipated objects that are required to run the management components of the private cloud. For more information, see [Deployment model for NSX Global Manager for the management domain](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/vcf-design-management-domain-4-5/nsx-t-design-for-the-management-domain/nsx-t-global-manager-deployment-specification-and-network-design-for-the-management-domain/deployment-model-for-nsx-t-global-manager-for-the-management-domain.html){: external}.
 
 #### VCF deployment
 {: #vpc-vcf-ordering-mgmt-vcf-deployment}
@@ -201,7 +201,7 @@ To enable the virtual server for backing up SDDC Manager, vCenter Server, and NS
 ##### SSH keys
 {: #vpc-vcf-ordering-mgmt-ssh-keys}
 
-You can choose existing SSH keys from the list or create a new one by clicking the **Create SSH key** button. After creating it, refresh the list to see the new SSH key. For more information about VCF backup, see [Backup and restore of VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/5.1/vcf-admin/GUID-F8634D37-FA26-40DF-A135-62D0265DA4FA.html){: external}.
+You can choose existing SSH keys from the list or create a new one by clicking the **Create SSH key** button. After creating it, refresh the list to see the new SSH key. For more information about VCF backup, see [Backup and restore of VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/administering/backup-and-restore-of-cloud-foundation-admin.html){: external}.
 
 ## Network interface
 {: #vpc-vcf-ordering-network}

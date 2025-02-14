@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-02-04"
+lastupdated: "2025-02-12"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 The Caveonix Security Baselines for VMware profile is now available in the Security and Compliance Center. The Caveonix Security Baselines for VMware is a collection of controls that are designed to validate the compliance of VMware® infrastructure components that run on {{site.data.keyword.cloud_notm}}. For more information, see [Change log: Caveonix Security Baselines for VMware](/docs/security-compliance?topic=security-compliance-caveonix-vmware).
 
-The integration is only available with the Caveonix Cloud 5.0 version. If you do not have a correct version, open an {{site.data.keyword.cloud_notm}} Support ticket to {{site.data.keyword.vmwaresolutions_full}} to get the upgrade package and instructions.
+The integration is available only with Caveonix Cloud 5.0 and later versions. If you do not have a correct version, open an {{site.data.keyword.cloud_notm}} Support ticket to {{site.data.keyword.vmwaresolutions_full}} to get the upgrade package and instructions.
 {: restriction}
 
 ## Integration overview

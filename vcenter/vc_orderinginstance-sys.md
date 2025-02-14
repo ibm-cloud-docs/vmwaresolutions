@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-21"
+lastupdated: "2025-02-12"
 
 keywords: vcf classic order instance, order vcf automated, order vmware cloud foundation instance
 
@@ -22,11 +22,14 @@ Specify or accept the following settings when you order a {{site.data.keyword.vc
 ## VMware vSphere version
 {: #vc_orderinginstance-vsphere-license}
 
-VMware vSphere® Enterprise Plus 7 is ordered by default.
+VMware vSphere® Enterprise Plus 8 is selected by default. However, vSphere 8 instances do not support configuration as secondary instances.
 
-For new instances, vSphere 8 is available to order. However, vSphere 8 instances do not support configuration as secondary instances.
+For new instances, vSphere 7 is also available to order.
 
+### Requirements for upgrading to vSphere 8
+{: #vc_orderinginstance-vsphere-v7-8-upgrade}
 
+For instances with vSphere 7, you must add a new cluster or host to your existing instance when you upgrade to vSphere 8. For more information about upgrading and migrating from vSphere 7 to vSphere 8, see [Procedure to migrate from vSphere 7.0 to vSphere 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade#vc_vcs_80_migrate-procedure-vsphere).
 
 ### Requirements for upgrading to vSphere 7
 {: #vc_orderinginstance-vsphere-v6-7-upgrade}

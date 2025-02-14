@@ -390,12 +390,15 @@ toc:
           label: Enhancing security
           topics:
           - topicgroup:
-              label: VCF as a Service
+              label: For VCF as a Service
               topics:
               - include: ../vmware-service/common/architecture-workload-isolation.md
               - include: ../vmware-service/common/vmaas-data-security.md
-          - vmonic/data-security.md
-          - vmonic/ha-dr.md
+          - topicgroup:
+              label: For VMware Solutions
+              topics:
+              - vmonic/data-security.md
+              - vmonic/ha-dr.md
           - topicgroup:
               label: Auditing
               topics:
@@ -523,6 +526,10 @@ toc:
           topics:
           - include: ../vmware-service/common/vmaas-understand-responsib.md
           - vmonic/understand-responsib.md
+          - link:
+              label: Understanding data portability for VCF as a Service
+              href: https://{DomainName}/docs/vmware-service?topic=vmware-service-data-portability
+          - vmonic/data-portability.md
       - topicgroup:
           label: VMware NSX-V to NSX-T migration
           topics:

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-02-12"
 
 keywords: vcf automated, vcf classic architecture, tech specs vmware cloud foundation
 
@@ -82,7 +82,7 @@ If you plan to use vSAN storage, the configuration requires a minimum of four ba
 {: note}
 
 The following configurations are available:
-* **Sapphire Rapids** - Intel® Sapphire Rapids generation servers (Dual Intel Xeon® 8400 series) with your selected RAM size.
+* **Sapphire Rapids** - Intel® Sapphire Rapids generation servers (Dual Intel Xeon® 6400/8400 series) with your selected RAM size.
 * **Cascade Lake** - Intel Cascade Lake generation servers (Dual Intel Xeon 4200/5200/6200/8200 series or Quad Intel Xeon 6200/8200 series) with your selected RAM size.
 * **SAP-certified Cascade Lake** - Intel Cascade Lake generation servers (Dual Intel Xeon 5200/6200/8200 series or Quad Intel Xeon 8200 series) with a preset RAM size.
 
