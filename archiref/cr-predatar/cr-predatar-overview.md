@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-12-16"
+lastupdated: "2025-02-17"
 
 subcollection: vmwaresolutions
 
@@ -61,7 +61,7 @@ The following diagram shows more details of the vCenter Server instance architec
 
 Primary or secondary data center:
 
-* Source VMs – The client VMs that need to be protected by the Predatar service. The VMs require VMware Tools thin agents that are part of VMware Endpoint Protection, also known as Guest Introspection, which are installed on them so that when they are recovered into the CleanRoom they can be scanned. For more information, see [Endpoint Protection](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-CDFE1F13-7D9A-4C3E-B567-C4A34A98AD8C.html){: external}.
+* Source VMs – The client VMs that need to be protected by the Predatar service. The VMs require VMware Tools thin agents that are part of VMware Endpoint Protection, also known as Guest Introspection, which are installed on them so that when they are recovered into the CleanRoom they can be scanned. For more information, see [Endpoint Protection](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/endpoint-protection.html){: external}.
 * Thin agent – The Thin agent, also known as File Introspection driver, is the file introspection agent that is running inside the VM, which is part of VMware Tools. It is a generic and lightweight agent that facilitates offloading files and processes for scanning.
 * Source backup servers – These servers are part of the client’s IBM Spectrum Protect with IBM Spectrum Protect for Virtual Environments or IBM Spectrum Protect Plus environment and are configured to replicate backups to the tertiary backup server.
 * Predatar Virtual Appliance – Consists of:
@@ -149,7 +149,7 @@ To order {{site.data.keyword.cloud_notm}} Classic Bare Metal servers, see [Build
 * [Architecture pattern for using IPsec over Direct Link with a vCenter Server with NSX-T instance](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-nsx-t-direct-link-ipsec)
 * [Architecture pattern for using Direct Link with NSX-T edge cluster in colocation](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-direct-link-edge)
 * [Architecture pattern for using Direct Link with NSX-T and EVPN](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-direct-link-evpn)
-* [Virtual Private Network (VPN)](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}
+* [Virtual Private Network (VPN)](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/virtual-private-network-vpn.html){: external}
 * [Adding a cross-account connection](/docs/transit-gateway?topic=transit-gateway-adding-cross-account-connections&interface=ui)
 * [Predatar](https://predatar.com/){: external}
 * [Predatar cyber orchestration](https://predatar.com/){: external}

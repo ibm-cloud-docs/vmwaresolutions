@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 The NSX distributed logical router is used to support the {{site.data.keyword.redhat_openshift_full}} 4.7 environment. To use this information, you must understand how to create these components and add the configuration.
 
-Review [Add a Distributed Logical Router](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-A20103B0-ABA1-4884-8EC3-287874E23181.html){: external}. PowerNSX commands are provided if you would want to use this method.
+Review [Add a Distributed Logical Router](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/manager-mode/advanced-routing.html){: external}. PowerNSX commands are provided if you would want to use this method.
 
 ## NSX DLR
 {: #openshift-runbook-runbook-nsxdlr-config}

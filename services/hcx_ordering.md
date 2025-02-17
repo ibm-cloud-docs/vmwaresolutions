@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-02-17"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -89,7 +89,7 @@ To install HCX, complete the following steps:
    * **Private key** - Enter the private key of the CA certificate.
    * **Password** (Optional) - Enter the password for the private key, if it is encrypted.
    * **Reenter password** (Optional) - Enter the password for the private key again.
-   * **Hostname** (Optional) - The hostname to be mapped to the common name (CN) of the CA certificate. HCX requires that the format of the CA certificate must be accepted by NSX Edge. For more information about NSX Edge certificate formats, see [Import an SSL certificate](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-0467DB43-C95F-45EB-98C4-D9B132488A9B.html){: external}.
+   * **Hostname** (Optional) - The hostname to be mapped to the common name (CN) of the CA certificate. HCX requires that the format of the CA certificate must be accepted by NSX Edge. For more information about NSX Edge certificate formats, see [Import an SSL certificate](https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/capacity-management/2-9-4/administrating/capacity-command-center-administration/using-data-adapters-to-collect-data-from-monitoring-tools/import-an-ssl-certificate.html){: external}.
 
 ## Deployment process for HCX
 {: #hcx_ordering-deploy}

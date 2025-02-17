@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-02-17"
 
 subcollection: vmwaresolutions
 
@@ -61,5 +61,5 @@ When you design or deploy this architecture pattern, consider the following step
 
 * [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [Getting started with {{site.data.keyword.cloud_notm}} Gateway Appliance](/docs/gateway-appliance?topic=gateway-appliance-getting-started)
-* [Create an NSX Edge Transport Node](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/installation/GUID-53295329-F02F-44D7-A6E0-2E3A9FAE6CF9.html){: external}
-* [Edge Bridging: Extending Overlay Segments to VLAN](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-B4ABDE64-52BC-40F0-A560-670D3B7EAF7A.html){: external}
+* [Create an NSX Edge Transport Node](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-1/installation-guide/installing-nsx-edge/create-an-edge-transport-node.html){: external}
+* [Edge Bridging: Extending Overlay Segments to VLAN](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-1/administration-guide/segments/edge-bridging-extending-overlay-segments-to-vlan.html){: external}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-12-16"
+lastupdated: "2025-02-17"
 
 subcollection: vmwaresolutions
 
@@ -74,7 +74,7 @@ After your {{site.data.keyword.vcf-auto-short}} instance is provisioned:
    * [Ports for services](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-services)
 
 2. To understand how to use Ansible on your management VM to open and close firewall ports, see [Creating the airgap by using Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-vsrx).
-3. Deploy your jump hosts. For more information, see [Deploying virtual machines](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-39D19B2B-A11C-42AE-AC80-DDA8682AB42C.html){: external}.
+3. Deploy your jump hosts. For more information, see [Deploying virtual machines](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration-guide-7-0/deploying-virtual-machinesvm-admin.html){: external}.
 4. Deploy your custom data mover and immutable repository by following the vendor’s instructions.
 5. Deploy your cybertoolset by following the vendor’s instructions.
 6. To understand how to use the scripting capabilities of your Bring Your Own data mover and immutable repository solution to be more automated, see [Instant restore](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-instantrestore) and [Creating a Veeam Linux managed server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-lnxmgdsvr).
@@ -85,7 +85,7 @@ Review the following information about network connectivity for your cyber-recov
 * [Architecture pattern for using IPsec over Direct Link with a {{site.data.keyword.vcf-auto-short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-nsx-t-direct-link-ipsec)
 * [Architecture pattern for using Direct Link with NSX-T edge cluster in colocation](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-direct-link-edge)
 * [Architecture pattern for using Direct Link with NSX-T and EVPN](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-direct-link-evpn)
-* [Virtual Private Network (VPN)](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}
+* [Virtual Private Network (VPN)](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/virtual-private-network-vpn.html){: external}
 * [Adding a cross-account connection](/docs/transit-gateway?topic=transit-gateway-adding-cross-account-connections&interface=ui)
 
 ## Related links
