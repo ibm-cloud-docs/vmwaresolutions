@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-02-17"
 
 subcollection: vmwaresolutions
 
@@ -65,7 +65,7 @@ NSX Data Center has the following built-in roles. You cannot add any new roles.
 | IBM automation | `automation_admin` | Automation account used by IBM. It uses the principle identity functions to create configuration and protect it with a certificate. |
 {: caption="NSX user IDs" caption-side="bottom"}
 
-For more information, see the [VMware documentation - RBAC for NSX](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/2.5/VMware-NSX-T-Data-Center-25.zip){: external}.
+For more information, see the [Role-Based Access Control for NSX](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/authentication-and-authorization/role-based-access-control.html){: external}.
 
 ## Related links
 {: #vrw-iam-nsxt-related}

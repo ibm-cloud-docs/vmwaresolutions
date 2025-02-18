@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-02-17"
 
 subcollection: vmwaresolutions
 
@@ -55,4 +55,4 @@ When you design or deploy this architecture pattern, consider the following step
 
 * [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [Getting started with {{site.data.keyword.dl_full_notm}} (2.0)](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
-* [Configuring EVPN](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-D8186088-6C8F-4553-B859-B9499D9FB559.html){: external}
+* [Configuring EVPN](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-1/administration-guide/tier-0-gateways/configuring-evpn.html){: external}

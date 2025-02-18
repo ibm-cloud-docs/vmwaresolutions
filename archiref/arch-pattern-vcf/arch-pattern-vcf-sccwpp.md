@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024
+  years:  2024, 2025
 
-lastupdated: "2024-10-14"
+lastupdated: "2025-02-17"
 
 subcollection: vmwaresolutions
 
@@ -54,7 +54,7 @@ This architecture pattern is summarized as follows:
    * Agent - Runtime threat detection is provided by the agent, which processes syscall events and metrics, creates capture files, and performs auditing and compliance tasks. For more information about deploying the agent, see [Sysdig Agent](https://docs.sysdig.com/en/docs/installation/sysdig-secure/install-agent-components/hosts/packages/sysdig-agent/){: external}.
    * Vulnerability Host Scanner - The host scanner is used to scan for vulnerabilities on the Linux VM. For more information about deploying the host scanner, see [Vulnerability Host Scanner](https://docs.sysdig.com/en/docs/sysdig-secure/install-agent-components/install-agent-components/hosts/packages/vulnerability-host-scanner/){: external}.
 2. Your DNS servers need to be able to resolve the Security and Compliance Center Workload Protection endpoint URLs. Configure your DNS servers to use {{site.data.keyword.cloud_notm}} DNS resolvers, if needed.
-3. Firewall rules enable the downloading of the agents from the Internet and HTTPS connectivity to the Security and Compliance Center Workload Protection private endpoints. For more information about configuring firewall rules, see [Add a Gateway Firewall Policy and Rule](https://docs.vmware.com/en/VMware-NSX/4.1/administration/GUID-DE6FE8CB-017E-41C8-85FC-D71CF27F85C2.html){: external}.
+3. Firewall rules enable the downloading of the agents from the Internet and HTTPS connectivity to the Security and Compliance Center Workload Protection private endpoints. For more information about configuring firewall rules, see [Add a Gateway Firewall Policy and Rule](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-1/administration-guide/security/gateway-firewall/add-a-gateway-firewall-policy-and-rule.html){: external}.
 4. The routing between your VMs and the services that are attached to VPC. For more information, see [Private traffic between Tier-0 and VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-vpc-routing#vpc-vcf-nsx-t-vpc-routing-edge-tier-0-routing-private).
 5. The {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection instance. For more information, see:
    * [Provisioning an instance](/docs/workload-protection?topic=workload-protection-provision)
@@ -72,7 +72,7 @@ When you design or deploy this architecture pattern, consider the following info
 
 * For Linux VMs, the agents log file is `/opt/draios/logs/draios.log`.
 * This pattern describes firewall policies and SNAT configured on the T0. Use of the T1 is also possible.
-* This pattern does not use the distributed firewall. For more information about configuring the distributed firewall, see [FQDN Filtering](https://docs.vmware.com/en/VMware-NSX/4.1/administration/GUID-63262728-CA72-47D2-8E4F-16617B63A9A4.html){: external}.
+* This pattern does not use the distributed firewall. For more information about configuring the distributed firewall, see [FQDN Filtering](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-1/administration-guide/security/distributed-firewall/fqdn-filtering.html){: external}.
 
 ## Related links
 {: #arch-pattern-vcf-sccwpp-links}

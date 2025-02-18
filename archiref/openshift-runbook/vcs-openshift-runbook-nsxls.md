@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-06-12"
+lastupdated: "2025-02-17"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 Review the NSX logical switches that are used to support the {{site.data.keyword.redhat_openshift_full}} 4.7 environment. To use this information, you must understand how to create these components and add the configuration.
 
-Review [Add a logical switch](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-295720D5-DD75-4523-9095-1D694D99717A.html){: external}. PowerNSX commands are provided if you would want to use this method.
+Review [Create a Logical Switch in Manager Mode](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/manager-mode/logical-switches-and-configuring-vm-attachment/create-a-logical-switch.html){: external}. PowerNSX commands are provided if you would want to use this method.
 
 ## NSX Logical Switches
 {: #openshift-runbook-runbook-nsxls-config}

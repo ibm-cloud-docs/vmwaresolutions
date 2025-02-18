@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-02-17"
 
 subcollection: vmwaresolutions
 
@@ -160,7 +160,7 @@ Cross-vCenter NSX includes the following features:
 
 When cross-vCenter NSX is combined with ELM, you can view and manage any of the NSX managers and all of the universal NSX components from any of the linked vCenter Servers. ELM is not a prerequisite or requirement for cross-vCenter NSX. Without ELM, you can still create cross-vCenter universal transport zones, universal switches, universal routers, and universal firewall rules. However, without ELM in place, you must log in to the individual vCenter Servers to access each NSX Manager instance.
 
-Cross vCenter NSX is not automatically deployed. You must deploy it manually by following the tasks in [Configuring the primary NSX manager](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.cross-vcenter-install.doc/GUID-0B74FB40-1D90-4A6A-B7CE-B4EF3B923452.html){: external}.
+Cross vCenter NSX is not automatically deployed. You must deploy it manually by following the tasks in [Configuring NSX in Manager mode](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/manager-mode.html){: external}.
 
 ### Active Directory, SSO, and DNS in a multisite topology
 {: #adds-infra-domain-multisite-ad}

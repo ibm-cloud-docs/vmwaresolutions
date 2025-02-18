@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Red Hat OpenShift NSX Edge configuration
 {: #openshift-runbook-runbook-nsxedge-intro}
 
-Review the NSX components that are used to support the {{site.data.keyword.redhat_openshift_full}} 4.7 environment. To use this information, you must understand how to create these components and add the configuration. Review [Add an Edge Services Gateway](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.install.doc/GUID-B9A97F20-4996-4E16-822C-0B98DDE70571.html){: external}. PowerNSX commands are provided if you would want to use this method.
+Review the NSX components that are used to support the {{site.data.keyword.redhat_openshift_full}} 4.7 environment. To use this information, you must understand how to create these components and add the configuration. Review [Add a Tier-0 Gateway](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/tier-0-gateways/add-an-nsx-tier-0-gateway.html){: external}. PowerNSX commands are provided if you would want to use this method.
 
 ![{{site.data.keyword.redhat_openshift_notm}} 4.7 networking](../../images/openshift-networking41.svg "{{site.data.keyword.redhat_openshift_notm}} 4.7 networking"){: caption="OpenShift 4.7 networking" caption-side="bottom"}
 

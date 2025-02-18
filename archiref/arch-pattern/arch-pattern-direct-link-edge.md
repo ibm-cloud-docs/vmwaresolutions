@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-02-17"
 
 subcollection: vmwaresolutions
 
@@ -54,4 +54,4 @@ When you design or deploy this architecture pattern, consider the following step
 
 * [Getting started with {{site.data.keyword.dl_full_notm}} (2.0)](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
 * [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
-* [Installing NSX Edge](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/installation/GUID-5EF2998C-4867-4DA6-B1C6-8A6F8EBCC411.html){: external}
+* [Installing NSX Edge](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/installation-guide/installing-nsx-edge.html){: external}

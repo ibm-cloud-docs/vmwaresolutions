@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-02-17"
 
 subcollection: vmwaresolutions
 
@@ -91,7 +91,7 @@ IPsec Virtual Private Network (IPsec VPN) and Layer 2 VPN (L2 VPN) run on an NSX
 
 When you configure NSX VPN service in {{site.data.keyword.vpc_short}}, you can use the public `/32` floating IP addresses as the VPN Endpoints both Tier-0 and Tier-1 gateways. You can have multiple VPN endpoints, if needed. When a VPN service is configured on a Tier-1 gateway, ensure that the floating IP is correctly advertised between Tier-0 and Tier-1 gateways.
 
-For more information about the VPN service, see [VMware Documentation](https://docs.vmware.com/en/VMware-NSX/4.1/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}.
+For more information about the VPN service, see [VMware Documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-1/administration-guide/virtual-private-network-vpn.html){: external}.
 
 ### Network Address Translation
 {: #vpc-vcf-nsx-t-logical-routers-edge-gateway-nat}
@@ -107,7 +107,7 @@ You can also disable SNAT or DNAT for an IP address or a range of addresses. If 
 
 When you configure NSX NAT in {{site.data.keyword.vpc_short}}, you can use the public `/32` floating IP addresses as the public NAT IP addresses in both Tier-0 and Tier-1 gateways. You can have multiple NAT IP addresses, if needed. When NAT is configured on a Tier-1 gateway, ensure that the floating IP is correctly advertised between Tier-0 and Tier-1 gateways.
 
-For more information about NAT in NSX, see [VMware Documentation](https://docs.vmware.com/en/VMware-NSX/4.1/administration/GUID-7AD2C384-4303-4D6C-A44A-DEF45AA18A92.html){: external}.
+For more information about NAT in NSX, see [VMware Documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-1/administration-guide/manager-mode/advanced-nat/nat.html){: external}.
 
 ### Firewall
 {: #vpc-vcf-nsx-t-logical-routers-edge-gateway-fw}
@@ -118,7 +118,7 @@ A gateway firewall represents rules that are applied to the perimeter firewall f
 
 A distributed firewall monitors all the East-West traffic on your VMs. When you group objects, it simplifies the rule management. Groups include different objects that are added both statically and dynamically, and they can be used as the source and destination of a firewall rule. They can be configured to contain a combination of VMs, IP sets, MAC sets, segment ports, segments, AD user groups, and other groups. Dynamic inclusion of groups can be based on tag, machine name, OS name, or computer name.
 
-For more information about firewalls in NSX, see the [VMware documentation](https://docs.vmware.com/en/VMware-NSX/4.1/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html){: external}.
+For more information about firewalls in NSX, see the [VMware documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-1/administration-guide/security.html){: external}.
 
 ## Related links
 {: #vpc-vcf-nsx-t-logical-routers-links}
