@@ -19,6 +19,8 @@ subcollection: vmwaresolutions
 
 The information that you specify for a new {{site.data.keyword.vcf-flex}} instance is based on an instance configuration template.
 
+
+
 ## Instance configuration name
 {: #vs_orderinginstance-instance-config}
 
