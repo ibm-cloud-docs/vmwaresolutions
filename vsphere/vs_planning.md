@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-14"
+lastupdated: "2025-02-18"
 
 keywords: planning flexible, data center, vSphere data centers
 
@@ -53,7 +53,7 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | SYD01 | 01-02 | Cascade Lake, SAP-certified Cascade Lake |
 | SYD04 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
 | SYD05 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
-| TOK02 | 01-02 | Cascade Lake, SAP-certified Cascade Lake |
+| TOK02 | 01-02 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
 | TOK04 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
 | TOK05 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - Asia Pacific" caption-side="bottom"}
@@ -101,8 +101,8 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | Data center | Pod | Server options |
 |:----------- |:--- |:-------------- |
 | DAL09 | 01-02, 05-06 | Cascade Lake, SAP-certified Cascade Lake |
-| DAL10 | 01-04 | Cascade Lake, SAP-certified Cascade Lake |
-| DAL12 | 01-02 | Cascade Lake, SAP-certified Cascade Lake |
+| DAL10 | 01-04 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
+| DAL12 | 01-02 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
 | DAL13 | 01-03 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
 | DAL14 | 01 | Cascade Lake, Sapphire Rapids |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - NA South" caption-side="bottom"}

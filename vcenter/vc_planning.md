@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-14"
+lastupdated: "2025-02-18"
 
 keywords: planning vcf classic, data center, vcf automated data centers
 
@@ -48,7 +48,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | SYD01 | 01-02 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | SYD04 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
 | SYD05 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
-| TOK02 | 01-02 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
+| TOK02 | 01-02 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
 | TOK04 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
 | TOK05 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - Asia Pacific" caption-side="bottom"}
@@ -96,8 +96,8 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | Data center | Pod | Server options for NSX-T | Server options for NSX-V[^nsx-v-04] |
 |:----------- |:--- |:------------------------ |:----------------------------------- |
 | DAL09 | 01-02, 05-06 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
-| DAL10 | 01-04 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
-| DAL12 | 01-02 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
+| DAL10 | 01-04 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
+| DAL12 | 01-02 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
 | DAL13 | 01-03 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
 | DAL14 | 01 | Cascade Lake, Sapphire Rapids | Cascade Lake |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - NA South" caption-side="bottom"}

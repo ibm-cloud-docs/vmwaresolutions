@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-02-19"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ You can use the following assessment approach:
 3. At the end of the process, see which complexity column most of your parameter complexity classifications are aligned with:
    * If all are aligned with Low complexity, then the migration complexity is Low. In this case, go to step 5.
    * If most are aligned with Medium complexity but the minority is High, then the migration complexity at this stage is Medium. Go to step 4.
-4. For those parameters that are not aligned in one column completely, review them and consider the impact on the classification by using the guidance on key parameters in the following sections. For instance, a key parameter might tip the assessment into a High complexity.
+4. For those parameters that are not aligned in one column completely, review them and consider the impact on the classification by using the guidance on key parameters in the following sections. For example, a key parameter might tip the assessment into a High complexity.
 
 The assessment is complete.
 

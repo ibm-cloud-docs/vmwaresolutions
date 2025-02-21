@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-02-19"
 
 keywords: user account, ibm cloud account, ibm cloud infrastructure
 
@@ -43,7 +43,7 @@ The {{site.data.keyword.cloud_notm}} infrastructure account that you are using m
 
 | Permission | Details |
 |:---------- |:------- |
-| Add Server | This permission is required for the following operations: to order {{site.data.keyword.cloud_notm}} bare metal servers on which VMware ESXi™ runs and to provision hourly virtual servers that are used, for instance, configuration, maintenance, and support operations. |
+| Add Server | This permission is required for the following operations: to order {{site.data.keyword.cloud_notm}} bare metal servers on which VMware ESXi™ runs and to provision hourly virtual servers that are used, for instance configuration, maintenance, and support operations. |
 | Cancel Server | This permission is required to release and reclaim bare metal servers on which VMware ESXi runs. If you delete your instance, the ordered components are automatically released in the correct dependency sequence. |
 | View Virtual Server Details | This permission is required to retrieve the server provisioning details, which are required for order validation and automated configuration. |
 | Add Storage | This permission is required to order backup storage and shared storage for the instance. |
