@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-09"
+lastupdated: "2025-02-24"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -22,14 +22,14 @@ The information that you specify for a new {{site.data.keyword.vcf-flex}} instan
 
 
 ## Instance configuration name
-{: #vs_orderinginstance-instance-config}
+{: #vs_orderinginstance-instance-config1}
 
 {{site.data.content.paraone-orderinginstance-inst-config}}
 
 {{site.data.content.paratwo-orderinginstance-inst-config}}
 
 ## Instance name
-{: #vs_orderinginstances-instance-name}
+{: #vs_orderinginstances-instance-name1}
 
 The instance name is set to **vss-_xx_** by default, where _xx_ represents two randomly generated alphabetic characters.
 
@@ -41,7 +41,7 @@ You can also specify an instance name that meets the following requirements:
 * The instance name must be unique within your account.
 
 ## Resource group
-{: #vs_orderinginstance-resource-group}
+{: #vs_orderinginstance-resource-group1}
 
 {{site.data.content.para-orderinginstance-resource-group}}
 
