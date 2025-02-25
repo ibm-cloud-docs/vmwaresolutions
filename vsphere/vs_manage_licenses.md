@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 Managing licenses for Flexible instances is supported only for IBM-provided licenses. It does not apply to BYOL (Bring Your Own License).
 {: important}
 
-You can add licenses for various VMware components in your {{site.data.keyword.vcf-flex}} instance. 
+You can add licenses for various VMware components in your {{site.data.keyword.vcf-flex}} instance. For more information about these components, see [Licensing](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-licensing-settings).
 
 ## Before you manage licenses for Flexible instances
 {: #vs_manage_licenses-prereq}
