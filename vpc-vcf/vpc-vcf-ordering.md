@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-14"
+lastupdated: "2025-02-24"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -136,7 +136,7 @@ The hostname suffix is the bare metal server name suffix. The hostname suffix ca
 ### Application Virtual Network (AVN)
 {: #vpc-vcf-ordering-mgmt-avn}
 
-An Application Virtual Network (AVN) is a software-defined networking concept based on NSX-T Data Center that allows the hosting of management applications on NSX segments. It must be deployed before you can deploy Aria Suite components or implement the Identity and Access Management for {{site.data.keyword.vcf-vpc-short}} validated solution. For more information, see [Deploying Application Virtual Networks in {{site.data.keyword.vcf-vpc-short}}](https://techdocs.broadcom.com/us/en/vmware-cis/aria/aria-automation/all/deploying-application-virtual-networks-for-vrealize-suite-components.html){: external}.
+An Application Virtual Network (AVN) is a software-defined networking concept based on NSX-T Data Center that allows the hosting of management applications on NSX segments. It must be deployed before you can deploy Aria Suite components or implement the Identity and Access Management for {{site.data.keyword.vcf-vpc-short}} validated solution. For more information, see [Deploying Application Virtual Networks in {{site.data.keyword.vcf-vpc-short}}](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/vcf-on-vxrail-complete-4-5/deploying-application-virtual-networks-for-vrealize-suite-components-VxRail.html){: external}.
 
 #### VCF AVN local region network
 {: #vpc-vcf-ordering-mgmt-avn-local}

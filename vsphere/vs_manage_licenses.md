@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-04-24"
+lastupdated: "2025-02-25"
 
 keywords: flexible add license, add license flexible, flexible delete license, delete license flexible, flexible view license, view license flexible
 
