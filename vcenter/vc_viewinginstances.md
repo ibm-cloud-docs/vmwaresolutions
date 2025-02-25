@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-10-25"
+lastupdated: "2025-02-25"
 
 keywords: view vcf classic, view instance, view instance details, vmware cloud foundation view
 
@@ -153,6 +153,8 @@ On the **Access information** tab, view the access information for the instance-
 {: tab-group="access info"}
 {: class="simple-tab-table"}
 {: #simpletable-access-info-nsx-service-edge-vms}
+
+
 
 [^ips]: For NSX-T, two IP addresses for the two AD servers. For NSX-V, one IP address for one server.
 
