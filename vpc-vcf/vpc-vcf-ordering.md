@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-24"
+lastupdated: "2025-02-26"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -303,7 +303,6 @@ For {{site.data.keyword.vcf-vpc-short}} deployment, you can determine whether to
 {: #vpc-vcf-ordering-related}
 
 * [Getting started: {{site.data.keyword.bplong_notm}}](/docs/schematics?topic=schematics-getting-started)
-* [VPC network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
 * [Getting started with {{site.data.keyword.cloud_notm}} DNS Services](/docs/dns-svcs?topic=dns-svcs-getting-started&interface=ui)
 * [Managing logging instances in the Observability UI](/docs/log-analysis?topic=log-analysis-observe)
-* [{{site.data.keyword.vcf-vpc-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw)
+* [Why is my VCF for VPC order failing with a "no authorization header found" error?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_vcf_vpc_allowlist_ip)
