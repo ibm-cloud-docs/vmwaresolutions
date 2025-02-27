@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-26"
+lastupdated: "2025-02-27"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -305,4 +305,3 @@ For {{site.data.keyword.vcf-vpc-short}} deployment, you can determine whether to
 * [Getting started: {{site.data.keyword.bplong_notm}}](/docs/schematics?topic=schematics-getting-started)
 * [Getting started with {{site.data.keyword.cloud_notm}} DNS Services](/docs/dns-svcs?topic=dns-svcs-getting-started&interface=ui)
 * [Managing logging instances in the Observability UI](/docs/log-analysis?topic=log-analysis-observe)
-* [Why is my VCF for VPC order failing with a "no authorization header found" error?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_vcf_vpc_allowlist_ip)
