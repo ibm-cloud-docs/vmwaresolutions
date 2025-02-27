@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2025
 
-lastupdated: "2023-08-17"
+lastupdated: "2025-02-27"
 
 keywords: troubleshooting, vSphere timeout, timeout console
 
@@ -24,7 +24,7 @@ When you try to connect to the VMware vSphere® Web Client, you might get the fo
 
 > The server at *IP_address* is taking too long to respond.
 
-Use the following steps to investigate and fix the problem.
+To investigate and fix the problem, complete the following steps:
 {: tsResolve}
 
 1. Ensure that you completed the steps from the tooltip that gets displayed when you hover over the **vCenter console**. For
@@ -42,7 +42,7 @@ Use the following steps to investigate and fix the problem.
    1. Click **Account > VPN Access**.
    2. Click the **SSL link** in the **VPN Access** column.
    3. On the **VPN Access for username** page, set the **Subnet Access** option to **Manual**.
-   4. On the same page, locate the subnet for the IP address/host name pair. For more information, see **Step 2**.    
+   4. On the same page, locate the subnet for the IP address and hostname pair. For more information, see **Step 2**.    
 
       For example, if the IP address for your instance is `xx.yyy.zz.15` and the IP address for vCenter is `xx.yyy.zz.10`, you must grant access for the subnet `xx.yyy.zz.0/26`.
 
