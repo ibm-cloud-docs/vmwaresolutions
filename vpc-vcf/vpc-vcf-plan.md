@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-03"
+lastupdated: "2025-02-28"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -37,7 +37,6 @@ Ensure that the following requirements are met:
 * Your account meets the [required IAM permissions](/docs/vpc?topic=vpc-iam-getting-started&interface=ui) to interact with {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}) infrastructure objects.
 * Your account meets the [required IAM permissions](/docs/vpc?topic=vpc-planning-for-bare-metal-servers&interface=ui) for Bare Metal Servers on {{site.data.keyword.vpc_short}}.
 * Your account meets the [required IAM permissions](/docs/dns-svcs?topic=dns-svcs-iam) for {{site.data.keyword.cloud_notm}} DNS Services.
-* (Optional) Your account meets the [required IAM permissions](/docs/log-analysis?topic=log-analysis-work_iam) for {{site.data.keyword.la_full}} service.
 
 ## {{site.data.keyword.cloud_notm}} region and zone availability for {{site.data.keyword.vcf-vpc-short}} deployment
 {: #vpc-vcf-plan-region}
