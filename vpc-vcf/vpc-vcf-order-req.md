@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-04-15"
+lastupdated: "2025-03-04"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -23,6 +23,7 @@ With the bare metal server infrastructure provided in {{site.data.keyword.vpc_fu
 Ensure that you complete the following tasks:
 * Review the [{{site.data.keyword.cloud_notm}} account requirements](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-acc).
 * Review the [required permissions for managing {{site.data.keyword.cloud_notm}} resources](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-permission).
+* Review the [requirements for the list of allowed IP addresses](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_vcf_vpc_allowlist_ip).
 
 The installation of {{site.data.keyword.vcf-vpc-short}} on {{site.data.keyword.cloud_notm}} uses the Terraform IBM Provider to create the necessary infrastructure resources and services.
 
