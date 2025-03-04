@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-28"
+lastupdated: "2025-03-04"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -247,11 +247,6 @@ Determines whether a Windows VM is created in your {{site.data.keyword.vpc_short
 {: #vpc-vcf-ordering-adv-settings-iam}
 
 Determine whether to create an {{site.data.keyword.cloud_notm}} Access Group with an access policy for granting access to the resources deployed in your selected resource group. By default, it will not create the access group and access policy, but you can create them after the deployment. For more information about {{site.data.keyword.cloud_notm}} Access Group, see [Setting up access groups](/docs/account?topic=account-groups&interface=ui).
-
-### Observability
-{: #vpc-vcf-ordering-adv-settings-log}
-
-For {{site.data.keyword.vcf-vpc-short}} deployment, you can determine whether to use {{site.data.keyword.la_full}} with 7-day pricing plan for viewing the logs of {{site.data.keyword.vcf-vpc-short}} deployment. If you want to view logging of {{site.data.keyword.vcf-vpc-short}} deployment with your existing {{site.data.keyword.la_full_notm}} instance, you can configure the instance ingestion key, then the log is populated to your existing instance. By default, the {{site.data.keyword.la_short}} service is not ordered. For more information about {{site.data.keyword.la_short}} and its pricing plans, see [Getting started with {{site.data.keyword.la_short}}](/docs/log-analysis?topic=log-analysis-getting-started) and [Service plans](/docs/log-analysis?topic=log-analysis-service_plans).
 
 ## Procedure to order {{site.data.keyword.vcf-vpc-short}} instances on {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-ordering-procedure}

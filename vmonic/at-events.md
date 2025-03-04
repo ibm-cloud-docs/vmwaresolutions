@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-12-10"
+  years: 2024, 2025
+lastupdated: "2025-03-04"
 
 keywords: activity tracking, tracking locations, enable events, view events, analyze events
 
@@ -98,21 +98,6 @@ VMware Solutions sends activity tracking events to {{site.data.keyword.at_full_n
 {: class="simple-tab-table"}
 {: row-headers}
 
-## Viewing activity tracking events for VMware Solutions
-{: #at-viewing}
-
-{{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.vm-shared}} events are global events. The KMIP for VMware events are location-based events that are automatically forwarded to the {{site.data.keyword.at_short}} service instance that is available in the same location as the KMIP for VMware instance. For more information, see [Monitoring global and location-based events](/docs/activity-tracker?topic=activity-tracker-monitor_events#mon_def_event_type).
-
-### Launching {{site.data.keyword.logs_full_notm}} from the VMware Solutions console
-{: #at-launch-integrated}
-
-{{site.data.keyword.at_short}} can have only one instance per location. To view events, you must access the web UI of the {{site.data.keyword.at_short}} service in the same location where your service instance is available. For more information, see [Navigating to the UI](/docs/activity-tracker?topic=activity-tracker-launch#launch).
-
-### Launching {{site.data.keyword.logs_full_notm}} from the Observability page
-{: #at-launch-standalone}
-
-For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [Launching the UI through the {{site.data.keyword.cloud_notm}} UI](/docs/cloud-logs?topic=cloud-logs-instance-launch#instance-launch-cloud-ui).
-
 ## Events for {{site.data.keyword.vcf-classic-short}} instance management
 {: #at-events-instance-mgmt}
 
@@ -182,6 +167,4 @@ The following table lists the actions that generate and send an event to {{site.
 ## Related links
 {: #at-events-links}
 
-* [Provisioning an instance](/docs/activity-tracker?topic=activity-tracker-provision)
-* [Navigating to the UI](/docs/activity-tracker?topic=activity-tracker-launch#launch)
 * [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations)
