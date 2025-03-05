@@ -299,3 +299,4 @@ Determine whether to create an {{site.data.keyword.cloud_notm}} Access Group wit
 
 * [Getting started: {{site.data.keyword.bplong_notm}}](/docs/schematics?topic=schematics-getting-started)
 * [Getting started with {{site.data.keyword.cloud_notm}} DNS Services](/docs/dns-svcs?topic=dns-svcs-getting-started&interface=ui)
+* [Why is my {{site.data.keyword.vcf-vpc-short}} order failing with "The user has configured IP address restriction for login"?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_vcf_vpc_allowlist_ip)

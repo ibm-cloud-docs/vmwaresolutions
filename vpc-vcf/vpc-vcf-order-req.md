@@ -23,6 +23,7 @@ With the bare metal server infrastructure provided in {{site.data.keyword.vpc_fu
 Ensure that the following requirements are met:
 * [{{site.data.keyword.cloud_notm}} account requirements](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-acc)
 * [Required permissions for managing {{site.data.keyword.cloud_notm}} resources](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-permission)
+* [Requirements for the list of allowed IP addresses](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_vcf_vpc_allowlist_ip)
 
 The installation of {{site.data.keyword.vcf-vpc-short}} on {{site.data.keyword.cloud_notm}} uses the Terraform IBM Provider to create the necessary infrastructure resources and services.
 
