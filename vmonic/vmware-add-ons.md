@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024
+  years:  2024, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-03-06"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -22,16 +22,16 @@ You must order separately a number of VMware® add-ons for your VMware Cloud Fou
 ## VMware Avi Load Balancer add-on
 {: #vmware-add-ons-nsx-avi}
 
-Avi Load Balancer (formerly NSX Advanced Load Balancer) is available as a VMware add-on. The basic load-balancing function of VMware NSX® will be removed by Broadcom when new licenses are issued in the future.
+Avi Load Balancer (formerly NSX Advanced Load Balancer) is available as a VMware add-on.
 
 If you need load balancing for your environment, order the Avi Load Balancer from the {{site.data.keyword.cloud}} console.
 
 ## VMware NSX firewall add-ons
 {: #vmware-add-ons-nsx-firewall}
 
-VMware by Broadcom extracted the distributed and gateway firewalls from VMware NSX into the VMware Cloud Foundation bundle and made it a separate add-on, which is available for purchase in the {{site.data.keyword.cloud_notm}} console. You must purchase licenses for the number of cores that are required for your environment separately.
+The distributed and gateway firewalls are extracted from NSX into the VMware Cloud Foundation bundle and offered as a separate add-on, which is available for purchase in the {{site.data.keyword.cloud_notm}} console. You must purchase licenses for the number of cores that are required for your environment separately.
 
-Currently, the NSX firewall add-ons do not issue a license key. Later, VMware by Broadcom will disable the NSX firewall add-ons and require new license keys. The VMware Solutions team will work with you in the future to obtain the license keys.
+Although you must order NSX firewall add-ons to represent your firewall usage, you cannot enter firewall license keys into NSX Manager yet. In the future, VMware Solutions will make a new set of NSX license keys available. Then, you are expected to enter the new NSX license keys, along with the NSX firewall keys that you ordered into NSX Manager.
 
 The NSX firewall add-on is the same for both the distributed and the gateway firewall. You must order the appropriate number of firewall cores for your environment.
 
@@ -53,14 +53,16 @@ As many environments use multiple edges for redundancy, 2 large edges (8 vCPUs e
 
 VMware vSAN is included at a rate of 1 TiB per VMware Cloud Foundation core.
 
-To calculate the amount of vSAN storage for your entire environment, see [Counting Cores for VMware Cloud Foundation and vSphere Foundation and TiBs for vSAN](https://knowledge.broadcom.com/external/article?legacyId=95927){: external}.  If you need more than 1 TiB of vSAN, order the new vSAN add-on from the {{site.data.keyword.cloud_notm}} console.
+To calculate the amount of vSAN storage for your entire environment, see [Counting Cores for VMware Cloud Foundation and vSphere Foundation and TiBs for vSAN](https://knowledge.broadcom.com/external/article?legacyId=95927){: external}. If you need more than 1 TiB of vSAN, order the new vSAN add-on from the {{site.data.keyword.cloud_notm}} console.
 
 The vSAN add-on is priced at $21 per TiB of vSAN per month. Discounts are available depending on your contract commitment.
+
+The vSAN add-on does not produce license keys. It is used only to report your vSAN usage.
 
 ## Ordering the VMware add-ons
 {: #vmware-add-ons-order}
 
-You can order the VMware add-ons from the {{site.data.keyword.cloud_notm}} console. Later, this process will provide license keys that you can install on VMware NSX. Currently, these keys are not available or required.
+You can order the VMware add-ons from the {{site.data.keyword.cloud_notm}} console.
 
 1. Click **Infrastructure > Classic Infrastructure** from the left navigation menu.
 2. Click **Manage > VMware licenses**.
