@@ -657,7 +657,7 @@ VMware vSphere 7.0u2 - deprecated
 {: deprecated}
 
 Dark mode temporarily unavailable
-:   Starting with 14 November 2022, the UI **Dark** mode is temporarily unavailable. Until it becomes enabled again, use **Light** mode.
+:   Starting on 14 November 2022, the UI **Dark** mode is temporarily unavailable. Until it becomes enabled again, use **Light** mode.
 
 Hostname prefix updates
 :   You can now customize the hostnames prefix individually when you order VMware vCenter Server instances, order new VMware vSphere clusters, and add hosts and clusters to existing instances.

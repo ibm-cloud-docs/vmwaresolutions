@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2024
+  years:  2024, 2025
 
-lastupdated: "2025-02-28"
+lastupdated: "2025-03-07"
 
-keywords: vmware cloud foundation, configure firewall, firewall config, vcf for vpc
+keywords: configure vdefend gateway firewall, configure vdefend distributed firewall, vdefend firewall config, vcf for vpc, nsx firewall config
 
 subcollection: vmwaresolutions
 
@@ -15,16 +15,16 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Configuring the NSX firewalls for {{site.data.keyword.vcf-vpc-short}} instances
+# Configuring VMware vDefend Firewall for {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-firewall}
 
-Before you configure the VMware NSX® firewalls, review the information in [NSX firewall add-ons](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons#vmware-add-ons-nsx-firewall).
+Before you configure VMware vDefend™ Firewall (formerly VMware NSX Firewall), review the information in [VMware vDefend Firewall add-on](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons#vmware-add-ons-nsx-firewall).
 
 1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc-short}}** from the left navigation pane.
 2. In the instances table, click the instance to configure the firewalls for.
 3. On the **Access information** tab, under **Management domain**, use the NSX-T admin account for VMware NSX-T Data Center to log in to the VMware NSX-T console.
-   * To configure the gateway firewall, see [Gateway Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/gateway-firewall.html){: external}.
-   * To configure the distributed firewall, see [Distributed Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/distributed-firewall.html){: external}.
+   * To configure vDefend Gateway Firewall, see [Gateway Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/gateway-firewall.html){: external}.
+   * To configure the vDefend Distributed Firewall, see [Distributed Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/distributed-firewall.html){: external}.
 
 The {{site.data.keyword.cloud}} security groups for VPC (Virtual Private Cloud) also provide network security and act as a virtual firewall for your Virtual Server Instances and bare metal servers in the {{site.data.keyword.cloud_notm}} VPC environment by managing east-west and north-south network traffic.
 
@@ -33,4 +33,4 @@ The security groups for VPC provide a convenient way to define and apply rules t
 ## Related links
 {: #vpc-vcf-firewall-links}
 
-* [NSX firewall add-ons](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons&interface=ui#vmware-add-ons-nsx-firewall)
+* [VMware vDefend Firewall add-on](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons&interface=ui#vmware-add-ons-nsx-firewall)
