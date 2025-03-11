@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-11-04"
+lastupdated: "2025-03-11"
 
 keywords: FAQ, license, BYOL
 
@@ -22,7 +22,7 @@ subcollection: vmwaresolutions
 {: faq}
 {: support}
 
-BYOL (Bring Your Own License) was a feature available to {{site.data.keyword.vcf-classic}} instances in version 2.0 and later. Previously, {{site.data.keyword.cloud}} allowed clients to bring their own licenses (BYOL) when moving their existing on-premises VMware® workloads to {{site.data.keyword.cloud_notm}}.
+BYOL (Bring Your Own License) was a feature available to {{site.data.keyword.vcf-classic}} instances in version 2.0 and later. Previously, {{site.data.keyword.cloud}} allowed customers to bring their own licenses (BYOL) when moving their existing on-premises VMware® workloads to {{site.data.keyword.cloud_notm}}.
 
 BYOL is no longer allowed by VMware. You cannot bring your own licenses for any new hosts. This restriction applies to all VMware products that are available through {{site.data.keyword.cloud_notm}}.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-03-11"
 
 subcollection: vmwaresolutions
 
@@ -107,7 +107,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 
 | Title | Description |
 |-------|-------------|
-| Storage troubleshooting | For more information about slow performance, unpredictable failures, disk corruption, or VM corruption, see [Troubleshooting storage issues when using VMware products (2013160)](https://knowledge.broadcom.com/external/article?legacyId=2013160){: external}. |
+| Storage troubleshooting | Issues can be caused by slow performance, unpredictable failures, disk corruption, or VM corruption. |
 | vSAN troubleshooting | For more information, see [Failure handling in vSAN](https://techdocs.broadcom.com/us/en/vmware-cis/vsan/vsan/7-0/vsan-monitoring/handling-failures-and-troubleshooting-virtual-san/handling-failures-in-virtual-san/failure-handling-in-virtual-san.html){: external}.  |
 | vSAN Disk Failure | For more information about how to identify a specific disk failure in a vSAN deduplication cluster, see [Identifying specific disk failure in a vSAN deduplication cluster (2149067)](https://knowledge.broadcom.com/external/article?legacyId=2149067){: external}. |
 | Clear vSAN health issues | In the VMware vSphere Web Client Monitor page, you might see alerts and warnings that relate to vSAN Health issues. For more information about clearing these issues, see [Virtual SAN health alerts and warnings](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_vsan_alerts#trbl_vsan_alerts){: external}.|

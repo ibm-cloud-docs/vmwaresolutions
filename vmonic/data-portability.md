@@ -4,7 +4,7 @@ copyright:
 
   years: 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-03-11"
 
 subcollection: vmwaresolutions
 
@@ -59,4 +59,4 @@ For more information about data export procedures and exported data formats, see
 ## Data ownership
 {: #data-portability-ownership}
 
-All exported data is classified as customer content. Apply the full customer ownership and licensing rights, as stated in the [IBM Cloud Service Agreement](https://www.ibm.com/support/customer/csol/terms/?id=Z126-6304_WS){: external}.
+All exported data is classified as customer content. Apply the full customer ownership and licensing rights, as stated in the [{{site.data.keyword.cloud_notm}} Services Agreement](https://www.ibm.com/support/customer/csol/terms/?id=Z126-6304_WS){: external}.

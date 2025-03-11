@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-03-25"
+lastupdated: "2025-03-11"
 
 keywords: troubleshooting, configuration issue, ESXi server issue
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 {: troubleshoot}
 {: support}
 
-A configuration issue is displayed in the **Issues** tab of the **Monitor** tab of the VMware ESXi® server in the vSphere client.
+A configuration issue is displayed in the **Issues** tab of the **Monitor** tab of the VMware ESXi® server in the VMware vSphere® Web Client.
 {: tsSymptoms}
 
 The following message is displayed in the **Issues** tab for the ESXi server:
