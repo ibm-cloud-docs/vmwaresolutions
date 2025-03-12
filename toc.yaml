@@ -61,7 +61,7 @@ toc:
           - vmonic/signing_required_accounts.md
           - vmonic/loginmethod.md
           - vmonic/completing_checklist.md
-          - vmonic/vmware-add-ons.md
+          - uml/vmware-add-ons.md
           - vmonic/useraccount.md
           - vmonic/iam.md
           - vmonic/notifications.md
