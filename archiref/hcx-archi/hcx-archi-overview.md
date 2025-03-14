@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-03-12"
 
 subcollection: vmwaresolutions
 
@@ -116,8 +116,8 @@ The source can be placed within the {{site.data.keyword.cloud_notm}} environment
 {: #hcx-archi-overview-base-design}
 
 The base deployment must follow the minimum requirements:
-* The source environment must contain a vSphere implementation that is managed by a vCenter. Supported vCenter of 5.5U3 or vCenter 6.0U2 and higher, with ESXi 5.5 or higher is required for Hybrid Cloud Services.
-* If NSX is used, version 6.2.2 or higher. NSX is required for policy migration.
+* The source environment must contain a vSphere implementation that is managed by a vCenter Server. Hybrid Cloud Services requires a supported vCenter Server of 5.5U3 or 6.0U2 and later, with ESXi 5.5 or later.
+* If NSX is used, version 6.2.2 or later. NSX is required for policy migration.
 * If cross-cloud vMotion is intended, the same affinity restrictions apply across clouds as they do on-premises.
 * The source environment must have a method to connect to cloud environments, which includes public internet access or private connections by using {{site.data.keyword.cloud_notm}} Direct link.
 * The source environment VM’s and networks to be migrated or stretched must be on portgroups within a Virtual Distributed Switch.

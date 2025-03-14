@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-03-14"
 
 subcollection: vmwaresolutions
 
@@ -113,7 +113,7 @@ Create a local vCenter content library, see [Create a library](https://techdocs.
 ### Configuring the VM and installing CentOS and Squid
 {: #vum-init-config-config-proxy}
 
-1. Create a VM. For more information, see [Create a VM with the new virtual machine wizard](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-AE8AFBF1-75D1-4172-988C-378C35C9FAF2.html){: external}.
+1. Create a VM. For more information, see [Create a Virtual Machine with the New Virtual Machine Wizard](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/create-a-virtual-machine-without-a-template-or-clone-h5.html){: external}.
 2. Attach the ISO to the VM's CD/DVD drive by using the `Content Library ISO File` option. For more information, see [How do I Add or Modify a Virtual Machine CD or DVD Drive](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration-guide-7-0/configuring-virtual-machine-hardwarevm-admin/other-virtual-machine-device-configurationvm-admin/add-or-modify-a-virtual-machine-cd-or-dvd-drivevm-admin.html){: external}.
 3. Install Linux by following the instructions provided by the Linux distributor.
 4. Install Squid. The installation of Squid varies depending on the Linux distribution. Use the following code as an example only:

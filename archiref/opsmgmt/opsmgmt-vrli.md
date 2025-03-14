@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-12"
+lastupdated: "2025-03-14"
 
 subcollection: vmwaresolutions
 
@@ -146,5 +146,5 @@ The VMware Aria Operations for Logs content pack for NSX-T™ provides more dash
 ## Related links
 {: #opsmgmt-vrli-related}
 
-* [Sizing the VMware Aria Operations for Logs Virtual Appliance](https://docs.vmware.com/en/VMware-Aria-Operations-for-Logs/8.12/Getting-Started-Operations-for-Logs/GUID-284FC5F4-B832-47A7-912E-D407A760CAE4.html){: external}
-* [VMware Aria Operations for Logs Documentation](https://docs.vmware.com/en/VMware-Aria-Operations-for-Logs/index.html){: external}
+* [Sizing the VMware Aria Operations for Logs Virtual Appliance](https://techdocs.broadcom.com/us/en/vmware-cis/aria/aria-operations-for-logs/8-18/getting-started-with-aria-operations-for-logs-8-18/before-you-install-log-insight/sizing-the-vmware-aria-operations-for-logs-virtual-appliance.html){: external}
+* [VMware Aria Operations for Logs Documentation](https://techdocs.broadcom.com/us/en/vmware-cis/aria/aria-operations-for-logs/8-18.html){: external}

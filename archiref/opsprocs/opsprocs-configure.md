@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-14"
+lastupdated: "2025-03-14"
 
 subcollection: vmwaresolutions
 
@@ -117,7 +117,7 @@ After you provision your {{site.data.keyword.vcf-auto}} instance, system adminis
 | Network considerations | For more information, see [Networking considerations for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_networkingonvcenterserver). |
 | Planning for HCX | VMware Hybrid Cloud Services (HCX), allows disparate instances of vSphere software-defined data centers (SDDC) to interoperate across various network types. HCX is designed to address the security, compatibility, complexity, and performance concerns one would encounter in trying to achieve a multi-instance, multisite, deployment of vSphere extending across on-premises and cloud provider boundaries. For more information, see [Preparing the installation environment](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-planning-prep-install). |
 | Initial NSX configuration | As part of the deployment of your {{site.data.keyword.vcf-auto-short}} instance, a sample customer network is available that consists of a private subnet, a public subnet, an NSX logical switch, a distributed logical router, and an NSX edge appliance that is deployed and configured to perform network address translation. For steps to configure this sample customer network for your VMs, see [Configuring your network to use the customer-managed NSX ESG with your VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_esg_config#vc_esg_config). |
-| Add a logical switch | Logical switches are similar to VLANs, in that they provide network connections to which you can attach your VMs. The VMs can then communicate with each other over VXLAN if the VMs are connected to the same logical switch. When you are adding logical switches, it is important to have in mind a particular topology that you are building. For more information, see [Add a logical switch](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.install.doc/GUID-DD31D6BC-2E56-4E91-B45F-FCA3E80FF786.html){: external}. |
+| Add a logical switch | Logical switches are similar to VLANs, in that they provide network connections to which you can attach your VMs. The VMs can then communicate with each other over VXLAN if the VMs are connected to the same logical switch. When you are adding logical switches, it is important to have in mind a particular topology that you are building. For more information, see [Create a Logical Switch in Manager Mode](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/manager-mode/logical-switches-and-configuring-vm-attachment/create-a-logical-switch.html){: external}. |
 | Add a DLR | A Distributed Logical Router (DLR) is a virtual appliance that routes between connected logical switches (East-West traffic). For more information, see [Add a Distributed Logical Router](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.install.doc/GUID-E825C0C7-F4CC-4B26-90AF-A2167AC519DB.html){: external}. |
 | Add an ESG | An External Services Gateway (ESG) is a virtual appliance that routes between the physical network and the logical network (North-South traffic). For more information, see [Add an Edge Services Gateway](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.install.doc/GUID-B9A97F20-4996-4E16-822C-0B98DDE70571.html){: external}. |
 | Configure NSX edge firewall rules | An edge firewall monitors North-South traffic to provide perimeter security functions, including firewall, Network Address Translation (NAT), and site-to-site IPsec and SSL VPN. Only the firewall rules on management and uplink interfaces are applicable. For more information, see [Working with NSX Edge firewall rules](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-178B11B8-FEB1-49B8-B6FF-D069C41EEB32.html){: external}. |
@@ -141,7 +141,7 @@ After you provision your {{site.data.keyword.vcf-auto}} instance, system adminis
 {: #opsprocs-configure-links}
 
 * [VMware vSphere documentation](https://docs.vmware.com/en/VMware-vSphere/index.html){: external}
-* [NSX installation guide](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.install.doc/GUID-DD31D6BC-2E56-4E91-B45F-FCA3E80FF786.html){: external}
+* [NSX installation guide](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/installation-guide/nsx-transformers-installation-guide.html){: external}
 * [NSX administration guide](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-B5C70003-8194-4EC3-AB36-54C848508818.html){: external}
 * [VMware vSAN administration guide](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.virtualsan.doc/GUID-AEF15062-1ED9-4E2B-BA12-A5CE0932B976.html){: external}
 * [Considerations about changing {{site.data.keyword.vcf-auto-short}} artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact#vcenter_chg_impact)

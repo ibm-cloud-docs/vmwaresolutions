@@ -478,7 +478,7 @@ VMware vSphere Day 2 support
 :   You can view or delete VMware vSphere instances from the VMware Solutions console. You can also add or delete VMware ESXi servers, and add or delete licenses for vSphere instances from the VMware Solutions console.
 
 VMware Regulated Workloads multizone instances - deprecated
-:   New deployments of VMware Regulated Workloads multizone instances are no longer supported. You can still add or delete clusters, add or remove ESXi servers or NFS storage, and add or remove services for existing multizone instances.
+:   New deployments of VMware Regulated Workloads multizone instances are no longer supported. For existing multizone instances, you can still add and delete clusters, add and delete ESXi servers or NFS storage, and delete add-on services.
 {: deprecated}
 
 Updates to VMware vCenter Server and VMware vSphere instances

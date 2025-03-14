@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-03"
+lastupdated: "2025-03-14"
 
 subcollection: vmwaresolutions
 
@@ -38,4 +38,4 @@ With the standard architecture model, the management workloads run on a dedicate
 ## Related links
 {: #vpc-vcf-architectures-links}
 
-* [VMware Cloud Foundation architecture](https://docs.vmware.com/en/VMware-Cloud-Foundation/5.1/vcf-getting-started/GUID-C6AF75AE-569C-49F8-A15E-E9A6EF9549DA.html){: external}
+* [VMware Cloud Foundation architecture](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/5-2/getting-started-with-vcf-5-2/cloud-foundation-architecture.html){: external}

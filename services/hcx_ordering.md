@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-17"
+lastupdated: "2025-03-14"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -42,10 +42,11 @@ Before you install the HCX service, you must add a firewall rule to any existing
 2. In the **{{site.data.keyword.vcf-auto-short}}** table, click the instance to view the clusters from that instance.
 3. Click the **Infrastructure** tab and select the cluster where you want to install the HCX service.
 4. Go to the **Network interface** section on the cluster page.
-5. Collapse the **Public VLAN** option and collapse the subnet with the description that corresponds to the portable subnet of the particular cluster.
+5. Collapse the **Public VLAN** option and collapse the subnet with the description that corresponds to the portable subnet of the cluster.
 6. Use the IP address from the Service T0 uplink2 Virtual IP address to route the traffic in the firewall rule. The firewall rule is required to allow all outbound HTTPS traffic so that the HCX Manager virtual appliance (HCX Manager) can register itself.
 7. After the HCX Manager installation is completed, you can remove the firewall rule.
-8. In addition, you must configure firewall rules to allow HCX to function properly. For more information, see [Port access requirements for VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-port-req#hcx-archi-port-req).
+
+In addition, you must configure firewall rules to allow HCX to function properly. For more information, see [Port access requirements for VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-port-req#hcx-archi-port-req).
 
 ## Ordering HCX for a new instance
 {: #hcx_ordering-new}
@@ -74,9 +75,9 @@ To install HCX, complete the following steps:
 3. If private network connection is selected, proxy information is displayed. Otherwise, a proxy option is not available. The proxy fields must reflect a working proxy server that accepts traffic from the {{site.data.keyword.cloud_notm}} private network and forwards the traffic to the HCX activation service at `connect.hcx.vmware.com`. After the HCX service is installed, the license is activated through the following ways:
    * By sending a request from the HCX manager, which is installed on the same portable subnet as the vCenter virtual machine.
    * By sending a request through the proxy.
-   * By sending a request to `connect.hcx.vmware.com`. For more information, see the [HCX User Guide: Configure a Proxy Server](https://docs.vmware.com/en/VMware-HCX/4.8/hcx-user-guide/GUID-387A91E6-E0DA-41B4-8EFA-9BF2D5F90AB3.html){: external}.
+   * By sending a request to `connect.hcx.vmware.com`. For more information, see the [HCX User Guide: Configure a Proxy Server](https://techdocs.broadcom.com/us/en/vmware-cis/hcx/vmware-hcx/4-8/vmware-hcx-user-guide-4-8/managing-system-settings/adding-or-updating-a-proxy-server.html){: external}.
 
-   If the proxy is unreachable or does not handle the license activation request, the HCX automated installation fails. A proxy is not required if a firewall that manages the VLAN, where vCenter is installed, is configured to route traffic from the new HCX manager to `connect.hcx.vmware.com`.
+   If the proxy server is unreachable or does not handle the license activation request, the HCX automated installation fails. A proxy server is not required if a firewall that manages the VLAN, where vCenter is installed, is configured to route traffic from the new HCX manager to `connect.hcx.vmware.com`.
 
    Complete the following proxy fields:
    * **Proxy IP address** - The IPv4 address of the proxy server.

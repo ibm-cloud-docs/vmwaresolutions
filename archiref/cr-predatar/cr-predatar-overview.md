@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-17"
+lastupdated: "2025-03-12"
 
 subcollection: vmwaresolutions
 
@@ -65,7 +65,7 @@ Primary or secondary data center:
 * Thin agent – The Thin agent, also known as File Introspection driver, is the file introspection agent that is running inside the VM, which is part of VMware Tools. It is a generic and lightweight agent that facilitates offloading files and processes for scanning.
 * Source backup servers – These servers are part of the client’s IBM Spectrum Protect with IBM Spectrum Protect for Virtual Environments or IBM Spectrum Protect Plus environment and are configured to replicate backups to the tertiary backup server.
 * Predatar Virtual Appliance – Consists of:
-    * VM – A customer-provided Microsoft Windows 2012 or higher VM that is used to host the Predatar Agent.
+    * VM – A customer-provided Microsoft Windows 2012 or later VM that is used to host the Predatar Agent.
     * Predatar Agent - a small-footprint client that is hosted on the customer’s VM and sends queries to one, or more, IBM Spectrum Protect/Spectrum Protect Plus servers and sends the queries to the Predatar Cloud.
 
 Predatar Cloud:
@@ -95,7 +95,7 @@ The vCenter Server instance:
    * IBM Spectrum Protect Plus vSnap servers. For more information, see [IBM Spectrum Protect Plus Blueprints](https://www.ibm.com/support/pages/node/1119489){: external}.
 
 * Predatar Virtual Appliance – Consists of:
-   * VM – A customer provided Microsoft Windows 2012 or higher VM that is used to host the Predatar Agent.
+   * VM – A customer provided Microsoft Windows 2012 or later VM that is used to host the Predatar Agent.
    * Predatar Agent - a small-footprint client that is hosted on the customer’s VM and sends queries to one or more IBM Spectrum Protect/Spectrum Protect Plus servers and sends the queries to the Predatar Cloud.
 
 * Predatar CleanRoom - The Predatar CleanRoom is a patented concept that brings together virtualized compute, storage, and networking to form a recovery target that supports both automated recovery testing and orchestrated malware scanning. The vCenter server instance with VMware vSphere and NSX-T provides the virtualized compute, storage, and networking.

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-03-12"
 
 subcollection: vmwaresolutions
 
@@ -86,7 +86,7 @@ This is an optional step. By using the vSphere Web Client, go to **Home > Admini
 Before you start the vSAN upgrade process, ensure that the following requirements are met:
 * Review the VMware Knowledge base articles and review any known compatibility issues between your current vSAN version and the wanted target vSAN version.
 * **The vSphere environment is up to date**:
-   * The VCSA must be at an equal or higher patch level than the vSphere ESXi hosts. Update the VCSA if required.
+   * The VCSA must be at an equal or later patch level than the vSphere ESXi hosts. Update the VCSA if required.
    * All hosts must be running the same build of ESXi. If the vSphere ESXi host versions are not matched, then update.
 * **All vSAN disks should be healthy**:
    * No disk is failed or absent. This can be determined through the **vSAN Disk Management** view in the vSphere Web Client. **Home** > **Hosts and Clusters**, then select the **vSAN Cluster** and click the **vSAN** tab and then **Physical Disks**. Scroll through all the disks and review the vSAN Health Status.

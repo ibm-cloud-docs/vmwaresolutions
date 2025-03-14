@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-20"
+lastupdated: "2025-03-12"
 
 keywords: VMware HCX, HCX, tech specs HCX
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 VMware HCX™ on {{site.data.keyword.cloud}} extends the networks of on-premises data centers into {{site.data.keyword.cloud}}, and it helps you migrate virtual machines (VMs) to and from {{site.data.keyword.cloud_notm}} without any conversion or change. HCX creates an abstraction layer that enables application mobility and infrastructure hybridity through securely stretched networks. You can modernize your VMware® environment without the need to refactor or modify your existing application, as HCX enables a seamless transformation. With HCX, you can bring your IP subnet ranges into {{site.data.keyword.cloud_notm}} and ensure the IP consistency through a hybrid deployment and by providing high-level security with end-to-end Suite B encryptions. VMware HCX on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from VMware, not IBM.
 {: shortdesc}
 
-The HCX version available for deployment is periodically updated to the most recent version of HCX. VMware® by Broadcom requires you to be on one of their supported versions in order for you to open a support request for HCX. For more information, see the [VMware HCX release notes](https://docs.vmware.com/en/search/#/VMware%20HCX%20Release%20Notes){: external}.
+The HCX version available for deployment is periodically updated to the most recent version of HCX. VMware® by Broadcom requires you to be on one of their supported versions in order for you to open a support request for HCX. For more information, see the [VMware HCX release notes](https://techdocs.broadcom.com/us/en/vmware-cis/hcx/vmware-hcx/4-11/hcx-4-11-release-notes/vmware-hcx-411-release-notes.html){: external}.
 {: note}
 
 For {{site.data.keyword.vcf-auto}} with NSX-T™ instances, HCX is supported for NSX-T 3.1 or later and for VMware vSphere® 7.

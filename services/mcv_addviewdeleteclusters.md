@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-04-12"
+lastupdated: "2025-03-12"
 
 subcollection: vmwaresolutions
 
@@ -15,10 +15,10 @@ subcollection: vmwaresolutions
 # Adding clusters to {{site.data.keyword.vcf-auto-short}} multizone instances
 {: #mcv_addviewdeleteclusters}
 
-New deployments of {{site.data.keyword.vcf-auto}} multizone instances are no longer supported. You can still add and delete clusters, add and remove ESXi servers, and add and delete storage for existing multizone instances.
+New deployments of {{site.data.keyword.vcf-auto}} multizone instances are not supported. For existing multizone instances, you can still add and delete clusters, add and delete ESXi servers, or add and delete storage.
 {: deprecated}
 
-You can add workload or gateway clusters to {{site.data.keyword.vcf-auto-short}} multizone instances. When no longer needed, delete the clusters from your instance.
+You can add workload or gateway clusters to your existing {{site.data.keyword.vcf-auto-short}} multizone instances. When no longer needed, delete the clusters from your instance.
 
 ## Procedure to add workload clusters to Automated multizone instances
 {: #mcv_addviewdeleteclusters-workload-procedure}

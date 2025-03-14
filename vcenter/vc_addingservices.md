@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-03-12"
 
 keywords: add service, order service, add-on service
 
@@ -26,7 +26,7 @@ If you want to migrate your F5 BIG-IP or Veeam services from VMware NSX-V to VMw
 {: #vc_addingservices-prereq}
 
 * Adding services to instances with VMware vSphere® 6.5 is not supported.
-* For existing multizone instances, adding services is not supported. However, you can view or delete existing add-on services. After a service is deleted, it cannot be reinstalled.
+* For existing multizone instances, adding services is not supported. However, you can view and delete existing add-on services. After a service is deleted, it cannot be reinstalled.
 * By default, the service assumes that NSX-T is installed. For existing instances V4.7 and earlier, if NSX-T is not supported for a service, then NSX-V is used.
 
 ## Available services for Automated instances

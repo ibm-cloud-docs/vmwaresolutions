@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-04-12"
+lastupdated: "2025-03-12"
 
 subcollection: vmwaresolutions
 
@@ -16,10 +16,10 @@ subcollection: vmwaresolutions
 # Adding ESXi servers to {{site.data.keyword.vcf-auto-short}} multizone instances
 {: #mcv_addingremovingservers}
 
-New deployments of {{site.data.keyword.vcf-auto}} multizone instances are no longer supported. You can still add and delete clusters, add and remove ESXi servers, and add and delete storage for existing multizone instances.
+New deployments of {{site.data.keyword.vcf-auto}} multizone instances are not supported. For existing multizone instances, you can still add and delete clusters, add and delete ESXi servers, or add and delete storage.
 {: deprecated}
 
-You can expand the capacity of your {{site.data.keyword.vcf-auto-short}} multizone instances by adding VMware® ESXi servers to your witness, consolidated, extra workload, and gateway clusters.
+You can expand the capacity of your existing {{site.data.keyword.vcf-auto-short}} multizone instances by adding VMware® ESXi servers to your witness, consolidated, workload, and gateway clusters.
 
 ## Procedure to add ESXi servers to {{site.data.keyword.vcf-auto-short}} multizone instances
 {: #mcv_addingremovingservers-adding-procedure}

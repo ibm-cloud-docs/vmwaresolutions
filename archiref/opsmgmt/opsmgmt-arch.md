@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-03-14"
 
 subcollection: vmwaresolutions
 
@@ -105,12 +105,9 @@ This enables system administrators to monitor, manage, and troubleshoot VMware N
 
 VMware Aria Operations uses the management pack to poll VMware NSX for configuration, performance, and support data. On behalf of VMware Aria Operations, the Management Pack converts the polling requests into REST API calls to retrieve the required data from NSX Manager.
 
-The NSX components need to be configured to send syslog to VMware Aria Operations for Logs.
+The NSX components need to be configured to send syslog to VMware Aria Operations for Logs. For more information, see [Add Syslog Servers for NSX Nodes](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/operations-and-management/log-messages-and-error-codes/add-syslog-servers-for-nsx-nodes.html){: external}.
 
-* NSX Manager - [Configure a Syslog Server for NSX Manager](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.install.doc/GUID-EA70974C-07F8-469D-8A9D-0ED54F0C8F34.html){: external}.
-* NSX Controllers - [Configure DNS, NTP, and Syslog for the NSX Controller Cluster](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-F2A3F705-62E9-4EED-AAF2-518DE0775751.html){: external}.
-* NSX Edge - [Configure Syslog Servers for NSX Edge](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.logging.doc/GUID-9C25E097-E2CC-461A-9DA6-E8118D16EE62.html){: external}.
-* Firewall - You must configure the remote syslog server for each cluster that where the firewall is enabled. The remote syslog server is specified in the `Syslog.global.logHost` attribute.
+In addition, you must configure the remote syslog server for each cluster where the firewall is enabled. The remote syslog server is specified in the `Syslog.global.logHost` attribute.
 
 NSX Flow Monitoring can be used in NSX Manager to determine which flows are approved and which flows are blocked. If required, then port mirroring can be configured for a vSphere Distributed Switch.
 

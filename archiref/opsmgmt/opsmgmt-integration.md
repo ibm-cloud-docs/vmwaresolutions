@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-03-14"
 
 subcollection: vmwaresolutions
 
@@ -67,5 +67,5 @@ The client wants to use their existing OS, middleware, and application monitorin
 ## Related links
 {: #opsmgmt-integration-related}
 
-* [Understanding the VMware Aria Operations API](https://docs.vmware.com/en/VMware-Aria-Operations/8.17.1/API-Programming-Operations/GUID-A4113636-D84E-44A5-9672-13EDA9CC4CA2.html){: external}
+* [Understanding the VMware Aria Operations API](https://techdocs.broadcom.com/us/en/vmware-cis/aria/aria-operations/8-18/vmware-aria-operations-api-programming-guide-8-18/understanding-the-vr-ops-api.html){: external}
 * [VMware Developer Documentation](https://developer.broadcom.com/xapis){: external}

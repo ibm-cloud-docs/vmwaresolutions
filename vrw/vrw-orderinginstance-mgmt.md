@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-05-20"
+lastupdated: "2025-03-12"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Management cluster for {{site.data.keyword.rw}} multizone
 {: #vrw-orderinginstance-mgmt-cluster}
 
-New deployments of {{site.data.keyword.rw}} multizone instances are no longer supported. You can still add or delete clusters, add or delete ESXi servers or NFS storage, and add or remove services for existing multizone instances.
+New deployments of {{site.data.keyword.rw}} multizone instances are not supported. For existing multizone instances, you can still add and delete clusters, add and delete ESXi servers or NFS storage, and delete add-on services.
 {: deprecated}
 
 ## Cluster name

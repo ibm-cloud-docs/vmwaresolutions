@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-03-12"
 
 subcollection: vmwaresolutions
 
@@ -91,4 +91,4 @@ Most of the content in the VMware NSX design guides and documentation can be app
 
 * [VMware NSX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-1-2.html){: external}
 * [VMware NSX Administration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-1-2/administration-guide.html){: external}
-* [NSX Multi-Location design guide (Federation + Multisite)](https://community.broadcom.com/viewdocument/nsx-t-multi-location-design-guide?CommunityKey=b76535ef-c5a2-474d-8270-3e83685f020e&tab=librarydocuments){: external}
+* [NSX Multi-Location design guide (Federation + Multisite)](https://community.broadcom.com/blogs/dimitri-desmidt/2024/05/20/nsx-t-multi-location-design-guide){: external}

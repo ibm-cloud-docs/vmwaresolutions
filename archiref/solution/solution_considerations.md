@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-03-14"
 
 subcollection: vmwaresolutions
 
@@ -97,7 +97,7 @@ Ensure to plan for and implement the following solutions for monitoring your ins
 - Proactive monitoring of hosts, drives, management software, and network, including vSAN monitoring if applicable. The [VMware Aria Operations on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) offering can help you operate and monitor the performance, health, and capacity of your VMware environment.
 - Capacity monitoring and planning. You can [add clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters), [remove clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingclusters), [add hosts](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers), and [remove hosts](/docs/vmwaresolutions?topic=vmwaresolutions-vc_removingservers) for your instance from the {{site.data.keyword.vmwaresolutions_short}} console.
 - Monitoring your backup infrastructure and backup jobs.
-- vSphere Distributed Switch Health Check is enabled by default and can generate a significant number of MAC addresses for testing team policy, MTU size, and VLAN configuration, which results in extra network traffic. Disable this health check and re-enable only as needed for network troubleshooting. For more information, see [vSphere Distributed Switch Health Check](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-4A6C1E1C-8577-4AE6-8459-EEB942779A82.html){: external}.
+- vSphere Distributed Switch Health Check is enabled by default and can generate a significant number of MAC addresses for testing team policy, MTU size, and VLAN configuration, which results in extra network traffic. Disable this health check and re-enable only as needed for network troubleshooting. For more information, see [vSphere Distributed Switch Health Check](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-networking-8-0/monitoring-network-packets/health-check.html){: external}.
 
 ## Business continuity and availability
 {: #solution_considerations-business-cont}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-03-12"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ As more {{site.data.keyword.vcf-auto}} hosts are deployed by the {{site.data.key
 
 To add more hosts to a cluster in your {{site.data.keyword.vcf-auto-short}} instances, see [Adding ESXi servers to {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers).
 
-* For instances deployed at, or upgraded to, V2.1 or higher, newly deployed ESXi servers and clusters are patched with recent, but not necessarily the most recent ESXi updates from VMware®.
+* For instances deployed at, or upgraded to, V2.1 or later, newly deployed ESXi servers and clusters are patched with recent, but not necessarily the most recent ESXi updates from VMware®.
 * You're responsible for all other updates to VMware components, including ensuring that newly deployed ESXi servers and clusters have all the most recent updates you require.
 
 We advise that after a new host is added into the cluster, that it is placed in Maintenance Mode so that it can be reviewed for compliance drift and remediated before you host any workloads.

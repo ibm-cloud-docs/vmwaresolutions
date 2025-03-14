@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-01-14"
+lastupdated: "2025-03-12"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -29,7 +29,7 @@ If you are provisioning VMware Aria® Suite components with Lifecycle Manager, r
 
 2. Before you deploy the Aria Suite Lifecycle components to Lifecycle Manager, upload the binary files provided by {{site.data.keyword.cloud_notm}} Support.
 
-3. In VMware Aria Suite Lifecycle, map the binary files to each VMware Aria Suite product. For more information, see [Configure product binaries](https://docs.vmware.com/en/VMware-Aria-Suite-Lifecycle/8.18/lifecycle-install-upgrade-manage/GUID-2C93EB0A-055C-4897-A764-77FC73EFE992.html){: external}.
+3. In VMware Aria Suite Lifecycle, map the binary files to each VMware Aria Suite product. For more information, see [Configure product binaries](https://techdocs.broadcom.com/us/en/vmware-cis/aria/aria-suite-lifecycle/8-18/vmware-aria-suite-lifecycle-installation-upgrade-and-management-8-18/configuring-vmware-aria-suite-lifecycle/configure-settings/working-with-product-support/configure-product-binaries.html){: external}.
 
 ## Identity and Access Management for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-deploy-vvs-iam}
@@ -48,13 +48,13 @@ Use VMware Aria® Suite Lifecycle Manager (formerly VMware vRealize® Suite Life
 ## Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-deploy-vvs-tanzu}
 
-[The Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-short}} validated solution](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-developer-ready-infrastructure-v1/GUID-E3C98B72-EE54-491E-AC71-C07F52AAF5E2.html){: external} provides design, implementation, and operational guidance for a workload domain that runs vSphere with Tanzu workloads (TKG Runtime) in the Software-Defined Data Center (SDDC).
+The [Developer Ready Infrastructure for VMware Cloud Foundation validated solution](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/developer-ready-infrastructure-for-vmware-cloud-foundation.html){: external} provides design, implementation, and operational guidance for a workload domain that runs vSphere with Tanzu workloads (TKG Runtime) in the Software-Defined Data Center (SDDC).
 
 This solution is intended for cloud architects and administrators who are familiar with using VMware software to deploy and manage a workload domain that runs vSphere with Tanzu workloads in the SDDC.
 
 The solution does not include any new solution-added products, but the VMware documentation provides a fast and efficient path to automating the Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-short}} implementation.
 
-To deploy the Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-developer-ready-infrastructure-v1/GUID-E3C98B72-EE54-491E-AC71-C07F52AAF5E2.html){: external}.
+To deploy the Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Developer Ready Infrastructure for VMware Cloud Foundation validated solution](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/developer-ready-infrastructure-for-vmware-cloud-foundation.html){: external}.
 
 ### Important notes
 {: #vpc-vcf-deploy-vvs-tanzu-notes}
@@ -104,7 +104,7 @@ To deploy the Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}} v
 {: #vpc-vcf-deploy-vvs-aria-automation-notes}
 
 * Use Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
-* Before deployment, upgrade vRealize Operations Manager (now Aria Operations Manager) 8.10.0 to the most recent version and follow the procedure in [Deployment of vRealize Suite Lifecycle Manager and Workspace ONE Access for Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-F9232A8B-69C8-4358-BC64-F9F186C04968.html){: external}.
+* Before deployment, upgrade vRealize Operations Manager (now Aria Operations Manager) 8.10.0 to the most recent version and follow the procedure in [Private Cloud Automation for VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/private-cloud-automation-for-vmware-cloud-foundation.html){: external}.
 
 ## Advanced Load Balancing for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-deploy-vvs-nsx-advanced-load-balancing}

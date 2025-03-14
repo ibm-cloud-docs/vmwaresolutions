@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-03-12"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -19,8 +19,6 @@ subcollection: vmwaresolutions
 {: #fortinetvm_ordering}
 
 You can include the FortiGate® Virtual Appliance service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
-
-You can deploy the service on a single-zone (new or existing) or multizone (existing only) instance. For multizone instances, three FortiGate Virtual Appliances are installed, one for each of the three gateway clusters.
 
 ## Considerations when you install FortiGate Virtual Appliance
 {: #fortinetvm_considerations-install}
