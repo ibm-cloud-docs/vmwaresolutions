@@ -857,7 +857,6 @@ toc:
           - vmonic/vpc-vcf-faq.md
           - vmonic/faq_usage-meter.md
           - vmonic/faq_byol.md
-          - vmonic/faq_licensing.md
           - vmonic/faq_esxi.md
           - vmonic/faq-v2t-migration.md
           - vmonic/faq_shared-eos.md
