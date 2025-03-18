@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-04-29"
+lastupdated: "2025-03-18"
 
 keywords: Red Hat OpenShift for VMware, manage OpenShift, OpenShift operations
 
@@ -34,7 +34,7 @@ Do not restart any of the {{site.data.keyword.redhat_openshift_notm}} cluster vi
 
 After the initial certificate rotation, certificates are renewed every 30 days. You must establish a process to approve the CSRs for every certificate rotation. According to {{site.data.keyword.redhat_full}}, you can approve CSRs when they reach 80% of their expiration period, which is approximately 25 days into the lifespan of the CSRs.
 
-If you do not approve CSRs in time and the certificates expire, you can recover from expired control plane certificates and get the {{site.data.keyword.redhat_openshift_notm}} cluster operational again. For more information, see [Recovering from expired control plane certificates](https://docs.openshift.com/container-platform/4.15//backup_and_restore/control_plane_backup_and_restore/disaster_recovery/scenario-3-expired-certs.html){: external}.
+If you do not approve CSRs in time and the certificates expire, you can recover from expired control plane certificates and get the {{site.data.keyword.redhat_openshift_notm}} cluster operational again. For more information, see [Recovering from expired control plane certificates](https://docs.redhat.com/en/documentation/openshift_container_platform/4.15/html/backup_and_restore/control-plane-backup-and-restore#dr-scenario-3-recovering-expired-certs_dr-recovering-expired-certs){: external}.
 
 ## Resizing your Red Hat OpenShift VMs post-deployment
 {: #ocp_managing-resize}

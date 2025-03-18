@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-10"
+lastupdated: "2025-03-18"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc, faq
 
@@ -22,7 +22,7 @@ subcollection: vmwaresolutions
 {: #vpc-vcf-faq-vcf-glossary}
 {: faq}
 
-You can use the VMware Cloud Foundation™ documentation for most Day 2 operations. For more information, see [Getting started with VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/5.2/vcf-52-getting-started.pdf){: external}.
+You can use the VMware Cloud Foundation™ documentation for most Day 2 operations. For more information, see [Getting started with VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/5-2/getting-started-with-vcf-5-2.html){: external}.
 
 Exceptions apply, some of which are documented in this FAQ. If you need assistance for the administration of your {{site.data.keyword.vcf-vpc}} instance, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 

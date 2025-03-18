@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-11-04"
+lastupdated: "2025-03-18"
 
 keywords: FAQ, host, ESXi server
 
@@ -70,7 +70,7 @@ Only ESXi servers that are part of {{site.data.keyword.vcf-auto-short}} instance
 To place a host from a VMware vSAN cluster in maintenance mode, complete the following steps:
 1. Review the three options provided in the VMware vSphere Web Client: **Ensure accessibility**, **Full data migration**, and **No data migration**.
 2. Select the **Ensure accessibility** option.
-3. If failures occur, complete the process by using the **Full data migration** option. For more information, see [Place a member of vSAN cluster in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.virtualsan.doc/GUID-521EA4BC-E411-47D4-899A-5E0264469866.html){: external}.
+3. If failures occur, complete the process by using the **Full data migration** option. For more information, see [Place a member of vSAN cluster in maintenance mode](https://techdocs.broadcom.com/us/en/vmware-cis/vsan/vsan/8-0/vsan-administration/expanding-and-managing-a-vsan-cluster/working-with-members-of-vsan-cluster-in-maintenance-mode/place-a-member-of-vsan-cluster-in-maintenance-mode.html){: external}.
 4. If you experience problems, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) for assistance.
 
 ## Can I add static routes on my ESXi servers to mount storage from other locations?
