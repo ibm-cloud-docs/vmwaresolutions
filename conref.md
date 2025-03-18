@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-03-18"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -396,10 +396,10 @@ As of 28 March 2024, the {{site.data.keyword.la_full_notm}} service is deprecate
 The storage architecture can be either **vSAN ESA (Express Storage Architecture)** for instances with vSphere 8 or **vSAN OSA (Original Storage Architecture)** for instances with vSphere 7 and 8.
 {: #storage-arch-spr-intro}
 
-Review the following considerations for the vSAN storage architectures:
+Review the following considerations for the vSAN storage architecture:
 * For **Sapphire Rapids** servers, both vSAN ESA and vSAN OSA are available. For **Cascade Lake** servers, only vSAN OSA is available.
 * vSAN ESA requires a minimum of 3 bare metal servers. vSAN OSA requires a minimum of 4 bare metal servers.
-* For both vSAN ESA and vSAN OSA, you can select the size for and number of **vSAN capacity disks**. For vSAN OSA, the size and number of **vSAN cache disks** are selected by default.
+* For both vSAN ESA and vSAN OSA, you can select the size and number of **vSAN capacity disks**. For vSAN OSA, the size and number of **vSAN cache disks** are selected by default.
 * For vSAN ESA, the **Enable vSAN compression** option is available. For vSAN OSA, the **Enable vSAN deduplication and compression** option is available.
 * vSAN ESA is selected by default with the 25 Gb uplink speed. If you select the 10 Gb uplink speed, the vSAN storage architecture is changed to vSAN OSA, because vSAN ESA is not compatible with the 10 Gb uplink speed.
 {: #storage-arch-spr}
