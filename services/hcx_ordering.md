@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-14"
+lastupdated: "2025-03-18"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -45,6 +45,9 @@ Before you install the HCX service, you must add a firewall rule to any existing
 5. Collapse the **Public VLAN** option and collapse the subnet with the description that corresponds to the portable subnet of the cluster.
 6. Use the IP address from the Service T0 uplink2 Virtual IP address to route the traffic in the firewall rule. The firewall rule is required to allow all outbound HTTPS traffic so that the HCX Manager virtual appliance (HCX Manager) can register itself.
 7. After the HCX Manager installation is completed, you can remove the firewall rule.
+
+Access to the HCX Cloud IP address is restricted through a gateway firewall rule. To enable access to the HCX Cloud IP address, you must update the firewall rule to ALLOW the inbound traffic. To do that, log in to the NSX Manager and locate the gateway firewall rule `HCX_Inbound_Traffic_1_for_{{ hcxhostname }}`. Change the action value from REJECT to ALLOW.
+{: important}
 
 In addition, you must configure firewall rules to allow HCX to function properly. For more information, see [Port access requirements for VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-port-req#hcx-archi-port-req).
 

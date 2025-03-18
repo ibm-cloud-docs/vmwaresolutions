@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-11"
+lastupdated: "2025-03-17"
 
 keywords: FAQ, license, BYOL
 
@@ -98,6 +98,6 @@ Yes. For each VMware component, one license per CPU is required. Currently, all 
 ## Related links
 {: #faq_byol-related}
 
-* [FAQ about licensing](/docs/vmwaresolutions?topic=vmwaresolutions-faq_licensing)
+* [FAQ about licensing and metering](/docs/vmwaresolutions?topic=vmwaresolutions-faq_usage-meter)
 * [Accessing the console](/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

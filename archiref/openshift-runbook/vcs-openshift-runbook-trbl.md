@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-06-12"
+lastupdated: "2025-03-18"
 
 subcollection: vmwaresolutions
 
@@ -196,7 +196,7 @@ After the initial 24 h certificate renewal, the cluster snapshot is enabled to r
 * [Install on vSphere: User-Provisioned Infrastructure](https://console.redhat.com/openshift/install/vsphere/user-provisioned){: external}
 * [Install a cluster on vSphere](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}
 * [Index of public {{site.data.keyword.redhat_openshift_notm}} v4 clients](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/?extIdCarryOver=true&sc_cid=701f2000001Css5AAC){: external}
-* [Understanding persistent storage](https://docs.openshift.com/container-platform/4.7/storage/understanding-persistent-storage.html#understanding-persistent-storage){: external}
+* [Persistent storage overview](https://docs.redhat.com/en/documentation/openshift_container_platform/4.7/html/storage/understanding-persistent-storage#persistent-storage-overview_understanding-persistent-storage){: external}
 * [ssh-keygen - Generate a New SSH Key](https://www.ssh.com/academy/ssh/keygen){: external}
 * [Configure PowerCLI and PowerNSX on macOS](https://readysetvirtual.wordpress.com/2018/04/06/configure-powercli-and-powernsx-on-macos/){: external}
 * [Visual Studio Code](https://code.visualstudio.com/){: external}
