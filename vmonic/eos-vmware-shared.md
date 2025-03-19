@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-01-10"
+lastupdated: "2025-03-18"
 
 keywords: end of support notice, vmware shared, end of support vmware shared, vmware shared deprecated, vmware shared support
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 As of 28 March 2024, {{site.data.keyword.vm-shared}} is not available for new deployments. Support for existing instances is extended until 28 February 2025. All customer and management data, including the backups of workloads, will be deleted in March 2025. Migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 28 February 2025.
 {: deprecated}
 
-{{site.data.keyword.cloud_notm}} support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} will end on 28 February 2025. As stated in [End of Support for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v), {{site.data.keyword.IBM_notm}}’s exclusive support extension for VMware® NSX-V is ending soon. Because {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} uses NSX-V as the underlying networking software, it will no longer be supported after 28 February 2025.
+{{site.data.keyword.cloud}} support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} will end on 28 February 2025. As stated in [End of Support for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v), {{site.data.keyword.IBM_notm}}’s exclusive support extension for VMware® NSX-V is ending soon. Because {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} uses NSX-V as the underlying networking software, it will no longer be supported after 28 February 2025.
 
 The upgraded replacement for {{site.data.keyword.vm-shared}} is {{site.data.keyword.vcf-aas-full}}, the next generation {{site.data.keyword.IBM_notm}}-managed VMware Cloud Director offering. {{site.data.keyword.IBM}} strongly recommends that you migrate your workloads to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service).
 
