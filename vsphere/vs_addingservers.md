@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-03-21"
 
 keywords: flexible instance add host, add server flexible instance
 
@@ -28,7 +28,7 @@ You can expand the capacity of your {{site.data.keyword.vcf-flex}} instance acco
 Review the following information applicable to all Flexible instances:
 
 * You can add up to 59 ESXi servers to a Flexible instance.
-* You can add ESXi servers either with vSphere 7.0u3 or vSphere 8.0u2.
+* You can add ESXi servers either with vSphere 7 or vSphere 8. For more information, see [BOM for VCF for Classic - Flexible](/docs/vmwaresolutions?topic=vmwaresolutions-vs_bom).
 * For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 
 {{site.data.content.attnnote-addhost-byol}}
