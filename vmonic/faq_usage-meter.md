@@ -4,9 +4,9 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-03-17"
+lastupdated: "2025-03-24"
 
-keywords: FAQ, usage meter, metering
+keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ Find answers to frequently asked questions about Usage Meter.
 
 With the VMware® acquisition, Broadcom® is modifying license key renewals from perpetual to subscription license keys. If you are an {{site.data.keyword.cloud}} customer who is running {{site.data.keyword.cloud_notm}} for VMware on Classic or VMware Cloud Foundation (VCF) for VPC, you must act to maintain compliance with Broadcom license requirements for VMware Cloud Foundation by Broadcom. This action includes swapping old VMware keys to new VMware by Broadcom subscription keys and to install the VMware vCloud Usage Meter. 
 
-## What is Broadcom Usage Meter?
+## What is Usage Meter?
 {: #faq_usage-meter-what-is}
 {: faq}
 
@@ -35,31 +35,43 @@ Usage Meter is a new virtual appliance that is designed to track VMware by Broad
 {: #faq_usage-meter-why-needed}
 {: faq}
 
-It is important to understand and to emphasize that Usage Meter is the only and mandatory tool that VMware cloud service providers like IBM are authorized and required to use for metering. Usage Meter tracks usage of VMware Cloud Foundation, its components, and add-ons with VMware by Broadcom for core utilization. It generates comprehensive reports on what products are in use by customers. VCF product usage is metered and reported as required per the VMware cloud service provider program rules. VMware by Broadcom provides tools, appliances, and processes to meter product usage accurately for monthly reporting.
+It is important to understand and to emphasize that Usage Meter is the only and mandatory tool that VMware cloud service providers like {{site.data.keyword.IBM}} are authorized and required to use for metering. Usage Meter tracks usage of VMware Cloud Foundation, its components, and add-ons with VMware by Broadcom for core utilization. It generates comprehensive reports on what products are in use by customers. VCF product usage is metered and reported as required per the VMware cloud service provider program rules. VMware by Broadcom provides tools, appliances, and processes to meter product usage accurately for monthly reporting.
 
 ## As a customer of {{site.data.keyword.cloud_notm}} for VMware, do I need Usage Meter?
 {: #faq_usage-meter-do-i-need}
 {: faq}
 
-Yes, if you are running a client-managed offering on {{site.data.keyword.cloud_notm}}, it is required for you to ensure accurate tracking of usage and billing on every account. This statement does not apply to VMware Cloud Foundation (VCF) as a Service. Usage Meter provides comprehensive support for independent clusters and effectively measure core utilization in the new VMware by Broadcom solutions. This means that the Usage Meter software manages and tracks the usage of separate clusters efficiently, while also metering core utilization accurately by IBM customers.  
+Yes, if you are running a client-managed offering on {{site.data.keyword.cloud_notm}}, it is required for you to ensure accurate tracking of usage and billing on every account. This statement does not apply to VMware Cloud Foundation (VCF) as a Service. Usage Meter provides comprehensive support for independent clusters and effectively measure core utilization in the new VMware by Broadcom solutions. This means that the Usage Meter software manages and tracks the usage of separate clusters efficiently, while also metering core utilization accurately by {{site.data.keyword.IBM_notm}} customers.  
 
-## I am using VCF as a Service; does this apply to me? 
+## I'm using VCF as a Service; does this information apply to me? 
 {: #faq_usage-meter-vcf-aas}
 {: faq}
 
-No. You do not need to do anything as IBM is the consumer of VMware licenses. 
+No. You do not need to do anything as {{site.data.keyword.IBM_notm}} is the consumer of VMware licenses. 
 
-## Does this apply to all {{site.data.keyword.cloud_notm}} for VMware offerings?
+## Does this information apply to all {{site.data.keyword.cloud_notm}} for VMware offerings?
 {: #faq_usage-meter-ic4v-offerings}
 {: faq}
 
-No. This applies only to {{site.data.keyword.cloud_notm}} for VMware roll-your-own (RYO), VCF for Classic, and VCF for VPC accounts. Fully managed VCF as a Service, VCF as a Service single-tenant, and multitenant accounts are automatically updated by IBM.
+No. This information applies only to {{site.data.keyword.cloud_notm}} for VMware roll-your-own (RYO), {{site.data.keyword.vcf-classic-short}}, and {{site.data.keyword.vcf-vpc-short}} accounts. Fully managed {{site.data.keyword.vcf-aas}}, {{site.data.keyword.vcf-aas}} single-tenant, and {{site.data.keyword.vcf-aas}} multitenant accounts are automatically updated by {{site.data.keyword.IBM_notm}}.
+
+## I'm using VMware NSX-V; does this information apply to me?
+{: #faq_usage-meter-nsx-v}
+{: faq}
+
+Licensing and metering are not supported for NSX-V. However, Broadcom requires {{site.data.keyword.IBM_notm}} and {{site.data.keyword.cloud_notm}} customers to use new license keys and to use Usage Meter for compliance purposes. Therefore, if you are running NSX-V, you must migrate to VMware NSX-T™ to become compliant. For more information, see [NSX-V to NSX-T migration overview](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-overview).
+
+## I'm using vSphere 6; does this information apply to me?
+{: #faq_usage-meter-vsphere-6}
+{: faq}
+
+The adoption of new licensing and metering is applicable to VMware vSphere® 7 and later. Broadcom requires {{site.data.keyword.IBM_notm}} and {{site.data.keyword.cloud_notm}} customers to use new license keys and to use Usage Meter for compliance purposes. Therefore, if you are using an earlier, unsupported vSphere version, you must upgrade to vSphere 7 or later to become compliant. For more information, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade).
 
 ## What should I do now?
 {: #faq_usage-meter-what-to-do-now}
 {: faq}
 
-You are required to order VMware vDefend™ Firewall (formerly VMware NSX firewall) license keys to cover your firewall usage. You cannot enter these license keys into NSX yet; however it is recommended that you order these license keys to ensure a smooth transition process as you act on 11 April 2025. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
+You are required to order VMware vDefend™ Firewall (formerly VMware NSX® firewall) license keys to cover your firewall usage. You cannot enter these license keys into NSX yet; however it is recommended that you order these license keys to ensure a smooth transition process as you act on 11 April 2025. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
 
 ## What should I do next?
 {: #faq_usage-meter-what-to-do-next}
@@ -82,11 +94,11 @@ By 30 May 2025, all customer accounts must have the new Broadcom license keys in
 Accounts that have not updated to current license keys will be out of compliance and risk being out of support and in violation of the {{site.data.keyword.cloud_notm}} Services Agreement. If not addressed, violations can result in account disruptions.
 {: attention}
 
-## Can IBM do this all for me?
+## Can {{site.data.keyword.IBM_notm}} do this all for me?
 {: #faq_usage-meter-can-ibm-do-it}
 {: faq}
 
-No. The {{site.data.keyword.cloud_notm}} for VMware added value is to provide customers with a simple to use automated way of enabling a core foundation of a complete software-defined data center (SDDC) in the cloud. Bare metal systems, storage, networking, and software are all configured at initialization time. After they are in place, IBM gives full management of the virtual environment to the customer to manage. IBM does not go into the customer environment as it is secure to the customer. 
+No. The {{site.data.keyword.cloud_notm}} for VMware added value is to provide customers with a simple to use automated way of enabling a core foundation of a complete software-defined data center (SDDC) in the cloud. Bare metal systems, storage, networking, and software are all configured at initialization time. After they are in place, {{site.data.keyword.IBM_notm}} gives full management of the virtual environment to the customer to manage. {{site.data.keyword.IBM_notm}} does not go into the customer environment as it is secure to the customer. 
 
 ## How do I install Usage Meter in my environment?
 {: #faq_usage-meter-how-to-install}
@@ -143,7 +155,7 @@ No; changes to virtual environments are not required. This is only an update of 
 {: #faq_usage-meter-backup}
 {: faq}
 
-No special backup is needed; continue to use your typical data protection and backup process. If you need a backup or disaster recovery solution, IBM provides options for data protection. For more information, contact your IBM Sales representative.
+No special backup is needed; continue to use your typical data protection and backup process. If you need a backup or disaster recovery solution, {{site.data.keyword.IBM_notm}} provides options for data protection. For more information, contact your {{site.data.keyword.IBM_notm}} Sales representative.
 
 ## As an {{site.data.keyword.cloud_notm}} for VMware customer, am I required to do anything?
 {: #faq_usage-meter-existing-customer}
@@ -151,7 +163,7 @@ No special backup is needed; continue to use your typical data protection and ba
 
 Yes. {{site.data.keyword.cloud_notm}} for VMware requires customers to comply with vendor software agreements as part of the {{site.data.keyword.cloud_notm}} Services Agreement. If you do not provide usage tracking through Usage Meter, you risk falling out of support and compliance and incur billing errors on usage. For more information, see the [{{site.data.keyword.cloud_notm}} Services Agreement](https://www.ibm.com/support/customer/csol/terms/?id=Z126-6304&cc=us&lc=en).
 
-IBMs Cloud Services Agreement (CSA) and applicable attachments and transaction documents are the complete agreement under which customers can order Cloud Services, which might consist of {{site.data.keyword.cloud_notm}} Services or other services to support use of Cloud Services that IBM provides (IBM products) or cloud or other services that a third-party such as Broadcom provides that customers acquire from IBM (non-IBM products).
+IBM Cloud Services Agreement (CSA) and applicable attachments and transaction documents are the complete agreement under which customers can order Cloud Services, which might consist of {{site.data.keyword.cloud_notm}} Services or other services to support use of Cloud Services that {{site.data.keyword.IBM_notm}} provides ({{site.data.keyword.IBM_notm}} products) or cloud or other services that a third-party such as Broadcom provides that customers acquire from {{site.data.keyword.IBM_notm}} (non-{{site.data.keyword.IBM_notm}} products).
 
 ## What security and compliance documentation is available for Usage Meter?
 {: #faq_usage-meter-sec-compl-doc}

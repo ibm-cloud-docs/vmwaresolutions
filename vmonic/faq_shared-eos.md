@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-01-10"
+lastupdated: "2025-03-21"
 
 keywords: FAQ vmware shared, vmware shared, end of support vmware shared, vmware shared deprecated
 
@@ -25,9 +25,11 @@ Find answers to frequently asked questions about the End of Support for {{site.d
 {: #faq-shared-eos}
 {: faq}
 
-If you are an existing customer, support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} deployments will continue until 28 February 2025 after which access to workloads will end. It is recommended that you deploy any new instances on the next-generation multitenant offering {{site.data.keyword.vcf-aas-full}}. {{site.data.keyword.vcf-aas}} is based on the same underlying software VMware Cloud Director, which retains the same admin console. You also benefit from performance improvements, options of network edge tier, improved private networking through {{site.data.keyword.tg_full_notm}}, greater regional coverage, and minor rebalancing in pricing. All these benefits make {{site.data.keyword.vcf-aas}} the ideal landing zone for your workloads.
+If you are an existing customer, support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} deployments will continue until 28 February 2025 after which access to workloads will end.
 
-If you are new to {{site.data.keyword.vm-shared}}, and don't have any existing deployments, you are not able to provision new instances of {{site.data.keyword.vm-shared}}. You can directly use the next-generation performance that is offered by {{site.data.keyword.vcf-aas}}, with on-demand pricing (hourly) and discounted reserved usage (monthly). For more discounts for continued use, contact your {{site.data.keyword.IBM}} seller.
+It is recommended that you deploy any new instances on the next-generation multitenant offering {{site.data.keyword.vcf-aas-full}}. {{site.data.keyword.vcf-aas}} is based on the same underlying software VMware Cloud Director, which retains the same admin console. You also benefit from performance improvements, options of network edge tier, improved private networking through {{site.data.keyword.tg_full_notm}}, greater regional coverage, and minor rebalancing in pricing. All these benefits make {{site.data.keyword.vcf-aas}} the ideal landing zone for your workloads.
+
+If you are new to {{site.data.keyword.vm-shared}}, and don't have any existing deployments, you are not able to provision new instances of {{site.data.keyword.vm-shared}}. You can use the next-generation performance that is offered by {{site.data.keyword.vcf-aas}}, with on-demand pricing (hourly) and discounted reserved usage (monthly). For more discounts for continued use, contact your {{site.data.keyword.IBM}} seller.
 
 ## Why is the support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} ending?
 {: #faq-shared-eos-support}
@@ -103,7 +105,7 @@ The key capabilities of both platforms are:
 * Migration tool
 * High availability: single-zone
 
-{{site.data.keyword.IBM_notm}} is actively working on some features to address in 2024, which include:
+{{site.data.keyword.IBM_notm}} is actively working on some features, such as:
 * Load balancer
 * Self-managed disaster recovery that uses Veeam Cloud Connect
 * High availability: multizone regional network HA

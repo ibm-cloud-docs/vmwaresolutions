@@ -54,7 +54,7 @@ Add-on services upgrades
 {: #vmwaresolutions-feb0325}
 {: release-note}
 
-VMware Cloud Foundation for VPC updates
+{{site.data.keyword.vcf-vpc}} updates
 :   The following updates are available:
 
    * VMware Cloud Foundation 5.2.1 supports Intel® Sapphire Rapids Generation 3 bare metal profiles for all available regions.
@@ -95,7 +95,7 @@ BOM updates for {{site.data.keyword.vcf-classic-short}}
    * VMware vCenter Server® Appliance
       * 8.0 Update 3d (build 24322831)
       * 7.0 Update 3t (build 24322018)
-   * VMware vSphere ESXi™ 8.0 Update 3b (build 24280767)
+   * VMware vSphere ESXi 8.0 Update 3b (build 24280767)
 
 Zerto add-on service upgrade
 :   Zerto add-on service version 10.0u5 is available for deployment. To upgrade from Zerto versions that are earlier than 10.0u5, you must migrate from a Microsoft Windows® Virtual Service Instance (VSI) to a Linux® virtual machine (VM). For more information, see [Migrating Zerto from Windows ZVM to Linux ZVMA](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_migration).
@@ -116,8 +116,8 @@ New and updated documentation
 {: #vmwaresolutions-nov2024}
 {: release-note}
 
-VCF 5.2.1 for VMware Cloud Foundation for VPC
-:   VMware Cloud Foundation 5.2.1 is offered for all VCF for VPC instances. The configuration with VMware vSphere® 8 and VMware vSAN ESA (Express Storage Architecture) on Intel Sapphire Rapids Generation 3 bare metal profiles is available only in the Sao Paulo region.
+VCF 5.2.1 for {{site.data.keyword.vcf-vpc}}
+:   VMware Cloud Foundation 5.2.1 is offered for all {{site.data.keyword.vcf-vpc-short}} instances. The configuration with VMware vSphere® 8 and VMware vSAN ESA (Express Storage Architecture) on Intel Sapphire Rapids Generation 3 bare metal profiles is available only in the Sao Paulo region.
 
 ### 9 October 2024
 {: #vmwaresolutions-oct0924}
@@ -155,7 +155,7 @@ BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
 
    * VMware vCenter Server Appliance 8.0 Update 2d (build 23929136)
-   * VMware vSphere ESXi™ 8.0 Update 2b (build 23305546)
+   * VMware vSphere ESXi 8.0 Update 2b (build 23305546)
    * VMware NSX® 4.1.2.4 (build 23786733)
 
 Add-on services upgrades
@@ -183,7 +183,7 @@ VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
 {: #vmwaresolutions-jun1424}
 {: release-note}
 
-VMware Cloud Foundation for VPC enhancements
+{{site.data.keyword.vcf-vpc}} enhancements
 :   The following features are now available:
 
    * **Server backup**: You can do regular backups of management components, such as SDDC Manager, VMware vCenter Server®, and NSX Manager. For more information, see [Management domain backup](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ordering#vpc-vcf-ordering-mgmt-domain-backup).
@@ -192,9 +192,9 @@ VMware Cloud Foundation for VPC enhancements
       * Cloud Builder VM 5.1.1 (build 23480823)
       * SDDC Manager 5.1.1 (build 23480823)
       * VMware vCenter Server Appliance 8.0 Update 2b (build 23319993)
-      * VMware ESXi™ 8.0 Update 2b (build 23305546)
+      * VMware ESXi 8.0 Update 2b (build 23305546)
       * VMware Virtual SAN Witness Appliance 8.0 Update 2 (build 22443122)
-      * VMware NSX-T™ 4.1.2.4 (build 23786733)
+      * VMware NSX-T 4.1.2.4 (build 23786733)
       * VMware Aria® Suite Lifecycle Manager 8.16 (build 23377566)
 
 ### 1 May 2024
@@ -279,7 +279,7 @@ End of Support for {{site.data.keyword.vm-shared}} deployments
 {: #vmwaresolutions-mar1524}
 {: release-note}
 
-VMware Cloud Foundation for VPC enhancements
+{{site.data.keyword.vcf-vpc}} enhancements
 :   The following features are now available:
 
    * **Async Patch tool**: You can apply critical patches for VMware Cloud Foundation components, such as VMware NSX Manager, VMware vCenter Server®, and VMware ESXi by using the Async Patch tool. For more information, see [Viewing VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing#vpc-vcf-viewing-details).

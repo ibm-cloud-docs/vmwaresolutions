@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-03"
+lastupdated: "2025-03-18"
 
 keywords: vmware cloud foundation BOM, bill of materials vmware cloud foundation, BOM
 
@@ -27,8 +27,8 @@ Review the BOM information for Bare Metal Servers on {{site.data.keyword.vpc_ful
 | Type | Details |
 | ---- | ------- |
 | Bare Metal Servers | Provides compute capacity for a minimum of 4 hosts for the consolidated architecture. |
-| VLANs | Assigned to physical VMware ESXi servers for traffic of VMware vSphere management, VMware vSAN, vSphere vMotion, and VMware NSX TEP. |
-| Subnets | Created for vSphere management traffic, vSAN, vSphere vMotion, NSX TEP, and NSX-T Tier-0 Gateway. |
+| VLANs | Assigned to physical VMware ESXi™ servers for traffic of VMware vSphere® management, VMware vSAN™, vSphere vMotion, and VMware NSX® TEP. |
+| Subnets | Created for vSphere management traffic, vSAN, vSphere vMotion, NSX TEP, and NSX-T™ Tier-0 Gateway. |
 | Security Groups | To create logical groups and apply rules to traffic of vSphere management, vSAN, vSphere vMotion, and NSX TEP. |
 | Virtual Server Instances | Optional. Windows Server 2019 Standard Edition (AMD64), 2 vCPU, 8 GB RAM, and a bandwidth cap of 4 Gbps. |
 {: caption="BOM for {{site.data.keyword.vpc_short}} infrastructure in {{site.data.keyword.vcf-vpc-short}} instances" caption-side="bottom"}
