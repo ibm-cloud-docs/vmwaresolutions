@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-02-14"
+lastupdated: "2025-03-18"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -26,6 +26,19 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 {: #year-2025}
 
 
+
+### 18 March 2025
+{: #vmwaresolutions-mar1825}
+{: release-note}
+
+{{site.data.keyword.vcf-vpc-short}} updates
+
+:   VMware ESXi™ 8.0 Update 3d (build 24585383) is applied to newly deployed {{site.data.keyword.vcf-vpc-short}} instances.
+
+   For existing {{site.data.keyword.vcf-vpc-short}} instances, you are required to apply the following updates yourself:
+
+   * Upgrade ESXi to 8.0 Update 3d. For more information, see [Upgrade ESXi with vSphere Lifecycle Manager Images for VMware Cloud Foundation 5.2](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/5-2/vmware-cloud-foundation-lifecycle-management/upgrade-the-management-domain-to-vmware-cloud-foundation-5-2-lifecycle/upgrade-esxi-with-vsphere-lifecycle-manager-images-for-vmware-cloud-foundation-lifecycle.html){: external}.
+   * Upgrade VMware NSX-T™ to version 4.2.1.3. For more information, see [Upgrade NSX for VMware Cloud Foundation 5.2.x](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/5-2/upgrade-nsx-for-vcf-5-2.html){: external}.
 
 ### 14 February 2025
 {: #vmwaresolutions-feb1425}
