@@ -43,7 +43,7 @@ Review the BOM information for {{site.data.keyword.vcf-vpc-short}} software comp
 | Cloud Builder VM | 5.2.1 | 24307856 |
 | SDDC Manager | 5.2.1 | 24307856 |
 | VMware vCenter Server Appliance | 8.0 Update 3c | 24305161 |
-| VMware ESXi | 8.0 Update 3b | 24280767 |
+| VMware ESXi | 8.0 Update 3d | 24585383 |
 | VMware Virtual SAN Witness Appliance | 8.0 Update 3b | 24280767 |
 | VMware NSX-T | 4.2.1 | 24304122 |
 | VMware Aria® Suite Lifecycle Manager | 8.18 | 24029603 |
