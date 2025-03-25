@@ -42,7 +42,7 @@ To add extra repositories, Veeam supports the following storage types:
    * [Infinidat InfiniGuard](https://helpcenter.veeam.com/docs/backup/vsphere/infinidat_infiniguard.html?ver=120){: external}
    * [Quantum DXi](https://helpcenter.veeam.com/docs/backup/vsphere/deduplicating_appliance_quantum.html?ver=120){: external}
 
-* **Object storage** - You can use cloud storage services as backup repositories. For more information, see [Object storage repository](https://helpcenter.veeam.com/docs/backup/vsphere/object_storage_repository.html?ver=120){: external}.  
+* **Object storage** - You can use cloud storage services as backup repositories. For more information, see [Object storage repository](https://helpcenter.veeam.com/docs/backup/vsphere/object_storage_repository.html?ver=120){: external}.
 
 To add {{site.data.keyword.cloud_notm}} object storage, see:
 * [Choosing a plan and creating an instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision)
@@ -58,11 +58,11 @@ To add a Linux Hardened repository, see:
 
 When you add a Linux hardened repository, consider:
 * Recommendations from the Security Technical Implementation Guides (STIGs) created and maintained by the Defense Information Systems Agency (DISA) for Ubuntu 20.04 LTS. For more information, see [DISA STIGs Document Library](https://public.cyber.mil/stigs/downloads/){: external}.
-* To be compliant with [DISA STIG UBTU-20-010414](https://www.stigviewer.com/stig/canonical_ubuntu_20.04_lts/2022-12-06/finding/V-238335){: external}, you do not need to enable disk encryption for the operating system. To protect data in backups, use Veeam Backup and Replication built-in encryption instead.
+* To be compliant with [DISA STIG UBTU-20-010414](https://stigviewer.com/stigs/canonical_ubuntu_20.04_lts/2024-08-22/finding/V-238335){: external}, you do not need to enable disk encryption for the operating system. To protect data in backups, use Veeam Backup and Replication built-in encryption instead.
 
 For postinstallation, consider the following Veeam recommendations:
-   * To be compliant with [DISA STIG UBTU-20-010009](https://www.stigviewer.com/stig/canonical_ubuntu_20.04_lts/2022-12-06/finding/V-238204){: external}, set a password for GRUB.
-   * To be compliant with [DISA STIG UBTU-20-010012](https://www.stigviewer.com/stig/canonical_ubuntu_20.04_lts/2022-12-06/finding/V-238206){: external}, you must have only two users:
+   * To be compliant with [DISA STIG UBTU-20-010009](https://stigviewer.com/stigs/canonical_ubuntu_20.04_lts/2024-08-22/finding/V-238204){: external}, set a password for GRUB.
+   * To be compliant with [DISA STIG UBTU-20-010012](https://stigviewer.com/stigs/canonical_ubuntu_20.04_lts/2024-08-22/finding/V-238206){: external}, you must have only two users:
       * The `root` account, which has a blank password and cannot be used for connection.
       * The user account that you create during the installation. This account is used to connect to the Linux server and deploy the required Veeam Backup and Replication components.
 
