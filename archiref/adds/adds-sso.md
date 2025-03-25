@@ -45,7 +45,7 @@ The vSphere SSO domain is used as the initial authentication mechanism and it se
 
 After deployment, the `administrator@vsphere.local` user has administrator access to both SSO and vCenter Server. This user can manage identity sources and default domains, specify password policies, and perform other administrative tasks in the `vsphere.local` domain. However, this user is integral to the VMware vSphere® and VMware NSX® infrastructure authentication they are not part of AD but created automatically when vSphere is deployed. As this account is not part of AD, they can be used in situations when AD is not working correctly.
 
-As the customer, you have full access to manage the vSphere SSO users and groups as needed. For more information about changing these policies, see [Managing vCenter Single Sign-On users and groups](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.psc.doc/GUID-31F302A6-D622-4FEC-9007-EE3BA1205AEA.html){: external}.
+As the customer, you have full access to manage the vSphere SSO users and groups as needed. For more information about changing these policies, see [Managing vCenter Single Sign-On users and groups](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/platform-services-controller-administration-6-7/vsphere-authentication-with-vcenter-single-sign-onplatform-services-controller-admin/managing-users-and-groups-with-ssoplatform-services-controller-admin.html){: external}.
 
 ## Identity sources
 {: #adds-sso-identity}
