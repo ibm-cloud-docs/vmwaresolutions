@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-03-21"
+lastupdated: "2025-03-25"
 
 keywords: FAQ vmware shared, vmware shared, end of support vmware shared, vmware shared deprecated
 
@@ -25,7 +25,7 @@ Find answers to frequently asked questions about the End of Support for {{site.d
 {: #faq-shared-eos}
 {: faq}
 
-If you are an existing customer, support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} deployments will continue until 28 February 2025 after which access to workloads will end.
+Customer and management workloads and all backups, regardless of retention period, will be deleted on 6 April 2025. To avoid permanent deletion of your {{site.data.keyword.vm-shared}} backups and to migrate your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service), open an IBM Support ticket by 6 April 2025.
 
 It is recommended that you deploy any new instances on the next-generation multitenant offering {{site.data.keyword.vcf-aas-full}}. {{site.data.keyword.vcf-aas}} is based on the same underlying software VMware Cloud Director, which retains the same admin console. You also benefit from performance improvements, options of network edge tier, improved private networking through {{site.data.keyword.tg_full_notm}}, greater regional coverage, and minor rebalancing in pricing. All these benefits make {{site.data.keyword.vcf-aas}} the ideal landing zone for your workloads.
 
@@ -36,7 +36,7 @@ If you are new to {{site.data.keyword.vm-shared}}, and don't have any existing d
 {: faq}
 {: support}
 
-It is important to understand that {{site.data.keyword.vm-shared}} is based on VMware NSX-V, which is no longer supported by VMware® by Broadcom. {{site.data.keyword.IBM_notm}}'s exclusive contract with Broadcom® extends NSX-V support for {{site.data.keyword.cloud_notm}} customers into 2025, allowing for this extension to {{site.data.keyword.vm-shared}} deployments. For more information, see [End of Support for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v). IBM does not anticipate any further extensions after 28 February 2025.
+It is important to understand that {{site.data.keyword.vm-shared}} is based on VMware NSX-V, which is no longer supported by VMware® by Broadcom. {{site.data.keyword.IBM_notm}}'s exclusive contract with Broadcom® extends NSX-V support for {{site.data.keyword.cloud_notm}} customers into 2025, allowing for this extension to {{site.data.keyword.vm-shared}} deployments. For more information, see [End of Support for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v).
 
 ## What is the next step?
 {: #faq-shared-eos-next}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024
+  years:  2024, 2025
 
-lastupdated: "2024-11-04"
+lastupdated: "2025-03-25"
 
 keywords: vmware solutions shared, vmware shared, migration, migration partner, partners for assisted migration
 
@@ -23,6 +23,8 @@ subcollection: vmwaresolutions
 {: #shared_migration-options}
 
 You can migrate your workloads from {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} to {{site.data.keyword.vcf-aas-full}}. Since {{site.data.keyword.vcf-aas}} is based on VMware Cloud Director, it retains the same console that is used for {{site.data.keyword.vm-shared}}. You also benefit from performance improvements, options of network edge tier, greater global coverage, and a small price rebalancing, which make {{site.data.keyword.vcf-aas}} the ideal landing zone for your workloads.
+
+As of 4 March 2025, all customer VMs are powered off and are scheduled for deletion on 6 April 2025. All backups, regardless of retention period, are also scheduled to be deleted in April.
 
 Depending on the size and complexity of your workloads, you can migrate them by using a self-service migration tool. If you need assistance, you can choose a partner to help with some migration activities or ask them to do a full migration for you.
 

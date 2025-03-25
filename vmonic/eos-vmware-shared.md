@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-03-21"
+lastupdated: "2025-03-25"
 
 keywords: end of support notice, vmware shared, end of support vmware shared, vmware shared deprecated, vmware shared support
 
@@ -18,16 +18,16 @@ subcollection: vmwaresolutions
 # End of Support for {{site.data.keyword.vm-shared}} deployments
 {: #eos-vmware-shared}
 
-As of 28 March 2024, {{site.data.keyword.vm-shared}} is not available for new deployments. Support for existing instances is extended until 28 February 2025. All customer and management data, including the backups of workloads, will be deleted in March 2025. Migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 28 February 2025.
+As of 28 March 2024, {{site.data.keyword.vm-shared}} is not available for new deployments and support for existing instances ended on 28 February 2025. As of 4 March 2025, all VMs are powered off and on 6 April 2025, all customer and management data will be deleted. To avoid permanent deletion of your {{site.data.keyword.vm-shared}} backups and to migrate your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service), open an IBM Support ticket by 6 April 2025.
 {: deprecated}
 
-{{site.data.keyword.cloud}} support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} will end on 28 February 2025. As stated in [End of Support for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v), {{site.data.keyword.IBM_notm}}’s exclusive support extension for VMware® NSX-V is ending soon. Because {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} uses NSX-V as the underlying networking software, it will no longer be supported after 28 February 2025.
+As stated in [End of Support for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v), {{site.data.keyword.IBM_notm}}’s exclusive support extension for VMware® NSX-V is ending soon. Because {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} uses NSX-V as the underlying networking software, it is not supported as of 28 February 2025.
 
 The upgraded replacement for {{site.data.keyword.vm-shared}} is {{site.data.keyword.vcf-aas-full}}, the next generation {{site.data.keyword.IBM_notm}}-managed VMware Cloud Director offering. {{site.data.keyword.IBM}} strongly recommends that you migrate your workloads to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service).
 
 {{site.data.keyword.vcf-aas}} is based on VMware NSX-T software and is provided at near-identical [pricing](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared#eos-vmware-shared-pricing). As of December 2024, {{site.data.keyword.vcf-aas}} multitenant is available in 7 {{site.data.keyword.cloud_notm}} regions, and more regions are added periodically.
 
-As of 28 March 2024, new orders for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} instances are not accepted. If you are an existing customer, you can continue to use your {{site.data.keyword.vm-shared}} deployments until 28 February 2025 after which access to workloads will end. {{site.data.keyword.IBM_notm}} does not anticipate any further extensions after 28 February 2025 and all existing workloads will be deleted in March 2025. Regardless of the retention period, all backups would also be deleted in March 2025. {{site.data.keyword.IBM_notm}} strongly recommends that you assess your workloads immediately and complete your migration to {{site.data.keyword.vcf-aas}} before 28 February 2025.
+As of 28 March 2024, new orders for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} instances are not accepted. Customer and management workloads and all backups, regardless of retention period, will be deleted on 6 April 2025. To avoid permanent deletion of your {{site.data.keyword.vm-shared}} backups and to migrate your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service), open an IBM Support ticket by 6 April 2025.
 
 {{site.data.keyword.cloud_notm}} offers secure, simple, and cost-effective onboarding and migration options: either self-service or assisted. For more information, see [Migrating from {{site.data.keyword.vm-shared}} to {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_migration).
 
