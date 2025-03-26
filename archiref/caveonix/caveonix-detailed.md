@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-03-26"
 
 subcollection: vmwaresolutions
 
@@ -59,9 +59,7 @@ The following table shows the ports and protocols that are required for each com
 | Index datastore primary nodes | 9200, 9300, 5601, 443 |
 {: caption="Ports and protocols" caption-side="bottom"}
 
-The following diagram shows the network topology with the Caveonix portable private subnet that is associated with Private VLAN A. You are responsible for managing the IP address space for this subnet. If needed, you can scale out from the all-in-one deployment model, through the partially distributed model, and to the fully distributed model.
-
-![Network diagram](../../images/caveonix-network.svg "Network diagram"){: caption="Network diagram" caption-side="bottom"}
+You are responsible for managing the IP address space for the Caveonix portable private subnet. If needed, you can scale out from the all-in-one deployment model, through the partially distributed model, and to the fully distributed model.
 
 The IP Subnet, VLAN assignments are described in the following table.
 

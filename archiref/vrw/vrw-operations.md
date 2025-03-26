@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-11-29"
+lastupdated: "2025-03-26"
 
 subcollection: vmwaresolutions
 
@@ -43,7 +43,7 @@ All operational tools are deployed into the management cluster. The {{site.data.
 
 All systems that generate logs are configured to send their logs to VMware Aria Operations™ for Logs. Centralized collection of all logging enables a comprehensive view of all aspects of the {{site.data.keyword.rw}} operation. VMware Aria Operations for Logs is also capable of forwarding logs to security scanning services such as IBM QRadar.
 
-![VMware Aria Operations for Logs integration](../../images/vrw-v2-operations-logs-flow.svg "VMware Aria Operations for Logs integration"){: caption="VMware Aria Operations for Logs integration" caption-side="bottom"}
+![VMware Aria Operations for Logs integration](../../images/vrw-v2-operations-logs-flow-2.svg "VMware Aria Operations for Logs integration"){: caption="VMware Aria Operations for Logs integration" caption-side="bottom"}
 
 ### VMware Aria Operations for Networks
 {: #vrw-operations-management-vrni}

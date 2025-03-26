@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-03-26"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 The {{site.data.keyword.cloud}} for VMware® Regulated Workloads is built upon multiple clusters of bare metal hosts with VMware ESXi™ as the hypervisor.
 
-![{{site.data.keyword.rw}} infrastructure overview](../../images/vrw-v2-overview.svg "{{site.data.keyword.rw}} infrastructure overview"){: caption="{{site.data.keyword.rw}} infrastructure overview" caption-side="bottom"}
+![{{site.data.keyword.rw}} infrastructure overview](../../images/vrw-v2-overview-2.svg "{{site.data.keyword.rw}} infrastructure overview"){: caption="{{site.data.keyword.rw}} infrastructure overview" caption-side="bottom"}
 
 ## Management cluster
 {: #vrw-baremetal-management}
