@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-03-28"
 
 keywords: vSphere migration, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -155,6 +155,8 @@ If the upgrade process fails immediately and the `host cannot enter maintenance 
 
 ### Procedure to update ESXi host licenses
 {: #vs_vsphere_80_upgrade-license-update-esxi}
+
+To update the ESXi host licenses, you must first retrieve your new vSphere licenses from the IBM Cloud console. For more information, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
 
 1. From the **Licenses** page, click **+ Add New Licenses**.
 2. Enter the new vSphere 8 license keys in the **New Licenses** field. If you have multiple vSphere 8 license keys, input the all of the licenses in the **New Licenses** filed, enter a name for each license, and click **OK**.
