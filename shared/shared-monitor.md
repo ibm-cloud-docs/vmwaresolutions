@@ -140,6 +140,6 @@ The following table displays the total usage of the virtual data center storage.
 
 To customize your dashboard:
 
-1. In the {{site.data.keyword.mon_short}} console, click **Dashboards** from the left navigation pane.
+1. In the {{site.data.keyword.mon_short}} console, click **Dashboards** from the left navigation panel.
 2. Click the **IBM** menu and click **VMware Solutions Shared**.
 3. Customize your dashboard. For more information, see [Dashboards](/docs/monitoring?topic=monitoring-monitoring#monitoring_dashboards).

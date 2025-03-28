@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-03-28"
 
 keywords: KMIP certificate, add certificate KMIP, delete certificate KMIP
 
@@ -22,7 +22,7 @@ You can view the certificates that you added to your KMIP™ for VMware® instan
 ## Procedure to view certificates for KMIP for VMware instances
 {: #kmip_standalone_addingdeletingcert-view}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** > **KMIP for VMware** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-kmip}}
 2. In the **KMIP for VMware** table, click the instance to view the certificates for.
 3. View the list of added certificates under the **Client SSL certificates** section.
 4. To view the content of a particular certificate, click **Download**.
@@ -30,7 +30,7 @@ You can view the certificates that you added to your KMIP™ for VMware® instan
 ## Procedure to delete certificates from KMIP for VMware instances
 {: #kmip_standalone_addingdeletingcert-delete}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **KMIP for VMware** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-kmip}}
 2. In the **KMIP for VMware** table, click the instance that you want to delete certificates from.
 3. In the **Client SSL certificates** table, locate the certificate that you want to delete and click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete").
 

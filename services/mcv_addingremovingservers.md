@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-03-28"
 
 subcollection: vmwaresolutions
 
@@ -24,8 +24,8 @@ You can expand the capacity of your existing {{site.data.keyword.vcf-auto-short}
 ## Procedure to add ESXi servers to {{site.data.keyword.vcf-auto-short}} multizone instances
 {: #mcv_addingremovingservers-adding-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** > **{{site.data.keyword.vcf-auto-short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vcf-auto-short}}** table, click the instance for which you want to expand capacity.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
+2. In the **{{site.data.keyword.vcf-classic-short}}** table, click the instance for which you want to expand capacity.
 3. Click the **Infrastructure** tab.
 4. In the applicable cluster table, click the cluster to which you want to add ESXi servers.
 5. In the **ESXi servers** section, click **Add**.

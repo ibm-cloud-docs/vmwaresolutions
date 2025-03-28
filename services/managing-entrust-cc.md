@@ -47,7 +47,7 @@ When you add and remove hosts and clusters to your instance, VMware Solutions do
 {: #managing-entrust-cc-proc-find-firewall-nsxt}
 
 1. Log in to the NSX-T Manager, and click **Networking** in the menu.
-2. Click **NAT** from the left navigation pane.
+2. Click **NAT** from the left navigation panel.
 3. Select the T0 consolidated gateway from the **Gateway** list.
 
    The EntrustCC SNAT rules are displayed in the NAT rules table.

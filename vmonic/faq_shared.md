@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-26"
+lastupdated: "2025-03-28"
 
 keywords: FAQ vmware solutions shared, vmware solutions shared questions
 
@@ -96,7 +96,7 @@ You can check the status of the instance on the [instance details page](/docs/vm
 {: #faq-notification-shared}
 {: faq}
 
-To view the complete notification history, click **Notifications** from the left navigation pane.
+To view the complete notification history, click **Notifications** from the left navigation panel.
 
 ## What if I have issues with {{site.data.keyword.vm-shared}}?
 {: #faq-support-shared}

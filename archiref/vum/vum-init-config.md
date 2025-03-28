@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-14"
+lastupdated: "2025-03-28"
 
 subcollection: vmwaresolutions
 
@@ -35,7 +35,7 @@ Before you can start this task, collect the information to populate the followin
 
 To find your customer private portable subnet details, complete the following steps:
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **VCF for Classic** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. Select the required instance.
 3. Click the **Infrastructure** tab and select the required cluster.
 4. Select **Private VLAN** and locate the subnet that is labeled `Private subnet for customer workload edge`.

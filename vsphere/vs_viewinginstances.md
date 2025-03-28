@@ -24,7 +24,7 @@ View the summary and detailed information of the {{site.data.keyword.vcf-flex}} 
 
 To view a summary of all the {{site.data.keyword.vcf-flex-short}} instances that are provisioned for a user account, complete the following steps:
 
-1. In the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. From the console banner, click the **Avatar** icon ![Avatar icon](../../icons/i-avatar-icon.svg "Avatar"), and then click the **Account** field. Select the user account that you want to check instances for.
 3. In the **{{site.data.keyword.vcf-classic}}** table, view the list of instances that are provisioned in the selected user account.
 

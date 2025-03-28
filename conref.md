@@ -427,3 +427,6 @@ In the VMware Solutions console, click **Resources > {{site.data.keyword.vm-shar
 
 In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc-short}}** from the left navigation panel.
 {: #ol-intro-ui-vcfvpc}
+
+In the VMware Solutions console, click **Resources** > **KMIP for VMware** from the left navigation panel.
+{: #ol-intro-ui-kmip}

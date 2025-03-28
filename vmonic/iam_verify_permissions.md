@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-09-03"
+lastupdated: "2025-03-28"
 
 keywords: iam user role for vmware, iam user, iam user permissions, iam account administrator
 
@@ -31,7 +31,7 @@ To identify an account owner who has the administrator role, complete the follow
 1. Log in to [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com).
 2. On the upper right of the window, select the {{site.data.keyword.cloud_notm}} account that you want to use.
 3. Click **Manage** > **Access (IAM)**.
-4. From the left navigation pane, click **Users**.
+4. From the left navigation panel, click **Users**.
 5. Scroll down through the list until you find a name with an **owner** tag next to the user's name, which indicates that the user is an account administrator.
 6. Write down the name of this user.
 
@@ -50,7 +50,7 @@ After you find the account owner or another user with an administrator role, tha
 1. Log in to [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com) as the {{site.data.keyword.cloud_notm}} account owner.
 1. On the upper right of the window, select the {{site.data.keyword.cloud_notm}} account that you want to use.
 1. At the right side of the banner, click **Manage** > **Access (IAM)**.
-1. From the left navigation pane, click **Users**.
+1. From the left navigation panel, click **Users**.
 1. In the row for the user that you want to assign access, click the vertical overflow menu next to the **Status** column, and then click **Assign access**.
 1. Select **Access groups** to add the user to one or more existing access groups. You can assign the user only to those access groups that you have access to manage.
    1. Select one or more group names.
