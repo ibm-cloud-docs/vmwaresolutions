@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-02"
+lastupdated: "2025-03-28"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -159,6 +159,8 @@ Review the following table for an overview of the EVC (Enhanced VMware vMotion C
 {: caption="EVC mode settings for Automated instances and clusters" caption-side="bottom"}
 
 [^evc-vsphere67]: Existing vSphere 6.7 clusters only
+
+
 
 ## Active Directory Certificate Services
 {: #vc_bom-ad-certificate-services}

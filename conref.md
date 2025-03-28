@@ -33,7 +33,7 @@ For **Sapphire Rapids** servers, choose the following CPU model and a supported 
 {: #simpletabtable-sapphire}
 
 Sapphire Rapids servers are not supported for BYOL users.
-{: note}
+{: important}
 {: #note-spr-rapids-byol}
 
 For **Cascade Lake** servers, choose from the following CPU models and supported RAM sizes:
