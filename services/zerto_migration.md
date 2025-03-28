@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-03-28"
 
 keywords: Zerto, Zerto migration, zvm, zvma, windows zvm, linux zvma
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Migrating Zerto from Windows ZVM to Linux ZVMA
 {: #zerto_migration}
 
-For Zerto 9.7 and earlier, ZVM (Zerto Virtual Manager) used to run from a Microsoft Windows® virtual machine (VM). 
+For Zerto 9.7 and earlier, ZVM (Zerto Virtual Manager) used to run from a Microsoft Windows® virtual machine (VM).
 
 For Zerto 10.0 and later, Zerto runs in a lightweight Debian Linux® based ZVMA (ZVM Appliance). Therefore, upgrading from Zerto 9.7 to 10.x requires a full lift-and-shift migration of the ZVM data from the Windows ZVM to the Linux ZVMA.
 
@@ -32,7 +32,7 @@ For Zerto 10.0 and later, Zerto runs in a lightweight Debian Linux® based ZVMA 
 
       For more information, see [Zerto Migration Utility](https://help.zerto.com/bundle/Zerto.Migration.Utility.HTML.1.0/page/Migration_Utility_Prerequisites.htm){: external}.
 
-2. Open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). In the support ticket, ask for the following requirements:
+2. Open an {{site.data.keyword.IBM}} Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). In the support ticket, ask for the following requirements:
 
    * Three sets of IPv4 addresses for network configuration.
    * An OVA image file for Linux ZVMA deployment.
@@ -43,7 +43,7 @@ For Zerto 10.0 and later, Zerto runs in a lightweight Debian Linux® based ZVMA 
 ## Changing the IP configuration of the Windows ZVM and preserving VPG configuration
 {: #zerto_migration_networkconfig}
 
-The following steps are required only when the Zerto Windows VM network configuration needs to be updated so that it is on the same subnet as the Linux ZVMA. Without completing these steps, the migration utility does not communicate with the Linux ZVMA that is hosted on VMware vSphere, while the Windows VM is on {{site.data.keyword.cloud_notm}}. For more information, see [How to change the IP address of a ZVM server and preserve replicated data and VPG configuration](https://help.zerto.com/kb/000004268){: external}.
+The following steps are required only when the Zerto Windows VM network configuration needs to be updated so that it is on the same subnet as the Linux ZVMA. Without completing these steps, the migration utility does not communicate with the Linux ZVMA that is hosted on VMware vSphere®, while the Windows VM is on {{site.data.keyword.cloud_notm}}. For more information, see [How to change the IP address of a ZVM server and preserve replicated data and VPG configuration](https://help.zerto.com/kb/000004268){: external}.
 
 1. Export the existing VPG (Virtual Protection Group) data.
    1. Log in to the Windows Zerto UI.
@@ -55,7 +55,7 @@ The following steps are required only when the Zerto Windows VM network configur
       2. On the **Delete VPG** page, select the **Keep the recovery disks at the peer site** checkbox, and click **Delete**.
 
 2. After you delete the VPG, unpair existing sites from the Windows Zerto UI.
-3. Update the Zerto Windows VM network configuration so that it is on the same subnet as the Linux ZVMA. To receive more IPv4 addresses, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+3. Update the Zerto Windows VM network configuration so that it is on the same subnet as the Linux ZVMA. To receive more IPv4 addresses, open an {{site.data.keyword.IBM_notm}} Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 4. To configure the network settings, run diagnostic on Zerto Windows VM by logging in to the Windows VM, and running the command **Zerto Diagnostic**.
 5. After the diagnostic completes successfully, log in to the Zerto Windows UI with the updated Windows IP address for validation.
 6. Pair the Zerto sites. After a successful site pairing, import the VPG:
@@ -65,7 +65,7 @@ The following steps are required only when the Zerto Windows VM network configur
 ## Installing Zerto ZVMA on a Linux VM
 {: #zerto_migration_installzvma}
 
-For Zerto Linux OVA, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+For Zerto Linux OVA, open an {{site.data.keyword.IBM_notm}} Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 1. Log in to the specific vCenter Server instance, right click **Management Cluster** and select **Deploy OVF Template**.
 2. Click **Local file > UPLOAD FILES**, select the Zerto OVA file, and click **Next**.
@@ -74,7 +74,7 @@ For Zerto Linux OVA, open an IBM Support ticket by following the steps in [Getti
 5. Select the applicable data store, and then choose **Thin Provision** on **Select virtual disk format**, and click **Next**.
 6. Select the `dpg-mgmt` network, and click **Next**.
 7. Review the details and click **Finish**.
-8. After the OVA is deployed, click **Launch Web Console** in VMware vCenter Server to open the **ZertoLinuxVM** console. Use the following credentials to log in to the **ZertoLinuxVM** console:
+8. After the OVA is deployed, click **Launch Web Console** in VMware vCenter Server® to open the **ZertoLinuxVM** console. Use the following credentials to log in to the **ZertoLinuxVM** console:
 
    ```text
    username: zadmin
@@ -85,7 +85,7 @@ For Zerto Linux OVA, open an IBM Support ticket by following the steps in [Getti
 9. After you log in for the first time, reset the password. Make a note of the new password. Then, log in with the new password.
 10. Select **Option 2 (Configure Network Settings)** and press Enter.
 11. On the next screen, select **Option 2** to configure the static network for Zerto.
-12. In the Zerto VM console, enter the new IP address for Zerto from the management network that you received from IBM Support. Then, press Enter.
+12. In the Zerto VM console, enter the new IP address for Zerto from the management network that you received from {{site.data.keyword.IBM_notm}} Support. Then, press enter.
 13. Enter the **mask** value in **Subnet Mask**, the **gateway** value in **IP4V Gateway**, and the **dns** value in **DNS name server 1**. If you have two values in the **dns** section, enter the other value in the next prompt or enter `NA`.
 14. Review the summary details and enter `y` if all information is correct. Then, restart the system.
 15. After system restart, log in with the following username and password:
@@ -116,7 +116,7 @@ For Zerto Linux OVA, open an IBM Support ticket by following the steps in [Getti
 ## Migrating from Windows ZVM to Linux ZVMA
 {: #zerto_migration_winzvm_lnxzvma}
 
-For Zerto Migration Utility, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). Then, fetch the new set of temporary IP addresses for Zerto Migration Utility that you received from the IBM Support team.
+For Zerto Migration Utility, open an {{site.data.keyword.IBM_notm}} Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). Then, fetch the new set of temporary IP addresses for Zerto Migration Utility that you received from the {{site.data.keyword.IBM_notm}} Support team.
 
 1. Run the Zerto Migration Utility. On the **Target ZVM Appliance Credentials** page, enter the Linux ZVMA IP address. Use the following credentials:
 
@@ -129,7 +129,7 @@ For Zerto Migration Utility, open an IBM Support ticket by following the steps i
 2. Check whether the SSH connectivity is working:
    1. Click **Validate SSH Connectivity** on the **Target ZVM Appliance Credentials** page.
    2. When you see a success message such as **Established connection to the ZVM Appliance**, click **Next**.
-3. On the **Alternative Host Network Details** page, provide the temporary Windows IP address that you received from IBM Support. Enter the `IP Address`, `Subnet Mask`, `Gateway`, and `DNS Server` details. Then, click **Next**.
+3. On the **Alternative Host Network Details** page, provide the temporary Windows IP address that you received from {{site.data.keyword.IBM_notm}} Support. Enter the `IP Address`, `Subnet Mask`, `Gateway`, and `DNS Server` details. Then, click **Next**.
 4. On the **Summary** page, verify **Upgrade VRAs**. Then, click **Migrate**.
 
    Notice that the Remote Desktop session connection to the Windows VM with Zerto ZVM installed is lost. You need to use the new IP address as configured in the earlier step to connect to Remote Desktop. Use the same credentials as earlier.
@@ -152,8 +152,8 @@ For more information, see [How to change the IP address of a ZVM server and pres
 ## Completing postinstallation steps
 {: #zerto_migration_postinstall}
 
-1. Open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to update the backend information in the {{site.data.keyword.cloud_notm}} automation.
-2. Update the DNS entry for Zerto in the AD server, and open an IBM Support ticket to remove the Windows VM from {{site.data.keyword.cloud_notm}}.
+1. Open an {{site.data.keyword.IBM_notm}} Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to update the backend information in the {{site.data.keyword.cloud_notm}} automation.
+2. Update the DNS entry for Zerto in the AD server, and open an {{site.data.keyword.IBM_notm}} Support ticket to remove the Windows VM from {{site.data.keyword.cloud_notm}}.
 3. If you encounter any errors during the Zerto migration process, see [Why does the Zerto Migration from Windows Zerto Virtual Manager to Linux ZVM Appliance fail?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_zerto_zvma_migration)
 
 ## Related links

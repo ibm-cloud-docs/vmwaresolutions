@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-03-28"
 
 keywords: troubleshooting, Zerto ZVMA, zvm, zvma, windows zvm, linux zvma, zerto migration
 
@@ -64,5 +64,5 @@ at Renci.SshNet.Abstractions.SocketAbstraction.ConnectCore(Socket socket, IPEndP
 The Windows VM is not on the same subnet as the Linux® ZVMA (Zerto Virtual Manager Appliance).
 {: tsCauses}
 
-Ensure that you configured your Windows and Linux ZVMs correctly by using the addresses provided to you by IBM Support.
+Ensure that you configured your Windows and Linux ZVMs correctly by using the addresses that are provided to you by IBM Support.
 {: tsResolve}
