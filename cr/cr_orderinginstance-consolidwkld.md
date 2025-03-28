@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-03-28"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -60,6 +60,8 @@ Select **Sapphire Rapids**, **Cascade Lake**, or **SAP-certified Cascade Lake**.
 {{site.data.content.sapphire-para-intro}}
 
 {{site.data.content.simpletabtable-sapphire}}
+
+{{site.data.content.note-spr-rapids-byol}}
 
 ### Cascade Lake
 {: #cr_orderinginstance-consolidwkld-cascade}
