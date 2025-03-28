@@ -426,7 +426,7 @@ Add-on services upgrades
    * VMware Aria Operations v8.12.1
 
 ProtectIO
-:   ProtectIO is now available as a data migration and resiliency service in the VMware Solutions console.
+:   ProtectIO is now available as a data migration and resiliency service from the VMware Solutions console.
 
 User interface updates and enhancements
 :   The UI (user interface) is updated with various messages and tooltips, and provides the following enhancements:
@@ -488,7 +488,7 @@ New and updated documentation
 {: release-note}
 
 VMware vSphere Day 2 support
-:   You can view or delete VMware vSphere instances in the VMware Solutions console. You can also add or delete VMware ESXi servers, and add or delete licenses for vSphere instances in the VMware Solutions console.
+:   You can view or delete VMware vSphere instances from the VMware Solutions console. You can also add or delete VMware ESXi servers, and add or delete licenses for vSphere instances from the VMware Solutions console.
 
 VMware Regulated Workloads multizone instances - deprecated
 :   New deployments of VMware Regulated Workloads multizone instances are no longer supported. For existing multizone instances, you can still add and delete clusters, add and delete ESXi servers or NFS storage, and delete add-on services.
@@ -708,7 +708,7 @@ REST API updates
    * For VMware Solutions API, support is provided for Caveonix RiskForesight, Veeam, Zerto, and VMware HCX stand-alone licenses. Also, support for the 2U chassis types is added by using the new `large_chassis_only` parameter.
 
 User interface enhancements
-:   The left navigation panel in the VMware Solutions console now groups items as **Resources** and **Licenses** so that they are more aligned with the resource types and names.
+:   The left navigation pane on the VMware Solutions console now groups items as **Resources** and **Licenses** so that they are more aligned with the resource types and names.
 
 ### 29 August 2022
 {: #vmwaresolutions-aug2922}
@@ -771,7 +771,7 @@ VMware vRealize Operations Tenant App V8.6 for {{site.data.keyword.vm-shared}}
 :   The 4.8 release enables a new optional feature for the {{site.data.keyword.vmwaresolutions_short}} tenant portal. VMware vRealize Operations Tenant App V8.6 provides metering capabilities for tenants to monitor their virtual data centers, virtual applications, and virtual machines.
 
 {{site.data.keyword.cloud_notm}} Identity and Access Management enablement for VMware Solutions Shared
-:   {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) is now enabled by default for new sites. You can optionally enable IAM for existing sites. After you integrate your site with IAM, you can use single sign-on to log in to the VMware Cloud Director console in the VMware Solutions console.
+:   {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) is now enabled by default for new sites. You can optionally enable IAM for existing sites. After you integrate your site with IAM, you can use single sign-on to log in to the VMware Cloud Director console from the VMware Solutions console.
 
    With the IAM integration, role-based access control now uses a site and organization IAM policy for VMware Solutions Shared resources.
 
@@ -889,7 +889,7 @@ Add-on services upgrades
    * Zerto v9.0u3
 
 Dizzion
-:   Dizzion is now available as a featured service in the VMware Solutions console.
+:   Dizzion is now available as a featured service from the VMware Solutions console.
 
 Name change for HyTrust add-on services
 :   The company Entrust acquired the HyTrust company. The names of the following services are updated.
