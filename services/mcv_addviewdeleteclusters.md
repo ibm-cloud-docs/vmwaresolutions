@@ -23,8 +23,8 @@ You can add workload or gateway clusters to your existing {{site.data.keyword.vc
 ## Procedure to add workload clusters to Automated multizone instances
 {: #mcv_addviewdeleteclusters-workload-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** > **{{site.data.keyword.vcf-auto-short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vcf-auto-short}}r** table, click the multizone instance that you want to add the workload cluster to.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
+2. In the **{{site.data.keyword.vcf-classic}}** table, click the multizone instance that you want to add the workload cluster to.
 3. Click the **Infrastructure** tab and click **Create** on the upper right of the **Workload clusters** table.
 4. On the **Create cluster** page, enter the cluster name.
 5. Select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers**.

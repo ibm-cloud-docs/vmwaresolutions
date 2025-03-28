@@ -696,11 +696,11 @@ Single sign-on is available only when your site VMware Cloud Director Organizati
 
 1. From the VMware Cloud Director Console, click **SIGN IN WITH SINGLE SIGN-ON** to log in to the portal.
 2. Click **Administration** on the top menu bar.
-3. Under **Access Control** on the left navigation pane, click **Users**.
+3. Under **Access Control** on the left navigation panel, click **Users**.
 4. In the **Users** panel, select all OIDC type users and click **DELETE**.
-5. Under **Access Control** on the left navigation pane, click **Groups**.
+5. Under **Access Control** on the left navigation panel, click **Groups**.
 6. In the **Groups** panel, select all groups with the **OIDC** type and click **DELETE**.
-7. Under **Identity Providers** on the left navigation pane, click **OIDC**.
+7. Under **Identity Providers** on the left navigation panel, click **OIDC**.
 8. In the **OpenID Connect** panel, click **DELETE**.
 
 ## Related links

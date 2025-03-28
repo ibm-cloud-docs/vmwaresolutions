@@ -30,7 +30,7 @@ You must have a billable {{site.data.keyword.cloud_notm}} account to order Zerto
 ## Procedure to order Zerto stand-alone licenses
 {: #zerto_ordering_licenses_ordering-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Licenses** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-licenses}}
 2. Scroll down to the **Zerto licenses** table and click **Create new**.
 3. On the **Zerto license** page, specify the resource group.
 

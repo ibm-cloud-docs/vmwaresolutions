@@ -22,7 +22,7 @@ You can view, edit notes, or delete the Veeam® licenses that you ordered for st
 ## Procedure to view Veeam stand-alone licenses
 {: #veeam_managing_licenses-procedure-view}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Licenses** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-licenses}}
 2. Scroll down to the **Veeam licenses** table.
 3. To view the details of a specific license, click the license. The following information is displayed for the Veeam license:
 
@@ -48,7 +48,7 @@ If you are experiencing this problem and the only browser you can use is Firefox
 ## Procedure to edit notes for Veeam stand-alone licenses
 {: #veeam_managing_licenses-procedure-edit}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Licenses** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-licenses}}
 2. Scroll down to the **Veeam licenses** table.
 3. Click the license that you want to edit the notes for.
 4. On the license details page, edit the license notes, and then click **Confirm**.
@@ -63,7 +63,7 @@ Deleting a Veeam license does not delete the Veeam service that is installed on 
 
 To delete a Veeam license:
 
-1. In the VMware Solutions console, click **Licenses** from the left navigation panel.
+1. {{site.data.content.ol-intro-ui-licenses}}
 2. Scroll down to the **Veeam licenses** table and select the license that you want to delete.
 3. From the **Actions** menu, click **Delete instance**.
 4. In the **Delete license** window, click **Delete**.

@@ -22,7 +22,7 @@ You can view and delete the Zerto licenses that you ordered for stand-alone use.
 ## Procedure to view Zerto stand-alone licenses
 {: #zerto_managing_licenses-procedure-view}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Licenses** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-licenses}}
 2. Scroll down to the **Zerto licenses** table to view the license name, creation time, and status.
 3. To view more details of a specific license, click the license. The following information is displayed for the Zerto license:
 
@@ -45,7 +45,7 @@ For more information, see [Deleting services from {{site.data.keyword.vcf-auto-s
 
 To delete a Zerto license:
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Licenses** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-licenses}}
 2. Scroll down to the **Zerto licenses** table and select the license that you want to delete.
 3. From the **Actions** menu, click **Delete license**.
 4. In the **Notes** field, optionally enter a reason for license deletion.

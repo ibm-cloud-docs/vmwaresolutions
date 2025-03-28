@@ -419,6 +419,9 @@ Review the following considerations for the vSAN storage architecture:
 In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation panel.
 {: #ol-intro-ui-vcfclassic}
 
+In the VMware Solutions console, click **Licensing and metering > Add-on services** from the left navigation panel.
+{: #ol-intro-ui-licenses}
+
 In the VMware Solutions console, click **Resources > {{site.data.keyword.vm-shared}}** from the left navigation panel.
 {: #ol-intro-ui-shared}
 
