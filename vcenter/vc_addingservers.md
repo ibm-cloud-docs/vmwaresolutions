@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-03-28"
 
 keywords: automated instance add host, add server automated instance
 
@@ -36,6 +36,8 @@ Review the following information applicable to all Automated instances:
 * For clusters that were provisioned initially with vSphere 8 ESXi servers, those servers use vSphere Distributed Switch (vDS) 8. You cannot add ESXi servers with vSphere 7 to a vSphere 8 cluster and its vDS.
 * For ESXi servers with vSAN storage, you can add only vSphere 7 either with vCenter Server 7 or 8.
 * For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
+
+
 
 {{site.data.content.attnnote-addhost-byol}}
 

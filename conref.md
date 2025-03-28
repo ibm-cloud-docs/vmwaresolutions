@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-03-25"
+lastupdated: "2025-03-28"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -31,6 +31,8 @@ For **Sapphire Rapids** servers, choose the following CPU model and a supported 
 | Dual Intel Xeon Platinum 8474C | 96 | 2.1/3.1 | Up to 16 drives | 256 GB, 512 GB, 1 TB, 2 TB |
 {: caption="Option for Sapphire Rapids bare metal servers" caption-side="bottom"}
 {: #simpletabtable-sapphire}
+
+
 
 For **Cascade Lake** servers, choose from the following CPU models and supported RAM sizes:
 {: #cascade-para-intro}

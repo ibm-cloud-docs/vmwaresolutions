@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-03-28"
 
 keywords: regulated workloads, regulated workloads order instance, order regulated workloads, regulated workloads instances
 
@@ -48,6 +48,8 @@ Select **Sapphire Rapids** or **Cascade Lake**.
 {{site.data.content.sapphire-para-intro}}
 
 {{site.data.content.simpletabtable-sapphire}}
+
+
 
 ### Cascade Lake
 {: #vrw-orderinginstance-consldt-cascade}
