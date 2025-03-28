@@ -61,7 +61,7 @@ Select **Sapphire Rapids**, **Cascade Lake**, or **SAP-certified Cascade Lake**.
 
 {{site.data.content.simpletabtable-sapphire}}
 
-{{site.data.content.note-spr-rapids-byol}}
+
 
 ### Cascade Lake
 {: #cr_orderinginstance-consolidwkld-cascade}

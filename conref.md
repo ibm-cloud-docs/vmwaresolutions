@@ -32,9 +32,7 @@ For **Sapphire Rapids** servers, choose the following CPU model and a supported 
 {: caption="Option for Sapphire Rapids bare metal servers" caption-side="bottom"}
 {: #simpletabtable-sapphire}
 
-Sapphire Rapids servers are not supported for BYOL users.
-{: important}
-{: #note-spr-rapids-byol}
+
 
 For **Cascade Lake** servers, choose from the following CPU models and supported RAM sizes:
 {: #cascade-para-intro}

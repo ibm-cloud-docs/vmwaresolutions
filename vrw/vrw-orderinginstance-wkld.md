@@ -45,7 +45,7 @@ Select **Sapphire Rapids** or **Cascade Lake**.
 
 {{site.data.content.simpletabtable-sapphire}}
 
-{{site.data.content.note-spr-rapids-byol}}
+
 
 ### Cascade Lake
 {: #vrw-orderinginstance-wkld-cascade}

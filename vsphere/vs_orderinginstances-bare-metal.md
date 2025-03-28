@@ -53,7 +53,7 @@ You can choose **Sapphire Rapids**, **Cascade Lake**, or **SAP-certified Cascade
 
 {{site.data.content.simpletabtable-sapphire}}
 
-{{site.data.content.note-spr-rapids-byol}}
+
 
 ### Cascade Lake
 {: #vs_orderinginstances-bare-metal-cascade}
