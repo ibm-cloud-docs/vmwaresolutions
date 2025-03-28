@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-18"
+lastupdated: "2025-03-28"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -38,8 +38,8 @@ For existing {{site.data.keyword.vcf-auto-short}} with NSX-V instances, the serv
 
 Before you install the HCX service, you must add a firewall rule to any existing firewalls.
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-auto-short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vcf-auto-short}}** table, click the instance to view the clusters from that instance.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
+2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance to view the clusters from that instance.
 3. Click the **Infrastructure** tab and select the cluster where you want to install the HCX service.
 4. Go to the **Network interface** section on the cluster page.
 5. Collapse the **Public VLAN** option and collapse the subnet with the description that corresponds to the portable subnet of the cluster.

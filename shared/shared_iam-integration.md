@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-03-28"
 
 keywords: manage shared resources, set IAM integration the VMware Cloud Director Management console, shared iam roles, iam roles
 
@@ -50,7 +50,7 @@ Review the following considerations to understand your responsibilities and IBM 
 
 Enable IAM for existing organizations or reset the IAM integration if necessary.
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > {{site.data.keyword.vm-shared}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-shared}}
 2. In the **{{site.data.keyword.vm-shared}}** table, click the site name to open the site properties page.
 3. Click the **Summary** tab.
 4. From the **Site details** pane, click **Set IAM integration**.

@@ -23,7 +23,7 @@ New installations of Entrust DataControl® (formerly HyTrust DataControl) are no
 
 To manage Entrust DataControl, access the Entrust DataControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust DataControl console from the vSphere® Web Client.
 
-## Accessing the Entrust DataControl WebGUI from the VMware Solutions console
+## Accessing the Entrust DataControl WebGUI in the VMware Solutions console
 {: #managing-entrust-dc-accessing-webgui}
 
 To log in to the WebGUI of the primary or secondary Entrust DataControl appliance, use the WebGUI credentials that are found on the Entrust DataControl service details page.

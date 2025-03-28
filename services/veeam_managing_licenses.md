@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-03-28"
 
 keywords: Veeam, Veeam license, manage Veeam license, Veeam Backup and Replication 12.3
 
@@ -63,7 +63,7 @@ Deleting a Veeam license does not delete the Veeam service that is installed on 
 
 To delete a Veeam license:
 
-1. From the VMware Solutions console, click **Licenses** from the left navigation pane.
+1. In the VMware Solutions console, click **Licenses** from the left navigation panel.
 2. Scroll down to the **Veeam licenses** table and select the license that you want to delete.
 3. From the **Actions** menu, click **Delete instance**.
 4. In the **Delete license** window, click **Delete**.

@@ -65,7 +65,7 @@ Review the following additional information applicable to Automated instances wi
 {: help}
 {: support}
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance for which you want to expand capacity.
 3. Click the **Infrastructure** tab.
 4. In the **Clusters** table, click the cluster to which you want to add ESXi servers.

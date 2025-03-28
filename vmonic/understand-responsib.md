@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2024
+  years: 2019, 2025
 
-lastupdated: "2024-12-23"
+lastupdated: "2025-03-28"
 
 subcollection: vmwaresolutions
 
@@ -104,7 +104,7 @@ The following table describes the responsibilities that are related to disaster 
 
 Configuration changes can impact the ability to use the VMware Solutions console to view and manage instances. Preserving certain configurations and settings is critical for the VMware Solutions automation to continue to function properly.
 
-You must manage the VMware Solutions components that are created in your {{site.data.keyword.cloud_notm}} account only from the VMware Solutions console. For more information, see:
+You must manage the VMware Solutions components that are created in your {{site.data.keyword.cloud_notm}} account only in the VMware Solutions console. For more information, see:
 * [{{site.data.keyword.vcf-auto}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
 * [Expanding and contracting capacity for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
 

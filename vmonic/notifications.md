@@ -24,7 +24,7 @@ You can also get notified about {{site.data.keyword.cloud}} platform-related ite
 ## Viewing VMware Solutions notifications
 {: #notifications-view}
 
-From the VMware Solutions console, click **Notifications** from the left navigation pane to view a summary of all notifications. To view the details of a notification, click the notification row.
+In the VMware Solutions console, click **Notifications** from the left navigation pane to view a summary of all notifications. To view the details of a notification, click the notification row.
 
 | Column | Description |
 |:------ |:----------- |

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-03-28"
 
 keywords: add NFS storage, add nfs
 
@@ -34,7 +34,7 @@ You can expand the capacity of your {{site.data.keyword.vcf-auto}} instance acco
 ## Procedure to add NFS storage to Automated instances
 {: #vc_addingnfs-procedure}
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance for which you want to expand capacity.
 3. Click the **Infrastructure** tab.
 4. In the **Clusters** table, click the cluster to which you want to add NFS storage.

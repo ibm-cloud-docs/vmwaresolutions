@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-03-28"
 
 subcollection: vmwaresolutions
 
@@ -43,8 +43,8 @@ You can add gateway clusters to your {{site.data.keyword.vcf-auto-short}} multiz
 You cannot add more than one cluster in the same data center pod.
 {: restriction}
 
-1. From the VMware Solutions console, click **Resources** > **{{site.data.keyword.vcf-auto-short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vcf-auto-short}}** table, click the multizone instance that you want to add the gateway cluster to.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
+2. In the **{{site.data.keyword.vcf-classic}}** table, click the multizone instance that you want to add the gateway cluster to.
 3. Click the **Infrastructure** tab and click **Create** on the upper right of the **Gateway clusters** table.
 4. On the **Create cluster** page, select the data center to host the cluster, then enter the cluster name.
 5. Select the amount of **RAM** and the **Number of bare metal servers**.

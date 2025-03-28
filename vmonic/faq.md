@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-03-28"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -157,7 +157,7 @@ The account owner can increase the RAM on ESXi servers by following these steps:
 
 An {{site.data.keyword.cloud_notm}} representative will confirm the billing change and contacts you to schedule a maintenance window for adding the memory.
 
-You must manage the VMware Solutions components that are created in your {{site.data.keyword.cloud_notm}} account only from the VMware Solutions console, not any other means outside of the console. If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.
+You must manage the VMware Solutions components that are created in your {{site.data.keyword.cloud_notm}} account only in the VMware Solutions console, not any other means outside of the console. If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.
 {: note}
 
 ## Does the {{site.data.keyword.vcf-flex-short}} offering use automation to install, configure, and start the VMware stack?

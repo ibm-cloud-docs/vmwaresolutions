@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-03-28"
 
 keywords: configure vdefend gateway firewall, configure vdefend distributed firewall, vdefend firewall config, vcf for vpc, nsx firewall config
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 Before you configure VMware vDefend™ Firewall (formerly VMware NSX Firewall), review the information in [VMware vDefend Firewall add-on](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons#vmware-add-ons-nsx-firewall).
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfvpc}}
 2. In the instances table, click the instance to configure the firewalls for.
 3. On the **Access information** tab, under **Management domain**, use the NSX-T admin account for VMware NSX-T Data Center to log in to the VMware NSX-T console.
    * To configure VMware vDefend™ Gateway Firewall, see [Gateway Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/gateway-firewall.html){: external}.

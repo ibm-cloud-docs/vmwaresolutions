@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-01-09"
+lastupdated: "2025-03-28"
 
 keywords: add host, host adding, vmware cloud foundation, vmware cloud edition
 
@@ -28,13 +28,13 @@ You can increase or decrease the capacity of your deployment by adding or deleti
 * Ensure that the current user has access to the {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}) resources of the {{site.data.keyword.vcf-vpc-short}} instance to which you want to add ESXi servers.
 * In a {{site.data.keyword.vcf-vpc-short}} environment with a Consolidated architecture, the new VMware ESXi™ servers are added to the management cluster. In a {{site.data.keyword.vcf-vpc-short}} environment with a Standard architecture, the new VMware ESXi™ servers can be added to both the management and the workload cluster.
 * The new ESXi servers are configured with the same profile as the other servers in the cluster. vSAN storage is offered.
-* When you add ESXi servers to your infrastructure, they are provisioned with the same version that was initially configured during the setup process. 
+* When you add ESXi servers to your infrastructure, they are provisioned with the same version that was initially configured during the setup process.
 * Adding ESXi servers through automation is provided only for management and workload clusters in a {{site.data.keyword.vcf-vpc-short}} instance.
 
 ## Procedure to add ESXi servers to {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-host-adding-proc}
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfvpc}}
 2. In the **{{site.data.keyword.vcf-vpc}}** table, click the instance to add ESXi servers.
 3. Click the **Infrastructure** tab.
 4. In the **Domains** table, click the domain to add ESXi servers to.

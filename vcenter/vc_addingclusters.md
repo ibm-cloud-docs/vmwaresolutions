@@ -380,7 +380,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ## Procedure to add clusters to Automated instances
 {: #vc_addingclusters-procedure}
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance that you want to add clusters to.
 
    Ensure that the instance status is **Available**. Otherwise, you cannot add clusters to the instance.

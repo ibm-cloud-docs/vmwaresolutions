@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-03-28"
 
 keywords: regulated workloads, regulated workloads order instance, order regulated workloads, regulated workloads instances
 
@@ -76,7 +76,7 @@ You get a console notification that the configuration is saved successfully, and
 1. The deployment of the regulated workload instance starts automatically and you receive confirmation that the order is being processed. You can check the deployment status, including any issues that might require your attention, by viewing the **Deployment history** tab of the instance details.
 2. When the instance is successfully deployed, the ordered components are installed on your VMware virtual platform. The deployment of the services starts after your order is completed. When the instance is ready to use, its status changes to **Available**, and you receive a notification by email.
 
-Manage the {{site.data.keyword.vmwaresolutions_short}} components that are created in your {{site.data.keyword.cloud_notm}} account only from the VMware Solutions console, not the {{site.data.keyword.slportal}}, or any other means outside of the console.
+Manage the {{site.data.keyword.vmwaresolutions_short}} components that are created in your {{site.data.keyword.cloud_notm}} account only in the VMware Solutions console, not the {{site.data.keyword.slportal}}, or any other means outside of the console.
 If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.
 {: important}
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-03-28"
 
 keywords: view flexible, view instance, view instance details, instance view flexible
 
@@ -133,7 +133,7 @@ To view the property details of an instance, complete the following steps.
 ## What to do next
 {: #vs_viewinginstances-next}
 
-Manage your instances from the VMware Solutions console or the VMware vSphere Web Client.
+Manage your instances in the VMware Solutions console or the VMware vSphere Web Client.
 
 Review the following topics for information to help you complete the login instructions:
 * For the requirements and necessary steps before you access the vSphere Web Client, see [Timeout reached while connecting to the vSphere Web Client](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_timeout_vc_console).

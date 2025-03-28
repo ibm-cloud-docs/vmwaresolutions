@@ -23,7 +23,7 @@ New installations of Entrust CloudControl™ (formerly HyTrust CloudControl) are
 
 To manage Entrust CloudControl, access the Entrust CloudControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust CloudControl console from the VMware vSphere® Web Client.
 
-## Accessing the Entrust CloudControl WebGUI from the VMware Solutions console
+## Accessing the Entrust CloudControl WebGUI in the VMware Solutions console
 {: #managing-entrust-cc-accessing-webgui}
 
 To log in to the WebGUI of the primary or secondary Entrust CloudControl appliance, use the WebGUI credentials that are found on the Entrust CloudControl service details page.

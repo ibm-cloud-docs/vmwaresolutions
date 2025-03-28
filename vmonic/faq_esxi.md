@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-18"
+lastupdated: "2025-03-28"
 
 keywords: FAQ, host, ESXi server
 
@@ -47,7 +47,7 @@ Don't use the **Rename Device** feature on the {{site.data.keyword.cloud_notm}} 
 
 It is recommended to keep root access enabled on the ESXi servers, otherwise failures of the VMware Solutions functions might occur.
 
-If necessary, you can disable root access when the ESXi servers have a status of **Available** on the VMware Solutions console.
+If necessary, you can disable root access when the ESXi servers have a status of **Available** in the VMware Solutions console.
 
 You must re-enable root access for subsequent automation operations. For example, when you add or remove file shares, or when you install add-on services such as Zerto.
 
