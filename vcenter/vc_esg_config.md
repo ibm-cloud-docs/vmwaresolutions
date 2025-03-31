@@ -84,7 +84,7 @@ The logical routers `<instance_name>-<podname>-<cluster_name>-T1-workload` and `
 
 To identify the details for the customer subnets so you can use the IP addresses ordered, complete the following steps in the NSX-T Web Client:
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, locate and select the instance.
 3. Click the **Infrastructure** tab and select the management cluster.
 4. Go to the **Network interface** section on the cluster page.

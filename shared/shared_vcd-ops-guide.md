@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-02-07"
+lastupdated: "2025-03-28"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -569,7 +569,7 @@ Every private network endpoint comes configured with one private network IP addr
 
 Collect the service network and private network IP addresses to configure the firewall and DNAT rules.
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > {{site.data.keyword.vm-shared}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-shared}}
 2. In the **{{site.data.keyword.vm-shared}}** table, click the virtual data center to configure.
 3. In the **Private Network Endpoint** section, collect the **Service network IP** address and **Private network IP** address.
 
@@ -696,11 +696,11 @@ Single sign-on is available only when your site VMware Cloud Director Organizati
 
 1. From the VMware Cloud Director Console, click **SIGN IN WITH SINGLE SIGN-ON** to log in to the portal.
 2. Click **Administration** on the top menu bar.
-3. Under **Access Control** on the left navigation pane, click **Users**.
+3. Under **Access Control** on the left navigation panel, click **Users**.
 4. In the **Users** panel, select all OIDC type users and click **DELETE**.
-5. Under **Access Control** on the left navigation pane, click **Groups**.
+5. Under **Access Control** on the left navigation panel, click **Groups**.
 6. In the **Groups** panel, select all groups with the **OIDC** type and click **DELETE**.
-7. Under **Identity Providers** on the left navigation pane, click **OIDC**.
+7. Under **Identity Providers** on the left navigation panel, click **OIDC**.
 8. In the **OpenID Connect** panel, click **DELETE**.
 
 ## Related links

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-10-25"
+lastupdated: "2025-03-28"
 
 keywords: vcf automated view clusters, view clusters, view vcf classic cluster
 
@@ -22,7 +22,7 @@ View the summary and detailed information of the clusters that are provisioned i
 ## Procedure to view clusters for Automated instances
 {: #vc_viewingclusters-procedure}
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click an instance to view the clusters in it.
 3. Click the **Infrastructure** tab. In the **Clusters** table, view the summary about the clusters:
    * **Cluster name**: The name and type of the cluster.

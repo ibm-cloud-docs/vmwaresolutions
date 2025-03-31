@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-10-25"
+lastupdated: "2025-03-28"
 
 keywords: vcf classic delete clusters, delete clusters, delete vcf classic cluster, delete vcf classic cluster
 
@@ -39,7 +39,7 @@ Deleting clusters from instances with VMware vSphere® 6.5 is not supported.
 {: help}
 {: support}
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance that you want to delete clusters from.
 
    Ensure that the instance status is **Available**. Otherwise, you can't delete clusters from the instance.

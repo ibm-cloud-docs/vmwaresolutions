@@ -25,13 +25,14 @@ Now that the jump server is ordered and available for connection on its public I
 ## Changing DNS
 {: #veeam-cr-sag-jmpcfg-dns}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** > **VCF for Classic** from the left navigation pane. Select the instance and click the **Access information** tab to capture the IP address of your AD/DNS servers `DNS1` and `DNS2`.
-2. From your laptop, use an RDP client to access the jump server.
-3. When connected to the jump server, open a PowerShell console with admin privileges.
-4. Use `Get-DNSClientServerAddress` to display the interfaces and their parameters. You need to capture the Interface Indexes `IF1` and `IF2` for the Ethernet interfaces for use in the next command.
-5. Use the following command to change the first interface: `Set-DNSClientServerAddress –interfaceIndex <IF1> –ServerAddresses (“<DNS1>”,“<DNS2>”)`. For example, `Set-DNSClientServerAddress –interfaceIndex 11 –ServerAddresses (“10.38.207.132”, “10.38.207.133”)`.
-6. Use the following command to change the second interface: `Set-DNSClientServerAddress –interfaceIndex <IF2> –ServerAddresses (“<DNS1>”,“<DNS2>”)`. For example, `Set-DNSClientServerAddress –interfaceIndex 15 –ServerAddresses (“10.38.207.132”, “10.38.207.133”)`.
-7. Use the command `Get-DNSClientServerAddress` to verify the interfaces and their parameters.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
+2. Select the instance and click the **Access information** tab to capture the IP address of your AD/DNS servers `DNS1` and `DNS2`.
+3. From your laptop, use an RDP client to access the jump server.
+4. When connected to the jump server, open a PowerShell console with admin privileges.
+5. Use `Get-DNSClientServerAddress` to display the interfaces and their parameters. You need to capture the Interface Indexes `IF1` and `IF2` for the Ethernet interfaces for use in the next command.
+6. Use the following command to change the first interface: `Set-DNSClientServerAddress –interfaceIndex <IF1> –ServerAddresses (“<DNS1>”,“<DNS2>”)`. For example, `Set-DNSClientServerAddress –interfaceIndex 11 –ServerAddresses (“10.38.207.132”, “10.38.207.133”)`.
+7. Use the following command to change the second interface: `Set-DNSClientServerAddress –interfaceIndex <IF2> –ServerAddresses (“<DNS1>”,“<DNS2>”)`. For example, `Set-DNSClientServerAddress –interfaceIndex 15 –ServerAddresses (“10.38.207.132”, “10.38.207.133”)`.
+8. Use the command `Get-DNSClientServerAddress` to verify the interfaces and their parameters.
 
 ## Downloading the software
 {: #veeam-cr-sag-jmpcfg-sw}

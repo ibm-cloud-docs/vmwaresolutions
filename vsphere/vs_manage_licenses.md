@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-25"
+lastupdated: "2025-03-28"
 
 keywords: flexible add license, add license flexible, flexible delete license, delete license flexible, flexible view license, view license flexible
 
@@ -34,7 +34,7 @@ You can add licenses for various VMware components in your {{site.data.keyword.v
 {: help}
 {: support}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the Flexible instance for which you want to add licenses.
 3. Click the **Licensing** tab. From here, you can view the licenses in your instance. Click **Add licenses**.
 5. On the **Add licenses** side panel, select the licenses that you want to add from the list of available components. The number of licenses that is displayed in the **Quantity** column is determined by the number of hosts in your instance.

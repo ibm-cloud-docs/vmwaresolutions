@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-10-25"
+lastupdated: "2025-03-28"
 
 keywords: view services vcf automated
 
@@ -22,7 +22,7 @@ You can view the summary and detailed information of the services that were orde
 ## Procedure to view services for Automated instances
 {: #vc_viewingservices-procedure}
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance for which you want to view services.
 3. Click the **Services** tab and click a service to review information about it, such as the service status and other details.
 4. Depending on the viewed service, you can access the service console by using the credentials that are provided on the service details page and you can manage the service from here.

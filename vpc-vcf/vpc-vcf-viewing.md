@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-02-28"
+lastupdated: "2025-03-28"
 
 keywords: view vmware cloud foundation instance, vmware cloud foundation instance, view instance, view vmware cloud edition instance
 
@@ -23,7 +23,7 @@ View the summary and detailed information of the {{site.data.keyword.vcf-vpc}} i
 ## Procedure to view a summary of {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-viewing-summary}
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfvpc}}
 2. In the **{{site.data.keyword.vcf-vpc}}** table, review the name, location, creation time, and status of the provisioned instances.
 
 ## Procedure to view details for {{site.data.keyword.vcf-vpc-short}} instances

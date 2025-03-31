@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024
+  years:  2024, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-03-28"
 
 keywords: reassign primary cluster, primary cluster
 
@@ -26,7 +26,7 @@ Reassigning primary clusters for instances that are deployed with VMware vSphere
 {: #vc_reassigningprimarycluster-prereq}
 
 * Ensure that VMware NSX® is upgraded to the most recent version (4.1.2 or later).
-* Before you reassign your primary cluster, you must migrate the management virtual machines (VMs) and the NSX edge management VMs. 
+* Before you reassign your primary cluster, you must migrate the management virtual machines (VMs) and the NSX edge management VMs.
 * Do not migrate all VMs at the same time, as this action might cause failures.
 
 To migrate your VMs, complete the following procedures in the VMware vSphere Web Client.
@@ -60,7 +60,7 @@ After you migrate the management VMs, complete the following steps in NSX Manage
    In the **Edge Transport Nodes** table, wait until the edge node **Configuration Status** shows **Mismatch**. This action happens when NSX identifies that the VM changed its cluster and datastore. Because it might be triggered from the NSX refresh of vCenter Server resources, it takes some time before the inconsistency is identified.
 
 6. Select the edge node that has the **Mismatch** configuration status.
-7. In the **Resolve Sync Errors** window, select the **vSphere/Edge Appliance** source. 
+7. In the **Resolve Sync Errors** window, select the **vSphere/Edge Appliance** source.
 
    Do not select **NSX**, as the migration will be reverted.
    {: important}
@@ -75,7 +75,7 @@ The validated configuration status changes to **Success**.
 {: help}
 {: support}
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance that contains the primary cluster that you want to reassign.
 3. Click the **Infrastructure** tab and click **Reassign primary cluster** on the upper right of the **Clusters** table.
 4. On the Reassign primary cluster side panel, the original primary cluster is preselected. Verify that both the new primary cluster and the original primary cluster show a status of **Available**.

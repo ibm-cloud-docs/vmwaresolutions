@@ -23,7 +23,7 @@ New installations of Entrust CloudControl™ (formerly HyTrust CloudControl) are
 
 To manage Entrust CloudControl, access the Entrust CloudControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust CloudControl console from the VMware vSphere® Web Client.
 
-## Accessing the Entrust CloudControl WebGUI from the VMware Solutions console
+## Accessing the Entrust CloudControl WebGUI in the VMware Solutions console
 {: #managing-entrust-cc-accessing-webgui}
 
 To log in to the WebGUI of the primary or secondary Entrust CloudControl appliance, use the WebGUI credentials that are found on the Entrust CloudControl service details page.
@@ -47,7 +47,7 @@ When you add and remove hosts and clusters to your instance, VMware Solutions do
 {: #managing-entrust-cc-proc-find-firewall-nsxt}
 
 1. Log in to the NSX-T Manager, and click **Networking** in the menu.
-2. Click **NAT** from the left navigation pane.
+2. Click **NAT** from the left navigation panel.
 3. Select the T0 consolidated gateway from the **Gateway** list.
 
    The EntrustCC SNAT rules are displayed in the NAT rules table.

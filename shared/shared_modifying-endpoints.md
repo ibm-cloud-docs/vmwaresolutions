@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-12-23"
+lastupdated: "2025-03-28"
 
 keywords: VMware Solutions Shared modify private network endpoint
 
@@ -24,7 +24,7 @@ You can add or remove allowlisted IP addresses or subnets for a private network 
 ## Procedure to add an IP address or subnet for a private network endpoint
 {: #shared_modifying-endpoints-add}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > {{site.data.keyword.vm-shared}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-shared}}
 2. In the **{{site.data.keyword.vm-shared}}** table, expand the site and click a virtual data center name.
 3. Click the **Services** tab.
 4. From the **Private network endpoint** details pane, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") next to **Allowlisted IPs and subnets**.
@@ -34,7 +34,7 @@ You can add or remove allowlisted IP addresses or subnets for a private network 
 ## Procedure to delete an IP address or subnet from a private network endpoint
 {: #shared_modifying-endpoints-delete}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > {{site.data.keyword.vm-shared}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-shared}}
 2. In the **{{site.data.keyword.vm-shared}}** table, expand the site and click a virtual data center name.
 3. Click the **Services** tab.
 4. From the **Private network endpoint** details pane, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") next to **Allowlisted IPs and subnets**.

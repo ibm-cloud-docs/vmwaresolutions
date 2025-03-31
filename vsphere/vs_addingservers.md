@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-03-21"
+lastupdated: "2025-03-28"
 
 keywords: flexible instance add host, add server flexible instance
 
@@ -46,7 +46,7 @@ Review the following additional information applicable to Flexible instances wit
 {: help}
 {: support}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the Flexible instance for which you want to expand capacity.
 3. Click the **Infrastructure** tab.
 4. In the **ESXi servers** section, click **Add**.

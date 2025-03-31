@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-07-29"
+lastupdated: "2025-03-28"
 
 keywords: VMware Solutions Shared delete instance, delete VMware Solutions Shared, remove VMware Solutions Shared
 
@@ -42,7 +42,7 @@ Any job that includes instructions to back up the VM fails when the VM restore p
 ## Procedure to delete virtual data centers from the Resources page
 {: #shared_deletinginstance-procedure1}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > {{site.data.keyword.vm-shared}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-shared}}
 2. In the **{{site.data.keyword.vm-shared}}** table, expand the site name and find the virtual data center to delete.
 3. Click the vertical overflow menu next to the **Status** column, and then click **Delete instance**.
    The status of the virtual data center is changed to **Deleting**. When the virtual data center is deleted successfully, the components of the virtual data center are released, and the status is changed to **Deleted**.
@@ -50,7 +50,7 @@ Any job that includes instructions to back up the VM fails when the VM restore p
 ## Procedure to delete virtual data centers from the virtual data center details page
 {: #shared_deletinginstance-procedure2}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > {{site.data.keyword.vm-shared}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-shared}}
 2. In the **{{site.data.keyword.vm-shared}}** table, expand the site name and click the virtual data center to delete.
 3. Click **Actions** next to **vCenter console**, and then click **Delete instance**.
    The status of the virtual data center is changed to **Deleting**. When the virtual data center is deleted successfully, the components of the virtual data center are released, and the status is changed to **Deleted**.

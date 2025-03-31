@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-03-28"
 
 keywords: vcf classic remove hosts, vcf automated remove ESXi servers
 
@@ -36,7 +36,7 @@ You can contract the capacity of your {{site.data.keyword.vcf-auto}} instance ac
 ## Procedure to delete ESXi servers from Automated instances
 {: #vc_removingservers-procedure}
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance for which you want to contract capacity.
 3. Click the **Infrastructure** tab.
 4. In the applicable cluster table, click the cluster from which you want to delete ESXi servers.

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-03-28"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -136,7 +136,7 @@ If you did not add the client SSL certificates in Step 2, you must add it after 
 ### Procedure
 {: #kmip_standalone_ordering-step3-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **KMIP for VMware** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-kmip}}
 2. In the **KMIP for VMware** table, click the instance that you want to add certificates for.
 3. Click **Add**.
 4. In the **Add client SSL certificate** window, enter the certificate name and content, and then click **Add**.

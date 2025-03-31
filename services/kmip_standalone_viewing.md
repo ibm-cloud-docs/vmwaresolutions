@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-12"
+lastupdated: "2025-03-28"
 
 keywords: KMIP for VMware, view KMIP stand-alone, KMIP for VMware status
 
@@ -22,7 +22,7 @@ Use this procedure to view the KMIP™ for VMware® instances that you ordered a
 ## Procedure to view KMIP for VMware instances
 {: #kmip_standalone_viewing-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > KMIP for VMware** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-kmip}}
 2. In the **KMIP for VMware** table, you can see information about the instances that you ordered.
 
 | Item | Description |

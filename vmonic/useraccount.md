@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-13"
+lastupdated: "2025-03-28"
 
 keywords: set credentials, update credentials, set notifications, IAM user, invite user
 
@@ -36,7 +36,7 @@ You can also specify whether you want to receive email and console notifications
 ### Procedure to set notifications
 {: #useraccount-set-notif-procedure}
 
-1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **Settings** from the left navigation pane.
+1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **Settings** from the left navigation panel.
 2. If you want to be notified by email when events occur, click **Enable email notifications**.
 3. If you want to be notified in the console when events occur, click **Enable console notifications**.
 
@@ -68,7 +68,7 @@ The information about updating user account credentials applies only to the {{si
 {: help}
 {: support}
 
-1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **Settings** from the left navigation pane.
+1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **Settings** from the left navigation panel.
 2. If you have both an {{site.data.keyword.cloud_notm}} infrastructure account and an {{site.data.keyword.cloud_notm}} account that are linked, click **Retrieve credentials** to complete the credentials automatically, and then skip to **Step 4**.
 3. In the following situations, review the information the **{{site.data.keyword.cloud_notm}} infrastructure credentials** area for the steps that you need to take:
    * If you have both an {{site.data.keyword.cloud_notm}} infrastructure account and an {{site.data.keyword.cloud_notm}} account that are not linked, you must link them. Follow the instructions in [Upgrading your account](/docs/account?topic=account-upgrading-account), then click **Retrieve credentials** to complete the credentials automatically.

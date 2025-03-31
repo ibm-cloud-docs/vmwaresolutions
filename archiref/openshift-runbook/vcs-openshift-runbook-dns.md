@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 
 1. Log in to [{{site.data.keyword.cloud}}](https://cloud.ibm.com/login){: external}.
 2. From the left menu, select **VMware**.
-3. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **vCenter Server** from the left navigation pane.
+3. {{site.data.content.ol-intro-ui-vcfclassic}}
 4. Select your deployed instance.
 5. Click the **Access information** tab and collect the AD/DNS IP and remote desktop credentials.
 6. From a jump server or by using SSL VPN, remote desktop to the AD/DNS server.

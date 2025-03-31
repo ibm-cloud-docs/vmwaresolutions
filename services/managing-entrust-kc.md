@@ -23,7 +23,7 @@ New installations of Entrust KeyControl™ (formerly HyTrust KeyControl) are not
 
 To manage Entrust KeyControl, access the Entrust KeyControl web GUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust KeyControl console from the vSphere® Web Client.
 
-## Accessing the Entrust KeyControl web GUI from the VMware Solutions console
+## Accessing the Entrust KeyControl web GUI in the VMware Solutions console
 {: #managing-entrust-kc-accessing-webgui}
 
 To log in to the WebGUI of the primary or secondary Entrust KeyControl appliance, use the WebGUI credentials that are found on the Entrust KeyControl service details page.

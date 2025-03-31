@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-10-25"
+lastupdated: "2025-03-28"
 
 keywords: remove services vcf classic, delete services vcf automated
 
@@ -28,7 +28,7 @@ You can delete the services that were provisioned for your {{site.data.keyword.v
 ## Procedure to delete services from Automated instances
 {: #vc_deletingservices-procedure}
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance for which you want to delete services.
 3. Click the **Services** tab.
 4. On the **Services** page, locate the service instance that you want to delete, click the vertical overflow menu next to the **Status** column, and then click **Delete service**.

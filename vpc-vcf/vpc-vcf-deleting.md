@@ -30,12 +30,12 @@ When you delete a {{site.data.keyword.vcf-vpc}} instance, the following componen
 ## Before you delete {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-deleting-before}
 
-Only the resources that were created from the VMware Solutions console can be deleted. If you added ESXi servers to the {{site.data.keyword.vcf-vpc-short}} instance manually, the resources for those servers must be deleted manually as well.
+Only the resources that were created in the VMware Solutions console can be deleted. If you added ESXi servers to the {{site.data.keyword.vcf-vpc-short}} instance manually, the resources for those servers must be deleted manually as well.
 
 ## Procedure to delete {{site.data.keyword.vcf-vpc-short}} instances from the Resources page
 {: #vpc-vcf-deleting-proc1}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfvpc}}
 2. In the **{{site.data.keyword.vcf-vpc}}** table, find the instance to delete.
 3. Click the recycle bin icon next to the **Status** column.
 
@@ -47,7 +47,7 @@ Only the resources that were created from the VMware Solutions console can be de
 ## Procedure to delete {{site.data.keyword.vcf-vpc-short}} instances from the instance details page
 {: #vpc-vcf-deleting-proc2}
 
-1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfvpc}}
 2. In the **{{site.data.keyword.vcf-vpc}}** table, click the instance to delete.
 3. Click **Actions** next to **Go to SDDC console** and click **Delete instance**.
 

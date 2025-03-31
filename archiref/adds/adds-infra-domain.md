@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-02-17"
+lastupdated: "2025-03-28"
 
 subcollection: vmwaresolutions
 
@@ -184,7 +184,7 @@ The secondary instances have the following configuration:
 ## Customer user IDs
 {: #adds-infra-domain-userid}
 
-The customer user IDs and passwords for the vCenter Server instance are available through the instance details on the VMware Solutions console. For more information, see [vCenter and Platform Services Controller user IDs](/docs/vmwaresolutions?topic=vmwaresolutions-audit_user_ids).
+The customer user IDs and passwords for the vCenter Server instance are available through the instance details in the VMware Solutions console. For more information, see [vCenter and Platform Services Controller user IDs](/docs/vmwaresolutions?topic=vmwaresolutions-audit_user_ids).
 
 ## Domain Name System configuration
 {: #adds-infra-domain-dns}

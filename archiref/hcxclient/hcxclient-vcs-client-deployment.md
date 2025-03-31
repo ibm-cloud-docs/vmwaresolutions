@@ -42,7 +42,7 @@ HCX is a service. HCX is licensed per site and per virtual machine (VM) managed 
 ### Procedure to order on-premises HCX licenses
 {: #hcxclient-vcs-client-deployment-license-ordering-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Licenses** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-licenses}}
 2. Scroll to the **On-premises HCX licenses** table and click **Create new**.
 3. Specify the license name.
 4. Click the link or links of the terms that apply to your order, and ensure that you agree with these terms before you order the license.

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-12-12"
+lastupdated: "2025-03-28"
 
 keywords: Caveonix license, Caveonix order license, Caveonix BYOL license
 
@@ -30,7 +30,7 @@ Ensure that you configured the {{site.data.keyword.cloud}} infrastructure creden
 ## Procedure to order Caveonix RiskForesight licenses
 {: #caveonix_license_ordering-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Licenses** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-licenses}}
 2. In the **Caveonix RiskForesight licenses** table, click **Create new**.
 3. Specify the resource group.
 

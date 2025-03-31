@@ -29,7 +29,7 @@ Before you delete ESXi servers, ensure that you remove your workloads from these
 ## Procedure to delete ESXi servers from Flexible instances
 {: #vs_removingservers-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance for which you want to contract capacity.
 3. Click the **Infrastructure** tab.
 4. In the **ESXi servers** section, select the servers that you want to delete and click **Delete**.

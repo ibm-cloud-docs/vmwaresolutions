@@ -29,7 +29,7 @@ Ensure that you completed the following tasks:
 ## Procedure to order on-premises VMware HCX instances
 {: #standalone_orderingserviceinstances-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Licenses** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-licenses}}
 2. Scroll down to the **On-premises HCX activation keys** table and click **Create new**.
 3. Specify the resource group.
 

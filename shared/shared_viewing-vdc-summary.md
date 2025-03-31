@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-03-28"
 
 keywords: manage shared resources, view shared virtual data centers summary
 
@@ -27,7 +27,7 @@ Optionally, validate that you are in the correct account for your instance. From
 ## Procedure to view the virtual data center summary
 {: #shared_viewing-vdc-summary-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > {{site.data.keyword.vm-shared}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-shared}}
 2. In the **{{site.data.keyword.vm-shared}}** table, view the list of data center sites and the virtual data centers that are provisioned for each site.
 
 | Item | Description |

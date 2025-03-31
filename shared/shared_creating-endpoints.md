@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-05-29"
+lastupdated: "2025-03-28"
 
 keywords: VMware Solutions Shared create private network endpoint
 
@@ -67,7 +67,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ## Procedure to create a private network endpoint for a virtual data center
 {: #shared_creating-endpoints-add-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > {{site.data.keyword.vm-shared}}** from the left navigation pane.
+1. {{site.data.content.ol-intro-ui-shared}}
 2. In the **{{site.data.keyword.vm-shared}}** table, expand the site and click the virtual data center where you want to create a private network endpoint.
 3. Click the **Services** tab.
 4. Under **Private network endpoint** on the recommended services page, click **Create a private network endpoint**.
