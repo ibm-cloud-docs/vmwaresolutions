@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-03-31"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -153,7 +153,7 @@ The allocation of distributed switches varies if you have existing instances and
 Review the following table for an overview of the EVC (Enhanced VMware vMotion Compatibility) mode settings for Automated instances and the differences between vSphere versions.
 
 | Bare metal server CPU model | vSphere 6.7[^evc-vsphere67] | vSphere 7.0 |
-|:--------------------------- |:--------------------------- |:----------- |
+|:--------------------------- |:--------------------------- |:----------- |:------------------ |
 | Skylake | EVC is set to Intel® **Broadwell** Generation. | Skylake is not supported. |
 | Cascade Lake | For the management cluster, EVC is not set. For all other clusters, EVC is set to Intel **Skylake** Generation. | EVC is set to Intel **Cascade Lake** Generation. |
 {: caption="EVC mode settings for Automated instances and clusters" caption-side="bottom"}
