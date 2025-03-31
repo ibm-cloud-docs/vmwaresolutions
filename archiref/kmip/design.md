@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-14"
+lastupdated: "2025-03-31"
 
 subcollection: vmwaresolutions
 
@@ -114,9 +114,7 @@ When your KMIP for VMware instance is connected to Key Protect, your VMware vCen
 
 KMIP for VMware also connects to {{site.data.keyword.cloud_notm}} Key Protect by using the {{site.data.keyword.cloud_notm}} private network rather than the public internet, and is additionally protected by TLS encryption and authentication.
 
-When integrated with {{site.data.keyword.cloud_notm}} Key Protect, KMIP for VMware periodically validates that your service ID has sufficient permission to your Key Protect instance and Customer Root Key. In {{site.data.keyword.at_full}}, you might occasionally see *wrap* events from Key Protect for these checks. The checks are started by the service ID and are not paired with corresponding key creation events from KMIP for VMware.
-
-{{site.data.content.impnote-at-deprecation}}
+When integrated with {{site.data.keyword.cloud_notm}} Key Protect, KMIP for VMware periodically validates that your service ID has sufficient permission to your Key Protect instance and Customer Root Key.
 
 #### KMIP for VMware and Hyper Protect Crypto Services
 {: #kmip-design-topology-hpcs}
