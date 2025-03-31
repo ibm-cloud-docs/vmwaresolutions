@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-03-18"
+lastupdated: "2025-03-31"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc, faq
 
@@ -125,7 +125,10 @@ The initial passwords for your {{site.data.keyword.vcf-vpc-short}} instance are 
 
 During initial deployment, the VMware Solutions automation creates an IBM automation account that is named **ibm_admin**, which will be used only to get your updated password. If you changed the initial password, retrieving the updated password is necessary for running Day 2 operations, such as adding or removing hosts.
 
-We don’t recommend you to change the **ibm_admin** password, but if you changed it, you must follow these steps so that you can complete the Day 2 operations successfully:
+It's recommended not to change the **ibm_admin** account password. 
+{: important}
+
+However, if you changed it, you must follow these steps so that you can complete the Day 2 operations successfully:
 
 1. Go to the {{site.data.keyword.vcf-vpc-short}} instance details page.
 2. Click the **Access information** tab and scroll down to the **SDDC Manager** section.
