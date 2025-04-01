@@ -475,7 +475,7 @@ User interface updates and enhancements
 :   The UI is updated with various messages and tooltips, and provides the following enhancements:
 
    * For VMware vSphere, the term **cluster** is updated to **instance** throughout the UI, user documentation, and REST APIs.
-   * For VMware vSphere instances, the **Instance configuration name** field is changed to a side panel. You can manage your configuration templates from a list of saved configurations in the side panel.
+   * For VMware vSphere instances, the **Instance configuration name** field is changed to a side pane. You can manage your configuration templates from a list of saved configurations in the side pane.
 
 New and updated documentation
 :   The following updates are available:
@@ -529,7 +529,7 @@ REST API updates
 User interface updates and enhancements
 :   The UI is updated with various messages and tooltips, and provides the following enhancements:
 
-   * For VMware vSphere, vCenter Server, Cyber Recovery, and Regulated Workloads instances, the **Instance configuration name** field is changed to a side panel. You can manage your configuration templates from a list of saved configurations in the side panel.
+   * For VMware vSphere, vCenter Server, Cyber Recovery, and Regulated Workloads instances, the **Instance configuration name** field is changed to a side pane. You can manage your configuration templates from a list of saved configurations in the side pane.
    * The checkbox **Select a different cluster location** is changed to a switch, for consistency with other similar UI options.
    * The **SAP-certified** Cascade Lake selections (**NetWeaver** and **HANA**) are merged into a single option for a more streamlined user experience when you choose the **CPU model** for your servers.
    * The process to set up your environment for your first order is simplified on the UI.
@@ -567,7 +567,7 @@ User interface updates and enhancements
    * The status of instances and clusters when they are ready to use is updated to **Available**.
    * The UI controls for the separate workload cluster, gateway cluster, and file shares are changed to switches instead of checkboxes.
    * Guidance is provided on the UI for the workload and gateway cluster configuration.
-   * A side panel is displayed when you add hosts to vCenter Server, Cyber Recovery, and VMware Regulated Workloads instances.
+   * A side pane is displayed when you add hosts to vCenter Server, Cyber Recovery, and VMware Regulated Workloads instances.
 
 ### 8 March 2023
 {: #vmwaresolutions-mar0823}
@@ -606,7 +606,7 @@ User interface updates and enhancements
 
    * BYOL notification in the **Licensing** section for VMware vCenter Server instances, VMware vSphere clusters, add hosts and clusters, vRealize Operations and Log Insight, and VMware HCX services. Bring Your Own License (BYOL) is no longer supported, except for migrations or upgrades of existing BYOL clusters.
    * The term **edge services cluster** is updated to **edge gateway cluster** throughout the UI, user documentation, and REST APIs.
-   * A side panel is now displayed when you add NFS storage to VMware vCenter Server, Cyber Recovery, and VMware Regulated Workloads instances.
+   * A side pane is now displayed when you add NFS storage to VMware vCenter Server, Cyber Recovery, and VMware Regulated Workloads instances.
 
 
 ### 10 January 2023
@@ -708,7 +708,7 @@ REST API updates
    * For VMware Solutions API, support is provided for Caveonix RiskForesight, Veeam, Zerto, and VMware HCX stand-alone licenses. Also, support for the 2U chassis types is added by using the new `large_chassis_only` parameter.
 
 User interface enhancements
-:   The left navigation pane on the VMware Solutions console now groups items as **Resources** and **Licenses** so that they are more aligned with the resource types and names.
+:   The left navigation panel on the VMware Solutions console now groups items as **Resources** and **Licenses** so that they are more aligned with the resource types and names.
 
 ### 29 August 2022
 {: #vmwaresolutions-aug2922}

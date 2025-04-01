@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-01"
 
 keywords: manage shared resources, set IAM integration the VMware Cloud Director Management console, shared iam roles, iam roles
 
@@ -77,7 +77,7 @@ You must delete all OpenID Connect (OIDC) users and imported groups with the OID
 
 After the IAM integration is enabled, you can use single sign-on to log in to the VMware Cloud Director console.
 1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **VMware Cloud Director console**.
-2. From the log in panel, click **SIGN IN WITH SINGLE SIGN-ON** to log in to the console.
+2. From the log in pane, click **SIGN IN WITH SINGLE SIGN-ON** to log in to the console.
 
 ## Related links
 {: #shared_set-iam-related}

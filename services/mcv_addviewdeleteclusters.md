@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-01"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ You can add workload or gateway clusters to your existing {{site.data.keyword.vc
 4. On the **Create cluster** page, enter the cluster name.
 5. Select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers**.
 6. Specify the vSAN storage settings. Specify the disk types for the capacity and cache disks and the number of disks. Optionally, select the **Enable vSAN deduplication and compression** checkbox. For more information, see [Enable vSAN deduplication and compression](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters#vc_addingclusters-vsan-storage-enable-comp).
-7. On the **Summary** pane, review the cluster settings and the estimated price.
+7. On the **Summary** panel, review the cluster settings and the estimated price.
       * To save the settings as a new configuration template without placing an order, click **Save configuration**, enter a name for the configuration, and click **Continue**.
       * To save the updates to a saved configuration, click **Save configuration**, select **Modify current configuration**, and click **Continue**.
       * To save the updates to a new saved configuration, click **Save configuration**, select **Create new configuration**, enter a new name for the configuration, and click **Continue**.
@@ -48,7 +48,7 @@ You cannot add more than one cluster in the same data center pod.
 3. Click the **Infrastructure** tab and click **Create** on the upper right of the **Gateway clusters** table.
 4. On the **Create cluster** page, select the data center to host the cluster, then enter the cluster name.
 5. Select the amount of **RAM** and the **Number of bare metal servers**.
-6. On the **Summary** pane, verify the cluster configuration before you add the cluster.
+6. On the **Summary** panel, verify the cluster configuration before you add the cluster.
    1. Review the settings for the cluster.
    2. Review the estimated price of the cluster. Click **Pricing details** to generate a PDF summary. To save or print your order summary, click the **Print** or the **Download** icon ![Download icon](../../icons/download.svg "Download") on the upper right of the PDF window.
    3. Click the link or links of the terms that apply to your order, and confirm that you agree with these terms before you add the cluster.

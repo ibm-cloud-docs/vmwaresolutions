@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-04-01"
 
 keywords: shared order resource, order on demand shared, order on demand resources
 
@@ -143,7 +143,7 @@ For more information, see [Managing Veeam for {{site.data.keyword.vm-shared}}](/
 ## Summary
 {: #shared_ordering-summary}
 
-Based on your selected configuration for the virtual data center, the estimated price is instantly generated and displayed in the **Summary** pane.
+Based on your selected configuration for the virtual data center, the estimated price is instantly generated and displayed in the **Summary** panel.
 
 You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. The tool is useful if you want to estimate the price of the selected {{site.data.keyword.vm-shared}} resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider purchasing.
 
@@ -159,7 +159,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 5. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, site, and location to host the instance.
 6. Select the network type.
 7. Select the vCPU and RAM limits according to your requirements.
-8. On the **Summary** pane, verify the configuration and estimated price before you place the order.
+8. On the **Summary** panel, verify the configuration and estimated price before you place the order.
 9. Click **Create**.
 
 ## Procedure to order {{site.data.keyword.vm-shared}} Reserved
@@ -174,7 +174,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 7. Complete the resource reservation.
    * If you select **Preconfigured**, select the preconfigured vCPU model and RAM size.
    * If you select **Customizable**, specify the reserved vCPU and RAM limits according to your requirements.
-8. On the **Summary** pane, verify the configuration and estimated price before you place the order.
+8. On the **Summary** panel, verify the configuration and estimated price before you place the order.
 9. Click **Create**.
 
 ## Results after you order {{site.data.keyword.vm-shared}}

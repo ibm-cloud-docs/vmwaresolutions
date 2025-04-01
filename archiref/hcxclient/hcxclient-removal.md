@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-12"
+lastupdated: "2025-04-01"
 
 subcollection: vmwaresolutions
 
@@ -46,7 +46,7 @@ Never delete virtual appliances from the vSphere inventory. Always use the manag
 ### Procedure to uninstall HCX virtual appliances
 {: #hcxclient-removal-uninstall-proc-uninst-hva}
 
-1. In the vSphere Web Client interface, select the Hybrid Cloud Services plug-in from the left pane.
+1. In the vSphere Web Client interface, select the Hybrid Cloud Services plug-in from the left panel.
 2. In the center pane, click the **Hybrid Services** tab.
 3. Locate the Hybrid Cloud Gateway appliance and click the entry to display the details.
 4. On the lower right, click **Delete** to remove the appliance.

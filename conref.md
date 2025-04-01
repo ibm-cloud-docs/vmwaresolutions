@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-03-31"
+lastupdated: "2025-04-01"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -288,7 +288,7 @@ If **No resource group available** is displayed in this field, you currently do 
 {: note}
 {: #note-orderinginstance-resource-group}
 
-Click **Browse configurations** to open the configuration manager side panel. Here, you can choose a configuration from the list of saved templates to update it and then save it as a new configuration template.
+Click **Browse configurations** to open the configuration manager side pane. Here, you can choose a configuration from the list of saved templates to update it and then save it as a new configuration template.
 {: #paraone-orderinginstance-inst-config}
 
 If you do not see any configurations in the list, then you do not have any saved templates and might want to create one. To create a configuration, first specify the settings for your instance as a configuration template without placing an order. To save the settings, click **Save configuration** on the **Summary** pane.

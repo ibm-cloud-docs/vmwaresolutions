@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-01"
 
 keywords: add NFS storage, add nfs
 
@@ -39,7 +39,7 @@ You can expand the capacity of your {{site.data.keyword.vcf-auto}} instance acco
 3. Click the **Infrastructure** tab.
 4. In the **Clusters** table, click the cluster to which you want to add NFS storage.
 5. In the **Storage** section, click **Add**.
-6. In the **Add NFS storage** side panel, complete the storage configuration.
+6. In the **Add NFS storage** side pane, complete the storage configuration.
    * To add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
    * To add and configure file shares individually, toggle the **Configure shares individually** switch on. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. You must select at least one file share. For more information, see [NFS storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-nfs-storage).
 7. Review the estimated price and click **Add**.

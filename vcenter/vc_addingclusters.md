@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-01"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -373,7 +373,7 @@ Select either **Public and private network** or **Private network only** for the
 ## Summary
 {: #vc_addingclusters-order-summary}
 
-Based on your selected configuration for the cluster, the estimated price is instantly generated and displayed in the **Summary** pane. Click **Pricing details** to generate a PDF document with the price summary for the VMware Solutions resources.
+Based on your selected configuration for the cluster, the estimated price is instantly generated and displayed in the **Summary** panel. Click **Pricing details** to generate a PDF document with the price summary for the VMware Solutions resources.
 
 You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. The estimate tool is useful if you want to get an approximate price of the selected VMware Solutions resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider purchasing.
 
@@ -421,7 +421,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
    5. If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on.
    6. Select the **Networking type**, either **Public and private network** or **Private network only**.
 
-8. On the **Summary** pane, verify the cluster configuration before you add the cluster.
+8. On the **Summary** panel, verify the cluster configuration before you add the cluster.
    1. Review the settings for the cluster.
    2. Review the estimated price of the cluster. Click **Pricing details** to generate a PDF summary. To save or print your order summary, click the **Print** or the **Download** icon ![Download icon](../../icons/download.svg "Download") on the upper right of the PDF window.
    3. Click the link or links of the terms that apply to your order, and confirm that you agree with these terms before you add the cluster.
