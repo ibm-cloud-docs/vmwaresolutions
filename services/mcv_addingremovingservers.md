@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-01"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ You can expand the capacity of your existing {{site.data.keyword.vcf-auto-short}
 3. Click the **Infrastructure** tab.
 4. In the applicable cluster table, click the cluster to which you want to add ESXi servers.
 5. In the **ESXi servers** section, click **Add**.
-6. On the **Add ESXi server** side panel, enter the number of servers that you want to add. You can keep the **Maintenance mode** checkbox selected to add servers during maintenance mode.
+6. On the **Add ESXi server** side pane, enter the number of servers that you want to add. You can keep the **Maintenance mode** checkbox selected to add servers during maintenance mode.
 
    When you provision new ESXi servers, virtual machines (VMs) are immediately migrated to the new servers if you do not select the **Maintenance mode** checkbox. You do not receive a confirmation message before the migration begins.
    {: attention}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-12"
+lastupdated: "2025-04-01"
 
 subcollection: vmwaresolutions
 
@@ -145,7 +145,7 @@ Install the HCX Manager appliance in the on-premises vCenter.
 
 1. Log in to Hybrid Cloud Services service virtual appliance.
 2. On the **Dashboard** pane, complete the following steps:
-   1. In the left pane, under **Configure Systems**, select vCenter.
+   1. In the left panel, under **Configure Systems**, select vCenter.
    2. Click **Add vCenter** on the upper right.
    3. Enter the IP address of the VMware vCenter® in the form `https://vCenter-host-name` or `https://vCenter-IP-address`. For example, `https://My-vCenter` or `https://1.1.1.1`.
    4. Enter the vCenter username and password. The account that is used must have the vCenter Administrator role.

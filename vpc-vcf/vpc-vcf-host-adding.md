@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-01"
 
 keywords: add host, host adding, vmware cloud foundation, vmware cloud edition
 
@@ -39,8 +39,8 @@ You can increase or decrease the capacity of your deployment by adding or deleti
 3. Click the **Infrastructure** tab.
 4. In the **Domains** table, click the domain to add ESXi servers to.
 5. In the **Hosts** section, click **Add host**.
-6. On the **Add host** side panel, enter the number of hosts that you want to add in the **Host quantity** field. Keep the default value for **Host name suffix** or enter the suffix for each newly added host. Ensure that the suffix is unique across the domain.
-7. In the **Summary** section on the side panel, review the estimated pricing, ensure that the account to be charged is correct, and review and accept the terms. Then, click **Add**.
+6. On the **Add host** side pane, enter the number of hosts that you want to add in the **Host quantity** field. Keep the default value for **Host name suffix** or enter the suffix for each newly added host. Ensure that the suffix is unique across the domain.
+7. In the **Summary** section on the side pane, review the estimated pricing, ensure that the account to be charged is correct, and review and accept the terms. Then, click **Add**.
 
 ## Results after you add ESXi servers to {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-host-adding-result}

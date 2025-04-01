@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-01"
 
 keywords: automated instance, order automated, order automated instance
 
@@ -24,7 +24,7 @@ subcollection: vmwaresolutions
 1. Select the VMware vCenter Server® and the VMware vSphere® versions. Then, enter the instance name and select a resource group.
 1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
-   * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
+   * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side pane, make your changes, and then save.
 1. Select the instance type:
    * Click **Primary instance** to deploy a single instance in the environment or to deploy the first instance in a multisite topology.
    * Click **Secondary instance** to connect the instance with an existing (primary) instance in the environment for high availability. Select the primary instance that you want the secondary instance to be connected with, then enter the vCenter Server Administrator password for the primary instance.
@@ -60,7 +60,7 @@ subcollection: vmwaresolutions
    1. Specify the **DNS configuration**.
    1. If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on.
 1. Under **Add-on services**, review the available services. If you want to deploy an add-on service, toggle its switch on and review the service settings. If configuration is required, click **Edit**, then complete the edits and click **Save**. For more information about specific settings for a service, see the corresponding topic for ordering the service.
-1. On the **Summary** pane, review the instance settings and the estimated price.
+1. On the **Summary** panel, review the instance settings and the estimated price.
    * To save the settings as a new configuration template without placing an order, click **Save configuration**, enter a name for the configuration, and click **Continue**.
    * To save the updates to a saved configuration, click **Save configuration**, select **Modify current configuration**, and click **Continue**.
    * To save the updates to a new saved configuration, click **Save configuration**, select **Create new configuration**, enter a new name for the configuration, and click **Continue**.

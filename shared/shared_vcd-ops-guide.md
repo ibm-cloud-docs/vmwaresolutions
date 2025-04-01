@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-01"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -697,11 +697,11 @@ Single sign-on is available only when your site VMware Cloud Director Organizati
 1. From the VMware Cloud Director Console, click **SIGN IN WITH SINGLE SIGN-ON** to log in to the portal.
 2. Click **Administration** on the top menu bar.
 3. Under **Access Control** on the left navigation panel, click **Users**.
-4. In the **Users** panel, select all OIDC type users and click **DELETE**.
+4. In the **Users** pane, select all OIDC type users and click **DELETE**.
 5. Under **Access Control** on the left navigation panel, click **Groups**.
-6. In the **Groups** panel, select all groups with the **OIDC** type and click **DELETE**.
+6. In the **Groups** pane, select all groups with the **OIDC** type and click **DELETE**.
 7. Under **Identity Providers** on the left navigation panel, click **OIDC**.
-8. In the **OpenID Connect** panel, click **DELETE**.
+8. In the **OpenID Connect** pane, click **DELETE**.
 
 ## Related links
 {: #shared_vcd-ops-guide-related}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-23"
+lastupdated: "2025-04-01"
 
 keywords: flexible order instances, flexible configuration, vmware order vSphere instance
 
@@ -38,7 +38,7 @@ Ensure that you complete the following tasks:
 
    {{site.data.content.attnnote-byol}}
 
-5. In the **Summary** pane, verify the ordered configuration and the estimated price.
+5. In the **Summary** panel, verify the ordered configuration and the estimated price.
    * To save the configuration as a template without placing an order, click **Save configuration**.
    * To place the order, make sure that the account to be charged is correct, review and accept the terms, and then click **Create**.
 

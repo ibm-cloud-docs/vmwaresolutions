@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-03-04"
+lastupdated: "2025-03-31"
 
 keywords: activity tracking, tracking locations, enable events, view events, analyze events
 
@@ -23,8 +23,6 @@ Activity tracking events report on activities that change the state of a service
 You can use {{site.data.keyword.atracker_full_notm}}, a platform service to route auditing events in your account to destinations of your choice by configuring targets and routes that define where activity tracking events are sent. For more information, see [About {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-about).
 
 You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
-
-{{site.data.content.impnote-at-deprecation}}
 
 ## Locations where activity tracking events are generated
 {: #at-locations}
@@ -58,43 +56,6 @@ You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on event
 {: #at-table-3}
 {: tab-title="Europe"}
 {: tab-group="at"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-## Locations where activity tracking events are sent to {{site.data.keyword.at_full_notm}} hosted event search
-{: #at-legacy-locations}
-
-
-
-VMware Solutions sends activity tracking events to {{site.data.keyword.at_full_notm}} hosted event search in the regions that are indicated in the following table.
-
-| Dallas (`us-south`) | Washington (`us-east`) | Toronto (`ca-tor`) | Sao Paulo (`br-sao`) |
-|---------------------|------------------------|--------------------|----------------------|
-| [Yes]{: tag-green}  | [Yes]{: tag-green}     | [Yes]{: tag-green} | [No]{: tag-red}      |
-{: caption="Regions where activity tracking events are sent in Americas locations" caption-side="bottom"}
-{: #at-legacy-table-1}
-{: tab-title="Americas"}
-{: tab-group="at-legacy"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Tokyo (`jp-tok`)   | Sydney (`au-syd`) |  Osaka (`jp-osa`) | Chennai (`in-che`) |
-|--------------------|-------------------|-------------------|--------------------|
-| [Yes]{: tag-green} | [No]{: tag-red}   | [No]{: tag-red}   | [No]{: tag-red}    |
-{: caption="Regions where activity tracking events are sent in Asia Pacific locations" caption-side="bottom"}
-{: #at-legacy-table-2}
-{: tab-title="Asia Pacific"}
-{: tab-group="at-legacy"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Frankfurt (`eu-de`) | London (`eu-gb`) | Madrid (`eu-es`) |
-|---------------------|------------------|------------------|
-| [Yes]{: tag-green}  | [No]{: tag-red}  | [No]{: tag-red}  |
-{: caption="Regions where activity tracking events are sent in Europe locations" caption-side="bottom"}
-{: #at-legacy-table-3}
-{: tab-title="Europe"}
-{: tab-group="at-legacy"}
 {: class="simple-tab-table"}
 {: row-headers}
 

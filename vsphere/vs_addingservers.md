@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-01"
 
 keywords: flexible instance add host, add server flexible instance
 
@@ -50,7 +50,7 @@ Review the following additional information applicable to Flexible instances wit
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the Flexible instance for which you want to expand capacity.
 3. Click the **Infrastructure** tab.
 4. In the **ESXi servers** section, click **Add**.
-5. On the **Add ESXi server** side panel, enter the number of bare metal servers that you want to add.
+5. On the **Add ESXi server** side pane, enter the number of bare metal servers that you want to add.
 6. Complete the bare metal server configuration.
    * From the list, you can select a bare metal server configuration that is being used by the existing ESXi servers in the cluster. Then, click **Next**. This option is not available under the following conditions:
      * The bare metal configuration that is used by the existing ESXi servers in the cluster is **Broadwell**.

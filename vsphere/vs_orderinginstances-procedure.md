@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-14"
+lastupdated: "2025-04-01"
 
 keywords: flexible order instances, order flexible, order vmaware vSphere instance
 
@@ -23,7 +23,7 @@ subcollection: vmwaresolutions
 1. On the **Create** tab, click the **Flexible** card in the **Resource type** section.
 1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
-   * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
+   * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side pane, make your changes, and then save.
 1. Enter the instance name and select a resource group.
 1. Select the VMware vSphere® version for your instance.
 1. Select the VMware® components for licensing:
@@ -54,7 +54,7 @@ subcollection: vmwaresolutions
       * If you want to order new public and private VLANs, click **Order new VLANs**.
       * If you want to reuse the existing public and private VLANs when they are available, click **Select existing VLANs** and specify the VLANs and optionally the subnets.
    1. If you are ordering public VLANs, specify whether to apply the FortiGate Physical Appliance 300 Series HA Pair to secure your cloud environment.
-1. On the **Summary** pane, review the instance settings and the estimated price.
+1. On the **Summary** panel, review the instance settings and the estimated price.
    * To save the settings as a new configuration template without placing an order, click **Save configuration**, enter a name for the configuration, and click **Continue**.
    * To save the updates to a saved configuration, click **Save configuration**, select **Modify current configuration**, and click **Continue**.
    * To save the updates to a new saved configuration, click **Save configuration**, select **Create new configuration**, enter a new name for the configuration, and click **Continue**.
