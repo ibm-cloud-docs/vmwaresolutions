@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-20"
+lastupdated: "2025-04-02"
 
 subcollection: vmwaresolutions
 
@@ -98,7 +98,7 @@ The deployment approach is described in the following phases:
 ## Related links
 {: #vcs-openshift-runbook-intro-related}
 
-* [Video - What is {{site.data.keyword.redhat_openshift_notm}}?](https://www.ibm.com/blog/what-is-openshift/){: external}
+* [An introduction to OpenShift 4](https://developer.ibm.com/articles/intro-to-openshift-4/?mhsrc=ibmsearch_a&mhq=what%20is%20openshift){: external}
 * [{{site.data.keyword.redhat_openshift_notm}} 4 Release Update](https://www.youtube.com/watch?v=YJvTu8jC6CU){: external}
 * [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/upi/installing-vsphere.html){: external}
 * [Getting started with {{site.data.keyword.cloud_notm}} Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started)
