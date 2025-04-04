@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-04"
 
 keywords: Veeam, Veeam license, manage Veeam license, Veeam Backup and Replication 12.3
 
@@ -48,7 +48,7 @@ If you are experiencing this problem and the only browser you can use is Firefox
 ## Procedure to edit notes for Veeam stand-alone licenses
 {: #veeam_managing_licenses-procedure-edit}
 
-1. {{site.data.content.ol-intro-ui-licenses}}
+1. In the VMware Solutions console, click **Licensing and metering > Add-on services** from the left navigation panel.
 2. Scroll down to the **Veeam licenses** table.
 3. Click the license that you want to edit the notes for.
 4. On the license details page, edit the license notes, and then click **Confirm**.
@@ -63,7 +63,7 @@ Deleting a Veeam license does not delete the Veeam service that is installed on 
 
 To delete a Veeam license:
 
-1. {{site.data.content.ol-intro-ui-licenses}}
+1. In the VMware Solutions console, click **Licensing and metering > Add-on services** from the left navigation panel.
 2. Scroll down to the **Veeam licenses** table and select the license that you want to delete.
 3. From the **Actions** menu, click **Delete instance**.
 4. In the **Delete license** window, click **Delete**.

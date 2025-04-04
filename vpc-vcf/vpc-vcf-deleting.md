@@ -47,7 +47,7 @@ Only the resources that were created in the VMware Solutions console can be dele
 ## Procedure to delete {{site.data.keyword.vcf-vpc-short}} instances from the instance details page
 {: #vpc-vcf-deleting-proc2}
 
-1. {{site.data.content.ol-intro-ui-vcfvpc}}
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc-short}}** from the left navigation panel.
 2. In the **{{site.data.keyword.vcf-vpc}}** table, click the instance to delete.
 3. Click **Actions** next to **Go to SDDC console** and click **Delete instance**.
 
