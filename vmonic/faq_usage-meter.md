@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-03-24"
+lastupdated: "2025-04-04"
 
 keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
@@ -66,6 +66,12 @@ Licensing and metering are not supported for NSX-V. However, Broadcom requires {
 {: faq}
 
 The adoption of new licensing and metering is applicable to VMware vSphere® 7 and later. Broadcom requires {{site.data.keyword.IBM_notm}} and {{site.data.keyword.cloud_notm}} customers to use new license keys and to use Usage Meter for compliance purposes. Therefore, if you are using an earlier, unsupported vSphere version, you must upgrade to vSphere 7 or later to become compliant. For more information, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade).
+
+## I'm not using vCenter Server to manage hosts; how do I add my hosts to Usage Meter?
+{: #faq_usage-meter-add-hosts}
+{: faq}
+
+Usage Meter cannot connect directly to hosts. You must deploy vCenter Server, connect it to your hosts, and connect Usage Meter to vCenter Server.
 
 ## What should I do now?
 {: #faq_usage-meter-what-to-do-now}
