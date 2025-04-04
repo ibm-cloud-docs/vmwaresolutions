@@ -42,7 +42,7 @@ You can review the next account invoice to confirm that you are no longer billed
 ## Procedure to delete Flexible instances from the instance details page
 {: #vs_deletinginstance-procedure2}
 
-1. {{site.data.content.ol-intro-ui-vcfclassic}}
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation panel.
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the Flexible instance to delete.
 3. Click **Actions** at the upper right of the instance details page and click **Delete instance**.
 4. In the **Deleting instance** window, click **Delete**.

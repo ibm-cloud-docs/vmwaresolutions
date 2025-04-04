@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-04"
 
 keywords: delete automated instance, delete vcf classic, remove vcf automated
 
@@ -46,7 +46,7 @@ You can review the next account invoice to confirm that you are no longer billed
 ## Procedure to delete Automated instances from the instance details page
 {: #vc_deletinginstance-procedure2}
 
-1. {{site.data.content.ol-intro-ui-vcfclassic}}
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation panel.
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance to delete.
 3. Click **Actions** next to **vCenter console** and click **Delete instance**.
 

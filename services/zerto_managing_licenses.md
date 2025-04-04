@@ -39,7 +39,7 @@ You can view and delete the Zerto licenses that you ordered for stand-alone use.
 ## Procedure to renew Zerto stand-alone licenses
 {: #zerto_managing_licenses-procedure-renew}
 
-Your Zerto license expires annually. Before it expires, you must request a new license and delete your existing one. 
+Your Zerto license expires annually. Before it expires, you must request a new license and delete your existing one.
 
 To renew your license, complete the following steps:
 
@@ -56,7 +56,7 @@ For more information, see [Deleting services from {{site.data.keyword.vcf-auto-s
 
 To delete a Zerto license:
 
-1. {{site.data.content.ol-intro-ui-licenses}}
+1. In the VMware Solutions console, click **Licensing and metering > Add-on services** from the left navigation panel.
 2. Scroll down to the **Zerto licenses** table and select the license that you want to delete.
 3. From the **Actions** menu, click **Delete license**.
 4. In the **Notes** field, optionally enter a reason for license deletion.

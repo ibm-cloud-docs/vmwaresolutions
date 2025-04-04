@@ -50,7 +50,7 @@ If you are experiencing this problem and the only browser you can use is Firefox
 ## Procedure to edit notes for Caveonix RiskForesight licenses
 {: #caveonix_license_managing_procedure-edit}
 
-1. {{site.data.content.ol-intro-ui-licenses}}
+1. In the VMware Solutions console, click **Licensing and metering > Add-on services** from the left navigation panel.
 2. In the **Caveonix RiskForesight licenses** table, click the license that you want to edit the notes for.
 3. On the license details page, edit the license notes, and then click **Confirm**.
 
@@ -69,7 +69,7 @@ Deleting the Caveonix RiskForesight service also deletes the initial Caveonix Ri
 To delete the Caveonix RiskForesight service, you must do so in the {{site.data.keyword.vmwaresolutions_full}} console. For more information, see [Deleting services from {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices).
 {: important}
 
-1. {{site.data.content.ol-intro-ui-licenses}}
+1. In the VMware Solutions console, click **Licensing and metering > Add-on services** from the left navigation panel.
 2. In the **Caveonix RiskForesight licenses** table, find the license to delete.
 3. In the **Actions** column, click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete").
 4. In the **Delete License** window, click **OK**.
