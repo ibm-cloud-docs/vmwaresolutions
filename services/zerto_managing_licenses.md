@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021, 2024
+  years: 2021, 2025
 
-lastupdated: "2024-04-12"
+lastupdated: "2025-04-04"
 
 keywords: Zerto, Zerto license, manage Zerto license
 
@@ -35,6 +35,17 @@ You can view and delete the Zerto licenses that you ordered for stand-alone use.
    The status can have one of the following values:
    * **Ordering** - the order is submitted to IBM Support.
    * **Completed** - IBM Support received your order and a license key request was sent to Zerto.
+
+## Procedure to renew Zerto stand-alone licenses
+{: #zerto_managing_licenses-procedure-renew}
+
+Your Zerto license expires annually. Before it expires, you must request a new license and delete your existing one. 
+
+To renew your license, complete the following steps:
+
+1. Order a new license with your required quantity. For more information, see [Ordering Zerto stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering_licenses).
+2. Wait to receive your new license key from IBM Support.
+3. After you receive the new license key, delete your existing license. For more information, see [Procedure to delete Zerto stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses#zerto_managing_licenses-procedure-delete).
 
 ## Procedure to delete Zerto stand-alone licenses
 {: #zerto_managing_licenses-procedure-delete}
