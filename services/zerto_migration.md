@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-07"
 
 keywords: Zerto, Zerto migration, zvm, zvma, windows zvm, linux zvma
 
@@ -43,7 +43,7 @@ For Zerto 10.0 and later, Zerto runs in a lightweight Debian Linux® based ZVMA 
 ## Changing the IP configuration of the Windows ZVM and preserving VPG configuration
 {: #zerto_migration_networkconfig}
 
-The following steps are required only when the Zerto Windows VM network configuration needs to be updated so that it is on the same subnet as the Linux ZVMA. Without completing these steps, the migration utility does not communicate with the Linux ZVMA that is hosted on VMware vSphere®, while the Windows VM is on {{site.data.keyword.cloud_notm}}. For more information, see [How to change the IP address of a ZVM server and preserve replicated data and VPG configuration](https://help.zerto.com/kb/000004268){: external}.
+The following steps are required only when the Zerto Windows VM network configuration needs to be updated so that it is on the same subnet as the Linux ZVMA. Without completing these steps, the migration utility does not communicate with the Linux ZVMA that is hosted on VMware vSphere®, while the Windows VM is on {{site.data.keyword.cloud_notm}}. For more information, see [How to change the IP address of a ZVM server and preserve replicated data and VPG configuration](https://help.zerto.com/bundle/z-kb-articles-zertokbs/page/4268.html){: external}.
 
 1. Export the existing VPG (Virtual Protection Group) data.
    1. Log in to the Windows Zerto UI.
@@ -147,7 +147,7 @@ For Zerto Migration Utility, open an {{site.data.keyword.IBM_notm}} Support tick
    * Site pairing is also restored.
    * VRAs are updated to the Linux ZVMA version.
 
-For more information, see [How to change the IP address of a ZVM server and preserve replicated data and VPG configuration](https://help.zerto.com/kb/000004268){: external}.
+For more information, see [How to change the IP address of a ZVM server and preserve replicated data and VPG configuration](https://help.zerto.com/bundle/z-kb-articles-zertokbs/page/4268.html){: external}.
 
 ## Completing postinstallation steps
 {: #zerto_migration_postinstall}
@@ -163,4 +163,4 @@ For more information, see [How to change the IP address of a ZVM server and pres
 * [Managing Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-managingzertodr)
 * [Managing Zerto stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
 * [Why does the Zerto Migration from Windows Zerto Virtual Manager to Linux ZVM Appliance fail?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_zerto_zvma_migration)
-* [How to change the IP address of a ZVM server and preserve replicated data and VPG configuration](https://help.zerto.com/kb/000004268){: external}
+* [How to change the IP address of a ZVM server and preserve replicated data and VPG configuration](https://help.zerto.com/bundle/z-kb-articles-zertokbs/page/4268.html){: external}

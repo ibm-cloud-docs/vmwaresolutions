@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-01-01"
+lastupdated: "2025-04-07"
 
 subcollection: vmwaresolutions
 
@@ -212,7 +212,7 @@ If you are creating the cyber-recovery isolated recovery environment solution ar
 * [Managing Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-managing)
 * [Juniper Networks vSRX deployment and operation with {{site.data.keyword.vcf-auto-short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vcsvsrx-intro)
 * [Managing VLANs with a gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances)
-* [{{site.data.keyword.cloud_notm}} IP ranges](/docs/gateway-appliance?topic=gateway-appliance-ibm-cloud-ip-ranges)
+* [{{site.data.keyword.cloud_notm}} IP ranges](/docs/infrastructure-hub?topic=infrastructure-hub-ibm-cloud-ip-ranges)
 * [VLANs and subnets in {{site.data.keyword.vmwaresolutions_full}}](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vlans-subnets)
 * [Ports that are used for deployment and Day 2 operations](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-deploy-day2ops)
 * [Ports used by {{site.data.keyword.vmwaresolutions_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vmwareuses)
