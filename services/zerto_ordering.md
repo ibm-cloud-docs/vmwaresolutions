@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-04-07"
 
 keywords: Zerto, Zerto replication billing, order Zerto
 
@@ -65,7 +65,7 @@ Within 15 days, you must configure the Call Home feature for Zerto. If you do no
 * Zerto blocks certain management activities.
 * You are charged for a full month of usage.
 
-For more information about Zerto Call Home, see [How to configure Zerto Reporting for Enterprise environments (Call Home)](https://help.zerto.com/kb/000004824){: external}.
+For more information about Zerto Call Home, see [How to configure Zerto Reporting for Enterprise environments (Call Home)](https://help.zerto.com/bundle/z-kb-articles-zertokbs/page/4824.html){: external}.
 
 ## Related links
 {: #zerto_ordering-related}

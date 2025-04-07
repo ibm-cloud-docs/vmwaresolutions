@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-04-07"
 
 keywords: vSphere migration, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Upgrading VMware vSphere software from vSphere 7.0 to 8.0
 {: #vs_vsphere_80-upgrade}
 
-You can upgrade the VMware vCenter Server® vSphere software on your instances to version 8.0. After that, you can migrate your NFS and gateway clusters to VMware vSphere® 8.0.
+You can upgrade the VMware vCenter Server® vSphere software on your instances to version 8.0 and migrate your NFS and gateway clusters to VMware vSphere® 8.0.
 
 ## Procedure to upgrade vCenter Server vSphere software from 7.0 to 8.0
 {: #vs_vsphere_80-upgrade-procedure}
@@ -76,7 +76,7 @@ Ensure to complete the following requirements during the upgrade:
 ### Updating vCenter Server licenses
 {: #vs_vsphere_80_upgrade-license-update}
 
-After you upgrade the vCenter Server to vSphere 8, you must update the licenses on the vCenter Server. If you have a vSAN cluster, you must update the vSAN license. [Contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to obtain the new licenses for vSphere 8.
+After you upgrade the vCenter Server to vSphere 8, update the licenses on vCenter Server. If you have a vSAN cluster, you must also update the vSAN license. [Contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to obtain the new licenses for vSphere 8.
 
 #### Procedure to update the vCenter Server license
 {: #vs_vsphere_80_upgrade-license-update-vcs}
