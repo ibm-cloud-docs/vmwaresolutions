@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-03-31"
+lastupdated: "2025-04-07"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -65,7 +65,7 @@ Complete the following requirements before you begin the upgrade:
    After you upgrade to version 8, in the VMware vCenter Server Appliance, the details pane for the vCenter object takes several minutes to load. This problem is resolved if you enable the connection of the vCenter Server Appliance to the VMware update repository.
    {: important}
 
-4. **Update vCenter Server and ESXi host licenses.** After you upgrade to vCenter Server 8.0, update the licenses on vCenter Server. If you have a vSAN™ cluster, you must also update the vSAN license. For more information about obtaining a new vCenter Server 8.0 license, see [Ordering VMware licenses](/docs/vmware?topic=vmware-ordering-vmware-license). For assistance with new licenses, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+4. **Update vCenter Server and ESXi host licenses.** After you upgrade to vCenter Server 8.0, update the licenses on vCenter Server. If you have a vSAN cluster, you must also update the vSAN license. For more information about obtaining a new vCenter Server 8.0 license, see [Ordering VMware licenses](/docs/vmware?topic=vmware-ordering-vmware-license). For assistance with new licenses, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
    * **Procedure to update the vCenter Server license**:
       Complete the following steps from the vCenter Server user interface.
       1. Select the **Administration menu > Licensing > Licenses**.
