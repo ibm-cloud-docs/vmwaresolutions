@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Migrating to vSphere 8.0
 {: #vc_vcs_80_upgrade}
 
-You can upgrade the VMware vCenter Server® software on your instances to version 8.0. After that, you can migrate your NFS and gateway clusters to VMware vSphere® 8.0.
+You can upgrade the VMware vCenter Server® software on your instances to version 8.0 and migrate your NFS and gateway clusters to VMware vSphere® 8.0.
 
 ## Before you begin
 {: #vc_vcs_80_upgrade-prereq}
