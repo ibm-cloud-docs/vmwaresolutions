@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-12-12"
+lastupdated: "2025-04-08"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX console
 
@@ -30,7 +30,7 @@ Juniper vSRX provides various features for security and ease of use on {{site.da
 
 * Any Juniper vSRX that is deployed with public access comes with its public interfaces deactivated. The deactivation ensures that the vSRX is not made available to the public internet before users are ready.
 * The default deny policy is set to `permit`, so you can identify any necessary flows before you lock down the vSRX traffic.
-* It is recommended that you change the default credentials that {{site.data.keyword.IBM}} created in the service details page for Juniper vSRX, the root and the admin passwords.
+* It is recommended that you change the default credentials that {{site.data.keyword.IBM}} created in the service details page for Juniper vSRX, the root, and the admin passwords.
 * On gateway cluster installations, protectable VLANs are associated, but not routed, with the edge gateway.
 
 ## Considerations when you delete Juniper vSRX
