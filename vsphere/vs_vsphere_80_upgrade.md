@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-04-07"
+lastupdated: "2025-04-08"
 
 keywords: vSphere migration, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -135,6 +135,23 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
    vmware-storcli    007.1316.0000.0000-01    Broadcom  PartnerSupported  2020-04-16`
 6. Repeat for each host.
 
+## Procedure to migrate from vSphere 7.0 to vSphere 8.0
+{: #vs_vsphere_80-migrate-procedure-vsphere}
+
+You cannot migrate a vSAN cluster to vSphere 8.0.
+{: important}
+
+If you have a gateway cluster with vSphere 7.0 and you want to migrate it to vSphere 8.0, complete the following tasks:
+1. Create a new vSphere 8.0 gateway cluster.
+2. Carefully coordinate the migration of your gateway virtual machines and configuration from the old cluster to the new cluster. This way your protected VLANs do not lose service or connectivity. This action includes migration of the virtual machines and their configuration, or creation of new virtual machines with duplicate configuration. As part of this sequence, remove your protected VLANs from protection of the old cluster and assign them to the new cluster.
+3. Remove the original gateway cluster.
+
+If you have an NFS cluster with vSphere 7.0 and you want to migrate it to vSphere 8.0, perform a rolling replacement of servers in the cluster. For each vSphere 7.0 server, complete the following tasks:
+1. Create a new vSphere 8.0 server.
+2. Ensure that the vSphere 8.0 server is configured to your needs and remove it from maintenance mode.
+3. Put the vSphere 7.0 server into maintenance mode.
+4. Remove the vSphere 7.0 server from your cluster.
+
 ### Procedure to upgrade the ESXi hosts (Sapphire Rapids only)
 {: #vs_vsphere_80_upgrade-procedure-esxi-upgrade}
 
@@ -166,23 +183,6 @@ If the upgrade process fails immediately and the `host cannot enter maintenance 
    3. Select one of the new vSphere 8 license keys and click **OK**.
    4. Repeat this step for each upgraded host.
 4. From the **Licenses** page, select all of the old vSphere 6 licenses and click **Remove Licenses**.
-
-## Procedure to migrate from vSphere 7.0 to vSphere 8.0
-{: #vs_vsphere_80-migrate-procedure-vsphere}
-
-You cannot migrate a vSAN cluster to vSphere 8.0.
-{: important}
-
-If you have a gateway cluster with vSphere 7.0 and you want to migrate it to vSphere 8.0, complete the following tasks:
-1. Create a new vSphere 8.0 gateway cluster.
-2. Carefully coordinate the migration of your gateway virtual machines and configuration from the old cluster to the new cluster. This way your protected VLANs do not lose service or connectivity. This action includes migration of the virtual machines and their configuration, or creation of new virtual machines with duplicate configuration. As part of this sequence, remove your protected VLANs from protection of the old cluster and assign them to the new cluster.
-3. Remove the original gateway cluster.
-
-If you have an NFS cluster with vSphere 7.0 and you want to migrate it to vSphere 8.0, perform a rolling replacement of servers in the cluster. For each vSphere 7.0 server, complete the following tasks:
-1. Create a new vSphere 8.0 server.
-2. Ensure that the vSphere 8.0 server is configured to your needs and remove it from maintenance mode.
-3. Put the vSphere 7.0 server into maintenance mode.
-4. Remove the vSphere 7.0 server from your cluster.
 
 ## Related links
 {: #vs_vsphere_80_upgrade-related}
