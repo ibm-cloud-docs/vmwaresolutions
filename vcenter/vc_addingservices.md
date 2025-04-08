@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-04-08"
 
 keywords: add service, order service, add-on service
 
@@ -36,7 +36,7 @@ The following table shows the services that are available to Automated instances
 
 | Service name | Current version | Notes |
 |:------------ |:--------------- |:----- |
-| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 5.1.5 | |
+| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 5.2 | |
 | [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.1.1 | |
 | [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.4.3 | |
 | [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version | |
@@ -45,7 +45,7 @@ The following table shows the services that are available to Automated instances
 | [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 | |
 | [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.15 | NSX-T only \n If you want to add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade to 3.1 or later. |
 | [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12.3 | |
-| [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | 8.18 | |
+| [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | 8.18.3 | |
 | [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 10.0u5 | VMware vSphere 7 or later |
 {: caption="Available services for Automated instances" caption-side="bottom"}
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-31"
+lastupdated: "2025-04-08"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -38,11 +38,11 @@ The following table details the BOM information for {{site.data.keyword.vcf-auto
 
 | Manufacturer | Component | Version |
 |:------------ |:--------- |:------- |
-| VMware® by Broadcom | vSphere ESXi | ESXi 8.0 Update 3b (build 24280767)[^esxi80] or \n ESXi 7.0 Update 3q (build 23794027)[^esxi70] |
+| VMware® by Broadcom | vSphere ESXi | ESXi 8.0 Update 3d (build 24585383)[^esxi80] or \n ESXi 7.0 Update 3s (build 24585291)[^esxi70] |
 | VMware by Broadcom | Distributed vSwitch | 8.0.0[^vcs-vsphere800] or 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660] |
 | VMware by Broadcom | vCenter Server Appliance | 8.0 Update 3d (24322831) or \n 7.0 Update 3t (24322018) |
 | VMware by Broadcom | vSAN[^vsan] | 7.0 Update 3l (21424296) |
-| VMware by Broadcom | NSX for vSphere | 4.1.2.4 (23786733) |
+| VMware by Broadcom | NSX for vSphere | 4.2.1.2 (24476729) |
 | Microsoft® | Windows® Server Standard edition | 2019 |
 | Microsoft | Active Directory™ domain functional level | 2016 (WinThreshold)[^domain] |
 {: caption="BOM for the software components in Automated instances" caption-side="bottom"}
