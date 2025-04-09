@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-09"
 
 keywords: view flexible, view instance, view instance details, instance view flexible
 
@@ -124,7 +124,7 @@ To view the property details of an instance, complete the following steps.
    {: tab-title="IP details"}
    {: tab-group="Network interface VLAN details"}
 
-5. Click the **Licensing** tab to view details about the existing licenses. You can also add licenses if any are available that you haven’t purchased yet.
+5. Click the **Licensing and metering** tab to view details about the VMware licenses information for the VCF bundle and the VMware vCloud Usage Meters that are installed in your environment.
 
 6. Click the **Deployment history** tab to view the deployment history for the instance.
 

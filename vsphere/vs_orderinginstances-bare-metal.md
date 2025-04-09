@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-09"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -53,7 +53,7 @@ You can choose **Sapphire Rapids**, **Cascade Lake**, or **SAP-certified Cascade
 
 {{site.data.content.simpletabtable-sapphire}}
 
-
+{{site.data.content.note-spr-rapids-byol}}
 
 ### Cascade Lake
 {: #vs_orderinginstances-bare-metal-cascade}

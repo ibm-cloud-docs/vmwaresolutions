@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-04-09"
 
 keywords: flexible order instances, order flexible, order vmaware vSphere instance
 
@@ -21,20 +21,10 @@ subcollection: vmwaresolutions
 
 1. In the VMware Solutions console, click the **VMware Cloud Foundation (VCF) for Classic** card in the **Create a resource** section. {: #step-1}
 1. On the **Create** tab, click the **Flexible** card in the **Resource type** section.
+1. Select the VMware vSphere® version for your instance. Then, enter the instance name and select a resource group.
 1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side pane, make your changes, and then save.
-1. Enter the instance name and select a resource group.
-1. Select the VMware vSphere® version for your instance.
-1. Select the VMware® components for licensing:
-
-   {{site.data.content.attnnote-byol}}
-
-   If you do select that you are providing your own license, an {{site.data.keyword.cloud_notm}} ticket is opened automatically. This ticket requests the default vSphere licenses on your ordered bare metal servers to be replaced with your provided licenses.
-
-   You are responsible to track the ticket so that you replace the vSphere license on the newly ordered VMware ESXi® servers. This way the {{site.data.keyword.cloud_notm}} infrastructure grants the cancellation of the initially provided {{site.data.keyword.cloud_notm}} infrastructure vSphere license charge. To replace your ESXi vSphere license, see [Configure license settings for an ESXi host](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-and-host-management-7-0/license-management-host-management/managing-licenses-host-management/configuring-license-settings-for-assets-in-the-vsphere-client-host-management/assign-a-license-to-a-host-host-management.html){: external}.
-   {: important}
-
 1. Complete the bare metal server settings:
    1. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod where the instance is to be hosted.
    1. Select the CPU model:

@@ -61,7 +61,6 @@ toc:
           - vmonic/signing_required_accounts.md
           - vmonic/loginmethod.md
           - vmonic/completing_checklist.md
-          - vmonic/vmware-add-ons.md
           - vmonic/useraccount.md
           - vmonic/iam.md
           - vmonic/notifications.md
@@ -152,9 +151,6 @@ toc:
               - vcenter/vc_esg_config.md
               - vcenter/vc_multisite.md
               - vcenter/vc_compl_info.md
-          - topicgroup:
-              label: Upgrading and migrating
-              topics:
               - vcenter/vc_vcs_80_upgrade.md
               - vcenter/vc_vsphere_70_upgrade.md
           - topicgroup:
@@ -213,7 +209,6 @@ toc:
               - vsphere/vs_orderinginstances-req.md
               - vsphere/vs_orderinginstance-resource.md
               - vsphere/vs_orderinginstances-sys.md
-              - vsphere/vs_orderinginstances-licensing.md
               - vsphere/vs_orderinginstances-bare-metal.md
               - vsphere/vs_orderinginstances-storage.md
               - vsphere/vs_orderinginstances-network.md
@@ -225,7 +220,6 @@ toc:
               topics:
               - vsphere/vs_addingservers.md
               - vsphere/vs_removingservers.md
-          - vsphere/vs_manage_licenses.md
           - topicgroup:
               label: Viewing and deleting instances
               topics:
@@ -305,6 +299,18 @@ toc:
               - vpc-vcf/vpc-vcf-viewing.md
               - vpc-vcf/vpc-vcf-deleting.md
           - vpc-vcf/vpc-vcf-deploy-vvs.md
+      - topicgroup:
+              label: Licensing and metering
+              topics:
+              - topic: uml/licensing_metering-req.md
+                navtitle: Requirements
+              - uml/usage_meter-deploy.md
+              - uml/usage_meter-config.md
+              - uml/usage_meter-register.md
+              - uml/usage_meter-add.md
+              - uml/vmware-add-ons.md
+              - uml/licensing_vcf-licenses.md
+              - uml/licensing_manage.md
       - topicgroup:
           label: Add-on services
           topics:

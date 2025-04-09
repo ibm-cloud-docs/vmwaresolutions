@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-04-09"
 
 keywords: automated instance add host, add server automated instance
 
@@ -37,7 +37,8 @@ Review the following information applicable to all Automated instances:
 * For ESXi servers with vSAN storage, you can add only vSphere 7 either with vCenter Server 7 or 8.
 * For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 
-
+Depending on your EVC (Enhanced VMware vMotion Compatibility) mode setting, virtual machines that run on Sapphire Rapids servers cannot migrate to Cascade Lake servers without being powered off. To prevent this problem, you cannot add a Cascade Lake server for clusters that contain only Sapphire Rapids servers.
+{: important}
 
 {{site.data.content.attnnote-addhost-byol}}
 

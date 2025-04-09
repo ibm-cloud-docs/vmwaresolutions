@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-31"
+lastupdated: "2025-04-09"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -38,11 +38,11 @@ The following table details the BOM information for {{site.data.keyword.vcf-auto
 
 | Manufacturer | Component | Version |
 |:------------ |:--------- |:------- |
-| VMware® by Broadcom | vSphere ESXi | ESXi 8.0 Update 3b (build 24280767)[^esxi80] or \n ESXi 7.0 Update 3q (build 23794027)[^esxi70] |
+| VMware® by Broadcom | vSphere ESXi | ESXi 8.0 Update 3d (build 24585383)[^esxi80] or \n ESXi 7.0 Update 3s (build 24585291)[^esxi70] |
 | VMware by Broadcom | Distributed vSwitch | 8.0.0[^vcs-vsphere800] or 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660] |
 | VMware by Broadcom | vCenter Server Appliance | 8.0 Update 3d (24322831) or \n 7.0 Update 3t (24322018) |
 | VMware by Broadcom | vSAN[^vsan] | 7.0 Update 3l (21424296) |
-| VMware by Broadcom | NSX for vSphere | 4.1.2.4 (23786733) |
+| VMware by Broadcom | NSX for vSphere | 4.2.1.2 (24476729) |
 | Microsoft® | Windows® Server Standard edition | 2019 |
 | Microsoft | Active Directory™ domain functional level | 2016 (WinThreshold)[^domain] |
 {: caption="BOM for the software components in Automated instances" caption-side="bottom"}
@@ -152,15 +152,17 @@ The allocation of distributed switches varies if you have existing instances and
 
 Review the following table for an overview of the EVC (Enhanced VMware vMotion Compatibility) mode settings for Automated instances and the differences between vSphere versions.
 
-| Bare metal server CPU model | vSphere 6.7[^evc-vsphere67] | vSphere 7.0 |
-|:--------------------------- |:--------------------------- |:----------- |
-| Skylake | EVC is set to Intel® **Broadwell** Generation. | Skylake is not supported. |
-| Cascade Lake | For the management cluster, EVC is not set. For all other clusters, EVC is set to Intel **Skylake** Generation. | EVC is set to Intel **Cascade Lake** Generation. |
+| Bare metal server CPU model | vSphere 6.7[^evc-vsphere67] | vSphere 7.0 | vSphere 8.0 |
+|:--------------------------- |:--------------------------- |:----------- |:----------- |
+| Skylake | EVC is set to Intel® **Broadwell** Generation. | Skylake is not supported. | Skylake is not supported. |
+| Cascade Lake | For the management cluster, EVC is not set. For all other clusters, EVC is set to Intel **Skylake** Generation. | EVC is set to Intel **Cascade Lake** Generation. | EVC is set to Intel **Cascade Lake** Generation. |
+| Sapphire Rapids | Not applicable. | EVC is set to Intel **Ice Lake** Generation. | EVC is set to Intel **Sapphire Rapids** Generation. |
 {: caption="EVC mode settings for Automated instances and clusters" caption-side="bottom"}
 
 [^evc-vsphere67]: Existing vSphere 6.7 clusters only
 
-
+Depending on your EVC mode setting, virtual machines that run on Sapphire Rapids servers cannot migrate to Cascade Lake servers without being powered off. To prevent this problem, you cannot add a Cascade Lake server for clusters that contain only Sapphire Rapids servers.
+{: important}
 
 ## Active Directory Certificate Services
 {: #vc_bom-ad-certificate-services}

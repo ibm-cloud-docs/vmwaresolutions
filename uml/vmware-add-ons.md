@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-04-09"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -26,22 +26,22 @@ Avi Load Balancer (formerly VMware NSX Advanced Load Balancer) is available as a
 
 If you need load balancing for your environment, order the Avi Load Balancer from the {{site.data.keyword.cloud}} console.
 
-## VMware NSX firewall add-ons
+## VMware vDefend Firewall add-on
 {: #vmware-add-ons-nsx-firewall}
 
-The distributed and gateway firewalls are extracted from NSX into the VMware Cloud Foundation bundle and offered as a separate add-on, which is available for purchase in the {{site.data.keyword.cloud_notm}} console. You must purchase licenses for the number of cores that are required for your environment separately.
+VMware vDefend™ Distributed Firewall (formerly VMware NSX Distributed Firewall) and VMware vDefend™ Gateway Firewall (formerly VMware NSX Gateway Firewall) are extracted from NSX and are now available as an add-on to the VMware Cloud Foundation bundle. This add-on is available for purchase in the {{site.data.keyword.cloud_notm}} console. You must purchase licenses for the number of cores that are required for your environment separately.
 
-Although you must order NSX firewall add-ons to represent your firewall usage, you cannot enter firewall license keys into NSX Manager yet. In the future, VMware Solutions will provide a new set of NSX license keys. Then, you are expected to enter the new NSX license keys, along with the NSX firewall keys that you ordered into NSX Manager.
+Although you must order the vDefend Firewall add-on to represent your firewall usage, you cannot enter firewall license keys into NSX Manager yet. In the future, VMware Solutions will provide a new set of NSX license keys. Then, you are expected to enter the new NSX license keys, along with the vDefend Firewall keys that you ordered, into NSX Manager.
 
-The NSX firewall add-on is the same for both the distributed and the gateway firewall. You must order the appropriate number of firewall cores for your environment.
+The vDefend Firewall add-on is the same for both the vDefend Distributed Firewall and the vDefend Gateway Firewall. You must order the appropriate number of firewall cores for your environment.
 
 * If you are ordering a new {{site.data.keyword.vcf-auto}} instance, the minimum gateway firewall cores are calculated for your order.
-* If you are an existing customer, you must purchase NSX firewall licenses separately for the number of cores that are required for your environment.
+* If you are an existing customer, you must purchase vDefend Firewall licenses separately for the number of cores that are required for your environment.
 * To calculate the number of firewall cores that you need for your environment and to confirm the cost (depending on whether you use distributed, gateway, or no firewall), based on your procurement vehicle, contact your IBM Business Partner representative or IBM Sales representative.
 
 For on-demand, the cost for the firewall add-on is $12.50 per core, per month. Discounts are available depending on your contract commitment.
 
-* **Distributed Firewall**: For this option, all host cores that are running VMware NSX must be licensed for the DFW Firewall Add-On. This is done because virtual network segments span the entire environment and a virtual machine (VM) can run on any host.
+* **Distributed Firewall**: For this option, all host cores that are running NSX must be licensed for the vDefend Distributed Firewall add on. This is done because virtual network segments span the entire environment and a virtual machine (VM) can run on any host.
 * **Gateway Firewall**: For this option, the vCPUs that are running on the edge VMs provide the gateway firewall service, therefore they are counted. To get the edge VMs properly configured, the VMs are sized and 4 cores per vCPU in the edge VMs are calculated.
 
 For example, by using the sizing guidance at [NSX Edge Installation Requirements](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/installation-guide/installing-nsx-edge/nsx-edge-installation-requirements.html){: external} if you choose a large edge, then each edge requires 8 vCPU, therefore 32 cores to be licensed: `8 vCPUs in the VM * 4 cores per vCPU = 32 cores`
@@ -59,6 +59,9 @@ The vSAN add-on is priced at $21 per TiB of vSAN per month. Discounts are availa
 
 The vSAN add-on does not generate any license keys. It is used only to report your vSAN usage.
 
+For the {{site.data.keyword.vcf-auto-short}} offering, the IBM automation will automatically order the vSAN add-on for any new hosts that are provisioned as needed.
+{: important}
+
 ## Ordering the VMware add-ons
 {: #vmware-add-ons-order}
 
@@ -75,7 +78,7 @@ You can also cancel the VMware add-ons from the {{site.data.keyword.cloud}} cons
 
 If applicable to you, complete the following tasks:
 
-* If you ordered the Avi Load Balancer add-on, also install an Avi (NSX ALB) license key. For more information, see [Using NSX Advanced Load Balancer License File](https://techdocs.broadcom.com/us/en/vmware-security-load-balancing/avi-load-balancer/avi-load-balancer/30-1/vmware-avi-load-balancer-administration-guide/licensing.html){: external}.
+* If you ordered the Avi Load Balancer add-on, also install an Avi (NSX ALB) license key. For more information, see [Using Avi Load Balancer License File](https://techdocs.broadcom.com/us/en/vmware-security-load-balancing/avi-load-balancer/avi-load-balancer/31-1/vmware-avi-load-balancer-administration-guide/licensing/nsx-advanced-load-balancer-editions/nsx-alb-license-management/using-avi-vantage-license-file.html){: external}.
 * If you are planning to order VMware Cloud Foundation for VPC instances, also [configure the NSX firewalls for VCF for VPC instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-firewall) after you deployed your VCF for VPC instance.
 
 ## Related links

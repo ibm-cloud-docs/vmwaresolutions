@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-09"
 
 keywords: view vmware cloud foundation instance, vmware cloud foundation instance, view instance, view vmware cloud edition instance
 
@@ -42,7 +42,7 @@ View the summary and detailed information of the {{site.data.keyword.vcf-vpc}} i
       * On the hosts table, view the bare metal server name, the root user password, and the creation time. To go to the bare metal server details page on the {{site.data.keyword.vpc_short}} console, click the bare metal server name.
 
 4. On the **Access information** tab, view the default username and password for the {{site.data.keyword.vcf-vpc-short}} instance.
-   * In the **Management domain** section, view the hostname, FQDN, and IP addresses for vCenter Server®, VMware NSX-T Data Center, SDDC Manager, and VMware® Aria Suite Lifecycle Manager. For **Backup server**, view the name, IP address, SSH key, and server OS. You can view or copy the password by clicking the icons.
+   * In the **Management domain** section, view the hostname, FQDN, and IP addresses for vCenter Server®, VMware NSX-T Data Center, SDDC Manager, VMware® Aria Suite Lifecycle Manager, and Usage Meter. For **Backup server**, view the name, IP address, SSH key, and server OS. You can view or copy the password by clicking the icons.
    * In the **Windows jump server** section, you can view the public and private IP addresses and admin user password of the Windows jump server. If you did not select to create the jump server, the section is not displayed.
 
 ## Related links
