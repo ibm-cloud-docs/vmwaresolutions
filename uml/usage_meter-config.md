@@ -17,7 +17,11 @@ subcollection: vmwaresolutions
 # Configuring Usage Meter
 {: #usage_meter-config}
 
-In the VMware vSphere® Web Client, complete the following steps:
+After you deployed VMware vCloud Usage Meter, configure it in VMware vSphere® Web Client. Find out how to configure Usage Meter in the following video.
+
+![IBM Cloud licensing for Broadcom Usage Meter: part 2](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_y24q2mve){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+
+In VMware vSphere® Web Client, complete the following steps:
 
 1. Log in to the VMware vCloud Usage Meter virtual machine (VM).
 2. In a web browser, go to the IP address assigned to the Usage Meter VM that starts with `https://`

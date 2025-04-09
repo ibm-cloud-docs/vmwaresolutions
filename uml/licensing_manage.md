@@ -17,6 +17,10 @@ subcollection: vmwaresolutions
 # Managing VMware product licenses
 {: #licensing_manage}
 
+After you registered VMware vCloud Usage Meter with IBM, you can add and assign license keys to various VMware product licenses. Find out how to manage VMware product licenses in the following video.
+
+![IBM Cloud licensing for Broadcom Usage Meter: part 3](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_4dgic0vx){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+
 ## Adding license keys to VCF, vCenter Server, vSAN, and ESXi
 {: #licensing_manage-add-vcf}
 
@@ -47,7 +51,7 @@ To assign licenses to vCenter Server, complete the following steps:
 11. In the **Assign license** window, select the new vSAN license that was added previously.
 12. In the **Assignment validation** box, click **OK** to acknowledge the message that the license assignment is valid. If it is not valid, check that the license key is correct and that it contains the required capacity.
 
-### Results after assigning licenses
+### Results after you assign licenses
 {: #licensing_manage-assign-results}
 
 * In the **Licenses** page, on the **Licenses** tab, all old licenses now show 0 in the **Usage** column.
@@ -65,7 +69,7 @@ To add license keys to VMware NSX-T (NSX component or VMware vDefend Firewall), 
 5. Verify that all new licenses are **Valid** under the **Validity** column and that the **Quantity** value is correct.
 
 For VMware vDefend Firewall, do not enter the firewall keys that you ordered. IBM will provide updated firewall keys in the future. Your firewall will continue to operate normally.
-{: important}
+{: attention}
 
 You can delete old licenses by selecting them and clicking **Delete**.
 {: tip}

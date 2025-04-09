@@ -78,7 +78,7 @@ In the VMware vSphere® Web Client, complete the following steps:
 {: #usage_meter-deploy-results}
 
 * Under **Recent Tasks**, after the new tasks complete, details such as the VM DNS name and IP address are displayed under **Virtual machine details** in the **Summary** tab.
-* If you didn't select the **Automatically power on deploy VM** option in the **Select a compute resource** step, click the new VM in the inventory pane. Then click the power on icon next to the VM name to see the VM details. If the VM details do not appear, the configuration might be incorrect. To resolve the issue, delete the VM and redeploy the OVF template.
+* If you didn't select the **Automatically power on deploy VM** option in the **Select a compute resource** step, click the new VM in the inventory pane. Then, click the power on icon next to the VM name to see the VM details. If the VM details do not appear, the configuration might be incorrect. To resolve the issue, delete the VM and redeploy the OVF template.
 
 ## Related links
 {: #usage_meter-deploy-related}
