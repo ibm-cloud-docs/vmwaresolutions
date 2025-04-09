@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-03-18"
+lastupdated: "2025-04-11"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -25,7 +25,35 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2025
 {: #year-2025}
 
+### 11 April 2025
+{: #vmwaresolutions-apr1125}
+{: release-note}
 
+Licensing and metering for VMware Cloud Foundation
+:   VMware® by Broadcom now requires {{site.data.keyword.IBM}} and {{site.data.keyword.cloud}} customers to use new license keys and to use VMware vCloud Usage Meter for metering and reporting. This requirement applies to {{site.data.keyword.vcf-classic-short}} (Automated and Flexible), {{site.data.keyword.vcf-vpc-short}}, ESXi roll-your-own (RYO) servers on Classic, {{site.data.keyword.IBM_notm}} Bridge to Cloud program users, and some BYOL for VMware users. Usage Meter is used to report consumption of VCF and add-ons, such as VMware vSAN™ and VMware vDefend™ Firewall to both Broadcom and {{site.data.keyword.IBM_notm}}. The new licensing and metering are applicable to environments with VMware vSphere® 7 and later. For more information, see [Requirements for licensing and metering](/docs/vmwaresolutions?topic=vmwaresolutions-licensing_metering-req).
+
+REST APIs for licensing and metering
+:   The following new REST APIs are available:
+
+   * The {{site.data.keyword.vcf-aas}} API provides support for [listing VMware licenses](/apidocs/vmware-service#list-licenses) and for [managing Usage Meter registrations](/apidocs/vmware-service#create-usage-meter-registration).
+   * The VMware Solutions API provides support for [deploying Usage Meters](/apidocs/vmware-solutions#controllers-public-v1-proxy-add-uma).
+
+BOM updates for {{site.data.keyword.vcf-classic-short}}
+:   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic-short}} instances, clusters, and hosts:
+
+   * VMware vSphere ESXi™
+      * 8.0 Update 3d (build 24585383)
+      * 7.0 Update 3s (build 24585291)
+   * VMware NSX® 4.2.1.2 (build 24476729)
+
+vSAN storage updates
+:   For new {{site.data.keyword.vcf-auto-short}} instances and hosts, you can add more vSAN storage than the default capacity of 1 TB per host core. The {{site.data.keyword.IBM_notm}} automation will calculate and order the vSAN overage.
+
+Add-on services upgrades
+:   The following service versions are available for deployment:
+
+   * Caveonix RiskForesight v5.2
+   * VMware Aria® Operations™ and VMware Aria Operations™ for Logs v8.18.3
    
 
 
@@ -278,17 +306,17 @@ Veeam 12.1.1 for {{site.data.keyword.vm-shared}}
 {: release-note}
 
 Updated packaging and pricing for VMware Solutions offerings
-:   {{site.data.keyword.cloud}} is changing its {{site.data.keyword.vmwaresolutions_short}} portfolio and pricing, in response to the changes to the packaging and pricing of the VMware® portfolio, announced by Broadcom. These changes will be effective on 1 May 2024. For more information, see [Packaging and pricing for VMware by Broadcom](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing).
+:   {{site.data.keyword.cloud}} is changing its {{site.data.keyword.vmwaresolutions_short}} portfolio and pricing, in response to the changes to the packaging and pricing of the VMware® portfolio, announced by Broadcom. These changes will be effective on 1 May 2024.
 
 Updated pricing structure for RHEL for {{site.data.keyword.vm-shared}}
-:   The Red Hat Enterprise Linux (RHEL) pricing is updated from the existing 2-tier pricing structure (Small and Large) to a 3-tier pricing structure (Small, Medium, and Large). For more information, see [April 2024 price changes](/docs/overview?topic=overview-price-adjustments#april-2024).
+:   The Red Hat Enterprise Linux (RHEL) pricing is updated from the existing 2-tier pricing structure (Small and Large) to a 3-tier pricing structure (Small, Medium, and Large).
 
 ### 28 March 2024
 {: #vmwaresolutions-mar2824}
 {: release-note}
 
 End of Support for {{site.data.keyword.vm-shared}} deployments
-:   Starting on 28 March 2024, {{site.data.keyword.vm-shared}} will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.cloud_notm}} for VMware as a Service](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+:   Starting on 28 March 2024, {{site.data.keyword.vm-shared}} will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Migrate all your {{site.data.keyword.vm-shared}} resources to {{site.data.keyword.cloud_notm}} for VMware as a Service by 15 January 2025.
 
 ### 15 March 2024
 {: #vmwaresolutions-mar1524}
@@ -297,7 +325,7 @@ End of Support for {{site.data.keyword.vm-shared}} deployments
 {{site.data.keyword.vcf-vpc}} enhancements
 :   The following features are now available:
 
-   * **Async Patch tool**: You can apply critical patches for VMware Cloud Foundation components, such as VMware NSX Manager, VMware vCenter Server®, and VMware ESXi by using the Async Patch tool. For more information, see [Viewing VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing#vpc-vcf-viewing-details).
+   * **Async Patch tool**: You can apply critical patches for VMware Cloud Foundation components, such as VMware NSX Manager, VMware vCenter Server®, and VMware ESXi by using the Async Patch tool.
    * **New regions available**: VMware Cloud Foundation is now available for use in **Tokyo** and **London**.
    * **BOM updates**: ESXi 7.0 Update 3p (build 23307199) is applied to newly deployed instances.
 
@@ -313,7 +341,7 @@ VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
 {: release-note}
 
 vCenter Server 8 support
-:   VMware vCenter Server® 8.0 is available for newly deployed instances. For new instances with vCenter Server 8 and existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts. For more information, see [Upgrading to vCenter Server 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade).
+:   VMware vCenter Server® 8.0 is available for newly deployed instances. For new instances with vCenter Server 8 and existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts.
 
 vCenter Server and VMware vSphere BOM updates
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
@@ -340,11 +368,11 @@ User interface updates and enhancements
 New and updated documentation
 :   The following technical documents are now available or updated:
 
-   * [Architecture pattern for integrating {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection with vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-sccwpp)
-   * [Caveonix RiskForesight Security and Compliance Center integration](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-scc)
-   * [Architecture patterns for integrating {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection with VMware as a Service](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vmwaas-sccwpp)
-   * [VMware Cloud Foundation architecture patterns](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-clientvpn)
-   * [Veeam backup guide](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_cloud_vmware)
+   * Architecture pattern for integrating {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection with vCenter Server
+   * Caveonix RiskForesight Security and Compliance Center integration
+   * Architecture patterns for integrating {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection with VMware as a Service
+   * VMware Cloud Foundation architecture patterns
+   * Veeam backup guide
 
 ## 2023
 {: #year-2023}
@@ -910,52 +938,3 @@ New architecture documentation
 
 User interface updates and enhancements
 :   The VMware Solutions documentation now has a landing page where you can get oriented with the content available for the offering.
-
-### 21 February 2022
-{: #vmwaresolutions-feb2122}
-{: release-note}
-
-VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
-:   (Updated on 15 March 2022) The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.3.2.
-
-VMware vCenter Server instances
-:   The following upgrades and improvements are available for newly deployed instances, clusters, and hosts.
-   * VMware vCenter Server Appliance 7.0 Update 3c (build 19234570)
-   * VMware NSX-T 3.1.3.5.0 (build 19068434)
-   * VMware NSX-V 6.4.12 (build 19066632)
-   * VMware vSAN 7.0 Update 2c (build 18426014)
-
-VMware vSAN 7.68 TB SSD disk support for 10 Gb uplink speed
-:   For the VMware vSAN component, the 7.68 TB SSD disk type is now supported for VMware vSphere 7.0 or 6.7 instances with 10 Gb uplink speed.
-
-Non-SED disk availability for vSAN storage {: #february-2022-non-sed}
-:   For Cascade Lake servers, non-SED vSAN storage disks now replace the option for SSD SED disks for newly deployed instances and when you add hosts and clusters to existing instances. If your initial cluster has vSAN storage, SSD SED disks are no longer available. Non-SED storage disks are ordered.
-
-   SSD SED disks are supported for Skylake servers.
-   {: note}
-
-Add-on services upgrades
-:   The following service versions are now available to install on deployed instances.
-
-   * FortiGate Virtual Appliance v7.0.3
-   * vRealize Log Insight v8.6
-   * Zerto v9.0u2
-
-IBM Spectrum Protect Plus - deprecated
-:   New installations of the IBM Spectrum® Protect Plus service are no longer supported for new or existing deployments of vCenter Server instances. You can still use or delete existing IBM Spectrum Protect Plus installations on your existing instances. If you want to install IBM Spectrum Protect Plus yourself, search the IBM Spectrum Protect Plus documentation.
-{: deprecated}
-
-REST API updates
-:   The following API updates are available:
-   * The /v2/supported_config_options REST API displays a list of supported configuration versions.
-   * The /v2/disk_types REST API is updated to show that SED disks are only for Skylake servers.
-   * A number of REST APIs, such as `/v1/vcenters/nsxt` include the parameters `disks` and `vsan_cache_disks`. For these APIs and for Cascade Lake servers only, do not specify SED disks types.
-
-New architecture documentation
-:   The following technical documents are now available:
-   * VMware RYO architecture on VPC
-   * Interconnectivity for VMware workloads on VPC
-   * Fortinet FortiGate solution architecture
-
-User interface updates and enhancements
-:   Various error messages and tooltip enhancements are available to assist you in selecting the appropriate setting on the UI.

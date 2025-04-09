@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-04-07"
+lastupdated: "2025-04-09"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Migrating to vSphere 8.0
+# Upgrading to vSphere 8.0
 {: #vc_vcs_80_upgrade}
 
 You can upgrade the VMware vCenter Server® software on your instances to version 8.0 and migrate your NFS and gateway clusters to VMware vSphere® 8.0.
@@ -65,7 +65,7 @@ Complete the following requirements before you begin the upgrade:
    After you upgrade to version 8, in the VMware vCenter Server Appliance, the details pane for the vCenter object takes several minutes to load. This problem is resolved if you enable the connection of the vCenter Server Appliance to the VMware update repository.
    {: important}
 
-4. **Update vCenter Server and ESXi host licenses.** After you upgrade to vCenter Server 8.0, update the licenses on vCenter Server. If you have a vSAN cluster, you must also update the vSAN license. For more information about obtaining a new vCenter Server 8.0 license, see [Ordering VMware licenses](/docs/vmware?topic=vmware-ordering-vmware-license). For assistance with new licenses, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+4. **Update vCenter Server and ESXi host licenses.** After you upgrade to vCenter Server 8.0, update the licenses on vCenter Server. If you have a vSAN cluster, you must also update the vSAN license. To access vCenter Server and vSAN licenses, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
    * **Procedure to update the vCenter Server license**:
       Complete the following steps from the vCenter Server user interface.
       1. Select the **Administration menu > Licensing > Licenses**.
@@ -129,24 +129,19 @@ There are several methods to upgrade your ESXi hosts. For more information, see 
 If the upgrade process fails immediately and the ``host cannot enter maintenance mode`` error message is displayed, shut down the Zerto ZVAs and try again. The ZVRA VMs automatically start as each server comes out of remediation. For more information about continuing Zerto replication during the upgrade process, see [How to Place a Host with an Associated VRA into Maintenance Mode](https://www.zerto.com/myzerto/knowledge-base/how-to-place-a-host-with-an-associated-vra-into-maintenance-mode/){: external}.
 {: note}
 
+### Procedure to update ESXi host licenses
+{: #vc_vcs_80_upgrade-license-update-esxi}
 
-
-### Upgrading vSphere licenses
-{: #vc_vcs_80_upgrade-procedure-licenses}
-
-After you upgrade the vSphere and ESXi hosts to vSphere 8, you must upgrade the licenses on the vSphere and the ESXi hosts. If you have a vSAN cluster, you must update the vSAN license. To obtain the new licenses for vSphere 8, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
-
-#### Procedure to upgrade the vSAN cluster license
-{: #vc_vcs_80_upgrade-procedure-vsan-cluster-license}
+To update the ESXi host licenses, you must first retrieve your new vSphere licenses from the IBM Cloud console. For more information, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
 
 1. From the **Licenses** page, click **+ Add New Licenses**.
-2. Enter the new vSAN license keys in the **New Licenses** field. If you have multiple vSAN license keys, enter all the licenses in the **New Licenses** field, specify a name for each license, and then click **OK**.
+2. Enter the new vSphere 8 license keys in the **New Licenses** field. If you have multiple vSphere 8 license keys, input the all of the licenses in the **New Licenses** filed, enter a name for each license, and click **OK**.
 3. Complete the following steps from the **Assets** page.
-   1. Select **VSAN CLUSTERS**.
-   2. Select the vSAN cluster and click **Assign License**.
-   3. Select one of the new vSAN license keys and click **OK**.
-   4. Repeat this step for each vSAN cluster.
-4. From the **Licenses** page, select all the old vSAN cluster licenses and click **Remove Licenses**.
+   1. Select **HOSTS**.
+   2. Select the host and click **Assign License**.
+   3. Select one of the new vSphere 8 license keys and click **OK**.
+   4. Repeat this step for each upgraded host.
+4. From the **Licenses** page, select all of the old vSphere 6 licenses and click **Remove Licenses**.
 
 ## Related links
 {: #vc_vcs_80_upgrade-related}

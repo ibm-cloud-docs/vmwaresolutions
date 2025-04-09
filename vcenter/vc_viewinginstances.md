@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-09"
 
 keywords: view vcf classic, view instance, view instance details, vmware cloud foundation view
 
@@ -70,8 +70,7 @@ To view the property details of an instance, complete the following steps.
 | Multizone region[^multizone] | The {{site.data.keyword.cloud_notm}} data center region where the instance is hosted. |
 | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. \n \n **Note:** For multizone instances, locations are listed for each cluster type. |
 | VMware NSX® networking solution[^NSX] | * NSX for instances provisioned with NSX version 4.0 or later. \n * NSX-T or NSX-V for instances provisioned with previous versions of NSX, earlier than version 4.0. |
-| NSX for vSphere | The VMware NSX for vSphere product version. |
-| NSX license edition | The edition of the VMware NSX license. |
+| NSX version | The VMware NSX product version. |
 | Root domain | The root domain name is the DNS domain name and the Microsoft® Active Directory™ (AD) forest root name. |
 | SSO domain | The SSO domain is the vSphere single sign-on domain. The SSO domain name is fixed for all deployed Automated instances with a value of **`vsphere.local`**. |
 | Subdomain[^subdomain] | The subdomain is the DNS subdomain name of the root domain name where the local Automated instance hostnames are located. The subdomain name is in the format `vcenter_server_instance_name.root.domain_name`. |
@@ -154,7 +153,17 @@ On the **Access information** tab, view the access information for the instance-
 {: class="simple-tab-table"}
 {: #simpletable-access-info-nsx-service-edge-vms}
 
-
+| Component | Description |
+|:------------------ |:----------- |
+| IPs | The IP address or addresses for the Usage Meter VM. |
+| FQDN | The Usage Meter fully qualified domain name (FQDN). |
+| ADMIN | The Usage Meter username and password that you can use to log in to the Usage Meter web interface. |
+| SSH | The username and password that you can use to access the Usage Meter VM through KVM or SSH connection. |
+{: caption="Access information tab - Usage Meter VMs" caption-side="bottom"}
+{: tab-title="Usage Meter VMs"}
+{: tab-group="access info"}
+{: class="simple-tab-table"}
+{: #simpletable-access-info-usage-meter}
 
 [^ips]: For NSX-T, two IP addresses for the two AD servers. For NSX-V, one IP address for one server.
 
