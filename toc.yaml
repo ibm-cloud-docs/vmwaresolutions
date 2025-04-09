@@ -150,6 +150,7 @@ toc:
               - vcenter/vc_networkingonvcenterserver.md
               - vcenter/vc_esg_config.md
               - vcenter/vc_multisite.md
+              - vcenter/vc_compl_info.md
               - vcenter/vc_vcs_80_upgrade.md
               - vcenter/vc_vsphere_70_upgrade.md
           - topicgroup:
