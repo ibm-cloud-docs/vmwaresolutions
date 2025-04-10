@@ -54,7 +54,7 @@ Add-on services upgrades
 
    * Caveonix RiskForesight v5.2
    * VMware Aria® Operations™ and VMware Aria Operations™ for Logs v8.18.3
-   
+
 
 
 ### 18 March 2025
@@ -75,7 +75,7 @@ Add-on services upgrades
 {: release-note}
 
 Support for Dual Intel Xeon Platinum 6416H Sapphire Rapids servers
-:   Dual Intel® Xeon® Platinum 6416H (36 cores, 2.2 GHz) bare metal servers are available for deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, Regulated Workloads, and Cyber Recovery instances with VMware vSphere® 7 and 8.
+:   Dual Intel® Xeon® Platinum 6416H (36 cores, 2.2 GHz) bare metal servers are available for deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, Regulated Workloads, and Cyber Recovery instances with VMware vSphere 7 and 8.
 
 vSphere 8 and Sapphire Rapids - selected by default
 :   VMware vSphere 8.0 and Sapphire Rapids servers are selected by default for new instances and new clusters on {{site.data.keyword.vcf-classic}} offerings.
@@ -91,7 +91,7 @@ Add-on services upgrades
 
    * Caveonix RiskForesight v5.1.5
    * Veeam® Backup and Replication 12.3 (does not apply to {{site.data.keyword.vm-shared}} deployments)
-   * VMware Aria® Operations™ and VMware Aria Operations™ for Logs v8.18
+   * VMware Aria Operations and VMware Aria Operations for Logs v8.18
 
 ### 3 February 2025
 {: #vmwaresolutions-feb0325}
@@ -118,7 +118,7 @@ End of Support for {{site.data.keyword.vm-shared}} deployments - extended
 {: release-note}
 
 vSphere 7 and 8 on Sapphire Rapids servers
-:   The bare metal server Dual Intel® Xeon® Platinum 8474C (96 cores, 2.1/3.1 GHz) is available for deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, Regulated Workloads, and Cyber Recovery instances with VMware vSphere® 7 and 8. You can also use this bare metal server when you add clusters and hosts to your existing instances. For Sapphire Rapids servers, vSAN storage is now based on either vSAN ESA (Express Storage Architecture) (for vSphere 8 only) or vSAN OSA (Original Storage Architecture) (for vSphere 7 and 8). For Cascade Lake servers, vSAN storage remains based on vSAN OSA and available only with vSphere 7. For more information, see [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage-archi).
+:   The bare metal server Dual Intel Xeon Platinum 8474C (96 cores, 2.1/3.1 GHz) is available for deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, Regulated Workloads, and Cyber Recovery instances with VMware vSphere 7 and 8. You can also use this bare metal server when you add clusters and hosts to your existing instances. For Sapphire Rapids servers, vSAN storage is now based on either vSAN ESA (Express Storage Architecture) (for vSphere 8 only) or vSAN OSA (Original Storage Architecture) (for vSphere 7 and 8). For Cascade Lake servers, vSAN storage remains based on vSAN OSA and available only with vSphere 7. For more information, see [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage-archi).
 
 vSphere 8 manual upgrade on Sapphire Rapids
 :   You can manually upgrade vSphere to version 8.0 on your instances with Sapphire Rapids servers. After that, you can migrate your NFS and gateway clusters to vSphere 8.0. For more information, see [Upgrading VMware vSphere software from vSphere 7.0 to 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_80-upgrade).
@@ -160,7 +160,7 @@ New and updated documentation
 {: release-note}
 
 VCF 5.2.1 for {{site.data.keyword.vcf-vpc}}
-:   VMware Cloud Foundation 5.2.1 is offered for all {{site.data.keyword.vcf-vpc-short}} instances. The configuration with VMware vSphere® 8 and VMware vSAN ESA (Express Storage Architecture) on Intel Sapphire Rapids Generation 3 bare metal profiles is available only in the Sao Paulo region.
+:   VMware Cloud Foundation 5.2.1 is offered for all {{site.data.keyword.vcf-vpc-short}} instances. The configuration with VMware vSphere 8 and VMware vSAN ESA (Express Storage Architecture) on Intel Sapphire Rapids Generation 3 bare metal profiles is available only in the Sao Paulo region.
 
 ### 9 October 2024
 {: #vmwaresolutions-oct0924}
@@ -169,7 +169,7 @@ VCF 5.2.1 for {{site.data.keyword.vcf-vpc}}
 BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
 
-   * VMware vCenter Server® Appliance
+   * VMware vCenter Server Appliance
       * 8.0 Update 3b (build 24262322)
       * 7.0 Update 3s (build 24201990)
 
@@ -178,7 +178,7 @@ BOM updates for {{site.data.keyword.vcf-classic-short}}
 {: release-note}
 
 Veeam 12.2 add-on service upgrade
-:   Veeam® Backup and Replication 12.2 (Veeam 12.2) add-on service is available for deployment.
+:   Veeam Backup and Replication 12.2 (Veeam 12.2) add-on service is available for deployment.
 
 ### 13 September 2024
 {: #vmwaresolutions-sep1324}
@@ -192,14 +192,14 @@ VCDA service for migrating workloads
 {: release-note}
 
 vSphere 8 support
-:   VMware vSphere® 8.0 is available for new NFS clusters (consolidated and workload), for new gateway clusters, and for new hosts that belong to NFS clusters. For instances with VMware vCenter Server 8, you can use either vSphere 8 or vSphere 7 for new clusters and hosts. For instances with vCenter Server® 7, you can use only vSphere 7. For more information about upgrading your vCenter Server software and upgrading your existing vSphere 7 clusters, see [Upgrading to vCenter Server 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade).
+:   VMware vSphere 8.0 is available for new NFS clusters (consolidated and workload), for new gateway clusters, and for new hosts that belong to NFS clusters. For instances with VMware vCenter Server 8, you can use either vSphere 8 or vSphere 7 for new clusters and hosts. For instances with vCenter Server® 7, you can use only vSphere 7. For more information about upgrading your vCenter Server software and upgrading your existing vSphere 7 clusters, see [Upgrading to vCenter Server 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade).
 
 BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
 
    * VMware vCenter Server Appliance 8.0 Update 2d (build 23929136)
    * VMware vSphere ESXi 8.0 Update 2b (build 23305546)
-   * VMware NSX® 4.1.2.4 (build 23786733)
+   * VMware NSX 4.1.2.4 (build 23786733)
 
 Add-on services upgrades
 :   The following service versions are now available for deployment:
@@ -229,7 +229,7 @@ VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
 {{site.data.keyword.vcf-vpc}} enhancements
 :   The following features are now available:
 
-   * **Server backup**: You can do regular backups of management components, such as SDDC Manager, VMware vCenter Server®, and NSX Manager. For more information, see [Management domain backup](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ordering#vpc-vcf-ordering-mgmt-domain-backup).
+   * **Server backup**: You can do regular backups of management components, such as SDDC Manager, VMware vCenter Server, and NSX Manager. For more information, see [Management domain backup](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ordering#vpc-vcf-ordering-mgmt-domain-backup).
    * **Contact form**: You can use a form to contact an IBM Sales representative for the 1-year and 3-year subscription options.
    * The following **BOM updates** are applied to newly deployed instances:
       * Cloud Builder VM 5.1.1 (build 23480823)
@@ -258,7 +258,7 @@ Updated offerings for VMware Solutions
    {: note}
 
 Licensing updates
-:   The VMware® licensing model is changed. You are now entitled to the [VMware software products](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact) that are included in the VMware Cloud Foundation™ bundle. To request VMware NSX® license upgrades and other licensing changes, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+:   The VMware licensing model is changed. You are now entitled to the [VMware software products](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact) that are included in the VMware Cloud Foundation™ bundle. To request VMware NSX license upgrades and other licensing changes, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 VMware add-ons
 :   As a result of the new VMware Cloud Foundation bundle and the new VMware licensing model, you must order separately a number of VMware add-ons. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
@@ -306,7 +306,7 @@ Veeam 12.1.1 for {{site.data.keyword.vm-shared}}
 {: release-note}
 
 Updated packaging and pricing for VMware Solutions offerings
-:   {{site.data.keyword.cloud}} is changing its {{site.data.keyword.vmwaresolutions_short}} portfolio and pricing, in response to the changes to the packaging and pricing of the VMware® portfolio, announced by Broadcom. These changes will be effective on 1 May 2024.
+:   {{site.data.keyword.cloud}} is changing its {{site.data.keyword.vmwaresolutions_short}} portfolio and pricing, in response to the changes to the packaging and pricing of the VMware portfolio, announced by Broadcom. These changes will be effective on 1 May 2024.
 
 Updated pricing structure for RHEL for {{site.data.keyword.vm-shared}}
 :   The Red Hat Enterprise Linux (RHEL) pricing is updated from the existing 2-tier pricing structure (Small and Large) to a 3-tier pricing structure (Small, Medium, and Large).
@@ -325,7 +325,7 @@ End of Support for {{site.data.keyword.vm-shared}} deployments
 {{site.data.keyword.vcf-vpc}} enhancements
 :   The following features are now available:
 
-   * **Async Patch tool**: You can apply critical patches for VMware Cloud Foundation components, such as VMware NSX Manager, VMware vCenter Server®, and VMware ESXi by using the Async Patch tool.
+   * **Async Patch tool**: You can apply critical patches for VMware Cloud Foundation components, such as VMware NSX Manager, VMware vCenter Server, and VMware ESXi by using the Async Patch tool.
    * **New regions available**: VMware Cloud Foundation is now available for use in **Tokyo** and **London**.
    * **BOM updates**: ESXi 7.0 Update 3p (build 23307199) is applied to newly deployed instances.
 
@@ -341,7 +341,7 @@ VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
 {: release-note}
 
 vCenter Server 8 support
-:   VMware vCenter Server® 8.0 is available for newly deployed instances. For new instances with vCenter Server 8 and existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts.
+:   VMware vCenter Server 8.0 is available for newly deployed instances. For new instances with vCenter Server 8 and existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts.
 
 vCenter Server and VMware vSphere BOM updates
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
@@ -404,7 +404,7 @@ New region for KMIP for VMware
 :   The KMIP™ for VMware service is now available for use in the Madrid region.
 
 Ordering Veeam licenses
-:   You can order a maximum of 500 VMs under a single license key for Veeam®. If you need a single license key for more than 500 VMs, you must order a stand-alone license separately.
+:   You can order a maximum of 500 VMs under a single license key for Veeam. If you need a single license key for more than 500 VMs, you must order a stand-alone license separately.
 
 REST API updates
 :   The following updates are available for the VMware Solutions API:
@@ -474,7 +474,7 @@ New documentation
 {: release-note}
 
 VMware vSphere 8 on Cascade Lake - not supported
-:   (Updated on 25 September 2023) IBM does not support VMware vSphere 8.x on Intel® Cascade Lake hardware due to RAID Controller incompatibility and because IBM licenses for vSphere 8.x, VMware vCenter Server 8.x, and VMware vSAN™ 8.x are not available currently.
+:   (Updated on 25 September 2023) IBM does not support VMware vSphere 8.x on Intel® Cascade Lake hardware due to RAID Controller incompatibility and because IBM licenses for vSphere 8.x, VMware vCenter Server 8.x, and VMware vSAN 8.x are not available currently.
 
    Do not upgrade to vSphere 8.x on Cascade Lake servers. If you upgrade to vSphere 8.x, your environment configuration becomes unsupported by IBM and VMware.
    {: important}
@@ -572,7 +572,7 @@ Madrid data centers available
 :   (Updated on 22 June 2023) The {{site.data.keyword.cloud_notm}} data centers **Madrid 02**, **Madrid 04**, and **Madrid 05** are now available for deployment.
 
 Bring Your Own License (BYOL) no longer available
-:   BYOL is now disabled in the **Licensing** section for VMware vCenter Server® instances, VMware vSphere clusters, adding hosts and clusters, and vRealize Operations and Log Insight service.
+:   BYOL is now disabled in the **Licensing** section for VMware vCenter Server instances, VMware vSphere clusters, adding hosts and clusters, and vRealize Operations and Log Insight service.
 
 VMware NSX-T 4.0.1.1 manual upgrade
 :   VMware NSX-T version 4.0.1.1 is now available if you want to upgrade your existing NSX-T instances manually. All newly deployed VMware NSX-T instances are still provisioned with NSX-T version 3.2.0.1.
@@ -617,8 +617,8 @@ Updates to VMware vCenter Server instances and VMware vSphere clusters
 
 Add-on services upgrades
 :   The following service versions are now available for deployment:
-   * Entrust CloudControl™ v6.6
-   * F5® BIG-IP® v17.0
+   * Entrust CloudControl v6.6
+   * F5 BIG-IP v17.0
    * vRealize Operations and vRealize Log Insight v8.10
    * Zerto v9.7u1
 
@@ -684,7 +684,7 @@ User interface updates and enhancements
 Cyber Recovery
 :   The V5.0 release offers a new Cyber Recovery instance. The instance can help you protect your systems and data from cyberthreats and attacks. It can assist you with handling ransomware and help you with other problems and threats.
 
-   The Cyber Recovery instance includes Veeam Backup and Replication 12, a Linux® hardened repository (LHR), and an edge gateway.
+   The Cyber Recovery instance includes Veeam Backup and Replication 12, a Linux hardened repository (LHR), and an edge gateway.
 
 Private network endpoint enhancements
 :   You can now edit the private network endpoints allowlisted IP addresses and subnets for your VMware Solutions Shared instance.
@@ -812,7 +812,7 @@ Platform management roles
 :   New IAM platform management roles are available for VMware Solutions offerings.
 
 End of Marketing for NSX-V instance deployments
-:   VMware® support for all new VMware NSX-V deployments ended on 16 January 2022. However, VMware and IBM® worked closely to extend the existing NSX–V support until 15 January 2025. Ordering new VMware vCenter Server with NSX-V instances is not supported after 21 June 2022.
+:   VMware support for all new VMware NSX-V deployments ended on 16 January 2022. However, VMware and IBM® worked closely to extend the existing NSX–V support until 15 January 2025. Ordering new VMware vCenter Server with NSX-V instances is not supported after 21 June 2022.
 
 End of Marketing for vSphere 6.7 instance deployments
 :   VMware support for all new VMware vSphere 6.7 deployments ends on 15 October 2022.
@@ -904,7 +904,7 @@ Edge services cluster updates
 :   You can now add more than one edge services cluster in the same data center pod.
 
 Price calculation updates
-:   Price calculations are now automatically generated when you access the VMware vCenter Server instance order page. Default selections include the Data Center SP Professional license for NSX-T, the Advanced license for NSX-V, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, and 768 GB RAM.
+:   Price calculations are now automatically generated when you access the VMware vCenter Server instance order page. Default selections include the Data Center SP Professional license for NSX-T, the Advanced license for NSX-V, the Dual Intel Xeon Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, and 768 GB RAM.
 
 VMware Subscription Purchasing Program credits - deprecated
 :   Credits for the VMware Subscription Purchasing Program (SPP) are no longer available.
@@ -924,7 +924,7 @@ Dizzion
 Name change for HyTrust add-on services
 :   The company Entrust acquired the HyTrust company. The names of the following services are updated.
 
-   * Entrust CloudControl™
+   * Entrust CloudControl
    * Entrust DataControl
    * Entrust KeyControl™, which is deprecated
 

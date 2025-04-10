@@ -34,7 +34,7 @@ To access the console from the {{site.data.keyword.cloud_notm}} catalog, complet
 1. Go to https://cloud.ibm.com/login.
 2. Log in to {{site.data.keyword.cloud_notm}} with your **IBMid** account.
 3. Click **Catalog** on the menu bar.
-4. Enter **VMware Solutions** in the search box.
+4. Type **VMware Solutions** in the search box, and press enter.
 5. Click the **VMware Solutions** card to get started.
 
 ## Related links
