@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-06-12"
+lastupdated: "2025-04-10"
 
 subcollection: vmwaresolutions
 
@@ -31,15 +31,9 @@ Review the following steps to configure the VMware HCX™ Client instance.
 
 4. Click **Connect**.
 
-### Results
-{: #hcxclient-vcs-mesh-deployment-sitepair-results}
+   The Site Pairing is registered and displayed on the user interface.
 
-The Site Pairing is registered and displayed on the user interface.
-
-## Creating HCX on-premises profiles
-{: #hcxclient-vcs-mesh-deployment-profiles}
-
-### Creating on-premises Service Mesh network profiles
+## Creating on-premises Service Mesh network profiles
 {: #hcxclient-vcs-mesh-deployment-profiles-network}
 
 1. Log in to the vSphere Web Client.
@@ -53,17 +47,17 @@ The Site Pairing is registered and displayed on the user interface.
    4. Click **Create**.
 6. Repeat the previous steps for Management and vMotion Networks. Set the MTU value to 9000.
 
-#### Results
+### Results
 {: #hcxclient-vcs-mesh-deployment-profiles-network-results}
 
 | Network Name | MTU |
-| -----| ----|
+| -----| ---- |
 | External | 1500 |
 | Management | 9000 |
 | vMotion | 9000 |
 {: caption="Results" caption-side="bottom"}
 
-### Creating on-premises Service Mesh compute profiles
+## Creating on-premises Service Mesh compute profiles
 {: #hcxclient-vcs-mesh-deployment-profiles-compute}
 
 1. Log in to the vSphere Web Client.
@@ -81,13 +75,7 @@ The Site Pairing is registered and displayed on the user interface.
    8. Select Network Profile for vSphere Replication (Management), click **Continue**.
    9. Select Distribute Switch for extension, for example, Private-Switch, click **Finish**.
 
-#### Results
-{: #hcxclient-vcs-mesh-deployment-profiles-compute-results}
-
-A compute profile for the cluster and storage combination is created and is available with the Service Mesh creation.
-
-## HCX on-premises Service Mesh
-{: #hcxclient-vcs-mesh-deployment-servicemesh}
+   A compute profile for the cluster and storage combination is created and is available with the Service Mesh creation.
 
 ## Creating on-premises Service Mesh
 {: #hcxclient-vcs-mesh-deployment-servicemesh-creation}
@@ -126,9 +114,9 @@ To stretch a network (VLAN or VXLAN) with HCX, complete the following steps from
    2. Type the current default gateway and subnet mask in CIDR format.
    3. Scroll down and click **Stretch** to begin the network stretch workflow.
 
-Network progress is monitored in the vCenter client tasks pane.
+   Network progress is monitored in the vCenter client tasks pane.
 
-## Concepts and best practices for network stretching
+### Concepts and best practices for network stretching
 {: #hcxclient-vcs-mesh-deployment-stretching-best-practices-network}
 
 The glue that bridges the client-side network to the cloud-side VXLAN is a sophisticated multitunnel VPN that consists of proprietary HCX technology. It is not based on NSX, but does work with NSX and extend its capability. This process is controlled by the client-side vCenter web user interface and automates the deployment and starting of both endpoints on the client and cloud side. Setting the network to stretched configuration is done individually or in batch.

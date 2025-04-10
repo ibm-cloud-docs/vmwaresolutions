@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-04-10"
 
 subcollection: vmwaresolutions
 
@@ -241,7 +241,7 @@ If you have a vSAN cluster, the additional preconfigured alarms in the following
 | vSAN health alarm `Congestion` | Configure to send an email one time for a critical event.| [vSAN Health Service - Physical Disk Health – Congestion (2109255)](https://knowledge.broadcom.com/external/article?legacyId=2109255){: external} |
 | vSAN health alarm `Controller disk group mode is VMware certified` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - vSAN HCL Health – SCSI Controller on vSAN HCL (2109871)](https://knowledge.broadcom.com/external/article?legacyId=2109871){: external} |
 | vSAN health alarm `Controller driver is VMware certified` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service – vSAN HCL Health – Controller Driver (2109263)](https://knowledge.broadcom.com/external/article?legacyId=2109263){: external} |
-| vSAN health alarm `Controller firmware is VMware certified` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Controller firmware health check warning if multiple firmware versions are supported (2150398)](https://knowledge.broadcom.com/external/article?legacyId=2150398){: external} |
+| vSAN health alarm `Controller firmware is VMware certified` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Controller firmware health check warning for the 2nd(and more) controller managed by “sas3flash” vendor tool](https://knowledge.broadcom.com/external/article?articleNumber=319913){: external} |
 | vSAN health alarm `Controller is VMware certified for ESXi release` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - vSAN HCL Health - Controller Release Support (2109262)](https://knowledge.broadcom.com/external/article?legacyId=2109262){: external} |
 | vSAN health alarm `CPU AES-NI is disabled on hosts` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Encryption - CPU AES-NI Host Enablement Check (2149499)](https://knowledge.broadcom.com/external/article?legacyId=2149499){: external} |
 | vSAN health alarm `Current cluster situation` | Configure to send an email one time for a critical event. | [vSAN Health Service - Limits Health – Current Cluster Situation (2108740)](https://knowledge.broadcom.com/external/article?legacyId=2108740){: external} |
