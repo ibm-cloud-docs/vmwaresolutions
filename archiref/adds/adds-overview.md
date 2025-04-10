@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-04-03"
+lastupdated: "2025-04-10"
 
 subcollection: vmwaresolutions
 
@@ -44,9 +44,9 @@ AD uses the following terminology:
 
 Review the typical domain models available to a customer when they designate their domains either on-premises or in the {{site.data.keyword.cloud}}.
 
-* Single forest, single domain model.
-* Single forest, multiple domains model.
-* Multiple forests model.
+* Single forest, single domain model
+* Single forest, multiple domains model
+* Multiple forests model
 
 For more information about forest and domain models, see [Designing the logical structure](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/designing-the-logical-structure).
 

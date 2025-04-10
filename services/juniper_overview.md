@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-04-10"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX virtual security appliance, Juniper virtual security appliance, Juniper vSRX console
 
@@ -92,7 +92,7 @@ Each license type includes a different set of features and options. The Content 
 On 25 Gb uplink speed clusters, only the Content Security Bundle license is available.
 {: restriction}
 
-For more information about the features and options in each license, see [Choosing a vSRX license](/docs/vsrx?topic=vsrx-getting-started#choosing-license).
+For more information about the features and options in each license, see [Choosing a vSRX license](/docs/vsrx?topic=vsrx-getting-started-vsrx#choosing-vsrx-license).
 
 Two licenses of the selected type are ordered, one for each of the appliance nodes.
 

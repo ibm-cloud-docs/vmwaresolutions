@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2025
 
-lastupdated: "2022-08-26"
+lastupdated: "2025-04-10"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ Upgrading VMware HCX™ is a process that uses the client web UI on the client-s
 
 You must upgrade both sides as any fleet component updates cause both to redeploy the fleet components with the level of code that is installed on HCX Manager.
 
-If VMware® Support asks for the system ID, provide both the client and cloud side. Use SSH into HCX Manager (client or cloud) and run `cat /common/location` to locate the System ID.
+If Broadcom® Support asks for the system ID, provide both the client and cloud side. To locate the system ID, connect to HCX Manager (client or cloud) through SSH and run the command `cat /common/location` 
 
 ## Related links
 {: #hcxclient-vcs-upgrade-related}

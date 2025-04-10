@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-04-10"
 
 subcollection: vmwaresolutions
 
@@ -154,7 +154,7 @@ As noted previously, the default configuration merely represents a point from wh
 ## vSRX to client on-premises connections
 {: #vcsvsrx-planning-client-config}
 
-The preferred method of linking the {{site.data.keyword.vcf-auto-short}} instance to a client's existing on-premises data center is BGP.  
+The preferred method of linking the {{site.data.keyword.vcf-auto-short}} instance to a client's existing on-premises data center is BGP.
 
 If the client intends to connect over the Internet by using eBGP, they must obtain a public autonomous system number (ASN) or use BGP over an IPsec VPN to allow the use of private ASNs.
 
@@ -169,7 +169,7 @@ The traffic that originates from the client facility flows through AT&T NetBond 
 ## Related links
 {: #vcsvsrx-planning-related}
 
-* [Getting Started with {{site.data.keyword.cloud_notm}} Juniper vSRX](/docs/vsrx?topic=vsrx-getting-started)
+* [Getting Started with {{site.data.keyword.cloud_notm}} Juniper vSRX](/docs/vsrx?topic=vsrx-getting-started-vsrx)
 * [Understand vSRX Virtual Firewall with VMware](https://www.juniper.net/documentation/us/en/software/vsrx/vsrx-consolidated-deployment-guide/vsrx-vmware/topics/concept/security-vsrx-vmware-overview.html){: external}
 * [Requirements for vSRX Virtual Firewall on VMware](https://www.juniper.net/documentation/us/en/software/vsrx/vsrx-consolidated-deployment-guide/vsrx-vmware/topics/concept/security-vsrx-vmware-system-requirement.html){: external}
 * [Install vSRX Virtual Firewall with VMware vSphere Web Client](https://www.juniper.net/documentation/us/en/software/vsrx/vsrx-consolidated-deployment-guide/vsrx-vmware/topics/task/security-vsrx-vsphere-client-installing.html){: external}
