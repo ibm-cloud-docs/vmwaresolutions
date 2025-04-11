@@ -4,8 +4,8 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-03"
-  
+lastupdated: "2025-04-10"
+
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
 subcollection: vmwaresolutions
@@ -53,7 +53,7 @@ For more information, see [{{site.data.keyword.vcf-vpc-short}} architecture mode
 ## Supported {{site.data.keyword.vcf-vpc-short}} products in {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-ovw-supported-edition}
 
-The following components are installed by the {{site.data.keyword.IBM}} automation, and licenses for them are provided by {{site.data.keyword.IBM_notm}}.
+The following components are installed by the {{site.data.keyword.IBM}} automation, and licenses for these components are provided by {{site.data.keyword.IBM_notm}}:
 
 * vSphere Enterprise Plus
 * vCenter Standard
@@ -62,14 +62,14 @@ The following components are installed by the {{site.data.keyword.IBM}} automati
 * NSX Enterprise Plus
 * Aria Suite Lifecycle
 
-The following components are not installed by the {{site.data.keyword.IBM_notm}} automation, but licenses for them are provided by {{site.data.keyword.IBM_notm}}. You can install them separately after the {{site.data.keyword.vcf-vpc-short}} instance is deployed. For more information, see [Deploying VMware validated solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-deploy-vvs).
+The following components are not installed by the {{site.data.keyword.IBM_notm}} automation, but licenses for these componets are provided by {{site.data.keyword.IBM_notm}}. You can install these separately after the {{site.data.keyword.vcf-vpc-short}} instance is deployed. For more information, see [Deploying VMware validated solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-deploy-vvs).
 
 * Aria Suite Enterprise (Aria Operations Enterprise, Aria Operations for Logs, and Aria Automation Enterprise)
 * Aria Operations for Networks Enterprise
 * VMware HCX Enterprise
 * Tanzu Kubernetes Grid
 
-The following components are not installed by the {{site.data.keyword.IBM_notm}} automation. They are optional and require add-on licenses. You can order them from the {{site.data.keyword.cloud}} console. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
+The following components are not installed by the {{site.data.keyword.IBM_notm}} automation. These components are optional and require add-on licenses. You can order these from the {{site.data.keyword.cloud}} console. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
 
 * NSX Distributed Firewall
 * NSX Gateway Firewall

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-10"
 
 keywords: ordering prerequisites, before you order, pre-order checklist, before first order
 
@@ -34,10 +34,10 @@ The following table lists the possible instructions and additional information f
 | If you are asked to... | See... |
 | ---------------------- | ------ |
 | ...upgrade your account | [Upgrading to a Pay-As-You-Go account](/docs/account?topic=account-upgrading-account#upgrade-paygo) |
-| ...create an API key | [Creating a classic infrastructure API key](/docs/account?topic=account-classic_keys#create-classic-infrastructure-key).\n Additional steps:\n 1. In the {{site.data.keyword.vmwaresolutions_full}} console, retrieve your API key and username.\n 2. Click **Settings** from the left navigation panel and click **Retrieve credentials**.\n 3. Review the username and API key that are automatically entered and click **Save credentials**. |
+| ...create an API key | [Creating a classic infrastructure API key](/docs/account?topic=account-classic_keys#create-classic-infrastructure-key) \n Additional steps:\n 1. In the {{site.data.keyword.vmwaresolutions_full}} console, retrieve your API key and username.\n 2. Click **Settings** from the left navigation panel and click **Retrieve credentials**.\n 3. Review the username and API key that are automatically entered and click **Save credentials**. |
 | ...locate an account administrator because admin access is required | [Locating an IAM account administrator](/docs/vmwaresolutions?topic=vmwaresolutions-iam_verify_permissions) |
 | ...convert to a VRF account | [Converting your account to VRF](/docs/account?topic=account-vrf-service-endpoint&interface=ui#vrf) |
-| ...enable service endpoints | [Enabling service endpoints](/docs/account?topic=account-vrf-service-endpoint#service-endpoint).\n You can then connect to certain services over the {{site.data.keyword.cloud}} private network rather than the public network. |
+| ...enable service endpoints | [Enabling service endpoints](/docs/account?topic=account-vrf-service-endpoint#service-endpoint) \n You can then connect to certain services over the {{site.data.keyword.cloud}} private network rather than the public network. |
 | ...verify account permissions | [Permissions for the {{site.data.keyword.cloud_notm}} infrastructure account](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts#signing_required_accounts-infra-permissions) |
 {: caption="Information for completing before you begin tasks" caption-side="bottom"}
 

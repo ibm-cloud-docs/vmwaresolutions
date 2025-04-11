@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-04-10"
 
 keywords: flexible order instances, flexible configuration, vmware order vSphere instance
 
@@ -42,7 +42,7 @@ Ensure that you complete the following tasks:
    * To save the configuration as a template without placing an order, click **Save configuration**.
    * To place the order, make sure that the account to be charged is correct, review and accept the terms, and then click **Create**.
 
-   Only the {{site.data.keyword.cloud_notm}} bare metal servers are installed. You're responsible for installing and configuring various components after instance deployment, such as VMware® vCenter Server, VMware NSX®, and VMware vSAN™ - Enterprise or Enterprise Plus editions.
+   Only the {{site.data.keyword.cloud_notm}} bare metal servers are installed. You're responsible for installing and configuring various components after instance deployment, such as VMware vCenter Server®, VMware NSX®, and VMware vSAN™ - Enterprise or Enterprise Plus editions.
    {: note}
 
 ## Results after you order Flexible instances based on existing configurations
