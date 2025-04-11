@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-11-25"
+lastupdated: "2025-04-11"
 
 subcollection: vmwaresolutions
 
@@ -61,6 +61,6 @@ In vSRX, the default `hold-time` is 90 seconds, which means that the default fre
 {: #arch-pattern-nsx-t-transit-gw-links}
 
 * [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
-* [Getting started with {{site.data.keyword.cloud_notm}} Gateway Appliance](/docs/gateway-appliance?topic=gateway-appliance-getting-started)
+* [Getting started with {{site.data.keyword.cloud_notm}} Gateway Appliance](/docs/gateway-appliance?topic=gateway-appliance-getting-started-ga)
 * [Getting started with {{site.data.keyword.tg_full_notm}}](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [GRE Configuration Example](https://supportportal.juniper.net/s/article/Junos-GRE-Configuration-Example?language=en_US){: external}

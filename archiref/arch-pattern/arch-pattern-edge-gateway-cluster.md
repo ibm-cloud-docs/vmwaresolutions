@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-17"
+lastupdated: "2025-04-11"
 
 subcollection: vmwaresolutions
 
@@ -68,5 +68,5 @@ When you design or deploy this architecture pattern, consider the following step
 {: #arch-pattern-edge-gateway-cluster-links}
 
 * [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
-* [Getting started with {{site.data.keyword.cloud_notm}} Gateway Appliance](/docs/gateway-appliance?topic=gateway-appliance-getting-started)
+* [Getting started with {{site.data.keyword.cloud_notm}} Gateway Appliance](/docs/gateway-appliance?topic=gateway-appliance-getting-started-ga)
 * [Tier-0 Gateways](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-1/administration-guide/tier-0-gateways.html){: external}
