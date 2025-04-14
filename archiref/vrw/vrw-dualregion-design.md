@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-04-14"
 
 subcollection: vmwaresolutions
 
@@ -106,7 +106,7 @@ The VMware Aria Operations for Networks service is an optional manual installati
 
 In the dual region design, install a VMware Aria Operations for Networks instance manually in each region for the monitoring and management of that region. Recovery of the instance in the protected region to the recovery region is not required. VMware Aria Operations for Networks instances are deployed per region to enable service isolation so that each region is considered to be independent.
 
-The use of a VMware Aria Operations for Networks cluster and the use of vSphere HA provides HA within a region. For business continuity, configure a file level backup. While VMware supports image level backups, they recommend that the VMware Aria Operations for Networks appliances are shut down. This process is practical during an upgrade, but not for regular backups. Therefore, it is recommended to configure file level backup, which supports SSH backups. Configure VMware Aria Operations for Networks for scheduled backups with the Veeam Repository server as the target. Configure a Veeam file copy job to copy the backup to the protected site so you can provide an off-site copy of the backup.
+The use of a VMware Aria Operations for Networks cluster and the use of vSphere HA provides HA within a region. For business continuity, configure a file level backup. While Broadcom® supports image level backups, they recommend that the VMware Aria Operations for Networks appliances are shut down. This process is practical during an upgrade, but not for regular backups. Therefore, it is recommended to configure file level backup, which supports SSH backups. Configure VMware Aria Operations for Networks for scheduled backups with the Veeam Repository server as the target. Configure a Veeam file copy job to copy the backup to the protected site so you can provide an off-site copy of the backup.
 
 ## VMware Aria Operations Manager
 {: #vrw-dualregion-design-vrops}

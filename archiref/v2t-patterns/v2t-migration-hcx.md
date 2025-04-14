@@ -27,7 +27,7 @@ You can use VMware HCX™ for the VMware NSX-V to NSX-T™ migration in {{site.d
 5. Establish Site Peering between the two environments from the old {{site.data.keyword.vcf-auto-short}} with NSX-V environment to the new {{site.data.keyword.vcf-auto-short}} with NSX-T environment. Then, create an HCX Service Mesh to enable the required services, such as Interconnect, L2 network extension, and the HCX migration services.
 6. You can extend your NSX-V Logical Switches to NSX-T overlay segments with Network Extension service. Each HCX-NE can extend up to eight segments at a time, and you can create multiple HCX-NEs if needed.
 7. Read the existing and create new network topology manually, by using scripts Migration Coordinator or third-party tools.
-8. After the required networks are extended, you can start planning and migrating VMware workloads. HCX provides multiple ways for migration, such as Bulk Migration, Cold Migration, vMotion, and Replication Assisted vMotion. Refer to VMware documentation for the differences of these methods and how you can best use them in your workload migration.
+8. After the required networks are extended, you can start planning and migrating VMware workloads. HCX provides multiple ways for migration, such as Bulk Migration, Cold Migration, vMotion, and Replication Assisted vMotion. See the Broadcom® documentation for the differences of these methods and how you can best use them in your workload migration.
 
 ## Considerations for migrating with HCX
 {: #v2t-hcx-considerations}

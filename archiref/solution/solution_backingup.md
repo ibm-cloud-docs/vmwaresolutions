@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-14"
+lastupdated: "2025-04-14"
 
 subcollection: vmwaresolutions
 
@@ -40,7 +40,7 @@ To host these backups, deploy a Linux® file server into your cluster by using t
 ## vCenter file-based backup
 {: #solution_backingup-vcenter}
 
-VMware vCenter Server provides an appliance management user interface and API to export the database and configuration to a file server that uses various protocols. For more information, see [File-Based Backup and Restore of vCenter Server Appliance](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-server-installation-and-setup-8-0/file-based-backup-and-restore-of-a-vcenter-server-environment.html){: external}.
+vCenter Server provides an appliance management user interface and API to export the database and configuration to a file server that uses various protocols. For more information, see [File-Based Backup and Restore of vCenter Server Appliance](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-server-installation-and-setup-8-0/file-based-backup-and-restore-of-a-vcenter-server-environment.html){: external}.
 
 VMware documents an example of how you can configure the API to run periodically as a cron job directly on the vCenter Server Appliance.
 
@@ -78,7 +78,7 @@ If you deploy add-on solution components into your instance, plan for the backup
 
 If you choose to deploy your AD/DNS server as an {{site.data.keyword.cloud_notm}} virtual server instance (VSI), you cannot back it up by using Veeam. In this case, use your preferred Microsoft Windows® backup solution for backup and restore operations. Or, plan to deploy your instance by using AD/DNS VMs within your VMware cluster, which can be backed up by Veeam.
 
-Beginning with VMware vCenter 6.5u2, VMware supports the backup of the vCenter Postgres database by using image-based backups. These backups use integrated suspend and resume scripts for the database during the backup window to ensure database integrity. If you want to use this method, choose to use Veeam to back up your vCenter Server. Use this service instead of using file-based backups. If you do so, you must use the Veeam quiesce feature to ensure database integrity.
+For vCenter Server 6.5u2 and later, Broadcom® supports the backup of the vCenter Postgres database by using image-based backups. These backups use integrated suspend and resume scripts for the database during the backup window to ensure database integrity. If you want to use this method, choose to use Veeam to back up your vCenter Server. Use this service instead of using file-based backups. If you do so, you must use the Veeam quiesce feature to ensure database integrity.
 
 ## Restoring from backup
 {: #solution_backingup-restore}

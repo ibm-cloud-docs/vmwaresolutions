@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-04-14"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -52,7 +52,7 @@ The [Developer Ready Infrastructure for VMware Cloud Foundation validated soluti
 
 This solution is intended for cloud architects and administrators who are familiar with using VMware software to deploy and manage a workload domain that runs vSphere with Tanzu workloads in the SDDC.
 
-The solution does not include any new solution-added products, but the VMware documentation provides a fast and efficient path to automating the Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-short}} implementation.
+The solution does not include any new solution-added products, but the Broadcom® documentation provides a fast and efficient path to automating the Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-short}} implementation.
 
 To deploy the Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Developer Ready Infrastructure for VMware Cloud Foundation validated solution](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/developer-ready-infrastructure-for-vmware-cloud-foundation.html){: external}.
 

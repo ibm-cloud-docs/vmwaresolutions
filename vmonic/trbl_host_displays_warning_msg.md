@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-11"
+lastupdated: "2025-04-14"
 
 keywords: troubleshooting, configuration issue, ESXi server issue
 
@@ -31,5 +31,5 @@ The message is displayed even though two uplinks are available for the private d
 This configuration issue is a VMware® known issue.
 {: tsCauses}
 
-To resolve the problem, refer to the instructions provided in the VMware documentation.
+To resolve the problem, refer to the instructions provided in the Broadcom® documentation.
 {: tsResolve}

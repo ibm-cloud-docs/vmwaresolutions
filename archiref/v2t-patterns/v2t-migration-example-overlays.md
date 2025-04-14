@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-04-08"
+lastupdated: "2025-04-14"
 
 subcollection: vmwaresolutions
 
@@ -134,7 +134,7 @@ The following diagram shows an example of a multisite – multitenant topology. 
 3. In the initial {{site.data.keyword.cloud_notm}} data center, access to the private network is provided though private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. If you provision your instance with public interfaces, access to the public network is provided though public uplinks, which are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The uplinks have specific IP addresses to this data center and they cannot move between the data centers.
 4. You must deploy two extra edge cluster transport nodes manually. Also, you must create a new edge cluster for your Tier-0 and Tier-1 gateways in the second {{site.data.keyword.cloud_notm}} data center hosts.
 5. In the second {{site.data.keyword.cloud_notm}} data center, access to the private network is provided though private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. If you provision your instance with public interfaces, access to the public network is provided though public uplinks, which are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The uplinks have specific IP addresses to this data center and they cannot move between the data centers.
-6. You must deploy two or more edge cluster transport nodes in the regional edge cluster manually. Consider at least one in each zone or data center for HA. Then, create a new edge cluster by using these edge transport nodes, and create your regional Tier-0 in this cluster. You can select which data center (or edge node) is your preferred Tier-0 path in the regional cluster. You can separate routing tables at this level by using VRF Lite capability in the Tier-0 Gateway. Refer to the VMware documentation for more details.
+6. You must deploy two or more edge cluster transport nodes in the regional edge cluster manually. Consider at least one in each zone or data center for HA. Then, create a new edge cluster by using these edge transport nodes, and create your regional Tier-0 in this cluster. You can select which data center (or edge node) is your preferred Tier-0 path in the regional cluster. You can separate routing tables at this level by using VRF Lite capability in the Tier-0 Gateway. See the Broadcom® documentation for more details.
 7. Manually create an overlay transit segment and create uplinks in Tier-0 gateways into the transit segment. Establish dynamic routing between the Tier-0 gateways. BGP is the preferred routing protocol. If you use VRF Lite capability in the Tier-0 Gateway, you can use multiple transit segments, depending on your design.
 8. Then, create your Tier-1 gateways in the regional edge cluster. You can select which data center (or edge node) is your preferred Tier-1 path in the regional cluster. You can separate routing tables at this level and decide which routes as advertised to the north bound Tier-0. As in the other multitenant patterns, you can use NAT is this case as well.
 9. You can attach your segments into this level of Tier-1 gateways. You can create multiple segments and advertise them through Tier-1 gateway to north bound Tier-0 gateways.
@@ -142,7 +142,7 @@ The following diagram shows an example of a multisite – multitenant topology. 
 This network topology example doesn't consider the management and control plane (vCenter and NSX Managers). The control plane of HA is discussed in another availability pattern.
 {: note}
 
-Tier-0 gateways support VRF Lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. For more information on capabilities and limitations, see the VMware by Broadcom documentation.
+Tier-0 gateways support VRF Lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. For more information on capabilities and limitations, see the Broadcom documentation.
 {: note}
 
 The main reason that you need two layers is for physical north-south connectivity in the data centers. Each data center must have their own private and public VLANs and IP addresses for the uplinks. These IP addresses cannot move between the data centers. Therefore, it requires your attention for routing and network address translation if you use public connectivity in this topology.
@@ -153,7 +153,7 @@ The main reason that you need two layers is for physical north-south connectivit
 
 VMware NSX-T provides many ways to build the network topologies, and the default network topology is useful for many use cases. You can typically start with this, and expand it as your needs grow. When the initial deployment is done, {{site.data.keyword.cloud_notm}} automation doesn't use the workload overlay topology and you can change the example topology based on your needs. When you change the configuration, the default uplinks provide basic-routed connectivity to {{site.data.keyword.cloud_notm}} private and public networks. If you change the IP addresses or routing, your overlay workloads might lose connectivity to them.
 
-{{site.data.keyword.cloud_notm}} offers a flexible way to build the NSX-T topology that you need. When you design your own overlay network solution, it is important to know that you might deploy new NSX-T edge nodes and new NSX-T edge clusters manually. Or using Ansible and Terraform to attend your needs. You can do this by following VMware documentation and design guidelines post the initial deployment.
+{{site.data.keyword.cloud_notm}} offers a flexible way to build the NSX-T topology that you need. When you design your own overlay network solution, it is important to know that you might deploy new NSX-T edge nodes and new NSX-T edge clusters manually. Or using Ansible and Terraform to attend your needs. You can do this by following the Broadcom documentation and design guidelines post the initial deployment.
 
 Most of the content in the VMware NSX-T Design Guides and documentation can be applied on {{site.data.keyword.cloud_notm}}. Special attention is needed when you consider, for example, the number of required VLANs and the use of stretched VLAN in the underlay between data centers in multizone regions. Also, {{site.data.keyword.cloud_notm}} private network must not be considered as Top of the Rack (ToR) switch. Backend Customer Router (BCR) doesn't provide dynamic routing support (BGP) by default.
 {: note}

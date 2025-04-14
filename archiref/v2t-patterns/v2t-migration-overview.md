@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-10"
+lastupdated: "2025-04-14"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ Starting with version 4.0, VMware NSX-T Data Center is known as VMware NSX. This
 
 This documentation provides a validated approach and guidance for existing {{site.data.keyword.vmwaresolutions_full}} customers with VMware {{site.data.keyword.vcf-auto-short}}® with NSX-V instances. In that way, they can move and migrate their workloads to new {{site.data.keyword.vcf-auto-short}} with NSX-T™ instances (also referred as V2T migration). This documentation is not primarily aimed at customers that want to migrate on-premises workloads to {{site.data.keyword.cloud_notm}}, although some of the approach and guidance is applicable.
 
-While VMware documentation describes a number of migration approaches, only the coexist or lift-and-shift approaches are validated by {{site.data.keyword.cloud_notm}}. In the co-existing approach, NSX-V, and NSX-T are run side by side and new workloads are placed on the new NSX-T environment and old workloads are decommissioned on the NSX-V environment. When the NSX-V environment is empty, it can be de-provisioned. This approach is not discussed further in the documentation, but it can be a validated option if you want to follow this path.
+While the Broadcom® documentation describes a number of migration approaches, only the coexist or lift-and-shift approaches are validated by {{site.data.keyword.cloud_notm}}. In the co-existing approach, NSX-V, and NSX-T are run side by side and new workloads are placed on the new NSX-T environment and old workloads are decommissioned on the NSX-V environment. When the NSX-V environment is empty, it can be de-provisioned. This approach is not discussed further in the documentation, but it can be a validated option if you want to follow this path.
 {: note}
 
 In the lift-and-shift approach, the {{site.data.keyword.cloud_notm}} automation is used to deploy a new {{site.data.keyword.vcf-auto-short}} instance on the same or different VLANs. With this action, you can perform both NSX-V to NSX-T migration and workload migration.

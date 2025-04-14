@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-04-08"
+lastupdated: "2025-04-14"
 
 subcollection: vmwaresolutions
 
@@ -68,7 +68,7 @@ The following diagram shows an example of a multitenant deployment by using the 
 You can manually deploy edge nodes on the initial cluster for scalability, if needed. You can also manually deploy new edge clusters to host new Tier-1 Gateways.
 {: note}
 
-Tier-0 Gateways support VRF lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. Refer to VMware documentation for more details on capabilities and limitations.
+Tier-0 Gateways support VRF lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. See the Broadcom® documentation for more details on capabilities and limitations.
 {: note}
 
 ## Considerations for selecting an overlay network topology
@@ -76,7 +76,7 @@ Tier-0 Gateways support VRF lite, which can be used if needed to support more co
 
 VMware NSX™ provides many ways to build the network topologies, and the default network topology is useful for many use cases. You can typically start with this, and expand it as your needs grow. After the initial deployment is done, {{site.data.keyword.cloud_notm}} automation does not use the workload overlay topology and you can change the example topology based on your needs. When you change the configuration, the default uplinks provide the basic routed connectivity to {{site.data.keyword.cloud_notm}} private and public networks. If you change the IP addresses or routing, your overlay workloads might lose connectivity.
 
-{{site.data.keyword.cloud_notm}} offers a flexible way to build the NSX topology to your needs. When you design your own overlay network solution, it is important to know that you might deploy new NSX edge nodes and new NSX edge clusters manually. Also, consider using Ansible and Terraform to meet your goals. You can do this by following VMware documentation and design guidelines after the initial deployment.
+{{site.data.keyword.cloud_notm}} offers a flexible way to build the NSX topology to your needs. When you design your own overlay network solution, it is important to know that you might deploy new NSX edge nodes and new NSX edge clusters manually. Also, consider using Ansible and Terraform to meet your goals. You can do this by following the Broadcom documentation and design guidelines after the initial deployment.
 
 Most of the content in the VMware NSX design guides and documentation can be applied in {{site.data.keyword.cloud_notm}}. Consider, for example, the number of required VLANs and the use of stretched VLAN in the underlay between data centers in multizone region. Also, {{site.data.keyword.cloud_notm}} private network must not be considered as Top of the Rack (ToR) switch. Backend Customer Router (BCR) does not provide dynamic routing support (BGP) by default.
 {: note}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-04-14"
 
 subcollection: vmwaresolutions
 
@@ -141,7 +141,7 @@ The migration approach for the primary use case would be to:
 * Provision {{site.data.keyword.vcf-auto-short}} with NSX-T with the VMware Aria Operations and VMware Aria Operations for Logs service.
 * No performance, capacity, or log messages for the NSX-V instance components need to be retained as the instance will be deleted.
 * When the {{site.data.keyword.vcf-auto-short}} with NSX-V is deleted, the VMware Aria Operations and VMware Aria Operations for Logs service will also be deleted.
-* Migrate the content of the {{site.data.keyword.vcf-auto-short}} with NSX-V with the VMware Aria Operations and VMware Aria Operations for Logs service to {{site.data.keyword.vcf-auto-short}} with NSX-T by following the VMware documentation.
+* Migrate the content of the {{site.data.keyword.vcf-auto-short}} with NSX-V with the VMware Aria Operations and VMware Aria Operations for Logs service to {{site.data.keyword.vcf-auto-short}} with NSX-T by following the Broadcom® documentation.
 
 ## Related links
 {: #v2t-optional-services-links}

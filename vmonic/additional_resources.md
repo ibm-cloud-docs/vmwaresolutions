@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-19"
+lastupdated: "2025-04-14"
 
 keywords: vmware solutions data sheet, vmware solutions developer, vmware solutions video
 
@@ -52,7 +52,7 @@ Review the architecture of all [virtualization platform extensions](https://www.
 * [Zerto on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/zerto)
 * [What is virtualization?](https://www.ibm.com/think/topics/virtualization)
 
-## VMware documentation
+## Broadcom documentation
 {: #additional_resources-vmware-doc}
 
 * [VMware Cloud Solutions](https://www.vmware.com/solutions/cloud-partners){: external}
