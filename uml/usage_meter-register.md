@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-04-15"
 
 keywords: usage meter, register, unregister
 
@@ -17,7 +17,8 @@ subcollection: vmwaresolutions
 # Registering Usage Meter with IBM
 {: #usage_meter-register}
 
-Before you register Usage Meter with IBM, ensure that you have permission to access the Usage Meter instances. For more information, see [Managing IAM access for VCF as a Service](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui).
+Before you register VMware vCloud Usage Meter with {{site.data.keyword.IBM}}, verify that you have the appropriate service roles to access the Usage Meter instances. For more information, see [Service roles](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui#iamrolesservice) in [Managing IAM access](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui).
+{: important}
 
 ## Procedure to register Usage Meter
 {: #usage_meter-register-reg}
@@ -38,7 +39,6 @@ On the VMware vCloud Usage Meter web interface, complete the following steps:
 1. From the **Usage Meter Initialization > Summary** window, click **Check registration**.
 
    The Usage Meter portal might log out quickly or request you to extend login time. In this case, repeat the initial **Welcome** and **Network Connectivity** steps. However, the **Registration** page might show success.
-   {: note}
 
    Under **Summary**, a success message is displayed.
 
