@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-04-16"
 
 subcollection: vmwaresolutions
 
@@ -150,6 +150,6 @@ A third possible Layer 2 approach is to use NSX-T L2VPN. In this approach, the N
 
 * [VMware Cloud Migration Services](https://cloud.ibm.com/catalog/services/vmware-cloud-migration-services)
 * [NSX-T Data Center Migration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/nsx-t-data-center-migration-guide.html){: external}
-* [Terraform by Hashicorp](https://www.terraform.io/){: external}
+* [Terraform by Hashicorp](https://developer.hashicorp.com/terraform){: external}
 * [The NSX Terraform Provider](https://registry.terraform.io/providers/vmware/nsxt/latest/docs){: external}
 * [NSX-V to NSX-T fast track migration service](https://hdm.primaryio.com/lp/nsxvtot){: external}
