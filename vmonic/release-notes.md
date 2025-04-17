@@ -25,6 +25,10 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2025
 {: #year-2025}
 
+
+
+
+
 ### 11 April 2025
 {: #vmwaresolutions-apr1125}
 {: release-note}
@@ -55,8 +59,6 @@ Add-on services upgrades
    * Caveonix RiskForesight v5.2
    * VMware Aria® Operations™ and VMware Aria Operations™ for Logs v8.18.3
 
-
-
 ### 18 March 2025
 {: #vmwaresolutions-mar1825}
 {: release-note}
@@ -75,13 +77,13 @@ Add-on services upgrades
 {: release-note}
 
 Support for Dual Intel Xeon Platinum 6416H Sapphire Rapids servers
-:   Dual Intel® Xeon® Platinum 6416H (36 cores, 2.2 GHz) bare metal servers are available for deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, Regulated Workloads, and Cyber Recovery instances with VMware vSphere 7 and 8.
+:   Dual Intel® Xeon® Platinum 6416H (36 cores, 2.2 GHz) bare metal servers are available for deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, {{site.data.keyword.rw}}, and {{site.data.keyword.cr}} instances with VMware vSphere 7 and 8.
 
 vSphere 8 and Sapphire Rapids - selected by default
 :   VMware vSphere 8.0 and Sapphire Rapids servers are selected by default for new instances and new clusters on {{site.data.keyword.vcf-classic}} offerings.
 
-Regulated Workloads multizone on Sapphire Rapids
-:   Sapphire Rapids servers are available for existing Regulated Workloads multizone instances. You can add new ESXi servers with vSphere 7 to existing clusters.
+{{site.data.keyword.rw}} multizone on Sapphire Rapids
+:   Sapphire Rapids servers are available for existing {{site.data.keyword.rw}} multizone instances. You can add new ESXi servers with vSphere 7 to existing clusters.
 
 Microsoft Entra ID enablement for vCenter Server
 :   You can manually replace Single Sign-On (SSO) with Microsoft® Entra ID (formerly Azure Active Directory) to enable multifactor authentication (MFA) in your vCenter Server. For this purpose, open an IBM Support ticket. This option applies only to existing instances.
@@ -118,7 +120,7 @@ End of Support for {{site.data.keyword.vm-shared}} deployments - extended
 {: release-note}
 
 vSphere 7 and 8 on Sapphire Rapids servers
-:   The bare metal server Dual Intel Xeon Platinum 8474C (96 cores, 2.1/3.1 GHz) is available for deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, Regulated Workloads, and Cyber Recovery instances with VMware vSphere 7 and 8. You can also use this bare metal server when you add clusters and hosts to your existing instances. For Sapphire Rapids servers, vSAN storage is now based on either vSAN ESA (Express Storage Architecture) (for vSphere 8 only) or vSAN OSA (Original Storage Architecture) (for vSphere 7 and 8). For Cascade Lake servers, vSAN storage remains based on vSAN OSA and available only with vSphere 7. For more information, see [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage-archi).
+:   The bare metal server Dual Intel Xeon Platinum 8474C (96 cores, 2.1/3.1 GHz) is available for deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, {{site.data.keyword.rw}}, and {{site.data.keyword.cr}} instances with VMware vSphere 7 and 8. You can also use this bare metal server when you add clusters and hosts to your existing instances. For Sapphire Rapids servers, vSAN storage is now based on either vSAN ESA (Express Storage Architecture) (for vSphere 8 only) or vSAN OSA (Original Storage Architecture) (for vSphere 7 and 8). For Cascade Lake servers, vSAN storage remains based on vSAN OSA and available only with vSphere 7. For more information, see [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage-archi).
 
 vSphere 8 manual upgrade on Sapphire Rapids
 :   You can manually upgrade vSphere to version 8.0 on your instances with Sapphire Rapids servers. After that, you can migrate your NFS and gateway clusters to vSphere 8.0. For more information, see [Upgrading VMware vSphere software from vSphere 7.0 to 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_80-upgrade).
@@ -127,7 +129,7 @@ Data centers for Sapphire Rapids
 :   You can deploy instances with specific {{site.data.keyword.cloud}} data centers for **Sapphire Rapids** servers. For more information, see [{{site.data.keyword.cloud_notm}} data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning#vc_planning-dc-availability).
 
 DAL14 data center available
-:   The **Dallas 14** {{site.data.keyword.cloud_notm}} data center is available for deployment with Automated, Flexible, Regulated Workloads, and Cyber Recovery instances.
+:   The **Dallas 14** {{site.data.keyword.cloud_notm}} data center is available for deployment with Automated, Flexible, {{site.data.keyword.rw}}, and {{site.data.keyword.cr}} instances.
 
 Primary cluster reassignment
 :   You can reassign the primary cluster to another cluster in your Automated instances.
@@ -362,7 +364,7 @@ Add-on services upgrades
 User interface updates and enhancements
 :   The following enhancements are available on the UI:
 
-   * The ordering flow of Cyber Recovery is simplified to remove the optional add-on services.
+   * The ordering flow of {{site.data.keyword.cr}} is simplified to remove the optional add-on services.
    * The UI (user interface) is updated with various messages and tooltips.
 
 New and updated documentation
@@ -520,8 +522,8 @@ New and updated documentation
 VMware vSphere Day 2 support
 :   You can view or delete VMware vSphere instances from the VMware Solutions console. You can also add or delete VMware ESXi servers, and add or delete licenses for vSphere instances from the VMware Solutions console.
 
-VMware Regulated Workloads multizone instances - deprecated
-:   New deployments of VMware Regulated Workloads multizone instances are no longer supported. For existing multizone instances, you can still add and delete clusters, add and delete ESXi servers or NFS storage, and delete add-on services.
+{{site.data.keyword.rw}} multizone instances - deprecated
+:   New deployments of VMware {{site.data.keyword.rw}} multizone instances are no longer supported. For existing multizone instances, you can still add and delete clusters, add and delete ESXi servers or NFS storage, and delete add-on services.
 {: deprecated}
 
 Updates to VMware vCenter Server and VMware vSphere instances
@@ -559,7 +561,7 @@ REST API updates
 User interface updates and enhancements
 :   The UI is updated with various messages and tooltips, and provides the following enhancements:
 
-   * For VMware vSphere, vCenter Server, Cyber Recovery, and Regulated Workloads instances, the **Instance configuration name** field is changed to a side pane. You can manage your configuration templates from a list of saved configurations in the side pane.
+   * For VMware vSphere, vCenter Server, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}} instances, the **Instance configuration name** field is changed to a side pane. You can manage your configuration templates from a list of saved configurations in the side pane.
    * The checkbox **Select a different cluster location** is changed to a switch, for consistency with other similar UI options.
    * The **SAP-certified** Cascade Lake selections (**NetWeaver** and **HANA**) are merged into a single option for a more streamlined user experience when you choose the **CPU model** for your servers.
    * The process to set up your environment for your first order is simplified on the UI.
@@ -583,7 +585,7 @@ Updates to VMware vCenter Server instances and VMware vSphere clusters
    * VMware vSAN Witness 7.0 Update 3c (build 19193900)
 
 Veeam 12 availability
-:   Veeam Backup and Replication 12 (Veeam 12) is now available for deployment with VMware vCenter Server, Cyber Recovery, and VMware Regulated Workloads offerings. Veeam 12 allows you to write directly to {{site.data.keyword.cloud}} Object Storage and it provides other features, such as data protection, improved Recovery Point Objective using Continuous Data Protection for disaster recovery purposes, and general operational efficiency.
+:   Veeam Backup and Replication 12 (Veeam 12) is now available for deployment with VMware vCenter Server, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}} offerings. Veeam 12 allows you to write directly to {{site.data.keyword.cloud}} Object Storage and it provides other features, such as data protection, improved Recovery Point Objective using Continuous Data Protection for disaster recovery purposes, and general operational efficiency.
 
 New and updated documentation
 :   The table of contents is updated for topic rearrangement and removal of outdated content.
@@ -597,7 +599,7 @@ User interface updates and enhancements
    * The status of instances and clusters when they are ready to use is updated to **Available**.
    * The UI controls for the separate workload cluster, gateway cluster, and file shares are changed to switches instead of checkboxes.
    * Guidance is provided on the UI for the workload and gateway cluster configuration.
-   * A side pane is displayed when you add hosts to vCenter Server, Cyber Recovery, and VMware Regulated Workloads instances.
+   * A side pane is displayed when you add hosts to vCenter Server, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}} instances.
 
 ### 8 March 2023
 {: #vmwaresolutions-mar0823}
@@ -636,7 +638,7 @@ User interface updates and enhancements
 
    * BYOL notification in the **Licensing** section for VMware vCenter Server instances, VMware vSphere clusters, add hosts and clusters, vRealize Operations and Log Insight, and VMware HCX services. Bring Your Own License (BYOL) is no longer supported, except for migrations or upgrades of existing BYOL clusters.
    * The term **edge services cluster** is updated to **edge gateway cluster** throughout the UI, user documentation, and REST APIs.
-   * A side pane is now displayed when you add NFS storage to VMware vCenter Server, Cyber Recovery, and VMware Regulated Workloads instances.
+   * A side pane is now displayed when you add NFS storage to VMware vCenter Server, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}} instances.
 
 
 ### 10 January 2023
@@ -655,10 +657,10 @@ Bring Your Own License (BYOL) no longer supported
 :   {{site.data.keyword.cloud_notm}} previously allowed you to bring your own license (BYOL) when you move your existing on-premises VMware workloads to {{site.data.keyword.cloud_notm}}. BYOL is no longer allowed by VMware. You can no longer bring your own licenses for any new hosts. This restriction applies to all VMware products that are available from {{site.data.keyword.cloud_notm}}. For existing BYOL servers, you can still upgrade and migrate to refresh software and hardware.
 
 SAP-certified servers updates
-:   SAP HANA certified bare metal servers now offer only fixed configurations with defined RAM sizes. Also, new SAP HANA and SAP NetWeaver models are available for deployment with VMware vSphere 7.0u3. These models are available for VMware vCenter Server and Cyber Recovery instances and clusters, and for VMware vSphere clusters.
+:   SAP HANA certified bare metal servers now offer only fixed configurations with defined RAM sizes. Also, new SAP HANA and SAP NetWeaver models are available for deployment with VMware vSphere 7.0u3. These models are available for VMware vCenter Server and {{site.data.keyword.cr}} instances and clusters, and for VMware vSphere clusters.
 
 NetBIOS domain name
-:   The first qualifier of the root domain name is now the NetBIOS name by default. It is part of the network diagram when your order vCenter Server and Cyber Recovery instances.
+:   The first qualifier of the root domain name is now the NetBIOS name by default. It is part of the network diagram when your order vCenter Server and {{site.data.keyword.cr}} instances.
 
 Add-on services upgrades
 :   The following service versions are now available to install on deployed instances.
@@ -681,10 +683,10 @@ User interface updates and enhancements
 {: #vmwaresolutions-oct3122}
 {: release-note}
 
-Cyber Recovery
-:   The V5.0 release offers a new Cyber Recovery instance. The instance can help you protect your systems and data from cyberthreats and attacks. It can assist you with handling ransomware and help you with other problems and threats.
+{{site.data.keyword.cr}}
+:   The V5.0 release offers a new {{site.data.keyword.cr}} instance. The instance can help you protect your systems and data from cyberthreats and attacks. It can assist you with handling ransomware and help you with other problems and threats.
 
-   The Cyber Recovery instance includes Veeam Backup and Replication 12, a Linux hardened repository (LHR), and an edge gateway.
+   The {{site.data.keyword.cr}} instance includes Veeam Backup and Replication 12, a Linux hardened repository (LHR), and an edge gateway.
 
 Private network endpoint enhancements
 :   You can now edit the private network endpoints allowlisted IP addresses and subnets for your VMware Solutions Shared instance.
@@ -832,7 +834,7 @@ VMware ESXi firewall configuration for NFS - issue fixed {: #june-2022-esxi-fire
 :   {{site.data.keyword.cloud_notm}} identified a problem with the VMware ESXi firewall configuration for NFS feature, which might cause some firewall rules to be lost during the update. This problem is now fixed.
 
 Price calculation updates
-:   Price calculations are now automatically generated when you access the order pages for {{site.data.keyword.vmwaresolutions_short}} Dedicated and VMware Regulated Workloads offerings. For more information about the specific default selections, find the requirement information for each offering order.
+:   Price calculations are now automatically generated when you access the order pages for {{site.data.keyword.vmwaresolutions_short}} Dedicated and {{site.data.keyword.rw}} offerings. For more information about the specific default selections, find the requirement information for each offering order.
 
 Cyber recovery with Veeam solution
 :   This solution aims for VMware and IBM to accelerate and ensure the development, testing, and implementation of a secure cyber-recovery cloud solution that enables recovery against advanced cyberthreats like ransomware. Copies of critical data are protected with a multi-purpose cyber-recovery cloud solution: a copy target for cloud-native application data for existing cloud or on-premises systems. As an extra {{site.data.keyword.cloud_notm}} option, you can add cyber-recovery sites to isolate copies of critical customer data and to validate data integrity while you also enable recovery from cyberattacks.
