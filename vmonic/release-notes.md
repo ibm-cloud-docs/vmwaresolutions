@@ -76,7 +76,7 @@ Add-on services upgrades
 {: #vmwaresolutions-feb1425}
 {: release-note}
 
-Support for Dual Intel Xeon Platinum 6416H Sapphire Rapids servers
+Support for Dual Intel Xeon Platinum 6416H Sapphire Rapids
 :   Dual Intel® Xeon® Platinum 6416H (36 cores, 2.2 GHz) bare metal servers are available for deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, {{site.data.keyword.rw}}, and {{site.data.keyword.cr}} instances with VMware vSphere 7 and 8.
 
 vSphere 8 and Sapphire Rapids - selected by default

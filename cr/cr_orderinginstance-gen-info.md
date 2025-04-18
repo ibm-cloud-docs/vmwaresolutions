@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-04-17"
 
 keywords: cyber recovery, cyber recovery settings, cyber recovery license settings, cyber recovery versions, cyber recovery instances
 
@@ -24,9 +24,8 @@ The following VMware® components are part of the {{site.data.keyword.cr}} insta
 ## VMware vSphere version
 {: #cr_orderinginstance-vsphere-license}
 
-VMware vSphere® Enterprise Plus 8 is selected by default. However, vSphere 8 instances do not support configuration as secondary instances.
-
-For new instances, vSphere 7 is also available to order.
+* VMware vSphere® Enterprise Plus 8 is selected by default and is supported only for primary instances. 
+* vSphere 7 is also available to order.
 
 ## VMware vCenter Server version
 {: #cr_orderinginstance-vcenter-license}

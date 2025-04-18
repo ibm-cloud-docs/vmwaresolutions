@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-04-17"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -22,7 +22,7 @@ content-type: conref
 
 CONTENT:
 
-For **Sapphire Rapids** servers, choose the following CPU model and a supported RAM size:
+For **Sapphire Rapids** servers, choose one of the following CPU models and a supported RAM size:
 {: #sapphire-para-intro}
 
 | CPU model | Cores | GHz | Storage type | RAM options |
@@ -49,7 +49,6 @@ For **Cascade Lake** servers, choose from the following CPU models and supported
 | Quad Intel Xeon Platinum 8260 | 96 | 2.4 | Up to 24 drives | 384 GB, 768 GB, 1.5 TB, 3 TB |
 {: caption="Options for Cascade Lake bare metal servers" caption-side="bottom"}
 {: #simpletabtable-cascade}
-
 
 For **SAP-certified Cascade Lake** servers, choose from the following configurations:
 {: #sap-para-intro}
@@ -332,10 +331,10 @@ The time to complete the upgrade is unknown. It is possible that it might take s
 
 CONTENT:
 
-vCenter Server 8 is selected by default.
+vCenter Server 8 is selected by default. vCenter Server 7 is also available to order.
 {: #para-vcsversion80-vcsline1}
 
-For new instances, vCenter Server 7 is also available to order. However, for existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts.
+For existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts.
 {: #para-vcsversion80-vcsline2}
 
 

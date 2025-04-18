@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-04-17"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -66,7 +66,7 @@ If you are a BYOL user, provide your own license key for vSphere:
 ### Bare metal server settings
 {: #vc_addingclusters-bare-metal-settings}
 
-The CPU models differ depending on the version that your instance was initially deployed in. You can choose **Sapphire Rapids**, **Cascade Lake**, or **SAP-certified Cascade Lake** servers[^1u].
+The CPU models differ depending on the version that your instance was initially deployed in. You can choose from **Sapphire Rapids**, **Cascade Lake**, and **SAP-certified Cascade Lake** servers[^1u].
 
 [^1u]: For clusters with NFS storage, where locations with appropriate 1U servers are available, 1U servers (up to 4 drives of storage) are ordered silently rather than 2U servers. For gateway clusters and clusters with vSAN storage, 2U servers are ordered.
 
