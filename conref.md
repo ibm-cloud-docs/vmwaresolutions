@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-04-17"
+lastupdated: "2025-04-21"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -66,7 +66,6 @@ For **SAP-certified Cascade Lake** servers, choose from the following configurat
 {: tab-group="SAP-certified Intel servers"}
 {: class="simple-tab-table"}
 {: #simpletabtable-sap-netweaver}
-
 
 | CPU model     | Cores     | GHz     | RAM         | Storage type |
 |:------------- |:----------|:--------|:------------|:------------ |
