@@ -31,6 +31,13 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 
 
+### 28 April 2025
+{: #vmwaresolutions-apr2825}
+{: release-note}
+
+VNI for {{site.data.keyword.vcf-vpc}}
+:   VNI (Virtual Network Interface) is enabled by default for bare metal servers on {{site.data.keyword.vcf-vpc-short}}. This change enhances network segmentation and flexibility.
+
 ### 11 April 2025
 {: #vmwaresolutions-apr1125}
 {: release-note}
