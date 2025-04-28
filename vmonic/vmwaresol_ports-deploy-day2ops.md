@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-04-10"
+lastupdated: "2025-04-28"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -29,7 +29,7 @@ Review the following information about the ports described in the [table](#vmwar
 * Infrastructure VMs refer to the private portable subnet allocated for use by vCenter, NSX manager, the cloud driver
 * Depending on your mode of deployment, your Windows Active Directory domain controllers can be VSIs on a primary subnet, or VMs on a portable subnet.
 
-For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) networking, see [About the OpenShift SDN network plugin](https://docs.openshift.com/container-platform/4.15/networking/openshift_sdn/about-openshift-sdn.html){: external}.
+For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) networking, see [About the OpenShift SDN network plug-in](https://docs.openshift.com/container-platform/4.15/networking/openshift_sdn/about-openshift-sdn.html){: external}.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
