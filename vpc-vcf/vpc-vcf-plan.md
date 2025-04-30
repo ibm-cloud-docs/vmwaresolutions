@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-04-28"
+lastupdated: "2025-04-30"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -54,3 +54,28 @@ For more information about {{site.data.keyword.vpc_short}} bare metal servers by
 {: #vpc-vcf-plan-limits}
 
 When you plan your {{site.data.keyword.vcf-vpc-short}} deployment, you also need to consider [quotas and service limits](/docs/vpc?topic=vpc-quotas) for {{site.data.keyword.vpc_short}} and the resources available. For example, for bare metal server on {{site.data.keyword.vpc_short}}, the limitation is 25 per account by default. To increase a quota for a resource, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+
+## Configuration updates for {{site.data.keyword.vcf-vpc-short}} instances
+{: #vpc-vcf-plan-configchanges}
+
+For all {{site.data.keyword.vcf-vpc-short}} instances, you cannot download updates for some components from the Broadcom public repositories.
+
+For new {{site.data.keyword.vcf-vpc-short}} instances, take note of all the configuration links as you might need them for future upgrades.
+{: important}
+
+For existing {{site.data.keyword.vcf-vpc-short}} instances, since you cannot download configuration updates from the Broadcom site, you must complete the following steps:
+
+1. Open an [IBM Support ticket](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to obtain a download token.
+2. Configure the download URL for each component manually. For more information, see [VCF authenticated downloads configuration update instructions](https://knowledge.broadcom.com/external/article/390098){: external}.
+3. Then, apply the configuration changes to the following {{site.data.keyword.vcf-vpc-short}} components yourself:
+
+   * VMware SDDC Manager. For more information, see [SDDC fails to download the updates from online repositories - Apply the Token (Manual method)](https://knowledge.broadcom.com/external/article/389871){: external}.
+   * VMware vCenter Server. For more information, see [vCenter Server patching through VAMI fails to download the updates from online repositories - Resolution](https://knowledge.broadcom.com/external/article/390120){: external}.
+   * VMware vSphere ESXi. For more information, see [vLCM fails to download the ESXi patches and images from online repositories - Resolution](https://knowledge.broadcom.com/external/article/390121){: external}.
+
+
+## Related links
+{: #vpc-vcf-plan-links}
+
+* [{{site.data.keyword.vpc_short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw)
+* [Requirements for {{site.data.keyword.vpc_short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-order-req)

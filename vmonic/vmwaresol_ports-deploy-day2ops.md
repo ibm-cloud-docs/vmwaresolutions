@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-04-28"
+lastupdated: "2025-04-30"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -34,7 +34,7 @@ For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) net
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} Service - Cloud Object Storage \n `10.1.129.0/24`[^vssreqa] | {{site.data.keyword.cloud_notm}} infrastructure services network | 443 | TCP | Use {{site.data.keyword.cloud_notm}} Object Storage service | HTTPS |
-| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} Service - RabbitMQ `166.9.59.6` \n `166.9.90.7` \n `166.9.58.162` \n {{site.data.keyword.cloud_notm}} Service - {{site.data.keyword.la_short}}[^vssreqb] | {{site.data.keyword.cloud_notm}} endpoint service network | 443 and 30560 | TCP | Use {{site.data.keyword.cloud_notm}} RabbitMQ and {{site.data.keyword.la_short}} services | |
+| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} Service - RabbitMQ `166.9.12.55` \n `166.9.14.30` \n `166.9.16.36` \n {{site.data.keyword.cloud_notm}} Service - {{site.data.keyword.logs_full_notm}}[^vssreqb] | {{site.data.keyword.cloud_notm}} endpoint service network | 31795 | TCP | Use {{site.data.keyword.cloud_notm}} RabbitMQ and {{site.data.keyword.logs_full_notm}} services | |
 | IBM CloudDriver | Private primary subnet | vCenter Server | Infrastructure VMs | | ICMP | Install and configure vCenter Server | |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vCenter Server | Infrastructure VMs | 22 | TCP | Set up and configure vCenter Server | SSH |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vCenter Server | Infrastructure VMs | 443 | TCP | Install and configure vCenter Server and cluster | SSH |
@@ -71,8 +71,8 @@ For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) net
 {: caption="Ports for deployment and Day 2 operations" caption-side="bottom"}
 {: #vmwaresol_ports-deploy-day2ops-table}
 
-[^vssreqa]: Flexible instances require access to Cloud Object Storage, RabbitMQ, and {{site.data.keyword.la_short}}.
-[^vssreqb]: Flexible instances require access to Cloud Object Storage, RabbitMQ, and {{site.data.keyword.la_short}}.
+[^vssreqa]: Flexible instances require access to Cloud Object Storage, RabbitMQ, and {{site.data.keyword.logs_full_notm}}.
+[^vssreqb]: Flexible instances require access to Cloud Object Storage, RabbitMQ, and {{site.data.keyword.logs_full_notm}}.
 
 ## Related links
 {: #vmwaresol_ports-deploy-day2ops-related}

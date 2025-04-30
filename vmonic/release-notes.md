@@ -38,6 +38,9 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 VNI for {{site.data.keyword.vcf-vpc}}
 :   VNI (Virtual Network Interface) is enabled by default for bare metal servers on {{site.data.keyword.vcf-vpc-short}}. This change enhances network segmentation and flexibility.
 
+Configuration updates for {{site.data.keyword.vcf-vpc-short}}
+:   You can no longer download updates for some components from the Broadcom public repositories. For existing {{site.data.keyword.vcf-vpc-short}} instances, you must open an [IBM Support ticket](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to obtain a download token and configure the download URL for each component manually. For more information, see [Configuration updates for {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-configchanges).
+
 ### 11 April 2025
 {: #vmwaresolutions-apr1125}
 {: release-note}
