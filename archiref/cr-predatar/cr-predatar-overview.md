@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-05-01"
 
 subcollection: vmwaresolutions
 
@@ -91,7 +91,7 @@ The vCenter Server instance:
 * Optionally, you can use encryption with Hyper Protect Crypto Services, Key Protect, and the VMware KMIP service. For more information, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
 
 *  Tertiary backup servers – One or more hardened Red Hat Enterprise Linux [{{site.data.keyword.cloud_notm}} Bare Metal Servers](https://www.ibm.com/products/bare-metal-servers){: external} to host the following components:
-   * IBM Spectrum Protect with IBM Spectrum Protect for Virtual Environments. For more information, see [IBM Spectrum Protect Cloud Blueprints](https://www.ibm.com/support/pages/node/1128567){: external}.
+   * IBM Spectrum Protect with IBM Spectrum Protect for Virtual Environments. For more information, see [IBM Storage Protect Cloud Blueprints](https://www.ibm.com/support/pages/node/1128567){: external}.
    * IBM Spectrum Protect Plus vSnap servers. For more information, see [IBM Spectrum Protect Plus Blueprints](https://www.ibm.com/support/pages/node/1119489){: external}.
 
 * Predatar Virtual Appliance – Consists of:
@@ -112,9 +112,10 @@ The minimum number of hosts in a consolidated cluster is three, and the minimum 
 
 The smallest {{site.data.keyword.cloud_notm}} Classic Bare metal server for the IBM Spectrum Protect Plus vSnap server is 4 x 1 TB disks, which gives 2 TB in RAID 6. The largest single server is 34 x 12 TB disks, which gives 384 TB in RAID 6.
 
-For more information about small, medium, and large configurations with direct-to-cloud or disk-to-cloud tiering models, see [IBM Spectrum Protect Cloud Blueprints](https://www.ibm.com/support/pages/ibm-spectrum-protect-cloud-blueprints){: external}.
+For more information about small, medium, and large configurations with direct-to-cloud or disk-to-cloud tiering models, see [IBM Spectrum Protect
+Cloud Blueprint for IBM Cloud](https://www.ibm.com/support/pages/system/files/inline-files/IBM%20Spectrum%20Protect%20Cloud%20Blueprint%20for%20IBM%20Cloud%20V2.0.pdf){: external}.
 
-To create your Predatar CleanRoom based on a {{site.data.keyword.vcf-auto-short}} instance, follow the procedure to [order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
+To create your Predatar CleanRoom based on a {{site.data.keyword.vcf-auto-short}} instance, follow the procedure to [order a {{site.data.keyword.vcf-auto-short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
 
 1. In Step 4, select **Primary**.
 2. In Step 6, order **Private Networks**.

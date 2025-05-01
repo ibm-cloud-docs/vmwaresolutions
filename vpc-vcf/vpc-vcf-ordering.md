@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-04-30"
+lastupdated: "2025-05-01"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -39,7 +39,7 @@ For the on-demand offering, you are billed hourly based on your {{site.data.keyw
 ### 1-year and 3-year subscriptions
 {: #vpc-vcf-ordering-1-year}
 
-For the 1-year or 3-year subscription, use [this form](https://www.ibm.com/account/reg/us-en/subscribe?formid=MAIL-platformvmware) to contact an IBM Sales representative for product pricing, discounts, or more information.
+For the 1-year or 3-year subscription, use [this form](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-publiccloud){: external} to contact an IBM Sales representative for product pricing, discounts, or more information.
 
 ### VMware Cloud Foundation version
 {: #vpc-vcf-ordering-version}

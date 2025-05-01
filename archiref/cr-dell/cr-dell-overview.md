@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-17"
+lastupdated: "2025-05-01"
 
 subcollection: vmwaresolutions
 
@@ -143,7 +143,7 @@ If you plan to use CyberSense, you must size the hosts considering that the appl
 * For vSAN storage, see [vSAN Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage).
 * For NFS storage, see [NFS Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-nfs-storage).
 
-To create your Dell Cyber Recovery vault based on a {{site.data.keyword.vcf-auto-short}} instance, follow the procedure to [order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
+To create your Dell Cyber Recovery vault based on a {{site.data.keyword.vcf-auto-short}} instance, follow the procedure to [order a {{site.data.keyword.vcf-auto-short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
 
 1. In Step 4, select **Primary**.
 2. In Step 6, order **Private Networks**.
