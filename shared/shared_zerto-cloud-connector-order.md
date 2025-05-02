@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-04-26"
+lastupdated: "2025-05-02"
 
 keywords: zerto, order zerto cloud connector
 
@@ -60,5 +60,4 @@ Review the following limitations that currently exist for ZCC:
 * [Accessing the Zerto Self-Service Portal](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal)
 * [Viewing Zerto Cloud Connector details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-view)
 * [Deleting Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-delete)
-* [Zerto for VMware vSphere](https://www.zerto.com/solutions/workloads-and-applications/vmware-vsphere/){: external}
-* [Zerto Support and Services](https://www.zerto.com/support-and-services/){: external}
+* [Zerto for VMware](https://www.hpe.com/psnow/doc/a00135501enw){: external}

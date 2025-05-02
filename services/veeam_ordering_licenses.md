@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-05-02"
 
 keywords: Veeam, Veeam standalone license, order Veeam standalone license
 
@@ -43,7 +43,7 @@ If you have an existing Veeam 9.5u4b installation that comes with a license and 
 3. Click **Licenses** from the left navigation.
 4. Scroll down to the **Veeam licenses** entry. Click **Create new**.
 5. Enter the required information for the fields.
-6. Click the link or links of the terms that apply to your order. Ensure that you agree with the terms before you order the license.
+6. Click the link or links of the license agreements that apply to your order and ensure that you agree with them before you order the license.
 7. Click **Add to estimate** or **Create**.
 
 ## Results

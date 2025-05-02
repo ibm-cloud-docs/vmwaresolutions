@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-05-02"
 
 keywords: zerto, zerto self-service portal, zerto portal access procedure
 
@@ -59,5 +59,4 @@ Zerto usage incurs charges on demand. For more information, see [{{site.data.key
 * [Ordering a Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-order)
 * [Viewing Zerto Cloud Connector details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-view)
 * [Deleting Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-delete)
-* [Zerto for VMware vSphere](https://www.zerto.com/solutions/workloads-and-applications/vmware-vsphere/){: external}
-* [Zerto Support and Services](https://www.zerto.com/support-and-services/){: external}
+* [Zerto for VMware](https://www.hpe.com/psnow/doc/a00135501enw){: external}

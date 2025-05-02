@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-04-17"
+lastupdated: "2025-05-02"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -424,7 +424,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 8. On the **Summary** panel, verify the cluster configuration before you add the cluster.
    1. Review the settings for the cluster.
    2. Review the estimated price of the cluster. Click **Pricing details** to generate a PDF summary. To save or print your order summary, click the **Print** or the **Download** icon ![Download icon](../../icons/download.svg "Download") on the upper right of the PDF window.
-   3. Click the link or links of the terms that apply to your order, and confirm that you agree with these terms before you add the cluster.
+   3. Click the link or links of the license agreements that apply to your order and ensure that you agree with them before you add the cluster.
    4. Click **Create**.
 
 ## Results after you add clusters to Automated instances

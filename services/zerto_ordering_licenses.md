@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-04-12"
+lastupdated: "2025-05-02"
 
 keywords: Zerto, Zerto license, order Zerto license
 
@@ -40,7 +40,7 @@ You must have a billable {{site.data.keyword.cloud_notm}} account to order Zerto
 5. Specify a new license name or use the default name **zerto-_xx_** where _xx_ represents two randomly generated alphabetic characters.
 6. In the **License notes** field, optionally enter a note. For example, you can enter a note to help you identify associated instances.
 7. Specify the number of virtual machines (VMs) you want to license. The range is 1 - 1000.
-8. Click the link or links of the terms and third-party service agreements that apply to your order. Ensure that you agree with these terms before you order the license.
+8. Click the link or links of the license agreements that apply to your order and ensure that you agree with them before you order the license.
 9. Click **Add to estimate**, **Upgrade**, or **Create**. The **Upgrade** option is displayed only if you must make your {{site.data.keyword.cloud_notm}} account a billable account.
 
 Within 15 days, you must configure the Call Home feature for Zerto. If you do not complete the configuration in this time frame, Zerto blocks certain management activities. For more information about the Call Home feature for Zerto, see [Considerations for ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering#zerto_ordering-private-only).

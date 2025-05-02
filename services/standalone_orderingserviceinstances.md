@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-12"
+lastupdated: "2025-05-02"
 
 keywords: VMware HCX standalone, HCX on-premises, order HCX
 
@@ -36,7 +36,7 @@ Ensure that you completed the following tasks:
    {{site.data.content.note-orderinginstance-resource-group}}
 
 4. Specify a new on-premises instance name, or use the default one **hcx-_xx_** where _xx_ represents two randomly generated alphabetic characters.
-5. Click the link or links of the terms and third-party service agreements that apply to your order. Ensure that you agree with these terms before you order the license.
+5. Click the link or links of the license agreements that apply to your order and ensure that you agree with them before you order the license.
 6. Click **Add to estimate** or **Create**.
 
 ## Results
