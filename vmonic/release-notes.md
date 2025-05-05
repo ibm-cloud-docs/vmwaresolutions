@@ -29,7 +29,12 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 
 
+### 2 May 2025
+{: #vmwaresolutions-may0225}
+{: release-note}
 
+Support for vSAN capacity disks of 15.3 TB
+:   You can order 15.3 TB U.3 drives of VMware vSAN™ capacity disks for {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, {{site.data.keyword.rw}}, and {{site.data.keyword.cr}} instances with Sapphire Rapids servers.
 
 ### 28 April 2025
 {: #vmwaresolutions-apr2825}
