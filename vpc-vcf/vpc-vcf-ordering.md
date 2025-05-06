@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-05-01"
+lastupdated: "2025-05-06"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -284,7 +284,6 @@ Determine whether to create an {{site.data.keyword.cloud_notm}} Access Group wit
 1. Specify the **Advanced integration settings**.
    1. Specify whether you want to create a Windows VM.
    1. Specify whether you want to create an IAM access group.
-   1. Specify whether you want to deploy or use an existing logging instance for the {{site.data.keyword.vcf-vpc-short}} deployment logs.
 
 1. On the **Summary** panel, review the instance settings and the estimated price.
 1. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
