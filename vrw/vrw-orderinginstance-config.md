@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-05-08"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -53,6 +53,6 @@ The instance name is set to **vrw-_xx_** by default, where _xx_ represents two r
 ## Related links
 {: #vrw-orderinginstance-config-related}
 
-* [Licensing](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-licensing)
+* [Licensing (BYOL only)](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-licensing)
 * [Procedure to order {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-procedure)
 * [{{site.data.keyword.rw}} reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)

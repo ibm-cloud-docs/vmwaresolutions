@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-17"
+lastupdated: "2025-05-08"
 
 keywords: vcf classic order instance, order vcf automated, order vmware cloud foundation instance
 
@@ -76,5 +76,5 @@ The instance name is set to **vcs-_xx_** by default, where _xx_ represents two r
 ## Related links
 {: #vc_orderinginstance-sys-related}
 
-* [Licensing](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-licensing-settings)
+* [Licensing (BYOL only)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-licensing-settings)
 * [Procedure to order Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)
