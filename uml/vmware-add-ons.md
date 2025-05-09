@@ -37,15 +37,15 @@ Although you must order the vDefend Firewall add-on to represent your firewall u
 
 The vDefend Firewall add-on is the same for both the vDefend Distributed Firewall and the vDefend Gateway Firewall. You must order the appropriate number of firewall cores for your environment.
 
-* If you are ordering a new {{site.data.keyword.vcf-auto}} instance, the minimum gateway firewall cores are calculated for your order. 
+* If you are ordering a new {{site.data.keyword.vcf-auto}} instance, the minimum gateway firewall cores are calculated for your order.
 * If you are an existing customer, you must purchase vDefend Firewall licenses separately for the number of cores that are required for your environment.
 
 * To calculate the number of firewall cores that you need for your environment and to confirm the cost (depending on whether you use distributed, gateway, or no firewall), based on your procurement vehicle, contact your IBM Business Partner representative or IBM Sales representative. If you are running NSX 4.1 or later, see [Counting Cores for VMware vDefend Firewall and vDefend Firewall with Advanced Threat Prevention](https://knowledge.broadcom.com/external/article?articleNumber=395111){: external} to calculate the number of cores that you need.
 
 For on-demand, the cost for the firewall add-on is $12.50 per core, per month. Discounts are available depending on your contract commitment.
 
-* **Distributed Firewall**: For this option, all host cores that are running NSX must be licensed for the vDefend Distributed Firewall add-on. This is done because virtual network segments span the entire environment and a virtual machine (VM) can run on any host. 
-* **Gateway Firewall**: For this option, the vCPUs that are running on the edge VMs provide the gateway firewall service, therefore they are counted. To get the edge VMs properly configured, the VMs are sized and 4 cores per vCPU in the edge VMs are calculated. 
+* **Distributed Firewall**: For this option, all host cores that are running NSX must be licensed for the vDefend Distributed Firewall add-on. This is done because virtual network segments span the entire environment and a virtual machine (VM) can run on any host.
+* **Gateway Firewall**: For this option, the vCPUs that are running on the edge VMs provide the gateway firewall service, therefore they are counted. To get the edge VMs properly configured, the VMs are sized and 4 cores per vCPU in the edge VMs are calculated.
 
 For example, by using the sizing guidance at [NSX Edge Installation Requirements](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/installation-guide/installing-nsx-edge/nsx-edge-installation-requirements.html){: external} if you choose a large edge, then each edge requires 8 vCPU, therefore 32 cores to be licensed: `8 vCPUs in the VM * 4 cores per vCPU = 32 cores`
 
