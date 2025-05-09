@@ -31,24 +31,27 @@ If you need load balancing for your environment, you can purchase the Avi Load B
 
 VMware vDefend™ Distributed Firewall (formerly VMware NSX Distributed Firewall) and VMware vDefend™ Gateway Firewall (formerly VMware NSX Gateway Firewall) are extracted from NSX and are available as an add-on to the VMware Cloud Foundation bundle. Add-on licenses are available for purchase in the {{site.data.keyword.cloud_notm}} console. You must purchase licenses for the number of cores that are required for your environment separately.
 
-Unless you are a part of IBM's Bridge to Cloud program, you should not order vDefend keys labeled "Solution key." The majority of customers will need to order separate "Gateway" keys for use with NSX edge gateway firewall, and "Distributed" keys for use with Distributed Firewall. Only Bridge to Cloud customers using vSphere 8 solution keys should order vDefend solution keys. For more information on vDefend solution and component keys, see [VMware vDefend Firewall Solution License Key](https://knowledge.broadcom.com/external/article/381444/vmware-vdefend-firewall-solution-license.html){: external}.
+Although you must order the vDefend Firewall add-on to represent your firewall usage, you cannot enter firewall license keys into NSX Manager yet. In the future, VMware Solutions will provide a new set of NSX license keys. Then, you are expected to enter the new NSX license keys, along with the vDefend Firewall keys that you ordered, into NSX Manager.
 
-You must order the appropriate number of firewall cores for your environment.
 
-* If you are ordering a new {{site.data.keyword.vcf-auto}} instance, the minimum gateway firewall cores are calculated for your order. These keys are currently not input into NSX. IBM recognizes that you may resize or reconfigure these gateways, so the ongoing management of these keys, including their deletion, is left to you. They will not be deleted automatically when you delete your instance.
-* If you are an existing customer, or you are making changes to your environment to configure additional gateway firewall or to configure distributed firewall, you must purchase vDefend Firewall licenses separately for the number of cores that are required for your environment.
+
+The vDefend Firewall add-on is the same for both the vDefend Distributed Firewall and the vDefend Gateway Firewall. You must order the appropriate number of firewall cores for your environment.
+
+* If you are ordering a new {{site.data.keyword.vcf-auto}} instance, the minimum gateway firewall cores are calculated for your order. 
+* If you are an existing customer, you must purchase vDefend Firewall licenses separately for the number of cores that are required for your environment.
+
 * To calculate the number of firewall cores that you need for your environment and to confirm the cost (depending on whether you use distributed, gateway, or no firewall), based on your procurement vehicle, contact your IBM Business Partner representative or IBM Sales representative. If you are running NSX 4.1 or later, see [Counting Cores for VMware vDefend Firewall and vDefend Firewall with Advanced Threat Prevention](https://knowledge.broadcom.com/external/article?articleNumber=395111){: external} to calculate the number of cores that you need.
 
 For on-demand, the cost for the firewall add-on is $12.50 per core, per month. Discounts are available depending on your contract commitment.
 
-* **Distributed Firewall**: For this option, all host cores that are running NSX must be licensed for the vDefend Distributed Firewall add-on. This is done because virtual network segments span the entire environment and a virtual machine (VM) can run on any host. The applicable license key you should order is named "VMware vDefend Firewall - Distributed" and is available in a number of sizes.
-* **Gateway Firewall**: For this option, the vCPUs that are running on the edge VMs provide the gateway firewall service, therefore they are counted. To get the edge VMs properly configured, the VMs are sized and 4 cores per vCPU in the edge VMs are calculated. The applicable license key you should order is named "VMware vDefend Firewall - Gatweay" and is available in a number of sizes.
+* **Distributed Firewall**: For this option, all host cores that are running NSX must be licensed for the vDefend Distributed Firewall add-on. This is done because virtual network segments span the entire environment and a virtual machine (VM) can run on any host. 
+* **Gateway Firewall**: For this option, the vCPUs that are running on the edge VMs provide the gateway firewall service, therefore they are counted. To get the edge VMs properly configured, the VMs are sized and 4 cores per vCPU in the edge VMs are calculated. 
 
 For example, by using the sizing guidance at [NSX Edge Installation Requirements](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/installation-guide/installing-nsx-edge/nsx-edge-installation-requirements.html){: external} if you choose a large edge, then each edge requires 8 vCPU, therefore 32 cores to be licensed: `8 vCPUs in the VM * 4 cores per vCPU = 32 cores`
 
 As many environments use multiple edges for redundancy, 2 large edges (8 vCPUs each) require 64 cores worth of licensing: `2 edge VMs * 8 vCPUs per edge * 4 cores per vCPU = 64 cores`
 
-For instructions on entering these license keys into NSX manager, see [Add a License Key and Generate a License Usage Report](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/operations-and-management/about-nsx-licenses/add-a-license-key-and-generate-a-license-usage-report.html){: external}.
+
 
 ## vSAN add-on
 {: #vmware-add-ons-vsan}
