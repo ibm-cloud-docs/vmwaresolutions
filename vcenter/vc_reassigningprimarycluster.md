@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-05-09"
 
 keywords: reassign primary cluster, primary cluster
 
@@ -26,7 +26,7 @@ Reassigning primary clusters for instances that are deployed with VMware vSphere
 {: #vc_reassigningprimarycluster-prereq}
 
 * Ensure that VMware NSX® is upgraded to the most recent version (4.1.2 or later).
-* Before you reassign your primary cluster, you must migrate the management virtual machines (VMs) and the NSX edge management VMs.
+* Before you reassign your primary cluster, you must migrate all management VMs, NSX edge management VMs, and Usage Meter VMs if you deployed Usage Meter VM.
 * Do not migrate all VMs at the same time, as this action might cause failures.
 
 To migrate your VMs, complete the following procedures in the VMware vSphere Web Client.
