@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-05-01"
+lastupdated: "2025-05-09"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -33,10 +33,13 @@ VMware vDefend™ Distributed Firewall (formerly VMware NSX Distributed Firewall
 
 Although you must order the vDefend Firewall add-on to represent your firewall usage, you cannot enter firewall license keys into NSX Manager yet. In the future, VMware Solutions will provide a new set of NSX license keys. Then, you are expected to enter the new NSX license keys, along with the vDefend Firewall keys that you ordered, into NSX Manager.
 
+
+
 The vDefend Firewall add-on is the same for both the vDefend Distributed Firewall and the vDefend Gateway Firewall. You must order the appropriate number of firewall cores for your environment.
 
 * If you are ordering a new {{site.data.keyword.vcf-auto}} instance, the minimum gateway firewall cores are calculated for your order.
 * If you are an existing customer, you must purchase vDefend Firewall licenses separately for the number of cores that are required for your environment.
+
 * To calculate the number of firewall cores that you need for your environment and to confirm the cost (depending on whether you use distributed, gateway, or no firewall), based on your procurement vehicle, contact your IBM Business Partner representative or IBM Sales representative. If you are running NSX 4.1 or later, see [Counting Cores for VMware vDefend Firewall and vDefend Firewall with Advanced Threat Prevention](https://knowledge.broadcom.com/external/article?articleNumber=395111){: external} to calculate the number of cores that you need.
 
 For on-demand, the cost for the firewall add-on is $12.50 per core, per month. Discounts are available depending on your contract commitment.
@@ -47,6 +50,8 @@ For on-demand, the cost for the firewall add-on is $12.50 per core, per month. D
 For example, by using the sizing guidance at [NSX Edge Installation Requirements](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/installation-guide/installing-nsx-edge/nsx-edge-installation-requirements.html){: external} if you choose a large edge, then each edge requires 8 vCPU, therefore 32 cores to be licensed: `8 vCPUs in the VM * 4 cores per vCPU = 32 cores`
 
 As many environments use multiple edges for redundancy, 2 large edges (8 vCPUs each) require 64 cores worth of licensing: `2 edge VMs * 8 vCPUs per edge * 4 cores per vCPU = 64 cores`
+
+
 
 ## vSAN add-on
 {: #vmware-add-ons-vsan}
