@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-10"
+lastupdated: "2025-05-15"
 
 subcollection: vmwaresolutions
 
@@ -72,7 +72,7 @@ After you provision your {{site.data.keyword.vcf-auto}} instance, system adminis
 | VSCA/PSC patching | For more information, see [Patching the vCenter Server appliance and Platform Services Controller Appliance](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vcenter-server-upgrade-6-7/patching-and-updating-vcenter-server/patching-the-vcenter-server-appliance.html){: external}. |
 | Stopping, starting, or restarting vCenter services | For troubleshooting and maintenance purposes, it is sometimes necessary to change the status of vCenter services. For more information, see [Stopping, starting, or restarting services in vCenter Server Appliance](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/configuring-vcenter-server-6-7/configuring-vcenter-server-using-the-management-interface/start-stop-and-restart-services.html){: external}. |
 | Overview of backup and restore options for the VCSA | For more information, see [Overview of Backup and Restore Options in vCenter Server 6.x/7.0.x/8.0](https://knowledge.broadcom.com/external/article?articleNumber=318731){: external}. |
-| Configure vCenter email notifications | For more information about configuring email notifications, see [Configure the Local Email Notifications for vCloud Usage Meter](https://techdocs.broadcom.com/us/en/vmware-cis/other/vcloud-usage-meter/4-8/vcloud-usage-meter-4-8-deployment-and-administration-guide-4-8/notification-email-alerts/configure-the-local-email-notifications.html){: external}. |
+| Configure vCenter email notifications | For more information about configuring email notifications, see [Configure the Local Email Notifications for vCloud Usage Meter](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/vcloud-usage-meter-4-8-deployment-and-administration-guide-4-8/notification-email-alerts/configure-the-local-email-notifications.html){: external}. |
 {: caption="vCenter procedures" caption-side="bottom"}
 
 ## vSphere ESXi host procedures
