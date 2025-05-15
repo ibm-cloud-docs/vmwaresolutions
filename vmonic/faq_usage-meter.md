@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-04-04"
+lastupdated: "2025-05-15"
 
 keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
@@ -87,9 +87,9 @@ For accurate cluster and core utilization metering, all {{site.data.keyword.clou
 
 Starting on 11 April 2025, you must add new license keys for effective metering of the environment. For more information, see the following VMware vCloud Usage Meter documentation:
 
-* [Release Notes](https://techdocs.broadcom.com/us/en/vmware-cis/other/vcloud-usage-meter/4-8/release-notes/vmware-vcloud-usage-meter-48-release-notes.html){: external}
-* [Deployment and Administration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/other/vcloud-usage-meter/4-8/vcloud-usage-meter-4-8-deployment-and-administration-guide-4-8.html){: external}
-* [Security Guide](https://techdocs.broadcom.com/us/en/vmware-cis/other/vcloud-usage-meter/4-8/usage-meter-security-guide-4-8.html){: external}
+* [Release Notes](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/release-notes.html){: external}
+* [Deployment and Administration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/vcloud-usage-meter-4-8-deployment-and-administration-guide-4-8.html){: external}
+* [Security Guide](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/usage-meter-security-guide-4-8.html){: external}
 
 ## When do I have to complete this action?
 {: #faq_usage-meter-when-to-complete}
@@ -130,9 +130,9 @@ For more information about data privacy, see [VMware vCloud Usage Meter Data Pri
 
 For more information about VMware vCloud Usage Meter, see:
 
-* [Release Notes](https://techdocs.broadcom.com/us/en/vmware-cis/other/vcloud-usage-meter/4-8/release-notes/vmware-vcloud-usage-meter-48-release-notes.html){: external}
-* [Deployment and Administration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/other/vcloud-usage-meter/4-8/vcloud-usage-meter-4-8-deployment-and-administration-guide-4-8.html){: external}
-* [Security Guide](https://techdocs.broadcom.com/us/en/vmware-cis/other/vcloud-usage-meter/4-8/usage-meter-security-guide-4-8.html){: external}
+* [Release Notes](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/release-notes.html){: external}
+* [Deployment and Administration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/vcloud-usage-meter-4-8-deployment-and-administration-guide-4-8.html){: external}
+* [Security Guide](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/usage-meter-security-guide-4-8.html){: external}
 
 ## Is there a price or cost change as a result of deploying Usage Meter?
 {: #faq_usage-meter-price}
@@ -175,7 +175,7 @@ IBM Cloud Services Agreement (CSA) and applicable attachments and transaction do
 {: #faq_usage-meter-sec-compl-doc}
 {: faq}
 
-For more information, see the [VMware vCloud Usage Meter Security Guide](https://techdocs.broadcom.com/us/en/vmware-cis/other/vcloud-usage-meter/4-8/usage-meter-security-guide-4-8.html){: external}.
+For more information, see the [VMware vCloud Usage Meter Security Guide](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/usage-meter-security-guide-4-8.html){: external}.
 
 ## What guidelines for Usage Meter data privacy and sharing are available?
 {: #faq_usage-meter-privacy-sec}
