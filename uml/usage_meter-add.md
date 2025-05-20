@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-05-20"
 
 keywords: usage meter, adding products
 
@@ -68,7 +68,6 @@ To add VMware Aria Operations to Usage Meter, complete the following steps:
 {: #usage_meter-add-other}
 
 Use the previous procedures to add the following products to Usage Meter:
-* Horizon DaaS (Desktop as a Service)
 * Tanzu Kubernetes Grid Multi-Cloud
 * VMware Aria® Automation™
 * VMware Aria Operations™ for Networks
@@ -76,7 +75,6 @@ Use the previous procedures to add the following products to Usage Meter:
 * VMware Avi Load Balancer (formerly NSX Advanced Load Balancer)
 * VMware Cloud Director™
 * VMware Cloud Director Availability (VCDA)
-* VMware Horizon®
 * vRealize Automation 7 (legacy) - applicable only for environments with vRealize 7 and that do not have Aria.
 
 ## Related links
