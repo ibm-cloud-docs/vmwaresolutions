@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-17"
+lastupdated: "2025-05-21"
 
 keywords: automated consolidated cluster, order consolidated cluster, order automated instance
 
@@ -63,6 +63,8 @@ You can choose from **Sapphire Rapids**, **Cascade Lake**, and **SAP-certified C
 {{site.data.content.simpletabtable-sapphire}}
 
 {{site.data.content.note-spr-rapids-byol}}
+
+
 
 ### Cascade Lake
 {: #vc_orderinginstance-cascade}
