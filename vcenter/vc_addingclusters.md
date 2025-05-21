@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-05-02"
+lastupdated: "2025-05-21"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -85,6 +85,8 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 {{site.data.content.simpletabtable-sapphire}}
 
 {{site.data.content.note-spr-rapids-byol}}
+
+
 
 #### Cascade Lake
 {: #vc_addingclusters-cascade}

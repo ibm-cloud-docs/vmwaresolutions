@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-04-21"
+lastupdated: "2025-05-21"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -35,6 +35,8 @@ For **Sapphire Rapids** servers, choose one of the following CPU models and a su
 Sapphire Rapids servers are not supported for BYOL users.
 {: important}
 {: #note-spr-rapids-byol}
+
+
 
 For **Cascade Lake** servers, choose from the following CPU models and supported RAM sizes:
 {: #cascade-para-intro}
