@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-14"
+lastupdated: "2025-05-22"
 
 keywords: vmware solutions data sheet, vmware solutions developer, vmware solutions video
 
@@ -55,4 +55,4 @@ Review the architecture of all [virtualization platform extensions](https://www.
 ## Broadcom documentation
 {: #additional_resources-vmware-doc}
 
-* [VMware Cloud Solutions](https://www.vmware.com/solutions/cloud-partners){: external}
+* [Partner-Managed Services for VMware Cloud Foundation](https://www.vmware.com/solutions/partner-managed-services){: external}
