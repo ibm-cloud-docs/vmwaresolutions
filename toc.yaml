@@ -861,7 +861,7 @@ toc:
           topics:
           - vmonic/vmwaresol_packaging-pricing.md
           - vmonic/faq.md
-          - vmonic/vpc-vcf-faq.md
+          - vmonic/faq-vpc-vcf.md
           - vmonic/faq_usage-meter.md
           - vmonic/faq_byol.md
           - vmonic/faq_esxi.md

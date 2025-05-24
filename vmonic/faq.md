@@ -4,17 +4,19 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-05-24"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
 subcollection: vmwaresolutions
 
+content-type: faq
+
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
-# General FAQ about {{site.data.keyword.vcf-classic-short}}
+# FAQ about {{site.data.keyword.vcf-classic-short}}
 {: #faq-vmwaresolutions}
 
 Find answers to frequently asked questions about the {{site.data.keyword.vcf-classic}} offering.
@@ -24,9 +26,11 @@ Find answers to frequently asked questions about the {{site.data.keyword.vcf-cla
 {: faq}
 {: support}
 
-* **IBMid account**. This account is required to access the {{site.data.keyword.vmwaresolutions_short}} console. The console is a stand-alone user interface that is separate from the {{site.data.keyword.slportal}}. For more information, see [Accessing the VMware Solutions console](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started#getting-started-step1).
+* **IBMid account**. This account is required to access the {{site.data.keyword.vmwaresolutions_short}} console. The console is a stand-alone user interface that is separate from the {{site.data.keyword.slportal}}. For more information, see [Accessing the VMware Solutions console](/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod).
 * **{{site.data.keyword.cloud_notm}} account**. This account is required for provisioning. You can sign up for an {{site.data.keyword.cloud_notm}} account by using an existing **IBMid** or by creating a new **IBMid**.
 * **{{site.data.keyword.cloud_notm}} infrastructure account**. This account is used to log in to the {{site.data.keyword.cloud_notm}} infrastructure customer portal that provides some additional function to manage infrastructure products and services. You can get an {{site.data.keyword.cloud_notm}} infrastructure account by upgrading your **{{site.data.keyword.cloud_notm}} account** to a billable account, or by linking your existing {{site.data.keyword.cloud_notm}} infrastructure account with your {{site.data.keyword.cloud_notm}} account. The {{site.data.keyword.cloud_notm}} infrastructure account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
+
+For more information about managing user accounts, see [User accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount).
 
 ## How do I associate my {{site.data.keyword.cloud_notm}} infrastructure credentials with the VMware Solutions console?
 {: #faq-associate-credentials}
@@ -172,7 +176,7 @@ VMware ESXi is automatically installed on each {{site.data.keyword.cloud_notm}} 
 {: #faq-notification}
 {: faq}
 
-To view the complete notification history, click **Notifications** from the left navigation.
+To view the complete notification history, click **Notifications** from the left navigation. For more information, see [Notifications](/docs/vmwaresolutions?topic=vmwaresolutions-notifications).
 
 ## What if I have issues with VMware Solutions?
 {: #faq-support}
@@ -180,11 +184,3 @@ To view the complete notification history, click **Notifications** from the left
 {: support}
 
 If you need assistance with {{site.data.keyword.vmwaresolutions_short}}, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
-
-## Related links
-{: #faq-related}
-
-* [Notifications](/docs/vmwaresolutions?topic=vmwaresolutions-notifications)
-* [{{site.data.keyword.vcf-auto-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
-* [Accessing the console](/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod)
-* [User accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount)
