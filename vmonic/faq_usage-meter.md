@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-05-24"
+lastupdated: "2025-05-26"
 
 keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
@@ -79,7 +79,7 @@ Usage Meter cannot connect directly to hosts. You must deploy vCenter Server, co
 {: #faq_usage-meter-what-to-do-now}
 {: faq}
 
-You are required to order VMware vDefend™ Firewall (formerly VMware NSX® firewall) license keys to cover your firewall usage. You cannot enter these license keys into NSX yet; however it is recommended that you order these license keys to ensure a smooth transition process as you act on 11 April 2025. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
+You are required to order VMware vDefend™ Firewall (formerly VMware NSX® firewall) license keys to cover any firewall usage that you have. You cannot enter these license keys into NSX yet; however it is recommended that you order these license keys to ensure a smooth transition process as you act on 11 April 2025. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
 
 ## What should I do next?
 {: #faq_usage-meter-what-to-do-next}
