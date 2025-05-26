@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-05-26"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -97,7 +97,7 @@ Based on the license model and bandwidth that you select, two BIG-IP VE VMs are 
 
    `RAM reservation = RAM size` (from Table 1)
 
-* {{site.data.keyword.vmwaresolutions_short}} does not preconfigure HA. For more information, see the AskF5 article [Creating an Active-Standby Configuration Using the Setup Utility](https://techdocs.f5.com/en-us/bigip-14-1-0/big-ip-device-service-clustering-administration-14-1-0/creating-an-active-standby-configuration-using-the-setup-utility.html){: external}.
+* {{site.data.keyword.vmwaresolutions_short}} does not preconfigure HA. For more information, see the AskF5 article [Creating an Active-Standby Configuration Using the Setup Utility](https://techdocs.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/tmos-implementations-12-1-0/2.html){: external}.
 
 ### Planning considerations
 {: #f5_considerations-planning}
