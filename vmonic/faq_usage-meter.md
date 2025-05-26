@@ -4,11 +4,13 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-05-15"
+lastupdated: "2025-05-26"
 
 keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
 subcollection: vmwaresolutions
+
+content-type: faq
 
 ---
 
@@ -23,13 +25,13 @@ Find answers to frequently asked questions about Usage Meter.
 {: #faq_usage-meter-announce}
 {: faq}
 
-With the VMware® acquisition, Broadcom® is modifying license key renewals from perpetual to subscription license keys. If you are an {{site.data.keyword.cloud}} customer who is running {{site.data.keyword.cloud_notm}} for VMware on Classic or VMware Cloud Foundation (VCF) for VPC, you must act to maintain compliance with Broadcom license requirements for VMware Cloud Foundation by Broadcom. This action includes swapping old VMware keys to new VMware by Broadcom subscription keys and to install the VMware vCloud Usage Meter. 
+With the VMware® acquisition, Broadcom® is modifying license key renewals from perpetual to subscription license keys. If you are an {{site.data.keyword.cloud}} customer who is running {{site.data.keyword.cloud_notm}} for VMware on Classic or VMware Cloud Foundation (VCF) for VPC, you must act to maintain compliance with Broadcom license requirements for VMware Cloud Foundation by Broadcom. This action includes swapping old VMware keys to new VMware by Broadcom subscription keys and to install the VMware vCloud Usage Meter.
 
 ## What is Usage Meter?
 {: #faq_usage-meter-what-is}
 {: faq}
 
-Usage Meter is a new virtual appliance that is designed to track VMware by Broadcom usage, and it must be installed on all VCF deployments. With this new model, the primary function of Usage Meter is to collect consumption data for VMware products within the {{site.data.keyword.cloud_notm}}.  
+Usage Meter is a new virtual appliance that is designed to track VMware by Broadcom usage, and it must be installed on all VCF deployments. With this new model, the primary function of Usage Meter is to collect consumption data for VMware products within the {{site.data.keyword.cloud_notm}}.
 
 ## Why is Usage Meter needed?
 {: #faq_usage-meter-why-needed}
@@ -41,13 +43,13 @@ It is important to understand and to emphasize that Usage Meter is the only and 
 {: #faq_usage-meter-do-i-need}
 {: faq}
 
-Yes, if you are running a client-managed offering on {{site.data.keyword.cloud_notm}}, it is required for you to ensure accurate tracking of usage and billing on every account. This statement does not apply to VMware Cloud Foundation (VCF) as a Service. Usage Meter provides comprehensive support for independent clusters and effectively measure core utilization in the new VMware by Broadcom solutions. This means that the Usage Meter software manages and tracks the usage of separate clusters efficiently, while also metering core utilization accurately by {{site.data.keyword.IBM_notm}} customers.  
+Yes, if you are running a client-managed offering on {{site.data.keyword.cloud_notm}}, it is required for you to ensure accurate tracking of usage and billing on every account. This statement does not apply to VMware Cloud Foundation (VCF) as a Service. Usage Meter provides comprehensive support for independent clusters and effectively measure core utilization in the new VMware by Broadcom solutions. This means that the Usage Meter software manages and tracks the usage of separate clusters efficiently, while also metering core utilization accurately by {{site.data.keyword.IBM_notm}} customers.
 
-## I'm using VCF as a Service; does this information apply to me? 
+## I'm using VCF as a Service; does this information apply to me?
 {: #faq_usage-meter-vcf-aas}
 {: faq}
 
-No. You do not need to do anything as {{site.data.keyword.IBM_notm}} is the consumer of VMware licenses. 
+No. You do not need to do anything as {{site.data.keyword.IBM_notm}} is the consumer of VMware licenses.
 
 ## Does this information apply to all {{site.data.keyword.cloud_notm}} for VMware offerings?
 {: #faq_usage-meter-ic4v-offerings}
@@ -77,7 +79,7 @@ Usage Meter cannot connect directly to hosts. You must deploy vCenter Server, co
 {: #faq_usage-meter-what-to-do-now}
 {: faq}
 
-You are required to order VMware vDefend™ Firewall (formerly VMware NSX® firewall) license keys to cover your firewall usage. You cannot enter these license keys into NSX yet; however it is recommended that you order these license keys to ensure a smooth transition process as you act on 11 April 2025. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
+You are required to order VMware vDefend™ Firewall (formerly VMware NSX® firewall) license keys to cover any firewall usage that you have. You cannot enter these license keys into NSX yet; however it is recommended that you order these license keys to ensure a smooth transition process as you act on 11 April 2025. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
 
 ## What should I do next?
 {: #faq_usage-meter-what-to-do-next}
@@ -95,7 +97,7 @@ Starting on 11 April 2025, you must add new license keys for effective metering 
 {: #faq_usage-meter-when-to-complete}
 {: faq}
 
-By 30 May 2025, all customer accounts must have the new Broadcom license keys installed and Usage Meter deployed. 
+By 30 May 2025, all customer accounts must have the new Broadcom license keys installed and Usage Meter deployed.
 
 Accounts that have not updated to current license keys will be out of compliance and risk being out of support and in violation of the {{site.data.keyword.cloud_notm}} Services Agreement. If not addressed, violations can result in account disruptions.
 {: attention}
@@ -104,7 +106,7 @@ Accounts that have not updated to current license keys will be out of compliance
 {: #faq_usage-meter-can-ibm-do-it}
 {: faq}
 
-No. The {{site.data.keyword.cloud_notm}} for VMware added value is to provide customers with a simple to use automated way of enabling a core foundation of a complete software-defined data center (SDDC) in the cloud. Bare metal systems, storage, networking, and software are all configured at initialization time. After they are in place, {{site.data.keyword.IBM_notm}} gives full management of the virtual environment to the customer to manage. {{site.data.keyword.IBM_notm}} does not go into the customer environment as it is secure to the customer. 
+No. The {{site.data.keyword.cloud_notm}} for VMware added value is to provide customers with a simple to use automated way of enabling a core foundation of a complete software-defined data center (SDDC) in the cloud. Bare metal systems, storage, networking, and software are all configured at initialization time. After they are in place, {{site.data.keyword.IBM_notm}} gives full management of the virtual environment to the customer to manage. {{site.data.keyword.IBM_notm}} does not go into the customer environment as it is secure to the customer.
 
 ## How do I install Usage Meter in my environment?
 {: #faq_usage-meter-how-to-install}
@@ -118,7 +120,7 @@ All existing customers receive an email about how to install and register Usage 
 
 No. All Usage Meters must be deployed and registered in online mode. Broadcom expects all Usage Meters to run in online mode and to communicate reporting of usage as required by Broadcom. Customers that cannot run Usage Meter in online mode can contact their respective sales team members about commercial (contract) options to support their offline or isolated business.
 
-{{site.data.keyword.cloud_notm}} can provide a proxy service on the private network to connect your Usage Meter even if your cloud environment does not have public connectivity. 
+{{site.data.keyword.cloud_notm}} can provide a proxy service on the private network to connect your Usage Meter even if your cloud environment does not have public connectivity.
 
 ## What information does Usage Meter collect and how is it protected?
 {: #faq_usage-meter-collect-protect}
@@ -138,26 +140,26 @@ For more information about VMware vCloud Usage Meter, see:
 {: #faq_usage-meter-price}
 {: faq}
 
-No. There are no extra license key charges for deploying and registering Usage Meter.  
+No. There are no extra license key charges for deploying and registering Usage Meter.
 
-To run the Usage Meter software on VMware, the following hardware infrastructure resources are required: 
-* 2 vCPU cores 
-* 8 GB of memory 
-* 80 GB of storage 
+To run the Usage Meter software on VMware, the following hardware infrastructure resources are required:
+* 2 vCPU cores
+* 8 GB of memory
+* 80 GB of storage
 
-## I am a new customer, do I need to install and update Usage Meter? 
+## I am a new customer, do I need to install and update Usage Meter?
 {: #faq_usage-meter-new-customer}
 {: faq}
 
-Yes. This statement applies to you if you are a VMware VCF for Classic or bare metal roll-your-own customer. Usage Meter must be installed and maintenance releases must be applied as they become available. 
+Yes. This statement applies to you if you are a VMware VCF for Classic or bare metal roll-your-own customer. Usage Meter must be installed and maintenance releases must be applied as they become available.
 
 ## Do I need to migrate my workloads or update my workload data?
 {: #faq_usage-meter-migrate-workloads}
 {: faq}
 
-No; changes to virtual environments are not required. This is only an update of the license key and the mechanism for tracking usage of these license keys. There is no impact to the VMware environment and workloads are not affected. 
+No; changes to virtual environments are not required. This is only an update of the license key and the mechanism for tracking usage of these license keys. There is no impact to the VMware environment and workloads are not affected.
 
-## Do I need to back up my {{site.data.keyword.cloud_notm}} for VMware environment before I add the new keys and deploy Usage Meter? 
+## Do I need to back up my {{site.data.keyword.cloud_notm}} for VMware environment before I add the new keys and deploy Usage Meter?
 {: #faq_usage-meter-backup}
 {: faq}
 
@@ -183,13 +185,13 @@ For more information, see the [VMware vCloud Usage Meter Security Guide](https:/
 
 For more information, see the [VMware vCloud Usage Meter Data Privacy and Sharing Guidelines](https://www.vmware.com/docs/usage-meter-data-privacy-guide){: external}.
 
-## Are the VCF perpetual licenses still available for use? 
+## Are the VCF perpetual licenses still available for use?
 {: #faq_usage-meter-vcf-perpetual}
 {: faq}
 
-The VMware Cloud Foundation (VCF) perpetual licenses are entitled to upgrade only until version 5.x. The perpetual licenses are not entitled to upgrade to major versions later than version 5.x. To be compliant, you need to update to a new VCF subscription offer and deploy Usage Meter in your environment 
+The VMware Cloud Foundation (VCF) perpetual licenses are entitled to upgrade only until version 5.x. The perpetual licenses are not entitled to upgrade to major versions later than version 5.x. To be compliant, you need to update to a new VCF subscription offer and deploy Usage Meter in your environment
 
-## Are VMware VCF add-on products such as vDefend, included? 
+## Are VMware VCF add-on products such as vDefend, included?
 {: #faq_usage-meter-add-ons}
 {: faq}
 

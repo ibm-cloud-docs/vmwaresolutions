@@ -4,11 +4,13 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-17"
+lastupdated: "2025-05-24"
 
 keywords: FAQ, license, BYOL
 
 subcollection: vmwaresolutions
+
+content-type: faq
 
 ---
 

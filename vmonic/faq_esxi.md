@@ -4,12 +4,13 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-05-24"
 
 keywords: FAQ, host, ESXi server
 
 subcollection: vmwaresolutions
 
+content-type: faq
 
 ---
 

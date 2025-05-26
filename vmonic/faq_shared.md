@@ -4,17 +4,19 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-05-24"
 
 keywords: FAQ vmware solutions shared, vmware solutions shared questions
 
 subcollection: vmwaresolutions
 
+content-type: faq
+
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
-# General FAQ about {{site.data.keyword.vm-shared}}
+# FAQ about {{site.data.keyword.vm-shared}}
 {: #faq-vmwaresolutions-shared}
 
 {{site.data.content.shared-deprecated-note}}

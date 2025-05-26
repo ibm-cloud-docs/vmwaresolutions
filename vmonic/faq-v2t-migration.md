@@ -4,10 +4,11 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-10"
+lastupdated: "2025-05-24"
 
 subcollection: vmwaresolutions
 
+content-type: faq
 
 ---
 
