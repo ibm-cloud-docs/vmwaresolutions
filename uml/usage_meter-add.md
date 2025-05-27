@@ -43,7 +43,7 @@ To add VMware NSX to Usage Meter, complete the following steps:
 
 1. Under **Products**, select **NSX-T** if you have VMware NSX-T or **NSX-V** if you have VMware NSX-V. NSX-T is a separate UI, while NSX-V is typically accessed within vCenter Server.
 2. Click **Add** and enter the following information:
-   * **Endpoint**: The IP address or the hostname (recommended in case of IP address reassignment) of the NSX-T Manager instance. For more information, see [Add an NSX-T Data Center Instance for Metering in vCloud Usage Meter](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/vcloud-usage-meter-4-8-deployment-and-administration-guide-4-8/managing-the-metering-in-um/add-nsx-t.html){: external}. The port number is 443.
+   * **Endpoint**: The IP address or the hostname (recommended in case of IP address reassignment) of the NSX-T Manager instance. The port number is 443. For more information, see [Add an NSX-T Data Center Instance for Metering in vCloud Usage Meter](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/vcloud-usage-meter-4-8-deployment-and-administration-guide-4-8/managing-the-metering-in-um/add-nsx-t.html){: external}.
    * **Username**: An NSX username with administrator privileges.
    * **Password**: The user password.
 
@@ -57,7 +57,7 @@ To add VMware Aria Operations to Usage Meter, complete the following steps:
 
 1. Under **Products**, select **Aria Operations** and click **Add**.
 2. Enter the following information:
-   * **Endpoint**: The IP address or the hostname (recommended in case of IP address reassignment) of your Aria Operations for Networks instance. For more information, see [Add an Aria Operations for Networks Instance for Metering in vCloud Usage Meter](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/vcloud-usage-meter-4-8-deployment-and-administration-guide-4-8/managing-the-metering-in-um/add-vrni.html){: external}. The port number is 443.
+   * **Endpoint**: The IP address or the hostname (recommended in case of IP address reassignment) of your Aria Operations for Networks instance. The port number is 443. For more information, see [Add an Aria Operations for Networks Instance for Metering in vCloud Usage Meter](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/vcloud-usage-meter-4-8-deployment-and-administration-guide-4-8/managing-the-metering-in-um/add-vrni.html){: external}.
    * **Username**: An Aria Operations for Networks username with administrator privileges.
    * **Password**: The user password.
 
