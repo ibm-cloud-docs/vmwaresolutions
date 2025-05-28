@@ -83,7 +83,7 @@ If you plan to use vSAN storage, the configuration requires a minimum of four ba
 
 The following configurations are available:
 * **Sapphire Rapids** - Intel® Sapphire Rapids generation servers (Dual Intel Xeon® 6400/8400 series) with your selected RAM size.
-* 
+
 * **Cascade Lake** - Intel Cascade Lake generation servers (Dual Intel Xeon 4200/5200/6200/8200 series or Quad Intel Xeon 6200/8200 series) with your selected RAM size.
 * **SAP-certified Cascade Lake** - Intel Cascade Lake generation servers (Dual Intel Xeon 5200/6200/8200 series or Quad Intel Xeon 8200 series) with a preset RAM size.
 
