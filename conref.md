@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-05-21"
+lastupdated: "2025-05-28"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -385,6 +385,7 @@ The storage architecture can be either **vSAN ESA (Express Storage Architecture)
 {: #storage-arch-spr-intro}
 
 Review the following considerations for the vSAN storage architecture:
+
 * For **Sapphire Rapids** servers, both vSAN ESA and vSAN OSA are available. For **Cascade Lake** servers, only vSAN OSA is available.
 * vSAN ESA requires a minimum of 3 bare metal servers. vSAN OSA requires a minimum of 4 bare metal servers.
 * For both vSAN ESA and vSAN OSA, you can select the size and number of **vSAN capacity disks**. For vSAN OSA, the size and number of **vSAN cache disks** are selected by default.

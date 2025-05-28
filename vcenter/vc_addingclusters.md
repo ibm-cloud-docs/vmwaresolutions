@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-05-21"
+lastupdated: "2025-05-28"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -398,6 +398,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
    2. Complete the bare metal server configuration.
       * If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, toggle the **Select a different location** switch on and choose the {{site.data.keyword.cloud_notm}} data center to host the cluster.
       * For **Sapphire Rapids** and **Cascade Lake**, select the **CPU model**, **RAM size**, and the **Number of bare metal servers**.
+      
       * For **SAP-certified Cascade Lake** (vSphere 7 only), select one of the preset configurations.
 
    3. Complete the storage configuration.

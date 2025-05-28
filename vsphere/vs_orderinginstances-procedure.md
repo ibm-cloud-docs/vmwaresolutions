@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-05-28"
 
 keywords: flexible order instances, order flexible, order vmaware vSphere instance
 
@@ -28,7 +28,8 @@ subcollection: vmwaresolutions
 1. Complete the bare metal server settings:
    1. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod where the instance is to be hosted.
    1. Select the CPU model:
-      * For **Sapphire Rapids** servers and **Cascade Lake** servers, select the CPU model and the RAM size.
+      * For **Sapphire Rapids** and **Cascade Lake** servers, select the CPU model and the RAM size.
+      
       * For **SAP-certified Cascade Lake** servers (vSphere 7 only), choose one of the preset configurations.
    1. Specify the number of bare metal servers.
 1. If you selected the **VMware vSAN** component, complete the vSAN™ storage configuration.
