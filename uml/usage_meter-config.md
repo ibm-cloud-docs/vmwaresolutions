@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-05-29"
 
 keywords: usage meter, configuration
 
@@ -38,6 +38,8 @@ In VMware vSphere® Web Client, complete the following steps:
    {: important}
 
 8. Under **Summary**, verify and save the **Usage Meter ID#** value.
+
+
 
 ## Related links
 {: #usage_meter-config-related}
