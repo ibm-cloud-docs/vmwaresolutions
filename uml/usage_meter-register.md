@@ -28,10 +28,13 @@ In the {{site.data.keyword.vmwaresolutions_full}} console, complete the followin
 1. Click **Licensing and metering > Usage Meters** from the left navigation panel.
 2. On the **Usage Meters** page, click **Register** on the upper right of the **Usage Meters** table.
 3. Enter the **Usage Meter ID#** value saved from the **Summary** page when you completed the Usage Meter configuration.
-4. Enter a name for your Usage Meter. Use the same name as the virtual machine (VM).
+4. Enter a custom name for your Usage Meter. It must meet the following requirements:
+   * Only alphanumeric and hyphen (-) characters are allowed.
+   * The Usage Meter custom name must start with an alphabetic character and end with an alphanumeric character.
 
-   Only alphanumeric and hyphen (-) characters are allowed. The Usage Meter name must start with an alphabetic character and end with an alphanumeric character.
-   {: important}
+   It is recommended to use the same name as the virtual machine (VM).
+   {: tip}
+
 
 5. Click **Register**.
 
