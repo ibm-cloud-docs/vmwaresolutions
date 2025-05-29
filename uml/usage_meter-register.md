@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-04-15"
+lastupdated: "2025-05-29"
 
 keywords: usage meter, register, unregister
 
@@ -29,6 +29,10 @@ In the {{site.data.keyword.vmwaresolutions_full}} console, complete the followin
 2. On the **Usage Meters** page, click **Register** on the upper right of the **Usage Meters** table.
 3. Enter the **Usage Meter ID#** value saved from the **Summary** page when you completed the Usage Meter configuration.
 4. Enter a name for your Usage Meter. Use the same name as the virtual machine (VM).
+
+   Only alphanumeric and hyphen (-) characters are allowed. The Usage Meter name must start with an alphabetic character and end with an alphanumeric character.
+   {: important}
+
 5. Click **Register**.
 
 ## Procedure to check the Usage Meter registration
