@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-04-15"
+lastupdated: "2025-05-29"
 
 keywords: usage meter, register, unregister
 
@@ -28,8 +28,16 @@ In the {{site.data.keyword.vmwaresolutions_full}} console, complete the followin
 1. Click **Licensing and metering > Usage Meters** from the left navigation panel.
 2. On the **Usage Meters** page, click **Register** on the upper right of the **Usage Meters** table.
 3. Enter the **Usage Meter ID#** value saved from the **Summary** page when you completed the Usage Meter configuration.
-4. Enter a name for your Usage Meter. Use the same name as the virtual machine (VM).
+4. Enter a custom name for your Usage Meter. It must meet the following requirements:
+   * Only alphanumeric and hyphen (-) characters are allowed.
+   * The Usage Meter custom name must start with an alphabetic character and end with an alphanumeric character.
+
+   It is recommended to use the same name as the virtual machine (VM).
+   {: tip}
+
+
 5. Click **Register**.
+
 
 ## Procedure to check the Usage Meter registration
 {: #usage_meter-register-check}
@@ -51,6 +59,7 @@ In the VMware Solutions console, complete the following steps:
 
 1. Click **Licensing and metering > Usage Meters** from the left navigation panel.
 2. In the **Usage Meters** table, locate the Usage Meter that you want to delete and click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete") next to the **Status** column.
+
 3. In the **Unregister Usage Meter** window, click **Unregister**.
 
 ## Related links
