@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-05-29"
 
 keywords: regulated workloads, regulated workloads order instance, order regulated workloads, regulated workloads instances
 
@@ -55,7 +55,7 @@ subcollection: vmwaresolutions
    * For **Gateway cluster with Juniper® vSRX**, **Gateway cluster with FortiGate® Virtual Appliance**, and **Bring your own gateway appliance**, specify the [gateway cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-edge#vrw-orderinginstance-edge-cluster-name), the CPU model, the RAM size, and the networking type.
    * For **Gateway cluster with Juniper vSRX** and **Gateway cluster with FortiGate Virtual Appliance**, you must also specify the corresponding service settings in a later step.
    * For **FortiGate Security Appliance**, you must order the **FortiGate Security Appliance 10 Gbps** service from the [{{site.data.keyword.cloud_notm}} catalog](/netsec/firewalls/multi-vlan/provision#about). Confirm that you ordered the service and continue with the following steps.
-1. Under **Network interface**, enter the hostname prefix for the regulated workload and the root domain name. If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on.
+1. Under **Network interface**, enter the hostname prefix for the Regulated Workloads instance and the root domain name. If you want to customize the prefix for each hostname, toggle the **Configure hostnames individually** switch on and enter the hostname prefixes.
 1. Under **Resource details**, enter the instance name and select a resource group.
 1. Under **Included services**, review the add-on services to be deployed into the instance. If a service requires configuration, complete the service-specific settings by clicking **Edit** on the service card. Then, complete your edits and click **Save**. For more information about specific settings for a service, see the corresponding topic for ordering the service.
 1. Select any other optional services for deployment by toggling their switch on and reviewing the service settings. If configuration is required, click **Edit**, then complete the edits and click **Save**. For more information, see [VMware HCX configuration](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering#hcx_ordering-config) or [Considerations when you install F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations#f5_considerations-install).

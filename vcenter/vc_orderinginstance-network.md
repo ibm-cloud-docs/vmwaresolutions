@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-11"
+lastupdated: "2025-05-29"
 
 keywords: network interface, domain name, hostname prefix, configure hostnames, dns configuration
 
@@ -46,9 +46,9 @@ The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and VMs i
 ## Configure hostnames individually
 {: #vc_orderinginstance-network-diagram}
 
-You can customize the hostnames prefix individually by toggling the **Configure hostnames individually** switch on.
+You can customize the prefix for each hostname by toggling the **Configure hostnames individually** switch on.
 
-The hostnames prefix must meet the following requirements:
+The hostname prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
 * No consecutive hyphens are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.

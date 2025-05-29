@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-05-29"
 
 keywords: automated instance add host, add server automated instance
 
@@ -89,7 +89,7 @@ Review the following additional information applicable to Automated instances wi
 8. Click **Next** and complete the network settings.
     * You can continue to use the previously selected primary subnets.
     * You can specify different primary subnets. Then, use the lists to select the **Public primary subnet** and **Private primary subnet**.
-    * If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on.
+    * If you want to customize the prefix for each hostname, toggle the **Configure hostnames individually** switch on and enter the hostname prefixes.
 9. In the **Details** section, review the estimated pricing, ensure that the account to be charged is correct, and review and accept the terms. Then, click **Add**.
 
 ## Results after you add ESXi servers to Automated instances

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-05-28"
+lastupdated: "2025-05-29"
 
 keywords: cyber recovery order procedure, order procedure cyber recovery, cyber recovery order instance, order cyber recovery, order cyber recovery instance
 
@@ -78,7 +78,7 @@ subcollection: vmwaresolutions
    1. Select the **Networking type**, either **Public and private network** or **Private network only**.
 1. Specify the **Network interface** settings:
    1. Enter the **Hostname prefix** and the root **Domain name** for the instance that you are creating.
-   1. If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on.
+   1. If you want to customize the prefix for each hostname, toggle the **Configure hostnames individually** switch on and enter the hostname prefixes.
    1. Specify the **DNS configuration**.
 1. Under **Add-on services**, review the available services:
     * The **Included services** category lists the services that are included in your order.
