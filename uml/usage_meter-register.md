@@ -35,6 +35,7 @@ In the {{site.data.keyword.vmwaresolutions_full}} console, complete the followin
 
 5. Click **Register**.
 
+
 ## Procedure to check the Usage Meter registration
 {: #usage_meter-register-check}
 
@@ -55,6 +56,7 @@ In the VMware Solutions console, complete the following steps:
 
 1. Click **Licensing and metering > Usage Meters** from the left navigation panel.
 2. In the **Usage Meters** table, locate the Usage Meter that you want to delete and click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete") next to the **Status** column.
+
 3. In the **Unregister Usage Meter** window, click **Unregister**.
 
 ## Related links
