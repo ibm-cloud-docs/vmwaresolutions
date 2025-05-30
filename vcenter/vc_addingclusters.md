@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-05-28"
+lastupdated: "2025-05-29"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -224,9 +224,9 @@ You can use the default hostname prefix or specify a new one. When you specify a
 #### Configure hostnames individually
 {: #vc_addingclusters-network-diagram}
 
-You can customize the hostnames prefix individually by toggling the switch on.
+You can customize the prefix for each hostname by toggling the switch on.
 
-The hostnames prefix must meet the following requirements:
+The hostname prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
 * No consecutive hyphens are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
@@ -358,9 +358,9 @@ The hostname prefix applies to all clusters in the instance. It must meet the fo
 ### Configure hostnames individually
 {: #vc_addingclusters-edge-network-diagram}
 
-You can customize the hostnames prefix individually by toggling the switch on.
+You can customize the prefix for each hostname by toggling the switch on.
 
-The hostnames prefix must meet the following requirements:
+The hostname prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
 * No consecutive hyphens are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.

@@ -18,6 +18,7 @@ toc:
       id: learn
       topics:
       - topicgroup:
+          id: getting-started
           label: Getting started
           topics:
           - topic: index.md
@@ -26,6 +27,7 @@ toc:
               href: https://{DomainName}/docs/vmware-service?topic=vmware-service-getting-started
       - vmonic/inst_comp_chart.md
       - topicgroup:
+          id: release-notes
           label: Release notes
           topics:
           - topic: vmonic/release-notes.md
@@ -36,16 +38,19 @@ toc:
       id: tutorial
       topics:
       - topicgroup:
+          id: config-tutorials
           label: Configuration tutorials
           topics:
             - include: ../solution-tutorials/vcf-as-a-service-vdc.md
             - include: ../solution-tutorials/vcf-as-a-service-tf.md
             - include: ../vmware-service/tutorials/vcda-creating-dr-config.md
       - topicgroup:
+          id: connectivity-tutorials
           label: Connectivity tutorials
           topics:
             - include: ../vmware-service/tutorials/vmwaas-ipsec-tunnel.md
       - topicgroup:
+          id: migration-tutorials
           label: Migration tutorials
           topics:
             - include: ../vmware-service/tutorials/vmwaas-ovftool.md
@@ -56,6 +61,7 @@ toc:
       id: howto
       topics:
       - topicgroup:
+          id: first-steps
           label: First steps
           topics:
           - vmonic/signing_required_accounts.md
@@ -65,6 +71,7 @@ toc:
           - vmonic/iam.md
           - vmonic/notifications.md
           - topicgroup:
+              id: ports-used-by-vmwaresolutions
               label: Ports used by VMware Solutions
               topics:
               - vmonic/vmwaresol_ports-vlans-subnets.md
@@ -72,20 +79,24 @@ toc:
               - vmonic/vmwaresol_ports-vmwareuses.md
               - vmonic/vmwaresol_ports-services.md
       - topicgroup:
+          id: vcfaas
           label: VCF as a Service
           topics:
           - topicgroup:
+              id: vcfaas-overview
               label: Overview
               topics:
               - include: ../vmware-service/common/vmware-aas-overview.md
               - include: ../vmware-service/common/vmaas-bom.md
           - include: ../vmware-service/vmaas/tenant-plan-deploy.md
           - topicgroup:
+              id: ordering-vcfaas
               label: Ordering VCF as a Service instances
               topics:
               - include: ../vmware-service/vmaas/tenant-ordering.md
               - include: ../vmware-service/vmaas/vdc-adding.md
           - topicgroup:
+              id: managing-clouddir-site-instances
               label: Managing Cloud Director site instances
               topics:
               - include: ../vmware-service/vmaas/pvdc-adding-deleting.md
@@ -94,23 +105,27 @@ toc:
               - include: ../vmware-service/vmaas/storage-adding-deleting.md
               - include: ../vmware-service/vmaas/private-subnets-adding-deleting.md
           - topicgroup:
+              id: managing-vdc-instances
               label: Managing virtual data center instances
               topics:
               - include: ../vmware-service/vmaas/capacity-adding-deleting.md
               - include: ../vmware-service/vmaas/swap-network-locations.md
           - topicgroup:
+              id: view-delete-vcfaas-instances
               label: Viewing and deleting VCF as a Service instances
               topics:
               - include: ../vmware-service/vmaas/tenant-viewing-sites.md
               - include: ../vmware-service/vmaas/tenant-viewing-vdc.md
           - include: ../vmware-service/common/vcd-ops-guide.md
           - topicgroup:
+              id: access-vcfaas-instances
               label: Accessing VCF as a Service instances
               topics:
                 - include: ../vmware-service/common/vmaas-iam.md
                 - include: ../vmware-service/common/vmaas-iam_vcd.md
                 - include: ../vmware-service/common/iam-integration.md
           - topicgroup:
+              id: migrate-protect-vms-vcfaas
               label: Migrating and protecting VMs in VCF as a Service instances
               topics:
               - include: ../vmware-service/vmaas/tenant-vcda.md
@@ -125,25 +140,30 @@ toc:
               - include: ../vmware-service/vmaas/veeam-adding-deleting.md
               - include: ../vmware-service/vmaas/veeam-dedicated-sobr.md
           - topicgroup:
+              id: creating-secure-interconnectivity-with-vcfaas
               label: Creating secure interconnectivity with VCF as a Service
               topics:
                 - include: ../vmware-service/vmaas/tgw-adding-connections.md
                 - include: ../vmware-service/vmaas/tgw-viewing-deleting-connections.md
           - topicgroup:
+              id: references
               label: Reference
               topics:
               - include: ../vmware-service/common/policies.md
               - include: ../vmware-service/common/ha.md
               - include: ../vmware-service/common/bc-dr.md
       - topicgroup:
+          id: vcf-classic-automated
           label: VCF for Classic - Automated
           topics:
           - topicgroup:
+              id: vcf-classic-automated-overview
               label: Overview
               topics:
               - vcenter/vc_vcenterserveroverview.md
               - vcenter/vc_bom.md
           - topicgroup:
+              id: planning-new-deployments
               label: Planning new deployments
               topics:
               - vcenter/vc_planning.md
@@ -154,6 +174,7 @@ toc:
               - vcenter/vc_vcs_80_upgrade.md
               - vcenter/vc_vsphere_70_upgrade.md
           - topicgroup:
+              id: order-automated-instances
               label: Ordering Automated instances
               topics:
               - vcenter/vc_orderinginstance-req.md
@@ -167,6 +188,7 @@ toc:
               - vcenter/vc_orderinginstance-summary.md
               - vcenter/vc_orderinginstance-procedure.md
           - topicgroup:
+              id: managing-clusters
               label: Managing clusters
               topics:
               - vcenter/vc_addingclusters.md
@@ -174,6 +196,7 @@ toc:
               - vcenter/vc_viewingclusters.md
               - vcenter/vc_deletingclusters.md
           - topicgroup:
+              id: expanding-contracting-capacity
               label: Expanding and contracting capacity
               topics:
               - vcenter/vc_addingservers.md
@@ -181,21 +204,25 @@ toc:
               - vcenter/vc_addingnfs.md
               - vcenter/vc_removingnfs.md
           - topicgroup:
+              id: order-view-delete-services
               label: Ordering, viewing, and deleting services
               topics:
               - vcenter/vc_addingservices.md
               - vcenter/vc_viewingservices.md
               - vcenter/vc_deletingservices.md
           - topicgroup:
+              id: view-delete-instances
               label: Viewing and deleting instances
               topics:
               - vcenter/vc_viewinginstances.md
               - vcenter/vc_deletinginstance.md
               - vcenter/vc_deletinginstance_multi.md
       - topicgroup:
+          id: vcf-classic-flexible
           label: VCF for Classic - Flexible
           topics:
           - topicgroup:
+              id: vcf-classic-flexible-overview
               label: Overview
               topics:
               - vsphere/vs_vsphereoverview.md
@@ -204,6 +231,7 @@ toc:
           - vsphere/vs_vsphere_80_upgrade.md
           - vsphere/vs_vsphere_70_upgrade.md
           - topicgroup:
+              id: ordering-flexible-instances
               label: Ordering Flexible instances
               topics:
               - vsphere/vs_orderinginstances-req.md
@@ -216,21 +244,25 @@ toc:
               - vsphere/vs_orderinginstances-procedure.md
           - vsphere/vs_orderingbasedonexistingconfig.md
           - topicgroup:
+              id: expanding-contracting-capacity-for-flexible
               label: Expanding and contracting capacity
               topics:
               - vsphere/vs_addingservers.md
               - vsphere/vs_removingservers.md
           - topicgroup:
+              id: view-delete-instances-for-flexible
               label: Viewing and deleting instances
               topics:
               - vsphere/vs_viewinginstances.md
               - vsphere/vs_deletinginstances.md
       - topicgroup:
+          id: cyber-recovery
           label: Cyber Recovery
           topics:
           - cr/cr_overview.md
           - cr/cr_planning.md
           - topicgroup:
+              id: ordering-cyber-recovery
               label: Ordering Cyber Recovery
               topics:
               - cr/cr_orderinginstance-reqs.md
@@ -247,11 +279,13 @@ toc:
           - cr/cr_addingviewingservices.md
           - cr/cr_view-delete-instance.md
       - topicgroup:
+          id: regulated-workloads
           label: Regulated Workloads
           topics:
           - vrw/vrw-overview.md
           - vrw/vrw-planning.md
           - topicgroup:
+              id: ordering-regulated-workloads
               label: Ordering Regulated Workloads
               topics:
               - vrw/vrw-orderinginstance-reqs.md
@@ -274,32 +308,38 @@ toc:
           - vrw/vrw-addingremovingservers.md
           - vrw/vrw-view-delete-instance.md
       - topicgroup:
+          id: vcf-for-vpc
           label: VCF for VPC
           topics:
           - topicgroup:
+              id: vcf-for-vpc-overview
               label: Overview
               topics:
               - vpc-vcf/vpc-vcf-ovw.md
               - vpc-vcf/vpc-vcf-ovw-bom.md
           - vpc-vcf/vpc-vcf-plan.md
           - topicgroup:
+              id: ordering-vcf-for-vpc-instances
               label: Ordering VCF for VPC instances
               topics:
               - vpc-vcf/vpc-vcf-order-req.md
               - vpc-vcf/vpc-vcf-ordering.md
               - vpc-vcf/vpc-vcf-firewall.md
           - topicgroup:
+              id: expanding-contracting-capacity-for-vcfvpc
               label: Expanding and contracting capacity
               topics:
               - vpc-vcf/vpc-vcf-host-adding.md
               - vpc-vcf/vpc-vcf-host-deleting.md
           - topicgroup:
+              id: view-delete-instances-for-vcfvpc
               label: Viewing and deleting instances
               topics:
               - vpc-vcf/vpc-vcf-viewing.md
               - vpc-vcf/vpc-vcf-deleting.md
           - vpc-vcf/vpc-vcf-deploy-vvs.md
       - topicgroup:
+              id: licensing-and-metering
               label: Licensing and metering
               topics:
               - topic: uml/licensing_metering-req.md
@@ -312,9 +352,11 @@ toc:
               - uml/licensing_vcf-licenses.md
               - uml/licensing_manage.md
       - topicgroup:
+          id: add-on-services
           label: Add-on services
           topics:
           - topicgroup:
+              id: caveonix
               label: Caveonix RiskForesight
               topics:
               - services/caveonix_considerations.md
@@ -323,18 +365,21 @@ toc:
               - services/caveonix_license_ordering.md
               - services/caveonix_license_managing.md
           - topicgroup:
+              id: big-ip
               label: F5 BIG-IP
               topics:
               - services/f5_considerations.md
               - services/f5_ordering.md
               - services/managing_f5.md
           - topicgroup:
+              id: fortigate
               label: FortiGate Virtual Appliance
               topics:
               - services/fortinetvm_considerations.md
               - services/fortinetvm_ordering.md
               - services/managingfortinetvm.md
           - topicgroup:
+              id: hcx
               label: VMware HCX
               topics:
               - services/hcx_considerations.md
@@ -346,18 +391,21 @@ toc:
               - services/standalone_deletingserviceinstances.md
               - services/hcx_glossary.md
           - topicgroup:
+              id: juniper-vsrx
               label: Juniper vSRX
               topics:
               - services/juniper_overview.md
               - services/juniper_ordering.md
               - services/juniper_managing.md
           - topicgroup:
+              id: redhat
               label: Red Hat OpenShift for VMware
               topics:
               - services/ocp_overview.md
               - services/ocp_ordering.md
               - services/ocp_managing.md
           - topicgroup:
+              id: veeam
               label: Veeam
               topics:
               - services/veeamvm_overview.md
@@ -367,12 +415,14 @@ toc:
               - services/veeam_managing_licenses.md
               - services/icos_ordering.md
           - topicgroup:
+              id: vmware-aria
               label: VMware Aria Operations and VMware Aria Operations for Logs
               topics:
               - services/vrops_overview.md
               - services/vrops_ordering.md
               - services/managing_vrops.md
           - topicgroup:
+              id: zerto
               label: Zerto
               topics:
               - services/addingzertodr.md
@@ -382,6 +432,7 @@ toc:
               - services/zerto_managing_licenses.md
               - services/zerto_migration.md
       - topicgroup:
+              id: kmip
               label: KMIP for VMware
               topics:
               - services/kmip_standalone_considerations.md
@@ -394,27 +445,33 @@ toc:
       - topic: services/managing-ss-sap.md
         navtitle: Security Services for SAP
       - topicgroup:
+          id: enhancing-security
           label: Enhancing security
           topics:
           - topicgroup:
+              id: secure-vcfaas
               label: For VCF as a Service
               topics:
               - include: ../vmware-service/common/architecture-workload-isolation.md
               - include: ../vmware-service/common/vmaas-data-security.md
           - topicgroup:
+              id: secure-vmwaresolutions
               label: For VMware Solutions
               topics:
               - vmonic/data-security.md
               - vmonic/ha-dr.md
           - topicgroup:
+              id: secure-audit
               label: Auditing
               topics:
               - vmonic/audit_user_ids.md
               - vmonic/audit_messages.md
       - topicgroup:
+          id: observability
           label: Observability
           topics:
           - topicgroup:
+              id: activity-tracker-events
               label: Activity tracking events
               topics:
               - link:
@@ -423,14 +480,17 @@ toc:
               - vmonic/at-events.md
               - vmonic/logging.md
           - topicgroup:
+              id: platform-metrics
               label: Platform metrics
               topics:
               - include: ../vmware-service/common/single-tenant-monitoring.md
               - shared/shared-monitor.md
       - topicgroup:
+          id: deprecated-offerings
           label: Deprecated offerings
           topics:
           - topicgroup:
+              id: end-of-support-services
               label: End of Support notices
               topics:
               - vmonic/eos-vmware-shared.md
@@ -438,6 +498,7 @@ toc:
               - vmonic/eos-vsphere67.md
               - vmonic/eos-vsphere65.md
           - topicgroup:
+              id: vmware-shared
               label: VMware Shared
               topics:
               - shared/shared_overview.md
@@ -465,6 +526,7 @@ toc:
               - shared/shared_deletinginstance.md
               - shared/shared_pricing.md
           - topicgroup:
+              id: mutizone-instances
               label: Multizone instances
               topics:
               - services/mcv-archi-bom.md
@@ -474,6 +536,7 @@ toc:
               - vrw/vrw-orderinginstance-mgmt.md
               - vrw/vrw-orderinginstance-witness.md
           - topicgroup:
+              id: scb
               label: Security and Compliance Readiness Bundle
               topics:
               - vcenter/scb-overview.md
@@ -484,16 +547,19 @@ toc:
               - vcenter/scb_addingremovingservices.md
               - vcenter/scb-view-delete-instance.md
           - topicgroup:
+              id: entrust
               label: Entrust CloudControl
               topics:
               - services/entrust-cc_considerations.md
               - services/managing-entrust-cc.md
           - topicgroup:
+              id: entrust-dc
               label: Entrust DataControl
               topics:
               - services/entrust-dc_considerations.md
               - services/managing-entrust-dc.md
           - topicgroup:
+              id: entrust-keycontrol
               label: Entrust KeyControl
               topics:
               - services/entrust-kc_considerations.md
@@ -501,6 +567,7 @@ toc:
           - services/fsa_considerations.md
           - services/icp_overview.md
           - topicgroup:
+              id: spectrum-protect-plus
               label: IBM Spectrum Protect Plus
               topics:
               - services/spp_considerations.md
@@ -512,9 +579,11 @@ toc:
       id: reference
       topics:
       - topicgroup:
+          id: api-reference
           label: API reference
           topics:
           - topicgroup:
+              id: vcfaas-api-reference
               label: VCF as a Service
               topics:
               - link:
@@ -529,6 +598,7 @@ toc:
               label: VMware Shared API
               href: https://{DomainName}/apidocs/vmware-solutions-shared-v2.0.0
       - topicgroup:
+          id: understanding-responsibilities
           label: Understanding responsibilities
           topics:
           - include: ../vmware-service/common/vmaas-understand-responsib.md
@@ -538,6 +608,7 @@ toc:
               href: https://{DomainName}/docs/vmware-service?topic=vmware-service-data-portability
           - vmonic/data-portability.md
       - topicgroup:
+          id: nsxv-to-nsxt-migration
           label: VMware NSX-V to NSX-T migration
           topics:
           - archiref/v2t-patterns/v2t-migration-overview.md
@@ -553,9 +624,11 @@ toc:
           - archiref/v2t-patterns/v2t-migration-l2-nsx-t-guide.md
           - archiref/v2t-patterns/v2t-migration-optional-services.md
       - topicgroup:
+          id: solution-architecture-on-classic
           label: Solution architectures on Classic
           topics:
           - topicgroup:
+              id: vmwaresolutions-architecture
               label: VMware Solutions architecture
               topics:
               - archiref/solution/solution_overview.md
@@ -569,6 +642,7 @@ toc:
               - archiref/solution/solution_backingup.md
               - archiref/solution/solution_considerations.md
           - topicgroup:
+              id: vmwaresolutions-architecture-patterns
               label: VMware Solutions architecture patterns
               topics:
               - archiref/arch-pattern/arch-pattern-nsx-t-topology-overview.md
@@ -587,6 +661,7 @@ toc:
               - archiref/arch-pattern/arch-pattern-direct-link-evpn.md
               - archiref/arch-pattern/arch-pattern-sccwpp.md
           - topicgroup:
+              id: regulated-workloads-architecture
               label: Regulated Workloads architecture
               topics:
               - archiref/vrw/vrw-archi-overview.md
@@ -611,6 +686,7 @@ toc:
               - archiref/vrw/vrw-dualregion-overview.md
               - archiref/vrw/vrw-dualregion-design.md
           - topicgroup:
+              id: vcenter-server-architecture
               label: Attached storage for vCenter Server architecture
               topics:
               - archiref/attached-storage/storage-benefits.md
@@ -619,6 +695,7 @@ toc:
               - archiref/attached-storage/storage-settings.md
               - archiref/attached-storage/cluster-settings.md
           - topicgroup:
+              id: veeam-architecture
               label: Veeam on bare metal server architecture
               topics:
               - archiref/veeam-bms/veeam-bms-archi-intro.md
@@ -628,6 +705,7 @@ toc:
               - archiref/veeam-bms/veeam-bms-archi-post-deployment.md
               - archiref/veeam-bms/veeam-bms-archi-app-support.md
           - topicgroup:
+              id: cyber-recovery-architecture
               label: Cyber recovery with Veeam architecture
               topics:
               - archiref/veeam-cr-sa/veeam-cr-sa-overview.md
@@ -640,6 +718,7 @@ toc:
               - archiref/veeam-cr-sa/veeam-cr-sa-vp.md
               - archiref/veeam-cr-sa/veeam-cr-sa-sandboxveeam.md
           - topicgroup:
+              id: caveonix-architecture
               label: Caveonix RiskForesight architecture
               topics:
               - archiref/caveonix/caveonix-intro.md
@@ -657,12 +736,14 @@ toc:
               - archiref/caveonix/caveonix-scc.md
               - archiref/caveonix/caveonix-terminology.md
           - topicgroup:
+              id: fortinet-architecture
               label: Fortinet FortiGate solution architecture
               topics:
               - archiref/fortigate/overview.md
               - archiref/fortigate/design.md
               - archiref/fortigate/implementation.md
           - topicgroup:
+              id: hcx-solution-architecture
               label: VMware HCX solution architecture
               topics:
               - archiref/hcx-archi/hcx-archi-intro.md
@@ -672,6 +753,7 @@ toc:
               - archiref/hcx-archi/hcx-archi-target-nsx-t.md
               - archiref/hcx-archi/hcx-archi-port-req.md
           - topicgroup:
+              id: vcf-classic-redhat-architecture
               label: VCF for Classic and Red Hat OpenShift architecture
               topics:
               - archiref/vcs-openshift/vcs-openshift-intro.md
@@ -681,6 +763,7 @@ toc:
               - archiref/vcs-openshift/vcs-openshift-sddc-infra.md
               - archiref/vcs-openshift/vcs-openshift-storage.md
           - topicgroup:
+              id: kmip-architecture
               label: KMIP for VMware Solutions architecture
               topics:
               - archiref/kmip/overview.md
@@ -688,9 +771,11 @@ toc:
               - archiref/kmip/implementation.md
               - archiref/kmip/hadr.md
       - topicgroup:
+          id: solution-architecture-on-vpc
           label: Solution architectures on VPC
           topics:
           - topicgroup:
+              id: vcf-for-vpc-architecture
               label: VMware Cloud Foundation for VPC
               topics:
               - archiref/vpc-vcf/vpc-vcf-overview.md
@@ -704,6 +789,7 @@ toc:
               - archiref/vpc-vcf/vpc-vcf-nsx-t-logical-routers.md
               - archiref/vpc-vcf/vpc-vcf-nsx-t-vpc-routing.md
           - topicgroup:
+              id: vcf-architecture-patterns
               label: VMware Cloud Foundation architecture patterns
               topics:
               - archiref/arch-pattern-vcf/arch-pattern-vcf-clientvpn.md
@@ -715,6 +801,7 @@ toc:
               - archiref/arch-pattern-vcf/arch-pattern-vcf-zerto-xconnectivity.md
               - archiref/arch-pattern-vcf/arch-pattern-vcf-sccwpp.md
           - topicgroup:
+              id: interconnectivity-for-vmwareworkloads-on-vpc
               label: Interconnectivity for VMware workloads on VPC
               topics:
               - archiref/vpc-interconnectivity/overview.md
@@ -723,16 +810,20 @@ toc:
               - archiref/vpc-interconnectivity/direct-link.md
               - archiref/vpc-interconnectivity/vpn.md
       - topicgroup:
+          id: solution-architecture-on-vcfaas
           label: Solution architectures on VCF as a Service
           topics:
           - topicgroup:
+              id: vcfaas-architecture-patterns
               label: VCF as a Service architecture patterns
               topics:
               - include: ../vmware-service/archiref/arch-pattern-vmwaas/arch-pattern-vmwaas-sccwpp.md
       - topicgroup:
+          id: solution-guides
           label: Solution guides
           topics:
           - topicgroup:
+              id: cyber-recovery-with-veeam-guide
               label: Cyber recovery with Veeam guide
               topics:
               - archiref/veeam-cr-sag/veeam-cr-sag-overview.md
@@ -755,6 +846,7 @@ toc:
           - archiref/cr-dell/cr-dell-overview.md
           - archiref/cr-predatar/cr-predatar-overview.md
           - topicgroup:
+              id: veeam-backup-guide
               label: Veeam backup guide
               topics:
               - archiref/veeam-backup/veeam_cloud_vmware.md
@@ -771,6 +863,7 @@ toc:
               - archiref/veeam-backup/veeam_wan_server.md
               - archiref/veeam-backup/veeam_etp_manager.md
           - topicgroup:
+              id: vum-guide
               label: VMware Update Manager guide
               topics:
               - archiref/vum/vum-intro.md
@@ -790,6 +883,7 @@ toc:
               - archiref/vum/vum-zerto.md
               - archiref/vum/vum-host-profiles.md
           - topicgroup:
+              id: operations-management-guide
               label: Operations management guide
               topics:
               - archiref/opsmgmt/opsmgmt-intro.md
@@ -800,6 +894,7 @@ toc:
               - archiref/opsmgmt/opsmgmt-vum.md
               - archiref/opsmgmt/opsmgmt-integration.md
           - topicgroup:
+              id: day-two-operational-procedures-guide
               label: Day 2 operational procedures guide
               topics:
               - archiref/opsprocs/opsprocs-intro.md
@@ -810,6 +905,7 @@ toc:
               - archiref/opsprocs/opsprocs-trouble.md
               - archiref/opsprocs/opsprocs-compliance.md
           - topicgroup:
+              id: active-directory-domain-services-guide
               label: Active Directory Domain Services guide
               topics:
               - archiref/adds/adds-intro.md
@@ -819,6 +915,7 @@ toc:
               - archiref/adds/adds-wkld-domain.md
               - archiref/adds/adds-integration.md
           - topicgroup:
+              id: vcf-for-classic-redhat-openshift-guide
               label: VCF for Classic and Red Hat OpenShift guide
               topics:
               - archiref/openshift-runbook/vcs-openshift-runbook-intro.md
@@ -832,6 +929,7 @@ toc:
               - archiref/openshift-runbook/vcs-openshift-runbook-config.md
               - archiref/openshift-runbook/vcs-openshift-runbook-trbl.md
           - topicgroup:
+              id: vcenter-vsrx-guide
               label: vCenter Server and vSRX guide
               topics:
               - archiref/vcsvsrx/vcsvsrx-intro.md
@@ -842,6 +940,7 @@ toc:
               - archiref/vcsvsrx/vcsvsrx-licensing.md
               - archiref/vcsvsrx/vcsvsrx-components.md
           - topicgroup:
+              id: hcx-guide
               label: HCX for VMware Solutions guide
               topics:
               - archiref/hcxclient/hcxclient-planning.md
@@ -857,6 +956,7 @@ toc:
       id: help
       topics:
       - topicgroup:
+          id: faqs
           label: FAQ
           topics:
           - vmonic/vmwaresol_packaging-pricing.md
@@ -874,6 +974,7 @@ toc:
           - archiref/vcs/vmware-inventory-export.md
           - vmonic/additional_resources.md
       - topicgroup:
+          id: troubleshooting-for-vmwaresolutions
           label: Troubleshooting
           topics:
           - vmonic/trbl_timeout_vc_console.md

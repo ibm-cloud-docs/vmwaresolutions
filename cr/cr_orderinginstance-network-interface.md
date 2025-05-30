@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-12-11"
+lastupdated: "2025-05-29"
 
 keywords: cyber recovery, IBM Cloud cyber recovery, cyber recovery network interface, network interface cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -66,9 +66,9 @@ For more information about ordering Windows Server 2019 licenses, see [Get start
 ## Configure hostnames individually
 {: #cr_orderinginstance-net-interface-network-diagram}
 
-You can customize the hostnames prefix individually by toggling the switch on.
+You can customize the prefix for each hostname by toggling the switch on.
 
-The hostnames prefix must meet the following requirements:
+The hostname prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
 * No consecutive hyphens are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.

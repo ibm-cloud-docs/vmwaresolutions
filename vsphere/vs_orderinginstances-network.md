@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-05-20"
+lastupdated: "2025-05-29"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -46,9 +46,9 @@ The domain name is used for all {{site.data.keyword.cloud_notm}} bare metal serv
 ## Configure hostnames individually
 {: #vs_orderinginstances-network-diagram}
 
-You can customize the hostnames prefix individually by toggling the **Configure hostnames individually** switch on.
+You can customize the prefix for each hostname by toggling the **Configure hostnames individually** switch on.
 
-The hostnames prefix must meet the following requirements:
+The hostname prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
 * No consecutive hyphens are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.

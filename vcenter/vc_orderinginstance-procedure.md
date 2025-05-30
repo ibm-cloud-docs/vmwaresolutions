@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-05-28"
+lastupdated: "2025-05-29"
 
 keywords: automated instance, order automated, order automated instance
 
@@ -58,7 +58,7 @@ subcollection: vmwaresolutions
 1. Specify the **Network interface** settings:
    1. Enter the **Hostname prefix** and the root **Domain name** for the instance that you are creating. For a secondary instance, the domain name is automatically completed.
    1. Specify the **DNS configuration**.
-   1. If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on.
+   1. If you want to customize the prefix for each hostname, toggle the **Configure hostnames individually** switch on and enter the hostname prefixes.
 1. Under **Add-on services**, review the available services. If you want to deploy an add-on service, toggle its switch on and review the service settings. If configuration is required, click **Edit**, then complete the edits and click **Save**. For more information about specific settings for a service, see the corresponding topic for ordering the service.
 1. On the **Summary** panel, review the instance settings and the estimated price.
    * To save the settings as a new configuration template without placing an order, click **Save configuration**, enter a name for the configuration, and click **Continue**.
