@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-05-30"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -152,16 +152,16 @@ The allocation of distributed switches varies if you have existing instances and
 
 Review the following table for an overview of the EVC (Enhanced VMware vMotion Compatibility) mode settings for Automated instances and the differences between vSphere versions.
 
-| Bare metal server CPU model | vSphere 6.7[^evc-vsphere67] | vSphere 7.0 | vSphere 8.0 |
-|:--------------------------- |:--------------------------- |:----------- |:----------- |
-| Skylake | EVC is set to Intel® **Broadwell** Generation. | Skylake is not supported. | Skylake is not supported. |
-| Cascade Lake | For the management cluster, EVC is not set. For all other clusters, EVC is set to Intel **Skylake** Generation. | EVC is set to Intel **Cascade Lake** Generation. | EVC is set to Intel **Cascade Lake** Generation. |
-| Sapphire Rapids | Not applicable. | EVC is set to Intel **Ice Lake** Generation. | EVC is set to Intel **Sapphire Rapids** Generation. |
+| Bare metal server CPU model | vSphere 8 | vSphere 7 | vSphere 6.7[^evc-vsphere67] |
+|:--------------------------- |:--------- |:--------- |:--------------------------- |
+| Sapphire Rapids | EVC is set to Intel® **Sapphire Rapids** Generation. | EVC is set to Intel **Ice Lake** Generation. | Not supported |
+| Cascade Lake    | EVC is set to Intel **Cascade Lake** Generation. | EVC is set to Intel **Cascade Lake** Generation. | For the management cluster, EVC is not set. For all other clusters, EVC is set to Intel **Skylake** Generation. |
+| Skylake         | Not supported | Not supported | EVC is set to Intel **Broadwell** Generation. |
 {: caption="EVC mode settings for Automated instances and clusters" caption-side="bottom"}
 
 [^evc-vsphere67]: Existing vSphere 6.7 clusters only
 
-Depending on your EVC mode setting, virtual machines that run on Sapphire Rapids servers cannot migrate to Cascade Lake servers without being powered off. To prevent this problem, you cannot add a Cascade Lake server for clusters that contain only Sapphire Rapids servers.
+Depending on your EVC mode setting, virtual machines that run on Sapphire Rapids servers cannot be migrated to Cascade Lake servers without being powered off. To prevent this problem, you cannot add a Cascade Lake server for clusters that contain only Sapphire Rapids servers.
 {: important}
 
 ## Active Directory Certificate Services
