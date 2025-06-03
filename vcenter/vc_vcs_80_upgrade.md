@@ -116,8 +116,6 @@ If you have an NFS cluster with vSphere 7.0 and you want to migrate it to vSpher
 
 
 
-To upgrade the ESXi hosts, complete the following steps:
-
 1. From the vCenter Server user interface, go to **LCM menu > LifeCycle Manager**.
 2. Select **IMPORT ISO > IMPORT ISO**, and then the ISO file.
 3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
