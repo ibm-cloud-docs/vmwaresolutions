@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-06-04"
 
 keywords: licenses, add license keys, assign licenses, validate licenses, manage licenses
 
@@ -60,13 +60,15 @@ To assign licenses to vCenter Server, complete the following steps:
 ## Adding license keys to NSX-T
 {: #licensing_manage-add-nsx}
 
-To add license keys to VMware NSX-T (NSX component or VMware vDefend Firewall), complete the following steps:
+To add license keys to VMware NSX-T™ (NSX component or VMware vDefend Firewall), complete the following steps:
 
 1. Log in to NSX-T UI with administrator privileges.
 2. On the **System** tab, click **Licenses**.
 3. Click **Add License**.
 4. Enter the license key and click **Add**. The browser refreshes after the license is applied.
 5. Verify that all new licenses are **Valid** under the **Validity** column and that the **Quantity** value is correct.
+
+
 
 For VMware vDefend Firewall, do not enter the firewall keys that you ordered. IBM will provide updated firewall keys in the future. Your firewall will continue to operate normally.
 {: attention}
