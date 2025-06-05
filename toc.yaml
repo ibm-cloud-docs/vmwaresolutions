@@ -968,7 +968,6 @@ toc:
           - vmonic/faq-v2t-migration.md
           - vmonic/faq_shared-eos.md
           - vmonic/faq_shared.md
-          - vmonic/faq_shared.md
           - vmonic/iam_verify_permissions.md
           - vmonic/trbl_limitations.md
           - vcenter/vcenter_chg_impact.md
