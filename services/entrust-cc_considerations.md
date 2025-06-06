@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-05-09"
+lastupdated: "2025-06-06"
 
 keywords: Entrust CloudControl, tech specs Entrust CloudControl
 
@@ -22,10 +22,9 @@ New installations of Entrust CloudControl™ (formerly HyTrust CloudControl) are
 {: deprecated}
 
 Entrust CloudControl on {{site.data.keyword.cloud}} enforces and controls compliance against security standards, which includes role-based access control (RBAC), approval, and auditing. Entrust CloudControl on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from Entrust, not IBM.
-{: shortdesc}
 
-* Previous installations of Entrust CloudControl 6.6 are supported for existing {{site.data.keyword.vcf-auto-short}} with NSX-T™ instances.
-* Previous installations of Entrust CloudControl 5.6 are supported for existing {{site.data.keyword.vcf-auto-short}} with NSX-V instances.
+Previous installations of Entrust CloudControl 6.6 are supported for existing {{site.data.keyword.vcf-auto-short}} instances.
+{: note}
 
 ## Technical specifications for Entrust CloudControl
 {: #entrust-cc_considerations-specs}

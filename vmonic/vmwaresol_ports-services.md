@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-04-14"
+lastupdated: "2025-06-06"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -201,7 +201,7 @@ The following table provides information about the IBM Spectrum® Protect Plus p
 ## Ports for VMware Aria Operations and VMware Aria Operations for Logs for NSX-V instances - deprecated
 {: #vmwaresol_ports-vmware-aria-nsx-v}
 
-The following table provides information about the VMware Aria Operations and VMware Aria Operations for Logs ports when VMware Aria Operations is deployed in a vCenter Server with NSX-V instance.
+The following table provides information about the VMware Aria Operations and VMware Aria Operations for Logs ports when VMware Aria Operations is deployed in an NSX-V instance.
 {: deprecated}
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |

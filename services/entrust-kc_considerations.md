@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-05-09"
+lastupdated: "2025-06-06"
 
 keywords: Entrust KeyControl, tech specs Entrust KeyControl
 
@@ -23,9 +23,6 @@ New installations of Entrust KeyControl™ (formerly HyTrust KeyControl) are not
 
 Entrust KeyControl on {{site.data.keyword.cloud}} simplifies the management of encrypted workloads. This service automates and simplifies the lifecycle of encryption keys, including key storage, key distribution, key rotation, and key revocation. Using FIPS 140-2 compliant encryption, enterprises can easily manage encryption keys at scale. Entrust KeyControl on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from Entrust, not IBM.
 {: shortdesc}
-
-Previous installations of Entrust KeyControl 5.0.1 are supported for {{site.data.keyword.vcf-auto-short}} with NSX-V instances.
-{: note}
 
 ## Technical specifications for Entrust KeyControl
 {: #entrust-kc_considerations-specs}

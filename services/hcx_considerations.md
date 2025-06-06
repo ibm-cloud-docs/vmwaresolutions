@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-06-06"
 
 keywords: VMware HCX, HCX, tech specs HCX
 
@@ -24,9 +24,7 @@ VMware HCX™ on {{site.data.keyword.cloud}} extends the networks of on-premises
 The HCX version available for deployment is periodically updated to the most recent version of HCX. VMware® by Broadcom requires you to be on one of their supported versions in order for you to open a support request for HCX. For more information, see the [VMware HCX release notes](https://techdocs.broadcom.com/us/en/vmware-cis/hcx/vmware-hcx/4-11/hcx-4-11-release-notes/vmware-hcx-411-release-notes.html){: external}.
 {: note}
 
-For {{site.data.keyword.vcf-auto}} with NSX-T™ instances, HCX is supported for NSX-T 3.1 or later and for VMware vSphere® 7.
-
-For {{site.data.keyword.vcf-auto-short}} with NSX-V instances (VMware Solutions V4.7 and earlier), HCX is supported for vSphere 6.7.
+HCX is supported for instances with VMware NSX-T 3.1 or later and VMware vSphere® 7 or later.
 
 {{site.data.content.para-promotion-services}}
 

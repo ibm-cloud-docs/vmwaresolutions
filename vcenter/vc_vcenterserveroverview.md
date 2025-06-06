@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-05-28"
+lastupdated: "2025-06-06"
 
 keywords: vcf automated, vcf classic architecture, tech specs vmware cloud foundation
 
@@ -31,8 +31,6 @@ The following graphic depicts the high-level architecture and components of a th
 
 ![{{site.data.keyword.vcf-auto-short}} architecture](../images/vc_nsx-t_architecture.svg "{{site.data.keyword.vcf-auto-short}} architecture"){: caption="{{site.data.keyword.vcf-auto-short}} high-level architecture for a three-node cluster" caption-side="bottom"}
 
-For {{site.data.keyword.vcf-auto-short}} with NSX-V instances, if you purchased IBM-provided VMware licensing, you can upgrade the VMware NSX Base edition to Advanced or to Enterprise edition. Also, you can request more VMware components, such as VMware Aria® Operations™. You can also add IBM-Managed Services if you want to offload the day-to-day operations and maintenance of the virtualization, guest OS, or application layers. The {{site.data.keyword.cloud_notm}} Professional Services team is available to help you accelerate your journey to the cloud with migration, implementation, planning, and onboarding services.
-
 ## Physical infrastructure
 {: #vc_vcenterserveroverview-physical-infras}
 
@@ -49,19 +47,14 @@ This layer virtualizes the physical infrastructure through different VMware prod
 {: #vc_vcenterserveroverview-virtualization-mgmt}
 
 This layer consists of the following components:
-* vCenter Server Appliance with embedded Platform Services Controller (PSC).
-* For NSX-T - three NSX Manager or Controller nodes (total of three nodes).
-* For NSX-V - one NSX Manager and three VMware NSX Controller™ nodes (total of four nodes).
-* VMware NSX Edge™ clusters - two.
+* vCenter Server Appliance with embedded Platform Services Controller (PSC)
+* Three NSX Manager or Controller nodes in total
+* Two VMware NSX Edge™ clusters
 * IBM CloudDriver virtual server instance (VSI). The CloudDriver VSI is deployed on demand as needed for certain operations such as adding hosts to the environment.
 
 The base offering is deployed with a vCenter Server appliance that is sized to support an environment with up to 400 hosts and up to 4,000 VMs. The same vSphere API-compatible tools and scripts can be used to manage the IBM-hosted VMware environment.
 
-In total, the base offering has the following requirements, which are reserved for the virtualization management layer.
-* For NSX-T, 42 vCPU and 128 GB vRAM
-* For NSX-V, 38 vCPU and 67 GB vRAM
-
-The remaining host capacity for your virtual machines (VMs) depends on several factors, such as oversubscription rate, VM sizing, and workload performance requirements.
+In total, the base offering requires 42 vCPU and 128 GB vRAM, which are reserved for the virtualization management layer. The remaining host capacity for your virtual machines (VMs) depends on several factors, such as oversubscription rate, VM sizing, and workload performance requirements.
 
 For more information about the architecture, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).
 
@@ -83,7 +76,6 @@ If you plan to use vSAN storage, the configuration requires a minimum of four ba
 
 The following configurations are available:
 * **Sapphire Rapids** - Intel® Sapphire Rapids generation servers (Dual Intel Xeon® 6400/8400 series) with your selected RAM size.
-
 * **Cascade Lake** - Intel Cascade Lake generation servers (Dual Intel Xeon 4200/5200/6200/8200 series or Quad Intel Xeon 6200/8200 series) with your selected RAM size.
 * **SAP-certified Cascade Lake** - Intel Cascade Lake generation servers (Dual Intel Xeon 5200/6200/8200 series or Quad Intel Xeon 8200 series) with a preset RAM size.
 
@@ -91,11 +83,10 @@ The following configurations are available:
 {: #vc_vcenterserveroverview-networking}
 
 The following networking components are ordered:
-*  10 Gbps dual public and private network uplinks.
-*  Three VLANs (Virtual LANs) - one public and two private.
-* (NSX-T only) One overlay network with a T1 and T0 router for potential east-west communication between local workloads that are connected to layer 2 (L2) networks. This network is deployed as a sample routing topology, which you can modify, build on, or remove.
-*  (NSX-V only) One VXLAN (Virtual eXtensible LAN) with DLR (Distributed Logical Router) for potential east-west communication between local workloads that are connected to layer 2 (L2) networks. The VXLAN is deployed as a sample routing topology, which you can modify, build on it, or remove it. You can also add security zones by attaching extra VXLANs to new logical interfaces on the DLR.
-*  VMware NSX Edge clusters (two):
+* 10 Gbps dual public and private network uplinks
+* Three VLANs (Virtual LANs) - one public and two private
+* One overlay network with a T1 and T0 router for potential east-west communication between local workloads that are connected to layer 2 (L2) networks. This network is deployed as a sample routing topology, which you can modify, build on, or remove.
+* Two VMware NSX Edge clusters:
    * One secure management service VMware NSX Edge cluster for outbound traffic for add-on services, which is deployed by IBM as part of the management networking typology. This edge cluster is used by add-on services such as Zerto, FortiGate® Virtual Appliance, and F5 BIG-IP® to communicate with external licensing and billing components.
 
       These edge nodes are named **service-edgeNN**. Do not modify or customize them. Otherwise, some of your add-on services might stop working."
@@ -127,9 +118,6 @@ The NFS option offers customized shared file-level storage for workloads with va
 * Size - 20 GB to 24 TB
 * Performance - 0.25, 2, 4, or 10 IOPS/GB. The 10 IOPS/GB performance level is limited to a maximum capacity of 4 TB per file share.
 * Individual configuration of file shares
-
-   (NSX-V only) If you choose the NFS option, one 2 TB and four IOPS/GB file share for management components are ordered.
-   {: note}
 
 #### vSAN storage
 {: #vc_vcenterserveroverview-vsan-storage}
