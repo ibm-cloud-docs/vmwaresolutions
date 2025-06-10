@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-03-25"
+lastupdated: "2025-06-10"
 
 keywords: end of support notice, vmware shared, end of support vmware shared, vmware shared deprecated, vmware shared support
 
@@ -58,7 +58,6 @@ Depending on the size and complexity of your workloads, you can migrate them by 
 * [FAQ about End of Support for {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions-shared-eos)
 * [Migrating from {{site.data.keyword.vm-shared}} to {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_migration)
 * [Technical considerations about migrating from {{site.data.keyword.vm-shared}} to {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared-vmwaas-migration)
-* [Migrating {{site.data.keyword.vm-shared}} workloads to {{site.data.keyword.vcf-aas}} with cloud-to-cloud connections](/docs/vmwaresolutions?topic=vmwaresolutions-vcda-migrating-cloudtocloud-shared) (tutorial and video)
 * [What is {{site.data.keyword.vmware-service_short}}?](https://www.ibm.com/products/vmware/managed-services)
 * [{{site.data.keyword.vmware-service_short}} About page](/vmware/vmware_as_a_service/provision/vdc_mt#about)
 * [{{site.data.keyword.vmware-service_short}} Provisioning page](/vmware/vmware_as_a_service/provision/vdc_mt)

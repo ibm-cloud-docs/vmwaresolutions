@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-05-24"
+lastupdated: "2025-06-10"
 
 keywords: FAQ vmware shared, vmware shared, end of support vmware shared, vmware shared deprecated
 
@@ -144,7 +144,7 @@ We recommend the following best practices:
    If you are planning to keep the existing subnets, do not advertise these routes through {{site.data.keyword.tg_short}} until the VMs are migrated.
    {: attention}
 
-4. Verify that your workloads are ready to be migrated, that is, you can see the source VMs and destination VDC and networks. For more information, see [Migrating {{site.data.keyword.vm-shared}} workloads to {{site.data.keyword.vcf-aas}} with cloud-to-cloud connections](/docs/vmware-service?topic=vmware-service-vcda-migrating-cloudtocloud-shared).
+4. Verify that your workloads are ready to be migrated, that is, you can see the source VMs and destination VDC and networks.
 5. Set up the replication in advance and plan to perform the migration outside working hours, for example, a weekend evening.
 
    The workloads are restarted as part of the migration.
