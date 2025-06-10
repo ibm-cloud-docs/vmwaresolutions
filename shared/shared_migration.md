@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-03-25"
+lastupdated: "2025-06-10"
 
 keywords: vmware solutions shared, vmware shared, migration, migration partner, partners for assisted migration
 
@@ -50,7 +50,6 @@ Answer the following questions:
 ### Considerations about your migration skills
 {: #shared_migration-skills}
 
-* Review the VCDA how-to guides and video in [Migrating {{site.data.keyword.vm-shared}} workloads to {{site.data.keyword.vcf-aas}} with cloud-to-cloud connections](/docs/vmware-service?topic=vmware-service-vcda-migrating-cloudtocloud-shared).
 * Review the VCDA documentation in [VMware Cloud Director Availability for {{site.data.keyword.vcf-aas}} overview](/docs/vmware-service?topic=vmware-service-tenant-vcda).
 * Review the {{site.data.keyword.vcf-aas}} setup guide on how to get started on your target environment in [{{site.data.keyword.vcf-aas}} overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview).
 * Review the options with your technical team.
