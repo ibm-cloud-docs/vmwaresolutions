@@ -55,7 +55,6 @@ toc:
           topics:
             - include: ../vmware-service/tutorials/vmwaas-ovftool.md
             - include: ../vmware-service/tutorials/vcda-migrating-onprem.md
-            - include: ../vmware-service/tutorials/vcda-migrating-cloudtocloud-shared.md
             - include: ../vmware-service/tutorials/vcda-migrating-cloudtocloud-vmaas.md
   - navgroup:
       id: howto
