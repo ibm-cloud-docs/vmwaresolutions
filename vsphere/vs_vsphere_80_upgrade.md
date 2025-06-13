@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-06-13"
 
 keywords: vSphere migration, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -155,6 +155,8 @@ If you have an NFS cluster with vSphere 7.0 and you want to migrate it to vSpher
 ### Procedure to upgrade the ESXi hosts (Sapphire Rapids only)
 {: #vs_vsphere_80_upgrade-procedure-esxi-upgrade}
 
+
+
 1. From the vCenter Server user interface, go to **LCM menu > LifeCycle Manager**.
 2. Select **IMPORT ISO > IMPORT ISO**. Then, select the ISO file.
 3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
@@ -164,6 +166,8 @@ If you have an NFS cluster with vSphere 7.0 and you want to migrate it to vSpher
    1. [ATTACH] Baseline, select the previously created baseline.
    2. Select Baseline and [REMEDIATE].
 7. Remediate each host in turn. After remediation, ensure to pull the host out of maintenance mode.
+
+
 
 There are several methods to upgrade your ESXi hosts. For more information, see [Overview of the ESXi Host Upgrade Process](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0.html){: external}. If you need to access an ISO file or upgrade bundle as part of your selected method, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
