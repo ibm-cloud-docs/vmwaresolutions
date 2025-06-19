@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# End of Support for Red Hat OpenShift for VMware
+# End of Support for {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #eos-rhos}
 
 {{site.data.content.rhos-deprecated-note}}

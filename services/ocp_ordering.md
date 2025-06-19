@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-04-29"
+lastupdated: "2025-06-19"
 
 keywords: Red Hat OpenShift for VMware, OpenShift configuration, order OpenShift
 
@@ -15,26 +15,26 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Ordering Red Hat OpenShift for VMware
+# Ordering {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #ocp_ordering}
 
 You can include the {{site.data.keyword.redhat_openshift_full}} for VMware® service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
-## Considerations when you install Red Hat OpenShift for VMware
+## Considerations when you install {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #ocp_overview-consid-install}
 
 * Before the service is installed in your environment, a check is completed against the available capacity of the target cluster in the environment to ensure that the service components can fit. The storage capacity check applies only to vSAN storage. For NFS clusters, a new NFS data store, dedicated to {{site.data.keyword.redhat_openshift_notm}}, is added.
 * The cluster is associated with the {{site.data.keyword.redhat_notm}} account from the pull secret that is provided.
 * The **Latency Sensitivity** setting of the {{site.data.keyword.redhat_openshift_notm}} cluster VMs can affect the Kubernetes scheduling performance. This value is preset to **Normal**, but you can change it to **High** if you encounter Kubernetes performance issues.
 
-## Ordering Red Hat OpenShift for VMware for a new instance
+## Ordering {{site.data.keyword.redhat_openshift_notm}} for VMware for a new instance
 {: #ocp_ordering-new}
 
-1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. Red Hat OpenShift for VMware is in the **Transformation and modernization of VMware applications** category.
-2. Open the category, locate Red Hat OpenShift for VMware, and toggle its switch on.
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. {{site.data.keyword.redhat_openshift_notm}} for VMware is in the **Transformation and modernization of VMware applications** category.
+2. Open the category, locate {{site.data.keyword.redhat_openshift_notm}} for VMware, and toggle its switch on.
 3. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_ordering#ocp_ordering-config), then click **Save**.
 
-## Ordering Red Hat OpenShift for VMware for an existing instance
+## Ordering {{site.data.keyword.redhat_openshift_notm}} for VMware for an existing instance
 {: #ocp_ordering-existing}
 
 1. On the instance details page, click the **Services** tab.
@@ -42,12 +42,12 @@ You can include the {{site.data.keyword.redhat_openshift_full}} for VMware® ser
 3. On the **Add services** page, locate the **Red Hat OpenShift for VMware** service in the **Transformation and modernization of VMware applications** section and toggle its switch on.
 4. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_ordering#ocp_ordering-config), then click **Save**.
 
-## Red Hat OpenShift for VMware configuration
+## {{site.data.keyword.redhat_openshift_notm}} for VMware configuration
 {: #ocp_ordering-config}
 
 When you order the service, you must provide a {{site.data.keyword.redhat_full}} pull secret. This pull secret is used to associate the new {{site.data.keyword.redhat_openshift_notm}} cluster with your existing {{site.data.keyword.redhat_notm}} account. You can obtain a copy of your pull secret by [logging in to your {{site.data.keyword.redhat_notm}} account](https://console.redhat.com/openshift/install/vsphere/user-provisioned){: external} and clicking **Copy Pull Secret**.
 
-## Setting up DNS to access your Red Hat OpenShift console
+## Setting up DNS to access your {{site.data.keyword.redhat_openshift_notm}} console
 {: #ocp_ordering-dns-setup}
 
 {{site.data.keyword.redhat_openshift_notm}} depends on DNS to function properly. The `ocp` wildcard zone in your VMware environment root zone resolves all names to the IP address of the {{site.data.keyword.redhat_openshift_notm}} cluster application. This way, all applications that run within {{site.data.keyword.redhat_openshift_notm}} are routed through the Load Balancer, as needed.
