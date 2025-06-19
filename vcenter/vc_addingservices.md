@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-04-08"
+lastupdated: "2025-06-19"
 
 keywords: add service, order service, add-on service
 
@@ -160,7 +160,7 @@ Then, follow the instructions in the ordering topic for your chosen service to b
 * [Ordering VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering)
 * [Ordering Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering)
 * [Ordering Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_ordering)
-* [Ordering Veaam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering)
+* [Ordering Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering)
 * [Ordering VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_ordering)
 * [Ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering)
 

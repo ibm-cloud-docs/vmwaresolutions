@@ -18,9 +18,11 @@ subcollection: vmwaresolutions
 # Managing {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #ocp_managing}
 
-Review the following information to manage your {{site.data.keyword.redhat_openshift_full}} for VMware® service after deployment.
 
-## Rotating the {{site.data.keyword.redhat_openshift_notm}} certificates (required)
+
+Review the following information to manage your {{site.data.keyword.redhat_openshift_notm}} for VMware service after deployment.
+
+## Rotating the {{site.data.keyword.redhat_openshift_notm}} certificates
 {: #ocp_managing-cert-rotation}
 
 {{site.data.keyword.redhat_openshift_notm}} for VMware uses kubelet client certificates that must be rotated periodically for security purposes. {{site.data.keyword.redhat_openshift_notm}} mainly automates the rotation process, but requires manual approval of certificate signing requests (CSRs). Therefore, it is important that you understand the {{site.data.keyword.redhat_openshift_notm}} certificate rotation schedule to avoid expired certificates.  
