@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-06-06"
+lastupdated: "2025-06-19"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -86,6 +86,8 @@ The following table provides information about the Juniper® vSRX ports.
 
 ## Ports for Red Hat OpenShift for VMware
 {: #vmwaresol_ports-vmware-optional-services-red-hat-openshift}
+
+
 
 The following table provides information about the {{site.data.keyword.redhat_openshift_full}} ports.
 
