@@ -18,6 +18,8 @@ subcollection: vmwaresolutions
 # Ordering {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #ocp_ordering}
 
+
+
 You can include the {{site.data.keyword.redhat_openshift_full}} for VMware® service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
 ## Considerations when you install {{site.data.keyword.redhat_openshift_notm}} for VMware
