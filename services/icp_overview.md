@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-12"
+lastupdated: "2025-06-19"
 
 keywords: IBM Cloud Private
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.cloud_notm}} Private Hosted
 {: #icp_overview}
 
-The {{site.data.keyword.cloud}} Private Hosted service is no longer supported. Use the [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) service instead.
+The {{site.data.keyword.cloud}} Private Hosted service is no longer supported.
 {: deprecated}
 
 The {{site.data.keyword.cloud_notm}} Private Hosted service automatically deploys {{site.data.keyword.cloud_notm}} Private Hosted and {{site.data.keyword.cloud_notm}} Automation Manager on your {{site.data.keyword.vcf-auto}} instances. This service brings the power of microservices and containers to your VMware® environment on {{site.data.keyword.cloud_notm}}. With this service, you can extend the same familiar VMware and {{site.data.keyword.cloud_notm}} Private operational model and tools from on-premises into the {{site.data.keyword.cloud_notm}}.
