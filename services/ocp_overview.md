@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-08-12"
+lastupdated: "2025-06-19"
 
 keywords: openshift for vmware, request openshift for vmware, tech specs openshift vmware
 
@@ -15,8 +15,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Red Hat OpenShift for VMware overview
+# {{site.data.keyword.redhat_openshift_notm}} for VMware overview
 {: #ocp_overview}
+
+
 
 The {{site.data.keyword.redhat_openshift_full}} for VMware® service deploys an {{site.data.keyword.redhat_openshift_notm}} cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The {{site.data.keyword.redhat_openshift_notm}} components are deployed as virtual machines (VMs) or appliances by using VMware NSX® software-defined networking.
 
@@ -41,7 +43,7 @@ The cluster consists of the following components:
 
 For more information about the architecture, see [{{site.data.keyword.redhat_openshift_notm}} architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-redhat-arch).
 
-## Technical specifications for Red Hat OpenShift for VMware
+## Technical specifications for {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #ocp_overview-specs}
 
 The following capacity requirements apply only if your {{site.data.keyword.vcf-auto-short}} instance is using vSAN™ storage. If you are using NFS, a new 2-TB NFS data store, which is dedicated to {{site.data.keyword.redhat_openshift_notm}}, is ordered.
@@ -107,7 +109,7 @@ After you configure your authentication and any additional users, you no longer 
 
 The {{site.data.keyword.redhat_openshift_notm}} cluster is associated with the {{site.data.keyword.redhat_notm}} account from the pull secret that was provided during installation. To assign subscriptions or manage the cluster, you can view the cluster in the {{site.data.keyword.redhat_notm}} portal under **Systems** or **Clusters**.
 
-## Assigning Red Hat subscriptions and entitlements to your Red Hat OpenShift cluster
+## Assigning Red Hat subscriptions and entitlements to your {{site.data.keyword.redhat_openshift_notm}} cluster
 {: #ocp_overview-assign-cluster}
 
 1. Log in to your {{site.data.keyword.redhat_openshift_notm}} cluster web console.
@@ -126,12 +128,12 @@ For more information, see [{{site.data.keyword.redhat_openshift_notm}} subscript
 
 By default, the {{site.data.keyword.redhat_openshift_notm}} installer creates a `kubeadmin` user that you can use to log in to the cluster. Create authentication backends or more users, as needed, for security purposes.
 
-For more information about how to configure {{site.data.keyword.redhat_openshift_notm}} authentication, see the Red Hat OpenShift documentation.
+For more information about how to configure {{site.data.keyword.redhat_openshift_notm}} authentication, see the {{site.data.keyword.redhat_openshift_notm}} documentation.
 
-## Updating your Red Hat OpenShift cluster
+## Updating your {{site.data.keyword.redhat_openshift_notm}} cluster
 {: #ocp_overview-update-clus}
 
-For more information about updating {{site.data.keyword.redhat_openshift_notm}}, see the Red Hat OpenShift documentation.
+For more information about updating {{site.data.keyword.redhat_openshift_notm}}, see the {{site.data.keyword.redhat_openshift_notm}} documentation.
 
 ## Related links
 {: #ocp_overview-related}

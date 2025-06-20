@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-06-06"
+lastupdated: "2025-06-19"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -84,8 +84,10 @@ The following table provides information about the Juniper® vSRX ports.
 | vSRX | vSRX Private IP | VMware Aria Operations™ for Logs (if VMware Aria® Operations™ service is installed) | VMware Aria Operations for Logs FQDN | 514 | UDP | Remote syslog to VMware Aria Operations for Logs if VMware Aria Operations service is installed | Syslog |
 {: caption="Juniper vSRX ports" caption-side="bottom"}
 
-## Ports for Red Hat OpenShift for VMware
+## Ports for {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #vmwaresol_ports-vmware-optional-services-red-hat-openshift}
+
+
 
 The following table provides information about the {{site.data.keyword.redhat_openshift_full}} ports.
 
@@ -97,7 +99,7 @@ The following table provides information about the {{site.data.keyword.redhat_op
 | OCP | New subnet ordered in private VLAN | OCP cluster network | OCP internal IP range `10.128.0.0/14` | 5443 and 8443 | TCP | OCP cluster management | WEBREST API |
 | OCP edge public IP addresses| New subnet ordered in public VLAN | Public websites required for {{site.data.keyword.redhat_openshift_notm}} installation[^osinst] | | 80, 123, and 443 | TCP and UDP | Time service, {{site.data.keyword.redhat_openshift_notm}} installation content, and images | NTP/HTTP/HTTPS |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | OCP | New subnet ordered in private VLAN | 22 | TCP | Set up and configure OCP | SSH |
-{: caption="Red Hat OpenShift for VMware ports" caption-side="bottom"}
+{: caption="{{site.data.keyword.redhat_openshift_notm}} for VMware ports" caption-side="bottom"}
 
 [^osinst]: For more information, see [Configuring your firewall](https://docs.redhat.com/en/documentation/openshift_container_platform/4.15/html/installation_configuration/configuring-firewall){: external}.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-03-18"
+lastupdated: "2025-06-19"
 
 keywords: Red Hat OpenShift for VMware, manage OpenShift, OpenShift operations
 
@@ -15,12 +15,14 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing Red Hat OpenShift for VMware
+# Managing {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #ocp_managing}
 
-Review the following information to manage your {{site.data.keyword.redhat_openshift_full}} for VMware® service after deployment.
 
-## Rotating the Red Hat OpenShift certificates (required)
+
+Review the following information to manage your {{site.data.keyword.redhat_openshift_notm}} for VMware service after deployment.
+
+## Rotating the {{site.data.keyword.redhat_openshift_notm}} certificates
 {: #ocp_managing-cert-rotation}
 
 {{site.data.keyword.redhat_openshift_notm}} for VMware uses kubelet client certificates that must be rotated periodically for security purposes. {{site.data.keyword.redhat_openshift_notm}} mainly automates the rotation process, but requires manual approval of certificate signing requests (CSRs). Therefore, it is important that you understand the {{site.data.keyword.redhat_openshift_notm}} certificate rotation schedule to avoid expired certificates.  
@@ -36,7 +38,7 @@ After the initial certificate rotation, certificates are renewed every 30 days.�
 
 If you do not approve CSRs in time and the certificates expire, you can recover from expired control plane certificates and get the {{site.data.keyword.redhat_openshift_notm}} cluster operational again. For more information, see [Recovering from expired control plane certificates](https://docs.redhat.com/en/documentation/openshift_container_platform/4.15/html/backup_and_restore/control-plane-backup-and-restore#dr-scenario-3-recovering-expired-certs_dr-recovering-expired-certs){: external}.
 
-## Resizing your Red Hat OpenShift VMs post-deployment
+## Resizing your {{site.data.keyword.redhat_openshift_notm}} VMs post-deployment
 {: #ocp_managing-resize}
 
 1. Log in to the bastion VM by using SSH.
@@ -47,7 +49,7 @@ If you do not approve CSRs in time and the certificates expire, you can recover 
 6. In the {{site.data.keyword.redhat_openshift_notm}} console, go to **Compute > Nodes** and wait for the VM that was restarted to be back in a **Ready** state.
 7. Complete the previous steps for all VMs.
 
-## Changing the SSH key on the Red Hat OpenShift bastion VM
+## Changing the SSH key on the {{site.data.keyword.redhat_openshift_notm}} bastion VM
 {: #ocp_managing-change-ssh-key}
 
 The SSH key pair that is generated during installation is on the {{site.data.keyword.redhat_openshift_notm}} bastion VM. The location of the SSH key pair is displayed on the {{site.data.keyword.redhat_openshift_notm}} service details page. This SSH key was installed on all cluster VMs to allow SSH logins from the bastion without requiring a password.
@@ -55,7 +57,7 @@ The SSH key pair that is generated during installation is on the {{site.data.key
 It is recommended that a new SSH key pair is generated and used to replace the existing key. To generate a new
 SSH key pair, use the instructions in [How to update ssh keys after installation in Openshift 4](https://access.redhat.com/solutions/3868301){: external}. You must run the commands from the bastion VM. For more information about logging in to the bastion, see [Bastion details](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview#ocp_overview-bastion).
 
-## Expanding Red Hat OpenShift cluster with more workers
+## Expanding the {{site.data.keyword.redhat_openshift_notm}} cluster with more workers
 {: #ocp_managing-expand-cluster}
 
 To expand your {{site.data.keyword.redhat_openshift_notm}} cluster by adding more worker VMs, complete the following steps:
@@ -118,7 +120,7 @@ To expand your {{site.data.keyword.redhat_openshift_notm}} cluster by adding mor
 
       If you must change any settings because the VM didn't display a login prompt, power off the VM, change the necessary settings, and power it back on.
 
-## Considerations when you delete Red Hat OpenShift for VMware
+## Considerations when you delete {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #ocp_overview-consid-remove}
 
 * Before you delete {{site.data.keyword.redhat_openshift_notm}} for VMware, you must remove any additional VMs that you created in the `ocp` directory on VMware. The VMware Solutions automation removes only the items that were deployed during the initial installation of {{site.data.keyword.redhat_openshift_notm}} (VMs, storage, and NSX). Any node that is deployed after the installation is not cleaned up.
