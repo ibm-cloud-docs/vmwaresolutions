@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-05-29"
+lastupdated: "2025-06-23"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Network interface
 {: #vrw-orderinginstance-network-interface}
+
+
 
 You must specify the following network interface settings when you order a {{site.data.keyword.vcf-auto}} instance.
 

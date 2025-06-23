@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-06-23"
 
 keywords: regulated workload order, order regulated workloads, order vmware regulated workload instance
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Summary
 {: #vrw-orderinginstance-order-summary}
+
+
 
 Based on your selected configuration, the estimated price is instantly generated and displayed on the **Summary** panel. Click **Pricing details** to generate a PDF document with the price summary for the {{site.data.keyword.vmwaresolutions_full}} resources.
 

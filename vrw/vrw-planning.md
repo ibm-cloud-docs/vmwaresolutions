@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-06-23"
 
 keywords: planning vmware regulated workloads, data center vmware regulated workloads, vmware regulated workloads data centers
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Planning for {{site.data.keyword.rw}}
 {: #vrw-planning}
+
+
 
 Review the following requirements before you order your {{site.data.keyword.rw}} instance. Plan your instance based on the {{site.data.keyword.cloud}} data center location, your capacity requirements, and services requirements.
 

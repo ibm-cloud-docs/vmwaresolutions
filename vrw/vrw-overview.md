@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-04-29"
+lastupdated: "2025-06-23"
 
 keywords: vmware regulated workloads, regulated workloads, workloads instance, regulated instance
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # {{site.data.keyword.rw}} overview
 {: #vrw-overview}
+
+
 
 The {{site.data.keyword.rw}} offering includes a secure-by-default architecture that follows the {{site.data.keyword.IBM}} unique policy controls framework. It also includes continuous compliance monitoring and the highest level of data encryption FIPS 140-2 Level 4.
 

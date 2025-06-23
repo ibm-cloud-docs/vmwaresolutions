@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-05-08"
+lastupdated: "2025-06-23"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # General information
 {: #vrw-orderinginstance-general-info}
+
+
 
 ## VMware vSphere version
 {: #vrw_orderinginstance-vsphere-license}

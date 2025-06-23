@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-08-28"
+lastupdated: "2025-06-23"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Location
 {: #vrw-orderinginstance-mgmt-dc-location}
+
+
 
 Select the {{site.data.keyword.cloud}} data center settings. For more information, see [{{site.data.keyword.cloud_notm}} locations for resource deployment](/docs/overview?topic=overview-locations).
 

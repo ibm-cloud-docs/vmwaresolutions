@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-04-05"
+lastupdated: "2025-06-23"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Service prerequisites
 {: #vrw-orderinginstance-serv-prereq}
+
+
 
 The following services are required for {{site.data.keyword.rw}}:
 * [Hyper Protect Crypto Services](/catalog/services/hyper-protect-crypto-services)
