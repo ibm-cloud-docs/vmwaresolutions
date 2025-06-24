@@ -281,7 +281,8 @@ toc:
           id: regulated-workloads
           label: Regulated Workloads
           topics:
-          - vrw/vrw-overview.md
+          - topic: vrw/vrw-overview.md
+            navtitle: Regulated Workloads overview
           - vrw/vrw-planning.md
           - topicgroup:
               id: ordering-regulated-workloads
