@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024
+  years:  2024, 2025
 
-lastupdated: "2024-04-08"
+lastupdated: "2025-06-24"
 
 keywords: automated resource, resource type, resource
 
@@ -30,4 +30,3 @@ Choose the **Automated** option from the following resource types:
 * [{{site.data.keyword.vcf-auto-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
 * [{{site.data.keyword.vcf-flex-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [{{site.data.keyword.cr}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview)
-* [{{site.data.keyword.rw}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview)
