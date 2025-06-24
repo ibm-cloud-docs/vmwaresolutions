@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-06-24"
 
 keywords: set credentials, update credentials, set notifications, IAM user, invite user
 
@@ -48,7 +48,7 @@ If email or console notifications are enabled for certain instance events, you'r
 ## Updating user account credentials
 {: #useraccount-set-cred}
 
-The information about updating user account credentials applies only to the {{site.data.keyword.vcf-classic}} offerings: Automated, Flexible, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}}.
+The information about updating user account credentials applies only to the {{site.data.keyword.vcf-classic}} offerings: Automated, Flexible, and {{site.data.keyword.cr}}.
 {: note}
 
 {{site.data.keyword.vmwaresolutions_short}} communicates with the {{site.data.keyword.cloud_notm}} infrastructure through {{site.data.keyword.slapi_short}} calls. To access the {{site.data.keyword.slapi_short}} securely, you must link the credentials of your {{site.data.keyword.cloud_notm}} infrastructure account to your {{site.data.keyword.cloud_notm}} account. After your first order, you can update the user account credentials on the **Settings** page.

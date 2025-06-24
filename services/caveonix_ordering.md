@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-13"
+lastupdated: "2025-06-24"
 
 keywords: Caveonix RiskForesight, Caveonix configuration, order Caveonix
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 You can include the Caveonix RiskForesight™ service with a new {{site.data.keyword.vcf-auto}} instance, or add the service to your existing instance.
 
 * For {{site.data.keyword.vcf-auto-short}} instances, Caveonix RiskForesight generates a license for the number of VMs (virtual machines) that you select.
-* For {{site.data.keyword.rw}} and Security and Compliance Readiness Bundle instances, Caveonix RiskForesight offers per host licensing. You are charged for every host in the instance, which includes management, workload, and gateway clusters.
+* For {{site.data.keyword.rw}} and Security and Compliance Readiness Bundle instances, Caveonix RiskForesight offers per-host licensing. You are charged for every host in the instance, which includes management, workload, and gateway clusters.
 
 ## Ordering Caveonix RiskForesight for a new instance
 {: #caveonix_ordering-new}

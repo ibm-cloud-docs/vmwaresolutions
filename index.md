@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2024
+  years: 2016, 2025
 
-lastupdated: "2024-12-11"
+lastupdated: "2025-06-24"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -155,7 +155,6 @@ For more information about how to order an instance, see the following topics ba
 * [Ordering Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Ordering Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
 * [Ordering {{site.data.keyword.cr}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance_reqs)
-* [Ordering {{site.data.keyword.rw}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
 * [Ordering {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-order-req)
 
 ## Viewing the instance
@@ -169,5 +168,4 @@ For more information about how to view the instance you ordered, see the followi
 * [Viewing Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
 * [Viewing Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_viewinginstances)
 * [Viewing and deleting {{site.data.keyword.cr}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr-view-delete-instance)
-* [Viewing and deleting {{site.data.keyword.rw}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-view-delete-instance)
 * [Viewing {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing)
