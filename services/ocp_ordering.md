@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-06-19"
+lastupdated: "2025-06-24"
 
 keywords: Red Hat OpenShift for VMware, OpenShift configuration, order OpenShift
 
@@ -17,8 +17,6 @@ subcollection: vmwaresolutions
 
 # Ordering {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #ocp_ordering}
-
-
 
 You can include the {{site.data.keyword.redhat_openshift_full}} for VMware® service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
