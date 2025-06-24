@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-06-19"
+lastupdated: "2025-06-24"
 
 keywords: openshift for vmware, request openshift for vmware, tech specs openshift vmware
 
@@ -34,7 +34,7 @@ Existing installations of {{site.data.keyword.redhat_openshift_notm}} for VMware
 
 {{site.data.content.para-promotion-services}}
 
-The cluster consists of the following components:
+The {{site.data.keyword.redhat_openshift_notm}} cluster consists of the following components:
 * Three primary nodes
 * Three worker nodes, all running {{site.data.keyword.redhat_full}} CoreOS
 * Two VMware NSX® VMs
@@ -55,9 +55,9 @@ The solution topology has the following requirements:
 
 For more information about resource requirements and capacity checking, see [Resource requirements for services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-resource-requirements).
 
-To successfully deploy {{site.data.keyword.redhat_openshift_notm}} for VMware on vCenter Server, you must have a {{site.data.keyword.redhat_notm}} account and the pull secret key from your account. All {{site.data.keyword.redhat_notm}} accounts have an associated pull secret, which you can retrieve by [logging in to your {{site.data.keyword.redhat_notm}} account](https://console.redhat.com/openshift/install/vsphere/user-provisioned){: external}. You must purchase {{site.data.keyword.redhat_notm}} support entitlements through {{site.data.keyword.redhat_notm}} and, if needed, send information for all {{site.data.keyword.redhat_openshift_notm}} support issues to {{site.data.keyword.redhat_notm}}.
+To successfully deploy {{site.data.keyword.redhat_openshift_notm}}, you must have a {{site.data.keyword.redhat_notm}} account and the pull secret key from your account. All {{site.data.keyword.redhat_notm}} accounts have an associated pull secret, which you can retrieve by [logging in to your {{site.data.keyword.redhat_notm}} account](https://console.redhat.com/openshift/install/vsphere/user-provisioned){: external}. You must purchase {{site.data.keyword.redhat_notm}} support entitlements through {{site.data.keyword.redhat_notm}} and, if needed, send information for all {{site.data.keyword.redhat_openshift_notm}} support issues to {{site.data.keyword.redhat_notm}}.
 
-### Selection of the target cluster for installation
+### Selecting the target cluster for installation
 {: #ocp_overview-select-target-cluster}
 
 During deployment and Day 2 operations, you are prompted for the cluster. You can install the service on the management cluster or any workload cluster.
@@ -87,7 +87,7 @@ When you log in to a cluster VM from the bastion, you must connect as the `core`
 ### High availability
 {: #ocp_overview-high-avail}
 
-The {{site.data.keyword.redhat_openshift_notm}} VMs are deployed with DRS rules to ensure that they are on physically separate hosts. If a host must be replaced or redeployed, you must adjust the preconfigured DRS rules before you proceed.
+The {{site.data.keyword.redhat_openshift_notm}} VMs are deployed with DRS rules to ensure that they are on physically separate hosts. If a host must be replaced or redeployed, you must adjust the preconfigured DRS rules.
 
 ### Installation configuration files
 {: #ocp_overview-bastion-install-config-file}
@@ -140,5 +140,4 @@ For more information about updating {{site.data.keyword.redhat_openshift_notm}},
 
 * [vCenter Server and {{site.data.keyword.redhat_openshift_notm}} architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-intro)
 * [VMware Solutions and {{site.data.keyword.redhat_openshift_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-intro)
-* [What's new in {{site.data.keyword.redhat_openshift_notm}}](https://www.redhat.com/en/whats-new-red-hat-openshift){: external}
 * [Succeeding with {{site.data.keyword.redhat_openshift_notm}} and VMware’s Software-Defined Datacenter (SDDC)](https://www.redhat.com/en/blog/red-hat-openshift-and-vmware-better-together){: external}

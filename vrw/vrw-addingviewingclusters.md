@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-04-03"
+lastupdated: "2025-06-23"
 
 keywords: vmware regulated workloads, add clusters vmware regulated workloads, view clusters vmware regulated workloads, delete clusters vmware regulated workloads
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Adding, viewing, and deleting clusters for {{site.data.keyword.rw}}
 {: #vrw-addingviewingclusters}
+
+
 
 You can add clusters to {{site.data.keyword.rw}} instances to expand the compute and storage capacity. Within a cluster, you can manage VMware vSphere® ESXi™ servers for better resource allocation and high availability. When no longer needed, delete the added clusters from your instances.
 

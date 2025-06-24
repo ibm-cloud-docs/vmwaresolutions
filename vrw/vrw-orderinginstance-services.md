@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-12-11"
+lastupdated: "2025-06-23"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Add-on services
 {: #vrw-orderinginstance-services}
+
+
 
 Review services that are included with or optional for your {{site.data.keyword.rw}}.
 

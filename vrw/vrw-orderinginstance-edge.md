@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-04-03"
+lastupdated: "2025-06-23"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Gateway cluster
 {: #vrw-orderinginstance-edge}
+
+
 
 The **Gateway cluster** section is available for all firewall appliances except for **FortiGate Security Appliance**.
 

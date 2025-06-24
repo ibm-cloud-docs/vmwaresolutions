@@ -400,7 +400,8 @@ toc:
               id: redhat
               label: Red Hat OpenShift for VMware
               topics:
-              - services/ocp_overview.md
+              - topic: services/ocp_overview.md
+                navtitle: Red Hat OpenShift for VMware overview
               - services/ocp_ordering.md
               - services/ocp_managing.md
           - topicgroup:

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-06-19"
+lastupdated: "2025-06-23"
 
 keywords: Red Hat OpenShift for VMware, manage OpenShift, OpenShift operations
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 
 
-Review the following information to manage your {{site.data.keyword.redhat_openshift_notm}} for VMware service after deployment.
+Review the following information to manage your {{site.data.keyword.redhat_openshift_notm}} for VMware service.
 
 ## Rotating the {{site.data.keyword.redhat_openshift_notm}} certificates
 {: #ocp_managing-cert-rotation}
@@ -38,7 +38,7 @@ After the initial certificate rotation, certificates are renewed every 30 days.�
 
 If you do not approve CSRs in time and the certificates expire, you can recover from expired control plane certificates and get the {{site.data.keyword.redhat_openshift_notm}} cluster operational again. For more information, see [Recovering from expired control plane certificates](https://docs.redhat.com/en/documentation/openshift_container_platform/4.15/html/backup_and_restore/control-plane-backup-and-restore#dr-scenario-3-recovering-expired-certs_dr-recovering-expired-certs){: external}.
 
-## Resizing your {{site.data.keyword.redhat_openshift_notm}} VMs post-deployment
+## Resizing your {{site.data.keyword.redhat_openshift_notm}} VMs
 {: #ocp_managing-resize}
 
 1. Log in to the bastion VM by using SSH.
@@ -54,8 +54,8 @@ If you do not approve CSRs in time and the certificates expire, you can recover 
 
 The SSH key pair that is generated during installation is on the {{site.data.keyword.redhat_openshift_notm}} bastion VM. The location of the SSH key pair is displayed on the {{site.data.keyword.redhat_openshift_notm}} service details page. This SSH key was installed on all cluster VMs to allow SSH logins from the bastion without requiring a password.
 
-It is recommended that a new SSH key pair is generated and used to replace the existing key. To generate a new
-SSH key pair, use the instructions in [How to update ssh keys after installation in Openshift 4](https://access.redhat.com/solutions/3868301){: external}. You must run the commands from the bastion VM. For more information about logging in to the bastion, see [Bastion details](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview#ocp_overview-bastion).
+It is recommended that a new SSH key pair is generated and used to replace the existing key. For more information about how to generate a new
+SSH key pair, see [How to update ssh keys after installation in Red Hat OpenShift](https://access.redhat.com/solutions/3868301){: external}. You must run the commands from the bastion VM. For more information about logging in to the bastion, see [Bastion details](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview#ocp_overview-bastion).
 
 ## Expanding the {{site.data.keyword.redhat_openshift_notm}} cluster with more workers
 {: #ocp_managing-expand-cluster}
@@ -116,22 +116,21 @@ To expand your {{site.data.keyword.redhat_openshift_notm}} cluster by adding mor
    * After the login prompt is shown, it might be covered by console log messages. If required, press Enter a few times on the console. If the login prompt is present but covered with console log messages, press Enter to display the login prompt again. 
    * If the login prompt does not display, it is possible that:
       * The VM is not getting an IP address. Check the network that the VM is connected to. Also, check the DHCP binding settings.
-      * The base64 value from `worker.ign.64` is not correct. It might be missing some characters or it has extra characters. Check the value to confirm.
+      * The `base64` value from `worker.ign.64` is not correct. It might be missing some characters or it has extra characters. Check the value to confirm.
 
       If you must change any settings because the VM didn't display a login prompt, power off the VM, change the necessary settings, and power it back on.
 
 ## Considerations when you delete {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #ocp_overview-consid-remove}
 
-* Before you delete {{site.data.keyword.redhat_openshift_notm}} for VMware, you must remove any additional VMs that you created in the `ocp` directory on VMware. The VMware Solutions automation removes only the items that were deployed during the initial installation of {{site.data.keyword.redhat_openshift_notm}} (VMs, storage, and NSX). Any node that is deployed after the installation is not cleaned up.
-* The VXLAN, DLR, and the Edge Gateway that were created during the initial deployment of {{site.data.keyword.redhat_openshift_notm}} for VMware is deleted. The VMs that you deployed on VXLAN will lose connectivity after the removal of {{site.data.keyword.redhat_openshift_notm}} for VMware starts.
+* Before you delete {{site.data.keyword.redhat_openshift_notm}} for VMware, you must remove any additional VMs that you created in the `ocp` directory on VMware. The VMware Solutions automation removes only the items that were deployed during the initial installation of {{site.data.keyword.redhat_openshift_notm}} (VMs, storage, and NSX). Any node that was deployed after the installation is not deleted.
+* The VXLAN, DLR, and the Edge Gateway that were created during the initial deployment of {{site.data.keyword.redhat_openshift_notm}} for VMware are deleted. The VMs that you deployed on VXLAN will lose connectivity after the removal of {{site.data.keyword.redhat_openshift_notm}} for VMware.
 * If your cluster uses NFS storage, deleting {{site.data.keyword.redhat_openshift_notm}} deletes the NFS data store that was added during installation.
 * If you are using a vSAN datastore, delete any persistent volumes that you no longer need before you uninstall {{site.data.keyword.redhat_openshift_notm}}. Any volumes that are not deleted will remain in the vSAN storage after the {{site.data.keyword.redhat_openshift_notm}} uninstallation.
-* Before you delete the service, you must remove any personal VMs that were deployed with this service from the storage. {{site.data.keyword.redhat_openshift_notm}} only orders personal VMs if it’s not vSAN.
+* Before you delete the service, you must remove any personal VMs that were deployed with this service from the storage. {{site.data.keyword.redhat_openshift_notm}} orders personal VMs only they are not vSAN-based.
 
 ## Related links
 {: #ocp_managing-related}
 
-* [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)

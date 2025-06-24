@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024
+  years:  2024, 2025
 
-lastupdated: "2024-04-09"
+lastupdated: "2025-06-23"
 
 keywords: regulated workloads resource, resource type, resource
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Resource type
 {: #vrw-orderinginstance-resource-type}
+
+
 
 Choose the **{{site.data.keyword.rw}}** option from the following resource types:
 

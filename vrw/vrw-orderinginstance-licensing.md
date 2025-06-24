@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-04-23"
+lastupdated: "2025-06-23"
 
 keywords: regulated workloads, regulated workloads order instance, order regulated workloads, regulated workloads instances
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Licensing (BYOL only)
 {: #vrw-orderinginstance-licensing}
+
+
 
 {{site.data.content.attnnote-byol}}
 

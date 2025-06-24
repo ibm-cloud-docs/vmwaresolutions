@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-06-23"
 
 keywords: regulated workloads, regulated workloads order instance, order regulated workloads, regulated workloads instances
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Additional cluster for workloads
 {: #vrw-orderinginstance-wkld-cluster}
+
+
 
 For single-zone VMware® instances with a customizable consolidated cluster, you can toggle the **Include a separate cluster for workloads** switch on to deploy a workload cluster. An extra cluster for workloads is required for a management-optimized cluster.
 

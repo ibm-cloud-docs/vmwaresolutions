@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-04-25"
+lastupdated: "2025-06-23"
 
 keywords: view vmware regulated workloads, vmware regulated workloads details, vmware regulated workloads delete, delete vmware regulated workloads, remove vmware regulated workloads
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Viewing and deleting {{site.data.keyword.rw}}
 {: #vrw-view-delete-instance}
+
+
 
 You can view the summary and detailed information of the {{site.data.keyword.rw}} instances that you provisioned on the **Resources** > **{{site.data.keyword.rw}}** page. The available information is similar to that of {{site.data.keyword.vcf-auto}} instances. For more information, see [Viewing {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances).
 
