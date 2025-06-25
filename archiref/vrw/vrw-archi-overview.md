@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-03-26"
+lastupdated: "2025-06-25"
 
 subcollection: vmwaresolutions
 
@@ -44,7 +44,7 @@ The management software stack includes the following components:
 * NSX management components to fully isolate the SDN control plane from the workload cluster.
 * Security is further enhanced by IBM Hyper Protect Crypto Services (HPCS). HPCS uses a FIPS 140-2 Level 4 hardware security module (HSM) that gives access to the highest level of security for regulated data and digital assets. HPCS helps meet regulatory compliance requirements by providing complete control of data encryption keys, including the HSM primary key.
 * Caveonix RiskForesight provides a common Risk Management Control Plane (RMCP) for continuous and proactive protection of management and edge workloads. It provides a comprehensive cloud workload protection platform for {{site.data.keyword.rw}}. The {{site.data.keyword.rw}} architecture is designed to enable compliance with NIST and other necessary certifications, as required for the SaaS provider and SaaS consumer.
-* VMware Aria® Operations™ Manager, VMware Aria Operations™ for Logs, and the optional VMware Aria Operations™ for Networks. These components collectively provide a console for vSphere operations, the ability to automate management of the cloud platform, centralized log collection, and network visibility, analysis, and optimization.  
+* VMware Aria® Operations™ Manager, VMware Aria Operations™ for Logs, and the optional VMware Aria Operations™ for Networks. These components collectively provide a console for vSphere operations, the ability to automate management of the cloud platform, centralized log collection, and network visibility, analysis, and optimization.
 * Veeam provides continuous backup of the management stack for protection against disasters and rapid restoration to known good states if corruption of any management stack component were to occur. Veeam can also provide backup services for the workload cluster. The single site deployment can use the Veeam bare metal option to provide a suitable backup repository.
 
 ## Gateway cluster
@@ -79,7 +79,6 @@ Before you deploy a consolidated cluster, consider the following possible securi
 
 For more information, see:
 * [{{site.data.keyword.rw}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview)
-* [Ordering {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
 
 ## Related links
 {: #vrw-archi-overview-related}

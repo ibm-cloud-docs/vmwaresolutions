@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-06-23"
+lastupdated: "2025-06-25"
 
 keywords: view vmware regulated workloads, vmware regulated workloads details, vmware regulated workloads delete, delete vmware regulated workloads, remove vmware regulated workloads
 
@@ -27,5 +27,4 @@ If you want to release the components that you ordered in a {{site.data.keyword.
 {: #vrw-view-delete-instance-related}
 
 * [{{site.data.keyword.rw}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview)
-* [Ordering {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
 * [{{site.data.keyword.rw}} reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)

@@ -62,5 +62,4 @@ Select either **Public and private network** or **Private network only** for the
 ## Related links
 {: #cr-orderinginstance-edge-related-links}
 
-* [Network interface](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-network-interface)
 * [Procedure to order {{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-order-procedure)
