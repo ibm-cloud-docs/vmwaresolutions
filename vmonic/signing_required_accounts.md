@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-02-19"
+lastupdated: "2025-06-24"
 
 keywords: user account, ibm cloud account, ibm cloud infrastructure
 
@@ -27,7 +27,7 @@ You can sign up for an {{site.data.keyword.cloud_notm}} account by using an exis
 ## The {{site.data.keyword.cloud_notm}} infrastructure account
 {: #signing_required_accounts-infra}
 
-The requirement to have an {{site.data.keyword.cloud_notm}} infrastructure account applies only to the {{site.data.keyword.vcf-classic}} offerings: Automated, Flexible, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}}.
+The requirement to have an {{site.data.keyword.cloud_notm}} infrastructure account applies only to the {{site.data.keyword.vcf-classic}} offerings: Automated, Flexible, and {{site.data.keyword.cr}}.
 {: note}
 
 Additionally, you must have an {{site.data.keyword.cloud_notm}} infrastructure account. The price of the components that are ordered in your instances is billed to that {{site.data.keyword.cloud_notm}} account.

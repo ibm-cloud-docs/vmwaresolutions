@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-06-25"
 
 keywords: usage meter, download, deployment
 
@@ -60,7 +60,7 @@ In the VMware vSphere® Web Client, complete the following steps:
     You must reuse the same portgroup where your management VMs are located. To find it, open the **Destination network** menu and click **Browse** to select the correct network.
     {: important}
 
-12. Under **Customize template**, create the required passwords and select the **Use Federal Information Processing Standards (FIPS)** checkbox. For network properties, configure the following settings:
+12. Under **Customize template**, create the required passwords and select the **Use Federal Information Processing Standards (FIPS)** checkbox. For network properties, configure the following settings. If you require assistance with the settings for the network properties, contact your network administrator to obtain the values that you need to enter.
     * **Hostname**: Set a unique hostname within your environment.
     * **Host network default gateway**: Enter the IP address of the gateway on your subnet where the IP address of the VMs is located.
     * **Domain name**: Enter the domain name of the VM. It must match the domain of your environment FQDNs and can be searched through your DNS servers.

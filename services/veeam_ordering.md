@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-06-24"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -65,8 +65,8 @@ Specify a name for this service instance. The name must be unique across all Vee
 {: #veeam_ordering-depl-type}
 
 Select one of the following options:
-* **Windows Server VM with iSCSI storage**. This option is not supported by {{site.data.keyword.rw}} instances.
-* **Single Windows VSI with iSCSI storage**. This option is not supported by Security and Compliance Readiness Bundle instances or {{site.data.keyword.rw}} instances.
+* **Windows Server VM with iSCSI storage**. This option is not supported for {{site.data.keyword.rw}} instances.
+* **Single Windows VSI with iSCSI storage**. This option is not supported for Security and Compliance Readiness Bundle instances and {{site.data.keyword.rw}} instances.
 * **Bare metal server with local storage**. This option requires VMware vSphere® 7.
 
 ### Storage size

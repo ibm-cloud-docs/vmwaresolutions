@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-06-23"
+lastupdated: "2025-06-25"
 
 keywords: planning vmware regulated workloads, data center vmware regulated workloads, vmware regulated workloads data centers
 
@@ -152,6 +152,5 @@ The following services are optional for {{site.data.keyword.rw}}:
 {: #vrw-planning-related}
 
 * [{{site.data.keyword.rw}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview)
-* [Ordering {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
 * [Viewing and deleting {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-view-delete-instance)
 * [{{site.data.keyword.rw}} reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)

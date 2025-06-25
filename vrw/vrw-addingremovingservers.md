@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-06-23"
+lastupdated: "2025-06-25"
 
 keywords: vmware regulated workloads, add hosts vmware regulated workloads, add servers vmware regulated workloads, remove hosts vmware regulated workloads
 
@@ -44,5 +44,4 @@ The processes to add and remove NFS storage for {{site.data.keyword.rw}} instanc
 {: #vrw-addingremovingservers-related}
 
 * [Planning for {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-planning)
-* [Ordering {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
 * [Adding, viewing, and deleting clusters for {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-addingviewingclusters#vrw-addingviewingclusters)

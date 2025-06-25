@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2025
 
-lastupdated: "2022-06-14"
+lastupdated: "2025-06-24"
 
 keywords: security and compliance readiness bundle, scb instance
 
@@ -35,4 +35,4 @@ Review the following specifications:
 The following options or settings are not available for Security and Compliance Readiness Bundle:
 * Local disks
 * High performance with Intel® Optane
-* Single public Windows® VSI for Active Directory™ DNS configuration. Only the option to order two highly available dedicated Windows server virtual machines (VMs) on the management cluster is available.
+* Single public Windows® VSI for Active Directory™ DNS configuration
