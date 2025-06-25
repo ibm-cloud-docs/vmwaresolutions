@@ -17,8 +17,6 @@ subcollection: vmwaresolutions
 # Gateway cluster
 {: #vrw-orderinginstance-edge}
 
-
-
 The **Gateway cluster** section is available for all firewall appliances except for **FortiGate Security Appliance**.
 
 ## Cluster name

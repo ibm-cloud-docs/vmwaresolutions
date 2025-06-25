@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-06-23"
+lastupdated: "2025-06-25"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -16,8 +16,6 @@ subcollection: vmwaresolutions
 
 # Firewall appliance
 {: #vrw-orderinginstance-firewall-appl}
-
-
 
 You have the following options for your firewall appliance:
 * **Gateway cluster with Juniper vSRX** - Order a dedicated cluster for the network edge and firewall components and install Juniper® vSRX on it.

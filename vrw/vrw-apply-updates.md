@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-06-24"
+lastupdated: "2025-06-25"
 
 subcollection: vmwaresolutions
 
@@ -14,8 +14,6 @@ subcollection: vmwaresolutions
 
 # Applying updates and version compatibility
 {: #vrw-apply-updates}
-
-
 
 The deployment of {{site.data.keyword.rw}} instances provides the following components:
 
