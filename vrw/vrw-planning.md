@@ -17,8 +17,6 @@ subcollection: vmwaresolutions
 # Planning for {{site.data.keyword.rw}}
 {: #vrw-planning}
 
-
-
 Review the following requirements before you order your {{site.data.keyword.rw}} instance. Plan your instance based on the {{site.data.keyword.cloud}} data center location, your capacity requirements, and services requirements.
 
 ## Account requirements

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-06-23"
+lastupdated: "2025-06-25"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -16,8 +16,6 @@ subcollection: vmwaresolutions
 
 # Resource details
 {: #vrw-orderinginstance-resource-details}
-
-
 
 Enter the instance name or accept the default value and specify the resource group for the {{site.data.keyword.rw}} instance.
 
