@@ -47,18 +47,19 @@ Open an IBM Support ticket by following the steps in [Getting help and support](
 
 Review the following considerations before you delete the HCX service:
 
-* Before you delete the service, you must remove any personal VMs from storage that is deployed with this service. HCX only orders personal VMs if it’s not vSAN.
-* Ensure that the service mesh and extended networks between the on-premises source site and the {{site.data.keyword.cloud_notm}} target sites are deleted. To remove the service mesh and extended networks, use the HCX user interface in the on-premises VMware vSphere Web Client.
-* Ensure that the site pairings between the on-premises source site and the {{site.data.keyword.cloud_notm}} target sites are removed. To remove the site pairings, use the HCX user interface in the on-premises VMware vSphere Web Client.
 * If you delete a workload cluster and that cluster is the service mesh cluster, the HCX service is automatically deleted.
 * The deletion of HCX is automated. The following procedures are completed for the successful deletion of this service:
    * The HCX license that is ordered for the cloud-side HCX Manager is deactivated.
    * HCX Manager is deleted.
    * The vMotion IP addresses that were reserved for HCX are released.
    * The HCX management edge appliances are deleted.
+* Only the VMs that were deployed during the initial installation of the HCX instances are deleted. Any node that is deployed after the installation is not cleaned up.
 
-Only the VMs that were deployed during the initial installation of the HCX instances are deleted. Any node that is deployed after the installation is not cleaned up.
-{: note}
+Complete the following tasks before you delete the HCX service:
+
+* Remove any personal VMs from the storage that is deployed with HCX. HCX orders personal VMs only for non-vSAN clusters.
+* From the HCX user interface in the on-premises VMware vSphere Web Client, delete the service mesh and the extended networks between the on-premises source site and the {{site.data.keyword.cloud_notm}} target sites.
+* From the same user interface, remove the site pairings between the on-premises source site and the {{site.data.keyword.cloud_notm}} target sites.
 
 ## Related links
 {: #managinghcx-related}
