@@ -143,7 +143,7 @@ vSphere 8 manual upgrade on Sapphire Rapids
 :   You can manually upgrade vSphere to version 8.0 on your instances with Sapphire Rapids servers. After that, you can migrate your NFS and gateway clusters to vSphere 8.0. For more information, see [Upgrading VMware vSphere software from vSphere 7.0 to 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_80-upgrade).
 
 Data centers for Sapphire Rapids
-:   You can deploy instances with specific {{site.data.keyword.cloud}} data centers for **Sapphire Rapids** servers. For more information, see [{{site.data.keyword.cloud_notm}} data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning#vc_planning-dc-availability).
+:   You can deploy instances with **Sapphire Rapids** servers in specific {{site.data.keyword.cloud}} data centers. For more information, see [{{site.data.keyword.cloud_notm}} data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning#vc_planning-dc-availability).
 
 DAL14 data center available
 :   The **Dallas 14** {{site.data.keyword.cloud_notm}} data center is available for deployment with Automated, Flexible, {{site.data.keyword.rw}}, and {{site.data.keyword.cr}} instances.
