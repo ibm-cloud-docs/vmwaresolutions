@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-10"
+lastupdated: "2025-06-27"
 
 keywords: HCX updates, HCX management console, login HCX console
 
@@ -22,17 +22,18 @@ subcollection: vmwaresolutions
 ## Accessing the HCX management consoles
 {: #managinghcx-accessing-consoles}
 
-To manage the VMware HCX® service, you must access the HCX Cloud console or the HCX Manager Admin console:
-1. Use the {{site.data.keyword.cloud}} infrastructure VPN or a jump server to allow access to the IP address of the HCX Manager virtual appliance (HCX Manager). You can find the IP address on the HCX service details page in the {{site.data.keyword.vmwaresolutions_short}} console.
-2. To access the HCX Cloud console, click **View HCX Cloud console** on the HCX service details page, and then log in by using the VMware vCenter Server® credentials.
-3. To access the HCX Manager Admin console, click **View HCX Manager Admin console** on the HCX service details page. Then, log in by using the HCX Manager credentials that are listed on the same service details page.
+To manage the VMware HCX™ service, you must access the HCX Cloud console or the HCX Manager Admin console:
 
-For more information, see [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
+* Use the {{site.data.keyword.cloud}} infrastructure VPN or a jump server to allow access to the IP address of the HCX Manager virtual appliance (HCX Manager). You can find the IP address on the HCX service details page in the {{site.data.keyword.vmwaresolutions_short}} console.
+* To access the HCX Cloud console, click **View HCX Cloud console** on the HCX service details page, and then log in by using the VMware vCenter Server® credentials.
+* To access the HCX Manager Admin console, click **View HCX Manager Admin console** on the HCX service details page. Then, log in by using the HCX Manager credentials that are listed on the same service details page.
+
+For more information, see [Viewing services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewingservices).
 
 ## Applying updates to HCX
 {: #managinghcx-updates}
 
-HCX is deployed with the most recently tested build of VMware Hybrid Cloud Extension technology. VMware® provides updates to the builds regularly, which include important fixes and new features. These builds are pushed to HCX installations automatically, including on-premises HCX installations.
+HCX is deployed with the most recently tested build of VMware Hybrid Cloud Extension technology. VMware® by Broadcom provides updates to the builds regularly, which include important fixes and new features. These builds are pushed to HCX installations automatically.
 
 To apply any maintenance fixes pushed to your environment, you must use the HCX Manager Admin console in your on-premises data center and your {{site.data.keyword.vcf-auto-short}} instance.
 
