@@ -600,8 +600,8 @@ toc:
           label: Understanding responsibilities
           topics:
           - include: ../vmware-service/common/vmaas-understand-responsib.md
-          - vmonic/ha-dr.md
           - vmonic/understand-responsib.md
+          - vmonic/ha-dr.md
           - link:
               label: Understanding data portability for VCF as a Service
               href: https://{DomainName}/docs/vmware-service?topic=vmware-service-data-portability
