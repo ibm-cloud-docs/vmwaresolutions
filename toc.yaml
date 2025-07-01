@@ -461,7 +461,6 @@ toc:
               label: For VMware Solutions
               topics:
               - vmonic/data-security.md
-              - vmonic/ha-dr.md
           - topicgroup:
               id: secure-audit
               label: Auditing
@@ -602,6 +601,7 @@ toc:
           topics:
           - include: ../vmware-service/common/vmaas-understand-responsib.md
           - vmonic/understand-responsib.md
+          - vmonic/ha-dr.md
           - link:
               label: Understanding data portability for VCF as a Service
               href: https://{DomainName}/docs/vmware-service?topic=vmware-service-data-portability
