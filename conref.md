@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-06-19"
+lastupdated: "2025-07-02"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -344,16 +344,6 @@ For existing instances or clusters with vCenter Server 7, you can add only vCent
 
 CONTENT:
 
-As of 28 March 2024, {{site.data.keyword.vm-shared}} is not available for new deployments and support for existing instances ended on 28 February 2025. As of 4 March 2025, all VMs are powered off and on 6 April 2025, all customer and management data will be deleted. To avoid permanent deletion of your {{site.data.keyword.vm-shared}} backups and to migrate your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service), open an IBM Support ticket by 6 April 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
-{: deprecated}
-{: #shared-deprecated-note}
-
-
-
-
-
-CONTENT:
-
 The VMware® licensing model is changed. You are entitled to the [VMware software products](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact) that are included in the VMware Cloud Foundation™ bundle. To request VMware NSX® license upgrades and other licensing changes, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: #vmware-licensing}
 
@@ -418,9 +408,6 @@ In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-cla
 
 In the VMware Solutions console, click **Licensing and metering > Add-on services** from the left navigation panel.
 {: #ol-intro-ui-licenses}
-
-In the VMware Solutions console, click **Resources > {{site.data.keyword.vm-shared}}** from the left navigation panel.
-{: #ol-intro-ui-shared}
 
 In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc-short}}** from the left navigation panel.
 {: #ol-intro-ui-vcfvpc}

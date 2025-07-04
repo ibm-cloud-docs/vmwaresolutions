@@ -485,7 +485,6 @@ toc:
               label: Platform metrics
               topics:
               - include: ../vmware-service/common/single-tenant-monitoring.md
-              - shared/shared-monitor.md
       - topicgroup:
           id: deprecated-offerings
           label: Deprecated offerings
@@ -493,39 +492,10 @@ toc:
           - topicgroup:
               id: end-of-support-services
               label: End of Support notices
-              topics:
-              - vmonic/eos-vmware-shared.md
+              topics: 
               - vmonic/eos-nsx-v.md
               - vmonic/eos-vsphere67.md
               - vmonic/eos-vsphere65.md
-          - topicgroup:
-              id: vmware-shared
-              label: VMware Shared
-              topics:
-              - shared/shared_overview.md
-              - shared/shared_migration.md
-              - shared/shared-vmwaas-migration.md
-              - shared/shared_planning.md
-              - shared/shared_data_security.md
-              - shared/shared_ordering.md
-              - shared/shared_creating-endpoints.md
-              - shared/shared_viewing-endpoints.md
-              - shared/shared_modifying-endpoints.md
-              - shared/shared_deleting-endpoints.md
-              - shared/shared_veeam.md
-              - shared/shared_zerto-portal.md
-              - shared/shared_zerto-cloud-connector-order.md
-              - shared/shared_zerto-cloud-connector-view.md
-              - shared/shared_zerto-cloud-connector-delete.md
-              - shared/shared_viewing-vdc-summary.md
-              - shared/shared_viewing-vdc-details.md
-              - shared/shared_iam-integration.md
-              - shared/iam_vcd.md
-              - shared/shared_accessing-vcd-console.md
-              - shared/shared_vcd-ops-guide.md
-              - shared/shared_resizeinstance.md
-              - shared/shared_deletinginstance.md
-              - shared/shared_pricing.md
           - topicgroup:
               id: mutizone-instances
               label: Multizone instances
@@ -964,9 +934,8 @@ toc:
           - vmonic/faq_usage-meter.md
           - vmonic/faq_byol.md
           - vmonic/faq_esxi.md
-          - vmonic/faq-v2t-migration.md
-          - vmonic/faq_shared-eos.md
-          - vmonic/faq_shared.md
+          - topic: vmonic/faq-v2t-migration.md
+            navtitle: FAQ about NSX-V to NSX-T migration
           - vmonic/iam_verify_permissions.md
           - vmonic/trbl_limitations.md
           - vcenter/vcenter_chg_impact.md

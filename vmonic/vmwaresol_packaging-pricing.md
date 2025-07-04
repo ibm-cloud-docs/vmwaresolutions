@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-07-02"
 
 keywords: vmware solutions packaging, vmware solutions pricing, vmware solutions naming
 
@@ -34,7 +34,6 @@ The following table shows the changes of the offering names across the VMware So
 | VMware Cloud Foundation | **{{site.data.keyword.vcf-vpc}}** or **{{site.data.keyword.vcf-vpc-short}}** |
 | VMware vCenter Server® | **{{site.data.keyword.vcf-auto}}** or **{{site.data.keyword.vcf-auto-short}}** |
 | VMware vSphere® | **{{site.data.keyword.vcf-flex}}** or **{{site.data.keyword.vcf-flex-short}}** |
-| {{site.data.keyword.vm-shared}} | {{site.data.keyword.vm-shared}} (no change) \n This offering is reaching [End of Support](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared). |
 | VMware ESXi™ on Bare Metal for Classic | VMware ESXi on Bare Metal for Classic (no name change) |
 | VMware ESXi on Bare Metal for VPC | VMware ESXi on Bare Metal for VPC (no name change) \n This offering is reaching [End of Support](/docs/vpc?topic=vpc-release-notes&interface=ui#vpc-mar2824). |
 {: caption="Current and updated offering names" caption-side="bottom"}
