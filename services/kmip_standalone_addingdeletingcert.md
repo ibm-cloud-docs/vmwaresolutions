@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-06-14"
+lastupdated: "2025-07-07"
 
 keywords: KMIP certificate, add certificate KMIP, delete certificate KMIP
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Managing certificates for KMIP for VMware instances
 {: #kmip_standalone_addingdeletingcert}
 
-{{site.data.content.kmip-deprecated-note}}
+
 
 You can view the certificates that you added to your KMIP™ for VMware® instance. When you no longer need a certificate, you can also delete it from your instance.
 

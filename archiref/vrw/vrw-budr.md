@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-06-04"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Business continuity
 {: #vrw-budr}
+
+
 
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads provides business continuity only at the management and edge layers.
 

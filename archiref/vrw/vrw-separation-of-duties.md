@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-03-26"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Zero trust model
 {: #vrw-separation-of-duties}
+
+
 
 {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads is designed following the concept of a zero trust model. Wherever practical, the scope of action of any one individual administrator is strictly limited to those actions necessary and appropriate to perform their assigned roles. Overlap of duties is minimized or eliminated to prevent the need for privilege escalation. The escalation can result in undesired flows of information in or out of any layer of the {{site.data.keyword.rw}}.
 

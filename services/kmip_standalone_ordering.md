@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-06-14"
+lastupdated: "2025-07-07"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ordering KMIP for VMware instances
 {: #kmip_standalone_ordering}
 
-{{site.data.content.kmip-deprecated-note}}
+
 
 You can order a KMIP™ for VMware® instance without associating it to any {{site.data.keyword.vcf-auto}} instance for flexible management of the service and instances.
 
@@ -86,6 +86,7 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
 {: #simpletabtable1}
 {: tab-title="Hyper Protect Crypto Services"}
 {: tab-group="Settings when selecting different key management service"}
+
 
 | Setting | Description |
 |:------- |:----------- |

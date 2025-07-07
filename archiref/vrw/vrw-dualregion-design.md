@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-04-14"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Dual region Disaster Recovery design
 {: #vrw-dualregion-design}
+
+
 
 The design uses the following structure:
 * Network

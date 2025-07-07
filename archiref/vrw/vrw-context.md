@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # System context
 {: #vrw-context}
+
+
 
 Although {{site.data.keyword.cloud}} for VMware® Regulated Workloads is a self-contained design, some external dependencies exist. {{site.data.keyword.cloud_notm}} for Regulated Workloads is designed without the use of {{site.data.keyword.cloud_notm}} shared offerings such as VSIs and shared storage offerings.
 
