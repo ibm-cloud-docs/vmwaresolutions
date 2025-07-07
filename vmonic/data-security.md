@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-12-18"
+lastupdated: "2025-07-07"
 
 keywords: data encryption in VMware Solutions, data storage for VMware Solutions, bring your own keys for VMware Solutions, BYOK for VMware Solutions, key management for VMware Solutions, key encryption for VMware Solutions, personal data in VMware Solutions, data deletion for VMware Solutions, data in VMware Solutions, data security in VMware Solutions
 
@@ -40,19 +40,6 @@ These solutions include the following options:
 * Other self–managed VMware–compatible encryption technologies
 
 For {{site.data.keyword.vm-shared}}, your workload data exists in an IBM–managed cloud infrastructure account. You are provided with the default vSphere encryption option for your VMs, which uses IBM–managed keys that are backed by the {{site.data.keyword.cloud_notm}} KMIP for VMware and Hyper Protect Crypto Services. You can optionally implement your own encryption solutions within your VMware workloads.
-
-## Data storage and encryption in Veeam Availability Suite service for {{site.data.keyword.vm-shared}}
-{: #data-security-data-veeamshared}
-
-{{site.data.content.shared-deprecated-note}}
-
-If you have a {{site.data.keyword.vm-shared}} instance, you can get extra services, such as Veeam Availability Suite™, which is relevant to data storage and encryption.
-
-The Veeam Availability Suite backup storage uses a unique scale-out backup repository (SOBR) object for each customer. The SOBR is programmatically configured for each customer, with a dedicated location on each disk and a generated backup file encryption password. The SOBR includes an extent that is backed by {{site.data.keyword.blockstoragefull}} in each of the physical data centers within the specific region. For example, if the virtual data center is in **Dallas 10**, the SOBR has extents in **Dallas 10**, **Dallas 12**, and **Dallas 13**. The SOBR includes a customer-specific Cloud Object Storage bucket for more cost-effective long-term storage and as a second copy. Depending on the regions and compliance requirements of each geography, the Cloud Object Storage buckets remain in the same country, which is sometimes the same physical site.
-
-When you decide to use the Veeam self-service portal to create backup jobs, identify which vApp and VM instances from any virtual data center in the organization participate in the backup job. Those backups are stored in the organizations SOBR.
-
-You can manage (restore or delete) backups in the Veeam self-service portal. All backups are deleted if a virtual organization is deleted.
 
 ## IBM policy for data protection with Veeam
 {: #data-security-veeam-policy}

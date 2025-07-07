@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-03-31"
+lastupdated: "2025-07-07"
 
 keywords: activity tracking, tracking locations, enable events, view events, analyze events
 
@@ -108,22 +108,6 @@ The initiator ID is derived from the TLS (Transport Layer Security) certificate
 | `vmware-solutions.kmip-key.revoke` | A KMIP key is revoked. |
 | `vmware-solutions.kmip-key.destroy` | A KMIP key is destroyed. |
 {: caption="Description of actions that generate events for the KMIP for VMware service" caption-side="bottom"}
-
-## Events for {{site.data.keyword.vm-shared}}
-{: #at-events-vdc}
-
-{{site.data.content.shared-deprecated-note}}
-
-When you use {{site.data.keyword.vm-shared}}, an event is generated to track how users and applications interact with virtual data centers.
-
-The following table lists the actions that generate and send an event to {{site.data.keyword.at_short}}.
-
-| Action | Description | Outcome |
-|:------ |:----------- |:------- |
-| `vmware-solutions.vdc.create` | An event is generated when a virtual data center instance is created. |`pending` \n `success` \n `failure` |
-| `vmware-solutions.vdc.delete` | An event is generated when a virtual data center instance is deleted. | `pending` \n `success` \n `failure` |
-| `vmware-solutions.vdc.update` | An event is generated when capacity is added to a virtual data center instance. \n An event is generated when capacity is removed from a virtual data center instance. | `pending` \n `success` \n `failure` |
-{: caption="Description of actions that generate {{site.data.keyword.vm-shared}} events" caption-side="bottom"}
 
 ## Related links
 {: #at-events-links}

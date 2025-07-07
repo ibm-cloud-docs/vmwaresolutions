@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -117,75 +117,6 @@ Changes to VMware ESXi server names or configurations might have a negative impa
 In {{site.data.keyword.vmwaresolutions_short}}, every primary instance deploys an Active Directory domain controller. To understand the limitations on changes that you can make and recommendations on integration in your environment, see:
 * [VMware Solutions infrastructure domain](/docs/vmwaresolutions?topic=vmwaresolutions-adds-infra-domain)
 * [VMware Solutions workload domain](/docs/vmwaresolutions?topic=vmwaresolutions-adds-wkld-domain)
-
-## Understanding your responsibilities when you use {{site.data.keyword.vm-shared}}
-{: #understand-responsib-vm-shared}
-
-{{site.data.content.shared-deprecated-note}}
-
-### Incident and operations management for {{site.data.keyword.vm-shared}}
-{: #understand-responsib-incident-and-ops-shared}
-
-The following table describes the responsibilities that are related to incident and operations management for {{site.data.keyword.vm-shared}}:
-
-| Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
-|:---- |:----------------------------------------------- |:--------------------- |
-| Availability | Offer high availability options through multizone region[^mzr1] virtual data centers. | Provision virtual data centers in each multizone region[^mzr2] and deploy workloads. |
-| Infrastructure monitoring and notification | Remediate all environment issues. Notify customers of applicable impacts. | Ascertain the impact of each notification that is reported. Engage IBM Support as required. |
-| Workload monitoring | Forward to customer any network intrusion notifications detected. Triage virtualization and backup-related errors to determine whether the customer issue needs assistance. Remediate all hardware failures, notification of potential workload impact. | Monitor and respond to OS or software failures, backup, and replication jobs. Engage IBM Support as required. |
-| Infrastructure management | New features, updates, and bug fixes are continuously delivered as needed in a manner transparent to you. Maintenance activities that have customer impact are scheduled in advance, and notifications are posted to the {{site.data.keyword.cloud_notm}} status page. | Set preferences to receive emails notifications. Monitor the {{site.data.keyword.cloud_notm}} status page for general announcements. |
-| Incident management | Unplanned incidents with customer impact are communicated through the CIE process. | Impacted customers can obtain a report about the incident upon request. |
-{: row-headers}
-{: caption="Responsibilities for incident and operations for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
-{: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
-{: #understand-responsib-incident-and-ops-shared-table}
-
-[^mzr1]: Multizone region virtual data centers are limited to allowlisted customers. For more information, contact your VMware Solutions representative.
-
-[^mzr2]: Multizone region virtual data centers are limited to allowlisted customers. For more information, contact your VMware Solutions representative.
-
-### Change management for {{site.data.keyword.vm-shared}}
-{: #understand-responsib-change-management-shared}
-
-The following table describes the responsibilities that are related to change management for {{site.data.keyword.vm-shared}}:
-
-| Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
-|:---- |:----------------------------------------------- |:--------------------- |
-| Updates, fixes, and new features | Regular updates, bug fixes, and new features are provided, following a continuous delivery model in a way that is transparent to you. Notifications are posted for changes that impact you. | Set preferences to receive email notifications. Monitor the {{site.data.keyword.cloud_notm}} status page for general announcements. |
-| Scaling | Scale the customer VMware infrastructure as requested and to meet the capacity that you selected. | Choose the capacity for your VMware Solutions instances. |
-{: row-headers}
-{: caption="Responsibilities for change management for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
-{: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
-{: #understand-responsib-change-management-shared-table}
-
-### Security and regulation compliance for {{site.data.keyword.vm-shared}}
-{: #understand-responsib-security-compliance-shared}
-
-The following table describes the responsibilities that are related to security and regulation compliance for {{site.data.keyword.vm-shared}}:
-
-| Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
-|:---- |:----------------------------------------------- |:--------------------- |
-| Encryption | Secure connections are provided to administration portals and replication endpoints. Backups are encrypted uniquely per customer. | If required, secure with HTTPS. |
-{: row-headers}
-{: caption="Responsibilities for security and regulation compliance for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
-{: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
-{: #understand-responsib-security-compliance-shared-table}
-
-### Disaster recovery for {{site.data.keyword.vm-shared}}
-{: #understand-responsib-disaster-recovery-shared}
-
-The following table describes the responsibilities that are related to disaster recovery for {{site.data.keyword.vm-shared}}:
-
-| Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
-|:---- |:----------------------------------------------- |:--------------------- |
-| Backup of configuration data | Backups are conducted of the shared management components to include customer environment configurations. Offsite backup copies are enabled and they run daily. |  |
-| Backup of workload | Backup services are enabled for customer workload. | Configure individual backup jobs to include critical systems. Offsite copies can be enabled per request. |
-| Recovery of configuration | Recovery will be conducted in the original data center after the infrastructure is available. If long-term outage occurs, offsite recovery is conducted. | |
-| Recovery of workloads | Restore capabilities are available in normal operations. For configuration restores, customer restore services will be provided after the infrastructure is available. If an offsite recovery is required, IBM works with the customer to help recover. | Restore systems from the configured backup jobs. |
-{: row-headers}
-{: caption="Responsibilities for disaster recovery for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
-{: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
-{: #understand-responsib-disaster-recovery-shared-table}
 
 ## Related links
 {: #understand-responsib-related}
