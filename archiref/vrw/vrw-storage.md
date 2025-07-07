@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Storage
 {: #vrw-storage}
+
+
 
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads employs multiple storage types.
 

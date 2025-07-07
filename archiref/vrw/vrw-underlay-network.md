@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Underlay networking
 {: #vrw-underlay-network}
+
+
 
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads requires isolated networking between the workload clusters and the management and gateway clusters.
 

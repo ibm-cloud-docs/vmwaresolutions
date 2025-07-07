@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Encryption
 {: #vrw-encryption}
+
+
 
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads relies upon VMware vSphere® encryption to secure management and production VMs while at-rest or in-transit. VMware vSphere encryption applies to all types of VMware storage, including vSAN storage. With the vSphere encryption solution, VMware vCenter Server® and your ESXi™ hosts connect to a key management server to get the required encryption keys. These keys are used to protect individual virtual machine (VM) disks, according to your VM storage policies.
 

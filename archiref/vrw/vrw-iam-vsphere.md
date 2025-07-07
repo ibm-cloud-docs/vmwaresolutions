@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # vCenter identity and access management
 {: #vrw-iam-vsphere}
+
+
 
 Inside {{site.data.keyword.cloud}} for VMware® Regulated Workloads, multiple levels of access are available. The automation uses a set of user IDs to perform operations such as adding hosts, clusters, or storage to your VMware instance.
 

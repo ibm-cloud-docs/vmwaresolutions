@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-02-17"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # NSX administration interface identity and access management
 {: #vrw-iam-nsxt}
+
+
 
 The following main principles or requirements apply:
 * `Infrastructure Admin` has `execute` and `full access` to all components.
