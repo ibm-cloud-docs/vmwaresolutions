@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-08"
 
 keywords: data encryption in VMware Solutions, data storage for VMware Solutions, bring your own keys for VMware Solutions, BYOK for VMware Solutions, key management for VMware Solutions, key encryption for VMware Solutions, personal data in VMware Solutions, data deletion for VMware Solutions, data in VMware Solutions, data security in VMware Solutions
 
@@ -25,11 +25,12 @@ Know what data is stored and encrypted and how to delete any stored data to ensu
 
 When a user onboards to VMware Solutions and orders instances, we store and manage user data of configuration and metadata that is associated with the user and ordered instances. That user data includes the following items.
 
-* For both {{site.data.keyword.vcf-auto}} and {{site.data.keyword.vm-shared}} instances, the user data includes the following items:
-   * IBMid (email)
-   * Instance configuration information
-   * Instance access information such as login credentials to VMware Cloud Director, VMware vCenter Server®, and VMware NSX® Manager.
-* Additionally for {{site.data.keyword.vcf-auto-short}}, the user data also includes the {{site.data.keyword.cloud_notm}} classic infrastructure credentials (username and API key).
+For {{site.data.keyword.vcf-auto}} instances, the user data includes the following items:
+
+* IBMid (email)
+* Instance configuration information
+* Instance access information such as login credentials to VMware Cloud Director, VMware vCenter Server®, and VMware NSX® Manager
+* {{site.data.keyword.cloud_notm}} classic infrastructure credentials (username and API key)
 
 This configuration data and metadata is stored and managed by IBM. It is encrypted at REST and in transit. Additionally, sensitive data such as API keys and access information are encrypted with customer–specific encryption keys.
 
@@ -38,8 +39,6 @@ For {{site.data.keyword.vcf-auto-short}}, you can bring your own data to {{site.
 These solutions include the following options:
 * KMIP™ for VMware service along with {{site.data.keyword.cloud_notm}} Key Protect or {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services to enable vSAN™ or VMware vSphere® encryption for your workloads
 * Other self–managed VMware–compatible encryption technologies
-
-For {{site.data.keyword.vm-shared}}, your workload data exists in an IBM–managed cloud infrastructure account. You are provided with the default vSphere encryption option for your VMs, which uses IBM–managed keys that are backed by the {{site.data.keyword.cloud_notm}} KMIP for VMware and Hyper Protect Crypto Services. You can optionally implement your own encryption solutions within your VMware workloads.
 
 ## IBM policy for data protection with Veeam
 {: #data-security-veeam-policy}
@@ -111,17 +110,12 @@ For {{site.data.keyword.vcf-auto-short}}, you can take steps to limit {{site.dat
 * You can regenerate this API key to revoke automation and support access to your API key. When you need to restore {{site.data.keyword.cloud_notm}} access, for example, to deploy a new host, you must reenter the API key on the **Settings** page of the VMware Solutions console.
 * {{site.data.keyword.cloud_notm}} retains a set of [user IDs](/docs/vmwaresolutions?topic=vmwaresolutions-audit_user_ids) in your instance. You can disable or revoke these user IDs. When you need to restore {{site.data.keyword.cloud_notm}} access, for example, to deploy a new host, you must re-enable these accounts. If you changed the password for these accounts, you must open a support ticket to provide the updated password to {{site.data.keyword.cloud_notm}}.
 
-For {{site.data.keyword.vm-shared}}, {{site.data.keyword.cloud_notm}} manages the virtualization environment and this access cannot be revoked.
-
 ### About customer-managed keys
 {: #data-security-about-encryption}
 
-* For {{site.data.keyword.vcf-auto-short}}, envelope encryption is used to offer customer–managed keys.
-* For {{site.data.keyword.vm-shared}}, envelope encryption is used but with IBM–managed rather than customer–managed keys.
+For {{site.data.keyword.vcf-auto-short}}, envelope encryption is used to offer customer–managed keys. Envelope encryption within VMware Solutions uses the [KMIP for VMware service](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) to provide key management for vSphere or vSAN encryption.
 
-Envelope encryption within VMware Solutions uses the [KMIP for VMware service](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) to provide key management for vSphere or vSAN encryption.
-
-In both cases, these offerings use {{site.data.keyword.cloud_notm}} Key Protect or {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services for key wrapping and unwrapping. Key Protect offers Bring Your Own Key (BYOK) capability by using FIPS 140–2 level 3 certified hardware security modules (HSMs). Hyper Protect Crypto Services offers Keep Your Own Key (KYOK) capability by using FIPS 140–2 level 4 certified HSMs.
+This offering uses {{site.data.keyword.cloud_notm}} Key Protect or {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services for key wrapping and unwrapping. Key Protect offers Bring Your Own Key (BYOK) capability by using FIPS 140–2 level 3 certified hardware security modules (HSMs). Hyper Protect Crypto Services offers Keep Your Own Key (KYOK) capability by using FIPS 140–2 level 4 certified HSMs.
 
 ### Enabling customer-managed keys for VMware Solutions
 {: #data-security-using-byok}
@@ -141,8 +135,7 @@ For more information about considerations for VMware key management, key revocat
 ### Deleting VMware Solutions instances
 {: #data-security-service-delete}
 
-* When you delete a {{site.data.keyword.vcf-auto-short}} instance, all associated customer workload data is deleted. The underneath IaaS resources are also deleted at the end of the corresponding billing cycle. 
-* When you delete a {{site.data.keyword.vm-shared}} instance, all associated customer data is deleted immediately.
+When you delete a {{site.data.keyword.vcf-auto-short}} instance, all associated customer workload data is deleted. The underneath IaaS resources are also deleted at the end of the corresponding billing cycle. 
 
 Along with the instance deletion, the instance's configuration and metadata are also marked as "inactive". You can request complete deletion of the metadata through a "secure wipe" ticket.  
 
