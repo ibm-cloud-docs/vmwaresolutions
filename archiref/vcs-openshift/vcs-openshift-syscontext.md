@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-06-13"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # System context for {{site.data.keyword.vcf-classic-short}} and Red Hat OpenShift architecture
 {: #vcs-openshift-syscontext}
+
+
 
 The following diagram shows the system context for this reference architecture. A system context diagram is a high-level diagram that provides an initial view of the system. It defines the key elements of a system, the boundary of the system, and the entities that interact with it, along with the interaction.
 

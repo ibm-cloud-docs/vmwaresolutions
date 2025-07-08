@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-05-21"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # Red Hat OpenShift architecture
 {: #vcs-openshift-redhat-arch}
+
+
 
 The {{site.data.keyword.vmwaresolutions_full}} offerings provide automation to deploy VMware® technology components in
 {{site.data.keyword.cloud_notm}} data centers across the globe. The architecture consists of a single cloud region. It supports the ability to extend into more cloud regions that are located in another geography or into another {{site.data.keyword.cloud_notm}} pod within the same data center.

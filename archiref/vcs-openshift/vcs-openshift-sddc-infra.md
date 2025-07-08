@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2024
+  years: 2016, 2025
 
-lastupdated: "2024-06-13"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # {{site.data.keyword.cloud_notm}} networking and infrastructure
 {: #vcs-openshift-sddc-infra}
+
+
 
 ## Physical structure
 {: #vcs-openshift-sddc-infra-phys-struct}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-09-25"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Prerequisites for installation
 {: #openshift-runbook-runbook-prereq-intro}
+
+
 
 Before you can start the build process to install the {{site.data.keyword.redhat_openshift_full}} cluster, the following steps are required.
 

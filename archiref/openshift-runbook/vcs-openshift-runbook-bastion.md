@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-06-12"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Red Hat OpenShift Bastion node setup
 {: #openshift-runbook-runbook-bastion-intro}
+
+
 
 To enable the deployment, a virtual machine (VM) is provisioned to run the {{site.data.keyword.redhat_openshift_full}} installation steps and host an HTTP Server. This VM is known as the bastion node. The bastion node is connected to the {{site.data.keyword.redhat_openshift_notm}} logical switch and the ESG firewall and NAT rules are configured to allow SSH access from the jump-server or remote device.
 

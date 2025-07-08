@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-02"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # VMware Solutions and Red Hat OpenShift overview
 {: #openshift-runbook-runbook-intro}
+
+
 
 {{site.data.keyword.vmwaresolutions_full}} includes fully automated, rapid deployments of {{site.data.keyword.vcf-auto}} in the {{site.data.keyword.cloud_notm}}. These offerings complement the on-premises infrastructure and allow existing and future workloads to run in the {{site.data.keyword.cloud_notm}} without conversion by using the same tools, skills, and processes they use on-premises. For more information, see [What is virtualization?](https://www.ibm.com/think/topics/virtualization){: external}.
 

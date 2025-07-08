@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-02-17"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # {{site.data.keyword.redhat_openshift_notm}} NSX logical switches configuration
 {: #openshift-runbook-runbook-nsxls-intro}
+
+
 
 Review the NSX logical switches that are used to support the {{site.data.keyword.redhat_openshift_full}} 4.7 environment. To use this information, you must understand how to create these components and add the configuration.
 

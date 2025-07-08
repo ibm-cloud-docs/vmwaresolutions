@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-03-18"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Troubleshooting Red Hat OpenShift problems
 {: #openshift-runbook-runbook-trbl-intro}
+
+
 
 Use the troubleshooting information to diagnose and fix problems with {{site.data.keyword.redhat_openshift_full}}.
 

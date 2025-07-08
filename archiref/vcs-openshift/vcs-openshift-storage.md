@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-06-13"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # Storage options on {{site.data.keyword.cloud_notm}} and Red Hat OpenShift
 {: #vcs-openshift-storage}
+
+
 
 ## vSphere storage for Kubernetes
 {: #vcs-openshift-storage-kubernetes}

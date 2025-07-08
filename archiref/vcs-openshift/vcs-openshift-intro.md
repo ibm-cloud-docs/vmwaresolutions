@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-12-19"
+lastupdated: "2025-07-07"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # {{site.data.keyword.vcf-classic-short}} and Red Hat OpenShift architecture overview
 {: #vcs-openshift-intro}
+
+
 
 The {{site.data.keyword.vmwaresolutions_full}} offering includes fully automated, rapid deployments of {{site.data.keyword.vcf-classic}}. This offering complements the on-premises infrastructure and allows existing and future workloads to run on {{site.data.keyword.cloud_notm}} without conversion by using the same tools, skills, and processes that are used on-premises. For more information, see [What is virtualization?](https://www.ibm.com/think/topics/virtualization){: external}.
 
