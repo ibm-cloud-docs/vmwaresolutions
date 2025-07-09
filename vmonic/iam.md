@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-02"
+lastupdated: "2025-07-08"
 
 keywords: IAM user, user role, user permission, IAM access for vmwaresolutions, permissions for vmwaresolutions, identity and access management for vmwaresolutions, roles for vmwaresolutions, actions for vmwaresolutions, assigning access for vmwaresolutions
 
@@ -92,9 +92,6 @@ You can choose from the following options when you assign resource access.
 6. Select any combination of roles and click **Review** to review all of your selections.
 7. Optionally, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") to update any of your selections.
 8. Click **Add** and click **Assign**.
-
-To grant user permission to create new instances for {{site.data.keyword.vm-shared}}, you must also assign Resource Group access policies. For more information, see [Giving access to resources in resource groups](/docs/account?topic=account-rgs_manage_access).
-{: important}
 
 ## Managing access for users
 {: #iam-users}
