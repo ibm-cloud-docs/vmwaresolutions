@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-06-25"
+lastupdated: "2025-07-09"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Management cluster for {{site.data.keyword.rw}} multizone
 {: #vrw-orderinginstance-mgmt-cluster}
 
-New deployments of {{site.data.keyword.rw}} multizone instances are not supported. For existing multizone instances, you can still add and delete clusters, add and delete ESXi servers or NFS storage, and delete add-on services.
+New deployments of {{site.data.keyword.rw}} multizone instances are not supported. For existing multizone instances, you can still add or delete clusters, add or delete ESXi servers or NFS storage, and delete add-on services.
 {: deprecated}
 
 ## Cluster name
@@ -48,7 +48,7 @@ Choose the number of management hosts to be deployed in two availability zones. 
 ## vSAN configuration
 {: #vrw-orderinginstance-mgmt-vsan}
 
-* For the **Management-optimized** cluster, you get two vSAN™ capacity disks 1.9 TB SSD.
+* For the **Management-optimized** cluster, you get two vSAN™ capacity disks of 1.9 TB SSD.
 * For the **Customizable consolidated** cluster, you can choose the type and number of capacity disks according to your requirements.
 
 ## Estimated resources available per cluster
