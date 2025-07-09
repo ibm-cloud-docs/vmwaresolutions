@@ -149,8 +149,7 @@ toc:
               label: Reference
               topics:
               - include: ../vmware-service/common/policies.md
-              - include: ../vmware-service/common/ha.md
-              - include: ../vmware-service/common/bc-dr.md
+              - include: ../vmware-service/common/ha-dr.md
       - topicgroup:
           id: vcf-classic-automated
           label: VCF for Classic - Automated
