@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-04-30"
+lastupdated: "2025-07-10"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -58,21 +58,20 @@ When you plan your {{site.data.keyword.vcf-vpc-short}} deployment, you also need
 ## Configuration updates for {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-plan-configchanges}
 
-For all {{site.data.keyword.vcf-vpc-short}} instances, you cannot download updates for some components from the Broadcom public repositories.
+You cannot download configuration updates for some {{site.data.keyword.vcf-vpc-short}} components from the Broadcom public repositories.
 
-For new {{site.data.keyword.vcf-vpc-short}} instances, take note of all the configuration links as you might need them for future upgrades.
-{: important}
+For existing {{site.data.keyword.vcf-vpc-short}} instances, you must complete the following steps:
 
-For existing {{site.data.keyword.vcf-vpc-short}} instances, since you cannot download configuration updates from the Broadcom site, you must complete the following steps:
-
-1. Open an [IBM Support ticket](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to obtain a download token.
+1. To obtain a download token, open an [IBM Support ticket](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 2. Configure the download URL for each component manually. For more information, see [VCF authenticated downloads configuration update instructions](https://knowledge.broadcom.com/external/article/390098){: external}.
-3. Then, apply the configuration changes to the following {{site.data.keyword.vcf-vpc-short}} components yourself:
+3. Apply the configuration changes to the following components yourself:
 
    * VMware SDDC Manager. For more information, see [SDDC fails to download the updates from online repositories - Apply the Token (Manual method)](https://knowledge.broadcom.com/external/article/389871){: external}.
    * VMware vCenter Server. For more information, see [vCenter Server patching through VAMI fails to download the updates from online repositories - Resolution](https://knowledge.broadcom.com/external/article/390120){: external}.
    * VMware vSphere ESXi. For more information, see [vLCM fails to download the ESXi patches and images from online repositories - Resolution](https://knowledge.broadcom.com/external/article/390121){: external}.
 
+For new {{site.data.keyword.vcf-vpc-short}} instances, take note of the configuration links listed previously, as you might need them for future upgrades.
+{: tip}
 
 ## Related links
 {: #vpc-vcf-plan-links}
