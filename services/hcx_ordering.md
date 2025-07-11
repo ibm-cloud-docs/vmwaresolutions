@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-07-09"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -103,9 +103,9 @@ The deployment of HCX is automated. Whether you order a {{site.data.keyword.vcf-
 {{site.data.content.impnote-deploymanual-hcx}}
 
 1. Three subnets are ordered for HCX from the {{site.data.keyword.cloud_notm}} infrastructure:
-   * One private portable subnet for HCX management.
+   * One private portable subnet for HCX management
    * One private portable subnet for HCX interconnects. This subnet is used when the **Private network** option is selected for **HCX connection type**.
-   * One public portable subnet for HCX interconnects, if the **Public network** option is selected for **HCX connection type**. On NSX-V, this subnet is also used for activation and maintenance with VMware.
+   * One public portable subnet for HCX interconnects, if the **Public network** option is selected for **HCX connection type**.
 
    The IP addresses in the subnets that are ordered for HCX are intended to be managed by the VMware Solutions automation. These IP addresses cannot be assigned to VMware resources (such as VMs and NSX Edges) that are created by you. If you need more IP addresses for your VMware artifacts, you must order your own subnets from {{site.data.keyword.cloud_notm}}.
    {: restriction}
