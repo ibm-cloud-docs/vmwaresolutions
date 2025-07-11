@@ -498,7 +498,7 @@ toc:
               - vmonic/eos-vsphere67.md
               - vmonic/eos-vsphere65.md
           - topicgroup:
-              id: mutizone-instances
+              id: multizone-instances
               label: Multizone instances
               topics:
               - services/mcv-archi-bom.md
