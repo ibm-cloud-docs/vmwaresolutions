@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-07-11"
 
 keywords: vcf automated view clusters, view clusters, view vcf classic cluster
 
@@ -63,7 +63,7 @@ View the summary and detailed information of the clusters that are provisioned i
 | Memory | The total memory size of the ESXi servers in the cluster. |
 | Customized vSAN disks | The number of vSAN disks in the cluster, including the disk type and capacity. |
 | vSAN cache disks | The type and number of vSAN cache disks. |
-| Networking |The network interface card (NIC) enablement settings of either Public and Private Network or Private Network Only. |
+| Networking |The network interface card (NIC) enablement settings of either **Public and private network** or **Private network only**. |
 {: caption="Additional ESXi server details" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #table2}
