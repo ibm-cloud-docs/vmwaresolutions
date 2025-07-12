@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-12"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 
 
-Review the NSX components that are used to support the {{site.data.keyword.redhat_openshift_full}} 4.7 environment. To use this information, you must understand how to create these components and add the configuration. Review [Add a Tier-0 Gateway](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/tier-0-gateways/add-an-nsx-tier-0-gateway.html){: external}. PowerNSX commands are provided if you would want to use this method.
+Review the NSX components that are used to support the {{site.data.keyword.redhat_openshift_full}} 4.7 environment. To use this information, you must understand how to create these components and add the configuration. Review [Add an NSX Tier-0 Gateway](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/tier-0-gateways/add-an-nsx-tier-0-gateway.html){: external}. PowerNSX commands are provided if you would want to use this method.
 
 ![{{site.data.keyword.redhat_openshift_notm}} 4.7 networking](../../images/openshift-networking41.svg "{{site.data.keyword.redhat_openshift_notm}} 4.7 networking"){: caption="OpenShift 4.7 networking" caption-side="bottom"}
 

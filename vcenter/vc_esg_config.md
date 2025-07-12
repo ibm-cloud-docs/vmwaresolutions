@@ -75,7 +75,7 @@ If you want your workload VMs to have outbound access to the internet, you must 
 3. Click **Management > NAT** to open the **NAT** tab.
 4. Select the default SNAT rule in the table and click the green checkmark next to the table to enable the rule.
 
-For more information about NSX Edge NAT rules, see [Managing NAT rules](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/network-address-translation/configure-an-nsx-nat.html){: external}.
+For more information about NSX Edge NAT rules, see [Add an NSX NAT64](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-address-translation/configure-an-nsx-nat64.html){: external}.
 
 ## Identifying customer subnets details for NSX-T
 {: #vc_nsx-t_esg_config-procedure-identify-customer-subnets-details}
@@ -96,7 +96,7 @@ Additionally, you can find more details about the customer subnets by completing
 2. Click the filter menu and in the **Subnet** field enter the identifier as seen in the description of **cust-edge0** in the NSX-T Web Client.
 3. Review the notes that are shown for the IP addresses. These notes identify which of the subnets and IP addresses are ordered and used during the initial setup.
 
-   Do not use the IP addresses that are ordered and used during the initial setup. However, you can use other IP addresses on these subnets according to your requirements. To set up more network address translation rules, see [Managing NAT rules](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/network-address-translation/configure-an-nsx-nat.html){: external}.
+   Do not use the IP addresses that are ordered and used during the initial setup. However, you can use other IP addresses on these subnets according to your requirements. To set up more network address translation rules, see [Configure an NSX NAT/DNAT/No SNAT/No DNAT/Reflexive NAT](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-address-translation/configure-an-nsx-nat.html){: external}.
    {: important}
 
 ## Identifying customer subnets details for NSX-V
@@ -116,7 +116,7 @@ Additionally, you can find more details about the customer subnets by completing
 2. Click the filter menu and in the **Subnet** field enter the identifier as seen in the description of **customer-nsx-edge** in the VMware vSphere Web Client.
 3. Review the notes that are shown for the IP addresses. These notes identify which of the subnets and IP addresses are ordered and used during the initial setup.
 
-   Do not use the IP addresses that are ordered and used during the initial setup. However, you can use other IP addresses on these subnets according to your requirements. To set up more network address translation rules, see [Managing NAT rules](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/network-address-translation/configure-an-nsx-nat.html){: external}.
+   Do not use the IP addresses that are ordered and used during the initial setup. However, you can use other IP addresses on these subnets according to your requirements. To set up more network address translation rules, see [Configure an NSX NAT/DNAT/No SNAT/No DNAT/Reflexive NAT](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-address-translation/configure-an-nsx-nat.html){: external}.
    {: important}
 
 ## Ordering more subnets
