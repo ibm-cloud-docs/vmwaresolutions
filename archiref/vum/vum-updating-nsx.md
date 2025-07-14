@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-17"
+lastupdated: "2025-07-12"
 
 subcollection: vmwaresolutions
 
@@ -32,7 +32,7 @@ Review the following best practice information:
 * NSX-T Data Center is updated by using a download from _my.vmware.com_. Therefore, you need an account to download the update. If you are using {{site.data.keyword.cloud}} subscription licensing with your {{site.data.keyword.vcf-auto}} instance, you cannot download the updates with your **my.vmware.com** account. [Contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 * Before you begin the upgrade, check the NSX-T Data Center notes for upgrade issues and workarounds. Using the release notes, verify that vCenter and the host OS meets the new system requirements for NSX-T Data Center.
 * If you installed any additional software from VMware Business Partners, contact your IBM Business Partner representative or IBM Sales representative for compatibility and upgrade details.
-* Back up the NSX Manager before you start the upgrade process. See [Configure Backups](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/backing-up-and-restoring-the-nsx-manager/configure-backup-location.html){: external}.
+* Back up the NSX Manager before you start the upgrade process. See [Configure Backups](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/backing-up-and-restoring-the-nsx-manager/configure-backup-location.html){: external}.
 * Disable automatic backups before you start the upgrade process.
 * Ensure that your host OS is supported for NSX Manager. If your ESXi host is unsupported, manually upgrade your ESXi host to the supported version. Review [Software BOM for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom#vc_bom-software) for currently supported software levels on {{site.data.keyword.vcf-auto}} instances.
 * Stop any active SSH sessions or local shell scripts that might be running on the NSX Manager or the NSX Edge nodes.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-10"
+lastupdated: "2025-07-12"
 
 keywords: vcf automated networking, networking components, networking vcf classic
 
@@ -62,12 +62,12 @@ Review the following considerations before you attempt to change the passwords f
 
 * You can change the NSX Manager password. This password is displayed on the **Summary** page of the instance in the VMware Solutions console.
 * You can change the NSX Controller password. This password is not displayed in the VMware Solutions console, but you can set a new password without the old password.
-* You can change the password and the SSH settings for the customer-managed edge. This password is not displayed in the VMware Solutions console, but you can set a new password without the old password. For more information, see [Manage Local User’s Password or Name Using the CLI](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/authentication-and-authorization/managing-local-user-accounts/manage-a-user-s-password-or-name-using-the-cli.html){: external}.
+* You can change the password and the SSH settings for the customer-managed edge. This password is not displayed in the VMware Solutions console, but you can set a new password without the old password. For more information, see [Manage Local User’s Password or Name Using the CLI](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/authentication-and-authorization/managing-local-user-accounts/manage-a-user-s-password-or-name-using-the-cli.html){: external}.
 * Do not change the passwords for the management VMware NSX ESG and the related Distributed Logical Router.
 
 ## Related links
 {: #vc_networkingonvcenterserver-related}
 
 * [Overview of NSX-T Data Center](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/installation-guide/overview-of-nsx.html){: external}
-* [Resetting the Passwords of an Appliance](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/authentication-and-authorization/managing-local-user-accounts/password-management/resetting-passwords-on-an-appliance.html){: external}
-* [Manage Local User’s Password or Name Using the CLI](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/authentication-and-authorization/managing-local-user-accounts/manage-a-user-s-password-or-name-using-the-cli.html){: external}
+* [Resetting the Passwords of an Appliance](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/authentication-and-authorization/password-management/resetting-passwords-on-an-appliance.html){: external}
+* [Manage Local User’s Password or Name Using the CLI](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/authentication-and-authorization/managing-local-user-accounts/manage-a-user-s-password-or-name-using-the-cli.html){: external}

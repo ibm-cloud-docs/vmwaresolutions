@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-07-12"
 
 subcollection: vmwaresolutions
 
@@ -79,7 +79,7 @@ Add a gateway firewall policy and rule by using the parameters in the following 
 ### Defining the NAT rule
 {: #vum-init-config-nat}
 
-Add a NAT rule by using the parameters in the following table. For more information, see [Configure SNAT/DNAT/No SNAT/No DNAT/Reflexive NAT](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/network-address-translation/configure-an-nsx-nat.html){: external}.
+Add a NAT rule by using the parameters in the following table. For more information, see [Add an NSX NAT64](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-address-translation/configure-an-nsx-nat64.html){: external}.
 
 | Parameter | Suggested values |
 |:--------- |:---------------- |
