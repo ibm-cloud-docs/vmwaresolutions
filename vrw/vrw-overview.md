@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-06-25"
+lastupdated: "2025-07-15"
 
 keywords: vmware regulated workloads, regulated workloads, workloads instance, regulated instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.rw}} overview
 {: #vrw-overview}
 
-
+{{site.data.content.vrw-deprecated-note}}
 
 The {{site.data.keyword.rw}} offering includes a secure-by-default architecture that follows the {{site.data.keyword.IBM}} unique policy controls framework. It also includes continuous compliance monitoring and the highest level of data encryption FIPS 140-2 Level 4.
 
@@ -35,13 +35,5 @@ The following options or settings are not available for {{site.data.keyword.rw}}
 * Local disks
 * High performance with Intel® Optane
 * vSAN™ deduplication and compression
-* Selection of existing VLANs. Only the option to order new VLANs is available.
-* Single public Windows® VSI for Active Directory™ DNS configuration. Only the option to order two highly available dedicated Windows server virtual machines (VMs) on the management cluster is available.
-
-## Related links
-{: #vrw-overview-related}
-
-* [{{site.data.keyword.rw}} reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)
-* [Planning for {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-planning)
-* [Viewing and deleting {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-view-delete-instance)
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* Selection of existing VLANs
+* Single public Windows® VSI for Active Directory™ DNS configuration

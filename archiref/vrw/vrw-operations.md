@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-15"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Operations management
 {: #vrw-operations}
 
-
+{{site.data.content.vrw-deprecated-note}}
 
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads is delivered as a clean environment. Extensive work was done to identify and remediate common errors and warnings that are often found in a typical vSphere deployment. IBM and VMware® best practices, which are combined with standard and customized templates for VMware Aria® Operations™, help ensure that all {{site.data.keyword.rw}} configurations are deployed as clean as possible, ready for onboarding. Caveonix RiskForesight is used to scan the environment for compliance with industry and government standards such as NIST, PCI, and more. RiskForesight is continually monitoring the {{site.data.keyword.rw}} for adherence to compliance standards. RiskForesight provides on-demand compliance posture reporting and at-a-glance compliance status.
 The operational tools support the customer in compliance with current standards and assist them in rapidly responding to a changing compliance landscape.

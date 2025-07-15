@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-07-02"
+lastupdated: "2025-07-15"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -391,7 +391,9 @@ Review the following considerations for the vSAN storage architecture:
 
 
 
-
+**End of Marketing**: As of 17 July 2025, new deployments of VMware {{site.data.keyword.rw}} instances are no longer available for new customers. If you are an existing customer, you can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for your existing {{site.data.keyword.rw}} instances. As an existing customer, you can also view or delete your {{site.data.keyword.rw}} instances.
+{: note}
+{: #vrw-deprecated-note}
 
 
 

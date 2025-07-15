@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-15"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Supported topologies
 {: #vrw-nsxt-topologies}
 
-
+{{site.data.content.vrw-deprecated-note}}
 
 ## Single data center base topology
 {: #vrw-nsxt-topologies-single}

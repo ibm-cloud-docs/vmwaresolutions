@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-06-24"
+lastupdated: "2025-07-15"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -91,7 +91,7 @@ On the gateway cluster, note the following information about the uplink speed:
 ### FortiGate Virtual Appliance on {{site.data.keyword.rw}}
 {: #fortinetvm_considerations-installvalues-regworkload}
 
-
+{{site.data.content.vrw-deprecated-note}}
 
 For {{site.data.keyword.rw}}, you can install FortiGate Virtual Appliance on the gateway cluster. You can deploy the service on a single-zone (new or existing) or multizone (existing only) instance. 
 

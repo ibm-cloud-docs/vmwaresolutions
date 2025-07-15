@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-05-02"
+lastupdated: "2025-07-17"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -27,14 +27,18 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 
 
-
-
-### 2 May 2025
-{: #vmwaresolutions-may0225}
+### 17 July 2025
+{: #vmwaresolutions-jul1725}
 {: release-note}
 
-Support for vSAN capacity disks of 15.3 TB
-:   You can order 15.3 TB U.3 drives of VMware vSAN™ capacity disks for {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, {{site.data.keyword.rw}}, and {{site.data.keyword.cr}} instances with Sapphire Rapids servers.
+End of Marketing for {{site.data.keyword.rw}}
+:   New deployments of VMware {{site.data.keyword.rw}} instances are no longer supported for new customers. If you are an existing customer, you can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for your existing {{site.data.keyword.rw}} instances. As an existing customer, you can also view or delete your {{site.data.keyword.rw}} instances. For more information, see [End of Marketing for {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vrw).
+
+End of Support for KMIP for VMware for Key Protect
+:   Support for the Key Protect service as part of Key Management Interoperability Protocol (KMIP™) for VMware® will end on 16 July 2026, after which interoperability with the Key Protect service will no longer work. You must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 16 July 2026. For more information, see [End of Support for KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-kmip).
+
+End of Support for {{site.data.keyword.redhat_openshift_notm}} for VMware
+:   New automated installations of {{site.data.keyword.redhat_openshift_full}} for VMware® are no longer available for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete your existing {{site.data.keyword.redhat_openshift_notm}} for VMware automated installations until 16 July 2026. The service will no longer be available from 17 July 2026. For more information, see [End of Support for {{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-rhos).
 
 ### 28 April 2025
 {: #vmwaresolutions-apr2825}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2025
 
-lastupdated: "2025-06-24"
+lastupdated: "2025-07-15"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -56,7 +56,7 @@ Review and choose your deployment offering.
 | Deployment offering | Description |
 |:------------------- |:----------- |
 | [{{site.data.keyword.vmware-service_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-aas-overview) | This offering provides the VMware Cloud Director platform as a managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® by Broadcom software so you can quickly deploy your VMware-based cloud computing environments. |
-| {{site.data.keyword.vcf-classic}} | - [Automated](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview): This offering deploys a VMware virtual environment by using custom compute, storage, and network resources to best fit your business needs. \n - [Flexible](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview): This offering provides a customizable virtualization service that combines VMware-compatible bare metal servers, hardware components, and licenses, to build your own IBM-hosted VMware environment. \n - [{{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview): This offering provides air-gapped protection, immutable storage, and rapid recovery of applications and data for ransomware protection. \n - [{{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview): This offering includes a secure-by-default architecture that follows IBM's unique policy controls framework, it provides continuous compliance monitoring, and the highest level of data encryption (FIPS 140-2 Level 4). |
+| {{site.data.keyword.vcf-classic}} | - [Automated](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview): This offering deploys a VMware virtual environment by using custom compute, storage, and network resources to best fit your business needs. \n - [Flexible](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview): This offering provides a customizable virtualization service that combines VMware-compatible bare metal servers, hardware components, and licenses, to build your own IBM-hosted VMware environment. \n - [{{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview): This offering provides air-gapped protection, immutable storage, and rapid recovery of applications and data for ransomware protection. |
 | [{{site.data.keyword.vcf-vpc}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw) | This offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Foundation™. It delivers compute, storage, networking, management automation, and security in a single platform on {{site.data.keyword.bm_is_full}}. |
 {: caption="Deployment offerings" caption-side="bottom"}
 
