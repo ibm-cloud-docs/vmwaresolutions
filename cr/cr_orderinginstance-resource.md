@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-06-24"
+lastupdated: "2025-07-15"
 
 keywords: cyber recovery resource, resource type, resource
 
@@ -22,7 +22,6 @@ Choose the **{{site.data.keyword.cr}}** option from the following resource types
 * **Automated** - Formerly VMware vCenter Server®
 * **Flexible** - Formerly VMware vSphere®
 * **{{site.data.keyword.cr}}** - Automated (with firewall appliance)
-* **{{site.data.keyword.rw}}** - Automated (financial services validated)
 
 ## Related links
 {: #cr_orderinginstance-resource-related}
