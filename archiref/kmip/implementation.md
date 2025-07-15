@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-12"
+lastupdated: "2025-07-15"
 
-subcollection: vmwaresolutions
+subcollection: vmwaresolutions, kmip for vmware
 
 
 ---
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # KMIP for VMware implementation and management
 {: #kmip-implementation}
+
+
 
 ## Planning
 {: #kmip-implementation-planning}
@@ -91,5 +93,5 @@ VMware does not delete keys from the KMS when a VM having encrypted disks is rem
 * [Solution overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-overview)
 * [Solution design](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-design)
 * [High availability and disaster recovery](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-hadr)
-* [IBM Key Protect](/docs/key-protect?topic=key-protect-getting-started-tutorial)
+* [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect?topic=key-protect-getting-started-tutorial)
 * [{{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started#get-started)
