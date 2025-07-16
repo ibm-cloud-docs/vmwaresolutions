@@ -118,7 +118,7 @@ The following table describes the featured workload solutions services that are 
 #### Management tools
 {: #getting-started-serv-other}
 
-The following table describes management tools that are available.
+The following table describes the management tools that are available.
 
 | Service name | Description |
 |:------------ |:----------- |

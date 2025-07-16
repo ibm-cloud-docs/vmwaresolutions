@@ -34,8 +34,8 @@ If you want to migrate your F5 BIG-IP or Veeam services from VMware NSX-V to VMw
 
 The following table shows the services that are available to Automated instances, together with the service versions.
 
-| Service name | Current version | Notes |
-|:------------ |:--------------- |:----- |
+| Service name | Current version |
+|:------------ |:--------------- |
 | [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 5.2 |
 | [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.1.1 |
 | [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.4.3 |

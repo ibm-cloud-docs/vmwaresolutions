@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Offering comparison chart
 {: #inst_comp_chart}
 
-Review the following information to understand the differences in feature support between the {{site.data.keyword.vmwaresolutions_full}} offerings.
+Review the following information to understand the differences in feature support between {{site.data.keyword.vmwaresolutions_full}} offerings.
 
 ## {{site.data.keyword.vcf-auto-short}} vs Flexible
 {: #inst_comp_chart-vcs-vss}
