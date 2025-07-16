@@ -23,7 +23,7 @@ The {{site.data.keyword.rw}} offering includes a secure-by-default architecture 
 
 Review the following specifications:
 * {{site.data.keyword.rw}} are based on VMware NSX-T™ and VMware vSphere® 7.
-* [Hyper Protect Crypto Services](/catalog/services/hyper-protect-crypto-services), [KMIP for VMware](/infrastructure/vmware-solutions/console/servicestandalonenew/KMIPAdapter), and [Direct Link](/interconnectivity/direct-link) are required for {{site.data.keyword.rw}}.
+* [Hyper Protect Crypto Services](/catalog/services/hyper-protect-crypto-services), [KMIP for VMware](/infrastructure/vmware-solutions/console/servicestandalonenew/KMIPAdapter), and [Direct Link](/interconnectivity/direct-link) are required.
 * The **Private network only** option is available for all clusters. The **Public and private network** option is available only for the gateway cluster.
 
 ## Options not available for {{site.data.keyword.rw}}
