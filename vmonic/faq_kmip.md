@@ -54,7 +54,7 @@ The new key provider, [{{site.data.keyword.IBM}} Key Protect for {{site.data.key
 {: #faq-kmip-eos-next}
 {: faq}
 
-Customers must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 16 July 2026. For more information about the migration steps, see [Migrating from KMIP for VMware to IBM Cloud native KMIP providers](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_migration).
+Customers must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 16 July 2026. For more information about the migration steps, see [Migrating from KMIP for VMware to {{site.data.keyword.cloud_notm}} native KMIP providers](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_migration).
 
 The KMIP for VMware support for Key Protect is not going to be available from 17 July 2026.
 {: important}
@@ -79,5 +79,5 @@ No, the price of adopting the new key provider, [{{site.data.keyword.IBM}} Key P
 {: #faq-kmip-related}
 
 * [End of Support for KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-kmip)
-* [Migrating from KMIP for VMware to IBM Cloud native KMIP providers](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_migration)
+* [Migrating from KMIP for VMware to {{site.data.keyword.cloud_notm}} native KMIP providers](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_migration)
 * [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect)

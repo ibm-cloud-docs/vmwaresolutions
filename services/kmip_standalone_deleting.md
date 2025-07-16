@@ -32,7 +32,7 @@ You must remove encryption and configuration in the following sequence:
 3. Remove the KMS configuration for all {{site.data.keyword.vcf-auto}} instances that are connected to this KMIP for VMware instance.
 4. Remove the KMIP for VMware instance.
 5. In your Key Protect or Hyper Protect Crypto Services (HPCS) instance, remove all standard keys that were in use by this KMIP for VMware instance.
-6. (Optional) In your Key Protect or HPCS service instance, ensure that no other users are using the root key (CRK) that you are planning to remove, then remove the customer CRK that was in use by this KMIP for VMware instance.
+6. (Optional) In your Key Protect or HPCS service instance, ensure that no other users are using the root key (CRK) that you are planning to remove. Then, remove the customer CRK that was in use by this KMIP for VMware instance.
 7. (Optional) Ensure that no other users are using the Key Protect or HPCS service instance, then remove the Key Protect or HPCS service instance that was in use by this KMIP for VMware instance.
 
 ## Procedure to delete KMIP for VMware instances

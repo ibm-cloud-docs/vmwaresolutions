@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Migrating from KMIP for VMware to IBM Cloud native KMIP providers
+# Migrating from KMIP for VMware to {{site.data.keyword.cloud_notm}} native KMIP providers
 {: #kmip_migration}
 
 {{site.data.content.kmip-deprecated-note}}
@@ -31,7 +31,7 @@ Before you proceed, review the following guidance:
 ## Migration options
 {: #kmip_migration-options}
 
-{{site.data.keyword.cloud_notm}} key management offerings introduce native KMIP providers to replace the Key Management Interoperability Protocol (KMIP™) for VMware® service provider. These new native providers have the following advantages:
+{{site.data.keyword.cloud}} key management offerings introduce native KMIP providers to replace the Key Management Interoperability Protocol (KMIP™) for VMware® service provider. These new native providers have the following advantages:
 - Improved performance because the calls from KMIP to key provider are closer in network distance and no longer cross the service-to-service authorization boundaries.
 - Improved visibility and management for the KMIP keys.
 
@@ -56,7 +56,7 @@ If you already use the KMIP for VMware provider, switch to the new key provider 
 
 6. Select the **Endpoints** tab from left navigation menu to identify the KMIP endpoint you need to configure.
 
-      Only one endpoint is available here unlike the KMIP for VMware offering in IBM Cloud for VMware Solutions. A single hostname balances the load and it is highly available in each region.
+      Only one endpoint is available here unlike the KMIP for VMware offering in {{site.data.keyword.cloud_notm}} for VMware Solutions. A single hostname balances the load and it is highly available in each region.
       {: important}
 
 7. In vCenter Server, choose the vCenter object.
@@ -91,7 +91,7 @@ Install PowerCLI on a convenient server with network access to vCenter, and run 
 #### Migrate vSphere encrypted VMs to the new key provider
 {: #kmip_migration-environment-migratevms-vsphere}
 
-If you are operating with a mix of vCenter v8 and vSphere v7 hosts, or vSphere v8 hosts on versions earlier than version 8.0u3e, the rekey of the virtual machine can cause it to restart. However, you can work around this issue. Read [Encrypted VM with Change Block Tracking (CBT) enabled unexpectedly powers off after shallow rekey operation](https://knowledge.broadcom.com/external/article?articleNumber=387897){: external} to understand whether this issue affects your environment, and how to workaround the issue.
+If you are operating with a mix of vCenter v8 and vSphere v7 hosts, or vSphere v8 hosts on versions earlier than 8.0u3e version, the rekey of the virtual machine can cause it to restart. However, you can work around this issue. Read [Encrypted VM with Change Block Tracking (CBT) enabled unexpectedly powers off after shallow rekey operation](https://knowledge.broadcom.com/external/article?articleNumber=387897){: external} to understand whether this issue affects your environment, and how to work around the issue.
 {: attention}
 
 After you set the new key provider to default, select any VM in the inventory. Then, go to **Actions > VM Policies > Re-encrypt** to do a shallow rekey of the virtual machine to the new key provider.
@@ -142,7 +142,7 @@ After you rekey all the VMs, remove the old key provider in the vCenter console.
 #### Verify key provider settings
 {: #kmip_migration-environment-deletevms-verifyold}
 
-Before removing the original key provider, you can verify that your resources have been successfully rekeyed by running the following PowerCLI script to display the key provider for all resources:
+Before you remove the original key provider, you must verify that your resources are successfully rekeyed by running the following PowerCLI script to display the key provider for all resources:
 
 ```text
 $vmlist = @()
@@ -175,7 +175,7 @@ $clusterlist | Format-Table
 #### Remove key provider
 {: #kmip_migration-environment-deletevms-removeold}
 
-1. Go to IBM Cloud for VMware Solutions console.
+1. Go to {{site.data.keyword.cloud_notm}} for VMware Solutions console.
 2. Delete the KMIP for VMware instance that is provisioned with the old KMIP provider.
 
 For completeness, delete all of the old unused keys that were created by the old KMIP for VMware adapter in the vCenter console. You can either delete the keys manually or use a CLI command. You can identify these keys by name, since their names contain `vmware_kmip` as prefix.
@@ -188,4 +188,4 @@ The KMIP keys that are created by the new native adapter are visible under the *
 
 * [End of Support for KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-kmip)
 * [FAQ about KMIP for VMware migration](/docs/vmwaresolutions?topic=vmwaresolutions-faq-kmip)
-* [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect)
+* [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud_notm}}](/docs/key-protect)
