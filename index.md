@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-07-16"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -122,7 +122,6 @@ The following table describes other services that are available.
 
 | Service category | Service name | Description |
 |:---------------- |:------------ |:----------- |
-| Transformation and modernization | [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | This service brings together the power of the Red Hat OpenShift Container Platform and the VMware software-defined data center stack. |
 | Management tools | [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the tools of VMware Aria® Operations™ and VMware Aria Operations™ for Logs Enterprise Edition, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
 {: caption="Other services" caption-side="bottom"}
 

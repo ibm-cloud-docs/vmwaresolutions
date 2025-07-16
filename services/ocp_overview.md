@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-06-24"
+lastupdated: "2025-07-16"
 
 keywords: openshift for vmware, request openshift for vmware, tech specs openshift vmware
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.redhat_openshift_notm}} for VMware overview
 {: #ocp_overview}
 
-
+{{site.data.content.rhos-deprecated-note}}
 
 The {{site.data.keyword.redhat_openshift_full}} for VMware® service deploys an {{site.data.keyword.redhat_openshift_notm}} cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The {{site.data.keyword.redhat_openshift_notm}} components are deployed as virtual machines (VMs) or appliances by using VMware NSX® software-defined networking.
 
@@ -134,10 +134,3 @@ For more information about how to configure {{site.data.keyword.redhat_openshift
 {: #ocp_overview-update-clus}
 
 For more information about updating {{site.data.keyword.redhat_openshift_notm}}, see the {{site.data.keyword.redhat_openshift_notm}} documentation.
-
-## Related links
-{: #ocp_overview-related}
-
-* [vCenter Server and {{site.data.keyword.redhat_openshift_notm}} architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-intro)
-* [VMware Solutions and {{site.data.keyword.redhat_openshift_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-intro)
-* [Succeeding with {{site.data.keyword.redhat_openshift_notm}} and VMware’s Software-Defined Datacenter (SDDC)](https://www.redhat.com/en/blog/red-hat-openshift-and-vmware-better-together){: external}

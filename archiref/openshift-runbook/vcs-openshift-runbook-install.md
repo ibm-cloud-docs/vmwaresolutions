@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-16"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Red Hat OpenShift 4.7 user provider infrastructure installation
 {: #openshift-runbook-runbook-install-intro}
 
-
+{{site.data.content.rhos-deprecated-note}}
 
 {{site.data.keyword.redhat_openshift_full}} 4 introduced the following concepts:
 

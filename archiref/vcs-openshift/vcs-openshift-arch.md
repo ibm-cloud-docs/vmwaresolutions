@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-16"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 ## Common services components
 {: #vcs-openshift-arch-common-services}
 
-
+{{site.data.content.rhos-deprecated-note}}
 
 Common services provide the services that are used by other services in the cloud management platform. Common services include identity and access services, domain name services, and NTP services.
 

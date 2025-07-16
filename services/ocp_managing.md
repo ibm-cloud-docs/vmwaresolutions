@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-06-23"
+lastupdated: "2025-07-16"
 
 keywords: Red Hat OpenShift for VMware, manage OpenShift, OpenShift operations
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #ocp_managing}
 
-
+{{site.data.content.rhos-deprecated-note}}
 
 Review the following information to manage your {{site.data.keyword.redhat_openshift_notm}} for VMware service.
 
@@ -128,9 +128,3 @@ To expand your {{site.data.keyword.redhat_openshift_notm}} cluster by adding mor
 * If your cluster uses NFS storage, deleting {{site.data.keyword.redhat_openshift_notm}} deletes the NFS data store that was added during installation.
 * If you are using a vSAN datastore, delete any persistent volumes that you no longer need before you uninstall {{site.data.keyword.redhat_openshift_notm}}. Any volumes that are not deleted will remain in the vSAN storage after the {{site.data.keyword.redhat_openshift_notm}} uninstallation.
 * Before you delete the service, you must remove any personal VMs that were deployed with this service from the storage. {{site.data.keyword.redhat_openshift_notm}} orders personal VMs only they are not vSAN-based.
-
-## Related links
-{: #ocp_managing-related}
-
-* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
