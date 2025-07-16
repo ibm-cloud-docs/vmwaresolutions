@@ -379,13 +379,6 @@ toc:
               - services/juniper_ordering.md
               - services/juniper_managing.md
           - topicgroup:
-              id: redhat
-              label: Red Hat OpenShift for VMware
-              topics:
-              - topic: services/ocp_overview.md
-                navtitle: Red Hat OpenShift for VMware overview
-              - services/ocp_managing.md
-          - topicgroup:
               id: veeam
               label: Veeam
               topics:
@@ -526,6 +519,13 @@ toc:
               topics:
               - services/spp_considerations.md
               - services/managingspp.md
+          - topicgroup:
+              id: redhat
+              label: Red Hat OpenShift for VMware
+              topics:
+              - topic: services/ocp_overview.md
+                navtitle: Red Hat OpenShift for VMware overview
+              - services/ocp_managing.md
           - services/veeam_considerations.md
 # links to your REST API docs should be included in the Reference navigation group
 # links to your command line reference docs should be included in the Reference navigation group
