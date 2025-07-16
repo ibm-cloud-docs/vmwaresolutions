@@ -98,8 +98,8 @@ After you set the new key provider to default, select any VM in the inventory. T
 
 You can also rekey multiple encrypted virtual machines at the same time by using a PowerCLI script similar to the following sample script:
 
-```psh
-kp = Get-KeyProvider new-kmip
+```text
+$kp = Get-KeyProvider new-kmip
 
 foreach($vm in Get-VM) {
   if($vm.ExtensionData.Config.KeyId) {
@@ -123,8 +123,8 @@ After you set the new key provider to default, rekey both your vSAN cluster and 
 
 If you are using only vSphere encryption and not vSAN encryption, you must use the PowerCLI tool to rekey the encrypted hosts in your environment. The following sample script shows how to rekey all the encrypted hosts in an environment that is in *safe* mode, meaning that the environment is issued a host key for encryption of core dumps:
 
-```psh
-kp = Get-KeyProvider new-kmip
+```text
+$kp = Get-KeyProvider new-kmip
 
 foreach($vmhost in Get-VMHost) {
   if($vmhost.ExtensionData.Runtime.CryptoState -eq "safe") {
@@ -144,8 +144,8 @@ After you rekey all the VMs, remove the old key provider in the vCenter console.
 
 Before removing the original key provider, you can verify that your resources have been successfully rekeyed by running the following PowerCLI script to display the key provider for all resources:
 
-```psh
-vmlist = @()
+```text
+$vmlist = @()
 
 foreach($vm in Get-VM) {
   $vmlist += [pscustomobject]@{ vm = $vm.name; provider = $vm.ExtensionData.Config.KeyId.ProviderId.Id}
