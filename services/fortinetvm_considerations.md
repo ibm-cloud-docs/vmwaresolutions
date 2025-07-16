@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-07-16"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -93,7 +93,7 @@ On the gateway cluster, note the following information about the uplink speed:
 
 {{site.data.content.vrw-deprecated-note}}
 
-For {{site.data.keyword.rw}}, you can install FortiGate Virtual Appliance on the gateway cluster. You can deploy the service on a single-zone (new or existing) or multizone (existing only) instance. 
+For {{site.data.keyword.rw}}, you can install FortiGate Virtual Appliance on the gateway cluster.
 
 * You can install FortiGate Virtual Appliance on gateway clusters with a 10 Gb or 25 Gb uplink speed.
 * For 10 Gb, you can install FortiGate-VM16 on Cascade Lake 4210.

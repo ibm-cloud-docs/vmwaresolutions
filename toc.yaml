@@ -473,8 +473,8 @@ toc:
               label: EOM and EOS notices
               topics:
               - vmonic/eos-vrw.md
-              - vmonic/eos-rhos.md
               - vmonic/eos-kmip.md
+              - vmonic/eos-rhos.md
               - vmonic/eos-nsx-v.md
               - vmonic/eos-vsphere67.md
               - vmonic/eos-vsphere65.md

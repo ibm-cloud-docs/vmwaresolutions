@@ -115,14 +115,14 @@ The following table describes the featured workload solutions services that are 
 | [{{site.data.keyword.IBM_notm}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | This service offers a cybersecurity solution to automate the monitoring and protection of SAP applications on {{site.data.keyword.cloud_notm}}, and to keep workloads compliant and secure from inside and outside threats. |
 {: caption="Featured workload solutions" caption-side="bottom"}
 
-#### Other services
+#### Management tools
 {: #getting-started-serv-other}
 
-The following table describes other services that are available.
+The following table describes management tools that are available.
 
-| Service category | Service name | Description |
-|:---------------- |:------------ |:----------- |
-| Management tools | [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the tools of VMware Aria® Operations™ and VMware Aria Operations™ for Logs Enterprise Edition, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
+| Service name | Description |
+|:------------ |:----------- |
+| [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the tools of VMware Aria® Operations™ and VMware Aria Operations™ for Logs Enterprise Edition, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
 {: caption="Other services" caption-side="bottom"}
 
 ## Accessing the VMware Solutions console
