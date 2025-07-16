@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-07-16"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,9 @@ subcollection: vmwaresolutions
 # KMIP for VMware design
 {: #kmip-design}
 
+{{site.data.content.kmip-deprecated-note}}
 
+{{site.data.content.kmip-imp-note}}
 
 KMIP™ for VMware® provides a key management service compatible with VMware vSAN™ encryption and VMware vSphere® encryption, by using [IBM Key Protect](/docs/key-protect?topic=key-protect-getting-started-tutorial) or [{{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started#get-started) to provide root key and data key storage. Key Protect and Hyper Protect Crypto Services function as the key management services in this solution.
 

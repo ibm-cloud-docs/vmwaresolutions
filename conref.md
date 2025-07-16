@@ -387,7 +387,13 @@ Review the following considerations for the vSAN storage architecture:
 
 
 
+Key Management Interoperability Protocol (KMIP™) for VMware® support for Key Protect will end on 16 July 2026, after which interoperability with the Key Protect service will no longer work. Migrate to [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect).
+{: deprecated}
+{: #kmip-deprecated-note}
 
+This announcement is applicable only to customers who are using the KMIP for VMware support for Key Protect. Customers who are using KMIP for VMware support for Hyper Protect Crypto Services (HPCS) remain unaffected by this announcement. The KMIP for VMware support for HPCS continues to function as usual without any impact.
+{: important}
+{: #kmip-imp-note}
 
 
 
