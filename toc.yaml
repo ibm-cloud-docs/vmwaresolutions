@@ -405,6 +405,16 @@ toc:
               - services/zerto_ordering_licenses.md
               - services/zerto_managing_licenses.md
               - services/zerto_migration.md
+          - topicgroup:
+              id: kmip
+              label: KMIP for VMware
+              topics:
+              - services/kmip_standalone_considerations.md
+              - services/kmip_standalone_migration.md
+              - services/kmip_standalone_ordering.md
+              - services/kmip_standalone_viewing.md
+              - services/kmip_standalone_addingdeletingcert.md
+              - services/kmip_standalone_deleting.md
       - topic: services/dizzion_overview.md
         navtitle: Dizzion
       - topic: services/managing-ss-sap.md
@@ -462,16 +472,6 @@ toc:
               - vmonic/eos-nsx-v.md
               - vmonic/eos-vsphere67.md
               - vmonic/eos-vsphere65.md
-          - topicgroup:
-              id: kmip
-              label: KMIP for VMware
-              topics:
-              - services/kmip_standalone_considerations.md
-              - services/kmip_standalone_migration.md
-              - services/kmip_standalone_ordering.md
-              - services/kmip_standalone_viewing.md
-              - services/kmip_standalone_addingdeletingcert.md
-              - services/kmip_standalone_deleting.md
           - topicgroup:
               id: multizone-instances
               label: Multizone instances
