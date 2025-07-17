@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-07-17"
 
 keywords: vmware solutions kmip for vmware, kmip for vmware, migration, migration partner, partners for assisted migration
 
@@ -107,7 +107,7 @@ foreach($vm in Get-VM) {
   }
 }
 ```
-{: pre}
+{: codeblock}
 
 #### Migrate vSAN encryption to the new key provider
 {: #kmip_migration-environment-migratevms-vsan}
@@ -132,7 +132,7 @@ foreach($vmhost in Get-VMHost) {
   }
 }
 ```
-{: pre}
+{: codeblock}
 
 ### Delete the old KMIP provider
 {: #kmip_migration-environment-deletevms}
@@ -170,7 +170,7 @@ foreach($cluster in Get-Cluster) {
 
 $clusterlist | Format-Table
 ```
-{: pre}
+{: codeblock}
 
 #### Remove key provider
 {: #kmip_migration-environment-deletevms-removeold}
