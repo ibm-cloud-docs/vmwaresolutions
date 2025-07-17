@@ -405,7 +405,7 @@ toc:
               - services/zerto_ordering_licenses.md
               - services/zerto_managing_licenses.md
               - services/zerto_migration.md
-          - topicgroup:
+      - topicgroup:
               id: kmip
               label: KMIP for VMware
               topics:
