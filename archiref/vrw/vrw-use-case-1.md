@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-15"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Use case 1
 {: #vrw-use-case-1}
 
-
+{{site.data.content.vrw-deprecated-note}}
 
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads delivers a virtualized platform for users in a highly regulated industry who require a platform that is designed to support compliance with industry security standards or governmental regulations.
 

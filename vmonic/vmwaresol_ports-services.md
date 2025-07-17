@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-06-19"
+lastupdated: "2025-07-16"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -84,10 +84,10 @@ The following table provides information about the Juniper® vSRX ports.
 | vSRX | vSRX Private IP | VMware Aria Operations™ for Logs (if VMware Aria® Operations™ service is installed) | VMware Aria Operations for Logs FQDN | 514 | UDP | Remote syslog to VMware Aria Operations for Logs if VMware Aria Operations service is installed | Syslog |
 {: caption="Juniper vSRX ports" caption-side="bottom"}
 
-## Ports for {{site.data.keyword.redhat_openshift_notm}} for VMware
+## Ports for {{site.data.keyword.redhat_openshift_notm}} for VMware - deprecated
 {: #vmwaresol_ports-vmware-optional-services-red-hat-openshift}
 
-
+{{site.data.content.rhos-deprecated-note}}
 
 The following table provides information about the {{site.data.keyword.redhat_openshift_full}} ports.
 

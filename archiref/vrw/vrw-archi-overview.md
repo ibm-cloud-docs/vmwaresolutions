@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-15"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Architecture overview
 {: #vrw-archi-overview}
 
-
+{{site.data.content.vrw-deprecated-note}}
 
 The {{site.data.keyword.cloud}} for VMware® Regulated Workloads architecture is an extension of the {{site.data.keyword.vcf-auto}} offering.
 

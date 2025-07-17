@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-15"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Use case 2
 {: #vrw-use-case-2}
 
-
+{{site.data.content.vrw-deprecated-note}}
 
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads delivers high security for sensitive workloads such as those run by users in the healthcare or financial sectors.
 

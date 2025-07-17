@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-04-30"
+lastupdated: "2025-07-16"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -28,8 +28,6 @@ Review the following information about the ports described in the [table](#vmwar
 * IBM CloudDriver is an ephemeral VSI that is deployed by the {{site.data.keyword.cloud_notm}} automation to configure your instance. While IBM CloudDriver is being bootstrapped, it uses an ephemeral primary IP address. However, after bootstrapping, it uses a predictable portable IP address that you can find on your instance details page. For more information, see [IBM CloudDriver](/docs/vmwaresolutions?topic=vmwaresolutions-design_infrastructuremgmt#design_infrastructuremgmt-cloud-driver).
 * Infrastructure VMs refer to the private portable subnet allocated for use by vCenter, NSX manager, the cloud driver
 * Depending on your mode of deployment, your Windows Active Directory domain controllers can be VSIs on a primary subnet, or VMs on a portable subnet.
-
-For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) networking, see [About the OpenShift SDN network plug-in](https://docs.openshift.com/container-platform/4.15/networking/openshift_sdn/about-openshift-sdn.html){: external}.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |

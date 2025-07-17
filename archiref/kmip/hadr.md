@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2025
 
-lastupdated: "2023-04-18"
+lastupdated: "2025-07-16"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,10 @@ subcollection: vmwaresolutions
 
 # High availability and disaster recovery for KMIP for VMware
 {: #kmip-hadr}
+
+{{site.data.content.kmip-deprecated-note}}
+
+{{site.data.content.kmip-imp-note}}
 
 ## High availability within a region
 {: #kmip-hadr-regional}

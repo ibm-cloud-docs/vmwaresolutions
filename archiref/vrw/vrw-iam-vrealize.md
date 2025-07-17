@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-15"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Operational tooling identity and access management
 {: #vrw-iam-vrealize}
 
-
+{{site.data.content.vrw-deprecated-note}}
 
 ## Overview
 {: #vrw-iam-vrealize-overview}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-15"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Dual region Disaster Recovery overview
 {: #vrw-dualregion-overview}
 
-
+{{site.data.content.vrw-deprecated-note}}
 
 The {{site.data.keyword.cloud}} for VMware® Regulated Workloads instance is a single regional deployment, which includes a number of high availability (HA) and business continuity features. However, this single regional design does not address Disaster Recovery (DR).
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-16"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -17,7 +17,9 @@ subcollection: vmwaresolutions
 # Ordering KMIP for VMware instances
 {: #kmip_standalone_ordering}
 
+{{site.data.content.kmip-deprecated-note}}
 
+{{site.data.content.kmip-imp-note}}
 
 You can order a KMIP™ for VMware® instance without associating it to any {{site.data.keyword.vcf-auto}} instance for flexible management of the service and instances.
 
@@ -87,43 +89,28 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
 {: tab-title="Hyper Protect Crypto Services"}
 {: tab-group="Settings when selecting different key management service"}
 
-
-| Setting | Description |
-|:------- |:----------- |
-| **API key for service ID**| The API key for the {{site.data.keyword.cloud_notm}} Service ID that is used to access the service instance of Key Protect |
-| **Key Manager instance**| The list of available Key Protect instances that you can select to use for key management |
-| **Customer root key**| The list of customer root keys that are stored in your selected key manager instance |
-{: caption="Configuration settings for Key Protect" caption-side="bottom"}
-{: #simpletabtable2}
-{: tab-title="Key Protect"}
-{: tab-group="Settings when selecting different key management service"}
-{: class="simple-tab-table"}
-
 ### Procedure
 {: #kmip_standalone_ordering-step2-procedure}
 
-1. Select the key management type, either **Hyper Protect Crypto Services** or **Key Protect**.
+1. Select the key management type, **Hyper Protect Crypto Services**.
 
 2. Select a key management service:
    * For **Hyper Protect Crypto Services**, click **Retrieve** to get the list of available HPCS instances and select the one to use for key management.
-   * For **Key Protect**, enter your service ID API key, then click **Retrieve** to get the list of available key manager instances and select the one to use for key management.
 
 3. Select the Key Manager instance from the list.
 
-4. For Key Protect, under **Customer key ring**, the names of the key rings that belong to the selected Key Manager instance are displayed. Select the **Customer key ring** from the list.
-
     For HPCS, the key ring field is not displayed.
 
-5. Under **Customer root key**, the names and values of the root keys are displayed. Select the root key that you want.
+4. Under **Customer root key**, the names and values of the root keys are displayed. Select the root key that you want.
 
-6. (Optional) Add client SSL certificates:
+5. (Optional) Add client SSL certificates:
     1. Click **Add**.
     2. In the **Add client SSL certificate** window, enter the name and contents of the certificate, and then click **Add**.
 
-       The certificate name cannot be reused within your selected instance. The certificate content must be valid and contain the BEGIN CERTIFICATE and END CERTIFICATE tags. When you use Key Protect, the certificate cannot be reused in the region where the instance is deployed.
+       The certificate name cannot be reused within your selected instance. The certificate content must be valid and contain the BEGIN CERTIFICATE and END CERTIFICATE tags.
        {: restriction}
 
-7. Click **Configure**.
+6. Click **Configure**.
 
 ### Results of Step 2
 {: #kmip_standalone_ordering-step2-results}
@@ -160,7 +147,7 @@ Connect your vCenter Server to your KMIP instance by using the client certificat
 
 If your KMIP instance is connected to HPCS, you can find details for the single load-balanced KMIP endpoint in your KMIP for VMware instance. Use this endpoint to configure a single key provider in vCenter.
 
-If your KMIP instance is connected to Key Protect, you must use the two regional endpoints for your KMIP for VMware instance to configure a key provider cluster in vCenter Server. You can find the endpoints for each region in the following table:
+You can find the endpoints for each region in the following table:
 
 | Location | Endpoints |
 |:-------- |:--------- |

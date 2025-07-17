@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-06-24"
+lastupdated: "2025-07-16"
 
 keywords: openshift for vmware, request openshift for vmware, tech specs openshift vmware
 
@@ -18,21 +18,9 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.redhat_openshift_notm}} for VMware overview
 {: #ocp_overview}
 
+{{site.data.content.rhos-deprecated-note}}
 
-
-The {{site.data.keyword.redhat_openshift_full}} for VMware® service deploys an {{site.data.keyword.redhat_openshift_notm}} cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The {{site.data.keyword.redhat_openshift_notm}} components are deployed as virtual machines (VMs) or appliances by using VMware NSX® software-defined networking.
-
-The {{site.data.keyword.redhat_openshift_notm}} version available for deployment is 4.15.
-{: note}
-
-Review the following information before you install the {{site.data.keyword.redhat_openshift_notm}} for VMware service:
-* {{site.data.keyword.redhat_openshift_notm}} for VMware cannot be installed on multiple {{site.data.keyword.vcf-auto}} instances in a multisite configuration. Before you install {{site.data.keyword.redhat_openshift_notm}} for VMware on an instance, verify that the service is not installed on any other instances in the multisite configuration.
-* {{site.data.keyword.redhat_openshift_notm}} for VMware is supported for {{site.data.keyword.vcf-auto-short}} instances with VMware vSphere® 7.0 and VMware NSX-T™ 3.1 or later.
-* {{site.data.keyword.redhat_openshift_notm}} for VMware is not supported for new deployments or for ordering post-deployment for {{site.data.keyword.vcf-auto-short}} with NSX-V instances with vSphere 6.7.
-
-Existing installations of {{site.data.keyword.redhat_openshift_notm}} for VMware can be used or deleted for vSphere 6.7 instances.
-
-{{site.data.content.para-promotion-services}}
+The {{site.data.keyword.redhat_openshift_full}} for VMware® service is an {{site.data.keyword.redhat_openshift_notm}} cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The {{site.data.keyword.redhat_openshift_notm}} components are deployed as virtual machines (VMs) or appliances by using VMware NSX® software-defined networking.
 
 The {{site.data.keyword.redhat_openshift_notm}} cluster consists of the following components:
 * Three primary nodes
@@ -48,14 +36,12 @@ For more information about the architecture, see [{{site.data.keyword.redhat_ope
 
 The following capacity requirements apply only if your {{site.data.keyword.vcf-auto-short}} instance is using vSAN™ storage. If you are using NFS, a new 2-TB NFS data store, which is dedicated to {{site.data.keyword.redhat_openshift_notm}}, is ordered.
 
-The solution topology has the following requirements:
+The solution topology has the following specifications:
 * 9 CPUs
 * 120 GB RAM
 * 1,170 GB storage
 
-For more information about resource requirements and capacity checking, see [Resource requirements for services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-resource-requirements).
-
-To successfully deploy {{site.data.keyword.redhat_openshift_notm}}, you must have a {{site.data.keyword.redhat_notm}} account and the pull secret key from your account. All {{site.data.keyword.redhat_notm}} accounts have an associated pull secret, which you can retrieve by [logging in to your {{site.data.keyword.redhat_notm}} account](https://console.redhat.com/openshift/install/vsphere/user-provisioned){: external}. You must purchase {{site.data.keyword.redhat_notm}} support entitlements through {{site.data.keyword.redhat_notm}} and, if needed, send information for all {{site.data.keyword.redhat_openshift_notm}} support issues to {{site.data.keyword.redhat_notm}}.
+You must have a {{site.data.keyword.redhat_notm}} account and the pull secret key from your account. All {{site.data.keyword.redhat_notm}} accounts have an associated pull secret, which you can retrieve by [logging in to your {{site.data.keyword.redhat_notm}} account](https://console.redhat.com/openshift/install/vsphere/user-provisioned){: external}. You must purchase {{site.data.keyword.redhat_notm}} support entitlements through {{site.data.keyword.redhat_notm}} and, if needed, send information for all {{site.data.keyword.redhat_openshift_notm}} support issues to {{site.data.keyword.redhat_notm}}.
 
 ### Selecting the target cluster for installation
 {: #ocp_overview-select-target-cluster}
@@ -89,21 +75,6 @@ When you log in to a cluster VM from the bastion, you must connect as the `core`
 
 The {{site.data.keyword.redhat_openshift_notm}} VMs are deployed with DRS rules to ensure that they are on physically separate hosts. If a host must be replaced or redeployed, you must adjust the preconfigured DRS rules.
 
-### Installation configuration files
-{: #ocp_overview-bastion-install-config-file}
-
-The installation configuration file `install-config.yaml.bak` is located in the installation directory on the bastion. The file is a copy of the original `install-config.yaml` file that was used by the `openshift-install` program to generate the ignition files. The generated ignition files can also be found in the installation directory on the bastion.
-
-The `oc` and `kubectl` command-line tools from the {{site.data.keyword.redhat_openshift_notm}} client software are on the bastion. The installer program, named `openshift-install`, is used to install {{site.data.keyword.redhat_openshift_notm}} and can also be used to generate fresh ignition files.  
-
-The bastion also holds a file that is named `auth/kubeconfig`, needed for authentication. This file holds the initial kubeadmin credentials that are created during installation. Before you initially use the `oc` or `kubectl` tools, you must set the KUBECONFIG environment variable with the path to this file. For example, `export KUBECONFIG=auth/kubeconfig`.
-
-After that is done, any commands you run will be as the `kubeadmin` user. You can verify the user account by running the following command:
-
-`./oc whoami`
-
-After you configure your authentication and any additional users, you no longer need to source this file, and you can log in as the user that you created.
-
 ### Red Hat subscriptions
 {: #ocp_overview-redhat-subscr}
 
@@ -134,10 +105,3 @@ For more information about how to configure {{site.data.keyword.redhat_openshift
 {: #ocp_overview-update-clus}
 
 For more information about updating {{site.data.keyword.redhat_openshift_notm}}, see the {{site.data.keyword.redhat_openshift_notm}} documentation.
-
-## Related links
-{: #ocp_overview-related}
-
-* [vCenter Server and {{site.data.keyword.redhat_openshift_notm}} architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-intro)
-* [VMware Solutions and {{site.data.keyword.redhat_openshift_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-intro)
-* [Succeeding with {{site.data.keyword.redhat_openshift_notm}} and VMware’s Software-Defined Datacenter (SDDC)](https://www.redhat.com/en/blog/red-hat-openshift-and-vmware-better-together){: external}

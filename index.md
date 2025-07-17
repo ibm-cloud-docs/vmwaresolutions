@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2025
 
-lastupdated: "2025-06-24"
+lastupdated: "2025-07-16"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -56,7 +56,7 @@ Review and choose your deployment offering.
 | Deployment offering | Description |
 |:------------------- |:----------- |
 | [{{site.data.keyword.vmware-service_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-aas-overview) | This offering provides the VMware Cloud Director platform as a managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® by Broadcom software so you can quickly deploy your VMware-based cloud computing environments. |
-| {{site.data.keyword.vcf-classic}} | - [Automated](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview): This offering deploys a VMware virtual environment by using custom compute, storage, and network resources to best fit your business needs. \n - [Flexible](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview): This offering provides a customizable virtualization service that combines VMware-compatible bare metal servers, hardware components, and licenses, to build your own IBM-hosted VMware environment. \n - [{{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview): This offering provides air-gapped protection, immutable storage, and rapid recovery of applications and data for ransomware protection. \n - [{{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview): This offering includes a secure-by-default architecture that follows IBM's unique policy controls framework, it provides continuous compliance monitoring, and the highest level of data encryption (FIPS 140-2 Level 4). |
+| {{site.data.keyword.vcf-classic}} | - [Automated](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview): This offering deploys a VMware virtual environment by using custom compute, storage, and network resources to best fit your business needs. \n - [Flexible](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview): This offering provides a customizable virtualization service that combines VMware-compatible bare metal servers, hardware components, and licenses, to build your own IBM-hosted VMware environment. \n - [{{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview): This offering provides air-gapped protection, immutable storage, and rapid recovery of applications and data for ransomware protection. |
 | [{{site.data.keyword.vcf-vpc}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw) | This offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Foundation™. It delivers compute, storage, networking, management automation, and security in a single platform on {{site.data.keyword.bm_is_full}}. |
 {: caption="Deployment offerings" caption-side="bottom"}
 
@@ -115,15 +115,14 @@ The following table describes the featured workload solutions services that are 
 | [{{site.data.keyword.IBM_notm}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | This service offers a cybersecurity solution to automate the monitoring and protection of SAP applications on {{site.data.keyword.cloud_notm}}, and to keep workloads compliant and secure from inside and outside threats. |
 {: caption="Featured workload solutions" caption-side="bottom"}
 
-#### Other services
+#### Management tools
 {: #getting-started-serv-other}
 
-The following table describes other services that are available.
+The following table describes the management tools that are available.
 
-| Service category | Service name | Description |
-|:---------------- |:------------ |:----------- |
-| Transformation and modernization | [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | This service brings together the power of the Red Hat OpenShift Container Platform and the VMware software-defined data center stack. |
-| Management tools | [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the tools of VMware Aria® Operations™ and VMware Aria Operations™ for Logs Enterprise Edition, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
+| Service name | Description |
+|:------------ |:----------- |
+| [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the tools of VMware Aria® Operations™ and VMware Aria Operations™ for Logs Enterprise Edition, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
 {: caption="Other services" caption-side="bottom"}
 
 ## Accessing the VMware Solutions console

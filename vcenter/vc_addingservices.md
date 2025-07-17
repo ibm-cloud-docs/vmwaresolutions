@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-06-19"
+lastupdated: "2025-07-16"
 
 keywords: add service, order service, add-on service
 
@@ -34,19 +34,18 @@ If you want to migrate your F5 BIG-IP or Veeam services from VMware NSX-V to VMw
 
 The following table shows the services that are available to Automated instances, together with the service versions.
 
-| Service name | Current version | Notes |
-|:------------ |:--------------- |:----- |
-| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 5.2 | |
-| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.1.1 | |
-| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.4.3 | |
-| [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version | |
-| [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) |   | |
-| [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (23.4R1) | |
-| [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 | |
-| [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.15 | NSX-T only \n If you want to add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade to 3.1 or later. |
-| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12.3 | |
-| [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | 8.18.3 | |
-| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 10.0u5 | VMware vSphere 7 or later |
+| Service name | Current version |
+|:------------ |:--------------- |
+| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 5.2 |
+| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.1.1 |
+| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.4.3 |
+| [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version |
+| [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) |   |
+| [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (23.4R1) |
+| [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 |
+| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12.3 |
+| [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | 8.18.3 |
+| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 10.0u5 |
 {: caption="Available services for Automated instances" caption-side="bottom"}
 
 ## Promotions for services
@@ -88,7 +87,6 @@ The following table provides the resource requirements for the services for whic
 | F5 BIG-IP[^f5bigip] | CPU - 4, 8, or 16 CPUs, depending on license and bandwidth chosen \n RAM - 8, 16, or 32 GB, depending on license and bandwidth chosen |
 | FortiGate Virtual Appliance | CPU - 2, 4, 8, 16, or 32 CPUs, depending on deployment size chosen \n RAM - 4, 6, or 12 GB, depending on deployment size chosen |
 | Juniper vSRX | You must have enough available capacity to accommodate two VMs with the following requirements, on different hosts: \n CPU - 6 CPUs \n RAM - 16 GB \n Storage - 18 GB \n If you install Juniper vSRX on clusters with 25 Gb uplink speed, the following capacity requirements apply. \n CPU - 10 CPUs \n RAM - 16 GB \n Storage - 18 GB |
-| {{site.data.keyword.redhat_openshift_notm}} | If you install {{site.data.keyword.redhat_openshift_notm}} with vSAN™ storage, the following capacity requirements apply. \n CPU - 9 CPUs \n RAM - 120 GB \n Storage - 1,170 GB \n If you install {{site.data.keyword.redhat_openshift_notm}} with NFS storage, a new 2-TB NFS datastore, which is dedicated to {{site.data.keyword.redhat_openshift_notm}}, is ordered. |
 | Veeam | If you select Veeam as a VSI option, capacity requirements don't apply. \n If you select Veeam as a VM option, the following capacity requirements apply. \n CPU - 8 CPUs \n RAM - 32 GB \n Storage - 100 GB \n If you select Veeam as a bare metal server option, capacity requirements don't apply. |
 | VMware HCX | For each gateway in the active-passive pair of NSX-V Edge Services Gateways: \n CPU - 6 CPUs \n RAM - 8 GB \n Storage - 3 GB VMDK \n For the HCX Management Appliance VM: \n CPU - 4 CPUs \n RAM - 12 GB \n Storage - 60 GB VMDK |
 | VMware Aria Operations and VMware Aria Operations for Logs | CPU - 18 CPUs \n RAM - 208 GB \n If you install VMware Aria Operations with vSAN storage, you must have an estimated 750 GB of vSAN storage. \n If you install VMware Aria Operations with NFS storage, you do not have a storage requirement because NFS storage is ordered as part of the instance order. |
@@ -159,7 +157,6 @@ Then, follow the instructions in the ordering topic for your chosen service to b
 * [Ordering FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering)
 * [Ordering VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering)
 * [Ordering Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering)
-* [Ordering Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_ordering)
 * [Ordering Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering)
 * [Ordering VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_ordering)
 * [Ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-15"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Bare metal hosts
 {: #vrw-baremetal}
 
-
+{{site.data.content.vrw-deprecated-note}}
 
 The {{site.data.keyword.cloud}} for VMware® Regulated Workloads is built upon multiple clusters of bare metal hosts with VMware ESXi™ as the hypervisor.
 

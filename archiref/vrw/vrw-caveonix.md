@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-15"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Caveonix integration
 {: #vrw-caveonix}
 
-
+{{site.data.content.vrw-deprecated-note}}
 
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads requires Caveonix RiskForesight™ for continuous compliance monitoring. The {{site.data.keyword.rw}} architecture is designed to allow compliance with NIST and other compliance certifications as required of the SaaS provider or the SaaS consumer that uses the {{site.data.keyword.rw}} offering.
 

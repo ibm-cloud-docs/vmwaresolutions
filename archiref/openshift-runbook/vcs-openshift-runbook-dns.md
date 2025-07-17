@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-16"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware Solutions DNS configuration
 {: #openshift-runbook-runbook-dns-intro}
 
-
+{{site.data.content.rhos-deprecated-note}}
 
 ## Collecting Active Directory credentials
 {: #openshift-runbook-runbook-dns-creds}

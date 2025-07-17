@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-07-02"
+lastupdated: "2025-07-16"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -387,17 +387,27 @@ Review the following considerations for the vSAN storage architecture:
 
 
 
+Key Management Interoperability Protocol (KMIP™) for VMware® support for Key Protect will end on 16 July 2026, after which interoperability with the Key Protect service will no longer work. Migrate to [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect).
+{: deprecated}
+{: #kmip-deprecated-note}
+
+This announcement is applicable only to customers who are using the KMIP for VMware support for Key Protect. Customers who are using KMIP for VMware support for Hyper Protect Crypto Services (HPCS) remain unaffected by this announcement. The KMIP for VMware support for HPCS continues to function as usual without any impact.
+{: important}
+{: #kmip-imp-note}
+
+
+
+**End of Marketing**: As of 17 July 2025, new deployments of VMware {{site.data.keyword.rw}} instances are no longer available for new customers. If you are an existing customer, you can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for your existing {{site.data.keyword.rw}} instances. As an existing customer, you can also view or delete your {{site.data.keyword.rw}} instances.
+{: note}
+{: #vrw-deprecated-note}
 
 
 
 
 
-
-
-
-
-
-
+As of 17 July 2025, new automated installations of {{site.data.keyword.redhat_openshift_full}} for VMware® are no longer available for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete your existing {{site.data.keyword.redhat_openshift_notm}} for VMware automated installations until 16 July 2026. The service will no longer be available from 17 July 2026.
+{: deprecated}
+{: #rhos-deprecated-note}
 
 
 
