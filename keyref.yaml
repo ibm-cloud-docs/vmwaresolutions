@@ -8,6 +8,10 @@ keyword:
     Cyber Recovery
   rw:
     Regulated Workloads
+  vcf:
+    VMware Cloud Foundation
+  vcf-short:
+    VCF
   vcf-aas:
     VCF as a Service
   vcf-aas-full:
