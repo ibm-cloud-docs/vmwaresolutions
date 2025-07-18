@@ -126,7 +126,7 @@ To validate the licenses for VMware products, complete the following steps:
 
 1. Log in to HCX with administrator privileges.
 2. On **Configuration**, select **Licensing and activation**.
-3. Verify that  one of the license names is vSphere for VCF with VCF license type.
+3. Verify that one of the license names is vSphere for VCF with VCF license type.
 
 ## Related links
 {: #licenses-add-assign-related}
