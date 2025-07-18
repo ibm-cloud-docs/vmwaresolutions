@@ -796,7 +796,8 @@ toc:
               - archiref/veeam-cr-sag/veeam-cr-sag-lnxmgdsvr.md
           - archiref/cr-byo/cr-byo-overview.md
           - archiref/cr-dell/cr-dell-overview.md
-          - archiref/cr-predatar/cr-predatar-overview.md
+          - topic: archiref/cr-predatar/cr-predatar-overview.md
+            navtitle: Cyber recovery with Predatar
           - topicgroup:
               id: veeam-backup-guide
               label: Veeam backup guide
