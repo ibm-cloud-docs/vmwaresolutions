@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-07-14"
+lastupdated: "2025-07-18"
 
 keywords: licenses, add license keys, assign licenses, validate licenses, manage licenses
 
@@ -112,21 +112,21 @@ To validate the licenses for VMware products, complete the following steps:
 
 1. Log in to the NSX-T UI with administrator privileges.
 2. On the **System** tab, select **Licenses**.
-2. Verify that one of the license names is vSphere for VCF.
+2. Verify that the new license appears in the list.
 
 ### Validating licenses for Aria Operations
 {: #licensing_manage-validate-aria}
 
 1. Log in to Aria Operations with administrator privileges.
 2. On **Administration**, click **Licensing**.
-3. Verify that one of the license names is vSphere for VCF with VCF license type.
+3. Verify that the new license appears in the list.
 
 ### Validating licenses for HCX Manager
 {: #licensing_manage-validate-hcx}
 
 1. Log in to HCX with administrator privileges.
 2. On **Configuration**, select **Licensing and activation**.
-3. Verify that one of the license names is vSphere for VCF with VCF license type.
+3. Verify that the new license appears in the list.
 
 ## Related links
 {: #licenses-add-assign-related}
