@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-07-14"
+lastupdated: "2025-07-18"
 
 keywords: licenses, add license keys, assign licenses, validate licenses, manage licenses
 
