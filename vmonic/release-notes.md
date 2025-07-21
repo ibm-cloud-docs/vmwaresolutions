@@ -113,7 +113,7 @@ Add-on services upgrades
 :   The following service versions are available for deployment:
 
    * Caveonix RiskForesight v5.1.5
-   * Veeam® Backup and Replication 12.3 (does not apply to {{site.data.keyword.vm-shared}} deployments)
+   * Veeam Backup and Replication 12.3 (does not apply to {{site.data.keyword.vm-shared}} deployments)
    * VMware Aria Operations and VMware Aria Operations for Logs v8.18
 
 ### 3 February 2025
@@ -227,9 +227,9 @@ BOM updates for {{site.data.keyword.vcf-classic-short}}
 Add-on services upgrades
 :   The following service versions are now available for deployment:
 
-   * F5® BIG-IP® v17.1.1.3
-   * Juniper® vSRX v3.0 (23.4R1)
-   * {{site.data.keyword.redhat_openshift_full}} v4.15
+   * F5 BIG-IP v17.1.1.3
+   * Juniper vSRX v3.0 (23.4R1)
+   * {{site.data.keyword.redhat_openshift_notm}} v4.15
    * VMware Aria Operations v8.17.1 and VMware Aria Operations for Logs v8.17
 
 Veeam 12.1.2 for {{site.data.keyword.vm-shared}}
@@ -379,7 +379,7 @@ Add-on services upgrades
 :   The following service versions are now available for deployment:
 
    * VMware Aria Operations v8.14.1 and VMware Aria Operations for Logs v8.14
-   * {{site.data.keyword.redhat_openshift_full}} v4.14
+   * {{site.data.keyword.redhat_openshift_notm}} v4.14
    * Zerto v9.7u4
 
 User interface updates and enhancements
