@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-07-17"
+lastupdated: "2025-07-23"
 
 keywords: vmware solutions kmip for vmware, kmip for vmware, migration, migration partner, partners for assisted migration
 
@@ -48,13 +48,19 @@ If you already use the KMIP for VMware provider, switch to the new key provider 
 1. Go to `https://cloud.ibm.com/infrastructure/vmware-solutions/console/instances/kmip`.
 2. Select your existing KMIP for VMware instance and note the Key Manager instance name.
 3. Go to `https://cloud.ibm.com/resources`, expand **Security**, and choose the Key Manager instance from step 2.
+
+     To implement this step, your account needs certain privileges. Complete the following steps to check your account privilege:
+     * In the console, **Manage** > **Access (IAM)** > **Users**.
+     * Under **Access policies**, select your user ID, and then select the **Access** tab.
+     * Ensure that the *service - Key Protect* and *Role - Administrator* permissions are added.
+
 4. Select **KMIP adapters** from the left navigation menu, and click **Create KMIP adapter**.
 5. Optionally, type a name, and then select a root key.
 
      Adding certificate details here is optional as vCenter generates a new certificate for each key provider that you configure.
      {: note}
 
-6. Select the **Endpoints** tab from left navigation menu to identify the KMIP endpoint you need to configure.
+6. Select the **Endpoints** tab from left navigation menu to identify the KMIP endpoint you need to configure. Choose the **Private** endpoint with type as **KMIP**.
 
       Only one endpoint is available here unlike the KMIP for VMware offering in {{site.data.keyword.cloud_notm}} for VMware Solutions. A single hostname balances the load and it is highly available in each region.
       {: important}
@@ -63,7 +69,7 @@ If you already use the KMIP for VMware provider, switch to the new key provider 
 8. Select **Configure > Key Providers**, and then add a standard key provider.
 9. Verify the details, and click **Trust**.
 10. Select the new key provider, and then the single server in that provider.
-11. In the **Make KMS trust vCenter** section, click **Establish Trust**. Use the vCenter Certificate option that generates a new certificate just for this connection.
+11. In the **Make KMS trust vCenter** section, click **Establish Trust**. Use the **vCenter Certificate** option that generates a new certificate just for this connection.
 12. Copy the certificate, and click **Done**.
 
       Before you copy the certificate, wait for the screen to refresh because the certificate details can vary if you copy too quickly.
@@ -79,6 +85,9 @@ If you already use the KMIP for VMware provider, switch to the new key provider 
 {: #kmip_migration-environment-setdefault}
 
 Set the new key provider as default to help ensure that all new virtual machines (VMs) are encrypted by the new key provider.
+
+1. In vCenter Server, choose the vCenter object.
+2. Go to **Configure > Key Providers**, select the new key provider, and then **Set As Default**.
 
 ### Migrate encrypted resources to the new key provider
 {: #kmip_migration-environment-migratevms}

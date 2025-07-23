@@ -66,10 +66,10 @@ REST APIs for licensing and metering
 BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic-short}} instances, clusters, and hosts:
 
-   * VMware vSphere ESXi™
+   * VMware vSphere ESXi
       * 8.0 Update 3d (build 24585383)
       * 7.0 Update 3s (build 24585291)
-   * VMware NSX® 4.2.1.2 (build 24476729)
+   * VMware NSX 4.2.1.2 (build 24476729)
 
 vSAN storage updates
 :   For new {{site.data.keyword.vcf-auto-short}} instances and hosts, you can add more vSAN storage than the default capacity of 1 TB per host core. The {{site.data.keyword.IBM_notm}} automation will calculate and order the vSAN overage.
@@ -158,7 +158,7 @@ Primary cluster reassignment
 BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
 
-   * VMware vCenter Server® Appliance
+   * VMware vCenter Server Appliance
       * 8.0 Update 3d (build 24322831)
       * 7.0 Update 3t (build 24322018)
    * VMware vSphere ESXi 8.0 Update 3b (build 24280767)
@@ -243,7 +243,7 @@ Known issue about text overflow
 {: release-note}
 
 VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
-:   The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.5.1.1, which resolves various issues and includes bug fixes. For more information, see [VMware Cloud Director 10.5.1.1 release notes](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/release-notes/vmware-cloud-director-10511-release-notes.html){: external}.
+:   The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.5.1.1, which resolves various issues and includes bug fixes.
 
 ### 14 June 2024
 {: #vmwaresolutions-jun1424}
@@ -252,7 +252,7 @@ VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
 {{site.data.keyword.vcf-vpc}} enhancements
 :   The following features are now available:
 
-   * **Server backup**: You can do regular backups of management components, such as SDDC Manager, VMware vCenter Server, and NSX Manager. For more information, see [Management domain backup](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ordering#vpc-vcf-ordering-mgmt-domain-backup).
+   * **Server backup**: You can do regular backups of management components, such as SDDC Manager, VMware vCenter Server, and NSX Manager.
    * **Contact form**: You can use a form to contact an IBM Sales representative for the 1-year and 3-year subscription options.
    * The following **BOM updates** are applied to newly deployed instances:
       * Cloud Builder VM 5.1.1 (build 23480823)
@@ -275,16 +275,14 @@ Updated offerings for VMware Solutions
    * VMware vCenter Server, VMware vSphere, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}} are merged into **{{site.data.keyword.vcf-classic}}** or **{{site.data.keyword.vcf-classic-short}}**.
    * VMware Cloud Foundation is now called **{{site.data.keyword.vcf-vpc}}** or **{{site.data.keyword.vcf-vpc-short}}**.
 
-   For more information, see [Packaging and naming for offerings](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-naming).
-
    Some documentation, including, but not limited to, tutorials, solutions architectures, solution guides, videos, and diagrams might still be using the old offering names. This information will be gradually updated to the new offering names in future releases.
    {: note}
 
 Licensing updates
-:   The VMware licensing model is changed. You are now entitled to the [VMware software products](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact) that are included in the VMware Cloud Foundation™ bundle. To request VMware NSX license upgrades and other licensing changes, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+:   The VMware licensing model is changed. You are now entitled to the VMware software products that are included in the VMware Cloud Foundation™ bundle. To request VMware NSX license upgrades and other licensing changes, open an IBM Support ticket by following the steps in Getting help and support.
 
 VMware add-ons
-:   As a result of the new VMware Cloud Foundation bundle and the new VMware licensing model, you must order separately a number of VMware add-ons. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
+:   As a result of the new VMware Cloud Foundation bundle and the new VMware licensing model, you must order separately a number of VMware add-ons.
 
 BOM updates for {{site.data.keyword.vcf-classic}}
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
@@ -310,7 +308,7 @@ User interface updates and enhancements
    * The UI is updated with various messages and tooltips.
 
 REST API updates
-:   The following updates are available for the [VMware Solutions API](/apidocs/vmware-solutions):
+:   The following updates are available for the VMware Solutions API:
 
    * Support for adding new instances and clusters with BYOL is removed. If you want to use BYOL, you must add these instances and clusters through the UI.
    * Support for deleting licenses for {{site.data.keyword.vcf-flex}} is removed.
@@ -815,149 +813,3 @@ User interface updates and enhancements
 
    * A vertical progress indicator bar is now available on the ordering page for VMware Solutions Shared offerings. The progress indicator maps to each section and helps to quickly browse to different areas of the page.
    * If you are running VMware NSX-V or a vSphere 6 version on the instances in your environment, you now receive notifications to update your environment to the most recent supported version of NSX or vSphere. You can go to the instance summary page to check the NSX solution type and the vSphere version that is most suitable for your environment.
-
-### 22 June 2022
-{: #vmwaresolutions-jun2222}
-{: release-note}
-
-VMware vRealize Operations Tenant App V8.6 for {{site.data.keyword.vm-shared}}
-:   The 4.8 release enables a new optional feature for the {{site.data.keyword.vmwaresolutions_short}} tenant portal. VMware vRealize Operations Tenant App V8.6 provides metering capabilities for tenants to monitor their virtual data centers, virtual applications, and virtual machines.
-
-{{site.data.keyword.cloud_notm}} Identity and Access Management enablement for VMware Solutions Shared
-:   {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) is now enabled by default for new sites. You can optionally enable IAM for existing sites. After you integrate your site with IAM, you can use single sign-on to log in to the VMware Cloud Director console from the VMware Solutions console.
-
-   With the IAM integration, role-based access control now uses a site and organization IAM policy for VMware Solutions Shared resources.
-
-{{site.data.keyword.cloud_notm}} data center region and site availability for VMware Solutions Shared
-:   You can now select the region where your virtual data center instance is hosted and the {{site.data.keyword.cloud_notm}} data center site where the virtual data center is hosted.
-
-Platform management roles
-:   New IAM platform management roles are available for VMware Solutions offerings.
-
-End of Marketing for NSX-V instance deployments
-:   VMware support for all new VMware NSX-V deployments ended on 16 January 2022. However, VMware and IBM® worked closely to extend the existing NSX–V support until 15 January 2025. Ordering new VMware vCenter Server with NSX-V instances is not supported after 21 June 2022.
-
-End of Marketing for vSphere 6.7 instance deployments
-:   VMware support for all new VMware vSphere 6.7 deployments ends on 15 October 2022.
-
-VMware vSphere 7.0 Update 3d support
-:   vSphere 7.0 Update 3d is available for newly deployed instances. For existing vSphere 7.0u2 instances and clusters, you can add either a vSphere 7.0u2 or a vSphere 7.0u3 host or cluster.
-
-Updates to VMware vCenter Server instances
-:   The following upgrades are applied to newly deployed instances, clusters, and hosts.
-   * VMware vSphere ESXi 7.0 Update 3d (build 19482537)
-   * VMware vCenter Server Appliance 7.0 Update 3d (build 19480866)
-
-Updates to VMware vSphere cluster names
-:   The requirements for vSphere cluster names are changed.
-
-VMware ESXi firewall configuration for NFS - issue fixed {: #june-2022-esxi-firewall}
-:   {{site.data.keyword.cloud_notm}} identified a problem with the VMware ESXi firewall configuration for NFS feature, which might cause some firewall rules to be lost during the update. This problem is now fixed.
-
-Price calculation updates
-:   Price calculations are now automatically generated when you access the order pages for {{site.data.keyword.vmwaresolutions_short}} Dedicated and {{site.data.keyword.rw}} offerings. For more information about the specific default selections, find the requirement information for each offering order.
-
-Cyber recovery with Veeam solution
-:   This solution aims for VMware and IBM to accelerate and ensure the development, testing, and implementation of a secure cyber-recovery cloud solution that enables recovery against advanced cyberthreats like ransomware. Copies of critical data are protected with a multi-purpose cyber-recovery cloud solution: a copy target for cloud-native application data for existing cloud or on-premises systems. As an extra {{site.data.keyword.cloud_notm}} option, you can add cyber-recovery sites to isolate copies of critical customer data and to validate data integrity while you also enable recovery from cyberattacks.
-
-Security and Compliance Readiness Bundle - deprecated
-:   New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or remove VMware ESXi servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
-{: deprecated}
-
-Add-on services upgrades
-:   The following service versions are now available to install on deployed instances.
-   * Entrust CloudControl v6.5 (formerly HyTrust® CloudControl)
-   * FortiGate Virtual Appliance v7.0.5
-   * Red Hat OpenShift v4.10
-   * Zerto v9.0u4
-
-Entrust DataControl - deprecated
-:   New installations of Entrust DataControl® are no longer supported for new or existing deployments of vCenter Server instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
-{: deprecated}
-
-New and updated documentation
-:   The following documentation updates are available.
-   * Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0 with the supported upgrade paths.
-   * Managing IAM access for VMware Solutions.
-
-REST API updates
-:   New REST APIs are available.
-
-   * (Updated on 31 October 2022) For {{site.data.keyword.vm-shared}}, a new V2 API is introduced, which includes the new `site` object. The V1 API is being deprecated and will be supported until 31 December 2022. To ensure smooth transition in the future, start using the V2 APIs.
-   * For the VMware Solutions API, support is provided for VMware vSphere cluster new deployments and for the KMIP for VMware stand-alone service.
-
-User interface updates and enhancements
-:   Various error messages and tooltip enhancements are available to assist you in selecting the appropriate setting on the UI.
-
-   * You can now view site and virtual data center details from the **Resources** page for {{site.data.keyword.vm-shared}}.
-   * The following enhancements are made to the ordering page for {{site.data.keyword.vmwaresolutions_short}} offerings.
-      * A vertical progress indicator bar is now available that maps each section on the ordering page and helps to quickly browse to different areas of the page. You can directly jump onto any specific section of the page by clicking the heading in the progress bar. When you scroll through the page, the progress bar also keeps a check on whether the data is entered or not.
-      * The CPU model selection tile group is now changed to a list of items in a table. You can select the CPU model of your choice from the table.
-
-### 25 April 2022
-{: #vmwaresolutions-apr2522}
-{: release-note}
-
-VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
-:   (Updated on 8 May 2022) The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.3.3.
-
-Compute policy support for VMware Solutions Shared virtual data centers
-:   You can now choose to enable a compute policy for a VMware Solutions Shared virtual data center. This feature provides a convenient option to choose a compute policy for your virtual machine (VM) from the list of policies that are available for that virtual data center.
-
-vSAN support for VMware Solutions Shared virtual data centers
-:   vSAN™ support is now available for Dallas 10 and Dallas 12 VMware Solutions Shared virtual data centers.
-
-VMware vCenter Server instances
-:   The 4.7 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts.
-   * VMware vSphere ESXi 7.0 Update 2e (build 19290878)
-   * VMware vSphere ESXi 6.7 P06 (build 18828794)
-   * VMware vCenter Server Appliance 6.7.0 Update 3q (build 19300125)
-   * VMware NSX-T 3.2.0.1.0 (build 19232400)
-   * VMware NSX-V 6.4.13 (build 19307994)
-
-VMware ESXi firewall configuration for NFS {: #april-2022-esxi-firewall}
-:   (Updated on 7 June 2022) {{site.data.keyword.cloud}} identified a problem with the following feature, which might cause some firewall rules to be lost during the update. This problem is now fixed.
-
-   VMware ESXi attempts to manage the outbound firewall for NFS traffic for you automatically. Under some circumstances, VMware ESXi might not discover all IP addresses for an NFS data store, sometimes resulting in loss of connectivity if the {{site.data.keyword.cloud_notm}} Endurance servers are undergoing maintenance. VMware Solutions corrects the ESXi firewall configuration whenever adding hosts, clusters, or storage to your vCenter Server instance.
-
-Loss of connectivity to NFS storage {: #april-2022-connect-lost}
-:   (Updated on 7 June 2022) For more information, see [Why did my host lose connection to my NFS datastore?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_esxi_firewall_config_nfs)
-
-Edge services cluster updates
-:   You can now add more than one edge services cluster in the same data center pod.
-
-Price calculation updates
-:   Price calculations are now automatically generated when you access the VMware vCenter Server instance order page. Default selections include the Data Center SP Professional license for NSX-T, the Advanced license for NSX-V, the Dual Intel Xeon Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, and 768 GB RAM.
-
-VMware Subscription Purchasing Program credits - deprecated
-:   Credits for the VMware Subscription Purchasing Program (SPP) are no longer available.
-{: deprecated}
-
-Add-on services upgrades
-:   The following service versions are now available to install on deployed instances.
-
-   * FortiGate Virtual Appliance v7.0.4
-   * Entrust DataControl® v5.5 (formerly HyTrust® DataControl)
-   * Red Hat OpenShift v4.9.27
-   * Zerto v9.0u3
-
-Dizzion
-:   Dizzion is now available as a featured service from the VMware Solutions console.
-
-Name change for HyTrust add-on services
-:   The company Entrust acquired the HyTrust company. The names of the following services are updated.
-
-   * Entrust CloudControl
-   * Entrust DataControl
-   * Entrust KeyControl™, which is deprecated
-
-Veeam VSI, Veeam bare metal, and Zerto configuration changes
-:   Beginning with the 4.7 release, the Veeam VSI, Veeam bare metal, and Zerto services are not configured with an {{site.data.keyword.cloud_notm}} Infrastructure portable IP address or with a NAT connection to the public network, even if you have public interfaces in your instance. This update helps to avoid the possibility of asymmetric routing when you use a network gateway appliance.
-
-New architecture documentation
-:   The following technical documents are now available or updated:
-   * VMware Solutions architecture patterns
-   * VMware NSX-V to NSX-T migration
-
-User interface updates and enhancements
-:   The VMware Solutions documentation now has a landing page where you can get oriented with the content available for the offering.
