@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2025
 
-lastupdated: "2022-05-27"
+lastupdated: "2025-07-24"
 
 keywords: troubleshooting, OVF deploy, how to deploy OVF file
 
@@ -43,4 +43,4 @@ Use the following steps to use the vSphere Web Client to deploy an OVF file:
 3. Ensure that you have access to all the necessary VPNs (Virtual Private Networks) in the {{site.data.keyword.slportal_full}}. In this example, it would be `10.131.7.xx` and `10.131.9.xxx`.
 4. Sign in the VPN for your data center.
 5. Click **vCenter** to access the vSphere Web Client.
-6. Right-click on a host and deploy an `.ovf` file.
+6. Right-click a host and deploy an `.ovf` file.

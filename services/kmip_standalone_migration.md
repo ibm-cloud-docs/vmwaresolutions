@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-07-23"
+lastupdated: "2025-07-24"
 
 keywords: vmware solutions kmip for vmware, kmip for vmware, migration, migration partner, partners for assisted migration
 
@@ -57,7 +57,7 @@ If you already use the KMIP for VMware provider, switch to the new key provider 
 4. Select **KMIP adapters** from the left navigation menu, and click **Create KMIP adapter**.
 5. Optionally, type a name, and then select a root key.
 
-     Adding certificate details here is optional as vCenter generates a new certificate for each key provider that you configure.
+     Adding certificate details here is optional as vCenter generates a new certificate for each key provider that you configure. The certificate would be generated in [step 11](#kmipmigratn-step11).
      {: note}
 
 6. Select the **Endpoints** tab from left navigation menu to identify the KMIP endpoint you need to configure. Choose the **Private** endpoint with type as **KMIP**.
@@ -69,7 +69,7 @@ If you already use the KMIP for VMware provider, switch to the new key provider 
 8. Select **Configure > Key Providers**, and then add a standard key provider.
 9. Verify the details, and click **Trust**.
 10. Select the new key provider, and then the single server in that provider.
-11. In the **Make KMS trust vCenter** section, click **Establish Trust**. Use the **vCenter Certificate** option that generates a new certificate just for this connection.
+11. In the **Make KMS trust vCenter** section, click **Establish Trust**. Use the **vCenter Certificate** option that generates a new certificate just for this connection. {: #kmipmigratn-step11}
 12. Copy the certificate, and click **Done**.
 
       Before you copy the certificate, wait for the screen to refresh because the certificate details can vary if you copy too quickly.
@@ -108,7 +108,7 @@ After you set the new key provider to default, select any VM in the inventory. T
 You can also rekey multiple encrypted virtual machines at the same time by using a PowerCLI script similar to the following sample script:
 
 ```text
-$kp = Get-KeyProvider new-kmip
+$kp = Get-KeyProvider <new-kmip>
 
 foreach($vm in Get-VM) {
   if($vm.ExtensionData.Config.KeyId) {
@@ -133,7 +133,7 @@ After you set the new key provider to default, rekey both your vSAN cluster and 
 If you are using only vSphere encryption and not vSAN encryption, you must use the PowerCLI tool to rekey the encrypted hosts in your environment. The following sample script shows how to rekey all the encrypted hosts in an environment that is in *safe* mode, meaning that the environment is issued a host key for encryption of core dumps:
 
 ```text
-$kp = Get-KeyProvider new-kmip
+$kp = Get-KeyProvider <new-kmip>
 
 foreach($vmhost in Get-VMHost) {
   if($vmhost.ExtensionData.Runtime.CryptoState -eq "safe") {
