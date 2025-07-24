@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-06-10"
+lastupdated: "2025-07-24"
 
 keywords: Veeam, Veeam standalone license, order Veeam standalone license
 
@@ -31,6 +31,8 @@ If you have an existing Veeam 9.5u4b installation that comes with a license and 
 
 When you plan to upgrade your Veeam usage, you might be charged for licenses for Veeam 9.5, which is deprecated, and for the currently supported Veeam version. Therefore, order a new license for your Veeam installation toward the end of a month, so you aren’t charged for both licenses for most of the month.
 {: tip}
+
+
 
 ## Procedure to order Veeam stand-alone licenses
 {: #veeam_ordering_licenses_ordering-procedure}
