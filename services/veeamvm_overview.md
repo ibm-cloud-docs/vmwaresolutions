@@ -4,9 +4,9 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-07-25"
 
-keywords: Veeam, Veeam Backup and Replication 12.3, Veeam install, tech specs Veeam, Veeam overview
+keywords: Veeam, Veeam Backup and Replication, Veeam install, tech specs Veeam, Veeam overview
 
 subcollection: vmwaresolutions
 

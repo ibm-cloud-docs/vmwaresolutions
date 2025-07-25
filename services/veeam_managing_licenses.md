@@ -4,9 +4,9 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-06-10"
+lastupdated: "2025-07-25"
 
-keywords: Veeam, Veeam license, manage Veeam license, Veeam Backup and Replication 12.3
+keywords: Veeam, Veeam license, manage Veeam license, Veeam Backup and Replication
 
 subcollection: vmwaresolutions
 
