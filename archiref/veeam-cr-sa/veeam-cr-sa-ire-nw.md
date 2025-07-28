@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-17"
+lastupdated: "2025-07-28"
 
 subcollection: vmwaresolutions
 
@@ -125,6 +125,6 @@ The required traffic flow is shown in the following diagram where:
 
 * [Tier-1 logical router](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/manager-mode/advanced-routing/tier-1-logical-router.html){: external}
 * [Network Address Translation (NAT)](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/network-address-translation.html){: external}
-* [Distributed firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/distributed-firewall.html){: external}
-* [Tags](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/inventory/nsx-tags.html){: external}
-* [Segments](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/segments.html){: external}
+* [Distributed firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/security/distributed-firewall.html){: external}
+* [Tags](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/inventory/nsx-tags.html){: external}
+* [Segments](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/segments.html){: external}

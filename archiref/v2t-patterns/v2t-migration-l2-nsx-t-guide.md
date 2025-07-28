@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-14"
+lastupdated: "2025-07-28"
 
 subcollection: vmwaresolutions
 
@@ -72,7 +72,7 @@ If you experience issues during migration, see [Migrating a virtual machine betw
 
 A recommended practice is to use one NSX-T edge node to extend one NSX-V logical switch. This Edge node must be a virtual appliance because the NSX-T edge must be deployed on an {{site.data.keyword.cloud_notm}} Bare Metal Server that is prepared for NSX-V. Each NSX-T edge node has two N-VDS switches: the first one is connected to the physical network to provide a TEP uplink and the second one is connected to the NSX-V logical switch. The NSX-V logical switches do not support VLAN tagging, so only one logical switch can be connected to the edge node's interface. For this reason, one edge cluster (two edge nodes) is required for each NSX-V logical switch that requires an L2 extension.
 
-The default MAC address of the NSX-T virtual-distributed router needs to be changed so that it does not conflict with the one used by the NSX-V Distributed Logical Router (DLR). The virtual-distributed routers in all the transport nodes of an NSX-T environment use the default global MAC address, which is required even if the NSX-V DLR interface is disabled for that logical switch. For more information, see [Change the MAC Address of NSX-T Virtual Distributed Router](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/change-the-mac-address-of-nsx-t-virtual-distributed-router.html){: external}.
+The default MAC address of the NSX-T virtual-distributed router needs to be changed so that it does not conflict with the one used by the NSX-V Distributed Logical Router (DLR). The virtual-distributed routers in all the transport nodes of an NSX-T environment use the default global MAC address, which is required even if the NSX-V DLR interface is disabled for that logical switch. For more information, see [Change the MAC Address of NSX-T Virtual Distributed Router](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/change-the-mac-address-of-nsx-t-virtual-distributed-router.html){: external}.
 
 The overlay segments in NSX-T must have the same virtual network identifier (VNI) as the Logical Switches in NSX-V. You must use the NSX-T APIs to create the overlay segments. You cannot create overlay segments with the same VNI in the NSX Manager UI.
 
@@ -80,15 +80,15 @@ The NSX-T Edge node VM can be deployed on any ESXi host as it has its own TEP. T
 
 VMs running on NSX-V prepared hosts never see the VXLAN encapsulation. The ESXi host's NSX-V VTEP de-encapsulates VXLAN before it sends data to the VM. The NSX-T Edge node VM running on an NSX-V prepared host sees frames without encapsulation on the NSX-V logical switch (virtual wire) and can send these frames to the NSX-T segment.
 
-The NSX-V logical switch (virtual wire) to be bridged requires MAC Learning or promiscuous mode and Forged Transmit to be enabled as the Edge Node VM must be able to send and receive traffic with different MAC address than its own. See [Configure the Logical Switch to Connect to the Edge Bridge](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/configure-the-logical-switch-to-connect-to-the-edge-bridge.html){: external}.
+The NSX-V logical switch (virtual wire) to be bridged requires MAC Learning or promiscuous mode and Forged Transmit to be enabled as the Edge Node VM must be able to send and receive traffic with different MAC address than its own. See [Configure the Logical Switch to Connect to the Edge Bridge](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/configure-the-logical-switch-to-connect-to-the-edge-bridge.html){: external}.
 
-VMware® uses the same MAC address for the NSX-V DLR and the NSX-T distributed router and an API call to NSX-T Manager is required to change the MAC address of the NSX-T distributed router to avoid overlap with the NSX-V DLR when bridging. For more information, see [Change the MAC address of NSX-T Virtual Distributed Router](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/change-the-mac-address-of-nsx-t-virtual-distributed-router.html){: external}.
+VMware® uses the same MAC address for the NSX-V DLR and the NSX-T distributed router and an API call to NSX-T Manager is required to change the MAC address of the NSX-T distributed router to avoid overlap with the NSX-V DLR when bridging. For more information, see [Change the MAC address of NSX-T Virtual Distributed Router](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/change-the-mac-address-of-nsx-t-virtual-distributed-router.html){: external}.
 
 The management NIC on the NSX-T Edge node VM must be able to reach the NSX-T Managers. The tunnel NIC (TEP) must have connectivity to the other NSX-T transport nodes, while the third NIC is connected directly to the NSX-V logical switch (virtual wire) to be bridged.
 
 ## Related links
 {: #v2t-l2-nsx-t-guide-links}
 
-* [Overview of Edge Bridging in NSX-T](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/overview-of-edge-bridging-in-nsx-t-data-center.html){: external}
-* [Extending Layer 2 Networks with NSX-T Edge Bridge](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/extending-layer-2-networks-with-nsx-t-edge-bridge.html){: external}
+* [Overview of Edge Bridging in NSX-T](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/overview-of-edge-bridging-in-nsx-t-data-center.html){: external}
+* [Extending Layer 2 Networks with NSX-T Edge Bridge](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/extending-layer-2-networks-with-nsx-t-edge-bridge.html){: external}
 * [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-07-12"
+lastupdated: "2025-07-28"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -87,8 +87,8 @@ If applicable to you, complete the following tasks:
 {: #vmware-add-ons-links}
 
 * [VMware Avi Load Balancer](https://techdocs.broadcom.com/us/en/vmware-security-load-balancing/avi-load-balancer.html){: external}
-* [Gateway Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/gateway-firewall.html){: external}
-* [Distributed Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/distributed-firewall.html){: external}
+* [Gateway Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/security/gateway-firewall.html){: external}
+* [Distributed Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/security/distributed-firewall.html){: external}
 * [NSX Edge Installation Requirements](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/installation-guide/installing-nsx-edge/nsx-edge-installation-requirements.html){: external}
 * [Counting Cores for VMware Cloud Foundation and vSphere Foundation and TiBs for vSAN](https://knowledge.broadcom.com/external/article?legacyId=95927){: external}
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

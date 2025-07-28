@@ -113,6 +113,6 @@ The distributed firewall policy configuration in a policy named `Cyber-Isolated`
 
 * [Tier-1 logical router](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/manager-mode/advanced-routing/tier-1-logical-router.html){: external}
 * [Network Address Translation (NAT)](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/network-address-translation.html){: external}
-* [Distributed firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/distributed-firewall.html){: external}
-* [Tags](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/inventory/nsx-tags.html){: external}
-* [Segments](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/segments.html){: external}
+* [Distributed firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/security/distributed-firewall.html){: external}
+* [Tags](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/inventory/nsx-tags.html){: external}
+* [Segments](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/segments.html){: external}
