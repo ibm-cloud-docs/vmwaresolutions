@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-12"
+lastupdated: "2025-07-28"
 
 subcollection: vmwaresolutions
 
@@ -65,7 +65,7 @@ NSX-T customer workload T0 firewall and NAT settings are required to enable prox
 ### Setting up the firewall
 {: #vum-init-config-firewall}
 
-Add a gateway firewall policy and rule by using the parameters in the following table. For more information, see [Add a gateway firewall policy and rule](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/administration-guide/security/gateway-firewall/add-a-gateway-firewall-policy-and-rule.html){: external}.
+Add a gateway firewall policy and rule by using the parameters in the following table. For more information, see [Add a gateway firewall policy and rule](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/security/gateway-firewall/add-a-gateway-firewall-policy-and-rule.html){: external}.
 
 | Parameter | Suggested values |
 |:--------- |:---------------- |
