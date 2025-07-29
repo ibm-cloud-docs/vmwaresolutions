@@ -23,7 +23,7 @@ After 21 June 2022, provisioning new {{site.data.keyword.vcf-auto-short}} instan
 After 21 June 2022, you can no longer order new {{site.data.keyword.vcf-auto-short}} instance with vSphere 6.7. After 15 October 2022, the {{site.data.keyword.vcf-auto-short}} instances with vSphere 6.7 are read–only in the VMware Solutions console. You can no longer add or remove hosts and clusters until you upgrade to vSphere 7.0.
 {: note}
 
-If you have a {{site.data.keyword.vcf-auto-short}} instance that is deployed with vSphere 7, then VMware® added new functions and rebranded it as vSphere Lifecycle Manager (vLCM). For more information, read this blog entry [vSphere 7 – lifecycle management](https://blogs.vmware.com/vsphere/2020/04/vsphere-7-patching-lifecycle-management.html){: external}
+If you have a {{site.data.keyword.vcf-auto-short}} instance that is deployed with vSphere 7.x version or later, then VMware® added new functions and rebranded it as vSphere Lifecycle Manager (vLCM). For more information, see [What’s New with vSphere in VMware Cloud Foundation 9.0](https://blogs.vmware.com/cloud-foundation/2025/06/23/vsphere-in-vcf-9-0-whats-new/){: external}
 
 VUM enables centralized, automated patch and version management for VMware vSphere®. With VUM, you can complete the following tasks in your {{site.data.keyword.vcf-auto-short}} environment:
 * Upgrade and patch the vSphere ESXi hosts.
