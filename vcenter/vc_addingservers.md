@@ -92,8 +92,7 @@ Review the following additional information applicable to Automated instances wi
     * If you want to customize the prefix for each hostname, toggle the **Configure hostnames individually** switch on and enter the hostname prefixes.
 9. In the **Details** section, review the estimated pricing, ensure that the account to be charged is correct, and review and accept the terms. Then, click **Add**.
 
-   When you provision new ESXi servers, new vSphere license keys are assigned to hosts automatically. For existing ESXi servers, you must replace and assign the existing license keys to the hosts. For more information, see [Adding license keys to VCF, vCenter Server, vSAN, and ESXi](/docs/vmwaresolutions?topic=vmwaresolutions-licensing_manage#licensing_manage-add-vcf).
-   {: important}
+   
 
 ## Results after you add ESXi servers to Automated instances
 {: #vc_addingservers-results}
