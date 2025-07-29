@@ -81,20 +81,20 @@ The validated configuration status changes to **Success**.
 1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance that contains the primary cluster that you want to reassign.
 3. Click the **Infrastructure** tab and click **Reassign primary cluster** on the upper right of the **Clusters** table.
-4. On the **Reassign primary cluster** pane, the original primary cluster is preselected. Verify that both the new (target) primary cluster and the original (source) primary cluster show a status of **Available**.
-5. Select the new cluster that you want to assign as the primary cluster. The list shows only the new clusters that meet the following conditions, which are required for a successful reassignment:
+4. On the **Reassign primary cluster** pane, the original (source) primary cluster is preselected. Verify that both the target cluster and the source cluster show a status of **Available**.
+5. Select the target cluster that you want to assign as the primary cluster. The list shows only the clusters that meet the following conditions, which are required for a successful reassignment:
     * Must have vSAN storage.
-    * Must be on the same VLANs as the original primary cluster.
-    * Must have the same version of vSphere and the same networking type as the original primary cluster.
+    * Must be on the same VLANs as the source primary cluster.
+    * Must have the same version of vSphere and the same networking type as the source primary cluster.
 6. Click **Reassign**.
 
-The reassignment of the new primary cluster can take up to one hour.
+The reassignment of the target primary cluster can take up to one hour.
 {: note}
 
 ## Results after you reassign the primary cluster
 {: #vc_reassigningprimarycluster-results}
 
-The status of the original and new primary clusters changes from **Available** to **Modifying**. After the reassignment is complete, the **primary** tag is shown on the new primary cluster and the status of both clusters changes to **Available**.
+The status of the source and target primary clusters changes from **Available** to **Modifying**. After the reassignment is complete, the **primary** tag is shown on the target cluster and the status of both clusters changes to **Available**.
 
 ## Related links
 {: #vc_reassigningprimarycluster-related}
