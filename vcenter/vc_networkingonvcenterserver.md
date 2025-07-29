@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-12"
+lastupdated: "2025-07-29"
 
 keywords: vcf automated networking, networking components, networking vcf classic
 
@@ -68,6 +68,6 @@ Review the following considerations before you attempt to change the passwords f
 ## Related links
 {: #vc_networkingonvcenterserver-related}
 
-* [Overview of NSX-T Data Center](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/3-2/installation-guide/overview-of-nsx.html){: external}
+* [Overview of NSX-T Data Center](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/installation-guide/overview-of-nsx.html){: external}
 * [Resetting the Passwords of an Appliance](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/authentication-and-authorization/password-management/resetting-passwords-on-an-appliance.html){: external}
 * [Manage Local User’s Password or Name Using the CLI](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/authentication-and-authorization/managing-local-user-accounts/manage-a-user-s-password-or-name-using-the-cli.html){: external}
