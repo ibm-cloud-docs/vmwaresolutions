@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-07-24"
+lastupdated: "2025-07-29"
 
 keywords: reassign primary cluster, primary cluster
 
@@ -39,6 +39,7 @@ To migrate your VMs, complete the following procedures in VMware vSphere Web Cli
 1. In VMware vSphere Web Client, go to the **Virtual Machines** tab, select the VM that you want to migrate and click **Actions > Migrate**.
 2. Under **Select a migration type**, choose **Change both compute resource and storage**.
 3. Under **Select a compute resource**, choose a target cluster or host in the target cluster.
+
 4. Under **Select storage**, choose the **vSAN** datastore name for the target cluster.
 
    If the target cluster has a higher version for the virtual switch than of the current cluster, you receive an error. For more information, see [Migrating a virtual machine between two different vDS versions](https://knowledge.broadcom.com/external/article?legacyId=79446){: external}.
@@ -80,7 +81,7 @@ The validated configuration status changes to **Success**.
 1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance that contains the primary cluster that you want to reassign.
 3. Click the **Infrastructure** tab and click **Reassign primary cluster** on the upper right of the **Clusters** table.
-4. On the **Reassign primary cluster** pane, the original primary cluster is preselected. Verify that both the new primary cluster and the original primary cluster show a status of **Available**.
+4. On the **Reassign primary cluster** pane, the original primary cluster is preselected. Verify that both the new (target) primary cluster and the original (source) primary cluster show a status of **Available**.
 5. Select the new cluster that you want to assign as the primary cluster. The list shows only the new clusters that meet the following conditions, which are required for a successful reassignment:
     * Must have vSAN storage.
     * Must be on the same VLANs as the original primary cluster.
