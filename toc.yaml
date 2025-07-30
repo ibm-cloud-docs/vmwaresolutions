@@ -918,8 +918,6 @@ toc:
           - vmonic/faq_usage-meter.md
           - vmonic/faq_byol.md
           - vmonic/faq_esxi.md
-          - topic: vmonic/faq-v2t-migration.md
-            navtitle: FAQ about NSX-V to NSX-T migration
           - vmonic/faq_kmip.md
           - vmonic/iam_verify_permissions.md
           - vmonic/trbl_limitations.md
