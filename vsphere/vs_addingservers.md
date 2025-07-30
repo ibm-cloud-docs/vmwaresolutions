@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-05-29"
+lastupdated: "2025-07-30"
 
 keywords: flexible instance add host, add server flexible instance
 
@@ -65,6 +65,8 @@ Review the following additional information applicable to Flexible instances wit
    * You can specify different primary subnets. Then, use the list to select the **Private primary subnet**.
    * If you want to customize the prefix for each hostname, toggle the **Configure hostnames individually** switch on and enter the hostname prefixes.
 8. In the **Details** section, review the estimated pricing, ensure that the account to be charged is correct, and review and accept the terms. Then, click **Add**.
+
+   
 
 ## Results after you add ESXi servers to Flexible instances
 {: #vs_addingservers-results}
