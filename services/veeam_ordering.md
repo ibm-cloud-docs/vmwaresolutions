@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-06-24"
+lastupdated: "2025-07-31"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -113,4 +113,4 @@ If you need a single license key for more than 500 VMs, you must order a stand-a
 * [Managing Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring {{site.data.keyword.cloud_notm}} Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
 * [Veeam on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/veeam){: external}
-* [Veeam Technical Documentation](https://www.veeam.com/support/help-center-technical-documentation.html?productId=8&version=product%3A8%2F221){: external}
+* [Veeam Technical Documentation](https://helpcenter.veeam.com/){: external}

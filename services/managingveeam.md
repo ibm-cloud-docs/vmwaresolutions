@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-07-11"
+lastupdated: "2025-07-31"
 
 keywords: Veeam console, Veeam backup restore, update Veeam license
 
@@ -115,4 +115,4 @@ Review the following considerations before you delete the service:
 * [VMware Solutions FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Veeam on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/veeam){: external}
 * [Veeam Backup and Replication FAQ](https://www.veeam.com/products/veeam-data-platform/backup-recovery.html#faq){: external}
-* [Veeam Technical Documentation](https://www.veeam.com/support/help-center-technical-documentation.html?productId=8&version=product%3A8%2F221){: external}
+* [Veeam Technical Documentation](https://helpcenter.veeam.com/){: external}
