@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-04-10"
+lastupdated: "2025-08-01"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ Deploy the {{site.data.keyword.vcf-auto}} instance before the vSRX edge gateway 
 
 The following procedure assumes that you are deploying the IaaS KVM-based Juniper® vSRX high availability (HA) cluster. If you want to build your own gateway by using VMware ESXi™, then order the No-OS gateway option instead. For more information, see [Ordering a Bring Your Own Gateway Appliance](/docs/gateway-appliance?topic=gateway-appliance-order-byoa).
 
-Open the [{{site.data.keyword.cloud_notm}} infrastructure customer portal](https://control.softlayer.com), then select **Infrastructure > Network > Gateway Appliances > Create Gateway**.
+Open the [{{site.data.keyword.slportal}}](https://control.softlayer.com), then select **Infrastructure > Network > Gateway Appliances > Create Gateway**.
 * Gateway vendor - Juniper
 * Gateway Appliance
    * Hostname - Provide the hostname for node 1 in the gateway cluster. For example, `gateway01`. Select a hostname consistent with the existing {{site.data.keyword.vcf-auto-short}} naming convention since the vSRX nodes are manually added to the {{site.data.keyword.vcf-auto-short}} AD/DNS server for hostname resolution.

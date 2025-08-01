@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-04-10"
+lastupdated: "2025-08-01"
 
 subcollection: vmwaresolutions
 
@@ -74,7 +74,7 @@ The addition of the vSRX offering on ESXi impacts the basic {{site.data.keyword.
 #### Host sizing
 {: #vcsvsrx-planning-host-sizing}
 
-The current vSRX offering has limited hardware options for deployment. Since these options are not variable, it is recommended that you review the options available in the [{{site.data.keyword.cloud_notm}} infrastructure customer portal](https://control.softlayer.com/network/gatewayappliances).
+The current vSRX offering has limited hardware options for deployment. Since these options are not variable, it is recommended that you review the options available in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/network/gatewayappliances).
 
 ### Network design
 {: #vcsvsrx-planning-network-design}

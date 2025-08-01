@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-07-29"
+lastupdated: "2025-08-01"
 
 keywords: automated instance add host, add server automated instance
 
@@ -35,7 +35,6 @@ Review the following information applicable to all Automated instances:
 * For clusters that belong to vCenter Server 8 instances and were provisioned initially with vSphere 8, you can add only ESXi servers with vSphere 8.0u2.
 * For clusters that were provisioned initially with vSphere 8 ESXi servers, those servers use vSphere Distributed Switch (vDS) 8. You cannot add ESXi servers with vSphere 7 to a vSphere 8 cluster and its vDS.
 * For ESXi servers with vSAN storage, you can add only vSphere 7 either with vCenter Server 7 or 8.
-* For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 
 Depending on your EVC (Enhanced VMware vMotion Compatibility) mode setting, virtual machines that run on Sapphire Rapids servers cannot migrate to Cascade Lake servers without being powered off. To prevent this problem, you cannot add a Cascade Lake server for clusters that contain only Sapphire Rapids servers.
 {: important}
@@ -103,6 +102,8 @@ Review the following additional information applicable to Automated instances wi
 
 If you are adding ESXi servers during maintenance mode, VMs are not migrated to the new servers until you remove maintenance mode.
 {: important}
+
+{{site.data.content.note-vsphere-version}}
 
 ## Related links
 {: #vc_addingservers-related}

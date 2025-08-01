@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-05-24"
+lastupdated: "2025-08-01"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -28,7 +28,7 @@ Find answers to frequently asked questions about the {{site.data.keyword.vcf-cla
 
 * **IBMid account**. This account is required to access the {{site.data.keyword.vmwaresolutions_short}} console. The console is a stand-alone user interface that is separate from the {{site.data.keyword.slportal}}. For more information, see [Accessing the VMware Solutions console](/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod).
 * **{{site.data.keyword.cloud_notm}} account**. This account is required for provisioning. You can sign up for an {{site.data.keyword.cloud_notm}} account by using an existing **IBMid** or by creating a new **IBMid**.
-* **{{site.data.keyword.cloud_notm}} infrastructure account**. This account is used to log in to the {{site.data.keyword.cloud_notm}} infrastructure customer portal that provides some additional function to manage infrastructure products and services. You can get an {{site.data.keyword.cloud_notm}} infrastructure account by upgrading your **{{site.data.keyword.cloud_notm}} account** to a billable account, or by linking your existing {{site.data.keyword.cloud_notm}} infrastructure account with your {{site.data.keyword.cloud_notm}} account. The {{site.data.keyword.cloud_notm}} infrastructure account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
+* **{{site.data.keyword.cloud_notm}} infrastructure account**. This account is used to log in to the {{site.data.keyword.slportal}} that provides some additional function to manage infrastructure products and services. You can get an {{site.data.keyword.cloud_notm}} infrastructure account by upgrading your **{{site.data.keyword.cloud_notm}} account** to a billable account, or by linking your existing {{site.data.keyword.cloud_notm}} infrastructure account with your {{site.data.keyword.cloud_notm}} account. The {{site.data.keyword.cloud_notm}} infrastructure account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
 
 For more information about managing user accounts, see [User accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount).
 
@@ -161,8 +161,7 @@ The account owner can increase the RAM on ESXi servers by following these steps:
 
 An {{site.data.keyword.cloud_notm}} representative will confirm the billing change and contacts you to schedule a maintenance window for adding the memory.
 
-You must manage the VMware Solutions components that are created in your {{site.data.keyword.cloud_notm}} account only in the VMware Solutions console, not any other means outside of the console. If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.
-{: note}
+{{site.data.content.imp-note-manage-comp}}
 
 ## Does the {{site.data.keyword.vcf-flex-short}} offering use automation to install, configure, and start the VMware stack?
 {: #faq-vss-automation}

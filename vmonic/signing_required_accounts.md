@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-06-24"
+lastupdated: "2025-08-01"
 
 keywords: user account, ibm cloud account, ibm cloud infrastructure
 
@@ -32,7 +32,7 @@ The requirement to have an {{site.data.keyword.cloud_notm}} infrastructure accou
 
 Additionally, you must have an {{site.data.keyword.cloud_notm}} infrastructure account. The price of the components that are ordered in your instances is billed to that {{site.data.keyword.cloud_notm}} account.
 
-This account is also used to log in to the {{site.data.keyword.cloud_notm}} infrastructure customer portal that provides more functions to manage infrastructure products and services.
+This account is also used to log in to the {{site.data.keyword.slportal}} that provides more functions to manage infrastructure products and services.
 
 To sign up for an {{site.data.keyword.cloud_notm}} infrastructure account, upgrade your {{site.data.keyword.cloud_notm}} account to a billable account. For more information, see [How do I upgrade or convert my account type?](/docs/account?topic=account-accountfaqs#changeacct)
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-08-01"
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 
 `ixgben` is a native driver that replaces the `vmklinux net-ixgbe` driver but does not support SR-IOV and SW FcOE. The ICVS automation would not enable this driver when your vSphere® ESXi host was provisioned. It is advisable to enable this driver for the performance benefits it brings. The following procedure shows you how to enable and disable the native drivers by using the vSphere Command-Line (vCLI).
 
-Before you start this task, retrieve all the physical hosts IPMI IP addresses, login IDs, and passwords from the [{{site.data.keyword.cloud}} infrastructure customer portal](https://control.softlayer.com/devices). This is required in a back out or to check on the progress of an upgrade, where no direct network access to the host exists.
+Before you start this task, retrieve all the physical hosts IPMI IP addresses, login IDs, and passwords from the [{{site.data.keyword.slportal}}](https://control.softlayer.com/devices). This is required in a back out or to check on the progress of an upgrade, where no direct network access to the host exists.
 
 For each host, successively:
 1. Use the vSphere Web Client to place the vSphere ESXi host into maintenance mode by selecting **Home** > **Hosts and Clusters**. In the Navigator pane, select the vSphere ESXi host and right-click the host and select **Maintenance Mode** > **Enter Maintenance Mode**. As the host is part of an automated DRS cluster, virtual machines are migrated to different hosts when the host enters maintenance mode.

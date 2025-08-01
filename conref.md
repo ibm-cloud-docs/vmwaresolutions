@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-08-01"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -153,16 +153,27 @@ The uplink speed provides two options:
 
 
 
+<!--Conref section START.
+
+
+
 
 
 CONTENT:
 
-**CAUTION** Managing any {{site.data.keyword.vmwaresolutions_short}} components (which were installed into your {{site.data.keyword.cloud_notm}} account when you ordered the instance) from outside the VMware Solutions console can make your environment unstable. The following activities are considered management activities:
-*  Adding, modifying, returning, or removing components
-*  Expanding or contracting instance capacity through adding or removing ESXi servers
-*  Powering off components
-*  Restarting services
-{: #caution-component-management}
+You must manage the {{site.data.keyword.vmwaresolutions_short}} components that are created in your {{site.data.keyword.cloud_notm}} account only in the VMware Solutions console, not the {{site.data.keyword.slportal}}, or any other means outside of the console. If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.
+{: important}
+{: #imp-note-manage-comp}
+
+
+
+
+
+CONTENT:
+
+The VMware vSphere version that is displayed on the {{site.data.keyword.slportal}} might not match the current version that is deployed on your instance. The VMware Solutions UI displays the correct version unless you updated it after initial deployment.
+{: note}
+{: #note-vsphere-version}
 
 
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-08-01"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -129,7 +129,7 @@ The following table describes the management tools that are available.
 {: #getting-started-step1}
 {: step}
 
-The VMware Solutions console is the user interface where you order and manage your deployments. Each deployment is managed as an instance in the console. The console is a stand-alone user interface that is separate from the {{site.data.keyword.cloud_notm}} infrastructure customer portal.
+The VMware Solutions console is the user interface where you order and manage your deployments. Each deployment is managed as an instance in the console. The console is a stand-alone user interface that is separate from the {{site.data.keyword.slportal}}.
 
 To access the {{site.data.keyword.vmwaresolutions_short}} console:
 1. Go to https://cloud.ibm.com/vmware.

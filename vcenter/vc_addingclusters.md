@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-05-29"
+lastupdated: "2025-08-01"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -18,9 +18,6 @@ subcollection: vmwaresolutions
 {: #vc_addingclusters}
 
 You can add clusters to {{site.data.keyword.vcf-auto}} instances to expand the compute and storage capacity. Within a cluster, you can manage VMware ESXi™ servers for better resource allocation and high availability (HA).
-
-Adding clusters to instances with VMware vSphere® 6.5 or 6.7 is not supported.
-{: deprecated}
 
 ## Before you add clusters to Automated instances
 {: #vc_addingclusters-before}
@@ -438,6 +435,8 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 
 You cannot change the cluster name. Changing the cluster name might cause the add or delete ESXi servers operations in the cluster to fail.
 {: important}
+
+{{site.data.content.note-vsphere-version}}
 
 ## Related links
 {: #vc_addingclusters-related}

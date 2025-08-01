@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-05-29"
+lastupdated: "2025-08-01"
 
 keywords: automated instance, order automated, order automated instance
 
@@ -82,11 +82,15 @@ You get a console notification that the configuration is saved successfully, and
 
 Next, you can view and manage the Automated instance that you ordered.
 
-You must manage the {{site.data.keyword.vmwaresolutions_short}} components that are created in your {{site.data.keyword.cloud_notm}} account only in the VMware Solutions console, not the {{site.data.keyword.slportal}}, or any other means outside of the console.
-If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.
-{: important}
+{{site.data.content.imp-note-manage-comp}}
 
-{{site.data.content.caution-component-management}}
+{{site.data.content.note-vsphere-version}}
+
+**CAUTION** Managing any {{site.data.keyword.vmwaresolutions_short}} components (which were installed into your {{site.data.keyword.cloud_notm}} account when you ordered the instance) from outside the VMware Solutions console can make your environment unstable. The following activities are considered management activities:
+*  Adding, modifying, returning, or removing components
+*  Expanding or contracting instance capacity through adding or removing ESXi servers
+*  Powering off components
+*  Restarting services
 
    Exceptions to these activities include managing the shared storage file shares from the {{site.data.keyword.slportal}}. Such activities include ordering, deleting (which might impact data stores if mounted), authorizing, and mounting shared storage file shares.
 

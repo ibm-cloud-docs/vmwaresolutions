@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-12"
+lastupdated: "2025-08-01"
 
 keywords: Caveonix console, Caveonix RiskForesight license, login Caveonix console
 
@@ -24,7 +24,7 @@ subcollection: vmwaresolutions
 To manage the Caveonix RiskForesight™ service, you must access the Caveonix RiskForesight console by completing the following steps:
 
 1. Use the {{site.data.keyword.cloud}} infrastructure VPN or a jump server to allow access to the IP address of the Caveonix RiskForesight virtual machine (VM). You can find the IP address on the service details page for Caveonix RiskForesight in the {{site.data.keyword.vmwaresolutions_short}} console. Complete the following steps:
-   1. Create a VPN password from the {{site.data.keyword.cloud_notm}} infrastructure customer portal.
+   1. Create a VPN password from the {{site.data.keyword.slportal}}.
    2. Log in to the data center VPN portal by using the {{site.data.keyword.cloud_notm}} infrastructure VPN credentials.
    3. Add the IP address and the hostname mapping into the `hosts` file from your local computer. Use the following format:
 
