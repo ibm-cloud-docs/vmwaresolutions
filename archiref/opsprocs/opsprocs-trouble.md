@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-11"
+lastupdated: "2025-08-04"
 
 subcollection: vmwaresolutions
 
@@ -91,7 +91,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 
 | Title | Description |
 |-------|-------------|
-| ESXi commands | For an overview of the command‐line interfaces in vSphere, the ESXi Shell commands, and the vCLI (VMware® vSphere Command‐Line Interface) commands, see [Getting started with vSphere command-line interfaces](https://vdc-download.vmware.com/vmwb-repository/dcr-public/bc4fa31a-40ac-4aa9-a6a1-7171d1fff7f4/740990ee-4d65-4627-a9d4-0f046cb78aec/vsphere-esxi-vcenter-server-67-command-line-interface-getting-started-guide.pdf){: external}. |
+| ESXi commands | For an overview of the command‐line interfaces in vSphere, the ESXi Shell commands, and the vCLI (VMware® vSphere Command‐Line Interface) commands, see [Getting Started with ESXCLI](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere-sdks-tools/8-0/getting-started-with-esxcli-8-0.html){: external}. |
 | vSphere HA Host States | If vCenter reports a vSphere HA host state that indicates an error condition on the host, these issues must be remediated. These issues can prevent vSphere HA from restarting VMs after a failure. For more information, see [Troubleshooting vSphere HA host states](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vcenter-and-host-management-6-7/troubleshooting-overview-host-management/troubleshooting-hosts-host-management/troubleshooting-vsphere-ha-host-states-host-management.html){: external}. |
 | vSphere ESXi host is in a nonresponding state | A nonresponding state includes `Not Responding`, `Disconnected`, or the VMs on the host show as `Unavailable` in vCenter. For more information about troubleshooting a vSphere ESXi host that is in a nonresponding state, see [ESX/ESXi hosts do not respond and is grayed out (1019082)](https://knowledge.broadcom.com/external/article?legacyId=1019082){: external}. |
 | When you power on a VM, you see a `File not found` error | For more information, search through the [Broadcom Support Portal](https://support.broadcom.com/){: external}. |

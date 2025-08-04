@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-06-05"
+lastupdated: "2025-08-04"
 
 subcollection: vmwaresolutions
 
@@ -45,4 +45,4 @@ The backup solution is self-managed and you can customize it post deployment. Fo
 {: #veeam-bms-archi-overview-related}
 
 * [Veeam Backup and Replication](https://www.veeam.com/products/veeam-data-platform/backup-recovery.html?ad=menu-products){: external}
-* [Veeam Help Center technical documentation](https://www.veeam.com/support/help-center-technical-documentation.html?ad=menu-resources){: external}
+* [Veeam Help Center technical documentation](https://helpcenter.veeam.com/?ad=menu-resources){: external}

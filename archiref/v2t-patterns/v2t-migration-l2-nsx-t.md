@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-07-28"
+lastupdated: "2025-08-04"
 
 subcollection: vmwaresolutions
 
@@ -51,7 +51,7 @@ It is possible to manually add and allow the existing {{site.data.keyword.filest
 
 The current Veeam version that is installed by automation is Veeam Backup and Replication 12.3, but you might have an older version in your NSX-V based deployment. You can use Veeam's replication capabilities during the migration.
 
-For more information, see [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices) and [Veeam technical documentation](https://www.veeam.com/support/help-center-technical-documentation.html?ad=in-text-link){: external}.
+For more information, see [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices) and [Veeam technical documentation](https://helpcenter.veeam.com/?ad=in-text-link){: external}.
 
 ## Migrating workloads with Zerto
 {: #v2t-l2-nsx-t-zerto}
@@ -76,7 +76,7 @@ After all the workloads are migrated from NSX-V to NSX-T, you can remove the bri
 
 * [Overview of edge bridging in NSX-T](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/overview-of-edge-bridging-in-nsx-t-data-center.html){: external}
 * [Extending Layer 2 networks with NSX-T edge bridge](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/extending-layer-2-networks-with-nsx-t-edge-bridge.html){: external}
-* [Veeam technical documentation](https://www.veeam.com/support/help-center-technical-documentation.html?ad=in-text-link){: external}
+* [Veeam technical documentation](https://helpcenter.veeam.com/?ad=in-text-link){: external}
 * [Zerto product documentation](https://help.zerto.com){: external}
 * [Migration between vCenter Server systems](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-and-host-management-7-0/migrating-virtual-machines-host-management/migration-with-vmotion-host-management/vmotion-across-vcenter-server-systems-host-management.html){: external}
 * [Introducing the Advanced Cross vCenter Server vMotion capability](https://www.vmware.com/docs/vmw-introducing-the-advanced-cross-vcenter-server-vmotion-capability){: external}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-06-05"
+lastupdated: "2025-08-04"
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 
 In a {{site.data.keyword.vcf-auto-short}} instance, you can reconfigure provisioned backup servers, configure Veeam® configuration backups, add more proxy servers, add more {{site.data.keyword.cloud}} File, Block, or Object storage, or add OS agents on virtual machines.
 
-These tasks are manual, not automated. For more information, see [Veeam Help Center technical documentation](https://www.veeam.com/support/help-center-technical-documentation.html?ad=menu-resources){: external}.
+These tasks are manual, not automated. For more information, see [Veeam Help Center technical documentation](https://helpcenter.veeam.com/?ad=menu-resources){: external}.
 
 ## Related links
 {: #veeam-bms-archi-post-deployment-related}

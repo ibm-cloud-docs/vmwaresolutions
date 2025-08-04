@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-01-31"
+lastupdated: "2025-08-04"
 
 subcollection: vmwaresolutions
 
@@ -58,4 +58,4 @@ When you design or deploy this architecture pattern, consider the following info
 * [Ordering Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
 * [VPC network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
 * [Veeam Backup & Replication ports and protocols](https://helpcenter.veeam.com/docs/backup/vsphere/used_ports.html?ver=120){: external}
-* [Veeam Help Center](https://www.veeam.com/support/help-center-technical-documentation.html?productId=8&version=product:8/221){: external}
+* [Veeam Help Center](https://helpcenter.veeam.com/){: external}

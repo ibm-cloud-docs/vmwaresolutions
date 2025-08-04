@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-29"
+lastupdated: "2025-08-04"
 
 keywords: network config, network configuration, manage NSX ESG
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 Configure the network for your virtual machines (VMs) so you can take advantage of the VMware NSX Edge™ cluster that is deployed in your {{site.data.keyword.vcf-auto}} instances. For more information about the security measures that are in place to help minimize security risk, see [Does the management services NSX Edge pose a security risk?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#faq-mgmt-nsx)
 
-VMware NSX® is a network virtualization platform that allows the virtualization of isolated networks and provides several networking services such as switches, routing, and firewalls. For more information about NSX, see [Overview of NSX for vSphere](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/migration-guide/migrating-vsphere-networking.html){: external}.
+VMware NSX® is a network virtualization platform that allows the virtualization of isolated networks and provides several networking services such as switches, routing, and firewalls. For more information about NSX, see [VMware NSX Documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/migration-guide/nsx-t-data-center-migration-guide.html){: external}.
 
 As part of the ordering process for your Automated instance, the following actions are completed on your behalf:
 * A private customer subnet is ordered to be used by your VMs to access the {{site.data.keyword.cloud}} infrastructure private network.

@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-04"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -171,7 +171,7 @@ You must manage the {{site.data.keyword.vmwaresolutions_short}} components that 
 
 CONTENT:
 
-The VMware vSphere version that is displayed on the {{site.data.keyword.slportal}} might not match the current version that is deployed on your instance. The VMware Solutions UI displays the correct version unless you updated it after initial deployment.
+The VMware vSphere version that is displayed on the {{site.data.keyword.slportal}} might not match the current version that is deployed on your instance. The VMware Solutions UI displays the correct version.
 {: note}
 {: #note-vsphere-version}
 
