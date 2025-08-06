@@ -24,7 +24,7 @@ To deploy a VMware vCloud Usage Meter virtual machine (VM), you must first downl
 
 Complete the following steps:
 
-1. Download the Usage Meter OVA file from the following link: `https://ibm.biz/BdG7QT`
+1. Download the Usage Meter OVA file from the following link: `https://ibm.biz/Bde2fY`
 
    For newer versions of Usage Meter, two files are available for download: one for the initial installment and another one for the upgrade. These files use different SHA-2 values.
    {: note}

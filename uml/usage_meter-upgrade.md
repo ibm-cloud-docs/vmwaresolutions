@@ -38,7 +38,7 @@ The SSH login will change to **Enabled**.
 ### Mounting the upgrade ISO file
 {: #usage_meter-upgrade-iso}
 
-1. Download the Usage Meter ISO file from the following link: `TBD`
+1. Download the Usage Meter ISO file from the following link: `https://ibm.biz/Bde2fZ`
 2. Validate the SHA-2 checksum based on the `a294f822348582e1ac398f439ccf9fed546d3fe298b29c1eb5f98a0dc646142a` SHA-256 value. Open a command prompt on Windows® or a terminal window on Linux® and MacOS and run the following command:
    * For Windows: `certutil -hashfile <path-to-iso-file> SHA256`
    * For Linux: `sha256sum <path-to-iso-file>`
