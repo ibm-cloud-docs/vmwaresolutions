@@ -203,7 +203,7 @@ To enable the virtual server for backing up SDDC Manager, vCenter Server, and NS
 ##### SSH keys
 {: #vpc-vcf-ordering-mgmt-ssh-keys}
 
-You can choose existing SSH keys from the list or create a new one by clicking the **Create SSH key** button. After creating it, refresh the list to see the new SSH key. For more information about VCF backup, see [Backup and restore of VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/administering/backup-and-restore-of-cloud-foundation-admin.html){: external}.
+You can choose existing SSH keys from the list or create a new one by clicking the **Create SSH key** button. After you create it, refresh the list to see the new SSH key. For more information about VCF backup, see [Backup and restore of VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/administering/backup-and-restore-of-cloud-foundation-admin.html){: external}.
 
 ## Network interface
 {: #vpc-vcf-ordering-network}
@@ -261,7 +261,7 @@ Determines whether to use {{site.data.keyword.logs_full}} in your {{site.data.ke
 
 
 1. In the VMware Solutions console, click the **VMware Cloud Foundation (VCF) for VPC** card in the **Create a resource** section. {: #step-1}
-1. On the **Create** tab, review the software components included by clicking **View components**.
+1. On the **Create** tab, review the software components that are included by clicking **View components**.
 1. Choose the subscription type.
 
 1. Specify the **Deployment** settings.
