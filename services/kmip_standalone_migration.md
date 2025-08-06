@@ -37,7 +37,7 @@ Review the following information:
 
 The native providers share common code and their behavior is similar. For more information, see [Key Protect: Using the key management interoperability protocol (KMIP)](/docs/key-protect?topic=key-protect-kmip&interface=ui).
 
-The support of native KMIP providers is not available for the [Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-kmip) offering of {{site.data.keyword.cloud_notm}}.
+The support of native KMIP providers is not available for the [Hyper Protect Crypto Services](/docs/hs-crypto) offering of {{site.data.keyword.cloud_notm}}.
 {: important}
 
 ## Migrating to the new KMIP provider
