@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-06-06"
+lastupdated: "2025-08-06"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -33,7 +33,7 @@ F5 BIG-IP is supported for instances with VMware NSX-T 3.1 or later and VMware v
 
 {{site.data.content.para-promotion-services}}
 
-The F5 BIG-IP version available for deployment is 17.1.1.
+The F5 BIG-IP version available for deployment is 17.5.
 {: note}
 
 ## Technical specifications for F5 BIG-IP

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2024
+  years:  2020, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-08-06"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -37,6 +37,8 @@ The following table shows the ports that are used by VMware® by Broadcom compon
 | vCenter Server | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 88 | TCP and UDP |
 | NSX Manager | Infrastructure VMs | ESXi host | Private primary subnet | 443 | TCP |
 | NSX Manager | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP |
+| UM Appliance without proxy | Infrastructure VMs | `eapi.broadcom.com` |  | 443 | HTTPS |
+| UM Appliance with proxy. Ensure that you [enable service endpoints in your account](/docs/account?topic=account-vrf-service-endpoint#service-endpoint) | Infrastructure VMs | `proxy.vmware.cloud.ibm.com` |  | 3128 | HTTPS |
 {: caption="Ports used by VMware" caption-side="bottom"}
 
 For more information, see [TCP and UDP ports required to access VMware components](https://knowledge.broadcom.com/external/article?legacyId=1012382){: external}.

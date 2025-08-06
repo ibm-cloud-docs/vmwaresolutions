@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-22"
+lastupdated: "2025-08-06"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -51,6 +51,8 @@ Review the following information about the ports described in the [table](#vmwar
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service. | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [Synchronizing app time to the {{site.data.keyword.cloud_notm}} NTP service](/docs/infrastructure-hub?topic=infrastructure-hub-ntp-service-overview). | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure endurance storage | {{site.data.keyword.cloud_notm}} infrastructure services network | Any | ICMP and TCP | Set up endurance storage for ESXi host | |
+| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | Usage Meter Appliance | Infrastructure VMs | 443 | TCP | Set and configure Usage Meter and add metered products | HTTPS |
+| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | Usage Meter Appliance | Infrastructure VMs | 22 | TCP | Install and configure Usage Meter | SSH |
 | IBM CloudDriver |   | {{site.data.keyword.cloud_notm}} Service \n `10.221.68.39` |   | 514 | TCP |   |   |
 | IBM CloudDriver |   | Internet |   |   |   |   | HTTPS |
 | IBM CloudDriver \n Windows Active Directory (VSI) | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure engine | {{site.data.keyword.cloud_notm}} infrastructure services network | 80 | TCP | Provision IBM CloudDriver and Windows Active Directory (VSI) | |

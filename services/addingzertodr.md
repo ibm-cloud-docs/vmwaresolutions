@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-08-06"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -29,7 +29,7 @@ Zerto is supported on {{site.data.keyword.vcf-auto}} instances that meet the fol
 {{site.data.content.para-promotion-services}}
 
 
-The Zerto version available for deployment is 10.0u5. To upgrade from Zerto versions that are earlier than 10.0u5, you must migrate from a Microsoft Windows® Virtual Service Instance (VSI) to a Linux® virtual machine (VM).
+The Zerto version available for deployment is 10.0u7. To upgrade from Zerto versions that are earlier than 10.0u7, you must migrate from a Microsoft Windows® Virtual Service Instance (VSI) to a Linux® virtual machine (VM).
 {: note}
 
 ## Before you begin
@@ -67,7 +67,7 @@ For more information, see [Considerations for ordering Zerto](/docs/vmwaresoluti
 ### Licenses and fees
 {: #addingzertodr-specs-licenses}
 
-Zerto Replication version 10.0u5 license. You must use the license for disaster recovery purposes only. The license key cannot be used for migrating existing instances.
+Zerto Replication version 10.0u7 license. You must use the license for disaster recovery purposes only. The license key cannot be used for migrating existing instances.
 
 ## Related links
 {: #addingzertodr-related}
