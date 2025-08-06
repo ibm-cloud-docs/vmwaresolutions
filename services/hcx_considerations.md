@@ -36,9 +36,6 @@ A {{site.data.keyword.vcf-auto-short}} instance with HCX is limited to three sim
 
 The following components are ordered and included in the HCX service.
 
-On-premises HCX instances include only licensing and activation.
-{: restriction}
-
 ### HCX Management Appliance VM
 {: #hcx_considerations-vm}
 

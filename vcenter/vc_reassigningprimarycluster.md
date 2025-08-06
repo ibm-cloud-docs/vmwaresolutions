@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-07-30"
+lastupdated: "2025-08-06"
 
 keywords: reassign primary cluster, primary cluster
 
@@ -33,12 +33,110 @@ Review the following information before you reassign your primary cluster:
 
 To migrate your VMs, complete the following procedures in VMware vSphere Web Client.
 
+The VM migration procedures are slightly different depending if any add-on services are installed on your instance.
+
+| Add-on service | Migration procedures |
+|:-------------- |:-------------------- |
+| Juniper® vSRX | Complete [the procedure to migrate management VMs (vSRX)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm-vsrx). |
+| Caveonix RiskForesight™ | Complete [the procedure to create corresponding port groups (RiskForesight)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm-caveonix), then complete [the procedure to migrate management VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm). |
+| Other services or no services | Complete [the procedure to migrate management VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm). |
+{: caption="VM migration procedures for add-on services" caption-side="bottom"}
+
+### Procedure to migrate management VMs (Juniper vSRX)
+{: #vc_reassigningprimarycluster-migrate-mgmt-vm-vsrx}
+
+If the Juniper® vSRX service is installed on your instance, complete the following procedure.
+
+1. In VMware vSphere Web Client, create host groups on the target cluster:
+   1. Click the target cluster.
+   2. On the **Configure** tab, under **Configuration**, click **VM/Host Groups**.
+   3. Under **VM/Host Groups**, click **ADD**.
+   4. Under **Add Group Member**, select the type as **Host Group** and click **ADD**.
+   5. Select the host that you want to add as a member. Provide the same name as the hostname's fully qualified domain name (FQDN).
+   6. Complete the previous 2 steps for the second hostname.
+
+2. Disable affinity rules on the source cluster:
+   1. Click the source cluster.
+   2. On the **Configure** tab, under **Configuration**, click **VM/Host Rules**.
+   3. For each of the following items: `<vm_nickname>_vSRX_edge_node1`, `<vm_nickname>_vSRX_edge_node2`, and `<vm_nickname>-affinity-rule`, click **Edit**, and clear the **Enable Rule** checkbox.
+
+3. Export the network configurations of the source cluster:
+   1. Go to the **Networks** tab of the source cluster.
+   2. For each of the following switches: `<instance_name>-<source_clustername>-private`, `<vsrx_nickname>-vsrx-fab DVS`, and `<vsrx_nickname>-vsrx-private-transit`, right-click and click **Export Configuration**.
+   3. Locate `<instance_name>--public`, right-click `<vsrx_nickname>-vsrx-public-transit` and click **Export Configuration**.
+
+4. Import the port group configurations into the target cluster:
+   1. Go to the **Networks** tab of the target cluster.
+   2. Right-click the switch `<instance_name>-<target_cluster_name>` and click **Distributed Port Group > Import Distributed Port Group**.
+   3. Under **Import port group configuration**, click **Browse** and upload the corresponding configuration file that you exported in **Step 3**. Click **Next**. Under **Ready to complete**, verify the information and click **Finish**. 
+   4. Complete the previous 2 steps for `<instance_name>-<source_cluster_name>-public`.
+
+5. Re-create the resource pool:
+   1. On the source vSRX cluster, right-click its resource pool and click **Edit resource Settings**. Write down the reservation values for CPU and memory.
+   2. On the target vSRX cluster, right-click **New Resource Pool** and create a resource pool with the same name as the source vSRX resource pool. Set the reservation values for CPU and memory to the same values as the source.
+
+6. Migrate the vSRX edge nodes VMs:
+   1. Right-click the `<vm_nickname>_vSRX_edge_node1` VM and click **Actions > Migrate**.
+   2. Under **Select a migration type**, choose **Change both compute resource and storage**.
+   3. Under **Select a compute resource**, choose the target cluster of the vSRX resource pool and click **Next**.
+   4. Under **Select storage**, choose the **vSAN** datastore name for the target cluster.
+   5. Under **Select networks**, choose the destination network by browsing to the appropriate DVS switch and click **Next**.
+   6. Under **Select vMotion priority**, choose a priority option.
+   7. Under **Ready to complete**, verify the information and click **Finish** to start the migration.
+   8. Repeat the previous 7 steps for the `<vm_nickname>_vSRX_edge_node2` VM.
+
+7. Create VM groups on the target cluster:
+   1. Click the target cluster.
+   2. On the **Configure** tab, under **Configuration**, click **VM/Host Groups**.
+   3. Under **VM/Host Groups**, click **ADD**.
+   4. Under **Add Group Member**, select the type as **VM Group** and click **ADD**.
+   5. Select the vSRX node1 VM to add as member. Provide the same name as the vSRX node1.
+   6. Complete the previous step for the vSRX node2 VM.
+
+8. Map nodes to hosts on the target cluster:
+   1. Click the target cluster.
+   2. On the **Configure** tab, under **Configuration**, click **VM/Host Rules**.
+   3. Under **VM/Host Rules**, click **ADD**.
+   4. Under **Create VM/Host Rule**, select the type as **Virtual Machines to Hosts** and map `<vm_nickname>_vSRX_edge_node1` to the host where it is deployed. Assign the same name `<vm_nickname>_vSRX_edge_node1`.
+   5. Complete the previous step for the `<vm_nickname>_vSRX_edge_node2` node.
+
+9. Enable the affinity rule on the target cluster:
+   1. Click the target cluster.
+   2. On the **Configure** tab, under **Configuration**, click **VM/Host Rules**.
+   3. Search for and locate `<vm_nickname>-affinity-rule`.
+   4. Click **Edit** and select **Enable Rule**.
+
+If you are migrating from a source vSAN OSA (Original Storage Architecture) to a target vSAN ESA (Express Storage Architecture) cluster, also configure the failover settings:
+1. Click the target cluster.
+2. Click the **Networks** tab, select the `vsrxnickname-vsrx-fab` DVS switch, and click the **Configure** tab.
+3. Under **Policies**, click **Edit** and go to **Teaming and failover**.
+4. Drag `uplink1` and `uplink2` to move them under **Unused uplinks** and `lag1` to move it under **Active uplinks**.
+5. Repeat the previous 3 steps for the `vsrxnickname-vsrx-private-transit` and `vsrxnickname-vsrx-public-transit` DVS switches.
+
+### Procedure to create corresponding port groups (RiskForesight)
+{: #vc_reassigningprimarycluster-migrate-mgmt-vm-caveonix}
+
+If the Caveonix RiskForesight™ service is installed on your instance, complete the following procedure.
+
+RiskForesight is installed with its own port group named **SDDC-DPortGroup-Caveonix**. Before you migrate the management VMs for instances with this service deployed, you must create a corresponding port group in the new (target) cluster.
+{: requirement}
+
+1. In VMware vSphere Web Client, click the **Networks** tab, right-click **SDDC-DPortGroup-Caveonix**, and click **Export Configuration**.
+2. Under **Export Configuration**, click **OK**.
+3. Right-click the private network subnet of the target cluster and click **Distributed Port Group** > **Import Distributed Port Group**.
+4. Under **Import port group configuration**, click **Browse** and upload the exported configuration archive file that you created in **Step 2**. Click **Next**.
+5. Under **Ready to complete**, verify the information and click **Finish**. Confirm that the subnet is to be renamed.
+6. Complete [the procedure to migrate management VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm).
+
 ### Procedure to migrate management VMs
 {: #vc_reassigningprimarycluster-migrate-mgmt-vm}
 
 1. In VMware vSphere Web Client, go to the **Virtual Machines** tab, select the VM that you want to migrate and click **Actions > Migrate**.
 2. Under **Select a migration type**, choose **Change both compute resource and storage**.
 3. Under **Select a compute resource**, choose a target cluster or host in the target cluster.
+
+   If VMware HCX is installed on your instance, you might get a compatibility error, which you can ignore. For more information, see [vCenter vMotion error "Virtual Ethernet Card 'Network Adapter 1' is not supported"](https://knowledge.broadcom.com/external/article/332437/vcenter-vmotion-error-virtual-ethernet-c.html){: external}.
+   {: note}
 
 4. Under **Select storage**, choose the **vSAN** datastore name for the target cluster.
 
