@@ -27,7 +27,7 @@ To retrieve VMware Cloud Foundation (VCF) license keys, you must provision an {{
 3. Click the **Copy** icon to copy the license key.
 4. Use the license key to link to your respective VMware products.
 
-VMware producs are provisioned with expiring license keys. IBM will provide updated keys before the expiration date.
+VMware products are provisioned with expiring license keys. IBM will provide updated keys before the expiration date.
 {: note}
 
 ## Related links
