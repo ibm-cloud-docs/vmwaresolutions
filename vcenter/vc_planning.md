@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-18"
+lastupdated: "2025-08-06"
 
 keywords: planning vcf classic, data center, vcf automated data centers
 
@@ -41,7 +41,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | Data center | Pod | Server options for NSX-T | Server options for NSX-V[^nsx-v] |
 |:----------- |:--- |:------------------------ |:-------------------------------- |
 | CHE01 | 01 | Cascade Lake | Cascade Lake, SAP-certified Cascade Lake[^sap-che01] |
-| OSA21 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
+| OSA21 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
 | OSA22 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | OSA23 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | SNG01 | 02 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
@@ -69,7 +69,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | LON06 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
 | MAD02 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | MAD04 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
-| MAD05 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
+| MAD05 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
 | MIL01 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake[^sap-mil01] |
 | PAR01 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake[^sap-par01] |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - Europe" caption-side="bottom"}

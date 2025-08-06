@@ -324,6 +324,7 @@ toc:
               topics:
               - topic: uml/licensing_metering-req.md
                 navtitle: Requirements
+              - uml/usage_meter-upgrade.md
               - uml/usage_meter-deploy.md
               - uml/usage_meter-config.md
               - uml/usage_meter-register.md

@@ -25,7 +25,57 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2025
 {: #year-2025}
 
+### 8 August 2025
+{: #vmwaresolutions-aug0825}
+{: release-note}
 
+VMware vCloud Usage Meter updates
+
+:   The following features are now available:
+
+   * **Usage Meter new version**: Usage Meter version 9 is now available for deployment. For more information, see [Deploying Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-deploy).
+   * **Usage Meter upgrade**: You can upgrade existing Usage Meters to version 9 to integrate with their own access token. The upgrade process involves receiving an access token for your currently registered Usage Meter, followed by an in-place upgrade to version 9. For more information, see [Upgrading Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-upgrade).
+   * **New license keys**: {{site.data.keyword.vcf-classic-short}} (Automated and Flexible) and {{site.data.keyword.vcf-vpc-short}} instances are now provisioned with expiring keys, with the assurance that {{site.data.keyword.IBM}} will provide updated keys before the expiration date. Roll-your-own (RYO) servers are no longer provisioned with any keys when you order ESXi host from the Classic Bare Metal order form. You must retrieve the VMware Cloud Foundation (VCF) license keys. For more information, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
+
+vSphere 8 upgrade for Cascade Lake servers
+:   You can manually upgrade vSphere to version 8.0 on Intel Cascade Lake servers for existing hosts with NFS storage, vSAN OSA (Original Storage Architecture), and for gateway clusters. For more information, see [Upgrading to vSphere 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade) and [Upgrading VMware vSphere software from vSphere 7.0 to 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_80-upgrade).
+
+vSphere 8 on SAP-certified Cascade Lake servers
+:   SAP-certified Cascade Lake servers are now available for new or existing deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, and {{site.data.keyword.cr}} instances with VMware vSphere 8. You can also use these bare metal servers when you add clusters and hosts to your existing instances.
+
+OSA21 data center available for Sapphire Rapids
+:   You can deploy instances with **Sapphire Rapids** servers in the **Osaka 21** data center.
+
+Support for Dual Intel Xeon Platinum 6434H Sapphire Rapids
+:   Dual Intel® Xeon® Platinum 6434H (16 cores, 3.7/4.1 GHz) bare metal servers are available for deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, and {{site.data.keyword.cr}} instances with VMware vSphere 7 and 8.
+
+Support for 4 TB of RAM
+:   You can order 4 TB of RAM for {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, and {{site.data.keyword.cr}} instances with Sapphire Rapids servers.
+
+BOM updates for {{site.data.keyword.vcf-classic-short}}
+:   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
+
+   * VMware vCenter Server Appliance
+      * 8.0 Update 3e (build 24674346)
+      * 7.0 Update 3v (build 24730281)
+   * VMware vSphere ESXi
+      * 8.0 Update 3e (build 24674464)
+      * 7.0 Update 3v (build 24723872)
+   * VMware NSX® 4.2.2.1 (build 24765084)
+
+Add-on services upgrades
+:   The following service versions are available for deployment:
+
+   * F5® BIG-IP® v17.5
+   * Juniper® vSRX v3.0 (24.4R1)
+   * Veeam® Backup and Replication 12.3.2
+   * Zerto v10.0u7
+
+HCX license keys details
+:   The VMware HCX license keys information is moved from the **Licensing and metering > Add-on services** page to the [VMware product keys](/vmware/vmware-license) page on the UI.
+
+New and updated documentation
+:   The [Cyber resilience with Elastio](/docs/vmwaresolutions?topic=vmwaresolutions-cr-elastio-overview) technical document is available.
 
 ### 17 July 2025
 {: #vmwaresolutions-jul1725}

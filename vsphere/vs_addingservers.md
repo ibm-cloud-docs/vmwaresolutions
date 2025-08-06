@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-06"
 
 keywords: flexible instance add host, add server flexible instance
 
@@ -65,7 +65,8 @@ Review the following additional information applicable to Flexible instances wit
    * If you want to customize the prefix for each hostname, toggle the **Configure hostnames individually** switch on and enter the hostname prefixes.
 8. In the **Details** section, review the estimated pricing, ensure that the account to be charged is correct, and review and accept the terms. Then, click **Add**.
 
-   
+   When you provision new ESXi servers, new vSphere license keys are assigned to hosts automatically. For existing ESXi servers, you must [retrieve the existing VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses), replace and assign them to the hosts. For more information, see [Adding license keys to VCF, vCenter Server, vSAN, and ESXi](/docs/vmwaresolutions?topic=vmwaresolutions-licensing_manage#licensing_manage-add-vcf).
+   {: important}
 
 ## Results after you add ESXi servers to Flexible instances
 {: #vs_addingservers-results}

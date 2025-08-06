@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-05-06"
+lastupdated: "2025-08-06"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -250,7 +250,10 @@ Determines whether a Windows VM is created in your {{site.data.keyword.vpc_short
 
 Determines whether to create an {{site.data.keyword.cloud_notm}} Access Group with an access policy for granting access to the resources deployed in your selected resource group. By default, it will not create the access group and access policy, but you can create them after the deployment. For more information about {{site.data.keyword.cloud_notm}} Access Group, see [Setting up access groups](/docs/account?topic=account-groups&interface=ui).
 
+### Observability
+{: #vpc-vcf-ordering-adv-settings-obs}
 
+Determines whether to use {{site.data.keyword.logs_full}} in your {{site.data.keyword.vcf-vpc-short}} instance.
 
 ## Procedure to order {{site.data.keyword.vcf-vpc-short}} instances on {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-ordering-procedure}
@@ -287,6 +290,7 @@ Determines whether to create an {{site.data.keyword.cloud_notm}} Access Group wi
    1. Specify whether you want to create a Windows VM.
    1. Specify whether you want to create an IAM access group.
    1. Specify whether you want to deploy or use an existing logging instance for the {{site.data.keyword.vcf-vpc-short}} deployment logs.
+   1. Specify whether you want to use {{site.data.keyword.logs_full_notm}}.
 
 1. On the **Summary** panel, review the instance settings and the estimated price.
 1. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.

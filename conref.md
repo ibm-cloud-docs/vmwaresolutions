@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-08-04"
+lastupdated: "2025-08-06"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -27,10 +27,15 @@ For **Sapphire Rapids** servers, choose one of the following CPU models and a su
 
 | CPU model | Cores | GHz | Storage type | RAM options |
 |:--------- |:----- |:--- |:------------ |:----------- |
-| Dual Intel Xeon Platinum 6416H | 36 | 2.2 | Up to 16 drives | 256 GB, 512 GB, 1 TB, 2 TB |
-| Dual Intel Xeon Platinum 8474C | 96 | 2.1/3.1 | Up to 16 drives | 256 GB, 512 GB, 1 TB, 2 TB |
+| Dual Intel Xeon Platinum 6416H | 36 | 2.2 | Up to 16 drives | 256 GB, 512 GB, 1 TB, 2 TB, 4 TB |
+| Dual Intel Xeon Platinum 8474C | 96 | 2.1/3.1 | Up to 16 drives | 256 GB, 512 GB, 1 TB, 2 TB, 4 TB |
+| Dual Intel Xeon Platinum 6434H | 16 | 3.7/4.1 | Up to 16 drives | 256 GB, 512 GB, 1 TB, 2 TB, 4 TB |
 {: caption="Option for Sapphire Rapids bare metal servers" caption-side="bottom"}
 {: #simpletabtable-sapphire}
+
+The 6434H CPU model has 8 cores per processor. However, VMware Cloud Foundation requires a minimum of 16 cores per processor. As a result, you are billed for 32 cores for this configuration.
+{: attention}
+{: #note-spr-6434h}
 
 Sapphire Rapids servers are not supported for BYOL users.
 {: important}
@@ -110,6 +115,7 @@ The uplink speed provides two options:
 
 | Data center | Pod |
 |:----------- |:--- |
+| AMS03 | 01-02 |
 | FRA02 | 02 |
 | FRA04 | 01 |
 | FRA05 | 01 |

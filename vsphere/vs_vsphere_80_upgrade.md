@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-06-13"
+lastupdated: "2025-08-06"
 
 keywords: vSphere migration, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -155,7 +155,59 @@ If you have an NFS cluster with vSphere 7.0 and you want to migrate it to vSpher
 ### Procedure to upgrade the ESXi hosts (Sapphire Rapids only)
 {: #vs_vsphere_80_upgrade-procedure-esxi-upgrade}
 
+1. **Apply any firmware updates that are available on the IBM Cloud classic.**
+   Complete the following steps for each host.
+   1. Put the host into maintenance mode and power off the host.
+   2. View the host details on the IBM Cloud classic portal.
+   3. Click the **Firmware** tab and review the available firmware updates. 
 
+   For 10GB NICs, the NIC firmware must be at version 9.50 or later.
+   {: important}
+
+   4. To apply the firmware updates, click **Actions > Update Firmware**.
+   5. Power on the host.
+   6. Upgrade vSphere on the host.
+2. **Procedure to upgrade the ESXi hosts**:
+   1. From the vCenter Server user interface, go to **LCM menu > LifeCycle Manager**.
+   2. Select **IMPORT ISO > IMPORT ISO**, and then the ISO file.
+   3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
+   4. For each host, choose the host in the vCenter browser tree. Then, select **update** (located in the far left in the main window).
+   5. If the Zerto VRA is present on the host, put the host into maintenance mode first. Recent releases of Zerto stop the VRA, which otherwise would prevent the update.
+   6. Complete the update.
+      1. [ATTACH] Baseline, select the previously created baseline.
+      2. Select Baseline and [REMEDIATE].
+3. **Verify the RAID firmware and drivers (Cascade Lake only).** After you upgrade the ESXi hosts, verify that the RAID firmware and drivers are at the appropriate level.
+   Complete the following steps for each host.
+
+   You do not need to complete the steps if you have Sapphire Rapids hosts.
+   {: note}
+
+   1. Connect to each host through SSH.
+   2. Run the command `esxcli storcli controller show all -i 0`.
+   3. In the output, find the version section and verify that the firmware version is 5.230.00-3803 or later and the driver version is 7.728.02.00 or later.
+
+   If the versions are not correct, complete the following steps to install the firmware and driver:
+   1. Put the host into maintenance mode.
+   2. Locate the firmware file `9461-16i_nopad.rom` and the driver file `Broadcom-lsi-mr3_7.723.03.00-1OEM.700.1.0.15843807_20654446-package.zip`.
+   3. Copy the driver file to a file that is accessible to the ESXi host. This can be either a local datastore, an NFS share that is mounted on the host, or the vSAN datastore (if the host is part of a vSAN cluster).
+   4. To install the driver, run the command `esxcli storcli /c0 download file=9461-16i_nopad.rom`.
+   5. To install the firmware, run the command `esxcli software vib install -d /<root>/Broadcom-lsi-mr3_7.723.03.00-1OEM.700.1.0.15843807_20654446-package.zip`, where `<root>` is the directory where you placed the file in a previous step.
+   6. Restart the host.
+   7. Repeat steps a, b, and c to verify that the correct versions are installed.
+   8. Repeat the procedure for all hosts.
+   
+   If you have 10 GbE NICs in your hosts, you must apply new NIC drivers. Complete the following steps for each host:
+
+   You do not need to complete the steps if you have 25 GbE NICs.
+   {: note}
+
+   1. Obtain the new NIC drivers for 10 GbE NICs from IBM Support. The file name is `Intel-i40en_2.9.2.0-1OEM.800.1.0.20613240_24226995.zip`.
+   2. Put the host into maintenance mode.
+   3. Copy the driver file to a file accessible to the ESXi host. This can be either a local datastore, an NFS share that is mounted on the host, or the vSAN datastore (if the host is part of a vSAN cluster).
+   4. Decompress the file repeatedly until you have a directory structure. For example, `/<root>/vib20/i40en/INT_bootbank_i40en_2.9.2.0-1OEM.800.1.0.20613240.vib`, where `<root>` is the root directory where you copied the driver-compressed file. The location varies according to your environment.
+   5. To install the driver, run the command `esxcli software vib install –v /<root>/vib20/i40en/INT_bootbank_i40en_2.9.2.0-1OEM.800.1.0.20613240.vib`.
+   6. Restart the host. Then, verify that the firmware and driver are at the appropriate levels and run the command `esxcli network nic get –n vmnic0`.
+   7. Remediate each host in turn. After remediation, ensure to pull the host out of maintenance mode.
 
 1. From the vCenter Server user interface, go to **LCM menu > LifeCycle Manager**.
 2. Select **IMPORT ISO > IMPORT ISO**. Then, select the ISO file.
@@ -167,7 +219,7 @@ If you have an NFS cluster with vSphere 7.0 and you want to migrate it to vSpher
    2. Select Baseline and [REMEDIATE].
 7. Remediate each host in turn. After remediation, ensure to pull the host out of maintenance mode.
 
-
+Update your IBM Support ticket to indicate that your upgrade is complete and request that the IBM Cloud for VMware database be updated to reflect that the cluster is vSphere 8.
 
 There are several methods to upgrade your ESXi hosts. For more information, see [Overview of the ESXi Host Upgrade Process](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0.html){: external}. If you need to access an ISO file or upgrade bundle as part of your selected method, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
