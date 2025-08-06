@@ -144,7 +144,7 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
    2. View the host details on the IBM Cloud classic portal.
    3. Click the **Firmware** tab and review the available firmware updates. 
 
-   For 10GB NICs, the NIC firmware must be at version 9.50 or later.
+   For 10 GB NICs, the NIC firmware must be at version 9.50 or later.
    {: important}
 
    4. To apply the firmware updates, click **Actions > Update Firmware**.

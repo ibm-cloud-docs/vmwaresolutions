@@ -89,7 +89,7 @@ The **SAP-certified Cascade Lake** servers are not available if you selected VMw
 ## Number of bare metal servers
 {: #vs_orderinginstances-bare-metal-number}
 
-The number of VMware ESXi™ servers that you want add to the {{site.data.keyword.vcf-flex-short}} instance. You can order 1-59 servers. All servers have the same configuration.
+The number of VMware ESXi™ servers that you want to add to the {{site.data.keyword.vcf-flex-short}} instance. You can order 1-59 servers. All servers have the same configuration.
 
 ## Related links
 {: #vs_orderinginstances-bare-metal-related}
