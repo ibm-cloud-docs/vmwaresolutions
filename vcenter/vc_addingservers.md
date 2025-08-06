@@ -80,7 +80,7 @@ Review the following additional information applicable to Automated instances wi
       * For the consolidated cluster, you can order 1-51 servers in total, taking into account the existing number of hosts in the cluster.
       * For the workload cluster, you can order 1-59 servers in total, taking into account the existing number of hosts in the cluster.
    2. From the list, you can select a bare metal server configuration that is being used by the existing ESXi servers in the cluster. Then, click **Next**. This option is not available for existing ESXi servers with **Broadwell CPU** or if the storage type of the cluster is **Local disks**.
-   3. You can also choose a new bare metal server configuration by selecting the option from the list and clicking **Next**. Select the **CPU model**, the **vSphere version** (vSphere 8 clusters only), the amount of **RAM**, and **vSAN** if you have vSAN storage type.
+   3. You can also choose a new bare metal server configuration by selecting the option from the list and clicking **Next**. Select the **CPU model**, the **vSphere version**, the amount of **RAM**, and **vSAN** if you have vSAN storage type.
 
    When you select **Sapphire Rapids** bare metal servers, the **Storage architecture** is either **vSAN ESA** (Express Storage Architecture) (vSphere 8 only) or **vSAN OSA** (Original Storage Architecture). For more information, see [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters#vc_addingclusters-vsan-storage-archi).
    {: important}

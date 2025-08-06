@@ -78,9 +78,6 @@ You can choose from **Sapphire Rapids**, **Cascade Lake**, and **SAP-certified C
 ### SAP-certified Cascade Lake
 {: #vc_orderinginstance-sap}
 
-vSphere 8 is not supported for SAP-certified Cascade Lake servers.
-{: important}
-
 {{site.data.content.sap-para-intro}}
 
 {{site.data.content.simpletabtable-sap-netweaver}}

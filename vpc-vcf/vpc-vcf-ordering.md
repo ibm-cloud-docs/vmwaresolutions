@@ -289,7 +289,6 @@ Determines whether to use {{site.data.keyword.logs_full}} in your {{site.data.ke
 1. Specify the **Advanced integration settings**.
    1. Specify whether you want to create a Windows VM.
    1. Specify whether you want to create an IAM access group.
-   1. Specify whether you want to deploy or use an existing logging instance for the {{site.data.keyword.vcf-vpc-short}} deployment logs.
    1. Specify whether you want to use {{site.data.keyword.logs_full_notm}}.
 
 1. On the **Summary** panel, review the instance settings and the estimated price.

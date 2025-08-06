@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-06"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -81,6 +81,8 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 
 {{site.data.content.simpletabtable-sapphire}}
 
+{{site.data.content.note-spr-6434h}}
+
 {{site.data.content.note-spr-rapids-byol}}
 
 
@@ -100,9 +102,6 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 {{site.data.content.simpletabtable-sap-netweaver}}
 
 {{site.data.content.simpletabtable-sap-hana}}
-
-vSphere 8 is not supported for SAP-certified Cascade Lake servers.
-{: important}
 
 #### Number of bare metal servers
 {: #vc_addingclusters-bare-metal-number}
@@ -395,14 +394,13 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
    2. Complete the bare metal server configuration.
       * If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, toggle the **Select a different location** switch on and choose the {{site.data.keyword.cloud_notm}} data center to host the cluster.
       * For **Sapphire Rapids** and **Cascade Lake**, select the **CPU model**, **RAM size**, and the **Number of bare metal servers**.
-      
-      * For **SAP-certified Cascade Lake** (vSphere 7 only), select one of the preset configurations.
+      * For **SAP-certified Cascade Lake**, select one of the preset configurations.
 
    3. Complete the storage configuration.
       * If you select **NFS storage** and want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
       * If you select **NFS storage** and want to add and configure file shares individually, toggle the **Configure shares individually** switch on, then click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. Select at least one file share.
       * If you select **vSAN storage**, specify the following values:
-         * The [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters#vc_addingclusters-vsan-storage-archi) can be either **vSAN ESA** (Express Storage Architecture) (vSphere 8 only) or **vSAN OSA** (Original Storage Architecture). This option is available only when you select **Sapphire Rapids** bare metal servers.
+         * The [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters#vc_addingclusters-vsan-storage-archi) can be either **vSAN ESA** (Express Storage Architecture) (vSphere 8 only) or **vSAN OSA** (Original Storage Architecture).
          * Size for the vSAN capacity disks
          * Number of vSAN capacity disks
          * Size for vSAN cache disks

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-06"
 
 keywords: flexible order instances, order flexible, order vmaware vSphere instance
 
@@ -29,12 +29,11 @@ subcollection: vmwaresolutions
    1. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod where the instance is to be hosted.
    1. Select the CPU model:
       * For **Sapphire Rapids** and **Cascade Lake** servers, select the CPU model and the RAM size.
-      
-      * For **SAP-certified Cascade Lake** servers (vSphere 7 only), choose one of the preset configurations.
+      * For **SAP-certified Cascade Lake** servers, choose one of the preset configurations.
    1. Specify the number of bare metal servers.
 1. If you selected the **VMware vSAN** component, complete the vSAN™ storage configuration.
    * If you want more storage, select the **High performance with Intel Optane** checkbox.
-   * The [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-storage-settings#vs_orderinginstances-storage-archi) can be either **vSAN ESA** (Express Storage Architecture) (vSphere 8 only) or **vSAN OSA** (Original Storage Architecture). This option is available only when you select **Sapphire Rapids** bare metal servers.
+   * The [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-storage-settings#vs_orderinginstances-storage-archi) can be either **vSAN ESA** (Express Storage Architecture) (vSphere 8 only) or **vSAN OSA** (Original Storage Architecture).
    * Specify the disk types for the capacity and cache disks, and the number of disks.
    * If you want to **Enable vSAN deduplication and compression** or **Enable vSAN compression** (vSAN ESA only), toggle its switch on.
 1. Complete the network interface settings:

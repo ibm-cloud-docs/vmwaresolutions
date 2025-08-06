@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Upgrading to vSphere 8.0
 {: #vc_vcs_80_upgrade}
 
-You can upgrade the VMware vCenter Server® software on your instances to version 8.0 and migrate your NFS and gateway clusters to VMware vSphere® 8.0.
+You can upgrade the VMware vCenter Server® software on your instances to version 8.0.
 
 ## Before you begin
 {: #vc_vcs_80_upgrade-prereq}
@@ -94,24 +94,7 @@ Complete the following requirements before you begin the upgrade:
    8. Select **uplink1** and click **+**. `vmnic2` is displayed.
    9. Click **OK**, and then **OK** again to exit the window.
 
-## Procedure to migrate from vSphere 7.0 to vSphere 8.0
-{: #vc_vcs_80_migrate-procedure-vsphere}
-
-You cannot migrate a vSAN cluster to vSphere 8.0.
-{: important}
-
-If you have a gateway cluster with vSphere 7.0 and you want to migrate it to vSphere 8.0, complete the following tasks:
-1. Create a new vSphere 8.0 gateway cluster.
-2. Carefully coordinate the migration of your gateway virtual machines and configuration from the old cluster to the new cluster. This way your protected VLANs do not lose service or connectivity. This action includes migration of the virtual machines and their configuration, or creation of new virtual machines with duplicate configuration. As part of this sequence, remove your protected VLANs from protection of the old cluster and assign them to the new cluster.
-3. Remove the original gateway cluster.
-
-If you have an NFS cluster with vSphere 7.0 and you want to migrate it to vSphere 8.0, perform a rolling replacement of servers in the cluster. For each vSphere 7.0 server, complete the following tasks:
-1. Create a new vSphere 8.0 server.
-2. Ensure that the vSphere 8.0 server is configured to your needs and remove it from maintenance mode.
-3. Put the vSphere 7.0 server into maintenance mode.
-4. Remove the vSphere 7.0 server from your cluster.
-
-### Procedure to upgrade the ESXi hosts (Sapphire Rapids only)
+### Procedure to upgrade the ESXi hosts
 {: #vc_vcs_80_upgrade-procedure-esxi-sapphire}
 
 1. **Apply any firmware updates that are available on the IBM Cloud classic.**
@@ -167,16 +150,6 @@ If you have an NFS cluster with vSphere 7.0 and you want to migrate it to vSpher
    5. To install the driver, run the command `esxcli software vib install –v /<root>/vib20/i40en/INT_bootbank_i40en_2.9.2.0-1OEM.800.1.0.20613240.vib`.
    6. Restart the host. Then, verify that the firmware and driver are at the appropriate levels and run the command `esxcli network nic get –n vmnic0`.
    7. Remediate each host in turn. After remediation, ensure to pull the host out of maintenance mode.
-
-1. From the vCenter Server user interface, go to **LCM menu > LifeCycle Manager**.
-2. Select **IMPORT ISO > IMPORT ISO**, and then the ISO file.
-3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
-4. For each host, choose the host in the vCenter browser tree. Then, select **update** (located in the far left in the main window).
-5. If the Zerto VRA is present on the host, put the host into maintenance mode first. Recent releases of Zerto stop the VRA, which otherwise would prevent the update.
-6. Complete the update.
-   1. [ATTACH] Baseline, select the previously created baseline.
-   2. Select Baseline and [REMEDIATE].
-7. Remediate each host in turn. After remediation, ensure to pull the host out of maintenance mode.
 
 Update your IBM Support ticket to indicate that your upgrade is complete and request that the IBM Cloud for VMware database be updated to reflect that the cluster is vSphere 8.
 

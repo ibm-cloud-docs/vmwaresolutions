@@ -83,9 +83,6 @@ Select **Sapphire Rapids**, **Cascade Lake**, or **SAP-certified Cascade Lake**.
 
 {{site.data.content.simpletabtable-sap-hana}}
 
-vSphere 8 is not supported for SAP-certified Cascade Lake servers.
-{: important}
-
 ## RAM
 {: #cr_orderinginstance-consold-cluster-ram}
 
