@@ -77,7 +77,7 @@ If you are using Hyper Protect Crypto Services (HPCS), you must first create a s
 ### Settings
 {: #kmip_standalone_ordering-step2-settings}
 
-When you enable the nonactive KMIP for VMware instance, provide the following settings according to the key management service that you selected.
+When you enable the nonactive KMIP for VMware instance, provide the following settings:
 
 | Setting | Description |
 |:------- |:----------- |
@@ -86,8 +86,6 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
 {: caption="Configuration settings for HPCS" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #simpletabtable1}
-{: tab-title="Hyper Protect Crypto Services"}
-{: tab-group="Settings when selecting different key management service"}
 
 ### Procedure to activate the KMIP for VMware instance
 {: #kmip_standalone_ordering-step2-procedure}

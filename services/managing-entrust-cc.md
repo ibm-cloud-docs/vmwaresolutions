@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-05-09"
+lastupdated: "2025-08-06"
 
 keywords: Entrust CloudControl WebGUI, Entrust CloudControl console, enable internet Entrust CloudControl
 
@@ -43,7 +43,7 @@ For more information, see [Ordering services for {{site.data.keyword.vcf-auto-sh
 
 When you add and remove hosts and clusters to your instance, VMware Solutions does not manage the Entrust CloudControl inventory and credentials for you. {{site.data.keyword.cloud_notm}} assumes that you take steps to lock {{site.data.keyword.cloud_notm}} automation from having access to your Entrust CloudControl deployment.
 
-## Procedure to find the firewall and SNAT rules defined (NSX-T only)
+## Procedure to find the firewall and SNAT rules defined
 {: #managing-entrust-cc-proc-find-firewall-nsxt}
 
 1. Log in to the NSX-T Manager, and click **Networking** in the menu.
@@ -66,15 +66,6 @@ These rules enable internet access for the Entrust VMs. If internet access is no
 
 For private-only vCenter Server environments, the VMware NSX® Edge Services Gateway (ESG) **mgmt-nsx-edge** is not added. Therefore, the firewall and SNAT rules are not defined. As a result, internet connectivity cannot be enabled for private-only instances and Entrust licenses expire annually.
 {: note}
-
-### Procedure to find the firewall and SNAT rules defined (Entrust CloudControl 5.x and NSX-V only)
-{: #managing-entrust-cc-proc-find-firewall}
-
-1. Log in to the VMware® vSphere Web Client (FLEX) and find the ESG **mgmt-nsx-edge**.
-2. Click **Home > Networking & Security > NSX Edges**.
-3. Double-click the ESG **mgmt-nsx-edge** and click the **Manage** tab.
-4. Go to the **Firewall** tab and find the Entrust rules. Note the source IP addresses, which are the IP addresses for the Entrust VMs.
-5. Go to the **NAT** tab and find the SNAT rules that are created for the Entrust VMs. The source IP addresses match the IP addresses that you noted in the previous step.
 
 ### Procedure to enable internet connectivity for Entrust CloudControl (Entrust CloudControl 5.x only)
 {: #managing-entrust-cc-enable-internet}
