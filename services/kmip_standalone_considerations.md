@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-08-06"
 
 keywords: KMIP for VMware, KMIP stand-alone, tech specs KMIP
 
@@ -27,8 +27,8 @@ The Key Management Interoperability Protocol (KMIP™) for VMware® service prov
 The KMIP for VMware service is available as a stand-alone service without being associated to a VMware instance. Each instance of the service can serve one or more {{site.data.keyword.vcf-auto}} or {{site.data.keyword.vcf-flex}} instances.
 
 The following client applications are supported:
-* vCenter Server 6.7, 7.0, and 8.0
-* vSphere 6.7 and 7.0
+* VMware vCenter Server® 7 and 8
+* VMware vSphere® 7
 
 ## Technical specifications for KMIP for VMware
 {: #technical-specifications-for-kmip-for-vmware-on-ibm-cloud}

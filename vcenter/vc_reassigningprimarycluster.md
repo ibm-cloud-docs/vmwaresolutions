@@ -42,7 +42,7 @@ The VM migration procedures are slightly different depending if any add-on servi
 | Other services or no services | Complete [the procedure to migrate management VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm). |
 {: caption="VM migration procedures for add-on services" caption-side="bottom"}
 
-### Procedure to migrate management VMs (Juniper vSRX)
+### Procedure to migrate management VMs (vSRX)
 {: #vc_reassigningprimarycluster-migrate-mgmt-vm-vsrx}
 
 If the Juniper® vSRX service is installed on your instance, complete the following procedure.

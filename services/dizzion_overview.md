@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-02-02"
+lastupdated: "2025-08-06"
 
 keywords: dizzion service, request dizzion, tech specs dizzion
 
@@ -19,12 +19,14 @@ subcollection: vmwaresolutions
 {: #dizzion-overview}
 
 Organizations with high-performing, remote, and hybrid workforces choose Dizzion digital workspaces, Desktop as a Service (DaaS), and virtual applications to protect sensitive data and create a seamless, work-from-anywhere platform.
-Dizzion on {{site.data.keyword.cloud_notm}} outperforms legacy virtual desktop infrastructure (VDI) and commodity Desktop as a Service (DaaS) for a superior user experience. At the same time, it provides more service-level choices, multicloud integration, compliance, protection, and simplified management for the teams that are in charge with environment optimization. Dizzion on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from Dizzion, not IBM.
+Dizzion on {{site.data.keyword.cloud_notm}} outperforms legacy virtual desktop infrastructure (VDI) and commodity Desktop as a Service (DaaS) for a superior user experience. At the same time, it provides more service-level choices, multicloud integration, compliance, protection, and simplified management for the teams that are in charge with environment optimization. 
+
+Dizzion on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from Dizzion, not IBM.
 
 ## Technical specifications for Dizzion
 {: #dizzion-overview-specs}
 
-You can expect the following benefits when you request Dizzion for {{site.data.keyword.cloud}}:
+Dizzion on {{site.data.keyword.cloud}} offers the following benefits:
 * More choices and control. Over 40 global {{site.data.keyword.cloud_notm}} locations, hybrid cloud integration, and DIY-to-turnkey support levels.
 * Simplified digital workspaces. Dizzion’s proprietary C3 platform makes a complex IT service easier and automated.
 * Empowered digital transformation. IT asset unification with integrated multicloud and in-house environments.
