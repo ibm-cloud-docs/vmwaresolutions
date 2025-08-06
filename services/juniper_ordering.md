@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-06-24"
+lastupdated: "2025-08-06"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX console
 
@@ -77,7 +77,7 @@ If you deploy Juniper vSRX on a gateway cluster, after deployment, you must conf
 
 1. Configure the redundant Ethernet `reth2` interface with the default gateway IP addresses of each subnet in your private trunk VLAN. The IP addresses are assigned to the logical interface, which is in the format of `reth2.VLANid`.
 2. Configure the redundant Ethernet `reth3` interface with the default gateway IP addresses of each subnet in your public trunk VLAN, if you have one. The IP addresses are assigned to the logical interface, which is in the format of `reth3.VLANid`.
-3. In the {{site.data.keyword.cloud}} classic infrastructure view, look at the gateway appliance ordered for the gateway cluster. From there, assign the VLANs that you want to the gateway appliance and put them in `route-through` mode.
+3. In the {{site.data.keyword.slportal_full}}, look at the gateway appliance ordered for the gateway cluster. From there, assign the VLANs that you want to the gateway appliance and put them in `route-through` mode.
 
 ## Related links
 {: #juniper-ordering-related-links}
