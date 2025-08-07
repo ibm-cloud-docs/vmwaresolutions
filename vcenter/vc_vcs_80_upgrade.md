@@ -95,7 +95,7 @@ Complete the following requirements before you begin the upgrade:
    9. Click **OK**, and then **OK** again to exit the window.
 
 ### Procedure to upgrade the ESXi hosts
-{: #vc_vcs_80_upgrade-procedure-esxi-sapphire}
+{: #vc_vcs_80_upgrade-procedure-esxi}
 
 1. **Apply any firmware updates that are available on the IBM Cloud classic.**
    Complete the following steps for each host.
