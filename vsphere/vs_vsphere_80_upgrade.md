@@ -150,7 +150,7 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
    4. To apply the firmware updates, click **Actions > Update Firmware**.
    5. Power on the host.
    6. Upgrade vSphere on the host.
-2. **Procedure to upgrade the ESXi hosts**:
+2. **Upgrade the ESXi hosts**:
    1. From the vCenter Server user interface, go to **LCM menu > LifeCycle Manager**.
    2. Select **IMPORT ISO > IMPORT ISO**, and then the ISO file.
    3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
