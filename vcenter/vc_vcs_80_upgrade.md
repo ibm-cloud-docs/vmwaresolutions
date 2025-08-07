@@ -94,6 +94,23 @@ Complete the following requirements before you begin the upgrade:
    8. Select **uplink1** and click **+**. `vmnic2` is displayed.
    9. Click **OK**, and then **OK** again to exit the window.
 
+### Procedure to upgrade Stor VIB (Broadcom driver)
+{: #vs_vsphere_80_upgrade-procedure-broadcom}
+
+You must upgrade the Broadcom driver before you upgrade the ESXi host.
+
+1. Extract the `007.1316.0000.0000_Unified_StorCLI_PUL.zip` file to a directory on your windows jump server.
+2. Locate the `vmware-storcli.vib` file in the extracted file contents.
+3. Copy the `.vib` file to either a vSAN or NFS data store that is mounted on the ESXi hosts for the instance. Use vCenter Server to reference the extracted file on your jump server.
+4. SSH into each ESXi host and run the following VIB Upgrade command:
+   `esxcli software vib update -v /<path to vsan or nfs datastore from step 3>/vmware-storcli.vib --no-sig-check`
+   The following installation results are displayed.
+    `Message: Operation finished successfully.    Reboot Required: false    VIBs Installed: Broadcom_bootbank_vmware-storcli_007.1316.0000.0000-01    VIBs Removed: LSI_bootbank_vmware-storcli_007.0916.0000.0000-01    VIBs Skipped:`
+5. Run the following command to validate the installation:
+   `> esxcli software vib list |grep vmware-storcli
+   vmware-storcli    007.1316.0000.0000-01    Broadcom  PartnerSupported  2020-04-16`
+6. Repeat for each host.
+
 ### Procedure to upgrade the ESXi hosts
 {: #vc_vcs_80_upgrade-procedure-esxi}
 
