@@ -87,6 +87,7 @@ toc:
               topics:
               - include: ../vmware-service/common/vmware-aas-overview.md
               - include: ../vmware-service/common/vmaas-bom.md
+              - include: ../vmware-service/common/vmaas-pricing.md
           - include: ../vmware-service/vmaas/tenant-plan-deploy.md
           - topicgroup:
               id: ordering-vcfaas
