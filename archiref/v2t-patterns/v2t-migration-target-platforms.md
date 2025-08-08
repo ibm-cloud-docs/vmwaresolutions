@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-14"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ The offerings are described in detail in the following documents:
 In the {{site.data.keyword.vcf-auto-short}} deployments, each site, and each instance has its own NSX-T Manager cluster. In the multisite deployments, the vCenter, NSX-T managers, and domain controller components are deployed per site. Each instance on each site has [a default NSX-T overlay topology](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and no networking integrations nor dependencies exist between the sites.
 {: note}
 
-The following diagram can be used to compare and contrast the features that are offered by these offerings.
+The following diagram can be used to compare and contrast the features that are offered by these offerings:
 
 ![Automated offerings](../../images/v2t-diagrams-platforms-automated.svg "Automated offerings"){: caption="Automated offerings" caption-side="bottom"}
 

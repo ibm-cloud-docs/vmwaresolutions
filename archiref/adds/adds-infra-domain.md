@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -50,13 +50,13 @@ For more information, see [Forest and domain functional levels](https://learn.mi
 ### Single VSI domain controller
 {: #adds-infra-domain-controllers-vsi}
 
-The following diagram shows the deployment pattern of the single VSI domain controller.
+The following diagram shows the deployment pattern of the single VSI domain controller:
 
 ![Single VSI domain controller diagram](../../images/adds-advsi.svg "Single VSI domain controller diagram"){: caption="Single VSI domain controller diagram" caption-side="bottom"}
 
 If you order the single VSI, it is recommended that you manually order a second VSI of the same type. Configure this VSI as a second domain controller to enable AD DS as a highly available service.
 
-The following table describes the VSI configuration.
+The following table describes the VSI configuration:
 
 | Parameter          | Specification                                 |
 |:-------------------|:----------------------------------------------|
@@ -72,12 +72,12 @@ The domain controller is provisioned with a name of `ADNS<instance_name>.<root_d
 ### Two highly available Microsoft Windows VMs in the cluster
 {: #adds-infra-domain-controllers-ha}
 
-The following diagram shows the deployment pattern of the two highly available VM domain controllers.
+The following diagram shows the deployment pattern of the two highly available VM domain controllers:
 ![Two highly available VM domain controllers diagram](../../images/adds-adha.svg "Two highly available VM domain controllers"){: caption="Two highly available VM domain controllers" caption-side="bottom"}
 
 If you order the two high availability (HA) Microsoft Windows VMs, you must provide two Microsoft Windows Server 2019 licenses. For more information, see [Domain Name System configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings#vc_orderinginstance-dns-config).
 
-After the provisioning of the vCenter Server instance, you have 30 days to activate the VMs. The cluster is configured with a VM-VM anti-affinity rule. Therefore, Distributed Resource Scheduler (DRS) tries to keep the VMs apart by placing them on different physical vSphere ESXi hosts. The following table describes the VM configuration.
+After the provisioning of the vCenter Server instance, you have 30 days to activate the VMs. The cluster is configured with a VM-VM anti-affinity rule. Therefore, Distributed Resource Scheduler (DRS) tries to keep the VMs apart by placing them on different physical vSphere ESXi hosts. The following table describes the VM configuration:
 
 | Parameter        | Specification                                 |
 |:---------------- |:--------------------------------------------- |

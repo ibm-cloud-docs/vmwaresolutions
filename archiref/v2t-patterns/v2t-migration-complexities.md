@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-19"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 In this step of the process, you can check the source NSX-V environment and use a number of parameters to categorize the migration project. The possible three complexity categories are Low, Medium, or High.
 
-The following diagram depicts the parameters and shows how the values of these parameters map to the complexity assessment.
+The following diagram depicts the parameters and shows how the values of these parameters map to the complexity assessment:
 
 ![Complexity categories](../../images/v2t-diagrams-criteria.svg "Complexity categories"){: caption="Complexity categories" caption-side="bottom"}
 
@@ -47,7 +47,7 @@ Your source {{site.data.keyword.vcf-auto}} instance with NSX-V environment is in
 * High - two or more single zones in a multisite deployment with cross vCenter NSX-V.
 * High - multizone, with ESXi hosts deployed in multiple data centers.
 
-{{site.data.keyword.vmwaresolutions_full}} offers standard deployment models, and multisite deployments require manual customization to build the wanted network topology. 
+{{site.data.keyword.vmwaresolutions_full}} offers standard deployment models, and multisite deployments require manual customization to build the wanted network topology.
 
 This is a key parameter and defines the classification of the migration project and the required VMware NSX-T™ skills.
 
@@ -63,7 +63,7 @@ This is not a key parameter. Therefore, if you have more than 1000 VMs, it does 
 
 Is your vCenter deployed as independent or is it using the vCenter high availability (HA) pattern? vCenter HA is not deployed as part of automation. If you want to deploy it, you must do the customization post deployment manually.
 
-This is not a key parameter. However, it is related to the zone deployment category. 
+This is not a key parameter. However, it is related to the zone deployment category.
 
 ## ADDNS customization
 {: #v2t-complexity-addns}
@@ -86,16 +86,16 @@ If you customize your underlay or overlay networks, review the customizations an
 * Multiple GRE or IPsec tunnels.
 * Use of hardware VTEPs - The classification becomes High complexity.
 
-Due to the architectural differences between NSX-V and NSX-T, these aspects might require advanced configuration skills to build the wanted network topology. 
+Due to the architectural differences between NSX-V and NSX-T, these aspects might require advanced configuration skills to build the wanted network topology.
 
-This is a key parameter and defines the classification of the source environment. 
+This is a key parameter and defines the classification of the source environment.
 
 ## Layer 2 stretched overlay
 {: #v2t-complexity-l2}
 
-If you use NSX-V to stretch layer 2 networks across data centers, then the classification is Medium and High. Due to the architectural differences between NSX-V and NSX-T, these aspects might require advanced configuration skills to build the wanted network topology. 
+If you use NSX-V to stretch layer 2 networks across data centers, then the classification is Medium and High. Due to the architectural differences between NSX-V and NSX-T, these aspects might require advanced configuration skills to build the wanted network topology.
 
-This is not a key parameter. However, it is related to the zone deployment category and adds more weighting to the complexity. 
+This is not a key parameter. However, it is related to the zone deployment category and adds more weighting to the complexity.
 
 ## Gateway firewall
 {: #v2t-complexity-gwfw}
@@ -111,7 +111,7 @@ This is not a key parameter. However, it gives guidance on where more project ta
 
 If you use the NSX-V distributed firewalling feature, the configurations must be migrated to the NSX-T environment. The number and complexity of these rules impact the migration. Depending on the complexity of the rules, some of them can be migrated easily. However, if the rules use vCenter tagging, then they cannot be migrated as-is, as this feature doesn't exist in NSX-T. Consider the usage of a third-party tool for a large number or complex use of distributed firewall.
 
-This is a key parameter and also gives guidance on where more project tasks, tools, and skills are required. 
+This is a key parameter and also gives guidance on where more project tasks, tools, and skills are required.
 
 ## Load balancing
 {: #v2t-complexity-lb}
@@ -123,7 +123,7 @@ This is not a key parameter. However, it gives guidance on where more project ta
 ## Additional services
 {: #v2t-complexity-services}
 
-The optional vCenter server instance services, such as Veeam or Zerto are linked to your vCenter server instance. By deleting the source {{site.data.keyword.vcf-auto}} instance, these services are deleted, and so are your historical backups. 
+The optional vCenter server instance services, such as Veeam or Zerto are linked to your vCenter server instance. By deleting the source {{site.data.keyword.vcf-auto}} instance, these services are deleted, and so are your historical backups.
 
 You must reconfigure the services or migrate configurations post-deployment. This action is done to match your needs and requirements in the new target NSX-T based {{site.data.keyword.vcf-auto}} instance.
 

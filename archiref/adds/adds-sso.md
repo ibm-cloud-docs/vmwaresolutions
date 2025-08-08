@@ -22,7 +22,7 @@ VMware vCenter Single Sign-On (SSO) is an authentication broker and security tok
 * SSL for secure traffic
 * Authentication of users by using an identity source such as Active Directory™ or OpenLDAP
 
-Review the following vSphere SSO flow.
+Review the following vSphere SSO flow:
 
 1. A user logs in to the vSphere Client with a username and password to access vCenter or a vCenter service.
 2. The vSphere Client passes the login information to the SSO service, which checks the SAML token of the vSphere Client. If the vSphere Client has a valid token, SSO checks:
@@ -50,7 +50,7 @@ As the customer, you have full access to manage the vSphere SSO users and groups
 ## Identity sources
 {: #adds-sso-identity}
 
-Identity sources are used to attach one or more domains to vCenter SSO. A domain is a repository for users and groups that the vCenter SSO can use for user authentication. vCenter SSO has the following domains that are configured after the vCenter Server instance deployment.
+Identity sources are used to attach one or more domains to vCenter SSO. A domain is a repository for users and groups that the vCenter SSO can use for user authentication. vCenter SSO has the following domains that are configured after the vCenter Server instance deployment:
 
 * Local OS - Local operating system users are local to the operating system where the vCenter Single Sign-On server is running. The local operating system identity source exists only in basic vCenter SSO deployments and is not available in deployments with multiple vCenter SSO instances. Only one local operating system identity source is allowed. Shown as local in the vSphere Client.
 * vsphere.local – Enables `administrator@vsphere.local` to be authenticated.

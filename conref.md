@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-08"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -206,7 +206,7 @@ When you delete a {{site.data.keyword.vcf-auto}} instance, the following compone
 7. VLANs
 {: #deletinginstance-components-list}
 
-Review the following information before you proceed.
+Review the following information before you proceed:
 * Any existing VLANs that you own, outside of {{site.data.keyword.vmwaresolutions_full}}, are not deleted.
 * Any VLANs that contain your own resources, such as gateways or Veeam® servers are not deleted.
 * Any VLANs or subnets without attached gateways or servers are deleted even though you might have IP addresses assigned to it from the subnets to your VMs.

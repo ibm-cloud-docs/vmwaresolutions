@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-04-10"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -69,7 +69,7 @@ If the enterprise includes groups that require data isolation or service isolati
 
 The multiple forest model is also seen where enterprises have merged, and the two enterprises have two different Active Directory Domain Services structures.
 
-Review the following three forest models.
+Review the following three forest models:
 
 * Organizational forest model – In this model, user accounts and resources are contained in both forests but managed independently. This model can provide autonomy and isolation, if the forest is configured to prevent access to anyone outside the forest. If users in an organizational forest need to access resources in other forests, or the reverse, trust relationships can be established between one organizational forest and the other forests.
 * Resource forest model – In this model, a separate forest is used to manage resources and these forests do not contain user accounts other than the service administrators. Forest trusts are established so that users from other forests can access the resources that are contained in the resource forest. This model provides service isolation.
