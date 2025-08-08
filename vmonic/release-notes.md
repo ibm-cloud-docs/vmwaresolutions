@@ -35,10 +35,13 @@ VMware vCloud Usage Meter updates
 
    * **Usage Meter new version**: Usage Meter version 9 is now available for deployment. For more information, see [Deploying Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-deploy).
    * **Usage Meter upgrade**: You can upgrade existing Usage Meters to version 9 to integrate with their own access token. The upgrade process involves receiving an access token for your currently registered Usage Meter, followed by an in-place upgrade to version 9. For more information, see [Upgrading Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-upgrade).
-   * **New license keys**: {{site.data.keyword.vcf-classic-short}} (Automated and Flexible) and {{site.data.keyword.vcf-vpc-short}} instances are now provisioned with expiring keys, with the assurance that {{site.data.keyword.IBM}} will provide updated keys before the expiration date. Roll-your-own (RYO) servers are no longer provisioned with any keys when you order ESXi host from the Classic Bare Metal order form. You must retrieve the VMware Cloud Foundation (VCF) license keys. For more information, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
+   * **New license keys**: {{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.vcf-vpc-short}} instances are now provisioned with expiring keys, with the assurance that {{site.data.keyword.IBM}} will provide updated keys before the expiration date. Roll-your-own (RYO) servers are no longer provisioned with any keys when you order ESXi host from the Classic Bare Metal order form. You must retrieve the VMware Cloud Foundation (VCF) license keys. For more information, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
 
 vSphere 8 upgrade for Cascade Lake servers
 :   You can manually upgrade vSphere to version 8.0 on Intel Cascade Lake servers for existing hosts with NFS storage, vSAN OSA (Original Storage Architecture), and for gateway clusters. For more information, see [Upgrading to vSphere 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade) and [Upgrading VMware vSphere software from vSphere 7.0 to 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_80-upgrade).
+
+vSphere 8 support for vSAN on Cascade Lake servers
+:   You can order vSphere 8 with vSAN OSA storage for new instances and new clusters with Cascade Lake servers.
 
 vSphere 8 on SAP-certified Cascade Lake servers
 :   SAP-certified Cascade Lake servers are now available for new or existing deployment with {{site.data.keyword.vcf-auto-short}}, {{site.data.keyword.vcf-flex-short}}, and {{site.data.keyword.cr}} instances with VMware vSphere 8. You can also use these bare metal servers when you add clusters and hosts to your existing instances.
