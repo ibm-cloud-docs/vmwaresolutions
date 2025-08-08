@@ -41,4 +41,4 @@ To use baselines and baseline groups, you must attach them to selected inventory
 {: #vum-baselines-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware)
+* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware){: external}

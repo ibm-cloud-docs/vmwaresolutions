@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -74,4 +74,4 @@ The new profile appears in the profile list.
 {: #vum-host-profiles-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware)
+* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware){: external}

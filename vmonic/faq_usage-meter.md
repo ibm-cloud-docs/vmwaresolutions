@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-05-26"
+lastupdated: "2025-08-08"
 
 keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
@@ -169,7 +169,7 @@ No special backup is needed; continue to use your typical data protection and ba
 {: #faq_usage-meter-existing-customer}
 {: faq}
 
-Yes. {{site.data.keyword.cloud_notm}} for VMware requires customers to comply with vendor software agreements as part of the {{site.data.keyword.cloud_notm}} Services Agreement. If you do not provide usage tracking through Usage Meter, you risk falling out of support and compliance and incur billing errors on usage. For more information, see the [{{site.data.keyword.cloud_notm}} Services Agreement](https://www.ibm.com/support/customer/csol/terms/?id=Z126-6304&cc=us&lc=en).
+Yes. {{site.data.keyword.cloud_notm}} for VMware requires customers to comply with vendor software agreements as part of the {{site.data.keyword.cloud_notm}} Services Agreement. If you do not provide usage tracking through Usage Meter, you risk falling out of support and compliance and incur billing errors on usage. For more information, see the [{{site.data.keyword.cloud_notm}} Services Agreement](https://www.ibm.com/support/customer/csol/terms/?id=Z126-6304&cc=us&lc=en){: external}.
 
 IBM Cloud Services Agreement (CSA) and applicable attachments and transaction documents are the complete agreement under which customers can order Cloud Services, which might consist of {{site.data.keyword.cloud_notm}} Services or other services to support use of Cloud Services that {{site.data.keyword.IBM_notm}} provides ({{site.data.keyword.IBM_notm}} products) or cloud or other services that a third-party such as Broadcom provides that customers acquire from {{site.data.keyword.IBM_notm}} (non-{{site.data.keyword.IBM_notm}} products).
 

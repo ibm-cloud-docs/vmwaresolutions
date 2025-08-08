@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-11-26"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 {: #design_physicalinfrastructure}
 
 The physical infrastructure consists of the following components:
-* **Physical compute** - The physical compute provides the physical processing and memory that is used by the virtualization infrastructure. For this design, the compute components are provided by {{site.data.keyword.cloud}} bare metal servers and are listed in the [Broadcom Compatibility Guide](https://compatibilityguide.broadcom.com/).
+* **Physical compute** - The physical compute provides the physical processing and memory that is used by the virtualization infrastructure. For this design, the compute components are provided by {{site.data.keyword.cloud}} bare metal servers and are listed in the [Broadcom Compatibility Guide](https://compatibilityguide.broadcom.com/){: external}.
 * **Physical storage** - The physical storage provides the raw storage capacity that is used by the virtualization infrastructure. Storage components are provided either by {{site.data.keyword.cloud_notm}} bare metal servers or by shared Network Attached Storage (NAS) array that uses NFS v3.
 * **Physical network** - The physical network provides the network connectivity into the environment that is then used by the network virtualization. The network is provided by the {{site.data.keyword.cloud_notm}} services network and it includes extra services such as DNS and NTP.
 

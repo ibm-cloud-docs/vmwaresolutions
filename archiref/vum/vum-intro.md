@@ -67,7 +67,7 @@ If you deployed a {{site.data.keyword.vcf-auto-short}} instance with vSAN, see [
 
 If you want to update the {{site.data.keyword.cloud_notm}} infrastructure management automation, use the {{site.data.keyword.vmwaresolutions_short}} console.
 
-On the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.com/vmware), you can complete the following actions:
+On the [{{site.data.keyword.vmwaresolutions_short}} console](/vmware){: external}, you can complete the following actions:
 * Upgrade licenses for example, upgrade NSX Base to another version.
 * Initiate updates to the {{site.data.keyword.vcf-auto-short}} instance.
 * View the status of updates.
@@ -79,4 +79,4 @@ This facility enables the automated updating for the management components of th
 {: #vum-intro-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware)
+* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware){: external}

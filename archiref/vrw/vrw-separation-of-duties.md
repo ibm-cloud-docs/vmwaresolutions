@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ subcollection: vmwaresolutions
 
 The vCenter Server model employs a single network administrator role responsible for management across all network components (such as the underlay network, vSRX, and NSX™).
 
-The {{site.data.keyword.rw}} network administrator role must break out to multiple discrete administrator roles to prevent such a situation. 
+The {{site.data.keyword.rw}} network administrator role must break out to multiple discrete administrator roles to prevent such a situation.
 
 The following roles are suggested network and security admin roles:
 * IaaS security administrator - The IaaS security administrator role is focused on protection of all platform infrastructure components from threats that can originate on the network. The scope of responsibility includes the security objects necessary to secure and control access to the management and edge layers of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. These objects include the ESXi hosts that deliver compute and storage resources to the user workloads. The IaaS security administrator is also afforded necessary access to the {{site.data.keyword.cloud_notm}} console to deploy and manage network gateway devices. The IaaS security administrator might play a role in managing NSX security objects if those objects impact the security of the management and edge layers of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. It is recommended that consideration is given to whether enabling the IaaS security administrator access to the NSX platform introduces unacceptable risk.
@@ -69,4 +69,4 @@ The SaaS provider might designate one or more NSX tenant network administrators 
 ## Related links
 {: #vrw-separation-of-duties-related}
 
-* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance){: external}

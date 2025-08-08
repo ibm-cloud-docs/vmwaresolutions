@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-08"
 
 keywords: IBM Cloud Object Storage, ICOS configuration, order Cloud Object Storage
 
@@ -63,4 +63,4 @@ For more information about maintaining and managing your cloud tier, see [Managi
 * [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
 * [Ordering Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
 * [Managing Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
-* [Veeam on {{site.data.keyword.cloud_notm}} - Demos](https://www.ibm.com/products/veeam)
+* [Veeam on {{site.data.keyword.cloud_notm}} - Demos](https://www.ibm.com/products/veeam){: external}

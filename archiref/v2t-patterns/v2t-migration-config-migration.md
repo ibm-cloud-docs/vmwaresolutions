@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-07-09"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -100,6 +100,6 @@ When you plan and design configuration migration, consider the following aspects
 ## Related links
 {: #v2t-config-migration-links}
 
-* [VMware Cloud Migration Services](https://cloud.ibm.com/catalog/services/vmware-cloud-migration-services)
+* [VMware Cloud Migration Services](/catalog/services/vmware-cloud-migration-services){: external}
 * [ReSTNSX's Migration Assistance Tool (M.A.T.)](https://www.restnsx.com/post/migration-assistance-tool-mat){: external}
 * [PrimaryIO NSX-V to NSX-T Fast Track Migration Service](https://hdm.primaryio.com/lp/nsxvtot){: external}

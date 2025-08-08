@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -37,7 +37,7 @@ HTTPS is used for vCenter setup and configuration, and for VMware operations suc
 ### vCenter access
 {: #vrw-iam-vsphere-vcenter-access}
 
-Privileged users are granted `cloudadmin` access to vCenter Server through the vCenter roles. 
+Privileged users are granted `cloudadmin` access to vCenter Server through the vCenter roles.
 
 ## NSX Manager user IDs
 {: #vrw-iam-vsphere-nsx}
@@ -99,5 +99,5 @@ where:
 ## Related links
 {: #vrw-iam-vsphere-related}
 
-* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance){: external}
 * [{{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services API](/apidocs/hs-crypto)

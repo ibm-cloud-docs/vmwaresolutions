@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 ## Collecting Active Directory credentials
 {: #openshift-runbook-runbook-dns-creds}
 
-1. Log in to [{{site.data.keyword.cloud}}](https://cloud.ibm.com/login){: external}.
+1. Log in to [{{site.data.keyword.cloud}}](/login){: external}.
 2. From the left menu, select **VMware**.
 3. {{site.data.content.ol-intro-ui-vcfclassic}}
 4. Select your deployed instance.

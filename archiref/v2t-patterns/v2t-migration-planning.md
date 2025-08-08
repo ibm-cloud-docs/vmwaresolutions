@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-04-16"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -60,7 +60,7 @@ In addition, to ensure successful Day 2 operations, improve the core VMware NSX-
 ## Engage a migration services provider
 {: #v2t-planning-serviceprovider}
 
-You can engage PrimaryIO’s experienced Professional Services team through the IBM catalog. For more information, see [VMware Cloud Migration Services](https://cloud.ibm.com/catalog/services/vmware-cloud-migration-services).
+You can engage PrimaryIO’s experienced Professional Services team through the IBM catalog. For more information, see [VMware Cloud Migration Services](/catalog/services/vmware-cloud-migration-services).
 
 PrimaryIO’s Fasttrack Migration Service is optimized to move customers away from NSX-V and onto NSX-T through short-form engagements that continually drive progress by focusing on critical path objectives.
 
@@ -148,7 +148,7 @@ A third possible Layer 2 approach is to use NSX-T L2VPN. In this approach, the N
 ## Related links
 {: #v2t-planning-links}
 
-* [VMware Cloud Migration Services](https://cloud.ibm.com/catalog/services/vmware-cloud-migration-services)
+* [VMware Cloud Migration Services](/catalog/services/vmware-cloud-migration-services){: external}
 * [NSX-T Data Center Migration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/nsx-t-data-center-migration-guide.html){: external}
 * [Terraform by Hashicorp](https://developer.hashicorp.com/terraform){: external}
 * [The NSX Terraform Provider](https://registry.terraform.io/providers/vmware/nsxt/latest/docs){: external}

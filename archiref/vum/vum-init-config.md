@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-28"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -140,4 +140,4 @@ Configure the VCSA to use the proxy. For more information, see [Configure the DN
 {: #vum-init-config-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware)
+* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware){: external}

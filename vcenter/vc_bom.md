@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-08"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -176,6 +176,6 @@ Depending on your EVC mode setting, virtual machines that run on Sapphire Rapids
 * [Build numbers and versions of VMware ESXi and ESX](https://knowledge.broadcom.com/external/article?legacyId=2143832){: external}
 * [VMware vCenter Server versions and build numbers](https://knowledge.broadcom.com/external/article?legacyId=2143838){: external}
 * [Enabling Jumbo Frames on virtual switches](https://knowledge.broadcom.com/external/article?legacyId=1038827){: external}
-* [VMware Solutions data processing and protection datasheet](https://www.ibm.com/software/reports/compatibility/clarity-reports/report/html/softwareReqsForProduct?deliverableId=236C87407E7411E6BA51E79BE9476040)
+* [VMware Solutions data processing and protection datasheet](https://www.ibm.com/software/reports/compatibility/clarity-reports/report/html/softwareReqsForProduct?deliverableId=236C87407E7411E6BA51E79BE9476040){: external}
 * [{{site.data.keyword.vcf-auto-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
 * [Planning for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)

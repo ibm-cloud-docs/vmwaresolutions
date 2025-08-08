@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-21"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -39,7 +39,7 @@ Physical networking is handled by {{site.data.keyword.cloud_notm}}. The followin
 
 The physical network of {{site.data.keyword.cloud_notm}} is separated into three distinct networks: Public, Private, and Management. For more information about the public, private, and management networks, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).
 
-For more information about the {{site.data.keyword.cloud_notm}} network, see [{{site.data.keyword.cloud_notm}} global data centers](https://www.ibm.com/solutions/cloud-data-centers).
+For more information about the {{site.data.keyword.cloud_notm}} network, see [{{site.data.keyword.cloud_notm}} global data centers](https://www.ibm.com/solutions/cloud-data-centers){: external}.
 
 Review the following information for a description of the services network that is part of the private network.
 
