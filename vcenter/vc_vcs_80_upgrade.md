@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-08-07"
+lastupdated: "2025-08-08"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -95,7 +95,7 @@ Complete the following requirements before you begin the upgrade:
    9. Click **OK**, and then **OK** again to exit the window.
 
 ### Procedure to upgrade Stor VIB (Broadcom driver)
-{: #vs_vsphere_80_upgrade-procedure-broadcom}
+{: #vc_vsphere_80_upgrade-procedure-broadcom}
 
 You must upgrade the Broadcom driver before you upgrade the ESXi host.
 
