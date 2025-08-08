@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-10"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ For more information about IBM and customer responsibilities that concern compli
 Day 2 responsibilities include the following items:
 
 * Service Support - IBM provides support for {{site.data.keyword.vmwaresolutions_full}} issues that you report. You must raise support tickets as directed in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
-* Service Provisioning - Provision and resize your {{site.data.keyword.vcf-auto-short}} instances on demand, by using the [VMware Solutions console](https://cloud.ibm.com/vmware).
+* Service Provisioning - Provision and resize your {{site.data.keyword.vcf-auto-short}} instances on demand, by using the [VMware Solutions console](/vmware){: external}.
 * IBM Management component updates - For instances deployed in (or upgraded to) V2.5 or later, updates and patches for the IBM management components are applied automatically, as needed.
 * Incident and Problem Management - You are responsible for incident and problem management of your {{site.data.keyword.vcf-auto-short}} instances after deployment. You must have tools and processes to detect incidents, record the issues, classify their severity, escalate, and return the failing component to service.
 * Capacity Management - You are responsible for capacity management of your {{site.data.keyword.vcf-auto-short}} instances, adding or removing additional capacity to match business demands. For more information, see [Adding ESXi servers to {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers) and [Adding clusters for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters).
@@ -47,4 +47,4 @@ Day 2 responsibilities include the following items:
 * [Compliance information for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info)
 * [Using the Support Center](/docs/account?topic=account-using-avatar)
 * [FAQ for getting support](/docs/account?topic=account-get-supportfaq)
-* [Cloud Event Management documentation](https://www.ibm.com/docs/en/cem)
+* [Cloud Event Management documentation](https://www.ibm.com/docs/en/cem){: external}

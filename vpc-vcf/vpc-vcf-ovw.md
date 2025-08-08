@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-04-10"
+lastupdated: "2025-08-06"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -62,7 +62,7 @@ The following components are installed by the {{site.data.keyword.IBM}} automati
 * NSX Enterprise Plus
 * Aria Suite Lifecycle
 
-The following components are not installed by the {{site.data.keyword.IBM_notm}} automation, but licenses for these componets are provided by {{site.data.keyword.IBM_notm}}. You can install these separately after the {{site.data.keyword.vcf-vpc-short}} instance is deployed. For more information, see [Deploying VMware validated solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-deploy-vvs).
+The following components are not installed by the {{site.data.keyword.IBM_notm}} automation, but licenses for these components are provided by {{site.data.keyword.IBM_notm}}. You can install these separately after the {{site.data.keyword.vcf-vpc-short}} instance is deployed. For more information, see [Deploying VMware validated solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-deploy-vvs).
 
 * Aria Suite Enterprise (Aria Operations Enterprise, Aria Operations for Logs, and Aria Automation Enterprise)
 * Aria Operations for Networks Enterprise

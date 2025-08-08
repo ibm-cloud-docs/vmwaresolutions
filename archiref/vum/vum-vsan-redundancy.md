@@ -30,4 +30,4 @@ This section creates a new VM storage policy that allows the **ensure accessibil
 {: #vum-vsan-redundancy-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware)
+* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware){: external}

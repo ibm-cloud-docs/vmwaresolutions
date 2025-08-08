@@ -2,16 +2,17 @@
 
 copyright:
 
-  years: 2016, 2024
+  years: 2016, 2025
 
-lastupdated: "2024-01-04"
+lastupdated: "2025-08-06"
 
 subcollection: vmwaresolutions
 
 ---
 
 # User documentation set for IBM Cloud for VMware Solutions
+{: #readme}
 
-Internal-only documentation: https://test.cloud.ibm.com/docs/vmwaresolutions
+
 
 Customer-facing documentation: https://cloud.ibm.com/docs/vmwaresolutions

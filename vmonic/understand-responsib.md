@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -42,7 +42,7 @@ Incident and operations management includes tasks such as monitoring, event mana
 ## Change management
 {: #understand-responsib-change-management}
 
-Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion. The following table describes the responsibilities that are related to change management.
+Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion. The following table describes the responsibilities that are related to change management:
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
@@ -82,7 +82,7 @@ Security and regulation compliance includes tasks such as security controls impl
 ## Disaster recovery
 {: #understand-responsib-disaster-recovery}
 
-Disaster recovery includes tasks such as:
+Disaster recovery includes tasks, such as:
 * Providing dependencies on disaster recovery sites
 * Provision disaster recovery environments
 * Data and configuration backup

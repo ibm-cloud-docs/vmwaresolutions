@@ -74,4 +74,4 @@ The compliance view of a selected inventory object is accessed by navigating to 
 {: #vum-overview-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware)
+* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware){: external}

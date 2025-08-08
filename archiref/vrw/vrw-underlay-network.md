@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -153,4 +153,4 @@ The private network connections are configured to use a jumbo frame MTU size of 
 ## Related links
 {: #vrw-underlay-network-related}
 
-* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ Before you can start the build process to install the {{site.data.keyword.redhat
 ## Ordering new subnets for the Red Hat OpenShift environment
 {: #openshift-runbook-runbook-prereq-cloud-subnets}
 
-1. Log in to the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.com/vmware).
+1. Log in to the [{{site.data.keyword.vmwaresolutions_short}} console](/vmware){: external}.
 2. Click **Infrastructure > Classic Infrastructure > Network > IP management > Subnets** from the left navigation menu.
 3. Click **Order IP Subnets**.
 
@@ -68,7 +68,7 @@ Download the ISO image for the bastion host.
 
 Access the {{site.data.keyword.cloud_notm}} environment details.
 
-1. Log in to the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.com/vmware).
+1. Log in to the [{{site.data.keyword.vmwaresolutions_short}} console](/vmware){: external}.
 2. Click the {{site.data.keyword.vmwaresolutions_short}} instance under **Deployed Instances**.
 3. From the **Summary** page, collect the vCenter and Active Directory information.
 4. Click **Infrastructure** and select the cluster.
@@ -93,7 +93,7 @@ If your jump-host or remote device uses Linux, complete the following steps:
 ## Validating Distributed PortGroup and Datastore names
 {: #openshift-runbook-runbook-prereq-netstorage-ic4v}
 
-vCenter Server deployment uses deployment-specific naming for the datastores and distributed PortGroups. This runbook uses 'vsanDatastore', 'SDDC-DPortGroup-Mgmt' and 'SDDC-DPortGroup-External'. You need to use your vCenter Server deployment-specific network and storage names in your deployment configurations. For example, you might have datastore such as 'workload_share_YgkI8' (in case {{site.data.keyword.filestorage_full_notm}} is used for the datastore) or your private portgoup can be like 'fra04test-fra04-test01-dpg-mgmt'.  
+vCenter Server deployment uses deployment-specific naming for the datastores and distributed PortGroups. This runbook uses 'vsanDatastore', 'SDDC-DPortGroup-Mgmt' and 'SDDC-DPortGroup-External'. You need to use your vCenter Server deployment-specific network and storage names in your deployment configurations. For example, you might have datastore such as 'workload_share_YgkI8' (in case {{site.data.keyword.filestorage_full_notm}} is used for the datastore) or your private portgoup can be like 'fra04test-fra04-test01-dpg-mgmt'.
 
 You can validate the private and public Distributed PortGroup names and the datastore names for your deployment by using GOVC.
 

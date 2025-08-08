@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-07-28"
+lastupdated: "2025-08-06"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -59,7 +59,7 @@ To calculate the amount of vSAN storage for your entire environment, see [Counti
 
 The vSAN add-on is priced at $21 per TiB of vSAN per month. Discounts are available depending on your contract commitment.
 
-The vSAN add-on does not generate any license keys and it's used only to report your vSAN usage.
+The vSAN add-on does not generate any license keys and it is used only to report your vSAN usage.
 
 For the {{site.data.keyword.vcf-auto-short}} offering, the IBM automation will automatically order the vSAN add-on for any new hosts that are provisioned as needed.
 {: important}

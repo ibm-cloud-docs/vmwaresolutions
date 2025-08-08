@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-08-06"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -25,7 +25,6 @@ The information that you specify for a new {{site.data.keyword.vcf-flex}} instan
 VMware vSphere® Enterprise Plus 8 is selected by default. When you use vSphere 8, consider the following information:
 * For new instances, you can use only VMware vCenter Server® 8.
 * vSAN storage is not supported with vSphere 8.
-* SAP-certified Cascade Lake servers are not supported with vSphere 8.
 * BYOL users can also select a vSphere version for the instance.
 
 ## Bring Your Own License

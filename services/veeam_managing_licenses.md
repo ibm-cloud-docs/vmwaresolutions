@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-25"
+lastupdated: "2025-08-06"
 
 keywords: Veeam, Veeam license, manage Veeam license, Veeam Backup and Replication
 
@@ -38,6 +38,7 @@ You can edit notes, view, or delete the Veeam® licenses that you ordered for st
 * License notes
 * Number of virtual machines (VMs) licensed
 * Creation date
+* License platform
 * Status - the status can be one of the following items.
    * Modifying - The license is being created.
    * Installed - The license is ready to use.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-17"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions, kmip for vmware
 
@@ -23,7 +23,7 @@ subcollection: vmwaresolutions, kmip for vmware
 ## Planning
 {: #kmip-implementation-planning}
 
-You are not charged for the KMIP™ for VMware service. To review the Hyper Protect Crypto Services pricing plans, see the [Hyper Protect Crypto Services](https://cloud.ibm.com/catalog/services/hyper-protect-crypto-services) catalog pages.
+You are not charged for the KMIP™ for VMware service. To review the Hyper Protect Crypto Services pricing plans, see the [Hyper Protect Crypto Services](/catalog/services/hyper-protect-crypto-services){: external} catalog pages.
 
 If you are using VMware vSAN™ encryption, plan to use one root key in Hyper Protect Crypto Services, and two standard keys for each vSAN cluster that you encrypt.
 

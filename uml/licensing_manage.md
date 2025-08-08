@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-07-21"
+lastupdated: "2025-08-06"
 
 keywords: licenses, add license keys, assign licenses, validate licenses, manage licenses
 
@@ -17,9 +17,7 @@ subcollection: vmwaresolutions
 # Managing VMware product licenses
 {: #licensing_manage}
 
-After you registered VMware vCloud Usage Meter with IBM, you can add and assign license keys to various VMware product licenses. Find out how to manage VMware product licenses in the following video.
-
-![IBM Cloud licensing for Broadcom Usage Meter: part 3](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_4dgic0vx){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+After you registered VMware vCloud Usage Meter with IBM, you can add and assign license keys to various VMware products.
 
 ## Adding license keys to VCF, vCenter Server, vSAN, and ESXi
 {: #licensing_manage-add-vcf}

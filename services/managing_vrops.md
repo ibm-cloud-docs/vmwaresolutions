@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-04-09"
+lastupdated: "2025-08-06"
 
 keywords: VMware Aria console, VMware Aria license, login VMware Aria console, vRealize console
 
@@ -22,7 +22,6 @@ subcollection: vmwaresolutions
 {: #managing_vrops-access-vrops-console}
 
 To access the VMware Aria® Operations™ Manager console, complete the following steps:
-
 1. On the service details page for VMware Aria Operations and VMware Aria Operations™ for Logs, click **VMware Aria Operations Manager console**.
 2. Log in by using the credentials listed on the same service details page.
 3. When you log in to the VMware Aria Operations Manager console for the first time after installation, the VMware Aria Operations Manager Configuration wizard prompts you to enter your license (product key). Ensure that you select the **Product evaluation (no key required)** option to proceed.
@@ -30,18 +29,16 @@ To access the VMware Aria® Operations™ Manager console, complete the followin
 ## Starting the adapter instance for vSAN
 {: #managing_vrops-start-adapter}
 
-You must manually start the Management Pack adapter instance for vSAN™. Complete the following steps:
-
+You must start the Management Pack adapter instance for vSAN™ manually by completing the following steps:
 1. Log in to the VMware Aria Operations Manager console.
 2. Click the vSAN adapter.
-3. Click Edit, then test the connection and accept the certificate when prompted.
+3. Click **Edit** to test the connection and accept the certificate when prompted.
 4. Start the adapter instance.
 
 ## Accessing the VMware Aria Operations for Logs console
 {: #managing_vrops-access-vlog-console}
 
 To access the VMware Aria Operations for Logs console, complete the following steps:
-
 1. On the service details page for VMware Aria Operations and VMware Aria Operations for Logs, click **VMware Aria Operations for Logs console**.
 2. Log in by using the credentials listed on the same service details page.
 
@@ -67,7 +64,6 @@ Some of the following warnings might appear. You can ignore these warning messag
 {: #vrops_overview-remove}
 
 Review the following considerations before you delete the service:
-
 * Only the virtual machines (VMs) that were deployed during the initial installation of VMware Aria Operations and VMware Aria Operations for Logs are deleted. Any node that is deployed after the installation is not cleaned up.
 * Before you delete the service, you must remove any personal VM from storage that is deployed with this service. VMware Aria Operations and VMware Aria Operations for Logs orders only personal VMs if it’s not vSAN.
 * The VXLAN, DLR, and the Edge Gateway that were created during the initial deployment of VMware Aria Operations and VMware Aria Operations for Logs is deleted. The VMs that you deployed on VXLAN lose connectivity after the deletion of VMware Aria Operations and VMware Aria Operations for Logs begins.
@@ -81,7 +77,7 @@ Review the following considerations before you delete the service:
 2. Select **Manage Appliance Settings**.
 3. Under the **General** tab, remove the Syslog Server configuration.
 
-### Removing the Syslog Server from the NSX Controller nodes (NSX-T only)
+### Removing the Syslog Server from the NSX Controller nodes
 {: #vrops_overview-remove-nsx-controller-nsx-t}
 
 1. Gather the NSX Manager's IP address, username, and password to use in the following commands.
@@ -136,15 +132,6 @@ Review the following considerations before you delete the service:
    }
    ```
    {: pre}
-
-### Removing the Syslog Server from the NSX Controller nodes (NSX-V only)
-{: #vrops_overview-remove-nsx-controller}
-
-1. Log in to the VMware vSphere® Web Client.
-2. Go to **Networking & Security > Installation and Upgrade > Management > NSX Controller Nodes**.
-3. Select the NSX Manager that manages the NSX Controller nodes that you want to modify.
-4. Click the Common Controller Attributes EDIT link.
-5. Remove any Syslog Servers as needed.
 
 ## Related links
 {: #managing_vrops-related}

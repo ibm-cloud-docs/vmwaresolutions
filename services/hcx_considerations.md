@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-06-27"
+lastupdated: "2025-08-06"
 
 keywords: VMware HCX, HCX, tech specs HCX
 
@@ -36,9 +36,6 @@ A {{site.data.keyword.vcf-auto-short}} instance with HCX is limited to three sim
 
 The following components are ordered and included in the HCX service.
 
-On-premises HCX instances include only licensing and activation.
-{: restriction}
-
 ### HCX Management Appliance VM
 {: #hcx_considerations-vm}
 
@@ -63,17 +60,6 @@ For more information about resource requirements and capacity checking, see [Res
 {: #hcx_considerations-nsf-storage}
 
 If the service mesh target cluster is not a vSAN™ cluster, NFS storage (with 500 GB and 10 IOPS/GB) is ordered.
-
-For {{site.data.keyword.vcf-auto-short}} with NSX-V instances, the service mesh target cluster is the default cluster.
-{: note}
-
-### VMware NSX Edge Services Gateways for HCX management (NSX-V only)
-{: #hcx_considerations-nsx}
-
-An active-passive pair of VMware NSX Edge Services Gateways for HCX management is ordered.
-* CPU - 6 CPUs
-* RAM - 8 GB
-* Disk - 3 GB VMDK
 
 ## Related links
 {: #hcx_considerations-related}

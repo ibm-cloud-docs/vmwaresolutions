@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-06-25"
+lastupdated: "2025-08-06"
 
 keywords: usage meter, download, deployment
 
@@ -17,16 +17,14 @@ subcollection: vmwaresolutions
 # Deploying Usage Meter
 {: #usage_meter-deploy}
 
-To deploy a VMware vCloud Usage Meter virtual machine (VM), you must first download the Usage Meter OVA file, and then deploy the OVF template. Find out how to deploy Usage Meter in the following video.
-
-![IBM Cloud licensing for Broadcom Usage Meter: part 1](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_6s90e62f){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+To deploy a VMware vCloud Usage Meter virtual machine (VM), you must first download the Usage Meter OVA file, and then deploy the OVF template.
 
 ## Procedure to download the Usage Meter OVA file
 {: #usage_meter-deploy-download}
 
 Complete the following steps:
 
-1. Download the Usage Meter OVA file from the following link: `https://ibm.biz/BdG7QT`
+1. Download the Usage Meter OVA file from the following link: `https://ibm.biz/Bde2fY`
 
    For newer versions of Usage Meter, two files are available for download: one for the initial installment and another one for the upgrade. These files use different SHA-2 values.
    {: note}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -72,5 +72,5 @@ For more information, see the [Role-Based Access Control](https://techdocs.broad
 ## Related links
 {: #vrw-iam-nsxt-related}
 
-* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance){: external}
 * [{{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services API](/apidocs/hs-crypto)

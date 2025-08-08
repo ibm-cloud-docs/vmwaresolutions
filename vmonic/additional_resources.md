@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-05-22"
+lastupdated: "2025-08-08"
 
 keywords: vmware solutions data sheet, vmware solutions developer, vmware solutions video
 
@@ -28,12 +28,12 @@ Review the following resources to get started faster or gain more in-depth techn
 ## Data sheets
 {: #additional_resources-data-sheets}
 
-* [{{site.data.keyword.vmwaresolutions_short}} Protection data sheet](https://www.ibm.com/software/reports/compatibility/clarity-reports/report/html/softwareReqsForProduct?deliverableId=236C87407E7411E6BA51E79BE9476040)
+* [{{site.data.keyword.vmwaresolutions_short}} Protection data sheet](https://www.ibm.com/software/reports/compatibility/clarity-reports/report/html/softwareReqsForProduct?deliverableId=236C87407E7411E6BA51E79BE9476040){: external}
 
 ## Platform extensions
 {: #additional_resources-plat-extensions}
 
-Review the architecture of all [virtualization platform extensions](https://www.ibm.com/think/topics/virtualization) such as:
+Review the architecture of all [virtualization platform extensions](https://www.ibm.com/think/topics/virtualization){: external} such as:
 
 * VMware HCX™ on {{site.data.keyword.cloud_notm}}
 * {{site.data.keyword.cloud_notm}} file and block storage
@@ -48,9 +48,9 @@ Review the architecture of all [virtualization platform extensions](https://www.
 ## Videos and demonstrations
 {: #additional_resources-demos}
 
-* [Veeam on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/veeam)
-* [Zerto on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/zerto)
-* [What is virtualization?](https://www.ibm.com/think/topics/virtualization)
+* [Veeam on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/veeam){: external}
+* [Zerto on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/zerto){: external}
+* [What is virtualization?](https://www.ibm.com/think/topics/virtualization){: external}
 
 ## Broadcom documentation
 {: #additional_resources-vmware-doc}

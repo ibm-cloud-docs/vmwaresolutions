@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-08-06"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -29,9 +29,9 @@ You can order a KMIP™ for VMware® instance without associating it to any {{si
 Complete the following tasks:
 
 * Configure the {{site.data.keyword.cloud}} infrastructure credentials on the **Settings** page. For more information, see [User accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount).
-* Review all the considerations in [Considerations when you install KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations#kmip_standalone_considerations-install).
+* Review all considerations in [Considerations when you install KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations#kmip_standalone_considerations-install).
 
-## Step 1 - Ordering a KMIP for VMware instance
+## Ordering a KMIP for VMware instance
 {: #kmip_standalone_ordering-step1}
 
 ### Settings
@@ -53,20 +53,20 @@ The instance name is set to **kmip-_xx_** by default, where _xx_ represents two 
 
 You can also specify a name for your KMIP for VMware instance.
 
-### Procedure
+### Procedure to order a KMIP for VMware instance
 {: #kmip_standalone_ordering-step1-procedure}
 
 1. In the {{site.data.keyword.vmwaresolutions_short}} console, scroll down to the services section and click **KMIP for VMware** in the **Security and compliance** category.
 2. On the **KMIP for VMware** page, configure the service settings as needed.
 3. Click **Create**.
 
-### Results of Step 1
+### Results after the order
 {: #kmip_standalone_ordering-step1-results}
 
-* The deployment of the instance starts automatically and you receive console notification that your order request is being processed. The instance is displayed in the **KMIP for VMware** table on the **KMIP for VMware** > **Resources** pages from the {{site.data.keyword.vmwaresolutions_short}} console. The status of the instance is **Installing**.
-* When the instance is successfully deployed, its status is changed to **Inactive**.
+1. The deployment of the instance starts automatically and you receive console notification that your order request is being processed. The instance is displayed in the **KMIP for VMware** table on the **KMIP for VMware** > **Resources** pages from the {{site.data.keyword.vmwaresolutions_short}} console. The status of the instance is **Installing**.
+2. When the instance is successfully deployed, its status is changed to **Inactive**.
 
-## Step 2 - Activating the KMIP for VMware instance
+## Activating the KMIP for VMware instance
 {: #kmip_standalone_ordering-step2}
 
 ### Prerequisites
@@ -77,7 +77,7 @@ If you are using Hyper Protect Crypto Services (HPCS), you must first create a s
 ### Settings
 {: #kmip_standalone_ordering-step2-settings}
 
-When you enable the nonactive KMIP for VMware instance, provide the following settings according to the key management service that you selected.
+When you enable the nonactive KMIP for VMware instance, provide the following settings:
 
 | Setting | Description |
 |:------- |:----------- |
@@ -86,44 +86,33 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
 {: caption="Configuration settings for HPCS" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #simpletabtable1}
-{: tab-title="Hyper Protect Crypto Services"}
-{: tab-group="Settings when selecting different key management service"}
 
-### Procedure
+### Procedure to activate the KMIP for VMware instance
 {: #kmip_standalone_ordering-step2-procedure}
 
-1. Select the key management type, **Hyper Protect Crypto Services**.
-
-2. Select a key management service:
-   * For **Hyper Protect Crypto Services**, click **Retrieve** to get the list of available HPCS instances and select the one to use for key management.
-
+1. For the key management type, select **Hyper Protect Crypto Services**.
+2. To select a key management service, click **Retrieve** to get the list of available HPCS instances and select the one to use for key management.
 3. Select the Key Manager instance from the list.
-
-    For HPCS, the key ring field is not displayed.
-
 4. Under **Customer root key**, the names and values of the root keys are displayed. Select the root key that you want.
+5. (Optional) To add client SSL certificates, click **Add**. In the **Add client SSL certificate** window, enter the name and contents of the certificate, and then click **Add**.
 
-5. (Optional) Add client SSL certificates:
-    1. Click **Add**.
-    2. In the **Add client SSL certificate** window, enter the name and contents of the certificate, and then click **Add**.
-
-       The certificate name cannot be reused within your selected instance. The certificate content must be valid and contain the BEGIN CERTIFICATE and END CERTIFICATE tags.
-       {: restriction}
+   The certificate name cannot be reused within your selected instance. The certificate content must be valid and contain the BEGIN CERTIFICATE and END CERTIFICATE tags.
+   {: restriction}
 
 6. Click **Configure**.
 
-### Results of Step 2
+### Results after the activation
 {: #kmip_standalone_ordering-step2-results}
 
-* The configuration of the instance starts automatically. The status of the instance is changed to **Configuring**.
-* When the instance is ready to use, the status of the instance is changed to **Installed**.
+1. The configuration of the instance starts automatically. The status of the instance is changed to **Configuring**.
+2. When the instance is ready to use, the status of the instance is changed to **Installed**.
 
-## Step 3 - (Optional) Adding client SSL certificates
+## (Optional) Adding client SSL certificates
 {: #kmip_standalone_ordering-step3}
 
-If you did not add the client SSL certificates in Step 2, you must add it after the instance can be used.
+If you did not add the client SSL certificates in the previous step, you must add it after the instance can be used.
 
-### Procedure
+### Procedure to add client SSL certificates
 {: #kmip_standalone_ordering-step3-procedure}
 
 1. {{site.data.content.ol-intro-ui-kmip}}
@@ -134,11 +123,11 @@ If you did not add the client SSL certificates in Step 2, you must add it after 
    The certificate name cannot be reused within your selected instance. The certificate content must be valid and contain the BEGIN CERTIFICATE and END CERTIFICATE tags, and the certificate cannot be reused in the selected region where the instance is deployed.
    {: attention}
 
-### Results of Step 3
+### Results after adding client SSL certificates
 {: #kmip_standalone_ordering-step3-results}
 
-* You get a console notification that your request to add the certificate is being processed.
-* When the certificate is added successfully, you get console confirmation and the added certificate is displayed in the **Client SSL certificates** table on the service details page.
+1. You get a console notification that your request to add the certificate is being processed.
+2. When the certificate is added successfully, you get console confirmation and the added certificate is displayed in the **Client SSL certificates** table on the service details page.
 
 ## Connecting vCenter Server to the KMIP instance
 {: #kmip_standalone_ordering-next}

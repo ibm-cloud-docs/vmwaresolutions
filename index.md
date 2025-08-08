@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2025
 
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-08"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -68,7 +68,7 @@ Review and choose services for your deployment.
 #### Security and compliance services
 {: #getting-started-serv-sec-compl}
 
-The following table describes the security and compliance services that are available.
+The following table describes the security and compliance services that are available:
 
 | Service name | Description |
 |:------------ |:----------- |
@@ -82,7 +82,7 @@ The following table describes the security and compliance services that are avai
 #### Data resiliency services
 {: #getting-started-serv-dr}
 
-The following table describes the data resiliency services that are available.
+The following table describes the data resiliency services that are available:
 
 | Service name | Description |
 |:------------ |:----------- |
@@ -95,7 +95,7 @@ The following table describes the data resiliency services that are available.
 #### Migration services
 {: #getting-started-serv-mig}
 
-The following table describes the migration services that are available.
+The following table describes the migration services that are available:
 
 | Service name | Description |
 |:------------ |:----------- |
@@ -107,7 +107,7 @@ The following table describes the migration services that are available.
 #### Featured workload solutions
 {: #getting-started-serv-feat-sol}
 
-The following table describes the featured workload solutions services that are available.
+The following table describes the featured workload solutions services that are available:
 
 | Service name | Description |
 |:------------ |:----------- |
@@ -118,7 +118,7 @@ The following table describes the featured workload solutions services that are 
 #### Management tools
 {: #getting-started-serv-other}
 
-The following table describes the management tools that are available.
+The following table describes the management tools that are available:
 
 | Service name | Description |
 |:------------ |:----------- |

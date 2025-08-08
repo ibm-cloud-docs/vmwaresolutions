@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-08-06"
 
 keywords: cyber recovery, cyber recovery requirements, requirements cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Requirements for {{site.data.keyword.cr}}
 {: #cr_orderinginstance_reqs}
 
-{{site.data.keyword.cr}} helps you with data protection, cyberthreats, cyberattacks, and ransomware. The instance includes the Veeam Backup and Replication 12.3 add-on service and a Linux® hardened repository (LHR). An edge gateway is required and you can provide your own or order one of the following edges:
+{{site.data.keyword.cr}} helps you with data protection, cyberthreats, cyberattacks, and ransomware. The instance includes the Veeam Backup and Replication 12.3.2 add-on service and a Linux® hardened repository (LHR). An edge gateway is required and you can provide your own or order one of the following edges:
 
 * Juniper® vSRX
 * FortiGate® Virtual Appliance

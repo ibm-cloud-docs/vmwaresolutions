@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-31"
+lastupdated: "2025-08-06"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 You can include the Veeam® service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
-Veeam Backup and Replication 12.3 is available for deployment on new instances.
+Veeam Backup and Replication 12.3.2 is available for deployment on new instances.
 
 If you have Veeam 9.5u4b, you can continue to use it. However, you cannot install Veeam 9.5u4b on a new or existing instance.
 {: restriction}

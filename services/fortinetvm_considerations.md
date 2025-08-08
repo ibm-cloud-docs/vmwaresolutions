@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-08-06"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -74,42 +74,14 @@ The following information describes the different considerations for the uplink 
 
 You can install FortiGate Virtual Appliance on the consolidated cluster or the gateway cluster.
 
-On the consolidated cluster, note the following information:
+On the consolidated cluster:
+* The FortiGate-VM32 deployment size requires Cascade Lake 5218 or later.
+* For 10 Gb uplink speed, you can select a deployment size from FortiGate-VM02 up to FortiGate-VM32.
+* For 25 Gb uplink speed, you can select a FortiGate-VM16 or FortiGate-VM32 deployment size.
 
-* You can choose a 10 Gb or 25 Gb uplink speed for the cluster.
-
-   * For 10 Gb, you can select a deployment size from FortiGate-VM02 up to FortiGate-VM32.
-   * For 25 Gb, you can select a FortiGate-VM16 or FortiGate-VM32 deployment size.
-
-* The FortiGate-VM32 deployment size requires Cascade Lake 5218 or higher.
-
-On the gateway cluster, note the following information about the uplink speed:
-
-* For 10 Gb, select Cascade Lake 4210 and FortiGate-VM16.
-* For 25 Gb, select Cascade Lake 5218 and either FortiGate-VM16 or FortiGate-VM32.
-
-### FortiGate Virtual Appliance on {{site.data.keyword.rw}}
-{: #fortinetvm_considerations-installvalues-regworkload}
-
-{{site.data.content.vrw-deprecated-note}}
-
-For {{site.data.keyword.rw}}, you can install FortiGate Virtual Appliance on the gateway cluster.
-
-* You can install FortiGate Virtual Appliance on gateway clusters with a 10 Gb or 25 Gb uplink speed.
-* For 10 Gb, you can install FortiGate-VM16 on Cascade Lake 4210.
-* For 25 Gb, you can install FortiGate-VM16 or FortiGate-VM32. The FortiGate-VM32 deployment size requires Cascade Lake 5218 or higher.
-
-### FortiGate Virtual Appliance on the Security and Compliance Readiness Bundle
-{: #fortinetvm_considerations-installvalues-scb}
-
-New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
-{: deprecated}
-
-On the Security and Compliance Readiness Bundle, you can install FortiGate Virtual Appliance on the gateway cluster.
-
-* You can install FortiGate Virtual Appliance on gateway clusters with a 10 Gb or 25 Gb uplink speed.
-* For 10 Gb, you can select a deployment size from FortiGate-VM02 up to FortiGate-VM32. The FortiGate-VM32 deployment size requires Cascade Lake 5218 or higher.
-* For 25 Gb, you can install FortiGate-VM16 or FortiGate-VM32. The FortiGate-VM32 deployment size requires Cascade Lake 5218 or higher.
+On the gateway cluster:
+* For 10 Gb uplink speed, select Cascade Lake 4210 and FortiGate-VM16.
+* For 25 Gb uplink speed, select Cascade Lake 5218 and either FortiGate-VM16 or FortiGate-VM32.
 
 ## FortiGate Virtual Appliance order example
 {: #fortinetvm_considerations-example}
@@ -133,6 +105,29 @@ Since other workloads exist on the ESXi servers, for example, vCenter Server, VM
 In this case, the FortiGate Virtual Appliance installation might fail, unless at least one ESXi server is added to the environment. Also, the vSphere HA failover reservations must be updated to ensure that enough resources are available for two FortiGate VMs.
 
 If more resources are needed to run the FortiGate Virtual Appliance service, you can add more ESXi servers before you install the service.
+
+## FortiGate Virtual Appliance on {{site.data.keyword.rw}}
+{: #fortinetvm_considerations-installvalues-regworkload}
+
+{{site.data.content.vrw-deprecated-note}}
+
+For {{site.data.keyword.rw}}, you can install FortiGate Virtual Appliance on the gateway cluster.
+
+* You can install FortiGate Virtual Appliance on gateway clusters with a 10 Gb or 25 Gb uplink speed.
+* For 10 Gb, you can install FortiGate-VM16 on Cascade Lake 4210.
+* For 25 Gb, you can install FortiGate-VM16 or FortiGate-VM32. The FortiGate-VM32 deployment size requires Cascade Lake 5218 or later.
+
+## FortiGate Virtual Appliance on the Security and Compliance Readiness Bundle
+{: #fortinetvm_considerations-installvalues-scb}
+
+New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
+{: deprecated}
+
+On the Security and Compliance Readiness Bundle, you can install FortiGate Virtual Appliance on the gateway cluster.
+
+* You can install FortiGate Virtual Appliance on gateway clusters with a 10 Gb or 25 Gb uplink speed.
+* For 10 Gb, you can select a deployment size from FortiGate-VM02 up to FortiGate-VM32. The FortiGate-VM32 deployment size requires Cascade Lake 5218 or later.
+* For 25 Gb, you can install FortiGate-VM16 or FortiGate-VM32. The FortiGate-VM32 deployment size requires Cascade Lake 5218 or later.
 
 ## Related links
 {: #fortinetvm_considerations-related}

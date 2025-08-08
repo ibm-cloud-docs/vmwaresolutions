@@ -47,4 +47,4 @@ To change the Host/cluster Settings, access the vSphere Web Client. Go to **Home
 {: #vum-metadata-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [VMware Solutions on {{site.data.keyword.cloud_notm}} Digital Technical Engagement](https://www.ibm.com/products/vmware)
+* [VMware Solutions on {{site.data.keyword.cloud_notm}} Digital Technical Engagement](https://www.ibm.com/products/vmware){: external}

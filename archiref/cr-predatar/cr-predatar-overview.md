@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-07-28"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -123,7 +123,7 @@ To create your Predatar CleanRoom based on a {{site.data.keyword.vcf-auto-short}
     * If you select Juniper vSRX, see [Ordering Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering).
     * If you select FortiGate, see [Ordering FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering).
     * If you select Bring Your Own gateway appliance, see the installation instructions that are provided by your firewall vendor.
-    * If you select FortiGate Security Appliance, see [Create FortiGate Security Appliance 10 Gbps](https://cloud.ibm.com/netsec/firewalls/multi-vlan/provision#about){: external}.
+    * If you select FortiGate Security Appliance, see [Create FortiGate Security Appliance 10 Gbps](/netsec/firewalls/multi-vlan/provision#about){: external}.
 
 After your vCenter Server instance is provisioned:
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-08-08"
 
 keywords: end of marketing notice, eom regulated workloads, end of marketing regulated workloads, regulated workloads support
 
@@ -27,7 +27,7 @@ Support for existing customers continues. Existing customers can continue to add
 This announcement is only an End of Marketing notice for {{site.data.keyword.rw}}. No date is set for End of Support or End of Life for {{site.data.keyword.rw}}.
 {: note}
 
-For more information about end of life procedures for {{site.data.keyword.cloud_notm}} infrastructure services and third-party software products, see [Lifecycle policy for {{site.data.keyword.cloud_notm}} products](https://www.ibm.com/cloud/cloud-prod-life). If you have any questions or need assistance, email to clouddigitalsales@us.ibm.com, or [open a support ticket](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) in the VMware Solutions console.
+For more information about end of life procedures for {{site.data.keyword.cloud_notm}} infrastructure services and third-party software products, see [Lifecycle policy for {{site.data.keyword.cloud_notm}} products](https://www.ibm.com/cloud/cloud-prod-life){: external}. If you have any questions or need assistance, email to clouddigitalsales@us.ibm.com, or [open a support ticket](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) in the VMware Solutions console.
 
 ## Related links
 {: #eos-vrw-links}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -151,4 +151,4 @@ Many basic administrative tasks can be done much more efficiently than clicking 
 {: #vum-updating-vsan-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [{{site.data.keyword.vmwaresolutions_short}} Digital Technical Engagement](https://www.ibm.com/products/vmware)
+* [{{site.data.keyword.vmwaresolutions_short}} Digital Technical Engagement](https://www.ibm.com/products/vmware){: external}

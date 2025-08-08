@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -79,4 +79,4 @@ To remediate hosts and clusters, follow these steps:
 {: #vum-staging-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [VMware Solutions on {{site.data.keyword.cloud_notm}} Digital Technical Engagement](https://www.ibm.com/products/vmware)
+* [VMware Solutions on {{site.data.keyword.cloud_notm}} Digital Technical Engagement](https://www.ibm.com/products/vmware){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -48,5 +48,5 @@ Caveonix RiskForesight can optionally monitor compliance of SaaS consumer worklo
 ## Related links
 {: #vrw-caveonix-related}
 
-* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance){: external}
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)

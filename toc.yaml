@@ -87,6 +87,7 @@ toc:
               topics:
               - include: ../vmware-service/common/vmware-aas-overview.md
               - include: ../vmware-service/common/vmaas-bom.md
+              - include: ../vmware-service/common/vmaas-pricing.md
           - include: ../vmware-service/vmaas/tenant-plan-deploy.md
           - topicgroup:
               id: ordering-vcfaas
@@ -324,6 +325,7 @@ toc:
               topics:
               - topic: uml/licensing_metering-req.md
                 navtitle: Requirements
+              - uml/usage_meter-upgrade.md
               - uml/usage_meter-deploy.md
               - uml/usage_meter-config.md
               - uml/usage_meter-register.md
@@ -364,12 +366,7 @@ toc:
               topics:
               - services/hcx_considerations.md
               - services/hcx_ordering.md
-              - topic: services/managinghcx.md
-                navtitle: Managing HCX
-              - services/standalone_considerations.md
-              - services/standalone_orderingserviceinstances.md
-              - services/standalone_viewingserviceinstances.md
-              - services/standalone_deletingserviceinstances.md
+              - services/managinghcx.md
               - services/hcx_glossary.md
           - topicgroup:
               id: juniper-vsrx
@@ -796,8 +793,8 @@ toc:
               - archiref/veeam-cr-sag/veeam-cr-sag-lnxmgdsvr.md
           - archiref/cr-byo/cr-byo-overview.md
           - archiref/cr-dell/cr-dell-overview.md
-          - topic: archiref/cr-predatar/cr-predatar-overview.md
-            navtitle: Cyber recovery with Predatar
+          - archiref/cr-predatar/cr-predatar-overview.md
+          - archiref/cr-elastio/cr-elastio-overview.md
           - topicgroup:
               id: veeam-backup-guide
               label: Veeam backup guide

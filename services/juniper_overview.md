@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-04-10"
+lastupdated: "2025-08-06"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX virtual security appliance, Juniper virtual security appliance, Juniper vSRX console
 
@@ -22,7 +22,7 @@ Juniper® vSRX on {{site.data.keyword.cloud}} is a virtual security appliance th
 
 {{site.data.content.para-promotion-services}}
 
-The Juniper vSRX version available for deployment is 3.0 (23.4R1).
+The Juniper vSRX version available for deployment is 3.0 (24.4R1).
 {: note}
 
 For more information about vSRX and the vSRX 3.0 architecture, see [vSRX Virtual Firewall Deployment Guide for Private and Public Cloud Platforms](https://www.juniper.net/documentation/us/en/software/vsrx/vsrx-consolidated-deployment-guide/index.html){: external}.
@@ -79,17 +79,15 @@ The vSRX appliance can be accessed for administration purposes by either the J-W
 {: #juniper-overview-specs-license}
 
 Two license types are offered:
-
 * Standard
 * Content Security Bundle
 
 Each license type includes a different set of features and options. The Content Security Bundle license includes all the features and options in the Standard license and extra features, such as:
-
 * AppSecure
 * UTM
 * SSL Proxy
 
-On 25 Gb uplink speed clusters, only the Content Security Bundle license is available.
+For clusters with 25 Gb uplink speed, only the Content Security Bundle license is available.
 {: restriction}
 
 For more information about the features and options in each license, see [Choosing a vSRX license](/docs/vsrx?topic=vsrx-getting-started-vsrx#choosing-vsrx-license).
@@ -105,7 +103,6 @@ If you need to extend your license after expiration, you can update your vSRX li
 {: #juniper-overview-install-consider}
 
 Review the following considerations before you install the Juniper vSRX service:
-
 * The Juniper vSRX VMs are deployed only into the default cluster or the gateway cluster.
 * Juniper vSRX can protect only items in the same data center and pod.
 * You are responsible for Juniper vSRX configuration.

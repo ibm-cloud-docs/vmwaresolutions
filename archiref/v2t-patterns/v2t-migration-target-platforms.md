@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-14"
+lastupdated: "2025-08-08"
 
 subcollection: vmwaresolutions
 
@@ -18,9 +18,9 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.vmwaresolutions_full}} has a number of offerings, deployment patterns, and options that can be used to create your target VMware NSX-T™ environment:
 
-* Automated offerings - available from the [VMware Solutions](https://cloud.ibm.com/vmware) console.
-* Regulated Workloads - available from the [VMware Solutions](https://cloud.ibm.com/vmware) console, the **Regulated Workloads** card. They are suitable for clients that require a prescriptive reference architecture that matches the {{site.data.keyword.framework-fs_full}}.
-* Automated offerings with manual customization tasks - based on the offerings available from the [VMware Solutions](https://cloud.ibm.com/vmware) console. They require a number of post-deployment manual tasks to achieve the architectural pattern needed.
+* Automated offerings - available from the [VMware Solutions](/vmware){: external} console.
+* Regulated Workloads - available from the [VMware Solutions](/vmware){: external} console, the **Regulated Workloads** card. They are suitable for clients that require a prescriptive reference architecture that matches the {{site.data.keyword.framework-fs_full}}.
+* Automated offerings with manual customization tasks - based on the offerings available from the [VMware Solutions](/vmware){: external} console. They require a number of post-deployment manual tasks to achieve the architectural pattern needed.
 
 Based on the assessment of your source NSX-V environment, you can identify the requirements for your target platform. After the analysis, do the following steps:
 
@@ -41,7 +41,7 @@ The offerings are described in detail in the following documents:
 In the {{site.data.keyword.vcf-auto-short}} deployments, each site, and each instance has its own NSX-T Manager cluster. In the multisite deployments, the vCenter, NSX-T managers, and domain controller components are deployed per site. Each instance on each site has [a default NSX-T overlay topology](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and no networking integrations nor dependencies exist between the sites.
 {: note}
 
-The following diagram can be used to compare and contrast the features that are offered by these offerings.
+The following diagram can be used to compare and contrast the features that are offered by these offerings:
 
 ![Automated offerings](../../images/v2t-diagrams-platforms-automated.svg "Automated offerings"){: caption="Automated offerings" caption-side="bottom"}
 

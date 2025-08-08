@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-08-06"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -60,7 +60,7 @@ You cannot install Juniper® vSRX and FortiGate Virtual Appliance on the same ga
 {: #fortinetvm_ordering-existing}
 
 1. On the instance details page, click the **Services** tab.
-2. Click **Add** to add the service.
+2. To add the service, click **Add**.
 3. On the **Add services** page, locate the **FortiGate Virtual Appliance** service in the **Security and Compliance** section and toggle its switch on.
 4. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering#fortinetvm_ordering-config), then click **Save**.
 
@@ -100,19 +100,21 @@ If you select **Private network**, specify the following settings:
 ### Deployment size
 {: #fortinetvm_ordering-config-size}
 
-{{site.data.keyword.cloud}} provides the following deployment size options. For deployment on a multizone instance, only FortiGate-VM16 and FortiGate-VM32 are available.
+{{site.data.keyword.cloud}} provides the following deployment size options.
 * FortiGate-VM02 (2 vCPUs)
 * FortiGate-VM04 (4 vCPUs)
 * FortiGate-VM08 (8 vCPUs)
 * FortiGate-VM16 (16 vCPUs)
-* FortiGate-VM32 (32 vCPUs)
-   The FortiGate-VM32 deployment size requires Cascade Lake 5218 or higher.
+* FortiGate-VM32 (32 vCPUs). This deployment size requires Cascade Lake 5218 or later.
+
+For deployment on a multizone instance, only FortiGate-VM16 and FortiGate-VM32 are available.
+{: deprecated}
 
 ### Monthly subscription license model
 {: #fortinetvm_ordering-config-license}
 
 The monthly subscription license model for FortiGate Virtual Appliance offers the following options:
-* **Standard FW** - This bundle includes the following.
+* **Standard FW** - This bundle includes:
    * Stateful packet inspection
    * VLAN protection and advanced logging
    * Ingress and egress FW rules
@@ -123,7 +125,7 @@ The monthly subscription license model for FortiGate Virtual Appliance offers th
    * NGFW IPS and web filtering
    * Antispam
    * Application control
-* **Standard FW + Enterprise** This bundle includes all standard firewall and UTM services in addition to the following services:
+* **Standard FW + Enterprise** - This bundle includes all standard firewall and UTM services in addition to the following services:
     * CASB (Cloud Access Security Broker) - This service provides visibility, compliance, data security, and threat protection for cloud-based services.
     * Industrial security - This service provides signatures for common ICS/SCADA protocols.
     * Security rating - This service provides audit capabilities to identify critical vulnerabilities and configuration weaknesses and implement best practice recommendations.
