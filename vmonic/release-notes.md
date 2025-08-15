@@ -25,6 +25,8 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2025
 {: #year-2025}
 
+
+
 ### 8 August 2025
 {: #vmwaresolutions-aug0825}
 {: release-note}
