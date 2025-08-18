@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-18"
 
 keywords: automated consolidated cluster, order consolidated cluster, order automated instance
 
@@ -151,19 +151,15 @@ Select an option for the capacity disks that you need.
 
 Specify the number of capacity disks that you want to add.
 
-If you want to add more capacity disks, select the **High performance with Intel Optane** checkbox. This option provides two extra capacity disk bays, which are useful for workloads that require less latency and higher IOPS throughput.
-
-The **High performance with Intel Optane** option is available only for vSphere 6 instances.
-
 #### Size for vSAN cache disks
 {: #vc_orderinginstance-vsan-storage-size-cachedisks}
 
-Review the **Size for vSAN cache disks** value. The value depends on whether you selected the **High performance with Intel Optane** checkbox.
+Review the **Size for vSAN cache disks** value.
 
 #### Number of vSAN cache disks
 {: #vc_orderinginstance-vsan-storage-number-cachedisks}
 
-Review **Number of vSAN cache disks**. The value depends on whether you selected the **High performance with Intel Optane** checkbox.
+Review the **Number of vSAN cache disks** value.
 
 #### Enable vSAN deduplication and compression
 {: #vc_orderinginstance-vsan-storage-enable-comp}

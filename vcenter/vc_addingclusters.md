@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-18"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -163,20 +163,15 @@ Select an option for the capacity disks that you need.
 
 Specify the number of capacity disks that you want to add.
 
-If you want to add more capacity disks, select the **High performance with Intel Optane** checkbox. This option provides two extra capacity disk bays, which are useful for workloads that require less latency and higher IOPS throughput.
-
-The **High performance with Intel Optane** option is available only for instances with vSphere 6.
-{: note}
-
 ##### Size for vSAN cache disks
 {: #vc_addingclusters-vsan-cache-size}
 
-Review the **Size for vSAN cache disks** value. The value depends on whether you checked the **High performance with Intel Optane** box.
+Review the **Size for vSAN cache disks** value.
 
 ##### Number of vSAN cache disks
 {: #vc_addingclusters-vsan-cache-number}
 
-Review **Number of vSAN cache disks**. The value depends on whether you checked the **High performance with Intel Optane** box.
+Review the **Number of vSAN cache disks** value.
 
 ##### Enable vSAN deduplication and compression
 {: #vc_addingclusters-vsan-storage-enable-comp}
@@ -321,7 +316,7 @@ Select the {{site.data.keyword.cloud_notm}} data center pod where you want to de
 ### Cluster name
 {: #vc_addingclusters-cluster-name-edge}
 
-By default, the cluster names are set to **_instance name_-edge**.
+By default, the cluster names are set to **<instance_name>-edge**.
 
 You can also specify a new name for your clusters. The names must meet the requirements that are listed in [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-consold-cluster-name).
 
@@ -406,8 +401,6 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
          * Size for vSAN cache disks
          * Number of vSAN cache disks
          * If you are a BYOL user, provide your own vSAN license key.
-
-      If you want more storage, check the **High performance with Intel Optane** box.
 
       If you want to **Enable vSAN deduplication and compression** or **Enable vSAN compression** (vSAN ESA only), toggle its switch on.
 

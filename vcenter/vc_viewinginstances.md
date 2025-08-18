@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-11"
+lastupdated: "2025-08-18"
 
 keywords: view vcf classic, view instance, view instance details, vmware cloud foundation view
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 View the summary and detailed information of the {{site.data.keyword.vcf-auto}} instances that are provisioned for different user accounts.
 
-## Procedure to view summary for Automated instances
+## Procedure to view a summary of Automated instances
 {: #vc_viewinginstances-procedure-view-inst-summary}
 
 To view a summary of all the Automated instances that are provisioned for a user account, complete the following steps:
@@ -69,11 +69,10 @@ To view the property details of an instance, complete the following steps.
 | ID | The ID of the instance. |
 | Multizone region[^multizone] | The {{site.data.keyword.cloud_notm}} data center region where the instance is hosted. |
 | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. \n \n **Note:** For multizone instances, locations are listed for each cluster type. |
-| VMware NSX® networking solution[^NSX] | * NSX for instances provisioned with NSX version 4.0 or later. \n * NSX-T or NSX-V for instances provisioned with previous versions of NSX, earlier than version 4.0. |
+| VMware NSX® networking solution[^NSX] | * NSX for instances that are provisioned with NSX version 4.0 or later. \n * NSX-T or NSX-V for instances that are provisioned with previous versions of NSX, earlier than version 4.0. |
 | NSX version | The VMware NSX product version. |
 | Root domain | The root domain name is the DNS domain name and the Microsoft® Active Directory™ (AD) forest root name. |
 | SSO domain | The SSO domain is the vSphere single sign-on domain. The SSO domain name is fixed for all deployed Automated instances with a value of **`vsphere.local`**. |
-| Subdomain[^subdomain] | The subdomain is the DNS subdomain name of the root domain name where the local Automated instance hostnames are located. The subdomain name is in the format `vcenter_server_instance_name.root.domain_name`. |
 {: caption="Automated instance properties" caption-side="bottom"}
 
 [^multizone]: Multizone instances only
@@ -81,8 +80,6 @@ To view the property details of an instance, complete the following steps.
 [^NSX]: Single-zone instances only
 
 [^vsphere]: Single-zone instances only
-
-[^subdomain]: Existing vSphere 6 instances only
 
 ## Procedure to view access information for Automated instances
 {: #vc_viewinginstances-procedure-view-access-info}
@@ -92,8 +89,8 @@ On the **Access information** tab, view the access information for the instance-
 | Component | Description |
 |:--------- |:----------- |
 | IP[^ips] | The IP address or addresses of the AD server or servers. |
-| FQDN[^fqdn] | The AD/DNS server fully qualified domain names (FQDN). \n \n The same administrator password can be used to connect to all AD/DNS servers by using a remote desktop connection. |
-| ADMIN (Remote Desktop) | For primary instances, it displays the username and password to access the AD server through a remote desktop connection. \n \n For secondary instances, click the **View on primary instance** link to be directed to the username and password information on the primary instance. \n \n After the secondary instance is added to the primary DNS domain and replication occurs, the local administrator password on the primary instance might overwrite the local administrator password on the secondary instance. By clicking the **View on primary instance** link, you receive access to the correct administrator password. |
+| FQDN[^fqdn] | The fully qualified domain names (FQDNs) of the AD/DNS server. \n The same administrator password can be used to connect to all AD/DNS servers by using a remote desktop connection. |
+| ADMIN (Remote Desktop) | For primary instances, it displays the username and password to access the AD server through a remote desktop connection. \n For secondary instances, click the **View on primary instance** link to be directed to the username and password information on the primary instance. \n After the secondary instance is added to the primary DNS domain and replication occurs, the local administrator password on the primary instance might overwrite the local administrator password on the secondary instance. By clicking the **View on primary instance** link, you can access the correct administrator password. |
 {: caption="Access information tab - AD/DNS" caption-side="bottom"}
 {: tab-title="AD/DNS"}
 {: tab-group="access info"}
@@ -103,7 +100,7 @@ On the **Access information** tab, view the access information for the instance-
 | Component | Description |
 |:--------- |:----------- |
 | IP | The IP address of the vCenter Server. |
-| FQDN | The vCenter Server fully qualified domain name (FQDN). |
+| FQDN | The FQDN of the vCenter Server. |
 | ADMIN | The VMware vCenter SSO username and password that you can use to log in to vCenter Server by using the vSphere Web Client. |
 | SSH | The username and password that you can use to access the vCenter Server VM through SSH connection. |
 {: caption="Access information tab - vCenter/PSC" caption-side="bottom"}
@@ -115,7 +112,7 @@ On the **Access information** tab, view the access information for the instance-
 | Component | Description |
 |:--------- |:----------- |
 | IP | The IP address of the NSX Manager. |
-| FQDN | The NSX Manager fully qualified domain name (FQDN). |
+| FQDN | The FQDN of NSX Manager. |
 | HTTP | The username and password that is used to access the NSX Manager web console. |
 {: caption="Access information tab - NSX Manager" caption-side="bottom"}
 {: tab-title="NSX Manager"}
@@ -156,7 +153,7 @@ On the **Access information** tab, view the access information for the instance-
 | Component | Description |
 |:------------------ |:----------- |
 | IPs | The IP address or addresses for the Usage Meter VM. |
-| FQDN | The Usage Meter fully qualified domain name (FQDN). |
+| FQDN | The FQDN of the Usage Meter. |
 | ADMIN | The Usage Meter username and password that you can use to log in to the Usage Meter web interface. |
 | SSH | The username and password that you can use to access the Usage Meter VM through KVM or SSH connection. |
 {: caption="Access information tab - Usage Meter VMs" caption-side="bottom"}
@@ -231,7 +228,7 @@ Before you click **vCenter console** on the instance summary page to go to the v
 Review the following topics for information to help you complete the login instructions:
 *  For the requirements and necessary steps before you access the vSphere Web Client, see [Timeout reached while connecting to the vSphere Web Client](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_timeout_vc_console).
 *  For a list of access points to log in to the {{site.data.keyword.cloud_notm}} infrastructure private network by using VPN, see [Getting started with {{site.data.keyword.cloud_notm}} Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
-*  If you have problems when you deploy an OVF (Open Virtualization Format) file by using the vSphere Web Client, see [Deploying an OVF file using the vSphere Web Client](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_deploy_ovf).
+*  If you have problems when you deploy an OVF (Open Virtualization Format) file by using the vSphere Web Client, see [Deploying an OVF file by using the vSphere Web Client](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_deploy_ovf).
 
 ## Related links
 {: #vc_viewinginstances-related}
