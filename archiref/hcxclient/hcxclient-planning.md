@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-08-18"
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 {: #hcxclient-planning-prep-install}
 
 The installation of VMware HCX™ has the following software requirements:
-* VMware vSphere® 5.5 U3, or vSphere 6.0u2 or later.
+* VMware vSphere® 7 or later.
 * If VMware NSX® is used, version 6.2.2 or later. NSX is required for policy migration.
 * To use cross-cloud vMotion, the same affinity restrictions apply across clouds as they do on-premises. For more information, see the [VMware EVC and CPU compatibility FAQ](https://knowledge.broadcom.com/external/article?legacyId=1005764){: external}.
 
@@ -26,7 +26,7 @@ The installation of VMware HCX™ has the following software requirements:
 
 HCX must traverse the public internet and private lines, and connect to data center components, such as networks, switches, and port groups.
 * For more information about the ports that must be opened so that HCX virtual appliances can install successfully, see [Port access requirements](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-port-req).
-* Both the on premises vSphere environment and the {{site.data.keyword.vcf-auto}} HCX Cloud environment must allow Network Time Protocol (NTP) clock synchronization among vSphere on-premises devices and the {{site.data.keyword.vcf-auto-short}} HCX devices. UDP port 123 must be accessible to HCX virtual appliances and networks.
+* Both the on-premises vSphere environment and the {{site.data.keyword.vcf-auto}} HCX Cloud environment must allow Network Time Protocol (NTP) clock synchronization among vSphere on-premises devices and the {{site.data.keyword.vcf-auto-short}} HCX devices. UDP port 123 must be accessible to HCX virtual appliances and networks.
 
 ## On-premises environment
 {: #hcxclient-planning-on-prem-env}
@@ -67,14 +67,14 @@ Since the deployment of HCX for an enterprise-level customer typically involves 
 
 Many of the hurdles and time that migration of a virtual machine (VM) or group of VMs takes are because parts of the application environment need to be modified. Also, the design of those changes and the scheduling of the downtime that is needed to make those changes can be complicated. After these changes are made, the migration becomes difficult to revert, further adding to analysis paralysis. Trying to capture all aspects of the migration, coordinating across teams, and changing key stake holders can delay the project.
 
-HCX allows for cross vSphere instance migration of a VM or group of VMs that represent a partial or complete composite application, without any modifications to the application. Therefore, backing out of a migration means to move the VMs back or restretching the networks. As a result, you do not need a large part of migration planning and some parallelism in the planning process might occur. After you select the applications to move and create a high-level network design, the applications can begin migration with minimal configuration on the cloud instance while the final network connectivity and design is worked out.
+HCX allows for cross-vSphere instance migration of a VM or group of VMs that represent a partial or complete composite application, without any modifications to the application. Therefore, backing out of a migration means to move the VMs back or restretching the networks. As a result, you do not need a large part of migration planning and some parallelism in the planning process might occur. After you select the applications to move and create a high-level network design, the applications can begin migration with minimal configuration on the cloud instance while the final network connectivity and design is worked out.
 
 ## Stretched networks
 {: #hcxclient-planning-stretched-net}
 
 The network stretch components of the HCX fleet are stable. One customer has greater than 20 VLANs that are stretched into the {{site.data.keyword.cloud}} across 1 Gbps WAN shared with other traffic and HCX migration tunnels. This configuration does not have any application issues that are attributed to the network. The network links are up for greater than 6 months in this way.
 
-More stretched networks were added and removed without issue. Picking an {{site.data.keyword.cloud_notm}} data center that is close (<6 ms latency for this particular customer) also plays into network stability of stretched networking. Leaving the stretched networks up long term is not a negative factor in your design given you have enough bandwidth and low enough latency for your applications.
+More stretched networks were added and removed without issue. Picking an {{site.data.keyword.cloud_notm}} data center that is close (<6 ms latency for this particular customer) also plays into network stability of stretched networking. It's not a negative factor in your design to leave the stretched networks up long term if you have enough bandwidth and low enough latency for your applications.
 
 ## Migration lifecycle
 {: #hcxclient-planning-mig-lifecycle}
@@ -140,11 +140,7 @@ Network swing occurs after the evacuation of the VMs on source side networks is 
 ## Client platforms supported
 {: #hcxclient-planning-client-platforms}
 
-For network extension, only port groups with a vSphere virtual distributed switch (vDS) are supported. This also implies that stand-alone ESXi hosts are not supported as you can have only a vDS when ESXi hosts are managed by vCenter.
-* vSphere 5.1 (command line only for vCenter 5.1 through API)
-* vSphere 5.5 (VMware vSphere Web Client supported on vCenter 5.5u3 and earlier)
-* vSphere 6.0
-* vSphere 6.5 (vDS must be at a 6.0 level)
+For network extension, only port groups with a vSphere virtual distributed switch (vDS) are supported. This also implies that stand-alone ESXi hosts are not supported as you can have only a vDS when ESXi hosts are managed by vCenter Server.
 
 ## Cloud platforms supported
 {: #hcxclient-planning-cloud-platforms}

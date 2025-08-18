@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-08-18"
 
 subcollection: vmwaresolutions
 
@@ -50,7 +50,7 @@ With this solution, vCenter Server and your ESXi hosts connect to a key manageme
 
 vSphere encryption operates at the VM disk level, and so it can prevent data exposure if loss of physical disk drives or loss of VM disks occurs. Some backup and replication technologies cannot back up or replicate effectively because the provided data is encrypted.
 
-vSphere encryption is not compatible with VMware HCX or Zerto. vSphere encryption is compatible with cross-vCenter vMotion when you use vSphere 7.0 or later. vSphere encryption is compatible with vSphere replication when you use vSphere 6.7u1 or later. When properly configured, Veeam Backup and Replication is compatible with vSphere encryption.
+vSphere encryption is not compatible with VMware HCX or Zerto. vSphere encryption is compatible with cross-vCenter vMotion when you use vSphere 7.0 or later. vSphere encryption is compatible with vSphere replication when you use vSphere 7 or later. When properly configured, Veeam Backup and Replication is compatible with vSphere encryption.
 
 ### More considerations
 {: #kmip-design-considerations}
