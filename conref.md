@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-08-18"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -156,10 +156,6 @@ The uplink speed provides two options:
 {: tab-group="Data centers"}
 {: class="simple-tab-table"}
 {: #simpletable-uplink-speed-locations-nasouth}
-
-
-
-<!--Conref section START.
 
 
 

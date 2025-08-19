@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-08-18"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -26,9 +26,9 @@ The following table details the BOM information for the {{site.data.keyword.vcf-
 
 | VLAN | Type | Details |
 |:---- |:---- |:------- |
-| VLAN1 | Public, Primary | Assigned to physical VMware ESXi™ servers for public network access. The servers are assigned a public IP address but this IP address is not configured on the servers, so they are not directly accessible on the public network. Instead, the public VLAN is intended to provide public internet access for other components, such as VMware NSX Edge™ Services Gateways (ESGs). |
-| VLAN2 | Private A, Primary | Assigned by {{site.data.keyword.cloud}} to physical ESXi servers. Used by the management interface for VMware vSphere® management traffic. \n Assigned to VMs (virtual machines) that function as management components. \n For NSX-T™ instances with vSphere 6.7, used by some VMware NSX TEP (Geneve Tunnel Endpoint). |
-| VLAN3 | Private B, Portable | Assigned to VMware vSAN™, if used. \n Assigned to VMware NFS, if used. \n Assigned to VMware vSphere® vMotion. \n For NSX-T™ instances with vSphere 6.7, used by VMware NSX TEP. For vSphere 7, all NSX VTEPs are put in VLAN2. |
+| VLAN1 | Public, primary | Assigned to physical VMware ESXi™ servers for public network access. The servers are assigned a public IP address but this IP address is not configured on the servers, so they are not directly accessible on the public network. Instead, the public VLAN is intended to provide public internet access for other components, such as VMware NSX Edge™ Services Gateways (ESGs). |
+| VLAN2 | Private A, primary | Assigned by {{site.data.keyword.cloud}} to physical ESXi servers. Used by the management interface for VMware vSphere® management traffic. \n Assigned to VMs (virtual machines) that function as management components. |
+| VLAN3 | Private B, portable | Assigned to VMware vSAN™, if used. \n Assigned to VMware NFS, if used. \n Assigned to VMware vSphere® vMotion. \n For vSphere 7, all NSX VTEPs are put in VLAN2. |
 {: caption="BOM for the VLANs in Automated instances" caption-side="bottom"}
 
 ## Software BOM for Automated instances
@@ -39,7 +39,7 @@ The following table details the BOM information for {{site.data.keyword.vcf-auto
 | Manufacturer | Component | Version |
 |:------------ |:--------- |:------- |
 | VMware® by Broadcom | vSphere ESXi | ESXi 8.0 Update 3e (build 24674464)[^esxi80] or \n ESXi 7.0 Update 3v (build 24723872)[^esxi70] |
-| VMware by Broadcom | Distributed vSwitch | 8.0.0[^vcs-vsphere800] or 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660] |
+| VMware by Broadcom | Distributed vSwitch | 8.0.0[^vcs-vsphere800] or 7.0.0[^vcs-vsphere700] |
 | VMware by Broadcom | vCenter Server Appliance | 8.0 Update 3e (24674346) or \n 7.0 Update 3v (24730281) |
 | VMware by Broadcom | vSAN[^vsan] | 7.0 Update 3l (21424296) |
 | VMware by Broadcom | NSX for vSphere | 4.2.2.1 (24765084) |
@@ -55,8 +55,6 @@ The following table details the BOM information for {{site.data.keyword.vcf-auto
 [^vcs-vsphere800]: Applicable to vSphere 8
 
 [^vcs-vsphere700]: Applicable to vSphere 7
-
-[^vcs-vsphere660]: Applicable to existing vSphere 6.7 hosts
 
 [^vsan]: VMware vSAN is an optional component
 
@@ -152,14 +150,12 @@ The allocation of distributed switches varies if you have existing instances and
 
 Review the following table for an overview of the EVC (Enhanced VMware vMotion Compatibility) mode settings for Automated instances and the differences between vSphere versions.
 
-| Bare metal server CPU model | vSphere 8 | vSphere 7 | vSphere 6.7[^evc-vsphere67] |
-|:--------------------------- |:--------- |:--------- |:--------------------------- |
-| Sapphire Rapids | EVC is set to Intel® **Sapphire Rapids** Generation. | EVC is set to Intel **Ice Lake** Generation. | Not supported |
-| Cascade Lake    | EVC is set to Intel **Cascade Lake** Generation. | EVC is set to Intel **Cascade Lake** Generation. | For the management cluster, EVC is not set. For all other clusters, EVC is set to Intel **Skylake** Generation. |
-| Skylake         | Not supported | Not supported | EVC is set to Intel **Broadwell** Generation. |
+| Bare metal server CPU model | vSphere 8 | vSphere 7 | 
+|:--------------------------- |:--------- |:--------- |
+| Sapphire Rapids | EVC is set to Intel® **Sapphire Rapids** Generation. | EVC is set to Intel **Ice Lake** Generation. |
+| Cascade Lake    | EVC is set to Intel **Cascade Lake** Generation. | EVC is set to Intel **Cascade Lake** Generation. |
+| Skylake         | Not supported | Not supported |
 {: caption="EVC mode settings for Automated instances and clusters" caption-side="bottom"}
-
-[^evc-vsphere67]: Existing vSphere 6.7 clusters only
 
 Depending on your EVC mode setting, virtual machines that run on Sapphire Rapids servers cannot be migrated to Cascade Lake servers without being powered off. To prevent this problem, you cannot add a Cascade Lake server for clusters that contain only Sapphire Rapids servers.
 {: important}

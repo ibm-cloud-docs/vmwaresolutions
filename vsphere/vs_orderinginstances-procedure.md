@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-18"
 
 keywords: flexible order instances, order flexible, order vmaware vSphere instance
 
@@ -32,7 +32,6 @@ subcollection: vmwaresolutions
       * For **SAP-certified Cascade Lake** servers, choose one of the preset configurations.
    1. Specify the number of bare metal servers.
 1. If you selected the **VMware vSAN** component, complete the vSAN™ storage configuration.
-   * If you want more storage, select the **High performance with Intel Optane** checkbox.
    * The [Storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-storage-settings#vs_orderinginstances-storage-archi) can be either **vSAN ESA** (Express Storage Architecture) (vSphere 8 only) or **vSAN OSA** (Original Storage Architecture).
    * Specify the disk types for the capacity and cache disks, and the number of disks.
    * If you want to **Enable vSAN deduplication and compression** or **Enable vSAN compression** (vSAN ESA only), toggle its switch on.

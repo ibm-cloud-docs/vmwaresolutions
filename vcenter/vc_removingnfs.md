@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-08-19"
 
 keywords: vcf classic remove NFS storage
 
@@ -22,7 +22,6 @@ You can contract the capacity of your {{site.data.keyword.vcf-auto}} instance ac
 ## Before you remove NFS storage from Automated instances
 {: #vc_removingnfs-prereq}
 
-* Removing NFS storage from instances with VMware vSphere® 6.5 is not supported.
 * Do not remove NFS storage from the VMware vSphere Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_full}} console.
 * Before you remove the NFS storage, ensure that you removed all the VMs that reside on the storage.
 * Ensure that the shares that you plan to remove are associated with the correct Automated instance.

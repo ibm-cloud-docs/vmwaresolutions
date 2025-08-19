@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-08-19"
 
 keywords: vcf classic remove hosts, vcf automated remove ESXi servers
 
@@ -22,11 +22,9 @@ You can contract the capacity of your {{site.data.keyword.vcf-auto}} instance ac
 ## Before you delete ESXi servers from Automated instances
 {: #vc_removingservers-prereq}
 
-* Deleting ESXi servers from instances with VMware vSphere® 6 is not supported.
-* For the gateway cluster, you cannot add or delete ESXi servers.
-
 {{site.data.content.para-vcenterremoveESXiservers}}
 
+* For the gateway cluster, you cannot add or delete ESXi servers.
 * When you delete ESXi servers, the servers are placed in maintenance mode, and then, all the virtual machines (VMs) running on the servers are migrated before they are deleted from vCenter Server. For maximum of control over the relocation of VMs, place the ESXi servers in maintenance mode and migrate the VMs running on them manually using the VMware vSphere Web Client. After that, delete the ESXi servers by using the VMware Solutions console.
 * If you are using NFS storage, NSX-T™ instances require at least three ESXi servers for a consolidated cluster or at least two servers for any other cluster. NSX-V instances require at least two ESXi servers.
 * If you are using vSAN storage, at least four ESXi servers are required.

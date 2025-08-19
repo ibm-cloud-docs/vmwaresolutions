@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-19"
 
 keywords: add service, order service, add-on service
 
@@ -17,17 +17,12 @@ subcollection: vmwaresolutions
 # Ordering services for {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_addingservices}
 
-You can order services for your {{site.data.keyword.vcf-auto}} instances, such as a disaster recovery solution. Add-on services support varies between {{site.data.keyword.vcf-auto-short}} and existing {{site.data.keyword.vcf-auto-short}} with NSX-V instances V4.7 and earlier.
-
-If you want to migrate your F5 BIG-IP or Veeam services from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
-{: note}
+You can order services for your {{site.data.keyword.vcf-auto}} instances, such as a disaster recovery solution. Add-on services support varies between {{site.data.keyword.vcf-auto-short}} instances.
 
 ## Before you add services to Automated instances
 {: #vc_addingservices-prereq}
 
-* Adding services to instances with VMware vSphere® 6.5 is not supported.
-* For existing multizone instances, adding services is not supported. However, you can view and delete existing add-on services. After a service is deleted, it cannot be reinstalled.
-* By default, the service assumes that NSX-T is installed. For existing instances V4.7 and earlier, if NSX-T is not supported for a service, then NSX-V is used.
+For existing multizone instances, adding services is not supported. However, you can view and delete existing add-on services. After a service is deleted, it cannot be reinstalled.
 
 ## Available services for Automated instances
 {: #vc_addingservices-available-services}
@@ -88,7 +83,7 @@ The following table provides the resource requirements for the services for whic
 | FortiGate Virtual Appliance | CPU - 2, 4, 8, 16, or 32 CPUs, depending on deployment size chosen \n RAM - 4, 6, or 12 GB, depending on deployment size chosen |
 | Juniper vSRX | You must have enough available capacity to accommodate two VMs with the following requirements, on different hosts: \n CPU - 6 CPUs \n RAM - 16 GB \n Storage - 18 GB \n If you install Juniper vSRX on clusters with 25 Gb uplink speed, the following capacity requirements apply. \n CPU - 10 CPUs \n RAM - 16 GB \n Storage - 18 GB |
 | Veeam | If you select Veeam as a VSI option, capacity requirements don't apply. \n If you select Veeam as a VM option, the following capacity requirements apply. \n CPU - 8 CPUs \n RAM - 32 GB \n Storage - 100 GB \n If you select Veeam as a bare metal server option, capacity requirements don't apply. |
-| VMware HCX | For each gateway in the active-passive pair of NSX-V Edge Services Gateways: \n CPU - 6 CPUs \n RAM - 8 GB \n Storage - 3 GB VMDK \n For the HCX Management Appliance VM: \n CPU - 4 CPUs \n RAM - 12 GB \n Storage - 60 GB VMDK |
+| VMware HCX | For the HCX Management Appliance VM: \n CPU - 4 CPUs \n RAM - 12 GB \n Storage - 60 GB VMDK |
 | VMware Aria Operations and VMware Aria Operations for Logs | CPU - 18 CPUs \n RAM - 208 GB \n If you install VMware Aria Operations with vSAN storage, you must have an estimated 750 GB of vSAN storage. \n If you install VMware Aria Operations with NFS storage, you do not have a storage requirement because NFS storage is ordered as part of the instance order. |
 | Zerto | CPU - 2 CPUs \n RAM - 4 GB |
 {: caption="Resources required for the services that the system checks for capacity requirements" caption-side="bottom"}

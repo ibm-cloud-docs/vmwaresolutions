@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-19"
 
 keywords: planning vcf classic, data center, vcf automated data centers
 
@@ -19,9 +19,8 @@ subcollection: vmwaresolutions
 
 Plan your instance based on the {{site.data.keyword.cloud}} data center location, your workload capacity requirements, and add-on services requirements. Review the following requirements before you order your {{site.data.keyword.vcf-auto}} instance.
 
-* New deployments of instances with VMware vSphere® 6.5 or 6.7 are not supported.
-* New deployments of multizone instances are not supported.
-* New deployments of {{site.data.keyword.vcf-auto-short}} with NSX-V instances are not supported.
+New deployments of multizone instances are not supported.
+{: note}
 
 ## Account requirements
 {: #vc_planning-account-req}
@@ -40,7 +39,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 
 | Data center | Pod | Server options for NSX-T | Server options for NSX-V[^nsx-v] |
 |:----------- |:--- |:------------------------ |:-------------------------------- |
-| CHE01 | 01 | Cascade Lake | Cascade Lake, SAP-certified Cascade Lake[^sap-che01] |
+| CHE01 | 01 | Cascade Lake | Cascade Lake |
 | OSA21 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
 | OSA22 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | OSA23 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
@@ -70,8 +69,8 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | MAD02 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | MAD04 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | MAD05 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake |
-| MIL01 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake[^sap-mil01] |
-| PAR01 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake[^sap-par01] |
+| MIL01 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake |
+| PAR01 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for Automated instances"}
@@ -80,7 +79,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 
 | Data center | Pod | Server options for NSX-T | Server options for NSX-V[^nsx-v-03] |
 |:----------- |:--- |:------------------------ |:----------------------------------- |
-| MON01 | 01-02 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake, SAP-certified Cascade Lake[^sap-mon01] |
+| MON01 | 01-02 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids | Cascade Lake |
 | TOR01 | 01-02 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | TOR04 | 01 | Cascade Lake | Cascade Lake |
 | TOR05 | 01 | Cascade Lake, Sapphire Rapids | Cascade Lake |
@@ -139,18 +138,10 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 
 [^nsx-v-06]: Existing NSX-V instances only
 
-[^sap-che01]: Existing vSphere 6 clusters only
-
-[^sap-mil01]: Existing vSphere 6 clusters only
-
-[^sap-mon01]: Existing vSphere 6 clusters only
-
-[^sap-par01]: Existing vSphere 6 clusters only
-
 ## Backup of management components
 {: #vc_planning-backup-mgmt-components}
 
-You are responsible for maintaining and ensuring the availability of all instance components. It is recommended that you plan for backup or high availability of all management components. For more information, see [Backing up components](/docs/vmwaresolutions?topic=vmwaresolutions-solution_backingup).
+You are responsible for the maintenance and availability of all instance components. It is recommended that you plan for backup or high availability of all management components. For more information, see [Backing up components](/docs/vmwaresolutions?topic=vmwaresolutions-solution_backingup).
 
 ## Services for Automated instances
 {: #vc_planning-addon-services}

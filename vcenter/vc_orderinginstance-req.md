@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-10-25"
+lastupdated: "2025-08-19"
 
 keywords: vcf automated order instance, order vcf classic, order vmware cloud foundation instance
 
@@ -30,9 +30,6 @@ Ensure that you complete the following tasks:
 * If you are ordering an instance for the first time, complete the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
 * Review the information in [Planning for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning).
 * Review the domain name format. The domain name is used to generate the username and server names of the instance.
-
-The subdomain label is used only for existing VMware vSphere® 6.x instances.
-{: deprecated}
 
 | Name        | Value format |
 |:------------|:------------ |

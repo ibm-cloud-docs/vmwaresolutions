@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-08-19"
 
 keywords: add NFS storage, add nfs
 
@@ -22,8 +22,7 @@ You can expand the capacity of your {{site.data.keyword.vcf-auto}} instance acco
 ## Before you add NFS storage to Automated instances
 {: #vc_addingnfs-prereq}
 
-* Adding NFS storage to instances with VMware vSphere® 6.5 is not supported.
-* Do not add NFS storage from the VMware vSphere Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_full}} console.
+* Do not add NFS storage from the VMware vSphere® Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_full}} console.
 * IBM does not manage NFS file shares that you add manually to an instance.
 * You can add or remove NFS storage shares to or from an existing NFS or vSAN cluster.
 * If you mount {{site.data.keyword.cloud_notm}} Endurance NFS storage to your cluster, consider the following steps:

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-07-11"
+lastupdated: "2025-08-18"
 
 keywords: view flexible, view instance, view instance details, instance view flexible
 
@@ -67,10 +67,7 @@ To view the property details of an instance, complete the following steps.
    | ID | The ID of the instance. |
    | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. |
    | Root domain | The root domain name is the DNS domain name and the Microsoft® Active Directory™ (AD) forest root name. |
-   | Subdomain[^subdomain] | The subdomain is the DNS subdomain name of the root domain name where the local {{site.data.keyword.vcf-flex-short}} instance hostnames are located. The subdomain name is in the format `vsphere_instance_name.root.domain_name`. |
    {: caption="Flexible instance properties" caption-side="bottom"}
-
-   [^subdomain]: Existing vSphere 6 instances only
 
 3. Click the **Infrastructure** tab to view the ESXi server and the network interface details.
 
@@ -79,7 +76,7 @@ To view the property details of an instance, complete the following steps.
    | Name | The name of the ESXi server is in the following format: `<host_prefix><n>.<root_domain>`, where `n` is the sequence of the ESXi server. |
    | Hardware | The hardware specification. |
    | vSphere version | The vSphere version of the ESXi server. |
-   | Credentials | The user name and password to access the ESXi server. |
+   | Credentials | The username and password to access the ESXi server. |
    | Private IP | The private IP address of the ESXi server. |
    | Status | The status of the ESXi server, which can be one of the following values: \n **Available** The ESXi server is ready to use. \n **Adding** The ESXi server is being added. \n **Deleting** The ESXi server is being deleted. |
    {: caption="ESXi server details" caption-side="bottom"}
@@ -138,7 +135,7 @@ Manage your instances in the VMware Solutions console or the VMware vSphere Web 
 Review the following topics for information to help you complete the login instructions:
 * For the requirements and necessary steps before you access the vSphere Web Client, see [Timeout reached while connecting to the vSphere Web Client](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_timeout_vc_console).
 * For a list of access points to log in to the {{site.data.keyword.cloud_notm}} infrastructure private network by using VPN, see [Getting started with {{site.data.keyword.cloud_notm}} Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
-* If you have problems when you deploy an OVF (Open Virtualization Format) file by using the vSphere Web Client, see [Deploying an OVF file using the vSphere Web Client](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_deploy_ovf).
+* If you have problems when you deploy an OVF (Open Virtualization Format) file by using the vSphere Web Client, see [Deploying an OVF file by using the vSphere Web Client](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_deploy_ovf).
 
 ## Related links
 {: #vs_viewinginstances-related}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-08-18"
 
 subcollection: vmwaresolutions
 
@@ -16,12 +16,6 @@ subcollection: vmwaresolutions
 {: #vum-intro}
 
 As the system administrator of a {{site.data.keyword.vcf-auto}} instance, review the instructions on how to configure VMware® Update Manager (VUM) to maintain the currency of your {{site.data.keyword.vcf-auto-short}} instance.
-
-After 21 June 2022, provisioning new {{site.data.keyword.vcf-auto-short}} instances with NSX–V is no longer supported. However, you can add hosts and clusters to your existing NSX–V deployments. IBM strongly recommends that clients immediately assess their NSX–V networks and plan a much earlier migration to NSX–T.
-{: note}
-
-After 21 June 2022, you can no longer order new {{site.data.keyword.vcf-auto-short}} instance with vSphere 6.7. After 15 October 2022, the {{site.data.keyword.vcf-auto-short}} instances with vSphere 6.7 are read–only in the VMware Solutions console. You can no longer add or remove hosts and clusters until you upgrade to vSphere 7.0.
-{: note}
 
 If you have a {{site.data.keyword.vcf-auto-short}} instance that is deployed with vSphere 7.x version or later, then VMware® added new functions and rebranded it as vSphere Lifecycle Manager (vLCM). For more information, see [What’s New with vSphere in VMware Cloud Foundation 9.0](https://blogs.vmware.com/cloud-foundation/2025/06/23/vsphere-in-vcf-9-0-whats-new/){: external}
 
@@ -38,16 +32,6 @@ This document also describes the processes to maintain the following components 
 This document describes the use of a proxy server implementation, based on CentOS and Squid, to enable VUM to access the VMware repositories. When VUM requests a resource from the update server at VMware, the request is sent to the proxy server first and the proxy server then sends the request to the update server through the External Services Gateway (ESG). After the resource is obtained by the proxy server, it sends the resource to VUM.
 
 ![Overview diagram](../../images/vum-vcsproxy.svg "Overview diagram"){: caption="Overview diagram" caption-side="bottom"}
-
-In vSphere 6.7, VUM is integrated within the VCSA, and as the VUM client component is a plug-in that runs on the vSphere Web Client it is automatically enabled after deployment of the VCSA. However, VUM has no access to the internet to access the VMware repositories.
-
-This documented configuration uses the all-in-one, Internet-connected VUM deployment model that uses the {{site.data.keyword.cloud_notm}} public network to provide internet access to download upgrades and patches.
-
-Clients requiring the use of alternative internet connections must investigate the VMware vSphere Update Manager Download Service (UMDS), which is beyond the scope of this publication.
-
-While VUM can be configured to import updates from a shared repository or import patches and extensions manually from a compressed file, these details aren't discussed in this document.
-
-In vSphere 6.7 and later, it's no longer supported to register VUM to a VCSA during installation of the VUM server on a separate Windows system you can't deploy VUM in a VM within the {{site.data.keyword.vcf-auto-short}} instance.
 
 This information is organized into the following sections:
 * [VMware Update Manager overview](/docs/vmwaresolutions?topic=vmwaresolutions-vum-overview) - Describes the VUM process and introduces key terms that are needed to understand the operations and UI of the tool.
