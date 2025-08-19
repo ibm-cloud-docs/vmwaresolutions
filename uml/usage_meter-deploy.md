@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-19"
 
 keywords: usage meter, download, deployment
 
@@ -29,7 +29,7 @@ Complete the following steps:
    For newer versions of Usage Meter, two files are available for download: one for the initial installment and another one for the upgrade. These files use different SHA-2 values.
    {: note}
 
-2. Validate the SHA-2 checksum based on the `8297eef8815738ea35111d59a15fb86b45a4f2648339c4548c27753a983593ed` SHA-256 value. Open a command prompt on Windows® or a terminal window on Linux® and MacOS and run the following command:
+2. Validate the SHA-2 checksum based on the `163f5864336dad4745867dd28822a0a1798231e55c5c8bb503f5766595ed36f8` SHA-256 value. Open a command prompt on Windows® or a terminal window on Linux® and MacOS and run the following command:
    * For Windows: `certutil -hashfile <path-to-ova-file> SHA256`
    * For Linux: `sha256sum <path-to-ova-file>`
    * For MacOS: `shasum -a 256 <path-to-ova-file>`
