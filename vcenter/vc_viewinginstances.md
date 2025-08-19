@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-18"
+lastupdated: "2025-08-19"
 
 keywords: view vcf classic, view instance, view instance details, vmware cloud foundation view
 
@@ -162,9 +162,9 @@ On the **Access information** tab, view the access information for the instance-
 {: class="simple-tab-table"}
 {: #simpletable-access-info-usage-meter}
 
-[^ips]: For NSX-T, two IP addresses for the two AD servers. For NSX-V, one IP address for one server.
+[^ips]: Two IP addresses for the two AD servers.
 
-[^fqdn]: For NSX-T, two FQDNs for the two AD servers. For NSX-V, one FQDN for one server.
+[^fqdn]: Two FQDNs for the two AD servers.
 
 [^nsxt-1]: NSX-T only
 

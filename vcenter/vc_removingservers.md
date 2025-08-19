@@ -26,10 +26,8 @@ You can contract the capacity of your {{site.data.keyword.vcf-auto}} instance ac
 
 * For the gateway cluster, you cannot add or delete ESXi servers.
 * When you delete ESXi servers, the servers are placed in maintenance mode, and then, all the virtual machines (VMs) running on the servers are migrated before they are deleted from vCenter Server. For maximum of control over the relocation of VMs, place the ESXi servers in maintenance mode and migrate the VMs running on them manually using the VMware vSphere Web Client. After that, delete the ESXi servers by using the VMware Solutions console.
-* If you are using NFS storage, NSX-T™ instances require at least three ESXi servers for a consolidated cluster or at least two servers for any other cluster. NSX-V instances require at least two ESXi servers.
+* If you are using NFS storage, your instance requires at least three ESXi servers for a consolidated cluster or at least two servers for any other cluster.
 * If you are using vSAN storage, at least four ESXi servers are required.
-* (NSX-V only) If F5® BIG-IP® or FortiGate® Virtual Appliance is installed on your ESXi server, you must migrate the F5 BIG-IP and FortiGate VMs to a different ESXi server than the one that is hosting the VMs.
-* (NSX-V only) If IBM Spectrum® Protect Plus is installed on your ESXi server, ensure that there are no active (failed or in progress) backup or restore operations. These active operations might prevent the ESXi server from being deleted.
 
 ## Procedure to delete ESXi servers from Automated instances
 {: #vc_removingservers-procedure}
