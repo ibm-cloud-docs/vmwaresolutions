@@ -22,8 +22,7 @@ You can order services for your {{site.data.keyword.vcf-auto}} instances, such a
 ## Before you add services to Automated instances
 {: #vc_addingservices-prereq}
 
-* Adding services to instances with VMware vSphere® 6.5 is not supported.
-* For existing multizone instances, adding services is not supported. However, you can view and delete existing add-on services. After a service is deleted, it cannot be reinstalled.
+For existing multizone instances, adding services is not supported. However, you can view and delete existing add-on services. After a service is deleted, it cannot be reinstalled.
 
 ## Available services for Automated instances
 {: #vc_addingservices-available-services}

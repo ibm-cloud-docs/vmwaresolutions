@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-19"
 
 keywords: reassign primary cluster, primary cluster
 
@@ -18,9 +18,6 @@ subcollection: vmwaresolutions
 {: #vc_reassigningprimarycluster}
 
 You can reassign a primary cluster to another cluster in your {{site.data.keyword.vcf-auto}} instance according to your business needs.
-
-Reassigning primary clusters for instances that are deployed with VMware vSphere® 6 is not supported.
-{: restriction}
 
 ## Before you reassign a primary cluster
 {: #vc_reassigningprimarycluster-prereq}

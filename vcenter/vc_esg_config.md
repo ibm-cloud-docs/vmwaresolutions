@@ -55,12 +55,12 @@ To take advantage of NSX for your workload VMs, you must configure a number of s
 ## Enabling the SNAT rule
 {: #vc_nsx-t_esg_config-procedure-enable-snat-rule}
 
-NSX-T enables the SNAT rule by default. For more information about modifying the existing rules, see [Configure source and destination NAT on a Tier-0 logical router](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/manager-mode/advanced-nat/nat/tier-0-nat/configure-source-and-destination-nat-on-a-tier-0-router.html){: external}.
+The SNAT rule is enabled by default. For more information about modifying the existing rules, see [Configure source and destination NAT on a Tier-0 logical router](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/manager-mode/advanced-nat/nat/tier-0-nat/configure-source-and-destination-nat-on-a-tier-0-router.html){: external}.
 
 ## Enabling the firewall rule
 {: #vc_esg_config-procedure-enable-firewall-rule}
 
-NSX-T disables all traffic through the workload NSX edge rule by default. To allow VMs to use the SNAT rule described in the previous section, you must create a firewall policy and rule to define and allow the traffic. For more information about modifying the existing rules, see [Add a Gateway Firewall Policy and Rule](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/security/gateway-firewall/add-a-gateway-firewall-policy-and-rule.html){: external}.
+All traffic through the workload NSX edge rule is disabled by default. To allow VMs to use the SNAT rule described in the previous section, you must create a firewall policy and rule to define and allow the traffic. For more information about modifying the existing rules, see [Add a Gateway Firewall Policy and Rule](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/security/gateway-firewall/add-a-gateway-firewall-policy-and-rule.html){: external}.
 
 ## Identifying customer subnets details
 {: #vc_nsx-t_esg_config-procedure-identify-customer-subnets-details}

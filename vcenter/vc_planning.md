@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-18"
+lastupdated: "2025-08-19"
 
 keywords: planning vcf classic, data center, vcf automated data centers
 
@@ -19,9 +19,8 @@ subcollection: vmwaresolutions
 
 Plan your instance based on the {{site.data.keyword.cloud}} data center location, your workload capacity requirements, and add-on services requirements. Review the following requirements before you order your {{site.data.keyword.vcf-auto}} instance.
 
-* New deployments of instances with VMware vSphere® 6.5 or 6.7 are not supported.
-* New deployments of multizone instances are not supported.
-* New deployments of {{site.data.keyword.vcf-auto-short}} with NSX-V instances are not supported.
+New deployments of multizone instances are not supported.
+{: note}
 
 ## Account requirements
 {: #vc_planning-account-req}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-08-19"
 
 keywords: remove services vcf classic, delete services vcf automated
 
@@ -22,8 +22,7 @@ You can delete the services that were provisioned for your {{site.data.keyword.v
 ## Before you delete services from Automated instances
 {: #vc_deletingservices-prereq}
 
-* Deleting services from instances with VMware vSphere® 6.5 is not supported.
-* You are billed until the end of the {{site.data.keyword.cloud}} infrastructure billing cycle for the deleted services.
+You are billed until the end of the {{site.data.keyword.cloud}} infrastructure billing cycle for the deleted services.
 
 ## Procedure to delete services from Automated instances
 {: #vc_deletingservices-procedure}
