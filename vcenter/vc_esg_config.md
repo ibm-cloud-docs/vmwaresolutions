@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-04"
+lastupdated: "2025-08-19"
 
 keywords: network config, network configuration, manage NSX ESG
 
@@ -27,9 +27,8 @@ As part of the ordering process for your Automated instance, the following actio
 * A public customer subnet is ordered to allow your VMs to access the internet.
 * NSX is deployed and configured in your Automated instance.
 * A sample NSX Logical Switch is deployed to be used by the customer workload VMs.
-* A sample router is deployed for potential east-west communication between local workloads that are connected to layer 2 (L2) networks. This router is a NSX-T™ Tier 1 Router for NSX-T and an NSX Distributed Logical Router for NSX-V.
+* A sample router is deployed for potential east-west communication between local workloads that are connected to layer 2 (L2) networks. This router is a NSX-T™ Tier 1 Router.
 * An NSX Edge appliance is deployed and configured to perform network address translation (NAT). NAT is done from the range of IP addresses of the workload logical switch to a public IP address on the NAT rules.
-* **(NSX-V only)** If you installed the Veeam® service, the NSX Manager is configured to do a daily backup of the NSX configurations. For more information, see [Veeam 9.5](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_considerations).
 
 ## Configuring the networking settings for your VMs
 {: #vc_esg_config-procedure-config-networking}
@@ -39,9 +38,7 @@ To take advantage of NSX for your workload VMs, you must configure a number of s
 1. Set the network adapter of the VM to the workload logical switch:
    1. On the **New Virtual Machine** dialog box, click the **Customize Hardware** tab.
    2. On the **new device** menu, select **Network** and click **Add**.
-   3. On the newly added network adapter, select the workload logical switch from the menu. The following examples show the name of the workload logical switch:
-      * For NSX-T - `overlay-ls`
-      * For NSX-V - `vxw-dvs-17-virtualwire-1-sid-6000-Workload`
+   3. On the newly added network adapter, select the workload logical switch from the menu. The name of the workload logical switch is `overlay-ls`
 
    Ensure that you do not select the **Workload Transit** switch.
    {: important}
@@ -53,42 +50,30 @@ To take advantage of NSX for your workload VMs, you must configure a number of s
    You are responsible for managing the range of IP addresses to which you assigned your VMs.
    {: note}
 
-3. Assign the default gateway of the VM as `192.168.10.1`. For NSX-T, this address is the IP address of the downlink router port on the customer Tier 1 logical router. The address is connected to the same overlay logical switch as the workload VMs. For NSX-V, this address is the IP address of the NSX DLR on the same logical switch as the workload VMs.
+3. Assign the default gateway of the VM as `192.168.10.1`. This address is the IP address of the downlink router port on the customer Tier 1 logical router. The address is connected to the same overlay logical switch as the workload VMs.
 
-## Enabling the SNAT rule for NSX-T
+## Enabling the SNAT rule
 {: #vc_nsx-t_esg_config-procedure-enable-snat-rule}
 
 NSX-T enables the SNAT rule by default. For more information about modifying the existing rules, see [Configure source and destination NAT on a Tier-0 logical router](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/manager-mode/advanced-nat/nat/tier-0-nat/configure-source-and-destination-nat-on-a-tier-0-router.html){: external}.
 
-## Enabling the firewall rule for NSX-T
+## Enabling the firewall rule
 {: #vc_esg_config-procedure-enable-firewall-rule}
 
 NSX-T disables all traffic through the workload NSX edge rule by default. To allow VMs to use the SNAT rule described in the previous section, you must create a firewall policy and rule to define and allow the traffic. For more information about modifying the existing rules, see [Add a Gateway Firewall Policy and Rule](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/security/gateway-firewall/add-a-gateway-firewall-policy-and-rule.html){: external}.
 
-## Enabling the SNAT rule for NSX-V
-{: #vc_esg_config-procedure-enable-snat-rule}
-
-If you want your workload VMs to have outbound access to the internet, you must enable the associated SNAT (Source Network Address Translation) rule. Enabling the SNAT rule allows internet access from your VMs to be translated to a single public IP address. Complete the following steps in the VMware vSphere® Web Client:
-
-1. Click **Home > Networking & Security**.
-2. On the navigator pane, click **NSX Edges** and double-click the edge that is named **customer-nsx-edge**.
-3. Click **Management > NAT** to open the **NAT** tab.
-4. Select the default SNAT rule in the table and click the green checkmark next to the table to enable the rule.
-
-For more information about NSX Edge NAT rules, see [Add an NSX NAT64](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-address-translation/configure-an-nsx-nat64.html){: external}.
-
-## Identifying customer subnets details for NSX-T
+## Identifying customer subnets details
 {: #vc_nsx-t_esg_config-procedure-identify-customer-subnets-details}
 
 The logical routers `<instance_name>-<podname>-<cluster_name>-T1-workload` and `<instance_name>-<podname>-<cluster_name>-T0-workload`, and the edges `cust-edge0` and `cust-edge1` are intended for your own usage. You can modify them to define more NAT rules for inbound or outbound traffic. These rules must use only the IP addresses on the public or private customer subnets that are ordered on your behalf.
 
-To identify the details for the customer subnets so you can use the IP addresses ordered, complete the following steps in the NSX-T Web Client:
+To identify the details for the customer subnets so you can use the IP addresses ordered, complete the following steps:
 
 1. {{site.data.content.ol-intro-ui-vcfclassic}}
 2. In the **{{site.data.keyword.vcf-classic}}** table, locate and select the instance.
 3. Click the **Infrastructure** tab and select the management cluster.
 4. Go to the **Network interface** section on the cluster page.
-5. Collapse the **Public VLAN** and **Private VLAN** options. The public and private customer subnets are the ones that have **customer workload edge** in the **Description** field.
+5. Collapse the **Public VLAN** and **Private VLAN** options. The public and private customer subnets are the ones that have the **customer workload edge** phrase in the **Description** field.
 
 Additionally, you can find more details about the customer subnets by completing the following steps in the {{site.data.keyword.slportal}}:
 
@@ -99,33 +84,10 @@ Additionally, you can find more details about the customer subnets by completing
    Do not use the IP addresses that are ordered and used during the initial setup. However, you can use other IP addresses on these subnets according to your requirements. To set up more network address translation rules, see [Configure an NSX NAT/DNAT/No SNAT/No DNAT/Reflexive NAT](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-address-translation/configure-an-nsx-nat.html){: external}.
    {: important}
 
-## Identifying customer subnets details for NSX-V
-{: #vc_esg_config-procedure-identify-customer-subnets-details}
-
-The edge **customer-nsx-edge** is intended for your own usage, so you can modify it to define more NAT rules for inbound or outbound traffic. These rules must use only the IP addresses on the public or private customer subnets that are ordered on your behalf.
-
-To identify the details for the customer subnets so you can use the IP addresses ordered, complete the following steps in the VMware vSphere Web Client:
-
-1. Click **Home > Networking & Security**.
-2. On the navigator pane, click **NSX Edges** and locate **customer-nsx-edge edge** in the list of edges in the right pane.
-3. In the **Description** column, hover over the edge description for **customer-nsx-edge** to see the subnet identifiers for both the private and public customer subnets.
-
-Additionally, you can find more details about the customer subnets by completing the following steps in the {{site.data.keyword.slportal}}:
-
-1. Click **Networking > IP Management > Subnets**.
-2. Click the filter menu and in the **Subnet** field enter the identifier as seen in the description of **customer-nsx-edge** in the VMware vSphere Web Client.
-3. Review the notes that are shown for the IP addresses. These notes identify which of the subnets and IP addresses are ordered and used during the initial setup.
-
-   Do not use the IP addresses that are ordered and used during the initial setup. However, you can use other IP addresses on these subnets according to your requirements. To set up more network address translation rules, see [Configure an NSX NAT/DNAT/No SNAT/No DNAT/Reflexive NAT](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-address-translation/configure-an-nsx-nat.html){: external}.
-   {: important}
-
 ## Ordering more subnets
 {: #vc_esg_config-procedure-additional-subnets}
 
-You can order more subnets if the provided subnets do not fulfill your requirements for IP addresses.
-
-* For NSX-T, you can order more public or private _static_ subnets and configure them with the Tier-0 VIP for the subnet's endpoint.
-* For NSX-V, you can order more public or private _portable_ subnets.
+You can order more subnets if the provided subnets do not fulfill your requirements for IP addresses. You can order more public or private static subnets and configure them with the Tier-0 VIP for the subnet's endpoint.
 
 ## Related links
 {: #vc_esg_config-related}
