@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-14"
+lastupdated: "2025-08-20"
 
 subcollection: vmwaresolutions
 
@@ -96,7 +96,7 @@ When the compute VM monitoring is required, the client installs two remote colle
 Deployment of the VMware Aria Operations appliance requires six IP addresses from the Tooling private portable subnet. Network connectivity VMware Aria Operations requires access to the following items.
 * vCenter Appliance
 * VMware Aria Operations for Logs Appliance
-* VMware NSX-T™ or NSX-V Appliances
+* VMware NSX-T™ Appliances
 * Tools Expansion VXLAN
 * Customer Networks
 * NTP server (`time.services.softlayer.com`)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-08-20"
 
 subcollection: vmwaresolutions
 
@@ -86,7 +86,7 @@ The HCX-IX Interconnect Appliance also incorporates vSphere replication technolo
 ### HCX WAN Optimization Appliance
 {: #hcx-archi-source-wan-opt}
 
-HCX also provides software-defined WAN Optimization. The HCX WAN Optimization appliance is a highly recommended component that performs WAN conditioning to reduce effects of latency. It also incorporates Forward Error Correction to negate packet loss scenarios, and deduplication of redundant traffic patterns. Altogether, these reduce bandwidth use and ensure the best use of available network capacity to expedite data transfer to and from {{site.data.keyword.cloud_notm}}.
+HCX also provides software-defined WAN Optimization. The HCX WAN Optimization appliance is a highly recommended component that performs WAN conditioning to reduce the effects of latency. It also incorporates Forward Error Correction to negate packet loss scenarios, and deduplication of redundant traffic patterns. Altogether, these reduce bandwidth use and ensure the best use of available network capacity to expedite data transfer to and from {{site.data.keyword.cloud_notm}}.
 
 VM migration relies on the combination of HCX-IX Interconnect Appliance and HCX WAN Optimization appliance to achieve unparalleled mobility between vSphere on-premises and {{site.data.keyword.cloud_notm}}.
 
@@ -119,10 +119,7 @@ To deploy the HCX, the proper number of IP addresses must be available both on-p
 ### Proximity routing
 {: #hcx-archi-source-prox-routing-feat}
 
-Proximity routing is a networking feature that can be enabled when the HCX-IX is configured. Proximity routing is only available with NSX-V target.
-
-After 21 June 2022, provisioning new {{site.data.keyword.vcf-auto}} instances with NSX–V is no longer supported. However, you can add hosts and clusters to your existing NSX–V deployments. IBM strongly recommends that clients immediately assess their NSX–V networks and plan a much earlier migration to NSX–T.
-{: note}
+Proximity routing is a networking feature that can be enabled when the HCX-IX is configured.
 
 Proximity routing ensures forwarding between VMs that are connected to stretched and routed networks, both on-premises and in the cloud, is symmetrical. This feature requires Dynamic Routing to be configured between the customer premises and the cloud.
 

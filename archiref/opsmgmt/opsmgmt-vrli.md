@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-14"
+lastupdated: "2025-08-20"
 
 subcollection: vmwaresolutions
 
@@ -89,7 +89,7 @@ Each VMware Aria Operations for Logs virtual appliance has three default virtual
 Deployment of the VMware Aria Operations for Logs appliance requires three IP addresses from the tooling-private portable subnet. VMware Aria Operations for Logs requires access to the following items.
 * vCenter Appliance
 * VMware Aria Operations for Logs Appliance
-* NSX-T or NSX-V Appliances
+* NSX-T Appliances
 * Tooling Expansion VXLAN
 * Customer Networks
 * NTP server (`time.services.softlayer.com`)
