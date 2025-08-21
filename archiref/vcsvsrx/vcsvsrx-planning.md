@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-21"
 
 subcollection: vmwaresolutions
 
@@ -79,7 +79,7 @@ The current vSRX offering has limited hardware options for deployment. Since the
 ### Network design
 {: #vcsvsrx-planning-network-design}
 
-The {{site.data.keyword.vcf-auto-short}} offering is designed to manage east-west network traffic at the SDN layer by using NSX Tier-1 and virtual tunnel endpoints (VTEP) on each ESXi host and north-south traffic through NSX Tier-0. The vSRX is not a replacement for the NSX-T Tier0/1 edge clusters but can either assist or potentially replace the Tier-0 firewall services in managing the north-south traffic flows.
+The {{site.data.keyword.vcf-auto-short}} offering is designed to manage east-west network traffic at the SDN layer by using VMware NSX Tier-1 and virtual tunnel endpoints (VTEP) on each ESXi host and north-south traffic through NSX Tier-0. The vSRX is not a replacement for the NSX-T Tier0/1 edge clusters but can either assist or potentially replace the Tier-0 firewall services in managing the north-south traffic flows.
 
 The required network design changes are modest and include all customer VM traffic no matter the destination, platform management traffic, direct-link traffic, where applicable, and internet bound traffic. Traffic that is explicitly excluded includes VTEP traffic, storage traffic, and vMotion traffic.
 

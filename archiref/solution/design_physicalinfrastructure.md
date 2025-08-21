@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-08-21"
 
 subcollection: vmwaresolutions
 
@@ -139,10 +139,10 @@ Review the following table for a summary.
 
 | VLAN | Type | Description |
 |:---- |:---- |:----------- |
-| Public| Primary | Assigned to physical hosts for public network access. The hosts are assigned a public IP address but this IP address is not configured on the hosts, so they are not directly accessible on the public network. Instead, the public VLAN is intended to provide public internet access for other components, such as NSX-T edges. |
+| Public| Primary | Assigned to physical hosts for public network access. The hosts are assigned a public IP address but this IP address is not configured on the hosts, so they are not directly accessible on the public network. Instead, the public VLAN is intended to provide public internet access for other components, such as VMware NSX-T™ edges. |
 | Private A | Primary | Single subnet assigned to physical hosts assigned by {{site.data.keyword.cloud_notm}}. Used by the management interface for vSphere management traffic and for IPMI interfaces. |
 | Private A | Portable | Single subnet that is assigned to VMs that function as management components |
-| Private A | Portable | Single subnet that is assigned to NSX-T™ VTEP |
+| Private A | Portable | Single subnet that is assigned to NSX-T VTEP |
 | Private A | Portable | Single subnet that is assigned for NSX edge egress |
 | Private B | Portable | Single subnet that is assigned for vSAN, if in use |
 | Private B | Portable | Single subnet assigned for NAS, if in use |

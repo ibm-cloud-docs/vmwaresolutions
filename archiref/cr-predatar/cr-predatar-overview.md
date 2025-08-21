@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-08-21"
 
 subcollection: vmwaresolutions
 
@@ -98,7 +98,7 @@ The vCenter Server instance:
    * VM – A customer provided Microsoft Windows 2012 or later VM that is used to host the Predatar Agent.
    * Predatar Agent - a small-footprint client that is hosted on the customer’s VM and sends queries to one or more IBM Spectrum Protect/Spectrum Protect Plus servers and sends the queries to the Predatar Cloud.
 
-* Predatar CleanRoom - The Predatar CleanRoom is a patented concept that brings together virtualized compute, storage, and networking to form a recovery target that supports both automated recovery testing and orchestrated malware scanning. The vCenter server instance with VMware vSphere and NSX-T provides the virtualized compute, storage, and networking.
+* Predatar CleanRoom - The Predatar CleanRoom is a patented concept that brings together virtualized compute, storage, and networking to form a recovery target that supports both automated recovery testing and orchestrated malware scanning. The vCenter server instance with VMware vSphere and VMware NSX-T provides the virtualized compute, storage, and networking.
 
 ## How to use Cyber recovery with Predatar
 {: #cr-predatar-howto}

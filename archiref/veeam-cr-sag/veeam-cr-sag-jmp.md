@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-05"
+lastupdated: "2025-08-21"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 The jump server is a small Microsoft® Windows® Virtual Server Instance (VSI) deployed in the {{site.data.keyword.cloud}} account where the {{site.data.keyword.vcf-auto}} instance with the Veeam® service is located. The VSI is connected to both the {{site.data.keyword.cloud_notm}} private and public networks. The public network interface is protected by a security group that restricts Remote Desktop Protocol (RDP) access to a known remote IP address.
 
-The jump server is used to provide graphical access to the Veeam Backup and replication server, vCenter appliance, and NSX-T Manager. In this step, the following tasks are included:
+The jump server is used to provide graphical access to the Veeam Backup and replication server, VMware vCenter appliance, and VMware NSX-T Manager. In this step, the following tasks are included:
 
 1. [Order a security group](#veeam-cr-sag-jmp-sg) to protect the jump server.
 2. [Order a public VSI](#veeam-cr-sag-jmp-order) running Microsoft Windows for the jump server.
@@ -87,4 +87,3 @@ ibmcloud sl vs create --hostname $hostname --domain $domain --cpu $vcpu --memory
 {: #veeam-cr-sag-jmp-related}
 
 * [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)
-
