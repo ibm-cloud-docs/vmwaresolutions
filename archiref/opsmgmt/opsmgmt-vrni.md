@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-20"
+lastupdated: "2025-08-21"
 
 subcollection: vmwaresolutions
 
@@ -57,7 +57,7 @@ This architecture supports 3,000 VMs by using a Medium brick size.
 Deployment of the VMware Aria Operations for Networks appliance requires two IP addresses from the Tooling private portable subnet. Network connectivity VMware Aria Operations for Networks requires access to the following items:
 * vCenter Appliance
 * VMware Aria Operations for Logs Appliance
-* NSX-T Appliances
+* VMware NSX-T™ Appliances
 * Tooling Expansion VXLAN
 * Customer Networks
 * NTP server (`time.services.softlayer.com`)

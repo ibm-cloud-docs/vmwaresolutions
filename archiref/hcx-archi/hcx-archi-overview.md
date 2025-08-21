@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-08-21"
 
 subcollection: vmwaresolutions
 
@@ -71,7 +71,7 @@ HCX has the concept of cloud side (target - destination) and client side (source
 
 The source and destination sites are paired together for HCX operations. An HCX Connector cannot be paired with another HCX Connector.
 
-In both the source and destination environments, HCX is deployed to the management zone, next to each site's VMware vCenter® Server Appliance (VCSA), which provides a single plane (HCX Manager) for administering VMware HCX. This HCX Manager provides a framework for deploying HCX service VMs across both the source and destination sites. VMware HCX administrators are authenticated, and each task authorized through the existing vSphere SSO identity sources. VMware HCX mobility, extension, protection actions can be initiated from the HCX User Interface or from within the VCSA Navigator screen's menus.
+In both the source and destination environments, HCX is deployed to the management zone, next to each site's VCSA, which provides a single plane (HCX Manager) for administering VMware HCX. This HCX Manager provides a framework for deploying HCX service VMs across both the source and destination sites. VMware HCX administrators are authenticated, and each task authorized through the existing vSphere SSO identity sources. VMware HCX mobility, extension, protection actions can be initiated from the HCX User Interface or from within the VCSA (VMware vCenter® Server Appliance) Navigator screen menus.
 
 ### HCX Cloud and HCX Connector
 {: #hcxclient-components-manager}
@@ -92,10 +92,10 @@ The HCX-IX service appliance provides replication and vMotion-based migration ca
 
 The VMware HCX WAN Optimization service improves performance characteristics of the private lines or Internet paths by applying WAN optimization techniques like the data de-duplication and line conditioning. It makes performance closer to a LAN environment. It accelerates onboarding to the destination site by using Internet and VPN. This way, immediate migration is allowed, without the need to wait for Direct Link and related MPLS circuits, which can naturally be used in migration, too.
 
-### HCX Network Extension Virtual Appliance (HCX-NE)
+### HCX Network Extension Virtual Appliance
 {: #hcx-archi-overview-comp-hcx-ne}
 
-The HCX Network Extension service provides a low-touch operation for high performance (4 - 6 Gbps) Layer 2 Extension from environments that use a vSphere Distributed Switch, or NSX Networking. With HCX Network Extension, you can keep the same IP and MAC addresses during VM migrations. HCX Network Extension with Mobility Optimized Networking eliminates tromboning between migrated VMs on different extended segments, and VMs on native NSX-T™ networks at the destination
+The HCX Network Extension (HCX-NE) service provides a minimal interaction operation for high performance (4-6 Gbps) Layer 2 Extension from environments that use a vSphere Distributed Switch, or NSX Networking. With HCX Network Extension, you can keep the same IP and MAC addresses during VM migrations. HCX Network Extension with Mobility Optimized Networking eliminates tromboning between migrated VMs on different extended segments, and VMs on native NSX-T™ networks at the destination.
 
 ## Deployment architecture
 {: #hcx-archi-overview-connect}

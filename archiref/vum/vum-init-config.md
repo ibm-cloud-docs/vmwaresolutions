@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-08-21"
 
 subcollection: vmwaresolutions
 
@@ -42,7 +42,7 @@ To find your customer private portable subnet details, complete the following st
 5. Select the subnet to view the subnet details page that displays the IP addresses and their allocations.
 6. By using the information, select a nonallocated IP address and update the **Note** with appropriate comments. Use this IP address for the `proxy ip` parameter in the following table.
 
-| Parameter | Suggested value | Notes |
+| Parameter | Suggested value  | Notes |
 |:--------- |:---------------- |:----- |
 | Proxy CPU | 1 vCPU | Squid has no minimum requirements. |
 | Proxy RAM | 2 GB | Squid has no minimum requirements. |
@@ -60,7 +60,7 @@ To find your customer private portable subnet details, complete the following st
 ## Configuring NSX
 {: #vum-init-config-config-nsx}
 
-NSX-T customer workload T0 firewall and NAT settings are required to enable proxy server traffic.
+A VMware NSX-T customer workload T0 firewall and NAT settings are required to enable proxy server traffic.
 
 ### Setting up the firewall
 {: #vum-init-config-firewall}

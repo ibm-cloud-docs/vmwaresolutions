@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-20"
+lastupdated: "2025-08-21"
 
 subcollection: vmwaresolutions
 
@@ -141,7 +141,7 @@ This design also installs:
 
 Other content packs can be obtained from [VMware Marketplace](https://vcf.broadcom.com/vsc/){: external}.
 
-The VMware Aria Operations for Logs content pack for NSX-T™ provides more dashboards for viewing log information. For more information, see the Broadcom® documentation about installing the content pack for NSX-T.
+The VMware Aria Operations for Logs content pack for VMware NSX-T™ provides more dashboards for viewing log information. For more information, see the Broadcom® documentation about installing the content pack for NSX-T.
 
 ## Related links
 {: #opsmgmt-vrli-related}

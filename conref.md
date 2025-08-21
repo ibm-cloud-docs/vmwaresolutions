@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-08-18"
+lastupdated: "2025-08-21"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -195,7 +195,7 @@ CONTENT:
 When you delete a {{site.data.keyword.vcf-auto}} instance, the following components are released sequentially:
 1. All deployed services
 2. NFS storage
-3. The Support fee for NSX-T instances or the Support and Services fee for NSX-V instances
+3. The Support fee
 4. VMware® product licenses
 5. VMware ESXi™ servers
 6. Subnets
