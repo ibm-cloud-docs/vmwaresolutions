@@ -51,7 +51,7 @@ When you design or deploy this architecture pattern, consider the following info
 ## Related links
 {: #arch-pattern-vcf-zerto-con-links}
 
-* [Architecture pattern for Zerto  replication connectivity in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-zerto-xconnectivity)
+* [Architecture pattern for Zerto replication connectivity in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-zerto-xconnectivity)
 * [Ordering Zerto stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering_licenses)
 * [VPC network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
 * [Zerto network ports and protocols](https://help.zerto.com/bundle/Admin.VC.HTML.90/page/Port_Usage.htm){: external}
