@@ -64,7 +64,7 @@ This architecture pattern deployment is summarized as follows:
 1. Create a VPC route to the on-premises networks by using Tier 0's private HA VIP as the next-hop. This route is required for the Zerto components in the management subnet to reach the on-premises network.
 1. Configure a virtual protection group (VPG) for replication between {{site.data.keyword.cloud_notm}} and on-premises environments.
 
-## Considerations for Zerto  replication connectivity in {{site.data.keyword.cloud_notm}}
+## Considerations for Zerto replication connectivity in {{site.data.keyword.cloud_notm}}
 {: #arch-pattern-vcf-zerto-xconnectivity-considerations}
 
 When you design or deploy this architecture pattern, consider the following information:
