@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-19"
+lastupdated: "2025-08-22"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ Because vSAN encryption operates at the datastore level, its primary goal is to 
 #### VMware vSAN encryption notes
 {: #kmip-design-vsan-encrypt-notes}
 
-* For vSphere versions older than 7.0u1a, vSAN encryption cannot encrypt the host to host vSAN replication communications within your cluster. Beginning with vSphere 7.0u1a, you can optionally enable data-in-transit encryption for each vSAN cluster.
+* For vSphere 7 versions earlier than 7.0u1a, vSAN encryption cannot encrypt the host to host vSAN replication communications within your cluster. Beginning with vSphere 7.0u1a, you can optionally enable data-in-transit encryption for each vSAN cluster.
 * vSAN encryption is not applicable to other storage solutions such as {{site.data.keyword.cloud_notm}} Endurance file and block storage.
 * vSAN encryption requires the vSAN Enterprise license.
 * The vSAN health check might send periodic warnings that it is unable to connect to the Key Management Service (KMS) cluster from one or more of your vSphere hosts. These warnings occur because the vSAN health check connection times out too quickly. You can ignore these warnings. For more information, see [vSAN KMS health check intermittently fails with SSL handshake timeout error](https://knowledge.broadcom.com/external/article?legacyId=67115){: external}.

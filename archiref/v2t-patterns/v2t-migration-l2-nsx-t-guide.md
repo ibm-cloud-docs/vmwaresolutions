@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-07-28"
+lastupdated: "2025-08-22"
 
 subcollection: vmwaresolutions
 
@@ -55,7 +55,7 @@ The network switchover enables all north-south network traffic to and from the m
 ## Migrating virtual machines
 {: #v2t-l2-nsx-t-guide-migrate}
 
-After the network switchover is complete, the workloads can be migrated. The migration can be achieved by using the Advanced Cross {{site.data.keyword.vcf-auto-short}} vMotion capability that is available with vSphere 7 Update 1c by using the UI or PowerCLI. Advanced Cross {{site.data.keyword.vcf-auto-short}} vMotion enables the migration of VMs between {{site.data.keyword.vcf-auto-short}} instances, without the requirement for Enhanced Linked Mode or Hybrid Linked Mode and hence it is now possible to migrate VMs between vCenter appliances that are in different Single Sign-On domains. Advanced Cross vCenter Server vMotion can be used for single VMs or bulk migrations. The source vCenter needs to be version 6.5 or greater.
+After the network switchover is complete, the workloads can be migrated. The migration can be achieved by using the Advanced Cross {{site.data.keyword.vcf-auto-short}} vMotion capability that is available with vSphere 7u1c and later by using the UI or PowerCLI. Advanced Cross {{site.data.keyword.vcf-auto-short}} vMotion enables the migration of VMs between {{site.data.keyword.vcf-auto-short}} instances, without the requirement for Enhanced Linked Mode or Hybrid Linked Mode and hence it is now possible to migrate VMs between vCenter appliances that are in different Single Sign-On domains. Advanced Cross vCenter Server vMotion can be used for single VMs or bulk migrations. The source vCenter needs to be version 6.5 or greater.
 
 The vMotion involves a network backing change that might be disruptive. For more information, see [vMotion between VDS/VSS and NSX-T virtual switch](https://knowledge.broadcom.com/external/article?legacyId=56991){: external}.
 

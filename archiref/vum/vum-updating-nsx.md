@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-08-22"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ Review the following best practice information:
 * Disable automatic backups before you start the upgrade process.
 * Ensure that your host OS is supported for NSX Manager. If your ESXi host is unsupported, manually upgrade your ESXi host to the supported version. Review [Software BOM for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom#vc_bom-software) for currently supported software levels on {{site.data.keyword.vcf-auto}} instances.
 * Stop any active SSH sessions or local shell scripts that might be running on the NSX Manager or the NSX Edge nodes.
-* Updating the vSphere hypervisor can be done from the ESXi CLI, vSphere Update Manager, or starting with NSX-T Data Center 3.1.1 and vSphere 7.0 U1, for vSphere Lifecycle Manager-enabled clusters, you can upgrade your ESXi host along with NSX-T Data Center, by using vSphere Lifecycle Manager, see [Upgrade a vSphere Lifecycle Manager-enabled Cluster](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/upgrade-guide/upgrading-nsxt/configuring-and-upgrading-hosts-nsx-t/upgrade-vsphere-lifecycle-manager-enabled-cluster.html){: external}.
+* Updating the vSphere hypervisor can be done from the ESXi CLI or the vSphere Update Manager. For NSX-T Data Center 3.1.1 and vSphere 7u1 and later, for vSphere Lifecycle Manager-enabled clusters, you can upgrade your ESXi host along with NSX-T Data Center, by using vSphere Lifecycle Manager. For more information, see [Upgrade a vSphere Lifecycle Manager-enabled Cluster](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/upgrade-guide/upgrading-nsxt/configuring-and-upgrading-hosts-nsx-t/upgrade-vsphere-lifecycle-manager-enabled-cluster.html){: external}.
 * Verify that the vSAN environment is in good health. See [Monitoring vSAN Health](https://techdocs.broadcom.com/us/en/vmware-cis/vsan/vsan/7-0/vsan-monitoring/monitoring-vsan-skyline-health.html){: external}.
 
 ## Related links

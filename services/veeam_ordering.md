@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-22"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -91,7 +91,7 @@ The backup disks are used as storage repositories for backups. This option is ap
 
 You can order a Linux® hardened repository (LHR) to use for immutable storage. If you select a Linux hardened repository, a list of backup disk size options is displayed. Select the disk size that you want to order.
 
-The Linux hardened repository is supported only for {{site.data.keyword.vcf-auto-short}} with VMware NSX-T™ instances and vSphere 7.
+The Linux hardened repository is supported only for instances with vSphere 7 or later.
 {: important}
 
 For more information, see [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external}.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-22"
 
 keywords: vmware solutions kmip for vmware, kmip for vmware, migration, migration partner, partners for assisted migration
 
@@ -99,7 +99,7 @@ Install PowerCLI on a convenient server with network access to vCenter, and run 
 #### Migrating vSphere encrypted VMs to the new key provider
 {: #kmip_migration-environment-migratevms-vsphere}
 
-If you are operating with a mix of vCenter Server 8 and vSphere 7 hosts, or vSphere 8 hosts on versions earlier than 8.0u3e, the rekey of the virtual machine can cause it to restart. To resolve this issue, see [Encrypted VM with Change Block Tracking (CBT) enabled unexpectedly powers off after shallow rekey operation](https://knowledge.broadcom.com/external/article?articleNumber=387897){: external}.
+If you are operating with a mix of vCenter Server 8 and vSphere 7 hosts, or vSphere 8 hosts on versions earlier than 8u3e, the rekey of the virtual machine can cause it to restart. To resolve this issue, see [Encrypted VM with Change Block Tracking (CBT) enabled unexpectedly powers off after shallow rekey operation](https://knowledge.broadcom.com/external/article?articleNumber=387897){: external}.
 {: attention}
 
 After you set the new key provider to default, select any VM in the inventory. Then, go to **Actions > VM Policies > Re-encrypt** to do a shallow rekey of the virtual machine to the new key provider.

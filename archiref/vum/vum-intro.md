@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-18"
+lastupdated: "2025-08-22"
 
 subcollection: vmwaresolutions
 
@@ -17,9 +17,9 @@ subcollection: vmwaresolutions
 
 As the system administrator of a {{site.data.keyword.vcf-auto}} instance, review the instructions on how to configure VMware® Update Manager (VUM) to maintain the currency of your {{site.data.keyword.vcf-auto-short}} instance.
 
-If you have a {{site.data.keyword.vcf-auto-short}} instance that is deployed with vSphere 7.x version or later, then VMware® added new functions and rebranded it as vSphere Lifecycle Manager (vLCM). For more information, see [What’s New with vSphere in VMware Cloud Foundation 9.0](https://blogs.vmware.com/cloud-foundation/2025/06/23/vsphere-in-vcf-9-0-whats-new/){: external}
+If you have a {{site.data.keyword.vcf-auto-short}} instance that is deployed with VMware vSphere® 7 or later, then VMware added new functions and rebranded it as vSphere Lifecycle Manager (vLCM). For more information, see [What’s New with vSphere in VMware Cloud Foundation 9.0](https://blogs.vmware.com/cloud-foundation/2025/06/23/vsphere-in-vcf-9-0-whats-new/){: external}
 
-VUM enables centralized, automated patch and version management for VMware vSphere®. With VUM, you can complete the following tasks in your {{site.data.keyword.vcf-auto-short}} environment:
+VUM enables centralized, automated patch and version management for vSphere. With VUM, you can complete the following tasks in your {{site.data.keyword.vcf-auto-short}} environment:
 * Upgrade and patch the vSphere ESXi hosts.
 * Install and update third-party software on the hosts.
 * Upgrade virtual machine hardware, VMware Tools, and virtual appliances.
