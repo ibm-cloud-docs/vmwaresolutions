@@ -173,7 +173,7 @@ You must manage the {{site.data.keyword.vmwaresolutions_short}} components that 
 
 CONTENT:
 
-The VMware vSphere version that is displayed on the {{site.data.keyword.slportal}} might not match the current version that is deployed on your instance. The VMware Solutions UI displays the correct version.
+Due to technical limitations, the version of VMware vSphere® that is displayed on the {{site.data.keyword.slportal}}, the version that is displayed on the VMware Solutions console, and the billing item on the customer invoice might not match the current version that is deployed on your VMware ESXi™ hosts.
 {: note}
 {: #note-vsphere-version}
 

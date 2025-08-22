@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-18"
+lastupdated: "2025-08-22"
 
 keywords: flexible order instances, order flexible, order vmaware vSphere instance
 
@@ -55,9 +55,8 @@ subcollection: vmwaresolutions
 ## Results after you order Flexible instances
 {: #vs_orderinginstances-results}
 
-If you saved the instance configuration as a template, you get a console notification that the configuration is saved successfully, and then you can find the template in the **Instance configurations** list.
-
-If you placed an order, the deployment starts automatically, and you receive an email confirmation that the order is being processed. When the instance is ready to use, you are notified by email.
+* If you saved the instance configuration as a template, you get a console notification that the configuration is saved successfully, and then you can find the template in the **Instance configurations** list.
+* If you placed an order, the deployment starts automatically, and you receive an email confirmation that the order is being processed. When the instance is ready to use, you are notified by email.
 
 {{site.data.content.note-vsphere-version}}
 

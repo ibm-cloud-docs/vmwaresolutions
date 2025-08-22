@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-08-22"
 
 keywords: end of support notice, nsx-v deployment, end of support nsx-v, nsx-v deprecated, nsx-v support
 
@@ -24,9 +24,3 @@ If you are still running NSX-V, your existing instance is not supported and also
 {: attention}
 
 For more information about end of life procedures for {{site.data.keyword.cloud_notm}} infrastructure services and third-party software products, see [Lifecycle policy for {{site.data.keyword.cloud_notm}} products](https://www.ibm.com/cloud/cloud-prod-life){: external}. If you have any questions or need assistance, email clouddigitalsales@us.ibm.com or open a support ticket in the VMware Solutions console.
-
-## Related links
-{: #eos-nsx-v-related}
-
-* [End of Support for vSphere 6.5 instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vsphere65)
-* [End of Support for vSphere 6.7 instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vsphere67)
