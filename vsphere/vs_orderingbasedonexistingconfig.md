@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-10"
+lastupdated: "2025-08-22"
 
 keywords: flexible order instances, flexible configuration, vmware order vSphere instance
 
@@ -48,9 +48,10 @@ Ensure that you complete the following tasks:
 ## Results after you order Flexible instances based on existing configurations
 {: #vs_orderingbasedonexistingconfig-results}
 
-If you saved the instance configuration as a template, you get a console notification that the configuration was saved. You can then find the template in the **Browse configurations** list.
+* If you saved the instance configuration as a template, you get a console notification that the configuration was saved. You can then find the template in the **Browse configurations** list.
+* If you placed an order, the deployment of the instance starts automatically. You receive an email confirmation that the order is being processed. When the instance is ready to use, you're also notified by email.
 
-If you placed an order, the deployment of the instance starts automatically. You receive an email confirmation that the order is being processed. When the instance is ready to use, you're also notified by email.
+{{site.data.content.note-vsphere-version}}
 
 ## Related links
 {: #vs_orderingbasedonexistingconfig-related}
