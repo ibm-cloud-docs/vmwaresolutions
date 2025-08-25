@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-08-22"
+lastupdated: "2025-08-25"
 
 subcollection: vmwaresolutions
 
@@ -58,7 +58,7 @@ For more information, see [Ordering services for {{site.data.keyword.vcf-auto-sh
 
 {{site.data.keyword.vcf-auto-short}} instances offer an optional service for Zerto. The Zerto service integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}.
 
-You can use Zerto's replication capabilities during the migration.
+You can use Zerto's Replication capabilities during the migration.
 
 For more information, see [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices) and [Zerto product documentation](https://help.zerto.com){: external}.
 

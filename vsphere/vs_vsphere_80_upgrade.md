@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-08-07"
+lastupdated: "2025-08-25"
 
 keywords: vSphere migration, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -202,7 +202,7 @@ Update your IBM Support ticket to indicate that your upgrade is complete and req
 
 There are several methods to upgrade your ESXi hosts. For more information, see [Overview of the ESXi Host Upgrade Process](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0.html){: external}. If you need to access an ISO file or upgrade bundle as part of your selected method, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
-If the upgrade process fails immediately and the `host cannot enter maintenance mode` error message is displayed, shut down the Zerto ZVAs and try again. The ZVRA VMs automatically start as each server comes out of remediation. For more information about continuing Zerto replication during the upgrade process, see [How to place a host with an associated VRA into maintenance mode](https://www.zerto.com/myzerto/knowledge-base/how-to-place-a-host-with-an-associated-vra-into-maintenance-mode/){: external}.
+If the upgrade process fails immediately and the `host cannot enter maintenance mode` error message is displayed, shut down the Zerto ZVAs and try again. The ZVRA VMs automatically start as each server comes out of remediation. For more information about continuing Zerto Replication during the upgrade process, see [How to place a host with an associated VRA into maintenance mode](https://www.zerto.com/myzerto/knowledge-base/how-to-place-a-host-with-an-associated-vra-into-maintenance-mode/){: external}.
 {: note}
 
 ### Procedure to update ESXi host licenses
