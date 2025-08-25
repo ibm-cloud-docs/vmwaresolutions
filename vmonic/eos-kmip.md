@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-08-25"
 
 keywords: end of support notice, kmip for vmware service, end of support kmip for vmware, kmip for vmware deprecated, kmip for vmware support
 
@@ -36,7 +36,7 @@ To experience an improved performance at no additional cost, you must migrate to
 Customers who are using vSphere version 7.x can encounter a Broadcom bug in vSphere HA that results in restart of virtual machines with vSphere encryption during the rekeying process. However, Broadcom provides a workaround for this issue. For more information about the workaround, see [Encrypted VM with Change Block Tracking (CBT) enabled unexpectedly powers off after shallow rekey operation](https://knowledge.broadcom.com/external/article?articleNumber=387897){: external}.
 {: attention}
 
-For more information about end of life procedures for {{site.data.keyword.cloud_notm}} infrastructure services and third-party software products, see [Lifecycle policy for {{site.data.keyword.cloud_notm}} products](https://www.ibm.com/cloud/cloud-prod-life){: external}. If you have any questions or need assistance, email to clouddigitalsales@us.ibm.com, or [open a support ticket](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) in the VMware Solutions console.
+{{site.data.content.eol-ibm-cloud}}
 
 ## Related links
 {: #eos-kmip-related}

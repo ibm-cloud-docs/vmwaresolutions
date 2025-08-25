@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-08-25"
 
 keywords: end of support notice, eos red hat openshift for vmware, end of support red hat openshift for vmware, red hat openshift for vmware deprecated, red hat openshift for vmware support
 
@@ -26,9 +26,4 @@ As of 17 July 2025, new customers cannot provision {{site.data.keyword.redhat_op
 
 Support for customers with existing instances continues until 16 July 2026. Existing customers can use or delete their {{site.data.keyword.redhat_openshift_notm}} for VMware installations until 16 July 2026. Starting on 17 July 2026, automated installations of {{site.data.keyword.redhat_openshift_notm}} for VMware on {{site.data.keyword.vcf-auto-short}} will no longer be supported or available.
 
-For more information about end of life procedures for {{site.data.keyword.cloud_notm}} infrastructure services and third-party software products, see [Lifecycle policy for {{site.data.keyword.cloud_notm}} products](https://www.ibm.com/cloud/cloud-prod-life){: external}. If you have any questions or need assistance, email to clouddigitalsales@us.ibm.com, or [open a support ticket](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) in the VMware Solutions console.
-
-## Related links
-{: #eos-rhos-links}
-
-* [Deprecated offerings](/docs/vmwaresolutions?topic=vmwaresolutions-eos-kmip)
+{{site.data.content.eol-ibm-cloud}}
