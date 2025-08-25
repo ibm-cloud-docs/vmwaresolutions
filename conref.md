@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-08-21"
+lastupdated: "2025-08-25"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -437,3 +437,10 @@ In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-vpc
 
 In the VMware Solutions console, click **Resources** > **KMIP for VMware** from the left navigation panel.
 {: #ol-intro-ui-kmip}
+
+
+
+
+
+For more information about end of life procedures for {{site.data.keyword.cloud_notm}} infrastructure services and third-party software products, see [Lifecycle policy for {{site.data.keyword.cloud_notm}} products](https://www.ibm.com/cloud/cloud-prod-life){: external}. If you have any questions or need assistance, send an email to clouddigitalsales@us.ibm.com, or [open a support ticket](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) in the VMware Solutions console.
+{: #eol-ibm-cloud}

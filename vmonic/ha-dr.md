@@ -4,7 +4,7 @@ copyright:
 
   years: 2025
 
-lastupdated: "2025-07-01"
+lastupdated: "2025-08-25"
 
 keywords: HA firmware solutions, DR for vmware solutions, vmware solutions recovery time objective, vmware solutions recovery point objective
 
@@ -75,9 +75,9 @@ For more information about responsibility ownership between you and {{site.data.
 
 The RTO and RPO of your high availability and disaster recovery solution depends on your chosen solution.
 
-The only way to achieve zero RPO is to use application and database-level synchronous replication, or to use a storage subsystem implementing synchronous replication (for example, NFS storage within the same zone, vSAN storage within a single zone, or stretched vSAN storage between two zones). All other solutions that integrate with the VMware hypervisor APIs (for example, Veeam CDP and Zerto replication) will have small but nonzero RPO.
+The only way to achieve zero RPO is to use application and database-level synchronous replication, or to use a storage subsystem implementing synchronous replication (for example, NFS storage within the same zone, vSAN storage within a single zone, or stretched vSAN storage between two zones). All other solutions that integrate with the VMware hypervisor APIs (for example, Veeam CDP and Zerto Replication) will have small but nonzero RPO.
 
-The lowest RTO is obtained with active-active application deployments on multiple hosts or zones, with a load balancer or global load balancer (GLB) configured in front of them. Solutions that rely on restart of a VM (for example, vSphere HA) or on declaration of a disaster followed by restart of an entire workload (for example, Veeam CDP or Zerto replication) will have longer RTO.
+The lowest RTO is obtained with active-active application deployments on multiple hosts or zones, with a load balancer or global load balancer (GLB) configured in front of them. Solutions that rely on restart of a VM (for example, vSphere HA) or on declaration of a disaster followed by restart of an entire workload (for example, Veeam CDP or Zerto Replication) will have longer RTO.
 
 ## Change management
 {: #change-management}

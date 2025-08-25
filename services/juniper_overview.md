@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-25"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX virtual security appliance, Juniper virtual security appliance, Juniper vSRX console
 
@@ -117,4 +117,4 @@ For more information about extra configuration options that you might want to in
 * [Viewing services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewingservices)
 * [Deleting services from {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices)
 * [Juniper vSRX Virtual Firewall](https://www.juniper.net/us/en/products/security/srx-series/vsrx-virtual-firewall.html){: external}
-* [Overview of the available virtual SRX models, vSRX, and vSRX 3.0](https://supportportal.juniper.net/s/article/Overview-of-the-available-virtual-SRX-models-vSRX-and-vSRX-3-0?language=en_US){: external}
+* [Overview of the available virtual SRX models, vSRX, and vSRX 3.0](https://supportportal.juniper.net/s/article/Overview-of-the-available-virtual-SRX-models-vSRX-and-vSRX-3-0){: external}

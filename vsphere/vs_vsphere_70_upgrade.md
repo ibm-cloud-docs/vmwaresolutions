@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-25"
+lastupdated: "2025-08-25"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -177,7 +177,7 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
    2. Select Baseline and [REMEDIATE].
 7. Remediate each host in turn. After remediation, ensure to pull the host out of maintenance mode.
 
-If the upgrade process fails immediately and the `host cannot enter maintenance mode` error message is displayed, shut down the Zerto ZVAs and try again. The ZVRA VMs automatically start as each server comes out of remediation. For more information about continuing Zerto replication during the upgrade process, see [How to place a host with an associated VRA into maintenance mode](https://www.zerto.com/myzerto/knowledge-base/how-to-place-a-host-with-an-associated-vra-into-maintenance-mode/){: external}.
+If the upgrade process fails immediately and the `host cannot enter maintenance mode` error message is displayed, shut down the Zerto ZVAs and try again. The ZVRA VMs automatically start as each server comes out of remediation. For more information about continuing Zerto Replication during the upgrade process, see [How to place a host with an associated VRA into maintenance mode](https://www.zerto.com/myzerto/knowledge-base/how-to-place-a-host-with-an-associated-vra-into-maintenance-mode/){: external}.
 {: note}
 
 ### Updating vCenter Server and ESXi host licenses
