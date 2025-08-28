@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-28"
 
 keywords: cyber recovery, cyber recovery requirements, requirements cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Requirements for {{site.data.keyword.cr}}
 {: #cr_orderinginstance_reqs}
 
-{{site.data.keyword.cr}} helps you with data protection, cyberthreats, cyberattacks, and ransomware. The instance includes the Veeam Backup and Replication 12.3.2 add-on service and a Linux® hardened repository (LHR). An edge gateway is required and you can provide your own or order one of the following edges:
+{{site.data.keyword.cr}} helps you with data protection, cyberthreats, cyberattacks, and ransomware. The instance includes the Veeam® Backup and Replication 12.3.2 add-on service and a Linux® hardened repository (LHR). An edge gateway is required and you can provide your own or order one of the following edges:
 
 * Juniper® vSRX
 * FortiGate® Virtual Appliance
@@ -25,7 +25,7 @@ subcollection: vmwaresolutions
 
 You can order add-on services. For more information, see [Services for {{site.data.keyword.cloud_notm}} {{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_planning#cr_planning-addon-services).
 
-Price calculations are automatically generated when you access the {{site.data.keyword.cr}} instance order page. Default selections include the Data Center SP Professional license for NSX-T™, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, 768 GB RAM, and NFS storage for both the consolidated and workload clusters.
+Price calculations are generated automatically when you access the {{site.data.keyword.cr}} instance order page. Default selections include the Data Center SP Professional license for NSX-T™, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, 768 GB RAM, and NFS storage for both the consolidated and workload clusters.
 
 Complete the following tasks:
 
