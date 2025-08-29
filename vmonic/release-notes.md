@@ -31,16 +31,16 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 {: #vmwaresolutions-aug0825}
 {: release-note}
 
-VMware vCloud Usage Meter updates
+Usage Meter updates
 
-:   The following features are now available:
+:   The following features are available for VMware vCloud Usage Meter:
 
-   * **Usage Meter new version**: Usage Meter version 9 is now available for deployment. For more information, see [Deploying Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-deploy).
+   * **Usage Meter new version**: Usage Meter version 9 is available for deployment. For more information, see [Deploying Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-deploy).
    * **Usage Meter upgrade**: You can upgrade existing Usage Meters to version 9 to integrate with their own access token. The upgrade process involves receiving an access token for your currently registered Usage Meter, followed by an in-place upgrade to version 9. For more information, see [Upgrading Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-upgrade).
-   * **New license keys**: {{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.vcf-vpc-short}} instances are now provisioned with expiring keys, with the assurance that {{site.data.keyword.IBM}} will provide updated keys before the expiration date. Roll-your-own (RYO) servers are no longer provisioned with any keys when you order ESXi host from the Classic Bare Metal order form. You must retrieve the VMware Cloud Foundation (VCF) license keys. For more information, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
+   * **New license keys**: {{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.vcf-vpc-short}} instances are now provisioned with expiring keys, with the assurance that {{site.data.keyword.IBM}} will provide updated keys before the expiration date. Roll-your-own (RYO) servers are no longer provisioned with any keys when you order ESXi hosts from the Classic Bare Metal order form. You must retrieve the VMware Cloud Foundation (VCF) license keys. For more information, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
 
 vSphere 8 upgrade for Cascade Lake servers
-:   You can manually upgrade vSphere to version 8.0 on Intel Cascade Lake servers for existing hosts with NFS storage, vSAN OSA (Original Storage Architecture), and for gateway clusters. For more information, see [Upgrading to vSphere 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade) and [Upgrading VMware vSphere software from vSphere 7.0 to 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_80-upgrade).
+:   You can manually upgrade VMware vSphere® to version 8.0 on Intel® Cascade Lake servers for existing hosts with NFS storage and vSAN OSA (Original Storage Architecture), and for gateway clusters. For more information, see [Upgrading to vSphere 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade) and [Upgrading VMware vSphere software from vSphere 7.0 to 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_80-upgrade).
 
 vSphere 8 support for vSAN on Cascade Lake servers
 :   You can order vSphere 8 with vSAN OSA storage for new instances and new clusters with Cascade Lake servers.
@@ -60,7 +60,7 @@ Support for 4 TB of RAM
 BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
 
-   * VMware vCenter Server Appliance
+   * VMware vCenter Server® Appliance
       * 8.0 Update 3e (build 24674346)
       * 7.0 Update 3v (build 24730281)
    * VMware vSphere ESXi
@@ -77,7 +77,7 @@ Add-on services upgrades
    * Zerto v10.0u7
 
 HCX license keys details
-:   The VMware HCX license keys information is moved from the **Licensing and metering > Add-on services** page to the [VMware product keys](/vmware/vmware-license) page on the UI.
+:   The VMware HCX™ license keys information is moved from the **Licensing and metering > Add-on services** page to the [VMware product keys](/vmware/vmware-license) page on the UI.
 
 New and updated documentation
 :   The [Cyber resilience with Elastio](/docs/vmwaresolutions?topic=vmwaresolutions-cr-elastio-overview) technical document is available.
