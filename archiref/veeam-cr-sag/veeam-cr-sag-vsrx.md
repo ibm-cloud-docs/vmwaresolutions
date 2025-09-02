@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-04-07"
+lastupdated: "2025-09-02"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ As an alternative, scripts can be used before and after the backup job that conn
 The New-PSSession module requires PowerShell 7. For more information, see [Installing the MSI package](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4&viewFallbackFrom=powershell-7.2#msi){: external}.
 {: note}
 
-Another option is to use the Posh-Junos® PowerShell module to interface with the vSRX directly from the Veeam backup server. For more information, see [Scripting how to: Windows® PowerShell](https://community.juniper.net/browse/blogs/blogviewer?blogkey=0903395c-8f62-433d-be52-ad636d75ed9c){: external}.
+Another option is to use the Posh-Junos® PowerShell module to interface with the vSRX directly from the Veeam backup server. For more information, see [Scripting How-To: Windows® PowerShell](https://community.juniper.net/browse/blogs/blogviewer?blogkey=0903395c-8f62-433d-be52-ad636d75ed9c){: external}.
 
 ## Opening and closing the airgap
 {: #veeam-cr-sag-vsrx-airgap}
