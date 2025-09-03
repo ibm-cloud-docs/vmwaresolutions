@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-09-03"
 
 subcollection: vmwaresolutions
 
@@ -25,18 +25,18 @@ This solution is suitable if you want to extend your own backup solution with an
 
 Key elements of the solution architecture include:
 
-* A {{site.data.keyword.vcf-auto-short}} instance used for cyber-recovery tasks only, deployed in an {{site.data.keyword.cloud_notm}} account restricted to cyber-recovery activities. For more information, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).
-* The {{site.data.keyword.vcf-auto-short}} instance can use VMware vSAN or use NFS datastores, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
+* A {{site.data.keyword.vcf-auto-short}} instance used for cyber-recovery tasks only, deployed in an {{site.data.keyword.cloud}} account restricted to cyber-recovery activities. For more information, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).
+* The {{site.data.keyword.vcf-auto-short}} instance can use VMware vSAN™ or use NFS datastores, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
 * The {{site.data.keyword.vcf-auto-short}} instance does not host production or disaster recovery workloads.
 * The {{site.data.keyword.vcf-auto-short}} instance includes a gateway cluster to host your choice of one of the following appliances to protect the {{site.data.keyword.vcf-auto-short}} instance networks. It also provides a network air gap between the production environment and the isolated recovery environment:
 
    * Juniper® vSRX appliances
    * FortiGate® Security Appliance
-   * FortiGate® Virtual Appliance
+   * FortiGate Virtual Appliance
    * Bring your own gateway appliance
 
-* The solution architecture does not preclude any of the vCenter Server options, such as Caveonix, Entrust, and VMware Aria® Operations™.
-* Optionally, you can use encryption with Hyper Protect Crypto Services, Key Protect, and the VMware KMIP service. For more information, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
+* The solution architecture does not preclude any of the vCenter Server® options, such as Caveonix, Entrust, and VMware Aria® Operations™.
+* Optionally, you can use encryption with Hyper Protect Crypto Services, Key Protect, and the VMware KMIP® service. For more information, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
 * The BYO (Bring Your Own) data mover and immutable repository is your backup technology that you want to instantiate within the isolated recovery environment.
 * The management VM is your automation server that can be used to automate a number of cybertasks such as:
 
@@ -54,12 +54,12 @@ Key elements of the solution architecture include:
 ## How to
 {: #cr-byo-overview-how-to}
 
-Consider using a separate {{site.data.keyword.cloud}} account to deploy your cyber-recovery instance into. This process promotes separation of duties between ownership of any other production or disaster recovery solution that you might host in {{site.data.keyword.cloud_notm}}.
+Consider using a separate {{site.data.keyword.cloud_notm}} account to deploy your cyber-recovery instance into. This process promotes separation of duties between ownership of any other production or disaster recovery solution that you might host in {{site.data.keyword.cloud_notm}}.
 
 To create your custom cyber-recovery solution based on a {{site.data.keyword.vcf-auto}} instance, follow the [procedure to order {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
 
-1. In Step 4, select **Primary**.
-2. In Step 7, order a gateway cluster with your preferred firewall option:
+1. In Step 5, select **Primary instance**.
+2. In Step 9, order a gateway cluster with your preferred firewall option:
     * If you select Juniper vSRX, see [Ordering Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering).
     * If you select FortiGate, see [Ordering FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering).
     * If you select Bring Your Own gateway appliance, see the installation instructions that are provided by your firewall vendor.

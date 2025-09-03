@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-09-03"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ A {{site.data.keyword.vcf-auto}} instance can host a Dell® Cyber Recovery vault
 
 The Dell Cyber Recovery vault maintains your mission-critical business data and technology configurations in a secure, air-gapped vault environment that can be used for recovery and analysis.
 
-The {{site.data.keyword.cloud}} solution is based on the Dell PowerProtect DataDomain Virtual Edition (DDVE) storage appliance that is hosted on a vCenter Server instance. The DDVE stores the replicated data from a production DataDomain (DD) system. The data on the DDVE can be recovered back to the production DD system when needed. The production DD system can be on-premises or deployed in {{site.data.keyword.cloud_notm}} or another cloud provider.
+The {{site.data.keyword.cloud}} solution is based on the Dell PowerProtect DataDomain Virtual Edition (DDVE) storage appliance that is hosted on a vCenter Server® instance. The DDVE stores the replicated data from a production DataDomain (DD) system. The data on the DDVE can be recovered back to the production DD system when needed. The production DD system can be on-premises or deployed in {{site.data.keyword.cloud_notm}} or another cloud provider.
 
 The DDVE in the Cyber Recovery vault is air-gapped from the network most of the time and is only connected when the Cyber Recovery software triggers replication from the production DD system to the DDVE in the Cyber Recovery vault.
 
@@ -85,17 +85,17 @@ Public network - You can connect to your Cyber Recovery vault by using one or mo
 
 The vCenter Server instance:
 
-* Can use VMware vSAN or NFS data stores. For more information, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
+* Can use VMware vSAN™ or NFS data stores. For more information, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
 * Does not host production or disaster recovery workloads.
 * Includes an edge cluster to host your choice of one of the following to protect vCenter Server instance networks:
    * Juniper vSRX appliances
    * FortiGate Security Appliance
    * FortiGate Virtual Appliance
    * Bring Your Own gateway appliance
-* Can include any of the vCenter Server options, such as Caveonix, Entrust, and VMware vRealize Operations.
-* Optionally, you can use encryption with Hyper Protect Crypto Services, Key Protect, and the VMware KMIP service. For more information, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
+* Can include any of the vCenter Server options, such as Caveonix, Entrust, and VMware Aria® Operations.
+* Optionally, you can use encryption with Hyper Protect Crypto Services, Key Protect, and the VMware KMIP™ service. For more information, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
 
-* VMware NSX – NSX is used to create overlay segments, routers, and firewalling on the vCenter Server instance.
+* VMware NSX® – NSX is used to create overlay segments, routers, and firewalling on the vCenter Server instance.
 * Jump server – After the vCenter Server instance is provisioned, you must upload Windows OVF, OVA, or ISO files to vCenter so that you can install one or more jump servers. The Windows jump servers have the following requirements:
     * 2 vCPU
     * 8 GB RAM
@@ -145,9 +145,9 @@ If you plan to use CyberSense, you must size the hosts considering that the appl
 
 To create your Dell Cyber Recovery vault based on a {{site.data.keyword.vcf-auto-short}} instance, follow the procedure to [order a {{site.data.keyword.vcf-auto-short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
 
-1. In Step 4, select **Primary**.
-2. In Step 6, order **Private Networks**.
-3. In Step 7, order a gateway cluster with your preferred firewall option:
+1. In Step 5, select **Primary instance**.
+2. In Step 7, order **Private network only** for **Networking type**.
+3. In Step 9, order a gateway cluster with your preferred firewall option:
     * If you select Juniper vSRX, see [Ordering Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering).
     * If you select FortiGate, see [Ordering FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering).
     * If you select Bring Your Own gateway appliance, see the installation instructions that are provided by your firewall vendor.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-09-03"
 
 subcollection: vmwaresolutions
 
@@ -42,4 +42,4 @@ Connections between the on-premises environment, CSP (Cloud Service Provider), C
 ## Related links
 {: #vrw-context-related}
 
-* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance){: external}
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/products/cloud/compliance){: external}
