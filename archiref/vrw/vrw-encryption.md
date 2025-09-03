@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-09-03"
 
 subcollection: vmwaresolutions
 
@@ -77,4 +77,4 @@ Review the following information for the step-by-step process to order and initi
 ## Related links
 {: #vrw-encryption-related}
 
-* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance){: external}
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/products/cloud/compliance){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-09-03"
 
 subcollection: vmwaresolutions
 
@@ -67,6 +67,6 @@ No operational tools are deployed to the workload cluster. The workload cluster 
 ## Related links
 {: #vrw-operations-related}
 
-* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance){: external}
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/products/cloud/compliance){: external}
 * [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)

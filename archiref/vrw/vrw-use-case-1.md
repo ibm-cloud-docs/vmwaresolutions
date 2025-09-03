@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-09-03"
 
 subcollection: vmwaresolutions
 
@@ -38,4 +38,4 @@ Three distinct regions: the management region, the edge services region, and the
 ## Related links
 {: #vrw-use-case-1-related}
 
-* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance){: external}
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/products/cloud/compliance){: external}
