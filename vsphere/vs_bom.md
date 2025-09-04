@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-09-04"
 
 keywords: vsphere BOM, bill of materials vsphere, BOM, flexible
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-22"
+lastupdated: "2025-09-04"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -74,7 +74,7 @@ Select one of the following options:
 
 The capacity that meets your storage needs. This option is not applicable to the **Bare metal server with local storage** deployment type.
 
-For an example that shows what the capacity might be like, see [Capacity planning for backup repositories](https://helpcenter.veeam.com/docs/one/reporter/capacity_planning_for_repositories.html?ver=120){: external}.
+For an example that shows what the capacity might be like, see [Capacity planning for backup repositories](https://helpcenter.veeam.com/archive/one/120/reporter/capacity_planning_for_repositories.html){: external}.
 
 ### Storage performance
 {: #veeam_ordering-config-storage-performance}
