@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-09-04"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ subcollection: vmwaresolutions
 {{site.data.keyword.vcf}} ({{site.data.keyword.vcf-short}}) offers a fully integrated, enterprise-grade platform that delivers the complete VMware software-defined data center (SDDC) stack. This platform includes VMware vSphere®, VMware vSAN™, VMware NSX®, and VMware Aria® Suite components, providing a consistent and secure environment for running traditional and containerized workloads.
 
 The following items are the key features of the offering:
-* Provision a fully operational {{site.data.keyword.vcf-short}} environment in under 12 hours by using IBM automated deployment tools.
+* Provision a fully operational {{site.data.keyword.vcf-short}} environment in under 12 hours by using IBM® automated deployment tools.
 * Provision optional add-on services such as Veeam Backup and Replication.
 * Choose between Classic and Virtual Private Cloud (VPC) deployments.
 * Deploy {{site.data.keyword.vcf-short}} environments across {{site.data.keyword.cloud_notm}} global data centers, which can ensure proximity to users and compliance with regional regulations.
@@ -95,14 +95,16 @@ The following diagram shows more details of the {{site.data.keyword.vcf-short}} 
 * The {{site.data.keyword.vcf-short}} instance can use VMware vSAN or NFS data stores. For more information, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
 * Veeam Backup and Recovery can be automatically installed on a VM, VSI, or bare metal server. For more information, see [Veeam on IBM Cloud overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
 * Optionally, but recommended, The {{site.data.keyword.vcf-short}} instance can include a gateway cluster to host one of the following appliances to protect the {{site.data.keyword.vcf-short}} instance networks:
-    * Juniper vSRX appliances. For more information, see [Ordering a Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering).
-    * FortiGate Security Appliance. For more information, see [Create FortiGate Security Appliance 10 Gbps](/netsec/firewalls/multi-vlan/provision#about).
+    * Juniper® vSRX appliances. For more information, see [Ordering a Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering).
+    * FortiGate® Security Appliance. For more information, see [Create FortiGate Security Appliance 10 Gbps](/netsec/firewalls/multi-vlan/provision#about).
     * FortiGate Virtual Appliance. For more information, see [Ordering a FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering).
     * Bring your own gateway appliance.
-* The {{site.data.keyword.vcf-short}} instance can include any of the optional add-on services, such as Caveonix RiskForesight™ or VMware Aria Operations. For more information, see [Add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started#getting-started-add-on-services).
-* Optionally, you can use encryption with Hyper Protect Crypto Services and KMIP for VMware. For more information, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
+* The {{site.data.keyword.vcf-short}} instance can include any of the optional add-on services, such as Caveonix RiskForesight™ or VMware Aria® Operations™. For more information, see [Add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started#getting-started-add-on-services).
+* Optionally, you can use encryption with Hyper Protect Crypto Services and KMIP™ for VMware. For more information, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
 
-To create the pattern described in the diagram, follow the procedure to order a [{{site.data.keyword.vcf-short}} for Classic - Automated instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure). After your {{site.data.keyword.vcf-short}} instance is provisioned:
+To create the pattern described in the diagram, follow the procedure to order a [{{site.data.keyword.vcf-short}} for Classic - Automated instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure). 
+
+After your {{site.data.keyword.vcf-short}} instance is provisioned:
 
 1. Configure your firewalls by using the vendor’s documentation as a guide and the following information:
 
