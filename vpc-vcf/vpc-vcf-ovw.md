@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-09-04"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -27,7 +27,7 @@ The {{site.data.keyword.vpc_full}} provides the underlying infrastructure for ru
 ## Key benefits
 {: #vpc-vcf-ovw-benefits}
 
-The {{site.data.keyword.vcf-vpc-short}} architecture provides you with the fundamental building blocks, which include vSphere, VMware vCenter Server, NSX-T, vSAN, and SDDC manager. The VMware Cloud Builder appliance automates the {{site.data.keyword.vcf-vpc-short}} deployment, including the entire VMware software-defined stack. After the initial provisioning, you have the same architecture and user experience as in on-premises {{site.data.keyword.vcf-vpc-short}} deployments. Using Aria® Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager), you can deploy more Aria Suite components, depending on the selected {{site.data.keyword.vcf-vpc-short}} edition.
+The {{site.data.keyword.vcf-vpc-short}} architecture provides you with the fundamental building blocks, which include vSphere, VMware vCenter Server®, NSX-T, vSAN, and SDDC manager. The VMware Cloud Builder appliance automates the {{site.data.keyword.vcf-vpc-short}} deployment, including the entire VMware software-defined stack. After the initial provisioning, you have the same architecture and user experience as in on-premises {{site.data.keyword.vcf-vpc-short}} deployments. Using Aria® Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager), you can deploy more Aria Suite components, depending on the selected {{site.data.keyword.vcf-vpc-short}} edition.
 
 VMware Solutions on {{site.data.keyword.vpc_short}} has the following key benefits:
 
@@ -66,7 +66,7 @@ The following components are not installed by the {{site.data.keyword.IBM_notm}}
 
 * Aria Suite Enterprise (Aria Operations Enterprise, Aria Operations for Logs, and Aria Automation Enterprise)
 * Aria Operations for Networks Enterprise
-* VMware HCX Enterprise
+* VMware HCX™ Enterprise
 * Tanzu Kubernetes Grid
 
 The following components are not installed by the {{site.data.keyword.IBM_notm}} automation. These components are optional and require add-on licenses. You can order these from the {{site.data.keyword.cloud}} console. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
