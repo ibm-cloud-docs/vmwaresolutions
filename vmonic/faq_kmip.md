@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-09-04"
 
 keywords: FAQ kmip for vmware, kmip for vmware questions
 
@@ -29,7 +29,7 @@ Find answers to frequently asked questions about the Key Management Interoperabi
 {: #faq-kmip-eos-kp}
 {: faq}
 
-Support for the Key Protect service as part of the Key Management Interoperability Protocol (KMIP™) for VMware® will end on 16 July 2026 after which the service will no longer be available. Customers must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 16 July 2026.
+Support for the Key Protect service as part of the KMIP for VMware will end on 16 July 2026 after which the service will no longer be available. Customers must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 16 July 2026.
 
 This announcement is applicable only to customers who are using the KMIP for VMware support for Key Protect.
 
@@ -39,7 +39,7 @@ This announcement is applicable only to customers who are using the KMIP for VMw
 
 This announcement is applicable only to customers who are using the KMIP for VMware support for Key Protect. Customers who are using KMIP for VMware support for Hyper Protect Crypto Services (HPCS) remain unaffected by this announcement. The KMIP for VMware support for HPCS continues to function as usual without any impact.
 
-## Why is the support for Key Management Interoperability Protocol (KMIP™) for VMware® service ending?
+## Why is the support for KMIP for VMware ending?
 {: #faq-kmip-eos-reason}
 {: faq}
 

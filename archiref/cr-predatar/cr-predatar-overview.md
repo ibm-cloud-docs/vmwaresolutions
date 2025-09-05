@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-08-21"
+lastupdated: "2025-09-05"
 
 subcollection: vmwaresolutions
 
@@ -21,15 +21,15 @@ Predatar Cyber Recovery Orchestration automates and orchestrates the recovery an
 
 This architecture is suitable for clients who are using either or both of the following in the source environment:
 
-* IBM Spectrum Protect with IBM Spectrum Protect for Virtual Environments.
+* IBM Spectrum® Protect with IBM Spectrum Protect for Virtual Environments.
 * IBM Spectrum Protect Plus.
 
 The following {{site.data.keyword.cloud}} products can be used to host the Predatar Cyber Recovery Orchestration and Predatar CleanRoom:
 
 * An {{site.data.keyword.cloud_notm}} vCenter Server instance is ordered with the following add-on services:
     * Edge Gateway – The edge gateway hosts the firewall appliances.
-    * A firewall – Juniper®, Fortigate®, or Bring Your Own Firewall is supported.
-* One or more Red Hat Enterprise Linux (RHEL) {{site.data.keyword.cloud_notm}} bare metal servers are ordered and used as either:
+    * A firewall – Juniper®, FortiGate®, or Bring Your Own Firewall is supported.
+* One or more Red Hat® Enterprise Linux® (RHEL) {{site.data.keyword.cloud_notm}} bare metal servers are ordered and used as either:
     * IBM Spectrum Protect with IBM Spectrum Protect for Virtual Environments.
     * IBM Spectrum Protect Plus vSnap servers.
 
@@ -80,14 +80,14 @@ Predatar Cloud:
 
 The vCenter Server instance:
 
-* Can use VMware vSAN or NFS data stores. For more information, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
+* Can use VMware vSAN™ or NFS data stores. For more information, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
 * Does not host production or disaster recovery workloads, but would temporarily be used to recover an infected machine and then clean it in the CleanRoom.
 * Includes an edge cluster to host your choice of one of the following to protect vCenter Server instance networks:
    * Juniper vSRX appliances.
    * FortiGate Security Appliance.
    * FortiGate Virtual Appliance.
    * Bring your own gateway appliance.
-* Can include any of the vCenter Server options, such as Caveonix, Entrust, and VMware vRealize Operations.
+* Can include any of the vCenter Server options, such as Caveonix, Entrust, and VMware Aria® Operations™.
 * Optionally, you can use encryption with Hyper Protect Crypto Services, Key Protect, and the VMware KMIP service. For more information, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
 
 *  Tertiary backup servers – One or more hardened Red Hat Enterprise Linux [{{site.data.keyword.cloud_notm}} Bare Metal Servers](https://www.ibm.com/products/bare-metal-servers){: external} to host the following components:
@@ -95,10 +95,10 @@ The vCenter Server instance:
    * IBM Spectrum Protect Plus vSnap servers. For more information, see [IBM Spectrum Protect Plus Blueprints](https://www.ibm.com/support/pages/node/1119489){: external}.
 
 * Predatar Virtual Appliance – Consists of:
-   * VM – A customer provided Microsoft Windows 2012 or later VM that is used to host the Predatar Agent.
+   * VM – A customer provided Microsoft Windows® 2012 or later VM that is used to host the Predatar Agent.
    * Predatar Agent - a small-footprint client that is hosted on the customer’s VM and sends queries to one or more IBM Spectrum Protect/Spectrum Protect Plus servers and sends the queries to the Predatar Cloud.
 
-* Predatar CleanRoom - The Predatar CleanRoom is a patented concept that brings together virtualized compute, storage, and networking to form a recovery target that supports both automated recovery testing and orchestrated malware scanning. The vCenter server instance with VMware vSphere and VMware NSX-T provides the virtualized compute, storage, and networking.
+* Predatar CleanRoom - The Predatar CleanRoom is a patented concept that brings together virtualized compute, storage, and networking to form a recovery target that supports both automated recovery testing and orchestrated malware scanning. The vCenter server instance with VMware vSphere® and VMware NSX-T™ provides the virtualized compute, storage, and networking.
 
 ## How to use Cyber recovery with Predatar
 {: #cr-predatar-howto}
@@ -117,9 +117,9 @@ Cloud Blueprint for IBM Cloud](https://www.ibm.com/support/pages/system/files/in
 
 To create your Predatar CleanRoom based on a {{site.data.keyword.vcf-auto-short}} instance, follow the procedure to [order a {{site.data.keyword.vcf-auto-short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
 
-1. In Step 4, select **Primary**.
-2. In Step 6, order **Private Networks**.
-3. In Step 7, order an edge gateway cluster with your preferred firewall option:
+1. In Step 5, select **Primary instance**.
+2. In Step 7, select **Private network only** for **Networking type**.
+3. In Step 8, order a gateway cluster with your preferred firewall option:
     * If you select Juniper vSRX, see [Ordering Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering).
     * If you select FortiGate, see [Ordering FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering).
     * If you select Bring Your Own gateway appliance, see the installation instructions that are provided by your firewall vendor.
@@ -133,7 +133,7 @@ After your vCenter Server instance is provisioned:
    * [Ports used by VMware components](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vmwareuses)
    * [Ports for services](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-services)
 
-2. Deploy A Windows VM.
+2. Deploy a Windows VM.
 3. Deploy the Predatar Agent.
 
 To order {{site.data.keyword.cloud_notm}} Classic Bare Metal servers, see [Building a custom bare metal server](/docs/bare-metal?topic=bare-metal-ordering-baremetal-server).
