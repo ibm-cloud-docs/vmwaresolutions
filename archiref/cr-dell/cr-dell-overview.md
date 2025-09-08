@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-09-03"
+lastupdated: "2025-09-08"
 
 subcollection: vmwaresolutions
 
@@ -43,7 +43,7 @@ The Admins are people in your organization who maintain your production environm
 Within your {{site.data.keyword.cloud_notm}} account, you order a vCenter server instance with the following add-on services:
 
 * Edge Gateway – The edge gateway hosts the firewall appliances.
-* A firewall – Juniper®, Fortigate®, or Bring Your Own firewall is supported.
+* A firewall – Juniper®, FortiGate®, or Bring Your Own firewall is supported.
 
 After provisioning, you have full administrative access to the vCenter Server instance to deploy the following components the use your own licenses:
 
