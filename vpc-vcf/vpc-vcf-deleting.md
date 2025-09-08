@@ -2,11 +2,11 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-04-04"
+lastupdated: "2025-09-08"
 
-keywords: delete vmware cloud foundation instance, vmware cloud foundation instance, delete instance, delete vmware cloud edition instance
+keywords: delete vcf vpc instance, vmware cloud foundation vpc instance, delete vpc instance
 
 subcollection: vmwaresolutions
 
