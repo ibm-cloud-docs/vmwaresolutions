@@ -92,7 +92,7 @@ The vCenter Server instance:
    * FortiGate Security Appliance
    * FortiGate Virtual Appliance
    * Bring Your Own gateway appliance
-* Can include any of the vCenter Server options, such as Caveonix, Entrust, and VMware Aria® Operations.
+* Can include any of the vCenter Server options, such as Caveonix RiskForesight™ and VMware Aria® Operations.
 * Optionally, you can use encryption with Hyper Protect Crypto Services, Key Protect, and the VMware KMIP™ service. For more information, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
 
 * VMware NSX® – NSX is used to create overlay segments, routers, and firewalling on the vCenter Server instance.
