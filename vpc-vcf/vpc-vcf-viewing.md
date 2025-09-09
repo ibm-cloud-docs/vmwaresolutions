@@ -4,9 +4,9 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-09-08"
 
-keywords: view vmware cloud foundation instance, vmware cloud foundation instance, view instance, view vmware cloud edition instance
+keywords: view vcf vpc instance, view vpc instance, view vpc summary, view vpc details
 
 subcollection: vmwaresolutions
 
