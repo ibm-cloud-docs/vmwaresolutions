@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-09-09"
 
 keywords: usage meter, upgrade
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Upgrading Usage Meter
 {: #usage_meter-upgrade}
 
-Existing VMware vCloud Usage Meters must be upgraded to version 9 to integrate with their own access token. The upgrade process for Usage Meter with version 4.8 will involve receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to version 9.
+Existing VMware vCloud Usage Meters must be upgraded to version 9 to integrate with their own access token. The upgrade process for Usage Meter with version 4.8 will involve receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to version 9. 
 {: important}
 
 ## Procedure to upgrade Usage Meter
@@ -80,6 +80,8 @@ For the SSH into the Usage Meter VM, complete the following steps:
    1. `mkdir /root/upgrade`
    2. `mount -o loop /dev/cdrom /root/upgrade`
    3. `bash /root/upgrade/upgrade-um.sh`
+
+   
 
 2. Enter the access token that is generated for the Usage Meter in the {{site.data.keyword.vmwaresolutions_full}} console. For more information, see [Registering Usage Meter with IBM](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-register).
 3. Enter **y** to agree with the VCF Usage Meter appliance be part of IBM's Provider Organization.
