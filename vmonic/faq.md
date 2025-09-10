@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-01"
+lastupdated: "2025-09-10"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -16,7 +16,7 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQ about {{site.data.keyword.vcf-classic-short}}
+# FAQ for {{site.data.keyword.vcf-classic-short}}
 {: #faq-vmwaresolutions}
 
 Find answers to frequently asked questions about the {{site.data.keyword.vcf-classic}} offering.
