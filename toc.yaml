@@ -913,6 +913,7 @@ toc:
           label: FAQ
           topics:
           - vmonic/vmwaresol_packaging-pricing.md
+          - include: ../vmware-service/common/faq-general.md
           - vmonic/faq.md
           - vmonic/faq-vpc-vcf.md
           - vmonic/faq_usage-meter.md
