@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-09-09"
+lastupdated: "2025-09-10"
 
 keywords: usage meter, upgrade
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Upgrading Usage Meter
 {: #usage_meter-upgrade}
 
-Existing VMware vCloud Usage Meters must be upgraded to version 9 to integrate with their own access token. The upgrade process for Usage Meter with version 4.8 will involve receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to version 9.
+Existing VMware vCloud Usage Meters must be upgraded to version 9 to integrate with their own access token. The upgrade process for Usage Meter with version 4.8 will involve receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to version 9. You will not need to provide the access token for additional upgrades after the initial upgrade to version 9 or later.
 {: important}
 
 ## Procedure to upgrade Usage Meter
@@ -38,8 +38,8 @@ The SSH login will change to **Enabled**.
 ### Mounting the upgrade ISO file
 {: #usage_meter-upgrade-iso}
 
-1. Download the Usage Meter ISO file from the following link: `https://ibm.biz/Bde2fZ`
-2. Validate the SHA-2 checksum based on the `a294f822348582e1ac398f439ccf9fed546d3fe298b29c1eb5f98a0dc646142a` SHA-256 value. Open a command prompt on Windows® or a terminal window on Linux® and MacOS and run the following command:
+1. Download the Usage Meter ISO file from the following link: `https://ibm.biz/BdeSzZ`
+2. Validate the SHA-2 checksum based on the `62724df42b5cc8979723f6f25bf61b720d8287ec3510fbfd218232be787877a4` SHA-256 value. Open a command prompt on Windows® or a terminal window on Linux® and MacOS and run the following command:
    * For Windows: `certutil -hashfile <path-to-iso-file> SHA256`
    * For Linux: `sha256sum <path-to-iso-file>`
    * For MacOS: `shasum -a 256 <path-to-iso-file>`
@@ -81,7 +81,8 @@ For the SSH into the Usage Meter VM, complete the following steps:
    2. `mount -o loop /dev/cdrom /root/upgrade`
    3. `bash /root/upgrade/upgrade-um.sh`
 
-   
+   You might need to run `umount /root/upgrade` to unmount any previous upgrades before you run `mount -o loop /dev/cdrom /root/upgrade` to upgrade the Usage Meter VM. 
+   {: note}
 
 2. Enter the access token that is generated for the Usage Meter in the {{site.data.keyword.vmwaresolutions_full}} console. For more information, see [Registering Usage Meter with IBM](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-register).
 3. Enter **y** to agree with the VCF Usage Meter appliance be part of IBM's Provider Organization.

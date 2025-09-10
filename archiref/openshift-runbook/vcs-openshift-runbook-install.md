@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-09-09"
 
 subcollection: vmwaresolutions
 
@@ -421,7 +421,7 @@ terraform apply -auto-approve
     ```
     {: pre}
 
-5. Wait until you see the following message. The system provides the URL and credentials to log in to the {{site.data.keyword.redhat_openshift_notm}} Console after the installation is complete. Your URL and password is different:
+5. Wait until you see the following message. The system provides the URL and credentials to log in to the {{site.data.keyword.redhat_openshift_notm}} console after the installation is complete. Your URL and password is different:
 
     ```bash
     INFO Install complete!

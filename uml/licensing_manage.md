@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-09-10"
 
 keywords: licenses, add license keys, assign licenses, validate licenses, manage licenses
 
@@ -68,9 +68,6 @@ To add license keys to VMware NSX-T™ (NSX component or VMware vDefend Firewall
 
 The VMware NSX Networking license requires VMware NSX® 3.2 or later.
 {: important}
-
-For VMware vDefend Firewall, do not enter the firewall keys that you ordered. IBM will provide updated firewall keys in the future. Your firewall will continue to operate normally.
-{: attention}
 
 You can delete old licenses by selecting them and clicking **Delete**.
 {: tip}

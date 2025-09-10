@@ -78,6 +78,25 @@ toc:
               - vmonic/vmwaresol_ports-vmwareuses.md
               - vmonic/vmwaresol_ports-services.md
       - topicgroup:
+          id: vmware-essentials
+          label: VMware essentials
+          topics:
+          - uml/vmware-software-updates.md
+          - topicgroup:
+              id: licensing-and-metering
+              label: Licensing and metering
+              topics:
+              - topic: uml/licensing_metering-req.md
+                navtitle: Requirements
+              - uml/usage_meter-upgrade.md
+              - uml/usage_meter-deploy.md
+              - uml/usage_meter-config.md
+              - uml/usage_meter-register.md
+              - uml/usage_meter-add.md
+              - uml/vmware-add-ons.md
+              - uml/licensing_vcf-licenses.md
+              - uml/licensing_manage.md
+      - topicgroup:
           id: vcfaas
           label: VCF as a Service
           topics:
@@ -319,20 +338,6 @@ toc:
               - vpc-vcf/vpc-vcf-viewing.md
               - vpc-vcf/vpc-vcf-deleting.md
           - vpc-vcf/vpc-vcf-deploy-vvs.md
-      - topicgroup:
-              id: licensing-and-metering
-              label: Licensing and metering
-              topics:
-              - topic: uml/licensing_metering-req.md
-                navtitle: Requirements
-              - uml/usage_meter-upgrade.md
-              - uml/usage_meter-deploy.md
-              - uml/usage_meter-config.md
-              - uml/usage_meter-register.md
-              - uml/usage_meter-add.md
-              - uml/vmware-add-ons.md
-              - uml/licensing_vcf-licenses.md
-              - uml/licensing_manage.md
       - topicgroup:
           id: add-on-services
           label: Add-on services
