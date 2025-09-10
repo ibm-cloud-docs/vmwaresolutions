@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-08-19"
+lastupdated: "2025-09-10"
 
 keywords: usage meter, download, deployment
 
@@ -24,12 +24,12 @@ To deploy a VMware vCloud Usage Meter virtual machine (VM), you must first downl
 
 Complete the following steps:
 
-1. Download the Usage Meter OVA file from the following link: `https://ibm.biz/Bde2fY`
+1. Download the Usage Meter OVA file from the following link: `https://ibm.biz/BdeSzP`
 
    For newer versions of Usage Meter, two files are available for download: one for the initial installment and another one for the upgrade. These files use different SHA-2 values.
    {: note}
 
-2. Validate the SHA-2 checksum based on the `163f5864336dad4745867dd28822a0a1798231e55c5c8bb503f5766595ed36f8` SHA-256 value. Open a command prompt on Windows® or a terminal window on Linux® and MacOS and run the following command:
+2. Validate the SHA-2 checksum based on the `3bc4ee68867d10d24cfb73d744ca4c9754bc94a6a16ea1f3e818624f4a1a74d7` SHA-256 value. Open a command prompt on Windows® or a terminal window on Linux® and MacOS and run the following command:
    * For Windows: `certutil -hashfile <path-to-ova-file> SHA256`
    * For Linux: `sha256sum <path-to-ova-file>`
    * For MacOS: `shasum -a 256 <path-to-ova-file>`
