@@ -27,6 +27,24 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 
 
+### 12 September 2025
+{: #vmwaresolutions-sep1225}
+{: release-note}
+
+Usage Meter 9.0.1
+:   VMware vCloud Usage Meter version 9.0.1 is available for deployment. You must upgrade existing Usage Meters to 9.0.1 and swap old VMware® keys to new VMware by Broadcom subscription keys that were provided previously. For more information, see [Upgrading Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-upgrade).
+
+BOM updates for {{site.data.keyword.vcf-classic-short}}
+:   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
+
+   * VMware vCenter Server® Appliance 8.0 Update 3g (build 24853646)
+   * VMware vSphere ESXi™
+      * 8.0 Update 3g (build 24859861)
+      * 7.0 Update 3w (build 24784741)
+
+BOM updates for {{site.data.keyword.vcf-vpc}}
+:   VMware vSphere ESXi 8.0 Update 3f (build 24784735) is applied to newly deployed instances.
+
 ### 8 August 2025
 {: #vmwaresolutions-aug0825}
 {: release-note}
