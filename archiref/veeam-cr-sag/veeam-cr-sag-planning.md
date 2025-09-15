@@ -29,7 +29,7 @@ Capture the following details of the {{site.data.keyword.vcf-auto}} instance and
 | Parameter | Description |
 |-----------|-------------|
 | `<root_domain>` | The {{site.data.keyword.vcf-auto-short}} instance domain name. For example, `test.ibmcloud.local` |
-| `<sub_domain>` | The {{site.data.keyword.vcf-auto-short}} instance subdomain name. For example, if the root domain is `test.ibmcloud.local`, then the subdomain is `test`. | 
+| `<sub_domain>` | The {{site.data.keyword.vcf-auto-short}} instance subdomain name. For example, if the root domain is `test.ibmcloud.local`, then the subdomain is `test`. |
 | `<dc_code>` | The code for the data center in which the {{site.data.keyword.vcf-auto-short}} instance is deployed into, such as DAL10. |
 | `<public_vlan_number>` | The `Public VLAN` number can be obtained from the UI by browsing to the {{site.data.keyword.vcf-auto-short}} instance's Infrastructure page. |
 | `<public_vlan_id>` | The ID can be found from the VLAN number and the {{site.data.keyword.cloud}} CLI. For example, for VLAN number `1344`, `ibmcloud sl vlan list` `awk '/1344/ { print "Public_VLAN_ID: " $1 }'`. |
@@ -57,7 +57,7 @@ Define the following parameters:
 | `lhbr_hostname` | The required Linux® hardened repository server hostname. |
 | `sa_veeam_cyber_admin_password` | A complex password is used for the Veeam service account `sa-veeam-cyber-admin` account. |
 | `your_username` | A username for the account on the automation server so that you can SSH to the server. |
-| `timezone` | The time zone to be configured in the Linux hardened repository. For more information, see the [time zone catalog](http://manpages.ubuntu.com/manpages/focal/man3/DateTime::TimeZone::Catalog.3pm.html){: external}. |
+| `timezone` | The time zone to be configured in the Linux hardened repository. For more information, see the [time zone catalog](https://manpages.ubuntu.com/manpages/questing/man3/DateTime%3A%3ATimeZone.3pm.html){: external}. |
 | `lhbr_root_password` | This password is the {{site.data.keyword.cloud_notm}} supplied initial root password that is provided after provisioning of the Linux bare metal server. It is used to initially connect to the server for configuration and stored in the Ansible® vault file. |
 | `sa_ansible_password` | A complex password that is stored in the Ansible vault file that is used for the `sa-ansible` service account on the Veeam backup server. |
 | `immutability_period` | The required immutability period for the Linux Hardened repository. For example, `30` for 30 days. |
