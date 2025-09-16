@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-03-04"
+lastupdated: "2025-09-15"
 
 keywords: troubleshooting, vcf for vpc, authorization header, authorization error
 
@@ -24,7 +24,7 @@ When you attempt to deploy a new {{site.data.keyword.vcf-vpc}} instance, you are
 
 `An error has occurred when sending the request to create an instance. The user has configured IP address restriction for login. None of the given IP addresses is contained in the list of allowed IP addresses.`
 
-Your VCF on VPC order might fail due to access restrictions that are enforced in your account settings.
+Your {{site.data.keyword.vcf-vpc-short}} order might fail due to access restrictions that are enforced in your account settings.
 {: tsCauses}
 
 To investigate and fix the problem, complete the following steps:
@@ -38,4 +38,4 @@ To investigate and fix the problem, complete the following steps:
 {: #trbl_vcf_vpc_allowlist_ip-links}
 
 * [Requirements for {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-order-req)
-* [Ordering VCF for VPC instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ordering)
+* [Ordering {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ordering)

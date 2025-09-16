@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-09-15"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -81,7 +81,7 @@ You can also cancel the VMware add-ons from the {{site.data.keyword.cloud}} cons
 If applicable to you, complete the following tasks:
 
 * If you purchased the Avi Load Balancer add-on license, activate the license by adding it to the Avi Load Balancer Controller. For more information, see [Using Avi Load Balancer license file](https://techdocs.broadcom.com/us/en/vmware-security-load-balancing/avi-load-balancer/avi-load-balancer/31-1/vmware-avi-load-balancer-administration-guide/licensing/nsx-advanced-load-balancer-editions/nsx-alb-license-management/using-avi-vantage-license-file.html){: external}. Then, install the Avi Load Balancer manually.
-* If you are planning to order VMware Cloud Foundation for VPC instances, also [configure the NSX firewalls for VCF for VPC instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-firewall) after you deployed your VCF for VPC instance.
+* If you are planning to order VMware Cloud Foundation for VPC instances, also [configure the NSX firewalls for {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-firewall) after you deployed your {{site.data.keyword.vcf-vpc-short}} instance.
 
 ## Related links
 {: #vmware-add-ons-links}

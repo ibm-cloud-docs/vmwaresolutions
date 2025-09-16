@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-09-15"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -24,7 +24,7 @@ subcollection: vmwaresolutions
 
 Before you begin, review the following information:
 * [Requirements for {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-order-req)
-* [Planning for VCF for VPC instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan)
+* [Planning for {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan)
 
 ## Components and subscriptions
 {: #vpc-vcf-ordering-subscriptions}
