@@ -67,10 +67,10 @@ For existing {{site.data.keyword.vcf-vpc-short}} instances, you must complete th
 3. Apply the configuration changes to the following components yourself:
 
    * VMware SDDC Manager. For more information, see [SDDC fails to download the updates from online repositories - Apply the Token (Manual method)](https://knowledge.broadcom.com/external/article/389871){: external}.
-   * VMware vCenter Server. For more information, see [Not seeing the link to Generate download token for vcenter updates](https://knowledge.broadcom.com/external/article?articleNumber=395682){: external}.
+   * VMware vCenter Server. For more information, see [Not seeing the link to generate download token for vcenter updates](https://knowledge.broadcom.com/external/article?articleNumber=395682){: external}.
    * VMware vSphere ESXi. For more information, see [vLCM fails to download the ESXi patches and images from online repositories - Resolution](https://knowledge.broadcom.com/external/article/390121){: external}.
 
-For new {{site.data.keyword.vcf-vpc-short}} instances, take note of the configuration links listed previously, as you might need them for future upgrades.
+For new {{site.data.keyword.vcf-vpc-short}} instances, take note of the configuration links that are listed previously, as you might need them for future upgrades.
 {: tip}
 
 ## Related links
