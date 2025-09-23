@@ -301,15 +301,6 @@ toc:
           - cr/cr_addingviewingservices.md
           - cr/cr_view-delete-instance.md
       - topicgroup:
-          id: regulated-workloads
-          label: Regulated Workloads
-          topics:
-          - topic: vrw/vrw-overview.md
-            navtitle: Regulated Workloads overview
-          - vrw/vrw-addingviewingclusters.md
-          - vrw/vrw-addingremovingservers.md
-          - vrw/vrw-view-delete-instance.md
-      - topicgroup:
           id: vcf-for-vpc
           label: VCF for VPC
           topics:
@@ -475,6 +466,14 @@ toc:
               - vmonic/eos-rhos.md
               - vmonic/eos-nsx-v.md
               - vmonic/eos-vsphere67.md
+          - topicgroup:
+              id: regulated-workloads
+              label: Regulated Workloads
+              topics:
+              - vrw/vrw-overview.md
+              - vrw/vrw-addingviewingclusters.md
+              - vrw/vrw-addingremovingservers.md
+              - vrw/vrw-view-delete-instance.md
           - topicgroup:
               id: multizone-instances
               label: Multizone instances
