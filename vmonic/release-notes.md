@@ -32,7 +32,7 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 {: release-note}
 
 Usage Meter 9.0.1
-:   VMware vCloud Usage Meter version 9.0.1 is available for deployment. You must upgrade existing Usage Meters to 9.0.1 and swap old VMware® keys to new VMware by Broadcom subscription keys that were provided previously. For more information, see [Upgrading Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-upgrade).
+:   VMware vCloud Usage Meter 9.0.1 is available for deployment. You must upgrade existing Usage Meters to version 9.0.1 and swap old VMware® keys that were previously provided to new VMware by Broadcom subscription keys. For more information, see [Upgrading Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-upgrade).
 
 BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
@@ -51,9 +51,9 @@ BOM updates for {{site.data.keyword.vcf-vpc}}
 
 Usage Meter updates
 
-:   The following features are available for VMware vCloud Usage Meter:
+:   The following features are available for Usage Meter:
 
-   * **Usage Meter new version**: Usage Meter version 9 is available for deployment. For more information, see [Deploying Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-deploy).
+   * **Usage Meter new version**: Usage Meter 9 is available for deployment. For more information, see [Deploying Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-deploy).
    * **Usage Meter upgrade**: You can upgrade existing Usage Meters to version 9 to integrate with their own access token. The upgrade process involves receiving an access token for your currently registered Usage Meter, followed by an in-place upgrade to version 9. For more information, see [Upgrading Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-upgrade).
    * **New license keys**: {{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.vcf-vpc-short}} instances are now provisioned with expiring keys, with the assurance that {{site.data.keyword.IBM}} will provide updated keys before the expiration date. Roll-your-own (RYO) servers are no longer provisioned with any keys when you order ESXi hosts from the Classic Bare Metal order form. You must retrieve the VMware Cloud Foundation (VCF) license keys. For more information, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
 
@@ -108,7 +108,7 @@ End of Marketing for {{site.data.keyword.rw}}
 :   New deployments of VMware {{site.data.keyword.rw}} instances are no longer supported for new customers. If you are an existing customer, you can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for your existing {{site.data.keyword.rw}} instances. As an existing customer, you can also view or delete your {{site.data.keyword.rw}} instances. For more information, see [End of Marketing for {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vrw).
 
 End of Support for KMIP for VMware for Key Protect
-:   Support for the Key Protect service as part of Key Management Interoperability Protocol (KMIP™) for VMware® will end on 16 July 2026, after which interoperability with the Key Protect service will no longer work. You must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 16 July 2026. For more information, see [End of Support for KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-kmip).
+:   Support for the Key Protect service as part of Key Management Interoperability Protocol (KMIP™) for VMware® will end on 16 July 2026 after which interoperability with the Key Protect service will no longer work. You must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 16 July 2026. For more information, see [End of Support for KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-kmip).
 
 End of Support for {{site.data.keyword.redhat_openshift_notm}} for VMware
 :   New automated installations of {{site.data.keyword.redhat_openshift_full}} for VMware® are no longer available for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete your existing {{site.data.keyword.redhat_openshift_notm}} for VMware automated installations until 16 July 2026. The service will no longer be available from 17 July 2026. For more information, see [End of Support for {{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-rhos).
@@ -702,7 +702,6 @@ VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
 
 End of Marketing for {{site.data.keyword.cloud_notm}} Secure Virtualization
 :   The {{site.data.keyword.cloud_notm}} Secure Virtualization offering is no longer available for new deployments. Support for existing customers who are using the offering is still provided.
-{: deprecated}
 
 Updates to VMware vCenter Server instances and VMware vSphere clusters
 :   The following upgrades are applied to newly deployed instances, clusters, and hosts.
