@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-07-29"
+lastupdated: "2025-09-17"
 
 subcollection: vmwaresolutions
 
@@ -28,6 +28,7 @@ VMware Aria® Operations™ Manager provides monitoring of VMware objects for vi
 {: #opsprocs-compliance-links}
 
 * [FortiGate Security Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fsa_considerations)
+
 * [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations)
 * [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)

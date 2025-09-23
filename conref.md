@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-09-03"
+lastupdated: "2025-09-19"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -394,6 +394,7 @@ Review the following considerations for the vSAN storage architecture:
 * For both vSAN ESA and vSAN OSA, you can select the size and number of **vSAN capacity disks**. For vSAN OSA, the size and number of **vSAN cache disks** are selected by default.
 * For vSAN ESA, the **Enable vSAN compression** option is available. For vSAN OSA, the **Enable vSAN deduplication and compression** option is available.
 * vSAN ESA is selected by default with the 25 Gb uplink speed. If you select the 10 Gb uplink speed, the vSAN storage architecture is changed to vSAN OSA, because vSAN ESA is not compatible with the 10 Gb uplink speed.
+* For vSAN ESA, the 25 GB network interfaces are configured with LACP.
 {: #storage-arch-spr}
 
 
