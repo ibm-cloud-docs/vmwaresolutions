@@ -635,7 +635,7 @@ Add-on services upgrades
    * VMware Aria Operations and VMware Aria Operations for Logs v8.12
    * Zerto v9.7u3
 
-Name change for VMware vRealize products
+Name change for VMware vRealize
 :   VMware changed the vRealize® Suite Lifecycle Manager product name to VMware Aria® Suite Lifecycle. All vRealize products that are managed by vRealize Suite Lifecycle Manager are now referred as VMware Aria. The names are updated throughout the VMware Solutions documentation. The following products are rebranded:
 
    * vRealize Operations and Log Insight is renamed to VMware Aria Operations and VMware Aria Operations for Logs.
