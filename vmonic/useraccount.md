@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-06-24"
+lastupdated: "2025-09-25"
 
 keywords: set credentials, update credentials, set notifications, IAM user, invite user
 
@@ -86,7 +86,7 @@ The stored {{site.data.keyword.cloud_notm}} infrastructure account credentials a
 {: #useraccount-related}
 
 * [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist)
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Ordering Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Managing system notifications](/docs/vmwaresolutions?topic=vmwaresolutions-notifications)
 * [How {{site.data.keyword.cloud_notm}} IAM works](/docs/account?topic=account-iamoverview)

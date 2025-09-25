@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-08-22"
+lastupdated: "2025-09-25"
 
 keywords: vmware solutions kmip for vmware, kmip for vmware, migration, migration partner, partners for assisted migration
 
@@ -194,5 +194,5 @@ The KMIP keys that are created by the new native adapter are displayed under the
 {: #kmip_migration-related}
 
 * [End of Support for KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-kmip)
-* [FAQ about KMIP for VMware migration](/docs/vmwaresolutions?topic=vmwaresolutions-faq-kmip)
+* [FAQ for KMIP for VMware migration](/docs/vmwaresolutions?topic=vmwaresolutions-faq-kmip)
 * [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud_notm}}](/docs/key-protect)

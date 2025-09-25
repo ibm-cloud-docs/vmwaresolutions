@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-08-19"
+lastupdated: "2025-09-25"
 
 keywords: add service, order service, add-on service
 
@@ -164,4 +164,4 @@ When the installation of the service is completed successfully, you are notified
 ## Related links
 {: #vc_addingservices-related}
 
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)

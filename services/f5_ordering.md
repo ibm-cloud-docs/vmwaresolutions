@@ -101,5 +101,5 @@ You cannot change the license model after service installation. To change the li
 * [Managing F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-managing_f5)
 * [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [F5 Deployment Guides](https://www.f5.com/resources/deployment-guides){: external}

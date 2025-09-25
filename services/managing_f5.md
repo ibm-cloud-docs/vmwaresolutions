@@ -39,5 +39,5 @@ Review the following considerations before you delete the service:
 
 * [F5 BIG-IP overview](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [F5 website](https://www.f5.com/){: external}

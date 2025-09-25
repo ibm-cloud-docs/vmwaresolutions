@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-08-19"
+lastupdated: "2025-09-25"
 
 keywords: remove services vcf classic, delete services vcf automated
 
@@ -73,4 +73,4 @@ To remove the DNS entires, complete the following steps:
 ## Related links
 {: #vc_deletingservices-related}
 
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)

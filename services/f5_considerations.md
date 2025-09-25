@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-09-25"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -136,5 +136,5 @@ In this case, the F5 BIG-IP installation might fail, unless at least one ESXi se
 * [Ordering F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_ordering)
 * [Managing F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-managing_f5)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [F5 website](https://www.f5.com/){: external}

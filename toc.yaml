@@ -918,9 +918,9 @@ toc:
           - vmonic/faq.md
           - vmonic/faq-vpc-vcf.md
           - vmonic/faq_usage-meter.md
-          - vmonic/faq_byol.md
           - vmonic/faq_esxi.md
           - vmonic/faq_kmip.md
+          - vmonic/faq_byol.md
           - vmonic/iam_verify_permissions.md
           - vmonic/trbl_limitations.md
           - vcenter/vcenter_chg_impact.md
