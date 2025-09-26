@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-06-24"
+lastupdated: "2025-09-25"
 
 keywords: ordering prerequisites, before you order, pre-order checklist, before first order
 
@@ -52,5 +52,5 @@ The following table lists the possible instructions and additional information f
 {: #completing_checklist-related}
 
 * [Managing user accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount)
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Ordering Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)

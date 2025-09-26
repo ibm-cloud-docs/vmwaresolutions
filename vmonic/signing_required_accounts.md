@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-08-01"
+lastupdated: "2025-09-25"
 
 keywords: user account, ibm cloud account, ibm cloud infrastructure
 
@@ -76,6 +76,6 @@ For more information, see the following procedures:
 ## Related links
 {: #signing_required_accounts-related}
 
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Managing user accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount)
 * [Enabling MFA in your account](/docs/account?topic=account-enablemfa#enablemfa)

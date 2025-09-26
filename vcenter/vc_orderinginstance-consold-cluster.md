@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-18"
+lastupdated: "2025-09-25"
 
 keywords: automated consolidated cluster, order consolidated cluster, order automated instance
 
@@ -94,7 +94,7 @@ Various RAM sizes are available depending on the CPU model.
 
 {{site.data.content.number-of-baremetal-servers-consol}}
 
-When you size the capacity of your bare metal servers, consider your current requirements and include extra capacity to accommodate anticipated growth. For more information about sizing, see [Exporting VMware inventory](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
+When you size the capacity of your bare metal servers, consider your current requirements and include extra capacity to accommodate anticipated growth. For more information about sizing, see [How to export VMware inventory?](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
 {: tip}
 
 ## Storage

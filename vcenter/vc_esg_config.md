@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-19"
+lastupdated: "2025-09-25"
 
 keywords: network config, network configuration, manage NSX ESG
 
@@ -93,5 +93,5 @@ You can order more subnets if the provided subnets do not fulfill your requireme
 {: #vc_esg_config-related}
 
 * [Considerations about changing vCenter Server artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact#vcenter_chg_impact)
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [VMware NSX-T design](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design)

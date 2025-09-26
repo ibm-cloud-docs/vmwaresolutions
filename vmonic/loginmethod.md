@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2023-04-29"
+lastupdated: "2025-09-25"
 
 keywords: vmware solutions console, vmware portal, vmware solutions catalog
 
@@ -40,5 +40,5 @@ To access the console from the {{site.data.keyword.cloud_notm}} catalog, complet
 ## Related links
 {: #loginmethod-related}
 
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Why is my password incorrect?](/docs/account?topic=account-ts_logintoibm)

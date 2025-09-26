@@ -48,5 +48,5 @@ You can also choose to receive email notifications about {{site.data.keyword.clo
 ## Related links
 {: #notifications-related}
 
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Managing user accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount)

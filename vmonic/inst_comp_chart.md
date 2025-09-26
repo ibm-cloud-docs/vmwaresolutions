@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-09-25"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -54,4 +54,4 @@ Review the following table to understand the differences in feature support for 
 * [{{site.data.keyword.vcf-flex-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [{{site.data.keyword.vcf-auto-short}} BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
 * [{{site.data.keyword.vcf-flex-short}} BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vs_bom)
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)

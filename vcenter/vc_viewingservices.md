@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-09-25"
 
 keywords: view services vcf automated
 
@@ -30,4 +30,4 @@ You can view the summary and detailed information of the services that were orde
 ## Related links
 {: #vc_viewingservices-related}
 
-* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)

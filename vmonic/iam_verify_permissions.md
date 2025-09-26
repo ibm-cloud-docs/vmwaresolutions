@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-09-25"
 
 keywords: iam user role for vmware, iam user, iam user permissions, iam account administrator
 
@@ -14,8 +14,9 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Locating an IAM account administrator
+# How to locate an IAM account administrator?
 {: #iam_verify_permissions}
+{: faq}
 
 Use {{site.data.keyword.cloud}} Identity and Access Management (IAM) to define users for platform services and to control user access to resources across {{site.data.keyword.cloud_notm}}. For more information about user roles (Viewer, Editor, Operator, and Administrator), see the [Platform management roles and permissions table](/docs/vmwaresolutions?topic=vmwaresolutions-iam#iam-roles-table).
 
@@ -23,8 +24,9 @@ You must have an IAM account administrator role to complete various tasks. For e
 
 If you do not have an administrator role and you want to complete a task that requires the administrator role, you can locate someone with that role. The person that you located can then assign access. For more information about what an account administrator can do, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/account?topic=account-userroles#userroles).
 
-## Locating an account owner with the administrator role
-{: #iam_verify_permissions-locate-admin}
+## How to locate an account owner with the administrator role?
+{: #faq-iam_verify_permissions-locate-admin}
+{: faq}
 
 To identify an account owner who has the administrator role, complete the following steps:
 
@@ -42,8 +44,9 @@ To locate a user with an administrator role, click the name link and review the 
 * Resources - All
 * Role - Administrator
 
-## Assigning access
-{: #iam_verify_permissions-assign-access}
+## How to assign access?
+{: #faq-iam_verify_permissions-assign-access}
+{: faq}
 
 After you find the account owner or another user with an administrator role, that person must perform the following steps to assign access:
 
@@ -63,7 +66,7 @@ After you find the account owner or another user with an administrator role, tha
    1. Click **Add > Assign**.
 
 ## Related links
-{: #iam_verify_permissions-related}
+{: #faq-iam_verify_permissions-related}
 
 * [How {{site.data.keyword.cloud_notm}} IAM works](/docs/account?topic=account-iamoverview)
 * [Managing access to resources](/docs/account?topic=account-assign-access-resources)

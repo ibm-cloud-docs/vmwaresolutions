@@ -23,15 +23,15 @@
         "href": "/docs/vmwaresolutions?topic=vmwaresolutions-understand-responsib"
       },
       {
-        "title": "FAQ about licensing and metering",
+        "title": "FAQ for licensing and metering",
         "href": "/docs/vmwaresolutions?topic=vmwaresolutions-faq_usage-meter"
       },
       {
-        "title": "General FAQ about VCF for Classic",
+        "title": "FAQ for {{site.data.keyword.vcf-classic-short}}",
         "href": "/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions"
       },
       {
-        "title": "General FAQ about VCF for VPC",
+        "title": "FAQ for {{site.data.keyword.vcf-vpc-short}}",
         "href": "/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-faq"
       }
     ]

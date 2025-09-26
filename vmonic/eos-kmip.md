@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-08-25"
+lastupdated: "2025-09-25"
 
 keywords: end of support notice, kmip for vmware service, end of support kmip for vmware, kmip for vmware deprecated, kmip for vmware support
 
@@ -43,4 +43,4 @@ Customers who are using vSphere version 7.x can encounter a Broadcom bug in vSph
 
 * [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect)
 * [Migrating from KMIP for VMware to IBM Cloud native KMIP providers](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_migration)
-* [FAQ about KMIP for VMware migration](/docs/vmwaresolutions?topic=vmwaresolutions-faq-kmip)
+* [FAQ for KMIP for VMware migration](/docs/vmwaresolutions?topic=vmwaresolutions-faq-kmip)
