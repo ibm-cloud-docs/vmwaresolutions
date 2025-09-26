@@ -27,11 +27,11 @@
         "href": "/docs/vmwaresolutions?topic=vmwaresolutions-faq_usage-meter"
       },
       {
-        "title": "FAQ for {{site.data.keyword.vcf-classic-short}}",
+        "title": "FAQ for VCF for Classic",
         "href": "/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions"
       },
       {
-        "title": "FAQ for {{site.data.keyword.vcf-vpc-short}}",
+        "title": "FAQ for VCF for VPC",
         "href": "/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-faq"
       }
     ]
