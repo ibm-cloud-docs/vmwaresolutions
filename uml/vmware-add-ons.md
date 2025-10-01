@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-09-15"
+lastupdated: "2025-10-01"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -32,6 +32,8 @@ If you need load balancing for your environment, you can purchase the Avi Load B
 VMware vDefend™ Distributed Firewall (formerly VMware NSX Distributed Firewall) and VMware vDefend™ Gateway Firewall (formerly VMware NSX Gateway Firewall) are extracted from NSX and are available as an add-on to the VMware Cloud Foundation bundle. Add-on licenses are available for purchase in the {{site.data.keyword.cloud_notm}} console. You must purchase licenses for the number of cores that are required for your environment separately.
 
 Unless you are part of the IBM Bridge to Cloud program, do not order vDefend keys that are labeled **solution key**. Most customers must order separate gateway keys for use with NSX Edge Gateway firewall, and distributed keys for use with the Distributed Firewall. Only the IBM Bridge to Cloud program customers that use vSphere 8 solution keys must order vDefend solution keys. For more information about vDefend solution and component keys, see [VMware vDefend Firewall Solution License Key](https://knowledge.broadcom.com/external/article/381444/vmware-vdefend-firewall-solution-license.html){: external}.
+
+To review requirements for licensing and metering for the IBM Bridge to Cloud program, see [On-premises VMware licenses as part of the IBM Bridge to Cloud program](/docs/vmwaresolutions?topic=vmwaresolutions-licensing_metering-req#licensing_metering-on-premises).
 
 You must order the appropriate number of firewall cores for your environment.
 
