@@ -1,6 +1,3 @@
-#  Name your file `toc.yaml`
-#  Make sure you include all nav file coding requirements
-#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
 toc:
   properties:
     subcollection: vmwaresolutions
@@ -12,7 +9,6 @@ toc:
     product-page: https://www.ibm.com/products/vmware
     path: vmwaresolutions
     label: VMware Solutions
-#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group
   entries:
   - navgroup:
       id: learn
@@ -41,21 +37,21 @@ toc:
           id: config-tutorials
           label: Configuration tutorials
           topics:
-            - include: ../solution-tutorials/vcf-as-a-service-vdc.md
-            - include: ../solution-tutorials/vcf-as-a-service-tf.md
-            - include: ../vmware-service/tutorials/vcda-creating-dr-config.md
+          - include: ../solution-tutorials/vcf-as-a-service-vdc.md
+          - include: ../solution-tutorials/vcf-as-a-service-tf.md
+          - include: ../vmware-service/tutorials/vcda-creating-dr-config.md
       - topicgroup:
           id: connectivity-tutorials
           label: Connectivity tutorials
           topics:
-            - include: ../vmware-service/tutorials/vmwaas-ipsec-tunnel.md
+          - include: ../vmware-service/tutorials/vmwaas-ipsec-tunnel.md
       - topicgroup:
           id: migration-tutorials
           label: Migration tutorials
           topics:
-            - include: ../vmware-service/tutorials/vmwaas-ovftool.md
-            - include: ../vmware-service/tutorials/vcda-migrating-onprem.md
-            - include: ../vmware-service/tutorials/vcda-migrating-cloudtocloud-vmaas.md
+          - include: ../vmware-service/tutorials/vmwaas-ovftool.md
+          - include: ../vmware-service/tutorials/vcda-migrating-onprem.md
+          - include: ../vmware-service/tutorials/vcda-migrating-cloudtocloud-vmaas.md
   - navgroup:
       id: howto
       topics:
@@ -140,9 +136,9 @@ toc:
               id: access-vcfaas-instances
               label: Accessing VCF as a Service instances
               topics:
-                - include: ../vmware-service/common/vmaas-iam.md
-                - include: ../vmware-service/common/vmaas-iam_vcd.md
-                - include: ../vmware-service/common/iam-integration.md
+              - include: ../vmware-service/common/vmaas-iam.md
+              - include: ../vmware-service/common/vmaas-iam_vcd.md
+              - include: ../vmware-service/common/iam-integration.md
           - topicgroup:
               id: migrate-protect-vms-vcfaas
               label: Migrating and protecting VMs in VCF as a Service instances
@@ -164,8 +160,8 @@ toc:
               id: creating-secure-interconnectivity-with-vcfaas
               label: Creating secure interconnectivity with VCF as a Service
               topics:
-                - include: ../vmware-service/vmaas/tgw-adding-connections.md
-                - include: ../vmware-service/vmaas/tgw-viewing-deleting-connections.md
+              - include: ../vmware-service/vmaas/tgw-adding-connections.md
+              - include: ../vmware-service/vmaas/tgw-viewing-deleting-connections.md
           - topicgroup:
               id: references
               label: Reference
@@ -401,15 +397,15 @@ toc:
               - services/zerto_managing_licenses.md
               - services/zerto_migration.md
       - topicgroup:
-              id: kmip
-              label: KMIP for VMware
-              topics:
-              - services/kmip_standalone_considerations.md
-              - services/kmip_standalone_migration.md
-              - services/kmip_standalone_ordering.md
-              - services/kmip_standalone_viewing.md
-              - services/kmip_standalone_addingdeletingcert.md
-              - services/kmip_standalone_deleting.md
+          id: kmip
+          label: KMIP for VMware
+          topics:
+          - services/kmip_standalone_considerations.md
+          - services/kmip_standalone_migration.md
+          - services/kmip_standalone_ordering.md
+          - services/kmip_standalone_viewing.md
+          - services/kmip_standalone_addingdeletingcert.md
+          - services/kmip_standalone_deleting.md
       - topic: services/dizzion_overview.md
         navtitle: Dizzion
       - topic: services/managing-ss-sap.md
@@ -444,8 +440,8 @@ toc:
               label: Activity tracking events
               topics:
               - link:
-                 label: Activity tracking events for VCF as a Service
-                 href: https://{DomainName}/docs/vmware-service?topic=vmware-service-at_events
+                  label: Activity tracking events for VCF as a Service
+                  href: https://{DomainName}/docs/vmware-service?topic=vmware-service-at_events
               - vmonic/at-events.md
               - vmonic/logging.md
           - topicgroup:
@@ -529,8 +525,6 @@ toc:
                 navtitle: Red Hat OpenShift for VMware overview
               - services/ocp_managing.md
           - services/veeam_considerations.md
-# links to your REST API docs should be included in the Reference navigation group
-# links to your command line reference docs should be included in the Reference navigation group
   - navgroup:
       id: reference
       topics:

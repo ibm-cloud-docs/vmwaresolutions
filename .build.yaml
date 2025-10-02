@@ -1,4 +1,5 @@
 includes:
-  - https://github.ibm.com/cloud-docs/vmware-service
-  - https://github.ibm.com/cloud-docs/solution-tutorials
-  - https://github.ibm.com/cloud-docs/icons
+- https://github.ibm.com/cloud-docs/vmware-service
+- https://github.ibm.com/cloud-docs/solution-tutorials
+- https://github.ibm.com/cloud-docs/icons
+- https://github.ibm.com/cloud-docs/bare-metal

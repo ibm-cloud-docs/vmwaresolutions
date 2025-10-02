@@ -1,7 +1,7 @@
 {
   "version": 2,
   "title": "VMware Solutions docs",
-  "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware® by Broadcom virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
+  "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware\u00ae by Broadcom virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
   "product_page": "https://www.ibm.com/products/vmware",
   "console_page": "/vmware",
   "section_topics": {
@@ -57,5 +57,5 @@
   },
   "section_updates": {
     "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes"
-      }
+  }
 }
