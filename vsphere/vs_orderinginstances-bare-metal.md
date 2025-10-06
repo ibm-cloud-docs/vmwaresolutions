@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-09-25"
+lastupdated: "2025-10-02"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Bare metal server
 {: #vs_orderinginstances-bare-metal}
 
-When you size the capacity of your servers, consider your current requirements, and include extra capacity to accommodate anticipated growth. For more information about sizing properly, see [How to export VMware inventory?](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
+When you size the capacity of your servers, consider your current requirements, and include extra capacity to accommodate anticipated growth. For more information about sizing properly, see [How to export the VMware inventory?](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
 
 ## Data center location
 {: #vs_orderinginstances-bare-metal-dc-location}

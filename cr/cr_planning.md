@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-10-02"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -32,7 +32,7 @@ The account that you are using must meet certain requirements. For more informat
 ## {{site.data.keyword.cloud_notm}} data center availability
 {: #cr_planning-dc-availability}
 
-The {{site.data.keyword.cr}} deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements.
+The {{site.data.keyword.cr}} deployment has strict requirements for the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements.
 
 ### Data centers available
 {: #cr_planning-data-centers}

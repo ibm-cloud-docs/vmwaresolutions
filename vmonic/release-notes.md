@@ -53,8 +53,8 @@ Usage Meter updates
 
 :   The following features are available for Usage Meter:
 
-   * **Usage Meter new version**: Usage Meter 9 is available for deployment. For more information, see [Deploying Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-deploy).
-   * **Usage Meter upgrade**: You can upgrade existing Usage Meters to version 9 to integrate with their own access token. The upgrade process involves receiving an access token for your currently registered Usage Meter, followed by an in-place upgrade to version 9. For more information, see [Upgrading Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-upgrade).
+   * **New version**: Usage Meter 9 is available for deployment. For more information, see [Deploying Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-deploy).
+   * **Upgrade process**: You can upgrade existing Usage Meters to version 9 to integrate with their own access token. The upgrade process involves receiving an access token for your currently registered Usage Meter, followed by an in-place upgrade to version 9. For more information, see [Upgrading Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-upgrade).
    * **New license keys**: {{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.vcf-vpc-short}} instances are now provisioned with expiring keys, with the assurance that {{site.data.keyword.IBM}} will provide updated keys before the expiration date. Roll-your-own (RYO) servers are no longer provisioned with any keys when you order ESXi hosts from the Classic Bare Metal order form. You must retrieve the VMware Cloud Foundation (VCF) license keys. For more information, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
 
 vSphere 8 upgrade for Cascade Lake servers
@@ -108,7 +108,7 @@ End of Marketing for {{site.data.keyword.rw}}
 :   New deployments of VMware {{site.data.keyword.rw}} instances are no longer supported for new customers. If you are an existing customer, you can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for your existing {{site.data.keyword.rw}} instances. As an existing customer, you can also view or delete your {{site.data.keyword.rw}} instances. For more information, see [End of Marketing for {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vrw).
 
 End of Support for KMIP for VMware for Key Protect
-:   Support for the Key Protect service as part of Key Management Interoperability Protocol (KMIP™) for VMware® will end on 16 July 2026 after which interoperability with the Key Protect service will no longer work. You must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 16 July 2026. For more information, see [End of Support for KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-kmip).
+:   Support for Key Protect as part of the Key Management Interoperability Protocol (KMIP™) for VMware® service will end on 16 July 2026 after which interoperability with the Key Protect service will no longer work. You must migrate to the [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service by 16 July 2026. For more information, see [End of Support for KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-kmip).
 
 End of Support for {{site.data.keyword.redhat_openshift_notm}} for VMware
 :   New automated installations of {{site.data.keyword.redhat_openshift_full}} for VMware® are no longer available for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete your existing {{site.data.keyword.redhat_openshift_notm}} for VMware automated installations until 16 July 2026. The service will no longer be available from 17 July 2026. For more information, see [End of Support for {{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-rhos).
@@ -145,7 +145,7 @@ BOM updates for {{site.data.keyword.vcf-classic-short}}
    * VMware NSX 4.2.1.2 (build 24476729)
 
 vSAN storage updates
-:   For new {{site.data.keyword.vcf-auto-short}} instances and hosts, you can add more vSAN storage than the default capacity of 1 TB per host core. The {{site.data.keyword.IBM_notm}} automation will calculate and order the vSAN overage.
+:   For new {{site.data.keyword.vcf-auto-short}} instances and hosts, you can add more vSAN storage than the default capacity of 1 TB per host core. The {{site.data.keyword.IBM_notm}} automation calculates and orders the vSAN overage.
 
 Add-on services upgrades
 :   The following service versions are available for deployment:
@@ -308,7 +308,7 @@ Add-on services upgrades
 Veeam 12.1.2 for {{site.data.keyword.vm-shared}}
 :   Veeam Backup and Replication 12.1.2 (Veeam 12.1.2) is now available for deployment with the {{site.data.keyword.vm-shared}} offering.
 
-Known issue about text overflow
+Known issues about text overflow
 :   When you select the instance type in the **Create a resource** section, the text on the card might overflow out of the card margins. This issue happens on some browsers when the font size setting for the browser is set to **Large** or **Very large**. To resolve the issue, view the console with the font size set to **Medium**.
 
 ### 24 June 2024
@@ -508,7 +508,7 @@ REST API updates
    * Outdated endpoints, such as `v2/supported_config_options` are removed.
    * Performance improvements are made to the API calls.
 
-customerroot user - deprecated
+`customerroot` user - deprecated
 :   The `customerroot` user is no longer created by the VMware Solutions automation for newly deployed instances, clusters, hosts, and new vCenter Server VMs. The `root` user is used instead. Existing instances, clusters, hosts, and vCenter Server VMs might still use the `customerroot` credentials.
 {: deprecated}
 
@@ -528,7 +528,7 @@ VMware Cloud Foundation BOM updates
    * Cloud Builder VM 4.5.2 (build 22223457)
    * SDDC Manager 4.5.2 (build 22223457)
    * VMware ESXi 7.0 Update 3n (build 21930508)
-   * VMware NSX-T 3.2.3.1. (build 22104592)
+   * VMware NSX-T 3.2.3.1 (build 22104592)
    * VMware Aria Suite Lifecycle Manager 8.12.0.9 (build 22652426)
 
 VMware vSphere Day 2 updates
@@ -605,7 +605,7 @@ New and updated documentation
 :   The following updates are available:
 
    * The {{site.data.keyword.vm-shared}} metrics are updated with metadata details.
-   * New documentation is available to assist with expanding ordered endurance storage after ordering the Veeam add-on service.
+   * New documentation is available for expanding ordered endurance storage after you order the Veeam add-on service.
 
 ### 5 July 2023
 {: #vmwaresolutions-jul0523}
@@ -648,7 +648,7 @@ REST API updates
 :   The following updates are available:
 
    * The VMware Solutions API provides support for viewing and deleting VMware vSphere instances. You can also add or delete ESXi servers, and add or delete licenses for vSphere instances.
-   * Also for the VMware Solutions API, you can specify either `quantity` or `host_names` for the number of new hosts to be added in the `hosts_order_data` object.
+   * Also, for the VMware Solutions API, you can specify either `quantity` or `host_names` for the number of new hosts to be added in the `hosts_order_data` object.
 
 User interface updates and enhancements
 :   The UI is updated with various messages and tooltips, and provides the following enhancements:
@@ -677,7 +677,7 @@ Updates to VMware vCenter Server instances and VMware vSphere clusters
    * VMware vSAN Witness 7.0 Update 3c (build 19193900)
 
 Veeam 12 availability
-:   Veeam Backup and Replication 12 (Veeam 12) is now available for deployment with VMware vCenter Server, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}} offerings. Veeam 12 allows you to write directly to {{site.data.keyword.cloud}} Object Storage and it provides other features, such as data protection, improved Recovery Point Objective using Continuous Data Protection for disaster recovery purposes, and general operational efficiency.
+:   Veeam Backup and Replication 12 (Veeam 12) is available for deployment with VMware vCenter Server, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}} offerings. With Veeam 12, you can write directly to {{site.data.keyword.cloud}} Object Storage and it provides other features, such as data protection, improved Recovery Point Objective by using Continuous Data Protection for disaster recovery purposes, and general operational efficiency.
 
 New and updated documentation
 :   The table of contents is updated for topic rearrangement and removal of outdated content.
@@ -827,61 +827,8 @@ Ordering Veeam stand-alone licenses
 REST API updates
 :   The following updates are available:
 
-   * For {{site.data.keyword.vm-shared}}, the support date for the V1 API is being extended until 31 December 2022. To ensure smooth transition in the future, start using the V2 API.
+   * For {{site.data.keyword.vm-shared}}, the support date for the V1 API is being extended until 31 December 2022. To ensure smooth transition in the future, start to use the V2 API.
    * For VMware Solutions API, support is provided for Caveonix RiskForesight, Veeam, Zerto, and VMware HCX stand-alone licenses. Also, support for the 2U chassis types is added by using the new `large_chassis_only` parameter.
 
 User interface enhancements
 :   The left navigation panel on the VMware Solutions console now groups items as **Resources** and **Licenses** so that they are more aligned with the resource types and names.
-
-### 29 August 2022
-{: #vmwaresolutions-aug2922}
-{: release-note}
-
-**HKG02** and **SEO01** data centers no longer available
-:   (Updated on 20 September 2022) The **Hong Kong 02** and **Seoul 01** {{site.data.keyword.cloud_notm}} data centers are no longer available for deployment.
-
-Price calculation updates for {{site.data.keyword.vmwaresolutions_short}} Shared
-:   Price calculations are now automatically generated when you access the order pages for {{site.data.keyword.vmwaresolutions_short}} Shared offerings.
-
-vRealize Operations Tenant App for VMware Cloud Director availability
-:   You can now access the vRealize Operations Tenant App for a VMware Cloud Director for new and existing organizations through the VMware Cloud Director tenant portal.
-
-Standard - Catalog storage policy availability
-:   The Standard - Catalog storage policy is now available for storing vApp templates and media files in your VMware Cloud Director catalog.
-
-Private network endpoints for multizone virtual data centers
-:   Two private network endpoints are ordered to correspond with each VMware NSX Edge™ Service Gateway when you create a private network endpoint for VMware Solutions Shared multizone virtual data centers.
-
-vCPU and RAM limits for on-demand and reserved virtual data centers
-:   The vCPU and RAM limits for VMware Solutions Shared virtual data center orders are now increased. Beginning with the 4.9 release, the maximum vCPU limit is 1 - 2000 and the maximum RAM limit is 1 - 40 TBs for both on-demand and reserved virtual data center orders.
-
-Updates to VMware vCenter Server instances and VMware vSphere clusters
-:   The following upgrades are applied to newly deployed instances, clusters, and hosts.
-   * VMware vSphere ESXi 7.0 Update 3e (build 19898904)
-   * VMware vSphere ESXi 6.7 P07 (build 19898906)
-
-Considerations for selecting a new NSX Data Center SP edition
-:   Beginning with the V4.9 release, if your NSX-V instance is using BYOL licenses, you can now order legacy NSX licenses from IBM to replace your own license.
-
-   Also, beginning with this release, if your NSX-T instance is using legacy NSX licenses, you can now order NSX Data Center SP licenses to replace your legacy NSX licenses. You are responsible to select the appropriate NSX Data Center SP license edition based on your needs.
-
-Zerto 9.5u1 support
-:   Zerto 9.5u1 is available to install on deployed instances.
-
-   Zerto v9.5u1 is not supported for vSphere 6.5 and 6.7. However, you can order stand-alone licenses for existing vSphere 6.x instances.
-   {: note}
-
-HCX Appliance activation with BYOL NSX Data Center Enterprise Plus license
-:   If you have a BYOL NSX Data Center Enterprise Plus license and you install VMware HCX, your NSX Data Center Enterprise Plus license key is now used to activate the HCX appliance.
-
-Linux hardened repository for Veeam
-:   When you order Veeam, you can order a Linux hardened repository for immutable storage.
-
-REST API updates
-:   The VMware Solutions API provides support for scaling existing VMware vSphere clusters.
-
-User interface updates and enhancements
-:   The UI is updated with various error messages and tooltip enhancements and provides the following enhancements.
-
-   * A vertical progress indicator bar is now available on the ordering page for VMware Solutions Shared offerings. The progress indicator maps to each section and helps to quickly browse to different areas of the page.
-   * If you are running VMware NSX-V or a vSphere 6 version on the instances in your environment, you now receive notifications to update your environment to the most recent supported version of NSX or vSphere. You can go to the instance summary page to check the NSX solution type and the vSphere version that is most suitable for your environment.

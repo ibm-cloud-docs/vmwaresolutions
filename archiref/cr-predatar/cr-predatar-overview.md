@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-09-05"
+lastupdated: "2025-10-06"
 
 subcollection: vmwaresolutions
 
@@ -83,10 +83,10 @@ The vCenter Server instance:
 * Can use VMware vSAN™ or NFS data stores. For more information, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
 * Does not host production or disaster recovery workloads, but would temporarily be used to recover an infected machine and then clean it in the CleanRoom.
 * Includes an edge cluster to host your choice of one of the following to protect vCenter Server instance networks:
-   * Juniper vSRX appliances.
-   * FortiGate Security Appliance.
-   * FortiGate Virtual Appliance.
-   * Bring your own gateway appliance.
+   * Juniper vSRX appliances
+   * FortiGate Security Appliance
+   * FortiGate Virtual Appliance
+   * Bring your own gateway appliance
 * Can include any of the vCenter Server options, such as Caveonix, Entrust, and VMware Aria® Operations™.
 * Optionally, you can use encryption with Hyper Protect Crypto Services, Key Protect, and the VMware KMIP service. For more information, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
 

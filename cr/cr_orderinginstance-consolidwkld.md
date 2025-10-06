@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-09-25"
+lastupdated: "2025-10-02"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -99,7 +99,7 @@ For the workload cluster:
 
 {{site.data.content.number-of-baremetal-servers-wkld}}
 
-When you size the capacity of your servers, consider your current requirements, and include extra capacity to accommodate anticipated growth. For more information, see [How to export VMware inventory?](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
+When you size the capacity of your servers, consider your current requirements, and include extra capacity to accommodate anticipated growth. For more information, see [How to export the VMware inventory?](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
 
 ## Storage
 {: #cr_orderinginstance-consolidwkld-storage-settings}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-08-22"
+lastupdated: "2025-10-06"
 
 subcollection: vmwaresolutions
 
@@ -125,7 +125,7 @@ Considerations include the following questions:
 The following migration patterns for workload migration must be considered:
 
 * HCX™ - VMware HCX application migration enables the scheduling and migration of thousands of VMs. For more information, see [VMware HCX Migration Types](https://techdocs.broadcom.com/us/en/vmware-cis/hcx/vmware-hcx/4-7/vmware-hcx-user-guide-4-7/migrating-virtual-machines-with-vmware-hcx/vmware-hcx-migration-types.html){: external}.
-* Advanced vCenter vMotion - For vSphere 7u1c patch 02 and later, vCenter supports the import of VMs from another {{site.data.keyword.vcf-auto-short}} that is not part of the same SSO Domain. The source {{site.data.keyword.vcf-auto-short}} must be version 6.5 or later. For more information, see [Introducing the Advanced Cross vCenter Server vMotion Capability](https://www.vmware.com/docs/vmw-introducing-the-advanced-cross-vcenter-server-vmotion-capability){: external}.
+* Advanced vCenter vMotion - For vSphere 7u1c patch 02 and later, vCenter supports the import of VMs from another {{site.data.keyword.vcf-auto-short}} that is not part of the same SSO Domain. The source {{site.data.keyword.vcf-auto-short}} must be version 6.5 or later.
 * Zerto or Veeam® - You might have Zerto or Veeam installed on your NAX-V environment and be competent in their usage. These products can be used to replicate VMs from the source data store to the target data store and then initiate a fail-over. And also to replicate a backup from the source cluster to a recovery on the target cluster.
 
 ## Network L2 extension

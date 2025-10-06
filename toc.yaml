@@ -326,7 +326,7 @@ toc:
               topics:
               - vpc-vcf/vpc-vcf-viewing.md
               - vpc-vcf/vpc-vcf-deleting.md
-          - vpc-vcf/vpc-vcf-deploy-vvs.md
+          - topic: vpc-vcf/vpc-vcf-deploy-vvs.md
       - topicgroup:
           id: add-on-services
           label: Add-on services

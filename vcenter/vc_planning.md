@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-19"
+lastupdated: "2025-10-02"
 
 keywords: planning vcf classic, data center, vcf automated data centers
 
@@ -35,7 +35,7 @@ The account that you are using must meet certain requirements. For more informat
 ## {{site.data.keyword.cloud_notm}} data center availability
 {: #vc_planning-dc-availability}
 
-The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements. The following {{site.data.keyword.cloud_notm}} data centers are available for {{site.data.keyword.vcf-auto-short}} deployment.
+The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements for the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements. The following {{site.data.keyword.cloud_notm}} data centers are available for {{site.data.keyword.vcf-auto-short}} deployment.
 
 | Data center | Pod   | Server options |
 |:----------- |:----- |:-------------- |
