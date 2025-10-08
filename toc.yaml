@@ -916,7 +916,6 @@ toc:
           - vmonic/faq_kmip.md
           - vmonic/faq_byol.md
           - vmonic/iam_verify_permissions.md
-          - vmonic/trbl_limitations.md
           - vcenter/vcenter_chg_impact.md
           - archiref/vcs/vmware-inventory-export.md
           - vmonic/additional_resources.md
@@ -936,5 +935,6 @@ toc:
           - vmonic/trbl_add_host_bypass.md
           - vmonic/trbl_deploy_ovf.md
           - vmonic/trbl_vsan_alerts.md
+          - vmonic/trbl_limitations.md
       - topic: vmonic/trbl_support.md
         navtitle: Getting help and support

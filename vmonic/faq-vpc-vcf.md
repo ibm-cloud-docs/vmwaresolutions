@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-09-10"
+lastupdated: "2025-10-06"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc, faq
 
@@ -121,6 +121,8 @@ Currently, for {{site.data.keyword.vcf-vpc-short}} instances, all principal and 
 ## What are the password policies and how do I manage passwords in {{site.data.keyword.vcf-vpc-short}}?
 {: #vpc-vcf-faq-passwords-vcf}
 {: faq}
+
+
 
 The initial passwords for your {{site.data.keyword.vcf-vpc-short}} instance are randomly generated as part of the provisioning and starting procedure.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-10-18"
+lastupdated: "2025-10-08"
 
 keywords: change vCenter Server artifacts, automation ID, VMware resource
 
@@ -15,8 +15,9 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Considerations about changing vCenter Server artifacts
+# How to change vCenter Server artifacts?
 {: #vcenter_chg_impact}
+{: faq}
 
 Changing users, resources, or subnets that are reserved for {{site.data.keyword.vmwaresolutions_full}} can impact management operations.
 
@@ -24,7 +25,7 @@ Do not edit the global permissions of the **ic4v-vCenter** group in the **Users 
 Use the **root** host user ID. The **ic4vroot** host user ID is created for IBM use only.
 {: important}
 
-## automation ID
+## What is automation ID?
 {: #vcenter_chg_impact-automation-id}
 {: faq}
 
@@ -32,21 +33,21 @@ The **automation** ID is a user account that is used by the automated operations
 
 Users and passwords for the automated operations in the console must not be changed because the console operations that depend on those credentials might fail.
 
-## Service-specific user accounts
+## What are service-specific user accounts?
 {: #vcenter_chg_impact-service-usr-account}
 {: faq}
 
-Each service creates an internal user account in VMware vCenter Server®. This account is necessary so that management operations that are associated to a service can connect to vCenter Server to perform the operations on the service.
+Each service creates an internal user account in VMware vCenter Server®. This account is necessary so that management operations that are associated to a service can connect to vCenter Server to complete the operations on the service.
 
 To prevent outages and connection problems, if you change the user ID, password, or password expiration settings for this user account, ensure that you also update the information in the associated service.
 {: important}
 
-The user ID for this account is in the format `service_name-truncated_service_uuid@test.local` or `service_name-truncated_service_uuid@example-domain.local`. For example, the user ID that the Veeam® service uses to connect to vCenter Server to perform scheduled backups is `Veeam-Veeam_uuid@test.local`.
+The user ID for this account is in the format `service_name-truncated_service_uuid@test.local` or `service_name-truncated_service_uuid@example-domain.local`. For example, the user ID that the Veeam® service uses to connect to vCenter Server to complete scheduled backups is `Veeam-Veeam_uuid@test.local`.
 
 The `service_name` value together with the `service_uuid` value are truncated to 20 characters.
 {: note}
 
-## VMware resources for instances V1.9 and later
+## How to rename VMware resources for instances V1.9 and later?
 {: #vcenter_chg_impact-vmware-resources-for-inst-v1.9-and-later}
 {: faq}
 
@@ -60,7 +61,7 @@ Review the following restrictions:
 * Do not rename or remove NSX-T components. These operations might generate add and remove failures or delays. The NSX-T components with the names that are documented in [Naming conventions](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design#nsx-t-design-naming) are used when automation adds or removes hosts, clusters, and services.
 * Do not change the VMware ESXi™ server names and the IP addresses because they are registered for Windows® DNS resolution. Changes might cause failures during deployment or failures of Automated instance functions.
 
-## VMware resources for instances V1.8 and earlier
+## What happens when VMware resources are updated for instances V1.8 and earlier?
 {: #vcenter_chg_impact-vmware-resources-for-inst-v1.8-and-earlier}
 {: faq}
 
@@ -87,7 +88,7 @@ The following table lists the operations that might be impacted if SSH or shell 
 
 If you choose to disable SSH or shell access, re-enable it temporarily before you complete the indicated operations.
 
-## Management subnets for Automated instances
+## Can you explain management subnets for Automated instances?
 {: #vcenter_chg_impact-mgmt-subnets}
 {: faq}
 

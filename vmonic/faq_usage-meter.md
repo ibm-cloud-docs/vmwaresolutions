@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-09-10"
+lastupdated: "2025-10-06"
 
 keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
@@ -36,6 +36,8 @@ Usage Meter is a new virtual appliance that is designed to track VMware by Broad
 ## Why is Usage Meter needed?
 {: #faq_usage-meter-why-needed}
 {: faq}
+
+
 
 It is important to understand and to emphasize that Usage Meter is the only and mandatory tool that VMware cloud service providers like {{site.data.keyword.IBM}} are authorized and required to use for metering. Usage Meter tracks usage of VMware Cloud Foundation, its components, and add-ons with VMware by Broadcom for core utilization. It generates comprehensive reports on what products are in use by customers. VCF product usage is metered and reported as required per the VMware cloud service provider program rules. VMware by Broadcom provides tools, appliances, and processes to meter product usage accurately for monthly reporting.
 

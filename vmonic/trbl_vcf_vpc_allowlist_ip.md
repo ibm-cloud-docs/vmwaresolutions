@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-09-15"
+lastupdated: "2025-10-06"
 
 keywords: troubleshooting, vcf for vpc, authorization header, authorization error
 
@@ -18,6 +18,8 @@ subcollection: vmwaresolutions
 # Why is my {{site.data.keyword.vcf-vpc-short}} order failing with "The user has configured IP address restriction for login"?
 {: #trbl_vcf_vpc_allowlist_ip}
 {: troubleshoot}
+
+
 
 When you attempt to deploy a new {{site.data.keyword.vcf-vpc}} instance, you are getting an error message.
 {: tsSymptoms}

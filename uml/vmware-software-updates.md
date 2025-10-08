@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-09-10"
+lastupdated: "2025-10-06"
 
 keywords: vmware software updates, software updates, download vmware software
 
@@ -22,6 +22,8 @@ To update VMware software, you can open a support ticket to access software down
 ## Downloading VMware software
 {: #downloading-vmware-software}
 
+
+
 To download VMware software, [open a support ticket](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) in the VMware Solutions console. 
 You can either:
 * Request to access the software downloads to which you are entitled, or
@@ -31,4 +33,3 @@ You can either:
 {: #vmware-software-updates-related}
 
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-

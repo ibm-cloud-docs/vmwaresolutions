@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-06"
 
 keywords: usage meter, configuration
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Configuring Usage Meter
 {: #usage_meter-config}
+
+
 
 After you deployed VMware vCloud Usage Meter, configure it by completing the following steps in VMware vSphere® Web Client:
 
