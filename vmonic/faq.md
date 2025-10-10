@@ -78,7 +78,7 @@ You can configure vCenter high availability (HA), but configuration support is n
 {: #faq-rename-cluster}
 {: faq}
 
-If the status of the {{site.data.keyword.vcf-auto-short}} instance is **Available**, you can rename the cluster from the VMware vSphere® Web Client. For more information, see [Rename a cluster managed by SDDC Manager](https://knowledge.broadcom.com/external/article/327196/rename-a-cluster-managed-by-sddc-manager.html){: external}.
+If the status of the {{site.data.keyword.vcf-auto-short}} instance is **Available**, you can rename the cluster from the VMware vSphere® Web Client. For more information, see [How to change vCenter Server artifacts?](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact).
 
 ## How are IBM and VMware patches managed?
 {: #faq-patches}
