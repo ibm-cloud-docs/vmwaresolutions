@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-04-14"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for multisite NSX topologies
 {: #arch-pattern-overlays-multi-site}
 
-{{site.data.keyword.vcf-auto}} instances offer a standard NSX topology with a single NSX edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) Gateways. You have several options to build and customize multisite overlay topologies. You can manually provision new NSX edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) Gateways after initial deployment by following VMware NSX™ documentation.
+{{site.data.keyword.vcf-auto}} instances offer a standard NSX topology with a single NSX edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) Gateways. You have several options to build and customize multisite overlay topologies. You can manually provision new NSX edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) Gateways after initial deployment by following VMware NSX® documentation.
 
 The following information provides a few examples on how these topologies can be customized for your needs.
 
@@ -79,7 +79,7 @@ The main reason that you need two layers is for physical north-south connectivit
 ## Considerations for selecting an overlay network topology
 {: #arch-pattern-overlays-multi-site-considerations}
 
-VMware NSX™ provides many ways to build the network topologies, and the default network topology is useful for many use cases. You can typically start with this, and expand it as your needs grow. After the initial deployment is done, {{site.data.keyword.cloud_notm}} automation does use the workload overlay topology and you can change the example topology based on your needs. When changing the configuration, the default uplinks provide the basic routed connectivity to {{site.data.keyword.cloud_notm}} private and public networks. If you change the IP addresses or routing, your overlay workloads might lose connectivity.
+VMware NSX® provides many ways to build the network topologies, and the default network topology is useful for many use cases. You can typically start with this, and expand it as your needs grow. After the initial deployment is done, {{site.data.keyword.cloud_notm}} automation does use the workload overlay topology and you can change the example topology based on your needs. When changing the configuration, the default uplinks provide the basic routed connectivity to {{site.data.keyword.cloud_notm}} private and public networks. If you change the IP addresses or routing, your overlay workloads might lose connectivity.
 
 {{site.data.keyword.cloud_notm}} offers a flexible way to build the NSX topology to your needs. When designing your own overlay network solution, it is important to know that you might deploy new NSX edge nodes and new NSX edge clusters manually. Also, consider using Ansible and Terraform to meet your goals. You can do this by following the Broadcom documentation and design guidelines after the initial deployment.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -31,7 +31,7 @@ Updates are virtual appliance upgrades, host patches, and extensions and by defa
 ## Notification check schedule
 {: #vum-metadata-notif-check-schedule}
 
-Notifications are information about patch recalls, new fixes, and alerts and by default VUM downloads notifications on an hourly basis. To change the notification check schedule, access the vSphere Web Client. Go to **Home** > **Update Manager** > **Manage** > **Settings**, and select **Notification Check Schedule**, and then click **Edit**.
+Notifications are information about patch recalls, new fixes, and alerts and by default VUM downloads notifications on an hourly basis. To change the notification check schedule, access the VMware vSphere® Web Client. Go to **Home** > **Update Manager** > **Manage** > **Settings**, and select **Notification Check Schedule**, and then click **Edit**.
 
 ## Virtual machine settings
 {: #vum-metadata-vm-settings}

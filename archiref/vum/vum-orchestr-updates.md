@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -40,7 +40,7 @@ The following workflow describes the process to perform an orchestrated upgrade:
 ## Step 1
 {: #vum-orchestr-updates-step1}
 
-1. Use the vSphere Web Client to log in to the VCSA.
+1. Use the VMware vSphere® Web Client to log in to the VCSA.
 2. Click **Home > Update Manager**.
 3. On the **Objects** tab, select an **Update Manager instance**.
 4. Click the **Manage** tab, click the **Host Baselines** tab, and then click **New Baseline Group**.

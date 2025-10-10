@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-14"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -52,7 +52,7 @@ The {{site.data.keyword.vmwaresolutions_short}} operations management consists o
    * 360° visibility and analytics.
    * Micro-segmentation-based compliance management.
 
-* Patching and Upgrading - vSphere Update Manager (VUM) provides centralized, automated patch and version management for VMware vSphere hosts and virtual machines (VMs) (not OS and apps).
+* Patching and Upgrading - vSphere Update Manager (VUM) provides centralized, automated patch and version management for VMware vSphere® hosts and virtual machines (VMs) (not OS and apps).
 
 ## Operation management networking
 {: #opsmgmt-arch-network}

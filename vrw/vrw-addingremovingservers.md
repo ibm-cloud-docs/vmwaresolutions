@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-10-09"
 
 keywords: vmware regulated workloads, add hosts vmware regulated workloads, add servers vmware regulated workloads, remove hosts vmware regulated workloads
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 {{site.data.content.vrw-deprecated-note}}
 
-Expand or contract the capacity of your {{site.data.keyword.rw}} instances according to your business needs, by adding or deleting VMware vSphere® ESXi™ servers or Network File System (NFS) storage.
+Expand or contract the capacity of your {{site.data.keyword.rw}} instances according to your business needs, by adding or deleting VMware vSphere ESXi™ servers or Network File System (NFS) storage.
 
 ## Before you add or delete ESXi servers
 {: #vrw-addingremovingservers-before}

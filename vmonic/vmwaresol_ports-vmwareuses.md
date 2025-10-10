@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-09"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -23,7 +23,7 @@ The following table shows the ports that are used by VMware® by Broadcom compon
 |:------ |:------ |:------ |:------ |:---- |:-------- |
 | VMware ESXi™ host | Private primary subnet | VMware vCenter Server® | Infrastructure VMs | 902 | TCP and UDP |
 | ESXi host | Private primary subnet | vCenter Server | Infrastructure VMs | 443 | TCP |
-| ESXi host | Private primary subnet | NSX™ Manager | Infrastructure VMs | 5671 | TCP |
+| ESXi host | Private primary subnet | NSX® Manager | Infrastructure VMs | 5671 | TCP |
 | ESXi host | Private primary subnet | NSX Manager | Infrastructure VMs | 1234 and 1235 | TCP and UDP |
 | ESXi host | Private primary subnet | NSX controllers | Infrastructure VMs | 1234 and 1235 | TCP |
 | ESXi host | Private primary subnet | Windows® Active Directory™ | Private primary subnet \n Infrastructure VMs | 88 | TCP and UDP |

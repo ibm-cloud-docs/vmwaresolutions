@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-04"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -110,7 +110,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 | Storage troubleshooting | Issues can be caused by slow performance, unpredictable failures, disk corruption, or VM corruption. |
 | vSAN troubleshooting | For more information, see [Failure handling in vSAN](https://techdocs.broadcom.com/us/en/vmware-cis/vsan/vsan/7-0/vsan-monitoring/handling-failures-and-troubleshooting-virtual-san/handling-failures-in-virtual-san/failure-handling-in-virtual-san.html){: external}.  |
 | vSAN Disk Failure | For more information about how to identify a specific disk failure in a vSAN deduplication cluster, see [Identifying specific disk failure in a vSAN deduplication cluster (2149067)](https://knowledge.broadcom.com/external/article?legacyId=2149067){: external}. |
-| Clear vSAN health issues | In the VMware vSphere Web Client Monitor page, you might see alerts and warnings that relate to vSAN Health issues. For more information about clearing these issues, see [Virtual SAN health alerts and warnings](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_vsan_alerts#trbl_vsan_alerts){: external}.|
+| Clear vSAN health issues | In the vSphere Web Client Monitor page, you might see alerts and warnings that relate to vSAN Health issues. For more information about clearing these issues, see [Virtual SAN health alerts and warnings](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_vsan_alerts#trbl_vsan_alerts){: external}.|
 | vSAN rebalance | If disks report errors in the health check that indicate the cluster is imbalanced and disks are high on space usage while others are low, and you must run a proactive rebalance. A manually initiated rebalance of the objects in a vSAN cluster begins. For more information about vSAN proactive rebalance and when it might be applicable, see [vSAN proactive rebalance (2149809)](https://knowledge.broadcom.com/external/article?legacyId=2149809){: external}. |
 | Initiate vSAN health test | If you suspect an issue with vSAN, you can initiate a health test to verify that the cluster components are working as expected. Running the VM creation test creates a VM on each host in the cluster and then deletes it. If these tasks are successful, then the cluster components are working as expected and the cluster is functional. Then, network performance test is used to detect and diagnose connectivity issues and to ensure that the network bandwidth between the hosts is adequate. For more information, see [Proactive tests](https://techdocs.broadcom.com/us/en/vmware-cis/vsan/vsan/7-0/vsan-monitoring/monitoring-vsan-skyline-health/proactive-tests-on-vsan-cluster.html){: external}. |
 | Monitoring vSAN performance | For more information, see [Monitoring vSAN performance](https://techdocs.broadcom.com/us/en/vmware-cis/vsan/vsan/7-0/vsan-monitoring/monitor-virtual-san-performance.html){: external}. Performance charts are available for clusters, hosts, physical disks, VMs, and virtual disks. |

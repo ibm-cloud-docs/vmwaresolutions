@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-08-19"
+lastupdated: "2025-10-09"
 
 keywords: reassign primary cluster, primary cluster
 
@@ -28,7 +28,7 @@ Review the following information before you reassign your primary cluster:
 * You must migrate the management virtual machines (VMs), the NSX edge management VMs, and the Usage Meter VM (if you deployed VMware vCloud Usage Meter).
 * Do not migrate all VMs at the same time, as this action might cause failures.
 
-To migrate your VMs, complete the following procedures in VMware vSphere Web Client.
+To migrate your VMs, complete the following procedures in the VMware vSphere Web Client.
 
 The VM migration procedures are slightly different depending if any add-on services are installed on your instance.
 
@@ -44,7 +44,7 @@ The VM migration procedures are slightly different depending if any add-on servi
 
 If the Juniper® vSRX service is installed on your instance, complete the following procedure.
 
-1. In VMware vSphere Web Client, create host groups on the target cluster:
+1. In the vSphere Web Client, create host groups on the target cluster:
    1. Click the target cluster.
    2. On the **Configure** tab, under **Configuration**, click **VM/Host Groups**.
    3. Under **VM/Host Groups**, click **ADD**.
@@ -118,7 +118,7 @@ If the Caveonix RiskForesight™ service is installed on your instance, complete
 RiskForesight is installed with its own port group named **SDDC-DPortGroup-Caveonix**. Before you migrate the management VMs for instances with this service deployed, you must create a corresponding port group in the new (target) cluster.
 {: requirement}
 
-1. In VMware vSphere Web Client, click the **Networks** tab, right-click **SDDC-DPortGroup-Caveonix**, and click **Export Configuration**.
+1. In the vSphere Web Client, click the **Networks** tab, right-click **SDDC-DPortGroup-Caveonix**, and click **Export Configuration**.
 2. Under **Export Configuration**, click **OK**.
 3. Right-click the private network subnet of the target cluster and click **Distributed Port Group** > **Import Distributed Port Group**.
 4. Under **Import port group configuration**, click **Browse** and upload the exported configuration archive file that you created in **Step 2**. Click **Next**.
@@ -128,7 +128,7 @@ RiskForesight is installed with its own port group named **SDDC-DPortGroup-Caveo
 ### Procedure to migrate management VMs
 {: #vc_reassigningprimarycluster-migrate-mgmt-vm}
 
-1. In VMware vSphere Web Client, go to the **Virtual Machines** tab, select the VM that you want to migrate and click **Actions > Migrate**.
+1. In the vSphere Web Client, go to the **Virtual Machines** tab, select the VM that you want to migrate and click **Actions > Migrate**.
 2. Under **Select a migration type**, choose **Change both compute resource and storage**.
 3. Under **Select a compute resource**, choose a target cluster or host in the target cluster.
 

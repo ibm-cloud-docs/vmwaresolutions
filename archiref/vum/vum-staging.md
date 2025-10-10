@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -22,7 +22,7 @@ In the remediation process, if any host fails to enter maintenance mode, VUM rep
 For the remediation process to work smoothly, it's advisable to disable some of the cluster features such as DPM, high availability (HA) Admission Control, Fault Tolerance, and to disconnect any removable devices from the virtual machines (VMs) to avoid DRS issues when you migrate VMs to other hosts.
 Also, while you run the remediation wizard, you can Generate Reports to verify that there are no inconsistent settings present at host or VM level that can cause the remediation process to fail.
 
-1. In the vSphere Web Client, go to **Home > Hosts and Clusters**.
+1. In the VMware vSphere® Web Client, go to **Home > Hosts and Clusters**.
 2. Right-click a datacenter, cluster, or a host, and then click **Stage Patches**.
 3. On the Baseline Selection page of the Stage wizard, select the patch and extension baselines to stage.
 4. Select the hosts where patches and extensions are applied and click **Next**. If you selected to stage patches and extensions to a single host, it is selected by default.

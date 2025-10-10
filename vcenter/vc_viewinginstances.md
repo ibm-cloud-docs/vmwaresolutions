@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-19"
+lastupdated: "2025-10-09"
 
 keywords: view vcf classic, view instance, view instance details, vmware cloud foundation view
 
@@ -101,7 +101,7 @@ On the **Access information** tab, view the access information for the instance-
 |:--------- |:----------- |
 | IP | The IP address of the vCenter Server. |
 | FQDN | The FQDN of the vCenter Server. |
-| ADMIN | The VMware vCenter SSO username and password that you can use to log in to vCenter Server by using the vSphere Web Client. |
+| ADMIN | The VMware vCenter SSO username and password that you can use to log in to vCenter Server by using the VMware vSphere Web Client. |
 | SSH | The username and password that you can use to access the vCenter Server VM through SSH connection. |
 {: caption="Access information tab - vCenter/PSC" caption-side="bottom"}
 {: tab-title="vCenter/PSC"}

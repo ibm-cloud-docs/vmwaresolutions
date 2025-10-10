@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2025
 
-lastupdated: "2022-04-22"
+lastupdated: "2025-10-09"
 
 keywords: troubleshooting, secondary vCenter, vSphere inventory issue
 
@@ -25,7 +25,7 @@ In a multisite configuration, after you add a secondary instance, its VMware vCe
 This is a known VMware® issue.
 {: tsCauses}
 
-To resolve the problem, you must restart the vSphere Web Client:
+To resolve the problem, you must restart the VMware vSphere Web Client:
 {: tsResolve}
 
 1. Using the **root** account, connect over **ssh** to the vCenter VM (virtual machine) of the previously ordered instance.

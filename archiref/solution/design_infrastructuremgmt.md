@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -46,7 +46,7 @@ The vCenter Server configuration uses a local, embedded PostgreSQL database that
 ### vCenter Server cluster specification
 {: #design_infrastructuremgmt-vcenter-cluster}
 
-With this design, you can cluster the vSphere ESXi® hosts that are provisioned through the solution. However, before clusters can be created a data center object is created that signifies the location of the vSphere ESXi hosts and the pod within the data center. A cluster is created after the data center object is created. The cluster is deployed with VMware vSphere high availability (HA) and VMware vSphere Distributed Resource Scheduler (DRS) enabled.
+With this design, you can cluster the vSphere ESXi® hosts that are provisioned through the solution. However, before clusters can be created a data center object is created that signifies the location of the vSphere ESXi hosts and the pod within the data center. A cluster is created after the data center object is created. The cluster is deployed with vSphere high availability (HA) and vSphere Distributed Resource Scheduler (DRS) enabled.
 
 ### vSphere Distributed Resource Scheduler
 {: #design_infrastructuremgmt-vsphere-drs}

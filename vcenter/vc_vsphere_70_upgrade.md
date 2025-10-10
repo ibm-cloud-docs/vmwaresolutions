@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-25"
+lastupdated: "2025-10-09"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade
 
@@ -107,8 +107,7 @@ You can also upgrade vCenter Server to version 8.0. For more information, see [U
 
 You must set the cluster Distributed Resource Schedule (DRS) to manual to prevent unexpected migrations during the upgrade process.
 
-Complete the following steps from the vCenter Server user interface.
-
+Complete the following steps from the VMware vSphere Web Client:
 1. Select **Host and Clusters > Cluster > Configure > DRS**.
 2. Click **EDIT**.
 3. Set the **DRS** field to **Manual**.
@@ -118,8 +117,7 @@ Complete the following steps from the vCenter Server user interface.
 
 Temporarily install the new vCenter Server Appliance that you deploy onto a vSphere Standard Switch. One of the existing ``vmnics`` is reassigned from the distributed switch during the upgrade.
 
-Complete the following steps from the vCenter Server user interface.
-
+Complete the following steps from the vSphere Web Client:
 1. Select **Hosts and Clusters > HOST > Configure > Virtual Switches**. Select a host for the new vCenter Server Appliance.
 2. For the private network switch, select **Managed Physical Adapters**. The private network switch name ends with ``-private``.
 3. Select **uplink1/vmnic2**, then click the **Close** icon ![Close icon](../../icons/close-icon.svg "Close") to delete the adapter. Click **OK**.
@@ -129,7 +127,7 @@ Complete the following steps from the vCenter Server user interface.
    3. Click the green **Add** icon ![Add icon](../../icons/add.svg "Add") to add an adapter. Click **OK**, then **Next** to accept ``vmnic2``.
    4. For **Connection Settings**, keep the **VM Network** and **VLAN ID None** defaults. Click **Next**, then **Finish**. *Standard Switch: vSwitch0* is displayed in the list of switches.
 5. Make a note of the Network Setting for the vCenter Server Appliance VM. You must update the new vCenter appliance to match.
-   * From the vCenter Server user interface, click the VM for the vCenter appliance. Note the name that ends with ``vc``.
+   * From the vSphere Web Client, click the VM for the vCenter Server appliance. Note the name that ends with ``vc``.
    * From the middle pane, click the **Networks** tab. Note the name of the distributed port group that ends with ``-dpg-mgmt``. 
 
 ### Procedure to upgrade vCenter Server
@@ -164,7 +162,7 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
 ### Procedure to upgrade the ESXi hosts
 {: #vc_vsphere_70_upgrade-procedure-esxi-upgrade}
 
-1. From the vCenter Server user interface, click **LCM menu > LifeCycle Manager**.
+1. From the vSphere Web Client, click **LCM menu > LifeCycle Manager**.
 2. Select **IMPORT ISO > IMPORT ISO**, and then the ``VMware-VMvisor-Installer-7.0U1c-17325551.iso`` file.
 3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
 4. For each host, choose the host in the vCenter browser tree. Then, select **update** (located in the far left in the main window).
@@ -185,8 +183,7 @@ After you upgrade the vCenter Server and ESXi hosts to vSphere 7, you must updat
 #### Procedure to update the vCenter Server license
 {: #vc_vsphere_70_upgrade-license-update-vcs}
 
-Complete the following steps from the vCenter Server user interface.
-
+Complete the following steps from the vSphere Web Client:
 1. Click **Administration menu > Licensing > Licenses**.
 2. From the **Licenses** page, click **+ Add New Licenses**.
 3. Enter the new vCenter Server license key in the **New Licenses** field. Then, enter a name for the license and click **OK**.
@@ -222,8 +219,7 @@ Complete the following steps from the vCenter Server user interface.
 
 Reassign the ``vmnic`` that you temporarily used on the standard switch back to the distributed switch it was originally associated with.
 
-Complete the following steps from the vCenter Server user interface.
-
+Complete the following steps from the vSphere Web Client:
 1. Go to the new vCenter Server appliance.
 2. Under **Actions** click **Edit Settings**.
 3. For network adapter 1, browse to the name of the distributed port group that ends with ``-dpg-mgmt`` that you previously noted. Save the changes.

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ For more information about {{site.data.keyword.cloud_notm}} VPEs, see [Virtual P
 ## Considerations with VMware Cloud Foundation solution in VPC
 {: #interconnectivity-vpe-vcf-considerations}
 
-VPEs are located in your network address space within the VPC where your VMware® workloads are hosted. When you access {{site.data.keyword.cloud_notm}} services from VMware workloads, you can use VPE for VPCs as the endpoint for the service. Your VMware Workloads can be either attached to the VPC subnet, or to NSX™ overlay segments. VPE uses {{site.data.keyword.cloud_notm}} private backbone network to access the specific service, and data remains within the private {{site.data.keyword.cloud_notm}} backbone.
+VPEs are located in your network address space within the VPC where your VMware® workloads are hosted. When you access {{site.data.keyword.cloud_notm}} services from VMware workloads, you can use VPE for VPCs as the endpoint for the service. Your VMware Workloads can be either attached to the VPC subnet, or to NSX® overlay segments. VPE uses {{site.data.keyword.cloud_notm}} private backbone network to access the specific service, and data remains within the private {{site.data.keyword.cloud_notm}} backbone.
 
 The following diagram presents an overview when you are using VPEs with VMware workloads on VPC subnets.
 

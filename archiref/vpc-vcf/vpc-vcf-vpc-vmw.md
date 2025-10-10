@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ In {{site.data.keyword.vpc_short}}, you can do logical segmentation or isolation
 
 For this architecture, a new VPC is created for each VMware Cloud Foundation instance. This action is for simplicity and to avoid issues with scalability and architectural requirements and principles of VMware Cloud Foundation. To connect to other workloads and other VPCs, you can use {{site.data.keyword.cloud_notm}} interconnectivity solutions, such as Transit Gateway.
 
-The following table lists the subnets that are created in VPC. Subnet design is based on the VMware Cloud Foundation requirement to separate System Traffic Types logically and a dedicated VPC subnet for each user used. Bare metal server PCI interfaces are hosted on their own subnet. Management interfaces and appliances, such as VMware vCenter®, VMware NSX™ managers, SDDC manager, and NSX Edge™ management interfaces are provisioned on their own management subnet.
+The following table lists the subnets that are created in VPC. Subnet design is based on the VMware Cloud Foundation requirement to separate System Traffic Types logically and a dedicated VPC subnet for each user used. Bare metal server PCI interfaces are hosted on their own subnet. Management interfaces and appliances, such as VMware vCenter®, VMware NSX® managers, SDDC manager, and NSX Edge™ management interfaces are provisioned on their own management subnet.
 
 | Subnet name | System traffic type | Subnet sizing guidance |
 | ------------|---------------------|----------------------- |

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -40,7 +40,7 @@ The key design element at the network level is the adoption of cross-region netw
 
 Review the following network design decisions:
 * The {{site.data.keyword.cloud}} classic network environment does not allow the stretching of VLANs across data centers. Therefore, this design does not use stretched VLANs at the physical network infrastructure level.
-* While some VMware NSX™ designs can stretch segments across geographically distant vSphere clusters, these designs require a common NSX cluster, which does not meet the design requirements for independence between regions.
+* While some VMware NSX® designs can stretch segments across geographically distant vSphere clusters, these designs require a common NSX cluster, which does not meet the design requirements for independence between regions.
 * It's possible to stretch networks between geographically dispersed vSRX appliances. However, this design does not present this use case.
 * Recovered management components use the same IP addressing to minimize recovery effort.
 * To provide isolation of traffic, the design uses tunnels (GRE or IPsec driven by customer requirements) between regions and also between the region and the SaaS consumer and SaaS provider.
@@ -213,7 +213,7 @@ For more information, see:
 Currently, HPCS is available in the following regions: Dallas, Washington DC, Sydney, and Frankfurt. It is possible, but not ideal, to use an HPCS instance in a different region for {{site.data.keyword.rw}} instances in London and Tokyo.
 
 The {{site.data.keyword.rw}} design has two use cases for encryption:
-* SaaS Provider - VMware vSphere encryption used to encrypt the management and workload VMs. These keys are managed by the SaaS Provider.
+* SaaS Provider - VMware vSphere® encryption used to encrypt the management and workload VMs. These keys are managed by the SaaS Provider.
 * SaaS Consumer - An optional, application-level encryption that is used to encrypt application data in addition to the VM encryption. These keys are managed by the SaaS Consumer.
 
 In the {{site.data.keyword.rw}} dual region design for SaaS Provider key management, two separate HCPS instances are used along with the region-specific KMIP for VMware Service. The keys are not shared between HCPS instances.
@@ -221,7 +221,7 @@ In the {{site.data.keyword.rw}} dual region design for SaaS Provider key managem
 Veeam Backup and Replication has access to the unencrypted data, and backup or replication data does not need the source encryption keys. When the backup is restored or the replica is configured, specify the target encrypted storage policy.
 
 In the {{site.data.keyword.rw}} dual-zone design, the following steps describe the backup and restore process between regions:
-1. The protected VM is encrypted with VMware vSphere encryption in the VMware datastore.
+1. The protected VM is encrypted with vSphere encryption in the VMware datastore.
 2. A backup of the protected VM is taken.
 3. VM backup files are encrypted on disk in the Protected Region Veeam Repository with Veeam encryption that is protected by a password that is stored in the Veeam database.
 4. If a local restore is needed, the VMware datastore encryption storage policy is used to reencrypt the VM by using an encryption key from the protected region HPCS instance through the KMIP for VMware service.

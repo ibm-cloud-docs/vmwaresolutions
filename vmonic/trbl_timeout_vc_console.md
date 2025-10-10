@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-27"
+lastupdated: "2025-10-09"
 
 keywords: troubleshooting, vSphere timeout, timeout console
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why did I time out while I was connecting to the VMware vSphere Web Client?
+# Why did I time out while I was connecting to the vSphere Web Client?
 {: #trbl_timeout_vc_console}
 {: troubleshoot}
 {: support}

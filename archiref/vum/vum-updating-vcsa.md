@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -18,10 +18,10 @@ subcollection: vmwaresolutions
 ## PSC and VCSA update
 {: #vum-updating-vcsa-psc-vcsa-update}
 
-Both the VMware vCenter® Server Appliance (VCSA) and the Platform Services Controller (PSC) are VCSA appliances but with different roles. When you upgrade vSphere® with an external PSC, upgrade in the following sequence:
+Both the VMware vCenter® Server Appliance (VCSA) and the Platform Services Controller (PSC) are VCSA appliances but with different roles. When you upgrade VMware vSphere® with an external PSC, upgrade in the following sequence:
 1. PSC
 2. VCSA
-3. ESXi™ hosts
+3. VMware vSphere ESXi™ hosts
 4. The hardware versions and VMware® Tools in the virtual machines (VMs)
 
 VMware Update Manager (VUM) does not update the PSC or the VCSA. The following information describes the process of updating these appliances. The PSC or VCSA deployed in a {{site.data.keyword.vcf-auto}} instance has no internet access, so the update bundle must be downloaded to a jump server first.

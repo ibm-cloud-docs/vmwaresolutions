@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-25"
+lastupdated: "2025-10-09"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0
+# Upgrading vSphere software from version 6.5 or 6.7 to 7.0
 {: #vs_vsphere_70_upgrade}
 
 VMware vSphere® is a streamlined and optimized ordering platform for VMware®. With this platform, you can build your own {{site.data.keyword.IBM}}-hosted VMware environment by customizing and ordering the VMware-compatible hardware based on your selected VMware components.
@@ -29,7 +29,7 @@ Use this offering to create a new instance of VMware ESXi™ servers or scale ou
 
 You must apply patches and upgrade the VMware software periodically, over the lifecycle of a {{site.data.keyword.vcf-flex-short}} instance.
 
-The following procedure provides the steps that are required to convert a VMware vSphere 6.5 or 6.7-based instance to a vSphere 7-based instance. These steps provide the initial upgrade to vSphere, and vSAN 6.7. After this upgrade, you might need to use the normal vSphere functions to upgrade virtual machine (VM) hardware levels and tools.
+The following procedure provides the steps that are required to convert a vSphere 6.5 or 6.7-based instance to a vSphere 7-based instance. These steps provide the initial upgrade to vSphere, and vSAN 6.7. After this upgrade, you might need to use the normal vSphere functions to upgrade virtual machine (VM) hardware levels and tools.
 
 The following procedure is for {{site.data.keyword.vcf-flex-short}} instances or IaaS bare metal roll-your-own provisions, covering ESXi, vCenter, and VSAN.
 {: Important}
@@ -55,7 +55,7 @@ Complete the following requirements before you begin the upgrade:
 * Upgrade any extensions or snap-ins within the vCenter Server environment. Review the following documentation before you plan your upgrade:
    * [VMware vSphere 7.0 release notes](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/release-notes/vsphere-esxi-vcenter-server-70-release-notes.html){: external}
    * [About VMware ESXi upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0.html){: external}
-* Set up vSphere Update Manager (VUM) within your {{site.data.keyword.vcf-auto-short}} instance to download updates from VMware vSphere. For more information, see [VMware Update Manager introduction](/docs/vmwaresolutions?topic=vmwaresolutions-vum-intro#vum-intro).
+* Set up vSphere Update Manager (VUM) within your {{site.data.keyword.vcf-auto-short}} instance to download updates from vSphere. For more information, see [VMware Update Manager introduction](/docs/vmwaresolutions?topic=vmwaresolutions-vum-intro#vum-intro).
 * Open a support ticket with the {{site.data.keyword.vmwaresolutions_short}} team to notify them that an upgrade is being planned. The ticket remains open until the instance is registered at the upgraded level in the {{site.data.keyword.vmwaresolutions_short}} console.
 * Confirm whether the {{site.data.keyword.vcf-auto-short}} instance that you are upgrading is linked to another {{site.data.keyword.vcf-auto-short}} instance as primary or secondary in the {{site.data.keyword.vmwaresolutions_short}} console. All linked instances must have their Platform Services Controllers (PSCs) upgraded first as part of a particular site upgrade.
 * Confirm the following requirements for vSAN based instances:
@@ -110,8 +110,7 @@ Complete the following steps to download files to your jump server:
 
 You must set the cluster Distributed Resource Schedule (DRS) to manual to prevent unexpected migrations during the upgrade process.
 
-Complete the following steps from the vCenter Server user interface.
-
+Complete the following steps from the vSphere Web Client:
 1. Select **Host and Clusters > Cluster > Configure > DRS**.
 2. Click **EDIT**.
 3. Set the **DRS** field to **Manual**.
@@ -121,8 +120,7 @@ Complete the following steps from the vCenter Server user interface.
 
 Temporarily install the new vCenter Server Appliance that you deploy onto a vSphere Standard Switch. One of the existing `vmnics` is reassigned from the distributed switch during the upgrade.
 
-Complete the following steps from the vCenter Server user interface.
-
+Complete the following steps from the vSphere Web Client:
 1. Select **Hosts and Clusters > HOST > Configure > Virtual Switches**. Select a host for the new vCenter Server Appliance.
 2. For the private network switch, select **Managed Physical Adapters**. The private network switch name ends with `-private`.
 3. Select **uplink1/vmnic2**, then click the **Close** icon ![Close icon](../../icons/close-icon.svg "Close") to delete the adapter. Click **OK**.
@@ -132,7 +130,7 @@ Complete the following steps from the vCenter Server user interface.
    3. Click the green **Add** icon ![Add icon](../../icons/add.svg "Add") to add an adapter. Click **OK**, then **Next** to accept `vmnic2`.
    4. For **Connection Settings**, keep the **VM Network** and **VLAN ID None** defaults. Click **Next**, then **Finish**. *Standard Switch: vSwitch0* is displayed in the list of switches.
 5. Make a note of the Network Setting for the vCenter Server Appliance VM. You must update the new vCenter appliance to match.
-   * From the vCenter Server user interface, click the VM for the vCenter appliance. Note the name that ends with `vc`.
+   * From the vSphere Web Client, click the VM for the vCenter appliance. Note the name that ends with `vc`.
    * From the middle pane, click the **Networks** tab. Note the name of the distributed port group that ends with `-dpg-mgmt`. 
 
 ### Procedure to upgrade vCenter Server
@@ -167,7 +165,7 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
 ### Procedure to upgrade the ESXi hosts
 {: #vs_vsphere_70_upgrade-procedure-esxi-upgrade}
 
-1. From the vCenter Server user interface, click **LCM menu > LifeCycle Manager**.
+1. From the vSphere Web Client, click **LCM menu > LifeCycle Manager**.
 2. Select **IMPORT ISO > IMPORT ISO**. Then, select the `VMware-VMvisor-Installer-7.0U1c-17325551.iso` file.
 3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
 4. For each host, choose the host in the vCenter browser tree. Then, select **update** (located in the far left in the main window).
@@ -188,8 +186,7 @@ After you upgrade the vCenter Server and ESXi hosts to vSphere 7, you must updat
 #### Procedure to update the vCenter Server license
 {: #vs_vsphere_70_upgrade-license-update-vcs}
 
-Complete the following steps from the vCenter Server user interface.
-
+Complete the following steps from the vSphere Web Client:
 1. Select **Administration menu > Licensing > Licenses**.
 2. From the **Licenses** page, click **+ Add New Licenses**.
 3. Enter the new vCenter Server license key in the **New Licenses** field. Then, enter a name for the license and click **OK**.
@@ -225,8 +222,7 @@ Complete the following steps from the vCenter Server user interface.
 
 Reassign the `vmnic` that you temporarily used on the standard switch back to the distributed switch it was originally associated with.
 
-Complete the following steps from the vCenter Server user interface.
-
+Complete the following steps from the vSphere Web Client:
 1. Go to the new vCenter Server appliance.
 2. Under **Actions** click **Edit Settings**.
 3. For network adapter 1, browse to the name of the distributed port group that ends with `-dpg-mgmt` that you previously noted. Save the changes.

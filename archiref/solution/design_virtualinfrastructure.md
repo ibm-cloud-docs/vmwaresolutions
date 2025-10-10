@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Virtual infrastructure design
 {: #design_virtualinfrastructure}
 
-The virtual infrastructure layer includes the VMware® software components that virtualize the compute, storage, and network resources provided in the physical infrastructure layer: VMware vSphere ESXi®, VMware NSX-T™, and optionally VMware vSAN™.
+The virtual infrastructure layer includes the VMware® software components that virtualize the compute, storage, and network resources provided in the physical infrastructure layer: VMware vSphere ESXi™, VMware NSX-T™, and optionally VMware vSAN™.
 
 ![Virtual infrastructure](../../images/nsx-t-3-ra-diagrams-virtual-infrastructure.svg "Virtual infrastructure"){: caption="Virtual infrastructure" caption-side="bottom"}
 
@@ -32,7 +32,7 @@ The vSphere ESXi configuration consists of the following aspects:
 
 The following table outlines the specifications for each aspect. After the configuration and installation of ESXi, the host is added to a VMware vCenter Server® and is managed from there.
 
-With this design, you can access the virtual hosts through Direct Console User Interface (DCUI) and vSphere Web Client. Secure Shell (SSH) and ESXi Shell are disabled after provisioning as a best practice.
+With this design, you can access the virtual hosts through Direct Console User Interface (DCUI) and the VMware vSphere® Web Client. Secure Shell (SSH) and ESXi Shell are disabled after provisioning as a best practice.
 
 By default, the only users who can log in directly are the _root_ and _ibmvmadmin_ users for the physical machine of the host. The administrator can add users from the Microsoft® Active Directory™ (MSAD) domain to enable user access to the host. All hosts in the {{site.data.keyword.vcf-auto}} solution design are configured to synchronize with a central NTP server.
 

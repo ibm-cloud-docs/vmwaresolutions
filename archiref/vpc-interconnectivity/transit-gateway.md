@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -33,7 +33,7 @@ When you use VMware virtual machines (VMs) on the VPC subnet architecture, your 
 
 ![{{site.data.keyword.tg_short}} with VMware on VPC](../../images/vpc-vcf-diagrams-tgw-sub-arch.svg "{{site.data.keyword.tg_short}} with VMware on VPC"){: caption="{{site.data.keyword.tg_full_notm}} with VMware on VPC" caption-side="bottom"}
 
-When you use NSX™ on your VMware solution on VPC, the VMs are attached on the NSX overlay segments. They use an IP address range or prefix, which is reachable through VPC route that points to the NSX Tier-0 private uplink VIP as described in [VMware NSX logical routing on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-vpc-routing). When you attach the VPC to a {{site.data.keyword.dl_short}}, you must create the VPC routes with advertise flag so that they are advertised.
+When you use NSX® on your VMware solution on VPC, the VMs are attached on the NSX overlay segments. They use an IP address range or prefix, which is reachable through VPC route that points to the NSX Tier-0 private uplink VIP as described in [VMware NSX logical routing on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-vpc-routing). When you attach the VPC to a {{site.data.keyword.dl_short}}, you must create the VPC routes with advertise flag so that they are advertised.
 
 ![{{site.data.keyword.tg_short}} with VMware on VPC with NSX](../../images/vpc-vcf-diagrams-tgw-nsx-t-arch.svg "{{site.data.keyword.tg_short}} with VMware on VPC with NSX"){: caption="{{site.data.keyword.tg_full_notm}} with VMware on VPC with NSX" caption-side="bottom"}
 

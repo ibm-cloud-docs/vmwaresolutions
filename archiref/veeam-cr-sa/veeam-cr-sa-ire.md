@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-08-21"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -91,7 +91,7 @@ The following services are optional but recommended to enable encrypted data sto
 
 * Key Protect service - The Key Protect service is an encryption solution that allows data in the VMware datastores to be secured by using envelope encryption techniques that use FIPS 140-2 Level 3 certified cloud-based hardware security modules. For more information, see [About Key Protect](/docs/key-protect?topic=key-protect-about).
 * Hyper Protect Crypto Services - {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services is a dedicated key management service and hardware security module that enables the user to take the ownership of the hardware security module to fully manage your encryption keys and to perform cryptographic operations. Hyper Protect Crypto Services is built on FIPS 140-2 Level 4-certified hardware. For more information, see [Getting started with {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started).
-* KMIP service - The Key Management Interoperability Protocol (KMIP) for VMware service uses either the IBM Key Protect service or the Hyper Protect Crypto Services (HPCS) service to create, encrypt, and decrypt encryption keys. The KMIP service interfaces the Key Protect or HPCS service to VMware vSphere.
+* KMIP service - The Key Management Interoperability Protocol (KMIP) for VMware service uses either the IBM Key Protect service or the Hyper Protect Crypto Services (HPCS) service to create, encrypt, and decrypt encryption keys. The KMIP service interfaces the Key Protect or HPCS service to vSphere.
 
 ## Internet repositories and services
 {: #veeam-cr-sa-ire-inet}

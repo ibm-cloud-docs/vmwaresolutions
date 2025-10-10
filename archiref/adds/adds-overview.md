@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -80,4 +80,4 @@ Review the following three forest models:
 
 * [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview)
 * [Getting started with VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started)
-* [More limitations and considerations - Windows automatic installation of updates](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_limitations#trbl_limitations-windows-update)
+* [Why Windows updates are not getting installed automatically on the Active Directory Domain Services server?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_limitations)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -141,7 +141,7 @@ ELM provides the following benefits:
 * A single-pane-of-glass view into the environment with multiple vCenter Servers
 * Simplified primary-secondary relationship creation by using single sign-on (SSO) credentials
 * vCenter Server automation configuration for DNS name resolution for all the sites that are linked together
-* In a cross-vCenter NSX environment, you can manage all NSX managers from a single vSphere Web Client
+* In a cross-vCenter NSX environment, management of all NSX managers from a single VMware vSphere® Web Client
 * Single pane of glass management across all sites for both NSX and normal vCenter functions
 
 ELM simplifies the management of multiple vCenters, but it does not bring HA for vCenter services. ELM is configured by the {{site.data.keyword.vmwaresolutions_short}} automation when a secondary instance is deployed.

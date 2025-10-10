@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-21"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -131,7 +131,7 @@ Content packs provide more granular monitoring on the virtual infrastructure and
 
 The following are installed by default:
 * General
-* VMware vSphere
+* VMware vSphere®
 * VMware vSAN
 * VMware Aria Operations
 

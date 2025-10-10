@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-08"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -31,7 +31,7 @@ When you use the VMware virtual machines (VMs) on the VPC subnet architecture, y
 
 ![VPNaaS with VMware on VPC](../../images/vpc-vcf-diagrams-dl-sub-arch.svg "VPNaaS with VMware on VPC"){: caption="VPNaaS with VMware on VPC" caption-side="bottom"}
 
-When you use NSX™ on your VMware solution on VPC, the VMs are attached on the NSX overlay segments. They use an IP address range or prefix, which is reachable through VPC route that points to NSX Tier-0 private uplink VIP as described in the [VMware NSX logical routing on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-vpc-routing) topic. You can use both {{site.data.keyword.cloud_notm}} VPN Gateway for VPC and {{site.data.keyword.cloud_notm}} Client {{site.data.keyword.vpn_vpc_short}} with this solution as described in the documentation previously listed.
+When you use NSX® on your VMware solution on VPC, the VMs are attached on the NSX overlay segments. They use an IP address range or prefix, which is reachable through VPC route that points to NSX Tier-0 private uplink VIP as described in the [VMware NSX logical routing on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-vpc-routing) topic. You can use both {{site.data.keyword.cloud_notm}} VPN Gateway for VPC and {{site.data.keyword.cloud_notm}} Client {{site.data.keyword.vpn_vpc_short}} with this solution as described in the documentation previously listed.
 
 ![VPNaaS with VMware on VPC with NSX](../../images/vpc-vcf-diagrams-dl-nsx-t-arch.svg "VPNaaS with VMware on VPC with NSX"){: caption="VPNaaS with VMware on VPC with NSX" caption-side="bottom"}
 

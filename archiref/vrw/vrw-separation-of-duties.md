@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-09-03"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ subcollection: vmwaresolutions
 ## Network and security administrator roles
 {: #vrw-separation-of-duties-network}
 
-The vCenter Server model employs a single network administrator role responsible for management across all network components (such as the underlay network, vSRX, and NSX™).
+The vCenter Server model employs a single network administrator role responsible for management across all network components (such as the underlay network, vSRX, and NSX®).
 
 The {{site.data.keyword.rw}} network administrator role must break out to multiple discrete administrator roles to prevent such a situation.
 

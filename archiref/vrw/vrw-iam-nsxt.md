@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-09-03"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ The following main principles or requirements apply:
 ## NSX role mapping
 {: #vrw-iam-nsxt-rolemapping}
 
-| VMware NSX™ component | Auditor | Infrastructure admin |
+| VMware NSX® component | Auditor | Infrastructure admin |
 | --------------- |-------- |--------------------- |
 | Controllers     | Read | Full |
 | Transport Nodes | Read | Full |

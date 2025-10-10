@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ When you scan hosts, virtual machines (VMs), and virtual appliances (VAs), you e
 * **Manually Initiate a Scan of vSphere ESXi Hosts** - You can scan vSphere® ESXi™ hosts in the vSphere inventory against attached baselines and baseline groups.
 * **Manually Initiate a Scan of Virtual Machines and Virtual Appliances** - You can scan VMs and VAs in the vSphere inventory against attached baselines and baseline groups.
 * **Manually Initiate a Scan of a Container Object** - Starts a simultaneous scan of hosts, VMs, and VAs, by scanning a container object that is a data center or a data center folder.
-* **Schedule a Scan** - You can configure the vSphere Web Client to scan VMs, VAs, and ESXi hosts at specific times or at intervals as needed.
+* **Schedule a Scan** - You can configure the VMware vSphere® Web Client to scan VMs, VAs, and ESXi hosts at specific times or at intervals as needed.
 
 ## Manually initiating a scan of vSphere ESXi hosts
 {: #vum-scanning-scan-hosts}

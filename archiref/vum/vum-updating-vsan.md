@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -67,7 +67,7 @@ If the HTTPS parameters are not set, then use the following command:
 ### Enable Customer Experience Improvement Program (CEIP)
 {: #vum-updating-vsan-enable-ceip}
 
-This is an optional step. By using the vSphere Web Client, go to **Home > Administration > Customer Experience Improvement Program**, and then click **Join**.
+This is an optional step. By using the VMware vSphere® Web Client, go to **Home > Administration > Customer Experience Improvement Program**, and then click **Join**.
 
 ### Complete a test upload and validate that the upload worked
 {: #vum-updating-vsan-complete-upload}
@@ -96,7 +96,7 @@ Before you start the vSAN upgrade process, ensure that the following requirement
    * **No data migration** - If you select this option, vSAN does not evacuate any data from this host. If you power off or remove the host from the cluster, some virtual machines (VMs) might become inaccessible.
    * **Ensure availability** - If you select this option, you can move the host into maintenance mode faster than **Full data migration** and allows access to the VMs in the environment.
    * **Full data migration**
-* **Exit maintenance mode and resync** - When the vSphere ESXi host is upgraded and moved out of maintenance mode, a resync occurs. You can see this through the VMware vSphere Web Client. Ensure this is complete before you move onto the next host. A resync is occurring as the host that is updated can now contribute to the vSAN datastore again. It is vital to wait until this resync is complete to ensure that there is no data loss.
+* **Exit maintenance mode and resync** - When the vSphere ESXi host is upgraded and moved out of maintenance mode, a resync occurs. You can see this through the vSphere Web Client. Ensure this is complete before you move onto the next host. A resync is occurring as the host that is updated can now contribute to the vSAN datastore again. It is vital to wait until this resync is complete to ensure that there is no data loss.
 * **After starting a vSAN Cluster upgrade**:
    * Do not attempt to upgrade a cluster by introducing new versions to the cluster and migrating workloads.
    * If introducing new hosts, ensure that they are of the same initial version and upgrade them along with the rest of the cluster.
@@ -116,7 +116,7 @@ For more information, see [Creating baselines and attaching to inventory objects
 ## Upgrade the vSAN disk format
 {: #vum-updating-vsan-upgrade-vsan}
 
-Ruby vSphere Console (RVC) is a Ruby-based command-line interface for vSphere and can be used to manage VMware vSphere ESXi and vCenter. The vSphere inventory is presented in a tree structure to navigate and run commands against vCenter objects.
+Ruby vSphere Console (RVC) is a Ruby-based command-line interface for vSphere and can be used to manage VMware vSphere ESXi™ and vCenter Server. The vSphere inventory is presented in a tree structure to navigate and run commands against vCenter objects.
 
 Many basic administrative tasks can be done much more efficiently than clicking through the vSphere Client. RVC is fully implemented in the VCSA and is accused by an SSH connection to the appliance.
 1. SSH to the VCSA and login by using root and the password that is provided on the ICVS Console.

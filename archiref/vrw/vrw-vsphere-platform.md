@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-09-03"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ The {{site.data.keyword.cloud}} for VMware® Regulated Workloads is built with v
 ## Management cluster
 {: #vrw-vsphere-platform-management}
 
-The management software stack consists of vCenter Server, AD/DNS, and VMware Aria® Operations™ tooling. vCenter Server manages all hosts in the vCenter Server instance. AD/DNS provide Domain Name Services (DNS) and management authentication services, a local NTP source, and role-based access control (RBAC) for access to the vCenter, VMware Aria operations tooling, and NSX™ administration portal. The VMware Aria operations tooling includes VMware Aria Operations Manager, and VMware Aria Operations™ for Logs. These components collectively provide a native console for vSphere operations, ability to automate management of the cloud platform, centralized log collection and analysis, and network visibility and optimization up to the hypervisor. SaaS consumer workloads are not monitored by default.
+The management software stack consists of vCenter Server, AD/DNS, and VMware Aria® Operations™ tooling. vCenter Server manages all hosts in the vCenter Server instance. AD/DNS provide Domain Name Services (DNS) and management authentication services, a local NTP source, and role-based access control (RBAC) for access to the vCenter, VMware Aria operations tooling, and NSX® administration portal. The VMware Aria operations tooling includes VMware Aria Operations Manager, and VMware Aria Operations™ for Logs. These components collectively provide a native console for vSphere operations, ability to automate management of the cloud platform, centralized log collection and analysis, and network visibility and optimization up to the hypervisor. SaaS consumer workloads are not monitored by default.
 
 Within the Management cluster, shared storage is used to provide enhanced resiliency to the management stack. The use of shared storage provides rapid restoration of management components if an ESXi host is lost. vSAN-based storage is used to keep all management stack data in the account boundary. vSAN requires a minimum cluster size of four ESXi hosts.
 
@@ -51,7 +51,7 @@ One vCenter Server is deployed to manage the management cluster, the gateway clu
 ### NSX
 {: #vrw-vsphere-platform-management-nsxt}
 
-NSX™ provides a highly secure and flexible software-defined network to support the application requirements. NSX controllers are hosted in the management cluster.
+NSX® provides a highly secure and flexible software-defined network to support the application requirements. NSX controllers are hosted in the management cluster.
 
 NSX is configured with three controllers, which provide a highly available and redundant configuration. Additionally a virtual IP (VIP) address is used to access the cluster to provide fault tolerance and high availability (HA) to NSX Manager nodes. Each controller manager is assigned a VLAN–backed IP address from the private portable address block that is designated for management components.
 

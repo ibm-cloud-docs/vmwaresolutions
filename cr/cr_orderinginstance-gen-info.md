@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-04-17"
+lastupdated: "2025-10-09"
 
 keywords: cyber recovery, cyber recovery settings, cyber recovery license settings, cyber recovery versions, cyber recovery instances
 
@@ -24,7 +24,7 @@ The following VMware® components are part of the {{site.data.keyword.cr}} insta
 ## VMware vSphere version
 {: #cr_orderinginstance-vsphere-license}
 
-* VMware vSphere® Enterprise Plus 8 is selected by default and is supported only for primary instances. 
+* vSphere Enterprise Plus 8 is selected by default and is supported only for primary instances. 
 * vSphere 7 is also available to order.
 
 ## VMware vCenter Server version
@@ -65,7 +65,7 @@ The instance name is set to **vcs-_xx_** by default, where _xx_ represents two r
 
 {{site.data.content.attnnote-byol}}
 
-If you are a BYOL user, provide your own license keys for VMware vCenter Server® (Enterprise Plus edition), VMware vSphere® (Enterprise Plus edition), and VMware NSX® (Data Center SP Enterprise Plus). Toggle the **BYOL** switch to **Enabled** and enter your license keys.
+If you are a BYOL user, provide your own license keys for VMware vCenter Server® (Enterprise Plus edition), vSphere (Enterprise Plus edition), and VMware NSX® (Data Center SP Enterprise Plus). Toggle the **BYOL** switch to **Enabled** and enter your license keys.
 
 ## Related links
 {: #cr_orderinginstance-gen-info-related}

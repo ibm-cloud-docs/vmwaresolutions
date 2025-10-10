@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-09-10"
+lastupdated: "2025-10-10"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -78,7 +78,7 @@ You can configure vCenter high availability (HA), but configuration support is n
 {: #faq-rename-cluster}
 {: faq}
 
-For a new {{site.data.keyword.vcf-auto-short}} instance, you can set the name of the initial cluster that is created during deployment. When you add a cluster to a {{site.data.keyword.vcf-auto-short}} instance, you can specify the name that you want on the {{site.data.keyword.vmwaresolutions_short}} console.
+If the status of the {{site.data.keyword.vcf-auto-short}} instance is **Available**, you can rename the cluster from the VMware vSphere® Web Client. For more information, see [Rename a cluster managed by SDDC Manager](https://knowledge.broadcom.com/external/article/327196/rename-a-cluster-managed-by-sddc-manager.html){: external}.
 
 ## How are IBM and VMware patches managed?
 {: #faq-patches}

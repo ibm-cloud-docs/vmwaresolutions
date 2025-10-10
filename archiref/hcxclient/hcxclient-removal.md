@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -37,7 +37,7 @@ A service appliance might be uninstalled in preparation for uninstalling Hybrid 
 {: #hcxclient-removal-uninstall-prereq-uninst-hva}
 
 * Cancel or reset the execution time for any migrations that might occur during the uninstallation task.
-* Check the vSphere Web Client task console for any running migrations, and wait until they are complete.
+* Check the VMware vSphere® Web Client task console for any running migrations, and wait until they are complete.
 * Ensure that no active Hybrid Cloud Services tasks exist.
 
 Never delete virtual appliances from the vSphere inventory. Always use the management portal to interact with the service virtual appliances.
@@ -46,7 +46,8 @@ Never delete virtual appliances from the vSphere inventory. Always use the manag
 ### Procedure to uninstall HCX virtual appliances
 {: #hcxclient-removal-uninstall-proc-uninst-hva}
 
-1. In the vSphere Web Client interface, select the Hybrid Cloud Services plug-in from the left panel.
+Complete the following steps from the vSphere Web Client:
+1. Select the Hybrid Cloud Services plug-in from the left panel.
 2. In the center pane, click the **Hybrid Services** tab.
 3. Locate the Hybrid Cloud Gateway appliance and click the entry to display the details.
 4. On the lower right, click **Delete** to remove the appliance.

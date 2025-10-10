@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -43,12 +43,12 @@ When a low aggressiveness level is set for a datastore cluster, Storage DRS reco
 
 The following threshold categories are available in the datastore cluster.
 
-* Space Utilization - Storage DRS generates recommendations or performs migrations when the percentage of space utilization on the datastore is greater than the threshold you set in the vSphere Web Client.
+* Space Utilization - Storage DRS generates recommendations or performs migrations when the percentage of space utilization on the datastore is greater than the threshold you set in the VMware vSphere® Web Client.
 * I/O Latency - Storage DRS generates recommendations or performs migrations when the 90th percentile I/O latency measured over a day for the datastore is greater than the threshold.
 
 In this design, the Storage DRS Runtime Settings are enabled and thresholds are kept to their respective default values. Change these values based on the workload I/O requirements and latency sensitivity.
 
-The following table shows the settings in the VMware vSphere® Web Client.
+The following table shows the settings in the vSphere Web Client.
 
 | Setting | Value  |
 |:------- |:------ |
@@ -57,7 +57,7 @@ The following table shows the settings in the VMware vSphere® Web Client.
 | I/O latency threshold | 15 ms |
 {: caption="Storage DRS runtime settings" caption-side="bottom"}
 
-For more information about configuring these settings in the vSphere Web Client, see the VMware vSphere documentation.
+For more information about configuring these settings in the vSphere Web Client, see the vSphere documentation.
 
 ## Storage I/O Control for NFS v3
 {: #storage-settings-io-control-nfs-v3}

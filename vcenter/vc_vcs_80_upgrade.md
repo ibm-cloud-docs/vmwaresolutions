@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-09-12"
+lastupdated: "2025-10-09"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -38,12 +38,12 @@ Complete the following requirements before you begin the upgrade:
 {: #vc_vcs_80_upgrade-procedure-vcenter}
 
 1. **Set the cluster Distributed Resource Schedule to Manual.** You must set the cluster Distributed Resource Schedule (DRS) to manual to prevent unexpected migrations during the upgrade process.
-   Complete the following steps from the vCenter Server user interface.
+   Complete the following steps from the VMware vSphere Web Client:
    1. Select **Host and Clusters > Cluster > Configure > DRS**.
    2. Click **EDIT**.
    3. Set the **DRS** field to **Manual**.
 2. **Create a standard switch for the new vCenter Server Appliance.** Temporarily install the new vCenter Server Appliance that you deploy onto a vSphere Standard Switch. One of the existing ``vmnics`` is reassigned from the distributed switch during the upgrade.
-   Complete the following steps from the vCenter Server user interface.
+   Complete the following steps from the vSphere Web Client:
    1. Select **Hosts and Clusters > HOST > Configure > Virtual Switches**. Select a host for the new vCenter Server Appliance.
    2. For the private network switch, select **Managed Physical Adapters**. The private network switch name ends with ``-private``.
    3. Select **uplink1/vmnic2**, then click **Close** ![Close icon](../../icons/close-icon.svg "Close") to delete the adapter. Click **OK**.
@@ -53,7 +53,7 @@ Complete the following requirements before you begin the upgrade:
       3. Click the green **Add** icon ![Add icon](../../icons/add.svg "Add") to add an adapter. Click **OK**, then **Next** to accept ``vmnic2``.
       4. For **Connection Settings**, keep the **VM Network** and **VLAN ID None** defaults. Click **Next**, then **Finish**. *Standard Switch: vSwitch0* is displayed in the list of switches.
    5. Make a note of the Network Setting for the vCenter Server Appliance VM. Update the new vCenter appliance to match.
-      * From the vCenter Server user interface, click the VM for the vCenter appliance. Note the name that ends with ``vc``.
+      * From the vSphere Web Client, click the VM for the vCenter Server appliance. Note the name that ends with ``vc``.
       * From the middle pane, click the **Networks** tab. Note the name of the distributed port group, ending with ``-dpg-mgmt``.
 3. **Upgrade vCenter Server.** Follow the VMware instructions for upgrading vCenter Server. For more information, see [Upgrade a vCenter Server Appliance 6.7 with an Embedded Platform Services Controller or 7.0 by Using the GUI](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-server-upgrade-8-0/upgrading-and-updating-the-vcenter-server-appliance/gui-upgrade-of-the-vcsa-and-psc-appliance/upgrade-the-vmware-vcenter-server-appliance-with-embedded-sso.html#GUID-6A5C596D-103E-4024-9353-5569263EB427-en){: external}.
    Ensure to complete the following requirements during the upgrade:
@@ -66,14 +66,14 @@ Complete the following requirements before you begin the upgrade:
    {: important}
 
 4. **Update vCenter Server and ESXi host licenses.** After you upgrade to vCenter Server 8.0, update the licenses on vCenter Server. If you have a vSAN cluster, you must also update the vSAN license. To access vCenter Server and vSAN licenses, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
-   * **Procedure to update the vCenter Server license**:
-      Complete the following steps from the vCenter Server user interface.
+   * **Procedure to update the vCenter Server license**
+      Complete the following steps from the vSphere Web Client:
       1. Select the **Administration menu > Licensing > Licenses**.
       2. From the **Licenses** page, click **+ Add New Licenses**.
       3. Enter the new vCenter Server 8.0 license key in the **New Licenses** field. Then, enter a name for the license and click **OK**.
       4. From the **Assets** page, select the instance under **VCENTER SERVER SYSTEMS** and click **Assign License**. Then, select the new license and click **OK**.
       5. From the **Licenses** page, find the license with the product name **VMware vCenter Server 6 Standard** and click **Remove Licenses**.
-   * **Procedure to update the vSAN cluster license**:
+   * **Procedure to update the vSAN cluster license**
       1. From the **Licenses** page, click **+ Add New Licenses**.
       2. Enter the new vSAN license keys in the **New Licenses** field. If you have multiple vSAN license keys, enter all the licenses in the **New Licenses** field, specify a name for each license, and then click **OK**.
       3. Complete the following steps from the **Assets** page.
@@ -83,7 +83,7 @@ Complete the following requirements before you begin the upgrade:
          4. Repeat this step for each vSAN cluster.
       4. From the **Licenses** page, select all the old vSAN cluster licenses and click **Remove Licenses**.
 5. **Remove the temporary standard switch.** Reassign the ``vmnic`` that you temporarily used on the standard switch back to the distributed switch it was originally associated with.
-   Complete the following steps from the vCenter Server user interface.
+   Complete the following steps from the vSphere Web Client:
    1. Go to the new vCenter Server appliance.
    2. Under **Actions** click **Edit Settings**.
    3. For network adapter 1, browse to the name of the distributed port group that ends with ``-dpg-mgmt`` that you previously noted. Save the changes.
@@ -129,7 +129,7 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
    5. Power on the host.
    6. Upgrade vSphere on the host.
 2. **Upgrade the ESXi hosts**:
-   1. From the vCenter Server user interface, go to **LCM menu > LifeCycle Manager**.
+   1. From the vSphere Web Client, go to **LCM menu > LifeCycle Manager**.
    2. Select **IMPORT ISO > IMPORT ISO**, and then the ISO file.
    3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
    4. For each host, choose the host in the vCenter browser tree. Then, select **update** (located in the far left in the main window).

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-09-18"
+lastupdated: "2025-10-09"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -127,7 +127,7 @@ Review the following table for an overview of the Network MTU configuration sett
 ### Updating the public switch MTU setting
 {: #vc_bom-procedure-update-public-switch-mtu-setting}
 
-To update the MTU setting for the public switch, complete the following steps in the VMware vSphere Web Client:
+To update the MTU setting for the public switch, complete the following steps from the VMware vSphere Web Client:
 1. Right-click the vDS and click **Edit Settings**.
 2. On the **Properties** tab, select the **Advanced** option.
 3. Ensure that the **Maximum MTU** value is set to 1500.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-09"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -37,7 +37,7 @@ If you are a Bring Your Own License (BYOL) user, toggle the **BYOL** switch to *
 ## VMware vSphere Enterprise Plus license key
 {: #vs_orderinginstance-vsphere-license-key}
 
-You must provide a single VMware vSphere® Enterprise Plus edition license key with sufficient capacity for your instance configuration.
+You must provide a single vSphere® Enterprise Plus edition license key with sufficient capacity for your instance configuration.
 
 ## Instance name
 {: #vs_orderinginstances-instance-name}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-04-14"
+lastupdated: "2025-10-09"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -34,7 +34,7 @@ If you are provisioning VMware Aria® Suite components with Lifecycle Manager, r
 ## Identity and Access Management for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-deploy-vvs-iam}
 
-The [Identity and Access Management for VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/identity-and-access-management-for-vmware-cloud-foundation.html){: external} validated solution provides detailed design, implementation, configuration, and operation guidance on the use of Active Directory as an identity provider and authentication source, and on the use of role-based access control (RBAC) in {{site.data.keyword.vcf-vpc-short}} SDDC Manager™, VMware vCenter Server®, VMware ESXi™, and VMware NSX™.
+The [Identity and Access Management for VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vvs/1-0/identity-and-access-management-for-vmware-cloud-foundation.html){: external} validated solution provides detailed design, implementation, configuration, and operation guidance on the use of Active Directory as an identity provider and authentication source, and on the use of role-based access control (RBAC) in {{site.data.keyword.vcf-vpc-short}} SDDC Manager™, VMware vCenter Server®, VMware ESXi™, and VMware NSX®.
 
 This solution is intended for cloud architects and administrators who are familiar with VMware software and a role-based access control solution by using a central identity provider for {{site.data.keyword.vcf-vpc-short}}.
 

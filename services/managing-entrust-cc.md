@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-09"
 
 keywords: Entrust CloudControl WebGUI, Entrust CloudControl console, enable internet Entrust CloudControl
 
@@ -31,7 +31,7 @@ To log in to the WebGUI of the primary or secondary Entrust CloudControl applian
 ## Accessing the Entrust CloudControl console from the vSphere Web Client
 {: #managing-entrust-cc-accessing-console}
 
-To access the Entrust CloudControl console from the vSphere Web Client, use the following procedure:
+To access the Entrust CloudControl console from the VMware vSphere Web Client, use the following procedure:
 1. In the vSphere Web Client, find the virtual machines (VMs) that are named **CC1** and **CC2**.
 2. Right-click **CC1** or **CC2**, and then click **Open Console**.
 3. Log in to the console by using the console credentials that you can find on the Entrust CloudControl service details page.

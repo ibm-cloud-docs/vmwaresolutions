@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-04-11"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ When you deploy a {{site.data.keyword.vcf-auto}} instance in your {{site.data.ke
 
 The gateway cluster might host, for example, a Juniper® vSRX, Fortinet® FortiGate® or other third-party router or firewall. You can control which VLANs are associated with the router or firewall that is running on it through the [gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about#firewall) configurations.
 
-The gateway cluster must not be mixed with the NSX edge cluster, which consists of VMware NSX™ edge transport nodes. The gateway cluster provides compute capacity for hosting Juniper vSRX, Fortinet FortiGate, or other third-party routers or firewalls. The VLAN routing can be controlled by [gateway appliance configuration](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances) though {{site.data.keyword.cloud_notm}} Classic portal.
+The gateway cluster must not be mixed with the NSX edge cluster, which consists of VMware NSX® edge transport nodes. The gateway cluster provides compute capacity for hosting Juniper vSRX, Fortinet FortiGate, or other third-party routers or firewalls. The VLAN routing can be controlled by [gateway appliance configuration](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances) though {{site.data.keyword.cloud_notm}} Classic portal.
 {: important}
 
 ## Deploying a gateway cluster with NSX
@@ -61,7 +61,7 @@ This architecture pattern shows an example for using a new VLAN for NSX T0 gatew
 
 When you design or deploy this architecture pattern, consider the following steps:
 
-* Refer to the specific third-party vendor hardware and software specifications for interoperability with VMware® ESXi™ and NSX™.
+* Refer to the specific third-party vendor hardware and software specifications for interoperability with VMware® ESXi™ and NSX®.
 * You must provide licensing (BYOL) for the third-party router or firewall solution. Contact your vendor for details.
 
 ## Related links

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-09-30"
+lastupdated: "2025-10-09"
 
 keywords: VLAN subnets, vmware solutions VLANs, subnets VLAN vmware solutions
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 The following table provides information about the subnets that are used in each VLAN. You can either order new VLANs or subnets for {{site.data.keyword.vcf-auto}} instances or you can select existing VLANs. You can define your firewall rules based on the subnets and ports that the network traffic goes through.
 
-It is not recommended to put a firewall on a secondary private VLAN that has storage and VMware vSphere® vMotion® traffic.
+It is not recommended to put a firewall on a secondary private VLAN that has storage and VMware vSphere vMotion® traffic.
 {: note}
 
 | Public VLAN | Private VLAN | Secondary private VLAN |

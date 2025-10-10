@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Attached storage infrastructure management
 {: #storage-infra-mgmt}
 
-Infrastructure management refers to the VMware® components that manage the VMware vSphere ESXi infrastructure.
+Infrastructure management refers to the VMware® components that manage the VMware vSphere ESXi™ infrastructure.
 
 For more information about the components, see [Virtual infrastructure design](/docs/vmwaresolutions?topic=vmwaresolutions-design_virtualinfrastructure).
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-10-09"
 
 keywords: cyber recovery, add hosts cyber recovery, add servers cyber recovery, remove hosts cyber recovery
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Expanding and contracting capacity for {{site.data.keyword.cr}} instances
 {: #cr-addingremovingservers}
 
-Expand or contract the capacity of your {{site.data.keyword.cr}} instances according to your business needs, by adding or deleting VMware vSphere® ESXi™ servers or Network File System (NFS) storage.
+Expand or contract the capacity of your {{site.data.keyword.cr}} instances according to your business needs, by adding or deleting VMware vSphere ESXi™ servers or Network File System (NFS) storage.
 
 ## Before you add or delete ESXi servers
 {: #cr-addingremovingservers-before}

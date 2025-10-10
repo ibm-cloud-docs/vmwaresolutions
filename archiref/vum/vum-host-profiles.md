@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -35,7 +35,7 @@ The following sequence is required to check compliance:
 ## Creating a host profile from an existing host
 {: #vum-host-profiles-create-host-profile}
 
-1. From the vSphere Web Client Home, click **Policies and Profiles**.
+1. From the VMware vSphere® Web Client, click **Policies and Profiles**.
 2. Click **Host Profiles** and navigate to the Host Profiles view.
 3. Click the **Extract Profile from a Host icon**.
 4. Select an existing host that acts as the reference host and click **Next**.

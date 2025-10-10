@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-02"
+lastupdated: "2025-10-09"
 
 keywords: planning flexible, data center, vSphere data centers
 
@@ -35,7 +35,7 @@ The account that you are using must meet certain requirements. For more informat
 ## {{site.data.keyword.cloud_notm}} data center availability
 {: #vs_planning-dc-availability}
 
-The VMware vSphere deployment has strict requirements for the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements. The following {{site.data.keyword.cloud_notm}} data centers are available for vSphere deployment.
+The VMware vSphere® deployment has strict requirements for the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements. The following {{site.data.keyword.cloud_notm}} data centers are available for vSphere deployment.
 
 Cascade Lake bare metal servers are available in [multizone region](#x9774820){: term}
 {{site.data.keyword.cloud_notm}} data centers. For more information, see [Creating a VPC in a different region](/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region&interface=cli).

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-09-03"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ The perimeter gateway cluster that is shown in the workload region is the same g
 
 The minimum viable product consists of the following components:
 * At least one workload cluster that includes four or more ESXi™ hosts
-* vSAN™ and NSX™
+* vSAN™ and NSX®
 * A management cluster of four ESXi hosts
 * A gateway cluster of two ESXi hosts or a physical FortiGate® appliance
 

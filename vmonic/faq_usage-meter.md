@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-06"
+lastupdated: "2025-10-09"
 
 keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
@@ -89,7 +89,7 @@ You are required to order VMware vDefend™ Firewall (formerly VMware NSX® fire
 
 For accurate cluster and core utilization metering, all {{site.data.keyword.cloud_notm}} for VMware customers must have newly supported Broadcom license keys and the Usage Meter deployed and functioning in their VMware environment.
 
-Starting on 11 April 2025, you must add new license keys for effective metering of the environment. For more information, see the following VMware vCloud Usage Meter documentation:
+Starting on 8 August 2025, you must swap any older keys to the new license keys with expiration dates in your environment. For more information, see the following VMware vCloud Usage Meter documentation:
 
 * [Release Notes](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/release-notes.html){: external}
 * [Deployment and Administration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/vcloud-usage-meter-4-8-deployment-and-administration-guide-4-8.html){: external}
@@ -99,9 +99,9 @@ Starting on 11 April 2025, you must add new license keys for effective metering 
 {: #faq_usage-meter-when-to-complete}
 {: faq}
 
-By 30 May 2025, all customer accounts must have the new Broadcom license keys installed and Usage Meter deployed.
+By 1 November 2025, all customer accounts must have the new Broadcom license keys installed and Usage Meter v9.0.1 deployed.
 
-Accounts that have not updated to current license keys will be out of compliance and risk being out of support and in violation of the {{site.data.keyword.cloud_notm}} Services Agreement. If not addressed, violations can result in account disruptions.
+Accounts that have not updated to current license keys will be out of compliance and are risked being out of support and in violation of the {{site.data.keyword.cloud_notm}} Services Agreement. If not addressed, violations can result in account disruptions.
 {: attention}
 
 ## Can {{site.data.keyword.IBM_notm}} do this all for me?
@@ -114,7 +114,7 @@ No. The {{site.data.keyword.cloud_notm}} for VMware added value is to provide cu
 {: #faq_usage-meter-how-to-install}
 {: faq}
 
-All existing customers receive an email about how to install and register Usage Meter. Detailed information and instructions on what actions are required will be available in the {{site.data.keyword.cloud_notm}} for VMware Solutions documentation.
+All existing customers receive an email about how to install and register Usage Meter. Detailed information and instructions on what actions are required are available in the {{site.data.keyword.cloud_notm}} for VMware Solutions documentation.
 
 ## Can Usage Meter be deployed in offline mode?
 {: #faq_usage-meter-offline-mode}
@@ -142,7 +142,7 @@ For more information about VMware vCloud Usage Meter, see:
 {: #faq_usage-meter-price}
 {: faq}
 
-No. There are no extra license key charges for deploying and registering Usage Meter.
+No. There are no extra license key charges for deploying and registering the Usage Meter appliance.
 
 To run the Usage Meter software on VMware, the following hardware infrastructure resources are required:
 * 2 vCPU cores
@@ -173,7 +173,7 @@ No special backup is needed; continue to use your typical data protection and ba
 
 Yes. {{site.data.keyword.cloud_notm}} for VMware requires customers to comply with vendor software agreements as part of the {{site.data.keyword.cloud_notm}} Services Agreement. If you do not provide usage tracking through Usage Meter, you risk falling out of support and compliance and incur billing errors on usage. For more information, see the [{{site.data.keyword.cloud_notm}} Services Agreement](https://www.ibm.com/support/customer/csol/terms/?id=Z126-6304&cc=us&lc=en){: external}.
 
-IBM Cloud Services Agreement (CSA) and applicable attachments and transaction documents are the complete agreement under which customers can order Cloud Services, which might consist of {{site.data.keyword.cloud_notm}} Services or other services to support use of Cloud Services that {{site.data.keyword.IBM_notm}} provides ({{site.data.keyword.IBM_notm}} products) or cloud or other services that a third-party such as Broadcom provides that customers acquire from {{site.data.keyword.IBM_notm}} (non-{{site.data.keyword.IBM_notm}} products).
+IBM Cloud Services Agreement (CSA), and applicable attachments and transaction documents are the complete agreement under which customers can order Cloud Services. The services might consist of {{site.data.keyword.cloud_notm}} Services or other services to support use of Cloud Services that {{site.data.keyword.IBM_notm}} provides ({{site.data.keyword.IBM_notm}} products) or cloud or other services that a third-party such as Broadcom provides that customers acquire from {{site.data.keyword.IBM_notm}} (non-{{site.data.keyword.IBM_notm}} products).
 
 ## What security and compliance documentation is available for Usage Meter?
 {: #faq_usage-meter-sec-compl-doc}
@@ -197,7 +197,7 @@ The VMware Cloud Foundation (VCF) perpetual licenses are entitled to upgrade onl
 {: #faq_usage-meter-add-ons}
 {: faq}
 
-Yes. If you use a VMware add-on for VMware loud Foundation such as VMware vDefend Firewall (formerly VMware NSX Firewall), you must include new Broadcom subscription product keys when you are moving to Usage Meter. Do this now if you are using VMware vDefend Firewall to be ready with the new Broadcom license keys. For more information about updating vDefend Firewall, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
+Yes. If you use a VMware add-on for VMware loud Foundation such as VMware vDefend Firewall (formerly VMware NSX Firewall), you must include new Broadcom subscription product keys when you are moving to Usage Meter. You must complete this action now if you are using VMware vDefend Firewall to be ready with the new Broadcom license keys. For more information about updating vDefend Firewall, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
 
 ## Where can I find more details about the Bridge Licensing Program?
 {: #faq_licensing-bridge}
@@ -215,7 +215,7 @@ If you are currently using this program, you can open a support case by followin
 5. Under **Subtopic**, select a subtopic that best fits your needs.
 6. Complete all the required fields, upload any attachments, and click **Next**.
 
-Your case is opened and will be reviewed by the {{site.data.keyword.IBM_notm}} Support team.
+Your case is opened, and then reviewed by the {{site.data.keyword.IBM_notm}} Support team.
 
 ## How are my service license charges being calculated?
 {: #faq_licensing-service-charges}

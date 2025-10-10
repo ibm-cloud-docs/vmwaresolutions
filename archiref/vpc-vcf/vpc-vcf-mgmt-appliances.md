@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ The following information provides an overview of networking deployment for VMwa
 
 The VMware® Cloud Builder appliance automates the deployment of the entire software-defined stack. VMware Cloud Builder is a virtual appliance that is used to deploy and configure the first cluster of the management domain and transfer inventory and control to the SDDC manager. During the deployment process, the VMware Cloud Builder appliance validates network information that you provide in the deployment parameter workbook, such as DNS, network (VLANS, IP addresses, MTUs), and credentials. The VMware Cloud Builder appliance must have network access to all hosts on the management network.
 
-VMware vSphere uses virtualization to transform individual data centers into aggregated computing infrastructures that include CPU, storage, and networking resources. VMware vCenter Server® manages these infrastructures as a unified operating environment and provides you with the tools to administer the data centers that participate in that environment.
+VMware vSphere® uses virtualization to transform individual data centers into aggregated computing infrastructures that include CPU, storage, and networking resources. VMware vCenter Server® manages these infrastructures as a unified operating environment and provides you with the tools to administer the data centers that participate in that environment.
 
 SDDC manager automates the entire system lifecycle, that is, from configuration and provisioning to upgrades and patching, which includes host firmware and simplifies day-to-day management and operations.
 

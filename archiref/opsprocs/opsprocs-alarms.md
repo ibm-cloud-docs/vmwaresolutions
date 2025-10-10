@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-14"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -327,7 +327,7 @@ The following table describes a number of procedures for events and alarms.
 |:----- |:----------- |
 | View events | To view events, navigate to vCenter and select an inventory object. Click the **Monitor** tab, **Task & Events**, and **Events**. Select an event to see the details. You can use the filter and select a column heading to sort the list. |
 | Export events | You might need to export events to use tools in MS Excel to assist. Select the required inventory object. Click the **Monitor** tab, **Events**, and the **Export** icon. In the **Export Events** window, specify what types of event information you want to export. Select **Generate CSV Report** and click **Save**. Specify a file name and location and save the file. |
-| Event retention |  By default, the event retention is set to 30 days. You need to change this setting in the VMware vSphere Web Client. Click the **Configure** tab, **Settings**, and **General**. Click **Edit**, change the Event Retention to the required number of days, and click **OK**. |
+| Event retention |  By default, the event retention is set to 30 days. You need to change this setting in the vSphere Web Client. Click the **Configure** tab, **Settings**, and **General**. Click **Edit**, change the Event Retention to the required number of days, and click **OK**. |
 | View Triggered Alarms | To view the triggered alarms, navigate to vCenter and select either **All** or **New** in the **Alarms** pane. This list refreshes every 120 seconds. To view alarms triggered on a selected inventory object, select the object. Click the **Monitor** tab, **Issues**, and select **Triggered Alarms**. |
 {: caption="Events and alarms procedures" caption-side="bottom"}
 

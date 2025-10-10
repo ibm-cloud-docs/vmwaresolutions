@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -88,7 +88,7 @@ The on-premises installation entails deploying the HCX management appliance and 
 
 Install the HCX Manager appliance in the on-premises vCenter.
 1. Log in to **My VMware** and download the Hybrid Cloud Services OVA file from the product download page.
-2. Open a browser and log in to the vSphere Web Client. View the **Home** tab.
+2. Open a browser and log in to the VMware vSphere® Web Client. View the **Home** tab.
 3. In the **Inventories Trees** list, click **Host and Clusters**.
 4. Expand the hierarchy to show the data centers.
 5. Right-click the target data center and select **Deploy OVF Template** from the menu. It might take a few seconds for the **Deploy OVF template** menu item to appear.

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-05-09"
+lastupdated: "2025-10-09"
 
 keywords: Entrust KeyControl WebGUI, Entrust KeyControl console, enable internet Entrust KeyControl
 
@@ -31,7 +31,7 @@ To log in to the WebGUI of the primary or secondary Entrust KeyControl appliance
 ## Accessing the Entrust KeyControl console from the vSphere Web Client
 {: #managing-entrust-kc-accessing-console}
 
-To access the Entrust KeyControl console from the vSphere Web Client, use the following procedure:
+To access the Entrust KeyControl console from the VMware vSphere Web Client, use the following procedure:
 1. In the vSphere Web Client, find the virtual machines (VMs) that start with the names **KC1** and **KC2** that have the matching IP address that is found on the Entrust KeyControl service details page.
 2. Right-click **KC1** or **KC2**, and then click **Open Console**.
 3. Log in to the console by using the console credentials that you can find on the Entrust KeyControl service details page.

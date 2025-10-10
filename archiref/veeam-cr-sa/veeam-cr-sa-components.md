@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ This document describes the Veeam® components that are used in these solution a
 
 Pertinent details are taken from the following information sources and also introduce the Veeam components:
 
-* [Veeam Backup and Replication 12 user guide for VMware vSphere®](https://helpcenter.veeam.com/docs/backup/vsphere/overview.html?ver=120){: external}
+* [Veeam Backup and Replication 12 user guide for VMware vSphere](https://helpcenter.veeam.com/docs/backup/vsphere/overview.html?ver=120){: external}
 * [Veeam Backup and Replication best practices](https://bp.veeam.com/vbr/#veeam-backup--replication-best-practices){: external}
 
 ![Veeam components](../../images/veeam-cr-sa-veeam-components.svg){: caption="Veeam components" caption-side="bottom"}
@@ -129,11 +129,11 @@ To restore files from VM guest OS other than Microsoft Windows, the Veeam backup
 Managed servers can be added to the backup infrastructure so that Veeam can use them as either source or target servers. After the automated provisioning, the following managed servers exist:
 
 * The "all-in-one" backup server.
-* The vCenter of the VMware vSphere Server instance.
+* The vCenter Server of the VMware vSphere® instance.
 
 More managed servers are added in the advanced deployment scenario, such as:
 
-* VMware vSphere servers - VMware vCenter® appliances and the associated ESXi hosts to be used as a source or target for backup/restore of VMs.
+* vSphere servers - VMware vCenter Server® appliances and the associated ESXi hosts to be used as a source or target for backup/restore of VMs.
 * Microsoft Windows servers - For hosting Veeam components, such as backup proxy, backup repository, mount server, and vPower NFS server.
 * Linux servers - For hosting Veeam components, such as helper host, backup proxy, and backup repository components.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-12"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ The following items are the core components of VMware Cloud Foundation:
 - SDDC Manager
 - VMware vSphere® and VMware vCenter Server®
 - VMware vSAN™
-- VMware NSX™
+- VMware NSX®
 - VMware Aria Suite Lifecycle (formerly vRealize Suite Lifecycle Manager)
 
 **VMware Cloud Builder** appliance is the first virtual appliance that is deployed on the {{site.data.keyword.cloud_notm}} bare metal servers for {{site.data.keyword.vpc_short}}. It automates the deployment of the entire VMware software-defined stack. VMware Cloud Foundation assumes that the underlying network infrastructure, required bare metal servers, and DNS are deployed before you start deploying it. This part is handled by {{site.data.keyword.vcf-vpc}} automation. VMware Cloud Builder deploys and configures the first cluster of the management domain and then transfers the inventory and control to SDDC Manager. During the deployment process, the VMware Cloud Builder appliance validates network information that you provide in the deployment parameter workbook, such as DNS, network (VLANS, IP addresses, MTUs), and credentials. In the {{site.data.keyword.vcf-vpc}} automation deployments, credentials are randomly generated during the initial provisioning.
@@ -45,7 +45,7 @@ The following items are the core components of VMware Cloud Foundation:
 
 **vSAN** aggregates local or direct-attached data storage devices on {{site.data.keyword.vpc_short}} bare metal servers to create a single storage pool that is shared across all hosts in the vSAN cluster. By using vSAN, you don't need external shared storage and it also simplifies storage configuration and virtual machine provisioning. Built-in policies allow for flexibility in data availability.
 
-**VMware NSX™** (referred as NSX throughout this documentation) is focused on providing networking, security, automation, and operational simplicity for emerging application frameworks and architectures that have heterogeneous endpoint environments and technology stacks. NSX supports cloud-native applications, bare metal workloads, multi-hypervisor environments, public clouds, and multiple clouds. NSX integrates with {{site.data.keyword.vpc_short}} capabilities through NSX edge cluster and Tier-0 gateways. Through this integration, your workloads are able to use other cloud services and interconnectivity services that are provided by {{site.data.keyword.cloud_notm}}.
+**VMware NSX®** (referred as NSX throughout this documentation) is focused on providing networking, security, automation, and operational simplicity for emerging application frameworks and architectures that have heterogeneous endpoint environments and technology stacks. NSX supports cloud-native applications, bare metal workloads, multi-hypervisor environments, public clouds, and multiple clouds. NSX integrates with {{site.data.keyword.vpc_short}} capabilities through NSX edge cluster and Tier-0 gateways. Through this integration, your workloads are able to use other cloud services and interconnectivity services that are provided by {{site.data.keyword.cloud_notm}}.
 
 **VMware Aria Suite Lifecycle** (formerly VMware vRealize Suite Lifecycle Manager) provides a comprehensive solution for deploying, configuring, managing, and upgrading Aria Suite products. These products include Aria Suite products such as: 
 
@@ -63,7 +63,7 @@ Aria Suite Lifecycle provides product installation and content lifecycle managem
 
 The {{site.data.keyword.vcf-vpc}} automation is based on Terraform and Ansible. The underlying automation engine is {{site.data.keyword.cloud_notm}} Schematics, which uses {{site.data.keyword.cloud_notm}} Terraform provider to deploy the {{site.data.keyword.vpc_short}} and other required {{site.data.keyword.cloud_notm}} Services for your VMware Cloud Foundation instance. Ansible is used to deploy and configure Cloud Builder and SDDC manager, and to configure NSX by using relevant APIs. To provision a VMware Cloud Foundation instance, use {{site.data.keyword.vmwaresolutions_full}} Portal, which offers a more intuitive user experience to complete and complete the Terraform variable values.
 
-The automation provisions a new {{site.data.keyword.vpc_short}}, prefixes, subnets, security groups, public gateways, and the required common services such as DNS. {{site.data.keyword.cloud_notm}} bare metal servers are provisioned on VPC subnets with two PCI interfaces and the required VLAN interfaces. PCI and VLAN interfaces are networking constructs for bare metal servers for {{site.data.keyword.vpc_short}} and how they integrate with {{site.data.keyword.vpc_short}} networking. The PCI interfaces are used for VMware vSphere Distributed Switch uplinks and VLAN interfaces are used for VMkernel adapters and the deployed VMware Cloud Foundation appliances, NSX edges, and Tier 0 Gateway uplinks. {{site.data.keyword.vpc_short}} routes are provisioned for allowing overlay access from your VPC, or from other interconnected VPCs.
+The automation provisions a new {{site.data.keyword.vpc_short}}, prefixes, subnets, security groups, public gateways, and the required common services such as DNS. {{site.data.keyword.cloud_notm}} bare metal servers are provisioned on VPC subnets with two PCI interfaces and the required VLAN interfaces. PCI and VLAN interfaces are networking constructs for bare metal servers for {{site.data.keyword.vpc_short}} and how they integrate with {{site.data.keyword.vpc_short}} networking. The PCI interfaces are used for vSphere Distributed Switch uplinks and VLAN interfaces are used for VMkernel adapters and the deployed VMware Cloud Foundation appliances, NSX edges, and Tier 0 Gateway uplinks. {{site.data.keyword.vpc_short}} routes are provisioned for allowing overlay access from your VPC, or from other interconnected VPCs.
 
 An overview of the consolidated architecture and deployed assets is shown in the following diagram. Consolidated architecture deploys a singe set of VMware assets, a vCenter, NSX managers, and two NSX edges in addition to the SDDC manager. A Tier-0 gateway is deployed and integrated with VPC with external uplinks.
 
@@ -71,7 +71,7 @@ An overview of the consolidated architecture and deployed assets is shown in the
 
 For the connectivity needs and as the NSX deployment is integrated with VPC, you can use {{site.data.keyword.vpc_short}} connectivity services and {{site.data.keyword.cloud_notm}} interconnectivity solutions with your deployment. Public internet network access capabilities to the workloads are provided through floating IP addresses or Public Gateway configurations within your VPC. On-premises connectivity over the public internet can be arranged by using {{site.data.keyword.vpc_short}} VPN services (site-to-site and client-to-site), or alternatively by using NSX built-in capabilities. For private networking, you can use {{site.data.keyword.cloud_notm}} interconnectivity services to connect your VMware workloads with {{site.data.keyword.cloud_notm}} classic infrastructure, other VPCs, and on-premises networks.
 
-With VMware Cloud Foundation, you can use VMware vSAN™ for storage and VMware NSX™ networking with your VMware workloads. You can easily and quickly add and remove ESXi hosts on to your deployment, or add new workload domains.
+With VMware Cloud Foundation, you can use VMware vSAN™ for storage and VMware NSX® networking with your VMware workloads. You can easily and quickly add and remove ESXi hosts on to your deployment, or add new workload domains.
 
 For post initial deployment integrations, for example with your own Active Directory™, you can use {{site.data.keyword.vpc_short}} compute resources to build your Active Directory in {{site.data.keyword.vpc_short}}, or interconnect with your existing Active Directory infrastructure.
 

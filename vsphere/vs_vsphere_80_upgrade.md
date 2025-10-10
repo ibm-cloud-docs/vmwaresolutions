@@ -4,9 +4,9 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-09-17"
+lastupdated: "2025-10-09"
 
-keywords: vSphere migration, NSX upgrade, PSC upgrade, flexible upgrade
+keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade, upgrade from vsphere 7 to 8
 
 subcollection: vmwaresolutions
 
@@ -15,40 +15,35 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Upgrading VMware vSphere software from vSphere 7.0 to 8.0
+# Upgrading vSphere software from version 7.0 to 8.0
 {: #vs_vsphere_80-upgrade}
 
-You can upgrade the VMware vCenter Server® vSphere software on your instances to version 8.0.
+You can upgrade the VMware vSphere® software on your {{site.data.keyword.vcf-flex-short}} instances to version 8.0.
 
-## Procedure to upgrade vCenter Server vSphere software from 7.0 to 8.0
-{: #vs_vsphere_80-upgrade-procedure}
-
-### Before you begin
+## Before you begin the upgrade
 {: #vs_vsphere_80_upgrade-procedure-before}
 
-* If you encounter a problem during the upgrade process, use the {{site.data.keyword.vmwaresolutions_short}} upgrade ticket that you opened at the beginning of the process to [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). If required, IBM Support will open tickets with Broadcom Support.
-* You must follow the support process to ensure that {{site.data.keyword.vmwaresolutions_short}} provides Broadcom Support with all the information about the vCenter Server design and setup, and the {{site.data.keyword.cloud_notm}} information.
-* By following the support process, you ensure that accurate information is shared with Broadcom Support, which shortens the support experience. After IBM Support provides the necessary information to Broadcom Support, you can interact with Broadcom Support directly.
-* Ensure that you keep a record of all the new passwords and credentials that you create as part of the upgrade process. IBM Support requires these credentials at the end of the upgrade process to update their internal database.
+* If you encounter a problem during the upgrade process, use the {{site.data.keyword.vmwaresolutions_short}} upgrade ticket that you opened at the beginning of the process to [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). If required, {{site.data.keyword.IBM}} Support opens tickets with Broadcom® Support.
+* You must follow the support process so that VMware Solutions can provide Broadcom Support with all the information about the VMware vCenter Server® design and setup, and the {{site.data.keyword.cloud_notm}} information.
+* By following the support process, accurate information can be shared with Broadcom Support, which shortens the support experience. After {{site.data.keyword.IBM_notm}} Support provides the necessary information to Broadcom Support, you can interact with Broadcom Support directly.
+* Keep a record of all the new passwords and credentials that you create as part of the upgrade process. IBM Support requires these credentials at the end of the upgrade process to update its internal database.
 
-### Procedure to set the cluster Distributed Resource Schedule to manual
+## Procedure to set the cluster DRS to manual
 {: #vs_vsphere_80_upgrade-procedure-drs}
 
-You must set the cluster Distributed Resource Schedule (DRS) to manual to prevent unexpected migrations during the upgrade process.
+You must set the cluster DRS (Distributed Resource Schedule) to manual to prevent unexpected migrations during the upgrade process.
 
-Complete the following steps from the vCenter Server user interface.
-
+Complete the following steps from the vSphere Web Client:
 1. Select **Host and Clusters > Cluster > Configure > DRS**.
 2. Click **EDIT**.
 3. Set the **DRS** field to **Manual**.
 
-### Procedure to create a standard switch for the new vCenter Server Appliance
+## Procedure to create a standard switch for the new vCenter Server Appliance
 {: #vs_vsphere_80_upgrade-procedure-vcsa}
 
 Temporarily install the new vCenter Server Appliance that you deploy onto a vSphere Standard Switch. One of the existing `vmnics` is reassigned from the distributed switch during the upgrade.
 
-Complete the following steps from the vCenter Server user interface.
-
+Complete the following steps from the vSphere Web Client:
 1. Select **Hosts and Clusters > HOST > Configure > Virtual Switches**. Select a host for the new vCenter Server Appliance.
 2. For the private network switch, select **Managed Physical Adapters**. The private network switch name ends with `-private`.
 3. Select **uplink1/vmnic2**, then click the **Close** icon ![Close icon](../../icons/close-icon.svg "Close") to delete the adapter. Click **OK**.
@@ -56,42 +51,41 @@ Complete the following steps from the vCenter Server user interface.
    1. Select **Virtual Machine Port Group** for a standard switch and click **Next**.
    2. For **New Standard Switch**, set the MTU to 9000 and click **Next**.
    3. Click the green **Add** icon ![Add icon](../../icons/add.svg "Add") to add an adapter. Click **OK**, then **Next** to accept `vmnic2`.
-   4. For **Connection Settings**, keep the **VM Network** and **VLAN ID None** defaults. Click **Next**, then **Finish**. *Standard Switch: vSwitch0* is displayed in the list of switches.
-5. Make a note of the Network Setting for the vCenter Server Appliance VM. You must update the new vCenter appliance to match.
-   * From the vCenter Server user interface, click the VM for the vCenter appliance. Note the name, ending with `vc`.
+   4. For **Connection Settings**, keep the **VM Network** and **VLAN ID None** defaults. Click **Next**, then **Finish**. In the list of switches, `Standard Switch: vSwitch0` is displayed.
+5. Make a note of the **Network Setting** for the vCenter Server Appliance VM. You must update the new vCenter Server appliance to match.
+   * From the vSphere Web Client, click the VM for the vCenter Server appliance. Note the name, ending with `vc`.
    * From the middle pane, click the **Networks** tab. Note the name of the distributed port group, ending with `-dpg-mgmt`. 
 
-### Procedure to upgrade vCenter Server
+## Procedure to upgrade vCenter Server
 {: #vs_vsphere_80_upgrade-procedure-vcenter}
 
-Follow the VMware instructions for upgrading vCenter. For more information, see [Upgrade a vCenter Server Appliance 6.5 or 6.7 with an embedded Platform Services Controller by using the GUI](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-server-upgrade-7-0/upgrading-and-updating-the-vcenter-server-appliance/gui-upgrade-of-the-vcsa-and-psc-appliance/upgrade-the-vmware-vcenter-server-appliance-with-embedded-sso.html){: external}.
+Follow the Broadcom instructions for upgrading vCenter Server. For more information, see [Upgrade a vCenter Server Appliance 6.5 or 6.7 with an embedded Platform Services Controller by using the GUI](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-server-upgrade-7-0/upgrading-and-updating-the-vcenter-server-appliance/gui-upgrade-of-the-vcsa-and-psc-appliance/upgrade-the-vmware-vcenter-server-appliance-with-embedded-sso.html){: external}.
 
-Ensure to complete the following requirements during the upgrade:
+Complete the following requirements during the upgrade:
+* To mount the VMware-VCSA ISO, go to the `visa-ui-installer\win32` directory and run the installer.
+* In the vCenter Server installer, select the **Upgrade** flow and complete the steps in the installer.
+* You must use the IP address and credentials (`administrator` and `root`) for the current vCenter Server appliance. Use the IP address and the `root` password for the VMware ESXi host of the current vCenter Server Appliance and the host where you want to deploy the new vCenter Server Appliance version 8.0 or later. You must use a new temporary IP address, gateway, and subnet mask for the new vCenter Server Appliance during installation.
+* Complete Stage 2 when prompted. Note any warnings and take the appropriate actions.
 
-* Mount the VMware-VCSA ISO, go to the `visa-ui-installer\win32` directory, and run the installer.
-* In the vCenter Server installer dialog, select the **Upgrade** flow and complete the steps in the installer.
-* You must use the IP and credentials (administrator and root) for the current vCenter Server appliance. Use the IP and root password for the ESXi host of the current vCenter Server Appliance and the host where you want to deploy the new 8.0 or later vCenter Server Appliance. You must use a new temporary IP address, gateway, and subnet mask for the new vCenter Server Appliance during installation.
-* Complete Stage 2 when prompted. Ensure to note any warnings and take the appropriate actions.
-
-### Updating vCenter Server licenses
+## Updating vCenter Server licenses
 {: #vs_vsphere_80_upgrade-license-update}
 
-After you upgrade the vCenter Server to vSphere 8, update the licenses on vCenter Server. If you have a vSAN cluster, you must also update the vSAN license. To access the new licenses, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
+After you upgrade the vSphere software to version 8, update the licenses on vCenter Server. If you have a VMware vSAN cluster, you must also update the vSAN license. To access the new licenses, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
 
-#### Procedure to update the vCenter Server license
+### Procedure to update the vCenter Server license
 {: #vs_vsphere_80_upgrade-license-update-vcs}
 
-Complete the following steps from the vCenter Server user interface.
-
-1. Select **Administration menu > Licensing > Licenses**.
+Complete the following steps from the vSphere Web Client:
+1. Click **Administration menu > Licensing > Licenses**.
 2. From the **Licenses** page, click **+ Add New Licenses**.
 3. Enter the new vCenter Server license key in the **New Licenses** field. Then, enter a name for the license and click **OK**.
-4. From the **Assets** page, select the vCenter instance under **VCENTER SERVER SYSTEMS** and click **Assign License**. Then, select the new license and click **OK**.
+4. From the **Assets** page, select the vCenter Server instance under **VCENTER SERVER SYSTEMS** and click **Assign License**. Then, select the new license and click **OK**.
 5. From the **Licenses** page, find the license with the product name **VMware vCenter Server 6 Standard** and click **Remove Licenses**.
 
-#### Procedure to update the vSAN cluster license
+### Procedure to update the vSAN cluster license
 {: #vs_vsphere_80_upgrade-license-update-vsan}
 
+Complete the following steps from the vSphere Web Client:
 1. From the **Licenses** page, click **+ Add New Licenses**.
 2. Enter the new vSAN license keys in the **New Licenses** field. If you have multiple vSAN license keys, enter all the licenses in the **New Licenses** field, specify a name for each license, and then click **OK**.
 3. Complete the following steps from the **Assets** page.
@@ -101,19 +95,18 @@ Complete the following steps from the vCenter Server user interface.
    4. Repeat this step for each vSAN cluster.
 4. From the **Licenses** page, select all the old vSAN cluster licenses and click **Remove Licenses**.
 
-#### Procedure to remove the temporary standard switch
+### Procedure to remove the temporary standard switch
 {: #vs_vsphere_80_upgrade-procedure-remove-switch}
 
-Reassign the `vmnic` that you temporarily used on the standard switch back to the distributed switch it was originally associated with.
+Reassign the `vmnic` that you temporarily used on the standard switch back to the distributed switch that it was originally associated with.
 
-Complete the following steps from the vCenter Server user interface.
-
+Complete the following steps from the vSphere Web Client:
 1. Go to the new vCenter Server appliance.
 2. Under **Actions** click **Edit Settings**.
 3. For network adapter 1, browse to the name of the distributed port group that ends with `-dpg-mgmt` that you previously noted. Save the changes.
-4. Go to the host where you deployed the new appliance. Select **Hosts and Clusters > HOST > Configure > Virtual Switches**. Then, click **MANAGE PHYSICAL ADAPTERS** for *vSwitch0*.
+4. Go to the host where you deployed the new appliance. Select **Hosts and Clusters > HOST > Configure > Virtual Switches**. Then, click **MANAGE PHYSICAL ADAPTERS** for `vSwitch0`.
 5. Select **vmnic2** and click the red **X** to delete the adapter. Click **OK**. The `There are no active physical network adapters for the switch.` warning is displayed. Click **OK**.
-6. Click the **...** in the *vSwitch0* display and then select **Remove**. Click **OK** to confirm you want to remove the switch.
+6. Click the **...** in the `vSwitch0` display and then select **Remove**. Click **OK** to confirm you want to remove the switch.
 7. In the same display, select the private switch and click **MANAGE PHYSICAL ADAPTERS**.
 8. Select **uplink1** and click **+**. `vmnic2` is displayed.
 9. Click **OK**, and then **OK** again to exit the window.
@@ -121,27 +114,27 @@ Complete the following steps from the vCenter Server user interface.
 ### Procedure to upgrade Stor VIB (Broadcom driver)
 {: #vs_vsphere_80_upgrade-procedure-broadcom}
 
-You must upgrade the Broadcom driver before you upgrade the ESXi host.
-
-1. Extract the `007.1316.0000.0000_Unified_StorCLI_PUL.zip` file to a directory on your windows jump server.
+You must upgrade the Broadcom driver before you upgrade the ESXi host. Complete the following steps:
+1. Extract the `007.1316.0000.0000_Unified_StorCLI_PUL.zip` file to a directory on your Windows jump server.
 2. Locate the `vmware-storcli.vib` file in the extracted file contents.
 3. Copy the `.vib` file to either a vSAN or NFS data store that is mounted on the ESXi hosts for the instance. Use vCenter Server to reference the extracted file on your jump server.
 4. SSH into each ESXi host and run the following VIB Upgrade command:
    `esxcli software vib update -v /<path to vsan or nfs datastore from step 3>/vmware-storcli.vib --no-sig-check`
+   
    The following installation results are displayed.
     `Message: Operation finished successfully.    Reboot Required: false    VIBs Installed: Broadcom_bootbank_vmware-storcli_007.1316.0000.0000-01    VIBs Removed: LSI_bootbank_vmware-storcli_007.0916.0000.0000-01    VIBs Skipped:`
+
 5. Run the following command to validate the installation:
    `> esxcli software vib list |grep vmware-storcli
    vmware-storcli    007.1316.0000.0000-01    Broadcom  PartnerSupported  2020-04-16`
-6. Repeat for each host.
+6. Repeat the previous steps for each host.
 
-### Procedure to upgrade the ESXi hosts
+## Procedure to upgrade the ESXi hosts
 {: #vs_vsphere_80_upgrade-procedure-esxi-upgrade}
 
 
 
-1. **Apply any firmware updates that are available on the IBM Cloud classic.**
-   Complete the following steps for each host.
+1. **Apply any firmware updates that are available on the IBM Cloud classic.** Complete the following steps for each host:
    1. Put the host into maintenance mode and power off the host.
    2. View the host details on the IBM Cloud classic portal.
    3. Click the **Firmware** tab and review the available firmware updates. 
@@ -152,8 +145,9 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
    4. To apply the firmware updates, click **Actions > Update Firmware**.
    5. Power on the host.
    6. Upgrade vSphere on the host.
-2. **Upgrade the ESXi hosts**:
-   1. From the vCenter Server user interface, go to **LCM menu > LifeCycle Manager**.
+
+2. **Upgrade the ESXi hosts**. Complete the following steps:
+   1. From the vSphere Web Client, click **LCM menu > LifeCycle Manager**.
    2. Select **IMPORT ISO > IMPORT ISO**, and then the ISO file.
    3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
    4. For each host, choose the host in the vCenter browser tree. Then, select **update** (located in the far left in the main window).
@@ -164,7 +158,7 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
 
    When you are upgrading the ESXi hosts, consider the following information:
    * After you import the ISO file, vCenter Server might indicate that the image is "Incompatible" due to an unsupported Trusted Platform Module (TPM) version. For more information, see [ESXi upgrade fails from 7.x to 8.x due to unsupported TPM version](https://knowledge.broadcom.com/external/article/368511/esxi-upgrade-fails-from-7x-to-8x-due-to.html){: external}.
-   * Proceed with the upgrade and ignore the incompatibility warning. It is safe to proceed because you are not using TPM functionality.
+   * Proceed with the upgrade and ignore the incompatibility warning. It is safe to proceed because you are not using TPM functions.
    * After the upgrade, vCenter Server might flag a TPM compatibility error for your hosts. You can suppress this error. IBM's deployment automation already suppresses it for newly created clusters.
 
 3. **Verify the RAID firmware and drivers (Cascade Lake only).** After you upgrade the ESXi hosts, verify that the RAID firmware and drivers are at the appropriate level.
@@ -180,37 +174,37 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
    If the versions are not correct, complete the following steps to install the firmware and driver:
    1. Put the host into maintenance mode.
    2. Locate the firmware file `9461-16i_nopad.rom` and the driver file `Broadcom-lsi-mr3_7.723.03.00-1OEM.700.1.0.15843807_20654446-package.zip`.
-   3. Copy the driver file to a file that is accessible to the ESXi host. This can be either a local datastore, an NFS share that is mounted on the host, or the vSAN datastore (if the host is part of a vSAN cluster).
+   3. Copy the driver file to a file that is accessible to the ESXi host. The file location can be a local datastore, an NFS share that is mounted on the host, or the vSAN datastore (if the host is part of a vSAN cluster).
    4. To install the driver, run the command `esxcli storcli /c0 download file=9461-16i_nopad.rom`.
    5. To install the firmware, run the command `esxcli software vib install -d /<root>/Broadcom-lsi-mr3_7.723.03.00-1OEM.700.1.0.15843807_20654446-package.zip`, where `<root>` is the directory where you placed the file in a previous step.
    6. Restart the host.
    7. Repeat steps a, b, and c to verify that the correct versions are installed.
    8. Repeat the procedure for all hosts.
    
-   If you have 10 GbE NICs in your hosts, you must apply new NIC drivers. Complete the following steps for each host:
+   If you have 10 GbE NICs in your hosts, you must install new NIC drivers. Complete the following steps for each host:
 
    You do not need to complete the steps if you have 25 GbE NICs.
    {: note}
 
    1. Obtain the new NIC drivers for 10 GbE NICs from IBM Support. The file name is `Intel-i40en_2.9.2.0-1OEM.800.1.0.20613240_24226995.zip`.
    2. Put the host into maintenance mode.
-   3. Copy the driver file to a file accessible to the ESXi host. This can be either a local datastore, an NFS share that is mounted on the host, or the vSAN datastore (if the host is part of a vSAN cluster).
+   3. Copy the driver file to a file accessible to the ESXi host. The file location can be a local datastore, an NFS share that is mounted on the host, or the vSAN datastore (if the host is part of a vSAN cluster).
    4. Decompress the file repeatedly until you have a directory structure. For example, `/<root>/vib20/i40en/INT_bootbank_i40en_2.9.2.0-1OEM.800.1.0.20613240.vib`, where `<root>` is the root directory where you copied the driver-compressed file. The location varies according to your environment.
    5. To install the driver, run the command `esxcli software vib install –v /<root>/vib20/i40en/INT_bootbank_i40en_2.9.2.0-1OEM.800.1.0.20613240.vib`.
    6. Restart the host. Then, verify that the firmware and driver are at the appropriate levels and run the command `esxcli network nic get –n vmnic0`.
-   7. Remediate each host in turn. After remediation, ensure to pull the host out of maintenance mode.
+   7. Remediate each host in turn. After remediation, take the host out of maintenance mode.
 
-Update your IBM Support ticket to indicate that your upgrade is complete and request that the IBM Cloud for VMware database be updated to reflect that the cluster is vSphere 8.
+Update your IBM Support ticket to indicate that your upgrade is complete and request that the VMware Solutions database is updated to reflect that the version of the cluster is vSphere 8.
 
-There are several methods to upgrade your ESXi hosts. For more information, see [Overview of the ESXi Host Upgrade Process](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0.html){: external}. If you need to access an ISO file or upgrade bundle as part of your selected method, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+To upgrade your ESXi hosts, see [Overview of the ESXi Host Upgrade Process](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0.html){: external}. If you need to access an ISO file or upgrade bundle as part of your selected method, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 If the upgrade process fails immediately and the `host cannot enter maintenance mode` error message is displayed, shut down the Zerto ZVAs and try again. The ZVRA VMs automatically start as each server comes out of remediation. For more information about continuing Zerto Replication during the upgrade process, see [How to place a host with an associated VRA into maintenance mode](https://www.zerto.com/myzerto/knowledge-base/how-to-place-a-host-with-an-associated-vra-into-maintenance-mode/){: external}.
 {: note}
 
-### Procedure to update ESXi host licenses
+## Procedure to update ESXi host licenses
 {: #vs_vsphere_80_upgrade-license-update-esxi}
 
-To update the ESXi host licenses, you must first retrieve your new vSphere licenses from the IBM Cloud console. For more information, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
+To update the ESXi host licenses, you must first retrieve your new vSphere licenses from the {{site.data.keyword.cloud_notm}} console. For more information, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
 
 1. From the **Licenses** page, click **+ Add New Licenses**.
 2. Enter the new vSphere 8 license keys in the **New Licenses** field. If you have multiple vSphere 8 license keys, input the all of the licenses in the **New Licenses** filed, enter a name for each license, and click **OK**.

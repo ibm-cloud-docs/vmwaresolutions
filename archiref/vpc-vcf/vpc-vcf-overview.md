@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-18"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 ![{{site.data.keyword.vcf-vpc}} overview](../../images/vcf-vpc-v2-overview.svg "{{site.data.keyword.vcf-vpc}} overview"){: caption="{{site.data.keyword.vcf-vpc}} overview" caption-side="bottom"}
 
-The VMware Cloud Foundation deployment provides a complete set of software-defined services for compute, storage, network security, Kubernetes management, and cloud management. It includes VMware vSphere® with VMware Tanzu™, VMware vSAN™, VMware NSX™ Data Center and it is managed through vCenter Server, SDDC manager, VMware HCX™, and VMware Aria® Suite (formerly known as VMware vRealize® Suite). The VMware Cloud Foundation management capabilities offer consistent VMware operations across private and public cloud deployments. The VMware Cloud Foundation solution provides access to a unique set of VMware Cloud Foundation capabilities in a bundled form.
+The VMware Cloud Foundation deployment provides a complete set of software-defined services for compute, storage, network security, Kubernetes management, and cloud management. It includes VMware vSphere® with VMware Tanzu™, VMware vSAN™, VMware NSX® Data Center and it is managed through vCenter Server, SDDC manager, VMware HCX™, and VMware Aria® Suite (formerly known as VMware vRealize® Suite). The VMware Cloud Foundation management capabilities offer consistent VMware operations across private and public cloud deployments. The VMware Cloud Foundation solution provides access to a unique set of VMware Cloud Foundation capabilities in a bundled form.
 
 {{site.data.keyword.vcf-vpc}} automation provisions the required underlying infrastructure components in your own {{site.data.keyword.vpc_short}}, which is under your own control. The {{site.data.keyword.cloud_notm}} bare metal servers for {{site.data.keyword.vpc_short}} provide you with compute capacity provisioned in minutes. By using {{site.data.keyword.vpc_full}} as the underlying infrastructure, the deployment happens in an agile way inside a secure and logically isolated virtual network by using a private IP address space that you can define.
 
@@ -34,7 +34,7 @@ The VMware Cloud Foundation provisioning is done in a similar way that you would
 ## Key benefits
 {: #vpc-vcf-overview-benefits}
 
-The VMware Cloud Foundation architecture provides you with the fundamental building blocks for a software-defined data center. These blocks include VMware vSphere, vCenter Server, VMware NSX, VMware vSAN, and SDDC manager to manage your VMware Cloud Foundation deployment. The VMware Cloud Foundation automation and the VMware Cloud Builder appliance automate the deployment of the entire underlying infrastructure and VMware software-defined stack and you have the same architecture and user experience as in on-premises VMware Cloud Foundation deployments.
+The VMware Cloud Foundation architecture provides you with the fundamental building blocks for a software-defined data center. These blocks include vSphere, vCenter Server, VMware NSX, VMware vSAN, and SDDC manager to manage your VMware Cloud Foundation deployment. The VMware Cloud Foundation automation and the VMware Cloud Builder appliance automate the deployment of the entire underlying infrastructure and VMware software-defined stack and you have the same architecture and user experience as in on-premises VMware Cloud Foundation deployments.
 
 {{site.data.keyword.cloud_notm}} provides VMware Cloud Foundation licensing and gives you access to a unique set of VMware Cloud Foundation capabilities in a bundle.
 

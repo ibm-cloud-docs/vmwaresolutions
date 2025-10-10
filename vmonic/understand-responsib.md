@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-09-25"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -47,7 +47,7 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Scaling | Scale your VMware infrastructure as requested. | Choose the capacity for your VMware Solutions instances. |
-| Upgrading and patching | {{site.data.keyword.IBM_notm}} does not have access to components to perform upgrades and patching. | It's your responsibility to apply updates to VMware components (VMware vSphere Hypervisor ESXi™, VMware vCenter Server®, VMware NSX-T™, VMware vSAN™, and Microsoft Active Directory™) and any additional add-on components (VMware Aria, Caveonix RiskForesight, and Veeam Backup and Replication). You can use [VMware Update Manager](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vum) to assist with the updates. |
+| Upgrading and patching | {{site.data.keyword.IBM_notm}} does not have access to components to perform upgrades and patching. | It's your responsibility to apply updates to VMware components (VMware vSphere ESXi™, VMware vCenter Server®, VMware NSX-T™, VMware vSAN™, and Microsoft Active Directory™) and any additional add-on components (VMware Aria, Caveonix RiskForesight, and Veeam Backup and Replication). You can use [VMware Update Manager](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vum) to assist with the updates. |
 {: row-headers}
 {: caption="Responsibilities for change management for VMware Solutions" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or {{site.data.keyword.IBM_notm}} might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-09-04"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ The following items are the key features of the offering:
 Veeam Backup and Replication provides comprehensive data protection and disaster recovery solutions for VMware environments. Fully compatible with {{site.data.keyword.cloud_notm}} for VMware Solutions, Veeam ensures that your workloads are safeguarded against data loss and downtime.
 
 Integration highlights include the following features:
-* Veeam integrates directly with VMware vSphere environments on {{site.data.keyword.cloud_notm}}, offering the same functions as on-premises deployments.
+* Veeam integrates directly with vSphere environments on {{site.data.keyword.cloud_notm}}, offering the same functions as on-premises deployments.
 * Use features like Instant VM Recovery, SureBackup, and constant data protection to meet stringent RTO and RPO requirements.
 * Scale your backup infrastructure in tandem with your {{site.data.keyword.vcf-short}} environment to ensure consistent performance and protection.
 * Extend data protection across hybrid and multicloud environments, which facilitates seamless workload mobility and disaster recovery.

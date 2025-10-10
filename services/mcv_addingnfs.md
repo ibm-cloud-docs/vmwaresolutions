@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ You can expand the capacity of your {{site.data.keyword.vcf-auto}} multizone ins
 ## Before you add NFS storage to {{site.data.keyword.vcf-auto-short}} multizone instances
 {: #mcv_addingnfs-storage-prereq}
 
-* Do not add NFS storage from the VMware vSphere® Web Client. The changes that you make on the vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console.
+* Do not add NFS storage from the VMware vSphere® Web Client. The changes that you make in the VMware vSphere Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console.
 * IBM does not manage NFS file shares that you manually add to an instance.
 
 ## Procedure to add NFS storage to {{site.data.keyword.vcf-auto-short}} multizone instances

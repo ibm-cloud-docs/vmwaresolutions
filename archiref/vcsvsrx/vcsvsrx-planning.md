@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-08-21"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ subcollection: vmwaresolutions
 There are two options for deploying a vSRX high availability (HA) cluster:
 
 * Deploy gateway on bare metal servers - deploys vSRX on a KVM-based host.
-* Deploy gateway as part of the {{site.data.keyword.vmwaresolutions_full}} offering (gateway cluster) - deploys vSRX on a VMware vSphere® ESXi™ hypervisor.
+* Deploy gateway as part of the {{site.data.keyword.vmwaresolutions_full}} offering (gateway cluster) - deploys vSRX on a VMware vSphere ESXi™ hypervisor.
 
 The two vSRX nodes are tied together in a highly available chassis cluster and deliver a reliable gateway solution that provides for continuous network traffic flows through the loss of a host that supports a node or a vSRX node.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -33,7 +33,7 @@ The following steps summarize a standard deployment.
 2. Upon your selection, a {{site.data.keyword.vcf-auto-short}} instance can be deployed with various bare metal server hardware options. You can select an initial deployment to include one consolidated cluster or separate management and workload clusters. You can optionally deploy a gateway cluster to host Juniper® vSRX or your own routing or firewall device. The solution can be expanded after the initial deployment by adding more hosts to existing clusters, or by adding new clusters.
 3. Your clusters can have multiple datastores. You can use VMware vSAN™ with local SSDs or {{site.data.keyword.filestorage_full_notm}} (NFS), where you can have one or more LUNs with different performance and size characteristics. You can expand the volumes as your needs grow.
 4. The automation deploys a vCenter Server appliance on the management or consolidated cluster. Your vCenter Server has an IP address from the {{site.data.keyword.cloud_notm}} classic infrastructure provided `10/8` address space.
-5. The automation deploys three VMware NSX™ managers and a cluster is formed which uses NSX virtual IP for high availability (HA). Your NSX managers have an IP address from the {{site.data.keyword.cloud_notm}} classic infrastructure provided `10/8` address space.
+5. The automation deploys three VMware NSX® managers and a cluster is formed which uses NSX virtual IP for high availability (HA). Your NSX managers have an IP address from the {{site.data.keyword.cloud_notm}} classic infrastructure provided `10/8` address space.
 6. The automation deploys an Active Directory for authentication and name resolution. You can select between a single Windows virtual server instance in {{site.data.keyword.cloud_notm}} IaaS hypervisor or two highly available dedicated Windows Server VMs (with bring your own license) on the VMware management cluster.
 7. The automation deploys four edge nodes in your deployment and forms two NSX edge clusters - Services edge cluster and Workload edge cluster.
 8. The services edge cluster is used to host services Tier 0 Gateway, which provides network connectivity services for your management components.
@@ -56,7 +56,7 @@ This clustering can be summarized as follows:
 6. The services edge cluster is used to host services Tier 0 Gateway, which provides network connectivity services for your management components.
 7. Workload edge cluster hosts workload Tier 0 and Tier 1 Gateways for your workloads. A predefined example overlay network topology with one Tier 1 Gateway is provided by automation. You can customize it for your own needs by changing or deleting example segments or by adding new segments.
 
-The gateway cluster must not be mixed with the NSX edge cluster, which consists of VMware NSX™ edge transport nodes. The gateway cluster provides compute capacity for hosting Juniper vSRX, Fortinet FortiGate, or other third-party routers or firewalls. The VLAN routing can be controlled by [gateway appliance configuration](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances) though {{site.data.keyword.cloud_notm}} Classic portal.
+The gateway cluster must not be mixed with the NSX edge cluster, which consists of VMware NSX® edge transport nodes. The gateway cluster provides compute capacity for hosting Juniper vSRX, Fortinet FortiGate, or other third-party routers or firewalls. The VLAN routing can be controlled by [gateway appliance configuration](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances) though {{site.data.keyword.cloud_notm}} Classic portal.
 {: important} 
 
 ## NSX topology

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Cluster settings
 {: #cluster-settings}
 
-Before the addition of attached storage, the VMware vCenter Server® solution didn't enable advanced features such as VMware® vSphere Distributed Resource Scheduler (DRS) and VMware vSphere® high availability (HA). With the addition of the NFS attached storage device, these features are enabled on the cluster with the settings that are listed in the following sections.
+Before the addition of attached storage, the VMware vCenter Server® solution didn't enable advanced features such as VMware® vSphere Distributed Resource Scheduler (DRS) and vSphere® high availability (HA). With the addition of the NFS attached storage device, these features are enabled on the cluster with the settings that are listed in the following sections.
 
 ## vSphere Distributed Resource Scheduler
 {: #cluster-settings-vsphere-drs}
@@ -32,7 +32,7 @@ When a VM is first powered on in the cluster, DRS tries to maintain proper load 
 
 In this design, the DRS Automation level is set to fully automated so when VMs are powered on they're automatically placed onto hosts with sufficient capacity. The VMs are also automatically migrated from one host to another to load balance the cluster. Additionally, the migration threshold of the DRS cluster is set at the midpoint between conservative and aggressive such that priority 1, priority 2, and priority 3 recommendations are applied. vCenter Server provides at least good improvements to the cluster’s load balance.
 
-The following table shows the settings for the vSphere DRS cluster in the VMware vSphere Web Client.
+The following table shows the settings for the vSphere DRS cluster in the vSphere Web Client.
 
 | Setting             | Value  |
 |:------------------- |:------ |
@@ -42,7 +42,7 @@ The following table shows the settings for the vSphere DRS cluster in the VMware
 | Enable individual machine automation levels | Selected, set to 15 ms |
 {: caption="DRS Automation settings for the vSphere DRS cluster" caption-side="bottom"}
 
-For more information about configuring these settings in the vSphere Web Client, see the VMware vSphere documentation.
+For more information about configuring these settings in the vSphere Web Client, see the vSphere documentation.
 
 Along with the automation level and migration threshold of the cluster, this design enables VM automation so that you can override values per individual VM. More granular control of VMs enables further prioritization of the load balancing of VMs.
 
@@ -75,7 +75,7 @@ The VM monitoring feature uses the heartbeat information that VMware Tools captu
 
 The failure conditions define how the VMs fail and the response that is given to each failure. In this design, the VM restart priority is set to medium. Review this value and adjust settings so that the restart priority matches the importance of the workload. Additionally, the response for host isolation is set to “Power off and restart VMs” so that VMs are not affected by an isolated host in the cluster. The rest of the values for this setting are set to default.
 
-The following table shows the settings for the vSphere HA cluster in the VMware vSphere Web Client.
+The following table shows the settings for the vSphere HA cluster in the vSphere Web Client.
 
 | Setting             | Value  |
 |:------------------- |:------ |
@@ -91,7 +91,7 @@ The following table shows the settings for the vSphere HA cluster in the VMware 
 | Maximum resets time window | Within 1h |
 {: caption="Failure Conditions and VM Response settings for the vSphere HA cluster" caption-side="bottom"}
 
-For more information about configuring these settings in the vSphere Web Client, see the VMware vSphere documentation.
+For more information about configuring these settings in the vSphere Web Client, see the vSphere documentation.
 
 #### Admission control
 {: #cluster-settings-admin-control}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -60,8 +60,8 @@ This paring of {{site.data.keyword.rw}} instances enables management and workloa
    * In normal operations, workload VMs can run in the recovery region if required. However, there needs to be enough initial capacity in the recovery region to run the recovered workload VMs upon DR invocation. These workloads might be test and development workloads that are considered to be sacrificial upon DR.
 
 Recovery Point Objective (RPO) and Recovery Time Objective (RTO) depend on many variables. Therefore, the {{site.data.keyword.rw}} dual region design provides no standard Service Level Agreement (SLA) for RPO or RTO. However, review the following information about RPO and RTO:
-* The VMware vSphere clusters in the recovery region are provisioned and are available to run workloads as soon as these workload VMs are started after DR invocation.
-* The core management components in the recovery region (vCenter Server and the NSX™ Manager cluster) are running, so there is no infrastructure deployment wait time.
+* The VMware vSphere® clusters in the recovery region are provisioned and are available to run workloads as soon as these workload VMs are started after DR invocation.
+* The core management components in the recovery region (vCenter Server and the NSX® Manager cluster) are running, so there is no infrastructure deployment wait time.
 * The recovery infrastructure is being monitored and compliant through the management toolset, that is, VMware Aria® Operations™ and Caveonix RiskForesight, so that the recovery infrastructure resources are healthy, compliant, and ready to be used.
 * The design describes the availability and recovery of the management components, and the technology that is used to accomplish this design can also be used for the workloads, if required. Alternatively, other products can be used for the workloads as required to meet the client's RTO/RPO application requirements.
 * The design does not limit options for DR approaches for the workloads. For example, the client's requirements can define the use of the same or different IP addressing in DR or the use of replication or backup and restore for the recovery of these workloads. Most technologies include the ability to restore to multiple restore points so that the client can roll back to "known good" configuration when malware attacks occur.

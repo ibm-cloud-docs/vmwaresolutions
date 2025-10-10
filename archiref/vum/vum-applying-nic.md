@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 Before you start this task, retrieve all the physical hosts IPMI IP addresses, login IDs, and passwords from the [{{site.data.keyword.slportal}}](https://control.softlayer.com/devices){: external}. This is required in a back out or to check on the progress of an upgrade, where no direct network access to the host exists.
 
 For each host, successively:
-1. Use the vSphere Web Client to place the vSphere ESXi host into maintenance mode by selecting **Home** > **Hosts and Clusters**. In the Navigator pane, select the vSphere ESXi host and right-click the host and select **Maintenance Mode** > **Enter Maintenance Mode**. As the host is part of an automated DRS cluster, virtual machines are migrated to different hosts when the host enters maintenance mode.
+1. Use the VMware vSphere® Web Client to place the vSphere ESXi host into maintenance mode by selecting **Home** > **Hosts and Clusters**. In the Navigator pane, select the vSphere ESXi host and right-click the host and select **Maintenance Mode** > **Enter Maintenance Mode**. As the host is part of an automated DRS cluster, virtual machines are migrated to different hosts when the host enters maintenance mode.
 2. SSH into the vSphere ESXi host, by using the details from the {{site.data.keyword.vmwaresolutions_short}} console.
 3. Run the following vCLI command to enable the ixgben native drivers:
    `esxcli system module set --enabled=true --module=ixgben`

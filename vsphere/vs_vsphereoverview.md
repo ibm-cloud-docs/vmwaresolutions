@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-06-25"
+lastupdated: "2025-10-09"
 
 keywords: vcf flexible, vcf for classic flexible, tech specs flexible instances
 
@@ -42,7 +42,7 @@ If you are a BYOL user, you must provide your own license keys for all VMware co
    {{site.data.content.attnnote-byol}}
 
 Select licenses for the following VMware components:
-* VMware vSphere Enterprise Plus 7.0u3 or 8.0u2
+* VMware vSphere® Enterprise Plus 7.0u3 or 8.0u2
 * The following VMware components are optional:
    * VMware vCenter Server®
    * VMware NSX®
@@ -100,7 +100,7 @@ One {{site.data.keyword.cloud_notm}} bare metal server with the networking confi
 ### VMware components for expansion nodes
 {: #vs_vsphereoverview-expansion-node-specs-vmware-components}
 
-* One {{site.data.keyword.cloud_notm}} bare metal server with VMware vSphere Enterprise Plus 7.0 or 6.7u3 for V4.7 and earlier.
+* One {{site.data.keyword.cloud_notm}} bare metal server with vSphere Enterprise Plus 7.0 or 6.7u3 for V4.7 and earlier.
 * Optional VMware components presented in [Technical specifications for Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview#vs_vsphereoverview-specs).
 
 You must manage the ESXi servers, optional VMware components, and extra hardware that is ordered and delivered to your {{site.data.keyword.cloud_notm}} account only from the {{site.data.keyword.slportal}}. After you create a new instance in the {{site.data.keyword.vmwaresolutions_short}} console, you can return to the console, and add capacity to the new instance. For more information, see [Adding ESXi servers to Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_addingservers).

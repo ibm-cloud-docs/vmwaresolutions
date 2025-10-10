@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-20"
+lastupdated: "2025-10-09"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ Review the source architecture for the VMware® HCX™ components that are typic
 * HCX owns the source and destination encryption and decryption processes. It ensures consistent security and providing admission for hybrid workflows such as virtual machine (VM) migration and network extension.
 * HCX creates an optimized, software-defined WAN to increase stretched network performance, enabling performance that approaches LAN speed.
 * HCX also enables bidirectional workload migration to {{site.data.keyword.cloud}} Networking services.
-* HCX integrates with vSphere vCenter and is managed from the vSphere Web Client.
+* HCX integrates with vSphere vCenter and is managed from the VMware vSphere® Web Client.
 
 ## Understanding HCX
 {: #hcx-archi-source-understand-hcx}
