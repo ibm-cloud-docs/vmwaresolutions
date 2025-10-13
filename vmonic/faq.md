@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-10"
+lastupdated: "2025-10-13"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -78,7 +78,7 @@ You can configure vCenter high availability (HA), but configuration support is n
 {: #faq-rename-cluster}
 {: faq}
 
-If the status of the {{site.data.keyword.vcf-auto-short}} instance is **Available**, you can rename the cluster from the VMware vSphere® Web Client. For more information, see [How to change vCenter Server artifacts?](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact).
+If the status of the {{site.data.keyword.vcf-auto-short}} instance is **Available**, you can rename the cluster from the VMware vSphere® Web Client. For more information, see [How to change vCenter Server artifacts?](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact).
 
 ## How are IBM and VMware patches managed?
 {: #faq-patches}
