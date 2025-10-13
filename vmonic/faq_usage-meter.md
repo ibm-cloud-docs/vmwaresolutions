@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-10"
 
 keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
@@ -99,9 +99,9 @@ Starting on 8 August 2025, you must swap any older keys to the new license keys 
 {: #faq_usage-meter-when-to-complete}
 {: faq}
 
-By 1 November 2025, all customer accounts must have the new Broadcom license keys installed and Usage Meter v9.0.1 deployed.
+By 1 November 2025, your account must have Usage Meter v9.0.1 deployed with the new Broadcom license keys installed.
 
-Accounts that have not updated to current license keys will be out of compliance and are risked being out of support and in violation of the {{site.data.keyword.cloud_notm}} Services Agreement. If not addressed, violations can result in account disruptions.
+If your account is not updated to current license keys, you will be out of compliance and risk of being out of support and in violation of the {{site.data.keyword.cloud_notm}} Services Agreement. If not addressed, violations can result in account disruptions.
 {: attention}
 
 ## Can {{site.data.keyword.IBM_notm}} do this all for me?
@@ -173,7 +173,7 @@ No special backup is needed; continue to use your typical data protection and ba
 
 Yes. {{site.data.keyword.cloud_notm}} for VMware requires customers to comply with vendor software agreements as part of the {{site.data.keyword.cloud_notm}} Services Agreement. If you do not provide usage tracking through Usage Meter, you risk falling out of support and compliance and incur billing errors on usage. For more information, see the [{{site.data.keyword.cloud_notm}} Services Agreement](https://www.ibm.com/support/customer/csol/terms/?id=Z126-6304&cc=us&lc=en){: external}.
 
-IBM Cloud Services Agreement (CSA), and applicable attachments and transaction documents are the complete agreement under which customers can order Cloud Services. The services might consist of {{site.data.keyword.cloud_notm}} Services or other services to support use of Cloud Services that {{site.data.keyword.IBM_notm}} provides ({{site.data.keyword.IBM_notm}} products) or cloud or other services that a third-party such as Broadcom provides that customers acquire from {{site.data.keyword.IBM_notm}} (non-{{site.data.keyword.IBM_notm}} products).
+IBM Cloud Services Agreement (CSA) with the applicable attachments and transaction documents are the complete agreement under which customers can order Cloud Services. The services might consist of {{site.data.keyword.cloud_notm}} Services or other services to support use of Cloud Services that {{site.data.keyword.IBM_notm}} provides ({{site.data.keyword.IBM_notm}} products) or cloud or other services that a third-party such as Broadcom provides that customers acquire from {{site.data.keyword.IBM_notm}} (non-{{site.data.keyword.IBM_notm}} products).
 
 ## What security and compliance documentation is available for Usage Meter?
 {: #faq_usage-meter-sec-compl-doc}
