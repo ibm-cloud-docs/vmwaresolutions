@@ -42,8 +42,8 @@ BOM updates for {{site.data.keyword.vcf-classic-short}}
       * 8.0 Update 3g (build 24859861)
       * 7.0 Update 3w (build 24784741)
 
-BOM updates for {{site.data.keyword.vcf-vpc}}
-:   VMware vSphere ESXi 8.0 Update 3f (build 24784735) is applied to newly deployed instances.
+BOM updates for {{site.data.keyword.vcf-vpc-short}}
+:   VMware vSphere ESXi 8.0 Update 3f (build 24784735) is applied to newly deployed {{site.data.keyword.vcf-vpc}} instances.
 
 ### 8 August 2025
 {: #vmwaresolutions-aug0825}
