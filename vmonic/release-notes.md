@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-09-12"
+lastupdated: "2025-10-16"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -26,6 +26,15 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 {: #year-2025}
 
 
+
+### 16 October 2025
+{: #vmwaresolutions-oct1625}
+{: release-note}
+
+End of Marketing for VMware add-ons
+:   As of 16 October 2025, the following VMware® add-ons are no longer available for provisioning:
+    * VMware vDefend ATP (Advanced Threat Prevention) add-on
+    * VMware Private AI Foundation with NVIDIA and SQL Support 5.x
 
 ### 12 September 2025
 {: #vmwaresolutions-sep1225}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-09-25"
+lastupdated: "2025-10-15"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Offering comparison chart
 {: #inst_comp_chart}
+
+
 
 Review the following information to understand the differences in feature support between {{site.data.keyword.vmwaresolutions_full}} offerings.
 

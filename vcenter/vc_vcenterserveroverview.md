@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-06-06"
+lastupdated: "2025-10-15"
 
 keywords: vcf automated, vcf classic architecture, tech specs vmware cloud foundation
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Overview of {{site.data.keyword.vcf-auto-short}}
 {: #vc_vcenterserveroverview}
+
+
 
 {{site.data.keyword.vcf-auto}} is a hosted private cloud that delivers the {{site.data.keyword.vcf-flex}} stack as a service. The VMware® environment is built in addition to a minimum of three {{site.data.keyword.cloud}} bare metal servers and it offers shared network-attached storage and dedicated software-defined storage options. It also includes the automatic deployment and configuration of an easy-to-manage logical edge firewall, which VMware NSX® powers.
 {: shortdesc}

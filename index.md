@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-15"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -22,6 +22,8 @@ completion-time: 2h
 {: #getting-started}
 {: toc-content-type="tutorial"}
 {: toc-completion-time="2h"}
+
+
 
 In this {{site.data.keyword.vmwaresolutions_full}} getting started tutorial, we take you through the process of ordering an instance and some services for it.
 {: shortdesc}

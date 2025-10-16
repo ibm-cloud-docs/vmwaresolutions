@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-02"
+lastupdated: "2025-10-15"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Planning for {{site.data.keyword.cr}}
 {: #cr_planning}
+
+
 
 Review the following requirements before you order your {{site.data.keyword.cr}} instance. Plan your instance based on the {{site.data.keyword.cloud}} data center location, your capacity requirements, and your service requirements.
 

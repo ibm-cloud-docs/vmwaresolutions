@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Requirements for Flexible instances
 {: #vs_orderinginstances-req}
 
+
+
 To deploy a highly customizable VMware® virtualized platform, order a {{site.data.keyword.vcf-flex}} instance.
 
 Select VMware components, {{site.data.keyword.cloud}} bare metal server settings, storage settings, and networking choices, to create a new instance. After you place the order, the instance configuration is captured so that you can come back and continue to scale out the instance as needed. After the order is completed, you can manually configure the {{site.data.keyword.vcf-flex-short}} instance based on your requirements.

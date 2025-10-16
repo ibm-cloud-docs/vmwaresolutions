@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-15"
 
 keywords: Cyber Recovery, Cyber Recovery offering, Cyber Recovery instance, data protection, cyber threat, ransomware, Cyber resilience
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # {{site.data.keyword.cr}} overview
 {: #cr_overview}
+
+
 
 The most critical aspects of your organization are your computer systems and networks and your data. You must protect them from threats.
 

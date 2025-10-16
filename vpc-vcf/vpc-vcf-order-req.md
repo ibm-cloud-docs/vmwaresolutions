@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-03-04"
+lastupdated: "2025-10-15"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Requirements for {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-order-req}
+
+
 
 With the bare metal server infrastructure provided in {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}), you can quickly deploy {{site.data.keyword.vcf-vpc}} on {{site.data.keyword.cloud_notm}}.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-15"
 
 keywords: planning flexible, data center, vSphere data centers
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Planning for {{site.data.keyword.vcf-flex-short}}
 {: #vs_planning}
+
+
 
 Review the following requirements before you order a {{site.data.keyword.vcf-flex}} instance. Plan your {{site.data.keyword.vcf-flex-short}} based on the {{site.data.keyword.cloud}} data center location and your workload capacity requirements.
 
