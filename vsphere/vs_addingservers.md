@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-21"
 
 keywords: flexible instance add host, add server flexible instance
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Adding ESXi servers to Flexible instances
 {: #vs_addingservers}
+
+
 
 You can expand the capacity of your {{site.data.keyword.vcf-flex}} instance according to your business needs by adding VMware ESXi™ servers.
 

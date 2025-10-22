@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-01"
+lastupdated: "2025-10-21"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # VMware add-ons for VMware Cloud Foundation
 {: #vmware-add-ons}
+
+
 
 You must order separately a number of VMware® add-ons for your VMware Cloud Foundation™ bundle.
 

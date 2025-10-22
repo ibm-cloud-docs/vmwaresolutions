@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 # Creating baselines and attaching to inventory objects
 {: #vum-baselines}
 
+
+
 Baselines have a collection of one or more patches, extensions, service packs, bug fixes, or upgrades, and can be classified as patch, extension, or upgrade baselines. Baseline groups are assembled from existing baselines. Host baseline groups can have a single upgrade baseline, and various patch and extension baselines. Virtual machine and virtual appliance baseline groups can have up to three upgrade baselines: one VMware® Tools upgrade baseline, one virtual machine hardware upgrade baseline, and one virtual appliance upgrade baseline.
 
 VMware Update Manager (VUM) includes predefined baselines, which you cannot edit or delete. You can use the predefined baselines, or create patch, extension, and upgrade baselines that meet your criteria. Custom baselines that you create, and the predefined baselines, can be combined in baseline groups.

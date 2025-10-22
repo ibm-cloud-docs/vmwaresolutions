@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Configuring the automation server
 {: #veeam-cr-sag-ascfg}
 
+
+
 The automation server is used to host Ansible®. The following architecture describes Ansible:
 
 * **One Ansible control node** - The Ansible control node is the place where Ansible is installed, and can access the Ansible Linux® hosts over Secure Shell (SSH), and Ansible Windows® hosts that are configured with Windows Remote Management (WinRM). The following items are required by Ansible:

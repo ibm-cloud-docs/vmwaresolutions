@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # About attached storage for vCenter Server
 {: #storage-benefits}
+
+
 
 Attached storage is an extension of the VMware vCenter Server® offering. The attached storage solution architecture for the vCenter Server details the components of the solution and the high-level configuration of each component in the design.
 

@@ -19,6 +19,8 @@ subcollection: vmwaresolutions
 {: #trbl_esxi_firewall_config_nfs}
 {: troubleshoot}
 
+
+
 There are several possible reasons for loss of connectivity to storage. One possibility is that {{site.data.keyword.cloud}} was performing maintenance on your endurance storage, which disabled your storage's IP addresses in a rotating fashion. However, your host was not aware of all endurance storage IP addresses.
 {: tsSymptoms}
 
@@ -34,6 +36,6 @@ If your management cluster is using NFS storage, review the `/etc/hosts` file 
 10.200.158.59   fsf-sng0101b-fz.service.softlayer.com
 ```
 
-Also, if you run your Active Directory (AD) domain controllers on endurance storage, a circular dependency exists between your AD controllers, which are on endurance storage and the fact that VMware vSphere® is mounting this storage, which depends on DNS resolution. 
+Also, if you run your Active Directory (AD) domain controllers on endurance storage, a circular dependency exists between your AD controllers, which are on endurance storage and the fact that VMware vSphere® is mounting this storage, which depends on DNS resolution.
 
 If all your directory controllers are offline, then storage mounts might fail. To recover from this situation, temporarily add entries to `/etc/hosts` for the storage volume. To reduce the likelihood of this situation, you can create extra domain controllers or move at least one of your domain controllers from shared storage to local storage.

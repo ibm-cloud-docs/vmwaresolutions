@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Managing notifications
 {: #notifications}
 
+
+
 You can check notifications for the status of {{site.data.keyword.vmwaresolutions_full}} operations. You can use this information to investigate problems that might occur with VMware Solutions.
 
 You can also get notified about {{site.data.keyword.cloud}} platform-related items, such as announcements or billing and usage details.

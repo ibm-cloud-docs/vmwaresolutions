@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-18"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Preparing the installation environment
 {: #hcxclient-planning-prep-install}
+
+
 
 The installation of VMware HCX™ has the following software requirements:
 * VMware vSphere® 7 or later.

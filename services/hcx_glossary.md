@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-06-27"
+lastupdated: "2025-10-21"
 
 keywords: VMware HCX, HCX site, HCX definition
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Glossary of HCX terms
 {: #hcx_glossary}
+
+
 
 This glossary provides definitions for the terms that are associated with the VMware HCX™ service.
 

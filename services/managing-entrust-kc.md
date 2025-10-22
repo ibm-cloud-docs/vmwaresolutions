@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 keywords: Entrust KeyControl WebGUI, Entrust KeyControl console, enable internet Entrust KeyControl
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Managing Entrust KeyControl
 {: #managing-entrust-kc}
+
+
 
 New installations of Entrust KeyControl™ (formerly HyTrust KeyControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust KeyControl installations on your existing instances.
 {: deprecated}

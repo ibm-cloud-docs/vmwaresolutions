@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Architecture overview for Caveonix RiskForesight
 {: #caveonix-arch}
 
+
+
 The Caveonix RiskForesight™ architecture is shown in the following diagram.
 
 ![Architecture diagram](../../images/caveonix-architecture.svg "Architecture diagram"){: caption="Architecture for Caveonix RiskForesight" caption-side="bottom"}

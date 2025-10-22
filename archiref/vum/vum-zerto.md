@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 # Zerto
 {: #vum-zerto}
 
+
+
 If you find that a vSphere® ESXi™ host can't enter maintenance mode during remediation, it might be that Zerto is stopping it.
 
 If you updated Zerto after the initial deployment, complete the following steps to resolve the issue:

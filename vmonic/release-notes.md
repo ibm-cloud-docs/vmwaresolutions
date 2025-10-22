@@ -19,6 +19,8 @@ content-type: release-note
 # Release notes for VMware Solutions
 {: #vmwaresolutions-relnotes}
 
+
+
 Use these release notes to learn about updates to {{site.data.keyword.vmwaresolutions_full}}, including new features, component updates, usability enhancements, and bug fixes.
 {: shortdesc}
 

@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Operations management introduction
 {: #opsmgmt-intro}
 
+
+
 The following reference architecture guides and constrains the instantiations of the {{site.data.keyword.vmwaresolutions_full}} architectures.
 
 It also does the following actions:

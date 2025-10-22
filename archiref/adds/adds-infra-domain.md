@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # VMware Solutions infrastructure domain
 {: #adds-infra-domain}
+
+
 
 The {{site.data.keyword.vmwaresolutions_full}} infrastructure domain holds the resource objects and user accounts for the administration of the {{site.data.keyword.vcf-auto}} instance only. Using this domain to hold resource objects and user accounts for your workload VMs is not recommended.
 

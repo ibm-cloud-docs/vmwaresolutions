@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # System context for {{site.data.keyword.vcf-classic-short}} and Red Hat OpenShift architecture
 {: #vcs-openshift-syscontext}
+
+
 
 {{site.data.content.rhos-deprecated-note}}
 

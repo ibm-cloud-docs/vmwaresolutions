@@ -4,7 +4,7 @@ copyright:
 
   years: 2025
 
-lastupdated: "2025-08-25"
+lastupdated: "2025-10-21"
 
 keywords: HA firmware solutions, DR for vmware solutions, vmware solutions recovery time objective, vmware solutions recovery point objective
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Understanding high availability and disaster recovery for VMware Solutions
 {: #ha-dr}
+
+
 
 [High availability](#x2284708){: term} (HA) is the ability for a service to remain operational and accessible in the presence of unexpected failures. [Disaster recovery](#x2113280){: term} is the process of recovering the service instance to a working state.
 {: shortdesc}

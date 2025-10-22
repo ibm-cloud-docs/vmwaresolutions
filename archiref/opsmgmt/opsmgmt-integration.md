@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-14"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Integration
 {: #opsmgmt-integration}
+
+
 
 Review the following topic to understand the Operational Management layer of the design. However, some enterprises might want to integrate this layer with the Service Management layer. In this design, VMware Aria® Operations™ Manager is the central point where all alerts are surfaced.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-08-19"
+lastupdated: "2025-10-21"
 
 keywords: vcf classic remove NFS storage
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Removing NFS storage from {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_removingnfs}
+
+
 
 You can contract the capacity of your {{site.data.keyword.vcf-auto}} instance according to your business needs by removing Network File System (NFS) storage.
 

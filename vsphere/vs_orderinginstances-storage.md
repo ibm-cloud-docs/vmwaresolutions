@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-10-21"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Storage (vSAN only)
 {: #vs_orderinginstances-storage-settings}
+
+
 
 The **Storage** section of your {{site.data.keyword.vcf-flex}} instance order is applicable only if you select the VMware vSAN™ component.
 

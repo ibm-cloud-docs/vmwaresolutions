@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # VMware Solutions workload domain
 {: #adds-wkld-domain}
+
+
 
 Your customer workload virtual machines (VMs) are using the overlay virtualized network with customer Bring Your Own IP (BYOIP) address space. Associate these IP ranges with the customer workload AD domain and not the {{site.data.keyword.vmwaresolutions_full}} infrastructure Active Directory™ (AD) domain. We recommend that the VMware Solutions infrastructure AD domain holds resources and user accounts for administration of the vCenter Server instance only. Resources and user accounts for your workload VMs are held in a separate forest or domain.
 

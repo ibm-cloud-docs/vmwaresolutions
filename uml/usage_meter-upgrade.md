@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 keywords: usage meter, upgrade
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Upgrading Usage Meter
 {: #usage_meter-upgrade}
+
+
 
 You must upgrade any existing VMware vCloud Usage Meters to version 9 to integrate with their own access token. For Usage Meter 4.8, the upgrade process involves receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to version 9. After the initial upgrade to version 9 or later, you don't need to provide the access token for further upgrades.
 {: important}

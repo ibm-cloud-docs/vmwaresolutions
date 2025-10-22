@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-09-08"
+lastupdated: "2025-10-21"
 
 keywords: delete vcf vpc instance, vmware cloud foundation vpc instance, delete vpc instance
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Deleting {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-deleting}
+
+
 
 When you delete a {{site.data.keyword.vcf-vpc}} instance, the following components are released:
 1. {{site.data.keyword.vcf-vpc-short}} licenses

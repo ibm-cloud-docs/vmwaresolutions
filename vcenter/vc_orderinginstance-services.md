@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-06-19"
+lastupdated: "2025-10-21"
 
 keywords: services vcf classic instance, order vcf automated services, add-on services
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Add-on services
 {: #vc_orderinginstance-addon-services}
+
+
 
 When you order a {{site.data.keyword.vcf-auto}} instance, you can also order add-on services. Review services that are recommended and optional with your Automated instance.
 

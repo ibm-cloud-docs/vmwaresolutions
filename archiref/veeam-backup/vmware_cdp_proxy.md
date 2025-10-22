@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # VMware CDP proxy
 {: #vmware_cdp_proxy}
 
+
+
 A VMware® CDP proxy operates as a data mover and transfers data between the source and target hosts. VMware CDP proxy performs the following tasks:
 
 * Receives virtual machine (VM) data from the production storage.
@@ -41,4 +43,3 @@ In {{site.data.keyword.cloud}} consider using:
 * [Adding VMware CDP proxies](https://helpcenter.veeam.com/docs/backup/vsphere/cdp_proxy_add.html?ver=120){: external}
 * [How CDP works](https://helpcenter.veeam.com/docs/backup/vsphere/cdp_hiw.html?ver=120){: external}
 * [System requirements for VMware CDP proxy](https://helpcenter.veeam.com/docs/backup/vsphere/system_requirements.html?ver=120#cdp_proxy){: external}
-

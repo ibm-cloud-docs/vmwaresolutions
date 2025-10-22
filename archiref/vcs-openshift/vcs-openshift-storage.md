@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # Storage options on {{site.data.keyword.cloud_notm}} and Red Hat OpenShift
 {: #vcs-openshift-storage}
+
+
 
 {{site.data.content.rhos-deprecated-note}}
 

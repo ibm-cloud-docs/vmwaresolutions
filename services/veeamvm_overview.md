@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-09-25"
+lastupdated: "2025-10-21"
 
 keywords: Veeam, Veeam Backup and Replication, Veeam install, tech specs Veeam, Veeam overview
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Veeam on {{site.data.keyword.cloud_notm}} overview
 {: #veeamvm_overview}
+
+
 
 Veeam® on {{site.data.keyword.cloud}} seamlessly integrates directly with your VMware® hypervisors to help your enterprise achieve high availability. This service provides recovery points and time objectives for your applications and data. The recovery points and time objectives can be provided in less than 15 minutes after configuration is completed.
 

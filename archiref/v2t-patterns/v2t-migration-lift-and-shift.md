@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-07-28"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # NSX-V to NSX-T lift-and-shift migration approach
 {: #v2t-lift-and-shift}
+
+
 
 VMware NSX-V to VMware NSX-T™ migration in {{site.data.keyword.cloud}} is done by following the VMware® lift-and-shift migration model. In this model, you deploy a new NSX-T infrastructure on new server hardware so you can benefit from the Cloud consumption model.
 

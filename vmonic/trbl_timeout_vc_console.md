@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 keywords: troubleshooting, vSphere timeout, timeout console
 
@@ -18,6 +18,8 @@ subcollection: vmwaresolutions
 {: #trbl_timeout_vc_console}
 {: troubleshoot}
 {: support}
+
+
 
 When you try to connect to the VMware vSphere® Web Client, you might get the following timeout error:
 {: tsSymptoms}
@@ -42,7 +44,7 @@ To investigate and fix the problem, complete the following steps:
    1. Click **Account > VPN Access**.
    2. Click the **SSL link** in the **VPN Access** column.
    3. On the **VPN Access for username** page, set the **Subnet Access** option to **Manual**.
-   4. On the same page, locate the subnet for the IP address and hostname pair. For more information, see **Step 2**.    
+   4. On the same page, locate the subnet for the IP address and hostname pair. For more information, see **Step 2**.
 
       For example, if the IP address for your instance is `xx.yyy.zz.15` and the IP address for vCenter is `xx.yyy.zz.10`, you must grant access for the subnet `xx.yyy.zz.0/26`.
 

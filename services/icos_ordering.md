@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-21"
 
 keywords: IBM Cloud Object Storage, ICOS configuration, order Cloud Object Storage
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Ordering and configuring {{site.data.keyword.cloud_notm}} Object Storage with Veeam
 {: #icos_ordering}
+
+
 
 Veeam® is compatible with {{site.data.keyword.cloud}} Object Storage. {{site.data.keyword.cloud_notm}} Object Storage is not automatically ordered when you order Veeam, but you can add it after deployment.
 

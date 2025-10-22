@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # VMware HCX introduction
 {: #hcx-archi-intro}
 
+
+
 The VMware® HCX™ service enables creating a seamless connection between {{site.data.keyword.vmwaresolutions_full}} instances and an on-premises VMware virtualized data center.
 
 The {{site.data.keyword.vmwaresolutions_short}} includes fully automated, rapid deployments of {{site.data.keyword.vcf-auto}} in the {{site.data.keyword.cloud_notm}}. These offerings complement the on-premises infrastructure and allow existing and future workloads to run in the {{site.data.keyword.cloud_notm}} without conversion by using the same tools, skills, and processes they use on-premises.

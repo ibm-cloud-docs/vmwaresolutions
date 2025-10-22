@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # BOM for {{site.data.keyword.vcf-auto-short}} multizone
 {: #mcv-archi-bom}
+
+
 
 New deployments of multizone instances are no longer supported. You can still add and delete clusters, add and remove ESXi servers, and add and delete storage for existing multizone instances.
 {: deprecated}

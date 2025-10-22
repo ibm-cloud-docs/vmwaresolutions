@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 # Types of VMware software updates
 {: #vum-type-updates}
 
+
+
 VMware® uses the following terms to describe software updates.
 
 | Term | Definition |

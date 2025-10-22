@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Configuring the Veeam backup server
 {: #veeam-cr-sag-vbrcfg}
 
+
+
 For the immutable backup and isolated recovery environments, the Veeam® backup server is configured by PowerShell. PowerShell is run locally on the Veeam backup server through an Ansible® playbook that is run on the automation server. Ansible uses WinRM to access Microsoft® Windows® servers. The following items are required by Ansible:
 
 * PowerShell 3.0 or newer and at least .NET 4.0 to be installed.

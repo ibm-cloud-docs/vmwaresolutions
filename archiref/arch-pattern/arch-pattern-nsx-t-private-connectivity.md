@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Architecture patterns for vCenter Server deployment with private connectivity options
 {: #arch-pattern-nsx-t-private-connectivity}
+
+
 
 When you deploy a [{{site.data.keyword.vcf-auto-short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in your {{site.data.keyword.cloud}} classic infrastructure, the deployment consists of a number of network constructs and VMware® management components.
 

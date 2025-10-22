@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-07-28"
+lastupdated: "2025-10-21"
 
 keywords: configure vdefend gateway firewall, configure vdefend distributed firewall, vdefend firewall config, vcf for vpc, nsx firewall config
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Configuring VMware vDefend Firewall for {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-firewall}
+
+
 
 Before you configure VMware vDefend™ Firewall (formerly VMware NSX Firewall), review the information in [VMware vDefend Firewall add-on](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons#vmware-add-ons-nsx-firewall).
 

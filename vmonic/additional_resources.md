@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-21"
 
 keywords: vmware solutions data sheet, vmware solutions developer, vmware solutions video
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # More learning resources
 {: #additional_resources}
+
+
 
 Review the following resources to get started faster or gain more in-depth technical information for {{site.data.keyword.vmwaresolutions_full}}.
 

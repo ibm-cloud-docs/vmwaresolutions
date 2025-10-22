@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 # Overview
 {: #veeam-cr-sag-overview}
 
+
+
 The solution guide describes the tasks to create the two cyber-recovery solution architectures, Immutable backup and Isolated recovery environment. It also discusses the use cases for the creation of backups and then making this backup available to cyberadmins.
 
 The solution guide uses:

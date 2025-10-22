@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Architecture pattern for using gateway cluster with NSX
 {: #arch-pattern-edge-gateway-cluster}
+
+
 
 When you deploy a {{site.data.keyword.vcf-auto}} instance in your {{site.data.keyword.cloud}} classic infrastructure, you might optionally deploy a gateway cluster.
 

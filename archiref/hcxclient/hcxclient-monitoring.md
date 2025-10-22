@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Monitoring parameters and components
 {: #hcxclient-monitoring}
 
+
+
 ## Using the WAN Optimizer for monitoring
 {: #hcxclient-monitoring-using-wan}
 

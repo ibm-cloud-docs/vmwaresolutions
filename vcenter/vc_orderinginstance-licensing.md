@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Licensing (BYOL only)
 {: #vc_orderinginstance-licensing-settings}
 
+
+
 {{site.data.content.attnnote-byol}}
 
 If you are a BYOL user, provide your own license keys for VMware vCenter Server® (Enterprise Plus edition), VMware vSphere® (Enterprise Plus edition), and VMware NSX® (Data Center SP Enterprise Plus). Toggle the **BYOL** switch to **Enabled** and enter your license keys.

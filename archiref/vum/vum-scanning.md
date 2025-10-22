@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # Scanning and review
 {: #vum-scanning}
+
+
 
 When you scan hosts, virtual machines (VMs), and virtual appliances (VAs), you evaluate them against baselines and baseline groups to determine their levels of compliance. Inventory objects are scanned, and the results are reviewed to determine how they comply with the baselines and baseline groups. Scan results can be filtered by text search, group selection, baseline selection, and compliance status selection. You can initiate the following scans:
 * **Manually Initiate a Scan of vSphere ESXi Hosts** - You can scan vSphere® ESXi™ hosts in the vSphere inventory against attached baselines and baseline groups.

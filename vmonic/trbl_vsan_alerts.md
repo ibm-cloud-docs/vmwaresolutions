@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-29"
+lastupdated: "2025-10-22"
 
 keywords: troubleshooting, SAN health, virtual SAN issue
 
@@ -18,6 +18,8 @@ subcollection: vmwaresolutions
 {: #trbl_vsan_alerts}
 {: troubleshoot}
 {: support}
+
+
 
 You might see alerts and warnings that relate to Virtual SAN (vSAN™) Health issues on the VMware vSphere® Web Client Monitor page.
 {: tsSymptoms}

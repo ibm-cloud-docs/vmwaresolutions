@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-03-31"
+lastupdated: "2025-10-21"
 
 keywords: log routing, log locations, platform logs, enable logging, log messages, analyze logs
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # Logging for VMware Solutions
 {: #logging}
+
+
 
 {{site.data.keyword.cloud}} services, such as {{site.data.keyword.vmwaresolutions_full}} generate platform logs that you can use to investigate abnormal activity and critical actions in your account, and troubleshoot problems.
 {: shortdesc}

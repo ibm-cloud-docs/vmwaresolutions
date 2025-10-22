@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # NSX and IP routing on {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-nsx-t-vpc-routing}
+
+
 
 When logical network topologies are deployed on {{site.data.keyword.vpc_full}} hosted VMware NSX® environments, you must decide how to route the traffic between NSX overlays, {{site.data.keyword.vpc_short}}, and public internet. The following diagram presents an overview of the routing setup between NSX Tier-0 gateway and {{site.data.keyword.vpc_short}}.
 

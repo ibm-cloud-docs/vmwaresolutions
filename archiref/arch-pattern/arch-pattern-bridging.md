@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-04-11"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Architecture pattern for using layer 2 (L2) bridging with NSX
 {: #arch-pattern-bridging}
+
+
 
 With layer 2 bridging, you can have a L2 connection to a VLAN-backed port group or a device that is outside of your NSX data center deployment. An L2 bridge is also useful in a migration scenario, in which you need to split a subnet across physical and virtual workloads. Or when you run a database cluster on {{site.data.keyword.cloud_notm}} bare metal servers.
 

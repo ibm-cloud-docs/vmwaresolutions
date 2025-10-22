@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Common services design
 {: #design_commonservice}
 
+
+
 Common services provide the services that are used by other services in the cloud management platform. The common services of the solution include identity and access services, domain name services, NTP services, SMTP services, and certificate authority services.
 
 ![Common services](../../images/vcsv4radiagrams-ra-commonservices.svg "Common services"){: caption="Common services" caption-side="bottom"}

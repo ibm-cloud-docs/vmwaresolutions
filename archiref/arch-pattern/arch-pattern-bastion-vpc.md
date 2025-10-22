@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Architecture pattern for a bastion VPC to manage {{site.data.keyword.vcf-auto}} instance in Classic
 {: #arch-pattern-bastion-vpc}
 
+
+
 This architecture pattern presents Client VPN-based connectivity to a {{site.data.keyword.vcf-auto}} instance provisioned in {{site.data.keyword.cloud}} classic infrastructure. This solution uses a bastion VPC with [client-to-site VPNaaS](/docs/vpc?topic=vpc-vpn-client-to-site-overview&interface=ui) and a connecting [{{site.data.keyword.tg_full_notm}}](/docs/transit-gateway?topic=transit-gateway-about), or alternatively by using a VPC provisioned with [classic connectivity](/docs/vpc?topic=vpc-setting-up-access-to-classic-infrastructure). [{{site.data.keyword.dns_full_notm}}](/docs/dns-svcs?topic=dns-svcs-getting-started) are used in VPC with a custom resolver.
 
 ## Deploying a bastion VPC for managing vCenter Server deployment in Classic

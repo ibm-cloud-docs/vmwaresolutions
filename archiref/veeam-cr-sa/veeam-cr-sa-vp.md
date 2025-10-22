@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 # Veeam backup proxy
 {: #veeam-cr-sa-vp}
 
+
+
 A backup proxy is a Veeam® component that sits between the backup server and other components of the backup infrastructure. While the backup server administers tasks, the proxy processes jobs and delivers backup traffic to the backup repository. Key design elements of backup proxies include the following details:
 
 * By default, the role of the backup proxy is assigned to the backup server. It is recommended to deploy dedicated backup proxies.

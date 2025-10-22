@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 # VMware Update Manager overview
 {: #vum-overview}
 
+
+
 VMware® Update Manager (VUM) uses a multistage process to upgrade vSphere® objects and to apply patches or extensions. This process enables a smooth update procedure with a minimum of system downtime. Before we look at this process, we need to understand the following terms:
 * **Inventory Object** - an object within vCenter such as virtual machines (VMs), virtual appliances (VAs), or vSphere ESXi™ hosts.
 * **Baseline** - baselines contain a collection of one or more patches, extensions, service packs, bug fixes, or upgrades. Baselines can be classified as patch, extension, or upgrade baselines. There are two types of baselines: Host and VM/VA. Host and VM/VA have predefined baselines by VMware and custom baselines that can be added as required:

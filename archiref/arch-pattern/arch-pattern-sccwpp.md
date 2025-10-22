@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-05-01"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Architecture pattern for integrating {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection with VMware Cloud Foundation deployment in Classic
 {: #arch-pattern-sccwpp}
+
+
 
 This architecture pattern describes how to use {{site.data.keyword.cloud}} Security and Compliance Center Workload Protection with a {{site.data.keyword.vcf-auto}} with NSX-T instance on the {{site.data.keyword.cloud_notm}} classic infrastructure.
 

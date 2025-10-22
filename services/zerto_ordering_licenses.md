@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-08-28"
+lastupdated: "2025-10-21"
 
 keywords: Zerto, Zerto license, order Zerto license
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Ordering Zerto stand-alone licenses
 {: #zerto_ordering_licenses}
+
+
 
 You can order a Zerto license without associating it to any {{site.data.keyword.vcf-auto}} instance for licensing and activation of your on-premises workloads.
 

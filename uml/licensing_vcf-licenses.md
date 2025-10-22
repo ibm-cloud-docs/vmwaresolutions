@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-21"
 
 keywords: licenses, vcf license keys
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Retrieving VCF license keys
 {: #licenses_vcf-licenses}
+
+
 
 To retrieve VMware Cloud Foundation (VCF) license keys, you must provision an {{site.data.keyword.cloud}} bare metal server with VCF.
 

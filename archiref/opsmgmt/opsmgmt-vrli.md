@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # VMware Aria Operations for Logs
 {: #opsmgmt-vrli}
+
+
 
 The VMware Aria Operations™ for Logs (formerly known as VMware vRealize® Log Insight™) environment consists of four virtual machines (VMs) with an integrated Load Balancer.
 

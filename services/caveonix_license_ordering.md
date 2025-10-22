@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-05-02"
+lastupdated: "2025-10-21"
 
 keywords: Caveonix license, Caveonix order license, Caveonix BYOL license
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Ordering Caveonix RiskForesight licenses
 {: #caveonix_license_ordering}
+
+
 
 This information does not apply to {{site.data.keyword.rw}} or Security and Compliance Readiness Bundle instances.
 {: important}

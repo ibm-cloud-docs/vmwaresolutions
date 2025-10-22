@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Port access requirements for VMware HCX
 {: #hcx-archi-port-req}
+
+
 
 VMware® HCX™ must traverse the public internet and private lines, and connect to data center components, such as networks, switches, and port groups.
 

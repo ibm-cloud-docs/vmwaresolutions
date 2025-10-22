@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-21"
 
 keywords: Zerto, Zerto replication billing, order Zerto
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Ordering Zerto
 {: #zerto_ordering}
+
+
 
 You can include the Zerto service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 

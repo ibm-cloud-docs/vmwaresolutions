@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # NSX deployment
 {: #vpc-vcf-nsx-t}
+
+
 
 The following information provides an introduction to VMware NSX® deployment details for VMware Cloud Foundation deployment architectures in {{site.data.keyword.vpc_short}}.
 

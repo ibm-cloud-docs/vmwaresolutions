@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-08"
+lastupdated: "2025-10-21"
 
 keywords: change vCenter Server artifacts, automation ID, VMware resource
 
@@ -18,6 +18,8 @@ subcollection: vmwaresolutions
 # How to change vCenter Server artifacts?
 {: #vcenter_chg_impact}
 {: faq}
+
+
 
 Changing users, resources, or subnets that are reserved for {{site.data.keyword.vmwaresolutions_full}} can impact management operations.
 

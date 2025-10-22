@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-07-07"
+lastupdated: "2025-10-21"
 
 keywords: activity tracking, tracking locations, enable events, view events, analyze events
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # Activity tracking events for VMware Solutions
 {: #at_events}
+
+
 
 {{site.data.keyword.cloud}} services, such as {{site.data.keyword.vmwaresolutions_full}}, generate activity tracking events.
 {: shortdesc}

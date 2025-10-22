@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade, upgrade from vsphere 7 to 8
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Upgrading vSphere software from version 7.0 to 8.0
 {: #vs_vsphere_80-upgrade}
+
+
 
 You can upgrade the VMware vSphere® software on your {{site.data.keyword.vcf-flex-short}} instances to version 8.0.
 

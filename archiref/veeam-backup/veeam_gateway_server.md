@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Gateway servers
 {: #veeam_gateway_server}
 
+
+
 A gateway server is required when a backup repository cannot host Veeam® Data Movers. The Veeam Data Movers are then hosted on the gateway server. The gateway server is required if you deploy the following types of backup repositories in the backup infrastructure.
 
 * [Shared folder backup repositories](https://helpcenter.veeam.com/docs/backup/vsphere/backup_repository.html?ver=120){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-04-08"
+lastupdated: "2025-10-21"
 
 keywords: VMware Aria, VMware Aria info, tech specs VMware Aria, vRealize info
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # VMware Aria Operations and VMware Aria Operations for Logs on {{site.data.keyword.cloud_notm}} overview
 {: #vrops_overview}
+
+
 
 VMware Aria® Operations™ (formerly VMware vRealize® Operations™) and VMware Aria Operations™ for Logs (formerly VMware vRealize® Log Insight™) on {{site.data.keyword.cloud}} deploys the VMware Aria Operations and VMware Aria Operations for Logs Enterprise Edition tools. These tools help you operate and monitor the performance, health, and capacity of your {{site.data.keyword.IBM}}-hosted, dedicated VMware environment. VMware Aria Operations for Logs helps you troubleshoot issues by using log files more quickly. VMware Aria Operations and VMware Aria Operations for Logs on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from VMware, not IBM.
 {: shortdesc}

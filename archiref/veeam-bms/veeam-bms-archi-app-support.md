@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-08-21"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # Overview of application support with Veeam
 {: #veeam-bms-archi-app-support}
+
+
 
 For applications hosted on the VMs, Veeam® requires network access to the VMs to provide application-aware backups. To enable the application-aware image processing or the guest file system indexing options in the backup job, In the Veeam Backup and Replication console, you need network access between customer overlay and the Veeam bare metal server management network (primary subnet on private VLAN 1). If you want to use these capabilities, routing must be designed and implemented between the customer's VMware NSX-T™ overlay networks.
 

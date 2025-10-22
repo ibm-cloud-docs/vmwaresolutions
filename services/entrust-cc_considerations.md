@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-06-06"
+lastupdated: "2025-10-21"
 
 keywords: Entrust CloudControl, tech specs Entrust CloudControl
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Entrust CloudControl on {{site.data.keyword.cloud_notm}} overview
 {: #entrust-cc_considerations}
+
+
 
 New installations of Entrust CloudControl™ (formerly HyTrust CloudControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust CloudControl installations on your existing instances.
 {: deprecated}

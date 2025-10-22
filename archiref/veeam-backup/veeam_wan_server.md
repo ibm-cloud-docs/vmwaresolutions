@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # WAN accelerators
 {: #veeam_wan_server}
 
+
+
 Veeam® WAN acceleration is a technology that optimizes data transfer to remote locations, specifically for off-site backup copy and replication jobs. It combines the following operations to optimize the data transfer and reduce the amount of data flow over the WAN:
 
 * Network traffic compression
@@ -39,4 +41,3 @@ Log shipping servers are dedicated components that Veeam Backup and Replication 
 * [Microsoft SQL Server log backup](https://helpcenter.veeam.com/docs/backup/vsphere/sql_backup.html?ver=120){: external}
 * [PostgreSQL WAL files backup](https://helpcenter.veeam.com/docs/backup/vsphere/postgresql_backup.html?ver=120){: external}
 * [Oracle log backup](https://helpcenter.veeam.com/docs/backup/vsphere/oracle_backup.html?ver=120){: external}
-

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-08-19"
+lastupdated: "2025-10-21"
 
 keywords: add NFS storage, add nfs
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Adding NFS storage to {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_addingnfs}
+
+
 
 You can expand the capacity of your {{site.data.keyword.vcf-auto}} instance according to your business needs by adding Network File System (NFS) storage.
 

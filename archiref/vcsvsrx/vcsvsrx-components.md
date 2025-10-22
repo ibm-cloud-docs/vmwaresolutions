@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Glossary of vSRX terminology
 {: #vcsvsrx-components}
 
+
+
 ## Interface names
 {: #vcsvsrx-components-interface}
 

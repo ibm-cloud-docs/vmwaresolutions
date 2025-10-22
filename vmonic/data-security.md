@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-07-08"
+lastupdated: "2025-10-21"
 
 keywords: data encryption in VMware Solutions, data storage for VMware Solutions, bring your own keys for VMware Solutions, BYOK for VMware Solutions, key management for VMware Solutions, key encryption for VMware Solutions, personal data in VMware Solutions, data deletion for VMware Solutions, data in VMware Solutions, data security in VMware Solutions
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Securing your data in VMware Solutions
 {: #data-security-mng-data}
+
+
 
 Know what data is stored and encrypted and how to delete any stored data to ensure that you can securely manage your personal data when you use {{site.data.keyword.vmwaresolutions_full}}. 
 {: shortdesc}

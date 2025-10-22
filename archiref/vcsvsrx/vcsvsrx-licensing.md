@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # vSRX Base and Advanced licensing
 {: #vcsvsrx-licensing}
 
+
+
 The vSRX is ordered and deployed with the necessary license keys to operate. Advanced licensing is only available directly from Juniper Networks®. Licenses can be procured from the Juniper LMS (Networks License Management System).
 
 For more information, see [Licensing guide](https://www.juniper.net/documentation/us/en/software/license/juniper-licensing-user-guide/index.html){: external}.

@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Scale-out backup repositories
 {: #veeam_repo_scale_backup}
 
+
+
 A scale-out backup repository is a repository system with horizontal scaling support for multitier storage of data. A scale-out backup repository has different tiers, or logical levels of storage.
 * **Performance tier** - This level is used for fast access to data. It consists of one or more backup repositories or object storage repositories called performance extents.
 * **Capacity tier** - Additional level for storing data that needs to be accessed less frequently. However, you can still restore your data directly from it. The capacity tier consists of cloud-based or on-premises object storage repositories called capacity extent.

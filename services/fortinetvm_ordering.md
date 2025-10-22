@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-09-25"
+lastupdated: "2025-10-21"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Ordering FortiGate Virtual Appliance
 {: #fortinetvm_ordering}
+
+
 
 You can include the FortiGate® Virtual Appliance service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 

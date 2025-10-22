@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Fully distributed
 {: #caveonix-fully}
 
+
+
 More base virtual machines (VMs) and scale-out VMs are added according to the number of assets and data retention requirements.
 
 The following table shows the user interface parameters.

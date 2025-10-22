@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Step 1 - Initial planning and prerequisites
 {: #caveonix-step1}
 
+
+
 Each Caveonix RiskForesight™ application component is loosely coupled, but centrally managed. Therefore, they can be deployed in an all-in-one virtual machine deployment pattern or the application components can be “scaled-out” and deployed on multiple VMs for higher availability, performance, and capacity.
 
 Deployment patterns are based on both availability requirements and sizing for data retention. RiskForesight deployment nodes can be characterized as:

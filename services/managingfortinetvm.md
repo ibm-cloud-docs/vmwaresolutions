@@ -18,6 +18,8 @@ subcollection: vmwaresolutions
 # Managing FortiGate Virtual Appliance
 {: #managingfortinetvm}
 
+
+
 ## Accessing the FortiGate console
 {: #managingfortinetvm-access-console}
 

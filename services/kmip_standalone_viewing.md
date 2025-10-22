@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-10-21"
 
 keywords: KMIP for VMware, view KMIP stand-alone, KMIP for VMware status
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Viewing KMIP for VMware instances
 {: #kmip_standalone_viewing}
+
+
 
 {{site.data.content.kmip-deprecated-note}}
 

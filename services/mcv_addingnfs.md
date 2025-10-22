@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Adding NFS storage to {{site.data.keyword.vcf-auto-short}} multizone instances
 {: #mcv_addingnfs-storage}
+
+
 
 New deployments of {{site.data.keyword.vcf-auto}} multizone instances are not supported. For existing multizone instances, you can still add and delete clusters, add and delete ESXi servers, or add and delete storage.
 {: deprecated}

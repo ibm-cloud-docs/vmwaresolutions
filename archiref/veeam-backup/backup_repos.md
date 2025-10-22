@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Backup repositories
 {: #backup_repos}
 
+
+
 A backup repository is a storage location where Veeam® keeps backup files, virtual machine (VM) copies, and metadata for replicated VMs.
 
 At service order, choose from the following options:

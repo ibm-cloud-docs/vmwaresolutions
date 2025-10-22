@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Configuring the Linux hardened repository server
 {: #veeam-cr-sag-lhbrmng}
 
+
+
 This step describes the Ansible® playbook that adds the Linux® hardened backup repository as a Veeam® managed server into the Veeam backup infrastructure. The playbook does the following tasks:
 
 * [Create Windows® firewall rules](#veeam-cr-sag-lhbrmng-fw).

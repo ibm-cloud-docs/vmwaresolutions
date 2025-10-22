@@ -18,6 +18,8 @@ subcollection: vmwaresolutions
 # Ordering VMware Aria Operations and VMware Aria Operations for Logs
 {: #vrops_ordering}
 
+
+
 You can include the VMware Aria® Operations™ and VMware Aria Operations™ for Logs service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
 ## Ordering VMware Aria Operations and VMware Aria Operations for Logs for a new instance

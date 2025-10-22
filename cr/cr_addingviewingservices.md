@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Ordering, viewing, and deleting services for {{site.data.keyword.cr}} instances
 {: #cr_addingviewingservices}
 
+
+
 You can order various add-on services for your {{site.data.keyword.cr}} instance. For example, [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) is optional.
 
 When no longer needed, delete the added services from your instances.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # Host profiles
 {: #vum-host-profiles}
+
+
 
 vCenter has a feature that is called Host Profiles. This feature creates a profile that captures a pre-configured and validated reference host configuration and helps a system administrator manage the host configurations in a cluster. Host Profiles provide an automated and centrally managed mechanism for host configuration and configuration compliance. Host Profiles enable the configuration to be treated as a managed object, which has a catalog of parameters to configure; networking, storage, security, and other host-level parameters. These Host Profiles can be applied to individual hosts, a cluster, or all the hosts and clusters associated to a host profile.
 

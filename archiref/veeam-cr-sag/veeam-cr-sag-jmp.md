@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-08-21"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Provisioning the jump server
 {: #veeam-cr-sag-jmp}
+
+
 
 The jump server is a small Microsoft® Windows® Virtual Server Instance (VSI) deployed in the {{site.data.keyword.cloud}} account where the {{site.data.keyword.vcf-auto}} instance with the Veeam® service is located. The VSI is connected to both the {{site.data.keyword.cloud_notm}} private and public networks. The public network interface is protected by a security group that restricts Remote Desktop Protocol (RDP) access to a known remote IP address.
 

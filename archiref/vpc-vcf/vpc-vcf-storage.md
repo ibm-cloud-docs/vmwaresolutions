@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # VMware storage options
 {: #vpc-vcf-storage-overview}
+
+
 
 The architecture for {{site.data.keyword.vcf-vpc}} is built upon {{site.data.keyword.vpc_short}} network architecture and uses bare metal servers for {{site.data.keyword.vpc_short}}. VMware Cloud Foundation uses the locally attached NVMe drives on bare metal servers to create a software-defined storage for the VMware Cloud Foundation deployment. 
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-21"
 
 keywords: Veeam 9.5, Veeam 9 overview, Veeam 9.5 deprecated
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Veeam 9.5
 {: #veeam_considerations}
+
+
 
 Veeam® v9.5u4b has vulnerabilities and it is no longer installed with new VMware® Solutions deployments. However, if you installed the service in a previous release, you can continue to use Veeam 9.5u4b.
 {: deprecated}

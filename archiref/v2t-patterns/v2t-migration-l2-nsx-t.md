@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-06"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Workload migration by using vMotion or third-party tools and NSX-T L2 bridge
 {: #v2t-l2-nsx-t}
+
+
 
 VMware NSX-V to VMware NSX-T™ migration in {{site.data.keyword.cloud}} is done by following the principles of the VMware® Lift-and-Shift Migration model, which consists of migrating the network configurations and workloads. Migrating workloads during this process can be done in many ways. For example, you can use Advanced Cross vCenter vMotion between the environments, or you can use other optional or existing third-party tools like Veeam® or Zerto.
 

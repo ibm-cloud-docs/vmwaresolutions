@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # {{site.data.keyword.cloud_notm}} VPE overview
 {: #interconnectivity-vpe}
+
+
 
 With {{site.data.keyword.cloud}} {{site.data.keyword.vpe_full}}, you can connect to supported {{site.data.keyword.cloud_notm}} services from your VPC network. You can use IP addresses that you choose, which are allocated from a subnet within your VPC.
 

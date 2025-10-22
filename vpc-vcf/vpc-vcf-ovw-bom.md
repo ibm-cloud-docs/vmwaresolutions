@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.vcf-vpc-short}} BOM
 {: #vpc-vcf-ovw-bom}
 
+
+
 Review the Bill of Materials (BOM) information for {{site.data.keyword.vcf-vpc}} instances.
 
 ## VPC Infrastructure BOM for {{site.data.keyword.vcf-vpc-short}}

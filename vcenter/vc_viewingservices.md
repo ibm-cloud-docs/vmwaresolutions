@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-09-25"
+lastupdated: "2025-10-21"
 
 keywords: view services vcf automated
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Viewing services for {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_viewingservices}
+
+
 
 You can view the summary and detailed information of the services that were ordered for your {{site.data.keyword.vcf-auto}} instances.
 

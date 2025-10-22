@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Scaling capacity
 {: #solution_scaling}
+
+
 
 After initial deployment, you can scale out the compute capacity from the {{site.data.keyword.vmwaresolutions_full}} console. The design supports the following scale-out paths:
 * Addition of new sites managed by separate VMware vCenter Servers®

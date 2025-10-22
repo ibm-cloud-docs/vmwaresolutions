@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Mount servers
 {: #veeam_mount_server}
 
+
+
 The mount server is required for restoring of guest OS files and application items. To access files or items that are stored in a backup file, Veeam Backup and Replication mount the content of the backup to the mount server. Only after the content is mounted, Veeam Backup and Replication can get files and copy them to the restore destination. The mount server is required for performing the following operations:
 
 * [Guest OS file restore](https://helpcenter.veeam.com/docs/backup/vsphere/guest_file_recovery.html?ver=120){: external}
@@ -39,6 +41,3 @@ The mount server must have access to the backup repository and the virtual machi
 * [Configuring a backup repository](https://helpcenter.veeam.com/docs/backup/vsphere/repository_mount_server.html?ver=120){: external}
 * [Adding Microsoft Windows Servers](https://helpcenter.veeam.com/docs/backup/vsphere/add_windows_server.html?ver=120){: external}
 * [System requirements](https://helpcenter.veeam.com/docs/backup/vsphere/system_requirements.html?ver=120#mount){: external}
-
-
-

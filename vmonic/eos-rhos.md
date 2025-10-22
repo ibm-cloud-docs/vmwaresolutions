@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-08-25"
+lastupdated: "2025-10-21"
 
 keywords: end of support notice, eos red hat openshift for vmware, end of support red hat openshift for vmware, red hat openshift for vmware deprecated, red hat openshift for vmware support
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # End of Support for {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #eos-rhos}
+
+
 
 {{site.data.content.rhos-deprecated-note}}
 

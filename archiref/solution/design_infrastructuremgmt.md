@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Infrastructure management design
 {: #design_infrastructuremgmt}
+
+
 
 Infrastructure management refers to the components that are managing the VMware® infrastructure. The VMware vCenter Server® appliance is the centralized platform for managing VMware vSphere® environments and is one of the fundamental components in this solution.
 

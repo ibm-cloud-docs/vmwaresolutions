@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # VMware backup proxies
 {: #vmware_backup_proxies}
 
+
+
 A VMware® backup proxy sits between the backup server and other components of the backup infrastructure. While the backup server administers tasks, the proxy processes jobs and delivers backup traffic.
 
 VMware backup proxy tasks include the following procedures:

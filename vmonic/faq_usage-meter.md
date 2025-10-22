@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-15"
+lastupdated: "2025-10-21"
 
 keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
@@ -18,6 +18,8 @@ content-type: faq
 
 # FAQ for licensing and metering
 {: #faq_usage-meter}
+
+
 
 Find answers to frequently asked questions about Usage Meter.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-20"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Operational procedures overview
 {: #opsprocs-intro-overview}
+
+
 
 The following information provides a view of Day 2 operations that you must complete after your {{site.data.keyword.vcf-auto}} instance is provisioned. {{site.data.keyword.vmwaresolutions_full}} is a deployment service that automatically deploys VMware’s Software-Defined Data Center software on to the {{site.data.keyword.cloud_notm}}. Many of the following Day 0 and Day 1 tasks are completed by the deployment automation.
 

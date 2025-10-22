@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-26"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Detailed design
 {: #caveonix-detailed}
+
+
 
 The following diagram and descriptions provide information about the RiskForesight™ application components.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-08-25"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Architecture pattern for Zerto replication connectivity in {{site.data.keyword.cloud_notm}}
 {: #arch-pattern-vcf-zerto-xconnectivity}
+
+
 
 This architecture pattern explains how to deploy and configure Zerto replication connectivity on {{site.data.keyword.vcf-vpc}} instances that are running on {{site.data.keyword.vpc_short}}. These connectivity patterns use a combination of {{site.data.keyword.cloud_notm}} native services and networking services that are provided by VMware NSX®.
 

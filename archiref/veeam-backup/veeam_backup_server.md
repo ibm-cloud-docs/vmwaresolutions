@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Backup server
 {: #veeam_backup_server}
 
+
+
 The backup server is a Windows-based machine on which Veeam Backup and Replication is installed. It is the core component in the backup infrastructure and performs all types of administrative activities, including:
 
 * Coordinates backup, replication, recovery verification, and restore tasks.

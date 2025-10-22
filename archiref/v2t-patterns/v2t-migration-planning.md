@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-06"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Migration planning
 {: #v2t-planning}
+
+
 
 Migration planning and preparation are the key to a successful migration project. It is imperative that the migration complexity is fully understood so that timescales, required tools, skills, and knowledge are available.
 

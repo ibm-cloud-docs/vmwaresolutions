@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-08-21"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # VMware HCX component-level target architecture with NSX-T deployments
 {: #hcx-archi-target-t}
+
+
 
 Review the architecture of each VMware® HCX™ component that is deployed within the {{site.data.keyword.cloud}} environment with VMware NSX-T™.
 

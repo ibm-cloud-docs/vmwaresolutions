@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 # Immutable backup network architecture
 {: #veeam-cr-sa-ib-nw}
 
+
+
 In the immutable backup solution architecture, the use of a sandbox is optional. In these solution architectures, a sandbox is defined as an isolated network environment where copies of backups can be accessed or used to start virtual machines (VMs). They are isolated from the production environment so that duplicate IP addresses caused by VMs with the same IP addresses do not clash or recovered VMs interact with production VMs.
 
 While Veeam® DataLabs enables the sandbox concept, it is not yet enabled for VMware NSX-T™ environments as it does not enable the mapping of NSX-T segments to isolated segments. Therefore, these solution architectures enable a sandbox with the use of both Veeam and NSX-T technologies:

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Integrating the infrastructure domain with the workload domain
 {: #adds-integration}
+
+
 
 Integrating the {{site.data.keyword.vmwaresolutions_full}} infrastructure domain with the {{site.data.keyword.vmwaresolutions_short}} workload domain is not recommended. You must allow the workload domain controllers that are connected to the underlay network to communicate with the infrastructure domain controllers that are connected to the underlay network. For more information, see the following documents:
 

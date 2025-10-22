@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 keywords: licenses, add license keys, assign licenses, validate licenses, manage licenses
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Managing VMware product licenses
 {: #licensing_manage}
+
+
 
 After you registered VMware vCloud Usage Meter with IBM, you can add and assign license keys to various VMware products.
 

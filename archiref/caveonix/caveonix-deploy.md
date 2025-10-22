@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Deployment models for Caveonix RiskForesight
 {: #caveonix-deploy}
 
+
+
 Review the deployment models for Caveonix RiskForesight™ along with the installation process.
 
 When you select the {{site.data.keyword.vmwaresolutions_full}} RiskForesight option, you do not have to follow all the steps in the deployment as the initial ones are automated. However, if you want to scale out the solution after the initial deployment, a detailed understanding of the complete deployment and architecture is required.

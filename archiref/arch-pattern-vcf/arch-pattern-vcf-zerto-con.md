@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-08-25"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Architecture pattern for deploying Zerto on VMware Cloud Foundation consolidated architecture
 {: #arch-pattern-vcf-zerto-con}
+
+
 
 This architecture pattern explains how to deploy Zerto on {{site.data.keyword.vcf-vpc}} consolidated architecture deployment in {{site.data.keyword.vpc_short}}. With Zerto, you can increase the resiliency of your VMware Cloud Foundation instance and the workloads through a continuous data protection-based disaster recovery and data protection solution.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-09-04"
+lastupdated: "2025-10-21"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Ordering Veeam
 {: #veeam_ordering}
+
+
 
 You can include the Veeam® service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 

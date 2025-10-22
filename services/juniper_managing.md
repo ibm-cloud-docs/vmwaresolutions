@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-09-25"
+lastupdated: "2025-10-21"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX console
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Managing Juniper vSRX
 {: #juniper-managing}
+
+
 
 To manage the Juniper® vSRX service, you can either:
 * Log in to the J-Web Web Client by using the credentials that you can find on the Juniper vSRX service details page.

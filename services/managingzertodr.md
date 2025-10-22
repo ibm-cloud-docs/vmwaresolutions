@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-21"
 
 keywords: Zerto certificate, Zerto config, update Zerto replication
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Managing Zerto
 {: #managingzertodr}
+
+
 
 After the Zerto service is deployed into your instance, you can configure or update Zerto Virtual Replication. You can also deploy more Virtual Replication Appliances to newly added VMware® ESXi™ servers.
 

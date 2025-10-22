@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Troubleshooting
 {: #opsprocs-trouble}
+
+
 
 Review the following information to troubleshoot your {{site.data.keyword.vcf-auto}} instance issues. Your system administrators must identify the symptoms of the issue, determine which of the solution components are affected, research, and propose a fix or workaround, and test the fix.
 

@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Workload migration with HCX
 {: #v2t-hcx}
 
+
+
 You can use VMware HCX™ for the VMware NSX-V to NSX-T™ migration in {{site.data.keyword.cloud}}. You can provision an optional HCX™ service in the new {{site.data.keyword.vcf-auto-short}}® instance with NSX-T, which is running in parallel with the existing {{site.data.keyword.vcf-auto-short}} with NSX-V. HCX deployment is fully automated in the new {{site.data.keyword.vcf-auto-short}} with NSX-T environment. After the HCX provisioning in complete, you need to deploy HCX Manager in the old environment and pair the environments. HCX is fully integrated with vCenter and NSX. HCX provides L2 Network Extension Service for the L2 network extension between environments and has various migration services (Bulk and vMotion) to help you move the workloads.
 
 ![Migration with HCX](../../images/v2t-diagrams-hcx.svg "HCX provides L2 Network Extension Service for doing the L2 network extension between the environments and various migration services (Bulk and vMotion) to help you move the workloads."){: caption="Migration with HCX" caption-side="bottom"}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-04-10"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # HCX on-premises Service Mesh
 {: #hcxclient-vcs-mesh-deployment}
+
+
 
 Review the following steps to configure the VMware HCX™ Client instance.
 

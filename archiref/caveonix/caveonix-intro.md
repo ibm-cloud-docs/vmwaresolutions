@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Caveonix RiskForesight introduction
 {: #caveonix-intro}
 
+
+
 Enterprises that undergo a digital transformation are adopting a hybrid cloud strategy. This strategy includes workloads in both the private cloud and multiple external cloud environments, such as the public cloud or a cloud managed by a service provider. Most enterprises are also faced with the challenge of protecting an ever-increasing attack surface while simultaneously maintaining compliance with industry and regulatory compliance requirements.
 
 To protect this expanding attack surface, enterprises need continuous visibility into workloads from the start until the end of their lifecycle. Enterprises must maintain a “full-stack” understanding of the workload vulnerabilities and configuration issues at the infrastructure, platform, and application level in the context of threats and compliance requirements. Enterprises need predictive analytics to “connect the dots” to give a proactive view of their cyberrisk and compliance risk posture in this vast, new hybrid world.

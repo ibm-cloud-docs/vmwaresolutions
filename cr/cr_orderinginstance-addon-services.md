@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Add-on services
 {: #cr_addon-services}
 
+
+
 You can select various add-on services for {{site.data.keyword.cr}}.
 
 [Veeam Backup and Replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) is a required service, which is automatically included in the {{site.data.keyword.cr}} instance. A Linux® hardened repository is already chosen for you.

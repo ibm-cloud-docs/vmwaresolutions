@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Target platforms in {{site.data.keyword.cloud_notm}}
 {: #v2t-targets}
+
+
 
 {{site.data.keyword.vmwaresolutions_full}} has a number of offerings, deployment patterns, and options that can be used to create your target VMware NSX-T™ environment:
 

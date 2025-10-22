@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-08-25"
+lastupdated: "2025-10-21"
 
 keywords: end of support notice, vSphere 6.7 deployment, end of support vSphere 6.7, vSphere 6.7 support, vSphere 6.5 deployment, end of support vSphere 6.5, vSphere 6.5 support, vSphere 6 deployment, end of support vSphere 6, vSphere 6 support, vSphere 6 deployment, end of support vSphere 6, vSphere 6 support
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # End of Support for vSphere 6 instance deployments
 {: #eos-vsphere67}
+
+
 
 * Broadcom® support for VMware vSphere® 6.7 deployments ended on 15 October 2022.
 * {{site.data.keyword.cloud}} support for ordering vSphere® 6.5 ended on 10 October 2021. 

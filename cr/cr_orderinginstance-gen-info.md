@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 keywords: cyber recovery, cyber recovery settings, cyber recovery license settings, cyber recovery versions, cyber recovery instances
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # General information and licensing
 {: #cr_orderinginstance-gen-info}
+
+
 
 The following VMware® components are part of the {{site.data.keyword.cr}} instance.
 * VMware vSphere® 7.0u3 or 8.0u2

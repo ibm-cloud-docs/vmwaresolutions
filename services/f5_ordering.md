@@ -18,6 +18,8 @@ subcollection: vmwaresolutions
 # Ordering F5 BIG-IP
 {: #f5_ordering}
 
+
+
 You can include the F5 BIG-IP® service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
 ## Ordering F5 BIG-IP for new instances

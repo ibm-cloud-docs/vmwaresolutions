@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Configuring the jump server
 {: #veeam-cr-sag-jmpcfg}
 
+
+
 Now that the jump server is ordered and available for connection on its public IP address from your laptop, you can follow these steps:
 
 1. [Change the Domain Name Services (DNS)](#veeam-cr-sag-jmpcfg-dns) client so that it points to the {{site.data.keyword.vcf-auto}} instances - Active Directory™ DNS (AD/DNS) server instead of the {{site.data.keyword.cloud}} DNS resolver. It allows name resolution for components, such as the vCenter appliance and VMware NSX-T™ Manager. The VSI has two Ethernet interfaces, one for the private network and one for the public network.

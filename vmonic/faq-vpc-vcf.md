@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-06"
+lastupdated: "2025-10-21"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc, faq
 
@@ -18,6 +18,8 @@ content-type: faq
 
 # FAQ for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-faq}
+
+
 
 ## I am not used to {{site.data.keyword.vcf-vpc-short}} and it uses new terms for me, where can I get more information?
 {: #vpc-vcf-faq-vcf-glossary}

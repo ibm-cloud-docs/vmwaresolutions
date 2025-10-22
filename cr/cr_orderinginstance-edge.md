@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Gateway cluster
 {: #cr-orderinginstance-edge}
 
+
+
  An edge gateway is required. You can bring your own gateway appliance or choose from one of the following options:
 
  * Gateway cluster with Juniper® vSRX

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-10-21"
 
 keywords: flexible resource, resource type, resource
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Resource type
 {: #vs_orderinginstances-resource}
+
+
 
 Choose the **Flexible** option from the following resource types:
 

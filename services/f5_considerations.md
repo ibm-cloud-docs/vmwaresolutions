@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-09-25"
+lastupdated: "2025-10-21"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # F5 BIG-IP on {{site.data.keyword.cloud_notm}} overview
 {: #f5_considerations}
+
+
 
 F5 BIG-IP® on {{site.data.keyword.cloud}} (F5 BIG-IP Virtual Edition) provides the following functions:
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-09-25"
+lastupdated: "2025-10-21"
 
 keywords: add service, order service, add-on service
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Ordering services for {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_addingservices}
+
+
 
 You can order services for your {{site.data.keyword.vcf-auto}} instances, such as a disaster recovery solution. Add-on services support varies between {{site.data.keyword.vcf-auto-short}} instances.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-21"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Ordering VMware HCX
 {: #hcx_ordering}
+
+
 
 You can include the VMware HCX™ service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 keywords: VLAN subnets, vmware solutions VLANs, subnets VLAN vmware solutions
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # VLANs and subnets in VMware Solutions
 {: #vmwaresol_ports-vlans-subnets}
+
+
 
 The following table provides information about the subnets that are used in each VLAN. You can either order new VLANs or subnets for {{site.data.keyword.vcf-auto}} instances or you can select existing VLANs. You can define your firewall rules based on the subnets and ports that the network traffic goes through.
 

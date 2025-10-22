@@ -18,6 +18,8 @@ subcollection: vmwaresolutions
 # Entrust DataControl on {{site.data.keyword.cloud_notm}} overview
 {: #entrust-dc_considerations}
 
+
+
 New installations of Entrust DataControl® (formerly HyTrust DataControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
 {: deprecated}
 

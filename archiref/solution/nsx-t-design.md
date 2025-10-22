@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-09-24"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # VMware NSX-T design
 {: #nsx-t-design}
+
+
 
 VMware NSX-T™ is designed to address application frameworks and architectures that have heterogeneous endpoints and technology stacks. In addition to VMware vSphere®, these environments can include other hypervisors, KVM, containers, and bare metal servers. NSX-T is designed to span a software-defined network and security infrastructure across platforms other than just vSphere alone. While it is possible to deploy NSX-T components without needing vSphere, this design focuses on NSX-T and its integration primarily within a vCenter Server vSphere automated deployment.
 

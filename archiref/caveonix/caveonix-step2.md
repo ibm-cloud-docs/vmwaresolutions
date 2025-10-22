@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Step 2 - Virtual machine deployment
 {: #caveonix-step2}
 
+
+
 The {{site.data.keyword.vmwaresolutions_full}} automation requests an extra portable private IP subnet and the all-in-one virtual machine to be configured with an IP address from this subnet.
 
 Therefore, the Caveonix RiskForesight™ components can complete the following operations:

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Bare metal servers for {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-hosts}
+
+
 
 The following information provides an overview of how {{site.data.keyword.cloud_notm}} bare metal servers are deployed in {{site.data.keyword.vcf-vpc}}.
 

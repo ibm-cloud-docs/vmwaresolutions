@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions, kmip for vmware
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions, kmip for vmware
 
 # KMIP for VMware implementation and management
 {: #kmip-implementation}
+
+
 
 {{site.data.content.kmip-deprecated-note}}
 

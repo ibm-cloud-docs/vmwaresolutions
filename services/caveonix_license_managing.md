@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-31"
+lastupdated: "2025-10-21"
 
 keywords: Caveonix view license, Caveonix manage license, delete Caveonix license
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Managing Caveonix RiskForesight licenses
 {: #caveonix_license_managing}
+
+
 
 This information does not apply to {{site.data.keyword.rw}} or Security and Compliance Readiness Bundle instances.
 {: note}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-08-25"
+lastupdated: "2025-10-21"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX virtual security appliance, Juniper virtual security appliance, Juniper vSRX console
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Juniper vSRX on {{site.data.keyword.cloud_notm}} overview
 {: #juniper-overview}
+
+
 
 Juniper® vSRX on {{site.data.keyword.cloud}} is a virtual security appliance that provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware® infrastructure, vSRX runs as a pair of virtual machines (VMs) within the VMware vSphere® environment. Juniper vSRX on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from Juniper Network, not IBM.
 {: shortdesc}

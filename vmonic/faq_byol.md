@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-09-25"
+lastupdated: "2025-10-21"
 
 keywords: FAQ, license, BYOL
 
@@ -18,6 +18,8 @@ content-type: faq
 
 # FAQ for BYOL for VMware
 {: #faq_byol}
+
+
 
 ## What is BYOL and is it supported for VMware perpetual licenses?
 {: #faq_byol-def}

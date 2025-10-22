@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-15"
+lastupdated: "2025-10-21"
 
 keywords: vcf automated, vcf classic architecture, tech specs vmware cloud foundation
 

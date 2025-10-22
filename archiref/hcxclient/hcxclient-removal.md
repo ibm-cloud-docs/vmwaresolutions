@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Modifying or uninstalling HCX
 {: #hcxclient-removal-uninstall}
+
+
 
 Existing installations can be upgraded, or some or all of a Hybrid Cloud Services deployment can be removed.
 

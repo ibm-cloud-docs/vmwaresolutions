@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-07-31"
+lastupdated: "2025-10-21"
 
 keywords: Veeam console, Veeam backup restore, update Veeam license
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Managing Veeam
 {: #managingveeam}
+
+
 
 After the service is deployed into your instance, you can access the Veeam® console by using Remote Desktop Protocol. With Remote Desktop Protocol, you can manage the backup and restore of all the VMs (virtual machines) in your environment, including the management components. You can also upgrade the service by downloading and installing the Veeam updates from the Veeam website.
 

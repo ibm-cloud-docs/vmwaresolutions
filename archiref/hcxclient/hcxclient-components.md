@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Glossary of HCX components and terms
 {: #hcxclient-components}
 
+
+
 VMware HCX™ consists of a cloud side (target or virtual data center environment) and one or more clients (source). An instance of HCX must be deployed per vCenter, even if the vCenters where HCX is deployed are linked in the same SSO domain on the client or cloud side. Configurations that are supported by HCX are, one-to-one, one-to-many, many-to-one, and many-to-many.
 
 ## Target side and client side

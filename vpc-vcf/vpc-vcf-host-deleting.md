@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-10-21"
 
 keywords: delete host, host remove, vmware cloud foundation, vmware cloud edition
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Deleting ESXi servers from {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-host-deleting}
+
+
 
 You can contract the capacity of your {{site.data.keyword.vcf-vpc}} instance according to your business needs by deleting VMware ESXi™ servers.
 

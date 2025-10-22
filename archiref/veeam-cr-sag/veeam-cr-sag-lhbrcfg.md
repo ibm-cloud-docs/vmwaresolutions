@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Configuring the OS of the Linux hardened repository server
 {: #veeam-cr-sag-lhbrcfg}
 
+
+
 This step describes the Ansible® playbook that contains a number of operating system (OS) configuration tasks that prepares the server for its role as a Veeam® Linux® hardened backup server. The playbook is tested against the {{site.data.keyword.redhat_full}} distribution.
 
 The playbook does the following tasks:

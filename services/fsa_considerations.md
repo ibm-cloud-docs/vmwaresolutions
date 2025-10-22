@@ -18,6 +18,8 @@ subcollection: vmwaresolutions
 # FortiGate Security Appliance
 {: #fsa_considerations}
 
+
+
 Automated deployment of the FortiGate Security Appliance service is no longer supported. For a similar service, consider the [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations), which is deployed automatically.
 {: deprecated}
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-10-21"
 
 keywords: add host, host adding, vmware cloud foundation, vmware cloud edition
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Adding ESXi servers to {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-host-adding}
+
+
 
 You can increase or decrease the capacity of your deployment by adding or deleting hosts to and from a cluster.
 

@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 # Expanding and contracting capacity for Security and Compliance Readiness Bundle instances
 {: #scb_addingremovingservers}
 
+
+
 New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
 {: deprecated}
 

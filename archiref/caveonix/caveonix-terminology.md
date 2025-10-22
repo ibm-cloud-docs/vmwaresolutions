@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Glossary of Caveonix terms
 {: #caveonix-terminology}
 
+
+
 This glossary provides some descriptions for terms that are associated with the Caveonix RiskForesight™ solution:
 
 * **NIST Special Publication 800-53** - A Risk Management Framework that address security control.

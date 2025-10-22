@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Planning the deployment
 {: #veeam-cr-sag-planning}
 
+
+
 Plan the deployment by capturing information for use in the subsequent steps. Select the planning tasks for the deployment environment that you intend to build:
 
 * [Immutable backup plan](#veeam-cr-sag-planning-ib)

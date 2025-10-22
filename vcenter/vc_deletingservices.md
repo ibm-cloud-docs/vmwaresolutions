@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-09-25"
+lastupdated: "2025-10-21"
 
 keywords: remove services vcf classic, delete services vcf automated
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Deleting services from {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_deletingservices}
+
+
 
 You can delete the services that were provisioned for your {{site.data.keyword.vcf-auto}} instances when you no longer need these services.
 

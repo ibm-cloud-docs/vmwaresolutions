@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Step 3 - Application configuration
 {: #caveonix-step3}
 
+
+
 This step uses the Caveonix RiskForesight™ configuration script. For the all-in-one deployment, this script is started through the {{site.data.keyword.vmwaresolutions_full}} automation.
 
 For scaling, the client needs to call the script to provision the partially distributed topology or the fully distributed topology.

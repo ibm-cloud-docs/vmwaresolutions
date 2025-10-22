@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-08-26"
+lastupdated: "2025-10-21"
 
 keywords: cyber recovery, IBM Cloud cyber recovery, cyber recovery network interface, network interface cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Network interface
 {: #cr_orderinginstance-net-interface}
+
+
 
 You must specify the following network interface settings when you order {{site.data.keyword.cr}}.
 

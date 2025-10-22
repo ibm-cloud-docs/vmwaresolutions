@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Overview of VMware Solutions
 {: #solution_overview}
 
+
+
 The {{site.data.keyword.vmwaresolutions_full}} offerings help you extend your existing VMware® virtualized datacenter into the {{site.data.keyword.cloud_notm}}, or to house cloud native applications.
 
 The solution supports use cases, such as capacity expansion into the cloud (and contraction when not needed), migration to the cloud, disaster recovery to the cloud, and backup into the cloud. With the solution, you can create a dedicated cloud environment for development, testing, training, lab, or production.

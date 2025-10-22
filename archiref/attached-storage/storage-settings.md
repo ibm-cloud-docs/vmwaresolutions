@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # Configuration and settings for attached storage
 {: #storage-settings}
+
+
 
 This design supports the attachment of shared storage with NFS v3 only. NFS v4 and v4.1 aren't supported.
 

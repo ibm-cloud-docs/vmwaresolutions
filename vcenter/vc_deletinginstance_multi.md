@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-06-04"
+lastupdated: "2025-10-21"
 
 keywords: classic delete instance, delete classic, delete multisite
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Deleting {{site.data.keyword.vcf-auto-short}} instances in a multisite configuration
 {: #vc_deletinginstance_multi}
+
+
 
 Review the following information before you delete {{site.data.keyword.vcf-auto}} instances that are part of a multisite configuration.
 

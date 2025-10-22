@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Architecture pattern for multisite NSX topologies
 {: #arch-pattern-overlays-multi-site}
+
+
 
 {{site.data.keyword.vcf-auto}} instances offer a standard NSX topology with a single NSX edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) Gateways. You have several options to build and customize multisite overlay topologies. You can manually provision new NSX edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) Gateways after initial deployment by following VMware NSX® documentation.
 

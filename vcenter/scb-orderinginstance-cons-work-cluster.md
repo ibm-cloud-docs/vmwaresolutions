@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-10-21"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Consolidated and workload cluster
 {: #scb-orderinginstance-consoli}
+
+
 
 New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
 {: deprecated}

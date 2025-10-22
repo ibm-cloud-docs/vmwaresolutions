@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-08-01"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # vSRX deployment
 {: #vcsvsrx-deployment}
+
+
 
 Deploy the {{site.data.keyword.vcf-auto}} instance before the vSRX edge gateway appliance order is placed.
 

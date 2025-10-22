@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-21"
 
 keywords: VMware HCX, HCX, tech specs HCX
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # VMware HCX on {{site.data.keyword.cloud_notm}} overview
 {: #hcx_considerations}
+
+
 
 VMware HCX™ on {{site.data.keyword.cloud}} extends the networks of on-premises data centers into {{site.data.keyword.cloud_notm}}, and it helps you migrate virtual machines (VMs) to and from {{site.data.keyword.cloud_notm}} without any conversion or change. HCX creates an abstraction layer that enables application mobility and infrastructure hybridity through securely stretched networks. You can modernize your VMware® environment without the need to refactor or modify your existing application, as HCX enables a seamless transformation. With HCX, you can bring your IP subnet ranges into {{site.data.keyword.cloud_notm}} and ensure the IP consistency through a hybrid deployment and by providing high-level security with end-to-end Suite B encryptions. VMware HCX on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from VMware® by Broadcom, not IBM.
 {: shortdesc}

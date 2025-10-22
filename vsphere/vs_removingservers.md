@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Deleting ESXi servers from Flexible instances
 {: #vs_removingservers}
 
+
+
 You can contract the capacity of your {{site.data.keyword.vcf-flex}} instance according to your business needs by deleting VMware ESXi™ servers.
 
 ## Before you delete ESXi servers from Flexible instances

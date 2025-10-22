@@ -19,6 +19,8 @@ subcollection: vmwaresolutions
 {: #trbl_limitations}
 {: troubleshoot}
 
+
+
 The updates from Windows® do not get installed automatically on the Microsoft® Active Directory™ (AD) Domain Services server.
 {: tsSymptoms}
 

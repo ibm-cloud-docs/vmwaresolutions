@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Creating a Veeam Linux managed server
 {: #veeam-cr-sag-lnxmgdsvr}
 
+
+
 This step describes a use case where a cyberadmin uses the Veeam® data integration API to access the cyberbackup.
 
 Create a Veeam Linux® managed server from an existing Linux server. When the server becomes managed by Veeam, Veeam can access the server. For this use case, use the Veeam data integration API.

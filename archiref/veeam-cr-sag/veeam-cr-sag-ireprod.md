@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Configuring the production environment
 {: #veeam-cr-sag-ireprod}
 
+
+
 The steps in this document are needed only when you want to connect the isolated recovery environment to the production environment.
 
 ## Active Directory Domain Name Services (AD/DNS) configuration

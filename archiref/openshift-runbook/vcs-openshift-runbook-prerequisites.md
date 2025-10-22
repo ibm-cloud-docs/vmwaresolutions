@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Prerequisites for installation
 {: #openshift-runbook-runbook-prereq-intro}
+
+
 
 {{site.data.content.rhos-deprecated-note}}
 

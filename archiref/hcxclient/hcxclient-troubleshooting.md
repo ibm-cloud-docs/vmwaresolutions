@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # HCX troubleshooting
 {: #hcxclient-troubleshooting}
 
+
+
 Review the following information for common HCX™ issues and fixes.
 
 ## HCX Client user interface issues

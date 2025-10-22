@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-09-17"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Compliance
 {: #opsprocs-compliance}
+
+
 
 Compliance is a set of requirements necessary to meet the minimum controls established by either a regulatory agency or industry best practices. Regularity compliance frameworks are usually broad frameworks that provide guidance on a broad range of technology, whereas industry best practices from vendors are typically technology specific to address technological risks.
 

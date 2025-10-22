@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Responsibilities for Day 2 operations
 {: #opsprocs-responsibilities}
+
+
 
 Review the two key principles for Day 2 operations.
 

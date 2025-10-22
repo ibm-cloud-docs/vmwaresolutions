@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # Interconnectivity overview
 {: #interconnectivity-overview}
 
+
+
 Interconnectivity consists of multiple services and offerings that enable customers to connect from their remote network locations to {{site.data.keyword.cloud}} deployments and between workloads and services that run in {{site.data.keyword.cloud_notm}}.
 
 It can be divided into the following categories:

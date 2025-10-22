@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 keywords: vmware regulated workloads, add clusters vmware regulated workloads, view clusters vmware regulated workloads, delete clusters vmware regulated workloads
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Adding, viewing, and deleting clusters for {{site.data.keyword.rw}}
 {: #vrw-addingviewingclusters}
+
+
 
 {{site.data.content.vrw-deprecated-note}}
 

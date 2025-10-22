@@ -19,6 +19,8 @@ subcollection: vmwaresolutions
 {: troubleshoot}
 {: support}
 
+
+
 Zerto Virtual Replication Appliances (VRAs) are not removed after you use the {{site.data.keyword.slportal_full}} to successfully uninstall the Zerto service.
 {: tsSymptoms}
 

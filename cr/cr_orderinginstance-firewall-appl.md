@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Firewall appliance
 {: #cr_orderinginstance-firewall-appl}
 
+
+
 You have the following options for your firewall appliance:
 * **Gateway cluster with Juniper® vSRX** - Order a dedicated cluster for the network edge and firewall components and install Juniper vSRX on it.
 * **Gateway cluster with FortiGate® Virtual Appliance** - Order a dedicated cluster for the network edge and firewall components and install FortiGate Virtual Appliance on it.

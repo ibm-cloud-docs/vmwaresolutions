@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 # Deleting Flexible instances
 {: #vs_deletinginstance}
 
+
+
 When you delete a {{site.data.keyword.vcf-flex}} instance, the VMware® product licenses and the VMware ESXi™ servers are released.
 
 Because of resource dependencies, the ESXi servers in your instance might not be released until the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle. At the end of the billing cycle, which is typically 30 days, the instance deletion is completed.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -14,6 +14,8 @@ subcollection: vmwaresolutions
 
 # Orchestrated upgrades
 {: #vum-orchestr-updates}
+
+
 
 You can use orchestrated upgrades to upgrade the virtual hardware and VMware® Tools of virtual machines (VMs) in the inventory after you update the vSphere® ESXi™ hosts. After the hosts are updated, the VMware Tools upgrade baseline runs first, followed by the VM hardware upgrade baseline. You can use orchestrated upgrades at a cluster, a folder, or a data center level.
 

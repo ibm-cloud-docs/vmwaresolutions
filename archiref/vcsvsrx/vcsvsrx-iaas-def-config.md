@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 #  The {{site.data.keyword.cloud_notm}} IaaS vSRX default configuration
 {: #vcsvsrx-iaas-def-config}
 
+
+
 The following configuration is provided as a reference and is not intended for use in your vSRX cluster.
 
 ```JUNOS

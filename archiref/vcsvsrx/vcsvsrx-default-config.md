@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 # vSRX example configuration
 {: #vcsvsrx-default-config}
 
+
+
 The following configuration is provided as a reference and is not intended for use in your vSRX cluster.
 
 ```JUNOS

@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 # Fortinet FortiGate VM design
 {: #fortigate-design}
 
+
+
 The FortiGate® VM solution complements the {{site.data.keyword.vmwaresolutions_full}} offerings by providing next–generation firewall (NGFW) capabilities for networks within your VMware® estate. These services are provided by one or more pairs of FortiGate virtual appliances that are deployed to your VMware environment.
 
 FortiGate VM does not replace NSX–T™ but rather complements and enhances the existing VMware NSX® architecture when installed into your {{site.data.keyword.vcf-auto}} instance on {{site.data.keyword.cloud}}. FortiGate VM is deployed as a pair of virtual appliances with one network interface (port1) configured for management access and nine available network interfaces in the client’s data plane. With appropriate configuration of networks and routes, you can use FortiGate VM to provide network security between all tiers of your network topology.

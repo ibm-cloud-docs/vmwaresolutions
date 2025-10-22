@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-01-03"
+lastupdated: "2025-10-21"
 
 keywords: troubleshooting, vSphere configuration issue, HA cluster issue
 
@@ -18,6 +18,8 @@ subcollection: vmwaresolutions
 # Why do I see a vSphere console configuration issue when I add a high-availability cluster?
 {: #trbl_add_ha_cluster_config}
 {: troubleshoot}
+
+
 
 When you add a high availability (HA) cluster configuration with only one file share, the following configuration issue is seen on the VMware ESXi™ hosts:
 {: tsSymptoms}

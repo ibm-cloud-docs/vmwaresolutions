@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Architecture patterns for deploying a third-party router on a {{site.data.keyword.vcf-auto}} instance
 {: #arch-pattern-3rd-party-router}
+
+
 
 On [{{site.data.keyword.vcf-auto}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in {{site.data.keyword.cloud}} classic infrastructure, your workloads are deployed and run on VMware NSX® overlay networks. As part of the deployment, the automation deploys an example NSX topology. You can use the provisioned examples as your base or build your own topologies on overlay. These overlay networks are not automatically advertised to {{site.data.keyword.cloud_notm}} classic infrastructure network.
 

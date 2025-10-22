@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # {{site.data.keyword.cloud_notm}} VPN overview
 {: #interconnectivity-vpn}
+
+
 
 {{site.data.keyword.cloud}} {{site.data.keyword.vpn_vpc_full}} service offers two types of VPNs:
 * **Site-to-site gateways** - This VPN type connects your on-premises network to the {{site.data.keyword.vpc_short}} network.

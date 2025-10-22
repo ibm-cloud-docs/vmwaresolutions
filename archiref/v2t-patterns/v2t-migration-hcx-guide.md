@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-10-21"
 
 subcollection: vmwaresolutions
 
@@ -15,6 +15,8 @@ subcollection: vmwaresolutions
 
 # Setting up HCX for migration from NSX-V to NSX-T
 {: #v2t-hcx-guide}
+
+
 
 You can provision an optional HCX service in the new {{site.data.keyword.vcf-auto}} instance with NSX-T, which is running in parallel with the existing {{site.data.keyword.vcf-auto-short}} with NSX-V environment. HCX deployment is fully automated in the new {{site.data.keyword.vcf-auto-short}} with NSX-T environment. HCX has various migration services (Bulk and vMotion) to help you move the workload VMs, and it provides embedded L2 Network Extension Services for the NSX-V logical switches to the NSX-T segments.
 

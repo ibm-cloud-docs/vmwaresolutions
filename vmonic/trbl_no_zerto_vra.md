@@ -19,6 +19,8 @@ subcollection: vmwaresolutions
 {: troubleshoot}
 {: support}
 
+
+
 Virtual Replication Appliances (VRAs) are not displayed on the Zerto Virtual Replication console after you add VMware ESXi™ servers to a {{site.data.keyword.vcf-auto}} instance with Zerto disaster recovery installed.
 {: tsSymptoms}
 
