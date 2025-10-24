@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-10-10"
+lastupdated: "2025-10-24"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -405,7 +405,7 @@ Key Management Interoperability Protocol (KMIP™) for VMware® support for Key 
 {: deprecated}
 {: #kmip-deprecated-note}
 
-This announcement is applicable only to customers who are using the KMIP for VMware support for Key Protect. Customers who are using KMIP for VMware support for Hyper Protect Crypto Services (HPCS) remain unaffected by this announcement. The KMIP for VMware support for HPCS continues to function as usual without any impact.
+The previous deprecation notice is applicable only to customers who are using the KMIP for VMware support for Key Protect. If you are using KMIP for VMware support for Hyper Protect Crypto Services (HPCS), the KMIP deprecation notice does not apply to you. The KMIP for VMware support for HPCS continues to work without any impact.
 {: important}
 {: #kmip-imp-note}
 

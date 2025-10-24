@@ -4,7 +4,7 @@ copyright:
 
   years: 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-23"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ Data portability involves a set of tools and procedures that enable you to expor
 ## Responsibilities
 {: #data-portability-responsibilities}
 
-{{site.data.keyword.cloud}} services provide interfaces and instructions to guide you through the process of copying and storing service customer content, including the related configuration, in your selected location.
+{{site.data.keyword.cloud_notm}} services provide interfaces and instructions to guide you through the process of copying and storing service customer content, including the related configuration, in your selected location.
 
 You're responsible for the use of the exported data and configuration for data portability to other infrastructures, which includes:
 
