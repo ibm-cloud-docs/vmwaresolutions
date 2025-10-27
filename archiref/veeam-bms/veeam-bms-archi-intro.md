@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Veeam on bare metal server introduction
 {: #veeam-bms-archi-intro}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The Veeam® on bare metal server for {{site.data.keyword.vmwaresolutions_full}} service can be used as a dedicated and all-in-one backup solution for {{site.data.keyword.vcf-auto}} instances or {{site.data.keyword.rw}}.
 

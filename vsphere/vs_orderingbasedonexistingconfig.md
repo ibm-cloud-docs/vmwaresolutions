@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: flexible order instances, flexible configuration, vmware order vSphere instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ordering Flexible instances based on existing configurations
 {: #vs_orderingbasedonexistingconfig}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can order a {{site.data.keyword.vcf-flex}} instance based on a configuration template that you saved. Use this procedure to define a new instance based on an existing instance configuration.
 

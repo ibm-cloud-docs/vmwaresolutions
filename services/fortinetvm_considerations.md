@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # FortiGate Virtual Appliance on {{site.data.keyword.cloud_notm}} overview
 {: #fortinetvm_considerations}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 FortiGate® Virtual Appliance on {{site.data.keyword.cloud}} deploys a pair of FortiGate Virtual Appliances to your environment, which can help you reduce risk by implementing critical security controls within your virtual infrastructure. FortiGate Virtual Appliance on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from Fortinet, not IBM.
 {: shortdesc}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # VCSA update and SSO-linked vCenters
 {: #vum-updating-vcsa}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 ## PSC and VCSA update
 {: #vum-updating-vcsa-psc-vcsa-update}

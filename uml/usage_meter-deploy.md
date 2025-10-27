@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: usage meter, download, deployment
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Deploying Usage Meter
 {: #usage_meter-deploy}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 To deploy a VMware vCloud Usage Meter virtual machine (VM), you must first download the Usage Meter OVA file, and then deploy the OVF template.
 

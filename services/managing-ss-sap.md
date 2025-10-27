@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: security services, request security sap, tech specs sap
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # IBM Security Services for SAP on {{site.data.keyword.cloud_notm}} overview
 {: #managing-ss-sap}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 IBM Security Services for SAP® on {{site.data.keyword.cloud_notm}} offer a cybersecurity solution to automate the monitoring and protection of SAP applications on {{site.data.keyword.cloud_notm}}, and to keep workloads compliant and secure from inside and outside threats. 
 

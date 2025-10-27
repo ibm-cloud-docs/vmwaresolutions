@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # VMware Update Manager introduction
 {: #vum-intro}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 As the system administrator of a {{site.data.keyword.vcf-auto}} instance, review the instructions on how to configure VMware® Update Manager (VUM) to maintain the currency of your {{site.data.keyword.vcf-auto-short}} instance.
 

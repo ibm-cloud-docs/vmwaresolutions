@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-25"
+lastupdated: "2025-10-24"
 
 keywords: vcf classic summary order, order summary instance, order summary
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Summary
 {: #vc_orderinginstance-order-summary}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Based on your chosen options for the instance and selected add-on services, the estimated price is generated and displayed on the **Summary** panel. Click **Pricing details** to generate a PDF document with the price summary for the {{site.data.keyword.vmwaresolutions_full}} resources.
 

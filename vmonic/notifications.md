@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-29"
+lastupdated: "2025-10-24"
 
 keywords: notifications console, filter notifications, system notification
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Managing notifications
 {: #notifications}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can check notifications for the status of {{site.data.keyword.vmwaresolutions_full}} operations. You can use this information to investigate problems that might occur with VMware Solutions.
 

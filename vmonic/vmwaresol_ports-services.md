@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ports for services
 {: #vmwaresol_ports-services}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The following topics provide information about the ports that are used by the services.
 

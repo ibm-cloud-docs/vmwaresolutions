@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: vmware solutions kmip for vmware, kmip for vmware, migration, migration partner, partners for assisted migration
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Migrating from KMIP for VMware to {{site.data.keyword.cloud_notm}} native KMIP providers
 {: #kmip_migration}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.kmip-deprecated-note}}
 

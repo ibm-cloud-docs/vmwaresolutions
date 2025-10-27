@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Upgrading to vSphere 8.0
 {: #vc_vcs_80_upgrade}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can upgrade the VMware vCenter Server® software on your instances to version 8.0.
 

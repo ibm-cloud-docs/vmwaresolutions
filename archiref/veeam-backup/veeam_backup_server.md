@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-06-13"
+lastupdated: "2025-10-24"
 
 keywords: requirements for vmware backup proxies, limitations for vmware backup proxies, backup proxies
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Backup server
 {: #veeam_backup_server}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The backup server is a Windows-based machine on which Veeam Backup and Replication is installed. It is the core component in the backup infrastructure and performs all types of administrative activities, including:
 

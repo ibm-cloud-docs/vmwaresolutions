@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Physical infrastructure for the Veeam server with {{site.data.keyword.cloud_notm}} bare metal servers
 {: #veeam-bms-archi-physical}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 ## Veeam all-in-one servers
 {: #veeam-bms-archi-physical-all-in-one}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: troubleshooting, vSphere timeout, timeout console
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 {: troubleshoot}
 {: support}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 When you try to connect to the VMware vSphere® Web Client, you might get the following timeout error:
 {: tsSymptoms}

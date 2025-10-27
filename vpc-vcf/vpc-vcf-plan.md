@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-15"
+lastupdated: "2025-10-24"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Planning for {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-plan}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 ## {{site.data.keyword.cloud_notm}} account requirements
 {: #vpc-vcf-plan-acc}

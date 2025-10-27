@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: vmware regulated workloads, add hosts vmware regulated workloads, add servers vmware regulated workloads, remove hosts vmware regulated workloads
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Expanding and contracting capacity for {{site.data.keyword.rw}}
 {: #vrw-addingremovingservers}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.vrw-deprecated-note}}
 

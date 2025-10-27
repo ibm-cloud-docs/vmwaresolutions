@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-01-05"
+lastupdated: "2025-10-24"
 
 keywords: vmware backup proxy, proxies, direct storage access, virtual appliance, network, nfs cluster
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # VMware backup proxies
 {: #vmware_backup_proxies}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 A VMware® backup proxy sits between the backup server and other components of the backup infrastructure. While the backup server administers tasks, the proxy processes jobs and delivers backup traffic.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-15"
+lastupdated: "2025-10-24"
 
 keywords: licenses, usage meter, requirements
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Requirements for licensing and metering
 {: #licensing_metering-req}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Broadcom requires {{site.data.keyword.IBM}} and {{site.data.keyword.cloud_notm}} customers to use new license keys and to use the VMware vCloud Usage Meter tool for compliance purposes. As an {{site.data.keyword.cloud}} customer, you must adopt these new license keys and you must deploy Usage Meter. No exceptions are allowed and the ability to use VMware software on {{site.data.keyword.cloud_notm}} might be revoked at any time if you do not meet these requirements.
 

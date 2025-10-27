@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: ordering prerequisites, before you order, pre-order checklist, before first order
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Setting up your environment for your first order
 {: #completing_checklist}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The setup information applies only to the {{site.data.keyword.vcf-classic}} offerings: Automated, Flexible, and {{site.data.keyword.cr}}.
 {: note}

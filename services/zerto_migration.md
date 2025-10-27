@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024
+  years:  2024, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: Zerto, Zerto migration, zvm, zvma, windows zvm, linux zvma
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Migrating Zerto from Windows ZVM to Linux ZVMA
 {: #zerto_migration}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 For Zerto 9.7 and earlier, ZVM (Zerto Virtual Manager) used to run from a Microsoft Windows® virtual machine (VM).
 

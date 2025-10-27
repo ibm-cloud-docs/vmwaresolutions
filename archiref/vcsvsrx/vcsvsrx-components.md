@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-02-01"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Glossary of vSRX terminology
 {: #vcsvsrx-components}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 ## Interface names
 {: #vcsvsrx-components-interface}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Use case 2
 {: #vrw-use-case-2}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.vrw-deprecated-note}}
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: openshift for vmware, request openshift for vmware, tech specs openshift vmware
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.redhat_openshift_notm}} for VMware overview
 {: #ocp_overview}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.rhos-deprecated-note}}
 

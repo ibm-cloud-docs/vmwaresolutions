@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-01-05"
+lastupdated: "2025-10-24"
 
 keywords: wan accelerators, log shipping servers
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # WAN accelerators
 {: #veeam_wan_server}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Veeam® WAN acceleration is a technology that optimizes data transfer to remote locations, specifically for off-site backup copy and replication jobs. It combines the following operations to optimize the data transfer and reduce the amount of data flow over the WAN:
 

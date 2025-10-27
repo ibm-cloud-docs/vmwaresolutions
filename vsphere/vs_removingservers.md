@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-05-16"
+lastupdated: "2025-10-24"
 
 keywords: flexible remove hosts, flexible remove ESXi servers, delete server
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Deleting ESXi servers from Flexible instances
 {: #vs_removingservers}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can contract the capacity of your {{site.data.keyword.vcf-flex}} instance according to your business needs by deleting VMware ESXi™ servers.
 

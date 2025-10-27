@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-12"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # HCX troubleshooting
 {: #hcxclient-troubleshooting}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Review the following information for common HCX™ issues and fixes.
 

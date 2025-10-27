@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: troubleshooting, vSphere configuration issue, HA cluster issue
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 {: #trbl_add_ha_cluster_config}
 {: troubleshoot}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 When you add a high availability (HA) cluster configuration with only one file share, the following configuration issue is seen on the VMware ESXi™ hosts:
 {: tsSymptoms}

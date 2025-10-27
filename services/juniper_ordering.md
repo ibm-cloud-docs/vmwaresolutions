@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX console
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ordering Juniper vSRX
 {: #juniper-ordering}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can include the Juniper® vSRX service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # NSX-V to NSX-T migration overview
 {: #v2t-overview}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Starting with version 4.0, VMware NSX-T Data Center is known as VMware NSX. This document uses NSX-T and NSX-V for clarity between the two NSX solutions.
 {: note}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: vcf automated compliance, compliance info, vcf automated policy
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Compliance information for {{site.data.keyword.vcf-auto-short}}
 {: #vc_compl_info}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Review the following information for details about compliance for {{site.data.keyword.vcf-auto}} instances.
 

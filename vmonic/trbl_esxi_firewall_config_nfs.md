@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-04-04"
+lastupdated: "2025-10-24"
 
 keywords: troubleshooting, host connection lost, NFS datastore connection lost
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 {: #trbl_esxi_firewall_config_nfs}
 {: troubleshoot}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 There are several possible reasons for loss of connectivity to storage. One possibility is that {{site.data.keyword.cloud}} was performing maintenance on your endurance storage, which disabled your storage's IP addresses in a rotating fashion. However, your host was not aware of all endurance storage IP addresses.
 {: tsSymptoms}

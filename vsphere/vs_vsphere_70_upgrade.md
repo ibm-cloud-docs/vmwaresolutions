@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Upgrading vSphere software from version 6.5 or 6.7 to 7.0
 {: #vs_vsphere_70_upgrade}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 VMware vSphere® is a streamlined and optimized ordering platform for VMware®. With this platform, you can build your own {{site.data.keyword.IBM}}-hosted VMware environment by customizing and ordering the VMware-compatible hardware based on your selected VMware components.
 {: shortdesc}

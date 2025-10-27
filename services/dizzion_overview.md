@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: dizzion service, request dizzion, tech specs dizzion
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Dizzion on {{site.data.keyword.cloud_notm}} overview
 {: #dizzion-overview}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Organizations with high-performing, remote, and hybrid workforces choose Dizzion digital workspaces, Desktop as a Service (DaaS), and virtual applications to protect sensitive data and create a seamless, work-from-anywhere platform.
 Dizzion on {{site.data.keyword.cloud_notm}} outperforms legacy virtual desktop infrastructure (VDI) and commodity Desktop as a Service (DaaS) for a superior user experience. At the same time, it provides more service-level choices, multicloud integration, compliance, protection, and simplified management for the teams that are in charge with environment optimization. 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-05-31"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Overview of VMware Solutions
 {: #solution_overview}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The {{site.data.keyword.vmwaresolutions_full}} offerings help you extend your existing VMware® virtualized datacenter into the {{site.data.keyword.cloud_notm}}, or to house cloud native applications.
 

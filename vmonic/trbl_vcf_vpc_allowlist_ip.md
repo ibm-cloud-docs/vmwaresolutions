@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: troubleshooting, vcf for vpc, authorization header, authorization error
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 {: #trbl_vcf_vpc_allowlist_ip}
 {: troubleshoot}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 
 

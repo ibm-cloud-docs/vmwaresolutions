@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Attached storage infrastructure design
 {: #storage-infra-design}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.vmwaresolutions_full}} provides VMware® technology that is deployed in an automated way within {{site.data.keyword.cloud_notm}} data centers across the globe. Within the VMware Solutions portfolio, the VMware vCenter Server® offering consists of up to 10 clusters. Each cluster contains up to 59 vSphere hosts, a single Platform Services Controller (PSC), and a vCenter Server Appliance capable of managing up to 400 hosts and 4,000 virtual machines.
 

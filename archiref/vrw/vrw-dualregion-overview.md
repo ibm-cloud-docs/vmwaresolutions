@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Dual region Disaster Recovery overview
 {: #vrw-dualregion-overview}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.vrw-deprecated-note}}
 

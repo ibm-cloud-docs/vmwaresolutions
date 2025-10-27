@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Configuration tasks
 {: #opsprocs-configure}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 After you provision your {{site.data.keyword.vcf-auto}} instance, system administrators might need to run the following configuration tasks. These tasks set the initial environment to the enterprise needs and to respond to future service requests.
 

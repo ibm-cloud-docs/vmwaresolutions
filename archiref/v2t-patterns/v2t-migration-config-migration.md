@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Configuration migration
 {: #v2t-config-migration}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Configuration migration covers all the NSX-V settings and parameters that must be transferred to the VMware NSX-T™ environment to provide similar functions of the NSX-V environment.
 

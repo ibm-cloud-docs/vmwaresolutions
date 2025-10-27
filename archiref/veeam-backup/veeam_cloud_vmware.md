@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: veeam, veeam ibm cloud vmware
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Veeam in {{site.data.keyword.vcf-auto-short}}
 {: #veeam_cloud_vmware}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 ## Overview 
 {: #veeam_cloud_vmware_overview}

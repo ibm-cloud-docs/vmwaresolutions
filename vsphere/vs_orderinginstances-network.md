@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Network interface
 {: #vs_orderinginstances-network-interface-settings}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You must specify the following network interface settings when you order a new {{site.data.keyword.vcf-flex}} instance.
 

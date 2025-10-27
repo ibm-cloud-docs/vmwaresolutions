@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Caveonix RiskForesight Security and Compliance Center integration
 {: #caveonix-scc}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.cloud}} Security and Compliance Center is a comprehensive Cloud-Native Application Protection Platform (CNAPP) solution suite that you can use to centrally manage your organization’s security, risk, and compliance response to regulatory standards. It enables your security and DevOps teams to secure sensitive data and protect workloads with real-time threat detection and prioritization of vulnerabilities. For more information, see [Getting started with Security and Compliance Center](/docs/security-compliance?topic=security-compliance-getting-started).
 

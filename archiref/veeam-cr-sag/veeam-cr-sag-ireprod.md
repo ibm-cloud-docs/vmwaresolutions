@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Configuring the production environment
 {: #veeam-cr-sag-ireprod}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The steps in this document are needed only when you want to connect the isolated recovery environment to the production environment.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: usage meter, configuration
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Configuring Usage Meter
 {: #usage_meter-config}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 
 

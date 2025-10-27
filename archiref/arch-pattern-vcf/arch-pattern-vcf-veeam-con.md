@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for deploying Veeam on VMware Cloud Foundation consolidated architecture
 {: #arch-pattern-vcf-veeam-con}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 This architecture pattern explains how to deploy Veeam® on {{site.data.keyword.vcf-vpc}} consolidated architecture deployment in {{site.data.keyword.vpc_short}}. With Veeam, you can increase the resiliency of your VMware Cloud Foundation instance and the workloads that are running on it through a secure backup and recovery solution.
 

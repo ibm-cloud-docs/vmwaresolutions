@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-15"
+lastupdated: "2025-10-24"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.vcf-vpc-short}} overview
 {: #vpc-vcf-ovw}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.vcf-vpc}} provides a ubiquitous hybrid cloud platform for both traditional enterprise apps and modern apps. {{site.data.keyword.vcf-vpc-short}} is based on a comprehensive software-defined stack, which includes VMware vSphere® with VMware Tanzu™, VMware vSAN™, VMware NSX-T™ Data Center, and VMware Aria® Suite (formerly VMware vRealize® Suite). It provides a complete set of software-defined services for compute, storage, network security, Kubernetes management, and cloud management. The VMware Cloud Builder automates the initial deployment of the entire software-defined stack, and after the initial deployment it is managed with SDDC Manager. The result is agile, reliable, and efficient. The cloud infrastructure offers consistent operations across private and public clouds.
 

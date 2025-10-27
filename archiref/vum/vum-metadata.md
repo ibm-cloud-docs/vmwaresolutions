@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Collecting the metadata
 {: #vum-metadata}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 VMware® Update Manager (VUM) downloads metadata about the upgrades, patches, or extensions through a predefined automatic process that you can modify. At regular configurable intervals, VUM contacts VMware, or third-party sources, to gather the latest metadata about available upgrades, patches, or extensions. However, the default settings from VMware are acceptable for use in the {{site.data.keyword.vcf-auto}} instance you can change them as needed for your enterprise requirements.
 

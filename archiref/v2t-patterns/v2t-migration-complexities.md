@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Assess migration complexity
 {: #v2t-complexity}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 In this step of the process, you can check the source NSX-V environment and use a number of parameters to categorize the migration project. The possible three complexity categories are Low, Medium, or High.
 

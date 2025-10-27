@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: Caveonix RiskForesight, Caveonix configuration, order Caveonix
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Ordering Caveonix RiskForesight
 {: #caveonix_ordering}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can include the Caveonix RiskForesight™ service with a new {{site.data.keyword.vcf-auto}} instance, or add the service to your existing instance.
 

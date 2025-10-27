@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-12"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Operations management introduction
 {: #opsmgmt-intro}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The following reference architecture guides and constrains the instantiations of the {{site.data.keyword.vmwaresolutions_full}} architectures.
 

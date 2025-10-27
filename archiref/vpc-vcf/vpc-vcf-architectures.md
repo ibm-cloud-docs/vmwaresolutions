@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Supported VMware Cloud Foundation architecture models
 {: #vpc-vcf-architectures}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 VMware Cloud Foundation™ supports two base architecture models - consolidated and standard. You can select a model according to the requirements of your deployment and organization. If you plan to deploy a small-scale environment and extend it according to your needs, or if you work on an SDDC proof-of-concept you can select a consolidated architecture. For a production environment, you can implement a standard architecture according to VMware's production best practices.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-05-09"
+lastupdated: "2025-10-24"
 
 keywords: Entrust DataControl, tech specs Entrust DataControl
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Entrust DataControl on {{site.data.keyword.cloud_notm}} overview
 {: #entrust-dc_considerations}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 New installations of Entrust DataControl® (formerly HyTrust DataControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
 {: deprecated}

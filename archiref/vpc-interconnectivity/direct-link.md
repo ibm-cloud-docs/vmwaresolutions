@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.dl_full_notm}} overview
 {: #interconnectivity-dl}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.dl_full}} offerings provide connectivity from an external source into a customer {{site.data.keyword.cloud_notm}} private network. {{site.data.keyword.dl_short}} can be viewed as an alternative to a site-to-site VPN solution, which is designed for customers that need more consistent, higher-throughput connectivity between a remote network and their {{site.data.keyword.cloud_notm}} environments.
 

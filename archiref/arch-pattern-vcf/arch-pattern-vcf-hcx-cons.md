@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for deploying HCX on VMware Cloud Foundation consolidated architecture
 {: #arch-pattern-vcf-hcx-con}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 This architecture pattern explains how to deploy VMware HCX™ on {{site.data.keyword.vcf-vpc}} consolidated architecture deployment in {{site.data.keyword.vpc_short}}. With HCX, you can streamline workload migration, manage workload rebalancing, and ensure business continuity across data centers and clouds.
 

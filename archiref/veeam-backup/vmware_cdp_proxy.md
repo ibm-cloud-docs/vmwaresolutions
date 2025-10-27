@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-01-05"
+lastupdated: "2025-10-24"
 
 keywords: vmware cdp proxy, VMware cdp proxy operation
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # VMware CDP proxy
 {: #vmware_cdp_proxy}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 A VMware® CDP proxy operates as a data mover and transfers data between the source and target hosts. VMware CDP proxy performs the following tasks:
 

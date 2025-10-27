@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-05"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Configuring the automation server
 {: #veeam-cr-sag-ascfg}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The automation server is used to host Ansible®. The following architecture describes Ansible:
 

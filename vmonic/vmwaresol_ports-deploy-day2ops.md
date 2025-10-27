@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ports that are used for deployment and Day 2 operations
 {: #vmwaresol_ports-deploy-day2ops}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The following table provides information about the ports for deployment and Day 2 operations. For more information about the ports that are used by the add-on services, see [Ports for services](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-services).
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # vCenter Single Sign On
 {: #adds-sso}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 VMware® vCenter Single Sign-On (SSO) is an authentication broker and security token exchange infrastructure, which allows VMware vSphere® components to communicate with each other through a secure token mechanism and uses the following services:
 

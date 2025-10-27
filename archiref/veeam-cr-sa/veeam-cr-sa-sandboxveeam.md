@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2025
 
-lastupdated: "2023-06-13"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Veeam technologies used in the sandbox
 {: #veeam-cr-sandboxveeam}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The following Veeam® technologies are discussed as:
 

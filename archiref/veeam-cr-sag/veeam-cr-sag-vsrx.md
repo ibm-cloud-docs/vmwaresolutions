@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Creating the airgap by using Juniper vSRX
 {: #veeam-cr-sag-vsrx}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The following steps are needed only when you are creating an isolated recovery environment and you are using the Juniper® vSRX to isolate the environment.
 

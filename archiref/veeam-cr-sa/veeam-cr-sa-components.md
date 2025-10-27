@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Veeam components
 {: #veeam-cr-sa-components}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 This document describes the Veeam® components that are used in these solution architectures. It focuses on the Veeam service instance immediately after provisioning and before any changes occur.
 

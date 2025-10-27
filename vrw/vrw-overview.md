@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: vmware regulated workloads, regulated workloads, workloads instance, regulated instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.rw}} overview
 {: #vrw-overview}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.vrw-deprecated-note}}
 

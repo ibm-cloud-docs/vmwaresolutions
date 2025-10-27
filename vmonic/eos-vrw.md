@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: end of marketing notice, eom regulated workloads, end of marketing regulated workloads, regulated workloads support
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # End of Marketing for {{site.data.keyword.rw}}
 {: #eos-vrw}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.vrw-deprecated-note}}
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.cloud_notm}} networking and infrastructure
 {: #vcs-openshift-sddc-infra}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.rhos-deprecated-note}}
 

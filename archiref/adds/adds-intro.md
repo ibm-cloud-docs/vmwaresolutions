@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Active Directory Domain Services introduction
 {: #adds-intro}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.vmwaresolutions_full}} is a deployment service that delivers the automated deployment of a VMware Software Defined Data Center (SDDC), along with optional third-party products and with {{site.data.keyword.cloud_notm}} bare metal servers and network. After deployment, the systems are managed by the customer, who is responsible for ongoing software patches and updates. The customer has full access to the systems. For more information, see [Customer versus IBM responsibility for vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info#vc_compl_info-responsibility). To enable the deployment lifecycle (additions, removals), {{site.data.keyword.vmwaresolutions_short}} retains user IDs with administrator privileges to deploy and configure the SDDC software.
 

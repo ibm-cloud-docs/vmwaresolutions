@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for deploying Client VPN into {{site.data.keyword.vcf-vpc}}
 {: #arch-pattern-vcf-clientvpn}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 This architecture pattern explains how to deploy Client VPN for VPC (Virtual Private Cloud) with an {{site.data.keyword.vcf-vpc}} deployment. Client VPN for VPC provides client-to-site connectivity, which allows remote devices to securely connect to the VPC network by using an OpenVPN software client. This solution is useful for VMware® administrators who want to connect to the {{site.data.keyword.cloud_notm}} from a remote location to manage an {{site.data.keyword.vcf-vpc}} instance.
 

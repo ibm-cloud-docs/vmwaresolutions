@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-04-29"
+lastupdated: "2025-10-24"
 
 keywords: cyber recovery add services, add service, cyber recovery services, Cyber Recovery view services, view Cyber Recovery services, Cyber Recovery delete services, delete services, delete Cyber Recovery services
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ordering, viewing, and deleting services for {{site.data.keyword.cr}} instances
 {: #cr_addingviewingservices}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can order various add-on services for your {{site.data.keyword.cr}} instance. For example, [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) is optional.
 

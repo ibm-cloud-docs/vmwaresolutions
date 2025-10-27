@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Operations management architecture overview
 {: #opsmgmt-arch}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The architecture of the products in the operations management layer provides centralized monitoring with logging data from {{site.data.keyword.vmwaresolutions_full}}. The operations management layer monitors in real time, the physical infrastructure, virtual infrastructure, and optionally the client’s compute workloads.
 

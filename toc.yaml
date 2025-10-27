@@ -17,6 +17,7 @@ toc:
           id: getting-started
           label: Getting started
           topics:
+          - topic: vmonic/eos-vms.md
           - topic: index.md
           - link:
               label: Getting started with VCF as a Service
@@ -908,6 +909,7 @@ toc:
           label: FAQ
           topics:
           - vmonic/vmwaresol_packaging-pricing.md
+          - topic: vmonic/faq_eos_vms.md
           - include: ../vmware-service/common/faq-general.md
           - vmonic/faq.md
           - vmonic/faq-vpc-vcf.md

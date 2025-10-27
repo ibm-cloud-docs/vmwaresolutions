@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: Zerto, Zerto license, manage Zerto license
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Managing Zerto stand-alone licenses
 {: #zerto_managing_licenses}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can view and delete the Zerto licenses that you ordered for stand-alone use.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0
 {: #vc_vsphere_70_upgrade}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The {{site.data.keyword.vcf-auto}} offering is a fully automated deployment solution for the VMware vSphere® SDDC stack. It includes vSphere, VMware NSX®, and, optionally, VMware vSAN™ products. While the offering automates the most challenging parts of deploying, expanding, and contracting a VMware® SDDC-based infrastructure, it is not a managed service.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Partially distributed
 {: #caveonix-partially}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 After the automated deployment is completed, you can manually scale out by increasing RAM and disk in the initial virtual machine (VM) and add three scale-out VMs. The RiskForesight™ configuration script can be run to enable and configure the application components on all four VMs.
 

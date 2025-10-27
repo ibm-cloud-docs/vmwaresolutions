@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-15"
+lastupdated: "2025-10-24"
 
 keywords: vcf automated order instance, order vcf classic, order vmware cloud foundation instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Requirements for {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_orderinginstance-req}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 To deploy a flexible and customizable VMware® virtualized platform that best fits your workload needs, order a {{site.data.keyword.vcf-auto}} instance.
 

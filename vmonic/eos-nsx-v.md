@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: end of support notice, nsx-v deployment, end of support nsx-v, nsx-v deprecated, nsx-v support
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # End of Support for NSX-V instance deployments
 {: #eos-nsx-v}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Broadcom® support for VMware NSX-V deployments ended on 16 January 2022. In addition, extended NSX-V support from {{site.data.keyword.IBM}} (exclusive to {{site.data.keyword.cloud}}) ended on January 2025.
 

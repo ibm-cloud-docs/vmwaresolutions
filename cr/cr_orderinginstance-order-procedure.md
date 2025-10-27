@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: cyber recovery order procedure, order procedure cyber recovery, cyber recovery order instance, order cyber recovery, order cyber recovery instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Procedure to order {{site.data.keyword.cr}}
 {: #cr_orderinginstance-order-procedure}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Securing the Linux hardened repository server
 {: #veeam-cr-sag-lhbrsecure}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 This step describes the Ansible® playbook that secures the Linux® hardened backup repository server after it is added to the Veeam® backup infrastructure. The playbook does the following tasks:
 

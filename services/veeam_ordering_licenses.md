@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: Veeam, Veeam standalone license, order Veeam standalone license
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ordering Veeam stand-alone licenses
 {: #veeam_ordering_licenses}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can order a Veeam® stand-alone license without associating it to any {{site.data.keyword.vcf-auto}} instance for licensing and activation of your on-premises workloads.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: reassign primary cluster, primary cluster
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Reassigning primary clusters for {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_reassigningprimarycluster}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can reassign a primary cluster to another cluster in your {{site.data.keyword.vcf-auto}} instance according to your business needs.
 

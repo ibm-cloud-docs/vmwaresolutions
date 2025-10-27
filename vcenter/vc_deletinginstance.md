@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: delete automated instance, delete vcf classic, remove vcf automated
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Deleting {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_deletinginstance}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 To release the components that you ordered in a {{site.data.keyword.vcf-auto}} instance, delete the instance.
 

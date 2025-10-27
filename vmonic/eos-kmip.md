@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: end of support notice, kmip for vmware service, end of support kmip for vmware, kmip for vmware deprecated, kmip for vmware support
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # End of Support for KMIP for VMware for Key Protect
 {: #eos-kmip}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.kmip-deprecated-note}}
 

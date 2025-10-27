@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: vcf automated multisite, multisite configuration, multisite deployment vcf for classic
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Multisite configuration for {{site.data.keyword.vcf-auto-short}}
 {: #vc_multisite}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.vmwaresolutions_full}} allows instances to be deployed across different locations and have them up and running in a short time.
 

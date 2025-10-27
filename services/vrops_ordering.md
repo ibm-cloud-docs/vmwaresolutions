@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-04-12"
+lastupdated: "2025-10-24"
 
 keywords: VMware Aria, VMware Aria configuration, order VMware Aria, vRealize
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Ordering VMware Aria Operations and VMware Aria Operations for Logs
 {: #vrops_ordering}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can include the VMware Aria® Operations™ and VMware Aria Operations™ for Logs service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 

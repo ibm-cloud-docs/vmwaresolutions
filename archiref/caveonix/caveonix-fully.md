@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Fully distributed
 {: #caveonix-fully}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 More base virtual machines (VMs) and scale-out VMs are added according to the number of assets and data retention requirements.
 

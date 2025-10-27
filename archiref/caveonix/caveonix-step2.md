@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Step 2 - Virtual machine deployment
 {: #caveonix-step2}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The {{site.data.keyword.vmwaresolutions_full}} automation requests an extra portable private IP subnet and the all-in-one virtual machine to be configured with an IP address from this subnet.
 

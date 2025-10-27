@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Setting up the NSX-T L2 bridge for the migration from NSX-V to NSX-T
 {: #v2t-l2-nsx-t-guide}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 This use case is based on the [Lift and Shift Migration of Specific Parts of NSX Data Center for vSphere](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-1/migration-guide/migrating-nsx-data-center-for-vsphere/lift-and-shift-migration-of-specific-parts-of-nsx-data-center-for-vsphere.html){: external} scenario.
 

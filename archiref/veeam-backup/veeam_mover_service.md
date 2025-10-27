@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-01-05"
+lastupdated: "2025-10-24"
 
 keywords: veeam mover service, veeam data mover, nfs service, 
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Veeam Data Mover service
 {: #veeam_mover_service}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The Veeam® Data Mover performs data processing tasks on behalf of Veeam Backup and Replication. It retrieves source machine data, performs data deduplication and compression, and stores backed-up data on the target storage. For Microsoft Windows® servers, Veeam Data Movers are persistent and are uploaded and installed only once. They are automatically installed when you add a Microsoft Windows server to the backup infrastructure. For Linux servers, Veeam Data Movers can be persistent or nonpersistent. A data mover is only manually installed if the Linux server fails. For more information, see [Veeam KB article](https://www.veeam.com/kb4298){: external}.
 

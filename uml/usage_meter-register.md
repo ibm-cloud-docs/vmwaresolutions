@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: usage meter, register, unregister
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Registering Usage Meter with IBM
 {: #usage_meter-register}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Before you register VMware vCloud Usage Meter with {{site.data.keyword.IBM}}, verify that you have the appropriate service roles to access the Usage Meter instances. For more information, see [Service roles](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui#iamrolesservice) in [Managing IAM access](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui).
 {: important}

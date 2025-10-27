@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-15"
+lastupdated: "2025-10-24"
 
 keywords: user account, ibm cloud account, ibm cloud infrastructure
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Signing up for required accounts
 {: #signing_required_accounts}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 ## The {{site.data.keyword.cloud_notm}} account
 {: #signing_required_accounts-cloud}

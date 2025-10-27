@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-04-20"
+lastupdated: "2025-10-24"
 
 keywords: veeam backup enterprise managers, additional information, enterprise manager
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Veeam Backup Enterprise Manager
 {: #veeam_etp_manager}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Veeam® Backup Enterprise Manager is intended for distributed enterprise environments with multiple backup servers. Veeam Backup Enterprise Manager federates backup servers and offers a consolidated view through a web browser interface. You can centrally control and manage all jobs through a single pane of glass. Edit and clone jobs, monitor job state, and get reporting data across all backup servers. 
 

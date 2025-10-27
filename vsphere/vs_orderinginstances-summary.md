@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-09"
+lastupdated: "2025-10-24"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Summary
 {: #vs_orderinginstances-order-summary}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Based on your selected configuration, the estimated price is instantly generated and displayed in the **Summary** panel. Click **Pricing details** to generate a PDF document with the price summary for the {{site.data.keyword.vmwaresolutions_full}} resources.
 

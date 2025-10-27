@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Configuring the jump server
 {: #veeam-cr-sag-jmpcfg}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Now that the jump server is ordered and available for connection on its public IP address from your laptop, you can follow these steps:
 

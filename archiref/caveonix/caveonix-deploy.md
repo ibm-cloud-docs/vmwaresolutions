@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Deployment models for Caveonix RiskForesight
 {: #caveonix-deploy}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Review the deployment models for Caveonix RiskForesight™ along with the installation process.
 

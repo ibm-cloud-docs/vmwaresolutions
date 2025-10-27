@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware Aria Operations Manager design
 {: #opsmgmt-vrops}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The VMware Aria® Operations™ Manager (formerly known as VMware vRealize® Operations Manager™) Analytics Cluster contains the nodes that analyze and store data from the monitored components. In this deployment, four nodes are deployed and two VMware NSX® Load Balancers. This size allows monitoring of up to 30,000 VMs and 9,000,000 metrics to be collected.
 

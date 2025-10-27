@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Backing up components
 {: #solution_backingup}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You are responsible for the configuration, management, and monitoring of all software components, including the backup and availability of your management infrastructure and workloads.
 

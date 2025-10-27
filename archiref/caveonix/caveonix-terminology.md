@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Glossary of Caveonix terms
 {: #caveonix-terminology}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 This glossary provides some descriptions for terms that are associated with the Caveonix RiskForesight™ solution:
 

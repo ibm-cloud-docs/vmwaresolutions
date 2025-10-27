@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-03-18"
+lastupdated: "2025-10-24"
 
 keywords: vmware cloud foundation BOM, bill of materials vmware cloud foundation, BOM
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.vcf-vpc-short}} BOM
 {: #vpc-vcf-ovw-bom}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Review the Bill of Materials (BOM) information for {{site.data.keyword.vcf-vpc}} instances.
 

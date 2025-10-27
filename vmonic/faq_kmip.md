@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: FAQ kmip for vmware, kmip for vmware questions
 
@@ -19,7 +19,7 @@ content-type: faq
 # FAQ for KMIP for VMware migration
 {: #faq-kmip}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.kmip-deprecated-note}}
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Step 4 - Application setup
 {: #caveonix-step4}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 After the virtual machines (VMs) are deployed and the application components are installed, the Caveonix RiskForesight™ solution can be set up for the service provider and the first tenant or organization.
 

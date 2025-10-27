@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-05"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Overview
 {: #veeam-cr-sag-overview}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The solution guide describes the tasks to create the two cyber-recovery solution architectures, Immutable backup and Isolated recovery environment. It also discusses the use cases for the creation of backups and then making this backup available to cyberadmins.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-29"
+lastupdated: "2025-10-24"
 
 keywords: F5 license activation, F5 configuration, order F5
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Ordering F5 BIG-IP
 {: #f5_ordering}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can include the F5 BIG-IP® service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 

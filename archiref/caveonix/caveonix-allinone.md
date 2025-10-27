@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-26"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # All-in-one deployment
 {: #caveonix-allinone}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 An automated deployment and configuration of a single virtual machine (VM) that hosts all the RiskForesight™ application components. This deployment model is suitable for small deployments, up to 100 assets with 7 - 30 days of indexing. The details of the all-in-one VM and the additional Remote Collector VM are shown in the following table:
 

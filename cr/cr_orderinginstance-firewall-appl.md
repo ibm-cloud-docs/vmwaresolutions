@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2025
 
-lastupdated: "2023-09-29"
+lastupdated: "2025-10-24"
 
 keywords: cyber recovery, cyber recovery firewall appliance, firewall appliance cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Firewall appliance
 {: #cr_orderinginstance-firewall-appl}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You have the following options for your firewall appliance:
 * **Gateway cluster with Juniper® vSRX** - Order a dedicated cluster for the network edge and firewall components and install Juniper vSRX on it.

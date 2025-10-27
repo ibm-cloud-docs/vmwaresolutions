@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: HCX updates, HCX management console, login HCX console
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 # Managing VMware HCX
 {: #managinghcx}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 ## Accessing the HCX management consoles
 {: #managinghcx-accessing-consoles}

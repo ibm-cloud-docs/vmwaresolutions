@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Networking for VMware Cloud Foundation appliances
 {: #vpc-vcf-mgmt-appliances}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The following information provides an overview of networking deployment for VMware Cloud Foundation™ appliances in {{site.data.keyword.vpc_short}} and inside the NSX deployment of the VMware Cloud Foundation instance.
 

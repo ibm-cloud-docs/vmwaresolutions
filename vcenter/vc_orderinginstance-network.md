@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: network interface, domain name, hostname prefix, configure hostnames, dns configuration
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Network interface
 {: #vc_orderinginstance-network-interface-settings}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You must specify the following network interface settings when you order a {{site.data.keyword.vcf-auto}} instance.
 

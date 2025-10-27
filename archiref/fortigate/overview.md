@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-05-31"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Fortinet FortiGate VM overview
 {: #fortigate-overview}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.vmwaresolutions_full}} offers various solutions to meet your network security requirements. The base offering includes VMware NSX–T™ for integrated virtual networking and security. More network security features are available with the FortiGate® VM offering, which provides Fortinet®’s next–generation firewall (NGFW) capabilities in the form of a highly available pair of virtual FortiGate appliances. In addition to the architecture for FortiGate virtual machine (VM), {{site.data.keyword.cloud}} also offers a [FortiGate Security Appliance](/docs/fortigate-10g) offering, which provides a perimeter firewall, NAT, and VPN services in the form of a physical appliance.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-29"
+lastupdated: "2025-10-24"
 
 keywords: F5 console, BIG-IP Web UI, login F5 console
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing F5 BIG-IP
 {: #managing_f5}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 ## Accessing the BIG-IP web UI consoles
 {: #managing_f5-big-ip-consoles}

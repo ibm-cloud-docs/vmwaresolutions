@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-26"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Step 3 - Application configuration
 {: #caveonix-step3}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 This step uses the Caveonix RiskForesight™ configuration script. For the all-in-one deployment, this script is started through the {{site.data.keyword.vmwaresolutions_full}} automation.
 

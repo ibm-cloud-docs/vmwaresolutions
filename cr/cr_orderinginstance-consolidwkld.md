@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Consolidated and workload cluster
 {: #cr_orderinginstance-consolidwkld}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.cr}} instances are deployed with a consolidated cluster for VMware vSphere®, in which all the VMware® management components and user workloads run.
 

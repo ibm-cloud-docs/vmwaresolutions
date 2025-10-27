@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Creating a Veeam Linux managed server
 {: #veeam-cr-sag-lnxmgdsvr}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 This step describes a use case where a cyberadmin uses the Veeam® data integration API to access the cyberbackup.
 

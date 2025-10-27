@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: troubleshooting, Zerto ZVMA, zvm, zvma, windows zvm, linux zvma, zerto migration
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 {: troubleshoot}
 {: support}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The Zerto Migration Utility fails with the following error message.
 {: tsSymptoms}

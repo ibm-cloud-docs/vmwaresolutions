@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Cluster settings
 {: #cluster-settings}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Before the addition of attached storage, the VMware vCenter Server® solution didn't enable advanced features such as VMware® vSphere Distributed Resource Scheduler (DRS) and vSphere® high availability (HA). With the addition of the NFS attached storage device, these features are enabled on the cluster with the settings that are listed in the following sections.
 

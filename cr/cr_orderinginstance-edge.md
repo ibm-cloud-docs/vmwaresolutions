@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-04-03"
+lastupdated: "2025-10-24"
 
 keywords: cyber recovery, cyber recovery edge cluster, gateway cluster cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Gateway cluster
 {: #cr-orderinginstance-edge}
 
-
+{{site.data.content.vms-deprecated-note}}
 
  An edge gateway is required. You can bring your own gateway appliance or choose from one of the following options:
 

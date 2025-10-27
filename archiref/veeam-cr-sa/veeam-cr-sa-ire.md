@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Isolated recovery environment solution architecture
 {: #veeam-cr-sa-ire}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The isolated recovery environment solution architecture uses a {{site.data.keyword.vcf-auto}} instance with the Veeam® service, gateway cluster, and Juniper® vSRX options. They create an air-gapped cyber-recovery environment separate from the production environment. This isolated recovery environment is managed and accessed by using a separate cyber-recovery team. The Veeam service is enhanced with a Veeam Linux® hardened repository for immutable storage.
 

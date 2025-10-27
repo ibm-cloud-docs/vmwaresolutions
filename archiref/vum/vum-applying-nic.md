@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Applying native NIC drivers
 {: #vum-applying-nic}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 `ixgben` is a native driver that replaces the `vmklinux net-ixgbe` driver but does not support SR-IOV and SW FcOE. The ICVS automation would not enable this driver when your vSphere® ESXi host was provisioned. It is advisable to enable this driver for the performance benefits it brings. The following procedure shows you how to enable and disable the native drivers by using the vSphere Command-Line (vCLI).
 

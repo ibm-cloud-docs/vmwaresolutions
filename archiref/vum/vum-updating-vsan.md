@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Updating vSAN clusters
 {: #vum-updating-vsan}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 vSAN™ generates system baselines and baseline groups for use with VMware® Update Manager (VUM) and you can use these recommended baselines to update software, patches, and extensions for the vSphere® ESXi™ hosts in your {{site.data.keyword.vcf-auto}} instance that uses vSAN. vSAN 6.6.1 and later generates automated build recommendations for vSAN clusters. vSAN combines information in the VMware Compatibility Guide and vSAN Release catalog with information about the installed vSphere ESXi releases.
 

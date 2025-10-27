@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: vcf classic order instance, order vcf automated, order vmware cloud foundation instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # General information
 {: #vc_orderinginstance-sys-settings}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Specify or accept the following settings when you order a {{site.data.keyword.vcf-auto}} instance.
 

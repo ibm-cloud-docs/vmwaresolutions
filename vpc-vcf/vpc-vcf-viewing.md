@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: view vcf vpc instance, view vpc instance, view vpc summary, view vpc details
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Viewing {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-viewing}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 View the summary and detailed information of the {{site.data.keyword.vcf-vpc}} instances that are provisioned in your account.
 

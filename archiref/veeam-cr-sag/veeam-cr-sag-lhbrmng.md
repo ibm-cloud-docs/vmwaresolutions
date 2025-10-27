@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Configuring the Linux hardened repository server
 {: #veeam-cr-sag-lhbrmng}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 This step describes the Ansible® playbook that adds the Linux® hardened backup repository as a Veeam® managed server into the Veeam backup infrastructure. The playbook does the following tasks:
 

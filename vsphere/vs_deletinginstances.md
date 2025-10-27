@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-04-19"
+lastupdated: "2025-10-24"
 
 keywords: flexible delete instance, delete flexible instance, remove flexible instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Deleting Flexible instances
 {: #vs_deletinginstance}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 When you delete a {{site.data.keyword.vcf-flex}} instance, the VMware® product licenses and the VMware ESXi™ servers are released.
 

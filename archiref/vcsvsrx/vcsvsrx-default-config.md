@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2025
 
-lastupdated: "2024-06-13"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # vSRX example configuration
 {: #vcsvsrx-default-config}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The following configuration is provided as a reference and is not intended for use in your vSRX cluster.
 

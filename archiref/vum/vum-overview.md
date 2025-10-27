@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # VMware Update Manager overview
 {: #vum-overview}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 VMware® Update Manager (VUM) uses a multistage process to upgrade vSphere® objects and to apply patches or extensions. This process enables a smooth update procedure with a minimum of system downtime. Before we look at this process, we need to understand the following terms:
 * **Inventory Object** - an object within vCenter such as virtual machines (VMs), virtual appliances (VAs), or vSphere ESXi™ hosts.

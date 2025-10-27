@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-12"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Managing IBM Spectrum Protect Plus
 {: #managingspp}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 New installations of the IBM Spectrum® Protect Plus service are no longer supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing IBM Spectrum Protect Plus installations on your existing instances. If you want to install IBM Spectrum Protect Plus yourself, see [IBM Spectrum Protect Plus documentation](https://www.ibm.com/docs/en/spp){: external}.
 {: deprecated}

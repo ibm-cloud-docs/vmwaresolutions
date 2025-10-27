@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Zerto on {{site.data.keyword.cloud_notm}} overview
 {: #addingzertodr}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Zerto on {{site.data.keyword.cloud}} integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware® virtual environment on {{site.data.keyword.cloud}}. Zerto on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from Zerto, not IBM.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Red Hat OpenShift architecture
 {: #vcs-openshift-redhat-arch}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.rhos-deprecated-note}}
 

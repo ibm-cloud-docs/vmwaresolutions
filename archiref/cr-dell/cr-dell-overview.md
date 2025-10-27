@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Cyber recovery with Dell
 {: #cr-dell-overview}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 A {{site.data.keyword.vcf-auto}} instance can host a Dell® Cyber Recovery vault.
 

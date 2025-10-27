@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: IBM Cloud Private
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.cloud_notm}} Private Hosted
 {: #icp_overview}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The {{site.data.keyword.cloud}} Private Hosted service is no longer supported.
 {: deprecated}

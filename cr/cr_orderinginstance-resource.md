@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: cyber recovery resource, resource type, resource
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Resource type
 {: #cr_orderinginstance-resource}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Choose the **{{site.data.keyword.cr}}** option from the following resource types:
 

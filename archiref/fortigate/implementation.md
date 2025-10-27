@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Fortinet FortiGate VM implementation and management
 {: #fortigate-implementation}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 ## Planning
 {: #fortigate-implementation-planning}

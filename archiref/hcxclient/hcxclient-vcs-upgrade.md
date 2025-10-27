@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Upgrading HCX components
 {: #hcxclient-vcs-upgrade}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Upgrading VMware HCX™ is a process that uses the client web UI on the client-side HCX Manager update and the cloud web user interface on the cloud side HCX Manager update.
 

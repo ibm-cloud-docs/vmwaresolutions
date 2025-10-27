@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: automated resource, resource type, resource
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Resource type
 {: #vc_orderinginstance-resource}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Choose the **Automated** option from the following resource types:
 

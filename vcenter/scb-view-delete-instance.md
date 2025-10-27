@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2024
+  years:  2021, 2025
 
-lastupdated: "2024-04-04"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Viewing and deleting Security and Compliance Readiness Bundle instances
 {: #scb-view-delete-instance}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 New deployments of Security and Compliance Readiness Bundle instances are not supported. You can still add or delete clusters, add or delete ESXi servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
 {: deprecated}

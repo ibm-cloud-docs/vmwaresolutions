@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VPC network design
 {: #vpc-vcf-vpc-deployment}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The following information provides an overview to the {{site.data.keyword.vpc_full}} deployment for a VMware® deployment. It's important to understand the separation and integration of VMware infrastructure networking with VPC, its requirements how to integrate and configure connectivity with other workload traffic.
 

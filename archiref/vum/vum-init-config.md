@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Initial configuration
 {: #vum-init-config}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The {{site.data.keyword.vcf-auto}} automation configures the VMware vCenter® Server Appliance (VCSA) with a default gateway set to the {{site.data.keyword.cloud_notm}} Backend Customer Router (BCR). However, no route to the internet though the BCR exists. The standard route to the internet from the {{site.data.keyword.vcf-auto-short}} instance for management components is through the services T0. As it isn't advised changing the configuration of the VCSA or the services T0, a proxy server implementation on the customer subnet is recommended to enable VMware Update Manager (VUM).
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-25"
+lastupdated: "2025-10-24"
 
 keywords: troubleshooting, Windows automatic installation, Windows updates
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 {: #trbl_limitations}
 {: troubleshoot}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The updates from Windows® do not get installed automatically on the Microsoft® Active Directory™ (AD) Domain Services server.
 {: tsSymptoms}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # NSX Tier-0 and Tier-1 gateways on {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-nsx-t-logical-routers}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 A single VMware NSX® edge cluster with two virtual edge nodes is used in consolidated architecture. Automation creates Tier-0 (T0) gateways and Tier-1 (T1) routers with uplinks that are connected to VPC subnets. In this architecture, the edge clusters host both T0 and T1 gateways. The following information discusses how these gateways interact with {{site.data.keyword.vpc_short}}.
 

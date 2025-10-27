@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Proactive tasks
 {: #opsprocs-proactive}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The goal of these proactive checks is to enable system administrators to maintain their {{site.data.keyword.vcf-auto}} instance in a healthy state. When carried out daily, it prevents many common issues that are related to usage, capacity and performance issues, from impacting your workloads. These proactive checks can be classified into the following structure.
 

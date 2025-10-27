@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Provisioning the automation server
 {: #veeam-cr-sag-as}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The automation server is a small Linux® Virtual Server Instance (VSI) deployed in the {{site.data.keyword.cloud}} account where the {{site.data.keyword.vcf-auto}} instance with the Veeam® service is located. The VSI is connected to both the {{site.data.keyword.cloud_notm}} private and public networks. The public network interface is protected by a security group that restricts SSH access to a known remote IP address. This server can be removed after the build or kept for ongoing use cases.
 

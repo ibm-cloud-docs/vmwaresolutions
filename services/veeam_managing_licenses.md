@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: Veeam, Veeam license, manage Veeam license, Veeam Backup and Replication
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Managing Veeam stand-alone licenses
 {: #veeam_managing_licenses}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can edit notes, view, or delete the Veeam® licenses that you ordered for stand-alone use.
 

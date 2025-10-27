@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Physical infrastructure design
 {: #design_physicalinfrastructure}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The physical infrastructure consists of the following components:
 * **Physical compute** - The physical compute provides the physical processing and memory that is used by the virtualization infrastructure. For this design, the compute components are provided by {{site.data.keyword.cloud}} bare metal servers and are listed in the [Broadcom Compatibility Guide](https://compatibilityguide.broadcom.com/){: external}.

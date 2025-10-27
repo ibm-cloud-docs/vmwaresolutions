@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Juniper Networks vSRX deployment and operation with {{site.data.keyword.vcf-auto}}
 {: #vcsvsrx-intro}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 This information is intended for the deployment and operations of a high availability vSRX cluster as the gateway for the {{site.data.keyword.vcf-auto-short}}. The guide follows best practices as currently accepted and understood.
 

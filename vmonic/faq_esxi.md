@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: FAQ, host, ESXi server
 
@@ -19,7 +19,7 @@ content-type: faq
 # FAQ for ESXi servers
 {: #faq_esxi}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Find answers to frequently asked questions about the VMware ESXi™ servers managed on the {{site.data.keyword.vmwaresolutions_full}} console.
 

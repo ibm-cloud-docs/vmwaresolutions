@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: Red Hat OpenShift for VMware, manage OpenShift, OpenShift operations
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing {{site.data.keyword.redhat_openshift_notm}} for VMware
 {: #ocp_managing}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.rhos-deprecated-note}}
 

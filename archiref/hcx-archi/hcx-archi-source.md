@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware HCX source-side architecture
 {: #hcx-archi-source}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Review the source architecture for the VMware® HCX™ components that are typically deployed in the customer data center. The tasks that can be accomplished and the features that support and enhance migration and network extension are also presented.
 

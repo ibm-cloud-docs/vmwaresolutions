@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Veeam Linux hardened repository
 {: #veeam-cr-sa-lhr}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The key solution component in both the immutable backup and isolated recovery environment solution architectures is the Linux® hardened repository.
 

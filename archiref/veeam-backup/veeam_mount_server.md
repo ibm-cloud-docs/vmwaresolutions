@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-06-13"
+lastupdated: "2025-10-24"
 
 keywords: mount servers
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Mount servers
 {: #veeam_mount_server}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The mount server is required for restoring of guest OS files and application items. To access files or items that are stored in a backup file, Veeam Backup and Replication mount the content of the backup to the mount server. Only after the content is mounted, Veeam Backup and Replication can get files and copy them to the restore destination. The mount server is required for performing the following operations:
 

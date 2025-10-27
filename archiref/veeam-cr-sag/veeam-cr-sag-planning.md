@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Planning the deployment
 {: #veeam-cr-sag-planning}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Plan the deployment by capturing information for use in the subsequent steps. Select the planning tasks for the deployment environment that you intend to build:
 

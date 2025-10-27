@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-14"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Virtual machine vSAN redundancy
 {: #vum-vsan-redundancy}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 When you place a vSphere® ESXi™ host into maintenance mode on a vSAN™ cluster, you are required to select a data evacuation mode. The selection of the mode can have an impact upon the virtual machines (VMs) and appliances that are using the vSAN datastore:
 * A **full data migration** evacuates all data from the host and moves it to the other vSphere ESXi hosts in the vSAN cluster. This evacuation mode results in the largest amount of data transfer and uses the most time and resources. All the components on the local storage of the selected host are migrated elsewhere in the cluster. When the host enters maintenance mode, all VMs and appliances have access to their storage components and are still compliant with their assigned storage policies. Full data evacuation can take a long time and can make the maintenance window for an upgrade long in duration.

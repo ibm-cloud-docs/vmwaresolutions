@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: flexible order instances, order flexible, order vmaware vSphere instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Procedure to order Flexible instances
 {: #vs_orderinginstances-procedure}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 
 

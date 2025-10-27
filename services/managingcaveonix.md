@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: Caveonix console, Caveonix RiskForesight license, login Caveonix console
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing Caveonix RiskForesight
 {: #managingcaveonix}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 ## Accessing the Caveonix RiskForesight console
 {: #managingcaveonix-access-console}

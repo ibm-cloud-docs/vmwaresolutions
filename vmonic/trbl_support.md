@@ -4,7 +4,7 @@
 
 copyright:
   years: 2016, 2025
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: getting help, getting support, troubleshooting, contact support, support ticket
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Getting help and support for VMware Solutions
 {: #trbl_support}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 If you experience an issue or have questions when using VMware Solutions, you can use the following resources before you open a support case.
 {: shortdesc}

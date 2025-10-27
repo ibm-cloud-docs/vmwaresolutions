@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: user IDs vCenter, PSC user, user ID service
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # IBM user IDs
 {: #audit_user_ids}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.vmwaresolutions_full}} maintains a set of users in your account for use by {{site.data.keyword.cloud_notm}} automation when you run operations such as adding hosts, clusters, or storage to your provisioned instance. Users in your account can also be used for installation and configuration of services by {{site.data.keyword.cloud_notm}} services automation. Review the following sections for {{site.data.keyword.cloud_notm}} automation user IDs.
 

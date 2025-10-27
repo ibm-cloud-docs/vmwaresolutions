@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-06-05"
+lastupdated: "2025-10-24"
 
 keywords: backup repository, direct attached storage, network attached storage
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Backup repositories
 {: #backup_repos}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 A backup repository is a storage location where Veeam® keeps backup files, virtual machine (VM) copies, and metadata for replicated VMs.
 

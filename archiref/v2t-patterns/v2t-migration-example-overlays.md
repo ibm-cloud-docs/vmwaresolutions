@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Target NSX-T environment example topologies
 {: #v2t-example-overlays}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 VMware {{site.data.keyword.vcf-auto}} instances offer a standard VMware NSX-T™ topology with a single NSX-T edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) gateways. You have several options to build and customize the overlay topology. Also, you can provision new NSX-T edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) gateways.
 

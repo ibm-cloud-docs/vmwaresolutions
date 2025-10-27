@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Staging and remediation
 {: #vum-staging}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Patches and extensions can be optionally staged before remediation to ensure that they are downloaded from VMware® Update Manager (VUM) to the vSphere® ESXi™ host without applying the patches or extensions immediately. During remediation, VUM applies the patches, extensions, and upgrades to the inventory objects. Staging patches and extensions accelerates the remediation process because the patches and extensions are already available locally on the hosts.
 

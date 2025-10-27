@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # VMware Solutions SDDC architecture
 {: #vcs-openshift-arch}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 ## Common services components
 {: #vcs-openshift-arch-common-services}

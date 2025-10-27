@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-02-06"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Types of VMware software updates
 {: #vum-type-updates}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 VMware® uses the following terms to describe software updates.
 

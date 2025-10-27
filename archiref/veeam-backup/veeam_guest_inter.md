@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-01-05"
+lastupdated: "2025-10-24"
 
 keywords: guest interaction proxies
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Guest interaction proxies
 {: #veeam_guest_inter}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The guest interaction proxy sits between the backup server and the processed virtual machine (VM). This component is needed if the backup or replication jobs perform the following processing of VMs:
 

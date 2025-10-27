@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Instant restore
 {: #veeam-cr-sag-instantrestore}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 This document describes a use case where a cyberadmin uses a PowerShell script that uses Veeam®'s ability to do an instant restore of a production virtual machine (VM) from the cyberbackup.
 

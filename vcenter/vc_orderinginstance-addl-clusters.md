@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: additional cluster, optional cluster, workload cluster, separate cluster, gateway cluster
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Additional clusters (optional)
 {: #vc_orderinginstance-addl-clusters}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Optionally, you can order a separate cluster for workloads by toggling the **Deploy separate workload cluster** switch on.
 

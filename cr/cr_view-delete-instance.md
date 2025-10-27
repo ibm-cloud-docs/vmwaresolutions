@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-04-03"
+lastupdated: "2025-10-24"
 
 keywords: view cyber recovery, cyber recovery details, cyber recovery delete, delete cyber recovery, remove cyber recovery
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Viewing and deleting {{site.data.keyword.cr}} instances
 {: #cr-view-delete-instance}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can view the summary and detailed information of the {{site.data.keyword.cr}} instances that you provisioned on the **Resources** > **{{site.data.keyword.cr}}** page. The available information is similar to that of {{site.data.keyword.vcf-auto}} instances. For more information, see [Viewing Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances).
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-12"
+lastupdated: "2025-10-24"
 
 keywords: FortiGate security, FortiGate Security Appliance, tech specs FortiGate
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # FortiGate Security Appliance
 {: #fsa_considerations}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Automated deployment of the FortiGate Security Appliance service is no longer supported. For a similar service, consider the [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations), which is deployed automatically.
 {: deprecated}

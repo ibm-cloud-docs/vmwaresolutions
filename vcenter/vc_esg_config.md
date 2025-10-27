@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: network config, network configuration, manage NSX ESG
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Configuring your network to use the customer-managed NSX edge cluster with your VMs
 {: #vc_esg_config}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Configure the network for your virtual machines (VMs) so you can take advantage of the VMware NSX Edge™ cluster that is deployed in your {{site.data.keyword.vcf-auto}} instances. For more information about the security measures that are in place to help minimize security risk, see [Does the management services NSX Edge pose a security risk?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#faq-mgmt-nsx)
 

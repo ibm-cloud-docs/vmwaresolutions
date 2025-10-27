@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-23"
+lastupdated: "2025-10-24"
 
 keywords: automated order instance, automated licenses
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Licensing (BYOL only)
 {: #vc_orderinginstance-licensing-settings}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.attnnote-byol}}
 

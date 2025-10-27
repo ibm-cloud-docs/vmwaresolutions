@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # HCX client deployment
 {: #hcxclient-vcs-client-deployment}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 A minimal VMware HCX™ installation consists of a single cloud and client-side deployment.
 

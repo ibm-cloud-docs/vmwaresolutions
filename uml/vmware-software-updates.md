@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-15"
+lastupdated: "2025-10-24"
 
 keywords: vmware software updates, software updates, download vmware software
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Managing VMware software updates
 {: #managing-vmware-software-updates}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 To update VMware software, you can open a support ticket to access software downloads or to perform automated downloads and updates.
 

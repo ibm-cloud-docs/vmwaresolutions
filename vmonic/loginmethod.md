@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: vmware solutions console, vmware portal, vmware solutions catalog
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Accessing the VMware Solutions console
 {: #loginmethod}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Review the entry points into the {{site.data.keyword.vmwaresolutions_full}} console.
 

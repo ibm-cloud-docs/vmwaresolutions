@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Cyber resilience with Elastio
 {: #cr-elastio-overview}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.vcf-auto}} instances can host the Elastio™ Stack and integrate with the Elastio Ransomware Recovery Assurance Platform. By combining the {{site.data.keyword.cloud}} robust infrastructure with the Veeam® data protection solutions and the Elastio advanced resilience capabilities, organizations can build a secure, scalable, and compliant hybrid cloud environment for their requirements.
 

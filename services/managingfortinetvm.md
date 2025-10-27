@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-29"
+lastupdated: "2025-10-24"
 
 keywords: FortiGate console, FortiGate VA, login FortiGate console
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing FortiGate Virtual Appliance
 {: #managingfortinetvm}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 ## Accessing the FortiGate console
 {: #managingfortinetvm-access-console}

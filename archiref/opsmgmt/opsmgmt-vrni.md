@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware Aria Operations for Networks
 {: #opsmgmt-vrni}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The VMware Aria Operations™ for Networks (formerly known as VMware vRealize® Network Insight) environment consists of two virtual machines (VMs), a Platform (UI) and a controller node.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-04-03"
+lastupdated: "2025-10-24"
 
 keywords: cyber recovery, IBM Cloud cyber recovery, cyber recovery services, cyber recovery add-on services, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Add-on services
 {: #cr_addon-services}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 You can select various add-on services for {{site.data.keyword.cr}}.
 

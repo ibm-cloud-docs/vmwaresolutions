@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: VMware Aria console, VMware Aria license, login VMware Aria console, vRealize console
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing VMware Aria Operations and VMware Aria Operations for Logs
 {: #managing_vrops}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 ## Accessing the VMware Aria Operations Manager console
 {: #managing_vrops-access-vrops-console}

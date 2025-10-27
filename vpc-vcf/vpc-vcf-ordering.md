@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-15"
+lastupdated: "2025-10-24"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ordering {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-ordering}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.vcf-vpc}} offers flexible options to help you deploy VMware's software-defined data center, {{site.data.keyword.vcf-vpc-short}}, into your {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}) environment.
 

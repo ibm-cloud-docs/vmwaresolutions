@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Adding clusters to {{site.data.keyword.vcf-auto-short}} multizone instances
 {: #mcv_addviewdeleteclusters}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 New deployments of {{site.data.keyword.vcf-auto}} multizone instances are not supported. For existing multizone instances, you can still add and delete clusters, add and delete ESXi servers, or add and delete storage.
 {: deprecated}

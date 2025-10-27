@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: KMIP for VMware, remove KMIP stand-alone, delete KMIP for VMware
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Deleting KMIP for VMware instances
 {: #kmip_standalone_deleting}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.kmip-deprecated-note}}
 

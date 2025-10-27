@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-11"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Caveonix RiskForesight introduction
 {: #caveonix-intro}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Enterprises that undergo a digital transformation are adopting a hybrid cloud strategy. This strategy includes workloads in both the private cloud and multiple external cloud environments, such as the public cloud or a cloud managed by a service provider. Most enterprises are also faced with the challenge of protecting an ever-increasing attack surface while simultaneously maintaining compliance with industry and regulatory compliance requirements.
 

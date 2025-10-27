@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-06-05"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware HCX introduction
 {: #hcx-archi-intro}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The VMware® HCX™ service enables creating a seamless connection between {{site.data.keyword.vmwaresolutions_full}} instances and an on-premises VMware virtualized data center.
 

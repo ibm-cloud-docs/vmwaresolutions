@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware Solutions and Red Hat OpenShift overview
 {: #openshift-runbook-runbook-intro}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.rhos-deprecated-note}}
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-04"
+lastupdated: "2025-10-24"
 
 keywords: troubleshooting, Zerto Virtual Replication, Zerto ESXi server
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 {: troubleshoot}
 {: support}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Virtual Replication Appliances (VRAs) are not displayed on the Zerto Virtual Replication console after you add VMware ESXi™ servers to a {{site.data.keyword.vcf-auto}} instance with Zerto disaster recovery installed.
 {: tsSymptoms}

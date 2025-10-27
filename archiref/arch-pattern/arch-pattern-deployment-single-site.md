@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for single site vCenter Server deployment topologies 
 {: #arch-pattern-deployment-single-site}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.vcf-auto}} instances offer a standard initial topology with a single management or converged cluster. It includes a vCenter, three VMware NSX® managers, and an Active Directory™ deployment. They run either on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or on two VMware virtual machines (VMs) in a high availability (HA) deployment. The initial deployment also includes a standard NSX topology.
 

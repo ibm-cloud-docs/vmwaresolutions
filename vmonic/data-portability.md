@@ -4,7 +4,7 @@ copyright:
 
   years: 2025
 
-lastupdated: "2025-10-23"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ keywords: data portability, vmware solutions, IBM Cloud for VMware Solutions
 # Understanding data portability for VMware Solutions
 {: #data-portability}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Data portability involves a set of tools and procedures that enable you to export the digital artifacts that are needed to implement similar workload and data processing on different service providers or on-premises software. It includes procedures for copying and storing the service customer content, including the related configuration that is used by the service to store and process the data, in your location.
 {: shortdesc}

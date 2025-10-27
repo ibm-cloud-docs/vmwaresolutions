@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: view flexible, view instance, view instance details, instance view flexible
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Viewing Flexible instances
 {: #vs_viewinginstances}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 View the summary and detailed information of the {{site.data.keyword.vcf-flex}} instances that are provisioned for different user accounts.
 

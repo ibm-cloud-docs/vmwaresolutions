@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Deploying VMware validated solutions
 {: #vpc-vcf-deploy-vvs}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 A VMware validated solution is a technically validated implementation that is built and tested by VMware and VMware partners to help you resolve common business use cases. VMware validated solutions are operational, cost-effective, performant, reliable, and secure.
 

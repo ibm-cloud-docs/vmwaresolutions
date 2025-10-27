@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Immutable backup solution architecture
 {: #veeam-cr-sa-ib}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 The immutable backup solution architecture is suitable for clients who want to extend their {{site.data.keyword.vcf-auto}} instance with the Veeam® service to use immutable storage and minimize costs. The immutable backup solution architecture does not preclude any of the {{site.data.keyword.vcf-auto-short}} options such as Caveonix, Entrust, and VMware Aria® Operations™.
 

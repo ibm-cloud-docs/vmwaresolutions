@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2025
 
-lastupdated: "2024-04-09"
+lastupdated: "2025-10-24"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Requirements for Flexible instances
 {: #vs_orderinginstances-req}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 To deploy a highly customizable VMware® virtualized platform, order a {{site.data.keyword.vcf-flex}} instance.
 

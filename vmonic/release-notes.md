@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-10-16"
+lastupdated: "2025-10-27"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -19,7 +19,7 @@ content-type: release-note
 # Release notes for VMware Solutions
 {: #vmwaresolutions-relnotes}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 Use these release notes to learn about updates to {{site.data.keyword.vmwaresolutions_full}}, including new features, component updates, usability enhancements, and bug fixes.
 {: shortdesc}
@@ -28,6 +28,13 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 {: #year-2025}
 
 
+
+### 27 October 2025
+{: #vmwaresolutions-oct2725}
+{: release-note}
+
+End of Marketing for VMware on {{site.data.keyword.cloud_notm}}
+:   As of 31 October 2025, new deployments of {{site.data.keyword.vmware-service_short}}, {{site.data.keyword.vcf-classic}}, and {{site.data.keyword.vcf-vpc}} are no longer available for new customers. Existing customers can still use and expand their active VMware workloads on {{site.data.keyword.cloud}}. For more information, see [End of Marketing for VMware on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vms).
 
 ### 16 October 2025
 {: #vmwaresolutions-oct1625}

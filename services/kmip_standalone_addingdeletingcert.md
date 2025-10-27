@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-21"
+lastupdated: "2025-10-24"
 
 keywords: KMIP certificate, add certificate KMIP, delete certificate KMIP
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Managing certificates for KMIP for VMware instances
 {: #kmip_standalone_addingdeletingcert}
 
-
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.kmip-deprecated-note}}
 
