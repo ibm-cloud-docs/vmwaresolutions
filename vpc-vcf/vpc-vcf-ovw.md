@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-29"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -71,7 +71,7 @@ The following components are not installed by the {{site.data.keyword.IBM_notm}}
 * VMware HCX™ Enterprise
 * Tanzu Kubernetes Grid
 
-The following components are not installed by the {{site.data.keyword.IBM_notm}} automation. These components are optional and require add-on licenses. You can order these from the {{site.data.keyword.cloud}} console. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
+The following components are not installed by the {{site.data.keyword.IBM_notm}} automation. These components are optional and require add-on licenses. You can order them from the {{site.data.keyword.cloud}} console. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
 
 * NSX Distributed Firewall
 * NSX Gateway Firewall

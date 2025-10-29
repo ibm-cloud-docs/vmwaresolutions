@@ -101,7 +101,7 @@ Complete the following requirements before you begin the upgrade:
 
 You must upgrade the Broadcom driver before you upgrade the ESXi host.
 
-1. Extract the `007.1316.0000.0000_Unified_StorCLI_PUL.zip` file to a directory on your windows jump server.
+1. Extract the `007.1316.0000.0000_Unified_StorCLI_PUL.zip` file to a directory on your Windows jump server.
 2. Locate the `vmware-storcli.vib` file in the extracted file contents.
 3. Copy the `.vib` file to either a vSAN or NFS data store that is mounted on the ESXi hosts for the instance. Use vCenter Server to reference the extracted file on your jump server.
 4. SSH into each ESXi host and run the following VIB Upgrade command:
