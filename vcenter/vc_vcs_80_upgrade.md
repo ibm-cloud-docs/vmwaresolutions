@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-10-28"
+lastupdated: "2025-10-30"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -115,10 +115,6 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
 
 ### Procedure to upgrade the ESXi hosts
 {: #vc_vcs_80_upgrade-procedure-esxi}
-
-
-
-
 
 
 

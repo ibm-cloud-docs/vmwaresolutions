@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 subcollection: vmwaresolutions
 
@@ -91,7 +91,6 @@ The vCenter Server instance:
 * Does not host production or disaster recovery workloads.
 * Includes an edge cluster to host your choice of one of the following to protect vCenter Server instance networks:
    * Juniper vSRX appliances
-   * FortiGate Security Appliance
    * FortiGate Virtual Appliance
    * Bring Your Own gateway appliance
 * Can include any of the vCenter Server options, such as Caveonix RiskForesight™ and VMware Aria® Operations.
@@ -153,7 +152,6 @@ To create your Dell Cyber Recovery vault based on a {{site.data.keyword.vcf-auto
     * If you select Juniper vSRX, see [Ordering Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering).
     * If you select FortiGate, see [Ordering FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering).
     * If you select Bring Your Own gateway appliance, see the installation instructions that are provided by your firewall vendor.
-    * If you select FortiGate Security Appliance, see [Create FortiGate Security Appliance 10 Gbps](/netsec/firewalls/multi-vlan/provision#about){: external}.
 
 After your vCenter Server instance is provisioned:
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: vcf automated, vcf classic architecture, tech specs vmware cloud foundation
 
@@ -181,7 +181,6 @@ The tools and technology architecture has the following specifications:
 * VMware Aria Operations, VMware Aria Operations for Logs, and VMware Aria Operations for Networks to provide operations and management capabilities specific to the VMware products that are used, for example NSX, vSAN, and vSphere.
 * IBM Software Defined Environment (SDE) automation tool health check for validating deployments against best practices and security policies.
 * Optional Disaster Recovery (DR) to an out of Region {{site.data.keyword.cloud_notm}} site.
-* FortiGate Security Appliance or similar to secure any internet access and to facilitate active-active network integration with the on-premises network.
 
 ### vSphere + vSAN stretched cluster architecture specifications
 {: #vc_vcenterserveroverview-mcv-stretched-cluster-specs}

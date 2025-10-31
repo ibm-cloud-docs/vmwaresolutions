@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: planning flexible, data center, vSphere data centers
 
@@ -77,7 +77,6 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | MAD02 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 | MAD04 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 | MAD05 | 01 | Cascade Lake, SAP-certified Cascade Lake, Sapphire Rapids |
-| MIL01 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 | PAR01 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - Europe" caption-side="bottom"}
 {: tab-title="Europe"}

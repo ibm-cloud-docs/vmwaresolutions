@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 subcollection: vmwaresolutions
 
@@ -85,7 +85,6 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the v
 |:-------------------------------------------|:----------- |
 | `prod-BigIP-dynamicID-@domainName` | Used for installation and configuration of the F5 service. |
 | `prod-Caveonix-dynamicID-@domainName` | Used for installation and configuration of the Caveonix RiskForesight service. |
-| `prod-Fortigate-dynamicID-@domainName` | Used for installation and configuration of the FortiGate Security Appliance service. |
 | `prod-FortigateVM-dynamicID-@domainName` | Used for installation and configuration of the FortiGate Virtual Appliance service. |
 | `prod-KMIPAdapter-dynamicID-@domainName` | Used for installation and configuration of the KMIP for VMware service. |
 | `prod-SPPlus-dynamicID-@domainName` | Deprecated - Used for installation and configuration of the IBM Spectrum Protect Plus service. |

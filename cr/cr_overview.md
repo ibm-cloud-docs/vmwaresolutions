@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: Cyber Recovery, Cyber Recovery offering, Cyber Recovery instance, data protection, cyber threat, ransomware, Cyber resilience
 
@@ -37,7 +37,6 @@ For the edge gateway, you can bring your own gateway appliance or choose from th
 
 * Gateway cluster with Juniper® vSRX
 * Gateway cluster with FortiGate® Virtual Appliance
-* FortiGate Security Appliance
 
 When you order a {{site.data.keyword.cr}} instance, the add-on service that you choose as your firewall appliance is included as well.
 

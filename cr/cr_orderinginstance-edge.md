@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: cyber recovery, cyber recovery edge cluster, gateway cluster cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -23,11 +23,8 @@ subcollection: vmwaresolutions
 
  * Gateway cluster with Juniper® vSRX
  * Gateway cluster with FortiGate® Virtual Appliance
- * FortiGate Security Appliance
 
  The gateway cluster is deployed in the same data center as the consolidated cluster.
-
-The gateway cluster is available for all firewall appliances except for **FortiGate Security Appliance**.
 
 The data center of the consolidated cluster must be available for gateway cluster deployment. Gateway cluster deployment is not supported for **Dallas 09**.
 {: note}

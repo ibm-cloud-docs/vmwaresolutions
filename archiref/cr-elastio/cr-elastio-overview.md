@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 subcollection: vmwaresolutions
 
@@ -98,7 +98,6 @@ The following diagram shows more details of the {{site.data.keyword.vcf-short}} 
 * Veeam Backup and Recovery can be automatically installed on a VM, VSI, or bare metal server. For more information, see [Veeam on IBM Cloud overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
 * Optionally, but recommended, The {{site.data.keyword.vcf-short}} instance can include a gateway cluster to host one of the following appliances to protect the {{site.data.keyword.vcf-short}} instance networks:
     * Juniper® vSRX appliances. For more information, see [Ordering a Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering).
-    * FortiGate® Security Appliance. For more information, see [Create FortiGate Security Appliance 10 Gbps](/netsec/firewalls/multi-vlan/provision#about).
     * FortiGate Virtual Appliance. For more information, see [Ordering a FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering).
     * Bring your own gateway appliance.
 * The {{site.data.keyword.vcf-short}} instance can include any of the optional add-on services, such as Caveonix RiskForesight™ or VMware Aria® Operations™. For more information, see [Add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started#getting-started-add-on-services).

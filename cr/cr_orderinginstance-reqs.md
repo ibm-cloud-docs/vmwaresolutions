@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: cyber recovery, cyber recovery requirements, requirements cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -23,7 +23,6 @@ subcollection: vmwaresolutions
 
 * Juniper® vSRX
 * FortiGate® Virtual Appliance
-* FortiGate Security Appliance
 
 You can order add-on services. For more information, see [Services for {{site.data.keyword.cloud_notm}} {{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_planning#cr_planning-addon-services).
 

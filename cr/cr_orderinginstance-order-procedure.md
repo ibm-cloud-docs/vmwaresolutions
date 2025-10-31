@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: cyber recovery order procedure, order procedure cyber recovery, cyber recovery order instance, order cyber recovery, order cyber recovery instance
 
@@ -73,7 +73,6 @@ subcollection: vmwaresolutions
 1. Choose the firewall appliance for your instance and follow the steps, depending on your selection:
    * For **Gateway cluster with Juniper® vSRX**, **Gateway cluster with FortiGate® Virtual Appliance**, and **Bring your own gateway appliance**, specify the [gateway cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-cr-orderinginstance-edge#cr-orderinginstance-edge-cluster-name), the CPU model, the RAM size, and the networking type.
    * For **Gateway cluster with Juniper vSRX** and **Gateway cluster with FortiGate Virtual Appliance**, you must also specify the corresponding service settings in a later step.
-   * For **FortiGate Security Appliance**, you must order the **FortiGate Security Appliance 10 Gbps** service from the [{{site.data.keyword.cloud_notm}} catalog](/netsec/firewalls/multi-vlan/provision#about). Confirm that you ordered the service and continue with the following steps.
 1. Specify the **Gateway cluster** settings:
    1. Accept or change the default name of the gateway cluster.
    1. Select the **CPU model** and the RAM size.

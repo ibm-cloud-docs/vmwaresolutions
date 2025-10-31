@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: vmware solutions data sheet, vmware solutions developer, vmware solutions video
 
@@ -43,7 +43,6 @@ Review the architecture of all [virtualization platform extensions](https://www.
 * Veeam® backup and replication
 * Secure virtualization
 * NSX Edge™ Services Gateway
-* FortiGate® Security Appliance
 * FortiGate Virtual Appliance
 * F5® BIG-IP Virtual Edition
 

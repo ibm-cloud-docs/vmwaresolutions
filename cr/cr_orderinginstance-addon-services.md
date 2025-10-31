@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: cyber recovery, IBM Cloud cyber recovery, cyber recovery services, cyber recovery add-on services, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -26,6 +26,5 @@ You can select various add-on services for {{site.data.keyword.cr}}.
 An edge gateway is required. This action provides the virtual air-gap and manages access to the isolated recovery environment. You can bring your own gateway appliance or choose from the following options:
    * Gateway cluster with Juniper® vSRX
    * Gateway cluster with FortiGate® Virtual Appliance
-   * FortiGate Security Appliance
 
 The [Caveonix RiskForesight™](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) service is optional and supports security and risk compliance.

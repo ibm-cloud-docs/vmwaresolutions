@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-10-27"
+lastupdated: "2025-10-31"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -28,6 +28,13 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 {: #year-2025}
 
 
+
+### 31 October 2025
+{: #vmwaresolutions-oct3125}
+{: release-note}
+
+MIL01 data center no longer available
+:   The **Milan 01** {{site.data.keyword.cloud_notm}} data center is closing on 10 December 2025. As of 31 October 2025, this data center is no longer available for deployments. For more information, see [Data center migrations](/docs/account?topic=account-dc-closure).
 
 ### 27 October 2025
 {: #vmwaresolutions-oct2725}

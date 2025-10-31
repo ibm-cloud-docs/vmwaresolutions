@@ -510,7 +510,6 @@ toc:
               topics:
               - services/entrust-kc_considerations.md
               - services/managing-entrust-kc.md
-          - services/fsa_considerations.md
           - services/icp_overview.md
           - topicgroup:
               id: spectrum-protect-plus

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -73,7 +73,6 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | MAD02 | 01 |
 | MAD04 | 01 |
 | MAD05 | 01 |
-| MIL01 | 01 |
 | PAR01 | 01 |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
@@ -139,7 +138,6 @@ The following services and components are available for {{site.data.keyword.cr}}
 * An edge gateway (required) provides the virtual air-gap and manages access to the isolated recovery environment. You can bring your own gateway appliance or choose from the following options:
    * Gateway cluster with Juniper® vSRX
    * Gateway cluster with FortiGate® Virtual Appliance
-   * FortiGate Security Appliance
 
 The [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) service (optional) provides security and risk compliance.
 

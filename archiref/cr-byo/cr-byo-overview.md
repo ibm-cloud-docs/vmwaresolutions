@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 subcollection: vmwaresolutions
 
@@ -33,7 +33,6 @@ Key elements of the solution architecture include:
 * The {{site.data.keyword.vcf-auto-short}} instance includes a gateway cluster to host your choice of one of the following appliances to protect the {{site.data.keyword.vcf-auto-short}} instance networks. It also provides a network air gap between the production environment and the isolated recovery environment:
 
    * Juniper® vSRX appliances
-   * FortiGate® Security Appliance
    * FortiGate Virtual Appliance
    * Bring your own gateway appliance
 
@@ -65,7 +64,6 @@ To create your custom cyber-recovery solution based on a {{site.data.keyword.vcf
     * If you select Juniper vSRX, see [Ordering Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering).
     * If you select FortiGate, see [Ordering FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering).
     * If you select Bring Your Own gateway appliance, see the installation instructions that are provided by your firewall vendor.
-    * If you select FortiGate Security Appliance, see [Create FortiGate Security Appliance 10 Gbps](/netsec/firewalls/multi-vlan/provision#create){: external}.
 
 After your {{site.data.keyword.vcf-auto-short}} instance is provisioned:
 
