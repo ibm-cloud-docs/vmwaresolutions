@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-03"
 
 keywords: reassign primary cluster, primary cluster
 
@@ -142,9 +142,13 @@ RiskForesight is installed with its own port group named **SDDC-DPortGroup-Caveo
    If the target cluster has a higher version for the virtual switch than of the current cluster, you receive an error. For more information, see [Migrating a virtual machine between two different vDS versions](https://knowledge.broadcom.com/external/article?legacyId=79446){: external}.
    {: note}
 
-5. Under **Select networks**, ensure that the **dpg** source networks are equivalent to their target cluster. Do not change the **edge-teps**, as added clusters cannot create their own networks. Also, the destination network that is marked as **none** is a known issue and can be ignored.
+5. Under **Select networks**, ensure that the `dpg` source networks are equivalent to their target cluster. Do not change the **edge-teps**, as added clusters cannot create their own networks. Also, the destination network that is marked as **none** is a known issue and can be ignored.
 6. Under **Select vMotion priority**, choose a priority option.
 7. Under **Ready to complete**, verify the information and click **Finish** to start the migration.
+
+
+
+
 
 ### Procedure to migrate NSX edge management VMs
 {: #vc_reassigningprimarycluster-migrate-nsx-edge-vm}
@@ -169,6 +173,8 @@ After you migrate the management VMs, complete the following steps in NSX Manage
 9. Refresh the table.
 
 The validated configuration status changes to **Success**.
+
+
 
 ## Procedure to reassign primary clusters for Automated instances
 {: #vc_reassigningprimarycluster-procedure}

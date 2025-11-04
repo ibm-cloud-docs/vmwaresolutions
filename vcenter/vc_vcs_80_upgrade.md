@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-10-30"
+lastupdated: "2025-11-03"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -96,96 +96,132 @@ Complete the following requirements before you begin the upgrade:
    8. Select **uplink1** and click **+**. `vmnic2` is displayed.
    9. Click **OK**, and then **OK** again to exit the window.
 
-### Procedure to upgrade Stor VIB (Broadcom driver)
-{: #vc_vsphere_80_upgrade-procedure-broadcom}
-
-You must upgrade the Broadcom driver before you upgrade the ESXi host.
-
-1. Extract the `007.1316.0000.0000_Unified_StorCLI_PUL.zip` file to a directory on your Windows jump server.
-2. Locate the `vmware-storcli.vib` file in the extracted file contents.
-3. Copy the `.vib` file to either a vSAN or NFS data store that is mounted on the ESXi hosts for the instance. Use vCenter Server to reference the extracted file on your jump server.
-4. SSH into each ESXi host and run the following VIB Upgrade command:
-   `esxcli software vib update -v /<path to vsan or nfs datastore from step 3>/vmware-storcli.vib --no-sig-check`
-   The following installation results are displayed.
-    `Message: Operation finished successfully.    Reboot Required: false    VIBs Installed: Broadcom_bootbank_vmware-storcli_007.1316.0000.0000-01    VIBs Removed: LSI_bootbank_vmware-storcli_007.0916.0000.0000-01    VIBs Skipped:`
-5. Run the following command to validate the installation:
-   `> esxcli software vib list |grep vmware-storcli
-   vmware-storcli    007.1316.0000.0000-01    Broadcom  PartnerSupported  2020-04-16`
-6. Repeat for each host.
-
 ### Procedure to upgrade the ESXi hosts
 {: #vc_vcs_80_upgrade-procedure-esxi}
 
+Review the following information before you upgrade the ESXi hosts:
 
+* Determine whether your servers are eligible to be upgraded to vSphere 8. For more information, see the [VMware by Broadcom Compatibility Guide](https://compatibilityguide.broadcom.com/){: external}.
+* Ensure that the vCenter Server version is 8.0 or later.
+* Obtain the ISO image and the update files either from Broadcom, if you have a direct support contract with them, or by [opening an IBM Support ticket](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+* Back up your environment before you start the upgrade.
 
+#### Preparing for the upgrade of ESXi hosts
+{: #vc_vcs_80_upgrade-procedure-esxi-prep}
 
+To complete the upgrade from version 7 to 8, you must establish a baseline group configuration in VMware vSphere Update Manager (VUM) and attach it to the cluster that contains the hosts to be upgraded.
 
-1. **Apply any firmware updates that are available on the IBM Cloud classic.**
-   Complete the following steps for each host.
-   1. Put the host into maintenance mode and power off the host.
-   2. View the host details on the IBM Cloud classic portal.
-   3. Click the **Firmware** tab and review the available firmware updates. 
+1. **Import the ISO image and the updates files**. 
 
-   For 10 GB NICs, the NIC firmware must be at version 9.50 or later.
-   {: important}
+   Complete the following steps in the vSphere Web Client:
+   1. Import the vSphere 8 ISO image. Go to the Lifecycle Manager section of vCenter Server and click the **Imported ISOs** tab. After the import is completed, the ISO image is displayed in the list.
+   2. Import the `NSX-LCP` update that matches the version of VMware NSX that is installed. The file name is similar to `nsx-lcp-esxio-4.2.3.0.0.24866350-esx80-unified.zip` (ensure that it has `unified` in the name). After the import is completed, the update is displayed on the **Updates** tab. Ensure that the rollup toggle is off as this update is not a rollup update.
+   3. Import the `i40en` network driver by following the previous step. Extract the contents of the `Intel-i40en_2.9.2.0-1OEM.800.1.0.20613240_24226995-package.zip` file and import it from the folder where you extracted it. After the import is completed, the `i40en` driver is displayed on the **Updates** tab.
 
-   4. To apply the firmware updates, click **Actions > Update Firmware**.
-   5. Power on the host.
-   6. Upgrade vSphere on the host.
-2. **Upgrade the ESXi hosts**:
-   1. From the vSphere Web Client, go to **LCM menu > LifeCycle Manager**.
-   2. Select **IMPORT ISO > IMPORT ISO**, and then the ISO file.
-   3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
-   4. For each host, choose the host in the vCenter browser tree. Then, select **update** (located in the far left in the main window).
-   5. If the Zerto VRA is present on the host, put the host into maintenance mode first. Recent releases of Zerto stop the VRA, which otherwise would prevent the update.
-   6. Complete the update.
-      1. [ATTACH] Baseline, select the previously created baseline.
-      2. Select Baseline and [REMEDIATE].
-
-   When you are upgrading the ESXi hosts, consider the following information:
-   * After you import the ISO file, vCenter Server might indicate that the image is "Incompatible" due to an unsupported Trusted Platform Module (TPM) version. For more information, see [ESXi upgrade fails from 7.x to 8.x due to unsupported TPM version](https://knowledge.broadcom.com/external/article/368511/esxi-upgrade-fails-from-7x-to-8x-due-to.html){: external}.
-   * Proceed with the upgrade and ignore the incompatibility warning. It is safe to proceed because you are not using TPM functionality.
-   * After the upgrade, vCenter Server might flag a TPM compatibility error for your hosts. You can suppress this error. IBM's deployment automation already suppresses it for newly created clusters.
-
-3. **Verify the RAID firmware and drivers (Cascade Lake only).** After you upgrade the ESXi hosts, verify that the RAID firmware and drivers are at the appropriate level.
-   Complete the following steps for each host.
-
-   You do not need to complete the steps if you have Sapphire Rapids hosts.
-   {: note}
-
-   1. Connect to each host through SSH.
-   2. Run the command `esxcli storcli controller show all -i 0`.
-   3. In the output, find the version section and verify that the firmware version is 5.230.00-3803 or later and the driver version is 7.728.02.00 or later.
-
-   If the versions are not correct, complete the following steps to install the firmware and driver:
-   1. Put the host into maintenance mode.
-   2. Locate the firmware file `9461-16i_nopad.rom` and the driver file `Broadcom-lsi-mr3_7.723.03.00-1OEM.700.1.0.15843807_20654446-package.zip`.
-   3. Copy the driver file to a file that is accessible to the ESXi host. This can be either a local datastore, an NFS share that is mounted on the host, or the vSAN datastore (if the host is part of a vSAN cluster).
-   4. To install the driver, run the command `esxcli storcli /c0 download file=9461-16i_nopad.rom`.
-   5. To install the firmware, run the command `esxcli software vib install -d /<root>/Broadcom-lsi-mr3_7.723.03.00-1OEM.700.1.0.15843807_20654446-package.zip`, where `<root>` is the directory where you placed the file in a previous step.
-   6. Restart the host.
-   7. Repeat steps a, b, and c to verify that the correct versions are installed.
-   8. Repeat the procedure for all hosts.
+2. **Set up the NSX connection to vCenter Server**. 
    
-   If you have 10 GbE NICs in your hosts, you must apply new NIC drivers. Complete the following steps for each host:
+   Complete the following steps on the NSX manager UI to allow for communications between vCenter Server and NSX Manager: 
+   1. Click the **System** tab and click **Fabric > Compute Managers** from the left navigation panel. Click the vCenter Server compute manager and click **EDIT**.
+   3. On the **Edit Compute Manager** window, switch the **Create Service Account** and **Enable Trust** toggles to **YES**.
+   4. Click **EDIT** next to the **FQDN or IP Address** field, enter the credentials for vCenter Server (`administrator@vsphere.local` and the correct password), and click **SAVE**.
 
-   You do not need to complete the steps if you have 25 GbE NICs.
-   {: note}
+3. **Create baselines and baseline groups**.
 
-   1. Obtain the new NIC drivers for 10 GbE NICs from IBM Support. The file name is `Intel-i40en_2.9.2.0-1OEM.800.1.0.20613240_24226995.zip`.
-   2. Put the host into maintenance mode.
-   3. Copy the driver file to a file accessible to the ESXi host. This can be either a local datastore, an NFS share that is mounted on the host, or the vSAN datastore (if the host is part of a vSAN cluster).
-   4. Decompress the file repeatedly until you have a directory structure. For example, `/<root>/vib20/i40en/INT_bootbank_i40en_2.9.2.0-1OEM.800.1.0.20613240.vib`, where `<root>` is the root directory where you copied the driver-compressed file. The location varies according to your environment.
-   5. To install the driver, run the command `esxcli software vib install –v /<root>/vib20/i40en/INT_bootbank_i40en_2.9.2.0-1OEM.800.1.0.20613240.vib`.
-   6. Restart the host. Then, verify that the firmware and driver are at the appropriate levels and run the command `esxcli network nic get –n vmnic0`.
-   7. Remediate each host in turn. After remediation, ensure to pull the host out of maintenance mode.
+   Complete the following steps on the **Create Baseline** window to create an upgrade baseline for the ISO image file:
+   1. Under **Name and description**, enter a name for the baseline and select the **Upgrade** option for **Content**. Click **NEXT**.
+   2. Under **Select ISO**, choose the imported 8.0u3g ISO image file. Click **NEXT**.
+   3. Under **Summary**, click **FINISH**.
 
-Update your IBM Support ticket to indicate that your upgrade is complete and request that the IBM Cloud for VMware database be updated to reflect that the cluster is vSphere 8.
+   Complete the following steps on the **Create Baseline** window to create an extension baseline for the NSX Local Control Plane (LCP):
+   1. Under **Name and description**, enter a name for the baseline and select the **Extension** option for **Content**. Click **NEXT**.
+   2. Under **Select Extensions**, choose the imported NSX LCP. Click **NEXT**.
+   3. Under **Summary**, click **FINISH**.
 
-There are several methods to upgrade your ESXi hosts. For more information, see [Overview of the ESXi Host Upgrade Process](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-upgrade-7-0.html){: external}. If you need to access an ISO file or upgrade bundle as part of your selected method, [contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+   Complete the following steps on the **Create Baseline** window to create an extension baseline for the `i40en` network driver:
+   1. Under **Name and description**, enter a name for the baseline and select the **Extension** option for **Content**. Click **NEXT**.
+   2. Under **Select extensions**, choose the downloaded `i40en` driver. Click **NEXT**.
+   3. Under **Summary**, click **FINISH**.
 
-If the upgrade process fails immediately and the ``host cannot enter maintenance mode`` error message is displayed, shut down the Zerto ZVAs and try again. The ZVRA VMs automatically start as each server comes out of remediation. For more information about continuing Zerto Replication during the upgrade process, see [How to Place a Host with an Associated VRA into Maintenance Mode](https://www.zerto.com/myzerto/knowledge-base/how-to-place-a-host-with-an-associated-vra-into-maintenance-mode/){: external}.
-{: note}
+   Complete the following steps on the **Create Baseline Group** window to combine the previous baselines into a baseline group. A baseline group is a container that allows selection of a set of baselines to apply.
+   1. Under **Name and description**, enter a name for the baseline group and click **NEXT**.
+   2. Under **Upgrade Baseline**, ensure that the **Add the following baseline to the group** checkbox is selected and click **NEXT**.
+   3. Under **Patch Baselines**, click **NEXT**. You don't need to include any patches.
+   4. Under **Extension Baselines**, select the previous extension baselines (NSX LCP and `i40en` driver). Click **NEXT**. 
+   5. Under **Summary**, click **FINISH**.
+
+   On the **Lifecycle Manager** UI, verify that the new baseline group is displayed and select it to verify that its content is correct.
+
+4. **Attach the baseline group to the cluster**.
+
+   Complete the following steps in the vSphere Web Client:
+   1. Click the cluster name from the left navigation panel and click the **Updates** tab.
+   2. Scroll down the page and under **Attached Baselines** click **ATTACH > Attach Baseline or Baseline Group**.
+   3. Select the baseline group that was created in a previous step and click **ATTACH**. The baseline group gets attached to the cluster.
+
+#### Remediating the ESXi hosts
+{: #vc_vcs_80_upgrade-procedure-esxi-remed-exist}
+
+Complete the following steps in the vSphere Web Client:
+1. Select a host that does not have vCenter Server installed, for example, `host-wd003`. Verify that the vCenter Server VM does not exist on this host.
+2. Click the **Updates** tab and scroll down the page. In the **Attached Baseline and Baseline Groups** table, select the baseline group that was attached in a previous step.
+3. Right under **Attached Baseline and Baseline Groups**, click **REMEDIATE**.
+4. Accept the Foundation Agreement and click **OK**. If you see a warning `HA admission control will be disabled`, you can ignore it.
+5. Expand the **Remediation setting** section and ensure that the checkbox `Ignore warnings about unsupported hardware devices` is selected so that any TPM 1.2 warnings are ignored.
+6. Click **REMEDIATE**. A number of tasks start to run in the tasks list, for example, `Migrate virtual machines` or `reboot`. 
+7. Monitor the remediation progress in the **Remediate entity** task:
+   * The host is put into maintenance mode and then powered off. 
+   * As a result, the host status in vCenter Server displays `disconnected`.
+   * The entire process for a single host can take 15-20 minutes, with multiple host restarts.
+
+8. Repeat the previous steps to remediate all hosts that do not have vCenter Server installed. After all hosts are remediated, the **Updates** tab of the cluster shows all hosts at version 8.
+
+#### Enabling Lifecycle Manager
+{: #vc_vcs_80_upgrade-procedure-esxi-lcm}
+
+For ongoing maintenance, convert the upgraded cluster to an LCM (Lifecycle Manager) cluster by enabling single image management through LCM.
+
+Complete the following steps in the vSphere Web Client:
+1. Click the cluster name from the left navigation panel and click the **Updates** tab. 
+2. Click **MANAGE WITH A SINGLE IMAGE**. In the table, ensure that the autodetected network driver is included. Other components, such as the NSX LCP, is not displayed in this table. Click **SAVE**.
+3. Under **Check Image Compliance**, a message indicates that the hosts are not compliant because TPM 1.2 exists on the hardware and vSphere FDM is missing. vSphere FDM was not automatically installed when the baseline group was attached. Click **FINISH IMAGE SETUP**.
+4. With the cluster selected in the left navigation panel, click **REMEDIATE ALL**. 
+
+The process of remediation starts and for each host:
+* The VMs are moved off the host
+* The host is put into maintenance mode
+* The host is restarted one or more times
+* The host is taken out of maintenance mode. 
+
+Then, the process continues with the next host until all hosts are remediated.
+
+#### Remediating new hosts that are added
+{: #vc_vcs_80_upgrade-procedure-esxi-remed-new}
+
+If you add a host to a vSphere 8 cluster from the VMware Solutions console, the host is provisioned with vSphere 7. After the host is added, you see errors and alarms in the vSphere Web Client and in NSX Manager, which indicate that the host has compatibility issues or is not available.
+
+To remediate the new host so it matches the current vSphere version of the cluster, complete the following steps in the vSphere Web Client:
+1. Click the cluster name from the left navigation panel and click the **Updates** tab. A message indicates that the host is not compliant.
+2. Click **REMEDIATE ALL** to review the remediation impact.
+3. Accept the Foundation Agreement and click **START REMEDIATION**. A number of tasks start to run in the tasks list. 
+4. If you see problems with the NSX configuration of the new host on the NSX Manager UI, wait for the additional tasks that are running in the vSphere Web Client to complete. 
+
+   You might see the `Apply NSX Solution` task running, which is updating the new host with the NSX VIB bundles needed for the NSX configuration.
+
+5. While tasks are running in the vSphere Web Client, monitor the progress on the NSX Manager UI:
+   * If you see errors, click **Install Failed > VIEW ERRORS**.
+   * After some time, the errors are resolved and the NSX configuration displays **Success**.
+
+The entire process can take 10-15 minutes after the operation is complete in vCenter Server and the **Updates** tab of the cluster shows all hosts at version 8.
+
+#### Upgrading the disk format post-remediation
+{: #vc_vcs_80_upgrade-procedure-esxi-remed-post}
+
+To upgrade the disk format, complete the following steps in the vSphere Web Client:
+1. Click the cluster name from the left navigation panel and click the **Configure** tab.
+2. Click **vSAN > Services**. On the **vSAN Services** page, click **PRE-CHECK UPGRADE**.
+3. On the same page, click **UPGRADE**, and then click **UPGRADE** again on the window that appears.
+
+A number of tasks start to run in the tasks list. Monitor their progress until completion.
 
 ### Procedure to update ESXi host licenses
 {: #vc_vcs_80_upgrade-license-update-esxi}
@@ -206,4 +242,4 @@ To update the ESXi host licenses, you must first retrieve your new vSphere licen
 
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [vCenter Server upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-server-upgrade-8-0.html){: external}
-* [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade)
+* [VMware ESXi upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/esxi-upgrade-8-0.html){: external}
