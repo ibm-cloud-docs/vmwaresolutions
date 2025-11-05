@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-04"
 
 subcollection: vmwaresolutions
 
@@ -31,4 +31,4 @@ If you do not update Zerto after the initial deployment, complete the instructio
 {: #vum-zerto-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware){: external}
+* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/solutions/virtualization){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-11-03"
+lastupdated: "2025-11-04"
 
 keywords: reassign primary cluster, primary cluster
 
@@ -27,10 +27,10 @@ You can reassign a primary cluster to another cluster in your {{site.data.keywor
 Review the following information before you reassign your primary cluster:
 
 * Ensure that VMware NSX® is upgraded to the most recent version (4.1.2 or later).
-* You must migrate the management virtual machines (VMs), the NSX edge management VMs, and the Usage Meter VM (if you deployed VMware vCloud Usage Meter).
+* You must migrate the management virtual machines (VMs), redeploy the NSX edge management VMs, and migrate the Usage Meter VM (if you deployed VMware vCloud Usage Meter).
 * Do not migrate all VMs at the same time, as this action might cause failures.
 
-To migrate your VMs, complete the following procedures in the VMware vSphere Web Client.
+To migrate your VMs, complete the following procedures in the VMware vSphere® Web Client.
 
 The VM migration procedures are slightly different depending if any add-on services are installed on your instance.
 
@@ -44,7 +44,7 @@ The VM migration procedures are slightly different depending if any add-on servi
 ### Procedure to migrate management VMs (vSRX)
 {: #vc_reassigningprimarycluster-migrate-mgmt-vm-vsrx}
 
-If the Juniper® vSRX service is installed on your instance, complete the following procedure.
+If the Juniper vSRX service is installed on your instance, complete the following procedure.
 
 1. In the vSphere Web Client, create host groups on the target cluster:
    1. Click the target cluster.
@@ -106,6 +106,7 @@ If the Juniper® vSRX service is installed on your instance, complete the follow
    4. Click **Edit** and select **Enable Rule**.
 
 If you are migrating from a source vSAN OSA (Original Storage Architecture) to a target vSAN ESA (Express Storage Architecture) cluster, also configure the failover settings:
+
 1. Click the target cluster.
 2. Click the **Networks** tab, select the `vsrxnickname-vsrx-fab` DVS switch, and click the **Configure** tab.
 3. Under **Policies**, click **Edit** and go to **Teaming and failover**.
@@ -115,7 +116,7 @@ If you are migrating from a source vSAN OSA (Original Storage Architecture) to a
 ### Procedure to create corresponding port groups (RiskForesight)
 {: #vc_reassigningprimarycluster-migrate-mgmt-vm-caveonix}
 
-If the Caveonix RiskForesight™ service is installed on your instance, complete the following procedure.
+If the Caveonix RiskForesight service is installed on your instance, complete the following procedure.
 
 RiskForesight is installed with its own port group named **SDDC-DPortGroup-Caveonix**. Before you migrate the management VMs for instances with this service deployed, you must create a corresponding port group in the new (target) cluster.
 {: requirement}

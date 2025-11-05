@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-11-03"
+lastupdated: "2025-11-04"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade, upgrade from vsphere 7 to 8
 
@@ -203,11 +203,11 @@ Complete the following steps in the vSphere Web Client:
 3. Under **Check Image Compliance**, a message indicates that the hosts are not compliant because TPM 1.2 exists on the hardware and vSphere FDM is missing. vSphere FDM was not automatically installed when the baseline group was attached. Click **FINISH IMAGE SETUP**.
 4. With the cluster selected in the left navigation panel, click **REMEDIATE ALL**. 
 
-The process of remediation starts and for each host:
-* The VMs are moved off the host
-* The host is put into maintenance mode
-* The host is restarted one or more times
-* The host is taken out of maintenance mode. 
+The process of remediation starts. For each host:
+* The VMs are moved off the host.
+* The host is put into maintenance mode.
+* The host is restarted one or more times.
+* The host is taken out of maintenance mode.
 
 Then, the process continues with the next host until all hosts are remediated.
 
@@ -228,7 +228,7 @@ To remediate the new host so it matches the current vSphere version of the clust
    * If you see errors, click **Install Failed > VIEW ERRORS**.
    * After some time, the errors are resolved and the NSX configuration displays **Success**.
 
-The entire process can take 10-15 minutes after the operation is complete in vCenter Server and the **Updates** tab of the cluster shows all hosts at version 8.
+The entire process can take 10-15 minutes after which the operation is complete in vCenter Server and the **Updates** tab of the cluster shows all hosts at version 8.
 
 ### Upgrading the disk format post-remediation
 {: #vs_vcs_80_upgrade-procedure-esxi-remed-post}

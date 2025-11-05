@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-04"
 
 subcollection: vmwaresolutions
 
@@ -69,4 +69,4 @@ The scan task is listed in the Scheduled Tasks view of the vSphere Web Client.
 {: #vum-scanning-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [VMware Solutions on {{site.data.keyword.cloud_notm}} Digital Technical Engagement](https://www.ibm.com/products/vmware){: external}
+* [VMware Solutions on {{site.data.keyword.cloud_notm}} Digital Technical Engagement](https://www.ibm.com/solutions/virtualization){: external}
