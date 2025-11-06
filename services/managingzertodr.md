@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-05"
 
 keywords: Zerto certificate, Zerto config, update Zerto replication
 
@@ -52,4 +52,4 @@ When you add or remove ESXi servers for the primary cluster of your instance, VR
 * [Ordering Zerto stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering_licenses)
 * [Managing Zerto stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
 * [Zerto product documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}
-* [Zerto for Disaster Recovery](https://www.hpe.com/psnow/doc/a50012146enw){: external}
+* [Zerto for Disaster Recovery](https://www.hpe.com/psnow/doc/a50012146enw?jumpid=in_hpesitesearch){: external}
