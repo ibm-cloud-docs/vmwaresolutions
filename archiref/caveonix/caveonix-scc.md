@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-12"
 
 subcollection: vmwaresolutions
 
@@ -68,7 +68,7 @@ It is assumed that your Caveonix Cloud instance was deployed by the {{site.data.
 
 If you are using a proxy, then it is deployed and configured and you updated the Caveonix Cloud central collector by completing the following steps:
 
-1. Edit the Central Collector application.properties file at `/bin/caveonix/centralcollector/application.properties`
+1. Edit the Central Collector application.properties file at: `/bin/caveonix/centralcollector/application.properties`.
 2. Remove the `#` from the following parameters and inserted the required values of your proxy in the following lines:
 
    ```text
@@ -78,17 +78,16 @@ If you are using a proxy, then it is deployed and configured and you updated the
    #proxy.pass=
    ```
 
-3. Save the `/bin/caveonix/centralcollector/application.properties` file and restart the Central Collector service by using `sudo systemctl restart centralcollector`
+3. Save the `/bin/caveonix/centralcollector/application.properties` file and restart the Central Collector service by using `sudo systemctl restart centralcollector`.
 
 The following tasks are performed on your Caveonix Cloud instance:
 
 1. Configure the Security and Compliance Center integration in the Event Log Collector module. The event log collector provides authentication information to submit infrastructure findings to the Security and Compliance Center. You need the following details when you configure an Event Log Collector module:
-
-* Security and Compliance Center URL
-* Security and Compliance Center Instance ID
-* Attachment ID
-* Provider Type Instance ID
-* API key
+   * Security and Compliance Center URL
+   * Security and Compliance Center Instance ID
+   * Attachment ID
+   * Provider Type Instance ID
+   * API key
 
    Currently, Caveonix Cloud supports one event log collector per instance.
    {: note}
