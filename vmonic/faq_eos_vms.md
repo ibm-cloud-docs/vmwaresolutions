@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-13"
 
 keywords: FAQ end of support for vmwaresolutions, vmware solutions, end of marketing, end of support
 
@@ -58,13 +58,17 @@ This notice addresses End of Marketing only and it does not reflect End of Suppo
 {: #faq-eos-vms-reason}
 {: faq}
 
-Due to changes to the Broadcom VCSP (VMware Cloud Services Provider) partner program, {{site.data.keyword.IBM}} is no longer permitted to sell VMware licenses to customers who do not have at least one active VMware workload that is running on {{site.data.keyword.cloud_notm}} by 31 October 2025.
+Due to changes to the Broadcom® VCSP (VMware Cloud Services Provider) partner program, {{site.data.keyword.IBM}} is no longer permitted to sell VMware licenses to customers who do not have at least one active VMware workload that is running on {{site.data.keyword.cloud_notm}} by 31 October 2025.
 
-## Will VMware Cloud Foundation License Portability continue to be available to existing customers?
-{: #faq-eos-vms-licensing}
+## Can customers use {{site.data.keyword.vcf}} License Portability?
+{: #faq-eos-vms-licensing-newcust}
 {: faq}
 
-Yes. If you are an existing customer by 31 October 2025, then License Portability is available, if you have valid VMware license keys. The License Portability program is subject to Broadcom’s ability to change their license terms.
+After 5 November 2025, according to Broadcom's {{site.data.keyword.vcf}} ({{site.data.keyword.vcf-short}}) Specific Program Documentation (SPD), customers are required to choose a Cloud Provider from the list of Certified Cloud Service Providers for new deployments. {{site.data.keyword.IBM_notm}} is no longer listed in the Certified Cloud Service Providers.
+
+Customers who already ported their licenses before 5 November 2025, can continue to use License Portability on {{site.data.keyword.cloud_notm}} subject to Broadcom's {{site.data.keyword.vcf-short}} SPD terms.
+
+The License Portability program is subject to Broadcom’s ability to change their license terms.
 
 ## Related links
 {: #faq-eos-vms-related}
