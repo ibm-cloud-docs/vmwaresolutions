@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-17"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -71,7 +71,7 @@ For the {{site.data.keyword.vcf-auto-short}} offering, the IBM automation will a
 ## Ordering the VMware add-ons
 {: #vmware-add-ons-order}
 
-You can order licenses for the VMware add-ons from the {{site.data.keyword.cloud_notm}} console.
+Order licenses for the VMware add-ons from the {{site.data.keyword.cloud_notm}} console.
 
 1. Click **Infrastructure > Classic Infrastructure** from the left navigation menu.
 2. Click **Devices > Manage > VMware licenses**.
