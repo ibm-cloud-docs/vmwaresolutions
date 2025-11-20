@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-19"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ Within the vCenter Server design, the {{site.data.keyword.vmwaresolutions_short}
 
 In {{site.data.keyword.vmwaresolutions_short}}, every primary instance deploys a forest root domain and configures the site topology. The {{site.data.keyword.vmwaresolutions_short}} AD/DNS is always going to be its own forest and domain, you cannot remove this forest or domain because it might break the {{site.data.keyword.vmwaresolutions_short}} automation. You can't migrate the users and resources to one of your existing domains or create a new domain, as you can't create the credentials for the IBM user named `automation`.
 
-During the ordering process of a vCenter Server instance, the hostname prefix and the domain name are collected from the user that is pertinent to the Active Directory Domain Services (AD DS) and DNS configuration.
+In the process of ordering a {{site.data.keyword.vcf-auto}} instance, the hostname prefix and the domain name are collected from the user that is pertinent to the Active Directory Domain Services (AD DS) and DNS configuration.
 
 These values are then used to generate the username and server names of the instance. For more information, see [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req).
 

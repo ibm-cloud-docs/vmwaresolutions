@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-11-04"
+lastupdated: "2025-11-20"
 
 keywords: reassign primary cluster, primary cluster
 
@@ -27,18 +27,16 @@ You can reassign a primary cluster to another cluster in your {{site.data.keywor
 Review the following information before you reassign your primary cluster:
 
 * Ensure that VMware NSX® is upgraded to the most recent version (4.1.2 or later).
-* You must migrate the management virtual machines (VMs), redeploy the NSX edge management VMs, and migrate the Usage Meter VM (if you deployed VMware vCloud Usage Meter).
+* You must migrate the management virtual machines (VMs), deploy the NSX edge management VMs on the new cluster, and migrate the Usage Meter VM (if you deployed VMware vCloud Usage Meter).
 * Do not migrate all VMs at the same time, as this action might cause failures.
-
-To migrate your VMs, complete the following procedures in the VMware vSphere® Web Client.
 
 The VM migration procedures are slightly different depending if any add-on services are installed on your instance.
 
 | Add-on service | Migration procedures |
 |:-------------- |:-------------------- |
-| Juniper® vSRX | Complete [the procedure to migrate management VMs (vSRX)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm-vsrx). |
-| Caveonix RiskForesight™ | Complete [the procedure to create corresponding port groups (RiskForesight)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm-caveonix), then complete [the procedure to migrate management VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm). |
-| Other services or no services | Complete [the procedure to migrate management VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm). |
+| Juniper® vSRX | Complete the following procedures: \n 1. [Migrate management VMs (vSRX)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm-vsrx) \n 2. [Deploy the NSX edge management VMs on the new cluster](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-deploy-new-nsx-edge-vm) |
+| Caveonix RiskForesight™ | Complete the following procedures: \n 1. [Create corresponding port groups (RiskForesight)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm-caveonix) \n 2. [Migrate management VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm) \n 3. [Deploy the NSX edge management VMs on the new cluster](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-deploy-new-nsx-edge-vm) |
+| Other services or no services | Complete the following procedures: \n 1. [Migrate management VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm) \n 2. [Deploy the NSX edge management VMs on the new cluster](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-deploy-new-nsx-edge-vm) |
 {: caption="VM migration procedures for add-on services" caption-side="bottom"}
 
 ### Procedure to migrate management VMs (vSRX)
@@ -46,7 +44,7 @@ The VM migration procedures are slightly different depending if any add-on servi
 
 If the Juniper vSRX service is installed on your instance, complete the following procedure.
 
-1. In the vSphere Web Client, create host groups on the target cluster:
+1. In the VMware vSphere® Web Client, create host groups on the target cluster:
    1. Click the target cluster.
    2. On the **Configure** tab, under **Configuration**, click **VM/Host Groups**.
    3. Under **VM/Host Groups**, click **ADD**.
@@ -147,35 +145,59 @@ RiskForesight is installed with its own port group named **SDDC-DPortGroup-Caveo
 6. Under **Select vMotion priority**, choose a priority option.
 7. Under **Ready to complete**, verify the information and click **Finish** to start the migration.
 
+### Procedure to deploy the NSX edge management VMs on the new cluster
+{: #vc_reassigningprimarycluster-deploy-new-nsx-edge-vm}
 
+After you migrate the management VMs, you must deploy the NSX edge management VMs on the new (target) cluster. 
 
+Review the following information before you redeploy:
+* Ensure that a new subnet is available on the same VLAN as the IP addresses assigned to the original (source) NSX edge.
+* Obtain the DNS and NTP server details from [IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
+Complete the following steps in NSX Manager:
 
-### Procedure to migrate NSX edge management VMs
-{: #vc_reassigningprimarycluster-migrate-nsx-edge-vm}
+1. Click the **System** tab and from the left navigation menu, click **Fabric > Nodes > Edge Transport Nodes** and click **Add Edge Node**.
+2. Under **Name and Description**, enter a name for the new (target) edge, the hostname in FQDN format, and select the **Medium** option for **Form Factor**. Click **NEXT**.
+3. Under **Credentials**, enter the passwords for both the `admin` and `root` users and toggle the **Allow SSH Login** and **Allow Root SSH Login** switches for debugging purposes. You can skip the **Audit Credentials** section. Click **NEXT**.
+4. Under **Configure Deployment**, select the **Compute Manager**, **Cluster**, and **Datastore** values from the list. **Cluster** and **Datastore** refer to the new (target) cluster. Click **NEXT**.
+5. Under **Configure Node Settings**, select **IPv4 Only** for **Management IP Assignment** and **Static** for **Type**. Enter the **Management IP** and **Default Gateway** values and click **Select Interface**.
+6. Under **Select Interface**, choose the portgroup with the name that ends with `dpg-mgmt` and click **SAVE**.
+7. Under **Configure Node Settings**, enter the DNS and NTP server details, previously obtained from IBM Support. Click **NEXT**.
+8. Under **Configure NSX**, add the following NVDS (NSX Virtual Distributed Switch) switches with the indicated settings:
+   1. For the `edge-teps` switch:
+      * Transport Zone - `tz-vm-overlay`
+      * Uplink Profile - `edge-tep-profile`
+      * IP Address Type (TEP) - `IPv4`
+      * IPv4 Assignment (TEP) - `Use IP Pool`
+      * IPv4 Pool - Choose the pool with the name that matches the cluster to which you are deploying the new edge nodes.
+      * Click **Select Interface** and choose **VLAN Segment** for **Type**, then select `edge-teps` and click **SAVE**.
 
-After you migrate the management VMs, complete the following steps in NSX Manager:
+   2. For the `edge-private` switch:
+      * Transport Zone - `edge-private`
+      * Uplink Profile - `edge-private-profile`
+      * Click **Select Interface** for `uplink2` and choose **Virtual Switch/Distributed Virtual Portgroup** for **Type**, then select `dpg-edge-uplink` and click **SAVE**.
 
-1. Click the **System** tab.
-2. From the left navigation menu, click **Fabric > Nodes**.
-3. On the **Edge Transport Nodes** tab, click **Edit** to change the vMotion nodes.
-4. Update the **IPv4 Pool** value so that it targets the cluster TEP pool. The IPv4 Pool value must be in the format `<instance name>-<cluster name>-tep-pool`.
-5. Click **Save**.
+   3. For the `edge-public` switch:
+      * Transport Zone - `edge-public`
+      * Uplink Profile - `edge-public-profile`
+      * Click **Select Interface** for `uplink2` and choose **Virtual Switch/Distributed Virtual Portgroup** for **Type**, then select `dpg-external` and click **SAVE**.
 
-   In the **Edge Transport Nodes** table, wait until the edge node **Configuration Status** shows **Mismatch**. This action happens when NSX identifies that the VM changed its cluster and datastore. Because it might be triggered from the NSX refresh of vCenter Server resources, it takes some time before the inconsistency is identified.
+9. To complete the configuration and start the deployment of the edge node, click **FINISH**.
+10. Repeat the previous steps to create an additional NSX edge node for replacing the original (source) node. By default, your configuration has a services edge and a customer edge, but it might include other edges that you deployed.
 
-6. Select the edge node that has the **Mismatch** configuration status.
-7. In the **Resolve Sync Errors** window, select the **vSphere/Edge Appliance** source.
+11. After all new edge nodes are deployed, replace the old nodes with new nodes. For each node pair:
+    1. Click the **System** tab and from the left navigation menu, click **Fabric > Nodes > Edge Clusters**.
+    2. Under **Actions**, click **Replace Edge Cluster Member**.
+    3. Under **Replace**, select the old edge node and under **With**, select the newly deployed edge node.
+    4. Click **Save**.
 
-   Do not select **NSX**, as the migration will be reverted.
-   {: important}
+12. Verify that the newly added nodes are correctly configured:
+    1. Go to **Networking > Tier-0 Gateways** or **Networking > Tier-1 Gateways** and to the cluster name where the new nodes were added.
+    2. Click the active/standby configuration to confirm that the newly added nodes are listed in both the Active and Standby states.
 
-8. Click **Resolve**.
-9. Refresh the table.
-
-The validated configuration status changes to **Success**.
-
-
+13. After you confirm that all new nodes are working correctly, delete the original (source) nodes:
+    1. Click the **System** tab and from the left navigation menu, click **Fabric > Nodes > Edge Transport Nodes**.
+    2. Select each of the original nodes and delete them one by one. This step also deletes the old nodes from the vCenter Server cluster.
 
 ## Procedure to reassign primary clusters for Automated instances
 {: #vc_reassigningprimarycluster-procedure}

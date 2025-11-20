@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-11-17"
+lastupdated: "2025-11-20"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -75,9 +75,9 @@ Order licenses for the VMware add-ons from the {{site.data.keyword.cloud_notm}} 
 
 1. Click **Infrastructure > Classic Infrastructure** from the left navigation menu.
 2. Click **Devices > Manage > VMware licenses**.
-3. Order the VMware add-on.
+3. Order the VMware add-on. 
 
-You can also cancel the VMware add-ons from the {{site.data.keyword.cloud}} console.
+You can also cancel the VMware add-ons from the {{site.data.keyword.cloud_notm}} console.
 
 ## What to do next
 {: #vmware-add-ons-next}
