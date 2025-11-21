@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-21"
 
 keywords: veeam, veeam ibm cloud vmware
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 {{site.data.content.vms-deprecated-note}}
 
-## Overview 
+## Overview
 {: #veeam_cloud_vmware_overview}
 
 Veeam® in {{site.data.keyword.vcf-auto}} is an optional add-on service that can be ordered during the initial ordering of a {{site.data.keyword.vcf-auto-short}} instance or added to an existing {{site.data.keyword.vcf-auto-short}} instance.
@@ -69,7 +69,7 @@ The following information helps you configure the post-service deployment to exp
 * To connect to your block storage, see [Connecting to iSCSI LUNS on Microsoft Windows](/docs/BlockStorage?topic=BlockStorage-mountingWindows&interface=ui).
 * To expand your block storage, see [Expanding Block Storage for Classic capacity](/docs/BlockStorage?topic=BlockStorage-expandingcapacity&interface=ui).
 * To mount iSCSI LUN, see:
-   * [Mount iSCSI LUN on Red Hat Enterprise Linux 8](/docs/BlockStorage?topic=BlockStorage-mountingRHEL8&interface=ui)
+   * [Mount iSCSI LUN on Red Hat Enterprise Linux 9](/docs/BlockStorage?topic=BlockStorage-mountingRHEL9&interface=ui)
    * [Mount iSCSI LUN on Ubuntu 20](/docs/BlockStorage?topic=BlockStorage-mountingUbu20&interface=ui)
    * [Mount iSCSI LUN on CloudLinux 8](/docs/BlockStorage?topic=BlockStorage-mountingCloudLin8&interface=ui)
 

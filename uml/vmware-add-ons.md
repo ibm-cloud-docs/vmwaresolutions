@@ -33,10 +33,6 @@ If you need load balancing for your environment, you can purchase the Avi Load B
 
 VMware vDefend™ Distributed Firewall (formerly VMware NSX Distributed Firewall) and VMware vDefend™ Gateway Firewall (formerly VMware NSX Gateway Firewall) are extracted from NSX and are available as an add-on to the VMware Cloud Foundation bundle. Add-on licenses are available for purchase in the {{site.data.keyword.cloud_notm}} console. You must purchase licenses for the number of cores that are required for your environment separately.
 
-Unless you are part of the IBM Bridge to Cloud program, do not order vDefend keys that are labeled **solution key**. Most customers must order separate gateway keys for use with NSX Edge Gateway firewall, and distributed keys for use with the Distributed Firewall. Only the IBM Bridge to Cloud program customers that use vSphere 8 solution keys must order vDefend solution keys. For more information about vDefend solution and component keys, see [VMware vDefend Firewall Solution License Key](https://knowledge.broadcom.com/external/article/381444/vmware-vdefend-firewall-solution-license.html){: external}.
-
-To review requirements for licensing and metering for the IBM Bridge to Cloud program, see [On-premises VMware licenses as part of the IBM Bridge to Cloud program](/docs/vmwaresolutions?topic=vmwaresolutions-licensing_metering-req#licensing_metering-on-premises).
-
 You must order the appropriate number of firewall cores for your environment.
 
 * If you are ordering a new {{site.data.keyword.vcf-auto}} instance, the minimum gateway firewall cores are calculated for your order. IBM recognizes that you might resize or reconfigure these gateways, so the ongoing management of these keys, including their deletion, is your responsibility. These keys are not removed automatically when you delete your instance.
@@ -75,9 +71,36 @@ Order licenses for the VMware add-ons from the {{site.data.keyword.cloud_notm}} 
 
 1. Click **Infrastructure > Classic Infrastructure** from the left navigation menu.
 2. Click **Devices > Manage > VMware licenses**.
-3. Order the VMware add-on. 
+3. Order the VMware add-on. The following table shows the VMware add-on that you need to order (from the {{site.data.keyword.cloud_notm}} console) depending on the license key that you need (in the VMware Solutions console):
+
+| VMware license key | VMware add-on |
+|:-------------------------- |:------------- |
+| VMware Avi Load Balancer | VMware Avi Load Balancer Enterprise 30.x |
+| VMware vDefend Gateway Firewall | vDefend Firewall - Gateway |
+| VMware vDefend Distributed Firewall | vDefend Firewall - Distributed |
+| VMware vSAN Add-On v7 | VMware vSAN 8.x |
+| VMware vSAN Add-On v8 | VMware vSAN 8.x |
+| VMware Live Site Recovery | VMware Site Recovery Manager 8.x |
+| VMware vDefend Gateway Firewall with Advanced Threat Prevention | VMware vDefend Firewall with ATP - Solution Key |
+| VMware vDefend Distributed Firewall with Advanced Threat Prevention | VMware vDefend Firewall with ATP - Solution Key |
+| vSphere v7 | VMware Cloud Foundation with vSphere 7.0  |
+| vSphere v8 | VMware Cloud Foundation with vSphere 8.0  |
+{: caption="VMware license keys and VMware add-ons mappings" caption-side="bottom"}
 
 You can also cancel the VMware add-ons from the {{site.data.keyword.cloud_notm}} console.
+
+## Obtaining the VMware add-on keys
+{: #vmware-add-ons-obtain}
+
+Download the license keys for your VMware add-ons from the VMware Solutions console.
+
+1. Click **Licensing and metering > VMware product keys** from the left navigation panel.
+2. On the **VMware product keys** page, locate the VMware add-on to retrieve the license key for.
+3. Click the **Copy to clipboard** icon to copy the license key.
+4. Use the license key to link to your respective VMware add-on.
+
+Verify the capacity that the obtained license key provides to ensure that you have sufficient capacity for your usage. The license key might contain more capacity than you ordered.
+{: note}
 
 ## What to do next
 {: #vmware-add-ons-next}

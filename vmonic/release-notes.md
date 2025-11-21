@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-10-31"
+lastupdated: "2025-11-21"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -28,6 +28,13 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 {: #year-2025}
 
 
+   
+### 21 November 2025
+{: #vmwaresolutions-nov2125}
+{: release-note}
+
+New license keys for VMware add-ons
+:   New subscription-based license keys are available for VMware add-ons. You must download new license keys and replace your existing ones. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
 
 ### 31 October 2025
 {: #vmwaresolutions-oct3125}

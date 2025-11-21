@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-20"
 
 subcollection: vmwaresolutions
 
@@ -50,18 +50,22 @@ If the other parent domain has a child domain, due to the two-way trust, those u
 
 VMware always recommends two-way trusts for forest trusts. For more information, see [Microsoft Active Directory Trusts supported by VMware vCenter Single Sign-On](https://knowledge.broadcom.com/external/article?legacyId=2064250){: external}.
 
-Because two-way trusts are used between the {{site.data.keyword.vmwaresolutions_short}} infrastructure forest and the {{site.data.keyword.vmwaresolutions_short}} workload forest, vSphere SSO can use this trust so users can be authenticated from all parent and child domains in the {{site.data.keyword.vmwaresolutions_short}} workload forest. The following diagram shows the Active Directory Domain Services topology for this two-way forest trust model:
+Because two-way trusts are used between the {{site.data.keyword.vmwaresolutions_short}} infrastructure forest and the {{site.data.keyword.vmwaresolutions_short}} workload forest, vSphere SSO can use this trust so users can be authenticated from all parent and child domains in the {{site.data.keyword.vmwaresolutions_short}} workload forest. 
 
-![Two-way forest trust diagram](../../images/adds-twowayforesttrust.svg "Two-way forest trust diagram"){: caption="Two-way forest trust diagram" caption-side="bottom"}
+The following diagram shows the Active Directory Domain Services topology for this two-way forest trust model:
+
+![Two-way forest trust model](../../images/adds-twowayforesttrust.svg "Two-way forest trust model"){: caption="Two-way forest trust diagram" caption-side="bottom"}
 
 ## External trust
 {: #adds-integration-external}
 
 VMware always recommends two-way trusts for external trusts. For more information, see [Microsoft Active Directory Trusts supported by VMware vCenter Single Sign-On](https://knowledge.broadcom.com/external/article?legacyId=2064250){: external}. An external trust establishes a trust to a specific domain within a separate forest that is not joined through a forest trust.
 
-The two-way trust between the {{site.data.keyword.vmwaresolutions_short}} infrastructure forest and the {{site.data.keyword.vmwaresolutions_short}} workload domain allows vSphere SSO to use the trust so users can be authenticated from the {{site.data.keyword.vmwaresolutions_short}} workload domain. The following diagram shows the Active Directory Domain Services topology for this external trust model:
+The two-way trust between the {{site.data.keyword.vmwaresolutions_short}} infrastructure forest and the {{site.data.keyword.vmwaresolutions_short}} workload domain allows vSphere SSO to use the trust so users can be authenticated from the {{site.data.keyword.vmwaresolutions_short}} workload domain. 
 
-![External trust diagram](../../images/adds-externaltrust.svg "External trust diagram"){: caption="External trust diagram" caption-side="bottom"}
+The following diagram shows the Active Directory Domain Services topology for this external trust model:
+
+![External trust model](../../images/adds-externaltrust.svg "External trust model"){: caption="External trust diagram" caption-side="bottom"}
 
 ## Related links
 {: #adds-integration-related}

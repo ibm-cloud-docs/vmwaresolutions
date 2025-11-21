@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-29"
+lastupdated: "2025-11-20"
 
 keywords: licenses, vcf license keys
 
@@ -25,7 +25,7 @@ To retrieve VMware Cloud Foundation™ (VCF) license keys, you must provision an
 {: #licenses_vcf-licenses-proc}
 
 1. In the VMware Solutions console, click **Licensing and metering > VMware product keys** from the left navigation panel.
-2. On the **VMware product keys** page, locate the product and license keys that you want to retrieve.
+2. On the **VMware product keys** page, locate the VMware® component or add-on to retrieve the license key for.
 3. Click the **Copy to clipboard** icon to copy the license key.
 4. Use the license key to link to your respective VMware products.
 
