@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-11-21"
+lastupdated: "2025-11-22"
 
 keywords: backup repository, direct attached storage, network attached storage
 
@@ -28,38 +28,38 @@ At service order, choose from the following options:
 To add extra repositories, Veeam supports the following storage types:
 
 * **Direct attached storage** - The following virtual and physical servers can be used as backup repositories:
-   * [Microsoft Windows Server](https://helpcenter.veeam.com/docs/backup/vsphere/ms_server.html?ver=120){: external}
-   * [Linux server](https://helpcenter.veeam.com/docs/backup/vsphere/linux_server.html?ver=120){: external}
-   * [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external}
+   * [Microsoft Windows Server](https://helpcenter.veeam.com/archive/backup/120/vsphere/ms_server.html){: external}
+   * [Linux server](https://helpcenter.veeam.com/archive/backup/120/vsphere/linux_server.html){: external}
+   * [Hardened repository](https://helpcenter.veeam.com/archive/backup/120/vsphere/hardened_repository.html){: external}
 
 * **Network attached storage** - Add the following network shares as backup repositories:
-   * [SMB (CIFS) share](https://helpcenter.veeam.com/docs/backup/vsphere/smb_share.html?ver=120){: external}
-   * [NFS share](https://helpcenter.veeam.com/docs/backup/vsphere/nfs_share.html?ver=120){: external}
+   * [SMB (CIFS) share](https://helpcenter.veeam.com/archive/backup/120/vsphere/smb_share.html){: external}
+   * [NFS share](https://helpcenter.veeam.com/archive/backup/120/vsphere/nfs_share.html){: external}
 
 * **Deduplicating storage appliances** - While you can add the following deduplicating storage appliances as backup repositories in Veeam, you are only able to deploy virtual appliances in {{site.data.keyword.cloud}}. Be aware of the type of storage and locations of both primary (the VMs being backed up) and secondary data (the storage that is used by the appliance to hold backup files) as these might be the same underlying storage:
-   * [Dell Data Domain](https://helpcenter.veeam.com/docs/backup/vsphere/dell_dd.html?ver=120){: external}
-   * [ExaGrid](https://helpcenter.veeam.com/docs/backup/vsphere/deduplicating_appliance_exgrid.html?ver=120){: external}
-   * [Fujitsu ETERNUS CS800](https://helpcenter.veeam.com/docs/backup/vsphere/fujitsu.html?ver=120){: external}
-   * [HPE StoreOnce](https://helpcenter.veeam.com/docs/backup/vsphere/deduplicating_appliance_storeonce.html?ver=120){: external}
-   * [Infinidat InfiniGuard](https://helpcenter.veeam.com/docs/backup/vsphere/infinidat_infiniguard.html?ver=120){: external}
-   * [Quantum DXi](https://helpcenter.veeam.com/docs/backup/vsphere/deduplicating_appliance_quantum.html?ver=120){: external}
+   * [Dell Data Domain](https://helpcenter.veeam.com/archive/backup/120/vsphere/dell_dd.html){: external}
+   * [ExaGrid](https://helpcenter.veeam.com/archive/backup/120/vsphere/deduplicating_appliance_exgrid.html){: external}
+   * [Fujitsu ETERNUS CS800](https://helpcenter.veeam.com/archive/backup/120/vsphere/fujitsu.html){: external}
+   * [HPE StoreOnce](https://helpcenter.veeam.com/archive/backup/120/vsphere/deduplicating_appliance_storeonce.html){: external}
+   * [Infinidat InfiniGuard](https://helpcenter.veeam.com/archive/backup/120/vsphere/infinidat_infiniguard.html){: external}
+   * [Quantum DXi](https://helpcenter.veeam.com/archive/backup/120/vsphere/deduplicating_appliance_quantum.html){: external}
 
-* **Object storage** - You can use cloud storage services as backup repositories. For more information, see [Object storage repository](https://helpcenter.veeam.com/docs/backup/vsphere/object_storage_repository.html?ver=120){: external}.
+* **Object storage** - You can use cloud storage services as backup repositories. For more information, see [Object storage repository](https://helpcenter.veeam.com/archive/backup/120/vsphere/object_storage_repository.html){: external}.
 
 To add {{site.data.keyword.cloud_notm}} object storage, see:
 * [Choosing a plan and creating an instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision)
 * [Using HMAC credentials](/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main)
 * [Locking objects](/docs/cloud-object-storage?topic=cloud-object-storage-ol-overview)
-* [Adding {{site.data.keyword.cloud_notm}} Object Storage](https://helpcenter.veeam.com/docs/backup/vsphere/adding_ibm_object_storage.html?ver=120){: external}
+* [Adding {{site.data.keyword.cloud_notm}} Object Storage](https://helpcenter.veeam.com/archive/backup/120/vsphere/adding_ibm_object_storage.html){: external}
 
 To add a Linux Hardened repository, see:
 * [Building a custom bare metal server](/docs/bare-metal?topic=bare-metal-ordering-baremetal-server)
 * [Veeam on bare metal server introduction](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-bms-archi-intro)
 * [Provisioning the Linux hardened repository server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-lhbr)
-* [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external}
+* [Hardened repository](https://helpcenter.veeam.com/archive/backup/120/vsphere/hardened_repository.html){: external}
 
 When you add a Linux hardened repository, consider:
-* Recommendations from the Security Technical Implementation Guides (STIGs) created and maintained by the Defense Information Systems Agency (DISA) for Ubuntu 20.04 LTS. For more information, see [DISA STIGs Document Library](https://public.cyber.mil/stigs/downloads/){: external}.
+* Recommendations from the Security Technical Implementation Guides (STIGs) created and maintained by the Defense Information Systems Agency (DISA) for Ubuntu 20.04 LTS. For more information, see [DISA STIGs Document Library](https://www.cyber.mil/stigs/downloads/){: external}.
 * To be compliant with [DISA STIG UBTU-20-010414](https://www.stigaview.com/products/ubuntu2004/v2r1/UBTU-20-010414/){: external}, you do not need to enable disk encryption for the operating system. To protect data in backups, use Veeam Backup and Replication built-in encryption instead.
 
 For postinstallation, consider the following Veeam recommendations:
@@ -72,5 +72,5 @@ For {{site.data.keyword.cloud_notm}}, consider:
 * The choice of storage regarding the location of primary data. If your {{site.data.keyword.vcf-auto}} instance has an NFS cluster, then an NFS share for backup data might place the primary and secondary data on the same storage appliance.
 * No SMB (CIFS) share is available as a service in {{site.data.keyword.cloud_notm}}.
 * Only virtual appliances versions of deduplicating storage appliances can be installed in {{site.data.keyword.cloud_notm}}. Furthermore, consider what storage that these appliances use.
-* For object storage, see [Considerations and Limitations](https://helpcenter.veeam.com/docs/backup/vsphere/object_storage_repository_cal.html?ver=120){: external}.
-* For Direct Backup to Object Storage, see [Considerations and limitations for direct backup to Object Storage](https://helpcenter.veeam.com/docs/backup/vsphere/object_storage_repository_cal.html?ver=120#considerations-and-limitations-for-direct-backup-to-object-storage){: external}.
+* For object storage, see [Considerations and Limitations](https://helpcenter.veeam.com/archive/backup/120/vsphere/object_storage_repository_cal.html){: external}.
+* For Direct Backup to Object Storage, see [Considerations and limitations for direct backup to Object Storage](https://helpcenter.veeam.com/archive/backup/120/vsphere/object_storage_repository_cal.html#considerations-and-limitations-for-direct-backup-to-object-storage){: external}.

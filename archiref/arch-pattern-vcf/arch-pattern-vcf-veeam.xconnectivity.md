@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-21"
 
 subcollection: vmwaresolutions
 
@@ -73,7 +73,7 @@ This architecture pattern deployment is summarized as follows:
 
 When you design or deploy this architecture pattern, consider the following information:
 
-* Design your network flows carefully. For more information about ports and protocols, see [Veeam Backup & Replication ports and protocols](https://helpcenter.veeam.com/docs/backup/vsphere/used_ports.html?ver=120){: external}.
+* Design your network flows carefully. For more information about ports and protocols, see [Veeam Backup & Replication ports and protocols](https://helpcenter.veeam.com/archive/backup/120/vsphere/used_ports.html){: external}.
 * Ensure that the used {{site.data.keyword.vpc_short}} security groups and firewall rules allow the replication traffic.
 * Ensure that the networks are properly routed and possible firewall rules allow the required traffic at both source and destination sites.
 * Ensure that your MTUs match end to end, and that your VPN can handle shorter inner MTU across the Internet.
@@ -84,5 +84,5 @@ When you design or deploy this architecture pattern, consider the following info
 * [Architecture pattern for Veeam - consolidated architecture](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-veeam-con)
 * [Ordering Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
 * [VPC network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
-* [Veeam Backup & Replication ports and protocols](https://helpcenter.veeam.com/docs/backup/vsphere/used_ports.html?ver=120){: external}
+* [Veeam Backup & Replication ports and protocols](https://helpcenter.veeam.com/archive/backup/120/vsphere/used_ports.html){: external}
 * [Veeam Help Center](https://helpcenter.veeam.com/){: external}

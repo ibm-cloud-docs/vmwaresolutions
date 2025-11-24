@@ -4,9 +4,9 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-24"
 
-keywords: veeam mover service, veeam data mover, nfs service, 
+keywords: veeam mover service, veeam data mover, nfs service,
 
 subcollection: vmwaresolutions
 
@@ -43,5 +43,5 @@ Consider the following information when you use the previous features:
 ## Related links
 {: #veeam_mover_service-links}
 
-* [Veeam vPower NFS service](https://helpcenter.veeam.com/docs/backup/vsphere/vpower_nfs_service.html?ver=120){: external}
-* [Adding Microsoft Windows Servers](https://helpcenter.veeam.com/docs/backup/vsphere/add_windows_server.html?ver=120){: external}
+* [Veeam vPower NFS service](https://helpcenter.veeam.com/archive/backup/120/vsphere/vpower_nfs_service.html){: external}
+* [Adding Microsoft Windows Servers](https://helpcenter.veeam.com/archive/backup/120/vsphere/add_windows_server.html){: external}

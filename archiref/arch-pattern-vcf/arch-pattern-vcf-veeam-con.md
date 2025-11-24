@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-21"
 
 subcollection: vmwaresolutions
 
@@ -59,5 +59,5 @@ When you design or deploy this architecture pattern, consider the following info
 * [Architecture pattern for Veeam replication connectivity in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-veeam-xconnectivity)
 * [Ordering Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
 * [VPC network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
-* [Veeam Backup & Replication ports and protocols](https://helpcenter.veeam.com/docs/backup/vsphere/used_ports.html?ver=120){: external}
+* [Veeam Backup & Replication ports and protocols](https://helpcenter.veeam.com/archive/backup/120/vsphere/used_ports.html){: external}
 * [Veeam Help Center](https://helpcenter.veeam.com/){: external}

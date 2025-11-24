@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-22"
 
 keywords: requirements for vmware backup proxies, limitations for vmware backup proxies, backup proxies
 
@@ -25,7 +25,7 @@ The backup server is a Windows-based machine on which Veeam Backup and Replicati
 * Controls job scheduling and resource allocation.
 * It is used to set up and manage backup infrastructure components and to specify global settings for the backup infrastructure.
 
-During service deployment, the Veeam Backup and Replication software is deployed on the virtual machine (VM), VSI, or bare metal server. The distributed deployment scenario is recommended for large geographically dispersed virtual environments with multiple Veeam Backup and Replication servers that are installed across different sites. These backup servers are federated under **Veeam Backup Enterprise Manager**, which provides centralized management and reporting for the backup servers through a web interface. 
+During service deployment, the Veeam Backup and Replication software is deployed on the virtual machine (VM), VSI, or bare metal server. The distributed deployment scenario is recommended for large geographically dispersed virtual environments with multiple Veeam Backup and Replication servers that are installed across different sites. These backup servers are federated under **Veeam Backup Enterprise Manager**, which provides centralized management and reporting for the backup servers through a web interface.
 
 More backup servers can be added manually for a Veeam® distributed deployment scenario.
 {: note}
@@ -33,7 +33,7 @@ More backup servers can be added manually for a Veeam® distributed deployment s
 ## Console
 {: #veeam_backup_server_con}
 
-The Veeam Backup and Replication console provides access to the backup server. Log in to Veeam Backup and Replication and perform data protection and disaster recovery operations on the backup server. During service deployment, the Veeam Backup and Replication console is deployed onto the Veeam Backup and Replication server. 
+The Veeam Backup and Replication console provides access to the backup server. Log in to Veeam Backup and Replication and perform data protection and disaster recovery operations on the backup server. During service deployment, the Veeam Backup and Replication console is deployed onto the Veeam Backup and Replication server.
 
 The console can be removed from the server and can be deployed on one or more dedicated machines to access the backup server remotely.
 {: note}
@@ -41,8 +41,8 @@ The console can be removed from the server and can be deployed on one or more de
 ## Related links
 {: #veeam_backup_server-links}
 
-* [Distributed deployment](https://helpcenter.veeam.com/docs/backup/vsphere/distributed.html?ver=120){: external}
-* [Veeam Backup Enterprise Manager](https://helpcenter.veeam.com/docs/backup/vsphere/enterprise_manager.html?ver=120){: external}
-* [Installing Veeam Backup and Replication](https://helpcenter.veeam.com/docs/backup/vsphere/install_vbr.html?ver=120){: external}
-* [Backup and Replication console](https://helpcenter.veeam.com/docs/backup/vsphere/backup_console.html?ver=120){: external}
-* [Installing Veeam Backup and Replication console](https://helpcenter.veeam.com/docs/backup/vsphere/install_console.html?ver=120){: external}
+* [Distributed deployment](https://helpcenter.veeam.com/archive/backup/120/vsphere/distributed.html){: external}
+* [Veeam Backup Enterprise Manager](https://helpcenter.veeam.com/archive/backup/120/vsphere/enterprise_manager.html){: external}
+* [Installing Veeam Backup and Replication](https://helpcenter.veeam.com/archive/backup/120/vsphere/install_vbr.html){: external}
+* [Backup and Replication console](https://helpcenter.veeam.com/archive/backup/120/vsphere/backup_console.html){: external}
+* [Installing Veeam Backup and Replication console](https://helpcenter.veeam.com/archive/backup/120/vsphere/install_console.html){: external}

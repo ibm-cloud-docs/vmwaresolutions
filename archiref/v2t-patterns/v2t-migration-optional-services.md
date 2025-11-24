@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-21"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ Plan to migrate these services to new services on the VMware NSX-T™ environmen
 ## Understanding metadata
 {: #v2t-optionalservices-metadata}
 
-Optional services can be decoupled from the {{site.data.keyword.vcf-auto-short}} with NSX-V instance and reused with {{site.data.keyword.vcf-auto-short}} with NSX-V instance. However, it is important to understand the metadata that the service is using from {{site.data.keyword.vcf-auto-short}}. 
+Optional services can be decoupled from the {{site.data.keyword.vcf-auto-short}} with NSX-V instance and reused with {{site.data.keyword.vcf-auto-short}} with NSX-V instance. However, it is important to understand the metadata that the service is using from {{site.data.keyword.vcf-auto-short}}.
 
 Review the following information for Advanced Cross vCenter Server vMotion.
 
@@ -60,7 +60,7 @@ You must open a ticket to ask IBM Support to decouple the Veeam server, manageme
 If you deploy a new Veeam instance, you must consider backup data and backup configuration to migrate Veeam to the new NSX-T instance.
 
 * Backup data - Backup files are hosted in the Veeam repository server. For more information, see [Importing Veeam Agent backups](https://helpcenter.veeam.com/archive/agentforwindows/50/userguide/integration_import.html){: external}.
-* Backup configuration - The backup configuration can be saved to a file. For more information, see [Configuration backup and restore](https://helpcenter.veeam.com/docs/backup/vsphere/vbr_config.html?ver=120){: external}.
+* Backup configuration - The backup configuration can be saved to a file. For more information, see [Configuration backup and restore](https://helpcenter.veeam.com/archive/backup/120/vsphere/vbr_config.html){: external}.
 
 If you want to migrate your Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
@@ -80,7 +80,7 @@ HCX™ is not being used for DR services, and so no HCX migration to the NSX-T i
 ## Zerto
 {: #v2t-optionalservices-zerto}
 
-It is recommended that Zerto is deployed with the {{site.data.keyword.vcf-auto-short}} with NSX-T instance and that new site pairing is configured along with the required protection configuration. 
+It is recommended that Zerto is deployed with the {{site.data.keyword.vcf-auto-short}} with NSX-T instance and that new site pairing is configured along with the required protection configuration.
 
 ## IBM Spectrum Protect Plus
 {: #v2t-optionalservices-spp}
@@ -129,7 +129,7 @@ The migration approach would be to:
 * Provision the {{site.data.keyword.vcf-auto-short}} with NSX-T instance with {{site.data.keyword.redhat_openshift_notm}} for VMware.
 * Configure the new {{site.data.keyword.redhat_openshift_notm}} for VMware cluster as required.
 * Create a migration plan, which includes how to handle data from the applications that are being migrated.
-* Consider using the Migration Toolkit for Containers. 
+* Consider using the Migration Toolkit for Containers.
 
 ## VMware Aria Operations and VMware Aria Operations for Logs
 {: #v2t-optionalservices-vropsvli}

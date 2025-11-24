@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-24"
 
 keywords: guest interaction proxies
 
@@ -30,4 +30,4 @@ To interact with the VM guest OS, Veeam Backup and Replication installs nonpersi
 ## Related links
 {: #veeam_guest_inter-links}
 
-* [Nonpersistent runtime components and persistent agent components](https://helpcenter.veeam.com/docs/backup/vsphere/runtime_process.html?ver=120){: external}
+* [Nonpersistent runtime components and persistent agent components](https://helpcenter.veeam.com/archive/backup/120/vsphere/runtime_process.html){: external}

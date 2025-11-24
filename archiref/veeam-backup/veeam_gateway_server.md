@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-24"
 
 keywords: gateway servers
 
@@ -21,10 +21,10 @@ subcollection: vmwaresolutions
 
 A gateway server is required when a backup repository cannot host Veeam® Data Movers. The Veeam Data Movers are then hosted on the gateway server. The gateway server is required if you deploy the following types of backup repositories in the backup infrastructure.
 
-* [Shared folder backup repositories](https://helpcenter.veeam.com/docs/backup/vsphere/backup_repository.html?ver=120){: external}
-* [Dell Data Domain deduplicating storage appliance](https://helpcenter.veeam.com/docs/backup/vsphere/dell_dd.html?ver=120){: external}
-* [HPE StoreOnce deduplicating storage appliance](https://helpcenter.veeam.com/docs/backup/vsphere/deduplicating_appliance_storeonce.html?ver=120){: external}
-* [Object storage repository](https://helpcenter.veeam.com/docs/backup/vsphere/object_storage_repository.html?ver=120){: external}
+* [Shared folder backup repositories](https://helpcenter.veeam.com/archive/backup/120/vsphere/backup_repository.html){: external}
+* [Dell Data Domain deduplicating storage appliance](https://helpcenter.veeam.com/archive/backup/120/vsphere/dell_dd.html){: external}
+* [HPE StoreOnce deduplicating storage appliance](https://helpcenter.veeam.com/archive/backup/120/vsphere/deduplicating_appliance_storeonce.html){: external}
+* [Object storage repository](https://helpcenter.veeam.com/archive/backup/120/vsphere/object_storage_repository.html){: external}
 
 During service deployment, the automation deploys a gateway server onto the Veeam Backup and Replication server. If required more gateway servers can be added.
 
@@ -35,7 +35,7 @@ During service deployment, the automation deploys a gateway server onto the Veea
 ## Related links
 {: #veeam_gateway_server-links}
 
-* [Adding Microsoft Windows Servers](https://helpcenter.veeam.com/docs/backup/vsphere/runtime_process.html?ver=120){: external}
-* [Adding Linux Servers](https://helpcenter.veeam.com/docs/backup/vsphere/add_linux_server.html?ver=120){: externak}
-* [Adding backup repositories](https://helpcenter.veeam.com/docs/backup/vsphere/dsa_repository_server.html?ver=120){: external}
-* [Gateway servers](https://helpcenter.veeam.com/docs/backup/vsphere/gateway_server.html?ver=120){: external}
+* [Adding Microsoft Windows Servers](https://helpcenter.veeam.com/archive/backup/120/vsphere/runtime_process.html){: external}
+* [Adding Linux Servers](https://helpcenter.veeam.com/archive/backup/120/vsphere/add_linux_server.html){: external}
+* [Adding backup repositories](https://helpcenter.veeam.com/archive/backup/120/vsphere/dsa_repository_server.html){: external}
+* [Gateway servers](https://helpcenter.veeam.com/archive/backup/120/vsphere/gateway_server.html){: external}
