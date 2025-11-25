@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 keywords: vmware cdp proxy, VMware cdp proxy operation
 
@@ -38,8 +38,8 @@ In {{site.data.keyword.cloud}} consider using:
 ## Related links
 {: #vmware_cdp_proxy-links}
 
-* [Adding Microsoft Windows Servers](https://helpcenter.veeam.com/docs/backup/vsphere/add_windows_server.html?ver=120){: external}
-* [Adding Linux Servers](https://helpcenter.veeam.com/docs/backup/vsphere/add_linux_server.html?ver=120){: external}
-* [Adding VMware CDP proxies](https://helpcenter.veeam.com/docs/backup/vsphere/cdp_proxy_add.html?ver=120){: external}
-* [How CDP works](https://helpcenter.veeam.com/docs/backup/vsphere/cdp_hiw.html?ver=120){: external}
-* [System requirements for VMware CDP proxy](https://helpcenter.veeam.com/docs/backup/vsphere/system_requirements.html?ver=120#cdp_proxy){: external}
+* [Adding Microsoft Windows Servers](https://helpcenter.veeam.com/archive/backup/120/vsphere/add_windows_server.html){: external}
+* [Adding Linux Servers](https://helpcenter.veeam.com/archive/backup/120/vsphere/add_linux_server.html){: external}
+* [Adding VMware CDP proxies](https://helpcenter.veeam.com/archive/backup/120/vsphere/cdp_proxy_add.html){: external}
+* [How CDP works](https://helpcenter.veeam.com/archive/backup/120/vsphere/cdp_hiw.html){: external}
+* [System requirements for VMware CDP proxy](https://helpcenter.veeam.com/archive/backup/120/vsphere/system_requirements.html#cdp_proxy){: external}

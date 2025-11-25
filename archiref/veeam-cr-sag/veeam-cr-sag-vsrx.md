@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 subcollection: vmwaresolutions
 
@@ -24,9 +24,9 @@ An Ansible® playbook is used to configure the Juniper vSRX to allow traffic to 
 
 The document also describes a second Ansible playbook that can be used to schedule the opening and closing of the airgap.
 
-The playbook might be extended to trigger the Veeam backup job instead of running the backup job on a schedule controlled by the Veeam backup server. For more information about using the Veeam PowerShell module, see [Start-VBRJob](https://helpcenter.veeam.com/docs/backup/powershell/start-vbrjob.html?ver=120){: external}.
+The playbook might be extended to trigger the Veeam backup job instead of running the backup job on a schedule controlled by the Veeam backup server. For more information about using the Veeam PowerShell module, see [Start-VBRJob](https://helpcenter.veeam.com/archive/backup/120/powershell/start-vbrjob.html){: external}.
 
-As an alternative, scripts can be used before and after the backup job that connects to the automation server and initiates the Ansible playbook. For more information, see [Script settings](https://helpcenter.veeam.com/docs/backup/vsphere/backup_job_advanced_scripts_vm.html?ver=120){: external} and [New-PSSession](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/new-pssession?view=powershell-7.2){: external}.
+As an alternative, scripts can be used before and after the backup job that connects to the automation server and initiates the Ansible playbook. For more information, see [Script settings](https://helpcenter.veeam.com/archive/backup/120/vsphere/backup_job_advanced_scripts_vm.html){: external} and [New-PSSession](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/new-pssession?view=powershell-7.2){: external}.
 
 The New-PSSession module requires PowerShell 7. For more information, see [Installing the MSI package](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4&viewFallbackFrom=powershell-7.2#msi){: external}.
 {: note}

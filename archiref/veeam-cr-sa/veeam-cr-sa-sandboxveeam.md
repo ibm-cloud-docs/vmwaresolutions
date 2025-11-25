@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 subcollection: vmwaresolutions
 
@@ -44,11 +44,11 @@ The following diagram shows the communication flow for the vPower NFS service.
 ## Veeam Data Integration API
 {: #veeam-cr-sandboxveeam-api}
 
-The Veeam data integration API allows access to the backup files by mounting the backup files to a target server. Use cases include malware scans and data mining. 
+The Veeam data integration API allows access to the backup files by mounting the backup files to a target server. Use cases include malware scans and data mining.
 
 The Veeam Data Integration API is a set of Veeam PowerShell cmdlets that allows access to backup files as a mounted folder on a target server. This action enables an application to access backup files in a read-only manner.
 
-The following diagram shows the communication flow for when backup files are published to a Linux target server. 
+The following diagram shows the communication flow for when backup files are published to a Linux target server.
 
 ![Publishing backup files ](../../images/veeam-cr-sa-lhbr-pub.svg){: caption="Publishing backup files" caption-side="bottom"}
 
@@ -67,7 +67,7 @@ loop6     7:6    0 42.2M  1 loop /snap/snapd/13831
 loop7     7:7    0 67.2M  1 loop /snap/lxd/21803
 loop8     7:8    0 55.5M  1 loop /snap/core18/2253
 loop9     7:9    0    1G  0 loop /tmp/Veeam®.Mount.FS.b2811b87-5bf4-4056-8134-21ce9555dca7/centos01-flat.vmdk_1
-loop10    7:10   0  1.6G  0 loop 
+loop10    7:10   0  1.6G  0 loop
 loop11    7:11   0 12.8G  0 loop /tmp/Veeam®.Mount.FS.b2811b87-5bf4-4056-8134-21ce9555dca7/cl-root
 ```
 
@@ -76,5 +76,5 @@ For example, if the target server installs ClamAV, the following command scans t
 ## Related links
 {: #veeam-cr-sandboxveeam-related}
 
-* [Veeam vPower NFS service](https://helpcenter.veeam.com/docs/backup/vsphere/vpower_nfs_service.html?ver=120){: external}
-* [Veeam data integration API](https://helpcenter.veeam.com/docs/backup/vsphere/data_integration_api.html?ver=120){: external}
+* [Veeam vPower NFS service](https://helpcenter.veeam.com/archive/backup/120/vsphere/vpower_nfs_service.html){: external}
+* [Veeam data integration API](https://helpcenter.veeam.com/archive/backup/120/vsphere/data_integration_api.html){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 keywords: IBM Cloud Object Storage, ICOS configuration, order Cloud Object Storage
 
@@ -55,7 +55,7 @@ For more information, see [How to configure an HTTP proxy for Veeam components](
 ## Maintaining and managing your cloud tier
 {: #icos_ordering-manage-cloud}
 
-For more information about maintaining and managing your cloud tier, see [Managing capacity tier](https://helpcenter.veeam.com/docs/backup/vsphere/managing_capacity_tier_data.html?ver=120){: external}.
+For more information about maintaining and managing your cloud tier, see [Managing capacity tier](https://helpcenter.veeam.com/archive/backup/120/vsphere/managing_capacity_tier_data.html){: external}.
 
 ## Related links
 {: #icos_ordering-related}

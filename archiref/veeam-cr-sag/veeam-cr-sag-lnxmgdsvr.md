@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ Create a Veeam Linux® managed server from an existing Linux server. When the se
 
 The Veeam data integration API allows the mounting of backup files on a Microsoft® Windows® or Linux server. You designate a restore point of the backup file, mount it as a Windows folder or Linux mount point and access the files in the backup file. To mount a virtual machine (VM) file system on servers with the Microsoft Windows operating system, Veeam uses the iSCSI protocol. To mount a VM file system on servers with Linux operating system, Veeam uses FUSE (File system in User space). FUSE is a simple interface for user space programs to export a virtual file system to the Linux kernel.
 
-Linux supports a special block device, called the loop device, which maps a normal file onto a virtual block device. It allows for the file to be used as a virtual file system inside another file. 
+Linux supports a special block device, called the loop device, which maps a normal file onto a virtual block device. It allows for the file to be used as a virtual file system inside another file.
 
 This use case has the following tasks:
 
@@ -78,7 +78,7 @@ When you no longer require access to the published backup, the following PowerSh
 
 ```text
 $SessionArray = Get-VBRPublishedBackupContentSession
-Foreach ($Session in $SessionArray) { Unpublish-VBRBackupContent -Session $Session -RunAsync } 
+Foreach ($Session in $SessionArray) { Unpublish-VBRBackupContent -Session $Session -RunAsync }
 ```
 {: codeblock}
 
@@ -90,12 +90,12 @@ On the Linux managed server, no connections are there to any Veeam components.
 ```text
 sudo netstat -nutlp
 Active Internet connections (only servers)
-Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      136174/sshd         
-tcp        0      0 0.0.0.0:6162            0.0.0.0:*               LISTEN      13716/veeamtranspor 
-tcp6       0      0 :::22                   :::*                    LISTEN      136174/sshd         
-udp        0      0 127.0.0.1:323           0.0.0.0:*                           1663/chronyd        
-udp6       0      0 ::1:323                 :::*                                1663/chronyd       
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      136174/sshd
+tcp        0      0 0.0.0.0:6162            0.0.0.0:*               LISTEN      13716/veeamtranspor
+tcp6       0      0 :::22                   :::*                    LISTEN      136174/sshd
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           1663/chronyd
+udp6       0      0 ::1:323                 :::*                                1663/chronyd
 ```
 {: codeblock}
 
@@ -104,15 +104,15 @@ On the Linux managed server, the `veeamagent` opened TCP `2500 - 2502` ports:
 ```text
 sudo netstat -nutlp
 Active Internet connections (only servers)
-Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      136174/sshd         
-tcp        0      0 0.0.0.0:6162            0.0.0.0:*               LISTEN      13716/veeamtranspor 
-tcp        0      0 0.0.0.0:2500            0.0.0.0:*               LISTEN      710143/veeamagent   
-tcp        0      0 0.0.0.0:2501            0.0.0.0:*               LISTEN      711191/veeamagent   
-tcp        0      0 0.0.0.0:2502            0.0.0.0:*               LISTEN      712309/veeamagent   
-tcp6       0      0 :::22                   :::*                    LISTEN      136174/sshd         
-udp        0      0 127.0.0.1:323           0.0.0.0:*                           1663/chronyd        
-udp6       0      0 ::1:323                 :::*                                1663/chronyd 
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      136174/sshd
+tcp        0      0 0.0.0.0:6162            0.0.0.0:*               LISTEN      13716/veeamtranspor
+tcp        0      0 0.0.0.0:2500            0.0.0.0:*               LISTEN      710143/veeamagent
+tcp        0      0 0.0.0.0:2501            0.0.0.0:*               LISTEN      711191/veeamagent
+tcp        0      0 0.0.0.0:2502            0.0.0.0:*               LISTEN      712309/veeamagent
+tcp6       0      0 :::22                   :::*                    LISTEN      136174/sshd
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           1663/chronyd
+udp6       0      0 ::1:323                 :::*                                1663/chronyd
 ```
 {: codeblock}
 
@@ -131,21 +131,21 @@ loop6     7:6    0 42.2M  1 loop /snap/snapd/13831
 loop7     7:7    0 67.2M  1 loop /snap/lxd/21803
 loop8     7:8    0 55.5M  1 loop /snap/core18/2253
 loop9     7:9    0    1G  0 loop /tmp/Veeam.Mount.FS.b2811b87-5bf4-4056-8134-21ce9555dca7/centos01-flat.vmdk_1
-loop10    7:10   0  1.6G  0 loop 
+loop10    7:10   0  1.6G  0 loop
 loop11    7:11   0 12.8G  0 loop /tmp/Veeam.Mount.FS.b2811b87-5bf4-4056-8134-21ce9555dca7/cl-root
 loop12    7:12   0  600M  0 loop /tmp/Veeam.Mount.FS.5f9917d0-cd25-4497-9c36-de21d5c93e23/centos02-flat.vmdk_0
 loop13    7:13   0    1G  0 loop /tmp/Veeam.Mount.FS.5f9917d0-cd25-4497-9c36-de21d5c93e23/centos02-flat.vmdk_1
-loop14    7:14   0  1.6G  0 loop 
+loop14    7:14   0  1.6G  0 loop
 loop15    7:15   0 12.8G  0 loop /tmp/Veeam.Mount.FS.5f9917d0-cd25-4497-9c36-de21d5c93e23/cl-root
-loop16    7:16   0    1M  0 loop 
+loop16    7:16   0    1M  0 loop
 loop17    7:17   0    1G  0 loop /tmp/Veeam.Mount.FS.3b386d5e-9906-47ec-b8bd-7e17131f68a3/moss-web02-flat.vmdk_1
 loop18    7:18   0 29.5G  0 loop /tmp/Veeam.Mount.FS.3b386d5e-9906-47ec-b8bd-7e17131f68a3/ubuntu-vg-ubuntu-lv
-sda       8:0    0  931G  0 disk 
+sda       8:0    0  931G  0 disk
 ├─sda1    8:1    0    1G  0 part /boot
 ├─sda2    8:2    0    1G  0 part [SWAP]
 └─sda3    8:3    0  929G  0 part /
-sdb       8:16   0 10.9T  0 disk 
-└─sdb1    8:17   0 10.9T  0 part /mnt/veeamrepo01 
+sdb       8:16   0 10.9T  0 disk
+└─sdb1    8:17   0 10.9T  0 part /mnt/veeamrepo01
 ```
 {: codeblock}
 
@@ -158,7 +158,7 @@ On the Veeam backup server, the following connections can be seen, where:
 ```text
 netstat -nt
 Active Internet connections (w/o servers)
-Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
 tcp        0      0 10.38.207.137:22        10.38.207.142:58912     ESTABLISHED
 tcp        0      0 10.38.207.157:2500     10.38.207.142:37784    ESTABLISHED
 tcp        0      0 10.38.207.157:2500     10.38.207.142:37786    ESTABLISHED
@@ -214,4 +214,4 @@ tcp        0      0 10.38.207.157:53509    10.38.207.142:2502     ESTABLISHED
 {: #veeam-cr-sag-lnxmgdsvr-related}
 
 * [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)
-* [Veeam Data Integration API](https://helpcenter.veeam.com/docs/backup/vsphere/data_integration_api.html?ver=120){: external}
+* [Veeam Data Integration API](https://helpcenter.veeam.com/archive/backup/120/vsphere/data_integration_api.html){: external}

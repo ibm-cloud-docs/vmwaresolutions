@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -96,7 +96,7 @@ You can order a Linux® hardened repository (LHR) to use for immutable storage. 
 The Linux hardened repository is supported only for instances with vSphere 7 or later.
 {: important}
 
-For more information, see [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external}.
+For more information, see [Hardened repository](https://helpcenter.veeam.com/archive/backup/120/vsphere/hardened_repository.html){: external}.
 
 ### Number of VMs to license
 {: #veeam_ordering-config-vms}

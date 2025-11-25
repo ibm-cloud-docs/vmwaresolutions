@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 keywords: Veeam console, Veeam backup restore, update Veeam license
 
@@ -82,7 +82,7 @@ If the Veeam service is installed on an instance as a bare metal server or VSI,
 ### Updating Veeam licenses for instances that are deployed with public and private network
 {: #managingveeam-update-license-public-private}
 
-If the Veeam service is installed on an instance with public and private network, you can update your Veeam 9.5u4b license either automatically or manually. For Veeam, you must update your Veeam license automatically. You cannot update it manually. Follow the Veeam instructions at [Updating license](https://helpcenter.veeam.com/docs/backup/vsphere/license_update.html){: external}.
+If the Veeam service is installed on an instance with public and private network, you can update your Veeam 9.5u4b license either automatically or manually. For Veeam, you must update your Veeam license automatically. You cannot update it manually. Follow the Veeam instructions at [Updating license](https://helpcenter.veeam.com/docs/vbr/userguide/license_update.html){: external}.
 
 ### Updating Veeam licenses for instances that are deployed as a bare metal server or VSI, or deployed as a VM with private network only
 {: #managingveeam-update-license-private}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 subcollection: vmwaresolutions
 
@@ -162,7 +162,7 @@ The code snippet does the following actions:
 * Adds a user, called `veeamlhbr`.
 * Changes the ownership of `/mnt/veeamrepo01`, and sets the permissions so that the owner can read, write, and run, and the group cannot read, write, and run. Other users cannot read, write, and run. Veeam uses this user to read and write to the file system.
 
-Change file permissions for authentication certificates on the Linux server to maximize the repository security. For more information, see [Tips for enhanced security of hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external}.
+Change file permissions for authentication certificates on the Linux server to maximize the repository security. For more information, see [Tips for enhanced security of hardened repository](https://helpcenter.veeam.com/archive/backup/120/vsphere/hardened_repository.html){: external}.
 
 ```text
    - name: Create the veeamlhbr group

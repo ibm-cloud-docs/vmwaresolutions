@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 subcollection: vmwaresolutions
 
@@ -51,7 +51,7 @@ Create a vCenter role and assign the required permissions so that the Veeam serv
 
 The steps are implemented on the vCenter appliance in the production environment and not on the vCenter appliance server in the isolated recovery environment.
 
-The role requires a list of privileges. You can view the list of privileges in the variable list `$privileges` in the following PowerCLI script. For more information, see [Backup](https://helpcenter.veeam.com/docs/backup/vsphere/backup.html?ver=120){: external}.
+The role requires a list of privileges. You can view the list of privileges in the variable list `$privileges` in the following PowerCLI script. For more information, see [Backup](https://helpcenter.veeam.com/archive/backup/120/vsphere/backup.html){: external}.
 
 The script completes the following tasks:
 

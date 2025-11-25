@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 keywords: scale-out backup repositories
 
@@ -29,6 +29,6 @@ During service deployment, the automation deploys a scale out backup repository,
 ## Related links
 {: #veeam_repo_scale_backup-links}
 
-* [Performance tier](https://helpcenter.veeam.com/docs/backup/vsphere/backup_repository_sobr_extents.html?ver=120){: external}
-* [Capacity tier](https://helpcenter.veeam.com/docs/backup/vsphere/capacity_tier.html?ver=120){: external}
-* [Archive tier](https://helpcenter.veeam.com/docs/backup/vsphere/archive_tier.html?ver=120){: external}
+* [Performance tier](https://helpcenter.veeam.com/archive/backup/120/vsphere/backup_repository_sobr_extents.html){: external}
+* [Capacity tier](https://helpcenter.veeam.com/archive/backup/120/vsphere/capacity_tier.html){: external}
+* [Archive tier](https://helpcenter.veeam.com/archive/backup/120/vsphere/archive_tier.html){: external}

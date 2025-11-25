@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 subcollection: vmwaresolutions
 
@@ -89,4 +89,4 @@ The previous assessment report considers the following details as best practice 
 ## Related links
 {: #veeam-cr-sa-lhr-related}
 
-* [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external}
+* [Hardened repository](https://helpcenter.veeam.com/archive/backup/120/vsphere/hardened_repository.html){: external}

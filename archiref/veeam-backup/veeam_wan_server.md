@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 keywords: wan accelerators, log shipping servers
 
@@ -26,7 +26,7 @@ Veeam® WAN acceleration is a technology that optimizes data transfer to remote 
 * Global data deduplication
 * Variable block size deduplication
 
-{{site.data.keyword.cloud}} bare metal servers with 10 Gb interfaces are recommended for WAN accelerators. For more information, see [WAN accelerators](https://helpcenter.veeam.com/docs/backup/vsphere/system_requirements.html?ver=120#wan){: external}.
+{{site.data.keyword.cloud}} bare metal servers with 10 Gb interfaces are recommended for WAN accelerators. For more information, see [WAN accelerators](https://helpcenter.veeam.com/archive/backup/120/vsphere/system_requirements.html#wan){: external}.
 
 ## Log shipping servers
 {: #veeam_wan_server_log}
@@ -36,8 +36,8 @@ Log shipping servers are dedicated components that Veeam Backup and Replication 
 ## Related links
 {: #veeam_wan_server-links}
 
-* [Adding WAN accelerator](https://helpcenter.veeam.com/docs/backup/vsphere/wan_add.html?ver=120){: external}
-* [Log shipping servers](https://helpcenter.veeam.com/docs/backup/vsphere/log_shipping_server.html?ver=120){: external}
-* [Microsoft SQL Server log backup](https://helpcenter.veeam.com/docs/backup/vsphere/sql_backup.html?ver=120){: external}
-* [PostgreSQL WAL files backup](https://helpcenter.veeam.com/docs/backup/vsphere/postgresql_backup.html?ver=120){: external}
-* [Oracle log backup](https://helpcenter.veeam.com/docs/backup/vsphere/oracle_backup.html?ver=120){: external}
+* [Adding WAN accelerator](https://helpcenter.veeam.com/archive/backup/120/vsphere/wan_add.html){: external}
+* [Log shipping servers](https://helpcenter.veeam.com/archive/backup/120/vsphere/log_shipping_server.html){: external}
+* [Microsoft SQL Server log backup](https://helpcenter.veeam.com/archive/backup/120/vsphere/sql_backup.html){: external}
+* [PostgreSQL WAL files backup](https://helpcenter.veeam.com/archive/backup/120/vsphere/postgresql_backup.html){: external}
+* [Oracle log backup](https://helpcenter.veeam.com/archive/backup/120/vsphere/oracle_backup.html){: external}

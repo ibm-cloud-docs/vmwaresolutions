@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 subcollection: vmwaresolutions
 
@@ -63,7 +63,7 @@ Define the following parameters:
 | `lhbr_root_password` | This password is the {{site.data.keyword.cloud_notm}} supplied initial root password that is provided after provisioning of the Linux bare metal server. It is used to initially connect to the server for configuration and stored in the Ansible® vault file. |
 | `sa_ansible_password` | A complex password that is stored in the Ansible vault file that is used for the `sa-ansible` service account on the Veeam backup server. |
 | `immutability_period` | The required immutability period for the Linux Hardened repository. For example, `30` for 30 days. |
-| `max_concurrent_jobs` | Specifies the maximum allowed number of concurrent tasks for the backup repository. For example, Veeam recommends one task = one CPU core and 2 GB RAM per core. For more information, see [Task limitation for backup repositories](https://helpcenter.veeam.com/docs/backup/vsphere/limiting_tasks.html?ver=120){: external}. |
+| `max_concurrent_jobs` | Specifies the maximum allowed number of concurrent tasks for the backup repository. For example, Veeam recommends one task = one CPU core and 2 GB RAM per core. For more information, see [Task limitation for backup repositories](https://helpcenter.veeam.com/archive/backup/120/vsphere/limiting_tasks.html){: external}. |
 {: caption="Define parameters for Immutable backup planning" caption-side="bottom"}
 
 ## Isolated recovery environment planning

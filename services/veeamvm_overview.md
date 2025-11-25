@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 keywords: Veeam, Veeam Backup and Replication, Veeam install, tech specs Veeam, Veeam overview
 
@@ -140,7 +140,7 @@ When you order Veeam, you can optionally order a Linux hardened repository (LHR)
 See the following information:
 * [{{site.data.keyword.cr}} with Veeam architecture](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview), which describes two solution architectures to help you with cyber-recovery.
 * [{{site.data.keyword.cr}} with Veeam guide](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-overview), which describes how to create two cyber-recovery solution architectures.
-* [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external} in the Veeam Backup and Replication 12 - User Guide for VMware vSphere.
+* [Hardened repository](https://helpcenter.veeam.com/archive/backup/120/vsphere/hardened_repository.html){: external} in the Veeam Backup and Replication 12 - User Guide for VMware vSphere.
 
 ### Networking for Veeam
 {: #veeamvm_overview-specs-networking}

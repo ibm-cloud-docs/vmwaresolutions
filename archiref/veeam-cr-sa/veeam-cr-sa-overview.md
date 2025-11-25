@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 subcollection: vmwaresolutions
 
@@ -81,7 +81,7 @@ This documentation uses the following terms and definitions:
 ## Related links
 {: #veeam-cr-sa-overview-related}
 
-* [About Veeam Backup and Replication](https://helpcenter.veeam.com/docs/backup/vsphere/overview.html?ver=120){: external}
+* [About Veeam Backup and Replication](https://helpcenter.veeam.com/archive/backup/120/vsphere/overview.html){: external}
 * [Veeam architects site](https://www.veeambp.com/){: external}
 * [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview)
 * [Veeam on bare metal server introduction](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-bms-archi-intro)

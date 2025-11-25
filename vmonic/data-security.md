@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 keywords: data encryption in VMware Solutions, data storage for VMware Solutions, bring your own keys for VMware Solutions, BYOK for VMware Solutions, key management for VMware Solutions, key encryption for VMware Solutions, personal data in VMware Solutions, data deletion for VMware Solutions, data in VMware Solutions, data security in VMware Solutions
 
@@ -60,12 +60,12 @@ To remove backups, you can choose to remove VMs or vApps from the backup job or 
 #### Backup chain format
 {: #data-security-backup-remove-chain}
 
-For Veeam 12 and later, the IBM policy uses per-machine backup with separate metadata files for backup chain format. For more information, see [Backup Chain Formats](https://helpcenter.veeam.com/docs/backup/vsphere/per_vm_backup_files.html?ver=120){: external}.
+For Veeam 12 and later, the IBM policy uses per-machine backup with separate metadata files for backup chain format. For more information, see [Backup Chain Formats](https://helpcenter.veeam.com/archive/backup/120/vsphere/per_vm_backup_files.html){: external}.
 
 #### Backup job retention policy
 {: #data-security-backup-remove-retention}
 
-The backup retention policy defines how many restore points to retain on disk. After the allowed number of restore points is exceeded, Veeam applies the retention policy to remove the earliest restore point from the backup chain. Depending on your business requirements, it is your responsibility to set the retention policy when you create the backup job. For more information, see [Short-Term Retention Policy](https://helpcenter.veeam.com/docs/backup/vsphere/retention_policy.html?ver=120){: external}.
+The backup retention policy defines how many restore points to retain on disk. After the allowed number of restore points is exceeded, Veeam applies the retention policy to remove the earliest restore point from the backup chain. Depending on your business requirements, it is your responsibility to set the retention policy when you create the backup job. For more information, see [Short-Term Retention Policy](https://helpcenter.veeam.com/archive/backup/120/vsphere/retention_policy.html){: external}.
 
 You can update the retention policy later. However, the new settings are applied only to the new data and cannot be applied to previous data that maintains the previous retention policy setting.
 {: note}
@@ -73,7 +73,7 @@ You can update the retention policy later. However, the new settings are applied
 #### Removal of restore points
 {: #data-security-backup-remove-restore-points}
 
-Veeam keeps at least one full backup chain and doesn't remove old restore points until a second full backup (synthetic or active) is created and a new backup chain starts. For more information, see [Removal of Restore Points](https://helpcenter.veeam.com/docs/backup/vsphere/retention_separate_vms.html?ver=120){: external}.
+Veeam keeps at least one full backup chain and doesn't remove old restore points until a second full backup (synthetic or active) is created and a new backup chain starts. For more information, see [Removal of Restore Points](https://helpcenter.veeam.com/archive/backup/120/vsphere/retention_separate_vms.html){: external}.
 
 #### Retention policy for deleted items
 {: #data-security-backup-remove-ret-delete}
@@ -86,7 +86,7 @@ Veeam has the **Remove deleted items data after** setting available for each bac
 When this option is enabled, the restore points for any VM or vApp that is no longer processed by the backup job is permanently deleted after the set number of days.
 {: important}
 
-For more information, see [Retention Policy for Deleted Item](https://helpcenter.veeam.com/docs/backup/vsphere/retention_deleted_vms.html?ver=120){: external}.
+For more information, see [Retention Policy for Deleted Item](https://helpcenter.veeam.com/archive/backup/120/vsphere/retention_deleted_vms.html){: external}.
 
 The retention policy is applied only if the job stops creating backups for the entire vApp. Therefore, a removal of VMs within vApps does not result in automatic deletion of those restore points. It is your responsibility to delete the restore points.
 {: note}

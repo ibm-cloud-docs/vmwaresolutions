@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-25"
 
 subcollection: vmwaresolutions
 
@@ -155,7 +155,7 @@ The following code snippet adds the Linux hardened repository as an extant to a 
 {: #veeam-cr-sag-lhbrmng-related}
 
 * [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)
-* [Add-VBRLinux](https://helpcenter.veeam.com/docs/backup/powershell/add-vbrlinux.html?ver=120){: external}
-* [Add-VBRBackupRepository](https://helpcenter.veeam.com/docs/backup/powershell/add-vbrbackuprepository.html?ver=120){: external}
-* [Per-Machine Backup Files](https://helpcenter.veeam.com/docs/backup/vsphere/per_vm_backup_files.html?ver=120){: external}
-* [Task Limitation for Backup Repositories](https://helpcenter.veeam.com/docs/backup/vsphere/limiting_tasks.html?ver=120){: external}
+* [Add-VBRLinux](https://helpcenter.veeam.com/archive/backup/120/powershell/add-vbrlinux.html){: external}
+* [Add-VBRBackupRepository](https://helpcenter.veeam.com/archive/backup/120/powershell/add-vbrbackuprepository.html){: external}
+* [Per-Machine Backup Files](https://helpcenter.veeam.com/archive/backup/120/vsphere/per_vm_backup_files.html){: external}
+* [Task Limitation for Backup Repositories](https://helpcenter.veeam.com/archive/backup/120/vsphere/limiting_tasks.html){: external}
