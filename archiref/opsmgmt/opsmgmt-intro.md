@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 subcollection: vmwaresolutions
 
@@ -47,7 +47,7 @@ The design allows the client to complete the following tasks:
 
 * **Virtual Infrastructure Layer** - The virtual infrastructure layer runs on the physical layer components. The virtual infrastructure layer controls the access to the underlying physical infrastructure, and controls and allocates resources to the management and compute workloads. The management workloads consist of elements in the virtual infrastructure layer itself, together with elements in the cloud management, service management, business continuity, and security layers.
 
-* **Business Continuity Layer** - This layer contains elements to support business continuity by providing data backup, restoration, and disaster recovery. For more information, see the {{site.data.keyword.vmwaresolutions_short}} backup and restoration architecture, Veeam, and Zerto disaster recovery reference architectures.
+* **Business Continuity Layer** - This layer contains elements to support business continuity by providing data backup, restoration, and disaster recovery. For more information, see the {{site.data.keyword.vmwaresolutions_short}} backup and restoration architecture, Veeam, and {{site.data.keyword.hpe-zerto}} disaster recovery reference architectures.
 
 * **Security Layer** - This layer contains the elements to reduce risk and increase compliance. For more information, see the Fortinet®, F5®, NSX, Entrust, and Caveonix reference architectures.
 

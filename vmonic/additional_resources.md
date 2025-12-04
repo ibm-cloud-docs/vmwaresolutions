@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-30"
+lastupdated: "2025-12-03"
 
 keywords: vmware solutions data sheet, vmware solutions developer, vmware solutions video
 
@@ -39,7 +39,7 @@ Review the architecture of all [virtualization platform extensions](https://www.
 
 * VMware HCX™ on {{site.data.keyword.cloud_notm}}
 * {{site.data.keyword.cloud_notm}} file and block storage
-* Zerto disaster recovery
+* {{site.data.keyword.hpe-zerto}} disaster recovery
 * Veeam® backup and replication
 * Secure virtualization
 * NSX Edge™ Services Gateway
@@ -50,7 +50,7 @@ Review the architecture of all [virtualization platform extensions](https://www.
 {: #additional_resources-demos}
 
 * [Veeam on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/veeam){: external}
-* [Zerto on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/zerto){: external}
+* [{{site.data.keyword.hpe-zerto}} on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/zerto){: external}
 * [What is virtualization?](https://www.ibm.com/think/topics/virtualization){: external}
 
 ## Broadcom documentation

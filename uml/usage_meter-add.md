@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-04"
 
 keywords: usage meter, adding products, vmware products usage meter, add nsx usage meter, add vcenter usage meter, add aria operations usage meter
 
@@ -41,9 +41,9 @@ To add vCenter Server to Usage Meter, complete the following steps:
 ## Adding NSX to Usage Meter 
 {: #usage_meter-add-nsx}
 
-To add VMware NSX to Usage Meter, complete the following steps:
+To add VMware NSX® to Usage Meter, complete the following steps:
 
-1. Under **Products**, select **NSX-T**. Click **Add** and enter the following information:
+1. Under **Products**, select **NSX-T™**. Click **Add** and enter the following information:
    * **Endpoint**: The IP address or the hostname (recommended if the IP address was reassigned) of the NSX-T Manager instance. The port number is 443. For more information, see [Add an NSX-T Data Center Instance for Metering in vCloud Usage Meter](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/4-8/vcloud-usage-meter-4-8-deployment-and-administration-guide-4-8/managing-the-metering-in-um/add-nsx-t.html){: external}.
    * **Username**: An NSX username with administrator privileges.
    * **Password**: The user password.
@@ -54,7 +54,7 @@ To add VMware NSX to Usage Meter, complete the following steps:
 ## Adding Aria Operations to Usage Meter 
 {: #usage_meter-add-aria}
 
-To add VMware Aria Operations to Usage Meter, complete the following steps:
+To add VMware Aria® Operations™ to Usage Meter, complete the following steps:
 
 1. Under **Products**, select **Aria Operations** and click **Add**.
 2. Enter the following information:

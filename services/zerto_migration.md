@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 keywords: Zerto, Zerto migration, zvm, zvma, windows zvm, linux zvma
 
@@ -14,21 +14,21 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Migrating Zerto from Windows ZVM to Linux ZVMA
+# Migrating {{site.data.keyword.hpe-zerto}} from Windows ZVM to Linux ZVMA
 {: #zerto_migration}
 
 {{site.data.content.vms-deprecated-note}}
 
-For Zerto 9.7 and earlier, ZVM (Zerto Virtual Manager) used to run from a Microsoft Windows® virtual machine (VM).
+For {{site.data.keyword.hpe-zerto}} 9.7 and earlier, ZVM (Zerto Virtual Manager) used to run from a Microsoft Windows® virtual machine (VM).
 
-For Zerto 10.0 and later, Zerto runs in a lightweight Debian Linux® based ZVMA (ZVM Appliance). Therefore, upgrading from Zerto 9.7 to 10.x requires a full lift-and-shift migration of the ZVM data from the Windows ZVM to the Linux ZVMA.
+For {{site.data.keyword.hpe-zerto}} 10.0 and later, {{site.data.keyword.hpe-zerto}} runs in a lightweight Debian Linux® based ZVMA (ZVM Appliance). Therefore, upgrading from {{site.data.keyword.hpe-zerto}} 9.7 to 10.x requires a full lift-and-shift migration of the ZVM data from the Windows ZVM to the Linux ZVMA.
 
 ## Before you begin
 {: #zerto_migration-before-begin}
 
 1. Verify that the existing Windows ZVM meets the following requirements:
 
-   * The Zerto version for the Windows ZVM is 9.7u4 P2.
+   * The {{site.data.keyword.hpe-zerto}} version for the Windows ZVM is 9.7u4 P2.
    * The ZVM is connected to the internet.
    * The default gateway is enabled for ZVM.
 
@@ -155,14 +155,14 @@ For more information, see [How to change the IP address of a ZVM server and pres
 {: #zerto_migration_postinstall}
 
 1. Open an {{site.data.keyword.IBM_notm}} Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to update the backend information in the {{site.data.keyword.cloud_notm}} automation.
-2. Update the DNS entry for Zerto in the AD server, and open an {{site.data.keyword.IBM_notm}} Support ticket to remove the Windows VM from {{site.data.keyword.cloud_notm}}.
-3. If you encounter any errors during the Zerto migration process, see [Why does the Zerto Migration from Windows Zerto Virtual Manager to Linux ZVM Appliance fail?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_zerto_zvma_migration)
+2. Update the DNS entry for {{site.data.keyword.hpe-zerto}} in the AD server, and open an {{site.data.keyword.IBM_notm}} Support ticket to remove the Windows VM from {{site.data.keyword.cloud_notm}}.
+3. If you encounter any errors during the {{site.data.keyword.hpe-zerto}} migration process, see [Why does the Zerto Migration from Windows Zerto Virtual Manager to Linux ZVM Appliance fail?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_zerto_zvma_migration)
 
 ## Related links
 {: #zerto_migration-related}
 
-* [Zerto overview](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
-* [Managing Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-managingzertodr)
-* [Managing Zerto stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
+* [{{site.data.keyword.hpe-zerto}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
+* [Managing {{site.data.keyword.hpe-zerto}}](/docs/vmwaresolutions?topic=vmwaresolutions-managingzertodr)
+* [Managing {{site.data.keyword.hpe-zerto}} stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
 * [Why does the Zerto Migration from Windows Zerto Virtual Manager to Linux ZVM Appliance fail?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_zerto_zvma_migration)
 * [How to change the IP address of a ZVM server and preserve replicated data and VPG configuration](https://help.zerto.com/bundle/z-kb-articles-zertokbs/page/4268.html){: external}

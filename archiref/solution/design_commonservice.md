@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 subcollection: vmwaresolutions
 
@@ -42,7 +42,7 @@ Active Directory serves to authenticate accesses to manage the VMware® instance
 ### vSphere Single Sign On (SSO) domain
 {: #design_commonservice-vsphere-sso}
 
-The vSphere Single Sign On (SSO) domain is used as the initial authentication mechanism for a single instance or multiple linked instances. The SSO domain also serves to connect a VMware instance or multiple linked instances to the MSAD server. The following SSO configuration is applied:  
+The vSphere Single Sign On (SSO) domain is used as the initial authentication mechanism for a single instance or multiple linked instances. The SSO domain also serves to connect a VMware instance or multiple linked instances to the MSAD server. The following SSO configuration is applied:
 * The SSO domain of `vsphere.local` is always used.
 * For VMware instances that are tied to an existing instance, the vCenter Server appliance is joined to the existing instance’s SSO domain.
 * The SSO site name is the root domain that was chosen when you deployed your instance.
@@ -82,7 +82,7 @@ This design integrates DNS services on the AD VMs in the following configuration
 
 For cross-instance redundancy, when the first secondary {{site.data.keyword.vcf-auto}} instance is added to an existing primary or stand-alone {{site.data.keyword.vcf-auto}} instance, that primary instance AD DNS server IP address is used in the secondary {{site.data.keyword.vcf-auto}} instance and in any subsequent secondary instance “secondary DNS” entry for all components that require a DNS server entry.
 
-For example, ESXi, vCenter, and NSX Manager, and also add-on components, such as, HCX, Zerto, and Veeam. The primary site secondary DNS entry is then changed to the AD/DNS IP address of the first secondary {{site.data.keyword.vcf-auto}} instance.
+For example, ESXi, vCenter, and NSX Manager, and also add-on components, such as, HCX, {{site.data.keyword.hpe-zerto}}, and Veeam. The primary site secondary DNS entry is then changed to the AD/DNS IP address of the first secondary {{site.data.keyword.vcf-auto}} instance.
 
 ## NTP services
 {: #design_commonservice-ntp}

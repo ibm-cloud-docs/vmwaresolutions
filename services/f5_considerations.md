@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-04"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -31,11 +31,11 @@ F5 BIG-IP on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offer
 You can install more than one instance of this service as needed.
 {: shortdesc}
 
-F5 BIG-IP is supported for instances with VMware NSX-T 3.1 or later and VMware vSphere® 7 or later.
+F5 BIG-IP is supported for instances with VMware NSX-T™ 3.1 or later and VMware vSphere® 7 or later.
 
 {{site.data.content.para-promotion-services}}
 
-The F5 BIG-IP version available for deployment is 17.5.
+The F5 BIG-IP version available for deployment is 17.5.1.3.
 {: note}
 
 ## Technical specifications for F5 BIG-IP

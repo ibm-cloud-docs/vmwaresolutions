@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 subcollection: vmwaresolutions
 
@@ -66,7 +66,7 @@ You are responsible for securing, encrypting, and monitoring your VMware instanc
 Complete the following steps to customize the base VMware instance installation to fit your requirements.
 - Use your own certificate authority (CA) to generate certificates for components such as vCenter and NSX Manager.
 - Configure deployed services. For example,
-   - For Zerto, plan for IP addressing and routing of Zerto Virtual Replication Appliance (VRA) communications since network address translator (NAT) traversal is not supported. Consider either tunneling or redeployment of your VRAs for appropriate addressing and routing.
+   - For {{site.data.keyword.hpe-zerto}}, plan for IP addressing and routing of Zerto Virtual Replication Appliance (VRA) communications since network address translator (NAT) traversal is not supported. Consider either tunneling or redeployment of your VRAs for appropriate addressing and routing.
    - For backup services such as Veeam® and IBM Spectrum® Protect Plus, configure your backup job, optionally configure extra storage, and configure monitoring alerts.
    - For networking and security services such as F5® BIG-IP and FortiGate Virtual Appliance, configure network interfaces, certificates, high availability (HA) configuration, and rules according to your network topology and other requirements.
 
@@ -88,7 +88,7 @@ Complete the following steps to ensure proper planning for software maintenance.
 - If applicable, set up vSAN through a proxy to maintain the vSAN Hardware Compatibility List (HCL) database.
 - Plan regular maintenance for VMware components that are not supported by VUM. For example, VMware vCenter and NSX.
 - Review vSphere Enhanced vMotion Compatibility (EVC) configuration. Your cluster might not be configured with EVC enabled if the current version of vSphere does not support EVC for your hardware level.
-- Plan regular maintenance for add-on services such as Veeam, Zerto, and F5 BIG-IP.
+- Plan regular maintenance for add-on services such as Veeam, {{site.data.keyword.hpe-zerto}}, and F5 BIG-IP.
 
 ## Monitoring
 {: #solution_considerations-monitoring}
@@ -113,7 +113,7 @@ Complete the following steps to ensure that you make adequate plans for HA and b
 - Configure resource pools, as needed, for management and workload.
 - Plan, implement, and monitor a backup solution for both [instance management components](/docs/vmwaresolutions?topic=vmwaresolutions-solution_backingup) and workload.
 - Plan for HA of instance management, including the possibility of multiple instances, multiple clusters, vCenter HA.
-- Use solutions such as [Zerto Disaster Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) or [Veeam Backup and Replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) to plan for business continuity for your workloads.
+- Use solutions such as [{{site.data.keyword.hpe-zerto}} Disaster Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) or [Veeam Backup and Replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) to plan for business continuity for your workloads.
 
 ## Storage planning
 {: #solution_considerations-storage}

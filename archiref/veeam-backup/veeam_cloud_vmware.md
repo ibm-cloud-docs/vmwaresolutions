@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-11-24"
+lastupdated: "2025-12-02"
 
 keywords: veeam, veeam ibm cloud vmware
 
@@ -69,8 +69,8 @@ The following information helps you configure the post-service deployment to exp
 * To connect to your block storage, see [Connecting to iSCSI LUNS on Microsoft Windows](/docs/BlockStorage?topic=BlockStorage-mountingWindows&interface=ui).
 * To expand your block storage, see [Expanding Block Storage for Classic capacity](/docs/BlockStorage?topic=BlockStorage-expandingcapacity&interface=ui).
 * To mount iSCSI LUN, see:
-   * [Mount iSCSI LUN on Red Hat Enterprise Linux 9](/docs/BlockStorage?topic=BlockStorage-mountingRHEL9&interface=ui)
-   * [Mount iSCSI LUN on Ubuntu 24](/docs/BlockStorage?topic=BlockStorage-mountingubu24&interface=ui)
+   * [Mount iSCSI LUN on Red Hat Enterprise Linux 9](/docs/BlockStorage?topic=BlockStorage-mountingRHEL&interface=ui)
+   * [Mount iSCSI LUN on Ubuntu OS](/docs/BlockStorage?topic=BlockStorage-mountingUbuntu&interface=ui)
    * [Mount iSCSI LUN on CloudLinux 8](/docs/BlockStorage?topic=BlockStorage-mountingCloudLin8&interface=ui)
 
 ## Related links

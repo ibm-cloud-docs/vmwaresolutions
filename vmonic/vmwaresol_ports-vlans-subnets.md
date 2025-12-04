@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 keywords: VLAN subnets, vmware solutions VLANs, subnets VLAN vmware solutions
 
@@ -27,10 +27,8 @@ It is not recommended to put a firewall on a secondary private VLAN that has sto
 | Public VLAN | Private VLAN | Secondary private VLAN |
 |:------------|:-------------|:-----------------------|
 | Primary subnet | Primary subnet | |
-| Portable subnets \n - Management edge gateway public \n - Customer edge gateway public | Portable subnets \n - Infrastructure VMs (VMware vCenter Server®, \n VMware NSX® Managers, NSX edges, \n Microsoft® Active Directory VMs, \n IBM® CloudDriver automation VSI) \n - NSX host Tunnel Endpoint (TEP) traffic[^hosttep-v7] \n - Customer edge gateway private | Portable subnets \n - VMware vSAN™ traffic \n - Shared storage traffic \n - vMotion traffic \n - NSX edge TEP traffic \n - Customer edge TEP traffic |
+| Portable subnets \n - Management edge gateway public \n - Customer edge gateway public | Portable subnets \n - Infrastructure VMs (VMware vCenter Server®, \n VMware NSX® Managers, NSX edges, \n Microsoft® Active Directory VMs, \n IBM® CloudDriver automation VSI) \n - Customer edge gateway private | Portable subnets \n - VMware vSAN™ traffic \n - Shared storage traffic \n - vMotion traffic \n - NSX TEP traffic for hosts and edges |
 {: caption="Subnets for public, private, and secondary private VLANs" caption-side="bottom"}
-
-[^hosttep-v7]: For Automated instances with vSphere 7
 
 ## Related links
 {: #vmwaresol_ports--vlans-subnets-related}

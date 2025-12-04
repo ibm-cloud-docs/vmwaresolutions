@@ -389,7 +389,7 @@ toc:
               - services/managing_vrops.md
           - topicgroup:
               id: zerto
-              label: Zerto
+              label: HPE Zerto Software
               topics:
               - services/addingzertodr.md
               - services/zerto_ordering.md

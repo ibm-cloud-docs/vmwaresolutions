@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-11-21"
+lastupdated: "2025-12-05"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -27,8 +27,34 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2025
 {: #year-2025}
 
+### 5 December 2025
+{: #vmwaresolutions-dec0525}
+{: release-note}
 
-   
+BOM updates for {{site.data.keyword.vcf-classic-short}}
+:   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
+
+   * VMware vCenter Server® Appliance  7.0 Update 3w (build 24927011)
+   * VMware NSX® 4.2.3.1 (build 24954727)
+
+Add-on services upgrades
+:   The following service versions are available for deployment:
+
+   * Caveonix RiskForesight™ v5.2.4
+   * F5® BIG-IP® v17.5.1.3
+   * FortiGate® Virtual Appliance v7.4.8
+
+Name change for Zerto
+:   The name of the Zerto add-on service is updated to {{site.data.keyword.hpe-zerto}} throughout the VMware Solutions documentation.
+
+TEP subnets and private VLAN updates
+:   For VMware Solutions V6.4 and earlier, the UI and the architecture documentation were inconsistent about the NSX tunnel endpoint (TEP) subnets:
+
+   * The UI and documentation indicated that these subnets were ordered on the secondary private VLAN.
+   * The VMware Solutions automation ordered the TEP subnets on the primary private VLAN.
+
+   Beginning with the V6.5 release, the automation is updated so that for new instances and clusters, these subnets are ordered on the secondary private VLAN. For more information, see [VLANs and subnets](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vlans-subnets).
+
 ### 21 November 2025
 {: #vmwaresolutions-nov2125}
 {: release-note}

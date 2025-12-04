@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade
 
@@ -168,13 +168,13 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
 2. Select **IMPORT ISO > IMPORT ISO**, and then the ``VMware-VMvisor-Installer-7.0U1c-17325551.iso`` file.
 3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
 4. For each host, choose the host in the vCenter browser tree. Then, select **update** (located in the far left in the main window).
-5. If the Zerto VRA is present on the host, put the host into maintenance mode first. Recent releases of Zerto stop the VRA, which otherwise would prevent the update.
+5. If the Zerto VRA is present on the host, put the host into maintenance mode first. Recent releases of {{site.data.keyword.hpe-zerto}} stop the VRA, which otherwise would prevent the update.
 6. Complete the update.
    1. [ATTACH] Baseline, select the previously created baseline.
    2. Select Baseline and [REMEDIATE].
 7. Remediate each host in turn. After remediation, ensure to pull the host out of maintenance mode.
 
-If the upgrade process fails immediately and the ``host cannot enter maintenance mode`` error message is displayed, shut down the Zerto ZVAs and try again. The ZVRA VMs automatically start as each server comes out of remediation. For more information about continuing Zerto Replication during the upgrade process, see [How to Place a Host with an Associated VRA into Maintenance Mode](https://www.zerto.com/myzerto/knowledge-base/how-to-place-a-host-with-an-associated-vra-into-maintenance-mode/){: external}.
+If the upgrade process fails immediately and the ``host cannot enter maintenance mode`` error message is displayed, shut down the Zerto ZVAs and try again. The ZVRA VMs automatically start as each server comes out of remediation. For more information about continuing {{site.data.keyword.hpe-zerto}} Replication during the upgrade process, see [How to Place a Host with an Associated VRA into Maintenance Mode](https://www.zerto.com/myzerto/knowledge-base/how-to-place-a-host-with-an-associated-vra-into-maintenance-mode/){: external}.
 {: note}
 
 ### Updating vCenter Server and ESXi host licenses

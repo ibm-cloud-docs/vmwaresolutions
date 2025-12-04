@@ -4,7 +4,7 @@ copyright:
 
   years: 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 keywords: HA firmware solutions, DR for vmware solutions, vmware solutions recovery time objective, vmware solutions recovery point objective
 
@@ -47,7 +47,7 @@ When appropriately configured, you can build highly available solutions by using
 
 When appropriately configured, you can build disaster recovery solutions by using VMware software. You must configure these features.
 
-* Replication software such as VMware Cloud Director Availability (VCDA), VMware Live Recovery by using vSphere replication, Veeam CDP, and Zerto Replication can be used to replicate your workloads from region to region.
+* Replication software such as VMware Cloud Director Availability (VCDA), VMware Live Recovery by using vSphere replication, Veeam CDP, and {{site.data.keyword.hpe-zerto}} Replication can be used to replicate your workloads from region to region.
 * Incremental backup software such as Veeam Backup and Replication and Zerto Journaling can be used, optionally in combination with IBM Cloud Object Storage (COS) to create local or remote backups of your workloads.
 
 ### Planning for disaster recovery
@@ -77,9 +77,9 @@ For more information about responsibility ownership between you and {{site.data.
 
 The RTO and RPO of your high availability and disaster recovery solution depends on your chosen solution.
 
-The only way to achieve zero RPO is to use application and database-level synchronous replication, or to use a storage subsystem implementing synchronous replication (for example, NFS storage within the same zone, vSAN storage within a single zone, or stretched vSAN storage between two zones). All other solutions that integrate with the VMware hypervisor APIs (for example, Veeam CDP and Zerto Replication) will have small but nonzero RPO.
+The only way to achieve zero RPO is to use application and database-level synchronous replication, or to use a storage subsystem implementing synchronous replication (for example, NFS storage within the same zone, vSAN storage within a single zone, or stretched vSAN storage between two zones). All other solutions that integrate with the VMware hypervisor APIs (for example, Veeam CDP and {{site.data.keyword.hpe-zerto}} Replication) will have small but nonzero RPO.
 
-The lowest RTO is obtained with active-active application deployments on multiple hosts or zones, with a load balancer or global load balancer (GLB) configured in front of them. Solutions that rely on restart of a VM (for example, vSphere HA) or on declaration of a disaster followed by restart of an entire workload (for example, Veeam CDP or Zerto Replication) will have longer RTO.
+The lowest RTO is obtained with active-active application deployments on multiple hosts or zones, with a load balancer or global load balancer (GLB) configured in front of them. Solutions that rely on restart of a VM (for example, vSphere HA) or on declaration of a disaster followed by restart of an entire workload (for example, Veeam CDP or Zerto Software Replication) will have longer RTO.
 
 ## Change management
 {: #change-management}

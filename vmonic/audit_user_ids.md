@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 keywords: user IDs vCenter, PSC user, user ID service
 
@@ -83,7 +83,7 @@ HTTP is used for vCenter Server setup, configuration, and VMware operations such
 | `prod-SPPlus-dynamicID-@domainName` | Used for installation and configuration of the IBM Spectrum® Protect Plus service. |
 | `prod-Veeam-dynamicID-@domainName` | Used for installation and configuration of the Veeam® service. |
 | `prod-HCX-dynamicID-@domainName` | Used for installation and configuration of the VMware HCX™ service. |
-| `prod-Zerto-dynamicID-@domainName` | Used for installation and configuration of the Zerto service. |
+| `prod-Zerto-dynamicID-@domainName` | Used for installation and configuration of the {{site.data.keyword.hpe-zerto}} service. |
 {: caption="Service user IDs" caption-side="bottom"}
 {: #audit_user_ids-services-table}
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-04"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -24,11 +24,11 @@ FortiGate® Virtual Appliance on {{site.data.keyword.cloud}} deploys a pair of F
 {: shortdesc}
 
 * You can install multiple instances of this service as needed. You can manage this service by using the FortiOS Web Client or the CLI through SSH.
-* FortiGate Virtual Appliance is supported for instances with VMware NSX-T 3.1 or later and VMware vSphere® 7 or later.
+* FortiGate Virtual Appliance is supported for instances with VMware NSX-T™ 3.1 or later and VMware vSphere® 7 or later.
 
 {{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months at no cost for a service license, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
 
-The FortiGate Virtual Appliance version available for deployment is 7.4.3.
+The FortiGate Virtual Appliance version available for deployment is 7.4.8.
 {: note}
 
 ## Technical specifications for FortiGate Virtual Appliance

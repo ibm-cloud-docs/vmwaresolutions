@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 subcollection: vmwaresolutions
 
@@ -38,7 +38,7 @@ The offerings are described in detail in the following documents:
 
 * [{{site.data.keyword.vcf-auto-short}} as a single site deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) - This offering deploys a VMware® based platform in a single {{site.data.keyword.cloud_notm}} data center automatically.
 * [{{site.data.keyword.vcf-auto-short}} as a multisite deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) - This offering deploys a secondary VMware {{site.data.keyword.vcf-auto-short}}® instance in a single {{site.data.keyword.cloud_notm}} data center automatically. It is linked to a primary [{{site.data.keyword.vcf-auto-short}} single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) previously deployed. Multiple secondary instances can be created.
-* {{site.data.keyword.vcf-auto-short}} dual-site - This deployment pattern is based on two [{{site.data.keyword.vcf-auto-short}} single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) deployments but not in a primary-secondary relationship as in the [{{site.data.keyword.vcf-auto-short}} multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) pattern. This is typically used in a production-disaster recovery pattern by using Zerto or Veeam® replication between the two sites.
+* {{site.data.keyword.vcf-auto-short}} dual-site - This deployment pattern is based on two [{{site.data.keyword.vcf-auto-short}} single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) deployments but not in a primary-secondary relationship as in the [{{site.data.keyword.vcf-auto-short}} multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) pattern. This is typically used in a production-disaster recovery pattern by using {{site.data.keyword.hpe-zerto}} or Veeam® replication between the two sites.
 
 In the {{site.data.keyword.vcf-auto-short}} deployments, each site, and each instance has its own NSX-T Manager cluster. In the multisite deployments, the vCenter, NSX-T managers, and domain controller components are deployed per site. Each instance on each site has [a default NSX-T overlay topology](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and no networking integrations nor dependencies exist between the sites.
 {: note}

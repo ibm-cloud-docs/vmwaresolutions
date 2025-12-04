@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 subcollection: vmwaresolutions
 
@@ -30,7 +30,7 @@ In {{site.data.keyword.cloud_notm}}, you need to deploy a new {{site.data.keywor
 3. You can deploy the new {{site.data.keyword.vcf-auto-short}} with NSX-T instance in new VLANs and a new pod, or you can use existing VLANs. 25GE NICs might not be available on the same pod. Also, you cannot move the subnets between VLANs, if, for example, you need to reuse the public IP addresses. Analyze your networking needs and then decide.
 4. Migrate your network configurations from NSX-V to NSX-T. As the NSX-T architecture is different, you have the opportunity to design and implement the overlay network and configurations based on NSX-T best practices. NSX-T offers scripting capabilities or you can use Terraform to define your topology. You can alternatively use NSX-T Migration Coordination tool or third-party tools to migrate your existing network configurations, firewall, and load-balancing rules.
 5. To minimize network downtime, the L2 extension is typically used between NSX-V logical switches and NSX-T overlay segments. You can use either NSX-T Bridging or HCX™ Network Extension here. HCX provides tools for bulk and vMotion migrations, too.
-6. After your network configurations are migrated or prepared for migration, you can start to migrate your workloads between the environments. Here you have a choice of various methods. With HCX, you have a single tool to do both L2 extension and migration. You can also use Advanced vMotion and storage vMotion between the environments. In addition, you can use services and tools from [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) or [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
+6. After your network configurations are migrated or prepared for migration, you can start to migrate your workloads between the environments. Here you have a choice of various methods. With HCX, you have a single tool to do both L2 extension and migration. You can also use Advanced vMotion and storage vMotion between the environments. In addition, you can use services and tools from [{{site.data.keyword.hpe-zerto}}](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) or [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
 
 When you deploy a new {{site.data.keyword.vcf-auto-short}} with NSX-T instance, you get a new Active Directory (AD). If you customized your AD, you must migrate these changes to the AD of the new instance.
 {: note}

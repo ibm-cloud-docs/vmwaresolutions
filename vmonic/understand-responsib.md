@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 subcollection: vmwaresolutions
 
@@ -95,7 +95,7 @@ The following table describes the responsibilities that are related to disaster 
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
-| Business continuity and Disaster Recovery (DR) | Provide automated provision and integration for third-party services, such as Veeam and Zerto. | Provision third-party solutions such as Veeam and Zerto, or other solutions of your choice, along with the VMware Solutions instance. Configure these solutions to meet your business continuity and DR requirements for your workload. |
+| Business continuity and Disaster Recovery (DR) | Provide automated provision and integration for third-party services, such as Veeam and {{site.data.keyword.hpe-zerto}}. | Provision third-party solutions such as Veeam and {{site.data.keyword.hpe-zerto}}, or other solutions of your choice, along with the VMware Solutions instance. Configure these solutions to meet your business continuity and DR requirements for your workload. |
 {: row-headers}
 {: caption="Responsibilities for disaster recovery for VMware Solutions" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or {{site.data.keyword.IBM_notm}} might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}

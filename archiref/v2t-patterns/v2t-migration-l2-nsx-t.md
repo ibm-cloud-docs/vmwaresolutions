@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 {{site.data.content.vms-deprecated-note}}
 
-VMware NSX-V to VMware NSX-T™ migration in {{site.data.keyword.cloud}} is done by following the principles of the VMware® Lift-and-Shift Migration model, which consists of migrating the network configurations and workloads. Migrating workloads during this process can be done in many ways. For example, you can use Advanced Cross vCenter vMotion between the environments, or you can use other optional or existing third-party tools like Veeam® or Zerto.
+VMware NSX-V to VMware NSX-T™ migration in {{site.data.keyword.cloud}} is done by following the principles of the VMware® Lift-and-Shift Migration model, which consists of migrating the network configurations and workloads. Migrating workloads during this process can be done in many ways. For example, you can use Advanced Cross vCenter vMotion between the environments, or you can use other optional or existing third-party tools like Veeam® or {{site.data.keyword.hpe-zerto}}.
 
 ## Using NSX-T L2 bridge in migration
 {: #v2t-l2-nsx-t-bridge}
@@ -58,11 +58,11 @@ For more information, see [Ordering services for {{site.data.keyword.vcf-auto-sh
 ## Migrating workloads with Zerto
 {: #v2t-l2-nsx-t-zerto}
 
-{{site.data.keyword.vcf-auto-short}} instances offer an optional service for Zerto. The Zerto service integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}.
+{{site.data.keyword.vcf-auto-short}} instances offer an optional service for {{site.data.keyword.hpe-zerto}}. The {{site.data.keyword.hpe-zerto}} service integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}.
 
-You can use Zerto's Replication capabilities during the migration.
+You can use {{site.data.keyword.hpe-zerto}} Replication capabilities during the migration.
 
-For more information, see [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices) and [Zerto product documentation](https://help.zerto.com){: external}.
+For more information, see [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices) and [{{site.data.keyword.hpe-zerto}} product documentation](https://help.zerto.com){: external}.
 
 ## Considerations for using NSX-T L2 bridge in migration
 {: #v2t-l2-nsx-t-considerations}
@@ -79,5 +79,5 @@ After all the workloads are migrated from NSX-V to NSX-T, you can remove the bri
 * [Overview of edge bridging in NSX-T](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/overview-of-edge-bridging-in-nsx-t-data-center.html){: external}
 * [Extending Layer 2 networks with NSX-T edge bridge](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/migration-guide/preparing-layer-2-bridging-for-lift-and-shift-migration/extending-layer-2-networks-with-nsx-t-edge-bridge.html){: external}
 * [Veeam technical documentation](https://helpcenter.veeam.com/?ad=in-text-link){: external}
-* [Zerto product documentation](https://help.zerto.com){: external}
+* [{{site.data.keyword.hpe-zerto}} product documentation](https://help.zerto.com){: external}
 * [Migration between vCenter Server systems](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-and-host-management-7-0/migrating-virtual-machines-host-management/migration-with-vmotion-host-management/vmotion-across-vcenter-server-systems-host-management.html){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 subcollection: vmwaresolutions
 
@@ -33,7 +33,7 @@ KMIP for VMware is compatible with both VMware vSAN encryption and vSphere encry
 
 VMware vSAN encryption is only applicable to vSAN datastores. With this solution, VMware vCenter and your VMware ESXi™ hosts connect to a key management server such as KMIP for VMware to get encryption keys. These keys are used to protect individual disk drives used for your vSAN datastore, including both cache and capacity disks. vSAN encryption is implemented in a way that preserves the benefits of vSAN deduplication and compression, if you choose this option when you order a new instance or add a cluster.
 
-Because vSAN encryption operates at the datastore level, its primary goal is to prevent data exposure if loss of physical disk drives occurs. Also, vSAN encryption is fully compatible with all virtual machine (VM) backup and replication technologies, such as vSphere replication, cross-vCenter vMotion, VMware HCX™, Zerto, and Veeam®.
+Because vSAN encryption operates at the datastore level, its primary goal is to prevent data exposure if loss of physical disk drives occurs. Also, vSAN encryption is fully compatible with all virtual machine (VM) backup and replication technologies, such as vSphere replication, cross-vCenter vMotion, VMware HCX™, {{site.data.keyword.hpe-zerto}}, and Veeam®.
 
 #### VMware vSAN encryption notes
 {: #kmip-design-vsan-encrypt-notes}
@@ -52,7 +52,7 @@ With this solution, vCenter Server and your ESXi hosts connect to a key manageme
 
 vSphere encryption operates at the VM disk level, and so it can prevent data exposure if loss of physical disk drives or loss of VM disks occurs. Some backup and replication technologies cannot back up or replicate effectively because the provided data is encrypted.
 
-vSphere encryption is not compatible with VMware HCX or Zerto. vSphere encryption is compatible with cross-vCenter vMotion and with vSphere replication when you use vSphere 7 or later. When properly configured, Veeam Backup and Replication is compatible with vSphere encryption.
+vSphere encryption is not compatible with VMware HCX or {{site.data.keyword.hpe-zerto}}. vSphere encryption is compatible with cross-vCenter vMotion and with vSphere replication when you use vSphere 7 or later. When properly configured, Veeam Backup and Replication is compatible with vSphere encryption.
 
 ### More considerations
 {: #kmip-design-considerations}

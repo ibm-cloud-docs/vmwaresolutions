@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 subcollection: vmwaresolutions
 
@@ -125,7 +125,7 @@ This is not a key parameter. However, it gives guidance on where more project ta
 ## Additional services
 {: #v2t-complexity-services}
 
-The optional vCenter server instance services, such as Veeam or Zerto are linked to your vCenter server instance. By deleting the source {{site.data.keyword.vcf-auto}} instance, these services are deleted, and so are your historical backups.
+The optional vCenter server instance services, such as Veeam or {{site.data.keyword.hpe-zerto}} are linked to your vCenter server instance. By deleting the source {{site.data.keyword.vcf-auto}} instance, these services are deleted, and so are your historical backups.
 
 You must reconfigure the services or migrate configurations post-deployment. This action is done to match your needs and requirements in the new target NSX-T based {{site.data.keyword.vcf-auto}} instance.
 

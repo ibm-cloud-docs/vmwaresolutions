@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-11-19"
+lastupdated: "2025-12-03"
 
 subcollection: vmwaresolutions
 
@@ -208,7 +208,7 @@ AD DS DNS is configured with a forward lookup zone with the name of <root_domain
 * `clouddriver`
 * `<instance_name>-vc`
 * `<instance_name>-nsx`
-* Add-on services when ordered. For example, HCX, Caveonix RiskForesight, Veeam, or Zerto, with instance-specific names
+* Add-on services when ordered. For example, HCX, Caveonix RiskForesight, Veeam, or {{site.data.keyword.hpe-zerto}}, with instance-specific names
 
 Reverse lookup zones with the start of authority (SOA), name server (NS), and the required pointer (PTR) records for the appliances are configured in the following subnets:
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 subcollection: vmwaresolutions
 
@@ -22,7 +22,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads relies upon VMware vSphere® encryption to secure management and production VMs while at-rest or in-transit. vSphere encryption applies to all types of VMware storage, including vSAN storage. With the vSphere encryption solution, VMware vCenter Server® and your VMware vSphere ESXi™ hosts connect to a key management server to get the required encryption keys. These keys are used to protect individual virtual machine (VM) disks, according to your VM storage policies.
 
-As vSphere encryption operates at the VM disk level, it can prevent regulated data exposure if loss of physical disk drives or loss of VM disks occurs. Many backup and replication technologies cannot back up or replicate effectively if the VM is encrypted. Also, vSphere encryption is not compatible with cross-vCenter vMotion, VMware HCX™, or Zerto. However, when properly configured, Veeam Backup and Replication is compatible with vSphere encryption.
+As vSphere encryption operates at the VM disk level, it can prevent regulated data exposure if loss of physical disk drives or loss of VM disks occurs. Many backup and replication technologies cannot back up or replicate effectively if the VM is encrypted. Also, vSphere encryption is not compatible with cross-vCenter vMotion, VMware HCX™, or {{site.data.keyword.hpe-zerto}}. However, when properly configured, Veeam Backup and Replication is compatible with vSphere encryption.
 
 ## Hyper Protect Crypto Services
 {: #vrw-encryption-hpcs}

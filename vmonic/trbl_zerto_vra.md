@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 keywords: troubleshooting, Zerto VRA, Zerto uninstall
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 
 {{site.data.content.vms-deprecated-note}}
 
-Zerto Virtual Replication Appliances (VRAs) are not removed after you use the {{site.data.keyword.slportal_full}} to successfully uninstall the Zerto service.
+Zerto Virtual Replication Appliances (VRAs) are not removed after you use the {{site.data.keyword.slportal_full}} to successfully uninstall the {{site.data.keyword.hpe-zerto}} service.
 {: tsSymptoms}
 
 Manually remove the VRAs from the vCenter® console.

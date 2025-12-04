@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-11-21"
+lastupdated: "2025-12-03"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ The following list provides the services that you might currently use:
 * [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
 * [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
-* [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
+* [{{site.data.keyword.hpe-zerto}}](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
 
 Plan to migrate these services to new services on the VMware NSX-T™ environment.
 
@@ -77,10 +77,10 @@ A secondary use case for Caveonix RiskForesight is the compliance reporting of t
 
 HCX™ is not being used for DR services, and so no HCX migration to the NSX-T instance is expected. HCX can be used as a migration tool. In this case, the NSX-T instance must be ordered with HCX.
 
-## Zerto
+## {{site.data.keyword.hpe-zerto}}
 {: #v2t-optionalservices-zerto}
 
-It is recommended that Zerto is deployed with the {{site.data.keyword.vcf-auto-short}} with NSX-T instance and that new site pairing is configured along with the required protection configuration.
+It is recommended that {{site.data.keyword.hpe-zerto}} is deployed with the {{site.data.keyword.vcf-auto-short}} with NSX-T instance and that new site pairing is configured along with the required protection configuration.
 
 ## IBM Spectrum Protect Plus
 {: #v2t-optionalservices-spp}

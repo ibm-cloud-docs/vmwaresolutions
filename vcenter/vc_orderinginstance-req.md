@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 keywords: vcf automated order instance, order vcf classic, order vmware cloud foundation instance
 
@@ -21,10 +21,7 @@ subcollection: vmwaresolutions
 
 To deploy a flexible and customizable VMware® virtualized platform that best fits your workload needs, order a {{site.data.keyword.vcf-auto}} instance.
 
-New deployments of multizone instances are not supported.
-{: deprecated}
-
-You can also add services, such as [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) for disaster recovery. For more information about the available services, see [Available services for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services).
+You can also add services, such as [{{site.data.keyword.hpe-zerto}}](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) for disaster recovery. For more information about the available services, see [Available services for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services).
 
 Price calculations are automatically generated when you access the instance order page. Default selections include the Data Center SP Professional license for NSX-T, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, and 768 GB RAM.
 
@@ -35,7 +32,7 @@ Ensure that you complete the following tasks:
 
 | Name        | Value format |
 |:------------|:------------ |
-| Domain name | `<root_domain>` |  
+| Domain name | `<root_domain>` |
 | vCenter Server login username | `<user_id>@<root_domain>` (Microsoft® Active Directory™ user) or `administrator@vsphere.local` |
 | vCenter Server (with embedded PSC) FQDN | `<instance_name>-vc.<root_domain>`. The maximum length is 50 characters. Any hyphens (-) are removed from the instance name. |
 | Single Sign-On (SSO) site name | `<root_domain>` |

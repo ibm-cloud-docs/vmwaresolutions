@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -159,19 +159,19 @@ The following table provides information about the VMware Aria Operations ports 
 
 For more information about port requirements for VMware Aria Operations, see [TCP and UDP ports that are required to access VMware Aria Operations Manager](https://knowledge.broadcom.com/external/article?legacyId=52964){: external}.
 
-## Ports for Zerto
+## Ports for {{site.data.keyword.hpe-zerto}}
 {: #vmwaresol_ports-vmware-optional-services-zerto}
 
-The following table provides information about Zerto ports.
+The following table provides information about {{site.data.keyword.hpe-zerto}} ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
 | Zerto Virtual Manager (ZVM) VSI | Private primary subnet \n Infrastructure VMs | Zerto VRA agents | New subnet ordered in private VLAN | 4006 | TCP | TLS over TCP communication between ZVM and local site VRAs | |
 | ZVM VSI | Private primary subnet \n Infrastructure VMs | Zerto VRA agents | New subnet ordered in private VLAN | 4009 | TCP | TLS over TCP communication between the ZVM and local site VRAs to handle checkpoints | |
 | ZVM VSI | Private primary subnet \n Infrastructure VMs | Zerto VRA agents | New subnet ordered in private VLAN | | ICMP | Check network connectivity from ZVM to the VRAs | Ping |
-{: caption="Zerto ports" caption-side="bottom"}
+{: caption="{{site.data.keyword.hpe-zerto}} ports" caption-side="bottom"}
 
-For more information about Zerto networking, see [Zerto - prerequisites and requirements for vSphere environments](https://help.zerto.com/bundle/Prereq.VC.HTML.90/page/Prerequisites_Requirements_vSphere_Environments.htm){: external}.
+For more information about {{site.data.keyword.hpe-zerto}} networking, see [Zerto - prerequisites and requirements for vSphere environments](https://help.zerto.com/bundle/Prereq.VC.HTML.90/page/Prerequisites_Requirements_vSphere_Environments.htm){: external}.
 
 ## Ports for Entrust CloudControl, Entrust DataControl, and Entrust KeyControl - deprecated
 {: #vmwaresol_ports-vmware-optional-services-entrust}

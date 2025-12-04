@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2025
 
-lastupdated: "2025-10-27"
+lastupdated: "2025-12-03"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -89,7 +89,7 @@ The following table describes the data resiliency services that are available:
 | Service name | Description |
 |:------------ |:----------- |
 | [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | This service integrates directly with your VMware hypervisors to help your enterprise achieve high availability. You can control both the backup and restore of all VMs for your infrastructure from the Veeam console. |
-| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | This service provides replication and disaster recovery capabilities, which can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}. |
+| [{{site.data.keyword.hpe-zerto}}](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | This service provides replication and disaster recovery capabilities, which can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}. |
 | [VMware Cloud Director Availability for Disaster Recovery](/docs/vmware-service?topic=vmware-service-tenant-vcda-dr) | This service delivers simple, secure, and cost-effective onboarding, migration, and disaster recovery support for VCF as a Service. |
 | [ProtectIO](/infrastructure/vmware-solutions/console/newserviceentry/ProtectIO/vcs) | This service provides a robust disaster recovery solution while leveraging the latest cloud economics for an attractive Total Cost of Ownership. |
 {: caption="Data resiliency services" caption-side="bottom"}

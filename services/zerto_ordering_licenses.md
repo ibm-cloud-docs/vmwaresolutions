@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 keywords: Zerto, Zerto license, order Zerto license
 
@@ -14,27 +14,27 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Ordering Zerto stand-alone licenses
+# Ordering {{site.data.keyword.hpe-zerto}} stand-alone licenses
 {: #zerto_ordering_licenses}
 
 {{site.data.content.vms-deprecated-note}}
 
-You can order a Zerto license without associating it to any {{site.data.keyword.vcf-auto}} instance for licensing and activation of your on-premises workloads.
+You can order a {{site.data.keyword.hpe-zerto}} license without associating it to any {{site.data.keyword.vcf-auto}} instance for licensing and activation of your on-premises workloads.
 
 ## Before you begin
 {: #zerto_ordering_licenses-before-begin}
 
 Ensure that you configured the {{site.data.keyword.cloud}} infrastructure credentials on the **Settings** page. For more information, see [Managing user accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount).
 
-You must have a billable {{site.data.keyword.cloud_notm}} account to order Zerto licenses and the account must be linked to the {{site.data.keyword.cloud_notm}} infrastructure account where your instance is deployed. For more information, see [Billing for Zerto replication](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering#zerto_ordering-billing).
+You must have a billable {{site.data.keyword.cloud_notm}} account to order {{site.data.keyword.hpe-zerto}} licenses and the account must be linked to the {{site.data.keyword.cloud_notm}} infrastructure account where your instance is deployed. For more information, see [Billing for {{site.data.keyword.hpe-zerto}} Replication replication](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering#zerto_ordering-billing).
 {: important}
 
-## Procedure to order Zerto stand-alone licenses
+## Procedure to order {{site.data.keyword.hpe-zerto}} stand-alone licenses
 {: #zerto_ordering_licenses_ordering-procedure}
 
 1. {{site.data.content.ol-intro-ui-licenses}}
-2. Scroll down to the **Zerto licenses** table and click **Create new**.
-3. On the **Zerto license** page, specify the resource group.
+2. Scroll down to the **{{site.data.keyword.hpe-zerto}} licenses** table and click **Create new**.
+3. On the **{{site.data.keyword.hpe-zerto}} license** page, specify the resource group.
 
    {{site.data.content.note-orderinginstance-resource-group}}
 
@@ -45,14 +45,14 @@ You must have a billable {{site.data.keyword.cloud_notm}} account to order Zerto
 8. Click the link or links of the license agreements that apply to your order and ensure that you agree with them before you order the license.
 9. Click **Add to estimate**, **Upgrade**, or **Create**. The **Upgrade** option is displayed if you must upgrade your {{site.data.keyword.cloud_notm}} account to a billable account.
 
-   Within 15 days, you must configure the Call Home feature for Zerto. If you do not complete the configuration in this time frame, Zerto blocks certain management activities. For more information about the Call Home feature for Zerto, see [Considerations for ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering#zerto_ordering-private-only).
+   Within 15 days, you must configure the Call Home feature for {{site.data.keyword.hpe-zerto}}. If you do not complete the configuration in this time frame, {{site.data.keyword.hpe-zerto}} blocks certain management activities. For more information about the Call Home feature for {{site.data.keyword.hpe-zerto}}, see [Considerations for ordering {{site.data.keyword.hpe-zerto}}](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering#zerto_ordering-private-only).
    {: attention}
 
 ## Results
 {: #zerto_ordering_licenses-results}
 
 1. The status changes to **Ordering** when you submit your order.
-2. When IBM Support receives your order, a license key request is sent to Zerto and the status changes to **Completed**.
+2. When IBM Support receives your order, a license key request is sent to {{site.data.keyword.hpe-zerto}} and the status changes to **Completed**.
 3. IBM Support sends the key to the email address that is associated with the order, typically within two business days.
 
    The email address is added by default to the **Email address** field of the order.
@@ -61,7 +61,7 @@ You must have a billable {{site.data.keyword.cloud_notm}} account to order Zerto
 ## Related links
 {: #zerto_ordering_licenses-related}
 
-* [Zerto overview](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
-* [Managing Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-managingzertodr)
-* [Managing Zerto stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
-* [Zerto technical documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}
+* [{{site.data.keyword.hpe-zerto}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
+* [Managing {{site.data.keyword.hpe-zerto}}](/docs/vmwaresolutions?topic=vmwaresolutions-managingzertodr)
+* [Managing {{site.data.keyword.hpe-zerto}} stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
+* [{{site.data.keyword.hpe-zerto}} technical documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}

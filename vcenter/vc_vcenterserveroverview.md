@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-30"
+lastupdated: "2025-12-03"
 
 keywords: vcf automated, vcf classic architecture, tech specs vmware cloud foundation
 
@@ -89,7 +89,7 @@ The following networking components are ordered:
 * Three VLANs (Virtual LANs) - one public and two private
 * One overlay network with a T1 and T0 router for potential east-west communication between local workloads that are connected to layer 2 (L2) networks. This network is deployed as a sample routing topology, which you can modify, build on, or remove.
 * Two VMware NSX Edge clusters:
-   * One secure management service VMware NSX Edge cluster for outbound traffic for add-on services, which is deployed by IBM as part of the management networking typology. This edge cluster is used by add-on services such as Zerto, FortiGate® Virtual Appliance, and F5 BIG-IP® to communicate with external licensing and billing components.
+   * One secure management service VMware NSX Edge cluster for outbound traffic for add-on services, which is deployed by IBM as part of the management networking typology. This edge cluster is used by add-on services such as {{site.data.keyword.hpe-zerto}}, FortiGate® Virtual Appliance, and F5 BIG-IP® to communicate with external licensing and billing components.
 
       These edge nodes are named **service-edgeNN**. Do not modify or customize them. Otherwise, some of your add-on services might stop working."
       {: important}

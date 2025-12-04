@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 subcollection: vmwaresolutions
 
@@ -81,8 +81,8 @@ VLANs are used to segment physical network functions. This design uses three VLA
 
 | VLAN  | Designation | Traffic type |
 |:----- |:----------- |:------------ |
-| VLAN 1 | Private A   | ESXi management, management, Geneve (TEP), edge uplinks |
-| VLAN 2 | Private B   | vSAN, NFS, and vMotion |
+| VLAN 1 | Private A   | ESXi management, management, edge uplinks |
+| VLAN 2 | Private B   | Geneve (TEP), vSAN, NFS, and vMotion |
 | VLAN 3 | Public      | Available for internet access |
 {: caption="VLAN mapping to traffic types" caption-side="bottom"}
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-03"
 
 keywords: FAQ, host, ESXi server
 
@@ -52,7 +52,7 @@ It is recommended to keep root access enabled on the ESXi servers, otherwise fai
 
 If necessary, you can disable root access when the ESXi servers have a status of **Available** in the VMware Solutions console.
 
-You must re-enable root access for subsequent automation operations. For example, when you add or remove file shares, or when you install add-on services such as Zerto.
+You must re-enable root access for subsequent automation operations. For example, when you add or remove file shares, or when you install add-on services such as {{site.data.keyword.hpe-zerto}}.
 
 ## Can I use OS reload on the ESXi servers in my Automated instance?
 {: #faq_esxi-OS-reload}

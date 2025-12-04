@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-04"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ The journey from NSX-V to NSX-T requires careful planning and preparation. You m
 
 * Education - Training for the team who migrates to NSX-T and then runs NSX-T.
 * Migration planning and preparation - Review the current NSX-V environment to understand the complexity of the migration, and key business drivers that impact migration. Select the topology for the target NSX-T environment.
-* Target platform selection, deployment, and configuration - This step also includes the setting-up of migration tools, such as L2 bridging or VMware HCX. Or also third-party tools, such as ReSTNSX's Migration Assistance Tool.
+* Target platform selection, deployment, and configuration - This step also includes the setting-up of migration tools, such as L2 bridging or VMware HCX™. Or also third-party tools, such as ReSTNSX's Migration Assistance Tool.
 * Configuration migration - These tasks include the setting up of the overlay components, which include NSX-T segments, routing, load balancing, edge firewall, distributed firewall, and tagging. Configuration migration can be done manually through scripting, such as Terraform or third-party tools.
 * Workload migration - This step includes layer 2 network stretching, if required, and virtual machine migration. Migration techniques include VMware HCX migrations or Advanced vCenter vMotion.
 
