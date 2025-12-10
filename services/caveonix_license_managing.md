@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-09"
 
 keywords: Caveonix view license, Caveonix manage license, delete Caveonix license
 
@@ -44,7 +44,7 @@ You can view, edit notes, or delete the Caveonix RiskForesight™ licenses that 
 
 If you are using Mozilla® Firefox® as your browser, the license start and end dates might be displayed with no values on the Caveonix RiskForesight console. To resolve the issue, view the license information in another browser, such as Google Chrome™.
 
-If you are experiencing this problem and the only browser you can use is Firefox, contact [Caveonix Support](https://www.caveonix.com/){: external} for assistance.
+If you are experiencing this problem and the only browser you can use is Firefox, contact [Caveonix Support](https://cavhq.ai/){: external} for assistance.
 {: note}
 
 ## Procedure to edit notes for Caveonix RiskForesight licenses

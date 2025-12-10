@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-09"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ subcollection: vmwaresolutions
 ## Management cluster
 {: #vrw-caveonix-management}
 
-[Caveonix RiskForesight](https://caveonix.com/){: external} provides a comprehensive cloud workload protection platform for {{site.data.keyword.rw}}. This platform delivers a common Risk Management Control Plane (RMCP) for continuous and proactive protection of management and edge workloads.
+[Caveonix RiskForesight](https://cavhq.ai/){: external} provides a comprehensive cloud workload protection platform for {{site.data.keyword.rw}}. This platform delivers a common Risk Management Control Plane (RMCP) for continuous and proactive protection of management and edge workloads.
 
 The RMCP enables the SaaS provider to maintain continuous and real-time visibility into workload deployments at scale, incorporating the most recent cyberthreats and regulatory compliance needs. RiskForesight also evaluates workload-specific cyberrisks and compliance risks and provides proactive defense by using agentless enforcement at network, security, and compute control planes of deployment.
 

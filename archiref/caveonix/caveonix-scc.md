@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-12-04"
+lastupdated: "2025-12-09"
 
 subcollection: vmwaresolutions
 
@@ -118,4 +118,4 @@ When you are reviewing the details on the dashboard, be aware of the following i
 
 * [Caveonix RiskForesight on {{site.data.keyword.cloud_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
 * [Getting started with {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection](/docs/workload-protection?topic=workload-protection-getting-started)
-* [Caveonix website](https://caveonix.com/){: external}
+* [Caveonix website](https://cavhq.ai/){: external}
