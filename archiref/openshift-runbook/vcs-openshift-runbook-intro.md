@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-26"
 
 subcollection: vmwaresolutions
 
@@ -69,7 +69,7 @@ This build process uses the following scripting tools and scripts:
 * Terraform - Terraform is a tool that codifies APIs into declarative configuration files. It uses a "provider" to interact with the infrastructure. A `.tf` file is used to describe the infrastructure as code. A `.tvars` file is used to store the variables for the deployment. The `main.tf` file holds the build instructions.
 * PowerShell is used on the AD DNS server to create the DNS entries.
 * PowerShell Core is available for Windows, Linux, and macOS systems. This tool is optional and it can be used on the jump-server or remote device to enable the use of PowerCLI. For more information, see [PowerShell Core](https://github.com/PowerShell/PowerShell){: external}.
-* PowerCLI - PowerCLI is a PowerShell interface for managing VMware vSphere®. You can automate all aspects of vSphere management, including network, storage, VMs, and guest OS. This tool is optional and it can be used on the jump-server or remote device to help the preparation of the vCenter Server instance. These steps can be done by using the GUI. For more information about how to install this tool, see [Install PowerCLI](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/esxi-installation-and-setup-6-7/installing-and-setting-up-esxi-install/installing-esxi-install/installing-esxi-using-vsphere-auto-deploy-install/set-up-vsphere-auto-deploy-and-provision-hosts-with-vsphere-powercli-install/install-powercli-install.html){: external}.
+* PowerCLI - PowerCLI is a PowerShell interface for managing VMware vSphere®. You can automate all aspects of vSphere management, including network, storage, VMs, and guest OS. This tool is optional and it can be used on the jump-server or remote device to help the preparation of the vCenter Server instance. These steps can be done by using the GUI. For more information about how to install this tool, see [ESX Installation and Setup](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/esx-installation-and-setup.html){: external}.
 * PowerNSX - PowerNSX is a PowerShell module that abstracts the VMware NSX API to a set of easily used PowerShell functions. This tool is optional and it can be used on the jump-server or remote device to help the preparation of NSX on the vCenter Server instance. These steps can be done by using the GUI. For more information, see [powernsx](https://github.com/vmware-archive/powernsx){: external}.
 
 ## Build process overview

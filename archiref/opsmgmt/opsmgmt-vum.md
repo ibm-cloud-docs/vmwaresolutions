@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-26"
 
 subcollection: vmwaresolutions
 
@@ -30,4 +30,4 @@ For the detailed design of VMware Update Manager, see [VMware Update Manager int
 ## Related links
 {: #opsmgmt-vum-links}
 
-* [About installing and administering vSphere Update Manager](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vsphere-update-manager-installation-and-administration-6-7/about-this-book-3.html){: external}
+* [vSphere Upgrade Options](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vcenter-upgrade/about-vsphere-upgrade.html){: external}

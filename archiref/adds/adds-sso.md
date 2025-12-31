@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-26"
 
 subcollection: vmwaresolutions
 
@@ -47,7 +47,7 @@ The vSphere SSO domain is used as the initial authentication mechanism and it se
 
 After deployment, the `administrator@vsphere.local` user has administrator access to both SSO and vCenter Server. This user can manage identity sources and default domains, specify password policies, and perform other administrative tasks in the `vsphere.local` domain. However, this user is integral to the VMware vSphere and VMware NSX® infrastructure authentication they are not part of AD but created automatically when vSphere is deployed. As this account is not part of AD, they can be used in situations when AD is not working correctly.
 
-As the customer, you have full access to manage the vSphere SSO users and groups as needed. For more information about changing these policies, see [Managing vCenter Single Sign-On users and groups](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/platform-services-controller-administration-6-7/vsphere-authentication-with-vcenter-single-sign-onplatform-services-controller-admin/managing-users-and-groups-with-ssoplatform-services-controller-admin.html){: external}.
+As the customer, you have full access to manage the vSphere SSO users and groups as needed. For more information about changing these policies, see [Managing vCenter Single Sign-On Users and Groups](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-authentication/vsphere-authentication-with-vcenter-single-sign-on/managing-users-and-groups-with-sso.html){: external}.
 
 ## Identity sources
 {: #adds-sso-identity}
@@ -94,7 +94,7 @@ For more information about the lockout policy, see [Policy configurations](/docs
 | Character requirements | * At least two alphabetic characters \n * At least one special character \n * At least one uppercase character \n * At least one lowercase character \n * At least one numeric character \n * Identical adjacent characters - 3 |
 {: caption="Password policy" caption-side="bottom"}
 
-As the customer, you have full access to tailor these settings as needed to apply your enterprise security policies. For changing these policies, see [Managing vCenter single sign-on policies](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/platform-services-controller-administration-6-7/vsphere-authentication-with-vcenter-single-sign-onplatform-services-controller-admin/vmware-single-sign-on-policesplatform-services-controller-admin.html){: external}.
+As the customer, you have full access to tailor these settings as needed to apply your enterprise security policies. For changing these policies, see [Managing vCenter Single Sign-On Policies](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-authentication/vsphere-authentication-with-vcenter-single-sign-on/vmware-single-sign-on-polices.html){: external}.
 
 ## vSphere ESXi hosts
 {: #adds-sso-esxi}
