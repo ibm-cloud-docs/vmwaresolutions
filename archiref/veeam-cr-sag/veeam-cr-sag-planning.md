@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-11-25"
+lastupdated: "2025-12-31"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ Plan the deployment by capturing information for use in the subsequent steps. Se
 Capture the following details of the {{site.data.keyword.vcf-auto}} instance and Veeam® service instance:
 
 | Parameter | Description |
-|-----------|-------------|
+| ----------- | ------------- |
 | `<root_domain>` | The {{site.data.keyword.vcf-auto-short}} instance domain name. For example, `test.ibmcloud.local` |
 | `<sub_domain>` | The {{site.data.keyword.vcf-auto-short}} instance subdomain name. For example, if the root domain is `test.ibmcloud.local`, then the subdomain is `test`. |
 | `<dc_code>` | The code for the data center in which the {{site.data.keyword.vcf-auto-short}} instance is deployed into, such as DAL10. |
@@ -40,7 +40,7 @@ Capture the following details of the {{site.data.keyword.vcf-auto}} instance and
 | `<private_subnet>` | The `Primary subnet for hosts and virtual server instances` on the `Private VLAN` can be obtained from the UI by browsing to the {{site.data.keyword.vcf-auto-short}} instance's Infrastructure page. |
 | `<private_subnet_id>` | The ID can be found from the subnet identifier and the {{site.data.keyword.cloud_notm}} CLI. For example, for subnet `10.38.207.128`, `ibmcloud sl subnet list` `awk '/10.38.207.128/ { print "Private_Subnet_ID: " $1 }'`. |
 | `<public_subnet>` | The `Primary subnet for hosts and virtual server instances` on the `Public VLAN`. |
-| `<public_subnet_id>` | The ID can be found from the subnet identifier and the {{site.data.keyword.cloud_notm}} CLI. For example, for subnet `169.60.242.0`, `ibmcloud sl subnet list` `awk '/169.60.242.0/ { print "Public_Subnet_ID: " $1 }'`|
+| `<public_subnet_id>` | The ID can be found from the subnet identifier and the {{site.data.keyword.cloud_notm}} CLI. For example, for subnet `169.60.242.0`, `ibmcloud sl subnet list` `awk '/169.60.242.0/ { print "Public_Subnet_ID: " $1 }'` |
 | `<addns_fqdn>` | The FQDN can be obtained from the UI by browsing to the {{site.data.keyword.vcf-auto-short}} instance's Summary page. |
 | `<addns_1>` | The IP address of the first AD/DNS server can be obtained from the UI by browsing to the {{site.data.keyword.vcf-auto-short}} instance's Summary page. |
 | `<addns_2>` | The IP address of the second AD/DNS server can be obtained from the UI by browsing to the {{site.data.keyword.vcf-auto-short}} instance's Summary page. |
@@ -50,7 +50,7 @@ Capture the following details of the {{site.data.keyword.vcf-auto}} instance and
 Define the following parameters:
 
 | Parameter | Description |
-|-----------|-------------|
+| ----------- | ------------- |
 | `jmp_security_group_name` | The required name for the security group to protect the jump server. |
 | `as_security_group_name` | The required name for the security group to protect the automation server. |
 | `js_hostname` | The required jump server hostname. |
@@ -72,7 +72,7 @@ Define the following parameters:
 The following information is needed for the isolated recovery environment planning:
 
 | Parameter | Description |
-|-----------|-------------|
+| ----------- | ------------- |
 | `<public_key>` | A public key for vSRX user. |
 | `<vSRX_private_ip>` | The private IP of the vSRX that is reachable from the automation server. |
 | `<proxy_1_ip>` | The IP address of the Veeam cyberproxies in the production environment. Multiple proxies are possible. |

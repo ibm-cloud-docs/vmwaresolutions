@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-11-20"
+lastupdated: "2025-12-31"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -74,7 +74,7 @@ Order licenses for the VMware add-ons from the {{site.data.keyword.cloud_notm}} 
 3. Order the VMware add-on. The following table shows the VMware add-on that you need to order (from the {{site.data.keyword.cloud_notm}} console) depending on the license key that you need (in the VMware Solutions console):
 
 | VMware license key | VMware add-on |
-|:-------------------------- |:------------- |
+| :-------------------------- | :------------- |
 | VMware Avi Load Balancer | VMware Avi Load Balancer Enterprise 30.x |
 | VMware vDefend Gateway Firewall | vDefend Firewall - Gateway |
 | VMware vDefend Distributed Firewall | vDefend Firewall - Distributed |
@@ -83,8 +83,8 @@ Order licenses for the VMware add-ons from the {{site.data.keyword.cloud_notm}} 
 | VMware Live Site Recovery | VMware Site Recovery Manager 8.x |
 | VMware vDefend Gateway Firewall with Advanced Threat Prevention | VMware vDefend Firewall with ATP - Solution Key |
 | VMware vDefend Distributed Firewall with Advanced Threat Prevention | VMware vDefend Firewall with ATP - Solution Key |
-| vSphere v7 | VMware Cloud Foundation with vSphere 7.0  |
-| vSphere v8 | VMware Cloud Foundation with vSphere 8.0  |
+| vSphere v7 | VMware Cloud Foundation with vSphere 7.0 |
+| vSphere v8 | VMware Cloud Foundation with vSphere 8.0 |
 {: caption="VMware license keys and VMware add-ons mappings" caption-side="bottom"}
 
 You can also cancel the VMware add-ons from the {{site.data.keyword.cloud_notm}} console.

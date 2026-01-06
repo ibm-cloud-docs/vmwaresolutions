@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-12-31"
 
 keywords: vmware solutions packaging, vmware solutions pricing, vmware solutions naming
 
@@ -31,7 +31,7 @@ Existing VMware Solutions offerings are no longer available as separate componen
 The following table shows the changes of the offering names across the VMware Solutions portfolio:
 
 | Current offering | Updated offering |
-|:---------------- |:---------------- |
+| :---------------- | :---------------- |
 | VMware as a Service | **{{site.data.keyword.vmware-service_short}}** or **{{site.data.keyword.vcf-aas}}** |
 | VMware Cloud Foundation | **{{site.data.keyword.vcf-vpc}}** or **{{site.data.keyword.vcf-vpc-short}}** |
 | VMware vCenter Server® | **{{site.data.keyword.vcf-auto}}** or **{{site.data.keyword.vcf-auto-short}}** |
