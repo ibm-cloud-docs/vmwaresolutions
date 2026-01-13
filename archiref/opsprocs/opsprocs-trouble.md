@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-12-26"
+lastupdated: "2026-01-12"
 
 subcollection: vmwaresolutions
 
@@ -80,7 +80,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 | Old VM network devices | For VM network devices that are not kept up-to-date, network performance and application performance might be impacted. For more information about deploying a new virtual network device and driver, see [Choosing a network adapter for your virtual machine (1001805)](https://knowledge.broadcom.com/external/article?legacyId=1001805){: external}. |
 | Virtual Machine Memory Limit | Memory limits are often used. However, if a guest OS cannot access the memory that it needs, the applications inside the guest OS might perform poorly. For more information about resolving the issue, see [Configure Your Resource Allocation Settings in vSphere](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-resource-management/configuring-resource-allocation-settings.html){: external}. |
 | VM snapshots | While snapshots are useful, the quantity and age of a VM's snapshots directly impact the performance of the VM. For more information about resolving the issue, see [Manage Virtual Machines With Snapshots](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-virtual-machine-administration/managing-virtual-machinesvsphere-vm-admin/using-snapshots-to-manage-virtual-machinesvsphere-vm-admin.html){: external}. |
-| VM logging | When logging is not configured correctly the capacity of the datastore might be adversely impacted. For more information about resolving the issue, see [Configuring logging levels for the guest OS](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vsphere-monitoring-and-performance-6-7/system-log-files-monitoring/configuring-logging-levels-for-the-guest-operating-system-monitoring.html){: external}. |
+| VM logging | When logging is not configured correctly the capacity of the datastore might be adversely impacted. |
 | Troubleshooting network connection issues | Symptoms can include VM fails to connect to the network, or no network connectivity to or from a single VM. For more information about resolving the issue, see [Troubleshooting virtual machine network connection issues (1003893)](https://knowledge.broadcom.com/external/article?legacyId=1003893){: external}.  |
 | Determining whether multiple virtual CPUs are causing performance issues  | These issues can include poor transfer speeds when they copy data to or from a VM, if backup jobs timeout or are slow, or a VM performs poorly.  |
 | A VM was powered off or restarted  | For more information, see [Determining why a virtual machine was powered off or restarted (1019064)](https://knowledge.broadcom.com/external/article?legacyId=1019064){: external}. |
@@ -152,7 +152,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 |-------|-------------|
 |  Incompatible or incorrect license configuration | For more information, see [Troubleshooting ESX Hosts](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vcenter-and-host-management/troubleshooting-overview-host-management/troubleshooting-hosts-host-management.html){: external}. |
 |  VM does not power on | It ia possible that a license issue exists if you can't power on a VM on a vSphere ESXi host and you receive the ``The 60-day evaluation period of the host is expired or the license of the host is expired`` message. For more information, see [Virtual Machine Power On Operation Fails](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-resource-management/drs-troubleshooting-information/virtual-machine-problems/virtual-machine-problem-1.html){: external}. |
-| A feature is unavailable or inability to change a configuration  | For more information, see [Unable to configure or use a feature](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vcenter-and-host-management-6-7/troubleshooting-overview-host-management/troubleshooting-licensing-host-management/unable-to-configure-a-feature-host-management.html){: external}.  |
+| A feature is unavailable or inability to change a configuration  | No additional information |
 {: caption="Typical license troubleshooting" caption-side="bottom"}
 {: #table6}
 {: tab-title="Licenses"}

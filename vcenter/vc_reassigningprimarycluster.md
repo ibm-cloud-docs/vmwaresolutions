@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024, 2025
+  years:  2024, 2026
 
-lastupdated: "2025-11-20"
+lastupdated: "2026-01-12"
 
 keywords: reassign primary cluster, primary cluster
 
@@ -33,10 +33,10 @@ Review the following information before you reassign your primary cluster:
 The VM migration procedures are slightly different depending if any add-on services are installed on your instance.
 
 | Add-on service | Migration procedures |
-|:-------------- |:-------------------- |
-| Juniper® vSRX | Complete the following procedures: \n 1. [Migrate management VMs (vSRX)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm-vsrx) \n 2. [Deploy the NSX edge management VMs on the new cluster](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-deploy-new-nsx-edge-vm) |
-| Caveonix RiskForesight™ | Complete the following procedures: \n 1. [Create corresponding port groups (RiskForesight)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm-caveonix) \n 2. [Migrate management VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm) \n 3. [Deploy the NSX edge management VMs on the new cluster](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-deploy-new-nsx-edge-vm) |
-| Other services or no services | Complete the following procedures: \n 1. [Migrate management VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm) \n 2. [Deploy the NSX edge management VMs on the new cluster](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-deploy-new-nsx-edge-vm) |
+| :-------------- | :-------------------- |
+| Juniper® vSRX | Complete the following procedures: \n 1. [Migrate management VMs (vSRX)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm-vsrx) \n 2. [Deploy the NSX edge management VMs on the new cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-deploy-new-nsx-edge-vm) |
+| Caveonix RiskForesight™ | Complete the following procedures: \n 1. [Create corresponding port groups (RiskForesight)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm-caveonix) \n 2. [Migrate management VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm) \n 3. [Deploy the NSX edge management VMs on the new cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-deploy-new-nsx-edge-vm) |
+| Other services or no services | Complete the following procedures: \n 1. [Migrate management VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-migrate-mgmt-vm) \n 2. [Deploy the NSX edge management VMs on the new cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_reassigningprimarycluster#vc_reassigningprimarycluster-deploy-new-nsx-edge-vm) |
 {: caption="VM migration procedures for add-on services" caption-side="bottom"}
 
 ### Procedure to migrate management VMs (vSRX)
@@ -65,7 +65,7 @@ If the Juniper vSRX service is installed on your instance, complete the followin
 4. Import the port group configurations into the target cluster:
    1. Go to the **Networks** tab of the target cluster.
    2. Right-click the switch `<instance_name>-<target_cluster_name>` and click **Distributed Port Group > Import Distributed Port Group**.
-   3. Under **Import port group configuration**, click **Browse** and upload the corresponding configuration file that you exported in **Step 3**. Click **Next**. Under **Ready to complete**, verify the information and click **Finish**. 
+   3. Under **Import port group configuration**, click **Browse** and upload the corresponding configuration file that you exported in **Step 3**. Click **Next**. Under **Ready to complete**, verify the information and click **Finish**.
    4. Complete the previous 2 steps for `<instance_name>-<source_cluster_name>-public`.
 
 5. Re-create the resource pool:
@@ -148,7 +148,7 @@ RiskForesight is installed with its own port group named **SDDC-DPortGroup-Caveo
 ### Procedure to deploy the NSX edge management VMs on the new cluster
 {: #vc_reassigningprimarycluster-deploy-new-nsx-edge-vm}
 
-After you migrate the management VMs, you must deploy the NSX edge management VMs on the new (target) cluster. 
+After you migrate the management VMs, you must deploy the NSX edge management VMs on the new (target) cluster.
 
 Review the following information before you redeploy:
 * Ensure that a new subnet is available on the same VLAN as the IP addresses assigned to the original (source) NSX edge.

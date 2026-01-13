@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-12-26"
+lastupdated: "2026-01-12"
 
 subcollection: vmwaresolutions
 
@@ -226,8 +226,8 @@ If you have a vSAN cluster, the additional preconfigured alarms in the following
 | Expired vSAN license | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Troubleshooting vCenter and ESX Host Certificates](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vcenter-and-host-management/troubleshooting-overview-host-management/troubleshooting-vcenter-server-certificates-host-management.html){: external} |
 | Errors occurred on the disks of a vSAN host | Configure to send an email one time when a permanent error is on a vSAN disk. | No additional information  |
 | Errors occurred on the disks of a vSAN host | Configure to send an email one time when the `Virtual SAN device is under permanent failure` critical event occurs. | No additional information |
-| Expired vSAN license | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Configure License Settings for a vSAN Cluster](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vcenter-and-host-management-6-7/license-management-host-management/managing-licenses-host-management/configuring-license-settings-for-assets-in-the-vsphere-client-host-management/assign-a-license-key-to-a-virtual-san-cluster-host-management.html){: external} |
-| Expired vSAN time-limited license | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Configure License Settings for a vSAN Cluster](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/vcenter-and-host-management-6-7/license-management-host-management/managing-licenses-host-management/configuring-license-settings-for-assets-in-the-vsphere-client-host-management/assign-a-license-key-to-a-virtual-san-cluster-host-management.html){: external} |
+| Expired vSAN license | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
+| Expired vSAN time-limited license | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. |  No additional information |
 | vSAN hardware compatibility issues | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Check Information (2114803)](https://knowledge.broadcom.com/external/article?legacyId=2114803){: external} |
 | vSAN health alarm `Active multicast connectivity check` | Configure to send an email one time for a critical event. | No additional information |
 | vSAN health alarm `Advanced vSAN configuration in sync` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Cluster Health - Advanced vSAN configuration in sync (2107713)](https://knowledge.broadcom.com/external/article?legacyId=2107713){: external} |
