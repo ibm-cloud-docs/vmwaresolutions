@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024, 2025
+  years:  2024, 2026
 
-lastupdated: "2025-12-31"
+lastupdated: "2026-01-19"
 
 keywords: vmware solutions packaging, vmware solutions pricing, vmware solutions naming
 
@@ -47,7 +47,7 @@ For the most up-to-date pricing information, you can create a cost estimate by c
 {: important}
 
 * For {{site.data.keyword.vmware-service_short}} customers, discounts are available for longer-term commitments. For more information, contact your IBM Sales representative.
-* VMware Cloud Foundation (for Classic and for VPC Bare Metal Servers) is charged at a flexible, on-demand rate of $38 per core and per month with a minimum of 16 cores per CPU. Discounts are available for longer-term commitments.
+* VMware Cloud Foundation (for Classic and for VPC Bare Metal Servers) is charged at a flexible, on-demand rate. Discounts are available for longer-term commitments.
 * For existing {{site.data.keyword.vcf-vpc}} customers, this change represents a price reduction.
 * On 1 May 2024, the VMware Solutions Support and Services fee was removed.
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024, 2025
-lastupdated: "2025-10-24"
+  years: 2024, 2026
+lastupdated: "2026-01-19"
 
 keywords: log routing, log locations, platform logs, enable logging, log messages, analyze logs
 
@@ -108,11 +108,11 @@ For information about fields included in every platform log, see [Fields that ar
 
 The following fields are included in the log record:
 
-| Field             | Type       | Description             |
-|-------------------|------------|-------------------------|
-| `logSourceCRN`    | Required   | Defines the account and flow log instance where the log is published. |
-| `saveServiceCopy` | Required   | Defines whether IBM saves a copy of the record for operational purposes. |
-| `message`         | Required   | Description of the log that is generated. |
+| Field | Type | Description |
+| ------------------- | ------------ | ------------------------- |
+| `logSourceCRN` | Required | Defines the account and flow log instance where the log is published. |
+| `saveServiceCopy` | Required | Defines whether IBM saves a copy of the record for operational purposes. |
+| `message` | Required | Description of the log that is generated. |
 {: caption="Log record fields" caption-side="bottom"}
 
 ## Log messages
@@ -121,6 +121,6 @@ The following fields are included in the log record:
 The following tables list the message IDs that are generated and additional information available about these messages.
 
 | Message ID | Type | Learn More |
-|------------|------|------------|
+| ------------ | ------ | ------------ |
 | `is.flow-log-collector.00001E` | Error | Failed to write a Flow log file for the past 24 hours. Dropping flow log for Virtual Server _ServerName_ |
 {: caption="Additional information about message IDs" caption-side="bottom"}

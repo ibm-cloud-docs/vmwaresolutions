@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2026
 
-lastupdated: "2025-12-05"
+lastupdated: "2026-01-19"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -23,6 +23,24 @@ content-type: release-note
 
 Use these release notes to learn about updates to {{site.data.keyword.vmwaresolutions_full}}, including new features, component updates, usability enhancements, and bug fixes.
 {: shortdesc}
+
+## 2026
+{: #year-2026}
+
+
+
+### 19 January 2026
+{: #vmwaresolutions-jan1926}
+{: release-note}
+
+Updated pricing for {{site.data.keyword.vmwaresolutions_short}}
+:   As of 1 January 2026, the prices are increased for VMware® software, Veeam® software, and VMware® Avi Load Balancer add-on.
+
+   * VMware software price is increased by 1% across all offerings.
+   * Veeam software price is increased from $13 per VM per month to $15.60 per VM per month.
+   * VMware Avi Load Balancer add-on price is increased from $600 per service unit per month to $1,200 per service unit per month.
+
+   You can also review the updated pricing details on the Summary section of related ordering pages. For more information, see the [{{site.data.keyword.cloud}} announcement](https://cloud.ibm.com/notifications?selected=1767799886080){: external}.
 
 ## 2025
 {: #year-2025}
@@ -81,7 +99,7 @@ End of Marketing for VMware on {{site.data.keyword.cloud_notm}}
 {: release-note}
 
 End of Marketing for VMware add-ons
-:   As of 16 October 2025, the following VMware® add-ons are no longer available for provisioning:
+:   As of 16 October 2025, the following VMware add-ons are no longer available for provisioning:
     * VMware vDefend ATP (Advanced Threat Prevention) add-on
     * VMware Private AI Foundation with NVIDIA and SQL Support 5.x
 
@@ -90,7 +108,7 @@ End of Marketing for VMware add-ons
 {: release-note}
 
 Usage Meter 9.0.1
-:   VMware vCloud Usage Meter 9.0.1 is available for deployment. You must upgrade existing Usage Meters to version 9.0.1 and swap old VMware® keys that were previously provided to new VMware by Broadcom subscription keys. For more information, see [Upgrading Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-upgrade).
+:   VMware vCloud Usage Meter 9.0.1 is available for deployment. You must upgrade existing Usage Meters to version 9.0.1 and swap old VMware keys that were previously provided to new VMware by Broadcom subscription keys. For more information, see [Upgrading Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-upgrade).
 
 BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
@@ -149,7 +167,7 @@ Add-on services upgrades
 
    * F5® BIG-IP® v17.5
    * Juniper® vSRX v3.0 (24.4R1)
-   * Veeam® Backup and Replication 12.3.2
+   * Veeam Backup and Replication 12.3.2
    * Zerto v10.0u7
 
 HCX license keys details
@@ -166,10 +184,10 @@ End of Marketing for {{site.data.keyword.rw}}
 :   New deployments of VMware {{site.data.keyword.rw}} instances are no longer supported for new customers. If you are an existing customer, you can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for your existing {{site.data.keyword.rw}} instances. As an existing customer, you can also view or delete your {{site.data.keyword.rw}} instances. For more information, see [End of Marketing for {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vrw).
 
 End of Support for KMIP for VMware for Key Protect
-:   Support for Key Protect as part of the Key Management Interoperability Protocol (KMIP™) for VMware® service will end on 16 July 2026 after which interoperability with the Key Protect service will no longer work. You must migrate to the [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service by 16 July 2026. For more information, see [End of Support for KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-kmip).
+:   Support for Key Protect as part of the Key Management Interoperability Protocol (KMIP™) for VMware service will end on 16 July 2026 after which interoperability with the Key Protect service will no longer work. You must migrate to the [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service by 16 July 2026. For more information, see [End of Support for KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-kmip).
 
 End of Support for {{site.data.keyword.redhat_openshift_notm}} for VMware
-:   New automated installations of {{site.data.keyword.redhat_openshift_full}} for VMware® are no longer available for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete your existing {{site.data.keyword.redhat_openshift_notm}} for VMware automated installations until 16 July 2026. The service will no longer be available from 17 July 2026. For more information, see [End of Support for {{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-rhos).
+:   New automated installations of {{site.data.keyword.redhat_openshift_full}} for VMware are no longer available for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete your existing {{site.data.keyword.redhat_openshift_notm}} for VMware automated installations until 16 July 2026. The service will no longer be available from 17 July 2026. For more information, see [End of Support for {{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-rhos).
 
 ### 28 April 2025
 {: #vmwaresolutions-apr2825}

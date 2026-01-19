@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024, 2025
+  years:  2024, 2026
 
-lastupdated: "2025-12-31"
+lastupdated: "2026-01-19"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -39,7 +39,7 @@ You must order the appropriate number of firewall cores for your environment.
 * If you are an existing customer or if you are changing your environment to configure an extra Gateway Firewall or to configure a Distributed Firewall, you must purchase vDefend Firewall licenses separately for the number of cores that are required for your environment.
 * To calculate the number of firewall cores that you need for your environment and to confirm the cost (depending on whether you use distributed, gateway, or no firewall), based on your procurement vehicle, contact your IBM Business Partner representative or IBM Sales representative. If you are running NSX 4.1 or later, see [Counting Cores for VMware vDefend Firewall and vDefend Firewall with Advanced Threat Prevention](https://knowledge.broadcom.com/external/article?articleNumber=395111){: external} to calculate the number of cores that you need.
 
-For on-demand, the cost for the firewall add-on is $12.50 per core, per month. Discounts are available depending on your contract commitment.
+Discounts are available depending on your contract commitment.
 
 * **Distributed Firewall**: For this option, all host cores that are running NSX must be licensed for the vDefend Distributed Firewall add-on. This is done because virtual network segments span the entire environment and a virtual machine (VM) can run on any host. The applicable license key that you must order is named **VMware vDefend Firewall - Distributed** and is available in multiple sizes.
 * **Gateway Firewall**: For this option, the vCPUs that are running on the edge VMs provide the gateway firewall service, therefore they are counted. To get the edge VMs properly configured, the VMs are sized and 4 cores per vCPU in the edge VMs are calculated. The applicable license key that you must order is named **VMware vDefend Firewall - Gateway** and is available in multiple sizes.
@@ -57,7 +57,7 @@ VMware vSAN is included at a rate of 1 TiB per VMware Cloud Foundation core.
 
 To calculate the amount of vSAN storage for your entire environment, see [Counting Cores for VMware Cloud Foundation and vSphere Foundation and TiBs for vSAN](https://knowledge.broadcom.com/external/article?legacyId=95927){: external}. If you need more than 1 TiB of vSAN, order the new vSAN add-on from the {{site.data.keyword.cloud_notm}} console.
 
-The vSAN add-on is priced at $21 per TiB of vSAN per month. Discounts are available depending on your contract commitment.
+Discounts are available depending on your contract commitment.
 
 The vSAN add-on does not generate any license keys and it is used only to report your vSAN usage.
 

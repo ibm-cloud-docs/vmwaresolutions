@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2024, 2025
+  years: 2024, 2026
 
-lastupdated: "2025-11-04"
+lastupdated: "2026-01-19"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -111,16 +111,16 @@ Review the following information before you upgrade the ESXi hosts:
 
 To complete the upgrade from version 7 to 8, you must establish a baseline group configuration in VMware vSphere Update Manager (VUM) and attach it to the cluster that contains the hosts to be upgraded.
 
-1. **Import the ISO image and the updates files**. 
+1. **Import the ISO image and the updates files**.
 
    Complete the following steps in the vSphere Web Client:
    1. Import the vSphere 8 ISO image. Go to the Lifecycle Manager section of vCenter Server and click the **Imported ISOs** tab. After the import is completed, the ISO image is displayed in the list.
    2. Import the `NSX-LCP` update that matches the version of VMware NSX that is installed. The file name is similar to `nsx-lcp-esxio-4.2.3.0.0.24866350-esx80-unified.zip` (ensure that it has `unified` in the name). After the import is completed, the update is displayed on the **Updates** tab. Ensure that the rollup toggle is off as this update is not a rollup update.
    3. Import the `i40en` network driver by following the previous step. Extract the contents of the `Intel-i40en_2.9.2.0-1OEM.800.1.0.20613240_24226995-package.zip` file and import it from the folder where you extracted it. After the import is completed, the `i40en` driver is displayed on the **Updates** tab.
 
-2. **Set up the NSX connection to vCenter Server**. 
-   
-   Complete the following steps on the NSX manager UI to allow for communications between vCenter Server and NSX Manager: 
+2. **Set up the NSX connection to vCenter Server**.
+
+   Complete the following steps on the NSX manager UI to allow for communications between vCenter Server and NSX Manager:
    1. Click the **System** tab and click **Fabric > Compute Managers** from the left navigation panel. Click the vCenter Server compute manager and click **EDIT**.
    3. On the **Edit Compute Manager** window, switch the **Create Service Account** and **Enable Trust** toggles to **YES**.
    4. Click **EDIT** next to the **FQDN or IP Address** field, enter the credentials for vCenter Server (`administrator@vsphere.local` and the correct password), and click **SAVE**.
@@ -146,7 +146,7 @@ To complete the upgrade from version 7 to 8, you must establish a baseline group
    1. Under **Name and description**, enter a name for the baseline group and click **NEXT**.
    2. Under **Upgrade Baseline**, ensure that the **Add the following baseline to the group** checkbox is selected and click **NEXT**.
    3. Under **Patch Baselines**, click **NEXT**. You don't need to include any patches.
-   4. Under **Extension Baselines**, select the previous extension baselines (NSX LCP and `i40en` driver). Click **NEXT**. 
+   4. Under **Extension Baselines**, select the previous extension baselines (NSX LCP and `i40en` driver). Click **NEXT**.
    5. Under **Summary**, click **FINISH**.
 
    On the **Lifecycle Manager** UI, verify that the new baseline group is displayed and select it to verify that its content is correct.
@@ -167,9 +167,9 @@ Complete the following steps in the vSphere Web Client:
 3. Right under **Attached Baseline and Baseline Groups**, click **REMEDIATE**.
 4. Accept the Foundation Agreement and click **OK**. If you see a warning `HA admission control will be disabled`, you can ignore it.
 5. Expand the **Remediation setting** section and ensure that the checkbox `Ignore warnings about unsupported hardware devices` is selected so that any TPM 1.2 warnings are ignored.
-6. Click **REMEDIATE**. A number of tasks start to run in the tasks list, for example, `Migrate virtual machines` or `reboot`. 
+6. Click **REMEDIATE**. A number of tasks start to run in the tasks list, for example, `Migrate virtual machines` or `reboot`.
 7. Monitor the remediation progress in the **Remediate entity** task:
-   * The host is put into maintenance mode and then powered off. 
+   * The host is put into maintenance mode and then powered off.
    * As a result, the host status in vCenter Server displays `disconnected`.
    * The entire process for a single host can take 15-20 minutes, with multiple host restarts.
 
@@ -181,10 +181,10 @@ Complete the following steps in the vSphere Web Client:
 For ongoing maintenance, convert the upgraded cluster to an LCM (Lifecycle Manager) cluster by enabling single image management through LCM.
 
 Complete the following steps in the vSphere Web Client:
-1. Click the cluster name from the left navigation panel and click the **Updates** tab. 
+1. Click the cluster name from the left navigation panel and click the **Updates** tab.
 2. Click **MANAGE WITH A SINGLE IMAGE**. In the table, ensure that the autodetected network driver is included. Other components, such as the NSX LCP, is not displayed in this table. Click **SAVE**.
 3. Under **Check Image Compliance**, a message indicates that the hosts are not compliant because TPM 1.2 exists on the hardware and vSphere FDM is missing. vSphere FDM was not automatically installed when the baseline group was attached. Click **FINISH IMAGE SETUP**.
-4. With the cluster selected in the left navigation panel, click **REMEDIATE ALL**. 
+4. With the cluster selected in the left navigation panel, click **REMEDIATE ALL**.
 
 The process of remediation starts. For each host:
 * The VMs are moved off the host.
@@ -202,8 +202,8 @@ If you add a host to a vSphere 8 cluster from the VMware Solutions console, the 
 To remediate the new host so it matches the current vSphere version of the cluster, complete the following steps in the vSphere Web Client:
 1. Click the cluster name from the left navigation panel and click the **Updates** tab. A message indicates that the host is not compliant.
 2. Click **REMEDIATE ALL** to review the remediation impact.
-3. Accept the Foundation Agreement and click **START REMEDIATION**. A number of tasks start to run in the tasks list. 
-4. If you see problems with the NSX configuration of the new host on the NSX Manager UI, wait for the additional tasks that are running in the vSphere Web Client to complete. 
+3. Accept the Foundation Agreement and click **START REMEDIATION**. A number of tasks start to run in the tasks list.
+4. If you see problems with the NSX configuration of the new host on the NSX Manager UI, wait for the additional tasks that are running in the vSphere Web Client to complete.
 
    You might see the `Apply NSX Solution` task running, which is updating the new host with the NSX VIB bundles needed for the NSX configuration.
 
@@ -242,4 +242,4 @@ To update the ESXi host licenses, you must first retrieve your new vSphere licen
 
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [vCenter Server upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-server-upgrade-8-0.html){: external}
-* [VMware ESXi upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/esxi-upgrade-8-0.html){: external}
+* [VMware ESXi upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/esx-upgrade.html){: external}
