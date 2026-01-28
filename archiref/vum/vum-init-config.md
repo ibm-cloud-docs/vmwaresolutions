@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-11-04"
+lastupdated: "2026-01-21"
 
 subcollection: vmwaresolutions
 
@@ -110,13 +110,13 @@ Using a browser on your jump server download the required Linux ISO file.
 ### Configuring a content library and populating it with the CentOS ISO file
 {: #vum-init-config-config-content-library}
 
-Create a local vCenter content library, see [Create a library](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration-guide-7-0/using-content-librariesvm-admin/create-a-content-libraryvm-admin.html){: external}. The library is accessible only in the {{site.data.keyword.vcf-auto-short}} instance where it is created. Populate the library with the Linux ISO. See [Import Items to a Content Library](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration-guide-7-0/using-content-librariesvm-admin/how-to-populate-libraries-with-contentvm-admin/import-content-library-item-from-a-url-h5-and-flexvm-admin.html){: external}.
+Create a local vCenter content library, see [Create a library](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration/using-content-librariesvm-admin/create-a-content-libraryvm-admin.html){: external}. The library is accessible only in the {{site.data.keyword.vcf-auto-short}} instance where it is created. Populate the library with the Linux ISO. See [Import Items to a Content Library](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration/using-content-librariesvm-admin/how-to-populate-libraries-with-contentvm-admin/import-content-library-item-from-a-url-h5-and-flexvm-admin.html){: external}.
 
 ### Configuring the VM and installing CentOS and Squid
 {: #vum-init-config-config-proxy}
 
 1. Create a VM. For more information, see [Create a Virtual Machine with the New Virtual Machine Wizard](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/create-a-virtual-machine-without-a-template-or-clone-h5.html){: external}.
-2. Attach the ISO to the VM's CD/DVD drive by using the `Content Library ISO File` option. For more information, see [How do I Add or Modify a Virtual Machine CD or DVD Drive](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration-guide-7-0/configuring-virtual-machine-hardwarevm-admin/other-virtual-machine-device-configurationvm-admin/add-or-modify-a-virtual-machine-cd-or-dvd-drivevm-admin.html){: external}.
+2. Attach the ISO to the VM's CD/DVD drive by using the `Content Library ISO File` option. For more information, see [How do I Add or Modify a Virtual Machine CD or DVD Drive](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration/configuring-virtual-machine-hardwarevm-admin/other-virtual-machine-device-configurationvm-admin/add-or-modify-a-virtual-machine-cd-or-dvd-drivevm-admin.html){: external}.
 3. Install Linux by following the instructions provided by the Linux distributor.
 4. Install Squid. The installation of Squid varies depending on the Linux distribution. Use the following code as an example only:
 
@@ -136,7 +136,7 @@ firewall-cmd –reload
 ## Setting up VUM initially
 {: #vum-init-config-init-setup-vum}
 
-Configure the VCSA to use the proxy. For more information, see [Configure the DNS, IP address, and proxy settings](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/configuring-vcenter-server-7-0/configuring-vcenter-server-using-the-management-interface/configure-the-dns-ip-address-and-proxy-settings.html){: external}.
+Configure the VCSA to use the proxy. For more information, see [Configure the DNS, IP address, and proxy settings](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-configuration/configuring-vcenter-server-using-the-management-interface/configure-the-dns-ip-address-and-proxy-settings.html){: external}.
 
 ## Related links
 {: #vum-init-config-related}

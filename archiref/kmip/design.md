@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-12-03"
+lastupdated: "2026-01-21"
 
 subcollection: vmwaresolutions
 
@@ -57,7 +57,7 @@ vSphere encryption is not compatible with VMware HCX or {{site.data.keyword.hpe-
 ### More considerations
 {: #kmip-design-considerations}
 
-When either type of encryption is enabled in your vSphere cluster, VMware creates an extra key to encrypt your ESXi core dumps. These core dumps might contain sensitive data such as key management credentials, encryption keys, or decrypted data. For more information, see [vSphere VM encryption and core dumps](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-security-8-0/use-encryption-in-your-vsphere-environment/vsphere-virtual-machine-encryption-and-core-dumps.html){: external}.
+When either type of encryption is enabled in your vSphere cluster, VMware creates an extra key to encrypt your ESXi core dumps. These core dumps might contain sensitive data such as key management credentials, encryption keys, or decrypted data. For more information, see [vSphere VM encryption and core dumps](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-security/use-encryption-in-your-vsphere-environment/vsphere-virtual-machine-encryption-and-core-dumps.html){: external}.
 
 When KMIP for VMware is used together with vSAN encryption or vSphere encryption, several layers of key protection exist.
 

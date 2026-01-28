@@ -544,6 +544,8 @@ toc:
           - link:
               label: VMware Solutions API
               href: https://{DomainName}/apidocs/vmware-solutions
+      - topic: service-dependency.md
+        navtitle: Service dependencies
       - topicgroup:
           id: understanding-responsibilities
           label: Understanding responsibilities

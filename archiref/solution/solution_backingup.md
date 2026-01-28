@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-10-30"
+lastupdated: "2026-01-21"
 
 subcollection: vmwaresolutions
 
@@ -42,7 +42,7 @@ To host these backups, deploy a Linux® file server into your cluster by using t
 ## vCenter file-based backup
 {: #solution_backingup-vcenter}
 
-vCenter Server provides an appliance management user interface and API to export the database and configuration to a file server that uses various protocols. For more information, see [File-Based Backup and Restore of vCenter Server Appliance](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-server-installation-and-setup-8-0/file-based-backup-and-restore-of-a-vcenter-server-environment.html){: external}.
+vCenter Server provides an appliance management user interface and API to export the database and configuration to a file server that uses various protocols. For more information, see [File-Based Backup and Restore of vCenter Server Appliance](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-installation-and-setup/file-based-backup-and-restore-of-a-vcenter-server-environment.html){: external}.
 
 VMware documents an example of how you can configure the API to run periodically as a cron job directly on the vCenter Server Appliance.
 

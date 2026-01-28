@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2026
 
-lastupdated: "2026-01-19"
+lastupdated: "2026-01-21"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -57,7 +57,7 @@ Complete the following requirements before you begin the upgrade:
    5. Make a note of the Network Setting for the vCenter Server Appliance VM. Update the new vCenter appliance to match.
       * From the vSphere Web Client, click the VM for the vCenter Server appliance. Note the name that ends with ``vc``.
       * From the middle pane, click the **Networks** tab. Note the name of the distributed port group, ending with ``-dpg-mgmt``.
-3. **Upgrade vCenter Server.** Follow the VMware instructions for upgrading vCenter Server. For more information, see [Upgrade a vCenter Server Appliance 6.7 with an Embedded Platform Services Controller or 7.0 by Using the GUI](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-server-upgrade-8-0/upgrading-and-updating-the-vcenter-server-appliance/gui-upgrade-of-the-vcsa-and-psc-appliance/upgrade-the-vmware-vcenter-server-appliance-with-embedded-sso.html#GUID-6A5C596D-103E-4024-9353-5569263EB427-en){: external}.
+3. **Upgrade vCenter Server.** Follow the VMware instructions for upgrading vCenter Server. For more information, see [Upgrade a vCenter Server Appliance 6.7 with an Embedded Platform Services Controller or 7.0 by Using the GUI](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-upgrade/upgrading-and-updating-the-vcenter-server-appliance/gui-upgrade-of-the-vcsa-and-psc-appliance/upgrade-the-vmware-vcenter-server-appliance-with-embedded-sso.html#GUID-6A5C596D-103E-4024-9353-5569263EB427-en){: external}.
    Ensure to complete the following requirements during the upgrade:
    * Mount the VMware-VCSA ISO, go to the `visa-ui-installer\win32` directory, and run the installer.
    * In the vCenter Server 8.0 installer window, select the **Upgrade** flow and complete the steps in the installer.
@@ -241,5 +241,5 @@ To update the ESXi host licenses, you must first retrieve your new vSphere licen
 {: #vc_vcs_80_upgrade-related}
 
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [vCenter Server upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-server-upgrade-8-0.html){: external}
+* [vCenter Server upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-upgrade.html){: external}
 * [VMware ESXi upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/esx-upgrade.html){: external}

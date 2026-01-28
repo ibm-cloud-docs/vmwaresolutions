@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2025
+  years:  2022, 2026
 
-lastupdated: "2025-12-03"
+lastupdated: "2026-01-21"
 
 subcollection: vmwaresolutions
 
@@ -52,7 +52,7 @@ In the previous diagram, the following terms require some additional comments:
 * Single SSO and root domain - A single instance of Active Directory™ and Domain Name Services is automatically deployed with replication if more than one domain controller is selected for automatic deployment. For more information, see [Multisite deployment components](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite#vc_multisite-deployment-components).
 * Two SSO and root domains - A single instance of Active Directory and Domain Name Services is deployed, one for each instance. No replication occurs between the two sites.
 * Single vCenter - The automation deploys a single vCenter appliance.
-* Dual vCenters with ELM - Enhanced Link Mode (ELM) offers a single window of glass across multiple {{site.data.keyword.vcf-auto-short}} instances that are in the same vSphere Single-Sing-On (SSO) domain. This allows the management of multiple sites from one vCenter. For more information, see [vCenter Enhanced Linked Mode](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-server-installation-and-setup-7-0/introduction-to-vsphere-installation-and-setup/creating-vcenter-server-linked-mode-groups.html){: external}. The automation deploys and configures the vCenter appliances.
+* Dual vCenters with ELM - Enhanced Link Mode (ELM) offers a single window of glass across multiple {{site.data.keyword.vcf-auto-short}} instances that are in the same vSphere Single-Sing-On (SSO) domain. This allows the management of multiple sites from one vCenter. For more information, see [vCenter Enhanced Linked Mode](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-installation-and-setup/introduction-to-vsphere-installation-and-setup/creating-vcenter-server-linked-mode-groups.html){: external}. The automation deploys and configures the vCenter appliances.
 * Dual vCenters - Each site has a vCenter deployed automatically. However, they are not linked.
 * Single NSX-T Manager cluster - The automation deploys three NSX-T Manager appliances in a cluster with a Virtual IP address.
 * Dual NSX-T Manager clusters - Each site has its own NSX-T Manager cluster that is deployed automatically, which is independent of each other. In NSX-T, it doesn't exist a concept equivalent to Cross-vCenter NSX-V.

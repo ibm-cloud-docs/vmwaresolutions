@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2025
+  years:  2023, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-01-21"
 
 keywords: flexible remove hosts, flexible remove ESXi servers, delete server
 
@@ -52,5 +52,5 @@ Before you delete ESXi servers, ensure that you remove your workloads from these
 
 * [Planning for Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning)
 * [Procedure to order Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
-* [Place a host in maintenance mode](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/esxi-upgrade-8-0/upgrading-esxi-hosts-upgrade/how-to-upgrade-hosts-by-using-esxcli-commands-upgrade/place-a-host-in-maintenance-mode-upgrade.html){: external}
+* [Place a host in maintenance mode](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/esx-upgrade/upgrading-esxi-hosts-upgrade/how-to-upgrade-hosts-by-using-esxcli-commands-upgrade/place-a-host-in-maintenance-mode-upgrade.html){: external}
 * [Enhanced vMotion Compatibility (EVC) processor support](https://knowledge.broadcom.com/external/article?legacyId=1003212){: external}

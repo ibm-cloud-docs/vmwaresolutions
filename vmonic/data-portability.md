@@ -4,7 +4,7 @@ copyright:
 
   years: 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-01-21"
 
 subcollection: vmwaresolutions
 
@@ -56,7 +56,7 @@ For more information about data export procedures and exported data formats, see
 
 - [VMware HCX - User Guide](https://techdocs.broadcom.com/us/en/vmware-cis/hcx/vmware-hcx/4-10/vmware-hcx-user-guide-4-10.html){: external}
 - [VMware vSphere Replication](https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/vsphere-replication/9-0.html){: external}
-- [Migrating virtual machines between vCenter Server systems](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-and-host-management-8-0/migrating-virtual-machines-host-management/vmotion-across-vcenter-server-systems-host-management.html){: external}
+- [Migrating virtual machines between vCenter Server systems](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-and-host-management/migrating-virtual-machines-host-management/vmotion-across-vcenter-server-systems-host-management.html){: external}
 
 ## Data ownership
 {: #data-portability-ownership}

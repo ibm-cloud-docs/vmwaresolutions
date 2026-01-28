@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2025
+  years:  2023, 2026
 
-lastupdated: "2025-10-30"
+lastupdated: "2026-01-21"
 
 subcollection: vmwaresolutions
 
@@ -74,7 +74,7 @@ After your {{site.data.keyword.vcf-auto-short}} instance is provisioned:
    * [Ports for services](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-services)
 
 2. To understand how to use Ansible on your management VM to open and close firewall ports, see [Creating the airgap by using Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-vsrx).
-3. Deploy your jump hosts. For more information, see [Deploying virtual machines](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration-guide-7-0/deploying-virtual-machinesvm-admin.html){: external}.
+3. Deploy your jump hosts. For more information, see [Deploying virtual machines](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration/deploying-virtual-machinesvm-admin.html){: external}.
 4. Deploy your custom data mover and immutable repository by following the vendor’s instructions.
 5. Deploy your cybertoolset by following the vendor’s instructions.
 6. To understand how to use the scripting capabilities of your Bring Your Own data mover and immutable repository solution to be more automated, see [Instant restore](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-instantrestore) and [Creating a Veeam Linux managed server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-lnxmgdsvr).

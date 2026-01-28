@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2025
+  years:  2019, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-01-27"
 
 subcollection: vmwaresolutions
 
@@ -82,7 +82,7 @@ It is possible to restructure AD domains, but the details are out of the scope o
 * Inter-forest restructure - When you migrate objects between forests, both the source domain and the target domain environments exist, and you can roll back to the source environment during the migration, if necessary.
 * Intra-forest restructure - When you restructure domains within a forest, the migrated accounts no longer exist in the source domain.
 
-For more information, see [ADMT guide - Migrating and restructuring Active Directory domains](https://www.microsoft.com/en-us/download/confirmation.aspx?id=19188){: external} (Document download).
+For more information, see [ADMT guide - Migrating and restructuring Active Directory domains](https://www.microsoft.com/en-us/download/details.aspx?id=19188){: external} (Document download).
 
 ## Best practice guidance for AD in a vCenter Server instance
 {: #adds-wkld-domain-bestpractice}

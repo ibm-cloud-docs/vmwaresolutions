@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2025
+  years:  2020, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-01-21"
 
 subcollection: vmwaresolutions
 
@@ -38,12 +38,12 @@ All operational tools are deployed into the management cluster. The {{site.data.
 ### VMware Aria Operations
 {: #vrw-operations-management-vrops}
 
-[VMware Aria Operations](https://www.vmware.com/products/cloud-infrastructure/cloud-foundation-operations){: external} delivers self-driving IT operations management from apps to infrastructure to optimize, plan, and scale hybrid cloud and HCI deployments while unifying multicloud monitoring. Powered by AI/ML, VMware Aria Operations helps IT run production operations hands-off and hassle-free with a unified operations platform. This platform delivers continuous performance optimization, efficient capacity management, proactive planning, intelligent remediation, and integrated compliance.
+[VMware Aria Operations](https://www.vmware.com/products/cloud-infrastructure/vcf-operations){: external} delivers self-driving IT operations management from apps to infrastructure to optimize, plan, and scale hybrid cloud and HCI deployments while unifying multicloud monitoring. Powered by AI/ML, VMware Aria Operations helps IT run production operations hands-off and hassle-free with a unified operations platform. This platform delivers continuous performance optimization, efficient capacity management, proactive planning, intelligent remediation, and integrated compliance.
 
 ### VMware Aria Operations for Logs
 {: #vrw-operations-management-vrli}
 
-[VMware Aria Operations for Logs](https://www.vmware.com/products/cloud-infrastructure/cloud-foundation-operations){: external} delivers heterogeneous and highly scalable log management with intuitive, actionable dashboards, sophisticated analytics, and broad third-party extensibility. It provides deep operational visibility and faster troubleshooting across physical, virtual, and cloud environments.
+[VMware Aria Operations for Logs](https://www.vmware.com/products/cloud-infrastructure/vcf-operations){: external} delivers heterogeneous and highly scalable log management with intuitive, actionable dashboards, sophisticated analytics, and broad third-party extensibility. It provides deep operational visibility and faster troubleshooting across physical, virtual, and cloud environments.
 
 All systems that generate logs are configured to send their logs to VMware Aria Operations™ for Logs. Centralized collection of all logging enables a comprehensive view of all aspects of the {{site.data.keyword.rw}} operation. VMware Aria Operations for Logs is also capable of forwarding logs to security scanning services such as IBM QRadar.
 

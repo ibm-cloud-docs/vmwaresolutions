@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2026
 
-lastupdated: "2026-01-19"
+lastupdated: "2026-01-21"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade, upgrade from vsphere 7 to 8
 
@@ -61,7 +61,7 @@ Complete the following steps from the vSphere Web Client:
 ## Procedure to upgrade vCenter Server
 {: #vs_vsphere_80_upgrade-procedure-vcenter}
 
-Follow the Broadcom instructions for upgrading vCenter Server. For more information, see [Upgrade a vCenter Server Appliance 6.5 or 6.7 with an embedded Platform Services Controller by using the GUI](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-server-upgrade-7-0/upgrading-and-updating-the-vcenter-server-appliance/gui-upgrade-of-the-vcsa-and-psc-appliance/upgrade-the-vmware-vcenter-server-appliance-with-embedded-sso.html){: external}.
+Follow the Broadcom instructions for upgrading vCenter Server. For more information, see [Upgrade a vCenter Server Appliance 6.5 or 6.7 with an embedded Platform Services Controller by using the GUI](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-upgrade/upgrading-and-updating-the-vcenter-server-appliance/gui-upgrade-of-the-vcsa-and-psc-appliance/upgrade-the-vmware-vcenter-server-appliance-with-embedded-sso.html){: external}.
 
 Complete the following requirements during the upgrade:
 * To mount the VMware-VCSA ISO, go to the `visa-ui-installer\win32` directory and run the installer.
@@ -258,5 +258,5 @@ To update the ESXi host licenses, you must first retrieve your new vSphere licen
 {: #vs_vsphere_80_upgrade-related}
 
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [vCenter Server upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-server-upgrade-8-0.html){: external}
+* [vCenter Server upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-upgrade.html){: external}
 * [VMware ESXi upgrade](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/esx-upgrade.html){: external}

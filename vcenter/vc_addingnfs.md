@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2025
+  years:  2021, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-01-21"
 
 keywords: add NFS storage, add nfs
 
@@ -59,4 +59,4 @@ You can expand the capacity of your {{site.data.keyword.vcf-auto}} instance acco
 * [Planning for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
 * [Requirements for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Adding clusters to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
-* [Place a host in maintenance mode](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-resource-management-7-0/using-drs-clusters-to-manage-resources/removing-hosts-from-a-cluster/place-a-host-in-maintenance-mode.html){: external}
+* [Place a host in maintenance mode](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/removing-hosts-from-a-cluster/place-a-host-in-maintenance-mode.html){: external}
