@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-01-30"
 
 keywords: usage meter, upgrade
 
@@ -21,6 +21,8 @@ subcollection: vmwaresolutions
 
 You must upgrade any existing VMware vCloud Usage Meters to version 9 to integrate with their own access token. For Usage Meter 4.8, the upgrade process involves receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to version 9. After the initial upgrade to version 9 or later, you don't need to provide the access token for further upgrades.
 {: important}
+
+
 
 ## Procedure to upgrade Usage Meter
 {: #usage_meter-upgrade-proc}
@@ -81,14 +83,14 @@ Use SSH to log in to the Usage Meter Appliance VM and complete the following ste
    2. `mount -o loop /dev/cdrom /root/upgrade`
    3. `bash /root/upgrade/upgrade-um.sh`
 
-   You might need to run `umount /root/upgrade` to unmount any previous upgrades before you run `mount -o loop /dev/cdrom /root/upgrade` to upgrade the Usage Meter VM. 
+   You might need to run `umount /root/upgrade` to unmount any previous upgrades before you run `mount -o loop /dev/cdrom /root/upgrade` to upgrade the Usage Meter VM.
    {: note}
 
 2. Enter the access token that is generated for the Usage Meter in the {{site.data.keyword.vmwaresolutions_full}} console. For more information, see [Registering Usage Meter with IBM](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-register).
 3. Enter **y** to agree with the VCF Usage Meter appliance be part of IBM's Provider Organization.
 4. Enter **y** to confirm that a snapshot is created to the Usage Meter VM.
 
-   An error message about the Usage Meter hostname might appear. Enter **y** to continue the upgrade path. 
+   An error message about the Usage Meter hostname might appear. Enter **y** to continue the upgrade path.
    {: note}
 
 5. The upgrade process starts and when it's complete, enter **y** to restart the Usage Meter VM.
@@ -128,7 +130,7 @@ If you cannot access the Usage Meter URL or log in to view the dashboard after t
 3. Under a root user, run the command `hostnamectl hostname <new hostname>` to update the hostname with the correct value.
 4. Run the commands `export $(grep -v '^#' "/opt/vmware/cloudusagemetering/platform/conf/env.properties" | xargs)` and `mv /opt/vmware/cloudusagemetering/platform/security/keystore /opt/vmware/cloudusagemetering/platform/security/keystore.backup` to export the environment variables and backup the existing keystore.
 5. If FIPS is enabled, run the command `keytool -changealias -alias "usage-meter-platform" -destalias "usage-meter-platform-backup" -keystore /opt/vmware/cloudusagemetering/platform/security/cacerts -storetype BCFKS -providerclass org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider -providerpath /opt/vmware/cloudusagemetering/platform/lib/bc-fips-*.jar -storepass "${TRUST_STORE_PASSWORD}"`. If it is disabled, run the command `keytool -changealias -alias "usage-meter-platform" -destalias "usage-meter-platform-backup" -keystore /opt/vmware/cloudusagemetering/platform/security/cacerts -storepass "${TRUST_STORE_PASSWORD}"`.
- 
+
    If you run the FIPS disabled version while FIPS is enabled, the error `keytool error: java.security.KeyStoreException: Unrecognized keystore format.` is displayed. To resolve it, load it with a specified type.
    {: note}
 
