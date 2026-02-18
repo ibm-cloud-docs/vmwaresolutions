@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2025
+  years:  2021, 2026
 
-lastupdated: "2025-12-02"
+lastupdated: "2026-02-16"
 
 keywords: add service, order service, add-on service
 
@@ -29,15 +29,16 @@ For existing multizone instances, adding services is not supported. However, you
 ## Available services for Automated instances
 {: #vc_addingservices-available-services}
 
+
 The following table shows the services that are available to Automated instances, together with the service versions.
 
 | Service name | Current version |
-|:------------ |:--------------- |
+| :------------ | :--------------- |
 | [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 5.2.4 |
 | [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.5.1.3 |
 | [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.4.8 |
 | [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version |
-| [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) |   |
+| [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | | 
 | [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (24.4R1) |
 | [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 |
 | [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12.3.2 |
@@ -79,7 +80,7 @@ To install the service, you must increase the capacity in your cluster either by
 The following table provides the resource requirements for the services for which a capacity check is completed.
 
 | Service name | Resource requirements |
-|:------------ |:--------------------- |
+| :------------ | :--------------------- |
 | Caveonix RiskForesight | CPU - 8 CPUs \n RAM - 32 GB \n Storage - 100 GB |
 | F5 BIG-IP[^f5bigip] | CPU - 4, 8, or 16 CPUs, depending on license and bandwidth chosen \n RAM - 8, 16, or 32 GB, depending on license and bandwidth chosen |
 | FortiGate Virtual Appliance | CPU - 2, 4, 8, 16, or 32 CPUs, depending on deployment size chosen \n RAM - 4, 6, or 12 GB, depending on deployment size chosen |
@@ -105,7 +106,7 @@ The following formulas are used to calculate the space requirements for the serv
 The following table lists the variables that are used in the previous formula.
 
 | Variable | Description | Unit | vSAN example | NFS example |
-|:-------- |:----------- |:---- |:------------ |:----------- |
+| :-------- | :----------- | :---- | :------------ | :----------- |
 | AvailableCores | The number of cores available for workloads and services in the environment | Cores | 38 | 43 |
 | HostCount | The number of hosts in the default cluster | Hosts | 4 | 4 |
 | HostCoreCount | The number of raw cores available in each host in the default cluster | Cores | 16 | 16 |
@@ -127,7 +128,7 @@ The following table lists the variables that are used in the previous formula.
 The following table lists the variables that are used in the previous formula.
 
 | Variable | Description | Unit | vSAN example | NFS example |
-|:-------- |:----------- |:---- |:------------ |:----------- |
+| :-------- | :----------- | :---- | :------------ | :----------- |
 | AvailableMemory | The number of GB of memory available for workloads and services in the environment | GB | 693 | 860 |
 | HostCount | The number of hosts in the default cluster | Hosts | 6 | 6 |
 | HostMemory | The number of raw GB of memory available in each host in the default cluster | GB | 192 | 192 |

@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-02-02"
 
 keywords: end of support notice, kmip for vmware service, end of support kmip for vmware, kmip for vmware deprecated, kmip for vmware support
 
@@ -25,6 +25,8 @@ subcollection: vmwaresolutions
 Support for Key Protect service as part of the Key Management Interoperability Protocol (KMIP™) for VMware® will end on 16 July 2026 after which the service will no longer be available. You must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 16 July 2026.
 
 {{site.data.content.kmip-imp-note}}
+
+
 
 If you are using the KMIP for VMware support for Key Protect, you must plan and start migration to [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) services at the earliest.
 

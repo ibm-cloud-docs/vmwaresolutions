@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-01-28"
+lastupdated: "2026-02-11"
 
 keywords:
 
@@ -79,6 +79,17 @@ The following dependencies apply to the following deployment locations: Chennai 
 
 The following dependencies apply to the following deployment locations: Dallas (us-south).
 
+
+|Dependencies|Dependency impacts|Customer provided|Control or data plane|Location of dependency|
+|:---|:---|:---|:---|:---|
+| {{site.data.keyword.vmwaresolutions_short}}| Security compliance | No | customer-environment |  Sydney (au-syd)  |
+{: row-headers}
+{: caption="IBM Cloud for VMware Solutions - Customer VMware environment deployment service dependency information - Minimal dependencies" caption-side="top"}
+{: tab-title="Minimal dependencies"}
+{: tab-group="service-dependency-data-for-vmware-solutions-Customer-VMware-environment-deployment"}
+{: class="comparison-tab-table"}
+{: #minimal-deps-customer-vmware-environment-deployment}
+{: summary="Use the buttons for the dependency level to change the context of the table. This table has row and column headers. The row headers detail the specific dependent service. The column headers identify the details about the dependency and its impact. To understand the details about each dependency, navigate to the row to find the dependency that you need more information about interested in."}
 
 
 ## Understanding service dependency data

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024, 2025
+  years:  2024, 2026
 
-lastupdated: "2025-12-09"
+lastupdated: "2026-02-03"
 
 subcollection: vmwaresolutions
 
@@ -18,9 +18,9 @@ subcollection: vmwaresolutions
 
 {{site.data.content.vms-deprecated-note}}
 
-{{site.data.keyword.cloud}} Security and Compliance Center Workload Protection is a comprehensive Cloud-Native Application Protection Platform (CNAPP) solution suite that you can use to centrally manage your organization’s security, risk, and compliance response to regulatory standards. It enables your security and DevOps teams to secure sensitive data and protect workloads with real-time threat detection and prioritization of vulnerabilities. For more information, see [Getting started with {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection](/docs/workload-protection?topic=workload-protection-getting-started).
+{{site.data.keyword.cloud}} Security and Compliance Center Workload Protection is a comprehensive Cloud-Native Application Protection Platform (CNAPP) solution suite that you can use to centrally manage your organization’s security, risk, and compliance response to regulatory standards. It enables your security and DevOps teams to secure sensitive data and protect workloads with real-time threat detection and prioritization of vulnerabilities.
 
-The Caveonix Security Baselines for VMware profile is now available in the Security and Compliance Center Workload Protection. The Caveonix Security Baselines for VMware is a collection of controls that are designed to validate the compliance of VMware® infrastructure components that run on {{site.data.keyword.cloud_notm}}. For more information, see [Change log: Caveonix Security Baselines for VMware](/docs/security-compliance?topic=security-compliance-caveonix-vmware).
+The Caveonix Security Baselines for VMware profile is now available in the Security and Compliance Center Workload Protection. The Caveonix Security Baselines for VMware is a collection of controls that are designed to validate the compliance of VMware® infrastructure components that run on {{site.data.keyword.cloud_notm}}.
 
 The integration is available only with Caveonix Cloud 5.0 and later versions. If you do not have a correct version, open an {{site.data.keyword.cloud_notm}} Support ticket to {{site.data.keyword.vmwaresolutions_full}} to get the upgrade package and instructions.
 {: restriction}
@@ -46,10 +46,10 @@ Before any integration is possible, you must have a Security and Compliance Cent
 
 When you have a Security and Compliance Center Workload Protection instance available, complete the following steps:
 
-1. [Creating an API key](/docs/security-compliance?topic=security-compliance-setup-caveonix#caveonix-create-key).
-2. [Creating a connection](/docs/security-compliance?topic=security-compliance-setup-caveonix#caveonix-create-connection).
-3. [Creating an attachment](/docs/security-compliance?topic=security-compliance-setup-caveonix#caveonix-attachment).
-4. [Configure Caveonix to send results](/docs/security-compliance?topic=security-compliance-setup-caveonix#configure-caveonix).
+1. Create an API key.
+2. Create a connection.
+3. Create an attachment.
+4. Configure Caveonix to send results.
 
 ## Caveonix Cloud tasks
 {: #caveonix-scc-integration}

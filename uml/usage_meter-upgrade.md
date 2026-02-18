@@ -4,7 +4,7 @@ copyright:
 
   years:  2025
 
-lastupdated: "2026-01-30"
+lastupdated: "2026-02-04"
 
 keywords: usage meter, upgrade
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 {{site.data.content.vms-deprecated-note}}
 
-You must upgrade any existing VMware vCloud Usage Meters to version 9 to integrate with their own access token. For Usage Meter 4.8, the upgrade process involves receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to version 9. After the initial upgrade to version 9 or later, you don't need to provide the access token for further upgrades.
+Upgrade any existing VMware vCloud Usage Meters to version 9 to integrate with their own access token. For Usage Meter 4.8, the upgrade process involves receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to version 9. After the initial upgrade to version 9 or later, you don't need to provide the access token for further upgrades.
 {: important}
 
 
@@ -123,7 +123,7 @@ After you migrate the Usage Meter VM, you might encounter the error `Connection 
 ### Replacing the Usage Meter certificate
 {: #usage_meter-upgrade-certificate}
 
-If you cannot access the Usage Meter URL or log in to view the dashboard after the upgrade, complete the following steps to replace the Usage Meter certificate due to an incompatible hostname:
+If you cannot access the Usage Meter URL or log in to the dashboard after the upgrade, complete the following steps to replace the Usage Meter certificate due to an incompatible hostname:
 
 1. Use SSH to log in to the Usage Meter VM with the `usagemeter` username.
 2. Run the command `stop.sh All` to stop all services.
@@ -140,7 +140,7 @@ If you cannot access the Usage Meter URL or log in to view the dashboard after t
 9. If FIPS is enabled, run the command `keytool -delete -alias "usage-meter-platform-backup" -keystore /opt/vmware/cloudusagemetering/platform/security/cacerts -storetype BCFKS -providerclass org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider -providerpath /opt/vmware/cloudusagemetering/platform/lib/bc-fips-*.jar -storepass "${TRUST_STORE_PASSWORD}"` to delete the backup keystore. If it is disabled, run the command `keytool -delete -alias "usage-meter-platform-backup" -keystore /opt/vmware/cloudusagemetering/platform/security/cacerts -storepass "${TRUST_STORE_PASSWORD}"`.
 10. Run the command `chmod 0640 /opt/vmware/cloudusagemetering/platform/security/keystore` to update the new keystore permissions and restart the Usage Meter VM.
 
-    Due to the hostname change, you might need to update your DNS entry to the new hostname or add it if it doesn't exist. If you are redirected with an OAuth error to the login page when you attempt to log in, clear any existing DNS entries for Usage Meter and try to log in again.
+    Due to the hostname change, you might need to update your DNS entry to the new hostname or add it if it doesn't exist. If you are redirected to the login page with an OAuth error, clear any existing DNS entries for Usage Meter and try again.
     {: note}
 
 11. After the restart is complete, open the Usage Meter URL in a web browser to verify the upgraded version.

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-12-03"
+lastupdated: "2026-02-12"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -27,7 +27,7 @@ Review the Bill of Materials (BOM) information for {{site.data.keyword.vcf-auto}
 The following table details the BOM information for the {{site.data.keyword.vcf-auto-short}} VLANs.
 
 | VLAN | Type | Details |
-|:---- |:---- |:------- |
+| :---- | :---- | :------- |
 | VLAN1 | Public, primary | Assigned to physical VMware ESXi™ servers for public network access. The servers are assigned a public IP address but this IP address is not configured on the servers, so they are not directly accessible on the public network. Instead, the public VLAN is intended to provide public internet access for other components, such as VMware NSX Edge™ Services Gateways (ESGs). |
 | VLAN2 | Private A, primary | Assigned by {{site.data.keyword.cloud}} to physical ESXi servers. Used by the management interface for VMware vSphere® management traffic. \n Assigned to VMs (virtual machines) that function as management components. |
 | VLAN3 | Private B, portable | Assigned to VMware vSAN™, if used. \n Assigned to VMware NFS, if used. \n Assigned to VMware vSphere® vMotion. \n For vSphere 7, all NSX VTEPs are put in VLAN2. |
@@ -39,7 +39,7 @@ The following table details the BOM information for the {{site.data.keyword.vcf-
 The following table details the BOM information for {{site.data.keyword.vcf-auto-short}} software components.
 
 | Manufacturer | Component | Version |
-|:------------ |:--------- |:------- |
+| :------------ | :--------- | :------- |
 | VMware® by Broadcom | vSphere ESXi | ESXi 8.0 Update 3g (build 24859861)[^esxi80] or \n ESXi 7.0 Update 3w (build 24784741)[^esxi70] |
 | VMware by Broadcom | Distributed vSwitch | 8.0.0[^vcs-vsphere800] or 7.0.0[^vcs-vsphere700] |
 | VMware by Broadcom | vCenter Server Appliance | 8.0 Update 3g (build 24853646) or \n 7.0 Update 3w (build 24927011) |
@@ -68,7 +68,7 @@ The following table details the BOM information for {{site.data.keyword.vcf-auto
 Review the following table for an overview of the advanced configuration settings that are applied to ESXi servers.
 
 | Configuration setting | Value |
-|:--------------------- |:----- |
+| :--------------------- | :----- |
 | Maximum of Volumes[^maxvol] | Both **/NFS/MaxVolumes** and **/NFS41/MaxVolumes** = 256 |
 | Heartbeat Maximum Failures | **/NFS/HeartbeatMaxFailures** = 10 |
 | Heartbeat Frequency | **/NFS/HeartbeatFrequency** = 12 |
@@ -85,7 +85,7 @@ Review the following table for an overview of the advanced configuration setting
 Review the following table for an overview of the advanced configuration settings that are applied to ESXi servers. ESXi servers join Active Directory domain for authentication. Also, the ESXi shell service is stopped.
 
 | Configuration setting | Value |
-|:--------------------- |:----- |
+| :--------------------- | :----- |
 | Block guest sourced BPDU frames | **/Net/BlockGuestBPDU** = 1 |
 | Duration, in seconds, to lock out a user's account after it exceeds the maximum allowed failed login attempts. | **Security.AccountUnlockTime** = 1800 |
 | Maximum allowed failed login attempts before a user's account is locked out. Zero disables locking of account. | **Security.AccountLockFailures** = 6 |
@@ -97,8 +97,8 @@ Review the following table for an overview of the advanced configuration setting
 Review the following table for an overview of the VMware NSX and port group configuration settings for Automated instances.
 
 | Configuration setting | Value |
-|:--------------------- |:----- |
-| NSX VXLAN cluster-teaming policy |Load Balance - SRCID |
+| :--------------------- | :----- |
+| NSX VXLAN cluster-teaming policy | Load Balance - SRCID |
 | NSX VXLAN cluster VTEP | 2 |
 | Segment ID pool for primary instance | 6000 - 7999 |
 | Segment ID pool for subsequent secondary instance or instances | Previous end range in the multisite configuration + 1 to the previous end range in the multisite configuration + 2000 |
@@ -121,7 +121,7 @@ The public network connections use a standard Ethernet MTU of 1500, which must b
 Review the following table for an overview of the Network MTU configuration settings that are applied to the public and private Distributed Virtual Switch (DVS).
 
 | Configuration setting | Value |
-|:--------------------- |:----- |
+| :--------------------- | :----- |
 | Public switch | 1500 (default) |
 | Private switch | 9000 (Jumbo Frames) |
 {: caption="MTU configuration settings for Automated instances and clusters" caption-side="bottom"}
@@ -153,10 +153,10 @@ The allocation of distributed switches varies if you have existing instances and
 Review the following table for an overview of the EVC (Enhanced VMware vMotion Compatibility) mode settings for Automated instances and the differences between vSphere versions.
 
 | Bare metal server CPU model | vSphere 8 | vSphere 7 |
-|:--------------------------- |:--------- |:--------- |
+| :--------------------------- | :--------- | :--------- |
 | Sapphire Rapids | EVC is set to Intel® **Sapphire Rapids** Generation. | EVC is set to Intel **Ice Lake** Generation. |
-| Cascade Lake    | EVC is set to Intel **Cascade Lake** Generation. | EVC is set to Intel **Cascade Lake** Generation. |
-| Skylake         | Not supported | Not supported |
+| Cascade Lake | EVC is set to Intel **Cascade Lake** Generation. | EVC is set to Intel **Cascade Lake** Generation. |
+| Skylake | Not supported | Not supported |
 {: caption="EVC mode settings for Automated instances and clusters" caption-side="bottom"}
 
 Depending on your EVC mode setting, virtual machines that run on Sapphire Rapids servers cannot be migrated to Cascade Lake servers without being powered off. To prevent this problem, you cannot add a Cascade Lake server for clusters that contain only Sapphire Rapids servers.

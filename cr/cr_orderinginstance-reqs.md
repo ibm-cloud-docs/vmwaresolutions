@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2025
+  years:  2022, 2026
 
-lastupdated: "2025-10-30"
+lastupdated: "2026-02-16"
 
 keywords: cyber recovery, cyber recovery requirements, requirements cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -35,8 +35,8 @@ Complete the following tasks:
 * Review the information in [{{site.data.keyword.cr}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview).
 * Review the domain name format. The domain name is used to generate the username and server names for the instance.
 
-| Name        | Value format |
-|:------------|:------------ |
+| Name | Value format |
+| :------------ | :------------ |
 | Domain name | `<root_domain>` (Microsoft® Active Directory™ domain name) |
 | vCenter Server login username | `<user_id>@<root_domain>` (Microsoft Active Directory user) or `administrator@vsphere.local` |
 | vCenter Server (with embedded PSC) FQDN | `<instance_name>-vc.<root_domain>`. The maximum length is 50 characters. Any hyphens (-) are removed from the instance name. |

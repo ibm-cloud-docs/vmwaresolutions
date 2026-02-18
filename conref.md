@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022, 2025
+  years: 2022, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-02-02"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -26,7 +26,7 @@ For **Sapphire Rapids** servers, choose one of the following CPU models and a su
 {: #sapphire-para-intro}
 
 | CPU model | Cores | GHz | Storage type | RAM options |
-|:--------- |:----- |:--- |:------------ |:----------- |
+| :--------- | :----- | :--- | :------------ | :----------- |
 | Dual Intel Xeon Platinum 6416H | 36 | 2.2 | Up to 16 drives | 256 GB, 512 GB, 1 TB, 2 TB, 4 TB |
 | Dual Intel Xeon Platinum 8474C | 96 | 2.1/3.1 | Up to 16 drives | 256 GB, 512 GB, 1 TB, 2 TB, 4 TB |
 | Dual Intel Xeon Platinum 6434H | 16 | 3.7/4.1 | Up to 16 drives | 256 GB, 512 GB, 1 TB, 2 TB, 4 TB |
@@ -47,7 +47,7 @@ For **Cascade Lake** servers, choose from the following CPU models and supported
 {: #cascade-para-intro}
 
 | CPU model | Cores | GHz | Storage type | RAM options |
-|:--------- |:----- |:--- |:------------ |:----------- |
+| :--------- | :----- | :--- | :------------ | :----------- |
 | Dual Intel Xeon Silver 4210 | 20 | 2.2 | Up to 12 drives | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Dual Intel Xeon Gold 5218 | 32 | 2.3 | Up to 12 drives | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Dual Intel Xeon Gold 6248 | 40 | 2.5 | Up to 12 drives | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
@@ -60,8 +60,8 @@ For **Cascade Lake** servers, choose from the following CPU models and supported
 For **SAP-certified Cascade Lake** servers, choose from the following configurations:
 {: #sap-para-intro}
 
-| CPU model     | Cores     | GHz     | RAM         | Storage type |
-|:------------- |:----------|:--------|:------------|:------------ |
+| CPU model | Cores | GHz | RAM | Storage type |
+| :------------- | :---------- | :-------- | :------------ | :------------ |
 | Dual Intel Xeon Gold 5218 (BI.S4.NW192) | 32 | 2.3 | 192 GB | Up to 12 drives |
 | Dual Intel Xeon Gold 5218 (BI.S4.NW384) | 32 | 2.3 | 384 GB | Up to 12 drives |
 | Dual Intel Xeon Gold 6248 (BI.S4.NW768) | 40 | 2.5 | 768 GB | Up to 12 drives |
@@ -74,8 +74,8 @@ For **SAP-certified Cascade Lake** servers, choose from the following configurat
 {: class="simple-tab-table"}
 {: #simpletabtable-sap-netweaver}
 
-| CPU model     | Cores     | GHz     | RAM         | Storage type |
-|:------------- |:----------|:--------|:------------|:------------ |
+| CPU model | Cores | GHz | RAM | Storage type |
+| :------------- | :---------- | :-------- | :------------ | :------------ |
 | Dual Intel Xeon Gold 5218 (BI.S4.H2.192) | 32 | 2.3 | 192 GB | Up to 12 drives |
 | Dual Intel Xeon Gold 5218 (BI.S4.H2.384) | 32 | 2.3 | 384 GB | Up to 12 drives |
 | Dual Intel Xeon Gold 6248 (BI.S4.H2.768) | 40 | 2.5 | 768 GB | Up to 12 drives |
@@ -101,7 +101,7 @@ The uplink speed provides two options:
 {: #uplink-speed-options-list}
 
 | Data center | Pod |
-|:----------- |:--- |
+| :----------- | :--- |
 | SYD04 | 01 |
 | SYD05 | 01 |
 | TOK02 | 02 |
@@ -114,7 +114,7 @@ The uplink speed provides two options:
 {: #simpletable-uplink-speed-locations-ap}
 
 | Data center | Pod |
-|:----------- |:--- |
+| :----------- | :--- |
 | AMS03 | 01-02 |
 | FRA02 | 02 |
 | FRA04 | 01 |
@@ -134,7 +134,7 @@ The uplink speed provides two options:
 {: #simpletable-uplink-speed-locations-eur}
 
 | Data center | Pod |
-|:----------- |:--- |
+| :----------- | :--- |
 | TOR04 | 01 |
 | TOR05 | 01 |
 | WDC04 | 05 |
@@ -147,7 +147,7 @@ The uplink speed provides two options:
 {: #simpletable-uplink-speed-locations-naeast}
 
 | Data center | Pod |
-|:----------- |:--- |
+| :----------- | :--- |
 | DAL10 | 03 |
 | DAL13 | 02 |
 | DAL14 | 01 |
@@ -405,6 +405,7 @@ Key Management Interoperability Protocol (KMIP™) for VMware® support for Key 
 {: deprecated}
 {: #kmip-deprecated-note}
 
+
 The previous deprecation notice is applicable only to customers who are using the KMIP for VMware support for Key Protect. If you are using KMIP for VMware support for Hyper Protect Crypto Services (HPCS), the KMIP deprecation notice does not apply to you. The KMIP for VMware support for HPCS continues to work without any impact.
 {: important}
 {: #kmip-imp-note}
@@ -422,6 +423,8 @@ The previous deprecation notice is applicable only to customers who are using th
 **End of Marketing**: As of 31 October 2025, new deployments of VMware Solutions offerings are no longer available for new customers. Existing customers can still use and expand their active VMware® workloads on {{site.data.keyword.cloud}}. For more information, see [End of Marketing for VMware on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vms).
 {: note}
 {: #vms-deprecated-note}
+
+
 
 
 
