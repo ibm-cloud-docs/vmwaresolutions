@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2025
+  years:  2025, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-02-23"
 
 keywords: vmware solutions kmip for vmware, kmip for vmware, migration, migration partner, partners for assisted migration
 
@@ -130,7 +130,7 @@ After you set the new key provider to default, rekey both your vSAN cluster and 
 #### Migrating host encryption to the new key provider
 {: #kmip_migration-environment-migratevms-hosts}
 
-If you are using only vSphere encryption and not vSAN encryption, you must use the PowerCLI tool to rekey the encrypted hosts in your environment. The following sample script shows how to rekey all the encrypted hosts in an environment that is in *safe* mode, meaning that the environment is issued a host key for encryption of core dumps:
+If you are using only vSphere encryption and not vSAN encryption, you must use the PowerCLI tool to rekey the encrypted hosts in your environment. The following sample script shows how to rekey all the encrypted hosts in an environment that is in *safe* mode, meaning that the environment is issued to a host key for encryption of core dumps:
 
 ```text
 $kp = Get-KeyProvider <new-kmip>
