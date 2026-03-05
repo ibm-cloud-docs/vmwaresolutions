@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2025
+  years:  2025, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-03-05"
 
 keywords: FAQ kmip for vmware, kmip for vmware questions
 
@@ -16,14 +16,12 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQ for KMIP for VMware migration
+# FAQ for KMIP for VMware
 {: #faq-kmip}
 
 {{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.kmip-deprecated-note}}
-
-{{site.data.content.kmip-imp-note}}
 
 Find answers to frequently asked questions about the Key Management Interoperability Protocol (KMIP™) for VMware® service.
 
@@ -31,21 +29,13 @@ Find answers to frequently asked questions about the Key Management Interoperabi
 {: #faq-kmip-eos-kp}
 {: faq}
 
-Support for the Key Protect service as part of the KMIP for VMware will end on 16 July 2026 after which the service will no longer be available. Customers must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 16 July 2026.
-
-This announcement is applicable only to customers who are using the KMIP for VMware support for Key Protect.
-
-## I am a user of KMIP for VMware support for HPCS. What does this announcement mean for me?
-{: #faq-kmip-eos-hpcs}
-{: faq}
-
-This announcement is applicable only to customers who are using the KMIP for VMware support for Key Protect. Customers who are using KMIP for VMware support for Hyper Protect Crypto Services (HPCS) remain unaffected by this announcement. The KMIP for VMware support for HPCS continues to function as usual without any impact.
+Support for the Key Management Interoperability Protocol (KMIP™) for VMware® service will end on 31 December 2026 after which the service will no longer be available. Customers must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 31 December 2026.
 
 ## Why is the support for KMIP for VMware ending?
 {: #faq-kmip-eos-reason}
 {: faq}
 
-The new key provider, [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect), offers various advantages over the KMIP for VMware adapter that supports the existing Key Protect. The decision to end support was taken due to the following reasons:
+The new key provider, [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect), offers various advantages over the KMIP for VMware. The decision to end support was taken due to the following reasons:
 
 * Reduced risk of failure to recover VMs.
 * Improved performance due to the shorter network distance for calls from KMIP to key provider.
@@ -58,7 +48,7 @@ The new key provider, [{{site.data.keyword.IBM}} Key Protect for {{site.data.key
 
 Customers must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 16 July 2026. For more information about the migration steps, see [Migrating from KMIP for VMware to {{site.data.keyword.cloud_notm}} native KMIP providers](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_migration).
 
-The KMIP for VMware support for Key Protect is not going to be available from 17 July 2026.
+The KMIP for VMware support is not going to be available from 01 January 2027.
 {: important}
 
 For any questions or assistance, send an email to clouddigitalsales@us.ibm.com, or [open a support ticket](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) in the VMware Solutions console.
@@ -75,7 +65,7 @@ For any questions or assistance, send an email to clouddigitalsales@us.ibm.com, 
 {: #faq-kmip-eos-price}
 {: faq}
 
-No, the price of adopting the new key provider, [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect), remains the same as what customers are currently paying for KMIP for VMware support for Key Protect. The existing KMIP adapter for VMware is not chargeable, and the customers are only charged monthly for per key version. The pricing remains the same in the new key provider.
+No, the price of adopting the new key provider, [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect), remains the same as what customers are currently paying for KMIP for VMware support. The existing KMIP adapter for VMware is not chargeable, and the customers are only charged monthly for per key version. The pricing remains the same in the new key provider.
 
 ## Related links
 {: #faq-kmip-related}

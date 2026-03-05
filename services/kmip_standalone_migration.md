@@ -4,7 +4,7 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-02-23"
+lastupdated: "2026-03-05"
 
 keywords: vmware solutions kmip for vmware, kmip for vmware, migration, migration partner, partners for assisted migration
 
@@ -20,8 +20,6 @@ subcollection: vmwaresolutions
 {{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.kmip-deprecated-note}}
-
-{{site.data.content.kmip-imp-note}}
 
 ## Before you begin
 {: #kmip_migration-req}
@@ -39,16 +37,13 @@ Review the following information:
 
 The native providers share common code and their behavior is similar. For more information, see [Key Protect: Using the key management interoperability protocol (KMIP)](/docs/key-protect?topic=key-protect-kmip&interface=ui).
 
-The support of native KMIP providers is not available for the [Hyper Protect Crypto Services](/docs/hs-crypto) offering of {{site.data.keyword.cloud_notm}}.
-{: important}
-
 ## Migrating to the new KMIP provider
 {: #kmip_migration-environment}
 
 If you already use the KMIP for VMware provider, switch to the new key provider for improved performance:
 1. Go to `https://cloud.ibm.com/infrastructure/vmware-solutions/console/instances/kmip`.
 2. Select your existing KMIP for VMware instance and note the Key Manager instance name.
-3. Go to `https://cloud.ibm.com/resources`, expand **Security**, and choose the Key Manager instance from step 2.
+3. Go to `https://cloud.ibm.com/resources`, expand **Security**. For Hyper Protect Crypto Services (HPCS), you must provision a new Key Protect Single Tenant instance to replace the HPCS instance. For Key Protect, choose the Key Manager instance from step 2.
 
      To implement this step, your account needs certain privileges. Complete the following steps to check your account privilege:
      1. In the console, **Manage** > **Access (IAM)** > **Users**.
@@ -186,6 +181,9 @@ $clusterlist | Format-Table
 
 1. Go to {{site.data.keyword.cloud_notm}} for VMware Solutions console.
 2. Delete the KMIP for VMware instance that is provisioned with the old KMIP provider.
+
+     For HPCS, if you plan to migrate from HPCS and no longer require the existing HPCS instance, then delete that instance.
+     {: important}
 
 For completeness, delete all the old unused keys that were created by the old KMIP for VMware adapter in the vCenter Server console. You can either delete the keys manually or use a CLI command. You can identify these keys by name, since their names contain `vmware_kmip` as prefix.
 

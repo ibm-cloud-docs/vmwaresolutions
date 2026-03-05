@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2026
 
-lastupdated: "2026-01-19"
+lastupdated: "2026-03-05"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -31,7 +31,12 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 
 
+### 05 March 2026
+{: #vmwaresolutions-mar0526}
+{: release-note}
 
+End of Support for KMIP for VMware
+:   Key Management Interoperability Protocol (KMIP™) for VMware offering support will end on 31 December 2026 after which the KMIP for VMware service will no longer work. You must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service by 31 December 2026. For more information, see [End of Support for KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-kmip).
 
 ### 19 January 2026
 {: #vmwaresolutions-jan1926}

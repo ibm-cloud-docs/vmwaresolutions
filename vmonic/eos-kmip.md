@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2025
+  years:  2025, 2026
 
-lastupdated: "2026-02-02"
+lastupdated: "2026-03-05"
 
 keywords: end of support notice, kmip for vmware service, end of support kmip for vmware, kmip for vmware deprecated, kmip for vmware support
 
@@ -15,20 +15,16 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# End of Support for KMIP for VMware for Key Protect
+# End of Support for KMIP for VMware
 {: #eos-kmip}
 
 {{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.kmip-deprecated-note}}
 
-Support for Key Protect service as part of the Key Management Interoperability Protocol (KMIP™) for VMware® will end on 16 July 2026 after which the service will no longer be available. You must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 16 July 2026.
+Support for the Key Management Interoperability Protocol (KMIP™) for VMware® service will end on 31 December 2026 after which the service will no longer be available. You must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 31 December 2026.
 
-{{site.data.content.kmip-imp-note}}
-
-
-
-If you are using the KMIP for VMware support for Key Protect, you must plan and start migration to [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) services at the earliest.
+If you are using the KMIP for VMware service, you must plan and start migration to [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) services at the earliest.
 
 The new key provider offering, [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect), has the following advantages over the KMIP for VMware adapter:
 - Improved performance because the calls from KMIP to key provider are closer in network distance and no longer cross the service-to-service authorization boundaries.

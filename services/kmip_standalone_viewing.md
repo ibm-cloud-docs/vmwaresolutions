@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-03-05"
 
 keywords: KMIP for VMware, view KMIP stand-alone, KMIP for VMware status
 
@@ -20,8 +20,6 @@ subcollection: vmwaresolutions
 {{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.kmip-deprecated-note}}
-
-{{site.data.content.kmip-imp-note}}
 
 Use this procedure to view the KMIP™ for VMware® instances that you ordered and information about them.
 

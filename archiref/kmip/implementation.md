@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-03-05"
 
 subcollection: vmwaresolutions, kmip for vmware
 
@@ -19,8 +19,6 @@ subcollection: vmwaresolutions, kmip for vmware
 {{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.kmip-deprecated-note}}
-
-{{site.data.content.kmip-imp-note}}
 
 ## Planning
 {: #kmip-implementation-planning}

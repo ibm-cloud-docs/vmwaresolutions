@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-03-05"
 
 keywords: KMIP for VMware, KMIP stand-alone, tech specs KMIP
 
@@ -20,8 +20,6 @@ subcollection: vmwaresolutions
 {{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.kmip-deprecated-note}}
-
-{{site.data.content.kmip-imp-note}}
 
 The Key Management Interoperability Protocol (KMIP™) for VMware® service provides a highly available service to manage encryption keys that are used by VMware in {{site.data.keyword.cloud}}. This service offers runtime capability to allow customers to create, retrieve, activate, revoke, and delete the encryption keys. It also provides management capability to maintain the associations between the client credentials and the encryption keys.
 {: shortdesc}

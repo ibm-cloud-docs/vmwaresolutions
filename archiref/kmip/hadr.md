@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2025
+  years:  2023, 2026
 
-lastupdated: "2025-11-21"
+lastupdated: "2026-03-05"
 
 subcollection: vmwaresolutions
 
@@ -18,8 +18,6 @@ subcollection: vmwaresolutions
 {{site.data.content.vms-deprecated-note}}
 
 {{site.data.content.kmip-deprecated-note}}
-
-{{site.data.content.kmip-imp-note}}
 
 ## High availability within a region
 {: #kmip-hadr-regional}
