@@ -4,7 +4,7 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-03-04"
+lastupdated: "2026-03-10"
 
 keywords: end of marketing notice, eom vmwaresolutions, end of marketing vcf for classic, end of marketing vcf for vpc, end of marketing vcf as a service
 
@@ -36,7 +36,7 @@ Existing customers can continue to use and expand their VMware environments, but
    * The consumption model is limited to your existing model: on-demand or reserved.
    * Using the Veeam® Backup service for virtual machine (VM) backup is not available if you are not already using the service to actively back up your VMs.
    * Existing usage of the Veeam Backup service cannot be expanded beyond your current regions.
-   * New dedicated Veeam Scale-out Backup Repositories (SOBRs) are limited to Cloud Object Storage (COS) only storage.
+   * New dedicated Veeam Scale-out Backup Repositories (SOBRs) are limited to Cloud Object Storage only storage.
 
 *Existing customer* is defined as an {{site.data.keyword.cloud_notm}} account (or Enterprise child account) with at least one active VMware workload on {{site.data.keyword.cloud_notm}} before 31 October 2025. If an existing customer has multiple {{site.data.keyword.cloud_notm}} accounts, only those accounts that have the VMware offerings before 31 October 2025 are allowed to expand their environments based on the restrictions that are stated earlier.
 
@@ -53,4 +53,4 @@ Existing customers can continue to use and expand their VMware environments, but
 This notice addresses End of Marketing only and it does not reflect End of Support.
 {: note}
 
-For more information, see [FAQ for EOM for VMware on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-eos-vms).
+For more information, see the [FAQ for EOM for VMware on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-eos-vms).
