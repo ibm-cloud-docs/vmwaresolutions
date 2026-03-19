@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2026
 
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-18"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -29,7 +29,26 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 
 
+### 18 March 2026
+{: #vmwaresolutions-mar1826}
+{: release-note}
 
+BOM updates for {{site.data.keyword.vcf-classic-short}}
+:   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
+
+   * VMware ESXi™ 8.0 Update 3h (build 25067014)
+   * VMware vCenter Server® Appliance  8.0 Update 3h (build 25092719)
+   * VMware NSX® 4.2.3.2 (build 25077145)
+
+Add-on services upgrades
+:   The following service versions are available for deployment:
+
+   * Caveonix RiskForesight™ v5.2.7
+   * FortiGate® Virtual Appliance v7.4.9
+   * VMware Aria® Operations™ and VMware Aria Operations™ for Logs 8.18.5
+
+Known issues with Veeam version 12.3.2.4165
+:   After the installation of Veeam version 12.3.2.4165, you might notice a **server out of date** error that appears for your hosts. To resolve this issue, follow the instructions in [Upgrading Infrastructure Components: a Veeam Guide](https://helpcenter.veeam.com/archive/backup/120/vsphere/components_update.html){: external}.
 
 ### 05 March 2026
 {: #vmwaresolutions-mar0526}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2025
+  years:  2025, 2026
 
-lastupdated: "2026-02-04"
+lastupdated: "2026-03-19"
 
 keywords: usage meter, upgrade
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Upgrading Usage Meter
+# Upgrading Usage Meter and swapping license keys
 {: #usage_meter-upgrade}
 
 {{site.data.content.vms-deprecated-note}}
@@ -22,7 +22,15 @@ subcollection: vmwaresolutions
 Upgrade any existing VMware vCloud Usage Meters to version 9 to integrate with their own access token. For Usage Meter 4.8, the upgrade process involves receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to version 9. After the initial upgrade to version 9 or later, you don't need to provide the access token for further upgrades.
 {: important}
 
+Before you upgrade to version 9 or later, you must swap the VMware Cloud Foundation™ (VCF) license keys.
 
+## Procedure to swap the license keys
+{: #usage_meter-vcflicense-swap}
+
+
+1. Obtain the new Broadcom license keys, and then retrieve the VMware Cloud Foundation (VCF) license keys from the VMware Solutions console. For more information, see [Retrieving VCF license keys](/docs/vmwaresolutions?topic=vmwaresolutions-licenses_vcf-licenses).
+2. Obtain the VMware add–on keys. For more information, see [Obtaining the VMware add-on keys](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons#vmware-add-ons-obtain).
+3. Add the new license keys to all VMware products, and then assign the licenses as required. For more information, see [Managing VMware product licenses](/docs/vmwaresolutions?topic=vmwaresolutions-licensing_manage).
 
 ## Procedure to upgrade Usage Meter
 {: #usage_meter-upgrade-proc}

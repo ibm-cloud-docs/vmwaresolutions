@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-12-04"
+lastupdated: "2026-03-19"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -28,7 +28,7 @@ FortiGate® Virtual Appliance on {{site.data.keyword.cloud}} deploys a pair of F
 
 {{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months at no cost for a service license, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
 
-The FortiGate Virtual Appliance version available for deployment is 7.4.8.
+The FortiGate Virtual Appliance version available for deployment is 7.4.9.
 {: note}
 
 ## Technical specifications for FortiGate Virtual Appliance

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-03-19"
 
 keywords: vsphere BOM, bill of materials vsphere, BOM, flexible
 
@@ -22,9 +22,9 @@ subcollection: vmwaresolutions
 
 The following table details the Bill of Materials (BOM) information for VMware vSphere® software components.
 
-| Manufacturer | Component      | Version |
-|:------------ |:-------------- |:------- |
-| VMware® by Broadcom | vSphere ESXi™ | ESXi 8.0 Update 3g (build 24859861)[^esxi80] or \n ESXi 7.0 Update 3w (build 24784741)[^esxi70] |
+| Manufacturer | Component | Version |
+| :------------ | :-------------- | :------- |
+| VMware® by Broadcom | vSphere ESXi™ | ESXi™ 8.0 Update 3h (build 25067014)[^esxi80] or \n ESXi 7.0 Update 3w (build 24784741)[^esxi70] |
 {: caption="BOM for Flexible instances" caption-side="bottom"}
 
 [^esxi80]: Applicable to vSphere 8
