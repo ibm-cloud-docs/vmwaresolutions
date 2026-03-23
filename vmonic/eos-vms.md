@@ -4,7 +4,7 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-03-10"
+lastupdated: "2026-03-20"
 
 keywords: end of marketing notice, eom vmwaresolutions, end of marketing vcf for classic, end of marketing vcf for vpc, end of marketing vcf as a service
 
@@ -19,8 +19,6 @@ subcollection: vmwaresolutions
 {: #eos-vms}
 
 {{site.data.content.vms-deprecated-note}}
-
-
 
 
 
