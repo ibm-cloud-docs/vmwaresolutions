@@ -4,7 +4,7 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-24"
 
 keywords: vmware solutions kmip for vmware, kmip for vmware, migration, migration partner, partners for assisted migration
 
@@ -43,7 +43,7 @@ The native providers share common code and their behavior is similar. For more i
 If you already use the KMIP for VMware provider, switch to the new key provider for improved performance:
 1. Go to `https://cloud.ibm.com/infrastructure/vmware-solutions/console/instances/kmip`.
 2. Select your existing KMIP for VMware instance and note the Key Manager instance name.
-3. Go to `https://cloud.ibm.com/resources`, expand **Security**. For Hyper Protect Crypto Services (HPCS), you must provision a new Key Protect Single Tenant instance to replace the HPCS instance. For Key Protect, choose the Key Manager instance from step 2.
+3. Go to `https://cloud.ibm.com/resources`, expand **Security**. If your KMIP instance uses a dedicated key management service, you must provision a new key manager instance because {{site.data.keyword.cloud_notm}} is changing dedicated key management services from Hyper Protect Crypto Services (HPCS) to Key Protect Dedicated. However, if your KMIP instance uses Key Protect, you can continue to use the same Key Manager instance from step 2.
 
      To implement this step, your account needs certain privileges. Complete the following steps to check your account privilege:
      1. In the console, **Manage** > **Access (IAM)** > **Users**.
