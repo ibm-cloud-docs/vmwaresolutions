@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2026
 
-lastupdated: "2026-01-19"
+lastupdated: "2026-03-25"
 
 subcollection: vmwaresolutions
 
@@ -55,7 +55,7 @@ You are responsible for securing, encrypting, and monitoring your VMware instanc
 - Change all passwords that are displayed in the {{site.data.keyword.vmwaresolutions_short}} console and use your own password management system. IBM retains distinct user IDs needed for ongoing automation and support.
 - Review password policies, such as complexity and expiration period, across all components.
 - Review encryption settings across all components.
-- Plan and implement appropriate physical or virtual firewall solutions, such as NSX Distributed Firewall (DFW), NSX ESGs, [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations), and [{{site.data.keyword.cloud_notm}} Vyatta](/catalog/infrastructure/virtual-router-appliance){: external}.
+- Plan and implement appropriate firewall solutions. Ensure that you examine the NSX Gateway Firewall (GFW) configuration for your NSX workloads and consider using NSX Distributed Firewall (DFW) for these workloads. Also, consider using the gateway appliances, such as [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations), [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview), and [{{site.data.keyword.cloud_notm}} Vyatta](/catalog/infrastructure/virtual-router-appliance){: external}.
 - Plan and implement appropriate application load balancing and security solutions, such as [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations).
 - Plan and implement appropriate security information and event management (SIEM) solutions, such as [IBM Security QRadar SIEM](https://www.ibm.com/products/qradar-siem){: external}.
 - Plan and implement appropriate vulnerability scanning.
