@@ -4,7 +4,7 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-03-10"
+lastupdated: "2026-03-26"
 
 keywords: FAQ end of support for vmwaresolutions, vmware solutions, end of marketing, end of support
 
@@ -80,4 +80,3 @@ The License Portability program is subject to Broadcom’s ability to change the
 {: #faq-eos-vms-related}
 
 * [End of Marketing for VMware on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vms)
-* [Migrating VMware workloads to {{site.data.keyword.cloud_notm}} Virtualization platforms](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vms-nextsteps)
