@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-12-04"
+lastupdated: "2026-03-31"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -74,13 +74,13 @@ Before you install the F5 BIG-IP service, review the following considerations.
 Based on the license model and bandwidth that you select, two BIG-IP VE VMs are deployed with the following configuration:
 
 | Maximum Bandwidth | License Model - Good | License Model - Better | License Model - Best |
-|:------------------|:--------------------|:----------------------|:--------------------|
-| 25 Mbps           | 2 CPUs, 4 GB RAM    | 4 CPUs, 8 GB RAM      | 8 CPUs, 16 GB RAM   |
-| 200 Mbps          | 2 CPUs, 4 GB RAM    | 4 CPUs, 8 GB RAM      | 8 CPUs, 16 GB RAM   |
-| 1 Gbps            | 2 CPUs, 4 GB RAM    | 4 CPUs, 8 GB RAM      | 8 CPUs, 16 GB RAM   |
-| 3 Gbps            | 8 CPUs, 16 GB RAM   | 8 CPUs, 16 GB RAM     | 8 CPUs, 16 GB RAM   |
-| 5 Gbps            | 8 CPUs, 16 GB RAM   | 8 CPUs, 16 GB RAM     | 8 CPUs, 16 GB RAM   |
-| 10 Gbps           | 8 CPUs, 16 GB RAM   | 8 CPUs, 16 GB RAM     | 8 CPUs, 16 GB RAM   |
+| :------------------ | :-------------------- | :---------------------- | :-------------------- | 
+| 25 Mbps | 2 CPUs, 4 GB RAM | 4 CPUs, 8 GB RAM | 8 CPUs, 16 GB RAM |
+| 200 Mbps | 2 CPUs, 4 GB RAM | 4 CPUs, 8 GB RAM | 8 CPUs, 16 GB RAM |
+| 1 Gbps | 2 CPUs, 4 GB RAM | 4 CPUs, 8 GB RAM | 8 CPUs, 16 GB RAM |
+| 3 Gbps | 8 CPUs, 16 GB RAM | 8 CPUs, 16 GB RAM | 8 CPUs, 16 GB RAM |
+| 5 Gbps | 8 CPUs, 16 GB RAM | 8 CPUs, 16 GB RAM | 8 CPUs, 16 GB RAM |
+| 10 Gbps | 8 CPUs, 16 GB RAM | 8 CPUs, 16 GB RAM | 8 CPUs, 16 GB RAM |
 {: caption="CPU and RAM deployments for different bandwidth and license model selections" caption-side="bottom"}
 {: #f5_considerations-install-table}
 
