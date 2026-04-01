@@ -39,7 +39,7 @@ BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
 
    * VMware ESXi™ 8.0 Update 3h (build 25067014)
-   * VMware vCenter Server® Appliance  8.0 Update 3h (build 25092719)
+   * VMware vCenter Server® Appliance 8.0 Update 3h (build 25092719)
    * VMware NSX® 4.2.3.2 (build 25077145)
 
 Add-on services upgrades
