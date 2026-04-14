@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-04-14"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 Review the two key principles for Day 2 operations.
 
 * Your {{site.data.keyword.vcf-auto}} instance is not actively monitored by {{site.data.keyword.IBM}}. After deployment, use existing tools, use a managed service. Examples of a managed service include IBM Integrated Managed Infrastructure, a third-party managed service, or implement a self-managed monitoring solution as described in [Operations management introduction](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-intro).
-* IBM Support does not enter the VMware® management layer under normal operations without a client–written support ticket. You must raise a support ticket to engage support from IBM. For more information, see [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). You must actively manage the ticket to ensure that you provide the requested information that is required by IBM in a timely manner. For more information, see [Managing your support cases](/docs/account?topic=account-managing-support-cases&interface=ui) and [Escalating support cases](/docs/account?topic=account-managing-support-cases&interface=ui#escalation).
+* IBM Support does not enter the VMware® management layer under normal operations without a client–written support ticket. You must raise a support ticket to engage support from IBM. For more information, see [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). You must actively manage the ticket to ensure that you provide the requested information that is required by IBM in a timely manner. For more information, see [Managing your support cases](/docs/support?topic=support-managing-support-cases&interface=ui) and [Escalating support cases](/docs/support?topic=support-managing-support-cases&interface=ui#escalation).
 
 For more information about IBM and customer responsibilities that concern compliance, see [Customer versus IBM responsibility for {{site.data.keyword.vcf-auto-short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info#vc_compl_info-responsibility).
 
@@ -47,6 +47,6 @@ Day 2 responsibilities include the following items:
 
 * [Managing system notifications](/docs/vmwaresolutions?topic=vmwaresolutions-notifications)
 * [Compliance information for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info)
-* [Using the Support Center](/docs/account?topic=account-using-avatar)
-* [FAQ for getting support](/docs/account?topic=account-get-supportfaq)
+* [Using the Support Center](/docs/support?topic=support-using-avatar)
+* [FAQ for getting support](/docs/support?topic=support-get-supportfaq)
 * [Cloud Event Management documentation](https://www.ibm.com/docs/en/cem){: external}

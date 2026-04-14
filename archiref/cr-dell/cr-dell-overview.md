@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2025
+  years:  2023, 2026
 
-lastupdated: "2025-10-30"
+lastupdated: "2026-04-14"
 
 subcollection: vmwaresolutions
 
@@ -176,4 +176,4 @@ After your vCenter Server instance is provisioned:
 * [Architecture pattern for using Direct Link with NSX-T and EVPN](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-direct-link-evpn)
 * [Virtual Private Network (VPN)](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/virtual-private-network-vpn.html){: external}
 * [Adding a cross-account connection](/docs/transit-gateway?topic=transit-gateway-adding-cross-account-connections&interface=ui)
-* [Dell PowerProtect DD Virtual edition data sheet](https://www.delltechnologies.com/asset/en-my/solutions/apex/technical-support/dell-apex-protection-storage-data-sheet.pdf){: external}
+* [Dell PowerProtect DD Virtual edition data sheet](https://www.delltechnologies.com/asset/en-my/products/cyber-resilience/technical-support/dell-powerprotect-data-domain-virtual-edition-datasheet.pdf){: external}

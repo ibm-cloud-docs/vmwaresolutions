@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2025
+  years:  2020, 2026
 
-lastupdated: "2025-10-31"
+lastupdated: "2026-04-14"
 
 keywords: user account, ibm cloud account, ibm cloud infrastructure
 
@@ -36,7 +36,7 @@ Additionally, you must have an {{site.data.keyword.cloud_notm}} infrastructure a
 
 This account is also used to log in to the {{site.data.keyword.slportal}} that provides more functions to manage infrastructure products and services.
 
-To sign up for an {{site.data.keyword.cloud_notm}} infrastructure account, upgrade your {{site.data.keyword.cloud_notm}} account to a billable account. For more information, see [How do I upgrade or convert my account type?](/docs/account?topic=account-accountfaqs#changeacct)
+To sign up for an {{site.data.keyword.cloud_notm}} infrastructure account, upgrade your {{site.data.keyword.cloud_notm}} account to a billable account. For more information, see [How do I upgrade my account?](/docs/account?topic=account-accountfaqs#changeacct)
 
 ### Permissions for the {{site.data.keyword.cloud_notm}} infrastructure account
 {: #signing_required_accounts-infra-permissions}
@@ -44,7 +44,7 @@ To sign up for an {{site.data.keyword.cloud_notm}} infrastructure account, upgra
 The {{site.data.keyword.cloud_notm}} infrastructure account that you are using must have certain permissions to be able to order the components in your instances and perform operations on your behalf. The permission requirements are applicable to all types of instances and services that you are ordering from the {{site.data.keyword.vmwaresolutions_short}} console.
 
 | Permission | Details |
-|:---------- |:------- |
+| :---------- | :------- |
 | Add Server | This permission is required for the following operations: to order {{site.data.keyword.cloud_notm}} bare metal servers on which VMware ESXi™ runs and to provision hourly virtual servers that are used, for instance configuration, maintenance, and support operations. |
 | Cancel Server | This permission is required to release and reclaim bare metal servers on which VMware ESXi runs. If you delete your instance, the ordered components are automatically released in the correct dependency sequence. |
 | View Virtual Server Details | This permission is required to retrieve the server provisioning details, which are required for order validation and automated configuration. |
@@ -64,7 +64,7 @@ The {{site.data.keyword.cloud_notm}} infrastructure account that you are using m
 | IPMI Remote Management | This permission is required to view IPMI details regarding hardware and issue reboot commands through the portal. |
 {: caption="Required permissions for the {{site.data.keyword.cloud_notm}} infrastructure account" caption-side="bottom"}
 
-To verify or update permissions for classic infrastructure users, see [Classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra).
+To verify or update permissions for classic infrastructure users, see [Managing classic infrastructure permissions](/docs/iam?topic=iam-mngclassicinfra#predefined).
 
 ### Virtual routing and forwarding with service endpoints enabled
 {: #signing_required_accounts-infra-vrf-se}
@@ -81,4 +81,4 @@ For more information, see the following procedures:
 
 * [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Managing user accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount)
-* [Enabling MFA in your account](/docs/account?topic=account-enablemfa#enablemfa)
+* [Enabling MFA in your account](/docs/iam?topic=iam-enablemfa#enablemfa)

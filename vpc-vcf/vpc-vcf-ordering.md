@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2026
 
-lastupdated: "2026-02-02"
+lastupdated: "2026-04-14"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -82,7 +82,7 @@ You can also specify a resource name prefix that meets the following requirement
 
 Use resource groups to organize the resources in your account for access control and billing purposes. By default, **Create new** is selected and a **vcf-_xxx_-rg** resource group is created in your account. Ensure that you have permission to create a new resource group in the current account.
 
-You can also select other resource groups according to your needs. You must have permission to add resources to the selected resource group. If you don't have the required permission, contact the account owner to be assigned the Editor or Administrator role on a resource group in the account. For more information, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/account?topic=account-userroles).
+You can also select other resource groups according to your needs. You must have permission to add resources to the selected resource group. If you don't have the required permission, contact the account owner to be assigned the Editor or Administrator role on a resource group in the account. For more information, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/iam?topic=iam-userroles).
 
 The resource group that you select cannot be changed after the instance is created.
 {: important}

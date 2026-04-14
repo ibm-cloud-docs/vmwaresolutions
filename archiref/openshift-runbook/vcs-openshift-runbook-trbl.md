@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2025
+  years:  2019, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-04-14"
 
 subcollection: vmwaresolutions
 
@@ -198,7 +198,7 @@ After the initial 24 h certificate renewal, the cluster snapshot is enabled to r
 {: #vcs-openshift-runbook-trbl-related}
 
 * [Install on vSphere: User-Provisioned Infrastructure](https://console.redhat.com/openshift/install/vsphere/user-provisioned){: external}
-* [Install a cluster on vSphere](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}
+* [Install a cluster on vSphere](https://docs.redhat.com/en/documentation/openshift_container_platform/4.7/html/installing/installing-on-vsphere#installing-vsphere){: external}
 * [Index of public {{site.data.keyword.redhat_openshift_notm}} v4 clients](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/?extIdCarryOver=true&sc_cid=701f2000001Css5AAC){: external}
 * [Persistent storage overview](https://docs.redhat.com/en/documentation/openshift_container_platform/4.7/html/storage/understanding-persistent-storage#persistent-storage-overview_understanding-persistent-storage){: external}
 * [ssh-keygen - Generate a New SSH Key](https://www.ssh.com/academy/ssh/keygen){: external}

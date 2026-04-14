@@ -3,8 +3,8 @@
 
 
 copyright:
-  years: 2016, 2025
-lastupdated: "2025-10-24"
+  years: 2016, 2026
+lastupdated: "2026-04-14"
 
 keywords: getting help, getting support, troubleshooting, contact support, support ticket
 
@@ -36,4 +36,4 @@ If you still can't resolve the problem, you can open a support case. For more in
 2. Log in with your **IBMid** account.
 3. Select **All Products** and type **VMware Solutions** where prompted for the product name, then click **VMware Solutions**.
 4. Review the various solutions offered. If you do not see an answer to your problem, click **Create a case** in the **Contact Support** section.
-5. Continue with the steps in [Creating a support case](/docs/account?topic=account-open-case&interface=ui#creating-support-case).
+5. Continue with the steps in [Creating a support case](/docs/support?topic=support-open-case&interface=ui).

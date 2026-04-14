@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2025
+  years:  2019, 2026
 
-lastupdated: "2025-11-21"
+lastupdated: "2026-04-14"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ These instructions use the {{site.data.keyword.redhat_openshift_notm}} installer
 5. The `terraform.tfvars` file is created to hold the variables for the Terraform installation.
 6. Terraform is run, which provisions the VMs. The VMs are started, configured, and the {{site.data.keyword.redhat_openshift_notm}} cluster is created.
 
-For more information about installing the {{site.data.keyword.redhat_openshift_notm}} user provider infrastructure, see [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}.
+For more information about installing the {{site.data.keyword.redhat_openshift_notm}} user provider infrastructure, see [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.redhat.com/en/documentation/openshift_container_platform/4.7/html/installing/installing-on-vsphere#installing-vsphere){: external}.
 
 ## Creating the Red Hat OpenShift Installer yaml file
 {: #openshift-runbook-runbook-install-yaml}
@@ -45,7 +45,7 @@ Use the following table to document the parameters you need for your deployment.
 * The pull secret collected from {{site.data.keyword.redhat_full}}. For more information, see [{{site.data.keyword.redhat_openshift_notm}} infrastructure providers](https://console.redhat.com/openshift/install/vsphere/user-provisioned){: external} (requires logging in to your {{site.data.keyword.redhat_notm}} account).
 
 | Parameters | Example | Your deployment |
-|:---------- |:------- |:--------------- |
+| :---------- | :------- | :--------------- |
 | Base domain | `dallas.ibm.local` | |
 | Metadata name | `ocp` | |
 | vCenter Server IP address | 10.208.17.2 | |
@@ -54,7 +54,7 @@ Use the following table to document the parameters you need for your deployment.
 | vCenter Server instance data center | `datacenter1` | |
 | vCenter Server instance datastore | `vsanDatastore` | |
 | Pull Secret | | |
-| Public SSH Key| | |
+| Public SSH Key | | |
 {: caption="File parameters for install-config.yaml" caption-side="bottom"}
 {: #openshift-runbook-runbook-install-yaml-table}
 
@@ -167,7 +167,7 @@ You must update the following Terraform files.
 The DNS IP details are hardcoded within the Terraform template. You must change this IP to be the vCenter Server instance AD DNS server.
 
 | Parameter | Example | Your deployment |
-|:--------- |:------- |:--------------- |
+| :--------- | :------- | :--------------- |
 | DNS1 | 10.187.214.66 | |
 {: caption="File parameters for ignition.tf" caption-side="bottom"}
 
@@ -270,15 +270,15 @@ You can copy the ignition files after you use the following commands to display 
 `cat /opt/ocpinstall/worker.ign`
 
 | Parameter | Example | Your deployment |
-|:--------- |:------- |:--------------- |
-| bootstrap_ip | 192.168.133.9| |
-| control_plane_ips | 192.168.133.10 \n 192.168.133.11 \n 192.168.133.12| |
-| compute_ips | 192.168.133.13 \n 192.168.133.14 \n 192.168.133.15| |
+| :--------- | :------- | :--------------- |
+| bootstrap_ip | 192.168.133.9 | |
+| control_plane_ips | 192.168.133.10 \n 192.168.133.11 \n 192.168.133.12 | |
+| compute_ips | 192.168.133.13 \n 192.168.133.14 \n 192.168.133.15 | |
 | machine_cidr | `192.168.133.0/24` | |
-| cluster_id | `ocp`| |
+| cluster_id | `ocp` | |
 | cluster_domain | ocp.dallas.ibm.local | |
 | base_domain | dallas.ibm.local | |
-| vsphere_server| 10.208.17.2 | |
+| vsphere_server | 10.208.17.2 | |
 | vsphere_user | administrator@vsphere.local |
 | vsphere_password | `s3cretPassw0rd` | |
 | vsphere_cluster | cluster1 | |

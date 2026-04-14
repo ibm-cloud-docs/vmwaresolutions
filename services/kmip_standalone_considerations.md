@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2026
 
-lastupdated: "2026-03-05"
+lastupdated: "2026-04-14"
 
 keywords: KMIP for VMware, KMIP stand-alone, tech specs KMIP
 
@@ -57,7 +57,7 @@ Before you install KMIP for VMware, complete the following tasks and review the 
    * [Initializing HPCS service instances using key part files](/docs/hs-crypto?topic=hs-crypto-initialize-hsm#initialize-hsm)
 
 2. If you are using Key Protect, complete the following tasks:
-   1. Create an {{site.data.keyword.cloud_notm}} service ID by following the steps in [Creating a service ID in the console](/docs/account?topic=account-serviceids&interface=ui#create_serviceid). This service ID is used to access the Key Protect instance that you created.
+   1. Create an {{site.data.keyword.cloud_notm}} service ID by following the steps in [Creating a service ID by using the console](/docs/iam?topic=iam-serviceids&interface=ui#create_serviceid). This service ID is used to access the Key Protect instance that you created.
    2. Grant the following access levels for the service ID:
       * At the platform access level: Viewer authority to your Key Protect or HPCS service instance.
       * At the service access level: Manager authority to your Key Protect or HPCS service instance.

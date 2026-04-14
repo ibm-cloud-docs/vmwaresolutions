@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2025
+  years:  2019, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-04-14"
 
 keywords: iam user role for vmware, iam user, iam user permissions, iam account administrator
 
@@ -24,7 +24,7 @@ Use {{site.data.keyword.cloud}} Identity and Access Management (IAM) to define u
 
 You must have an IAM account administrator role to complete various tasks. For example, setting account credentials and granting platform access to users.
 
-If you do not have an administrator role and you want to complete a task that requires the administrator role, you can locate someone with that role. The person that you located can then assign access. For more information about what an account administrator can do, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/account?topic=account-userroles#userroles).
+If you do not have an administrator role and you want to complete a task that requires the administrator role, you can locate someone with that role. The person that you located can then assign access. For more information about what an account administrator can do, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/iam?topic=iam-userroles).
 
 ## How to locate an account owner with the administrator role?
 {: #faq-iam_verify_permissions-locate-admin}
@@ -71,4 +71,4 @@ After you find the account owner or another user with an administrator role, tha
 {: #faq-iam_verify_permissions-related}
 
 * [How {{site.data.keyword.cloud_notm}} IAM works](/docs/account?topic=account-iamoverview)
-* [Managing access to resources](/docs/account?topic=account-assign-access-resources)
+* [Managing access to resources](/docs/iam?topic=iam-assign-access-resources&interface=ui)

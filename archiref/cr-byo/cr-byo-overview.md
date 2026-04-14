@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2026
 
-lastupdated: "2026-01-21"
+lastupdated: "2026-04-14"
 
 subcollection: vmwaresolutions
 
@@ -92,7 +92,7 @@ Review the following information about network connectivity for your cyber-recov
 {: #cr-byo-overview-related}
 
 * [Commvault - Enterprise data solutions](https://www.commvault.com){: external}
-* [Dell PowerProtect DD Virtual edition data sheet](https://www.delltechnologies.com/asset/en-my/solutions/apex/technical-support/dell-apex-protection-storage-data-sheet.pdf){: external}
+* [Dell PowerProtect DD Virtual edition data sheet](https://www.delltechnologies.com/asset/en-my/products/cyber-resilience/technical-support/dell-powerprotect-data-domain-virtual-edition-datasheet.pdf){: external}
 * [IBM Spectrum Protect](https://www.ibm.com/products/storage-protect){: external}
 * [IBM Spectrum Protect Plus](https://www.ibm.com/products/ibm-storage-protect-plus){: external}
 * [Rubrik Solutions overview](https://www.rubrik.com/solutions){: external}

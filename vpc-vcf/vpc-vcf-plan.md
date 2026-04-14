@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2025
+  years:  2023, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-04-14"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -34,7 +34,7 @@ A resource group organizes account resources in customizable groupings so that y
 To manage users access and resource groups, your account must have permissions to [manage resource groups](/docs/account?topic=account-rgs&interface=ui) and to [manage accounts](/docs/account?topic=account-groups&interface=ui#prereq-create-groups).
 
 Ensure that the following requirements are met:
-* You have an Editor or Administrator role on a resource group in the account. For more information, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/account?topic=account-userroles).
+* You have an Editor or Administrator role on a resource group in the account. For more information, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/iam?topic=iam-userroles).
 * You have permission to [create an {{site.data.keyword.bplong_notm}} workspace](/docs/schematics?topic=schematics-access#access-roles).
 * Your account meets the [required IAM permissions](/docs/vpc?topic=vpc-iam-getting-started&interface=ui) to interact with {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}) infrastructure objects.
 * Your account meets the [required IAM permissions](/docs/vpc?topic=vpc-planning-for-bare-metal-servers&interface=ui) for Bare Metal Servers on {{site.data.keyword.vpc_short}}.

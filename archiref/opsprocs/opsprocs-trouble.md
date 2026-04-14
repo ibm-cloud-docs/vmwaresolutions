@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2026
 
-lastupdated: "2026-01-12"
+lastupdated: "2026-04-14"
 
 subcollection: vmwaresolutions
 
@@ -71,7 +71,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 * Licenses - troubleshooting topics that provide guidance on resolving license issues, typically related to clients who have their own licenses to {{site.data.keyword.cloud_notm}}.
 
 | Title | Description |
-|-------|-------------|
+| ------- | ------------- |
 | Generic VM troubleshooting | For more information, see [Troubleshooting virtual machines](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-virtual-machine-administration/troubleshooting-virtual-machinesvsphere-vm-admin.html){: external}. |
 | VM performance issues | You can troubleshoot the symptoms of VM performance issues, including guest OS starting slowly, applications that experience poor performance, applications that take a long time to start, or applications become unresponsive. |
 | Recover orphaned VM | Orphaned VMs are VMs that exist in the vCenter database, but are not recognized by the vSphere ESXi host. For more information about recovering orphaned VMs, see [Recover Orphaned Virtual Machines](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-virtual-machine-administration/troubleshooting-virtual-machinesvsphere-vm-admin/recover-orphaned-virtual-machines-in-the-vsphere-web-clientvsphere-vm-admin.html){: external}. |
@@ -81,9 +81,9 @@ In an aid to isolating the affected components, this documentation on troublesho
 | Virtual Machine Memory Limit | Memory limits are often used. However, if a guest OS cannot access the memory that it needs, the applications inside the guest OS might perform poorly. For more information about resolving the issue, see [Configure Your Resource Allocation Settings in vSphere](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-resource-management/configuring-resource-allocation-settings.html){: external}. |
 | VM snapshots | While snapshots are useful, the quantity and age of a VM's snapshots directly impact the performance of the VM. For more information about resolving the issue, see [Manage Virtual Machines With Snapshots](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-virtual-machine-administration/managing-virtual-machinesvsphere-vm-admin/using-snapshots-to-manage-virtual-machinesvsphere-vm-admin.html){: external}. |
 | VM logging | When logging is not configured correctly the capacity of the datastore might be adversely impacted. |
-| Troubleshooting network connection issues | Symptoms can include VM fails to connect to the network, or no network connectivity to or from a single VM. For more information about resolving the issue, see [Troubleshooting virtual machine network connection issues (1003893)](https://knowledge.broadcom.com/external/article?legacyId=1003893){: external}.  |
-| Determining whether multiple virtual CPUs are causing performance issues  | These issues can include poor transfer speeds when they copy data to or from a VM, if backup jobs timeout or are slow, or a VM performs poorly.  |
-| A VM was powered off or restarted  | For more information, see [Determining why a virtual machine was powered off or restarted (1019064)](https://knowledge.broadcom.com/external/article?legacyId=1019064){: external}. |
+| Troubleshooting network connection issues | Symptoms can include VM fails to connect to the network, or no network connectivity to or from a single VM. For more information about resolving the issue, see [Troubleshooting virtual machine network connection issues (1003893)](https://knowledge.broadcom.com/external/article?legacyId=1003893){: external}. |
+| Determining whether multiple virtual CPUs are causing performance issues | These issues can include poor transfer speeds when they copy data to or from a VM, if backup jobs timeout or are slow, or a VM performs poorly. |
+| A VM was powered off or restarted | For more information, see [Determining why a virtual machine was powered off or restarted (1019064)](https://knowledge.broadcom.com/external/article?legacyId=1019064){: external}. |
 | One or more of your VMs has a poor response time | Performance issues can be caused by CPU constraints, memory over commitment, storage latency, or network latency. |
 {: class="simple-tab-table"}
 {: caption="Virtual machine troubleshooting" caption-side="bottom"}
@@ -92,14 +92,14 @@ In an aid to isolating the affected components, this documentation on troublesho
 {: tab-group="trbl-scenarios"}
 
 | Title | Description |
-|-------|-------------|
+| ------- | ------------- |
 | ESXi commands | For an overview of the command‐line interfaces in vSphere, the ESXi Shell commands, and the vCLI (VMware® vSphere Command‐Line Interface) commands, see [Getting Started with ESXCLI](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere-sdks-tools/8-0/getting-started-with-esxcli-8-0.html){: external}. |
 | vSphere HA Host States | If vCenter reports a vSphere HA host state that indicates an error condition on the host, these issues must be remediated. These issues can prevent vSphere HA from restarting VMs after a failure. For more information, see [Troubleshooting vSphere HA Host States](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vcenter-and-host-management/troubleshooting-overview-host-management/troubleshooting-hosts-host-management/troubleshooting-vsphere-ha-host-states-host-management.html){: external}. |
 | vSphere ESXi host is in a nonresponding state | A nonresponding state includes `Not Responding`, `Disconnected`, or the VMs on the host show as `Unavailable` in vCenter. For more information about troubleshooting a vSphere ESXi host that is in a nonresponding state, see [ESX/ESXi hosts do not respond and is grayed out (1019082)](https://knowledge.broadcom.com/external/article?legacyId=1019082){: external}. |
 | When you power on a VM, you see a `File not found` error | For more information, search through the [Broadcom Support Portal](https://support.broadcom.com/){: external}. |
 | VM Performance issues | Performance issues can be caused by CPU constraints, memory over commitment, storage latency, or network latency. |
-| Bare metal server is down | When the bare metal server that is running vSphere ESXi is unresponsive or down, log in to the {{site.data.keyword.cloud_notm}} management UI or console and check the status. If required, open a case to get assistance with your bare metal server. For more information, see [Managing your support cases](/docs/account?topic=account-managing-support-cases&interface=ui). |
-| vSphere ESXi host is in disconnected or a not responding state  | For more information, see [Troubleshooting an ESXi/ESX host in non responding state (1003409)](https://knowledge.broadcom.com/external/article?legacyId=1003409){: external}. |
+| Bare metal server is down | When the bare metal server that is running vSphere ESXi is unresponsive or down, log in to the {{site.data.keyword.cloud_notm}} management UI or console and check the status. If required, open a case to get assistance with your bare metal server. For more information, see [Managing your support cases](/docs/support?topic=support-managing-support-cases&interface=ui). |
+| vSphere ESXi host is in disconnected or a not responding state | For more information, see [Troubleshooting an ESXi/ESX host in non responding state (1003409)](https://knowledge.broadcom.com/external/article?legacyId=1003409){: external}. |
 | Purple diagnostic screen | Purple screen errors can signal a kernel panic. The vSphere ESXi kernel `vmkernel` triggers this safety measure in response to an event or error that is unrecoverable. An unrecoverable error means that continuing to run poses a high risk for the services and VMs. When the panic occurs and the vSphere ESXi host crashes, it ends all the services that run on it together with all the VMs hosted. The VMs are not gracefully shut down, but rather abruptly powered off. If the host is part of a cluster and you configured HA, these VMs are restarted on the other hosts in the cluster. For more information, search through the [Broadcom Support Portal](https://support.broadcom.com/){: external}. |
 {: caption="Typical vSphere ESXi hosts troubleshooting" caption-side="bottom"}
 {: #table2}
@@ -108,11 +108,11 @@ In an aid to isolating the affected components, this documentation on troublesho
 {: class="simple-tab-table"}
 
 | Title | Description |
-|-------|-------------|
+| ------- | ------------- |
 | Storage troubleshooting | Issues can be caused by slow performance, unpredictable failures, disk corruption, or VM corruption. |
-| vSAN troubleshooting | For more information, see [Failure handling in vSAN](https://techdocs.broadcom.com/us/en/vmware-cis/vsan/vsan/7-0/vsan-monitoring/handling-failures-and-troubleshooting-virtual-san/handling-failures-in-virtual-san/failure-handling-in-virtual-san.html){: external}.  |
+| vSAN troubleshooting | For more information, see [Failure handling in vSAN](https://techdocs.broadcom.com/us/en/vmware-cis/vsan/vsan/7-0/vsan-monitoring/handling-failures-and-troubleshooting-virtual-san/handling-failures-in-virtual-san/failure-handling-in-virtual-san.html){: external}. |
 | vSAN Disk Failure | For more information about how to identify a specific disk failure in a vSAN deduplication cluster, see [Identifying specific disk failure in a vSAN deduplication cluster (2149067)](https://knowledge.broadcom.com/external/article?legacyId=2149067){: external}. |
-| Clear vSAN health issues | In the vSphere Web Client Monitor page, you might see alerts and warnings that relate to vSAN Health issues. For more information about clearing these issues, see [Virtual SAN health alerts and warnings](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_vsan_alerts#trbl_vsan_alerts){: external}.|
+| Clear vSAN health issues | In the vSphere Web Client Monitor page, you might see alerts and warnings that relate to vSAN Health issues. For more information about clearing these issues, see [Virtual SAN health alerts and warnings](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_vsan_alerts#trbl_vsan_alerts){: external}. |
 | vSAN rebalance | If disks report errors in the health check that indicate the cluster is imbalanced and disks are high on space usage while others are low, and you must run a proactive rebalance. A manually initiated rebalance of the objects in a vSAN cluster begins. For more information about vSAN proactive rebalance and when it might be applicable, see [vSAN proactive rebalance (2149809)](https://knowledge.broadcom.com/external/article?legacyId=2149809){: external}. |
 | Initiate vSAN health test | If you suspect an issue with vSAN, you can initiate a health test to verify that the cluster components are working as expected. Running the VM creation test creates a VM on each host in the cluster and then deletes it. If these tasks are successful, then the cluster components are working as expected and the cluster is functional. Then, network performance test is used to detect and diagnose connectivity issues and to ensure that the network bandwidth between the hosts is adequate. For more information, see [Proactive tests](https://techdocs.broadcom.com/us/en/vmware-cis/vsan/vsan/7-0/vsan-monitoring/monitoring-vsan-skyline-health/proactive-tests-on-vsan-cluster.html){: external}. |
 | Monitoring vSAN performance | For more information, see [Monitoring vSAN performance](https://techdocs.broadcom.com/us/en/vmware-cis/vsan/vsan/7-0/vsan-monitoring/monitor-virtual-san-performance.html){: external}. Performance charts are available for clusters, hosts, physical disks, VMs, and virtual disks. |
@@ -124,9 +124,9 @@ In an aid to isolating the affected components, this documentation on troublesho
 {: class="simple-tab-table"}
 
 | Title | Description |
-|-------|-------------|
-|  NSX Edge `/var/log` is getting full on active Edge | For more information, see [Troubleshooting disk space related issues: NSX for vSphere Nodes](https://knowledge.broadcom.com/external/article/317723/troubleshooting-disk-space-related-issue.html){: external}.  |
-| Testing HCX bandwidth  | When you believe that you have a network bandwidth issue with HCX, use `perftest` to find the available bandwidth within the HCX tunnels. For more information, see [Steps to run perftest in HCX (56211)](https://knowledge.broadcom.com/external/article?legacyId=56211){: external}. Bidirectional tests are carried out for each `perftest`. For the pair of gateways, one is inside the source data center (on-premises), and the other one is in {{site.data.keyword.cloud_notm}}. The way `perftest` throughput works is to have the sender try to send as fast as the link can sustain. Therefore, for each test, you see a higher "sender" rate than the "receiver" rate. You can consider the "receiver" rate value as a one-way throughput result. |
+| ------- | ------------- |
+| NSX Edge `/var/log` is getting full on active Edge | For more information, see [Troubleshooting disk space related issues: NSX for vSphere Nodes](https://knowledge.broadcom.com/external/article/317723/troubleshooting-disk-space-related-issue.html){: external}. |
+| Testing HCX bandwidth | When you believe that you have a network bandwidth issue with HCX, use `perftest` to find the available bandwidth within the HCX tunnels. For more information, see [Steps to run perftest in HCX (56211)](https://knowledge.broadcom.com/external/article?legacyId=56211){: external}. Bidirectional tests are carried out for each `perftest`. For the pair of gateways, one is inside the source data center (on-premises), and the other one is in {{site.data.keyword.cloud_notm}}. The way `perftest` throughput works is to have the sender try to send as fast as the link can sustain. Therefore, for each test, you see a higher "sender" rate than the "receiver" rate. You can consider the "receiver" rate value as a one-way throughput result. |
 | HCX troubleshooting | For more information, see [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting). |
 | HCX syncing state with 0% progress and 0 bytes with status error | [HCX - Health Check and Best Practices](https://knowledge.broadcom.com/external/article?articleNumber=371941){: external}. |
 | Poor VM network performance | Review the VM virtual NIC settings. VMware recommends VMXNET 3 virtual NICs for VMs as it is the most recent generation of paravirtualized NICs designed for performance. Check for compatibility of VMXNET 3 using the VMware compatibility list, and if supported change the virtual NIC for additional network performance. For more information, see [Troubleshoot vSphere Networking](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-networking/troubleshooting-networking-configurations.html){: external}. |
@@ -137,7 +137,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 {: class="simple-tab-table"}
 
 | Title | Description |
-|-------|-------------|
+| ------- | ------------- |
 | Virtual Machine Console Access | For more information, see [Using a Virtual Machine Console](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-virtual-machine-administration/managing-virtual-machinesvsphere-vm-admin/using-a-virtual-machine-remote-consolevsphere-vm-admin.html){: external}. |
 | New vCenter Server Certificate Does Not Appear to Load | After the replacement of the default vCenter certificates, the new certificates might not appear to load. For more information, see [New vCenter Certificate Does Not Appear to Load](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vcenter-and-host-management/troubleshooting-overview-host-management/troubleshooting-vcenter-server-certificates-host-management/new-vcenter-server-certificate-does-not-appear-to-load-host-management.html){: external}. |
 | vCenter Server Cannot Connect to Managed Hosts | After the replacement of the default vCenter certificates and restarting the system, VMware vCenter® Server Appliance (VCSA) cannot connect to managed hosts. For more information, see [vCenter Cannot Connect to Managed Hosts](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vcenter-and-host-management/troubleshooting-overview-host-management/troubleshooting-vcenter-server-certificates-host-management/vcenter-server-cannot-connect-to-managed-hosts-host-management.html){: external}. |
@@ -149,10 +149,10 @@ In an aid to isolating the affected components, this documentation on troublesho
 {: class="simple-tab-table"}
 
 | Title | Description |
-|-------|-------------|
-|  Incompatible or incorrect license configuration | For more information, see [Troubleshooting ESX Hosts](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vcenter-and-host-management/troubleshooting-overview-host-management/troubleshooting-hosts-host-management.html){: external}. |
-|  VM does not power on | It ia possible that a license issue exists if you can't power on a VM on a vSphere ESXi host and you receive the ``The 60-day evaluation period of the host is expired or the license of the host is expired`` message. For more information, see [Virtual Machine Power On Operation Fails](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-resource-management/drs-troubleshooting-information/virtual-machine-problems/virtual-machine-problem-1.html){: external}. |
-| A feature is unavailable or inability to change a configuration  | No additional information |
+| ------- | ------------- |
+| Incompatible or incorrect license configuration | For more information, see [Troubleshooting ESX Hosts](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vcenter-and-host-management/troubleshooting-overview-host-management/troubleshooting-hosts-host-management.html){: external}. |
+| VM does not power on | It ia possible that a license issue exists if you can't power on a VM on a vSphere ESXi host and you receive the ``The 60-day evaluation period of the host is expired or the license of the host is expired`` message. For more information, see [Virtual Machine Power On Operation Fails](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-resource-management/drs-troubleshooting-information/virtual-machine-problems/virtual-machine-problem-1.html){: external}. |
+| A feature is unavailable or inability to change a configuration | No additional information |
 {: caption="Typical license troubleshooting" caption-side="bottom"}
 {: #table6}
 {: tab-title="Licenses"}
