@@ -4,9 +4,9 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-03-26"
+lastupdated: "2026-04-16"
 
-keywords: FAQ end of support for vmwaresolutions, vmware solutions, end of marketing, end of support
+keywords: FAQ end of marketing for vmwaresolutions, vmware solutions, end of marketing, end of marketing
 
 subcollection: vmwaresolutions
 
@@ -18,6 +18,8 @@ content-type: faq
 
 # FAQ for End of Marketing for VMware on {{site.data.keyword.cloud_notm}}
 {: #faq-eos-vms}
+
+
 
 {{site.data.content.vms-deprecated-note}}
 
