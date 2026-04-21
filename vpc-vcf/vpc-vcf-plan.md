@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2026
 
-lastupdated: "2026-04-14"
+lastupdated: "2026-04-21"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -31,7 +31,7 @@ To order a {{site.data.keyword.vcf-vpc}} instance, you must have a Pay-As-You-Go
 Access to {{site.data.keyword.cloud_notm}} resources for users in your account is controlled by {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). Every user that accesses infrastructure services resources in your account must be assigned one or more access policies that define their IAM roles. Each user must also have access to the resource group that contains the infrastructure resources.
 
 A resource group organizes account resources in customizable groupings so that you can quickly assign access to more than one resource at a time. Every resource that is managed by IAM belongs to a resource group within your account.
-To manage users access and resource groups, your account must have permissions to [manage resource groups](/docs/account?topic=account-rgs&interface=ui) and to [manage accounts](/docs/account?topic=account-groups&interface=ui#prereq-create-groups).
+To manage users access and resource groups, your account must have permissions to [manage resource groups](/docs/account?topic=account-rgs&interface=ui) and to [manage accounts](/docs/iam?topic=iam-groups&interface=ui#prereq-create-groups).
 
 Ensure that the following requirements are met:
 * You have an Editor or Administrator role on a resource group in the account. For more information, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/iam?topic=iam-userroles).

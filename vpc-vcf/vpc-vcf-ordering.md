@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2026
 
-lastupdated: "2026-04-14"
+lastupdated: "2026-04-21"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -250,7 +250,7 @@ Determines whether a Windows VM is created in your {{site.data.keyword.vpc_short
 ### IAM access group
 {: #vpc-vcf-ordering-adv-settings-iam}
 
-Determines whether to create an {{site.data.keyword.cloud_notm}} Access Group with an access policy for granting access to the resources deployed in your selected resource group. By default, it will not create the access group and access policy, but you can create them after the deployment. For more information about {{site.data.keyword.cloud_notm}} Access Group, see [Setting up access groups](/docs/account?topic=account-groups&interface=ui).
+Determines whether to create an {{site.data.keyword.cloud_notm}} Access Group with an access policy for granting access to the resources deployed in your selected resource group. By default, it will not create the access group and access policy, but you can create them after the deployment. For more information about {{site.data.keyword.cloud_notm}} Access Group, see [Streamlined access management with access groups](/docs/iam?topic=iam-groups&interface=ui#access_ag).
 
 ### Observability
 {: #vpc-vcf-ordering-adv-settings-obs}

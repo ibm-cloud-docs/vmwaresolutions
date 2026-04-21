@@ -4,7 +4,7 @@
 
 copyright:
   years: 2016, 2026
-lastupdated: "2026-04-14"
+lastupdated: "2026-04-20"
 
 keywords: getting help, getting support, troubleshooting, contact support, support ticket
 
@@ -27,7 +27,7 @@ If you experience an issue or have questions when using VMware Solutions, you ca
 * Review the [troubleshooting documentation](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_timeout_vc_console) to troubleshoot and resolve common issues.
 * Check the status of the {{site.data.keyword.Bluemix_notm}} platform and resources by going to the [Status](/status) page.
 
-If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/account?topic=account-open-case&interface=ui). And, if you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).
+If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/support?topic=support-open-case&interface=ui). And, if you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).
 
 ## Procedure to create a case for VMware Solutions
 {: #trbl_support-procedure}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2025
+  years: 2026
 
-lastupdated: "2025-12-03"
+lastupdated: "2026-04-21"
 
 keywords: HA firmware solutions, DR for vmware solutions, vmware solutions recovery time objective, vmware solutions recovery point objective
 
@@ -91,4 +91,4 @@ Most of the changes to your VMware environment and workloads will take place wit
 
 {{site.data.keyword.IBM}} maintains the VMware Solutions service in a highly available fashion, replicating our data and control plane across multiple {{site.data.keyword.cloud_notm}} regions for resilience. All upgrades to the VMware Solution service follow {{site.data.keyword.IBM_notm}} service best practices, including recovery plans and rollback processes. Regular maintenance might cause short interruptions, mitigated by [client availability retry logic](/docs/resiliency?topic=resiliency-high-availability-design#client-retry-logic-for-ha). {{site.data.keyword.IBM_notm}} reverts updates at the first sign of a defect.
 
-Changes that impact customer workloads are detailed in {{site.data.keyword.cloud_notm}} notifications. For more information about planned maintenance, announcements, and release notes that impact this service, see [Monitoring notifications and status](/docs/account?topic=account-viewing-cloud-status).
+Changes that impact customer workloads are detailed in {{site.data.keyword.cloud_notm}} notifications. For more information about planned maintenance, announcements, and release notes that impact this service, see [Viewing cloud status](/docs/support?topic=support-viewing-status).

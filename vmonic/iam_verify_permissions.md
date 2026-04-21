@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2026
 
-lastupdated: "2026-04-14"
+lastupdated: "2026-04-20"
 
 keywords: iam user role for vmware, iam user, iam user permissions, iam account administrator
 
@@ -70,5 +70,5 @@ After you find the account owner or another user with an administrator role, tha
 ## Related links
 {: #faq-iam_verify_permissions-related}
 
-* [How {{site.data.keyword.cloud_notm}} IAM works](/docs/account?topic=account-iamoverview)
+* [How {{site.data.keyword.cloud_notm}} IAM works](/docs/iam?group=how-iam-works)
 * [Managing access to resources](/docs/iam?topic=iam-assign-access-resources&interface=ui)

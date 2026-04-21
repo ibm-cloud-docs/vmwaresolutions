@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2026
 
-lastupdated: "2026-04-14"
+lastupdated: "2026-04-21"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -161,8 +161,6 @@ The uplink speed provides two options:
 
 
 
-CONTENT:
-
 You must manage the {{site.data.keyword.vmwaresolutions_short}} components that are created in your {{site.data.keyword.cloud_notm}} account only in the VMware Solutions console, not the {{site.data.keyword.slportal}}, or any other means outside of the console. If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.
 {: important}
 {: #imp-note-manage-comp}
@@ -301,7 +299,7 @@ CONTENT:
 Use resource groups to organize the resources in your account for access control and billing purposes. The default resource group in your account is selected. You can also select another resource group according to your needs. The resource group that you select cannot be changed after the instance is created.
 {: #para-orderinginstance-resource-group}
 
-If **No resource group available** is displayed in this field, you currently do not have permissions to any resource group in this account. Contact the account owner to be assigned an Editor or Administrator role on a resource group in the account. For more information, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/iam?topic=iam-userroles#iamusermanroles).
+If **No resource group available** is displayed in this field, you currently do not have permissions to any resource group in this account. Contact the account owner to be assigned an Editor or Administrator role on a resource group in the account. For more information, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/iam?topic=iam-userroles).
 {: note}
 {: #note-orderinginstance-resource-group}
 

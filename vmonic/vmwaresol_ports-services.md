@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2025
+  years:  2020, 2026
 
-lastupdated: "2025-12-03"
+lastupdated: "2026-04-20"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -27,7 +27,7 @@ The following topics provide information about the ports that are used by the se
 The following table provides information about the Caveonix RiskForesight™ ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:-------|:---------------- |:-------|:----------------|:------|:---------|:--------|:--------|
+| :------- | :---------------- | :------- | :---------------- | :------ | :--------- | :-------- | :-------- |
 | Caveonix | New subnet ordered in private VLAN | VMware vCenter Server® | Infrastructure VMs | 443 | TCP | Use vCenter Server REST service | HTTPS |
 | Caveonix | New subnet ordered in private VLAN | Windows® Active Directory™ | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
 | Caveonix | New subnet ordered in private VLAN | {{site.data.keyword.cloud_notm}} infrastructure Redis service | {{site.data.keyword.cloud_notm}} infrastructure services network | 6379 | TCP | Use {{site.data.keyword.cloud_notm}} infrastructure Redis service | |
@@ -41,7 +41,7 @@ The following table provides information about the Caveonix RiskForesight™ por
 The following table provides information about the F5 BIG-IP® ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
+| :------ | :---------------- | :------ | :---------------- | :---- | :-------- | :------- | :------- |
 | BigIP | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
 | Management-nsx-edge public IP | Public subnet for management edge | BigIP license server | `104.219.111.132/32` | 443 | TCP | License registration | HTTPS |
 {: caption="F5 BIG-IP ports" caption-side="bottom"}
@@ -52,7 +52,7 @@ The following table provides information about the F5 BIG-IP® ports.
 The following table provides information about the FortiGate® virtual appliance ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
+| :------ | :---------------- | :------ | :---------------- | :---- | :-------- | :------- | :------- |
 | Management-nsx-edge public IP | Public subnet for management edge | Fortinet® servers | `208.91.112.0/22` | 443 | TCP | FortiGate installation | HTTPS |
 | Management-nsx-edge public IP | Public subnet for management edge | Fortinet servers | `96.45.33.0/24` | 443 | TCP | FortiGate installation | HTTPS |
 | Management-nsx-edge public IP | Public subnet for management edge | Fortinet servers | `66.35.17.248` | 443 | TCP | FortiGate installation | HTTPS |
@@ -64,7 +64,7 @@ The following table provides information about the FortiGate® virtual appliance
 The following table provides information about the VMware HCX™ ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
+| :------ | :---------------- | :------ | :---------------- | :---- | :-------- | :------- | :------- |
 | HCX | New subnet ordered in private VLAN | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
 | HCX | New subnet ordered in private VLAN | vCenter Server | Infrastructure VMs | 443 | TCP | Use vCenter Server REST service | HTTPS |
 | HCX | New subnet ordered in private VLAN | NSX Manager | Infrastructure VMs | 443 | TCP | Use NSX Manager registration service | HTTPS |
@@ -80,9 +80,9 @@ The following table provides information about the VMware HCX™ ports.
 The following table provides information about the Juniper® vSRX ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
-| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vSRX private IP addresses| New subnet ordered in private VLAN | 22 | TCP | Set up and configure vSRX | SSH |
-| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vSRX private IP addresses| New subnet ordered in private VLAN | 830 | TCP | Set up and configure vSRX by NETCONF over SSH | |
+| :------ | :---------------- | :------ | :---------------- | :---- | :-------- | :------- | :------- |
+| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vSRX private IP addresses | New subnet ordered in private VLAN | 22 | TCP | Set up and configure vSRX | SSH |
+| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vSRX private IP addresses | New subnet ordered in private VLAN | 830 | TCP | Set up and configure vSRX by NETCONF over SSH | |
 | vSRX | vSRX Private IP | VMware Aria Operations™ for Logs (if VMware Aria® Operations™ service is installed) | VMware Aria Operations for Logs FQDN | 514 | UDP | Remote syslog to VMware Aria Operations for Logs if VMware Aria Operations service is installed | Syslog |
 {: caption="Juniper vSRX ports" caption-side="bottom"}
 
@@ -94,18 +94,18 @@ The following table provides information about the Juniper® vSRX ports.
 The following table provides information about the {{site.data.keyword.redhat_openshift_full}} ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
-| OCP | New subnet ordered in private VLAN | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
+| :------ | :---------------- | :------ | :---------------- | :---- | :-------- | :------- | :------- |
+| OCP | New subnet ordered in private VLAN | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
 | OCP | New subnet ordered in private VLAN | vCenter Server | Infrastructure VMs | 443 | TCP | Use vCenter Server REST service | HTTPS |
 | OCP | New subnet ordered in private VLAN | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [Synchronizing app time to the {{site.data.keyword.cloud_notm}} NTP service](/docs/infrastructure-hub?topic=infrastructure-hub-ntp-service-overview). | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
 | OCP | New subnet ordered in private VLAN | OCP cluster network | OCP internal IP range `10.128.0.0/14` | 5443 and 8443 | TCP | OCP cluster management | WEBREST API |
-| OCP edge public IP addresses| New subnet ordered in public VLAN | Public websites required for {{site.data.keyword.redhat_openshift_notm}} installation[^osinst] | | 80, 123, and 443 | TCP and UDP | Time service, {{site.data.keyword.redhat_openshift_notm}} installation content, and images | NTP/HTTP/HTTPS |
+| OCP edge public IP addresses | New subnet ordered in public VLAN | Public websites required for {{site.data.keyword.redhat_openshift_notm}} installation[^osinst] | | 80, 123, and 443 | TCP and UDP | Time service, {{site.data.keyword.redhat_openshift_notm}} installation content, and images | NTP/HTTP/HTTPS |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | OCP | New subnet ordered in private VLAN | 22 | TCP | Set up and configure OCP | SSH |
 {: caption="{{site.data.keyword.redhat_openshift_notm}} for VMware ports" caption-side="bottom"}
 
 [^osinst]: For more information, see [Configuring your firewall](https://docs.redhat.com/en/documentation/openshift_container_platform/4.15/html/installation_configuration/configuring-firewall){: external}.
 
-For more information about OCP networking, see [About the {{site.data.keyword.redhat_openshift_notm}} SDN network provider](https://docs.openshift.com/container-platform/4.15/networking/openshift_sdn/about-openshift-sdn.html){: external}.
+For more information about OCP networking, see [About the {{site.data.keyword.redhat_openshift_notm}} SDN network provider](https://docs.redhat.com/en/documentation/openshift_container_platform/4.15/html/networking/openshift-sdn-network-plugin#about-openshift-sdn){: external}.
 
 ## Ports for Veeam
 {: #vmwaresol_ports-vmware-optional-services-veeam}
@@ -113,7 +113,7 @@ For more information about OCP networking, see [About the {{site.data.keyword.re
 The following table provides information about the Veeam® ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
+| :------ | :---------------- | :------ | :---------------- | :---- | :-------- | :------- | :------- |
 | Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network. | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | UDP |
 | Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [Synchronizing app time to the {{site.data.keyword.cloud_notm}} NTP service](/docs/infrastructure-hub?topic=infrastructure-hub-ntp-service-overview). | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
 | Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure service - Provision Windows VSI | {{site.data.keyword.cloud_notm}} infrastructure services network | | ICMP | Use infrastructure services to provision Windows VSI for Veeam | Ping |
@@ -134,14 +134,14 @@ The following table provides information about the Veeam® ports.
 The following table provides information about the VMware Aria Operations ports for {{site.data.keyword.vcf-auto}} instances.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
+| :------ | :---------------- | :------ | :---------------- | :---- | :-------- | :------- | :------- |
 | ESXi host | Private primary subnet | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
 | vCenter Server | Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
 | VMware Aria Operations | New subnet ordered in private VLAN | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | TCP and UDP | Use Windows DNS service | DNS |
 | VMware Aria Operations | New subnet ordered in private VLAN | vCenter Server | Infrastructure VMs | 443 | TCP | VMware Aria Operations configuration | HTTPS |
 | VMware Aria Operations | New subnet ordered in private VLAN | NSX-T Manager and NSX-T controllers | Infrastructure VMs | 443 | TCP | VMware Aria Operations configuration | HTTPS |
 | VMware Aria Operations | New subnet ordered in private VLAN | NSX-T Manager and NSX-T controllers | Infrastructure VMs | 1234 | TCP | NSX messaging | |
-| VMware Aria Operations | New subnet ordered in private VLAN | NSX-T Manager and NSX-T controllers | Infrastructure VMs | 1235 | TCP | NSX messaging |  |
+| VMware Aria Operations | New subnet ordered in private VLAN | NSX-T Manager and NSX-T controllers | Infrastructure VMs | 1235 | TCP | NSX messaging | |
 | VMware Aria Operations | New subnet ordered in private VLAN | NSX-T virtual IP | Infrastructure VMs | 443 | TCP | VMware Aria Operations configuration | HTTPS |
 | NSX-T Manager and NSX-T controllers | Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
 | Customer-nsx-edge private IP  | Customer edge gateway private | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | TCP and UDP | Use Windows DNS service | DNS |
@@ -165,7 +165,7 @@ For more information about port requirements for VMware Aria Operations, see [TC
 The following table provides information about {{site.data.keyword.hpe-zerto}} ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
+| :------ | :---------------- | :------ | :---------------- | :---- | :-------- | :------- | :------- |
 | Zerto Virtual Manager (ZVM) VSI | Private primary subnet \n Infrastructure VMs | Zerto VRA agents | New subnet ordered in private VLAN | 4006 | TCP | TLS over TCP communication between ZVM and local site VRAs | |
 | ZVM VSI | Private primary subnet \n Infrastructure VMs | Zerto VRA agents | New subnet ordered in private VLAN | 4009 | TCP | TLS over TCP communication between the ZVM and local site VRAs to handle checkpoints | |
 | ZVM VSI | Private primary subnet \n Infrastructure VMs | Zerto VRA agents | New subnet ordered in private VLAN | | ICMP | Check network connectivity from ZVM to the VRAs | Ping |
@@ -180,14 +180,14 @@ The following table provides information about the Entrust CloudControl™, Entr
 {: deprecated}
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
+| :------ | :---------------- | :------ | :---------------- | :---- | :-------- | :------- | :------- |
 | Entrust CloudControl | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [Synchronizing app time to the {{site.data.keyword.cloud_notm}} NTP service](/docs/infrastructure-hub?topic=infrastructure-hub-ntp-service-overview). | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
 | Entrust CloudControl | Infrastructure VMs | Windows Active Directory and DNS server | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
 | Entrust CloudControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | | ICMP | Ping | Ping |
 | Entrust CloudControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 443 | TCP | Access Windows Active Directory | HTTPS |
 | Entrust DataControl | Infrastructure VMs | Windows Active Directory | {{site.data.keyword.cloud_notm}} infrastructure services network | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
 | Entrust DataControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
-| Entrust KeyControl | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [Synchronizing app time to the {{site.data.keyword.cloud_notm}} NTP service](/docs/infrastructure-hub?topic=infrastructure-hub-ntp-service-overview). | 123  | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
+| Entrust KeyControl | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [Synchronizing app time to the {{site.data.keyword.cloud_notm}} NTP service](/docs/infrastructure-hub?topic=infrastructure-hub-ntp-service-overview). | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
 | Entrust KeyControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
 {: caption="Entrust CloudControl, Entrust DataControl, and Entrust KeyControl ports - deprecated" caption-side="bottom"}
 
@@ -198,6 +198,6 @@ The following table provides information about the IBM Spectrum® Protect Plus p
 {: deprecated}
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
+| :------ | :---------------- | :------ | :---------------- | :---- | :-------- | :------- | :------- |
 | IBM Spectrum Protect Plus | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [Synchronizing app time to the {{site.data.keyword.cloud_notm}} NTP service](/docs/infrastructure-hub?topic=infrastructure-hub-ntp-service-overview). | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
 {: caption="IBM Spectrum Protect Plus ports - deprecated" caption-side="bottom"}
