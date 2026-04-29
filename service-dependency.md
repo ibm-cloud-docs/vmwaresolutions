@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-02-11"
+lastupdated: "2026-04-29"
 
 keywords:
 
@@ -39,15 +39,20 @@ Minimal
 ## Data and Control plane deployment
 {: #data-and-control-plane-deployment}
 
-The following dependencies apply to the following deployment locations: Chennai - Airtel (in-che), Dallas (us-south), Frankfurt (eu-de), London (eu-gb), Madrid (eu-es), Osaka (jp-osa), Sao Paulo (br-sao), Sydney (au-syd), Tokyo (jp-tok), Toronto (ca-tor), Washington DC (us-east).
+The following dependencies apply to the following deployment locations: Dallas (us-south), Frankfurt (eu-de), London (eu-gb), Madrid (eu-es), Osaka (jp-osa), Sao Paulo (br-sao), Sydney (au-syd), Tokyo (jp-tok), Toronto (ca-tor), Washington DC (us-east).
 
 
 |Dependencies|Dependency impacts|Customer provided|Control or data plane|Location of dependency|
 |:---|:---|:---|:---|:---|
+| {{site.data.keyword.iamlong}} | Access management, Availability, Instance control, Security compliance | No | Both |  [Global](/docs/resiliency?topic=resiliency-ha-redundancy#global-platform)  |
 | {{site.data.keyword.cos_full}} | Availability, Change management, Disaster recovery, Instance control | No | Both |  Same region  |
 | {{site.data.keyword.cos_full}} | Availability, Change management, Disaster recovery, Instance control | Yes | Both |  Same region  |
 | {{site.data.keyword.cloudantfull}} | Availability, Change management, Disaster recovery, Instance control | No | Both |  Same region  |
+| {{site.data.keyword.vmwaresolutions_short}} | Availability, Change management, Disaster recovery, Instance control | No | Both |  Same region  |
+| {{site.data.keyword.vmwaresolutions_short}} | Availability, Change management, Disaster recovery, Instance control | No | Both |  Same region  |
+| {{site.data.keyword.vmwaresolutions_short}} | Availability, Change management, Disaster recovery, Instance control | No | Both |  Same region  |
 | {{site.data.keyword.cos_full}} | Availability, Change management, Disaster recovery, Instance control | No | Both |  Same region  |
+| {{site.data.keyword.vmwaresolutions_short}} | Availability, Change management, Disaster recovery, Instance control | No | Both |  Same region  |
 {: row-headers}
 {: caption="IBM Cloud for VMware Solutions - Data and Control plane deployment service dependency information - Critical dependencies" caption-side="top"}
 {: tab-title="Critical dependencies"}
@@ -62,10 +67,13 @@ The following dependencies apply to the following deployment locations: Chennai 
 | {{site.data.keyword.vmwaresolutions_short}}| Security compliance | No | Both |  Same region  |
 | {{site.data.keyword.vmwaresolutions_short}}| none | No | Both |  Same region  |
 | {{site.data.keyword.vmwaresolutions_short}}| Security compliance | No | Both |  Same region  |
-| {{site.data.keyword.vmwaresolutions_short}}| Operations | No | Both |  Dallas 12 (dal12)  |
+| {{site.data.keyword.vmwaresolutions_short}}| Operations | No | Both |  dal12  |
+| {{site.data.keyword.vmwaresolutions_short}}| Security compliance | No | Both |  Same region  |
 | {{site.data.keyword.monitoringlong}}| Operations | No | Both |  Same region  |
 | {{site.data.keyword.vmwaresolutions_short}}| Operations | No | Both |  Same region  |
-| {{site.data.keyword.cis_full}}| Operations | No | Both |  [Global](/docs/resiliency?topic=resiliency-ha-redundancy#global-platform)  |
+| {{site.data.keyword.cis_full}}| Operations | No | Both |  Same region  |
+| None| Operations | No | Both |  Same region  |
+| None| Operations | No | Both |  Same region  |
 {: row-headers}
 {: caption="IBM Cloud for VMware Solutions - Data and Control plane deployment service dependency information - Minimal dependencies" caption-side="top"}
 {: tab-title="Minimal dependencies"}
@@ -82,7 +90,7 @@ The following dependencies apply to the following deployment locations: Dallas (
 
 |Dependencies|Dependency impacts|Customer provided|Control or data plane|Location of dependency|
 |:---|:---|:---|:---|:---|
-| {{site.data.keyword.vmwaresolutions_short}}| Security compliance | No | customer-environment |  Sydney (au-syd)  |
+| {{site.data.keyword.vmwaresolutions_short}}| Security compliance | No | customer-environment |  au-syd  |
 {: row-headers}
 {: caption="IBM Cloud for VMware Solutions - Customer VMware environment deployment service dependency information - Minimal dependencies" caption-side="top"}
 {: tab-title="Minimal dependencies"}
