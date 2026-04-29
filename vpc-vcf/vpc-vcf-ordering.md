@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2026
 
-lastupdated: "2026-04-21"
+lastupdated: "2026-04-29"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -200,7 +200,7 @@ The data center name in your {{site.data.keyword.vcf-vpc-short}} instance. The d
 #### Management domain backup
 {: #vpc-vcf-ordering-mgmt-domain-backup}
 
-To enable the virtual server for backing up SDDC Manager, vCenter Server, and NSX Manager, toggle the **Backup server** switch on.
+To enable the virtual server for backing up SDDC Manager, vCenter Server, and NSX Manager, toggle the **Backup server** switch on. 
 
 ##### SSH keys
 {: #vpc-vcf-ordering-mgmt-ssh-keys}
