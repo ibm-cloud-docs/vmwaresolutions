@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2026
 
-lastupdated: "2026-04-21"
+lastupdated: "2026-05-04"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -160,6 +160,8 @@ The uplink speed provides two options:
 
 
 
+
+CONTENT:
 
 You must manage the {{site.data.keyword.vmwaresolutions_short}} components that are created in your {{site.data.keyword.cloud_notm}} account only in the VMware Solutions console, not the {{site.data.keyword.slportal}}, or any other means outside of the console. If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.
 {: important}
