@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2026
 
-lastupdated: "2026-04-29"
+lastupdated: "2026-05-04"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -200,12 +200,16 @@ The data center name in your {{site.data.keyword.vcf-vpc-short}} instance. The d
 #### Management domain backup
 {: #vpc-vcf-ordering-mgmt-domain-backup}
 
-To enable the virtual server for backing up SDDC Manager, vCenter Server, and NSX Manager, toggle the **Backup server** switch on. 
+To enable the virtual server for backing up SDDC Manager, vCenter Server, and NSX Manager, toggle the **Backup server** switch on. After the Backup Server is provisioned, it is treated as a customer-managed resource. To maintain a secure and functional backup environment, you are responsible for:
+
+* **Package Management:** You must complete periodic updates by using the native package manager (for example, `dnf`, `yum`, or `apt`) to ensure that all security errata and bug fixes are applied.
+* **Integrity Verification:** You must periodically test the backups that are stored on the VSI to ensure that they are valid, and can be used for restoration in a disaster recovery scenario.
+* **Off-site Copy:** You must consider syncing the backup files from the VSI to {{site.data.keyword.IBM_notm}} Cloud Object Storage for long-term retention and added resiliency against the VSI-level failures.
 
 ##### SSH keys
 {: #vpc-vcf-ordering-mgmt-ssh-keys}
 
-You can choose existing SSH keys from the list or create a new one by clicking the **Create SSH key** button. After you create it, refresh the list to see the new SSH key. For more information about VCF backup, see [Backup and restore of VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/administering/backup-and-restore-of-cloud-foundation-admin.html){: external}.
+You can choose any existing SSH keys from the list or create a new one by clicking the **Create SSH key** button. After you create it, refresh the list to see the new SSH key. For more information about VCF backup, see [Backup and restore of VMware Cloud Foundation](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-5-2-and-earlier/4-5/administering/backup-and-restore-of-cloud-foundation-admin.html){: external}.
 
 ## Network interface
 {: #vpc-vcf-ordering-network}
@@ -245,7 +249,15 @@ Review the advanced settings.
 ### Jump server
 {: #vpc-vcf-ordering-adv-settings-jump}
 
-Determines whether a Windows VM is created in your {{site.data.keyword.vpc_short}}. The Windows Server is configured with a public floating IP address to access the {{site.data.keyword.vpc_short}} internal network. For security considerations, the Windows VM is not created by default.
+Determines whether a Windows VM is created in your {{site.data.keyword.vpc_short}}. The Windows Server is configured with a public floating IP address to access the {{site.data.keyword.vpc_short}} internal network. For security considerations, the Windows VM is not created by default. To ensure the security and integrity of the jump server, you are responsible for:
+
+* **Periodic Windows Updates:** You must manually, or through automation, download and install all the critical and security patches.
+* **Vulnerability Management:** You must regularly scan and patch the operating system as it is required to mitigate risks since these instances are not "auto-patched" by {{site.data.keyword.cloud_notm}}.
+
+### Bastion Linux Virtual Server
+{: #vpc-vcf-ordering-adv-settings-basion}
+
+As part of the provisioning (new instance or add host) flow, a new linux VM is provisioned to run the automation and start the underlying orchestration. This VM is short-lived (ephemeral) and deleted after the provisioning is successful.
 
 ### IAM access group
 {: #vpc-vcf-ordering-adv-settings-iam}
