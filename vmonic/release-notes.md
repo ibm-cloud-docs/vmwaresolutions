@@ -115,7 +115,7 @@ New license keys for VMware add-ons
 {: release-note}
 
 MIL01 data center no longer available
-:   The **Milan 01** {{site.data.keyword.cloud_notm}} data center is closing on 10 December 2025. As of 31 October 2025, this data center is no longer available for deployments. For more information, see [Data center migrations](/docs/account?topic=account-dc-closure).
+:   The **Milan 01** {{site.data.keyword.cloud_notm}} data center is closing on 10 December 2025. As of 31 October 2025, this data center is no longer available for deployments.
 
 ### 27 October 2025
 {: #vmwaresolutions-oct2725}
