@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-12-03"
+lastupdated: "2026-05-18"
 
 subcollection: vmwaresolutions
 
@@ -22,7 +22,7 @@ VMware NSX-T™ is designed to address application frameworks and architectures 
 
 NSX-T version 3 and later can run on the vSphere virtual distributed switch (VDS) version 7.0. All new deployments of VMware NSX and vSphere use NSX-T on VDS (N-VDS is not used). For NSX-T version 2.4 and later, the manager VM and the controller VM functions are combined. As a result, three controller or manager VMs are deployed. If on the same subnet, they use an internal network load balancer. If across different subnets, an external load balancer is required.
 
-NSX-T brings many advanced features, such as firewall policies, inclusion of guest introspection within firewall policies, and advanced netflow tracking. Describing these features is beyond the scope of this document. In this design, the NSX-T Management Infrastructure is deployed during the initial vCenter Server® cluster deployment. For more information about NSX-T, see the [VMware NSX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx.html){: external}.
+NSX-T brings many advanced features, such as firewall policies, inclusion of guest introspection within firewall policies, and advanced netflow tracking. Describing these features is beyond the scope of this document. In this design, the NSX-T Management Infrastructure is deployed during the initial vCenter Server® cluster deployment. For more information about NSX-T, see the [VMware NSX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2.html){: external}.
 
 ## Resource requirements
 {: #nsx-t-design-resource-req}
@@ -30,10 +30,10 @@ NSX-T brings many advanced features, such as firewall policies, inclusion of gue
 In this design, the NSX-T controller Manager VMs are deployed on the management cluster. Additionally, each controller manager is assigned to a VLAN–backed IP address from the private portable address block. The address block is designated for management components and configured with the DNS and NTP servers that are discussed in section 0. A summary of the NSX Manager installation is shown in the following table.
 
 | Attribute | Specification |
-|:--------- |:------------- |
+| :--------- | :------------- |
 | **NSX managers or controllers** | Three Virtual Appliances |
 | **Number of vCPUs** | 6 |
-| **Memory** |  24 GB |
+| **Memory** | 24 GB |
 | **Disk** | 300 GB |
 | **Disk type** | Thin provisioned |
 | **NetworkPrivate A** | Private A |
@@ -57,7 +57,7 @@ Depending on the NSX-T topology that you choose, you can deploy an NSX-T gateway
 The following table summarizes the requirements for a medium size environment, which is the recommended starting size for production workloads.
 
 | Resources | Manager x3 | Edge services \n cluster x4 |
-|:--------- |:---------- |:--------------- |
+| :--------- | :---------- | :--------------- |
 | Medium size | Virtual appliance | Virtual appliance |
 | Number of vCPUs | 6 | 4 |
 | Memory | 24 GB | 8 GB |
@@ -79,11 +79,11 @@ As shown in the previous diagrams, the public VDS `*instancename*-*clustername*-
 
 VLANs are used to segment physical network functions. This design uses three VLANs: two for private network traffic and one for public network traffic. The following table shows the traffic separation.
 
-| VLAN  | Designation | Traffic type |
-|:----- |:----------- |:------------ |
-| VLAN 1 | Private A   | ESXi management, management, edge uplinks |
-| VLAN 2 | Private B   | Geneve (TEP), vSAN, NFS, and vMotion |
-| VLAN 3 | Public      | Available for internet access |
+| VLAN | Designation | Traffic type |
+| :----- | :----------- | :------------ |
+| VLAN 1 | Private A | ESXi management, management, edge uplinks |
+| VLAN 2 | Private B | Geneve (TEP), vSAN, NFS, and vMotion |
+| VLAN 3 | Public | Available for internet access |
 {: caption="VLAN mapping to traffic types" caption-side="bottom"}
 
 For the optional two host gateway clusters, this design uses two VLANs: one for private network traffic and one for public network traffic. This cluster type uses local disks as data store. Therefore, you don't need separate storage traffic. Also, according to the design, the NSX-T Geneve (TEP) traffic is left out. The following table shows the traffic separation between VLANs for this cluster type.
@@ -100,7 +100,7 @@ For the optional two host gateway clusters, this design uses two VLANs: one for 
 The following naming conventions are used for deployment. For readability, only the specific naming is used. For example, `instancename-dcname-clustername-tz-edge-private` is referred to as `tz-edge-private`.
 
 | Description | Naming Standard |
-|:----------- |:--------------- |
+| :----------- | :--------------- |
 | Management VMs | `instancename-nsxt-ctrlmgr0` \n `instancename-nsxt-ctrlmgr1` \n `instancename-nsxt-ctrlmgr2` |
 | Uplink profiles | `instancename-esxi-private-profile` \n `instancename-esxi-public-profile` \n `instancename-edge-private-profile` \n `instancename-edge-public-profile` \n `instancename-edge-tep-profile` \n `instancename-mgmt-edge-private-profile` \n `instancename-mgmt-edge-public-profile` \n `instancename-mgmt-edge-tep-profile` |
 | NIOC profiles | `instancename-clustername-nioc-private-profile` \n `instancename-clustername-nioc-public-profile` |
@@ -117,8 +117,8 @@ The following naming conventions are used for deployment. For readability, only 
 
 Transport nodes define the physical server objects or VMs that participate in the virtual network fabric. Review the following table to understand the design.
 
-| Transport node type   | Uplink profile | IP assignment |
-|:-------------------  |:-------------- |:------------- |
+| Transport node type | Uplink profile | IP assignment |
+| :------------------- | :-------------- | :------------- |
 | ESXi | `esxi-private-profile` \n `esxi-public-profile` | `tep-pool` |
 | Gateway cluster | `edge-private-profile` \n `edge-public-profile` \n `edge-tep-profile` \n `mgmt-edge-private-profile` \n `mgmt-edge-public-profile` \n `mgmt-edge-tep-profile` | `tep-pool` |
 {: caption="NSX-T transport nodes" caption-side="bottom"}
@@ -129,16 +129,16 @@ Transport nodes define the physical server objects or VMs that participate in th
 An uplink profile defines policies for the links from hypervisor hosts to NSX-T logical switches or from NSX Edge nodes to TOR (top-of-rack) switches.
 
 | Uplink profile name | VLAN | Teaming policy | Active uplinks | Standby links | MTU |
-|:------------------- |:---- |:-------------- |:-------------- |:------------- |:--- |
-| `esxi-private-profile` | Default | Default - Loadbalance source | uplink-1 \n uplink-2 |   | Managed by vCenter Server |
+| :------------------- | :---- | :-------------- | :-------------- | :------------- | :--- |
+| `esxi-private-profile` | Default | Default - Loadbalance source | uplink-1 \n uplink-2 | | Managed by vCenter Server |
 | `esxi-private-profile` | Default | TEP - Failover order | uplink-1 | uplink-2 | Managed by vCenter Server |
-| `esxi-public-profile`  | Default | Default - Loadbalance source | uplink-1 \n uplink-2 |   | Managed by vCenter Server |
-| `edge-private-profile` | Default |   | uplink-1 |  | 9000 |
-| `edge-public-profile`  | Default |   | uplink-1 |  | 1500 |
-| `edge-tep-profile`     | Default | Failover order | uplink-1 |   | 9000 |
-| `mgmt-edge-private-profile` | Default |   | uplink-1 |  | 9000 |
-| `mgmt-edge-public-profile`  | Default |   | uplink-1 |  | 1500 |
-| `mgmt-edge-tep-profile`     | Default | Failover order | uplink-1 |   | 9000 |
+| `esxi-public-profile` | Default | Default - Loadbalance source | uplink-1 \n uplink-2 | | Managed by vCenter Server |
+| `edge-private-profile` | Default | | uplink-1 | | 9000 |
+| `edge-public-profile` | Default | | uplink-1 | | 1500 |
+| `edge-tep-profile` | Default | Failover order | uplink-1 | | 9000 |
+| `mgmt-edge-private-profile` | Default | | uplink-1 | | 9000 |
+| `mgmt-edge-public-profile` | Default | | uplink-1 | | 1500 |
+| `mgmt-edge-tep-profile` | Default | Failover order | uplink-1 | | 9000 |
 {: caption="NSX-T uplink profiles" caption-side="bottom"}
 
 ## VNI pools
@@ -151,16 +151,16 @@ Virtual Network Identifiers (VNIs) are similar to VLANs to a physical network. T
 
 An NSX-T segment reproduces switching functions, broadcast, unknown unicast, multicast (BUM) traffic, in a virtual environment that is decoupled from the underlying hardware.
 
-| Segment name | VLAN |Transport zone | Uplink teaming policy |
-|:------------ |:---- |:------------- |:--------------------- |
+| Segment name | VLAN | Transport zone | Uplink teaming policy |
+| :------------ | :---- | :------------- | :--------------------- |
 | `edge-teps` | Default | `tz-esxi-private` | TEP - Failover order |
-| `service-to-private` | Default | `tz-edge-private` |   |
-| `service-to-public` | Default | `tz-edge-public` |   |
-| `customer-to-private` | Default | `tz-edge-private` |   |
-| `customer-to-public` | Default | `tz-edge-public` |   |
-| `customer-t0-172-16-16-0` |   | `tz-vm-overlay` |   |
-| `customer-t1-192-168-0-0` |   | `tz-vm-overlay` |   |
-| `customer-t1-192-168-1-0` |   | `tz-vm-overlay` |   |
+| `service-to-private` | Default | `tz-edge-private` | |
+| `service-to-public` | Default | `tz-edge-public` | |
+| `customer-to-private` | Default | `tz-edge-private` | |
+| `customer-to-public` | Default | `tz-edge-public` | |
+| `customer-t0-172-16-16-0` | | `tz-vm-overlay` | |
+| `customer-t1-192-168-0-0` | | `tz-vm-overlay` | |
+| `customer-t1-192-168-1-0` | | `tz-vm-overlay` | |
 {: caption="NSX-T logical switches" caption-side="bottom"}
 
 ### Gateway cluster

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2025
+  years:  2022, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-05-18"
 
 subcollection: vmwaresolutions
 
@@ -72,7 +72,7 @@ The following diagram shows an example of a multisite – multitenant topology. 
 This network topology example does not consider the management and control plane (vCenter and NSX Managers). The control plane of HA is discussed in another availability pattern.
 {: note}
 
-Tier-0 Gateways support VRF lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. For more information about capabilities and limitations, see the [VMware NSX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx.html){: external}.
+Tier-0 Gateways support VRF lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. For more information about capabilities and limitations, see the [VMware NSX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2.html){: external}.
 {: note}
 
 The main reason that you need two layers is for physical north-south connectivity in the data centers and each data center having their own private and public VLANs and IP addresses for the uplinks. These IP addresses cannot move between the data centers. Therefore, you must consider the routing and network address translation if you use public connectivity in this topology.
@@ -91,6 +91,6 @@ Most of the content in the VMware NSX design guides and documentation can be app
 ## Related links
 {: #arch-pattern-overlays-multi-site-links}
 
-* [VMware NSX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx.html){: external}
+* [VMware NSX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2.html){: external}
 * [VMware NSX Administration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide.html){: external}
 * [NSX Multi-Location design guide (Federation + Multisite)](https://community.broadcom.com/blogs/dimitri-desmidt/2024/05/20/nsx-t-multi-location-design-guide){: external}

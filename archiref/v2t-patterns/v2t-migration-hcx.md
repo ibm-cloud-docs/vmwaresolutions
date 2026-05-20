@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2025
+  years:  2022, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-05-18"
 
 subcollection: vmwaresolutions
 
@@ -41,4 +41,4 @@ Each HCX-NE appliance can extend up to eight segments at a time, and you can cre
 
 * [Ordering VMware HCX in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering)
 * [HCX for {{site.data.keyword.cloud_notm}} for VMware Solutions Guide](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-planning-prep-install)
-* [VMware HCX User Guide](https://techdocs.broadcom.com/us/en/vmware-cis/hcx.html){: external}
+* [VMware HCX User Guide](https://techdocs.broadcom.com/us/en/vmware-cis/hcx/vmware-hcx/4-11.html){: external}

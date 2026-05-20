@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-05-18"
 
 keywords: VMware HCX, HCX site, HCX definition
 
@@ -33,4 +33,4 @@ This glossary provides definitions for the terms that are associated with the VM
 ## Related links
 {: #hcx_glossary-related}
 
-* [VMware HCX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/hcx.html){: external}
+* [VMware HCX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/hcx/vmware-hcx/4-11.html){: external}

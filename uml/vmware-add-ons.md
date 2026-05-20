@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2026
 
-lastupdated: "2026-01-19"
+lastupdated: "2026-05-18"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -113,7 +113,7 @@ If applicable to you, complete the following tasks:
 ## Related links
 {: #vmware-add-ons-links}
 
-* [VMware Avi Load Balancer](https://techdocs.broadcom.com/us/en/vmware-security-load-balancing/avi-load-balancer.html){: external}
+* [VMware Avi Load Balancer](https://techdocs.broadcom.com/us/en/vmware-security-load-balancing/avi-load-balancer/avi-load-balancer/30-2/vmware-avi-load-balancer-configuration-guide/security/overview-of-nsx-advanced-load-balancer-security.html){: external}
 * [Gateway Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/security/gateway-firewall.html){: external}
 * [Distributed Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/security/distributed-firewall.html){: external}
 * [NSX Edge Installation Requirements](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/installation-guide/installing-nsx-edge/nsx-edge-installation-requirements.html){: external}

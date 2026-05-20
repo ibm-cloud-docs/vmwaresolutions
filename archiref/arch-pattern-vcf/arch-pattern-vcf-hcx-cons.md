@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024, 2025
+  years:  2024, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-05-18"
 
 subcollection: vmwaresolutions
 
@@ -54,4 +54,4 @@ When you design or deploy this architecture pattern, consider the following info
 {: #arch-pattern-vcf-hcx-con-links}
 
 * [VPC network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
-* [VMware HCX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/hcx.html){: external}
+* [VMware HCX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/hcx/vmware-hcx/4-11.html){: external}

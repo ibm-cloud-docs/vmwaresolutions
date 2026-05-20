@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-05-18"
 
 keywords: HCX updates, HCX management console, login HCX console
 
@@ -68,4 +68,4 @@ Complete the following tasks before you delete the HCX service:
 
 * [HCX overview](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations#hcx_considerations)
 * [Glossary of HCX terms](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_glossary)
-* [VMware HCX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/hcx.html){: external}
+* [VMware HCX documentation](https://techdocs.broadcom.com/us/en/vmware-cis/hcx/vmware-hcx/4-11.html){: external}
