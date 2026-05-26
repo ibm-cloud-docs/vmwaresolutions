@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2025
+  years:  2020, 2026
 
-lastupdated: "2025-12-09"
+lastupdated: "2026-05-26"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX console
 
@@ -46,5 +46,5 @@ Any network operations that rely on routes that are established through vSRX mig
 * [Juniper vSRX overview](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)
 * [FAQ for VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [Juniper vSRX Virtual Firewall](https://buy.hpe.com/us/en/networking/network-security/firewalls/juniper-vsrx-virtual-firewall/p/1014920022){: external}
+* [Juniper vSRX Virtual Firewall](https://buy.hpe.com/us/en/networking/juniper-solutions/juniper-security-solutions/juniper-vsrx-virtual-firewall/p/1014920022){: external}
 * [Juniper vSRX Documentation](https://www.juniper.net/documentation/product/us/en/vsrx/){: external}
