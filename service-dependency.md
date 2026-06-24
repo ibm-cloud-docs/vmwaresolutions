@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-04-29"
+lastupdated: "2026-06-23"
 
 keywords:
 
@@ -72,8 +72,8 @@ The following dependencies apply to the following deployment locations: Dallas (
 | {{site.data.keyword.monitoringlong}}| Operations | No | Both |  Same region  |
 | {{site.data.keyword.vmwaresolutions_short}}| Operations | No | Both |  Same region  |
 | {{site.data.keyword.cis_full}}| Operations | No | Both |  Same region  |
-| None| Operations | No | Both |  Same region  |
-| None| Operations | No | Both |  Same region  |
+| corporate-qradar| Operations | No | Both |  Same region  |
+| corporate-uptycs| Operations | No | Both |  Same region  |
 {: row-headers}
 {: caption="IBM Cloud for VMware Solutions - Data and Control plane deployment service dependency information - Minimal dependencies" caption-side="top"}
 {: tab-title="Minimal dependencies"}
