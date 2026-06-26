@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2026
 
-lastupdated: "2026-03-18"
+lastupdated: "2026-06-26"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -27,7 +27,26 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2026
 {: #year-2026}
 
+### 26 June 2026
+{: #vmwaresolutions-jun2626}
+{: release-note}
 
+Usage Meter updates
+
+:   {{site.data.keyword.vcf}} Usage Meter version 9.0.1.1 is now available for deployment. For more information, see [Deploying Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-deploy) and [Upgrading Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-upgrade).
+
+BOM updates for {{site.data.keyword.vcf-classic-short}}
+:   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
+
+   * VMware ESXi™ 8.0 Update 3i (build 25205845)
+   * VMware vCenter Server® Appliance 8.0 Update 3i (build 25197330)
+   * VMware NSX® 4.2.3.3 (build 25171318)
+
+Add-on services upgrades
+:   The following service versions are available for deployment:
+
+   * F5® BIG-IP® v17.5.1.5
+   * VMware Aria® Operations™ and VMware Aria Operations™ for Logs 8.18.6
 
 
 
@@ -38,16 +57,16 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
 
-   * VMware ESXi™ 8.0 Update 3h (build 25067014)
-   * VMware vCenter Server® Appliance 8.0 Update 3h (build 25092719)
-   * VMware NSX® 4.2.3.2 (build 25077145)
+   * VMware ESXi 8.0 Update 3h (build 25067014)
+   * VMware vCenter Server Appliance 8.0 Update 3h (build 25092719)
+   * VMware NSX 4.2.3.2 (build 25077145)
 
 Add-on services upgrades
 :   The following service versions are available for deployment:
 
    * Caveonix RiskForesight™ v5.2.7
    * FortiGate® Virtual Appliance v7.4.9
-   * VMware Aria® Operations™ and VMware Aria Operations™ for Logs 8.18.5
+   * VMware Aria Operations and VMware Aria Operations for Logs 8.18.5
 
 Known issues with Veeam version 12.3.2.4165
 :   After the installation of Veeam version 12.3.2.4165, you might notice a **server out of date** error that appears for your hosts. To resolve this issue, follow the instructions in [Upgrading Infrastructure Components: a Veeam Guide](https://helpcenter.veeam.com/archive/backup/120/vsphere/components_update.html){: external}.
@@ -82,14 +101,14 @@ Updated pricing for {{site.data.keyword.vmwaresolutions_short}}
 BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
 
-   * VMware vCenter Server® Appliance  7.0 Update 3w (build 24927011)
-   * VMware NSX® 4.2.3.1 (build 24954727)
+   * VMware vCenter Server Appliance  7.0 Update 3w (build 24927011)
+   * VMware NSX 4.2.3.1 (build 24954727)
 
 Add-on services upgrades
 :   The following service versions are available for deployment:
 
    * Caveonix RiskForesight™ v5.2.4
-   * F5® BIG-IP® v17.5.1.3
+   * F5 BIG-IP v17.5.1.3
    * FortiGate® Virtual Appliance v7.4.8
 
 Name change for Zerto
@@ -143,7 +162,7 @@ Usage Meter 9.0.1
 BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
 
-   * VMware vCenter Server® Appliance 8.0 Update 3g (build 24853646)
+   * VMware vCenter Server Appliance 8.0 Update 3g (build 24853646)
    * VMware vSphere ESXi™
       * 8.0 Update 3g (build 24859861)
       * 7.0 Update 3w (build 24784741)
@@ -184,18 +203,18 @@ Support for 4 TB of RAM
 BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
 
-   * VMware vCenter Server® Appliance
+   * VMware vCenter Server Appliance
       * 8.0 Update 3e (build 24674346)
       * 7.0 Update 3v (build 24730281)
    * VMware vSphere ESXi
       * 8.0 Update 3e (build 24674464)
       * 7.0 Update 3v (build 24723872)
-   * VMware NSX® 4.2.2.1 (build 24765084)
+   * VMware NSX 4.2.2.1 (build 24765084)
 
 Add-on services upgrades
 :   The following service versions are available for deployment:
 
-   * F5® BIG-IP® v17.5
+   * F5 BIG-IP v17.5
    * Juniper® vSRX v3.0 (24.4R1)
    * Veeam Backup and Replication 12.3.2
    * Zerto v10.0u7
@@ -211,7 +230,7 @@ New and updated documentation
 {: release-note}
 
 End of Marketing for {{site.data.keyword.rw}}
-:   New deployments of VMware {{site.data.keyword.rw}} instances are no longer supported for new customers. If you are an existing customer, you can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for your existing {{site.data.keyword.rw}} instances. As an existing customer, you can also view or delete your {{site.data.keyword.rw}} instances. For more information, see [End of Marketing for {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vrw).
+:   New deployments of VMware {{site.data.keyword.rw}} instances are no longer supported for new customers. If you are an existing customer, you can still add or delete clusters, add or delete VMware ESXi servers or NFS storage, and add or remove services for your existing {{site.data.keyword.rw}} instances. As an existing customer, you can also view or delete your {{site.data.keyword.rw}} instances. For more information, see [End of Marketing for {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vrw).
 
 End of Support for KMIP for VMware for Key Protect
 :   Support for Key Protect as part of the Key Management Interoperability Protocol (KMIP™) for VMware service will end on 16 July 2026 after which interoperability with the Key Protect service will no longer work. You must migrate to the [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service by 16 July 2026. For more information, see [End of Support for KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-eos-kmip).
@@ -257,7 +276,7 @@ Add-on services upgrades
 :   The following service versions are available for deployment:
 
    * Caveonix RiskForesight v5.2
-   * VMware Aria® Operations™ and VMware Aria Operations™ for Logs v8.18.3
+   * VMware Aria Operations and VMware Aria Operations for Logs v8.18.3
 
 ### 18 March 2025
 {: #vmwaresolutions-mar1825}
@@ -265,7 +284,7 @@ Add-on services upgrades
 
 {{site.data.keyword.vcf-vpc-short}} updates
 
-:   VMware ESXi™ 8.0 Update 3d (build 24585383) is applied to newly deployed {{site.data.keyword.vcf-vpc-short}} instances.
+:   VMware ESXi 8.0 Update 3d (build 24585383) is applied to newly deployed {{site.data.keyword.vcf-vpc-short}} instances.
 
    For existing {{site.data.keyword.vcf-vpc-short}} instances, you are required to apply the following updates yourself:
 
@@ -763,112 +782,3 @@ User interface updates and enhancements
    * The checkbox **Select a different cluster location** is changed to a switch, for consistency with other similar UI options.
    * The **SAP-certified** Cascade Lake selections (**NetWeaver** and **HANA**) are merged into a single option for a more streamlined user experience when you choose the **CPU model** for your servers.
    * The process to set up your environment for your first order is simplified on the UI.
-
-### 3 May 2023
-{: #vmwaresolutions-may0323}
-{: release-note}
-
-Madrid data centers available
-:   (Updated on 22 June 2023) The {{site.data.keyword.cloud_notm}} data centers **Madrid 02**, **Madrid 04**, and **Madrid 05** are now available for deployment.
-
-Bring Your Own License (BYOL) no longer available
-:   BYOL is now disabled in the **Licensing** section for VMware vCenter Server instances, VMware vSphere clusters, adding hosts and clusters, and vRealize Operations and Log Insight service.
-
-VMware NSX-T 4.0.1.1 manual upgrade
-:   VMware NSX-T version 4.0.1.1 is now available if you want to upgrade your existing NSX-T instances manually. All newly deployed VMware NSX-T instances are still provisioned with NSX-T version 3.2.0.1.
-
-Updates to VMware vCenter Server instances and VMware vSphere clusters
-:   The following upgrades are applied to newly deployed instances, clusters, and hosts.
-   * VMware vCenter Server Appliance 7.0 Update 3k (build 21290409)
-   * VMware vSAN Witness 7.0 Update 3c (build 19193900)
-
-Veeam 12 availability
-:   Veeam Backup and Replication 12 (Veeam 12) is available for deployment with VMware vCenter Server, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}} offerings. With Veeam 12, you can write directly to {{site.data.keyword.cloud}} Object Storage and it provides other features, such as data protection, improved Recovery Point Objective by using Continuous Data Protection for disaster recovery purposes, and general operational efficiency.
-
-New and updated documentation
-:   The table of contents is updated for topic rearrangement and removal of outdated content.
-
-User interface updates and enhancements
-:   The UI is updated with various messages and tooltips, and provides the following enhancements.
-
-   * The term **edge gateway cluster** is updated to **gateway cluster** throughout the UI, user documentation, and REST APIs.
-   * You can check the prices for VMware Solutions offerings without having to sign in to {{site.data.keyword.cloud_notm}}. However, you might have limited access to some sections of the ordering pages. To place an order, or for a complete access to the ordering pages, you must log in to {{site.data.keyword.cloud_notm}}.
-   * The page titles and labels for adding clusters, storage, and services are updated for consistency throughout the UI.
-   * The status of instances and clusters when they are ready to use is updated to **Available**.
-   * The UI controls for the separate workload cluster, gateway cluster, and file shares are changed to switches instead of checkboxes.
-   * Guidance is provided on the UI for the workload and gateway cluster configuration.
-   * A side pane is displayed when you add hosts to vCenter Server, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}} instances.
-
-### 8 March 2023
-{: #vmwaresolutions-mar0823}
-{: release-note}
-
-VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
-:   The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes.
-
-End of Marketing for {{site.data.keyword.cloud_notm}} Secure Virtualization
-:   The {{site.data.keyword.cloud_notm}} Secure Virtualization offering is no longer available for new deployments. Support for existing customers who are using the offering is still provided.
-
-Updates to VMware vCenter Server instances and VMware vSphere clusters
-:   The following upgrades are applied to newly deployed instances, clusters, and hosts.
-   * VMware vCenter Server Appliance 7.0 Update 3j (build 20990077)
-   * VMware vSphere ESXi 7.0 Update 3k (build 21313628)
-
-Add-on services upgrades
-:   The following service versions are now available for deployment:
-   * Entrust CloudControl v6.6
-   * F5 BIG-IP v17.0
-   * vRealize Operations and vRealize Log Insight v8.10
-   * Zerto v9.7u1
-
-F5 BIG-IP migration from NSX-V to NSX-T
-:   To migrate the F5 BIG-IP service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in Getting help and support.
-
-New and updated documentation
-:   Documentation is available to assist with your custom cyber-recovery requirements.
-
-REST API updates
-:   The VMware Solutions API provides support for getting and canceling billing item IDs for VMware vSphere clusters, deleting hosts from vSphere clusters, and deleting vSphere clusters.
-
-User interface updates and enhancements
-:   The UI is updated with various messages and tooltips, and provides the following enhancements.
-
-   * BYOL notification in the **Licensing** section for VMware vCenter Server instances, VMware vSphere clusters, add hosts and clusters, vRealize Operations and Log Insight, and VMware HCX services. Bring Your Own License (BYOL) is no longer supported, except for migrations or upgrades of existing BYOL clusters.
-   * The term **edge services cluster** is updated to **edge gateway cluster** throughout the UI, user documentation, and REST APIs.
-   * A side pane is now displayed when you add NFS storage to VMware vCenter Server, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}} instances.
-
-
-### 10 January 2023
-{: #vmwaresolutions-jan1023}
-{: release-note}
-
-VMware Cloud Director upgrade for {{site.data.keyword.vm-shared}}
-:   The {{site.data.keyword.vm-shared}} infrastructure is upgraded to VMware Cloud Director v10.4, which supports up to virtual hardware version 19. If you use the VMware Cloud Director API, consider the following updated product support notices:
-   * VMware Cloud Director API versions 31.0 and 32.0 are not supported.
-   * VMware Cloud Director API versions 33.0, 34.0, 35.0, and 35.2 are deprecated and are not supported starting with the next major release of VMware Cloud Director.
-
-Name change for vRealize Operations Tenant App for VMware Cloud Director
-:   VMware changed the vRealize Operations Tenant App for VMware Cloud Director product name to VMware Chargeback. The name is updated throughout the {{site.data.keyword.vm-shared}} documentation.
-
-Bring Your Own License (BYOL) no longer supported
-:   {{site.data.keyword.cloud_notm}} previously allowed you to bring your own license (BYOL) when you move your existing on-premises VMware workloads to {{site.data.keyword.cloud_notm}}. BYOL is no longer allowed by VMware. You can no longer bring your own licenses for any new hosts. This restriction applies to all VMware products that are available from {{site.data.keyword.cloud_notm}}. For existing BYOL servers, you can still upgrade and migrate to refresh software and hardware.
-
-SAP-certified servers updates
-:   SAP HANA certified bare metal servers now offer only fixed configurations with defined RAM sizes. Also, new SAP HANA and SAP NetWeaver models are available for deployment with VMware vSphere 7.0u3. These models are available for VMware vCenter Server and {{site.data.keyword.cr}} instances and clusters, and for VMware vSphere clusters.
-
-NetBIOS domain name
-:   The first qualifier of the root domain name is now the NetBIOS name by default. It is part of the network diagram when your order vCenter Server and {{site.data.keyword.cr}} instances.
-
-Add-on services upgrades
-:   The following service versions are now available to install on deployed instances.
-   * FortiGate Virtual Appliance 7.2.2
-   * Juniper vSRX v21.4 (R2)
-
-Veeam migration from NSX-V to NSX-T
-:   To migrate the Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket.
-
-REST API updates
-:   For {{site.data.keyword.vm-shared}}, the V1 API support ended on 31 December 2022. Use the V2 API.
-
-User interface updates and enhancements
-:   The left navigation menu in the instance detail page is now changed to tabs. Also, a new tab **Access information** is added, where you can find information such as AD/DNS IP and remote desktop credentials for your instance.

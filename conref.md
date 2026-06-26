@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2026
 
-lastupdated: "2026-05-26"
+lastupdated: "2026-06-25"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -206,9 +206,8 @@ Review the following information before you proceed:
 * Any existing VLANs that you own, outside of {{site.data.keyword.vmwaresolutions_full}}, are not deleted.
 * Any VLANs that contain your own resources, such as gateways or Veeam® servers are not deleted.
 * Any VLANs or subnets without attached gateways or servers are deleted even though you might have IP addresses assigned to it from the subnets to your VMs.
-
-   
 {: #deletinginstance-delete-vlans}
+
 
 Because of resource dependencies, the components in your instance are not released immediately when you delete the instance. For example, the VLANs and the VLAN primary subnets cannot be deleted until the ESXi servers are fully reclaimed by the {{site.data.keyword.cloud_notm}} infrastructure, which happens at the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle. At the end of the billing cycle, which is typically 30 days, the subnets and VLANs are deleted and the instance deletion is completed.
 {: #deletinginstance-delete-info}

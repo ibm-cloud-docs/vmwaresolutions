@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2026
 
-lastupdated: "2026-03-19"
+lastupdated: "2026-06-25"
 
 keywords: add service, order service, add-on service
 
@@ -35,14 +35,14 @@ The following table shows the services that are available to Automated instances
 | Service name | Current version |
 | :------------ | :--------------- |
 | [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 5.2.7 |
-| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.5.1.3 |
+| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.5.1.5 |
 | [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.4.9 |
 | [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version |
 | [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | |
 | [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (24.4R1) |
 | [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 |
 | [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12.3.2 |
-| [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | 8.18.5 |
+| [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | 8.18.6 |
 | [{{site.data.keyword.hpe-zerto}}](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 10.0u7 |
 {: caption="Available services for Automated instances" caption-side="bottom"}
 

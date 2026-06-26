@@ -4,7 +4,7 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-05-21"
+lastupdated: "2026-06-25"
 
 keywords: usage meter, download, deployment
 
@@ -28,12 +28,12 @@ To deploy a VMware vCloud Usage Meter virtual machine (VM), you must first downl
 
 Complete the following steps:
 
-1. Download the Usage Meter OVA file from the following link: `https://ibm.biz/BdeSzP`
+1. Download the Usage Meter OVA file from the following link: `https://ibm.biz/~WfruqHLAS`.
 
    For newer versions of Usage Meter, two files are available for download: one for the initial installment and another one for the upgrade. These files use different SHA-2 values.
    {: note}
 
-2. Validate the SHA-2 checksum based on the `3bc4ee68867d10d24cfb73d744ca4c9754bc94a6a16ea1f3e818624f4a1a74d7` SHA-256 value. Open a command prompt on Windows® or a terminal window on Linux® and MacOS, and run the following command:
+2. Validate the SHA-2 checksum based on the `d2be40a3b27ab3dd84a9cff95885f41b74d7b5a0dbcc3c1188d0b0bd8db3cecc` SHA-256 value. Open a command prompt on Windows® or a terminal window on Linux® and MacOS, and run the following command:
    * For Windows: `certutil -hashfile <path-to-ova-file> SHA256`
    * For Linux: `sha256sum <path-to-ova-file>`
    * For MacOS: `shasum -a 256 <path-to-ova-file>`
@@ -54,6 +54,9 @@ In the VMware vSphere® Web Client, complete the following steps:
 
 6. Under **Compatibility**, verify that the compatibility checks are successful. If they are not, check the health of your target cluster. Optionally, if you want the VM to start automatically after deployment, select the **Automatically power on deploy VM** checkbox, then click **Next**.
 7. Under **Review details**, verify the template details and click **Next**.
+
+    A certificate is expired warning message might appear. Click **Ignore** to continue otherwise you might see an error message.
+    {: important}
 
 8. Under **License agreements**, select the **I accept all license agreements** checkbox.
 9. Under **Select storage**, choose the appropriate datastore for your cluster. To allow migration, the datastore must be a storage device that is accessible for all hosts in the cluster. For example, vSAN or NFS that is attached to all hosts.
@@ -80,7 +83,7 @@ In the VMware vSphere® Web Client, complete the following steps:
 ## Results after Usage Meter VM deployment
 {: #usage_meter-deploy-results}
 
-* Under **Recent Tasks**, after the new tasks complete, details such as the VM DNS name and IP address are displayed under **Virtual machine details** in the **Summary** tab.
+* Under **Recent Tasks**, after the new tasks complete, refresh the page. The details such as the VM DNS name and IP address are displayed under **Virtual machine details** in the **Summary** tab.
 * If you didn't select the **Automatically power on deploy VM** option in the **Select a compute resource** step, click the new VM in the inventory panel. Then, click the power on icon next to the VM name to see the VM details. If the VM details do not appear, the configuration might be incorrect. To resolve the issue, delete the VM and redeploy the OVF template.
 
 ## Related links

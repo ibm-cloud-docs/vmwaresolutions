@@ -4,7 +4,7 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-03-19"
+lastupdated: "2026-06-25"
 
 keywords: usage meter, upgrade
 
@@ -48,8 +48,8 @@ To upgrade Usage Meter, complete the following steps:
 ### Mounting the upgrade ISO file
 {: #usage_meter-upgrade-iso}
 
-1. Download the Usage Meter ISO file from the following link: `https://ibm.biz/BdeSzZ`
-2. Validate the SHA-2 checksum based on the `62724df42b5cc8979723f6f25bf61b720d8287ec3510fbfd218232be787877a4` SHA-256 value. Open a command prompt on Windows® or a terminal window on Linux® and MacOS and run the following command:
+1. Download the Usage Meter ISO file from the following link: `https://ibm.biz/~V0YiDk0EP`.
+2. Validate the SHA-2 checksum based on the `ec5c46b4bdae915cb4a289dfbb03077cb802f404692bb3f2501b59b448102797` SHA-256 value. Open a command prompt on Windows® or a terminal window on Linux® and MacOS and run the following command:
    * For Windows: `certutil -hashfile <path-to-iso-file> SHA256`
    * For Linux: `sha256sum <path-to-iso-file>`
    * For MacOS: `shasum -a 256 <path-to-iso-file>`

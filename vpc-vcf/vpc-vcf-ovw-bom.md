@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2025
+  years:  2016, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-06-25"
 
 keywords: vmware cloud foundation BOM, bill of materials vmware cloud foundation, BOM
 
@@ -44,10 +44,10 @@ Review the BOM information for {{site.data.keyword.vcf-vpc-short}} software comp
 | --------- | ------- | ------------ |
 | Cloud Builder VM | 5.2.1 | 24307856 |
 | SDDC Manager | 5.2.1 | 24307856 |
-| VMware vCenter Server Appliance | 8.0 Update 3c | 24305161 |
-| VMware ESXi | 8.0 Update 3f | 24784735 |
+| VMware vCenter Server Appliance | 8.0 Update 3i | 25197330 |
+| VMware ESXi | 8.0 Update 3i | 25205845 |
 | VMware Virtual SAN Witness Appliance | 8.0 Update 3b | 24280767 |
-| VMware NSX-T | 4.2.1 | 24304122 |
+| VMware NSX-T | 4.2.3.3 | 25171318 |
 | VMware Aria® Suite Lifecycle Manager | 8.18 | 24029603 |
 {: caption="BOM for software components in {{site.data.keyword.vcf-vpc-short}} instances" caption-side="bottom"}
 

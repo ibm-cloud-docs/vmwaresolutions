@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2026
 
-lastupdated: "2026-03-31"
+lastupdated: "2026-06-25"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -35,7 +35,7 @@ F5 BIG-IP is supported for instances with VMware NSX-T™ 3.1 or later and VMwar
 
 {{site.data.content.para-promotion-services}}
 
-The F5 BIG-IP version available for deployment is 17.5.1.3.
+The F5 BIG-IP version available for deployment is 17.5.1.5.
 {: note}
 
 ## Technical specifications for F5 BIG-IP
@@ -74,7 +74,7 @@ Before you install the F5 BIG-IP service, review the following considerations.
 Based on the license model and bandwidth that you select, two BIG-IP VE VMs are deployed with the following configuration:
 
 | Maximum Bandwidth | License Model - Good | License Model - Better | License Model - Best |
-| :------------------ | :-------------------- | :---------------------- | :-------------------- | 
+| :------------------ | :-------------------- | :---------------------- | :-------------------- |
 | 25 Mbps | 2 CPUs, 4 GB RAM | 4 CPUs, 8 GB RAM | 8 CPUs, 16 GB RAM |
 | 200 Mbps | 2 CPUs, 4 GB RAM | 4 CPUs, 8 GB RAM | 8 CPUs, 16 GB RAM |
 | 1 Gbps | 2 CPUs, 4 GB RAM | 4 CPUs, 8 GB RAM | 8 CPUs, 16 GB RAM |
