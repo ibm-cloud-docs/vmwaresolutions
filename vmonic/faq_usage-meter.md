@@ -4,7 +4,7 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-05-19"
+lastupdated: "2026-07-21"
 
 keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
@@ -101,7 +101,7 @@ Starting on 8 August 2025, you must swap any older keys to the new license keys 
 {: #faq_usage-meter-when-to-complete}
 {: faq}
 
-By 1 November 2025, your account must have Usage Meter v9.0.1 deployed with the new Broadcom license keys installed.
+By 8 August 2026, your account must have Usage Meter v9.1.0 deployed with the new Broadcom license keys installed.
 
 If your account is not updated to current license keys, you will be out of compliance and risk of being out of support and in violation of the {{site.data.keyword.cloud_notm}} Services Agreement. If not addressed, violations can result in account disruptions.
 {: attention}

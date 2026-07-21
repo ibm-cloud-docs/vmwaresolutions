@@ -19,10 +19,11 @@ subcollection: vmwaresolutions
 
 {{site.data.content.vms-deprecated-note}}
 
-Upgrade any existing VMware vCloud Usage Meters to version 9 to integrate with their own access token. For Usage Meter 4.8, the upgrade process involves receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to version 9. After the initial upgrade to version 9 or later, you don't need to provide the access token for further upgrades.
+Upgrade the existing VMware vCloud Usage Meters to version 9.x or later. The latest available VMware vCloud Usage Meter version is v9.1.0. For Usage Meter v4.8, the upgrade process involves receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to v9.0.1 first. After the initial upgrade to v9.0.1, you don't need to provide the access token for further upgrades to v9.x or later.
 {: important}
 
-
+For Usage Meter v4.8, a direct upgrade path from Usage Meter v4.8 to v9.1 is not supported. You must upgrade from version 4.8 to version 9.0.1 first, and then to version 9.1. For more information, see [Upgrade Path - Product Interoperability Matrix](https://interopmatrix.broadcom.com/Upgrade?productId=662&isHidePatch=false&isHideLegacyReleases=false){: external}.
+{: restriction}
 
 Before you upgrade to version 9 or later, you must swap the VMware Cloud Foundation™ (VCF) license keys.
 
@@ -50,8 +51,14 @@ To upgrade Usage Meter, complete the following steps:
 ### Mounting the upgrade ISO file
 {: #usage_meter-upgrade-iso}
 
-1. Download the Usage Meter ISO file from the following link: `https://ibm.biz/~V0YiDk0EP`.
-2. Validate the SHA-2 checksum based on the `ec5c46b4bdae915cb4a289dfbb03077cb802f404692bb3f2501b59b448102797` SHA-256 value. Open a command prompt on Windows® or a terminal window on Linux® and MacOS and run the following command:
+1. Download the Usage Meter ISO file from the following link:
+   - For Usage Meter v4.8 or earlier upgrade, use: `https://ibm.biz/~V0YiDk0EP`.
+   - For Usage Meter v9.0.1 upgrade, use: `https://ibm.biz/~aBF0Bw0fU`.
+2. Validate the SHA-2 checksum based on the following SHA-256 value:
+   - For Usage Meter v4.8 or earlier upgrade, see: `ec5c46b4bdae915cb4a289dfbb03077cb802f404692bb3f2501b59b448102797`.
+   - For Usage Meter v9.0.1 upgrade, see: `d1f79f1bcc711c7753c871bd95bc434e8a31bb8fc584fc7ac88b75398be445c1`.
+
+   Open a command prompt on Windows® or a terminal window on Linux® and MacOS and run the following command:
    * For Windows: `certutil -hashfile <path-to-iso-file> SHA256`
    * For Linux: `sha256sum <path-to-iso-file>`
    * For MacOS: `shasum -a 256 <path-to-iso-file>`
