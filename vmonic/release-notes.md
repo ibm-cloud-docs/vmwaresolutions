@@ -27,6 +27,10 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2026
 {: #year-2026}
 
+
+
+
+
 ### 26 June 2026
 {: #vmwaresolutions-jun2626}
 {: release-note}
