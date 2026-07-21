@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 {{site.data.content.vms-deprecated-note}}
 
-Upgrade the existing VMware vCloud Usage Meters to version 9.x or later. The latest available VMware vCloud Usage Meter version is v9.1.0. For Usage Meter v4.8, the upgrade process involves receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to v9.0.1 first. After the initial upgrade to v9.0.1, you don't need to provide the access token for further upgrades to v9.x or later.
+Upgrade the existing VMware vCloud Usage Meters to version 9.x or later. The latest VMware vCloud Usage Meter available version is v9.1.0. For Usage Meter v4.8, the upgrade process involves receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to v9.0.1 first. After the initial upgrade to v9.0.1, you don't need to provide the access token for further upgrades to v9.x or later.
 {: important}
 
 For Usage Meter v4.8, a direct upgrade path from Usage Meter v4.8 to v9.1 is not supported. You must upgrade from version 4.8 to version 9.0.1 first, and then to version 9.1. For more information, see [Upgrade Path - Product Interoperability Matrix](https://interopmatrix.broadcom.com/Upgrade?productId=662&isHidePatch=false&isHideLegacyReleases=false){: external}.
