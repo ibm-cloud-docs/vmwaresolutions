@@ -79,7 +79,7 @@ Add-on services upgrades
    * VMware Aria Operations and VMware Aria Operations for Logs 8.18.5
 
 Known issues with Veeam version 12.3.2.4165
-:   After the installation of Veeam version 12.3.2.4165, you might notice a **server out of date** error that appears for your hosts. To resolve this issue, follow the instructions in [Upgrading Infrastructure Components: a Veeam Guide](https://helpcenter.veeam.com/archive/backup/120/vsphere/components_update.html){: external}.
+:   After the installation of Veeam® version 12.3.2.4165, you might notice a **server out of date** error that appears for your hosts. To resolve this issue, follow the instructions in [Upgrading Infrastructure Components: a Veeam Guide](https://helpcenter.veeam.com/archive/backup/120/vsphere/components_update.html){: external}.
 
 ### 05 March 2026
 {: #vmwaresolutions-mar0526}
@@ -93,7 +93,7 @@ End of Support for KMIP for VMware
 {: release-note}
 
 Updated pricing for {{site.data.keyword.vmwaresolutions_short}}
-:   As of 1 January 2026, the prices are increased for VMware® software, Veeam® software, and VMware® Avi Load Balancer add-on.
+:   As of 1 January 2026, the prices are increased for VMware® software, Veeam software, and VMware® Avi Load Balancer add-on.
 
    * VMware software price is increased by 1% across all offerings.
    * Veeam software price is increased from $13 per VM per month to $15.60 per VM per month.

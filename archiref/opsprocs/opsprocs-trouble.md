@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2026
 
-lastupdated: "2026-04-14"
+lastupdated: "2026-08-14"
 
 subcollection: vmwaresolutions
 
@@ -150,7 +150,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 
 | Title | Description |
 | ------- | ------------- |
-| Incompatible or incorrect license configuration | For more information, see [Troubleshooting ESX Hosts](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vcenter-and-host-management/troubleshooting-overview-host-management/troubleshooting-hosts-host-management.html){: external}. |
+| Incompatible or incorrect license configuration | For more information, see [Troubleshooting ESX Hosts](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vcenter-and-host-management/troubleshooting-overview/troubleshooting-hosts.html){: external}. |
 | VM does not power on | It ia possible that a license issue exists if you can't power on a VM on a vSphere ESXi host and you receive the ``The 60-day evaluation period of the host is expired or the license of the host is expired`` message. For more information, see [Virtual Machine Power On Operation Fails](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-resource-management/drs-troubleshooting-information/virtual-machine-problems/virtual-machine-problem-1.html){: external}. |
 | A feature is unavailable or inability to change a configuration | No additional information |
 {: caption="Typical license troubleshooting" caption-side="bottom"}

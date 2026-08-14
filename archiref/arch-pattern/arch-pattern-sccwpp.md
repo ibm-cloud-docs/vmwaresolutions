@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024, 2025
+  years:  2024, 2026
 
-lastupdated: "2025-11-11"
+lastupdated: "2026-08-14"
 
 subcollection: vmwaresolutions
 
@@ -22,7 +22,7 @@ This architecture pattern describes how to use {{site.data.keyword.cloud}} Secur
 
 Security and Compliance Center Workload Protection offers functions to protect your Microsoft Windows® and Linux® virtual machines (VMs) that are hosted on your VMware® environment. These functions include compliance, vulnerability scanning, and threat detection.
 
-Although Security and Compliance Center Workload Protection offers functions for your other {{site.data.keyword.cloud_notm}} services, these functions are not discussed in this pattern. For more information, see [Getting started with {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection](/docs/workload-protection?topic=workload-protection-getting-started). 
+Although Security and Compliance Center Workload Protection offers functions for your other {{site.data.keyword.cloud_notm}} services, these functions are not discussed in this pattern. For more information, see [Getting started with {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection](/docs/workload-protection?topic=workload-protection-getting-started).
 
 {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection implements Sysdig Secure functions. Information that is provided by the Sysdig Secure documentation also applies to Workload Protection.
 {: note}
@@ -58,10 +58,9 @@ This architecture pattern is summarized as follows:
 3. Firewall rules enable the downloading of the agents from the Internet and HTTPS connectivity to the Security and Compliance Center Workload Protection private endpoints. For more information about configuring firewall rules, see [Add a Gateway Firewall Policy and Rule](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-1/administration-guide/security/gateway-firewall/add-a-gateway-firewall-policy-and-rule.html){: external}.
 4. Source Network Address Translation (SNAT) rules allow your VMs overlay IP addresses to be translated to {{site.data.keyword.cloud_notm}} supplied IP addresses that can be used on the Internet. For more information about configuring SNAT rules, see [Configure NAT/DNAT/No SNAT/No DNAT/Reflexive NAT](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-1/administration-guide/network-address-translation/configure-an-nsx-nat.html){: external}.
 5. The {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection instance. For more information, see:
-   * [Provisioning an instance](/docs/workload-protection?topic=workload-protection-provision)
-   * [Regions](/docs/workload-protection?topic=workload-protection-regions)
-   * [Protecting Linux hosts](/docs/workload-protection?topic=workload-protection-protecting-linux-hosts)
-   * [Endpoints](/docs/workload-protection?topic=workload-protection-endpoints)
+   * [Provision an instance](/docs/sap?topic=sap-powervs-scc-wp-create-instance#getting-started-step2)
+   * [Protecting Linux hosts](/docs/workload-protection?topic=workload-protection-manage-linux-agent)
+   * [Endpoints](/docs/workload-protection?topic=workload-protection-supported-endpoints)
 
 ## Considerations
 {: #arch-pattern-sccwpp-considerations}

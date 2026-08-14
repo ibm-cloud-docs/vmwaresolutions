@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024, 2025
+  years:  2024, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-08-14"
 
 subcollection: vmwaresolutions
 
@@ -58,10 +58,9 @@ This architecture pattern is summarized as follows:
 3. Firewall rules enable the downloading of the agents from the Internet and HTTPS connectivity to the Security and Compliance Center Workload Protection private endpoints. For more information about configuring firewall rules, see [Add a Gateway Firewall Policy and Rule](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-1/administration-guide/security/gateway-firewall/add-a-gateway-firewall-policy-and-rule.html){: external}.
 4. The routing between your VMs and the services that are attached to VPC. For more information, see [Private traffic between Tier-0 and VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-vpc-routing#vpc-vcf-nsx-t-vpc-routing-edge-tier-0-routing-private).
 5. The {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection instance. For more information, see:
-   * [Provisioning an instance](/docs/workload-protection?topic=workload-protection-provision)
-   * [Regions](/docs/workload-protection?topic=workload-protection-regions)
-   * [Protecting Linux hosts](/docs/workload-protection?topic=workload-protection-protecting-linux-hosts)
-   * [Endpoints](/docs/workload-protection?topic=workload-protection-endpoints)
+   * [Provision an instance](/docs/sap?topic=sap-powervs-scc-wp-create-instance#getting-started-step2)
+   * [Protecting Linux hosts](/docs/workload-protection?topic=workload-protection-manage-linux-agent)
+   * [Endpoints](/docs/workload-protection?topic=workload-protection-supported-endpoints)
 
 ## Considerations
 {: #arch-pattern-vcf-sccwpp-considerations}
