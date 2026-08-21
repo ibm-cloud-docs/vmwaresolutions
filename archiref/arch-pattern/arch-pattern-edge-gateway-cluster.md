@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2025
+  years:  2022, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-08-18"
 
 subcollection: vmwaresolutions
 
@@ -44,7 +44,7 @@ The following list is a summary of the architecture pattern deployment:
 ## Ordering new VLAN for gateway cluster with NSX
 {: #arch-pattern-edge-gateway-cluster-vlan}
 
-In some designs, extra VLANs might be preferred or needed, especially with a gateway cluster. In {{site.data.keyword.cloud_notm}}, you can provision extra VLANs for your classic NSX network deployment. While the new VLAN can be ordered through {{site.data.keyword.cloud_notm}}, the VMware vSphere® networking and NSX configuration must be done by you, manually or though scripting.
+In some designs, extra VLANs might be preferred or needed, especially with a gateway cluster. In {{site.data.keyword.cloud_notm}}, you can provision extra VLANs for your classic NSX network deployment. While the new VLAN can be ordered through {{site.data.keyword.cloud_notm}}, the VMware vSphere® networking and NSX configuration must be done by you, manually or through scripting.
 
 This architecture pattern shows an example for using a new VLAN for NSX T0 gateway's private uplinks. VLAN tagging design and configuration are important to get the VLAN IDs correctly through the vSphere distributed virtual switches, NSX edge transport nodes, and edge cluster up to the T0 gateways that are running on these components.
 

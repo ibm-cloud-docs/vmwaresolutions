@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2025
+  years:  2020, 2026
 
-lastupdated: "2025-11-25"
+lastupdated: "2026-08-18"
 
 keywords: Veeam, Veeam Backup and Replication, Veeam install, tech specs Veeam, Veeam overview
 
@@ -27,7 +27,7 @@ By using this service, you control both the backup and restore of all virtual ma
 
 {{site.data.content.para-promotion-services}}
 
-The Veeam service that is installed is Veeam Availability Suite™ 12.3 (Veeam 12.3.2).
+The Veeam service that is installed is Veeam Availability Suite™ 12.3.2 (Veeam 12.3.2).
 {: note}
 
 If you have Veeam 9.5u4b, you can continue to use it. However, you cannot install Veeam 9.5u4b on a new or existing instance.
@@ -63,7 +63,7 @@ The following components are ordered and included in the Veeam service.
 
 The following components are included if you deploy Veeam as a Windows Server VM on the management cluster:
 
-* VM with Veeam Backup and Replication 12.3.2 OS Add-on and Veeam Availability Suite™ 12
+* VM with Veeam Backup and Replication 12.3.2 OS Add-on and Veeam Availability Suite™ 12.3.2
 * Windows Server 2019 Standard Edition (64-bit)
 * 8 CPUs, 32 GB RAM
 * 100 GB disk (SAN)
@@ -73,7 +73,7 @@ The following components are included if you deploy Veeam as a Windows Server VM
 
 The following components are included if you deploy Veeam as a single public Windows VSI:
 
-* Single VSI with Veeam Backup and Replication 12.3.2 OS Add-on and Veeam Availability Suite 12
+* Single VSI with Veeam Backup and Replication 12.3.2 OS Add-on and Veeam Availability Suite 12.3.2
 * Windows Server 2019 Standard Edition (64-bit)
 * 4 x 2.0 GHz Cores
 * 8 CPUs, 32 GB RAM
@@ -85,7 +85,7 @@ The following components are included if you deploy Veeam as a single public Win
 
 The following components are included if you deploy Veeam on a bare metal server:
 
-* Bare metal server with Veeam Backup and Replication 12.3.2 OS Add-on and Veeam Availability Suite 12
+* Bare metal server with Veeam Backup and Replication 12.3.2 OS Add-on and Veeam Availability Suite 12.3.2
 * Windows Server 2019 Standard Edition (64-bit)
 * 2 x 2.2 GHz CPU
 * 64 GB RAM

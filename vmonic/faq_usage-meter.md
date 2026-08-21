@@ -4,7 +4,7 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-08-13"
+lastupdated: "2026-08-18"
 
 keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
@@ -85,6 +85,8 @@ Usage Meter cannot connect directly to hosts. You must deploy vCenter Server, co
 
 You are required to order VMware vDefend™ Firewall (formerly VMware NSX® firewall) license keys to cover any firewall usage that you have. You cannot enter these license keys into NSX yet; however it is recommended that you order these license keys to ensure a smooth transition process as you act on 8 August 2026. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
 
+
+
 ## What should I do next?
 {: #faq_usage-meter-what-to-do-next}
 {: faq}
@@ -92,6 +94,8 @@ You are required to order VMware vDefend™ Firewall (formerly VMware NSX® fire
 For accurate cluster and core utilization metering, all {{site.data.keyword.cloud_notm}} for VMware customers must have newly supported Broadcom license keys and the Usage Meter deployed and functioning in their VMware environment.
 
 Starting on 8 August 2026, you must swap any older keys to the new license keys with expiration dates in your environment. For more information, see the following VMware vCloud Usage Meter documentation:
+
+
 
 * [Release Notes](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/9-1/release-notes/vmware-vcloud-usage-meter-91-release-notes.html){: external}
 * [Deployment and Administration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/9-1/vcf-usage-meter-deployment-and-administration-guide.html){: external}
