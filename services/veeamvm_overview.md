@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2026
 
-lastupdated: "2026-08-18"
+lastupdated: "2026-09-07"
 
 keywords: Veeam, Veeam Backup and Replication, Veeam install, tech specs Veeam, Veeam overview
 
@@ -116,7 +116,6 @@ The following options for storage performance (IOPS/GB) are available:
 
 The following options for storage size are available:
 * 8 x 2 TB, RAID 6, 12 TB total estimated usable storage
-* 8 x 6 TB, RAID 6, 36 TB total estimated usable storage
 * 8 x 12 TB, RAID 6, 72 TB total estimated usable storage
 
 #### Repositories created
@@ -133,7 +132,7 @@ As part of the Veeam service installation and configuration, the following repos
 When you order Veeam, you can optionally order a Linux hardened repository (LHR). You can use the repository for immutable storage.
 
 * If you order an LHR, an extra bare metal server with Red Hat Enterprise Linux (RHEL) 8.x installed is deployed. The same bare metal hardware is deployed as the Veeam Backup and Replication server.
-* The disk options are similar to the Veeam Backup and Replication server. The size options are 2 TB, 6 TB, and 12 TB.
+* The disk options are similar to the Veeam Backup and Replication server. The size options are 2 TB and 12 TB.
 * You can order an LHR for any of the Veeam deployment types: VM, VSI, or bare metal server.
 * There is no charge for LHR beyond the cost of the bare metal infrastructure.
 
