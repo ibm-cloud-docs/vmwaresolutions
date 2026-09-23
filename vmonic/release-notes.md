@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2026
 
-lastupdated: "2026-07-21"
+lastupdated: "2026-09-23"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -27,6 +27,22 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2026
 {: #year-2026}
 
+### 23 September 2026
+{: #vmwaresolutions-sep2326}
+{: release-note}
+
+BOM updates for {{site.data.keyword.vcf-classic-short}}
+:   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
+
+   * VMware vCenter Server® Appliance 8.0 Update 3k (build 25600417)
+   * VMware ESXi™ 8.0 Update 3k (build 25595708)
+
+Add-on services upgrades
+:   The following service versions are available for deployment:
+
+   * F5® BIG-IP® v21.1.0.1
+   * Veeam® Backup and Replication 12.3.2.4854
+   * VMware Aria® Operations™ and VMware Aria Operations™ for Logs 8.18.7
 
 
 ### 21 July 2026

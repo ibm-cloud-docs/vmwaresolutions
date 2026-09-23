@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2026
 
-lastupdated: "2026-06-25"
+lastupdated: "2026-09-20"
 
 keywords: Cyber Recovery, Cyber Recovery offering, Cyber Recovery instance, data protection, cyber threat, ransomware, Cyber resilience
 
@@ -29,7 +29,7 @@ A {{site.data.keyword.cr}} instance includes the following components:
 
 * VMware vSphere® 7.0u3 or 8.0u3h
 * VMware NSX® 4.2.3.3
-* Veeam Backup and Replication 12.3.2
+* Veeam Backup and Replication 12.3.2.4854
 * A Linux® hardened repository (LHR)
 * An edge gateway
 
