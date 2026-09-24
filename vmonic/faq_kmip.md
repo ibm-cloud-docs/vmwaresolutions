@@ -4,7 +4,7 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-03-05"
+lastupdated: "2026-09-24"
 
 keywords: FAQ kmip for vmware, kmip for vmware questions
 
@@ -29,7 +29,7 @@ Find answers to frequently asked questions about the Key Management Interoperabi
 {: #faq-kmip-eos-kp}
 {: faq}
 
-Support for the Key Management Interoperability Protocol (KMIP™) for VMware® service will end on 31 December 2026 after which the service will no longer be available. Customers must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 31 December 2026.
+Support for the Key Management Interoperability Protocol (KMIP™) for VMware® service will end on 31 December 2026 after which the service will no longer work. Customers must migrate to the native [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) offering, or an alternative key management service of your choice by 31 December 2026.
 
 ## Why is the support for KMIP for VMware ending?
 {: #faq-kmip-eos-reason}

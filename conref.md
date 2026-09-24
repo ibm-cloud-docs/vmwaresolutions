@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2026
 
-lastupdated: "2026-07-01"
+lastupdated: "2026-09-24"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -402,7 +402,7 @@ Review the following considerations for the vSAN storage architecture:
 
 
 
-Key Management Interoperability Protocol (KMIP™) for VMware® offering support will end on 31 December 2026, after which the KMIP for VMware service will no longer work. Migrate to [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect).
+Key Management Interoperability Protocol (KMIP™) for VMware® offering support will end on **31 December 2026** after which the KMIP for VMware service will no longer work. Provisioning of new instances is no longer allowed, and existing customers must migrate to [{{site.data.keyword.IBM}} Key Protect for {{site.data.keyword.cloud}}](/docs/key-protect) before **31 December 2026**.
 {: deprecated}
 {: #kmip-deprecated-note}
 
