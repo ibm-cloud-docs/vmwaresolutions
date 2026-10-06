@@ -4,7 +4,7 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-08-12"
+lastupdated: "2026-10-06"
 
 keywords: usage meter, upgrade
 
@@ -19,10 +19,10 @@ subcollection: vmwaresolutions
 
 {{site.data.content.vms-deprecated-note}}
 
-Upgrade the existing VMware vCloud Usage Meters to version 9.x or later. The latest VMware vCloud Usage Meter available version is v9.1.0. For Usage Meter v4.8, the upgrade process involves receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to v9.0.1 first. After the initial upgrade to v9.0.1, you don't need to provide the access token for further upgrades to v9.x or later.
+Upgrade the existing VMware vCloud Usage Meters to version 9.x or later. The latest VMware vCloud Usage Meter available version is v9.1.1. For Usage Meter v4.8, the upgrade process involves receiving an access token for your currently registered Usage Meter through the IBM Cloud Usage Meter portal, followed by an in-place upgrade to v9.0.1 first. After the initial upgrade to v9.0.1, you don't need to provide the access token for further upgrades to v9.x or later.
 {: important}
 
-For Usage Meter v4.8, a direct upgrade path from Usage Meter v4.8 to v9.1 is not supported. You must upgrade from version 4.8 to version 9.0.1 first, and then to version 9.1. For more information, see [Upgrade Path - Product Interoperability Matrix](https://interopmatrix.broadcom.com/Upgrade?productId=662&isHidePatch=false&isHideLegacyReleases=false){: external}.
+For Usage Meter v4.8, a direct upgrade path from Usage Meter v4.8 to v9.1.x is not supported. You must upgrade from version 4.8 to version 9.0.1 first, and then to version 9.1.x. For more information, see [Upgrade Path - Product Interoperability Matrix](https://interopmatrix.broadcom.com/Upgrade?productId=662&isHidePatch=false&isHideLegacyReleases=false){: external}.
 {: restriction}
 
 Before you upgrade to version 9 or later, you must swap the VMware Cloud Foundation™ (VCF) license keys.
@@ -53,10 +53,10 @@ To upgrade Usage Meter, complete the following steps:
 
 1. Download the Usage Meter ISO file from the following link:
    - For upgrade from Usage Meter v4.8 (or earlier) to v9.0.1, use: `https://ibm.biz/~V0YiDk0EP`.
-   - For upgrade from Usage Meter v9.0.1 to v9.1.0, use: `https://ibm.biz/~aBF0Bw0fU`.
+   - For upgrade from Usage Meter v9.0.1 to v9.1.1, use: `https://ibm.biz/~F3fHmKJU0`.
 2. Validate the SHA-2 checksum based on the following SHA-256 value:
    - For upgrade from Usage Meter v4.8 (or earlier) to v9.0.1, see: `ec5c46b4bdae915cb4a289dfbb03077cb802f404692bb3f2501b59b448102797`.
-   - For upgrade from Usage Meter v9.0.1 to v9.1.0, see: `d1f79f1bcc711c7753c871bd95bc434e8a31bb8fc584fc7ac88b75398be445c1`.
+   - For upgrade from Usage Meter v9.0.1 to v9.1.1, see: `690c16b3191b495c63769078757d4c2d07fc042971ed4511bdaa2ad38cfd5321`.
 
    Open a command prompt on Windows® or a terminal window on Linux® and MacOS and run the following command:
    * For Windows: `certutil -hashfile <path-to-iso-file> SHA256`

@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2026
 
-lastupdated: "2026-09-23"
+lastupdated: "2026-10-06"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -26,6 +26,14 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 ## 2026
 {: #year-2026}
+
+### 06 October 2026
+{: #vmwaresolutions-oct0626}
+{: release-note}
+
+Usage Meter updates
+
+:   {{site.data.keyword.vcf}} Usage Meter version 9.1.1 is now available for deployment. For more information, see [Deploying Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-deploy) and [Upgrading Usage Meter](/docs/vmwaresolutions?topic=vmwaresolutions-usage_meter-upgrade).
 
 ### 23 September 2026
 {: #vmwaresolutions-sep2326}

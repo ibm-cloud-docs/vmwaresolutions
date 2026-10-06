@@ -4,7 +4,7 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-09-01"
+lastupdated: "2026-10-06"
 
 keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
@@ -101,7 +101,7 @@ Effective immediately, you must replace any older license keys in your environme
 {: #faq_usage-meter-when-to-complete}
 {: faq}
 
-Effective immediately, your account must have Usage Meter v9.1.0 deployed with the new Broadcom license keys installed.
+Effective immediately, your account must have Usage Meter v9.1.1 deployed with the new Broadcom license keys installed.
 
 If your account is not updated to current license keys, you will be out of compliance and risk of being out of support and in violation of the {{site.data.keyword.cloud_notm}} Services Agreement. If not addressed, violations can result in account disruptions.
 {: attention}
@@ -136,7 +136,7 @@ For more information about data privacy, see [VMware vCloud Usage Meter Data Pri
 
 For more information about VMware vCloud Usage Meter, see:
 
-* [Release Notes](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/9-1/release-notes/vmware-vcloud-usage-meter-91-release-notes.html){: external}
+* [Release Notes](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/9-1/release-notes/vmware-vcloud-usage-meter-911-release-notes.html){: external}
 * [Deployment and Administration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/9-1/vcf-usage-meter-deployment-and-administration-guide.html){: external}
 * [Security Guide](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/9-1/vcf-usage-meter-sercurity-reference-guide.html){: external}
 
