@@ -4,7 +4,7 @@ copyright:
 
   years:  2025, 2026
 
-lastupdated: "2026-10-06"
+lastupdated: "2026-10-08"
 
 keywords: FAQ, usage meter, metering, licensing, vmware licensing
 
@@ -93,7 +93,7 @@ For accurate cluster and core utilization metering, all {{site.data.keyword.clou
 
 Effective immediately, you must replace any older license keys in your environment with the new license keys that include expiration dates. For more information, see the following VMware vCloud Usage Meter documentation:
 
-* [Release Notes](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/9-1/release-notes/vmware-vcloud-usage-meter-91-release-notes.html){: external}
+* [Release Notes](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/9-1/release-notes/vmware-vcloud-usage-meter-911-release-notes.html){: external}
 * [Deployment and Administration Guide](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/9-1/vcf-usage-meter-deployment-and-administration-guide.html){: external}
 * [Security Guide](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/usage-meter/9-1/vcf-usage-meter-sercurity-reference-guide.html){: external}
 
