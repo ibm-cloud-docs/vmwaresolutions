@@ -74,8 +74,8 @@ Usage Meter updates
 BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
 
-   * VMware ESXi™ 8.0 Update 3i (build 25205845)
    * VMware vCenter Server® Appliance 8.0 Update 3i (build 25197330)
+   * VMware ESXi™ 8.0 Update 3i (build 25205845)
    * VMware NSX® 4.2.3.3 (build 25171318)
 
 Add-on services upgrades

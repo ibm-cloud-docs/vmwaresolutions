@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2026
 
-lastupdated: "2026-09-20"
+lastupdated: "2026-11-23"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2026
 
-lastupdated: "2026-01-21"
+lastupdated: "2026-11-04"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -74,7 +74,7 @@ Complete the following requirements before you begin the upgrade:
 The following table is a summary of the supported upgrade paths:
 
 | Deployment offering | Supported paths | Unsupported paths |
-|:------------------- |:--------------- |:----------------- |
+| :------------------- | :--------------- | :----------------- |
 | vCenter Server with NSX-V instances with vSphere V6 | **Preferred path** \n Provision a new {{site.data.keyword.vcf-auto-short}} with NSX-T instance with vSphere V7 and migrate workloads. \n **Alternative path** \n Self-upgrade by using the [upgrade procedure](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade). \n - For Cascade Lake servers, upgrade from vSphere V6 to V7. \n - Open a support ticket to obtain new V7 licenses. \n - Cluster expansion uses Cascade Lake servers. \n **Before December 2023**, you must provision a new {{site.data.keyword.vcf-auto-short}} with NSX-T instance with vSphere V7 and migrate workloads. | - Broadwell and Skylake servers are not supported. \n - Add-on services to upgraded instance are not supported. |
 | {{site.data.keyword.vcf-auto-short}} with NSX-T instances with vSphere V6 | **Preferred path** \n Provision a new {{site.data.keyword.vcf-auto-short}} with NSX-T instance with vSphere V7 and migrate workloads. \n **Alternative path** \n Upgrade the instance by using the [upgrade procedure](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade). \n - For Cascade Lake servers, upgrade from vSphere V6 to V7. \n  - Open a support ticket to obtain new V7 licenses. \n - Cluster expansion uses Cascade Lake servers. \n **Before December 2023**, provision a new {{site.data.keyword.vcf-auto-short}} instance with NSX-T and vSphere V7 and migrate workloads. | - Broadwell and Skylake servers are not supported. \n - Add-on services to upgraded instance are not supported. \n - Conversion of vSphere switching from N-VDS to VDS is not supported. |
 | {{site.data.keyword.vcf-flex-short}} | **Preferred path** \n Consider provision vSphere bare metal server and deploy a new [VSS bare metal server](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview) or a bare metal server within VPC Architecture. \n Upgrade your vSphere servers by using [the upgrade procedure](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade). \n - For Broadwell servers, provision new servers as this server type is not supported by vSphere V7. \n - For Cascade Lake servers, upgrade from vSphere V6 to V7. \n - Open a support ticket to obtain new V7 licenses. \n - Cluster expansion uses Cascade Lake servers. | - Broadwell and Skylake servers are not supported. |

@@ -910,8 +910,8 @@ toc:
           id: faqs
           label: FAQ
           topics:
-          - vmonic/vmwaresol_packaging-pricing.md
           - topic: vmonic/faq_eos_vms.md
+          - vmonic/vmwaresol_packaging-pricing.md
           - include: ../vmware-service/common/faq-general.md
           - vmonic/faq.md
           - vmonic/faq-vpc-vcf.md

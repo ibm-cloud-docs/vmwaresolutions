@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2026
 
-lastupdated: "2026-01-21"
+lastupdated: "2026-11-04"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade, upgrade from vsphere 7 to 8
 
@@ -61,7 +61,7 @@ Complete the following steps from the vSphere Web Client:
 ## Procedure to upgrade vCenter Server
 {: #vs_vsphere_80_upgrade-procedure-vcenter}
 
-Follow the Broadcom instructions for upgrading vCenter Server. For more information, see [Upgrade a vCenter Server Appliance 6.5 or 6.7 with an embedded Platform Services Controller by using the GUI](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vcenter-upgrade/upgrading-and-updating-the-vcenter-server-appliance/gui-upgrade-of-the-vcsa-and-psc-appliance/upgrade-the-vmware-vcenter-server-appliance-with-embedded-sso.html){: external}.
+Follow the Broadcom instructions for upgrading vCenter Server. For more information, see [Patching/Updating vCenter Server through vCenter Server Appliance Management Interface (VAMI)](https://knowledge.broadcom.com/external/article/316584){: external}.
 
 Complete the following requirements during the upgrade:
 * To mount the VMware-VCSA ISO, go to the `visa-ui-installer\win32` directory and run the installer.
