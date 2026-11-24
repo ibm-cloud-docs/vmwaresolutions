@@ -17,6 +17,7 @@ toc:
           id: getting-started
           label: Getting started
           topics:
+          - topic: vmonic/eoa-vms.md
           - topic: vmonic/eos-vms.md
           - topic: index.md
           - link:
@@ -910,6 +911,7 @@ toc:
           id: faqs
           label: FAQ
           topics:
+          - topic: vmonic/faq_eoa_vms.md
           - topic: vmonic/faq_eos_vms.md
           - vmonic/vmwaresol_packaging-pricing.md
           - include: ../vmware-service/common/faq-general.md
