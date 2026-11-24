@@ -16,7 +16,7 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQ for End of access for VMware on {{site.data.keyword.cloud_notm}}
+# FAQ for End of Access for VMware on {{site.data.keyword.cloud_notm}}
 {: #faq-eoa-vms}
 
 {{site.data.content.vms-deprecated-note}}
@@ -121,4 +121,4 @@ Starting 12 March 2027, the actions that are listed [earlier](#table-eoa-impact)
 ## Related links
 {: #faq-eoa-vms-related}
 
-* [End of access for VMware on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-eoa-vms)
+* [End of Access for VMware on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-eoa-vms)

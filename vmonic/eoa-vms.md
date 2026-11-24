@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# End of access for VMware on {{site.data.keyword.cloud_notm}}
+# End of Access for VMware on {{site.data.keyword.cloud_notm}}
 {: #eoa-vms}
 
 {{site.data.keyword.cloud}} is formally declaring the end of access to VMware on {{site.data.keyword.cloud_notm}}.
