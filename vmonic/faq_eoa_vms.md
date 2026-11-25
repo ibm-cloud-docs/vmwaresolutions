@@ -4,7 +4,7 @@ copyright:
 
   years:  2026
 
-lastupdated: "2026-11-24"
+lastupdated: "2026-11-25"
 
 keywords: FAQ end of access for vmwaresolutions, vmware solutions, end of access, end of access
 
@@ -29,40 +29,18 @@ Find answers to frequently asked questions about the End of Access for VMware on
 
 As a result of Broadcom’s decision to not renew the partnership contract with {{site.data.keyword.cloud_notm}}, {{site.data.keyword.cloud_notm}} will no longer be an approved platform to run VMware software in March 2027.
 
-You **must** migrate your VMware workloads, backups, and storage to other {{site.data.keyword.cloud_notm}} services or to a third-party cloud provider before 12 March 2027 00:00 hrs UTC[^timezone]. You **must** also stop deploying VMware licenses on {{site.data.keyword.cloud_notm}} before the same deadline.
-
-[^timezone]: For reference, 12:00 AM (00:00 hrs) UTC on 12 March 2027 is equivalent to **7:00 PM EST (11 March 2027)**, **1:00 AM CET (12 March 2027)**, and **9:00 AM JST (12 March 2027)**.
+You **must** migrate your VMware workloads, backups, and storage to other {{site.data.keyword.cloud_notm}} services or to a third-party cloud provider before 12 March 2027 00:00 hrs UTC. You **must** also stop deploying VMware licenses on {{site.data.keyword.cloud_notm}} before the same deadline.
 
 If you want to continue using VMware software, you can contact [11:11 Systems](https://1111systems.com/){: external} to explore the available options.
 
-**Note:** 00:00 hrs UTC on 12 March 2027 corresponds to the following local times:
+**Note:** 12:00 AM (00:00 hrs) UTC on 12 March 2027 corresponds to the following local times:
 
-| Region | UTC Offset | Local Date | Local Time |
-| ---------------------------- | ------------ | --------------- | ------------------ |
-| US East Coast | UTC−5 | 11 March 2027 | 7:00 PM |
+| Region | Timezone | Local Date and Time |
+| ------------------ | ----------- | ------------------------ |
+| US East Coast | EST | 11 March 2027, 7:00 PM |
+| Central Europe | CET | 12 March 2027, 1:00 AM |
+| Japan | JST | 12 March 2027, 9:00 AM |
 {: caption="Local time equivalents" caption-side="bottom"}
-{: tab-title="EST"}
-{: tab-group="Timezone"}
-{: class="simple-tab-table"}
-{: #table-timezone-equiv}
-
-| Region | UTC Offset | Local Date | Local Time |
-| ---------------------------- | ------------ | --------------- | ------------------ |
-| Central Europe | UTC+1 | 12 March 2027 | 1:00 AM |
-{: caption="Local time equivalents" caption-side="bottom"}
-{: tab-title="CET"}
-{: tab-group="Timezone"}
-{: class="simple-tab-table"}
-{: #table-timezone-equiv}
-
-| Region | UTC Offset | Local Date | Local Time |
-| ---------------------------- | ------------ | --------------- | ------------------ |
-| Japan | UTC+9 | 12 March 2027 | 9:00 AM |
-{: caption="Local time equivalents" caption-side="bottom"}
-{: tab-title="JST"}
-{: tab-group="Timezone"}
-{: class="simple-tab-table"}
-{: #table-timezone-equiv}
 
 ## Who does the End of Access apply to?
 {: #faq-eoa-vms-11-11-applies}

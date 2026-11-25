@@ -4,7 +4,7 @@ copyright:
 
   years:  2026
 
-lastupdated: "2026-11-24"
+lastupdated: "2026-11-25"
 
 keywords: end of access notice, eoa vmwaresolutions, end of access vcf for classic, end of access vcf for vpc, end of access vcf as a service, end of access ryo
 
@@ -27,38 +27,16 @@ You **must** migrate your VMware workloads, backups, and storage to other {{site
 
 If you want to continue using VMware software, you can contact [11:11 Systems](https://1111systems.com/){: external} to explore the available options.
 
-After 12 March 2027 at 00:00 hrs UTC[^timezone], {{site.data.keyword.cloud_notm}} **will cut off** access to customers who are still using VMware on IBM Cloud.
+After 12 March 2027 at 00:00 hrs UTC, {{site.data.keyword.cloud_notm}} **will cut off** access to customers who are still using VMware on IBM Cloud.
 
-[^timezone]: For reference, 12:00 AM (00:00 hrs) UTC on 12 March 2027 is equivalent to **7:00 PM EST (11 March 2027)**, **1:00 AM CET (12 March 2027)**, and **9:00 AM JST (12 March 2027)**.
+**Note:** 12:00 AM (00:00 hrs) UTC on 12 March 2027 corresponds to the following local times:
 
-**Note:** 00:00 hrs UTC on 12 March 2027 corresponds to the following local times:
-
-| Region | UTC Offset | Local Date | Local Time |
-| ---------------------------- | ------------ | --------------- | ------------------ |
-| US East Coast | UTC−5 | 11 March 2027 | 7:00 PM |
+| Region | Timezone | Local Date and Time |
+| ------------------ | ----------- | ------------------------ |
+| US East Coast | EST | 11 March 2027, 7:00 PM |
+| Central Europe | CET | 12 March 2027, 1:00 AM |
+| Japan | JST | 12 March 2027, 9:00 AM |
 {: caption="Local time equivalents" caption-side="bottom"}
-{: tab-title="EST"}
-{: tab-group="Timezone"}
-{: class="simple-tab-table"}
-{: #table-timezone-equiv}
-
-| Region | UTC Offset | Local Date | Local Time |
-| ---------------------------- | ------------ | --------------- | ------------------ |
-| Central Europe | UTC+1 | 12 March 2027 | 1:00 AM |
-{: caption="Local time equivalents" caption-side="bottom"}
-{: tab-title="CET"}
-{: tab-group="Timezone"}
-{: class="simple-tab-table"}
-{: #table-timezone-equiv}
-
-| Region | UTC Offset | Local Date | Local Time |
-| ---------------------------- | ------------ | --------------- | ------------------ |
-| Japan | UTC+9 | 12 March 2027 | 9:00 AM |
-{: caption="Local time equivalents" caption-side="bottom"}
-{: tab-title="JST"}
-{: tab-group="Timezone"}
-{: class="simple-tab-table"}
-{: #table-timezone-equiv}
 
 ## Impact to affected customers
 {: #eoa-vms-impact}
