@@ -4,7 +4,7 @@ copyright:
 
   years:  2026
 
-lastupdated: "2026-11-25"
+lastupdated: "2026-11-26"
 
 keywords: end of access notice, eoa vmwaresolutions, end of access vcf for classic, end of access vcf for vpc, end of access vcf as a service, end of access ryo
 
@@ -41,7 +41,7 @@ After 12 March 2027 at 00:00 hrs UTC, {{site.data.keyword.cloud_notm}} **will cu
 ## Impact to affected customers
 {: #eoa-vms-impact}
 
-VMware services that involve definitive consumption of VMware on {{site.data.keyword.cloud_notm}} will be inaccessible and permanently terminated. It also includes third-party add-on services that were bundled into {{site.data.keyword.cloud_notm}} for VMware Solutions offerings. However, stand-alone software and services that support VMware services (including multiple other offerings) will remain unaffected.
+VMware services that involve definitive consumption of VMware on {{site.data.keyword.cloud_notm}} will be inaccessible and permanently terminated. It also includes third-party add-on services that were bundled into {{site.data.keyword.cloud_notm}} for VMware Solutions offerings. However, stand-alone software and services that support VMware, and all other services and infrastructure in your account (including servers with other or no Operating Systems), will remain unaffected.
 
 {{site.data.keyword.IBM_notm}} will delete only the VMware-specific resources that are associated with the account. Cleanup of all other resources is the customer's responsibility. Billing continues for associated non-VMware resources until you delete them.
 {: important}
@@ -55,7 +55,7 @@ For more information, see the following table.
 | VCF for VPC | VMware Virtual Machines, Bare Metals | • Deletion of Bare metal with VMware images \n • Deletion of data \n • Removing all automation, APIs and management functions |
 | {{site.data.keyword.cloud_notm}} Classic Bare metal with VMware image | VMware Virtual Machines, Bare Metals | • Deletion of Bare metal with VMware images \n • Deletion of data |
 | VCF for Classic, VCF for VPC, and Bare metal with VMware image | Shared Storage | No impact (for example, NFS shares and Cloud Object Storage buckets will not be impacted) |
-| {{site.data.keyword.cloud_notm}} Classic Bare metal with no Operating System | Bare Metals | No impact |
+| {{site.data.keyword.cloud_notm}} Classic Bare metal with any other Operating System, including No Operating System | Bare Metals | No impact |
 | Third-party add-ons (such as Veeam, Zerto, Caveonix, Juniper, F5, Entrust) for VCF for Classic and VCF for VPC | 1. Software licenses \n 2. Virtual appliances | 1. Revoking of license keys and customer must replace with their own license keys \n 2. Virtual appliances will be deleted, as stated earlier |
 | VMware software licenses (stand-alone) | Software licenses | Revoking of license keys, and customer must replace with their own license keys |
 | Veeam VSIs | Software licenses | No impact |
